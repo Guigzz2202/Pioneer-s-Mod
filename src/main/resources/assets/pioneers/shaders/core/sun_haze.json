@@ -1,0 +1,14 @@
+{
+  "vertex": "pioneers:black_hole_lens",
+  "fragment": "pioneers:sun_haze",
+  "attributes": [ "Position" ],
+  "samplers": [ { "name": "Sampler0" } ],
+  "uniforms": [
+    { "name": "LensScreenSize", "type": "float", "count": 2, "values": [ 1.0, 1.0 ] },
+    { "name": "CenterScreen",   "type": "float", "count": 2, "values": [ 0.5, 0.5 ] },
+    { "name": "SunRadius",      "type": "float", "count": 1, "values": [ 0.05 ] },
+    { "name": "HazeRadius",     "type": "float", "count": 1, "values": [ 0.15 ] },
+    { "name": "Strength",       "type": "float", "count": 1, "values": [ 1.0 ] },
+    { "name": "Time",           "type": "float", "count": 1, "values": [ 0.0 ] }
+  ]
+}

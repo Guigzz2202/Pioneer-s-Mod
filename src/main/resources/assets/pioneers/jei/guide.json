@@ -1,0 +1,721 @@
+{
+ "compressed_air": [
+  {
+   "title": "jei.pioneers.air.sources.title",
+   "in": [
+    [
+     "pioneers:air_compressor"
+    ]
+   ],
+   "out": [],
+   "lines": [
+    "jei.pioneers.air.compressor"
+   ]
+  },
+  {
+   "title": "jei.pioneers.air.store.title",
+   "in": [
+    [
+     "pioneers:basic_pressure_buffer",
+     "pioneers:advanced_pressure_buffer",
+     "pioneers:elite_pressure_buffer",
+     "pioneers:ultimate_pressure_buffer"
+    ],
+    [
+     "pioneers:industrial_pressure_port"
+    ]
+   ],
+   "out": [],
+   "lines": [
+    "jei.pioneers.air.buffer",
+    "jei.pioneers.air.port"
+   ]
+  },
+  {
+   "title": "jei.pioneers.air.network.title",
+   "in": [
+    [
+     "pioneers:pneumatic_tube_station",
+     "pioneers:pneumatic_tube"
+    ]
+   ],
+   "out": [],
+   "lines": [
+    "jei.pioneers.air.tube",
+    "jei.pioneers.air.station"
+   ]
+  },
+  {
+   "title": "jei.pioneers.air.tools.title",
+   "in": [
+    [
+     "pioneers:pneumatic_jackhammer",
+     "pioneers:impact_wrench",
+     "pioneers:air_blower",
+     "pioneers:sandblaster",
+     "pioneers:diving_tank"
+    ]
+   ],
+   "out": [],
+   "lines": [
+    "jei.pioneers.air.tools.1",
+    "jei.pioneers.air.tools.2"
+   ]
+  }
+ ],
+ "catalysts": {
+  "compressed_air": [
+   "pioneers:air_compressor",
+   "pioneers:pneumatic_tube_station"
+  ],
+  "fuels": [
+   "pioneers:firebox"
+  ]
+ },
+ "info": {
+  "groups": [
+   {
+    "items": [
+     "pioneers:brass_prospector",
+     "pioneers:bronze_prospector",
+     "pioneers:copper_prospector",
+     "pioneers:duralumin_prospector",
+     "pioneers:gold_prospector",
+     "pioneers:hardened_steel_prospector",
+     "pioneers:iron_prospector",
+     "pioneers:nitinol_prospector",
+     "pioneers:osmiridium_prospector",
+     "pioneers:stainless_steel_prospector",
+     "pioneers:steel_prospector",
+     "pioneers:stellite_prospector",
+     "pioneers:titanium_aluminide_prospector",
+     "pioneers:titanium_prospector",
+     "pioneers:tungsten_carbide_prospector",
+     "pioneers:vanadium_steel_prospector"
+    ],
+    "lines": [
+     "jei.pioneers.info.prospector"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:seismograph"
+    ],
+    "lines": [
+     "jei.pioneers.info.seismograph"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:brass_mining_hammer",
+     "pioneers:bronze_mining_hammer",
+     "pioneers:copper_mining_hammer",
+     "pioneers:duralumin_mining_hammer",
+     "pioneers:gold_mining_hammer",
+     "pioneers:hardened_steel_mining_hammer",
+     "pioneers:iron_mining_hammer",
+     "pioneers:nitinol_mining_hammer",
+     "pioneers:osmiridium_mining_hammer",
+     "pioneers:stainless_steel_mining_hammer",
+     "pioneers:steel_mining_hammer",
+     "pioneers:stellite_mining_hammer",
+     "pioneers:titanium_aluminide_mining_hammer",
+     "pioneers:titanium_mining_hammer",
+     "pioneers:tungsten_carbide_mining_hammer",
+     "pioneers:vanadium_steel_mining_hammer"
+    ],
+    "lines": [
+     "jei.pioneers.info.mining_hammer"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:brass_excavator",
+     "pioneers:bronze_excavator",
+     "pioneers:copper_excavator",
+     "pioneers:duralumin_excavator",
+     "pioneers:gold_excavator",
+     "pioneers:hardened_steel_excavator",
+     "pioneers:iron_excavator",
+     "pioneers:nitinol_excavator",
+     "pioneers:osmiridium_excavator",
+     "pioneers:stainless_steel_excavator",
+     "pioneers:steel_excavator",
+     "pioneers:stellite_excavator",
+     "pioneers:titanium_aluminide_excavator",
+     "pioneers:titanium_excavator",
+     "pioneers:tungsten_carbide_excavator",
+     "pioneers:vanadium_steel_excavator"
+    ],
+    "lines": [
+     "jei.pioneers.info.excavator"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:brass_scythe",
+     "pioneers:bronze_scythe",
+     "pioneers:copper_scythe",
+     "pioneers:duralumin_scythe",
+     "pioneers:gold_scythe",
+     "pioneers:hardened_steel_scythe",
+     "pioneers:iron_scythe",
+     "pioneers:nitinol_scythe",
+     "pioneers:osmiridium_scythe",
+     "pioneers:stainless_steel_scythe",
+     "pioneers:steel_scythe",
+     "pioneers:stellite_scythe",
+     "pioneers:titanium_aluminide_scythe",
+     "pioneers:titanium_scythe",
+     "pioneers:tungsten_carbide_scythe",
+     "pioneers:vanadium_steel_scythe"
+    ],
+    "lines": [
+     "jei.pioneers.info.scythe"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:drone_mk1",
+     "pioneers:drone_mk2",
+     "pioneers:drone_mk3",
+     "pioneers:drone_mk4",
+     "pioneers:robot_mk1",
+     "pioneers:robot_mk2",
+     "pioneers:robot_mk3",
+     "pioneers:robot_mk4",
+     "pioneers:rover_mk1",
+     "pioneers:rover_mk2",
+     "pioneers:rover_mk3",
+     "pioneers:rover_mk4",
+     "pioneers:turtle_mk1",
+     "pioneers:turtle_mk2",
+     "pioneers:turtle_mk3",
+     "pioneers:turtle_mk4"
+    ],
+    "lines": [
+     "jei.pioneers.info.unit"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:robotic_upgrade_battery",
+     "pioneers:robotic_upgrade_cargo",
+     "pioneers:robotic_upgrade_charging",
+     "pioneers:robotic_upgrade_efficiency",
+     "pioneers:robotic_upgrade_fortune",
+     "pioneers:robotic_upgrade_range",
+     "pioneers:robotic_upgrade_silk_touch",
+     "pioneers:robotic_upgrade_speed"
+    ],
+    "lines": [
+     "jei.pioneers.info.upgrade"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:logistic_chest_compact",
+     "pioneers:logistic_chest_large",
+     "pioneers:logistic_chest_medium",
+     "pioneers:logistic_chest_small",
+     "pioneers:logistic_chest_tiny"
+    ],
+    "lines": [
+     "jei.pioneers.info.logistic_chest"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:airlock_door"
+    ],
+    "lines": [
+     "jei.pioneers.info.airlock_door"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:launch_tower"
+    ],
+    "lines": [
+     "jei.pioneers.info.launch_tower"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:lightning_conductor"
+    ],
+    "lines": [
+     "jei.pioneers.info.lightning_conductor"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:drill_head_steel"
+    ],
+    "lines": [
+     [
+      "jei.pioneers.info.drill_head",
+      "1",
+      "600",
+      "1"
+     ]
+    ]
+   },
+   {
+    "items": [
+     "pioneers:drill_head_lunarium"
+    ],
+    "lines": [
+     [
+      "jei.pioneers.info.drill_head",
+      "2",
+      "1 000",
+      "1.2"
+     ]
+    ]
+   },
+   {
+    "items": [
+     "pioneers:drill_head_marsium"
+    ],
+    "lines": [
+     [
+      "jei.pioneers.info.drill_head",
+      "3",
+      "1 600",
+      "1.6"
+     ]
+    ]
+   },
+   {
+    "items": [
+     "pioneers:drill_head_venusium"
+    ],
+    "lines": [
+     [
+      "jei.pioneers.info.drill_head",
+      "4",
+      "2 600",
+      "1.9"
+     ]
+    ]
+   },
+   {
+    "items": [
+     "pioneers:drill_head_mercurium"
+    ],
+    "lines": [
+     [
+      "jei.pioneers.info.drill_head",
+      "5",
+      "4 200",
+      "2.4"
+     ]
+    ]
+   },
+   {
+    "items": [
+     "pioneers:drill_head_neutronium"
+    ],
+    "lines": [
+     [
+      "jei.pioneers.info.drill_head",
+      "5",
+      "60 000",
+      "4"
+     ]
+    ]
+   },
+   {
+    "items": [
+     "pioneers:rover_module_battery",
+     "pioneers:rover_module_cargo",
+     "pioneers:rover_module_overclock",
+     "pioneers:rover_module_refinery",
+     "pioneers:rover_module_scanner"
+    ],
+    "lines": [
+     "jei.pioneers.info.rover_module",
+     "jei.pioneers.info.rover_module.battery",
+     "jei.pioneers.info.rover_module.cargo",
+     "jei.pioneers.info.rover_module.scanner",
+     "jei.pioneers.info.rover_module.overclock",
+     "jei.pioneers.info.rover_module.refinery"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:machine_frame_advanced",
+     "pioneers:machine_frame_basic",
+     "pioneers:machine_frame_elite",
+     "pioneers:machine_frame_ultimate",
+     "pioneers:machine_hull_advanced",
+     "pioneers:machine_hull_basic",
+     "pioneers:machine_hull_elite",
+     "pioneers:machine_hull_ultimate"
+    ],
+    "lines": [
+     "jei.pioneers.info.refonte.frame"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:aluminium_bolt",
+     "pioneers:aluminium_screw",
+     "pioneers:steel_bolt",
+     "pioneers:steel_screw",
+     "pioneers:titanium_bolt",
+     "pioneers:titanium_screw",
+     "pioneers:tungsten_bolt",
+     "pioneers:tungsten_screw"
+    ],
+    "lines": [
+     "jei.pioneers.info.refonte.fastener"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:fuel_cell_stack",
+     "pioneers:lead_acid_battery",
+     "pioneers:lithium_ion_cell",
+     "pioneers:nimh_cell",
+     "pioneers:solid_state_cell",
+     "pioneers:vanadium_flow_cell",
+     "pioneers:zinc_carbon_cell"
+    ],
+    "lines": [
+     "jei.pioneers.info.refonte.cell"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:pneumatic_tube",
+     "pioneers:pneumatic_tube_station"
+    ],
+    "lines": [
+     "jei.pioneers.air.tube",
+     "jei.pioneers.air.station"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:rocket_blueprint_cargo",
+     "pioneers:rocket_blueprint_tier_10",
+     "pioneers:rocket_blueprint_tier_11",
+     "pioneers:rocket_blueprint_tier_12",
+     "pioneers:rocket_blueprint_tier_13",
+     "pioneers:rocket_blueprint_tier_2",
+     "pioneers:rocket_blueprint_tier_3",
+     "pioneers:rocket_blueprint_tier_4",
+     "pioneers:rocket_blueprint_tier_5",
+     "pioneers:rocket_blueprint_tier_6",
+     "pioneers:rocket_blueprint_tier_7",
+     "pioneers:rocket_blueprint_tier_8",
+     "pioneers:rocket_blueprint_tier_9"
+    ],
+    "lines": [
+     "jei.pioneers.info.rocket_blueprint"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:advanced_logistic_cable",
+     "pioneers:basic_logistic_cable",
+     "pioneers:bronze_logistic_cable",
+     "pioneers:elite_logistic_cable",
+     "pioneers:ultimate_logistic_cable",
+     "pioneers:wooden_logistic_cable"
+    ],
+    "lines": [
+     "jei.pioneers.info.logistic_cable",
+     "jei.pioneers.info.logistic_cable.levels",
+     "jei.pioneers.info.logistic_cable.limits"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:superconducting_cable"
+    ],
+    "lines": [
+     "jei.pioneers.info.superconducting_cable"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:voltaic_baton",
+     "pioneers:voltaic_boots",
+     "pioneers:voltaic_chainsaw",
+     "pioneers:voltaic_chestplate",
+     "pioneers:voltaic_drill",
+     "pioneers:voltaic_helmet",
+     "pioneers:voltaic_leggings",
+     "pioneers:voltaic_trimmer"
+    ],
+    "lines": [
+     "jei.pioneers.info.electric.charge"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:flamethrower",
+     "pioneers:hydrogen_jetpack"
+    ],
+    "lines": [
+     "jei.pioneers.info.electric.fill",
+     "jei.pioneers.info.electric.charge"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:crushed_copper",
+     "pioneers:crushed_gold",
+     "pioneers:crushed_iron",
+     "pioneers:crushed_lead",
+     "pioneers:crushed_tin",
+     "pioneers:crushed_zinc",
+     "pioneers:raw_copper",
+     "pioneers:raw_gold",
+     "pioneers:raw_iron",
+     "pioneers:raw_lead",
+     "pioneers:raw_tin",
+     "pioneers:raw_zinc"
+    ],
+    "lines": [
+     "jei.pioneers.info.crush_doubles",
+     "jei.pioneers.info.crush_doubles.mk1"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:calendar"
+    ],
+    "lines": [
+     "jei.pioneers.info.calendar"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:greenhouse_regulator"
+    ],
+    "lines": [
+     "jei.pioneers.info.greenhouse"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:acacia_cat_basket",
+     "pioneers:acacia_dog_kennel",
+     "pioneers:bamboo_cat_basket",
+     "pioneers:bamboo_dog_kennel",
+     "pioneers:birch_cat_basket",
+     "pioneers:birch_dog_kennel",
+     "pioneers:cherry_cat_basket",
+     "pioneers:cherry_dog_kennel",
+     "pioneers:crimson_cat_basket",
+     "pioneers:crimson_dog_kennel",
+     "pioneers:dark_oak_cat_basket",
+     "pioneers:dark_oak_dog_kennel",
+     "pioneers:jungle_cat_basket",
+     "pioneers:jungle_dog_kennel",
+     "pioneers:mangrove_cat_basket",
+     "pioneers:mangrove_dog_kennel",
+     "pioneers:oak_cat_basket",
+     "pioneers:oak_dog_kennel",
+     "pioneers:spruce_cat_basket",
+     "pioneers:spruce_dog_kennel",
+     "pioneers:warped_cat_basket",
+     "pioneers:warped_dog_kennel"
+    ],
+    "lines": [
+     "jei.pioneers.info.pet_home"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:acacia_gun_rack",
+     "pioneers:bamboo_gun_rack",
+     "pioneers:birch_gun_rack",
+     "pioneers:cherry_gun_rack",
+     "pioneers:crimson_gun_rack",
+     "pioneers:dark_oak_gun_rack",
+     "pioneers:jungle_gun_rack",
+     "pioneers:mangrove_gun_rack",
+     "pioneers:oak_gun_rack",
+     "pioneers:spruce_gun_rack",
+     "pioneers:warped_gun_rack"
+    ],
+    "lines": [
+     "jei.pioneers.info.gun_rack"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:cartridge",
+     "pioneers:lead_ball",
+     "pioneers:musket",
+     "pioneers:revolver"
+    ],
+    "lines": [
+     "jei.pioneers.info.firearm_ammo"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:trash_can"
+    ],
+    "lines": [
+     "jei.pioneers.info.trash_can"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:bag_interface"
+    ],
+    "lines": [
+     "jei.pioneers.info.bag_interface"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:restorer_notebook"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.notebook"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:blank_notebook"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.blank_notebook"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:restorer_desk"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.desk"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:market_stall",
+     "pioneers:market_counter"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.stall"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:sale_bin"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.sale_bin"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:clan_charter"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.charter"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:federal_pact"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.pact"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:function_seal"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.seal"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:siege_flag"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.flag"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:derelict_controller_mk1",
+     "pioneers:derelict_controller_mk2",
+     "pioneers:derelict_controller_mk3"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.controller"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:perimeter_console_mk1",
+     "pioneers:perimeter_console_mk2",
+     "pioneers:perimeter_console_mk3"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.console"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:basic_recycler",
+     "pioneers:advanced_recycler",
+     "pioneers:elite_recycler",
+     "pioneers:ultimate_recycler",
+     "pioneers:industrial_recycler"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.recycler"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:ruin_map"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.ruin_map"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:manual_builder",
+     "pioneers:manual_miner_smelter",
+     "pioneers:manual_engineer",
+     "pioneers:manual_logistician",
+     "pioneers:manual_farmer",
+     "pioneers:manual_herder_angler",
+     "pioneers:manual_scout",
+     "pioneers:manual_salvager",
+     "pioneers:manual_astronaut",
+     "pioneers:manual_trader"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.manual"
+    ]
+   },
+   {
+    "items": [
+     "pioneers:restoration_plaque"
+    ],
+    "lines": [
+     "jei.pioneers.info.rp.use.plaque"
+    ]
+   }
+  ],
+  "items": {},
+  "fluids": {},
+  "gases": {}
+ }
+}

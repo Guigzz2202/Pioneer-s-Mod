@@ -1,0 +1,998 @@
+{
+ "entries": [
+  {
+   "id": "ch01_smith_colors",
+   "chapter": 1,
+   "tier": "mk1",
+   "genre": "manual_fragment",
+   "date": -124
+  },
+  {
+   "id": "ch01_clearing_journal",
+   "chapter": 1,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": -137
+  },
+  {
+   "id": "ch01_sower_manual",
+   "chapter": 1,
+   "tier": "mk1",
+   "genre": "manual_fragment",
+   "date": -115
+  },
+  {
+   "id": "ch01_archive_register",
+   "chapter": 1,
+   "tier": "mk1",
+   "genre": "ledger",
+   "date": -102
+  },
+  {
+   "id": "ch01_smith_letter",
+   "chapter": 1,
+   "tier": "mk1",
+   "genre": "letter",
+   "date": -97
+  },
+  {
+   "id": "ch01_trades_statutes",
+   "chapter": 1,
+   "tier": "mk1",
+   "genre": "manual_fragment",
+   "date": -90
+  },
+  {
+   "id": "ch01_miner_journal",
+   "chapter": 1,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": -109
+  },
+  {
+   "id": "ch01_sorting_machine",
+   "chapter": 1,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": -84
+  },
+  {
+   "id": "ch02_service_note_41",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "service_note",
+   "date": -9
+  },
+  {
+   "id": "ch02_first_servitor",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "service_note",
+   "date": -78
+  },
+  {
+   "id": "ch02_mine_servitor",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": -71
+  },
+  {
+   "id": "ch02_pumps_lamp",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "service_note",
+   "date": -62
+  },
+  {
+   "id": "ch02_welding_lesson",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": -55
+  },
+  {
+   "id": "ch02_rose_letter",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "letter",
+   "date": -44
+  },
+  {
+   "id": "ch02_cantine_note",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "service_note",
+   "date": -31
+  },
+  {
+   "id": "ch02_joran_matthis",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": -8
+  },
+  {
+   "id": "ch02_joran_glove",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": -5
+  },
+  {
+   "id": "ch02_service_note_58",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "service_note",
+   "date": -3
+  },
+  {
+   "id": "ch02_trades_summons",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "service_note",
+   "date": -2
+  },
+  {
+   "id": "ch02_joran_pages",
+   "chapter": 2,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": -1
+  },
+  {
+   "id": "ch03_founding_act",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "service_note",
+   "date": 0
+  },
+  {
+   "id": "ch03_first_letter",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "stewardship_letter",
+   "date": 1
+  },
+  {
+   "id": "ch03_joran_voice",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 3
+  },
+  {
+   "id": "ch03_rounds_letter",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "stewardship_letter",
+   "date": 7
+  },
+  {
+   "id": "ch03_storekeeper",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "ledger",
+   "date": 11
+  },
+  {
+   "id": "ch03_archivist_request",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "letter",
+   "date": 15
+  },
+  {
+   "id": "ch03_steward_reply",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "stewardship_letter",
+   "date": 15
+  },
+  {
+   "id": "ch03_joran_leaves",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 20
+  },
+  {
+   "id": "ch03_longue_eau_note",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "service_note",
+   "date": 24
+  },
+  {
+   "id": "ch03_courrier_44",
+   "chapter": 3,
+   "tier": "mk2",
+   "genre": "stewardship_letter",
+   "date": 44
+  },
+  {
+   "id": "ch04_joran_31",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 31
+  },
+  {
+   "id": "ch04_joran_line",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 34
+  },
+  {
+   "id": "ch04_decision_letter",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "stewardship_letter",
+   "date": 36
+  },
+  {
+   "id": "ch04_shift_chief",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 41
+  },
+  {
+   "id": "ch04_agathe_letter",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "letter",
+   "date": 47
+  },
+  {
+   "id": "ch04_time_clock",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "service_note",
+   "date": 52
+  },
+  {
+   "id": "ch04_applause",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 63
+  },
+  {
+   "id": "ch04_delivery_man",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 66
+  },
+  {
+   "id": "ch04_summary_letter",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "stewardship_letter",
+   "date": 82
+  },
+  {
+   "id": "ch04_coffee_stain",
+   "chapter": 4,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 101
+  },
+  {
+   "id": "ch04_manuals_archived",
+   "chapter": 4,
+   "tier": "mk3",
+   "genre": "stewardship_letter",
+   "date": 88
+  },
+  {
+   "id": "ch04_one_line",
+   "chapter": 4,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 96
+  },
+  {
+   "id": "ch04_north_way",
+   "chapter": 4,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 104
+  },
+  {
+   "id": "ch04_night_watch",
+   "chapter": 4,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 112
+  },
+  {
+   "id": "ch04_whistle",
+   "chapter": 4,
+   "tier": "mk3",
+   "genre": "letter",
+   "date": 118
+  },
+  {
+   "id": "ch04_load_report",
+   "chapter": 4,
+   "tier": "mk3",
+   "genre": "stewardship_letter",
+   "date": 124
+  },
+  {
+   "id": "ch04_hall_window",
+   "chapter": 4,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 131
+  },
+  {
+   "id": "ch04_watch_change",
+   "chapter": 4,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 135
+  },
+  {
+   "id": "ch05_mireille_82",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 82
+  },
+  {
+   "id": "ch05_curriculum",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "stewardship_letter",
+   "date": 84
+  },
+  {
+   "id": "ch05_remi_drawing",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "child_drawing",
+   "date": 88
+  },
+  {
+   "id": "ch05_lena_drawing",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "child_drawing",
+   "date": 89
+  },
+  {
+   "id": "ch05_mireille_pigeons",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 90
+  },
+  {
+   "id": "ch05_mireille_result",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 91
+  },
+  {
+   "id": "ch05_parents_letter",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "letter",
+   "date": 92
+  },
+  {
+   "id": "ch05_mireille_manuals",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 93
+  },
+  {
+   "id": "ch05_mireille_94",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 94
+  },
+  {
+   "id": "ch05_closure_note",
+   "chapter": 5,
+   "tier": "mk2",
+   "genre": "service_note",
+   "date": 94
+  },
+  {
+   "id": "ch06_forms_letter",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "stewardship_letter",
+   "date": 33
+  },
+  {
+   "id": "ch06_hmm_accepted",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 39
+  },
+  {
+   "id": "ch06_first_word",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 45
+  },
+  {
+   "id": "ch06_reading_delay",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "stewardship_letter",
+   "date": 57
+  },
+  {
+   "id": "ch06_woman_says_no",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 63
+  },
+  {
+   "id": "ch06_magnifier",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "letter",
+   "date": 70
+  },
+  {
+   "id": "ch06_playground",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 79
+  },
+  {
+   "id": "ch06_bedside",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "stewardship_letter",
+   "date": 90
+  },
+  {
+   "id": "ch06_noe_glove",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 119
+  },
+  {
+   "id": "ch06_noe_reads",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 126
+  },
+  {
+   "id": "ch06_annual_report",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "stewardship_letter",
+   "date": 127
+  },
+  {
+   "id": "ch06_the_list",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 129
+  },
+  {
+   "id": "ch06_aloud",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 133
+  },
+  {
+   "id": "ch06_anneau_log",
+   "chapter": 6,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 136
+  },
+  {
+   "id": "ch07_log_137",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 137
+  },
+  {
+   "id": "ch07_noe_138",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 138
+  },
+  {
+   "id": "ch07_courrier_138",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "stewardship_letter",
+   "date": 138
+  },
+  {
+   "id": "ch07_log_138",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 138
+  },
+  {
+   "id": "ch07_noe_morning",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 138
+  },
+  {
+   "id": "ch07_pump_notice",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "service_note",
+   "date": 139
+  },
+  {
+   "id": "ch07_sleep_letter",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "stewardship_letter",
+   "date": 139
+  },
+  {
+   "id": "ch07_dormitory",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 141
+  },
+  {
+   "id": "ch07_north_switch",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 143
+  },
+  {
+   "id": "ch07_hall_stops",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 145
+  },
+  {
+   "id": "ch07_noe_returns",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 147
+  },
+  {
+   "id": "ch07_log_150",
+   "chapter": 7,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 150
+  },
+  {
+   "id": "ch08_servitor_memories",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 163
+  },
+  {
+   "id": "ch08_cook",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 166
+  },
+  {
+   "id": "ch08_servitor_14",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 172
+  },
+  {
+   "id": "ch08_crows",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 184
+  },
+  {
+   "id": "ch08_fox",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 196
+  },
+  {
+   "id": "ch08_stag",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 209
+  },
+  {
+   "id": "ch08_song",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 223
+  },
+  {
+   "id": "ch08_bolt",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 238
+  },
+  {
+   "id": "ch08_good_deal",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 247
+  },
+  {
+   "id": "ch08_photo",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 259
+  },
+  {
+   "id": "ch08_leak",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 266
+  },
+  {
+   "id": "ch08_reader",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 288
+  },
+  {
+   "id": "ch08_chair",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 301
+  },
+  {
+   "id": "ch08_manual",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 319
+  },
+  {
+   "id": "ch08_clearance",
+   "chapter": 8,
+   "tier": "servitor",
+   "genre": "servitor_record",
+   "date": 337
+  },
+  {
+   "id": "ch09_rule_of_the_hand",
+   "chapter": 9,
+   "tier": "mk1",
+   "genre": "manual_fragment",
+   "date": null
+  },
+  {
+   "id": "ch09_anais_left_foot",
+   "chapter": 9,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": 281
+  },
+  {
+   "id": "ch09_anais_water",
+   "chapter": 9,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": 284
+  },
+  {
+   "id": "ch09_bread_letter",
+   "chapter": 9,
+   "tier": "mk1",
+   "genre": "letter",
+   "date": 302
+  },
+  {
+   "id": "ch09_hmm_not_answer",
+   "chapter": 9,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 296
+  },
+  {
+   "id": "ch09_statutes",
+   "chapter": 9,
+   "tier": "mk2",
+   "genre": "manual_fragment",
+   "date": 305
+  },
+  {
+   "id": "ch09_restart_longue_eau",
+   "chapter": 9,
+   "tier": "mk2",
+   "genre": "recording",
+   "date": 318
+  },
+  {
+   "id": "ch09_maillard_plate",
+   "chapter": 9,
+   "tier": "mk2",
+   "genre": "journal",
+   "date": 327
+  },
+  {
+   "id": "ch09_first_ruin",
+   "chapter": 9,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 309
+  },
+  {
+   "id": "ch09_not_tonight",
+   "chapter": 9,
+   "tier": "mk3",
+   "genre": "letter",
+   "date": 333
+  },
+  {
+   "id": "ch09_way_to_sea",
+   "chapter": 9,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 336
+  },
+  {
+   "id": "ch09_before_you_leave",
+   "chapter": 9,
+   "tier": "mk3",
+   "genre": "manual_fragment",
+   "date": 340
+  },
+  {
+   "id": "ch10_departure",
+   "chapter": 10,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 62
+  },
+  {
+   "id": "ch10_gray_dust",
+   "chapter": 10,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 78
+  },
+  {
+   "id": "ch10_four_seconds",
+   "chapter": 10,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 97
+  },
+  {
+   "id": "ch10_keep_chairs",
+   "chapter": 10,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 117
+  },
+  {
+   "id": "ch10_before_questions",
+   "chapter": 10,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": 131
+  },
+  {
+   "id": "ch10_lights_out",
+   "chapter": 10,
+   "tier": "mk3",
+   "genre": "recording",
+   "date": null
+  },
+  {
+   "id": "trade_builder",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -112
+  },
+  {
+   "id": "trade_miner_smelter",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -118
+  },
+  {
+   "id": "trade_engineer",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -63
+  },
+  {
+   "id": "trade_logistician",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -44
+  },
+  {
+   "id": "trade_farmer",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -115
+  },
+  {
+   "id": "trade_herder_angler",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -99
+  },
+  {
+   "id": "trade_scout",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -87
+  },
+  {
+   "id": "trade_salvager",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -93
+  },
+  {
+   "id": "trade_astronaut",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": 64
+  },
+  {
+   "id": "trade_trader",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -88
+  },
+  {
+   "id": "trade_generalist",
+   "chapter": 12,
+   "tier": "trade",
+   "genre": "manual_fragment",
+   "date": -70
+  },
+  {
+   "id": "ch13_token_note",
+   "chapter": 13,
+   "tier": "mk2",
+   "genre": "stewardship_letter",
+   "date": 2
+  },
+  {
+   "id": "ch13_village_register",
+   "chapter": 13,
+   "tier": "mk2",
+   "genre": "ledger",
+   "date": 49
+  },
+  {
+   "id": "ch13_smith_neighbor",
+   "chapter": 13,
+   "tier": "mk1",
+   "genre": "letter",
+   "date": 53
+  },
+  {
+   "id": "ch13_nitwit_reminder",
+   "chapter": 13,
+   "tier": "mk1",
+   "genre": "journal",
+   "date": 176
+  },
+  {
+   "id": "ch13_market_notice",
+   "chapter": 13,
+   "tier": "mk3",
+   "genre": "service_note",
+   "date": 140
+  },
+  {
+   "id": "ch13_noe_count",
+   "chapter": 13,
+   "tier": "mk3",
+   "genre": "journal",
+   "date": 131
+  },
+  {
+   "id": "ch13_peddler_manual",
+   "chapter": 13,
+   "tier": "mk2",
+   "genre": "manual_fragment",
+   "date": 243
+  },
+  {
+   "id": "ch13_peddler_ledger",
+   "chapter": 13,
+   "tier": "mk3",
+   "genre": "ledger",
+   "date": 289
+  }
+ ],
+ "notes": [
+  "note_01",
+  "note_02",
+  "note_03",
+  "note_04",
+  "note_05",
+  "note_06",
+  "note_07",
+  "note_08",
+  "note_09",
+  "note_10",
+  "note_11",
+  "note_12",
+  "note_13",
+  "note_14",
+  "note_15",
+  "note_16",
+  "note_17",
+  "note_18",
+  "note_19",
+  "note_20",
+  "note_21",
+  "note_22",
+  "note_23",
+  "note_24",
+  "note_25",
+  "note_26",
+  "note_27",
+  "note_28",
+  "note_29",
+  "note_30",
+  "note_31",
+  "note_32",
+  "note_33",
+  "note_34",
+  "note_35",
+  "note_36",
+  "note_37",
+  "note_38",
+  "note_39",
+  "note_40"
+ ]
+}
