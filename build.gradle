@@ -50,6 +50,8 @@ minecraft {
 
         gameTestServer {
             property 'forge.enabledGameTestNamespaces', mod_id
+            // 1.0.6 : 662 GameTests dans un seul monde ; le tas par défaut (1/4 de la mémoire) ne suffit pas
+            jvmArgs '-Xmx4G'
         }
 
         data {
