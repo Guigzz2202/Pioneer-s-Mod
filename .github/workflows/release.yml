@@ -1,0 +1,54 @@
+name: Version
+
+# À chaque push sur main : si la version de gradle.properties (mod_version) n'a pas encore d'étiquette,
+# compile le mod, pose l'étiquette v<version> et publie le jar dans une Release GitHub.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Version du mod
+        id: version
+        run: |
+          v=$(grep -E '^mod_version=' gradle.properties | cut -d= -f2 | tr -d '\r')
+          echo "tag=v$v" >> "$GITHUB_OUTPUT"
+          if git rev-parse -q --verify "refs/tags/v$v" >/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-java@v4
+        if: steps.version.outputs.exists == 'false'
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        if: steps.version.outputs.exists == 'false'
+
+      - name: Compilation
+        if: steps.version.outputs.exists == 'false'
+        run: ./gradlew build --console=plain
+
+      - name: Étiquette et Release
+        if: steps.version.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.version.outputs.tag }}" build/libs/*.jar \
+            --target "$GITHUB_SHA" \
+            --title "Pioneer's ${{ steps.version.outputs.tag }}" \
+            --notes "Jar du mod pour Forge 1.20.1 (47.4.20). Notes de version : CHANGELOG.md."
