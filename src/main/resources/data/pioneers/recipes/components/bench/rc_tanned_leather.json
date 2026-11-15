@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wood_chips"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:tanned_leather",
+  "count": 1
+ }
+}

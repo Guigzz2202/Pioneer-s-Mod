@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:trappist_1b_obsidian_crust_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:trappist_1b_obsidian_crust_brick_wall",
+  "count": 6
+ }
+}

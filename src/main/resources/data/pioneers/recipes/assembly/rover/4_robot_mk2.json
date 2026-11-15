@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  ".....U....",
+  "...AMMA...",
+  "..RMCEMR..",
+  "...M..M...",
+  "...W..W..."
+ ],
+ "key": {
+  "U": {
+   "item": "pioneers:robot_core"
+  },
+  "R": {
+   "item": "pioneers:robot_arm"
+  },
+  "W": {
+   "item": "pioneers:robot_wheel"
+  },
+  "M": {
+   "tag": "forge:plates/venusium"
+  },
+  "C": {
+   "tag": "pioneers:circuits/advanced"
+  },
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "E": {
+   "item": "pioneers:advanced_electric_motor"
+  }
+ },
+ "result": {
+  "item": "pioneers:robot_mk2"
+ },
+ "energy": 12000000,
+ "duration": 400,
+ "research": "robotics"
+}

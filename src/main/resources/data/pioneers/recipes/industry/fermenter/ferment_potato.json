@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 6
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:vinasse",
+   "amount": 150
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 200
+  }
+ ]
+}

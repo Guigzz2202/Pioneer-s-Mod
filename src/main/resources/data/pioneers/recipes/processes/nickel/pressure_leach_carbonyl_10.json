@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "reduction_furnace",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cobalt_sulfate"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cobalt_dust",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 200
+  }
+ ],
+ "temperature": 800
+}

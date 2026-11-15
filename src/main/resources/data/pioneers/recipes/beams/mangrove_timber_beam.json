@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:mangrove_logs"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:mangrove_timber_beam",
+  "count": 1
+ }
+}

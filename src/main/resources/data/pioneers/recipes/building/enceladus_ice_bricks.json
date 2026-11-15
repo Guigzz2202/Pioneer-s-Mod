@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_enceladus_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:enceladus_ice_bricks",
+  "count": 4
+ }
+}

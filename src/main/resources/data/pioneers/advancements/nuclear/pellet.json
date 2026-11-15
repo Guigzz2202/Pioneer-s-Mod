@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:fuel_pellet"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.pellet.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.pellet.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:fuel_pellet"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/cascade"
+}

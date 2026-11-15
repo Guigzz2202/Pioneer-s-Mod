@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SPP",
+  "SPP",
+  "S  "
+ ],
+ "key": {
+  "S": {
+   "tag": "forge:rods/wooden"
+  },
+  "P": {
+   "tag": "minecraft:wooden_slabs"
+  }
+ },
+ "result": {
+  "item": "pioneers:plank_sail",
+  "count": 1
+ }
+}

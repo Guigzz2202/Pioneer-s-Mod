@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 50,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:jungle_planks"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:jungle_button",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resin_glue"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aquarium",
+   "count": 2
+  }
+ ]
+}

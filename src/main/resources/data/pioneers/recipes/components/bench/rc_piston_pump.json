@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pig_iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:leather_gasket"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:piston_pump",
+  "count": 1
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rail_works",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:electric_motor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/elite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_electric_locomotive",
+   "count": 1
+  }
+ ]
+}

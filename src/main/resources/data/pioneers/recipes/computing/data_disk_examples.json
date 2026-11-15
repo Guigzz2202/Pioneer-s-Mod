@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:data_disk"
+  },
+  {
+   "item": "minecraft:book"
+  }
+ ],
+ "result": {
+  "item": "pioneers:data_disk",
+  "count": 1,
+  "nbt": "{label:\"examples\"}"
+ }
+}

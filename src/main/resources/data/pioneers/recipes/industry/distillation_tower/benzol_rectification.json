@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 200,
+ "family": "distillation_tower",
+ "fluids": [
+  {
+   "fluid": "pioneers:benzol",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:benzene",
+   "amount": 750
+  },
+  {
+   "fluid": "pioneers:creosote",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 50
+  }
+ ],
+ "industrial": true
+}

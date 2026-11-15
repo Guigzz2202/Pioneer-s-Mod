@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:glazed_carrots",
+   "count": 2
+  }
+ ]
+}

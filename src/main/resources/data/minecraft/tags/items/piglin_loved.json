@@ -1,0 +1,14 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:gold_ingot",
+  "pioneers:gold_block",
+  "pioneers:raw_gold",
+  "pioneers:raw_gold_block",
+  "pioneers:gold_nugget",
+  "pioneers:gold_helmet",
+  "pioneers:gold_chestplate",
+  "pioneers:gold_leggings",
+  "pioneers:gold_boots"
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "order": 8,
+ "affinities": [
+  "spaceflight",
+  "nuclear"
+ ],
+ "feature": "",
+ "emblem": "pioneers:textures/gui/pioneer/vocation/astronaut.png",
+ "advantage": {
+  "trait": "cold_blood",
+  "modifiers": [
+   {
+    "key": "astronaut.breath_seconds",
+    "value": 10.0,
+    "unit": "abs"
+   }
+  ]
+ },
+ "defect": {
+  "trait": "astronaut_palate",
+  "modifiers": [
+   {
+    "key": "astronaut.food",
+    "value": -0.15,
+    "unit": "pct"
+   }
+  ]
+ }
+}

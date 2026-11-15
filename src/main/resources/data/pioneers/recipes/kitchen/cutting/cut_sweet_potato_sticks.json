@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sweet_potato"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:sweet_potato_sticks",
+   "count": 1
+  }
+ ]
+}

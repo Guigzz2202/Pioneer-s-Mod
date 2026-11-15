@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 335,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/vanadium_steel"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:vanadium_steel_nugget",
+   "count": 9
+  }
+ ]
+}

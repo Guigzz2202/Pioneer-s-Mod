@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_pluto_nitrogen_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_pluto_nitrogen_ice_slab",
+  "count": 6
+ }
+}

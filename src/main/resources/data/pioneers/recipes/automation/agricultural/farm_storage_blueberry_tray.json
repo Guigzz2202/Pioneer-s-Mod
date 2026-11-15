@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:blueberry"
+   },
+   "count": 9
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:blueberry_tray",
+   "count": 1
+  }
+ ]
+}

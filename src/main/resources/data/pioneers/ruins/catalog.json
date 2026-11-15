@@ -1,0 +1,238 @@
+{
+ "machines": {
+  "crusher": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "compressor": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "ore_separator": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "electrolyzer": {
+   "min_tier": 1,
+   "category": "electric",
+   "service": "workshop",
+   "weight": 3
+  },
+  "mixer": {
+   "min_tier": 1,
+   "category": "fluid",
+   "service": "workshop",
+   "weight": 3
+  },
+  "chemical_reactor": {
+   "min_tier": 1,
+   "category": "fluid",
+   "service": "workshop",
+   "weight": 3
+  },
+  "press": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "rolling_mill": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "wiremill": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "machining_center": {
+   "min_tier": 2,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 2
+  },
+  "extruder": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "bender": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "assembler": {
+   "min_tier": 1,
+   "category": "robotic",
+   "service": "workshop",
+   "weight": 3
+  },
+  "solid_combustion_generator": {
+   "min_tier": 2,
+   "category": "electric",
+   "service": "energy",
+   "weight": 2
+  },
+  "blast_furnace": {
+   "min_tier": 1,
+   "category": "thermal",
+   "service": "workshop",
+   "weight": 3
+  },
+  "hot_blast_stove": {
+   "min_tier": 1,
+   "category": "thermal",
+   "service": "workshop",
+   "weight": 3
+  },
+  "coke_oven": {
+   "min_tier": 1,
+   "category": "thermal",
+   "service": "workshop",
+   "weight": 3
+  },
+  "converter": {
+   "min_tier": 1,
+   "category": "thermal",
+   "service": "workshop",
+   "weight": 3
+  },
+  "arc_furnace": {
+   "min_tier": 1,
+   "category": "electric",
+   "service": "workshop",
+   "weight": 3
+  },
+  "bayer_digester": {
+   "min_tier": 1,
+   "category": "fluid",
+   "service": "workshop",
+   "weight": 3
+  },
+  "kroll_reactor": {
+   "min_tier": 1,
+   "category": "thermal",
+   "service": "workshop",
+   "weight": 3
+  },
+  "boiler": {
+   "min_tier": 1,
+   "category": "electric",
+   "service": "energy",
+   "weight": 3
+  },
+  "steam_turbine": {
+   "min_tier": 1,
+   "category": "electric",
+   "service": "energy",
+   "weight": 3
+  },
+  "cooling_tower": {
+   "min_tier": 1,
+   "category": "electric",
+   "service": "energy",
+   "weight": 3
+  },
+  "drill": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "pumpjack": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "water",
+   "weight": 3
+  },
+  "fluid_pump": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "water",
+   "weight": 3
+  },
+  "autoclave": {
+   "min_tier": 1,
+   "category": "fluid",
+   "service": "workshop",
+   "weight": 3
+  },
+  "fermenter": {
+   "min_tier": 1,
+   "category": "fluid",
+   "service": "workshop",
+   "weight": 3
+  },
+  "photolithograph": {
+   "min_tier": 1,
+   "category": "sensor",
+   "service": "archives",
+   "weight": 3
+  },
+  "pick_and_place": {
+   "min_tier": 1,
+   "category": "robotic",
+   "service": "archives",
+   "weight": 3
+  },
+  "bottler": {
+   "min_tier": 1,
+   "category": "robotic",
+   "service": "storage",
+   "weight": 3
+  },
+  "cryogenic_unit": {
+   "min_tier": 2,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 2
+  },
+  "distillation_column": {
+   "min_tier": 1,
+   "category": "fluid",
+   "service": "workshop",
+   "weight": 3
+  },
+  "semiconductor_fab": {
+   "min_tier": 1,
+   "category": "electronic",
+   "service": "archives",
+   "weight": 3
+  },
+  "gas_turbine": {
+   "min_tier": 1,
+   "category": "electric",
+   "service": "energy",
+   "weight": 3
+  },
+  "extractor": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "sawmill": {
+   "min_tier": 1,
+   "category": "motion",
+   "service": "workshop",
+   "weight": 3
+  },
+  "food_processor": {
+   "min_tier": 1,
+   "category": "fluid",
+   "service": "workshop",
+   "weight": 3
+  }
+ }
+}

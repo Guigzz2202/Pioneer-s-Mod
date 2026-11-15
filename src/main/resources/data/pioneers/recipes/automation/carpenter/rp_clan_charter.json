@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:ink_sac"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beeswax"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:clan_charter",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bottle"
+   },
+   "count": 2
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 200,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:lemonade",
+   "count": 2
+  }
+ ]
+}

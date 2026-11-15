@@ -1,0 +1,39 @@
+{
+ "result": "pioneers:coal",
+ "material": "coal",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  60000,
+  180000
+ ],
+ "outcrop": "pioneers:coal_outcrop",
+ "color": "#242424",
+ "fallback": 4,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 8
+  },
+  {
+   "biomes": "#minecraft:is_hill",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_mountain",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_swamp",
+   "weight": 8
+  },
+  {
+   "biomes": "#minecraft:is_forest",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_plains",
+   "weight": 8
+  }
+ ]
+}

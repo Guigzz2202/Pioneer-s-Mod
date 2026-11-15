@@ -1,0 +1,25 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:chalcopyrite",
+  "pioneers:pentlandite",
+  "pioneers:chromite",
+  "pioneers:vanadinite",
+  "pioneers:bauxite",
+  "pioneers:zircon_sand",
+  "pioneers:fluorite",
+  "pioneers:wolframite",
+  "pioneers:ilmenite",
+  "pioneers:argentite",
+  "pioneers:pitchblende",
+  "pioneers:kimberlite",
+  "pioneers:beryl",
+  "pioneers:corundum",
+  "pioneers:pegmatite",
+  "pioneers:olivine",
+  "pioneers:lazurite",
+  "pioneers:redstone_ore",
+  "pioneers:halite",
+  "pioneers:monazite"
+ ]
+}

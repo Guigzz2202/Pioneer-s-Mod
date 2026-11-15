@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/constantan"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:porcelain_insulator"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:thermocouple",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:hardened_steel_hoe_head"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:bindings"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:hardened_steel_hoe",
+  "count": 1
+ }
+}

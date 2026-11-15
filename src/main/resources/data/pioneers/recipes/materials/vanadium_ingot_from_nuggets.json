@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/vanadium"
+  },
+  {
+   "tag": "forge:nuggets/vanadium"
+  },
+  {
+   "tag": "forge:nuggets/vanadium"
+  },
+  {
+   "tag": "forge:nuggets/vanadium"
+  },
+  {
+   "tag": "forge:nuggets/vanadium"
+  },
+  {
+   "tag": "forge:nuggets/vanadium"
+  },
+  {
+   "tag": "forge:nuggets/vanadium"
+  },
+  {
+   "tag": "forge:nuggets/vanadium"
+  },
+  {
+   "tag": "forge:nuggets/vanadium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:vanadium_ingot",
+  "count": 1
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "shipyard",
+ "tier": 1,
+ "time": 450,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_ferry"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_engine_block"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:propeller"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_passenger_car"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/advanced"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_ferry",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:brown_mushroom"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:brown_mushroom_spores",
+   "count": 2
+  }
+ ]
+}

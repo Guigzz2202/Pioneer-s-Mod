@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:air_compressor"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:industrial_pressure_port",
+   "count": 1
+  }
+ ]
+}

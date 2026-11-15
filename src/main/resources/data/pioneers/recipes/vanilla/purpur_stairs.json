@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": [
+    {
+     "item": "minecraft:purpur_block"
+    },
+    {
+     "item": "minecraft:purpur_pillar"
+    }
+   ],
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:purpur_stairs",
+  "count": 4
+ }
+}

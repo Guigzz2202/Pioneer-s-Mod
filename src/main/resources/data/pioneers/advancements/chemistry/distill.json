@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:distillation_column"
+  },
+  "title": {
+   "translate": "advancements.pioneers.chemistry.distill.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.chemistry.distill.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_distillation_column"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:chemistry/pumpjack"
+}

@@ -1,0 +1,63 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:yellowcake"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.root.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.root.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false,
+  "background": "minecraft:textures/block/light_gray_concrete.png"
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:pitchblende_concentrate"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:yellowcake"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:relay"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ ]
+}

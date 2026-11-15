@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_croque_monsieur"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:croque_monsieur",
+   "count": 1
+  }
+ ]
+}

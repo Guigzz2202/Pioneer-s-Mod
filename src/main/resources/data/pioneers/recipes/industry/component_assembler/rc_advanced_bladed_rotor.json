@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bladed_rotor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_bearing"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_bladed_rotor",
+   "count": 2
+  }
+ ]
+}

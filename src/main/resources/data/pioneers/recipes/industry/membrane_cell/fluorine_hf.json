@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 160,
+ "family": "membrane_cell",
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 300
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:fluorine",
+   "amount": 400
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 400
+  }
+ ]
+}

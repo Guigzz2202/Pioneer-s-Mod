@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 200,
+ "family": "cnc_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:foundry_sand"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:raw_resin"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sand_mold",
+   "count": 2
+  }
+ ]
+}

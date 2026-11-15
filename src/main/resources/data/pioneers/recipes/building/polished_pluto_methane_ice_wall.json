@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_pluto_methane_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_pluto_methane_ice_wall",
+  "count": 6
+ }
+}

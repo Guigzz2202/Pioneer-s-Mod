@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:brine",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:salt",
+   "count": 2
+  },
+  {
+   "item": "pioneers:magnesium_chloride",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

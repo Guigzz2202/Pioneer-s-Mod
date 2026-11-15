@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "luthier",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:blank_music_disc"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:orange_dye"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:feather"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:music_disc_aube_sur_les_labours",
+  "count": 1
+ }
+}

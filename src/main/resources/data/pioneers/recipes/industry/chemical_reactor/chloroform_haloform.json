@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "fluids": [
+  {
+   "fluid": "pioneers:acetone",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:sodium_hypochlorite",
+   "amount": 600
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:chloroform",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:acetic_acid",
+   "amount": 100
+  }
+ ]
+}

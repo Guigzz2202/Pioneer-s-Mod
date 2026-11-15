@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_rope"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:sapling_bag",
+  "count": 1
+ }
+}

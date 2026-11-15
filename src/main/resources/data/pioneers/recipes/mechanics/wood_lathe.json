@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "I  ",
+  "RRR",
+  "LXL"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:ingots/iron"
+  },
+  "R": {
+   "tag": "forge:rods/wooden"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:wood_lathe",
+  "count": 1
+ }
+}

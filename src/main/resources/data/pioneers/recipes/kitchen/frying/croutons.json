@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:breadcrumbs"
+   },
+   "count": 1
+  }
+ ],
+ "time": 120,
+ "results": [
+  {
+   "item": "pioneers:croutons",
+   "count": 2
+  }
+ ]
+}

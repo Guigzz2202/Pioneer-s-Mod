@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 3,
+ "time": 45,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:gear_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_titanium",
+   "amount": 684
+  },
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 45
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_gear_blank",
+   "count": 1
+  },
+  {
+   "item": "pioneers:gear_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:titanium_nugget",
+   "count": 2
+  },
+  {
+   "item": "pioneers:titanium_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 342
+  }
+ ]
+}

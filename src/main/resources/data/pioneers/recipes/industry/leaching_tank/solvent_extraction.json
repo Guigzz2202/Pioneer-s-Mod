@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 120,
+ "family": "leaching_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:press_cake"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:plant_oil",
+   "amount": 200
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PPP",
+  "PMP",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/steel"
+  },
+  "M": {
+   "item": "pioneers:plate_mold"
+  }
+ },
+ "result": {
+  "item": "pioneers:plate_die",
+  "count": 1
+ }
+}

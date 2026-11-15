@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:uranus",
+ "breathable": false,
+ "hazard": "pressure",
+ "nitrogen": 0,
+ "gravity": 0.89,
+ "suit_tier": 4,
+ "temperature": -195
+}

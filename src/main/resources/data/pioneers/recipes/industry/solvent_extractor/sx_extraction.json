@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 200,
+ "family": "solvent_extractor",
+ "fluids": [
+  {
+   "fluid": "pioneers:uranium_solution",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:loaded_solvent",
+   "amount": 100
+  },
+  {
+   "fluid": "pioneers:acid_raffinate",
+   "amount": 1000
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:gold_plate"
+  },
+  {
+   "item": "pioneers:gold_plate"
+  },
+  {
+   "item": "pioneers:microchip"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_looting",
+  "count": 1
+ }
+}

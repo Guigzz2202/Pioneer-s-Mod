@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:breadcrumbs"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:croutons",
+   "count": 2
+  }
+ ]
+}

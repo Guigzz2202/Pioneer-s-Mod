@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 2,
+ "time": 360,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pgm_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pgm_residue",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:chloroplatinic_solution",
+   "amount": 1000
+  }
+ ],
+ "temperature": 150
+}

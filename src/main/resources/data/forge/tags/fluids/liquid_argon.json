@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:liquid_argon",
+  "pioneers:flowing_liquid_argon"
+ ]
+}

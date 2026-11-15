@@ -1,0 +1,31 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:crushed_ores/iron",
+  "#forge:crushed_ores/copper",
+  "#forge:crushed_ores/gold",
+  "#forge:crushed_ores/tin",
+  "#forge:crushed_ores/lead",
+  "#forge:crushed_ores/zinc",
+  "pioneers:crushed_chalcopyrite",
+  "pioneers:crushed_pentlandite",
+  "pioneers:crushed_chromite",
+  "pioneers:crushed_vanadinite",
+  "pioneers:crushed_bauxite",
+  "pioneers:crushed_zircon_sand",
+  "pioneers:crushed_fluorite",
+  "pioneers:crushed_wolframite",
+  "pioneers:crushed_ilmenite",
+  "pioneers:crushed_argentite",
+  "pioneers:crushed_pitchblende",
+  "pioneers:crushed_kimberlite",
+  "pioneers:crushed_beryl",
+  "pioneers:crushed_corundum",
+  "pioneers:crushed_pegmatite",
+  "pioneers:crushed_olivine",
+  "pioneers:crushed_lazurite",
+  "pioneers:crushed_redstone_ore",
+  "pioneers:crushed_halite",
+  "pioneers:crushed_monazite"
+ ]
+}

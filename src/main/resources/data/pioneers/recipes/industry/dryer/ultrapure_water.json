@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 60,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ultrapure_water",
+   "amount": 900
+  }
+ ]
+}

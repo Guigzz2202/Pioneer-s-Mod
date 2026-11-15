@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planks"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wooden_lath",
+   "count": 4
+  },
+  {
+   "item": "pioneers:sawdust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

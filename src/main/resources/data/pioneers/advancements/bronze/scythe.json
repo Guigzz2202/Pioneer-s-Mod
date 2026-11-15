@@ -1,0 +1,35 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:bronze_scythe"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.scythe.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.scythe.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "tag": "forge:tools/scythes"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:bronze/forged"
+}

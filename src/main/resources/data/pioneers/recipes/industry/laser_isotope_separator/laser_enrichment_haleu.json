@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge_cascade",
+ "tier": 3,
+ "time": 300,
+ "family": "laser_isotope_separator",
+ "gases": [
+  {
+   "gas": "pioneers:enriched_uranium_hexafluoride",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:haleu_hexafluoride",
+   "amount": 270
+  },
+  {
+   "gas": "pioneers:depleted_uranium_hexafluoride",
+   "amount": 730
+  }
+ ]
+}

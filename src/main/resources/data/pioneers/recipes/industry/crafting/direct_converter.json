@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_tile"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sulcite_hts_tape"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/niobium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk4"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:direct_converter",
+  "count": 8
+ }
+}

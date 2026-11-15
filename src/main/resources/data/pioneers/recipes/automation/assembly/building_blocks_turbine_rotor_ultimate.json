@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_bladed_rotor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_bearing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/tungsten"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:turbine_rotor_ultimate",
+   "count": 2
+  }
+ ]
+}

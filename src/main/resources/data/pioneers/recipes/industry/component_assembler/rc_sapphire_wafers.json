@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/sapphire"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_disc"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ultrapure_water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sapphire_wafer",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SKS",
+  "PGP",
+  "L L"
+ ],
+ "key": {
+  "S": {
+   "tag": "forge:seeds"
+  },
+  "K": {
+   "tag": "pioneers:tools/knives"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "G": {
+   "item": "pioneers:wooden_peg"
+  }
+ },
+ "result": {
+  "item": "pioneers:agricultural_bench",
+  "count": 1
+ }
+}

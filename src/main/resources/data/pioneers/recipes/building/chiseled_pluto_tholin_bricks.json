@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#",
+  "#"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:pluto_tholin_brick_slab"
+  }
+ },
+ "result": {
+  "item": "pioneers:chiseled_pluto_tholin_bricks",
+  "count": 1
+ }
+}

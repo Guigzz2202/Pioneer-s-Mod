@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bamboo_mosaic"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:bamboo_mosaic_slab",
+   "count": 6
+  }
+ ]
+}

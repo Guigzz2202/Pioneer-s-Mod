@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:mars_sand",
+  "pioneers:mars_rock",
+  "pioneers:mars_dark_sand",
+  "pioneers:mars_basalt",
+  "pioneers:mars_clay",
+  "pioneers:mars_layered_rock",
+  "pioneers:mars_ochre_rock",
+  "pioneers:mars_permafrost"
+ ]
+}

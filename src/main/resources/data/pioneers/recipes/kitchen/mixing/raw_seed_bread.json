@@ -1,0 +1,41 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sunflower_seeds"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 300,
+ "strokes": 8,
+ "results": [
+  {
+   "item": "pioneers:raw_seed_bread",
+   "count": 1
+  }
+ ]
+}

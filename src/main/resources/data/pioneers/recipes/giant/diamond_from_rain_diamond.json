@@ -1,0 +1,18 @@
+{
+ "conditions": [
+  {
+   "type": "forge:mod_loaded",
+   "modid": "mekanism"
+  }
+ ],
+ "type": "mekanism:enriching",
+ "input": {
+  "ingredient": {
+   "item": "pioneers:rain_diamond"
+  }
+ },
+ "output": {
+  "item": "pioneers:diamond",
+  "count": 2
+ }
+}

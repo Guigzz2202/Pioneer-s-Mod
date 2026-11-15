@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gripper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_bearing"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/silver"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:elite_assembler",
+  "count": 1
+ }
+}

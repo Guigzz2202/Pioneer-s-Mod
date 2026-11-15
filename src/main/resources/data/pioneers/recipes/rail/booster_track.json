@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "transporter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_track"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:booster_track",
+  "count": 4
+ }
+}

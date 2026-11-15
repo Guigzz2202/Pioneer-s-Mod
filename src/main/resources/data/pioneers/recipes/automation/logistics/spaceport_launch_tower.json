@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 0,
+ "time": 170,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:beams/galvanized_steel"
+   },
+   "count": 7
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/duralumin"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/duralumin"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:launch_tower",
+   "count": 6
+  }
+ ]
+}

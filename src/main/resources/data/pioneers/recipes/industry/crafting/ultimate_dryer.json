@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/tungsten"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_transformer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:zirconia_ceramic"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:propeller"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_dryer",
+  "count": 1
+ }
+}

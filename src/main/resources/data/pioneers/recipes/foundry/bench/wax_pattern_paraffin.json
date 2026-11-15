@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "molder",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:paraffin_wax"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:wax_pattern",
+  "count": 1
+ }
+}

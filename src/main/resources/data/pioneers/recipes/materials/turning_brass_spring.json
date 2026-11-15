@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:turning",
+ "input": {
+  "tag": "forge:rods/brass"
+ },
+ "count": 2,
+ "turns": 4,
+ "results": [
+  {
+   "item": "pioneers:brass_spring",
+   "count": 1
+  }
+ ]
+}

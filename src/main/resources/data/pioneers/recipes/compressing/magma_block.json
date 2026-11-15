@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "minecraft:magma_cream"
+ },
+ "count": 4,
+ "result": {
+  "item": "minecraft:magma_block",
+  "count": 1
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bronze_mortar_bowl"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:bronze_mortar",
+  "count": 1
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:mangrove_plank"
+  },
+  {
+   "item": "pioneers:mangrove_plank"
+  },
+  {
+   "item": "pioneers:mangrove_plank"
+  },
+  {
+   "item": "pioneers:mangrove_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:mangrove_planks",
+  "count": 1
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:oil_transformer"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dry_transformer",
+   "count": 2
+  }
+ ]
+}

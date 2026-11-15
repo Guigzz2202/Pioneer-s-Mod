@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:red_cabbage"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mayonnaise"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bowl"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 5,
+ "results": [
+  {
+   "item": "pioneers:coleslaw",
+   "count": 2
+  }
+ ]
+}

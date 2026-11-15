@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 0,
+ "time": 100,
+ "family": "desalter",
+ "fluids": [
+  {
+   "fluid": "pioneers:sour_crude_oil",
+   "amount": 1000
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:salt",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sour_crude_oil",
+   "amount": 980
+  },
+  {
+   "fluid": "pioneers:produced_water",
+   "amount": 120
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:aging",
+ "fluid": {
+  "fluid": "pioneers:cider",
+  "amount": 1000
+ },
+ "time": 36000,
+ "fluid_result": {
+  "fluid": "pioneers:vinegar",
+  "amount": 1000
+ }
+}

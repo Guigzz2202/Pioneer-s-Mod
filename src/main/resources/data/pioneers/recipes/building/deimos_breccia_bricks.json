@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_deimos_breccia"
+  }
+ },
+ "result": {
+  "item": "pioneers:deimos_breccia_bricks",
+  "count": 4
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cover_frame",
+   "count": 4
+  }
+ ]
+}

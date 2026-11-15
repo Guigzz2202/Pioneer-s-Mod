@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "item": "minecraft:shears"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/orange"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_desert_top",
+  "count": 1
+ }
+}

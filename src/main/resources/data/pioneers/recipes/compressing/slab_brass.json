@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:storage_blocks/brass"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:brass_slab",
+  "count": 1
+ }
+}

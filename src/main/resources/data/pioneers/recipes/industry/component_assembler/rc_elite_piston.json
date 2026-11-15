@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_piston"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/titanium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston_rod"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:metal_gasket"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_valve"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vanadium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_piston",
+   "count": 2
+  }
+ ]
+}

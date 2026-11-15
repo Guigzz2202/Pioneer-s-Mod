@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:assembly",
+ "station": "module",
+ "pattern": [
+  "aabb......",
+  "...PPPP...",
+  "...PXXP...",
+  "...PPPP...",
+  ".........."
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:aluminium_fuselage_panel"
+  },
+  "X": {
+   "tag": "forge:chests/wooden"
+  },
+  "a": {
+   "tag": "forge:rings/duralumin"
+  },
+  "b": {
+   "tag": "forge:sheets/magnesium"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_module_cargo_items"
+ },
+ "energy": 6000000,
+ "duration": 200,
+ "blueprint": "pioneers:rocket_blueprint_cargo"
+}

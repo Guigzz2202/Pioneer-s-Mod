@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/constantan"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:porcelain_insulator"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:thermocouple",
+  "count": 2
+ }
+}

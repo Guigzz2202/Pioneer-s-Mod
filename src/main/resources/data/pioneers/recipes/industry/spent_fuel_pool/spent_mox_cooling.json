@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "spent_fuel_pool",
+ "tier": 0,
+ "time": 3600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:spent_mox_assembly_hot"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:spent_mox_assembly",
+   "count": 1
+  }
+ ],
+ "industrial": true
+}

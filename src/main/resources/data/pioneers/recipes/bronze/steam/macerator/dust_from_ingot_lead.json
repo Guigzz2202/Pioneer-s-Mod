@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "macerator",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/lead"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:lead_dust",
+  "count": 1
+ },
+ "time": 120
+}

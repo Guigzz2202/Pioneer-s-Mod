@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "compressor",
+ "tier": 2,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_dust"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_compact",
+   "count": 1
+  }
+ ]
+}

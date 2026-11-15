@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:pottery_kiln"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.kiln.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.kiln.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "kiln"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:bronze/pottery"
+}

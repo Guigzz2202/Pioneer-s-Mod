@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 1,
+ "time": 400,
+ "family": "quench_tank",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:sheets/steel"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_saw_blade",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 300
+  }
+ ]
+}

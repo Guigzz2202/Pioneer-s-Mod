@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 500,
+ "family": "plasma_sprayer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iridium_rod"
+   },
+   "count": 6
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iridium_crucible",
+   "count": 2
+  }
+ ]
+}

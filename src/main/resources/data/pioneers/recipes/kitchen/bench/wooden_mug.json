@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  },
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:wooden_mug",
+  "count": 2
+ }
+}

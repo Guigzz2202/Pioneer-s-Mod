@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_verdigris_rock"
+ },
+ "result": "pioneers:polished_verdigris_rock_stairs",
+ "count": 1
+}

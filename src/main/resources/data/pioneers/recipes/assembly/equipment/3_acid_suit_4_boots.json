@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "aa........",
+  "..........",
+  "...M..M...",
+  "..MP..MM..",
+  "..AA..AA.."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "M": {
+   "tag": "forge:plates/marsium"
+  },
+  "P": {
+   "item": "pioneers:thermal_suit_boots"
+  },
+  "a": {
+   "tag": "forge:plates/phobite"
+  }
+ },
+ "result": {
+  "item": "pioneers:acid_suit_boots"
+ },
+ "energy": 30000000,
+ "duration": 500,
+ "research": "acid_suit"
+}

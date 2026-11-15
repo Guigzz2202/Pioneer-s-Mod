@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:broccoli"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:broccoli_crate",
+  "count": 1
+ }
+}

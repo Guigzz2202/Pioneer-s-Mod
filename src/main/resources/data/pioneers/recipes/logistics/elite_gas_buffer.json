@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_gas_buffer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:upgrade_kit_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire_glass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:elite_gas_buffer",
+  "count": 1
+ }
+}

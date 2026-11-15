@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 0,
+ "time": 120,
+ "family": "cyclone_separator",
+ "gases": [
+  {
+   "gas": "pioneers:zinc_vapor",
+   "amount": 720
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zinc_dust",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:air",
+   "amount": 100
+  }
+ ]
+}

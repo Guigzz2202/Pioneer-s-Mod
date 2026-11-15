@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:wheat"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "minecraft:hay_block",
+  "count": 1
+ }
+}

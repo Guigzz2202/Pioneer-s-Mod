@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:fermenting",
+ "fluid": {
+  "fluid": "pioneers:grape_must",
+  "amount": 1000
+ },
+ "time": 12000,
+ "fluid_result": {
+  "fluid": "pioneers:wine",
+  "amount": 1000
+ }
+}

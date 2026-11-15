@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lanolin"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:grease",
+   "count": 3
+  }
+ ]
+}

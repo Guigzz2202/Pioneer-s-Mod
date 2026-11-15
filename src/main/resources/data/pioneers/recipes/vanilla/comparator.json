@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:redstone_torch"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/quartz"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stone"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:comparator",
+  "count": 1
+ }
+}

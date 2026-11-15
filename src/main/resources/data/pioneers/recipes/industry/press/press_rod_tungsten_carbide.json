@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 3,
+ "time": 500,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/tungsten_carbide"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rod_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_carbide_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:rod_die",
+   "count": 1
+  }
+ ]
+}

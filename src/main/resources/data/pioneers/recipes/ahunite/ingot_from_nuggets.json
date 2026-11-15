@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:nuggets/ahunite"
+  }
+ },
+ "result": {
+  "item": "pioneers:ahunite_ingot"
+ }
+}

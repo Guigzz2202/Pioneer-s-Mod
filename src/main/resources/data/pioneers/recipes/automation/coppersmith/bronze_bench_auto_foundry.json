@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crucible_furnace"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fire_brick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/bronze"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:auto_foundry",
+   "count": 1
+  }
+ ]
+}

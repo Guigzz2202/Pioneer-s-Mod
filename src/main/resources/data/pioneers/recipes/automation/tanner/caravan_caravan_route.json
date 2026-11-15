@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/bronze"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:caravan_route",
+   "count": 1
+  }
+ ]
+}

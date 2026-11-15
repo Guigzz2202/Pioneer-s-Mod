@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bayer_digester",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bauxite_concentrate"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:red_mud",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sodium_aluminate_liquor",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:red_mud",
+   "amount": 900
+  }
+ ],
+ "pressure": 5,
+ "air": 150
+}

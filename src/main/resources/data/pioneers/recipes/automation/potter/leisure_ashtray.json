@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "compressor",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ashtray",
+   "count": 1
+  }
+ ]
+}

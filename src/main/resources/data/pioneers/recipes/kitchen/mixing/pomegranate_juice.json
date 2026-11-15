@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pomegranate"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bottle"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:pomegranate_juice",
+   "count": 1
+  }
+ ]
+}

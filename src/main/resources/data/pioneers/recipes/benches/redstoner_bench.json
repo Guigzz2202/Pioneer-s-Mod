@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "RFR",
+  "PGP",
+  "L L"
+ ],
+ "key": {
+  "R": {
+   "tag": "forge:wires/copper"
+  },
+  "F": {
+   "tag": "pioneers:tools/files"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "G": {
+   "item": "pioneers:wooden_peg"
+  }
+ },
+ "result": {
+  "item": "pioneers:redstoner_bench",
+  "count": 1
+ }
+}

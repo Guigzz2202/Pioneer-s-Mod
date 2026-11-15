@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 0,
+ "time": 200,
+ "family": "decanter",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:oil_sludge"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:sand",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:raw_oil",
+   "amount": 200
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 400
+  }
+ ]
+}

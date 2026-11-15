@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:sandstone"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:cut_sandstone",
+  "count": 4
+ }
+}

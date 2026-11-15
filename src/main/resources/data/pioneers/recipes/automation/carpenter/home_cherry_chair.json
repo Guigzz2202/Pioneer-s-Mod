@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:cherry_planks"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_peg"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cherry_chair",
+   "count": 1
+  }
+ ]
+}

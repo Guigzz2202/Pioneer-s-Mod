@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rail_works",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:steel_boiler_shell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/babbitt"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_steam_locomotive",
+   "count": 1
+  }
+ ]
+}

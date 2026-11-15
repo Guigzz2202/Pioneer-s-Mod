@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fresh_pasta"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/shellfish"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato_sauce"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:seafood_pasta",
+   "count": 2
+  }
+ ]
+}

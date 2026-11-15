@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#  ",
+  "## ",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:cobbled_mars_layered_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:cobbled_mars_layered_rock_stairs",
+  "count": 4
+ }
+}

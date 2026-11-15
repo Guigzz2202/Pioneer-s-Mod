@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fluorite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/topaz"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:polymer_pellets"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ptfe_gasket",
+   "count": 8
+  }
+ ]
+}

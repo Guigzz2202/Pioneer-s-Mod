@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "press",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:copper_foil",
+  "count": 3
+ },
+ "time": 60
+}

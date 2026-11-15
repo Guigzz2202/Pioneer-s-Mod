@@ -1,0 +1,13 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_turbine",
+ "tier": 0,
+ "time": 120,
+ "gases": [
+  {
+   "gas": "pioneers:wood_gas",
+   "amount": 400
+  }
+ ],
+ "energy": 2048
+}

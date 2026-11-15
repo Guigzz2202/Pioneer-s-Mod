@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pastry_dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smoked_bacon"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_quiche",
+   "count": 1
+  }
+ ]
+}

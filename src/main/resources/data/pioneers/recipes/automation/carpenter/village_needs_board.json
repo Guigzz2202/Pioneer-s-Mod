@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_peg"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:needs_board",
+   "count": 1
+  }
+ ]
+}

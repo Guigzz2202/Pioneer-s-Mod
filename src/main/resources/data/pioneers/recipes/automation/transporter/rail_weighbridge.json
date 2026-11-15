@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_track"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:comparator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:weighbridge",
+   "count": 1
+  }
+ ]
+}

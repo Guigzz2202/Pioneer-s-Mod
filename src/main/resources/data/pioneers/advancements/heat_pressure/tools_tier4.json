@@ -1,0 +1,63 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:tungsten_carbide_pickaxe"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.tools_tier4.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.tools_tier4.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:tungsten_carbide_pickaxe"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:vanadium_steel_pickaxe"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:stellite_pickaxe"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/tools_tier3"
+}

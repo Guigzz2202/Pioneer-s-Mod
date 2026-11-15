@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_primitive_01",
+ "display": {
+  "icon": {
+   "item": "pioneers:mechanical_sifter"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_primitive_02.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_primitive_02.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

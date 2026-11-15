@@ -1,0 +1,105 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "refectory",
+ "variant": 2,
+ "min_tier": 1,
+ "size": [
+  9,
+  8,
+  6
+ ],
+ "palette": [
+  "minecraft:spruce_planks",
+  "minecraft:stone_bricks",
+  "minecraft:bricks",
+  "minecraft:spruce_stairs[facing=north,half=bottom]",
+  "minecraft:chest[facing=west,type=single,waterlogged=false]",
+  "minecraft:spruce_slab[type=top]",
+  "minecraft:cauldron",
+  "minecraft:barrel[facing=up,open=false]",
+  "minecraft:spruce_stairs[facing=south,half=bottom]",
+  "minecraft:smoker[facing=west,lit=false]",
+  "minecraft:heavy_weighted_pressure_plate",
+  "minecraft:flower_pot",
+  "minecraft:glass_pane",
+  "minecraft:cobblestone",
+  "minecraft:gravel",
+  "minecraft:spruce_slab[type=bottom]",
+  "minecraft:cracked_stone_bricks",
+  "minecraft:cobweb"
+ ],
+ "layers": [
+  [
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa"
+  ],
+  [
+   "bccc.cccb",
+   "c.dddddec",
+   "c.fffff.c",
+   "c.fffffgc",
+   "chiiiiijc",
+   "bcccccccb"
+  ],
+  [
+   "bccc.cccb",
+   "c.......c",
+   "..klklk..",
+   "c.klklk.c",
+   "m..nop...",
+   "bc.c.c.cb"
+  ],
+  [
+   "bcccccccq",
+   "c.......c",
+   "c...r...c",
+   "c.......c",
+   "c........",
+   "qcc......"
+  ],
+  [
+   "iiiiiiiii",
+   "c.......c",
+   "c.......c",
+   "c........",
+   "c........",
+   "ddd......"
+  ],
+  [
+   ".........",
+   "iiiiiiiii",
+   "c.......c",
+   "c.......c",
+   "ddd......",
+   "........."
+  ],
+  [
+   ".........",
+   ".........",
+   "iiii.....",
+   "ddd......",
+   ".........",
+   "........."
+  ],
+  [
+   ".........",
+   ".........",
+   ".........",
+   ".........",
+   ".........",
+   "........."
+  ]
+ ],
+ "chests": [
+  [
+   7,
+   1,
+   1
+  ]
+ ],
+ "frames": []
+}

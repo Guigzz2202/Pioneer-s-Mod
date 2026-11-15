@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "aa........",
+  "..MM..MM..",
+  "..MAOPAM..",
+  "...MCCM...",
+  "...MMMM..."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/stainless_steel"
+  },
+  "C": {
+   "tag": "pioneers:circuits/advanced"
+  },
+  "M": {
+   "tag": "forge:plates/lunarium"
+  },
+  "O": {
+   "item": "pioneers:advanced_gas_buffer"
+  },
+  "P": {
+   "item": "pioneers:space_suit_chestplate"
+  },
+  "a": {
+   "tag": "forge:plates/netherite"
+  }
+ },
+ "result": {
+  "item": "pioneers:thermal_suit_chestplate"
+ },
+ "energy": 12000000,
+ "duration": 400,
+ "research": "thermal_suit"
+}

@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/duralumin"
+  },
+  {
+   "tag": "forge:nuggets/duralumin"
+  },
+  {
+   "tag": "forge:nuggets/duralumin"
+  },
+  {
+   "tag": "forge:nuggets/duralumin"
+  },
+  {
+   "tag": "forge:nuggets/duralumin"
+  },
+  {
+   "tag": "forge:nuggets/duralumin"
+  },
+  {
+   "tag": "forge:nuggets/duralumin"
+  },
+  {
+   "tag": "forge:nuggets/duralumin"
+  },
+  {
+   "tag": "forge:nuggets/duralumin"
+  }
+ ],
+ "result": {
+  "item": "pioneers:duralumin_ingot",
+  "count": 1
+ }
+}

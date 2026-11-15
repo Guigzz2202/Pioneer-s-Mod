@@ -1,0 +1,76 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:basic_radiator"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.root.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.root.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false,
+  "background": "minecraft:textures/block/magma.png"
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:basic_radiator"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:air_compressor"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:basic_heat_buffer"
+      ]
+     }
+    ]
+   }
+  },
+  "c3": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:electric_heater"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2",
+   "c3"
+  ]
+ ]
+}

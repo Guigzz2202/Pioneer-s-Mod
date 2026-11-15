@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "pioneers:hopped_wort",
+  "amount": 1000
+ },
+ "time": 12000,
+ "results": [
+  {
+   "item": "pioneers:yeast",
+   "count": 2
+  }
+ ],
+ "fluid_result": {
+  "fluid": "pioneers:beer",
+  "amount": 1000
+ }
+}

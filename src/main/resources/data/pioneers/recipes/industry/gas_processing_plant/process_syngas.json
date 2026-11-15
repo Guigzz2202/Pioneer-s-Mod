@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 0,
+ "time": 200,
+ "family": "gas_processing_plant",
+ "fluids": [
+  {
+   "fluid": "pioneers:amine_solution",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:syngas",
+   "amount": 4000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:amine_solution",
+   "amount": 45
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 2400
+  },
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 1200
+  },
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 300
+  }
+ ],
+ "industrial": true
+}

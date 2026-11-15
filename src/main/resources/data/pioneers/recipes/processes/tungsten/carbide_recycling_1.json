@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:carbide_cutting_tool"
+ },
+ "count": 5,
+ "result": {
+  "item": "pioneers:carbide_scrap",
+  "count": 1
+ }
+}

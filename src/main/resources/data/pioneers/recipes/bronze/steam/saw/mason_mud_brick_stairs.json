@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:mud_bricks"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:mud_brick_stairs",
+  "count": 4
+ },
+ "time": 40
+}

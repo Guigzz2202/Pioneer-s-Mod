@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:pizza"
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "pioneers:pizza",
+     "properties": {
+      "bites": "0"
+     }
+    }
+   ]
+  }
+ ]
+}

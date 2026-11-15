@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/lead"
+  }
+ ],
+ "result": {
+  "item": "pioneers:lead_nugget",
+  "count": 9
+ }
+}

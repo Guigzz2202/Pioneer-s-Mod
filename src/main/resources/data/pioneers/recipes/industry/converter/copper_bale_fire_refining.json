@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "converter",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:copper_scrap_bale"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:blister_copper",
+   "count": 1,
+   "chance": 0.95
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.2
+  }
+ ]
+}

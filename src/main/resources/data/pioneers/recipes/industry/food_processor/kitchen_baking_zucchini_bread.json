@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_zucchini_bread"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zucchini_bread",
+   "count": 1
+  }
+ ]
+}

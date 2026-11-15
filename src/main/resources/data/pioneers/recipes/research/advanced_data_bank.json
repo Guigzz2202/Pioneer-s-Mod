@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_data_bank"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hard_disk_drive"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:advanced_data_bank",
+  "count": 1
+ }
+}

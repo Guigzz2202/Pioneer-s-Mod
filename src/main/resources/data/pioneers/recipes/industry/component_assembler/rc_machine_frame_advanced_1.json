@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/duralumin"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_screw"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gasket"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:machine_frame_advanced",
+   "count": 2
+  }
+ ]
+}

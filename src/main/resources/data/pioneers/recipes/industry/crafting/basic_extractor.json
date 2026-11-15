@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cast_iron_valve"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_extractor",
+  "count": 1
+ }
+}

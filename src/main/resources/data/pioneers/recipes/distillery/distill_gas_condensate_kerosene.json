@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillery",
+ "tier": 0,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:gas_condensate",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:kerosene",
+   "amount": 150
+  }
+ ]
+}

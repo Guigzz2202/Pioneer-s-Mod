@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_wire"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_bolt"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:amorphous_core_transformer",
+   "count": 2
+  }
+ ]
+}

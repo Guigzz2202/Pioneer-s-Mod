@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "transporter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bamboo_fishing_rod"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:carrot_on_a_stick",
+  "count": 1
+ }
+}

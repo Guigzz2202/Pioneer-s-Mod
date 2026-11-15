@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/zirconium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryogenic_valve"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_chemical_reactor",
+   "count": 1
+  }
+ ]
+}

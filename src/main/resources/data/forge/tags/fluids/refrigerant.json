@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:refrigerant",
+  "pioneers:flowing_refrigerant"
+ ]
+}

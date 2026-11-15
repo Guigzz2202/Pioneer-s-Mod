@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:graphite"
+ },
+ "count": 2,
+ "result": {
+  "item": "pioneers:green_anode",
+  "count": 2
+ },
+ "binder": {
+  "item": "pioneers:pitch"
+ },
+ "binder_count": 1
+}

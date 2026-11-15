@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:computer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vector_coprocessor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:isotope_standard"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:research_table",
+  "count": 1
+ }
+}

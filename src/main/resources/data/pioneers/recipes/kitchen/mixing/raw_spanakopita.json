@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pastry_dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:spinach"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cheese"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_spanakopita",
+   "count": 1
+  }
+ ]
+}

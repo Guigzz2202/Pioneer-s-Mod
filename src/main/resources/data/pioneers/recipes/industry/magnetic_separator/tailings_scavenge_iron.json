@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 1,
+ "time": 200,
+ "family": "magnetic_separator",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tailings"
+   },
+   "count": 8
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_concentrate",
+   "count": 1
+  },
+  {
+   "item": "minecraft:sand",
+   "count": 4
+  }
+ ]
+}

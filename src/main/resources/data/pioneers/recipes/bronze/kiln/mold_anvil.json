@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:unfired_anvil_mold"
+ },
+ "temperature": 650,
+ "time": 600,
+ "result": {
+  "item": "pioneers:anvil_mold",
+  "count": 1
+ }
+}

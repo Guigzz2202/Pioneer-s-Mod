@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "family": "cold_header",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rings/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:press_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:brass_connector",
+   "count": 8
+  },
+  {
+   "item": "pioneers:press_die",
+   "count": 1
+  }
+ ]
+}

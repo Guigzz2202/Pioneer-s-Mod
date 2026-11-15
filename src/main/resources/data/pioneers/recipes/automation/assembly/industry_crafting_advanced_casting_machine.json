@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/vanadium_steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alumina_ceramic"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:press_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_casting_machine",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:corn"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:corn_meal",
+  "count": 1
+ }
+}

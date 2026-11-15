@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:glass"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:cyan_dye"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:cyan_stained_glass",
+  "count": 8
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lanolin",
+   "count": 1
+  },
+  {
+   "item": "minecraft:string",
+   "count": 4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 90
+  }
+ ]
+}

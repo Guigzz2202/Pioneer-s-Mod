@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:dandelion"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:yellow_dye",
+  "count": 2
+ },
+ "time": 120
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ferrite_magnet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_wire"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:loudspeaker",
+  "count": 1
+ }
+}

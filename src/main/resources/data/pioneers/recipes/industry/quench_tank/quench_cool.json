@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 20,
+ "family": "quench_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hot_steel_bloom"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:coolant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_bloom",
+   "count": 1
+  }
+ ]
+}

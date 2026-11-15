@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 170,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/platinum"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alumina_ceramic"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:heating_coil_advanced",
+   "count": 2
+  }
+ ]
+}

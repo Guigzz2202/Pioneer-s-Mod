@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_rope"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:drying_rack",
+  "count": 1
+ }
+}

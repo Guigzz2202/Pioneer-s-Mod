@@ -1,0 +1,50 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:feeder"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm.feeder.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm.feeder.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:feeder"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:water_trough"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:farm/root"
+}

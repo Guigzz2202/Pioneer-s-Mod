@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:plum"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:breadcrumbs"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:plum_dumplings",
+   "count": 3
+  }
+ ]
+}

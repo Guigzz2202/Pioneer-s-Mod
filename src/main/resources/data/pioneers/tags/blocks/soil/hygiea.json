@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:hygiea_carbon_crust",
+  "pioneers:hygiea_regolith",
+  "pioneers:hygiea_rock"
+ ]
+}

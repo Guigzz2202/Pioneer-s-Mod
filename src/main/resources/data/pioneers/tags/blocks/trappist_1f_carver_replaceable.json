@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:trappist_1f_ice",
+  "pioneers:trappist_1f_snow",
+  "pioneers:trappist_1f_rock",
+  "pioneers:trappist_1f_blue_ice"
+ ]
+}

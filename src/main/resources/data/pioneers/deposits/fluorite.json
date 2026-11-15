@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:fluorite",
+ "material": "fluorite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#AA78DC",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 4
+  },
+  {
+   "biomes": "#minecraft:is_forest",
+   "weight": 3
+  }
+ ]
+}

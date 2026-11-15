@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "CUC",
+  "PCP"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/stainless_steel"
+  },
+  "C": {
+   "item": "pioneers:vitrified_waste_canister"
+  },
+  "U": {
+   "tag": "forge:plates/copper"
+  }
+ },
+ "result": {
+  "item": "pioneers:waste_package",
+  "count": 1
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:treated_wood"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:treated_tie",
+  "count": 6
+ }
+}

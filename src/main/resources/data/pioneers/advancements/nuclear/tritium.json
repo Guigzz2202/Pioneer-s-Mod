@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:irradiated_lithium_target"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.tritium.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.tritium.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_hot_cell"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/hot_cell"
+}

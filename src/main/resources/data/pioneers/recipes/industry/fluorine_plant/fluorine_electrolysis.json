@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 160,
+ "family": "fluorine_plant",
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:fluorine",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "industrial": true
+}

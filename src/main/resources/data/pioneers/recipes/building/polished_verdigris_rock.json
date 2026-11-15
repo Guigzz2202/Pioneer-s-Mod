@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:verdigris_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_verdigris_rock",
+  "count": 4
+ }
+}

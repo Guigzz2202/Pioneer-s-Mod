@@ -1,0 +1,61 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:derelict_controller_mk1"
+  },
+  "title": {
+   "translate": "advancements.pioneers.ruins.root.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.ruins.root.description"
+  },
+  "background": "pioneers:textures/block/ruins/casing_mk1_worn.png",
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "scrap": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "tag": "pioneers:scrap"
+     }
+    ]
+   }
+  },
+  "page": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:lore_page"
+      ]
+     }
+    ]
+   }
+  },
+  "note": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:parchment_note"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "scrap",
+   "page",
+   "note"
+  ]
+ ]
+}

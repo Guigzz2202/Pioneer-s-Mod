@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/iron"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:torch"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:lantern",
+  "count": 1
+ }
+}

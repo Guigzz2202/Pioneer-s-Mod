@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:warped_planks"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hay_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:warped_dog_kennel",
+  "count": 1
+ }
+}

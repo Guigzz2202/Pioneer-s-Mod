@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 2,
+ "time": 300,
+ "family": "plasma_sprayer",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_dust"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nichrome_dust"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:diamond_disc",
+   "count": 4
+  }
+ ]
+}

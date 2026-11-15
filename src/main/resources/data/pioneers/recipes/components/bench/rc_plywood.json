@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:wood_veneer"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resin_glue"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:plywood",
+  "count": 1
+ }
+}

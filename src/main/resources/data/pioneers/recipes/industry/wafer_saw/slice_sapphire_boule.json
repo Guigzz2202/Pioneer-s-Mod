@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 1,
+ "time": 300,
+ "family": "wafer_saw",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire_boule"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sapphire",
+   "count": 5
+  },
+  {
+   "item": "pioneers:sapphire_dust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

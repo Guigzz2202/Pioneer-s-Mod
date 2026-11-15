@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 1,
+ "time": 200,
+ "family": "air_separation_unit",
+ "fluid_results": [
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 1200
+  }
+ ],
+ "industrial": true
+}

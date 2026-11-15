@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:sentinel_guardian",
+    "pioneers:sentinel_patroller",
+    "pioneers:sentinel_turret",
+    "pioneers:sentinel_repairer",
+    "pioneers:sentinel_foreman"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/blue"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/brass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_railwayman_top",
+   "count": 1
+  }
+ ]
+}

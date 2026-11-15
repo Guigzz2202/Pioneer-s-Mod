@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:nuggets/terminite"
+  }
+ },
+ "result": {
+  "item": "pioneers:terminite_ingot"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:apple_leaves",
+  "pioneers:pear_leaves",
+  "pioneers:cherry_leaves",
+  "pioneers:apricot_leaves",
+  "pioneers:peach_leaves",
+  "pioneers:plum_leaves",
+  "pioneers:orange_leaves",
+  "pioneers:lemon_leaves",
+  "pioneers:pomegranate_leaves",
+  "pioneers:mango_leaves",
+  "pioneers:banana_leaves",
+  "pioneers:olive_leaves"
+ ]
+}

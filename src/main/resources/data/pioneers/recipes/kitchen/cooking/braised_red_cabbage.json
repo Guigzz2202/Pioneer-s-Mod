@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:red_cabbage"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:apple"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinegar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  }
+ ],
+ "time": 420,
+ "results": [
+  {
+   "item": "pioneers:braised_red_cabbage",
+   "count": 2
+  }
+ ]
+}

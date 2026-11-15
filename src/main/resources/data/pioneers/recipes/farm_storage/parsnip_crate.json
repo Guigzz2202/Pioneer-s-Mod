@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:parsnip"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:parsnip_crate",
+  "count": 1
+ }
+}

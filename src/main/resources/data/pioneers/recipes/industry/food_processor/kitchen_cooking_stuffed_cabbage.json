@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 270,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:red_cabbage"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:minced_meat"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:white_rice"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato_sauce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stuffed_cabbage",
+   "count": 2
+  }
+ ]
+}

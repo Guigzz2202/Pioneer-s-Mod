@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 48,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:mango"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:yogurt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bottle"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "tag": "forge:milk",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mango_lassi",
+   "count": 1
+  }
+ ]
+}

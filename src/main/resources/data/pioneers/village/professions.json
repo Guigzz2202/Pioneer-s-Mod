@@ -1,0 +1,1716 @@
+{
+ "minecraft:armorer": {
+  "key": "armorer",
+  "standard": {
+   "sells": [
+    {
+     "item": "pioneers:copper_ingot",
+     "count": 1
+    },
+    {
+     "item": "pioneers:lead_ingot",
+     "count": 1
+    },
+    {
+     "item": "pioneers:zinc_ingot",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_ingot",
+     "count": 1
+    },
+    {
+     "item": "pioneers:tin_ingot",
+     "count": 1
+    },
+    {
+     "item": "pioneers:iron_ingot",
+     "count": 1
+    },
+    {
+     "item": "pioneers:copper_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:iron_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:copper_hoe",
+     "count": 1
+    },
+    {
+     "item": "pioneers:copper_sword",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_sword",
+     "count": 1
+    },
+    {
+     "item": "minecraft:leather_boots",
+     "count": 1
+    },
+    {
+     "item": "minecraft:leather_helmet",
+     "count": 1
+    },
+    {
+     "item": "minecraft:leather_leggings",
+     "count": 1
+    },
+    {
+     "item": "minecraft:leather_chestplate",
+     "count": 1
+    }
+   ],
+   "buys": [
+    "pioneers:raw_copper",
+    "pioneers:raw_lead",
+    "pioneers:raw_zinc",
+    "pioneers:raw_tin",
+    "pioneers:raw_iron",
+    "pioneers:raw_gold",
+    "pioneers:cassiterite_outcrop",
+    "pioneers:coal_outcrop",
+    "pioneers:galena_outcrop",
+    "pioneers:wood_pellets",
+    "pioneers:coal",
+    "pioneers:charcoal",
+    "pioneers:coal_block"
+   ],
+   "workshop_sells": [
+    {
+     "item": "pioneers:brass_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:brass_hoe",
+     "count": 1
+    },
+    {
+     "item": "pioneers:gold_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:brass_axe",
+     "count": 1
+    },
+    {
+     "item": "pioneers:hazmat_boots",
+     "count": 1
+    },
+    {
+     "item": "pioneers:hazmat_helmet",
+     "count": 1
+    },
+    {
+     "item": "pioneers:gold_boots",
+     "count": 1
+    },
+    {
+     "item": "pioneers:gold_helmet",
+     "count": 1
+    }
+   ],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:rabbit_hide",
+     "count": 4
+    },
+    {
+     "item": "minecraft:bone",
+     "count": 16
+    },
+    {
+     "item": "minecraft:bone_block",
+     "count": 8
+    },
+    {
+     "item": "minecraft:leather",
+     "count": 4
+    },
+    {
+     "item": "pioneers:stone_hammer",
+     "count": 1
+    },
+    {
+     "item": "pioneers:stone_mortar",
+     "count": 1
+    },
+    {
+     "item": "pioneers:flint_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:flint_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:flint_saw",
+     "count": 1
+    }
+   ],
+   "buys": [
+    "minecraft:rabbit_hide",
+    "minecraft:bone",
+    "minecraft:bone_block",
+    "minecraft:leather",
+    "pioneers:stone_hammer",
+    "pioneers:stone_mortar",
+    "pioneers:flint_knife",
+    "pioneers:flint_shovel",
+    "pioneers:flint_saw"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:butcher": {
+  "key": "butcher",
+  "standard": {
+   "sells": [
+    {
+     "item": "pioneers:bacon",
+     "count": 16
+    },
+    {
+     "item": "pioneers:cured_bacon",
+     "count": 16
+    },
+    {
+     "item": "pioneers:smoked_bacon",
+     "count": 16
+    },
+    {
+     "item": "pioneers:sausage",
+     "count": 8
+    },
+    {
+     "item": "pioneers:smoked_sausage",
+     "count": 8
+    },
+    {
+     "item": "pioneers:cured_salmon",
+     "count": 8
+    },
+    {
+     "item": "pioneers:dried_game_meat",
+     "count": 8
+    },
+    {
+     "item": "pioneers:smoked_game_meat",
+     "count": 8
+    },
+    {
+     "item": "pioneers:beef_jerky",
+     "count": 4
+    },
+    {
+     "item": "pioneers:cured_ham",
+     "count": 4
+    },
+    {
+     "item": "pioneers:ham",
+     "count": 4
+    },
+    {
+     "item": "pioneers:game_pate",
+     "count": 4
+    },
+    {
+     "item": "pioneers:roast_chicken",
+     "count": 8
+    },
+    {
+     "item": "pioneers:roast_rabbit",
+     "count": 8
+    },
+    {
+     "item": "pioneers:grilled_mutton",
+     "count": 8
+    },
+    {
+     "item": "pioneers:grilled_pork",
+     "count": 4
+    },
+    {
+     "item": "pioneers:cooked_bear_meat",
+     "count": 8
+    },
+    {
+     "item": "pioneers:cooked_big_game_meat",
+     "count": 8
+    },
+    {
+     "item": "pioneers:cooked_bison_meat",
+     "count": 8
+    },
+    {
+     "item": "pioneers:cooked_boar_meat",
+     "count": 8
+    }
+   ],
+   "buys": [
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:mutton",
+    "minecraft:beef",
+    "minecraft:porkchop",
+    "pioneers:raw_bear_meat",
+    "pioneers:raw_big_game_meat",
+    "pioneers:raw_bison_meat",
+    "pioneers:salt",
+    "pioneers:whale_blubber",
+    "pioneers:smoked_game_meat",
+    "pioneers:game_pate"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:chicken",
+     "count": 8
+    },
+    {
+     "item": "minecraft:rabbit",
+     "count": 8
+    },
+    {
+     "item": "minecraft:mutton",
+     "count": 8
+    },
+    {
+     "item": "minecraft:beef",
+     "count": 4
+    },
+    {
+     "item": "minecraft:porkchop",
+     "count": 4
+    },
+    {
+     "item": "pioneers:raw_bear_meat",
+     "count": 8
+    },
+    {
+     "item": "pioneers:bacon",
+     "count": 16
+    },
+    {
+     "item": "pioneers:cured_bacon",
+     "count": 16
+    },
+    {
+     "item": "pioneers:smoked_bacon",
+     "count": 16
+    },
+    {
+     "item": "pioneers:whale_blubber",
+     "count": 8
+    },
+    {
+     "item": "minecraft:egg",
+     "count": 32
+    },
+    {
+     "item": "pioneers:fertile_egg",
+     "count": 32
+    },
+    {
+     "item": "pioneers:smoked_game_meat",
+     "count": 8
+    },
+    {
+     "item": "pioneers:game_pate",
+     "count": 4
+    }
+   ],
+   "buys": [
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:mutton",
+    "minecraft:beef",
+    "minecraft:porkchop",
+    "pioneers:raw_bear_meat",
+    "pioneers:bacon",
+    "pioneers:cured_bacon",
+    "pioneers:smoked_bacon",
+    "pioneers:whale_blubber",
+    "minecraft:egg",
+    "pioneers:fertile_egg",
+    "pioneers:smoked_game_meat",
+    "pioneers:game_pate"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:cartographer": {
+  "key": "cartographer",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:map",
+     "count": 1
+    },
+    {
+     "item": "minecraft:spyglass",
+     "count": 1
+    },
+    {
+     "item": "minecraft:clock",
+     "count": 1
+    },
+    {
+     "item": "minecraft:compass",
+     "count": 1
+    },
+    {
+     "item": "minecraft:recovery_compass",
+     "count": 1
+    },
+    {
+     "item": "minecraft:paper",
+     "count": 32
+    },
+    {
+     "item": "minecraft:writable_book",
+     "count": 2
+    }
+   ],
+   "buys": [
+    "minecraft:paper",
+    "minecraft:ink_sac",
+    "minecraft:glow_ink_sac",
+    "minecraft:feather",
+    "minecraft:light_blue_dye",
+    "minecraft:magenta_dye",
+    "minecraft:orange_dye"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:sweet_berries",
+     "count": 32
+    },
+    {
+     "item": "minecraft:glow_berries",
+     "count": 16
+    },
+    {
+     "item": "pioneers:blueberry",
+     "count": 8
+    },
+    {
+     "item": "pioneers:cranberry",
+     "count": 8
+    },
+    {
+     "item": "pioneers:strawberry",
+     "count": 8
+    },
+    {
+     "item": "minecraft:brown_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:brown_mushroom_block",
+     "count": 16
+    },
+    {
+     "item": "minecraft:mushroom_stem",
+     "count": 16
+    },
+    {
+     "item": "minecraft:red_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:honeycomb",
+     "count": 4
+    },
+    {
+     "item": "minecraft:honey_bottle",
+     "count": 1
+    },
+    {
+     "item": "minecraft:honeycomb_block",
+     "count": 1
+    }
+   ],
+   "buys": [
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries",
+    "pioneers:blueberry",
+    "pioneers:cranberry",
+    "pioneers:strawberry",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom_block",
+    "minecraft:mushroom_stem",
+    "minecraft:red_mushroom",
+    "minecraft:honeycomb",
+    "minecraft:honey_bottle",
+    "minecraft:honeycomb_block"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:cleric": {
+  "key": "cleric",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:fermented_spider_eye",
+     "count": 4
+    },
+    {
+     "item": "minecraft:potion",
+     "count": 4
+    },
+    {
+     "item": "minecraft:splash_potion",
+     "count": 2
+    },
+    {
+     "item": "minecraft:lingering_potion",
+     "count": 1
+    },
+    {
+     "item": "pioneers:dried_tea",
+     "count": 8
+    },
+    {
+     "item": "pioneers:tea_leaves",
+     "count": 8
+    },
+    {
+     "item": "minecraft:nether_wart",
+     "count": 8
+    },
+    {
+     "item": "pioneers:basil",
+     "count": 16
+    },
+    {
+     "item": "pioneers:dried_chili",
+     "count": 8
+    },
+    {
+     "item": "minecraft:glass_bottle",
+     "count": 32
+    },
+    {
+     "item": "pioneers:bottle",
+     "count": 32
+    }
+   ],
+   "buys": [
+    "minecraft:nether_wart",
+    "pioneers:basil",
+    "pioneers:dried_chili",
+    "pioneers:tobacco_leaf",
+    "pioneers:dried_tea",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom_block",
+    "minecraft:mushroom_stem",
+    "minecraft:red_mushroom",
+    "minecraft:pink_petals",
+    "minecraft:allium",
+    "minecraft:azure_bluet",
+    "minecraft:glass_bottle",
+    "pioneers:bottle",
+    "minecraft:rotten_flesh",
+    "minecraft:spider_eye",
+    "minecraft:rabbit_foot"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "pioneers:dried_tea",
+     "count": 8
+    },
+    {
+     "item": "pioneers:tea_leaves",
+     "count": 8
+    },
+    {
+     "item": "minecraft:nether_wart",
+     "count": 8
+    },
+    {
+     "item": "pioneers:basil",
+     "count": 16
+    },
+    {
+     "item": "pioneers:dried_chili",
+     "count": 8
+    },
+    {
+     "item": "pioneers:tobacco_leaf",
+     "count": 8
+    },
+    {
+     "item": "minecraft:brown_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:brown_mushroom_block",
+     "count": 16
+    },
+    {
+     "item": "minecraft:mushroom_stem",
+     "count": 16
+    },
+    {
+     "item": "minecraft:red_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:honeycomb",
+     "count": 4
+    },
+    {
+     "item": "minecraft:honey_bottle",
+     "count": 1
+    },
+    {
+     "item": "minecraft:pink_petals",
+     "count": 32
+    },
+    {
+     "item": "minecraft:allium",
+     "count": 16
+    }
+   ],
+   "buys": [
+    "pioneers:dried_tea",
+    "pioneers:tea_leaves",
+    "minecraft:nether_wart",
+    "pioneers:basil",
+    "pioneers:dried_chili",
+    "pioneers:tobacco_leaf",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom_block",
+    "minecraft:mushroom_stem",
+    "minecraft:red_mushroom",
+    "minecraft:honeycomb",
+    "minecraft:honey_bottle",
+    "minecraft:pink_petals",
+    "minecraft:allium"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:farmer": {
+  "key": "farmer",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:brown_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:red_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:potato",
+     "count": 8
+    },
+    {
+     "item": "minecraft:carrot",
+     "count": 8
+    },
+    {
+     "item": "minecraft:beetroot",
+     "count": 8
+    },
+    {
+     "item": "minecraft:melon",
+     "count": 4
+    },
+    {
+     "item": "minecraft:pumpkin",
+     "count": 4
+    },
+    {
+     "item": "pioneers:button_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:cocoa_beans",
+     "count": 16
+    },
+    {
+     "item": "minecraft:pitcher_pod",
+     "count": 2
+    },
+    {
+     "item": "minecraft:torchflower_seeds",
+     "count": 2
+    },
+    {
+     "item": "pioneers:amaranth_seeds",
+     "count": 32
+    },
+    {
+     "item": "pioneers:barley_seeds",
+     "count": 32
+    },
+    {
+     "item": "pioneers:basil_seeds",
+     "count": 32
+    },
+    {
+     "item": "minecraft:bone_meal",
+     "count": 32
+    },
+    {
+     "item": "pioneers:compost",
+     "count": 16
+    }
+   ],
+   "buys": [
+    "minecraft:bone_meal",
+    "pioneers:compost",
+    "minecraft:bone",
+    "minecraft:bone_block",
+    "pioneers:artichoke_seeds",
+    "pioneers:coffee_seeds",
+    "pioneers:corn_seeds",
+    "pioneers:cotton_seeds",
+    "pioneers:grape_seeds",
+    "pioneers:hemp_seeds",
+    "minecraft:wheat",
+    "pioneers:barley",
+    "pioneers:oats"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:brown_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:red_mushroom",
+     "count": 16
+    },
+    {
+     "item": "minecraft:potato",
+     "count": 8
+    },
+    {
+     "item": "minecraft:carrot",
+     "count": 8
+    },
+    {
+     "item": "minecraft:beetroot",
+     "count": 8
+    },
+    {
+     "item": "minecraft:melon",
+     "count": 4
+    },
+    {
+     "item": "minecraft:cocoa_beans",
+     "count": 16
+    },
+    {
+     "item": "minecraft:pitcher_pod",
+     "count": 2
+    },
+    {
+     "item": "minecraft:torchflower_seeds",
+     "count": 2
+    },
+    {
+     "item": "pioneers:amaranth_seeds",
+     "count": 32
+    },
+    {
+     "item": "pioneers:barley_seeds",
+     "count": 32
+    },
+    {
+     "item": "minecraft:bone_meal",
+     "count": 32
+    },
+    {
+     "item": "pioneers:compost",
+     "count": 16
+    },
+    {
+     "item": "minecraft:bone",
+     "count": 16
+    },
+    {
+     "item": "minecraft:bone_block",
+     "count": 8
+    }
+   ],
+   "buys": [
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:potato",
+    "minecraft:carrot",
+    "minecraft:beetroot",
+    "minecraft:melon",
+    "minecraft:cocoa_beans",
+    "minecraft:pitcher_pod",
+    "minecraft:torchflower_seeds",
+    "pioneers:amaranth_seeds",
+    "pioneers:barley_seeds",
+    "minecraft:bone_meal",
+    "pioneers:compost",
+    "minecraft:bone",
+    "minecraft:bone_block"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:fisherman": {
+  "key": "fisherman",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:cod",
+     "count": 8
+    },
+    {
+     "item": "minecraft:salmon",
+     "count": 8
+    },
+    {
+     "item": "minecraft:pufferfish",
+     "count": 8
+    },
+    {
+     "item": "minecraft:tropical_fish",
+     "count": 4
+    },
+    {
+     "item": "pioneers:anchovy",
+     "count": 8
+    },
+    {
+     "item": "pioneers:lanternfish",
+     "count": 8
+    },
+    {
+     "item": "pioneers:sardine",
+     "count": 8
+    },
+    {
+     "item": "pioneers:clownfish",
+     "count": 8
+    },
+    {
+     "item": "pioneers:bamboo_fishing_rod",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_fishing_rod",
+     "count": 1
+    },
+    {
+     "item": "minecraft:rotten_flesh",
+     "count": 32
+    },
+    {
+     "item": "pioneers:earthworm",
+     "count": 32
+    },
+    {
+     "item": "pioneers:fish_bait",
+     "count": 32
+    }
+   ],
+   "buys": [
+    "minecraft:string",
+    "pioneers:cotton_thread",
+    "minecraft:rotten_flesh",
+    "pioneers:earthworm",
+    "pioneers:fish_bait",
+    "pioneers:salt",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:pufferfish",
+    "minecraft:tropical_fish",
+    "pioneers:anchovy",
+    "pioneers:lanternfish"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:cod",
+     "count": 8
+    },
+    {
+     "item": "minecraft:salmon",
+     "count": 8
+    },
+    {
+     "item": "minecraft:pufferfish",
+     "count": 8
+    },
+    {
+     "item": "minecraft:tropical_fish",
+     "count": 4
+    },
+    {
+     "item": "pioneers:anchovy",
+     "count": 8
+    },
+    {
+     "item": "pioneers:lanternfish",
+     "count": 8
+    },
+    {
+     "item": "pioneers:sardine",
+     "count": 8
+    },
+    {
+     "item": "pioneers:clownfish",
+     "count": 8
+    },
+    {
+     "item": "pioneers:bamboo_fishing_rod",
+     "count": 1
+    },
+    {
+     "item": "minecraft:rotten_flesh",
+     "count": 32
+    },
+    {
+     "item": "pioneers:earthworm",
+     "count": 32
+    },
+    {
+     "item": "pioneers:fish_bait",
+     "count": 32
+    }
+   ],
+   "buys": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:pufferfish",
+    "minecraft:tropical_fish",
+    "pioneers:anchovy",
+    "pioneers:lanternfish",
+    "pioneers:sardine",
+    "pioneers:clownfish",
+    "pioneers:bamboo_fishing_rod",
+    "minecraft:rotten_flesh",
+    "pioneers:earthworm",
+    "pioneers:fish_bait"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:fletcher": {
+  "key": "fletcher",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:arrow",
+     "count": 32
+    },
+    {
+     "item": "minecraft:spectral_arrow",
+     "count": 4
+    },
+    {
+     "item": "minecraft:bow",
+     "count": 1
+    },
+    {
+     "item": "minecraft:crossbow",
+     "count": 1
+    },
+    {
+     "item": "minecraft:feather",
+     "count": 32
+    },
+    {
+     "item": "minecraft:stick",
+     "count": 32
+    },
+    {
+     "item": "minecraft:string",
+     "count": 16
+    }
+   ],
+   "buys": [
+    "minecraft:feather",
+    "minecraft:flint",
+    "minecraft:acacia_log",
+    "minecraft:birch_log",
+    "minecraft:cherry_log",
+    "minecraft:dark_oak_log",
+    "minecraft:jungle_log",
+    "minecraft:mangrove_log",
+    "minecraft:stick",
+    "minecraft:string",
+    "pioneers:cotton_thread"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:arrow",
+     "count": 32
+    },
+    {
+     "item": "minecraft:bow",
+     "count": 1
+    },
+    {
+     "item": "minecraft:feather",
+     "count": 32
+    },
+    {
+     "item": "minecraft:acacia_log",
+     "count": 1
+    },
+    {
+     "item": "minecraft:birch_log",
+     "count": 1
+    },
+    {
+     "item": "minecraft:cherry_log",
+     "count": 1
+    },
+    {
+     "item": "minecraft:dark_oak_log",
+     "count": 1
+    },
+    {
+     "item": "minecraft:jungle_log",
+     "count": 1
+    },
+    {
+     "item": "minecraft:stick",
+     "count": 32
+    }
+   ],
+   "buys": [
+    "minecraft:arrow",
+    "minecraft:bow",
+    "minecraft:feather",
+    "minecraft:acacia_log",
+    "minecraft:birch_log",
+    "minecraft:cherry_log",
+    "minecraft:dark_oak_log",
+    "minecraft:jungle_log",
+    "minecraft:stick"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:leatherworker": {
+  "key": "leatherworker",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:leather",
+     "count": 4
+    },
+    {
+     "item": "minecraft:leather_boots",
+     "count": 1
+    },
+    {
+     "item": "minecraft:leather_helmet",
+     "count": 1
+    },
+    {
+     "item": "minecraft:leather_leggings",
+     "count": 1
+    },
+    {
+     "item": "minecraft:leather_chestplate",
+     "count": 1
+    },
+    {
+     "item": "minecraft:white_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:light_blue_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:magenta_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:white_carpet",
+     "count": 4
+    },
+    {
+     "item": "minecraft:blue_carpet",
+     "count": 4
+    }
+   ],
+   "buys": [
+    "minecraft:rabbit_hide",
+    "minecraft:leather",
+    "minecraft:rabbit",
+    "minecraft:beef",
+    "minecraft:leather_boots",
+    "minecraft:leather_helmet"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:leather",
+     "count": 4
+    },
+    {
+     "item": "minecraft:rabbit_hide",
+     "count": 4
+    },
+    {
+     "item": "minecraft:white_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:light_blue_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:magenta_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:orange_wool",
+     "count": 4
+    }
+   ],
+   "buys": [
+    "minecraft:leather",
+    "minecraft:rabbit_hide",
+    "minecraft:white_wool",
+    "minecraft:light_blue_wool",
+    "minecraft:magenta_wool",
+    "minecraft:orange_wool"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:librarian": {
+  "key": "librarian",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:paper",
+     "count": 32
+    },
+    {
+     "item": "minecraft:book",
+     "count": 4
+    },
+    {
+     "item": "minecraft:writable_book",
+     "count": 2
+    },
+    {
+     "item": "minecraft:bookshelf",
+     "count": 1
+    },
+    {
+     "item": "minecraft:ink_sac",
+     "count": 16
+    },
+    {
+     "item": "minecraft:candle",
+     "count": 16
+    },
+    {
+     "item": "minecraft:clock",
+     "count": 1
+    }
+   ],
+   "buys": [
+    "minecraft:paper",
+    "minecraft:ink_sac",
+    "minecraft:glow_ink_sac",
+    "minecraft:leather",
+    "minecraft:book",
+    "minecraft:writable_book"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:leather",
+     "count": 4
+    },
+    {
+     "item": "minecraft:honeycomb",
+     "count": 4
+    },
+    {
+     "item": "pioneers:beeswax",
+     "count": 4
+    },
+    {
+     "item": "minecraft:honey_bottle",
+     "count": 1
+    },
+    {
+     "item": "minecraft:honeycomb_block",
+     "count": 1
+    },
+    {
+     "item": "minecraft:honey_block",
+     "count": 1
+    },
+    {
+     "item": "minecraft:rabbit_hide",
+     "count": 4
+    }
+   ],
+   "buys": [
+    "minecraft:leather",
+    "minecraft:honeycomb",
+    "pioneers:beeswax",
+    "minecraft:honey_bottle",
+    "minecraft:honeycomb_block",
+    "minecraft:honey_block",
+    "minecraft:rabbit_hide"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:mason": {
+  "key": "mason",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:deepslate_brick_slab",
+     "count": 32
+    },
+    {
+     "item": "minecraft:deepslate_tile_slab",
+     "count": 32
+    },
+    {
+     "item": "minecraft:polished_deepslate_slab",
+     "count": 32
+    },
+    {
+     "item": "minecraft:chiseled_deepslate",
+     "count": 32
+    },
+    {
+     "item": "minecraft:cracked_deepslate_bricks",
+     "count": 32
+    },
+    {
+     "item": "minecraft:cracked_deepslate_tiles",
+     "count": 32
+    },
+    {
+     "item": "minecraft:deepslate_brick_stairs",
+     "count": 32
+    },
+    {
+     "item": "minecraft:deepslate_brick_wall",
+     "count": 32
+    },
+    {
+     "item": "minecraft:deepslate_bricks",
+     "count": 32
+    },
+    {
+     "item": "minecraft:deepslate_tile_stairs",
+     "count": 32
+    },
+    {
+     "item": "minecraft:nether_brick",
+     "count": 32
+    },
+    {
+     "item": "minecraft:brick",
+     "count": 32
+    },
+    {
+     "item": "minecraft:chiseled_nether_bricks",
+     "count": 16
+    },
+    {
+     "item": "minecraft:deepslate_tile_wall",
+     "count": 32
+    },
+    {
+     "item": "minecraft:deepslate_tiles",
+     "count": 32
+    },
+    {
+     "item": "minecraft:end_stone_brick_slab",
+     "count": 32
+    },
+    {
+     "item": "minecraft:mossy_stone_brick_slab",
+     "count": 32
+    }
+   ],
+   "buys": [
+    "minecraft:cobbled_deepslate_slab",
+    "minecraft:cobbled_deepslate",
+    "minecraft:cobbled_deepslate_stairs",
+    "minecraft:cobbled_deepslate_wall",
+    "minecraft:cobblestone",
+    "minecraft:netherrack",
+    "minecraft:clay_ball",
+    "minecraft:clay",
+    "minecraft:gravel",
+    "minecraft:red_sand"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:hay_block",
+     "count": 1
+    },
+    {
+     "item": "minecraft:grass_block",
+     "count": 32
+    },
+    {
+     "item": "minecraft:rooted_dirt",
+     "count": 32
+    },
+    {
+     "item": "minecraft:podzol",
+     "count": 32
+    },
+    {
+     "item": "minecraft:moss_block",
+     "count": 32
+    },
+    {
+     "item": "minecraft:dirt",
+     "count": 16
+    }
+   ],
+   "buys": [
+    "minecraft:hay_block",
+    "minecraft:grass_block",
+    "minecraft:rooted_dirt",
+    "minecraft:podzol",
+    "minecraft:moss_block",
+    "minecraft:dirt"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:shepherd": {
+  "key": "shepherd",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:white_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:light_blue_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:magenta_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:orange_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:pink_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:red_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:yellow_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:blue_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:string",
+     "count": 16
+    },
+    {
+     "item": "pioneers:cotton_thread",
+     "count": 16
+    },
+    {
+     "item": "minecraft:white_carpet",
+     "count": 4
+    },
+    {
+     "item": "minecraft:blue_carpet",
+     "count": 4
+    }
+   ],
+   "buys": [
+    "minecraft:hay_block",
+    "pioneers:animal_feed",
+    "minecraft:light_blue_dye",
+    "minecraft:magenta_dye",
+    "minecraft:orange_dye",
+    "minecraft:pink_dye",
+    "minecraft:red_dye",
+    "minecraft:white_dye"
+   ],
+   "workshop_sells": [],
+   "service": null
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:white_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:light_blue_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:magenta_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:orange_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:pink_wool",
+     "count": 4
+    },
+    {
+     "item": "minecraft:string",
+     "count": 16
+    },
+    {
+     "item": "minecraft:milk_bucket",
+     "count": 1
+    },
+    {
+     "item": "minecraft:hay_block",
+     "count": 1
+    },
+    {
+     "item": "pioneers:animal_feed",
+     "count": 16
+    }
+   ],
+   "buys": [
+    "minecraft:white_wool",
+    "minecraft:light_blue_wool",
+    "minecraft:magenta_wool",
+    "minecraft:orange_wool",
+    "minecraft:pink_wool",
+    "minecraft:string",
+    "minecraft:milk_bucket",
+    "minecraft:hay_block",
+    "pioneers:animal_feed"
+   ],
+   "workshop_sells": [],
+   "service": null
+  }
+ },
+ "minecraft:toolsmith": {
+  "key": "toolsmith",
+  "standard": {
+   "sells": [
+    {
+     "item": "minecraft:shears",
+     "count": 1
+    },
+    {
+     "item": "pioneers:copper_file",
+     "count": 1
+    },
+    {
+     "item": "pioneers:copper_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:copper_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_file",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:iron_file",
+     "count": 1
+    },
+    {
+     "item": "pioneers:iron_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:iron_shovel",
+     "count": 1
+    },
+    {
+     "item": "pioneers:stone_hammer",
+     "count": 1
+    },
+    {
+     "item": "pioneers:stone_mortar",
+     "count": 1
+    }
+   ],
+   "buys": [
+    "pioneers:copper_ingot",
+    "pioneers:lead_ingot",
+    "pioneers:zinc_ingot",
+    "pioneers:brass_ingot",
+    "pioneers:bronze_ingot",
+    "pioneers:tin_ingot",
+    "pioneers:wood_pellets",
+    "pioneers:coal",
+    "pioneers:charcoal"
+   ],
+   "workshop_sells": [
+    {
+     "item": "pioneers:brass_file",
+     "count": 1
+    },
+    {
+     "item": "pioneers:brass_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:brass_wrench",
+     "count": 1
+    },
+    {
+     "item": "pioneers:brass_hammer",
+     "count": 1
+    },
+    {
+     "item": "pioneers:brass_saw",
+     "count": 1
+    },
+    {
+     "item": "pioneers:brass_shovel",
+     "count": 1
+    }
+   ],
+   "service": "repair"
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:bone",
+     "count": 16
+    },
+    {
+     "item": "minecraft:bone_block",
+     "count": 8
+    },
+    {
+     "item": "minecraft:rabbit_hide",
+     "count": 4
+    },
+    {
+     "item": "minecraft:leather",
+     "count": 4
+    },
+    {
+     "item": "minecraft:stick",
+     "count": 32
+    },
+    {
+     "item": "pioneers:stone_hammer",
+     "count": 1
+    },
+    {
+     "item": "pioneers:stone_mortar",
+     "count": 1
+    },
+    {
+     "item": "pioneers:flint_knife",
+     "count": 1
+    }
+   ],
+   "buys": [
+    "minecraft:bone",
+    "minecraft:bone_block",
+    "minecraft:rabbit_hide",
+    "minecraft:leather",
+    "minecraft:stick",
+    "pioneers:stone_hammer",
+    "pioneers:stone_mortar",
+    "pioneers:flint_knife"
+   ],
+   "workshop_sells": [],
+   "service": "repair"
+  }
+ },
+ "minecraft:weaponsmith": {
+  "key": "weaponsmith",
+  "standard": {
+   "sells": [
+    {
+     "item": "pioneers:copper_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:iron_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:copper_sword",
+     "count": 1
+    },
+    {
+     "item": "pioneers:bronze_sword",
+     "count": 1
+    },
+    {
+     "item": "pioneers:iron_sword",
+     "count": 1
+    },
+    {
+     "item": "pioneers:flint_knife",
+     "count": 1
+    },
+    {
+     "item": "minecraft:grindstone",
+     "count": 4
+    }
+   ],
+   "buys": [
+    "pioneers:copper_ingot",
+    "pioneers:lead_ingot",
+    "pioneers:zinc_ingot",
+    "pioneers:brass_ingot",
+    "pioneers:bronze_ingot",
+    "pioneers:tin_ingot",
+    "minecraft:grindstone",
+    "minecraft:cobblestone",
+    "minecraft:flint"
+   ],
+   "workshop_sells": [
+    {
+     "item": "pioneers:brass_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:brass_sword",
+     "count": 1
+    },
+    {
+     "item": "pioneers:steel_knife",
+     "count": 1
+    },
+    {
+     "item": "pioneers:gold_knife",
+     "count": 1
+    }
+   ],
+   "service": "sharpen"
+  },
+  "rural": {
+   "sells": [
+    {
+     "item": "minecraft:bone",
+     "count": 16
+    },
+    {
+     "item": "minecraft:bone_block",
+     "count": 8
+    },
+    {
+     "item": "minecraft:feather",
+     "count": 32
+    },
+    {
+     "item": "pioneers:flint_knife",
+     "count": 1
+    },
+    {
+     "item": "minecraft:arrow",
+     "count": 32
+    },
+    {
+     "item": "minecraft:flint",
+     "count": 16
+    }
+   ],
+   "buys": [
+    "minecraft:bone",
+    "minecraft:bone_block",
+    "minecraft:feather",
+    "pioneers:flint_knife",
+    "minecraft:arrow",
+    "minecraft:flint"
+   ],
+   "workshop_sells": [],
+   "service": "sharpen"
+  }
+ }
+}

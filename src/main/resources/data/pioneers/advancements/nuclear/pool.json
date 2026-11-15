@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:spent_fuel_pool"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.pool.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.pool.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_spent_fuel_pool"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/criticality"
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/zirconium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_valve"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_chemical_reactor",
+   "count": 1
+  }
+ ]
+}

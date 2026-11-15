@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:restorer_desk"
+  },
+  "title": {
+   "translate": "advancements.pioneers.pioneer.reconversion.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.pioneer.reconversion.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "pioneer_reconversion"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:pioneer/root"
+}

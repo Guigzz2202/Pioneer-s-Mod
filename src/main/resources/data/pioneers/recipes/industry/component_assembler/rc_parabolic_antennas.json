@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:transceiver"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/nitinol"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:parabolic_antenna",
+   "count": 2
+  }
+ ]
+}

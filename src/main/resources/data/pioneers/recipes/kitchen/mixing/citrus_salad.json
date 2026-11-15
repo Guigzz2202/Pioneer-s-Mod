@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:orange"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pomegranate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bowl"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:citrus_salad",
+   "count": 2
+  }
+ ]
+}

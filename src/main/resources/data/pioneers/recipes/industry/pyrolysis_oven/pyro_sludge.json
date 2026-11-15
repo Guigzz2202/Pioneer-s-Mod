@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pyrolysis_oven",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:oil_sludge"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:petroleum_coke",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:fuel_oil",
+   "amount": 250
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:pyrolysis_gas",
+   "amount": 50
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_boiler_shell"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/tin"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_exchanger"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:boiler",
+   "count": 1
+  }
+ ]
+}

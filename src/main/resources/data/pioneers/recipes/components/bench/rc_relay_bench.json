@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:copper_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/red_alloy"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:porcelain_insulator"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:relay",
+  "count": 2
+ }
+}

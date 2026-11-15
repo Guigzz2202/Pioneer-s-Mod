@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 240,
+ "family": "diffusion_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rings/steel"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/zinc"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:galvanized_steel_ring",
+   "count": 8
+  }
+ ]
+}

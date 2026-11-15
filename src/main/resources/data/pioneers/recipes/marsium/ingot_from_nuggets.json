@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:nuggets/marsium"
+  }
+ },
+ "result": {
+  "item": "pioneers:marsium_ingot"
+ }
+}

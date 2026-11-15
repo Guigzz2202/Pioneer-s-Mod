@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 80,
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 100
+  },
+  {
+   "fluid": "pioneers:xylene",
+   "amount": 400
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 500
+  }
+ ]
+}

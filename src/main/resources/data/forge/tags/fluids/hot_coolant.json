@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:hot_coolant",
+  "pioneers:flowing_hot_coolant"
+ ]
+}

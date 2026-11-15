@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:hand_sieve"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.sieve.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.sieve.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "sieve"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:mechanics/plant_fiber"
+}

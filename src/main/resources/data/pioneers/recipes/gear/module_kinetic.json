@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:copper_coil"
+  },
+  {
+   "item": "pioneers:copper_coil"
+  },
+  {
+   "item": "pioneers:bearing"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_kinetic",
+  "count": 1
+ }
+}

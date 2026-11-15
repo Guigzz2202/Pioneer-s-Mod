@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 0,
+ "time": 80,
+ "fluids": [
+  {
+   "fluid": "pioneers:dichloroethane",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:vinyl_chloride",
+   "amount": 500
+  }
+ ]
+}

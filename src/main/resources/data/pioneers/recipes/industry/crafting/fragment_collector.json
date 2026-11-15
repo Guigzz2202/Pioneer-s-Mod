@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ruachite_crystal_grid"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:messinite_ceramic"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_lattice"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:fragment_collector",
+  "count": 1
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/reef"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hot_pepper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:raw_tropical_fish_grill",
+   "count": 1
+  }
+ ]
+}

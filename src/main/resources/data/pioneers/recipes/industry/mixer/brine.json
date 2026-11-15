@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:brine",
+   "amount": 1000
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:spent_foundry_sand"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:foundry_sand",
+   "count": 4
+  }
+ ]
+}

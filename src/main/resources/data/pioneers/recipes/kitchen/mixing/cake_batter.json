@@ -1,0 +1,41 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "tag": "forge:milk",
+  "amount": 250
+ },
+ "time": 200,
+ "strokes": 10,
+ "results": [
+  {
+   "item": "pioneers:cake_batter",
+   "count": 1
+  }
+ ]
+}

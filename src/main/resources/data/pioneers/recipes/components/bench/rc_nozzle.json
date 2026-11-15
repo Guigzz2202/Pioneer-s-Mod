@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:pipes/brass"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:nozzle",
+  "count": 2
+ }
+}

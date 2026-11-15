@@ -1,0 +1,34 @@
+{
+ "order": 5,
+ "affinities": [
+  "husbandry",
+  "fishing"
+ ],
+ "feature": "",
+ "emblem": "pioneers:textures/gui/pioneer/vocation/herder_angler.png",
+ "advantage": {
+  "trait": "patience",
+  "modifiers": [
+   {
+    "key": "herder.no_wear",
+    "value": 1.0,
+    "unit": "abs"
+   },
+   {
+    "key": "herder.twins",
+    "value": 0.1,
+    "unit": "pct"
+   }
+  ]
+ },
+ "defect": {
+  "trait": "slow_with_technique",
+  "modifiers": [
+   {
+    "key": "herder.assembly_time",
+    "value": 0.1,
+    "unit": "pct"
+   }
+  ]
+ }
+}

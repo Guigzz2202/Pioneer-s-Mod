@@ -1,0 +1,30 @@
+{
+ "order": 6,
+ "affinities": [
+  "combat",
+  "salvage",
+  "hunting"
+ ],
+ "feature": "",
+ "emblem": "pioneers:textures/gui/pioneer/vocation/scout.png",
+ "advantage": {
+  "trait": "wolf_step",
+  "modifiers": [
+   {
+    "key": "scout.detection",
+    "value": -0.25,
+    "unit": "pct"
+   }
+  ]
+ },
+ "defect": {
+  "trait": "restless",
+  "modifiers": [
+   {
+    "key": "scout.restoration_cost",
+    "value": 0.1,
+    "unit": "pct"
+   }
+  ]
+ }
+}

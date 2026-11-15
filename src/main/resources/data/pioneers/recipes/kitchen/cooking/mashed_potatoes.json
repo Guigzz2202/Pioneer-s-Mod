@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "tag": "forge:milk",
+  "amount": 250
+ },
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:mashed_potatoes",
+   "count": 2
+  }
+ ]
+}

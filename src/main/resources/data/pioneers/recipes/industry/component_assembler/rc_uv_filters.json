@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/amethyst"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:uv_filter",
+   "count": 4
+  }
+ ]
+}

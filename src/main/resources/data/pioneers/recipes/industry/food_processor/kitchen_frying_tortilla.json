@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:masa"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tortilla",
+   "count": 2
+  }
+ ]
+}

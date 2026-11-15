@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:diogenite_bricks"
+ },
+ "result": "pioneers:diogenite_brick_slab",
+ "count": 2
+}

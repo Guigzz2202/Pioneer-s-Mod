@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hemp_flower"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dried_hemp_flower",
+   "count": 1
+  }
+ ]
+}

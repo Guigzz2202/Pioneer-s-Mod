@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "converter",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crude_stainless"
+   },
+   "count": 7
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 800
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stainless_steel_ingot",
+   "count": 7
+  },
+  {
+   "item": "pioneers:chromium_slag",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 300
+  }
+ ],
+ "temperature": 1700,
+ "impurity": 1
+}

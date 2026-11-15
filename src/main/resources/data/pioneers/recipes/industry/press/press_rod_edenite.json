@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/edenite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rod_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:edenite_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:rod_die",
+   "count": 1
+  }
+ ]
+}

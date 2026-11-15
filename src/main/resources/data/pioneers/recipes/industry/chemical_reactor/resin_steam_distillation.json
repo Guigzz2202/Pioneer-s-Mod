@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_resin"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rosin",
+   "count": 3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:turpentine",
+   "amount": 250
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 60
+  }
+ ]
+}

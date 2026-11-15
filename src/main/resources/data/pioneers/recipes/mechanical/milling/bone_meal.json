@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "minecraft:bone"
+ },
+ "count": 1,
+ "turns": 3,
+ "results": [
+  {
+   "item": "minecraft:bone_meal",
+   "count": 5
+  }
+ ]
+}

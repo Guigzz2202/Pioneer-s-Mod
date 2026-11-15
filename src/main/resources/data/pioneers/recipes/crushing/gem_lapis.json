@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:gems/lapis"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:lapis_dust",
+  "count": 1
+ }
+}

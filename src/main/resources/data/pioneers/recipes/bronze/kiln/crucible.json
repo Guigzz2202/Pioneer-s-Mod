@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:unfired_crucible"
+ },
+ "temperature": 850,
+ "time": 600,
+ "result": {
+  "item": "pioneers:crucible",
+  "count": 1
+ }
+}

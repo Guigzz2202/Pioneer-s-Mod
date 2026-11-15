@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:dirt"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:compost"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beeswax"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:hydroponic_substrate",
+  "count": 4
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_bolt",
+   "count": 4
+  }
+ ]
+}

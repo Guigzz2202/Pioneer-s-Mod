@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "transporter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_track"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:comparator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/steel"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:weighbridge",
+  "count": 1
+ }
+}

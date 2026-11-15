@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 3,
+ "time": 400,
+ "family": "sintering_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_carbide_dust"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/cobalt"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_carbide_ingot",
+   "count": 2
+  }
+ ]
+}

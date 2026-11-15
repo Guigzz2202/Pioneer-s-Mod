@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:corn"
+   },
+   "count": 1
+  }
+ ],
+ "time": 120,
+ "results": [
+  {
+   "item": "pioneers:popcorn",
+   "count": 2
+  }
+ ]
+}

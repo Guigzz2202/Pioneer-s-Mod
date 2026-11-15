@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pastry_dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:apricot"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_apricot_tart",
+   "count": 1
+  }
+ ]
+}

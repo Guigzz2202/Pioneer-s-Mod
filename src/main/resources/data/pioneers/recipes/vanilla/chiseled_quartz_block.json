@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:quartz_slab"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "minecraft:chiseled_quartz_block",
+  "count": 1
+ }
+}

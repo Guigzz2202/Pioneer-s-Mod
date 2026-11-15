@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:green_bean"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:zucchini"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fresh_pasta"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 750
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:minestrone",
+   "count": 3
+  }
+ ]
+}

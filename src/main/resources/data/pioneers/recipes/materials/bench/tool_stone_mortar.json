@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:cobblestone"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:stone_mortar",
+  "count": 1
+ }
+}

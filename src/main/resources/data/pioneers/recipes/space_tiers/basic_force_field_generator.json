@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/tharsium"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/tharsium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:capacitor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/niobium_titanium"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_force_field_generator",
+  "count": 1
+ }
+}

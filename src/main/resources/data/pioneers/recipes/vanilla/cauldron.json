@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 7
+  }
+ ],
+ "result": {
+  "item": "minecraft:cauldron",
+  "count": 1
+ }
+}

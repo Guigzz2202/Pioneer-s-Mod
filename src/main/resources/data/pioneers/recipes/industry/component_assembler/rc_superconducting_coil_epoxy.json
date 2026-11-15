@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nbti_cable"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_coil"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 250
+  },
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:superconducting_coil",
+   "count": 2
+  }
+ ]
+}

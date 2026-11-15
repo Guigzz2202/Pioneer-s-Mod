@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "family": "ball_mill",
+ "tier": 2,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:float_zone_silicon"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:polysilicon",
+   "count": 3
+  }
+ ]
+}

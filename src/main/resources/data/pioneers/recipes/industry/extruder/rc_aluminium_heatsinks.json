@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_heatsink",
+   "count": 4
+  },
+  {
+   "item": "pioneers:extrusion_die",
+   "count": 1
+  }
+ ]
+}

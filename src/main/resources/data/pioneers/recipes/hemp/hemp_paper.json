@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:hemp_fiber"
+  },
+  {
+   "item": "pioneers:hemp_fiber"
+  },
+  {
+   "item": "pioneers:hemp_fiber"
+  },
+  {
+   "item": "minecraft:water_bucket"
+  }
+ ],
+ "result": {
+  "item": "minecraft:paper",
+  "count": 3
+ }
+}

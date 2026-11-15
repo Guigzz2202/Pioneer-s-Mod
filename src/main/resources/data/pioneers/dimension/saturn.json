@@ -1,0 +1,84 @@
+{
+ "type": "pioneers:saturn",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:saturn",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:saturn_polar_hexagon",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       1.0
+      ],
+      "humidity": [
+       0.55,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:saturn_great_white_spot",
+     "parameters": {
+      "temperature": [
+       0.55,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       0.55
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:saturn_golden_bands",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.55
+      ],
+      "humidity": [
+       -1.0,
+       0.55
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:caramel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:butter_caramels",
+   "count": 6
+  }
+ ]
+}

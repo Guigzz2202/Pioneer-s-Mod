@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "family": "nitric_acid_plant",
+ "fluids": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ammonium_nitrate_solution",
+   "amount": 1000
+  }
+ ],
+ "industrial": true
+}

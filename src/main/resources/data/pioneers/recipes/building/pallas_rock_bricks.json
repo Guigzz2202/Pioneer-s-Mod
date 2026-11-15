@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_pallas_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:pallas_rock_bricks",
+  "count": 4
+ }
+}

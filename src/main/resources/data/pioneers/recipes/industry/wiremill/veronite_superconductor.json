@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/veronite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:veronite_superconductor",
+   "count": 1
+  }
+ ]
+}

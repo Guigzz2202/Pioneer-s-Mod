@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:sand_mold",
+  "pioneers:ceramic_shell_mold",
+  "pioneers:vacuum_casting_mold",
+  "pioneers:ingot_die",
+  "pioneers:plate_die",
+  "pioneers:rod_die",
+  "pioneers:gear_die"
+ ]
+}

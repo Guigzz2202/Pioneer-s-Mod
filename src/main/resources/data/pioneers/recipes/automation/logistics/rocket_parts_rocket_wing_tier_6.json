@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 3,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_fuselage_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vestalite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_shield_tile"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/pallasite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/hygeite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/ahunite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rocket_wing_tier_6",
+   "count": 2
+  }
+ ]
+}

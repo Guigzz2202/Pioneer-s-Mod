@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 3,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/lunarium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/lunarium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/diamond"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:robotic_upgrade_silk_touch",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:ganymede_rock_bricks"
+ },
+ "result": "pioneers:chiseled_ganymede_rock_bricks",
+ "count": 1
+}

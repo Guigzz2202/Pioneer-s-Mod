@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:copper_scythe",
+  "pioneers:iron_scythe",
+  "pioneers:bronze_scythe",
+  "pioneers:steel_scythe",
+  "pioneers:hardened_steel_scythe",
+  "pioneers:brass_scythe",
+  "pioneers:titanium_scythe",
+  "pioneers:stainless_steel_scythe",
+  "pioneers:duralumin_scythe",
+  "pioneers:gold_scythe",
+  "pioneers:tungsten_carbide_scythe",
+  "pioneers:vanadium_steel_scythe",
+  "pioneers:stellite_scythe",
+  "pioneers:osmiridium_scythe",
+  "pioneers:titanium_aluminide_scythe",
+  "pioneers:nitinol_scythe"
+ ]
+}

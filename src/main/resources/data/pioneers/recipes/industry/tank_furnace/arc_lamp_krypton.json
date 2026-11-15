@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 300,
+ "family": "tank_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/tungsten"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_dust"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:krypton",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:arc_lamp",
+   "count": 2
+  }
+ ]
+}

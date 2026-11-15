@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 20,
+ "family": "plate_heat_exchanger",
+ "fluids": [
+  {
+   "fluid": "pioneers:hot_coolant",
+   "amount": 1000
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:coolant",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 2000
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "synthesizer",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:empty_simulated_saturn"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 9600
+  },
+  {
+   "gas": "pioneers:helium",
+   "amount": 400
+  },
+  {
+   "gas": "pioneers:methane",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:proto_simulated_saturn",
+   "count": 1
+  }
+ ],
+ "energy": 20000000
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:casting_table"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:auto_mold",
+  "count": 1
+ }
+}

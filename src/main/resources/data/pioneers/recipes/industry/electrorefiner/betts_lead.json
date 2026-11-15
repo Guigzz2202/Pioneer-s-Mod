@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 200,
+ "family": "electrorefiner",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lead_bullion"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_ingot",
+   "count": 1
+  },
+  {
+   "item": "pioneers:anode_slime",
+   "count": 1,
+   "chance": 0.2
+  }
+ ],
+ "pure": true
+}

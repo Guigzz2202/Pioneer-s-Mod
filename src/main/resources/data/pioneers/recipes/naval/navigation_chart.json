@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/blue"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/red"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:compass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:navigation_chart",
+  "count": 1
+ }
+}

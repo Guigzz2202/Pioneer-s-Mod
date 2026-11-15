@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 2,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:memory_chip"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bga_package"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk3"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_substrate"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nvme_ssd",
+   "count": 2
+  }
+ ]
+}

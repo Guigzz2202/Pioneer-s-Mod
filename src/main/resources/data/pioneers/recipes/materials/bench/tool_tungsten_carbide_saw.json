@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_carbide_saw_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiberglass_sheet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:tungsten_carbide_saw",
+  "count": 1
+ }
+}

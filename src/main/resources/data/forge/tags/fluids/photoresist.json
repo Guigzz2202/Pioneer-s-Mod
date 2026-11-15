@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:photoresist",
+  "pioneers:flowing_photoresist"
+ ]
+}

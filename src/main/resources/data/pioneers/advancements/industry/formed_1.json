@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:industrial_casing_advanced"
+  },
+  "title": {
+   "translate": "advancements.pioneers.industry.formed_1.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.industry.formed_1.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_formed_1"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:industry/formed"
+}

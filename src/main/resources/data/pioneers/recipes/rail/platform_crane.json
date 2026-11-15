@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/steel"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:platform_crane",
+  "count": 1
+ }
+}

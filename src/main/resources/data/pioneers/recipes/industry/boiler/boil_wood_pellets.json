@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "boiler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:wood_pellets"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 3600
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wood_ash",
+   "count": 1,
+   "chance": 0.2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 28800
+  }
+ ]
+}

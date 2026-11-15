@@ -1,0 +1,40 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:lubricant_bucket"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.lubricant.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.lubricant.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_oil_press"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_mixer"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:agri/press"
+}

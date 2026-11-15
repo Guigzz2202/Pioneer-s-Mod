@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "shipyard",
+ "tier": 3,
+ "time": 750,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_gas_carrier"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:depleted_uranium_plate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_exchanger"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_electric_motor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_gas_tank_car"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_gas_carrier",
+   "count": 1
+  }
+ ]
+}

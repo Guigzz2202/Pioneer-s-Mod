@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/tin"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/lead"
+   },
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_solder",
+   "amount": 720
+  }
+ ]
+}

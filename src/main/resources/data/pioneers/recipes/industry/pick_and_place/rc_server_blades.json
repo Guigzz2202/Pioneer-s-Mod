@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:processor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ram_module"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:multilayer_motherboard"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ssd"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/duralumin"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:server_blade",
+   "count": 1
+  }
+ ]
+}

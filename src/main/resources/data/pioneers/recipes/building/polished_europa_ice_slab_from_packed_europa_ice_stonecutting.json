@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_europa_ice"
+ },
+ "result": "pioneers:polished_europa_ice_slab",
+ "count": 2
+}

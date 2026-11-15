@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:sawdust"
+  },
+  {
+   "item": "pioneers:sawdust"
+  },
+  {
+   "item": "pioneers:sawdust"
+  },
+  {
+   "item": "minecraft:water_bucket"
+  }
+ ],
+ "result": {
+  "item": "minecraft:paper",
+  "count": 2
+ }
+}

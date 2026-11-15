@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryostat"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/niobium_titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/osmium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:plasma_heating_klystron",
+   "count": 1
+  }
+ ]
+}

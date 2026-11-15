@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:planetary_gear"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wire_meshes/iron"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_ore_separator",
+   "count": 1
+  }
+ ]
+}

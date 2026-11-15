@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 2,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:metallic_fiber"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_dust",
+   "count": 1
+  },
+  {
+   "item": "pioneers:iron_dust",
+   "count": 2
+  }
+ ]
+}

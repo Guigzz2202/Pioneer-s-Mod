@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 2,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_tendril"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:activated_carbon",
+   "count": 3
+  }
+ ]
+}

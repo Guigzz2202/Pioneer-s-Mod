@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:spent_nickel_catalyst"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_catalyst",
+   "count": 3
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 100
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:pgm_chloride_liquor",
+  "pioneers:flowing_pgm_chloride_liquor"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 260,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/titanium"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:bolts/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/nickel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/titanium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_sheet_metal",
+   "count": 2
+  }
+ ]
+}

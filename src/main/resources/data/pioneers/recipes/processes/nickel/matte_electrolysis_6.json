@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:refined_nickel_matte"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_ingot",
+   "count": 1
+  },
+  {
+   "item": "pioneers:cobalt_dust",
+   "count": 1,
+   "chance": 0.15
+  }
+ ]
+}

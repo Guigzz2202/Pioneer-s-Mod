@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 2,
+ "time": 790,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:osmium_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:osmium_plate",
+   "count": 9
+  }
+ ]
+}

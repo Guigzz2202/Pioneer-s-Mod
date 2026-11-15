@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_tropical_fish_grill"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tropical_fish_grill",
+   "count": 1
+  }
+ ]
+}

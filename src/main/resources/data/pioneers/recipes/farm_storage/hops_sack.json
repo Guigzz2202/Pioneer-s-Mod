@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:hops"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:hops_sack",
+  "count": 1
+ }
+}

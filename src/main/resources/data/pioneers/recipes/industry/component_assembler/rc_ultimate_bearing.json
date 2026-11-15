@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_bearing"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tharsium_magnet"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium_aluminide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:inductive_sensor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_integrated_circuit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/osmium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_bearing",
+   "count": 2
+  }
+ ]
+}

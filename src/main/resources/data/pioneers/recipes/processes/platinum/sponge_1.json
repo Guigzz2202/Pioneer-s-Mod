@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pgm_concentrate"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:aqua_regia",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pgm_residue",
+   "count": 1,
+   "chance": 0.5
+  },
+  {
+   "item": "pioneers:gold_dust",
+   "count": 1,
+   "chance": 0.2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:chloroplatinic_solution",
+   "amount": 500
+  }
+ ]
+}

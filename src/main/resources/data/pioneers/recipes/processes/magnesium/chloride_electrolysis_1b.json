@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_olivine"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:bischofite",
+   "count": 1
+  },
+  {
+   "item": "minecraft:sand",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

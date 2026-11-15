@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pasta_dough"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fresh_pasta",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 1,
+ "time": 200,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ruby_boule"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ruby",
+   "count": 4
+  }
+ ]
+}

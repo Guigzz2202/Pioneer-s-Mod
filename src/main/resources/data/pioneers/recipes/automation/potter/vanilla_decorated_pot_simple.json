@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:brick"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:decorated_pot",
+   "count": 1
+  }
+ ]
+}

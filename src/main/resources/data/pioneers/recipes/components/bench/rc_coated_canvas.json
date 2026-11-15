@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vulcanized_rubber"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/lapis"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:coated_canvas",
+  "count": 2
+ }
+}

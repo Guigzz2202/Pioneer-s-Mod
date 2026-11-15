@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cured_salmon"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:smoked_salmon",
+   "count": 2
+  }
+ ]
+}

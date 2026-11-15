@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "shaking_table",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:crushed_ores/gold"
+   },
+   "count": 5
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_dust",
+   "count": 2
+  },
+  {
+   "item": "pioneers:silver_dust",
+   "count": 1,
+   "chance": 0.1
+  },
+  {
+   "item": "pioneers:pgm_concentrate",
+   "count": 1,
+   "chance": 0.05
+  }
+ ],
+ "ore": true
+}

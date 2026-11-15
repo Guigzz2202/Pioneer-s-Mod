@@ -1,0 +1,27 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:gears/iron",
+  "#forge:gears/copper",
+  "#forge:gears/gold",
+  "#forge:gears/tin",
+  "#forge:gears/bronze",
+  "#forge:gears/brass",
+  "#forge:gears/steel",
+  "#forge:gears/nickel",
+  "#forge:gears/silver",
+  "#forge:gears/aluminium",
+  "#forge:gears/tungsten",
+  "#forge:gears/titanium",
+  "#forge:gears/invar",
+  "#forge:gears/electrum",
+  "#forge:gears/constantan",
+  "#forge:gears/stainless_steel",
+  "#forge:gears/duralumin",
+  "#forge:gears/nichrome",
+  "#forge:gears/vanadium_steel",
+  "#forge:gears/tungsten_carbide",
+  "#forge:gears/stellite",
+  "#forge:gears/redsteel"
+ ]
+}

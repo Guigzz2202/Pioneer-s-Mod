@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:white_rice"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:beetroot"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:grated_cheese"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:beet_risotto",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "  N",
+  " S ",
+  "S  "
+ ],
+ "key": {
+  "N": {
+   "tag": "forge:nuggets/iron"
+  },
+  "S": {
+   "tag": "forge:rods/wooden"
+  }
+ },
+ "result": {
+  "item": "pioneers:collier_pole",
+  "count": 1
+ }
+}

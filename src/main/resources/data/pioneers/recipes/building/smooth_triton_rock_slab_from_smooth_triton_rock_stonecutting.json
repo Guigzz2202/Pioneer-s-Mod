@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_triton_rock"
+ },
+ "result": "pioneers:smooth_triton_rock_slab",
+ "count": 2
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:fruit_press",
+  "count": 1
+ }
+}

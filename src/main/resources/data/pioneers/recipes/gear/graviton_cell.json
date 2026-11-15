@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "CEC",
+  "EWE",
+  "CEC"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:circuit_mk2"
+  },
+  "E": {
+   "item": "pioneers:electrolytic_capacitor"
+  },
+  "W": {
+   "item": "pioneers:copper_coil"
+  }
+ },
+ "result": {
+  "item": "pioneers:graviton_cell",
+  "count": 1
+ }
+}

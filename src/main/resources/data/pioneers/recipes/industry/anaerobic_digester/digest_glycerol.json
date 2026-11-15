@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 400,
+ "family": "anaerobic_digester",
+ "fluids": [
+  {
+   "fluid": "pioneers:glycerol",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:digestate",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:biogas",
+   "amount": 600
+  }
+ ]
+}

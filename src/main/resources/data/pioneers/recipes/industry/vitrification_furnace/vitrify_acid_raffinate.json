@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 600,
+ "family": "vitrification_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:sand"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_frit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:waste_canister"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:acid_raffinate",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vitrified_waste_canister",
+   "count": 1
+  }
+ ]
+}

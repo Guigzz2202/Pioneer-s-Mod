@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 2,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_shell_mold"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_bronze",
+   "amount": 608
+  },
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:bell",
+   "count": 1
+  },
+  {
+   "item": "pioneers:ceramic_shell_mold",
+   "count": 1
+  },
+  {
+   "item": "pioneers:bronze_nugget",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 760
+  }
+ ]
+}

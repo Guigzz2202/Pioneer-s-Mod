@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:miranda",
+ "gravity": 0.0832,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "cold",
+ "nitrogen": 0,
+ "temperature": -190
+}

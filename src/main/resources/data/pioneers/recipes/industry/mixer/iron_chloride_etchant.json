@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_chloride"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:etchant",
+   "amount": 300
+  }
+ ]
+}

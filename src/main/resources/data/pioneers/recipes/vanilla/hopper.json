@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "tag": "forge:chests/wooden"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:hopper",
+  "count": 1
+ }
+}

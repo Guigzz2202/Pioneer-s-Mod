@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:raw_venison",
+  "pioneers:raw_boar_meat",
+  "pioneers:raw_bison_meat",
+  "pioneers:raw_turkey"
+ ]
+}

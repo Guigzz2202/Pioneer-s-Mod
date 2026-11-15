@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:atmospheric_residue",
+  "pioneers:flowing_atmospheric_residue"
+ ]
+}

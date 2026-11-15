@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zircaloy_billet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zircaloy_rod",
+   "count": 18
+  },
+  {
+   "item": "pioneers:extrusion_die",
+   "count": 1
+  }
+ ]
+}

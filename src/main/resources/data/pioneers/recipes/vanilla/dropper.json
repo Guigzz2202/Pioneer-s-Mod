@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:cobblestone"
+   },
+   "count": 7
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:dropper",
+  "count": 1
+ }
+}

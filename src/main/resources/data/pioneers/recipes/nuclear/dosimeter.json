@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  " G ",
+  "CTC",
+  "PRP"
+ ],
+ "key": {
+  "G": {
+   "tag": "forge:glass_panes"
+  },
+  "C": {
+   "item": "pioneers:circuit_mk1"
+  },
+  "T": {
+   "item": "pioneers:vacuum_tube"
+  },
+  "P": {
+   "tag": "forge:plates/steel"
+  },
+  "R": {
+   "item": "pioneers:redstone"
+  }
+ },
+ "result": {
+  "item": "pioneers:dosimeter",
+  "count": 1
+ }
+}

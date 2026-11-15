@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_glass"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:industrial_glass_advanced",
+   "count": 1
+  }
+ ]
+}

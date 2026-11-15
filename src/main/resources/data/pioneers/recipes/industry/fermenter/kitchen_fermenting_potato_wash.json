@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 1920,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:potato_mash",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:potato_wash",
+   "amount": 1000
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:triton",
+ "gravity": 0.112,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "cold",
+ "nitrogen": 1,
+ "temperature": -235
+}

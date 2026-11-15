@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 160,
+ "family": "leaching_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wood_chips"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tanned_leather",
+   "count": 2
+  }
+ ]
+}

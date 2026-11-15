@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 170,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:zirconia_ceramic"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alumina_ceramic"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/stainless_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:firebox_elite",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 300,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_aluminide_ingot"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/lunarium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lunar_alloy_ingot",
+   "count": 2
+  }
+ ]
+}

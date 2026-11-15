@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/stellite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_bladed_rotor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iridium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/gold"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_gas_turbine",
+  "count": 1
+ }
+}

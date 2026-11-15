@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "tag": "minecraft:logs_that_burn"
+ },
+ "temperature": 450,
+ "time": 500,
+ "result": {
+  "item": "pioneers:charcoal",
+  "count": 1
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:derelict_electronic_mk2"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:scrap_electronic_mk2",
+  "count": 2
+ }
+}

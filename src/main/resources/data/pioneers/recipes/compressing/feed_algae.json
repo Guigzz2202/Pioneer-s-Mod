@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:microalgae"
+ },
+ "count": 2,
+ "result": {
+  "item": "pioneers:fish_feed",
+  "count": 4
+ },
+ "binder": {
+  "item": "pioneers:press_cake"
+ },
+ "binder_count": 1
+}

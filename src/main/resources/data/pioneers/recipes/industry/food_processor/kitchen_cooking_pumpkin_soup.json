@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:pumpkin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pumpkin_soup",
+   "count": 3
+  }
+ ]
+}

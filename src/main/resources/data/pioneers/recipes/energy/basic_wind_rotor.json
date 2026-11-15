@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bladed_rotor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_screw"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_wind_rotor",
+  "count": 1
+ }
+}

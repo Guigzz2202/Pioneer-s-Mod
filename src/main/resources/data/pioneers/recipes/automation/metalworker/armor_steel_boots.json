@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_boots",
+   "count": 1
+  }
+ ]
+}

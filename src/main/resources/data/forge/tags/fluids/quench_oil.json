@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:quench_oil",
+  "pioneers:flowing_quench_oil"
+ ]
+}

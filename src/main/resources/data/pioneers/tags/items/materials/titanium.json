@@ -1,0 +1,25 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:titanium_nugget",
+  "pioneers:titanium_ring",
+  "pioneers:titanium_rod",
+  "pioneers:titanium_plate",
+  "pioneers:titanium_dust",
+  "pioneers:titanium_wire",
+  "pioneers:titanium_block",
+  "pioneers:titanium_bolt",
+  "pioneers:titanium_gear",
+  "pioneers:titanium_spring",
+  "pioneers:titanium_ingot",
+  "pioneers:titanium_screw",
+  "pioneers:titanium_beam",
+  "pioneers:titanium_pipe",
+  "pioneers:titanium_sheet",
+  "pioneers:titanium_slab",
+  "pioneers:titanium_billet",
+  "pioneers:titanium_wire_rod",
+  "pioneers:titanium_beam_blank",
+  "pioneers:titanium_gear_blank"
+ ]
+}

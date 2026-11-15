@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bayer_digester",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:calcium_fluoride"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sodium_aluminate_liquor",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:cryolite",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 100
+  }
+ ],
+ "pressure": 8,
+ "air": 150
+}

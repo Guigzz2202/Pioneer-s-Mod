@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 3,
+ "time": 720,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:neutronium_ingot"
+   },
+   "count": 9
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:neutronium_billet",
+   "count": 1
+  }
+ ]
+}

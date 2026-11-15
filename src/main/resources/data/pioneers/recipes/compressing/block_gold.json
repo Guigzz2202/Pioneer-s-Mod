@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:ingots/gold"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:gold_block",
+  "count": 1
+ }
+}

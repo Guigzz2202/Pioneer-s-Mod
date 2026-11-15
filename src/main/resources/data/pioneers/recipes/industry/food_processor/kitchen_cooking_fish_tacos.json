@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tortilla"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/white"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salsa"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lettuce"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fish_tacos",
+   "count": 2
+  }
+ ]
+}

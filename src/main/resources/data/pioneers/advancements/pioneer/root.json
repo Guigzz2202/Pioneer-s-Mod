@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:restorer_notebook"
+  },
+  "title": {
+   "translate": "advancements.pioneers.pioneer.root.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.pioneer.root.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false,
+  "background": "pioneers:textures/block/rp/desk_leather.png"
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:restorer_notebook"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ]
+}

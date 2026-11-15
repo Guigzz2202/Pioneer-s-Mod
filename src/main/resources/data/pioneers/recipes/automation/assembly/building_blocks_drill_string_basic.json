@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:drill_bit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:drill_string_basic",
+   "count": 2
+  }
+ ]
+}

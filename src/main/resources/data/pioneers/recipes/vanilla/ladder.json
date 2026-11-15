@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:ladder",
+  "count": 3
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_ceres_rock"
+ },
+ "result": "pioneers:smooth_ceres_rock_slab",
+ "count": 2
+}

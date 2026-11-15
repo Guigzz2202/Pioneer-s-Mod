@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/bronze"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:caravan_route",
+  "count": 1
+ }
+}

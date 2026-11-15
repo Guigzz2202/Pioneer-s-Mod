@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_rope"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_peg"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:leather_backpack",
+  "count": 1
+ }
+}

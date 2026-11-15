@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "induction_furnace",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:pig_iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:sand"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:pump_housing",
+  "count": 2
+ },
+ "time": 120
+}

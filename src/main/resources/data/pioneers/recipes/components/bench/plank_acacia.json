@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:acacia_planks"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:acacia_plank",
+  "count": 2
+ }
+}

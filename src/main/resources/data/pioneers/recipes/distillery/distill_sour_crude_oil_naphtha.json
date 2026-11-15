@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillery",
+ "tier": 0,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:sour_crude_oil",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 200
+  }
+ ]
+}

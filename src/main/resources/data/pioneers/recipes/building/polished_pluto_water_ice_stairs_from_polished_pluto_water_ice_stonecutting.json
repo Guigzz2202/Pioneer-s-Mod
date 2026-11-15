@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_pluto_water_ice"
+ },
+ "result": "pioneers:polished_pluto_water_ice_stairs",
+ "count": 1
+}

@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/platinum"
+  },
+  {
+   "tag": "forge:nuggets/platinum"
+  },
+  {
+   "tag": "forge:nuggets/platinum"
+  },
+  {
+   "tag": "forge:nuggets/platinum"
+  },
+  {
+   "tag": "forge:nuggets/platinum"
+  },
+  {
+   "tag": "forge:nuggets/platinum"
+  },
+  {
+   "tag": "forge:nuggets/platinum"
+  },
+  {
+   "tag": "forge:nuggets/platinum"
+  },
+  {
+   "tag": "forge:nuggets/platinum"
+  }
+ ],
+ "result": {
+  "item": "pioneers:platinum_ingot",
+  "count": 1
+ }
+}

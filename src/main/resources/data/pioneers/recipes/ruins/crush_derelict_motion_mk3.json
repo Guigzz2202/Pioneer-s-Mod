@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:derelict_motion_mk3"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:scrap_motion_mk3",
+  "count": 2
+ }
+}

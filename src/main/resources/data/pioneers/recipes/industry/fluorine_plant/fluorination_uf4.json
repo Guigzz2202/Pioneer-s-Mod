@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 200,
+ "family": "fluorine_plant",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:uranium_tetrafluoride"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:fluorine",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:uranium_hexafluoride",
+   "amount": 1000
+  }
+ ],
+ "industrial": true
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 2,
+ "time": 140,
+ "family": "sintering_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_tile",
+   "count": 2
+  }
+ ]
+}

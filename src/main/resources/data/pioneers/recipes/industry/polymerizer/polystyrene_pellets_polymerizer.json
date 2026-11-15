@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 160,
+ "family": "polymerizer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zeolite_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:styrene",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:polystyrene_pellets",
+   "count": 4
+  },
+  {
+   "item": "pioneers:zeolite_catalyst",
+   "count": 1,
+   "chance": 0.98
+  },
+  {
+   "item": "pioneers:spent_zeolite_catalyst",
+   "count": 1,
+   "chance": 0.02
+  }
+ ]
+}

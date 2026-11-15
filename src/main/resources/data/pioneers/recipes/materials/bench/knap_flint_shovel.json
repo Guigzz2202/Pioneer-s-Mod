@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:flint"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:flint_shovel_head",
+  "count": 1
+ }
+}

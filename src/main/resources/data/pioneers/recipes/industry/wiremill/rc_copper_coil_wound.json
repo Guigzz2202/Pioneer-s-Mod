@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_wire"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_coil",
+   "count": 2
+  }
+ ]
+}

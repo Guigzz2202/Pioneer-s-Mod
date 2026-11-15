@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:sugar_cane"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plant_fiber"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:basket",
+  "count": 1
+ }
+}

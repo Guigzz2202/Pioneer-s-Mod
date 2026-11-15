@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/tanzanite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fluorite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:optical_fiber_strand",
+   "count": 8
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 210,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_kouign_amann"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:kouign_amann",
+   "count": 1
+  }
+ ]
+}

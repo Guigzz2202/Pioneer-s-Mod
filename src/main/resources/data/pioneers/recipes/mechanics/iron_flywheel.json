@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PPP",
+  "PXP",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "X": {
+   "item": "pioneers:iron_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:iron_flywheel",
+  "count": 1
+ }
+}

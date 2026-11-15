@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:veronite_superconductor"
+  },
+  {
+   "item": "pioneers:veronite_superconductor"
+  },
+  {
+   "item": "pioneers:photonic_crystal"
+  },
+  {
+   "item": "pioneers:tharsium_magnet"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_flight",
+  "count": 1
+ }
+}

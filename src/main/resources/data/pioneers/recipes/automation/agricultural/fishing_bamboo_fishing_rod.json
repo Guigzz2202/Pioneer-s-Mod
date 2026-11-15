@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bamboo"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:string"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:bamboo_fishing_rod"
+  }
+ ]
+}

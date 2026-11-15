@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:fruits"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 6000,
+ "results": [
+  {
+   "item": "pioneers:yeast",
+   "count": 3
+  }
+ ]
+}

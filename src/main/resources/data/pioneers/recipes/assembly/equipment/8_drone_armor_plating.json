@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...MOOM...",
+  "...OAAO...",
+  "...MOOM...",
+  "....FF...."
+ ],
+ "key": {
+  "M": {
+   "tag": "forge:plates/mordorite"
+  },
+  "O": {
+   "tag": "forge:plates/osmiridium"
+  },
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "F": {
+   "item": "pioneers:aramid_fiber"
+  }
+ },
+ "result": {
+  "item": "pioneers:drone_armor_plating",
+  "count": 2
+ },
+ "energy": 60000000,
+ "duration": 500,
+ "research": "storm_drones"
+}

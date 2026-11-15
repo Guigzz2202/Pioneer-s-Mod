@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bender",
+ "tier": 0,
+ "time": 120,
+ "family": "spring_coiler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_spring",
+   "count": 1
+  }
+ ]
+}

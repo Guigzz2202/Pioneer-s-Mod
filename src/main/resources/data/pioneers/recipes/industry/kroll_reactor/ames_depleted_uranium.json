@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "kroll_reactor",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:depleted_uranium_tetrafluoride"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/magnesium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:depleted_uranium_ingot",
+   "count": 2
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:drill_bit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vanadium_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:drill_string_advanced",
+   "count": 2
+  }
+ ]
+}

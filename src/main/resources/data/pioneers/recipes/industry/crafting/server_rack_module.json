@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:server_blade"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_basic"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:server_rack_module",
+  "count": 4
+ }
+}

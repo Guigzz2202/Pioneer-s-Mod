@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hopper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_logistic_cable"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sandblaster",
+   "count": 1
+  }
+ ]
+}

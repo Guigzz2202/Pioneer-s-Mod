@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "minecraft:red_sand"
+ },
+ "count": 4,
+ "result": {
+  "item": "minecraft:red_sandstone",
+  "count": 1
+ }
+}

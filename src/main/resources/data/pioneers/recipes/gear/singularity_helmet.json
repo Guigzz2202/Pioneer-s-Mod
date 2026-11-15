@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  "abd"
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:singularity_plating"
+  },
+  "C": {
+   "item": "pioneers:singularity_cell"
+  },
+  "X": {
+   "item": "pioneers:neutronic_helmet"
+  },
+  "a": {
+   "tag": "forge:plates/edenite"
+  },
+  "b": {
+   "tag": "forge:plates/borealite"
+  },
+  "d": {
+   "tag": "forge:rods/edenite"
+  }
+ },
+ "result": {
+  "item": "pioneers:singularity_helmet",
+  "count": 1
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:sheets/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_rivet"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/magnesium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/duralumin"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_fuselage_panel",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 1,
+ "time": 200,
+ "family": "air_separation_unit",
+ "gas_results": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  },
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 6000
+  }
+ ],
+ "industrial": true
+}

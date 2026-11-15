@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:beef"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wine"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:beef_stew",
+   "count": 3
+  }
+ ]
+}

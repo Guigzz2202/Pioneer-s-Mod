@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_hygiea_rock"
+ },
+ "result": "pioneers:hygiea_rock_brick_stairs",
+ "count": 1
+}

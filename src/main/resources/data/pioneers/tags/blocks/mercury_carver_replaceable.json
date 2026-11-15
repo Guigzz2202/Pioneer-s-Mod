@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:mercury_rock",
+  "pioneers:mercury_regolith",
+  "pioneers:mercury_dark_rock",
+  "pioneers:hollow_crust",
+  "pioneers:mercury_basalt",
+  "pioneers:mercurium_ore"
+ ]
+}

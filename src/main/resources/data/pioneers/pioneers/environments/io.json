@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:io",
+ "gravity": 0.18,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "radiation",
+ "nitrogen": 0,
+ "temperature": -150
+}

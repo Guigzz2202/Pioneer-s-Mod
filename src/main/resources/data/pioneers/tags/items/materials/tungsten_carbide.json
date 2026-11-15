@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:tungsten_carbide_rod",
+  "pioneers:tungsten_carbide_gear",
+  "pioneers:tungsten_carbide_plate",
+  "pioneers:tungsten_carbide_ingot",
+  "pioneers:tungsten_carbide_dust",
+  "pioneers:tungsten_carbide_block",
+  "pioneers:tungsten_carbide_billet"
+ ]
+}

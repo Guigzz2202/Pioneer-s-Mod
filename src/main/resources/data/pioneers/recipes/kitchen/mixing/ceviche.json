@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/white"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hot_pepper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bowl"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:ceviche",
+   "count": 2
+  }
+ ]
+}

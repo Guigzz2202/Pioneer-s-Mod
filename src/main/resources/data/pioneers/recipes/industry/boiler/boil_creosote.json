@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "boiler",
+ "tier": 0,
+ "time": 80,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 960
+  },
+  {
+   "fluid": "pioneers:creosote",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 7680
+  }
+ ]
+}

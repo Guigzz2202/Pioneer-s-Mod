@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:industrial_casing_elite"
+  },
+  "title": {
+   "translate": "advancements.pioneers.industry.parallel.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.industry.parallel.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_full_parallel"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:industry/formed"
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 160,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_laser"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/topaz"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:data_crystal_5d",
+   "count": 4
+  },
+  {
+   "item": "pioneers:fiber_laser",
+   "count": 1,
+   "chance": 0.95
+  }
+ ]
+}

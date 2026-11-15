@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:matchbox",
+  "pioneers:fire_starter",
+  "minecraft:flint_and_steel"
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:stick",
+  "count": 6
+ },
+ "time": 60,
+ "byproduct": {
+  "item": "pioneers:sawdust",
+  "count": 1
+ },
+ "chance": 0.25
+}

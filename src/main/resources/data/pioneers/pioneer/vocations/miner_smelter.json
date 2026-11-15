@@ -1,0 +1,39 @@
+{
+ "order": 1,
+ "affinities": [
+  "mining",
+  "smithing"
+ ],
+ "feature": "",
+ "emblem": "pioneers:textures/gui/pioneer/vocation/miner_smelter.png",
+ "advantage": {
+  "trait": "pit_eyes",
+  "modifiers": [
+   {
+    "key": "miner.night_vision",
+    "value": 1.0,
+    "unit": "abs"
+   },
+   {
+    "key": "miner.extra_nugget",
+    "value": 0.1,
+    "unit": "pct"
+   },
+   {
+    "key": "miner.ore_yield",
+    "value": 0.1,
+    "unit": "pct"
+   }
+  ]
+ },
+ "defect": {
+  "trait": "glare",
+  "modifiers": [
+   {
+    "key": "miner.glare_seconds",
+    "value": 3.0,
+    "unit": "abs"
+   }
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "pioneers:vesta_regolith"
+  },
+  "mode": "trench",
+  "min_length": 18,
+  "max_length": 28,
+  "width": 5,
+  "depth": 6,
+  "curl": 0.08
+ }
+}

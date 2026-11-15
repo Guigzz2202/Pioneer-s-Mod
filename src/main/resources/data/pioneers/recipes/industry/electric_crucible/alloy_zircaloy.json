@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 260,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/zirconium"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/tin"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zircaloy_ingot",
+   "count": 9
+  }
+ ],
+ "pure": true
+}

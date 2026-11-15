@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:blueberry_tray"
+  }
+ ],
+ "result": {
+  "item": "pioneers:blueberry",
+  "count": 9
+ }
+}

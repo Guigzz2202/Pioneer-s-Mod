@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "family": "stripper",
+ "tier": 1,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:acetone",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:crude_zirconium_tetrachloride",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:zirconium_tetrachloride",
+   "amount": 960
+  },
+  {
+   "gas": "pioneers:hafnium_tetrachloride",
+   "amount": 30
+  }
+ ]
+}

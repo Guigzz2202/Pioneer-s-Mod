@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "#pioneers:food/berries",
+  "#pioneers:food/tropical_fruits",
+  "#pioneers:food/stone_fruits",
+  "minecraft:melon_slice",
+  "pioneers:grapes"
+ ]
+}

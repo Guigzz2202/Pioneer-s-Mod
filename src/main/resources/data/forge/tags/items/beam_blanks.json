@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:beam_blanks/steel",
+  "#forge:beam_blanks/aluminium",
+  "#forge:beam_blanks/titanium",
+  "#forge:beam_blanks/galvanized_steel",
+  "#forge:beam_blanks/stainless_steel",
+  "#forge:beam_blanks/duralumin"
+ ]
+}

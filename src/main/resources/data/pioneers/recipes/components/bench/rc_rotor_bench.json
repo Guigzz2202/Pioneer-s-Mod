@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "advanced_components",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/redsteel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_coil"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:motor_rotor",
+  "count": 1
+ }
+}

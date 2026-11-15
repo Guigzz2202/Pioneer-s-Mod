@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:press_cake"
+ },
+ "count": 2,
+ "result": {
+  "item": "pioneers:fish_feed",
+  "count": 3
+ },
+ "binder": {
+  "item": "minecraft:wheat"
+ },
+ "binder_count": 1
+}

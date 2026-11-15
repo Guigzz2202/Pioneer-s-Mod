@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 2,
+ "time": 500,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:osmiridium_billet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:osmiridium_rod",
+   "count": 18
+  },
+  {
+   "item": "pioneers:extrusion_die",
+   "count": 1
+  }
+ ]
+}

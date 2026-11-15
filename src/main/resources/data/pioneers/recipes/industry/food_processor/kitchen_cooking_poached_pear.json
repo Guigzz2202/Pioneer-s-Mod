@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pear"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:chocolate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:poached_pear",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/duralumin"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:propeller",
+   "count": 2
+  }
+ ]
+}

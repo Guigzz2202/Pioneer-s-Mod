@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:phobos_sandstone"
+ },
+ "result": "pioneers:phobos_sandstone_brick_stairs",
+ "count": 1
+}

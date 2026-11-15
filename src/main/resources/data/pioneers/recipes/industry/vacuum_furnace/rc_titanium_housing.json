@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 160,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/titanium"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_housing",
+   "count": 2
+  }
+ ]
+}

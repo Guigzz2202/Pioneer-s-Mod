@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "#pioneers:fruit_leaves",
+  "pioneers:barley_sack",
+  "pioneers:oats_sack",
+  "pioneers:rye_sack",
+  "pioneers:paddy_rice_sack",
+  "pioneers:soybean_sack",
+  "pioneers:sunflower_seeds_sack",
+  "pioneers:hops_sack"
+ ]
+}

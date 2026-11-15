@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gears/bronze"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_rope"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:drill_crown",
+   "count": 1
+  }
+ ]
+}

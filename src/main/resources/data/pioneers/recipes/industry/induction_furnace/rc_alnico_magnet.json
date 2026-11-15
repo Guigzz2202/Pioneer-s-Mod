@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/nickel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/cobalt"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:alnico_magnet",
+   "count": 3
+  }
+ ]
+}

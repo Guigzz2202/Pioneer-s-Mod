@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:furnace"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:electric_heater",
+  "count": 1
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sodium_hydroxide"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:plant_oil",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:methanol",
+   "amount": 200
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:biodiesel",
+   "amount": 800
+  },
+  {
+   "fluid": "pioneers:glycerol",
+   "amount": 200
+  }
+ ]
+}

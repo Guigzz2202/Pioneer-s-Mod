@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "steam_turbine",
+ "tier": 0,
+ "time": 64,
+ "gases": [
+  {
+   "gas": "pioneers:hot_air",
+   "amount": 4000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:air",
+   "amount": 4000
+  }
+ ],
+ "energy": 2048
+}

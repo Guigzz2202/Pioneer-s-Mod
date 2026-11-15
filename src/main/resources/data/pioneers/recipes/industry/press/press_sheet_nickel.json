@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 0,
+ "time": 65,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/nickel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:press_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_sheet",
+   "count": 2
+  },
+  {
+   "item": "pioneers:press_die",
+   "count": 1
+  }
+ ]
+}

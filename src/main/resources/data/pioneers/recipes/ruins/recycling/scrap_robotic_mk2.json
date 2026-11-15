@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "recycler",
+ "tier": 1,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:scrap_robotic_mk2"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_dust",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "draws": {
+  "rolls": [
+   2,
+   3
+  ],
+  "pool": [
+   {
+    "item": "pioneers:track_tread",
+    "weight": 6,
+    "count": [
+     1,
+     3
+    ]
+   }
+  ]
+ }
+}

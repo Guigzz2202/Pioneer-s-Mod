@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 1800,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/titanium"
+   },
+   "count": 10
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_ingot",
+   "count": 9
+  }
+ ]
+}

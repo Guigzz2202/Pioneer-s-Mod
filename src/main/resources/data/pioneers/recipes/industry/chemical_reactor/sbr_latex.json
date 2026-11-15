@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "fluids": [
+  {
+   "fluid": "pioneers:styrene",
+   "amount": 250
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:butadiene",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:latex",
+   "amount": 750
+  }
+ ]
+}

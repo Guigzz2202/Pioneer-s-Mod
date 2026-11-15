@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "aG ",
+  "SCS",
+  "SLS"
+ ],
+ "key": {
+  "G": {
+   "tag": "forge:glass_panes"
+  },
+  "S": {
+   "tag": "forge:plates/steel"
+  },
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "L": {
+   "tag": "forge:rods/lunarium"
+  },
+  "a": {
+   "tag": "forge:wires/invar"
+  }
+ },
+ "result": {
+  "item": "pioneers:zone_planner"
+ }
+}

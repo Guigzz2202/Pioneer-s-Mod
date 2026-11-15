@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:cobalt_nugget",
+  "pioneers:cobalt_rod",
+  "pioneers:cobalt_ingot",
+  "pioneers:cobalt_plate",
+  "pioneers:cobalt_dust",
+  "pioneers:cobalt_block"
+ ]
+}

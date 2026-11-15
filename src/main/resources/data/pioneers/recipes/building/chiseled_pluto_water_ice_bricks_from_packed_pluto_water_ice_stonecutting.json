@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_pluto_water_ice"
+ },
+ "result": "pioneers:chiseled_pluto_water_ice_bricks",
+ "count": 1
+}

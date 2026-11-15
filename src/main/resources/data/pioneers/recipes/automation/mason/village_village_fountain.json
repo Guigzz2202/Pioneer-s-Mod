@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stone_bricks"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stone_brick_slab"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:village_fountain",
+   "count": 1
+  }
+ ]
+}

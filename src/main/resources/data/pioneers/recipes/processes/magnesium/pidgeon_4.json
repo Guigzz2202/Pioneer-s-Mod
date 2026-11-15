@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "family": "vacuum_furnace",
+ "tier": 1,
+ "time": 800,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:magnesia"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferrosilicon"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:magnesium_ingot",
+   "count": 1
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1
+  }
+ ],
+ "temperature": 1200
+}

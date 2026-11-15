@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:pipes/copper",
+  "#forge:pipes/brass",
+  "#forge:pipes/steel",
+  "#forge:pipes/titanium",
+  "#forge:pipes/stainless_steel",
+  "#forge:pipes/zircaloy",
+  "#forge:pipes/nickel",
+  "#forge:pipes/aluminium"
+ ]
+}

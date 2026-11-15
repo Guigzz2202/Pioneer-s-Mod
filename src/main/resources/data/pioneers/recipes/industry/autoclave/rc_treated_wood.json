@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planks"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:creosote",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:treated_wood",
+   "count": 8
+  }
+ ]
+}

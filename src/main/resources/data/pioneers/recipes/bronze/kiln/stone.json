@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "tag": "forge:cobblestone"
+ },
+ "temperature": 700,
+ "time": 200,
+ "result": {
+  "item": "minecraft:stone",
+  "count": 1
+ }
+}

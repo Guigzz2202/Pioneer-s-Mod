@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:heating_coil_advanced",
+    "pioneers:heating_coil_basic",
+    "pioneers:heating_coil_elite",
+    "pioneers:heating_coil_ultimate"
+  ]
+}

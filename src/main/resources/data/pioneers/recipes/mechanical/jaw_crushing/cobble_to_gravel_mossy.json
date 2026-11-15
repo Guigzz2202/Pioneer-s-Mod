@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "item": "minecraft:mossy_cobblestone"
+ },
+ "count": 1,
+ "turns": 3,
+ "results": [
+  {
+   "item": "minecraft:gravel",
+   "count": 1
+  },
+  {
+   "item": "minecraft:vine",
+   "count": 1,
+   "chance": 0.3
+  }
+ ]
+}

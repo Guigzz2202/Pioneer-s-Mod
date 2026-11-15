@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lead_ball"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:gunpowder"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:cartridge",
+  "count": 4
+ }
+}

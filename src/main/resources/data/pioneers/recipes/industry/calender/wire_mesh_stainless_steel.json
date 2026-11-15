@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 1,
+ "time": 140,
+ "family": "calender",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/stainless_steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stainless_steel_wire_mesh",
+   "count": 2
+  }
+ ]
+}

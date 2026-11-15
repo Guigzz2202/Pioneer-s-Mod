@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:barrel_stave"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:butter_churn",
+   "count": 1
+  }
+ ]
+}

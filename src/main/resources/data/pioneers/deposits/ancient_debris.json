@@ -1,0 +1,18 @@
+{
+ "result": "pioneers:netherite_scrap",
+ "material": "netherite",
+ "dimension": "minecraft:the_nether",
+ "tier": 2,
+ "reserve": [
+  1200,
+  4000
+ ],
+ "color": "#5A4A50",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_nether",
+   "weight": 2
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:canned_food"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm.canned.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm.canned.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:canned_food"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:farm/jam"
+}

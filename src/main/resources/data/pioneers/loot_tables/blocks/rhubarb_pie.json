@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:rhubarb_pie"
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "pioneers:rhubarb_pie",
+     "properties": {
+      "bites": "0"
+     }
+    }
+   ]
+  }
+ ]
+}

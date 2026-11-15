@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bacon"
+   },
+   "count": 1
+  }
+ ],
+ "time": 2400,
+ "results": [
+  {
+   "item": "pioneers:cured_bacon",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 2,
+ "time": 335,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/nichrome"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nichrome_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:nichrome_nugget",
+   "count": 9
+  }
+ ]
+}

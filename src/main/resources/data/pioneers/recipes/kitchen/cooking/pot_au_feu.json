@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:beef"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:leek"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:parsnip"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 1000
+ },
+ "time": 720,
+ "results": [
+  {
+   "item": "pioneers:pot_au_feu",
+   "count": 3
+  }
+ ]
+}

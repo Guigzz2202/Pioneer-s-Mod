@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 80,
+ "family": "roaster",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_shells"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:quicklime",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 200
+  }
+ ]
+}

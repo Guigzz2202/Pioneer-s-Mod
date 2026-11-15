@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_granola"
+   },
+   "count": 1
+  }
+ ],
+ "time": 240,
+ "results": [
+  {
+   "item": "pioneers:granola",
+   "count": 1
+  }
+ ]
+}

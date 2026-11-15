@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "blast_furnace",
+ "tier": 0,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lead_zinc_sinter"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hot_air",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_bullion",
+   "count": 2
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:zinc_vapor",
+   "amount": 288
+  }
+ ]
+}

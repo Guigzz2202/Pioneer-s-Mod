@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:robotic_casing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:capacitor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:robotic_port",
+  "count": 1
+ }
+}

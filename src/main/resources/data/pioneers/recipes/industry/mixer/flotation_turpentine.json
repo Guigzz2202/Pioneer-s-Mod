@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:soap"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:turpentine",
+   "amount": 50
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 950
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:flotation_reagent",
+   "amount": 1000
+  }
+ ]
+}

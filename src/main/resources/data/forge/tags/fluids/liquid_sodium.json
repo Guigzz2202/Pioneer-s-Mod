@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:liquid_sodium",
+  "pioneers:flowing_liquid_sodium"
+ ]
+}

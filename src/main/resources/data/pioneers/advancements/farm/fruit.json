@@ -1,0 +1,128 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:cherries"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm.fruit.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm.fruit.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:pear"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:cherries"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:orange"
+      ]
+     }
+    ]
+   }
+  },
+  "c3": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:peach"
+      ]
+     }
+    ]
+   }
+  },
+  "c4": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:plum"
+      ]
+     }
+    ]
+   }
+  },
+  "c5": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:lemon"
+      ]
+     }
+    ]
+   }
+  },
+  "c6": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:mango"
+      ]
+     }
+    ]
+   }
+  },
+  "c7": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:banana"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2",
+   "c3",
+   "c4",
+   "c5",
+   "c6",
+   "c7"
+  ]
+ ],
+ "parent": "pioneers:farm/root"
+}

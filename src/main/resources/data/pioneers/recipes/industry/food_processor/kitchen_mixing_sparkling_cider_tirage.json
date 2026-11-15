@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bottle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:cider",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sparkling_cider_tirage",
+   "count": 1
+  }
+ ]
+}

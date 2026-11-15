@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " P ",
+  "PXP",
+  " P "
+ ],
+ "key": {
+  "P": {
+   "tag": "minecraft:wooden_slabs"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:small_pulley",
+  "count": 2
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "optical_sorter",
+ "tier": 2,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_deimite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:deimite_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  },
+  {
+   "item": "pioneers:nickel_dust",
+   "count": 1,
+   "chance": 0.15
+  }
+ ],
+ "ore": true
+}

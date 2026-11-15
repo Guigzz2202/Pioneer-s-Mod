@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_tian"
+   },
+   "count": 1
+  }
+ ],
+ "time": 500,
+ "results": [
+  {
+   "item": "pioneers:ratatouille_tian",
+   "count": 1
+  }
+ ]
+}

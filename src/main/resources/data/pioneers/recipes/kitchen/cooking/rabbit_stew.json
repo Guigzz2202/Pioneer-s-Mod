@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:rabbit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 480,
+ "results": [
+  {
+   "item": "pioneers:rabbit_stew",
+   "count": 2
+  }
+ ]
+}

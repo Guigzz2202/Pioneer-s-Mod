@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:coal_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:coal",
+  "count": 9
+ }
+}

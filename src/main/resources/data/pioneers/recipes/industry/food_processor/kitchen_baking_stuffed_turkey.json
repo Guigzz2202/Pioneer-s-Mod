@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_stuffed_turkey"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stuffed_turkey",
+   "count": 1
+  }
+ ]
+}

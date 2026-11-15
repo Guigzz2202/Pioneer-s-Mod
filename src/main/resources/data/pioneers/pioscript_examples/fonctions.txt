@@ -1,0 +1,536 @@
+Reference PioScript (Pioneer's) - aussi : help() dans un programme, ou le bouton ? du terminal (F1)
+
+== Le langage ==
+nom = valeur
+    Une variable se crée en lui donnant une valeur : nombres entiers et décimaux, texte entre guillemets, True / False, None, listes [..], dictionnaires {..}. x += 1 ajoute 1.
+    ex. : a, b = 1, 2
+if condition: … elif …: … else: …
+    Exécute le bloc indenté (4 espaces) si la condition est vraie ; elif et else donnent les autres cas. Comparaisons : == != < <= > >=, in, is ; logique : and, or, not.
+    ex. : if t > 1000 and not alarme:
+while condition: …
+    Répète le bloc tant que la condition est vraie. while True: tourne sans fin (pensez à sleep() dedans). break sort de la boucle, continue passe au tour suivant.
+    ex. : while True:
+for x in séquence: …
+    Parcourt une liste, un texte, un dictionnaire (ses clés) ou un range(). Plusieurs variables d’un coup : for cle, valeur in d.items():
+    ex. : for i in range(10):
+def nom(a, b=2): … return x
+    Définit une fonction (paramètres avec valeurs par défaut possibles) ; return renvoie le résultat. global x permet de modifier une variable du programme depuis la fonction.
+    ex. : def carre(x): return x * x
+f"texte {expression:format}"
+    Texte avec des valeurs insérées : {x}, {x:.2f} (2 décimales), {x:>8} (aligné à droite sur 8), {x:<8}, {x:^8}, {x:d} (entier), {x:%} (pourcentage).
+    ex. : print(f"T = {t:.1f} K")
+séquence[début:fin:pas]
+    Indices à partir de 0, négatifs depuis la fin : l[0], l[-1] ; tranches l[1:3], texte[::-1] (à l’envers).
+    ex. : derniers = l[-3:]
++ - * / // % ** and or not in is
+    Calcul : + - * /, // division entière, % reste, ** puissance. a if condition else b choisit une valeur. # commence un commentaire.
+    ex. : x = 15 if actif else 0
+
+== Fonctions de base ==
+print(a, b, …)
+    Écrit ses arguments dans la console, séparés par des espaces.
+    ex. : print("Bonjour", 42)
+input(question)
+    Pose une question dans la console et attend que l’on tape une ligne ; renvoie le texte tapé.
+    ex. : nom = input("Nom ?")
+help(nom)
+    L’aide intégrée : help() liste les catégories, help("math") une catégorie, help("math.sqrt") une fonction (description et exemple). Aussi : bouton « ? » ou F1 dans le terminal.
+    ex. : help("fs.read")
+len(x)
+    Longueur d’un texte, d’une liste, d’un dictionnaire ou d’un range.
+    ex. : len([1, 2, 3])
+type(x)
+    Nom du type : "int", "float", "str", "bool", "list", "dict", "NoneType", "function"…
+    ex. : type(3.5)
+isinstance(x, "type")
+    Vrai si x est de ce type (nom ou liste de noms) ; "number" accepte int et float.
+    ex. : isinstance(v, "number")
+str(x)
+    Convertit en texte.
+    ex. : str(12) + " %"
+int(x)
+    Convertit en entier (tronque les décimales, lit un texte).
+    ex. : int("42")
+float(x)
+    Convertit en nombre décimal.
+    ex. : float("3.5")
+bool(x)
+    Vrai ou faux : 0, "", [], {} et None sont faux.
+    ex. : bool([])
+repr(x)
+    Texte qui représente la valeur, guillemets compris.
+    ex. : repr("a")
+format(x, "spec")
+    Met en forme comme dans une f-chaîne : ".2f", ">8", "d", "%".
+    ex. : format(0.45, "%")
+range(fin) / range(début, fin, pas)
+    Suite d’entiers (fin exclue), pour les boucles for.
+    ex. : range(0, 10, 2)
+enumerate(séquence, début=0)
+    Liste de paires [indice, élément] : for i, x in enumerate(l):
+    ex. : enumerate(["a", "b"], 1)
+zip(a, b, …)
+    Assemble plusieurs listes élément par élément (s’arrête à la plus courte).
+    ex. : zip(noms, valeurs)
+list(x)
+    Nouvelle liste (vide, ou à partir d’un texte, d’un range, des clés d’un dictionnaire…).
+    ex. : list(range(5))
+dict()
+    Nouveau dictionnaire vide (comme {}).
+    ex. : stock = dict()
+sorted(séquence, inverse=False)
+    Copie triée (nombres ou textes) ; True en second argument : du plus grand au plus petit.
+    ex. : sorted([3, 1, 2], True)
+reversed(séquence)
+    Copie à l’envers (liste).
+    ex. : reversed([1, 2, 3])
+min(a, b, …) / min(liste)
+    Le plus petit.
+    ex. : min(4, 2, 8)
+max(a, b, …) / max(liste)
+    Le plus grand.
+    ex. : max(temperatures)
+sum(liste, départ=0)
+    Somme des éléments.
+    ex. : sum([1, 2, 3])
+any(séquence)
+    Vrai si au moins un élément est vrai.
+    ex. : any(alarmes)
+all(séquence)
+    Vrai si tous les éléments sont vrais (et pour une liste vide).
+    ex. : all(prets)
+abs(x)
+    Valeur absolue.
+    ex. : abs(-5)
+round(x, décimales=0)
+    Arrondi (entier sans second argument).
+    ex. : round(3.14159, 2)
+divmod(a, b)
+    Quotient entier et reste : [a // b, a % b].
+    ex. : divmod(125, 60)
+chr(n)
+    Caractère de code n.
+    ex. : chr(65)
+ord(c)
+    Code d’un caractère.
+    ex. : ord("A")
+hex(n)
+    Écriture hexadécimale ("0xff").
+    ex. : hex(255)
+bin(n)
+    Écriture binaire ("0b101").
+    ex. : bin(5)
+random()
+    Nombre au hasard entre 0 et 1.
+    ex. : random() < 0.1
+randint(a, b)
+    Entier au hasard de a à b compris.
+    ex. : randint(1, 6)
+sleep(secondes)
+    Met le programme en pause (au moins 1 tick, 1 heure au plus). Indispensable dans une boucle sans fin.
+    ex. : sleep(0.5)
+time()
+    Secondes écoulées depuis le lancement du programme.
+    ex. : t0 = time()
+
+== Maths (math) ==
+math.pi
+    π ≈ 3,14159.
+    ex. : 2 * math.pi * r
+math.e
+    e ≈ 2,71828.
+math.tau
+    2π (un tour en radians).
+math.inf
+    L’infini (plus grand que tout nombre).
+    ex. : meilleur = math.inf
+math.sqrt(x)
+    Racine carrée.
+    ex. : math.sqrt(16)
+math.pow(x, y)
+    x puissance y (décimal).
+    ex. : math.pow(2, 10)
+math.floor(x)
+    Arrondi à l’entier inférieur.
+    ex. : math.floor(2.7)
+math.ceil(x)
+    Arrondi à l’entier supérieur.
+    ex. : math.ceil(2.1)
+math.trunc(x)
+    Partie entière (vers zéro).
+    ex. : math.trunc(-2.7)
+math.sign(x)
+    Signe : -1, 0 ou 1.
+    ex. : math.sign(-4)
+math.clamp(x, mini, maxi)
+    Ramène x entre mini et maxi.
+    ex. : math.clamp(barres, 0, 100)
+math.lerp(a, b, t)
+    Interpolation : a quand t = 0, b quand t = 1.
+    ex. : math.lerp(0, 100, 0.25)
+math.sin(x)
+    Sinus (radians).
+    ex. : math.sin(math.pi / 2)
+math.cos(x)
+    Cosinus (radians).
+math.tan(x)
+    Tangente (radians).
+math.asin(x)
+    Arc sinus (radians).
+math.acos(x)
+    Arc cosinus (radians).
+math.atan(x)
+    Arc tangente (radians).
+math.atan2(y, x)
+    Angle du point (x, y) en radians, de -π à π.
+    ex. : math.degrees(math.atan2(dz, dx))
+math.degrees(x)
+    Radians → degrés.
+    ex. : math.degrees(math.pi)
+math.radians(x)
+    Degrés → radians.
+    ex. : math.radians(90)
+math.hypot(x, y, …)
+    Longueur du vecteur (distance à l’origine).
+    ex. : math.hypot(dx, dz)
+math.exp(x)
+    e puissance x.
+math.log(x, base=e)
+    Logarithme (naturel, ou dans la base donnée).
+    ex. : math.log(8, 2)
+math.log10(x)
+    Logarithme décimal.
+    ex. : math.log10(1000)
+math.gcd(a, b)
+    Plus grand diviseur commun.
+    ex. : math.gcd(12, 18)
+math.mean(liste)
+    Moyenne.
+    ex. : math.mean([10, 20, 30])
+math.median(liste)
+    Médiane (valeur du milieu).
+    ex. : math.median(mesures)
+math.isnan(x)
+    Vrai si x n’est pas un nombre (nan).
+
+== Texte (méthodes de str) ==
+texte.upper()
+    En majuscules.
+    ex. : "abc".upper()
+texte.lower()
+    En minuscules.
+texte.title()
+    Majuscule à chaque mot.
+    ex. : "mine de fer".title()
+texte.capitalize()
+    Majuscule à la première lettre.
+texte.strip()
+    Sans les espaces du début et de la fin (lstrip : début, rstrip : fin).
+    ex. : " a ".strip()
+texte.split(séparateur)
+    Découpe en liste (aux espaces sans argument).
+    ex. : "a;b;c".split(";")
+texte.splitlines()
+    Découpe en lignes.
+    ex. : fs.read("log.txt").splitlines()
+texte.partition(séparateur)
+    Coupe au premier séparateur : [avant, séparateur, après].
+    ex. : "cle=valeur".partition("=")
+séparateur.join(liste)
+    Recolle une liste de textes avec ce séparateur.
+    ex. : ", ".join(noms)
+texte.replace(ancien, nouveau)
+    Remplace toutes les occurrences.
+texte.startswith(début)
+    Commence par ?
+texte.endswith(fin)
+    Finit par ?
+texte.find(sous_texte)
+    Position de la première occurrence, -1 si absent (rfind : la dernière).
+texte.rfind(sous_texte)
+    Position de la dernière occurrence, -1 si absent.
+texte.count(sous_texte)
+    Nombre d’occurrences.
+texte.isdigit()
+    Que des chiffres ?
+texte.isalpha()
+    Que des lettres ?
+texte.isalnum()
+    Que des lettres et des chiffres ?
+texte.isspace()
+    Que des espaces ?
+texte.isupper()
+    Tout en majuscules ? (islower : tout en minuscules ?)
+texte.zfill(largeur)
+    Complète de zéros à gauche.
+    ex. : str(7).zfill(3)
+texte.ljust(largeur, car=" ")
+    Aligné à gauche sur cette largeur (rjust : à droite, center : centré).
+    ex. : "Fer".ljust(10, ".")
+texte.rjust(largeur, car=" ")
+    Aligné à droite sur cette largeur.
+texte.center(largeur, car=" ")
+    Centré sur cette largeur.
+    ex. : "ALERTE".center(20, "*")
+
+== Listes (méthodes de list) ==
+liste.append(x)
+    Ajoute à la fin.
+    ex. : l.append(42)
+liste.extend(autre)
+    Ajoute tous les éléments d’une autre liste.
+liste.insert(i, x)
+    Insère à la position i.
+liste.pop(i=-1)
+    Retire et renvoie l’élément i (le dernier par défaut).
+    ex. : l.pop(0)
+liste.remove(x)
+    Retire la première occurrence de x.
+liste.index(x)
+    Position de x (erreur s’il est absent).
+liste.count(x)
+    Nombre d’occurrences de x.
+liste.sort(inverse=False)
+    Trie la liste sur place.
+liste.reverse()
+    Retourne la liste sur place.
+liste.clear()
+    Vide la liste.
+liste.copy()
+    Copie de la liste.
+
+== Dictionnaires (méthodes de dict) ==
+d.keys()
+    Liste des clés.
+d.values()
+    Liste des valeurs.
+d.items()
+    Liste des paires [clé, valeur].
+    ex. : for k, v in d.items():
+d.get(clé, défaut=None)
+    Valeur de la clé, ou le défaut si elle manque.
+    ex. : d.get("fer", 0)
+d.setdefault(clé, défaut)
+    Valeur de la clé ; si elle manque, l’ajoute avec le défaut.
+    ex. : compte.setdefault(nom, 0)
+d.pop(clé, défaut)
+    Retire la clé et renvoie sa valeur.
+d.update(autre)
+    Recopie les clés d’un autre dictionnaire.
+d.clear()
+    Vide le dictionnaire.
+d.copy()
+    Copie du dictionnaire.
+
+== JSON (json) ==
+json.dumps(valeur)
+    Transforme une valeur (nombres, textes, listes, dictionnaires, True/False/None) en texte JSON, pour l’enregistrer dans un fichier.
+    ex. : fs.write("etat.json", json.dumps(etat))
+json.loads(texte)
+    Relit un texte JSON en valeur.
+    ex. : etat = json.loads(fs.read("etat.json"))
+
+== Redstone (redstone) ==
+redstone.get(face)
+    Signal reçu par cette face (0 à 15). Faces : nord, sud, est, ouest, haut, bas (ou north, south…).
+    ex. : redstone.get("sud")
+redstone.set(face, niveau)
+    Émet ce signal (0 à 15) par cette face.
+    ex. : redstone.set("nord", 15)
+redstone.output(face)
+    Signal actuellement émis par cette face.
+redstone.inputs()
+    Tous les signaux reçus : dictionnaire face → niveau.
+    ex. : redstone.inputs()["up"]
+redstone.all(niveau)
+    Émet ce signal par les six faces (0 : tout éteindre).
+    ex. : redstone.all(0)
+
+== Machines liées (link) ==
+link(n)
+    Machine liée n (1 à 4) — liaison faite au configurateur de liaison (Maj + clic droit sur la machine, puis clic droit sur l’ordinateur).
+    ex. : r = link(1)
+links()
+    Les liaisons occupées : liste de fiches {"n", "name", "connected"}.
+    ex. : for l in links(): print(l["n"], l["name"])
+m.connected()
+    Vrai si la machine est encore là et chargée.
+m.name()
+    Nom de la machine.
+m.keys()
+    Noms des mesures disponibles.
+m.value(clé)
+    Une mesure (None si inconnue) : "temperature", "energy", "progress"…
+    ex. : r.value("temperature")
+m.values()
+    Toutes les mesures : dictionnaire clé → valeur.
+m.commands()
+    Commandes acceptées par la machine.
+m.command(clé, valeur=0)
+    Envoie une commande (ex. "rods", "scram", "enable"). Renvoie vrai si acceptée.
+    ex. : r.command("rods", 40)
+m.lockRecipe(id)
+    Verrouille une recette (sélecteur de recette) : la machine ne fait plus qu’elle et refuse toute autre entrée. Renvoie vrai si c’est une recette de cette machine (id complet, ou sans « pioneers: »).
+    ex. : m.lockRecipe("pioneers:industry/machining_center/bolt_steel")
+m.unlockRecipe()
+    Retire le verrou : la machine reprend la recette la plus complète qui convient. Renvoie vrai si la machine a un sélecteur.
+m.lockedRecipe()
+    Identifiant de la recette verrouillée, ou None.
+    ex. : if m.lockedRecipe() is None: print("libre")
+
+== Réseau numérique (network) ==
+network.connected()
+    Vrai si l’ordinateur touche une fibre optique (il est alors sur le réseau numérique).
+network.data()
+    Données en stock sur le réseau (banques + fibre) : dictionnaire type → Mo.
+    ex. : for t, mo in network.data().items(): print(t, mo)
+network.stored()
+    Total des données en stock (Mo).
+network.capacity()
+    Capacité totale des banques du réseau (Mo).
+network.compute()
+    Calcul partagé : {"gops", "qops", "gops_demand", "qops_demand"} (offre et demande).
+    ex. : c = network.compute()
+network.machines()
+    Machines branchées : fiches {"n", "name", "role", "x", "y", "z"} ; role = bank, lab, producer, compute, ai, supervision, multiblock ou other.
+    ex. : for m in network.machines(): print(m["n"], m["name"])
+network.machine(n)
+    La machine n du réseau, comme une liaison (mêmes méthodes que link(n) : value, values, command…), sans configurateur ni limite de distance.
+    ex. : r = network.machine(network.find("Réacteur"))
+network.find(texte)
+    Numéro de la première machine dont le nom contient ce texte (None sinon).
+
+== Écrans de supervision (screen) ==
+screen.print(texte)
+    Ajoute une ligne en bas des écrans de supervision liés (le texte défile).
+screen.write(ligne, texte)
+    Écrit une ligne précise (1 à 24).
+    ex. : screen.write(1, "Etat : OK")
+screen.clear()
+    Efface les écrans.
+screen.rows()
+    Nombre de lignes des écrans (24).
+screen.cols()
+    Nombre de caractères par ligne (64).
+screen.center(ligne, texte)
+    Écrit un texte centré sur cette ligne.
+    ex. : screen.center(1, "CENTRALE")
+screen.bar(ligne, libellé, valeur, maxi)
+    Barre de progression en texte sur cette ligne : libellé [█████░░░░] 55 %.
+    ex. : screen.bar(3, "Eau", eau, 8000)
+
+== Fichiers (fs) ==
+fs.list(lecteur="c")
+    Noms des fichiers d’un lecteur : "a", "b" (disquettes) ou "c" (disque interne).
+    ex. : fs.list("a")
+fs.read(chemin)
+    Contenu d’un fichier ("a:nom", "b:nom" ou "nom" sur le disque interne).
+    ex. : fs.read("a:notes.txt")
+fs.write(chemin, texte)
+    Écrit (remplace) un fichier.
+fs.append(chemin, texte)
+    Ajoute à la fin d’un fichier (pensez au "\n").
+    ex. : fs.append("log.txt", f"{t}\n")
+fs.lines(chemin)
+    Les lignes d’un fichier (liste ; vide s’il n’existe pas).
+fs.exists(chemin)
+    Le fichier existe-t-il ?
+fs.size(chemin)
+    Taille du fichier en caractères (-1 s’il n’existe pas).
+fs.delete(chemin)
+    Supprime un fichier (vrai s’il existait).
+fs.rename(ancien, nouveau)
+    Renomme ou déplace un fichier (d’un lecteur à l’autre aussi).
+    ex. : fs.rename("log.txt", "a:log.txt")
+fs.copy(source, destination)
+    Copie un fichier.
+fs.free(lecteur="c")
+    Place libre sur le lecteur (caractères).
+
+== Monde et heure (world) ==
+world.time()
+    Heure du jour en ticks (0 à 23 999 ; 0 = 6 h du matin).
+world.clock()
+    Heure du jour au format "HH:MM".
+    ex. : screen.write(1, world.clock())
+world.day()
+    Numéro du jour depuis la création du monde.
+world.is_day()
+    Vrai de jour.
+    ex. : redstone.set("haut", 0 if world.is_day() else 15)
+world.moon()
+    Phase de la lune (0 = pleine lune … 7).
+world.weather()
+    Météo ici : "clear" (beau temps), "rain" (pluie ou neige) ou "thunder" (orage).
+    ex. : if world.weather() == "thunder": redstone.all(15)
+world.dimension()
+    Dimension de l’ordinateur ("minecraft:overworld", "pioneers:moon"…).
+world.biome()
+    Biome de l’ordinateur.
+
+== L’ordinateur (computer) ==
+computer.position()
+    Position de l’ordinateur : {"x", "y", "z"}.
+computer.energy()
+    Énergie stockée (FE).
+computer.energy_max()
+    Énergie stockable (FE).
+computer.program()
+    Nom du fichier du programme en cours.
+computer.beep(hauteur=1)
+    Émet un bip (hauteur 0,5 à 2).
+    ex. : computer.beep(2)
+
+== Réseau de calcul (compute) ==
+compute.available()
+    GOPS libres du réseau de calcul touché (câbles de données ou centre de données collé).
+compute.quantum()
+    QOPS libres (ordinateurs quantiques).
+compute.request(n)
+    Demande n GOPS (à renouveler au moins chaque seconde) ; renvoie ce qui est accordé.
+    ex. : compute.request(50)
+compute.total()
+    Calcul servi dans tout le monde (GOPS).
+
+== Ordinateurs de vol (flight) ==
+flight.check(lecteur)
+    Ordinateurs de vol dans le lecteur : "none", "blank" ou "programmed".
+    ex. : flight.check("a")
+flight.flash(lecteur, mission="")
+    Programme toute la pile d’ordinateurs de vol du lecteur ; renvoie le nombre programmé.
+    ex. : flight.flash("a", "Sonde")
+
+== Chemin de fer (rail) ==
+rail.trains()
+    Fiches de tous les trains : "name", "id", "status", "auto", "station", "group", "logistic", "speed", "cars", "fuel", "mass".
+    ex. : for t in rail.trains(): print(t["name"])
+rail.train(nom)
+    Fiche d’un train (nom ou début de l’id), ou None.
+rail.send(train, gare)
+    Envoie un train automatique à une gare (arrêt temporaire, puis il reprend son horaire).
+    ex. : rail.send("Fret 1", "Mine")
+rail.stations()
+    Fiches des gares : "name", "x", "y", "z", "limit", "role", "trains".
+rail.station(nom)
+    Fiche d’une gare avec le stock de son quai ("stock"), ou None.
+rail.set_limit(gare, n)
+    Limite de trains de toutes les gares de ce nom (-1 : sans limite).
+rail.signal(nom, valeur)
+    Signal nommé lu par la condition d’horaire « Signal ».
+    ex. : rail.signal("quai_plein", 1)
+rail.get_signal(nom)
+    Valeur d’un signal nommé.
+rail.weigh(x, y, z)
+    Pesée du pont-bascule à cette position (masse, véhicules, remplissage, train), ou None.
+rail.deliveries()
+    Livraisons du répartiteur en cours.
+
+== Marine (naval) ==
+naval.ships()
+    Fiches des navires : "name", "id", "kind", "tier", "status", "auto", "port", "logistic", "speed", "fill", "fuel", "length".
+naval.ship(nom)
+    Fiche d’un navire, ou None.
+naval.send(navire, port)
+    Envoie un navire à un port (arrêt temporaire).
+naval.ports()
+    Fiches des ports : "name", "x", "y", "z", "tier", "berth", "max_tier", "role", "docked".

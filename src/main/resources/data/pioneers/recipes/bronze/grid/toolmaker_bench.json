@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "FLF",
+  "PPP",
+  "L L"
+ ],
+ "key": {
+  "F": {
+   "item": "minecraft:flint"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "item": "pioneers:toolmaker_bench",
+  "count": 1
+ }
+}

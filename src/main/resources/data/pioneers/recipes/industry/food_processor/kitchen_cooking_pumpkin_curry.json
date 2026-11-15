@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 210,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:pumpkin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:curry_paste"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pumpkin_curry",
+   "count": 3
+  }
+ ]
+}

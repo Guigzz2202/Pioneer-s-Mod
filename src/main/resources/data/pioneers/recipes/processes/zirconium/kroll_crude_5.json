@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "kroll_reactor",
+ "tier": 1,
+ "time": 560,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/magnesium"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:crude_zirconium_tetrachloride",
+   "amount": 600
+  },
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zirconium_sponge",
+   "count": 1
+  },
+  {
+   "item": "pioneers:magnesium_chloride",
+   "count": 2
+  }
+ ],
+ "industrial": true,
+ "temperature": 900
+}

@@ -1,0 +1,69 @@
+{
+ "id": "democracy",
+ "order": 0,
+ "representative": {
+  "mode": "elected",
+  "term_days": 14,
+  "reelectable": true,
+  "election": {
+   "by": "members",
+   "majority": "simple"
+  }
+ },
+ "council": {
+  "min": 0,
+  "max": 0
+ },
+ "decisions": {
+  "taxes": {
+   "by": "members",
+   "majority": "simple"
+  },
+  "roles": {
+   "by": "representative"
+  },
+  "kick": {
+   "by": "members",
+   "majority": "simple"
+  },
+  "spend": {
+   "by": "members",
+   "majority": "simple"
+  },
+  "war": {
+   "by": "members",
+   "majority": "p60"
+  },
+  "treaty": {
+   "by": "members",
+   "majority": "p60"
+  },
+  "regime": {
+   "by": "members",
+   "majority": "two_thirds"
+  },
+  "identity": {
+   "by": "members",
+   "majority": "simple"
+  }
+ },
+ "caps": {
+  "activity_tax": 20,
+  "dues": 50
+ },
+ "succession": "emergency_election",
+ "counter_power": {
+  "type": "recall",
+  "cooldown_days": 7,
+  "by": "members",
+  "majority": "two_thirds"
+ },
+ "advantage": {
+  "claim_budget": 0.0,
+  "dividend": false
+ },
+ "federal": {
+  "contribution_max": 10,
+  "weight_cap": 0.4
+ }
+}

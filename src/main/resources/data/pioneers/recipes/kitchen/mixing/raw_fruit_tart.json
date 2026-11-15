@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pastry_dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:custard"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/stone_fruits"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_fruit_tart",
+   "count": 1
+  }
+ ]
+}

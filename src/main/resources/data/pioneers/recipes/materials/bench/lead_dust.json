@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/lead"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:lead_dust",
+  "count": 3
+ }
+}

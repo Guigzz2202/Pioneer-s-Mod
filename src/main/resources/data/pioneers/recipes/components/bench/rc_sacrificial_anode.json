@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/zinc"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:sacrificial_anode",
+  "count": 1
+ }
+}

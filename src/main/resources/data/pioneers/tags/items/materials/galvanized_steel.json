@@ -1,0 +1,18 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:galvanized_steel_ring",
+  "pioneers:galvanized_steel_rod",
+  "pioneers:galvanized_steel_plate",
+  "pioneers:galvanized_steel_block",
+  "pioneers:galvanized_steel_ingot",
+  "pioneers:galvanized_steel_beam",
+  "pioneers:galvanized_steel_wire_rope",
+  "pioneers:galvanized_steel_sheet",
+  "pioneers:galvanized_steel_slab",
+  "pioneers:galvanized_steel_billet",
+  "pioneers:galvanized_steel_wire_rod",
+  "pioneers:galvanized_steel_beam_blank",
+  "pioneers:galvanized_steel_wire"
+ ]
+}

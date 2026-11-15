@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:mars_sandstone"
+ },
+ "result": "pioneers:chiseled_mars_sandstone",
+ "count": 1
+}

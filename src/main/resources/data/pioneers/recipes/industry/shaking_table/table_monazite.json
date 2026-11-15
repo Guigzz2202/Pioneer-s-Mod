@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 1,
+ "time": 200,
+ "family": "shaking_table",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ground_monazite"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:monazite_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "ore": true
+}

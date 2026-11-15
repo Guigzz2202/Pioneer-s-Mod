@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/lunarium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:lunarium_nugget",
+  "count": 9
+ }
+}

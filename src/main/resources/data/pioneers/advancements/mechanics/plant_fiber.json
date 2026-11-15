@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:plant_fiber"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.plant_fiber.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.plant_fiber.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:plant_fiber"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:mechanics/root"
+}

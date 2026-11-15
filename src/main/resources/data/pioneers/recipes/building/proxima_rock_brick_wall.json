@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:proxima_rock_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:proxima_rock_brick_wall",
+  "count": 6
+ }
+}

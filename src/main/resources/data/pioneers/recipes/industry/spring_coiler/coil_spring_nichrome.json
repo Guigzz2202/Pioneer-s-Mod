@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bender",
+ "tier": 2,
+ "time": 140,
+ "family": "spring_coiler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/nichrome"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nichrome_spring",
+   "count": 1
+  }
+ ]
+}

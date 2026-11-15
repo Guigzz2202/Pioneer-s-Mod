@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/vanadium_steel"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_wire",
+   "count": 1
+  }
+ ]
+}

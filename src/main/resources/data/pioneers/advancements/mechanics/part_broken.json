@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:wooden_shaft"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.part_broken.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.part_broken.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": true
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "part_broken"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:mechanics/first_crank"
+}

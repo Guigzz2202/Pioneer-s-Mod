@@ -1,0 +1,84 @@
+{
+ "type": "pioneers:callisto",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:callisto",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:valhalla_basin",
+     "parameters": {
+      "temperature": [
+       0.38,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:callisto_knobby_terrain",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.38
+      ],
+      "humidity": [
+       0.31,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:callisto_cratered_plains",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.38
+      ],
+      "humidity": [
+       -1.0,
+       0.31
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

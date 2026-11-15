@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_scrap_bale"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_aluminium",
+   "amount": 547
+  }
+ ],
+ "temperature": 750
+}

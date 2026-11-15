@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 100,
+ "family": "membrane_cell",
+ "fluids": [
+  {
+   "fluid": "pioneers:brine",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 500
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 300
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ]
+}

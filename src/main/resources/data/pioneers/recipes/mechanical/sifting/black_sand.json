@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:sifting",
+ "input": {
+  "item": "pioneers:black_sand"
+ },
+ "count": 1,
+ "turns": 6,
+ "results": [
+  {
+   "item": "pioneers:cassiterite_fragment",
+   "count": 1,
+   "chance": 0.7
+  },
+  {
+   "item": "pioneers:magnetite_fragment",
+   "count": 1,
+   "chance": 0.3
+  },
+  {
+   "item": "pioneers:hematite_fragment",
+   "count": 1,
+   "chance": 0.55
+  },
+  {
+   "item": "pioneers:gold_flake",
+   "count": 1,
+   "chance": 0.04
+  },
+  {
+   "item": "pioneers:zircon",
+   "count": 1,
+   "chance": 0.08
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ptfe_gasket"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ball_valve"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_piston",
+   "count": 2
+  }
+ ]
+}

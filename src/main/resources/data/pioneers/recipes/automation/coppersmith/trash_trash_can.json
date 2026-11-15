@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_hopper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:flint"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:trash_can",
+   "count": 1
+  }
+ ]
+}

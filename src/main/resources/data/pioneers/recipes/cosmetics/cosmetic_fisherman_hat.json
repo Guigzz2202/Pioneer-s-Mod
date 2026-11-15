@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "item": "minecraft:shears"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:coated_canvas"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_fisherman_hat",
+  "count": 1
+ }
+}

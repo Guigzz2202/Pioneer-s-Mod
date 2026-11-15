@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 22,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:trappist_1b_ash"
+    },
+    "state": {
+     "Name": "pioneers:trappist_1b_obsidian_crust"
+    }
+   },
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:trappist_1b_rock"
+    },
+    "state": {
+     "Name": "pioneers:trappist_1b_obsidian_crust"
+    }
+   }
+  ]
+ }
+}

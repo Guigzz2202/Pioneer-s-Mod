@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/grains"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cucumber"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinaigrette"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bowl"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:grain_salad",
+   "count": 2
+  }
+ ]
+}

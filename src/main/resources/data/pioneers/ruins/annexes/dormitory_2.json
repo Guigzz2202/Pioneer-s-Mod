@@ -1,0 +1,119 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "dormitory",
+ "variant": 2,
+ "min_tier": 1,
+ "size": [
+  10,
+  8,
+  6
+ ],
+ "palette": [
+  "minecraft:dark_oak_planks",
+  "minecraft:stone_bricks",
+  "minecraft:mossy_cobblestone",
+  "minecraft:bricks",
+  "minecraft:dark_oak_door[facing=south,half=lower,hinge=right,open=false,powered=false]",
+  "minecraft:flower_pot",
+  "minecraft:brick_slab[type=bottom]",
+  "minecraft:gray_bed[facing=south,occupied=false,part=foot]",
+  "minecraft:brown_bed[facing=south,occupied=false,part=foot]",
+  "minecraft:light_gray_bed[facing=south,occupied=false,part=foot]",
+  "minecraft:cobblestone",
+  "minecraft:gray_bed[facing=south,occupied=false,part=head]",
+  "minecraft:brown_bed[facing=south,occupied=false,part=head]",
+  "minecraft:light_gray_bed[facing=south,occupied=false,part=head]",
+  "minecraft:gravel",
+  "minecraft:chest[facing=west,type=single,waterlogged=false]",
+  "minecraft:dark_oak_door[facing=south,half=upper,hinge=right,open=false,powered=false]",
+  "minecraft:glass_pane",
+  "minecraft:cracked_stone_bricks",
+  "minecraft:cobweb",
+  "minecraft:spruce_stairs[facing=south,half=bottom]",
+  "minecraft:spruce_stairs[facing=north,half=bottom]"
+ ],
+ "layers": [
+  [
+   "aaaaaaaaaa",
+   "aaaaaaaaaa",
+   "aaaaaaaaaa",
+   "aaaaaaaaaa",
+   "aaaaaaaaaa",
+   "aaaaaaaaaa"
+  ],
+  [
+   "bcddeddddb",
+   "d........d",
+   "df.f.fgfgd",
+   "dh.i.jdjkd",
+   "cl.m.nonpd",
+   "bddddddddb"
+  ],
+  [
+   "bdddqddddb",
+   "d........d",
+   "r.........",
+   "d........d",
+   "r.........",
+   "sddddd...."
+  ],
+  [
+   "sdddddddds",
+   "d........d",
+   "d..t.t....",
+   "d.........",
+   "d.........",
+   "bd.dd....."
+  ],
+  [
+   "uuuuuuuuuu",
+   "d.........",
+   "d.........",
+   "d.........",
+   "d.........",
+   "vvvvv.v..."
+  ],
+  [
+   "..........",
+   "uuuuuuuuuu",
+   "d.........",
+   "k.........",
+   "vvvvvv....",
+   ".........."
+  ],
+  [
+   "..........",
+   "..........",
+   "uuuuuu....",
+   "vvvvvv....",
+   "..........",
+   ".........."
+  ],
+  [
+   "..........",
+   "..........",
+   "..........",
+   "..........",
+   "..........",
+   ".........."
+  ]
+ ],
+ "chests": [
+  [
+   8,
+   1,
+   4
+  ]
+ ],
+ "frames": [
+  {
+   "pos": [
+    5,
+    2,
+    4
+   ],
+   "facing": "north",
+   "item": "minecraft:paper"
+  }
+ ]
+}

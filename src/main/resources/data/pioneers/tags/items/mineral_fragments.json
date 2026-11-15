@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:magnetite_fragment",
+  "pioneers:hematite_fragment",
+  "pioneers:malachite_fragment",
+  "pioneers:cassiterite_fragment"
+ ]
+}

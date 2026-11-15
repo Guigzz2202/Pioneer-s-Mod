@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:wooden_slabs"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:blank_notebook"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:restorer_desk",
+  "count": 1
+ }
+}

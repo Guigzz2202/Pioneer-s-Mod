@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "wiremill",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/red_alloy"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:red_alloy_wire",
+  "count": 1
+ },
+ "time": 60
+}

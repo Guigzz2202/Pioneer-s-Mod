@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:pentlandite"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_pentlandite",
+  "count": 2
+ }
+}

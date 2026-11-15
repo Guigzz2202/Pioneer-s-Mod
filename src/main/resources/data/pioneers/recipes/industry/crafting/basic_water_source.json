@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_exchanger"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cast_iron_valve"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pressure_sensor"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_water_source",
+  "count": 1
+ }
+}

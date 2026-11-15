@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 120,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hafnium_tetrachloride",
+   "amount": 100
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hafnium_oxide",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 200
+  }
+ ]
+}

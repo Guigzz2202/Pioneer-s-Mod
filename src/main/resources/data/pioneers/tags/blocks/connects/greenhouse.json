@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:greenhouse_port",
+    "pioneers:greenhouse_controller"
+  ]
+}

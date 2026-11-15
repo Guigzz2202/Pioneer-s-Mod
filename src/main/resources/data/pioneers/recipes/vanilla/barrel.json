@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:barrel_stave"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:wooden_slabs"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "minecraft:barrel",
+  "count": 1
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:popped_chorus_fruit"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:purpur_block",
+  "count": 4
+ },
+ "time": 40
+}

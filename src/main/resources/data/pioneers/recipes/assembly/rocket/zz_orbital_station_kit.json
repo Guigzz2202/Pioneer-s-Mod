@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rocket",
+ "pattern": [
+  "aaaPPPPa..",
+  ".SSPLLPSS.",
+  "SSCPHHPCSS",
+  ".SSPLLPSS.",
+  "...PPPP..."
+ ],
+ "key": {
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "H": {
+   "item": "pioneers:ultimate_gas_buffer"
+  },
+  "L": {
+   "item": "pioneers:life_support_unit"
+  },
+  "P": {
+   "item": "pioneers:machine_frame_basic"
+  },
+  "S": {
+   "item": "minecraft:daylight_detector"
+  },
+  "a": {
+   "tag": "forge:springs/duralumin"
+  }
+ },
+ "result": {
+  "item": "pioneers:orbital_station_kit"
+ },
+ "energy": 400000000,
+ "duration": 2400,
+ "research": "orbital_stations"
+}

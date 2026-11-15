@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:button_mushroom"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:button_mushroom_spores",
+   "count": 2
+  }
+ ]
+}

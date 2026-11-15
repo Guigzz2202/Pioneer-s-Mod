@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cotton"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cotton_thread",
+  "count": 2
+ }
+}

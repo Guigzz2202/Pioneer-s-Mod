@@ -1,0 +1,53 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "pump_well",
+ "variant": 1,
+ "min_tier": 1,
+ "size": [
+  3,
+  4,
+  3
+ ],
+ "palette": [
+  "minecraft:cracked_stone_bricks",
+  "minecraft:mossy_stone_bricks",
+  "minecraft:cobblestone",
+  "minecraft:stone_bricks",
+  "minecraft:water",
+  "minecraft:mossy_cobblestone",
+  "minecraft:chest[facing=south,type=single,waterlogged=false]",
+  "minecraft:stone_brick_wall",
+  "minecraft:cauldron",
+  "minecraft:oxidized_cut_copper_stairs[facing=south,half=top]"
+ ],
+ "layers": [
+  [
+   "abc",
+   "dec",
+   "cfd"
+  ],
+  [
+   "aad",
+   "c.d",
+   "fga"
+  ],
+  [
+   "..h",
+   "...",
+   "..i"
+  ],
+  [
+   "..j",
+   "...",
+   "..."
+  ]
+ ],
+ "chests": [
+  [
+   1,
+   1,
+   2
+  ]
+ ],
+ "frames": []
+}

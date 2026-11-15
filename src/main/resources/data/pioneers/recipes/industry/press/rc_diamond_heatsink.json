@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/diamond"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:diamond_heatsink",
+   "count": 2
+  }
+ ]
+}

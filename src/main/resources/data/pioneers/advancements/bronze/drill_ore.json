@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:raw_iron"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.drill_ore.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.drill_ore.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "drill_ore"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:bronze/drill_formed"
+}

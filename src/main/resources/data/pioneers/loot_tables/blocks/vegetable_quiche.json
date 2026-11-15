@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:vegetable_quiche"
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "pioneers:vegetable_quiche",
+     "properties": {
+      "bites": "0"
+     }
+    }
+   ]
+  }
+ ]
+}

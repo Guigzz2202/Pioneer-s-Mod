@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:spanakopita"
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "pioneers:spanakopita",
+     "properties": {
+      "bites": "0"
+     }
+    }
+   ]
+  }
+ ]
+}

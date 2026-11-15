@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_resin"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:rosin",
+  "count": 2
+ },
+ "time": 100
+}

@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_rivet"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:steam_dome",
+  "count": 1
+ }
+}

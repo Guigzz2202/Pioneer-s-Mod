@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:beetroot"
+   },
+   "count": 3
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 400,
+ "results": [
+  {
+   "item": "pioneers:beet_sugar",
+   "count": 2
+  }
+ ]
+}

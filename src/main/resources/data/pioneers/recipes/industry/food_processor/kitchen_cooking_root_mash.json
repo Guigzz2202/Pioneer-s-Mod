@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/roots"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "tag": "forge:milk",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:root_mash",
+   "count": 2
+  }
+ ]
+}

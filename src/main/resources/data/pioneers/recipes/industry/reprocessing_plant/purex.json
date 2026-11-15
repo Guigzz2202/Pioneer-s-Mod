@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 400,
+ "family": "reprocessing_plant",
+ "fluids": [
+  {
+   "fluid": "pioneers:dissolved_fuel",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:neptunium_237",
+   "count": 1,
+   "chance": 0.15
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:uranyl_nitrate",
+   "amount": 800
+  },
+  {
+   "fluid": "pioneers:plutonium_nitrate",
+   "amount": 60
+  },
+  {
+   "fluid": "pioneers:high_level_waste",
+   "amount": 140
+  }
+ ],
+ "industrial": true
+}

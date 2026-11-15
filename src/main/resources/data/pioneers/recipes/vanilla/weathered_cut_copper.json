@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:weathered_copper"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:weathered_cut_copper",
+  "count": 4
+ }
+}

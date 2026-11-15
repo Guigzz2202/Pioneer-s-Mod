@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:ingots/tin"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:tin_dust",
+  "count": 1
+ }
+}

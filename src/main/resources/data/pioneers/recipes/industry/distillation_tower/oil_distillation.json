@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 1,
+ "time": 240,
+ "family": "distillation_tower",
+ "fluids": [
+  {
+   "fluid": "pioneers:raw_oil",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:heavy_oil",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:light_oil",
+   "amount": 400
+  },
+  {
+   "fluid": "pioneers:diesel",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:coke_oven_gas",
+   "amount": 100
+  }
+ ],
+ "industrial": true
+}

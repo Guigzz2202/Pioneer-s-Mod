@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:white_rice"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:pumpkin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:grated_cheese"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 480,
+ "results": [
+  {
+   "item": "pioneers:pumpkin_risotto",
+   "count": 2
+  }
+ ]
+}

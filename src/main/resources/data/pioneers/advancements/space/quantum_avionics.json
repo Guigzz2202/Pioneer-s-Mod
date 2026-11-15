@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:quantum_avionics"
+  },
+  "title": {
+   "translate": "advancements.pioneers.space.quantum_avionics.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.space.quantum_avionics.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:quantum_avionics"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:space/fusion_drive"
+}

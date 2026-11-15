@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "LRL",
+  "RGR"
+ ],
+ "key": {
+  "L": {
+   "tag": "forge:plates/lead"
+  },
+  "R": {
+   "item": "pioneers:rubber_sheet"
+  },
+  "G": {
+   "tag": "forge:glass_panes"
+  }
+ },
+ "result": {
+  "item": "pioneers:hazmat_helmet",
+  "count": 1
+ }
+}

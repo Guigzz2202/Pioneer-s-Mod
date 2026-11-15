@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PHP",
+  "WWW",
+  "L L"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/copper"
+  },
+  "H": {
+   "tag": "pioneers:tools/hammers"
+  },
+  "W": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "item": "pioneers:coppersmith_bench",
+  "count": 1
+ }
+}

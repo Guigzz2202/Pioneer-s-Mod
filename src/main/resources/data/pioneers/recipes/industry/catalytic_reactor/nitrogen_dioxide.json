@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 40,
+ "family": "catalytic_reactor",
+ "gases": [
+  {
+   "gas": "pioneers:nitric_oxide",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 250
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen_dioxide",
+   "amount": 500
+  }
+ ]
+}

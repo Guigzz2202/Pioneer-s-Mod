@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:vesta_basalt"
+ },
+ "result": "pioneers:polished_vesta_basalt",
+ "count": 1
+}

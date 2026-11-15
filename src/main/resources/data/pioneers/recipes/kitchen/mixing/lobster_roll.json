@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooked_lobster"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mayonnaise"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lettuce"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:lobster_roll",
+   "count": 2
+  }
+ ]
+}

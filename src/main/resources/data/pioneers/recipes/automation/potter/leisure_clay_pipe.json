@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "compressor",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:clay_pipe",
+   "count": 1
+  }
+ ]
+}

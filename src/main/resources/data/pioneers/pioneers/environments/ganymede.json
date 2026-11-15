@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:ganymede",
+ "gravity": 0.15,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "cold",
+ "nitrogen": 0,
+ "temperature": -190
+}

@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:sawing",
+ "input": {
+  "tag": "minecraft:bamboo_blocks"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:bamboo_planks",
+   "count": 3
+  }
+ ]
+}

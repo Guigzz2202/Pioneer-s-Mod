@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:solder_nugget",
+  "pioneers:solder_wire",
+  "pioneers:solder_ingot"
+ ]
+}

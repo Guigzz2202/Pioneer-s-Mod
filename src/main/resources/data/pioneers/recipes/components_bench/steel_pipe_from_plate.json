@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:steel_pipe",
+  "count": 1
+ }
+}

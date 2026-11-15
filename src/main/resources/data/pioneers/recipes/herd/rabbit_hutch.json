@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:iron_bars"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hay_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:rabbit_hutch",
+  "count": 1
+ }
+}

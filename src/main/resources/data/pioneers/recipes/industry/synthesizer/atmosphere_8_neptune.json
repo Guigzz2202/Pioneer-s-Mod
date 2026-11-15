@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "synthesizer",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:empty_simulated_neptune"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 8000
+  },
+  {
+   "gas": "pioneers:helium",
+   "amount": 1900
+  },
+  {
+   "gas": "pioneers:methane",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:proto_simulated_neptune",
+   "count": 1
+  }
+ ],
+ "energy": 20000000
+}

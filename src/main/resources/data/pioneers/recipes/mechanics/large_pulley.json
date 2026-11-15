@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PNP",
+  "NXN",
+  "PNP"
+ ],
+ "key": {
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "N": {
+   "tag": "forge:nuggets/iron"
+  },
+  "X": {
+   "item": "pioneers:pulley"
+  }
+ },
+ "result": {
+  "item": "pioneers:large_pulley",
+  "count": 1
+ }
+}

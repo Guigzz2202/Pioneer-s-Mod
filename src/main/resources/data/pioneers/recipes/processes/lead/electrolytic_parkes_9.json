@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "reduction_furnace",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lead_concentrate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_bullion",
+   "count": 2
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 100
+  }
+ ],
+ "temperature": 1000
+}

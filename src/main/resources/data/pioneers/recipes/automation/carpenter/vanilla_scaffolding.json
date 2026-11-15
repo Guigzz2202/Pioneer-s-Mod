@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bamboo"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:string"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:scaffolding",
+   "count": 6
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 400,
+ "family": "cnc_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_carbide_billet"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_carbide_pickaxe_head",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tungsten_carbide_dust",
+   "count": 3
+  }
+ ]
+}

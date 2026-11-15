@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:rye_sack"
+  }
+ ],
+ "result": {
+  "item": "pioneers:rye",
+  "count": 9
+ }
+}

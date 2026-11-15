@@ -1,0 +1,333 @@
+{
+ "1": {
+  "days": 5,
+  "items": [
+   {
+    "id": "#forge:sheets/steel",
+    "count": 2324
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 1162
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 1162
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 581
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 581
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 581
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 212
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 212
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 159
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 106
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 27
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_chemical_reactor",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "#forge:plates/lead",
+    "count": 3
+   },
+   {
+    "id": "pioneers:centrifugal_pump",
+    "count": 3
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:steel_ingot",
+   "count": 48
+  }
+ },
+ "2": {
+  "days": 10,
+  "items": [
+   {
+    "id": "#forge:sheets/aluminium",
+    "count": 2312
+   },
+   {
+    "id": "#forge:screws/aluminium",
+    "count": 1156
+   },
+   {
+    "id": "#forge:springs/aluminium",
+    "count": 1156
+   },
+   {
+    "id": "#forge:plates/aluminium",
+    "count": 578
+   },
+   {
+    "id": "#forge:bolts/aluminium",
+    "count": 578
+   },
+   {
+    "id": "#forge:rings/aluminium",
+    "count": 578
+   },
+   {
+    "id": "#forge:plates/duralumin",
+    "count": 225
+   },
+   {
+    "id": "#forge:rings/electrum",
+    "count": 200
+   },
+   {
+    "id": "#forge:rods/duralumin",
+    "count": 200
+   },
+   {
+    "id": "#forge:beams/galvanized_steel",
+    "count": 100
+   },
+   {
+    "id": "pioneers:circuit_mk2",
+    "count": 25
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 12
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 9
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 6
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_chemical_reactor",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 3
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "#forge:plates/lead",
+    "count": 3
+   },
+   {
+    "id": "pioneers:centrifugal_pump",
+    "count": 3
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 2
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:aluminium_ingot",
+   "count": 96
+  }
+ },
+ "3": {
+  "days": 20,
+  "items": [
+   {
+    "id": "#forge:sheets/titanium",
+    "count": 2312
+   },
+   {
+    "id": "#forge:screws/titanium",
+    "count": 1156
+   },
+   {
+    "id": "#forge:springs/nickel",
+    "count": 1156
+   },
+   {
+    "id": "#forge:plates/titanium",
+    "count": 578
+   },
+   {
+    "id": "#forge:bolts/titanium",
+    "count": 578
+   },
+   {
+    "id": "#forge:rings/titanium",
+    "count": 578
+   },
+   {
+    "id": "#forge:plates/stainless_steel",
+    "count": 225
+   },
+   {
+    "id": "#forge:springs/vanadium_steel",
+    "count": 200
+   },
+   {
+    "id": "#forge:rods/titanium",
+    "count": 200
+   },
+   {
+    "id": "#forge:beams/titanium",
+    "count": 100
+   },
+   {
+    "id": "pioneers:circuit_mk3",
+    "count": 25
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 12
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 9
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 6
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_chemical_reactor",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 3
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "#forge:plates/lead",
+    "count": 3
+   },
+   {
+    "id": "pioneers:centrifugal_pump",
+    "count": 3
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 2
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:titanium_ingot",
+   "count": 160
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:shears",
+  "count": 1
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lead_ball"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:gunpowder"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cartridge",
+   "count": 4
+  }
+ ]
+}

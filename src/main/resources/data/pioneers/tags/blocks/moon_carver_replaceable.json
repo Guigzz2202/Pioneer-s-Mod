@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:moon_rock",
+  "pioneers:moon_sand",
+  "pioneers:lunar_basalt",
+  "pioneers:mare_regolith",
+  "pioneers:frozen_regolith",
+  "pioneers:lunarium_ore",
+  "pioneers:lunarium_ore_basalt"
+ ]
+}

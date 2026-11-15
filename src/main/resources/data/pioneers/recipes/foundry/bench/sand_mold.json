@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "molder",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:foundry_sand"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:sand_mold",
+  "count": 1
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:assembly",
+ "station": "module",
+ "pattern": [
+  "aabb......",
+  "...PGGP...",
+  "...POCP...",
+  "...PPPP...",
+  ".........."
+ ],
+ "key": {
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "G": {
+   "tag": "forge:glass"
+  },
+  "O": {
+   "item": "pioneers:basic_gas_buffer"
+  },
+  "P": {
+   "item": "pioneers:aluminium_fuselage_panel"
+  },
+  "a": {
+   "tag": "forge:springs/aluminium"
+  },
+  "b": {
+   "tag": "forge:sheets/magnesium"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_module_passenger"
+ },
+ "energy": 6000000,
+ "duration": 200
+}

@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:pluto_water_ice_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:pluto_water_ice_brick_wall",
+  "count": 6
+ }
+}

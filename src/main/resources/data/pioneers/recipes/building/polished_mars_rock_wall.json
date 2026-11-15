@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_mars_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_mars_rock_wall",
+  "count": 6
+ }
+}

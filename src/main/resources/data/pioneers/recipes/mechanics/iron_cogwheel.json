@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "P P",
+  " G ",
+  "P P"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "G": {
+   "tag": "forge:gears/iron"
+  }
+ },
+ "result": {
+  "item": "pioneers:iron_cogwheel",
+  "count": 1
+ }
+}

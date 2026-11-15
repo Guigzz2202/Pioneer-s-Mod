@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_artichoke_dip"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:artichoke_dip",
+   "count": 1
+  }
+ ]
+}

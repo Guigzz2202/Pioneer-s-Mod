@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "item": "minecraft:shears"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/blue"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/gold"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_captain_top",
+  "count": 1
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:assembly",
+ "station": "module",
+ "pattern": [
+  "a.........",
+  "...PPPP...",
+  "..XRCRX...",
+  "...PPPP...",
+  ".........."
+ ],
+ "key": {
+  "C": {
+   "tag": "pioneers:circuits/advanced"
+  },
+  "P": {
+   "item": "pioneers:aluminium_fuselage_panel"
+  },
+  "R": {
+   "tag": "forge:plates/titanium"
+  },
+  "X": {
+   "item": "pioneers:rocket_aux_booster_tier_2"
+  },
+  "a": {
+   "tag": "forge:gears/duralumin"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_module_speed"
+ },
+ "energy": 6000000,
+ "duration": 200,
+ "research": "ion_propulsion"
+}

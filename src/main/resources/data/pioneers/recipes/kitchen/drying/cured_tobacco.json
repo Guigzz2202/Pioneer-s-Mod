@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:tobacco_leaf"
+   },
+   "count": 1
+  }
+ ],
+ "time": 3600,
+ "results": [
+  {
+   "item": "pioneers:cured_tobacco",
+   "count": 1
+  }
+ ]
+}

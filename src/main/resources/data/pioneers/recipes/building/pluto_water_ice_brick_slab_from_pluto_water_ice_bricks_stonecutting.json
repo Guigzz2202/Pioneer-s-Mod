@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:pluto_water_ice_bricks"
+ },
+ "result": "pioneers:pluto_water_ice_brick_slab",
+ "count": 2
+}

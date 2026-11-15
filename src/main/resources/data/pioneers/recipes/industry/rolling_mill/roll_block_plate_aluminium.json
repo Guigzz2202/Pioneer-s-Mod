@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 1,
+ "time": 575,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/aluminium"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_plate",
+   "count": 9
+  }
+ ]
+}

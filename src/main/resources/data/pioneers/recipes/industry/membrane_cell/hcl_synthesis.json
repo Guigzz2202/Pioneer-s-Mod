@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 60,
+ "family": "membrane_cell",
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 1000
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 2000
+  }
+ ]
+}

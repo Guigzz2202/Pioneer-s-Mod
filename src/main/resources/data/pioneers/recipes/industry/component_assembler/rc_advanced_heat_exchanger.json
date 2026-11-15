@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:heat_exchanger"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ptfe_gasket"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_heat_exchanger",
+   "count": 2
+  }
+ ]
+}

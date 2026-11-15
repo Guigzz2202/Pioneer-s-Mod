@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:foils/gold"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plastic_sheet"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:multilayer_insulation",
+   "count": 2
+  }
+ ]
+}

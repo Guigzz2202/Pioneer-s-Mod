@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "minecraft:bone_block"
+ },
+ "temperature": 820,
+ "time": 600,
+ "result": {
+  "item": "pioneers:quicklime",
+  "count": 1
+ }
+}

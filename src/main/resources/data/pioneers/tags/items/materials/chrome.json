@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:chrome_nugget",
+  "pioneers:chrome_rod",
+  "pioneers:chrome_ingot",
+  "pioneers:chrome_plate",
+  "pioneers:chrome_dust",
+  "pioneers:chrome_block"
+ ]
+}

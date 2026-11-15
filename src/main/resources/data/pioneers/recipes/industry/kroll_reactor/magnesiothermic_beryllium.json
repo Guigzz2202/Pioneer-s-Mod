@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "kroll_reactor",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_beryl"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/magnesium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:beryllium_pebbles",
+   "count": 1
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:andesite"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:andesite_stairs",
+  "count": 4
+ }
+}

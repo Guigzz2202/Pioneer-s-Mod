@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 450,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tea_leaves"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dried_tea",
+   "count": 1
+  }
+ ]
+}

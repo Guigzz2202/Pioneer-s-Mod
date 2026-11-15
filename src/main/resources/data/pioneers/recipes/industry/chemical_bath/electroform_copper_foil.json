@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/copper"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:copper_sulfate",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_foil",
+   "count": 2
+  }
+ ]
+}

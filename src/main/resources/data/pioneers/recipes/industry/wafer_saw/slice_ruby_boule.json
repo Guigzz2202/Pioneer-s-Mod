@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 1,
+ "time": 300,
+ "family": "wafer_saw",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ruby_boule"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ruby",
+   "count": 5
+  },
+  {
+   "item": "pioneers:ruby_dust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

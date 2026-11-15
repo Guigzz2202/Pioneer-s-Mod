@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:titan_ice"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:packed_titan_ice",
+  "count": 1
+ }
+}

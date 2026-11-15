@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 3,
+ "time": 360,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lunarium_salts"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crude_lunarium",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sour_water",
+   "amount": 100
+  }
+ ],
+ "temperature": 250
+}

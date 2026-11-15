@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:deimos_bright_regolith",
+  "pioneers:deimos_regolith",
+  "pioneers:deimos_rock"
+ ]
+}

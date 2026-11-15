@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PFP",
+  "PXP",
+  "SSS"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "F": {
+   "item": "pioneers:iron_flywheel"
+  },
+  "X": {
+   "item": "pioneers:iron_shaft"
+  },
+  "S": {
+   "item": "minecraft:smooth_stone"
+  }
+ },
+ "result": {
+  "item": "pioneers:jaw_crusher",
+  "count": 1
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_explorer_hat",
+  "count": 1
+ }
+}

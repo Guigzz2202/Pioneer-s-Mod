@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 60,
+ "family": "chiller",
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:liquid_ammonia",
+   "amount": 125
+  }
+ ]
+}

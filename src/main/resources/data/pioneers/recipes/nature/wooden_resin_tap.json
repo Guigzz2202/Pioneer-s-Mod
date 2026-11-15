@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:wooden_resin_tap",
+  "count": 1
+ }
+}

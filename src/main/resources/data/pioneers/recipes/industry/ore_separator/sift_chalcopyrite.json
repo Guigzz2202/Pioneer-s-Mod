@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_chalcopyrite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ground_chalcopyrite",
+   "count": 1
+  },
+  {
+   "item": "pioneers:crushed_chalcopyrite",
+   "count": 1
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

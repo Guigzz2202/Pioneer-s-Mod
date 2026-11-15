@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bottler",
+ "tier": 1,
+ "time": 20,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bucket"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hydrofluoric_acid_bucket",
+   "count": 1
+  }
+ ]
+}

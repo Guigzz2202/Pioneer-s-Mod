@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:masa"
+   },
+   "count": 1
+  }
+ ],
+ "time": 120,
+ "results": [
+  {
+   "item": "pioneers:tortilla",
+   "count": 2
+  }
+ ]
+}

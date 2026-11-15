@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:strawberry_shortcake"
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "pioneers:strawberry_shortcake",
+     "properties": {
+      "bites": "0"
+     }
+    }
+   ]
+  }
+ ]
+}

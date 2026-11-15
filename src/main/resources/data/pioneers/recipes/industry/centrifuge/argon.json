@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 1,
+ "time": 160,
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 250
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  },
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 400
+  }
+ ]
+}

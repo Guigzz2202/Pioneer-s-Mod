@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:porkchop"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pineapple"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bell_pepper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinegar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:white_rice"
+   },
+   "count": 1
+  }
+ ],
+ "time": 480,
+ "results": [
+  {
+   "item": "pioneers:sweet_sour_pork",
+   "count": 2
+  }
+ ]
+}

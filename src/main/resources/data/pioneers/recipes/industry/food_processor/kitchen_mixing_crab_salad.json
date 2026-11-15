@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cooked_green_crab"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lettuce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cucumber"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mayonnaise"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bowl"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crab_salad",
+   "count": 2
+  }
+ ]
+}

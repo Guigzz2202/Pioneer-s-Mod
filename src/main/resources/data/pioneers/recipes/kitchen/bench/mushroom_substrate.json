@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:compost"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:wheat"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sawdust"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:mushroom_substrate",
+  "count": 4
+ }
+}

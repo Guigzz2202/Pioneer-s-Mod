@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:distilling",
+ "fluid": {
+  "fluid": "pioneers:cane_wash",
+  "amount": 1000
+ },
+ "time": 800,
+ "fluid_result": {
+  "fluid": "pioneers:rum",
+  "amount": 250
+ }
+}

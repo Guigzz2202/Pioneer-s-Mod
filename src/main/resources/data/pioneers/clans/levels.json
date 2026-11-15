@@ -1,0 +1,64 @@
+{
+ "levels": [
+  {
+   "level": 1,
+   "points": 0,
+   "members": 8,
+   "chunkload": 1
+  },
+  {
+   "level": 2,
+   "points": 500,
+   "members": 12,
+   "chunkload": 2
+  },
+  {
+   "level": 3,
+   "points": 1500,
+   "members": 16,
+   "chunkload": 2
+  },
+  {
+   "level": 4,
+   "points": 3500,
+   "members": 20,
+   "chunkload": 3
+  },
+  {
+   "level": 5,
+   "points": 7000,
+   "members": 24,
+   "chunkload": 3
+  },
+  {
+   "level": 6,
+   "points": 12000,
+   "members": 28,
+   "chunkload": 4
+  },
+  {
+   "level": 7,
+   "points": 20000,
+   "members": 32,
+   "chunkload": 4
+  },
+  {
+   "level": 8,
+   "points": 32000,
+   "members": 36,
+   "chunkload": 5
+  },
+  {
+   "level": 9,
+   "points": 50000,
+   "members": 40,
+   "chunkload": 5
+  },
+  {
+   "level": 10,
+   "points": 80000,
+   "members": 40,
+   "chunkload": 6
+  }
+ ]
+}

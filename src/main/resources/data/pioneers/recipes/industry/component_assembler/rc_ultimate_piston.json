@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_piston"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/nitinol"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/nitinol"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_housing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk3"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_screw"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_piston",
+   "count": 2
+  }
+ ]
+}

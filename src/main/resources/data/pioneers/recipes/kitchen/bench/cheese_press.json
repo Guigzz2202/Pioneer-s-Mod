@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_machine_bed"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cheese_press",
+  "count": 1
+ }
+}

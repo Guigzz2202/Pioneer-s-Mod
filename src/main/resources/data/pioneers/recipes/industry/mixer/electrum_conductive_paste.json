@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 1,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:electrum_dust"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:raw_resin"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silver_paste",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tofu"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:soy_sauce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:kelp"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:leek"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:miso_soup",
+   "count": 3
+  }
+ ]
+}

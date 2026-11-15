@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 1,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/nichrome"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nichrome_wire",
+   "count": 1
+  }
+ ]
+}

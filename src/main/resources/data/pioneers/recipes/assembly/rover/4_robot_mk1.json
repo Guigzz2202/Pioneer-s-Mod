@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  ".....U....",
+  "...AMMA...",
+  "..RMCEMR..",
+  "...M..M...",
+  "...W..W..."
+ ],
+ "key": {
+  "U": {
+   "item": "pioneers:robot_core"
+  },
+  "R": {
+   "item": "pioneers:robot_arm"
+  },
+  "W": {
+   "item": "pioneers:robot_wheel"
+  },
+  "M": {
+   "tag": "forge:plates/lunarium"
+  },
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "A": {
+   "tag": "forge:plates/stainless_steel"
+  },
+  "E": {
+   "item": "pioneers:electric_motor"
+  }
+ },
+ "result": {
+  "item": "pioneers:robot_mk1"
+ },
+ "energy": 6000000,
+ "duration": 300,
+ "research": "robotics"
+}

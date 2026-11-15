@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:zucchini"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:eggplant"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bell_pepper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  }
+ ],
+ "time": 480,
+ "results": [
+  {
+   "item": "pioneers:ratatouille",
+   "count": 3
+  }
+ ]
+}

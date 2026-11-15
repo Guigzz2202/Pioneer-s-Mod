@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stone"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:stone_pressure_plate",
+   "count": 1
+  }
+ ]
+}

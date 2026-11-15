@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:pressing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:sugar_cane"
+   },
+   "count": 4
+  }
+ ],
+ "time": 200,
+ "strokes": 6,
+ "fluid_result": {
+  "fluid": "pioneers:cane_juice",
+  "amount": 500
+ }
+}

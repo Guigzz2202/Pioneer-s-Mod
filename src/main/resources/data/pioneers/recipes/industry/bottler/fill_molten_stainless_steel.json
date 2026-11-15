@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bottler",
+ "tier": 1,
+ "time": 20,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bucket"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_stainless_steel",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:molten_stainless_steel_bucket",
+   "count": 1
+  }
+ ]
+}

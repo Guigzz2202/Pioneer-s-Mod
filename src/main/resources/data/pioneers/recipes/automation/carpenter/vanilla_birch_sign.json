@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:birch_planks"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:birch_sign",
+   "count": 3
+  }
+ ]
+}

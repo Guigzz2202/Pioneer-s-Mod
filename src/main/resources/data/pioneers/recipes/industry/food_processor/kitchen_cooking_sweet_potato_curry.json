@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 210,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sweet_potato"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:curry_paste"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:spinach"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sweet_potato_curry",
+   "count": 2
+  }
+ ]
+}

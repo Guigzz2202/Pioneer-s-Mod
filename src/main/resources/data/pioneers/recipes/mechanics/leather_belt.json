@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "LLL",
+  "LSL",
+  "LLL"
+ ],
+ "key": {
+  "L": {
+   "item": "minecraft:leather"
+  },
+  "S": {
+   "item": "minecraft:string"
+  }
+ },
+ "result": {
+  "item": "pioneers:leather_belt",
+  "count": 2
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:smoking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cured_salmon"
+   },
+   "count": 1
+  }
+ ],
+ "time": 2400,
+ "results": [
+  {
+   "item": "pioneers:smoked_salmon",
+   "count": 2
+  }
+ ]
+}

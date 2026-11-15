@@ -1,0 +1,17 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:dirt_path",
+  "pioneers:wooden_track",
+  "pioneers:basic_track",
+  "pioneers:advanced_track",
+  "pioneers:elite_track",
+  "pioneers:ultimate_track",
+  "pioneers:brake_track",
+  "pioneers:booster_track",
+  "pioneers:detector_track",
+  "pioneers:uncoupler_track",
+  "pioneers:harbor_quay",
+  "pioneers:harbor_interface"
+ ]
+}

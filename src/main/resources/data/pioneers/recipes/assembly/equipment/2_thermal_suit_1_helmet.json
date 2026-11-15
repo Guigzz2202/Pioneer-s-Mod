@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "a.........",
+  "...MMMM...",
+  "...MGGM...",
+  "...APCA...",
+  ".........."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/stainless_steel"
+  },
+  "C": {
+   "tag": "pioneers:circuits/advanced"
+  },
+  "G": {
+   "item": "pioneers:industrial_glass"
+  },
+  "M": {
+   "tag": "forge:plates/lunarium"
+  },
+  "P": {
+   "item": "pioneers:space_suit_helmet"
+  },
+  "a": {
+   "tag": "forge:plates/netherite"
+  }
+ },
+ "result": {
+  "item": "pioneers:thermal_suit_helmet"
+ },
+ "energy": 12000000,
+ "duration": 400,
+ "research": "thermal_suit"
+}

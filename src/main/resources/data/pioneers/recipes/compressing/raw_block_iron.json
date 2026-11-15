@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:raw_materials/iron"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:raw_iron_block",
+  "count": 1
+ }
+}

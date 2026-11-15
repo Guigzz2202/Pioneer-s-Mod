@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:gray_reef_shark"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 5,
+ "results": [
+  {
+   "item": "pioneers:raw_shark_meat",
+   "count": 4
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 2,
+   "chance": 0.5
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:scrap_structure_mk1",
+  "pioneers:scrap_structure_mk2",
+  "pioneers:scrap_structure_mk3"
+ ]
+}

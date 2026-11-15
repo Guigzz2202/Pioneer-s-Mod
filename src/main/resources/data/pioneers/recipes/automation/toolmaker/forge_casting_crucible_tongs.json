@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:bindings"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crucible_tongs",
+   "count": 1
+  }
+ ]
+}

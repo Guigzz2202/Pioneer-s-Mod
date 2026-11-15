@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "family": "catalytic_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/silver"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:methanol",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silver_dust",
+   "count": 1,
+   "chance": 0.97
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:formaldehyde",
+   "amount": 500
+  }
+ ]
+}

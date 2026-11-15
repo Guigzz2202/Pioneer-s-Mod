@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_heat_exchanger"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/zircaloy"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_heat_exchanger",
+   "count": 2
+  }
+ ]
+}

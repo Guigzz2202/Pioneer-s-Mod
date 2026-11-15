@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_enceladus_blue_ice"
+ },
+ "result": "pioneers:polished_enceladus_blue_ice",
+ "count": 1
+}

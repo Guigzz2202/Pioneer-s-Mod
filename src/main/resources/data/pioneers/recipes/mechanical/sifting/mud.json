@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:sifting",
+ "input": {
+  "item": "minecraft:mud"
+ },
+ "count": 1,
+ "turns": 6,
+ "results": [
+  {
+   "item": "minecraft:clay_ball",
+   "count": 2,
+   "chance": 0.6
+  },
+  {
+   "item": "minecraft:clay_ball",
+   "count": 1,
+   "chance": 0.3
+  },
+  {
+   "item": "minecraft:bamboo",
+   "count": 1,
+   "chance": 0.02
+  }
+ ]
+}

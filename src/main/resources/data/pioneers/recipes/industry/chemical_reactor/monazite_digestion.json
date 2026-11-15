@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:monazite_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:thorium_hydroxide",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:phosphoric_acid",
+   "amount": 100
+  }
+ ]
+}

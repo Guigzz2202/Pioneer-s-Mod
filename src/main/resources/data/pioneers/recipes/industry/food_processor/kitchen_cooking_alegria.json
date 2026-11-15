@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:amaranth"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honey_bottle"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:alegria",
+   "count": 3
+  },
+  {
+   "item": "minecraft:glass_bottle",
+   "count": 1
+  }
+ ]
+}

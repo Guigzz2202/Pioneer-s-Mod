@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:liquid_ammonia",
+  "pioneers:flowing_liquid_ammonia"
+ ]
+}

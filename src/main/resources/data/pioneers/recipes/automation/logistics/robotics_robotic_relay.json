@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 3,
+ "time": 210,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:lightning_rod"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/lunarium"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:capacitor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/duralumin"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:robotic_relay",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 200,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zircon_sand_concentrate"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zircon",
+   "count": 1
+  }
+ ]
+}

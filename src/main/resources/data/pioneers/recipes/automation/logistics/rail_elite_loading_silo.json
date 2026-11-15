@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 2,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_loading_silo"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:beams/stainless_steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_loading_silo",
+   "count": 1
+  }
+ ]
+}

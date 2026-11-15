@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smelting",
+ "category": "food",
+ "ingredient": {
+  "item": "pioneers:raw_crayfish"
+ },
+ "result": "pioneers:cooked_crayfish",
+ "experience": 0.35,
+ "cookingtime": 200
+}

@@ -1,0 +1,89 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:basic_recycler"
+  },
+  "title": {
+   "translate": "advancements.pioneers.ruins.recycler.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.ruins.recycler.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:basic_recycler"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:advanced_recycler"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:elite_recycler"
+      ]
+     }
+    ]
+   }
+  },
+  "c3": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:ultimate_recycler"
+      ]
+     }
+    ]
+   }
+  },
+  "c4": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:industrial_recycler"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2",
+   "c3",
+   "c4"
+  ]
+ ],
+ "parent": "pioneers:ruins/root"
+}

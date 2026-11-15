@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:rum"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pineapple"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:orange"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:starfruit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 5,
+ "results": [
+  {
+   "item": "pioneers:island_punch",
+   "count": 2
+  }
+ ]
+}

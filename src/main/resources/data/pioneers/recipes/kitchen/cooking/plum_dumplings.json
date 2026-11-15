@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:plum"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:breadcrumbs"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:plum_dumplings",
+   "count": 3
+  }
+ ]
+}

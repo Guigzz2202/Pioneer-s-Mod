@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 3,
+ "time": 480,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/terminite"
+   },
+   "count": 9
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:terminite_billet",
+   "count": 1
+  }
+ ]
+}

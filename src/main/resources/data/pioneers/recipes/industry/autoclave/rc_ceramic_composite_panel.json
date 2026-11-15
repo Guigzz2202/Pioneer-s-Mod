@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 2,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zirconia_ceramic"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_fiber"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ceramic_composite_panel",
+   "count": 2
+  }
+ ]
+}

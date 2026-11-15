@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_mixer"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:centrifugal_pump"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:industrial_mixer",
+   "count": 1
+  }
+ ]
+}

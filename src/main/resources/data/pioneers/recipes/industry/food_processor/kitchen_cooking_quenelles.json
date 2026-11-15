@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/river"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bechamel"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:quenelles",
+   "count": 2
+  }
+ ]
+}

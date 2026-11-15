@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "tag": "forge:sandstone"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:sand",
+   "count": 4
+  }
+ ]
+}

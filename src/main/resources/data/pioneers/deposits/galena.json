@@ -1,0 +1,27 @@
+{
+ "result": "pioneers:raw_lead",
+ "material": "lead",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  30000,
+  120000
+ ],
+ "outcrop": "pioneers:galena_outcrop",
+ "color": "#8C9098",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#forge:is_swamp",
+   "weight": 8
+  },
+  {
+   "biomes": "#minecraft:is_taiga",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_snowy",
+   "weight": 8
+  }
+ ]
+}

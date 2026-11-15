@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 1,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/platinum"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platinum_foil",
+   "count": 8
+  }
+ ]
+}

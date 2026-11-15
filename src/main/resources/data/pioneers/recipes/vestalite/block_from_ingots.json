@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:ingots/vestalite"
+  }
+ },
+ "result": {
+  "item": "pioneers:vestalite_block"
+ }
+}

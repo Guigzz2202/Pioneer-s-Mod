@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:electrical_steel_sheet"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:porcelain_insulator"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/galvanized_steel"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:oil_transformer",
+   "count": 2
+  }
+ ]
+}

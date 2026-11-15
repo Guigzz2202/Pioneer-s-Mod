@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk3"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:processor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ram_module"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rom_chip"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:transceiver"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:robot_core",
+   "count": 2
+  }
+ ]
+}

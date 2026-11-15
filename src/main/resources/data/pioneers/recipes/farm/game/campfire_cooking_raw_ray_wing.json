@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:campfire_cooking",
+ "category": "food",
+ "ingredient": {
+  "item": "pioneers:raw_ray_wing"
+ },
+ "result": "pioneers:cooked_ray_wing",
+ "experience": 0.35,
+ "cookingtime": 600
+}

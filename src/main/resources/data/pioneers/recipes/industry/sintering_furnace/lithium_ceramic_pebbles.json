@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 2,
+ "time": 300,
+ "family": "sintering_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lithium_6"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:silicon"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lithium_ceramic_pebbles",
+   "count": 4
+  }
+ ]
+}

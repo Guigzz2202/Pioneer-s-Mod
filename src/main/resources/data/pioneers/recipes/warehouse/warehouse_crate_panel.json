@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:treated_wood"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_nail"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:warehouse_crate_panel",
+  "count": 4
+ }
+}

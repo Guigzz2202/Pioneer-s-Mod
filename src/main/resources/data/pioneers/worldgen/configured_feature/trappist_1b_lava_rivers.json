@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "minecraft:lava"
+  },
+  "mode": "trench",
+  "min_length": 20,
+  "max_length": 30,
+  "width": 2,
+  "depth": 2,
+  "curl": 0.35
+ }
+}

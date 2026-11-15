@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 40,
+ "family": "fluorine_plant",
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 500
+  }
+ ],
+ "industrial": true
+}

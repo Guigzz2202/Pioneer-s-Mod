@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "synthesizer",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:empty_simulated_venus"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 9600
+  },
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 350
+  },
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:proto_simulated_venus",
+   "count": 1
+  }
+ ],
+ "energy": 20000000
+}

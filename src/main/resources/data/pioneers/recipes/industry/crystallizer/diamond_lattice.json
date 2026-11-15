@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 3,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rain_diamond"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ultrapure_water",
+   "amount": 250
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:diamond_lattice",
+   "count": 1
+  }
+ ]
+}

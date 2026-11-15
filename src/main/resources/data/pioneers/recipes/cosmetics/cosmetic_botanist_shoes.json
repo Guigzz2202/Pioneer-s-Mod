@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:rubber_sheet"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/green"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_botanist_shoes",
+  "count": 1
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:proxima_glacier_ice"
+  },
+  "tip": {
+   "Name": "pioneers:proxima_frost"
+  },
+  "min_height": 6,
+  "max_height": 16,
+  "radius": 2,
+  "elongation": 2.5
+ }
+}

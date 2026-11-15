@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "fluids": [
+  {
+   "fluid": "pioneers:brine",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iodine",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:bromine",
+   "amount": 50
+  },
+  {
+   "fluid": "pioneers:brine",
+   "amount": 900
+  }
+ ]
+}

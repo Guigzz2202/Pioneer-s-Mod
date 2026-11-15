@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:callisto_rock"
+ },
+ "result": "pioneers:callisto_rock_brick_stairs",
+ "count": 1
+}

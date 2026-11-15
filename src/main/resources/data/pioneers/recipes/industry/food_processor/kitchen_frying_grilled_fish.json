@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fish_fillet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:grilled_fish",
+   "count": 1
+  }
+ ]
+}

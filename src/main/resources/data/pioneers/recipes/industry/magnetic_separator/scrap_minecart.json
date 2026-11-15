@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 80,
+ "family": "magnetic_separator",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:mine_wagon"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_scrap",
+   "count": 2
+  }
+ ]
+}

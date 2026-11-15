@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "item": "minecraft:shears"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/blue"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_sailor_top",
+  "count": 1
+ }
+}

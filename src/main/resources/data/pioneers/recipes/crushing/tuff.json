@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "minecraft:tuff"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:alluvial_gravel",
+  "count": 1
+ }
+}

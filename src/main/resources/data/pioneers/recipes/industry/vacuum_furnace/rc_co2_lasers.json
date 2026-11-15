@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 180,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:silvered_mirror"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/gold"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:co2_laser",
+   "count": 2
+  }
+ ]
+}

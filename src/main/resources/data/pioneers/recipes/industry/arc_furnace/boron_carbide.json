@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "arc_furnace",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:boron_10"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:graphite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:boron_carbide",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 100
+  }
+ ]
+}

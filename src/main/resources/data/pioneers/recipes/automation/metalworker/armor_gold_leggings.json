@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/gold"
+   },
+   "count": 7
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_leggings",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:jungle_planks"
+   },
+   "count": 5
+  }
+ ],
+ "result": {
+  "item": "minecraft:jungle_boat",
+  "count": 1
+ }
+}

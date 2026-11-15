@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "optical_sorter",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_borealite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:borealite_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  },
+  {
+   "item": "pioneers:iron_dust",
+   "count": 1,
+   "chance": 0.15
+  }
+ ],
+ "ore": true
+}

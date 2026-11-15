@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/quartz"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:quartz_block",
+  "count": 1
+ }
+}

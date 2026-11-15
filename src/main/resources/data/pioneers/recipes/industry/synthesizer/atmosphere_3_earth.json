@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "synthesizer",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:empty_simulated_earth"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 7800
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 2100
+  },
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:proto_simulated_earth",
+   "count": 1
+  }
+ ],
+ "energy": 20000000
+}

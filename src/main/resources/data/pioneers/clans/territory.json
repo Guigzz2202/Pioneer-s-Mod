@@ -1,0 +1,27 @@
+{
+ "claims": {
+  "outposts": 2,
+  "outpost_weight": 2,
+  "spawn_chunks": 8,
+  "bell_blocks": 96,
+  "cooperative_bonus": 0.1,
+  "decline_hours": 72,
+  "dissolved_release_hours": 168,
+  "border_radius": 8
+ },
+ "chunkload": {
+  "cost_per_day": 200,
+  "notice_hours": 48,
+  "max_slots": 6,
+  "solo_max_slots": 3
+ },
+ "points": {
+  "tokens_per_point": 100,
+  "production_member_cap": 50,
+  "per_chunk": 2,
+  "chunk_cap": 100,
+  "per_function": 10,
+  "function_cap": 80,
+  "ruin": 500
+ }
+}

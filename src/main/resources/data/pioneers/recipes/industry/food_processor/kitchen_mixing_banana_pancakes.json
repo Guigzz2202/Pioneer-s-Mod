@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pancakes"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:banana"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honey_bottle"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:banana_pancakes",
+   "count": 1
+  },
+  {
+   "item": "minecraft:glass_bottle",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:ganymede_bright_ice",
+  "pioneers:ganymede_frost",
+  "pioneers:ganymede_regolith",
+  "pioneers:ganymede_rock"
+ ]
+}

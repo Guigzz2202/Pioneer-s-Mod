@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:olives"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_focaccia",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_ultimate"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_radiator",
+   "count": 1
+  }
+ ]
+}

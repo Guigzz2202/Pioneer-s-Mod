@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:ladder",
+   "count": 3
+  }
+ ]
+}

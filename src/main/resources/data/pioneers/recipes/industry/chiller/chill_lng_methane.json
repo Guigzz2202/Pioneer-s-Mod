@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 1,
+ "time": 60,
+ "family": "chiller",
+ "gases": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:lng",
+   "amount": 125
+  }
+ ]
+}

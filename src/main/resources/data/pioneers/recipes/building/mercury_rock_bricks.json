@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_mercury_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:mercury_rock_bricks",
+  "count": 4
+ }
+}

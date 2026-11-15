@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:microprocessor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rom_chip"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:data_disk"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dram_module"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/magnesium"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:flight_computer",
+  "count": 1
+ }
+}

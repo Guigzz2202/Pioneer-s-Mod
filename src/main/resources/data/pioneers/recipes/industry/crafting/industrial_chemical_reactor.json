@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_chemical_reactor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/lead"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:centrifugal_pump"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:industrial_chemical_reactor",
+  "count": 1
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cheese"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ham"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wine"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raclette",
+   "count": 3
+  }
+ ]
+}

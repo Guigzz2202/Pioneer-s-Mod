@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/steel"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:steel_dust",
+  "count": 3
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:dark_prismarine"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:dark_prismarine_stairs",
+  "count": 4
+ },
+ "time": 40
+}

@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "ZIZ",
+  "PPP",
+  "L L"
+ ],
+ "key": {
+  "Z": {
+   "item": "pioneers:zircon_sand"
+  },
+  "I": {
+   "tag": "forge:plates/iron"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "item": "pioneers:molder_bench",
+  "count": 1
+ }
+}

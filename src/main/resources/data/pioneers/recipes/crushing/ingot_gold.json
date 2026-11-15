@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:ingots/gold"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:gold_dust",
+  "count": 1
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "minecraft:leaves"
+ },
+ "count": 8,
+ "result": {
+  "item": "pioneers:compost",
+  "count": 1
+ }
+}

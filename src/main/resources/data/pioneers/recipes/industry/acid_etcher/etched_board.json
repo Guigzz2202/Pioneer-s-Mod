@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 0,
+ "time": 60,
+ "family": "acid_etcher",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:perforated_board"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:etchant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:etched_board",
+   "count": 1
+  }
+ ]
+}

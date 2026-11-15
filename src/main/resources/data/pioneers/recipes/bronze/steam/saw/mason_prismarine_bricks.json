@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:prismarine_shard"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "minecraft:prismarine_bricks",
+  "count": 1
+ },
+ "time": 40
+}

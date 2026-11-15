@@ -1,0 +1,66 @@
+{
+ "type": "pioneers:fruit_saplings",
+ "chance": 0.006,
+ "conditions": [
+  {
+   "condition": "minecraft:any_of",
+   "terms": [
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "minecraft:acacia_leaves"
+    },
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "minecraft:birch_leaves"
+    },
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "minecraft:cherry_leaves"
+    },
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "minecraft:dark_oak_leaves"
+    },
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "minecraft:jungle_leaves"
+    },
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "minecraft:mangrove_leaves"
+    },
+    {
+     "condition": "minecraft:block_state_property",
+     "block": "minecraft:oak_leaves"
+    }
+   ]
+  },
+  {
+   "condition": "minecraft:inverted",
+   "term": {
+    "condition": "minecraft:match_tool",
+    "predicate": {
+     "items": [
+      "minecraft:shears"
+     ]
+    }
+   }
+  },
+  {
+   "condition": "minecraft:inverted",
+   "term": {
+    "condition": "minecraft:match_tool",
+    "predicate": {
+     "enchantments": [
+      {
+       "enchantment": "minecraft:silk_touch",
+       "levels": {
+        "min": 1
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

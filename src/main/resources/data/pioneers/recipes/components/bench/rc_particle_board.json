@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sawdust"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wood_chips"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resin_glue"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:particle_board",
+  "count": 1
+ }
+}

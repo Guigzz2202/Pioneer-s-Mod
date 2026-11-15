@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:nutrient_solution",
+  "pioneers:flowing_nutrient_solution"
+ ]
+}

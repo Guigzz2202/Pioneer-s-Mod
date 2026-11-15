@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SSS",
+  "C C",
+  "S S"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:smooth_stone_slab"
+  },
+  "C": {
+   "tag": "forge:ingots/copper"
+  }
+ },
+ "result": {
+  "item": "pioneers:casting_table",
+  "count": 1
+ }
+}

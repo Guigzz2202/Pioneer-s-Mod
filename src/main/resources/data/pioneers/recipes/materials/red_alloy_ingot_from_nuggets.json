@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/red_alloy"
+  },
+  {
+   "tag": "forge:nuggets/red_alloy"
+  },
+  {
+   "tag": "forge:nuggets/red_alloy"
+  },
+  {
+   "tag": "forge:nuggets/red_alloy"
+  },
+  {
+   "tag": "forge:nuggets/red_alloy"
+  },
+  {
+   "tag": "forge:nuggets/red_alloy"
+  },
+  {
+   "tag": "forge:nuggets/red_alloy"
+  },
+  {
+   "tag": "forge:nuggets/red_alloy"
+  },
+  {
+   "tag": "forge:nuggets/red_alloy"
+  }
+ ],
+ "result": {
+  "item": "pioneers:red_alloy_ingot",
+  "count": 1
+ }
+}

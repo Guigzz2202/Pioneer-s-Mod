@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smoked_salmon"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cucumber"
+   },
+   "count": 1
+  }
+ ],
+ "time": 240,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:salmon_sandwich",
+   "count": 2
+  }
+ ]
+}

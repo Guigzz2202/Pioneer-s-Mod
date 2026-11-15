@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 6,
+    "discard_chance_on_air_exposure": 1.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "pioneers:mars_rock"
+        },
+        "state": {
+          "Name": "pioneers:hematite_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "pioneers:mars_layered_rock"
+        },
+        "state": {
+          "Name": "pioneers:hematite_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "pioneers:mars_ochre_rock"
+        },
+        "state": {
+          "Name": "pioneers:hematite_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "pioneers:mars_clay"
+        },
+        "state": {
+          "Name": "pioneers:hematite_ore"
+        }
+      }
+    ]
+  }
+}

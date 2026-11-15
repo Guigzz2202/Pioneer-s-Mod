@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mailbox",
+   "count": 1
+  }
+ ]
+}

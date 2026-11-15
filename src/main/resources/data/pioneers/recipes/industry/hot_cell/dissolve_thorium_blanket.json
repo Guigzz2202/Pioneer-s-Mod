@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:irradiated_thorium_blanket"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:uranium_233_dioxide",
+   "count": 2
+  },
+  {
+   "item": "pioneers:thorium_dioxide",
+   "count": 2
+  },
+  {
+   "item": "pioneers:cladding_hulls",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:high_level_waste",
+   "amount": 100
+  }
+ ]
+}

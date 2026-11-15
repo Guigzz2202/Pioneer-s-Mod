@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:proxima_d",
+ "gravity": 0.45,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "heat",
+ "nitrogen": 0,
+ "temperature": 360
+}

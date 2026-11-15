@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/nichrome"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:variable_frequency_drive"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alumina_ceramic"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:propeller"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:elite_dryer",
+  "count": 1
+ }
+}

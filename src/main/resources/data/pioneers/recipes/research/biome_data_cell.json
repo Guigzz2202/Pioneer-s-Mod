@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "aG ",
+  "IRI",
+  "ICI"
+ ],
+ "key": {
+  "G": {
+   "tag": "forge:glass_panes"
+  },
+  "I": {
+   "tag": "forge:plates/iron"
+  },
+  "R": {
+   "tag": "forge:dusts/redstone"
+  },
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "a": {
+   "tag": "forge:sheets/tin"
+  }
+ },
+ "result": {
+  "item": "pioneers:biome_data_cell",
+  "count": 4
+ }
+}

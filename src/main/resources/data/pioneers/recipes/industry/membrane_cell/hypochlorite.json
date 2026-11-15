@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 200,
+ "family": "membrane_cell",
+ "fluids": [
+  {
+   "fluid": "pioneers:brine",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sodium_hypochlorite",
+   "amount": 600
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 200
+  }
+ ]
+}

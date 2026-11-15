@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 2,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:methane_pith"
+   },
+   "count": 4
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 1000
+  }
+ ]
+}

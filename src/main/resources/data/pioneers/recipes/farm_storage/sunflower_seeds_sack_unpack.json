@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:sunflower_seeds_sack"
+  }
+ ],
+ "result": {
+  "item": "pioneers:sunflower_seeds",
+  "count": 9
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:beams/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/brass"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/steel"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_frame"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:industrial_casing_basic",
+  "count": 6
+ }
+}

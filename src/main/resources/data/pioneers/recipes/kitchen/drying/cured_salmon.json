@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:salmon"
+   },
+   "count": 1
+  }
+ ],
+ "time": 2400,
+ "results": [
+  {
+   "item": "pioneers:cured_salmon",
+   "count": 1
+  }
+ ]
+}

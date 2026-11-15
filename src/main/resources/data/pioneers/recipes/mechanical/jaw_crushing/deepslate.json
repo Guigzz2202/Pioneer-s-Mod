@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "item": "minecraft:cobbled_deepslate"
+ },
+ "count": 1,
+ "turns": 4,
+ "results": [
+  {
+   "item": "minecraft:gravel",
+   "count": 1
+  },
+  {
+   "item": "pioneers:black_sand",
+   "count": 1,
+   "chance": 0.15
+  }
+ ]
+}

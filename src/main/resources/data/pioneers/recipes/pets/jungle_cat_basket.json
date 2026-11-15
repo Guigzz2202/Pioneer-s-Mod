@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:jungle_planks"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_peg"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:jungle_cat_basket",
+  "count": 1
+ }
+}

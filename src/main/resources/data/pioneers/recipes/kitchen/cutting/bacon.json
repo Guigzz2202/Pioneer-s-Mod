@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:porkchop"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:bacon",
+   "count": 2
+  }
+ ]
+}

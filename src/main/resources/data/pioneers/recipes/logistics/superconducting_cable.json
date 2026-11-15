@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PNP",
+  "SCS",
+  "PNP"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/titanium"
+  },
+  "N": {
+   "item": "pioneers:nbti_cable"
+  },
+  "S": {
+   "tag": "forge:pipes/stainless_steel"
+  },
+  "C": {
+   "item": "pioneers:superconducting_coil"
+  }
+ },
+ "result": {
+  "item": "pioneers:superconducting_cable",
+  "count": 4
+ }
+}

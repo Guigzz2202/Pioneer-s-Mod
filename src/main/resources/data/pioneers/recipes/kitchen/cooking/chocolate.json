@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cocoa_powder"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "tag": "forge:milk",
+  "amount": 250
+ },
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:chocolate",
+   "count": 3
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:item_frame",
+   "count": 1
+  }
+ ]
+}

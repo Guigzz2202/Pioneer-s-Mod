@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:raw_materials/tin"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:crushed_tin",
+  "count": 1
+ }
+}

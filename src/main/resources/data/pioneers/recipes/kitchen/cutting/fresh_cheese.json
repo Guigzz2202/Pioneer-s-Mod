@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:fresh_cheese_wheel"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:cheese",
+   "count": 4
+  }
+ ]
+}

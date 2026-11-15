@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "lathe",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/red_alloy"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:red_alloy_rod",
+  "count": 2
+ },
+ "time": 60
+}

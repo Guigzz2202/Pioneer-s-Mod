@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 200,
+ "family": "sintering_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:charcoal"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:coke",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:spruce_plank"
+  },
+  {
+   "item": "pioneers:spruce_plank"
+  },
+  {
+   "item": "pioneers:spruce_plank"
+  },
+  {
+   "item": "pioneers:spruce_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:spruce_planks",
+  "count": 1
+ }
+}

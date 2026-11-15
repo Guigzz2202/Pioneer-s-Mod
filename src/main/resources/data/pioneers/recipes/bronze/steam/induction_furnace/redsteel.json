@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "induction_furnace",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coal_ball"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:redsteel_ingot",
+  "count": 2
+ },
+ "time": 200
+}

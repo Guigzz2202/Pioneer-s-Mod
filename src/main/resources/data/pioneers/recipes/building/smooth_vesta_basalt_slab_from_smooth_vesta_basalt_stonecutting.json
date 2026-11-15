@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_vesta_basalt"
+ },
+ "result": "pioneers:smooth_vesta_basalt_slab",
+ "count": 2
+}

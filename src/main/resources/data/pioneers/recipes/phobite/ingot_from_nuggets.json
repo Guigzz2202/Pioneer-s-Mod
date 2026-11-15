@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:nuggets/phobite"
+  }
+ },
+ "result": {
+  "item": "pioneers:phobite_ingot"
+ }
+}

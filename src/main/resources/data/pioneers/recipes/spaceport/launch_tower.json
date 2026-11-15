@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:beams/galvanized_steel"
+   },
+   "count": 7
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/duralumin"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/duralumin"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:launch_tower",
+  "count": 6
+ }
+}

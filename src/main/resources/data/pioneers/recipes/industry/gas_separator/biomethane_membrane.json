@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 1,
+ "time": 60,
+ "gases": [
+  {
+   "gas": "pioneers:biogas",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 580
+  },
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 400
+  }
+ ]
+}

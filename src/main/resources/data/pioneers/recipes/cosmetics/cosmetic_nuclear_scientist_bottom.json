@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "item": "minecraft:shears"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pvc_sheet"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_nuclear_scientist_bottom",
+  "count": 1
+ }
+}

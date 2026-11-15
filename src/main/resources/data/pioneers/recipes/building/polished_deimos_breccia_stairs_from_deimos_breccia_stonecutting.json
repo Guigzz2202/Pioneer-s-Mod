@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:deimos_breccia"
+ },
+ "result": "pioneers:polished_deimos_breccia_stairs",
+ "count": 1
+}

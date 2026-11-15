@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cookie_dough"
+   },
+   "count": 1
+  }
+ ],
+ "time": 240,
+ "results": [
+  {
+   "item": "pioneers:cookies",
+   "count": 4
+  }
+ ]
+}

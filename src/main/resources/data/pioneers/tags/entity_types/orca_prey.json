@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:seal",
+  "pioneers:sea_lion",
+  "pioneers:penguin",
+  "pioneers:razorbill"
+ ]
+}

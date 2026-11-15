@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 1,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:crushed_ores/copper"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:copper_leach_liquor",
+   "amount": 1000
+  }
+ ]
+}

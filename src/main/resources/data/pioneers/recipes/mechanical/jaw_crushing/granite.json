@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "item": "minecraft:granite"
+ },
+ "count": 1,
+ "turns": 3,
+ "results": [
+  {
+   "item": "minecraft:gravel",
+   "count": 1
+  },
+  {
+   "item": "minecraft:red_sand",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

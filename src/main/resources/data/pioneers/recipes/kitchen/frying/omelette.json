@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:beaten_eggs"
+   },
+   "count": 1
+  }
+ ],
+ "time": 160,
+ "results": [
+  {
+   "item": "pioneers:omelette",
+   "count": 1
+  }
+ ]
+}

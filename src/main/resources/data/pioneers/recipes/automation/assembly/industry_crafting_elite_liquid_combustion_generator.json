@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_engine_block"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:permanent_magnet_alternator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/silver"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_liquid_combustion_generator",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rings/steel"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/zinc"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:zinc_sulfate",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:galvanized_steel_ring",
+   "count": 8
+  }
+ ]
+}

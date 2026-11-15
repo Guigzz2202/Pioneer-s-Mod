@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "arc_welder",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_beam",
+   "count": 2
+  },
+  {
+   "item": "pioneers:steel_nugget",
+   "count": 9
+  }
+ ]
+}

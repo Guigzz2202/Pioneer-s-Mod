@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bender",
+ "tier": 0,
+ "time": 110,
+ "family": "spring_coiler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/constantan"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:constantan_spring",
+   "count": 1
+  }
+ ]
+}

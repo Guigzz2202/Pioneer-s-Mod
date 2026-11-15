@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/brass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:steam_whistle",
+  "count": 1
+ }
+}

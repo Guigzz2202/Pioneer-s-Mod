@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 250,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_tian"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ratatouille_tian",
+   "count": 1
+  }
+ ]
+}

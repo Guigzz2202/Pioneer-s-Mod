@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/ruachite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:ruachite_nugget",
+  "count": 9
+ }
+}

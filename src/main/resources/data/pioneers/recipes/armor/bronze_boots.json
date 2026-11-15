@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:bronze_boots",
+  "count": 1
+ }
+}

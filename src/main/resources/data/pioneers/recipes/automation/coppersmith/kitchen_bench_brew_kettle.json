@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/copper"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:brew_kettle",
+   "count": 1
+  }
+ ]
+}

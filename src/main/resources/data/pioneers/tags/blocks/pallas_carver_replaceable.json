@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:pallas_rock",
+  "pioneers:pallas_regolith",
+  "pioneers:pallas_bright_regolith"
+ ]
+}

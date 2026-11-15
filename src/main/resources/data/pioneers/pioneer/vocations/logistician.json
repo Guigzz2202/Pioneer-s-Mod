@@ -1,0 +1,29 @@
+{
+ "order": 3,
+ "affinities": [
+  "logistics",
+  "robotics"
+ ],
+ "feature": "",
+ "emblem": "pioneers:textures/gui/pioneer/vocation/logistician.png",
+ "advantage": {
+  "trait": "flow_in_sight",
+  "modifiers": [
+   {
+    "key": "logistician.flow",
+    "value": 16.0,
+    "unit": "abs"
+   }
+  ]
+ },
+ "defect": {
+  "trait": "reluctant_fighter",
+  "modifiers": [
+   {
+    "key": "logistician.damage",
+    "value": -0.1,
+    "unit": "pct"
+   }
+  ]
+ }
+}

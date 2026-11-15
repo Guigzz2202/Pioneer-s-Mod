@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/lunarium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/lunarium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/lapis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:planetary_gear"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:robotic_upgrade_fortune",
+  "count": 1
+ }
+}

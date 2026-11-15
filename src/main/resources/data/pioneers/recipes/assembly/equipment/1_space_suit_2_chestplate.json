@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "..MM..MM..",
+  "..MAOOAM..",
+  "...MCCM...",
+  "...MMMM..."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/steel"
+  },
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "M": {
+   "item": "pioneers:plastic_sheet"
+  },
+  "O": {
+   "item": "pioneers:basic_gas_buffer"
+  }
+ },
+ "result": {
+  "item": "pioneers:space_suit_chestplate"
+ },
+ "energy": 4000000,
+ "duration": 300,
+ "research": "space_suit"
+}

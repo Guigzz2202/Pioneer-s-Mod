@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  },
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  },
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  },
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  },
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  },
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  },
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  },
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  },
+  {
+   "tag": "forge:nuggets/titanium_aluminide"
+  }
+ ],
+ "result": {
+  "item": "pioneers:titanium_aluminide_ingot",
+  "count": 1
+ }
+}

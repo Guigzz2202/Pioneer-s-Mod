@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato_slices"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:bruschetta",
+   "count": 3
+  }
+ ]
+}

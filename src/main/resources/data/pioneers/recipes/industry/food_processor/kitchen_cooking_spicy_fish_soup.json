@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 210,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/reef"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hot_pepper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:spicy_fish_soup",
+   "count": 3
+  }
+ ]
+}

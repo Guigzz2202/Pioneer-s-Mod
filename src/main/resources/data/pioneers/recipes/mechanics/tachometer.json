@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:wooden_shaft"
+  },
+  {
+   "tag": "minecraft:planks"
+  },
+  {
+   "item": "minecraft:glass_pane"
+  },
+  {
+   "tag": "forge:plates/copper"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  }
+ ],
+ "result": {
+  "item": "pioneers:tachometer",
+  "count": 1
+ }
+}

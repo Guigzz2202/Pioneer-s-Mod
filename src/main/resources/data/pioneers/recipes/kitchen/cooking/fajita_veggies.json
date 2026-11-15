@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bell_pepper"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "results": [
+  {
+   "item": "pioneers:fajita_veggies",
+   "count": 2
+  }
+ ]
+}

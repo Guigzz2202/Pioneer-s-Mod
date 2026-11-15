@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cake"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:strawberry"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:whipped_cream"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:strawberry_shortcake",
+   "count": 1
+  }
+ ]
+}

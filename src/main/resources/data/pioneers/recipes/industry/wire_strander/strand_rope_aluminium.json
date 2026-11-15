@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 1,
+ "time": 95,
+ "family": "wire_strander",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/aluminium"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_wire_rope",
+   "count": 3
+  }
+ ]
+}

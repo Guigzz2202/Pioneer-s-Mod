@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "magnetic_separator",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:screened_iron_ore"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "ore": true
+}

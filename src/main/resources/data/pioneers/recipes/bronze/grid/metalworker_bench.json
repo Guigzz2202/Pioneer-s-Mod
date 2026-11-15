@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "HIH",
+  "PPP",
+  "L L"
+ ],
+ "key": {
+  "H": {
+   "tag": "pioneers:tools/hammers"
+  },
+  "I": {
+   "tag": "forge:ingots/copper"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "item": "pioneers:metalworker_bench",
+  "count": 1
+ }
+}

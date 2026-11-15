@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:olives"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_focaccia",
+   "count": 1
+  }
+ ]
+}

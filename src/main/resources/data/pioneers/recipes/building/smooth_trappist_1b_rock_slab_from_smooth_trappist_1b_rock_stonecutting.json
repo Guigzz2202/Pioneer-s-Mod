@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_trappist_1b_rock"
+ },
+ "result": "pioneers:smooth_trappist_1b_rock_slab",
+ "count": 2
+}

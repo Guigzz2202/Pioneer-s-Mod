@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 100,
+ "family": "catalytic_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:platinum_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platinum_catalyst",
+   "count": 1,
+   "chance": 0.95
+  },
+  {
+   "item": "pioneers:spent_platinum_catalyst",
+   "count": 1,
+   "chance": 0.05
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:hydrogen_peroxide",
+   "amount": 500
+  }
+ ]
+}

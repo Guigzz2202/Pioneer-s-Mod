@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:beetroot_crate"
+  }
+ ],
+ "result": {
+  "item": "minecraft:beetroot",
+  "count": 9
+ }
+}

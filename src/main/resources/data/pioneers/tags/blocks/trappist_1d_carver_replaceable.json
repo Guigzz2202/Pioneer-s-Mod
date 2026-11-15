@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:trappist_1d_rock",
+  "pioneers:trappist_1d_sand",
+  "pioneers:trappist_1d_shale"
+ ]
+}

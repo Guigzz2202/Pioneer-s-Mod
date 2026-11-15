@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_lattice"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:messinite_ceramic"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:diamond_reflector",
+   "count": 8
+  }
+ ]
+}

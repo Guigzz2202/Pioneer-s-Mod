@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:fish_meal"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:fish_feed",
+  "count": 4
+ },
+ "binder": {
+  "item": "pioneers:corn_starch"
+ },
+ "binder_count": 1
+}

@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:tharsium_plate",
+  "pioneers:tharsium_rod",
+  "pioneers:tharsium_billet"
+ ]
+}

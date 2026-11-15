@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alumina_ceramic"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alternator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wire_meshes/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/aluminium"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_solid_combustion_generator",
+   "count": 1
+  }
+ ]
+}

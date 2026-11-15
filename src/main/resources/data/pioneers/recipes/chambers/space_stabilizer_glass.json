@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:space_stabilizer_casing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire_glass"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:space_stabilizer_glass",
+  "count": 1
+ }
+}

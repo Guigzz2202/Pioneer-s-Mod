@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "quench_tank",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:wrench"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 750
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hardened_steel_wrench",
+   "count": 1
+  }
+ ]
+}

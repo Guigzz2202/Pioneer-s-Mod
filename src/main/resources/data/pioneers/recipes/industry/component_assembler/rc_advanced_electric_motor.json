@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:electric_motor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_bearing"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:magnesium_housing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electrolytic_capacitor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:transistor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_screw"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_electric_motor",
+   "count": 2
+  }
+ ]
+}

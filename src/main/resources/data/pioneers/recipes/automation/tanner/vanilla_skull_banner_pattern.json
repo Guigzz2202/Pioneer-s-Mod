@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:wither_skeleton_skull"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:skull_banner_pattern",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "item": "minecraft:shears"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/black"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:feather"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_merchant_hat",
+  "count": 1
+ }
+}

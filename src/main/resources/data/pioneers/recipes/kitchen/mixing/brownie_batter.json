@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:chocolate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cocoa_powder"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:brownie_batter",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 3,
+ "time": 720,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:terminite_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:terminite_plate",
+   "count": 9
+  }
+ ]
+}

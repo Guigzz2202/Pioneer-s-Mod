@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steak"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cheese"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato_slices"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lettuce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ketchup"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:burger_deluxe",
+   "count": 1
+  }
+ ]
+}

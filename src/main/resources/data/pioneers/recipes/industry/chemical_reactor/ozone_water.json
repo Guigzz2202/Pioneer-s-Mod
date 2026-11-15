@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 40,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ozone",
+   "amount": 50
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ultrapure_water",
+   "amount": 1000
+  }
+ ]
+}

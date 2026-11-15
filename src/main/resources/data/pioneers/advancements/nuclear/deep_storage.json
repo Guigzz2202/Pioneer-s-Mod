@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:waste_package"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.deep_storage.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.deep_storage.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "deep_storage"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/vitrified"
+}

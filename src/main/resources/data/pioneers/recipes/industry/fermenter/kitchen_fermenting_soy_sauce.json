@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:soybean"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:soy_sauce",
+   "count": 3
+  }
+ ]
+}

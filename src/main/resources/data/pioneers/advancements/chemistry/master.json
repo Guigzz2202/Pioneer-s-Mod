@@ -1,0 +1,76 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:processor"
+  },
+  "title": {
+   "translate": "advancements.pioneers.chemistry.master.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.chemistry.master.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_offshore_platform"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_steam_turbine"
+   }
+  },
+  "c2": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_ammonia_plant"
+   }
+  },
+  "c3": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_semiconductor_fab"
+   }
+  },
+  "c4": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:machine_frame_advanced"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ],
+  [
+   "c3"
+  ],
+  [
+   "c4"
+  ]
+ ],
+ "parent": "pioneers:chemistry/fab",
+ "rewards": {
+  "experience": 500
+ }
+}

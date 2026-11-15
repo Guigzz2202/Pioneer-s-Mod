@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 2,
+ "time": 120,
+ "family": "continuous_caster",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ingot_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_aluminium",
+   "amount": 1296
+  },
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_ingot",
+   "count": 9
+  },
+  {
+   "item": "pioneers:ingot_die",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 90
+  }
+ ],
+ "industrial": true
+}

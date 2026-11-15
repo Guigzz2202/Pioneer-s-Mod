@@ -1,0 +1,90 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "worker_cabin",
+ "variant": 0,
+ "min_tier": 1,
+ "size": [
+  5,
+  7,
+  5
+ ],
+ "palette": [
+  "minecraft:spruce_planks",
+  "minecraft:stone_bricks",
+  "minecraft:bricks",
+  "minecraft:spruce_door[facing=south,half=lower,hinge=left,open=false,powered=false]",
+  "minecraft:chest[facing=west,type=single,waterlogged=false]",
+  "minecraft:red_bed[facing=south,occupied=false,part=foot]",
+  "minecraft:red_bed[facing=south,occupied=false,part=head]",
+  "minecraft:white_carpet",
+  "minecraft:spruce_fence",
+  "minecraft:cobblestone",
+  "minecraft:cracked_stone_bricks",
+  "minecraft:spruce_door[facing=south,half=upper,hinge=left,open=false,powered=false]",
+  "minecraft:spruce_pressure_plate",
+  "minecraft:cobweb",
+  "minecraft:spruce_stairs[facing=south,half=bottom]",
+  "minecraft:mossy_cobblestone",
+  "minecraft:spruce_stairs[facing=north,half=bottom]",
+  "minecraft:spruce_slab[type=bottom]"
+ ],
+ "layers": [
+  [
+   "aaaaa",
+   "aaaaa",
+   "aaaaa",
+   "aaaaa",
+   "aaaaa"
+  ],
+  [
+   "bcdcb",
+   "c..ec",
+   "cf..c",
+   "cghic",
+   "bccjk"
+  ],
+  [
+   "kclcb",
+   "c...c",
+   ".....",
+   "c..mc",
+   "bcccb"
+  ],
+  [
+   "bcccb",
+   "c...c",
+   "c...c",
+   "cn..c",
+   "bccck"
+  ],
+  [
+   "ooooo",
+   "c...p",
+   "c...c",
+   "....c",
+   "qqqqq"
+  ],
+  [
+   ".....",
+   "ooooo",
+   "c...c",
+   ".qqqq",
+   "....."
+  ],
+  [
+   ".....",
+   ".....",
+   ".rrrr",
+   ".....",
+   "....."
+  ]
+ ],
+ "chests": [
+  [
+   3,
+   1,
+   1
+  ]
+ ],
+ "frames": []
+}

@@ -1,0 +1,63 @@
+{
+ "id": "cooperative",
+ "order": 3,
+ "representative": {
+  "mode": "rotating",
+  "term_days": 14,
+  "reelectable": true
+ },
+ "council": {
+  "min": 0,
+  "max": 0
+ },
+ "decisions": {
+  "taxes": {
+   "by": "members",
+   "majority": "two_thirds"
+  },
+  "roles": {
+   "by": "members",
+   "majority": "two_thirds"
+  },
+  "kick": {
+   "by": "members",
+   "majority": "two_thirds"
+  },
+  "spend": {
+   "by": "members",
+   "majority": "two_thirds"
+  },
+  "war": {
+   "by": "members",
+   "majority": "two_thirds"
+  },
+  "treaty": {
+   "by": "members",
+   "majority": "two_thirds"
+  },
+  "regime": {
+   "by": "members",
+   "majority": "unanimity"
+  },
+  "identity": {
+   "by": "members",
+   "majority": "two_thirds"
+  }
+ },
+ "caps": {
+  "activity_tax": 10,
+  "dues": 50
+ },
+ "succession": "rotation",
+ "counter_power": {
+  "type": "none"
+ },
+ "advantage": {
+  "claim_budget": 0.1,
+  "dividend": true
+ },
+ "federal": {
+  "contribution_max": 5,
+  "weight_cap": 0.4
+ }
+}

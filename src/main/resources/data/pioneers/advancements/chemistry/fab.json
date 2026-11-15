@@ -1,0 +1,34 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:semiconductor_fab"
+  },
+  "title": {
+   "translate": "advancements.pioneers.chemistry.fab.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.chemistry.fab.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_semiconductor_fab"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:chemistry/processor",
+ "rewards": {
+  "experience": 500
+ }
+}

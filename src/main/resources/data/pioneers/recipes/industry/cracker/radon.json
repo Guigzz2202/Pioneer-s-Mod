@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:uranium_tailings"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:sand",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:radon",
+   "amount": 10
+  }
+ ]
+}

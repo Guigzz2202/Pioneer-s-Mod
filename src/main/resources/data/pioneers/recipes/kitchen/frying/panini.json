@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_panini"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "results": [
+  {
+   "item": "pioneers:panini",
+   "count": 1
+  }
+ ]
+}

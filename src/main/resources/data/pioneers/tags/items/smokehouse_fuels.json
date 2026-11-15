@@ -1,0 +1,15 @@
+{
+ "replace": false,
+ "values": [
+  "#minecraft:logs_that_burn",
+  {
+   "id": "pioneers:wood_chips",
+   "required": false
+  },
+  {
+   "id": "pioneers:sawdust",
+   "required": false
+  },
+  "pioneers:charcoal"
+ ]
+}

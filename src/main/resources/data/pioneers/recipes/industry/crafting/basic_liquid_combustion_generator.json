@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:engine_block"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dynamo_unit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pressure_sensor"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_liquid_combustion_generator",
+  "count": 1
+ }
+}

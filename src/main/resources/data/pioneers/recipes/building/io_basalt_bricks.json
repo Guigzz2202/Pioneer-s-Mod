@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_io_basalt"
+  }
+ },
+ "result": {
+  "item": "pioneers:io_basalt_bricks",
+  "count": 4
+ }
+}

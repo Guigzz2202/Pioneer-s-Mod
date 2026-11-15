@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gravity_compressor",
+ "tier": 3,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planet_rocks/mars"
+   },
+   "count": 64
+  },
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/marsium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 8000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:compacted_mars",
+   "count": 1
+  }
+ ],
+ "energy": 200000000
+}

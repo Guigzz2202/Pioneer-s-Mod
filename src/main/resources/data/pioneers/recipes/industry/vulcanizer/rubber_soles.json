@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 0,
+ "time": 200,
+ "family": "vulcanizer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:vulcanized_rubber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sole",
+   "count": 4
+  }
+ ]
+}

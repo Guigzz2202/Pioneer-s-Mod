@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:raw_whale_meat",
+  "pioneers:raw_shark_meat",
+  "pioneers:raw_ray_wing",
+  "pioneers:raw_seal_meat"
+ ]
+}

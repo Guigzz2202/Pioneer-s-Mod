@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 1,
+ "time": 160,
+ "family": "diffusion_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:epitaxial_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:p_doped_wafer"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:diborane",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:implanted_wafer",
+   "count": 1
+  }
+ ]
+}

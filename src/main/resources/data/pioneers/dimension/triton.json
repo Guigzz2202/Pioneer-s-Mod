@@ -1,0 +1,84 @@
+{
+ "type": "pioneers:triton",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:triton",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:triton_polar_cap",
+     "parameters": {
+      "temperature": [
+       0.41,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:ruach_planitia",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.41
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       0.31,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:cantaloupe_terrain",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.41
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.31
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

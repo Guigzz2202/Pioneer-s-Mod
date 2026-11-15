@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:perforated_board"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/copper"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:etched_board",
+   "count": 2
+  }
+ ]
+}

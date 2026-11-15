@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:wire_meshes/iron",
+  "#forge:wire_meshes/copper",
+  "#forge:wire_meshes/brass",
+  "#forge:wire_meshes/stainless_steel"
+ ]
+}

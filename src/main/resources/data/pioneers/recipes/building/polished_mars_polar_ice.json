@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:packed_mars_polar_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_mars_polar_ice",
+  "count": 4
+ }
+}

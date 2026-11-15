@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:unfired_clay_bucket"
+ },
+ "temperature": 650,
+ "time": 300,
+ "result": {
+  "item": "pioneers:clay_bucket",
+  "count": 1
+ }
+}

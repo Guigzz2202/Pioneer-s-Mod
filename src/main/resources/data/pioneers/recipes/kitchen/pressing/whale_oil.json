@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:pressing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:whale_blubber"
+   },
+   "count": 2
+  }
+ ],
+ "time": 300,
+ "strokes": 6,
+ "fluid_result": {
+  "fluid": "pioneers:fish_oil",
+  "amount": 250
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 100,
+ "family": "catalytic_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zeolite_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_sulfide",
+   "amount": 1000
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zeolite_catalyst",
+   "count": 1,
+   "chance": 0.98
+  },
+  {
+   "item": "pioneers:spent_zeolite_catalyst",
+   "count": 1,
+   "chance": 0.02
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_sulfur",
+   "amount": 500
+  }
+ ]
+}

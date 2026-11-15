@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:soybean_sack"
+  }
+ ],
+ "result": {
+  "item": "pioneers:soybean",
+  "count": 9
+ }
+}

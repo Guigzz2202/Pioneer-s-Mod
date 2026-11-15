@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/constantan"
+  },
+  {
+   "tag": "forge:nuggets/constantan"
+  },
+  {
+   "tag": "forge:nuggets/constantan"
+  },
+  {
+   "tag": "forge:nuggets/constantan"
+  },
+  {
+   "tag": "forge:nuggets/constantan"
+  },
+  {
+   "tag": "forge:nuggets/constantan"
+  },
+  {
+   "tag": "forge:nuggets/constantan"
+  },
+  {
+   "tag": "forge:nuggets/constantan"
+  },
+  {
+   "tag": "forge:nuggets/constantan"
+  }
+ ],
+ "result": {
+  "item": "pioneers:constantan_ingot",
+  "count": 1
+ }
+}

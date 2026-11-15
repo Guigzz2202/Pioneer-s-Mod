@@ -1,0 +1,252 @@
+{
+ "type": "pioneers:venus",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:venus",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:venus_tesserae",
+     "parameters": {
+      "temperature": [
+       0.25,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_lava_channels",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       -0.032,
+       0.032
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_coronae",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       -1.0,
+       -0.032
+      ],
+      "continentalness": [
+       0.38,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_coronae",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       0.032,
+       1.0
+      ],
+      "continentalness": [
+       0.38,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_volcanic_lowlands",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       -1.0,
+       -0.032
+      ],
+      "continentalness": [
+       -1.0,
+       0.38
+      ],
+      "erosion": [
+       -1.0,
+       -0.35
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_volcanic_lowlands",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       0.032,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.38
+      ],
+      "erosion": [
+       -1.0,
+       -0.35
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_ash_fields",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       -1.0,
+       -0.032
+      ],
+      "continentalness": [
+       -1.0,
+       0.38
+      ],
+      "erosion": [
+       0.35,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_ash_fields",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       0.032,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.38
+      ],
+      "erosion": [
+       0.35,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_lava_plains",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       -1.0,
+       -0.032
+      ],
+      "continentalness": [
+       -1.0,
+       0.38
+      ],
+      "erosion": [
+       -0.35,
+       0.35
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:venus_lava_plains",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.25
+      ],
+      "humidity": [
+       0.032,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.38
+      ],
+      "erosion": [
+       -0.35,
+       0.35
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

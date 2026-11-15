@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_mercury_sandstone"
+ },
+ "result": "pioneers:smooth_mercury_sandstone_stairs",
+ "count": 1
+}

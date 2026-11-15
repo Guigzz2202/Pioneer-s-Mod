@@ -1,0 +1,333 @@
+{
+ "1": {
+  "days": 5,
+  "items": [
+   {
+    "id": "#forge:rods/steel",
+    "count": 416
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 208
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 208
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 128
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 128
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 104
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 104
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 104
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 96
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 64
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 16
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_compressor",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "pioneers:electric_motor",
+    "count": 3
+   },
+   {
+    "id": "pioneers:piston",
+    "count": 3
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:steel_ingot",
+   "count": 48
+  }
+ },
+ "2": {
+  "days": 10,
+  "items": [
+   {
+    "id": "#forge:rods/duralumin",
+    "count": 404
+   },
+   {
+    "id": "#forge:screws/aluminium",
+    "count": 202
+   },
+   {
+    "id": "#forge:springs/aluminium",
+    "count": 202
+   },
+   {
+    "id": "#forge:plates/duralumin",
+    "count": 131
+   },
+   {
+    "id": "#forge:rings/electrum",
+    "count": 116
+   },
+   {
+    "id": "#forge:sheets/aluminium",
+    "count": 116
+   },
+   {
+    "id": "#forge:plates/aluminium",
+    "count": 101
+   },
+   {
+    "id": "#forge:bolts/aluminium",
+    "count": 101
+   },
+   {
+    "id": "#forge:rings/aluminium",
+    "count": 101
+   },
+   {
+    "id": "#forge:beams/galvanized_steel",
+    "count": 58
+   },
+   {
+    "id": "pioneers:circuit_mk2",
+    "count": 15
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 12
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 9
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 6
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_compressor",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 3
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "pioneers:electric_motor",
+    "count": 3
+   },
+   {
+    "id": "pioneers:piston",
+    "count": 3
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 2
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:aluminium_ingot",
+   "count": 96
+  }
+ },
+ "3": {
+  "days": 20,
+  "items": [
+   {
+    "id": "#forge:rods/titanium",
+    "count": 404
+   },
+   {
+    "id": "#forge:screws/titanium",
+    "count": 202
+   },
+   {
+    "id": "#forge:springs/nickel",
+    "count": 202
+   },
+   {
+    "id": "#forge:plates/stainless_steel",
+    "count": 131
+   },
+   {
+    "id": "#forge:springs/vanadium_steel",
+    "count": 116
+   },
+   {
+    "id": "#forge:sheets/titanium",
+    "count": 116
+   },
+   {
+    "id": "#forge:plates/titanium",
+    "count": 101
+   },
+   {
+    "id": "#forge:bolts/titanium",
+    "count": 101
+   },
+   {
+    "id": "#forge:rings/titanium",
+    "count": 101
+   },
+   {
+    "id": "#forge:beams/titanium",
+    "count": 58
+   },
+   {
+    "id": "pioneers:circuit_mk3",
+    "count": 15
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 12
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 9
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 6
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_compressor",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 3
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "pioneers:electric_motor",
+    "count": 3
+   },
+   {
+    "id": "pioneers:piston",
+    "count": 3
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 2
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:titanium_ingot",
+   "count": 160
+  }
+ }
+}

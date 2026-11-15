@@ -1,0 +1,85 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:hydroponic_farm"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.master.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.master.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_hydroponic_farm"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_tree_plantation"
+   }
+  },
+  "c2": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_aquafarm"
+   }
+  },
+  "c3": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_gas_processing_plant"
+   }
+  },
+  "c4": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_fischer_tropsch_reactor"
+   }
+  },
+  "c5": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:primitive_plastic"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ],
+  [
+   "c3"
+  ],
+  [
+   "c4"
+  ],
+  [
+   "c5"
+  ]
+ ],
+ "parent": "pioneers:agri/loop",
+ "rewards": {
+  "experience": 500
+ }
+}

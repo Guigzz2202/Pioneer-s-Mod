@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/babbitt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_press",
+   "count": 1
+  }
+ ]
+}

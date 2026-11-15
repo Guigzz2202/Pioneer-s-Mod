@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 1,
+ "time": 300,
+ "family": "reduction_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:vanadium_pentoxide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_dust",
+   "count": 2
+  },
+  {
+   "item": "pioneers:alumina",
+   "count": 1
+  }
+ ]
+}

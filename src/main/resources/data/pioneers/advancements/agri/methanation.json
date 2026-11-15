@@ -1,0 +1,40 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:basic_chemical_reactor"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.methanation.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.methanation.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_steam_reformer"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_catalytic_reactor"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:agri/reformer"
+}

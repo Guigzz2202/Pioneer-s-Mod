@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cheese"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_gratin",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 1,
+ "time": 145,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_shell_mold"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_bronze",
+   "amount": 640
+  },
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 80
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:bell",
+   "count": 1
+  },
+  {
+   "item": "pioneers:ceramic_shell_mold",
+   "count": 1
+  },
+  {
+   "item": "pioneers:bronze_nugget",
+   "count": 4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 72
+  }
+ ]
+}

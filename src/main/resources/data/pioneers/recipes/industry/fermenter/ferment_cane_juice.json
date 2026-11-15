@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:cane_juice",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:vinasse",
+   "amount": 300
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 150
+  }
+ ]
+}

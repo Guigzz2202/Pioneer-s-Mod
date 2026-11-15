@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:olivine",
+ "material": "olivine",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#96BE46",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_ocean",
+   "weight": 2
+  },
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 2
+  }
+ ]
+}

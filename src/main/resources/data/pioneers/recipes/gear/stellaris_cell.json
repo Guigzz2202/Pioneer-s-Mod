@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "CSC",
+  "SGS",
+  "CSC"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:circuit_mk3"
+  },
+  "S": {
+   "item": "pioneers:superconducting_coil"
+  },
+  "G": {
+   "item": "pioneers:graviton_cell"
+  }
+ },
+ "result": {
+  "item": "pioneers:stellaris_cell",
+  "count": 1
+ }
+}

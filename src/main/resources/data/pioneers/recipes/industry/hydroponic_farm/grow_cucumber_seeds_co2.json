@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cucumber_seeds"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nutrient_solution",
+   "amount": 250
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cucumber",
+   "count": 4
+  },
+  {
+   "item": "pioneers:cucumber_seeds",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:saturn",
+ "breathable": false,
+ "hazard": "pressure",
+ "nitrogen": 0,
+ "gravity": 1.07,
+ "suit_tier": 4,
+ "temperature": -140
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rings/iron"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:chain",
+  "count": 2
+ }
+}

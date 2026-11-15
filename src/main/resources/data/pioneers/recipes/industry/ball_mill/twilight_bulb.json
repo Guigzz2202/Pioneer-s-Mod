@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 2,
+ "time": 40,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:twilight_bulb"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:glowstone_dust",
+   "count": 3
+  }
+ ]
+}

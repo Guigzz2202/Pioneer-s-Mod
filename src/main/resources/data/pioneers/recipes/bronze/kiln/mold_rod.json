@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:unfired_rod_mold"
+ },
+ "temperature": 650,
+ "time": 300,
+ "result": {
+  "item": "pioneers:rod_mold",
+  "count": 1
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "transporter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_track"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:uncoupler_track",
+  "count": 2
+ }
+}

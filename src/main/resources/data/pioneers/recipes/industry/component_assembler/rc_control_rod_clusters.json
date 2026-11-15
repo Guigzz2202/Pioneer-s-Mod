@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:boron_carbide"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/stainless_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/nitinol"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:control_rod_cluster",
+   "count": 1
+  }
+ ]
+}

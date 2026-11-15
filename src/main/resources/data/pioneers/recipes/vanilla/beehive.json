@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honeycomb"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:beehive",
+  "count": 1
+ }
+}

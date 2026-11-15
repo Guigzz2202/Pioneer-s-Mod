@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:circuit_mk2"
+  },
+  {
+   "item": "pioneers:circuit_mk2"
+  },
+  {
+   "item": "pioneers:electric_motor"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_overclock",
+  "count": 1
+ }
+}

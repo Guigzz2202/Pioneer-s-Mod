@@ -1,0 +1,70 @@
+{
+ "smalltalk": [
+  "dialogue.pioneers.restorers.smalltalk.0",
+  "dialogue.pioneers.restorers.smalltalk.1",
+  "dialogue.pioneers.restorers.smalltalk.2",
+  "dialogue.pioneers.restorers.smalltalk.3",
+  "dialogue.pioneers.restorers.smalltalk.4",
+  "dialogue.pioneers.restorers.smalltalk.5",
+  "dialogue.pioneers.restorers.smalltalk.6",
+  "dialogue.pioneers.restorers.smalltalk.7",
+  "dialogue.pioneers.restorers.smalltalk.8",
+  "dialogue.pioneers.restorers.smalltalk.9",
+  "dialogue.pioneers.restorers.smalltalk.10",
+  "dialogue.pioneers.restorers.smalltalk.11",
+  "dialogue.pioneers.restorers.smalltalk.12",
+  "dialogue.pioneers.restorers.smalltalk.13",
+  "dialogue.pioneers.restorers.smalltalk.14",
+  "dialogue.pioneers.restorers.smalltalk.15"
+ ],
+ "warm": [
+  "dialogue.pioneers.restorers.warm.0",
+  "dialogue.pioneers.restorers.warm.1",
+  "dialogue.pioneers.restorers.warm.2",
+  "dialogue.pioneers.restorers.warm.3",
+  "dialogue.pioneers.restorers.warm.4",
+  "dialogue.pioneers.restorers.warm.5",
+  "dialogue.pioneers.restorers.warm.6",
+  "dialogue.pioneers.restorers.warm.7",
+  "dialogue.pioneers.restorers.warm.8",
+  "dialogue.pioneers.restorers.warm.9"
+ ],
+ "places": [
+  "dialogue.pioneers.restorers.places.0",
+  "dialogue.pioneers.restorers.places.1",
+  "dialogue.pioneers.restorers.places.2",
+  "dialogue.pioneers.restorers.places.3",
+  "dialogue.pioneers.restorers.places.4"
+ ],
+ "cold": [
+  "dialogue.pioneers.restorers.cold.0",
+  "dialogue.pioneers.restorers.cold.1",
+  "dialogue.pioneers.restorers.cold.2",
+  "dialogue.pioneers.restorers.cold.3",
+  "dialogue.pioneers.restorers.cold.4",
+  "dialogue.pioneers.restorers.cold.5",
+  "dialogue.pioneers.restorers.cold.6"
+ ],
+ "contempt": [
+  "dialogue.pioneers.restorers.contempt.0",
+  "dialogue.pioneers.restorers.contempt.1",
+  "dialogue.pioneers.restorers.contempt.2",
+  "dialogue.pioneers.restorers.contempt.3",
+  "dialogue.pioneers.restorers.contempt.4",
+  "dialogue.pioneers.restorers.contempt.5",
+  "dialogue.pioneers.restorers.contempt.6",
+  "dialogue.pioneers.restorers.contempt.7",
+  "dialogue.pioneers.restorers.contempt.8"
+ ],
+ "insult": [
+  "dialogue.pioneers.restorers.insult.0",
+  "dialogue.pioneers.restorers.insult.1",
+  "dialogue.pioneers.restorers.insult.2",
+  "dialogue.pioneers.restorers.insult.3",
+  "dialogue.pioneers.restorers.insult.4",
+  "dialogue.pioneers.restorers.insult.5",
+  "dialogue.pioneers.restorers.insult.6",
+  "dialogue.pioneers.restorers.insult.7",
+  "dialogue.pioneers.restorers.insult.8"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:rye"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:rye_sack",
+  "count": 1
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:birch_planks"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:birch_button",
+  "count": 1
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/babbitt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:variable_frequency_drive"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:elite_press",
+  "count": 1
+ }
+}

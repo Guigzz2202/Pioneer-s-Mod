@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...HHHH...",
+  "..HTGGTH..",
+  "...AKKA...",
+  "....SS...."
+ ],
+ "key": {
+  "H": {
+   "item": "pioneers:coated_canvas"
+  },
+  "T": {
+   "item": "pioneers:advanced_gas_buffer"
+  },
+  "G": {
+   "tag": "forge:plates/sulcite"
+  },
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "K": {
+   "tag": "forge:rods/krakenite"
+  },
+  "S": {
+   "tag": "forge:wire_ropes/galvanized_steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:aerostat_kit"
+ },
+ "energy": 40000000,
+ "duration": 600,
+ "research": "aerostats"
+}

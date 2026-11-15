@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:ingots/lead"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:lead_block",
+  "count": 1
+ }
+}

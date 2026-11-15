@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:alumina"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 250
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 300
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:cryolite",
+   "amount": 500
+  }
+ ]
+}

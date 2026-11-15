@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 0,
+ "time": 120,
+ "fluids": [
+  {
+   "fluid": "pioneers:refrigerant",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:tetrafluoroethylene",
+   "amount": 250
+  }
+ ]
+}

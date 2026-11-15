@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_saw_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:bindings"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_saw",
+  "count": 1
+ }
+}

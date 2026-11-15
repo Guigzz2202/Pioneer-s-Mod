@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "press",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:primitive_plastic"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:perforated_board",
+  "count": 4
+ },
+ "time": 60
+}

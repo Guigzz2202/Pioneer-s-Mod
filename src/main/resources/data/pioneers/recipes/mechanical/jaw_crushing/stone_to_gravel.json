@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "tag": "forge:cobblestone"
+ },
+ "count": 1,
+ "turns": 3,
+ "results": [
+  {
+   "item": "minecraft:gravel",
+   "count": 1
+  },
+  {
+   "item": "minecraft:flint",
+   "count": 1,
+   "chance": 0.1
+  }
+ ]
+}

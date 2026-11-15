@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:thomas_slag"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gypsum",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:phosphoric_acid",
+   "amount": 500
+  }
+ ]
+}

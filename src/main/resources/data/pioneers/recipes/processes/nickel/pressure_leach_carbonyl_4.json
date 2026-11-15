@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 1,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pentlandite_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 300
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tailings",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:nickel_cobalt_liquor",
+   "amount": 1000
+  }
+ ],
+ "temperature": 250
+}

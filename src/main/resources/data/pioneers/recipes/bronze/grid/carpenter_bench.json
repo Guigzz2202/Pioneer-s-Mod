@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SKS",
+  "PPP",
+  "L L"
+ ],
+ "key": {
+  "S": {
+   "tag": "forge:rods/wooden"
+  },
+  "K": {
+   "tag": "pioneers:tools/knives"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "item": "pioneers:carpenter_bench",
+  "count": 1
+ }
+}

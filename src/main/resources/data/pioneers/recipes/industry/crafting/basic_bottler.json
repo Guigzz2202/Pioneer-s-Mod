@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_faucet"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/copper"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_bottler",
+  "count": 1
+ }
+}

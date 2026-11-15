@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:bolts/steel",
+    "#forge:bolts/aluminium",
+    "#forge:bolts/tungsten",
+    "#forge:bolts/titanium"
+  ]
+}

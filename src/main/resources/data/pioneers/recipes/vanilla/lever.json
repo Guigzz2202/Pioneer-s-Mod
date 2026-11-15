@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:cobblestone"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:lever",
+  "count": 1
+ }
+}

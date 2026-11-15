@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:toolmaker_bench"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.root.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.root.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false,
+  "background": "pioneers:textures/block/mechanics/fire_brick.png"
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:toolmaker_bench"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ]
+}

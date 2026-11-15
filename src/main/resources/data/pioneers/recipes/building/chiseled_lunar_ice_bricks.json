@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#",
+  "#"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:lunar_ice_brick_slab"
+  }
+ },
+ "result": {
+  "item": "pioneers:chiseled_lunar_ice_bricks",
+  "count": 1
+ }
+}

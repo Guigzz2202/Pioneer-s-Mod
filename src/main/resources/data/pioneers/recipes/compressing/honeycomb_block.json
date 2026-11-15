@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "minecraft:honeycomb"
+ },
+ "count": 4,
+ "result": {
+  "item": "minecraft:honeycomb_block",
+  "count": 1
+ }
+}

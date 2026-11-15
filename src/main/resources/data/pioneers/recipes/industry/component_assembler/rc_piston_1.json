@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:honed_cylinder"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston_ring"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gasket"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:piston",
+   "count": 2
+  }
+ ]
+}

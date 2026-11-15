@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tanned_leather"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:rabbit_hide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_rivet"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_aviator_top",
+   "count": 1
+  }
+ ]
+}

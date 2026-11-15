@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 200,
+ "family": "arc_welder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zircaloy_tube"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fuel_pellet"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fuel_rod",
+   "count": 1
+  }
+ ]
+}

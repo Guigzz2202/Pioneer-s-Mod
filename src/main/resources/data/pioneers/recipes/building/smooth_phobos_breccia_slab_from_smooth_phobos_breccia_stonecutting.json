@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_phobos_breccia"
+ },
+ "result": "pioneers:smooth_phobos_breccia_slab",
+ "count": 2
+}

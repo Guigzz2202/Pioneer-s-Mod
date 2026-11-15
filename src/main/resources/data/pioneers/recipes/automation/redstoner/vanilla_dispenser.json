@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:cobblestone"
+   },
+   "count": 7
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bow"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:dispenser",
+   "count": 1
+  }
+ ]
+}

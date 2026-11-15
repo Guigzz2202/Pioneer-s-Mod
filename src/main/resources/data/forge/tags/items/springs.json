@@ -1,0 +1,25 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:springs/iron",
+  "#forge:springs/copper",
+  "#forge:springs/gold",
+  "#forge:springs/tin",
+  "#forge:springs/bronze",
+  "#forge:springs/brass",
+  "#forge:springs/steel",
+  "#forge:springs/nickel",
+  "#forge:springs/silver",
+  "#forge:springs/aluminium",
+  "#forge:springs/tungsten",
+  "#forge:springs/titanium",
+  "#forge:springs/invar",
+  "#forge:springs/electrum",
+  "#forge:springs/constantan",
+  "#forge:springs/stainless_steel",
+  "#forge:springs/duralumin",
+  "#forge:springs/nichrome",
+  "#forge:springs/vanadium_steel",
+  "#forge:springs/nitinol"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 360,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/aluminium"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/magnesium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_duralumin",
+   "amount": 1440
+  }
+ ],
+ "pure": true
+}

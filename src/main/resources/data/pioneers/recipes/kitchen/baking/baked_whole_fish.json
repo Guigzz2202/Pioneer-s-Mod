@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish"
+   },
+   "count": 1
+  }
+ ],
+ "time": 360,
+ "results": [
+  {
+   "item": "pioneers:baked_whole_fish",
+   "count": 1
+  }
+ ]
+}

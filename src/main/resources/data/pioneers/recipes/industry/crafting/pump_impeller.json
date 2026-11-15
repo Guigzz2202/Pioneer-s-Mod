@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/bronze"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:pump_impeller",
+  "count": 1
+ }
+}

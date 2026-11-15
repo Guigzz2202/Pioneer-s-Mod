@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:stardust_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:stardust",
+  "count": 9
+ }
+}

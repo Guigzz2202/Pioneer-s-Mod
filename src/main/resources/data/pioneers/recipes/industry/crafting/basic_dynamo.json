@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_dynamo",
+  "count": 1
+ }
+}

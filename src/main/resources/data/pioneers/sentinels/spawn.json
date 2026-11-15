@@ -1,0 +1,9 @@
+{
+  "_comment": "Composition des Sentinelles d'une ruine par tier : min..max Sentinelles tirees selon les poids (roles exiges d'abord), plus les Contremaitres. patroller_lift : hauteur du poste d'un Patrouilleur au-dessus du sol.",
+  "patroller_lift": 3,
+  "tiers": {
+    "1": {"min": 1, "max": 2, "weights": {"guardian": 3, "patroller": 2}, "require": [], "foreman": 0},
+    "2": {"min": 3, "max": 5, "weights": {"guardian": 3, "patroller": 2, "turret": 2, "repairer": 1}, "require": ["turret", "repairer"], "foreman": 0},
+    "3": {"min": 5, "max": 8, "weights": {"guardian": 3, "patroller": 2, "turret": 2, "repairer": 2}, "require": ["turret", "repairer"], "foreman": 1}
+  }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 1,
+ "time": 400,
+ "family": "sintering_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:green_fuel_pellet"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fuel_pellet",
+   "count": 4
+  }
+ ]
+}

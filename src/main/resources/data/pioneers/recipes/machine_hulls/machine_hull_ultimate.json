@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk4"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/osmiridium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/osmiridium"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:machine_hull_ultimate",
+  "count": 1
+ }
+}

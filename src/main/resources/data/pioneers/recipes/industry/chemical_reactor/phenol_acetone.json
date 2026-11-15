@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "fluids": [
+  {
+   "fluid": "pioneers:cumene",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:phenol",
+   "amount": 500
+  },
+  {
+   "fluid": "pioneers:acetone",
+   "amount": 400
+  }
+ ]
+}

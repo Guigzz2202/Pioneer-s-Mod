@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "pioneers:titania_regolith"
+  },
+  "mode": "trench",
+  "min_length": 16,
+  "max_length": 26,
+  "width": 3,
+  "depth": 4,
+  "curl": 0.1
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:radish"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cucumber"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lettuce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinaigrette"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bowl"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:radish_salad",
+   "count": 2
+  }
+ ]
+}

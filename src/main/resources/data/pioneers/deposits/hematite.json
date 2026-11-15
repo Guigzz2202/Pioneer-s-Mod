@@ -1,0 +1,27 @@
+{
+ "result": "pioneers:raw_iron",
+ "material": "iron",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  40000,
+  160000
+ ],
+ "outcrop": "pioneers:hematite_outcrop",
+ "color": "#8C3828",
+ "fallback": 0,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_badlands",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 8
+  },
+  {
+   "biomes": "#minecraft:is_savanna",
+   "weight": 8
+  }
+ ]
+}

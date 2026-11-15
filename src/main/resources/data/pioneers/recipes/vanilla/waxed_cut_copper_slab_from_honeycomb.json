@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:cut_copper_slab"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honeycomb"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:waxed_cut_copper_slab",
+  "count": 1
+ }
+}

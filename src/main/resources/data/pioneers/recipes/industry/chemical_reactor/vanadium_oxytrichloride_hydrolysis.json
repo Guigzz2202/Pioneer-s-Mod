@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "fluids": [
+  {
+   "fluid": "pioneers:vanadium_oxytrichloride",
+   "amount": 100
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_pentoxide",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 150
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 720,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:mango"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:jam",
+   "count": 1,
+   "nbt": {
+    "Source": "pioneers:mango"
+   }
+  }
+ ]
+}

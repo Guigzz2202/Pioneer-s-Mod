@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 250,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_quiche"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:quiche",
+   "count": 1
+  }
+ ]
+}

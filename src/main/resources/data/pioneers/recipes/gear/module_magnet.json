@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:magnetite_fragment"
+  },
+  {
+   "item": "pioneers:magnetite_fragment"
+  },
+  {
+   "item": "pioneers:copper_coil"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_magnet",
+  "count": 1
+ }
+}

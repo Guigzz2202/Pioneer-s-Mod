@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/stellite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_planetary_gear"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_composite_panel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:press_die"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_casting_machine",
+  "count": 1
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "replace": false,
+ "values": [
+  {
+   "id": "pioneers:wood_chips",
+   "required": false
+  },
+  {
+   "id": "pioneers:bagasse",
+   "required": false
+  },
+  {
+   "id": "pioneers:press_cake",
+   "required": false
+  },
+  {
+   "id": "pioneers:microalgae",
+   "required": false
+  },
+  {
+   "id": "pioneers:miscanthus",
+   "required": false
+  },
+  {
+   "id": "pioneers:corn_starch",
+   "required": false
+  },
+  {
+   "id": "pioneers:fish_meal",
+   "required": false
+  },
+  {
+   "id": "pioneers:fish_feed",
+   "required": false
+  },
+  {
+   "id": "pioneers:hemp_fiber",
+   "required": false
+  },
+  {
+   "id": "pioneers:corn",
+   "required": false
+  },
+  "minecraft:rotten_flesh",
+  "minecraft:spider_eye",
+  "minecraft:bone_meal",
+  "minecraft:paper",
+  "minecraft:stick"
+ ]
+}

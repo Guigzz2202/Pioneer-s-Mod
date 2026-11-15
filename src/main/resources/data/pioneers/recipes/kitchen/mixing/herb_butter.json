@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basil"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:herb_butter",
+   "count": 2
+  }
+ ]
+}

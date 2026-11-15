@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smelting",
+ "category": "blocks",
+ "ingredient": {
+  "item": "pioneers:vesta_basalt_bricks"
+ },
+ "result": "pioneers:cracked_vesta_basalt_bricks",
+ "experience": 0.1,
+ "cookingtime": 200
+}

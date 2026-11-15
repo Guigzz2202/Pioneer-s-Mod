@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cheese_pressing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:curd"
+   },
+   "count": 4
+  }
+ ],
+ "time": 200,
+ "strokes": 8,
+ "results": [
+  {
+   "item": "pioneers:fresh_cheese_wheel",
+   "count": 1
+  }
+ ]
+}

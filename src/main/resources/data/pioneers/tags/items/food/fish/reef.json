@@ -1,0 +1,15 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:clownfish",
+  "minecraft:pufferfish",
+  "pioneers:lionfish",
+  "minecraft:tropical_fish",
+  "pioneers:discus",
+  "pioneers:piranha",
+  "pioneers:glowfish",
+  "pioneers:mahi_mahi",
+  "pioneers:barracuda",
+  "pioneers:grouper"
+ ]
+}

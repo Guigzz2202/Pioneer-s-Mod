@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sparkling_cider_tirage"
+   },
+   "count": 4
+  }
+ ],
+ "time": 9600,
+ "results": [
+  {
+   "item": "pioneers:sparkling_cider",
+   "count": 4
+  }
+ ]
+}

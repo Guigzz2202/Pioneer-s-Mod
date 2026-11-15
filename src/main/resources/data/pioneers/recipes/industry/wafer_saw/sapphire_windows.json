@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 2,
+ "time": 200,
+ "family": "wafer_saw",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sapphire_glass",
+   "count": 4
+  },
+  {
+   "item": "pioneers:sapphire_dust",
+   "count": 1,
+   "chance": 0.2
+  }
+ ]
+}

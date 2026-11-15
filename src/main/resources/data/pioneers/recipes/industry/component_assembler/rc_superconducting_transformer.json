@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryostat"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dry_transformer"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_bolt"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:superconducting_transformer",
+   "count": 2
+  }
+ ]
+}

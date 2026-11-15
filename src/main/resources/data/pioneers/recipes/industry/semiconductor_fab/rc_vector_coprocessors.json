@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "semiconductor_fab",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:etched_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dip_package"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/gold"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:printed_circuit_board"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vector_coprocessor",
+   "count": 2
+  }
+ ]
+}

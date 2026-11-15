@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 600,
+ "family": "vitrification_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:americium_241"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_frit"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:waste_canister"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vitrified_waste_canister",
+   "count": 1
+  }
+ ]
+}

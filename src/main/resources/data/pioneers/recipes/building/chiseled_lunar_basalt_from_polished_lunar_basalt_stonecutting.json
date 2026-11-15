@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_lunar_basalt"
+ },
+ "result": "pioneers:chiseled_lunar_basalt",
+ "count": 1
+}

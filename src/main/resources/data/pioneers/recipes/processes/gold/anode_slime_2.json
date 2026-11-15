@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:leach_solution",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_dust",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:chloroplatinic_solution",
+   "amount": 100
+  }
+ ]
+}

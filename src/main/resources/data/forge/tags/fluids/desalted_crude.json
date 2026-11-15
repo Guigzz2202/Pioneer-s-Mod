@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:desalted_crude",
+  "pioneers:flowing_desalted_crude"
+ ]
+}

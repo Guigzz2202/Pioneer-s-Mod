@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:raw_materials/copper"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_copper",
+  "count": 2
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:plutonium_dioxide"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:depleted_uranium_dioxide"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mox_powder",
+   "count": 4
+  }
+ ]
+}

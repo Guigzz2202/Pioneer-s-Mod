@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_pluto_tholin"
+ },
+ "result": "pioneers:smooth_pluto_tholin_slab",
+ "count": 2
+}

@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "VAV",
+  "VSV",
+  "VVV"
+ ],
+ "key": {
+  "V": {
+   "tag": "forge:plates/venusium"
+  },
+  "A": {
+   "tag": "pioneers:circuits/advanced"
+  },
+  "S": {
+   "item": "pioneers:logistic_chest_small"
+  }
+ },
+ "result": {
+  "item": "pioneers:logistic_chest_medium"
+ }
+}

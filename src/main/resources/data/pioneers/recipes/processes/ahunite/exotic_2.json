@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ahunite_concentrate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ceres_salt"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ahunite_salts",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 200
+  }
+ ],
+ "temperature": 200
+}

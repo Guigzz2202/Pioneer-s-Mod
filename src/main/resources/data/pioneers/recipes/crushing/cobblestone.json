@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:cobblestone/normal"
+ },
+ "count": 1,
+ "result": {
+  "item": "minecraft:gravel",
+  "count": 1
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:flint_knife"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.root.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.root.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false,
+  "background": "pioneers:textures/block/mechanics/oak_planks.png"
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:flint_knife"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ]
+}

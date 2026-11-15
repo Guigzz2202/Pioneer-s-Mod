@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_helmet",
+   "count": 1
+  }
+ ]
+}

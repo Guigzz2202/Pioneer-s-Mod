@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "minecraft:beetroot"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:red_dye",
+   "count": 2
+  }
+ ]
+}

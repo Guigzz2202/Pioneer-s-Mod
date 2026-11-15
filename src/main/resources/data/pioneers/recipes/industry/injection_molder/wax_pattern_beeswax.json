@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 80,
+ "family": "injection_molder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:beeswax"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wax_pattern",
+   "count": 2
+  }
+ ]
+}

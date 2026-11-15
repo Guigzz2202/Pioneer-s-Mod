@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 300,
+ "family": "tank_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/tungsten"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:zirconium_dust"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:xenon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:arc_lamp",
+   "count": 2
+  }
+ ]
+}

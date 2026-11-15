@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:industrial_gas_separator"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.gas_plant.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.gas_plant.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_gas_processing_plant"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:agri/root"
+}

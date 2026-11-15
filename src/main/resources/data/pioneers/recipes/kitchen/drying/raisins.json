@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:grapes"
+   },
+   "count": 1
+  }
+ ],
+ "time": 3600,
+ "results": [
+  {
+   "item": "pioneers:raisins",
+   "count": 1
+  }
+ ]
+}

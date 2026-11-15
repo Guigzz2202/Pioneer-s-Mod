@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PGP",
+  "RLR",
+  "R R"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "G": {
+   "tag": "forge:gears/iron"
+  },
+  "R": {
+   "tag": "forge:rods/iron"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "item": "pioneers:components_bench",
+  "count": 1
+ }
+}

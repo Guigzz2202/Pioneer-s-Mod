@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cut_venus_sandstone"
+ },
+ "result": "pioneers:cut_venus_sandstone_slab",
+ "count": 2
+}

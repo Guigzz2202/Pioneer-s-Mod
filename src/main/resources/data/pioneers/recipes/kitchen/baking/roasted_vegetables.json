@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sweet_potato"
+   },
+   "count": 1
+  }
+ ],
+ "time": 360,
+ "results": [
+  {
+   "item": "pioneers:roasted_vegetables",
+   "count": 1
+  }
+ ]
+}

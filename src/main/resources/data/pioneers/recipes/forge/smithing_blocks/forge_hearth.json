@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "BCB",
+  "SKS",
+  "SSS"
+ ],
+ "key": {
+  "B": {
+   "item": "minecraft:brick"
+  },
+  "C": {
+   "item": "minecraft:clay_ball"
+  },
+  "K": {
+   "item": "pioneers:crucible"
+  },
+  "S": {
+   "tag": "forge:cobblestone"
+  }
+ },
+ "result": {
+  "item": "pioneers:forge_hearth",
+  "count": 1
+ }
+}

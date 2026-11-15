@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_diogenite"
+ },
+ "result": "pioneers:cobbled_diogenite_stairs",
+ "count": 1
+}

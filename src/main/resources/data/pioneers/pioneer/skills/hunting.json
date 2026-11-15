@@ -1,0 +1,32 @@
+{
+ "order": 16,
+ "icon": "pioneers:textures/gui/pioneer/skill/hunting.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "hunting.yield",
+   "value": 0.3,
+   "unit": "pct"
+  },
+  {
+   "key": "hunting.trophy",
+   "value": 1.0,
+   "unit": "pct"
+  },
+  {
+   "key": "hunting.reload",
+   "value": -0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "hunting.spread",
+   "value": -0.3,
+   "unit": "pct"
+  },
+  {
+   "key": "hunting.scent",
+   "value": 0.5,
+   "unit": "pct"
+  }
+ ]
+}

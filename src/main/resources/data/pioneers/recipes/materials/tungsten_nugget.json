@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/tungsten"
+  }
+ ],
+ "result": {
+  "item": "pioneers:tungsten_nugget",
+  "count": 9
+ }
+}

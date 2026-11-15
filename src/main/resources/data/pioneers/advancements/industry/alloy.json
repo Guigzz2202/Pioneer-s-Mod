@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:basic_electric_crucible"
+  },
+  "title": {
+   "translate": "advancements.pioneers.industry.alloy.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.industry.alloy.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_induction_furnace"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:industry/first_machine"
+}

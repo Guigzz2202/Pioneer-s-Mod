@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cheese"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:onion_soup",
+   "count": 2
+  }
+ ]
+}

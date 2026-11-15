@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 100,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 250
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 500
+  }
+ ]
+}

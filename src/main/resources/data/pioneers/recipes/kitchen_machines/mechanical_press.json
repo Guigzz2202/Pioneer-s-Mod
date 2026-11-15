@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " R ",
+  "PFP",
+  "LXL"
+ ],
+ "key": {
+  "R": {
+   "tag": "forge:rods/iron"
+  },
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "F": {
+   "item": "pioneers:fruit_press"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:mechanical_press",
+  "count": 1
+ }
+}

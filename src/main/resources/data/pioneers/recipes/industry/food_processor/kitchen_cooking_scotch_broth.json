@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:mutton"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:barley"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:parsnip"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:leek"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 750
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:scotch_broth",
+   "count": 3
+  }
+ ]
+}

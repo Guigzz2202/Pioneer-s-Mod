@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:button_mushroom"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:grated_cheese"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ham"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bowl"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_royal_omelette",
+   "count": 1
+  }
+ ]
+}

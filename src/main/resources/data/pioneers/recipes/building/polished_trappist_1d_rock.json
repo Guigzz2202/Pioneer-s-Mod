@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:trappist_1d_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_trappist_1d_rock",
+  "count": 4
+ }
+}

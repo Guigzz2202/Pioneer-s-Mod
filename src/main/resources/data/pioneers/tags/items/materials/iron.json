@@ -1,0 +1,28 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:iron_spring",
+  "pioneers:iron_ring",
+  "minecraft:iron_ingot",
+  "pioneers:iron_dust",
+  "minecraft:iron_block",
+  "pioneers:iron_gear",
+  "pioneers:iron_plate",
+  "pioneers:iron_rod",
+  "pioneers:crushed_iron",
+  "minecraft:raw_iron_block",
+  "minecraft:raw_iron",
+  "minecraft:iron_nugget",
+  "pioneers:iron_wire",
+  "pioneers:iron_nugget",
+  "pioneers:iron_ingot",
+  "pioneers:raw_iron",
+  "pioneers:raw_iron_block",
+  "pioneers:iron_block",
+  "pioneers:iron_wire_mesh",
+  "pioneers:iron_slab",
+  "pioneers:iron_billet",
+  "pioneers:iron_wire_rod",
+  "pioneers:iron_gear_blank"
+ ]
+}

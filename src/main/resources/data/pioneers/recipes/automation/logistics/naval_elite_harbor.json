@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 2,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_harbor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_bearing"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/titanium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_harbor",
+   "count": 1
+  }
+ ]
+}

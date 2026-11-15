@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:cooked_green_crab",
+  "pioneers:cooked_lobster",
+  "pioneers:cooked_crayfish",
+  "pioneers:cooked_shrimp",
+  "pioneers:cooked_king_crab"
+ ]
+}

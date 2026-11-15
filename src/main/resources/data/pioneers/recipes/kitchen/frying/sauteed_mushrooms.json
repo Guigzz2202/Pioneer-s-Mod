@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:button_mushroom"
+   },
+   "count": 1
+  }
+ ],
+ "time": 160,
+ "results": [
+  {
+   "item": "pioneers:sauteed_mushrooms",
+   "count": 1
+  }
+ ]
+}

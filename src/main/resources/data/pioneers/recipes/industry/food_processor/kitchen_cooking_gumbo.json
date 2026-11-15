@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/shellfish"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smoked_sausage"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bell_pepper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:white_rice"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gumbo",
+   "count": 3
+  }
+ ]
+}

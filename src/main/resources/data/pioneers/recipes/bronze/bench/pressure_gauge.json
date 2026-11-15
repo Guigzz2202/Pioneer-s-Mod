@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:glass_pane"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:pressure_gauge",
+  "count": 1
+ }
+}

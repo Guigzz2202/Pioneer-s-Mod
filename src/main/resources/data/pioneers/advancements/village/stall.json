@@ -1,0 +1,48 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:market_stall"
+  },
+  "title": {
+   "translate": "advancements.pioneers.village.stall.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.village.stall.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "stall": {
+   "trigger": "minecraft:placed_block",
+   "conditions": {
+    "location": [
+     {
+      "condition": "minecraft:block_state_property",
+      "block": "pioneers:market_stall"
+     }
+    ]
+   }
+  },
+  "counter": {
+   "trigger": "minecraft:placed_block",
+   "conditions": {
+    "location": [
+     {
+      "condition": "minecraft:block_state_property",
+      "block": "pioneers:market_counter"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "counter",
+   "stall"
+  ]
+ ],
+ "parent": "pioneers:village/trade"
+}

@@ -1,0 +1,26 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:rings/iron",
+  "#forge:rings/copper",
+  "#forge:rings/gold",
+  "#forge:rings/tin",
+  "#forge:rings/bronze",
+  "#forge:rings/brass",
+  "#forge:rings/steel",
+  "#forge:rings/nickel",
+  "#forge:rings/silver",
+  "#forge:rings/aluminium",
+  "#forge:rings/tungsten",
+  "#forge:rings/titanium",
+  "#forge:rings/invar",
+  "#forge:rings/electrum",
+  "#forge:rings/constantan",
+  "#forge:rings/galvanized_steel",
+  "#forge:rings/stainless_steel",
+  "#forge:rings/duralumin",
+  "#forge:rings/nichrome",
+  "#forge:rings/vanadium_steel",
+  "#forge:rings/babbitt"
+ ]
+}

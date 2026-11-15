@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/copper"
+  },
+  {
+   "tag": "forge:nuggets/copper"
+  },
+  {
+   "tag": "forge:nuggets/copper"
+  },
+  {
+   "tag": "forge:nuggets/copper"
+  },
+  {
+   "tag": "forge:nuggets/copper"
+  },
+  {
+   "tag": "forge:nuggets/copper"
+  },
+  {
+   "tag": "forge:nuggets/copper"
+  },
+  {
+   "tag": "forge:nuggets/copper"
+  },
+  {
+   "tag": "forge:nuggets/copper"
+  }
+ ],
+ "result": {
+  "item": "pioneers:copper_ingot",
+  "count": 1
+ }
+}

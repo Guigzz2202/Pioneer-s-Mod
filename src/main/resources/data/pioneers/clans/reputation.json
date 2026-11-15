@@ -1,0 +1,43 @@
+{
+ "_doc": "MAJ RP bloc 4 (par. 11) : reputation de clan. Cascade : 100 % au joueur (bloc 3), share % au clan, upper_share % a la faction ou au peuple de joueurs. Gains plafonnes par peuple et par jour, pertes jamais ; aucun pardon par le temps.",
+ "share": 50,
+ "upper_share": 25,
+ "daily_cap": 30,
+ "min": -300,
+ "max": 300,
+ "effective": {
+  "hostile": -15,
+  "wary": -5,
+  "unknown": 0,
+  "esteemed": 5,
+  "ally": 10,
+  "cap": 15,
+  "hostile_radius": 128,
+  "_doc": "affinite effective (prix, dialogue), jamais la reputation d'un village ; Hostile seulement a hostile_radius blocs du territoire ; cumul clan + faction borne a +-cap."
+ },
+ "workers": {
+  "ally": 0.8
+ },
+ "peddlers": {
+  "esteemed": 5,
+  "ally": 3
+ },
+ "collective": {
+  "restore": {
+   "restorers": 20,
+   "bare_hands": -15,
+   "peddlers": 0,
+   "uncapped": true
+  },
+  "fund_workers": {
+   "own": 4
+  },
+  "peddler_accord": {
+   "peddlers": 6
+  }
+ },
+ "skip_cascade": [
+  "restore",
+  "schism"
+ ]
+}

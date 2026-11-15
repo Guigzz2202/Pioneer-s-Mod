@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato_sauce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:grated_cheese"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:artichoke"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:olives"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bell_pepper"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:raw_veggie_pizza",
+   "count": 1
+  }
+ ]
+}

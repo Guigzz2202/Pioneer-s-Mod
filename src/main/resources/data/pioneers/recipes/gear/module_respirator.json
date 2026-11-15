@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:activated_carbon"
+  },
+  {
+   "item": "pioneers:activated_carbon"
+  },
+  {
+   "item": "pioneers:electric_motor"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_respirator",
+  "count": 1
+ }
+}

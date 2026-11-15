@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:polished_blackstone_bricks"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:polished_blackstone_brick_stairs",
+  "count": 4
+ }
+}

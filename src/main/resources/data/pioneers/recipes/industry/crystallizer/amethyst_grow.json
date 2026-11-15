@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 0,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:amethyst_dust"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:amethyst_shard",
+   "count": 2
+  }
+ ]
+}

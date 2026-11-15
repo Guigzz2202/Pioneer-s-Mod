@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:timber_beams"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:creosote_bucket"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:treated_timber_beam",
+  "count": 8
+ }
+}

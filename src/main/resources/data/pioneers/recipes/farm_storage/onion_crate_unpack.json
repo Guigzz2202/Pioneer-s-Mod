@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:onion_crate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:onion",
+  "count": 9
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 400,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:mox_rod"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_cladding_tube"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mox_assembly",
+   "count": 1
+  }
+ ]
+}

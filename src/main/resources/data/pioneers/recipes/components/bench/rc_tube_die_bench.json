@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:tube_die",
+  "count": 1
+ }
+}

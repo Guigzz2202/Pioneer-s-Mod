@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  "..R....R..",
+  "...HMMH...",
+  "...ACEA...",
+  "...HMMH...",
+  "..R....R.."
+ ],
+ "key": {
+  "R": {
+   "item": "pioneers:elite_electric_motor"
+  },
+  "H": {
+   "item": "pioneers:plastic_sheet"
+  },
+  "M": {
+   "tag": "forge:rods/krakenite"
+  },
+  "C": {
+   "tag": "pioneers:circuits/elite"
+  },
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "E": {
+   "item": "pioneers:lithium_ion_cell"
+  }
+ },
+ "result": {
+  "item": "pioneers:drone_mk3"
+ },
+ "energy": 18000000,
+ "duration": 500,
+ "research": "robotics"
+}

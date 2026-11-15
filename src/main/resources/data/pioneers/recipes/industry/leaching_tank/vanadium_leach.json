@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 200,
+ "family": "leaching_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:roasted_vanadinite"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_dust",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:vanadyl_sulfate_solution",
+   "amount": 500
+  }
+ ]
+}

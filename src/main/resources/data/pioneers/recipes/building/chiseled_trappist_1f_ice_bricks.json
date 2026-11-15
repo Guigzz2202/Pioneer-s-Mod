@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#",
+  "#"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:trappist_1f_ice_brick_slab"
+  }
+ },
+ "result": {
+  "item": "pioneers:chiseled_trappist_1f_ice_bricks",
+  "count": 1
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "family": "catalytic_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nickel_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:steam",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_catalyst",
+   "count": 1,
+   "chance": 0.97
+  },
+  {
+   "item": "pioneers:spent_nickel_catalyst",
+   "count": 1,
+   "chance": 0.03
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:syngas",
+   "amount": 1600
+  }
+ ]
+}

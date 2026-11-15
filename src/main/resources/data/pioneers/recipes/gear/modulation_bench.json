@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "CTC",
+  "MFM",
+  "SSS"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:circuit_mk2"
+  },
+  "T": {
+   "item": "pioneers:titanium_plate"
+  },
+  "M": {
+   "item": "pioneers:electric_motor"
+  },
+  "F": {
+   "item": "pioneers:machine_frame_advanced"
+  },
+  "S": {
+   "item": "pioneers:steel_plate"
+  }
+ },
+ "result": {
+  "item": "pioneers:modulation_bench",
+  "count": 1
+ }
+}

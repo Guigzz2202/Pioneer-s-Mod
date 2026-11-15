@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "III",
+  "III",
+  "III"
+ ],
+ "key": {
+  "I": {
+   "item": "pioneers:emerald"
+  }
+ },
+ "result": {
+  "item": "pioneers:emerald_block",
+  "count": 1
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "component_assembler",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/galvanized_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:voltaic_cell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:glass_lens"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_wire"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:voltaic_helmet",
+   "count": 1
+  }
+ ]
+}

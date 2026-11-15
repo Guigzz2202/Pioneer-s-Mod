@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_air_loader"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_air_loader",
+  "count": 1
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "compressor",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/gold"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:gold_ingot",
+  "count": 1
+ },
+ "time": 160
+}

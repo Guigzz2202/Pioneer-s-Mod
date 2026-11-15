@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SFS",
+  "FFF",
+  "SFS"
+ ],
+ "key": {
+  "S": {
+   "tag": "forge:rods/wooden"
+  },
+  "F": {
+   "item": "pioneers:plant_fiber"
+  }
+ },
+ "result": {
+  "item": "pioneers:fiber_mesh",
+  "count": 1
+ }
+}

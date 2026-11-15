@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_oxygen_diffuser"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:upgrade_kit_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_oxygen_diffuser",
+   "count": 1
+  }
+ ]
+}

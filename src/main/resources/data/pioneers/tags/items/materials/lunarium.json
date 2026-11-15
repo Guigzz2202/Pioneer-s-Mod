@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:lunarium_plate",
+  "pioneers:lunarium_rod",
+  "pioneers:lunarium_billet"
+ ]
+}

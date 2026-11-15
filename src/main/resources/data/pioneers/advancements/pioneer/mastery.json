@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:restorer_notebook"
+  },
+  "title": {
+   "translate": "advancements.pioneers.pioneer.mastery.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.pioneer.mastery.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "pioneer_mastery"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:pioneer/level_5"
+}

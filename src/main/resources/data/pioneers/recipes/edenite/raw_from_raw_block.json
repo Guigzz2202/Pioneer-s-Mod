@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:raw_edenite_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:raw_edenite",
+  "count": 9
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 1,
+ "time": 120,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:cobbled_deepslate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:topaz_dust"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:polished_deepslate",
+   "count": 4
+  }
+ ]
+}

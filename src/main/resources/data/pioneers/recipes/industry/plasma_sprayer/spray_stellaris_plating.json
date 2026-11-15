@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 500,
+ "family": "plasma_sprayer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_carbide_plate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:osmiridium_rod"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellite_dust"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellaris_plating",
+   "count": 2
+  }
+ ]
+}

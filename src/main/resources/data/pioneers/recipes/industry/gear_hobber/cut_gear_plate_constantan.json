@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 265,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/constantan"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:constantan_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:constantan_nugget",
+   "count": 9
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 48,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pasta_dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:minced_meat"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bok_choy"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_gyoza",
+   "count": 2
+  }
+ ]
+}

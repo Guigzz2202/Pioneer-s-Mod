@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:tailings"
+ },
+ "count": 4,
+ "result": {
+  "item": "minecraft:packed_mud",
+  "count": 2
+ },
+ "binder": {
+  "item": "minecraft:clay_ball"
+ },
+ "binder_count": 1
+}

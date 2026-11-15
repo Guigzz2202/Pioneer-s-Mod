@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 180,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rare_earth_oxide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/cobalt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rare_earth_magnet",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bender",
+ "tier": 1,
+ "time": 280,
+ "family": "spring_coiler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/stainless_steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stainless_steel_spring",
+   "count": 1
+  }
+ ]
+}

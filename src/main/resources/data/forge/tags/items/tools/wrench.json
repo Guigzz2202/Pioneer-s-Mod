@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:wrench",
+  "pioneers:bronze_wrench",
+  "pioneers:iron_wrench",
+  "pioneers:copper_wrench",
+  "pioneers:hardened_steel_wrench",
+  "pioneers:brass_wrench",
+  "pioneers:titanium_wrench",
+  "pioneers:stainless_steel_wrench",
+  "pioneers:duralumin_wrench",
+  "pioneers:tungsten_carbide_wrench",
+  "pioneers:vanadium_steel_wrench",
+  "pioneers:stellite_wrench",
+  "pioneers:osmiridium_wrench",
+  "pioneers:titanium_aluminide_wrench",
+  "pioneers:nitinol_wrench",
+  "pioneers:impact_wrench"
+ ]
+}

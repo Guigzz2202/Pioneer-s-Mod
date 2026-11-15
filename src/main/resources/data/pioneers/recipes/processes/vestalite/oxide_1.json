@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "optical_sorter",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_vestalite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vestalite_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  },
+  {
+   "item": "pioneers:ilmenite",
+   "count": 1,
+   "chance": 0.15
+  }
+ ],
+ "ore": true
+}

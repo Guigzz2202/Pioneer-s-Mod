@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:sand"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:gravel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:light_gray_concrete_powder",
+  "count": 8
+ }
+}

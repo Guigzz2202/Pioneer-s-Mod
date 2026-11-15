@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:dry_ice"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:packed_dry_ice",
+  "count": 1
+ }
+}

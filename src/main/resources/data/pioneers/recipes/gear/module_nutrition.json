@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:circuit_mk3"
+  },
+  {
+   "item": "pioneers:nutrient_solution_bucket"
+  },
+  {
+   "item": "pioneers:bread"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_nutrition",
+  "count": 1
+ }
+}

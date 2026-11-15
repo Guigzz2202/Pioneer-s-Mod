@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:oats"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:barley"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sunflower_seeds"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:animal_feed",
+   "count": 3
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:dusts/steel"
+ },
+ "count": 4,
+ "result": {
+  "item": "pioneers:steel_green_compact",
+  "count": 1
+ }
+}

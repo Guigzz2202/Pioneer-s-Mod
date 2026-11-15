@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/river"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:breadcrumbs"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:herb_butter"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_stuffed_fish",
+   "count": 1
+  }
+ ]
+}

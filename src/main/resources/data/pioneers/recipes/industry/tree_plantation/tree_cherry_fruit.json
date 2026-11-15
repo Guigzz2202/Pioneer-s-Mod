@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "tree_plantation",
+ "tier": 0,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cherry_sapling"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:cherry_log",
+   "count": 6
+  },
+  {
+   "item": "pioneers:cherry_sapling",
+   "count": 1
+  },
+  {
+   "item": "minecraft:stick",
+   "count": 2
+  },
+  {
+   "item": "pioneers:cherries",
+   "count": 4
+  }
+ ]
+}

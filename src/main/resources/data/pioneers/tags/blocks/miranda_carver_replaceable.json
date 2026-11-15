@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:miranda_rock",
+  "pioneers:miranda_regolith",
+  "pioneers:miranda_banded_ice"
+ ]
+}

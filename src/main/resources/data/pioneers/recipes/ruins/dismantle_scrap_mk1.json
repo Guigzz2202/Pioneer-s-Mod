@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:scrap/mk1"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:steel_nugget",
+  "count": 2
+ }
+}

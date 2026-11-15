@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:cobbled_deimos_breccia"
+  }
+ },
+ "result": {
+  "item": "pioneers:cobbled_deimos_breccia_wall",
+  "count": 6
+ }
+}

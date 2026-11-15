@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:chests/wooden"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rubber_belt"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_unloading_pit",
+  "count": 1
+ }
+}

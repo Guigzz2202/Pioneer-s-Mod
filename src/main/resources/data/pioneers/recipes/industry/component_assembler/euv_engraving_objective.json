@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 600,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:beryllium_mirror"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:co2_laser"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:euv_engraving_objective",
+   "count": 1
+  }
+ ]
+}

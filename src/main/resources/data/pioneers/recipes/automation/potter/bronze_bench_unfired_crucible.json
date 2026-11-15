@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "compressor",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fire_clay"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:unfired_crucible",
+   "count": 1
+  }
+ ]
+}

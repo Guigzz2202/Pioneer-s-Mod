@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_lattice"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:messinite_ceramic"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:diamond_reflector",
+  "count": 8
+ }
+}

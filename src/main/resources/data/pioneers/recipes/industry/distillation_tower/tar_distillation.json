@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 200,
+ "family": "distillation_tower",
+ "fluids": [
+  {
+   "fluid": "pioneers:coal_tar",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pitch",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:creosote",
+   "amount": 400
+  },
+  {
+   "fluid": "pioneers:benzol",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:coke_oven_gas",
+   "amount": 100
+  }
+ ],
+ "industrial": true
+}

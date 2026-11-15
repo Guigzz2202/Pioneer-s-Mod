@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:storage_blocks/tin"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:tin_slab",
+  "count": 1
+ }
+}

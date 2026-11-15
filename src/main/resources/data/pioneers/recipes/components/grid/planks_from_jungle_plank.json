@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:jungle_plank"
+  },
+  {
+   "item": "pioneers:jungle_plank"
+  },
+  {
+   "item": "pioneers:jungle_plank"
+  },
+  {
+   "item": "pioneers:jungle_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:jungle_planks",
+  "count": 1
+ }
+}

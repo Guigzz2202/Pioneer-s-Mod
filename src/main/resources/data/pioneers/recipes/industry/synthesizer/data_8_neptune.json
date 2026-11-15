@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "synthesizer",
+ "tier": 3,
+ "time": 2400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:compacted_neptune"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:empty_simulated_neptune",
+   "count": 1
+  }
+ ],
+ "data": [
+  {
+   "type": "pioneers:neptunian",
+   "amount": 6000000
+  },
+  {
+   "type": "pioneers:plutonian",
+   "amount": 1000000
+  },
+  {
+   "type": "pioneers:sidereal",
+   "amount": 2000000
+  }
+ ],
+ "energy": 100000000
+}

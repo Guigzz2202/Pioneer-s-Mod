@@ -1,0 +1,60 @@
+{
+ "has_precipitation": false,
+ "temperature": 2.0,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 14856794,
+  "fog_color": 13209662,
+  "water_color": 13213760,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.rocky",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:venus_cave"
+  ]
+ },
+ "features": [
+  [],
+  [
+   "pioneers:venus_lava_lake_rare"
+  ],
+  [
+   "pioneers:crater_rare"
+  ],
+  [],
+  [
+   "pioneers:pancake_dome_rare"
+  ],
+  [],
+  [
+   "pioneers:venusium_ore",
+   "pioneers:venus_magma"
+  ],
+  [],
+  [
+   "pioneers:venus_lava_spring"
+  ],
+  [
+   "pioneers:boulder",
+   "pioneers:ember_pod_plant",
+   "pioneers:meteorite_volcanic"
+  ],
+  [
+   "pioneers:venus_fluid_cleanup"
+  ]
+ ]
+}

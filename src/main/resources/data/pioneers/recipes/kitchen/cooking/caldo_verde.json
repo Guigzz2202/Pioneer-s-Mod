@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:kale"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smoked_sausage"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 420,
+ "results": [
+  {
+   "item": "pioneers:caldo_verde",
+   "count": 3
+  }
+ ]
+}

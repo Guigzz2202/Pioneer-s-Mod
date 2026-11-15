@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:drill_base"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bronze_logistic_cable"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hopper"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:drill_port",
+   "count": 1
+  }
+ ]
+}

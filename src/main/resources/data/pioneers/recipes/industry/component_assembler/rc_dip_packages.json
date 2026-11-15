@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:foils/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/tin"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dip_package",
+   "count": 16
+  }
+ ]
+}

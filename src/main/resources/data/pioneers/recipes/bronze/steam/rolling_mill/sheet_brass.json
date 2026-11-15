@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "rolling_mill",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:brass_sheet",
+  "count": 2
+ },
+ "time": 80
+}

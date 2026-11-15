@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_harbor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_bearing"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/tungsten"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_harbor",
+  "count": 1
+ }
+}

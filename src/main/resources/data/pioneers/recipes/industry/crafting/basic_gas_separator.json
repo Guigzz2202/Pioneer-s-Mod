@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_exchanger"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:compressor_unit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cartridge_filter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:power_supply_unit"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_gas_separator",
+  "count": 1
+ }
+}

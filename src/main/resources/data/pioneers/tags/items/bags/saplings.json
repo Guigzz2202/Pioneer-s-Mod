@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "#minecraft:saplings",
+  "#pioneers:fruit_saplings"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " S ",
+  "SPS",
+  " S "
+ ],
+ "key": {
+  "S": {
+   "tag": "forge:rods/wooden"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "item": "pioneers:wooden_cog",
+  "count": 2
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smoking",
+ "category": "food",
+ "ingredient": {
+  "item": "pioneers:raw_bison_meat"
+ },
+ "result": "pioneers:cooked_bison_meat",
+ "experience": 0.35,
+ "cookingtime": 100
+}

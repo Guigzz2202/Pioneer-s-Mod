@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 0,
+ "time": 80,
+ "family": "calender",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:polyethylene_pellets"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:plastic_sheet",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:crying_obsidian"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/pyrrhite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:space_simulator_casing",
+   "count": 4
+  }
+ ]
+}

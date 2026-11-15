@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/copper"
+   },
+   "count": 5
+  }
+ ],
+ "result": {
+  "item": "pioneers:copper_gear_blank",
+  "count": 1
+ }
+}

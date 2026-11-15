@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/nickel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:poppet_valve",
+  "count": 2
+ }
+}

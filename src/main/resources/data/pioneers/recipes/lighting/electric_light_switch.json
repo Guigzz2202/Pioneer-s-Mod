@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_wire"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_connector"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:electric_light_switch",
+  "count": 1
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:ganymede_rock"
+ },
+ "result": "pioneers:polished_ganymede_rock_stairs",
+ "count": 1
+}

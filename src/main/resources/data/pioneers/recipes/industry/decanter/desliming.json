@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 0,
+ "time": 200,
+ "family": "decanter",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tailings"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:clay_ball",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 800
+  }
+ ]
+}

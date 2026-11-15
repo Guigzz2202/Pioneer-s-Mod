@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 640,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:veronite_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:veronite_rod",
+   "count": 16
+  },
+  {
+   "item": "pioneers:veronite_nugget",
+   "count": 9
+  }
+ ]
+}

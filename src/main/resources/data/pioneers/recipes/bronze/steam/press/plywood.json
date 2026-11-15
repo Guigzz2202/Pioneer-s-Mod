@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "press",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:wood_veneer"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resin_glue"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:plywood",
+  "count": 2
+ },
+ "time": 140
+}

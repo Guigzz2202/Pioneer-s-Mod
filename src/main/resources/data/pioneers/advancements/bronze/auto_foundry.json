@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:auto_foundry"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.auto_foundry.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.auto_foundry.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "auto_foundry_formed"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:bronze/cast"
+}

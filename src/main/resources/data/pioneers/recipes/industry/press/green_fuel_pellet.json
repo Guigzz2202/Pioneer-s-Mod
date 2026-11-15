@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "compressor",
+ "tier": 1,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:enriched_uranium_dioxide"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:green_fuel_pellet",
+   "count": 4
+  }
+ ]
+}

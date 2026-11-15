@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_logistic_cable"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_fitting"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:diving_tank",
+   "count": 1
+  }
+ ]
+}

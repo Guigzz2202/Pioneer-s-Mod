@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "luthier",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:blank_music_disc"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:gray_dye"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:music_disc_les_hautes_cheminees",
+  "count": 1
+ }
+}

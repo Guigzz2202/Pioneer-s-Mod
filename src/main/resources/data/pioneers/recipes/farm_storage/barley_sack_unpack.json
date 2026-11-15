@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:barley_sack"
+  }
+ ],
+ "result": {
+  "item": "pioneers:barley",
+  "count": 9
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:ashtray",
+  "count": 1
+ }
+}

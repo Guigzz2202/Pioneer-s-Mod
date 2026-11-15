@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_phobos_rock"
+ },
+ "result": "pioneers:polished_phobos_rock_slab",
+ "count": 2
+}

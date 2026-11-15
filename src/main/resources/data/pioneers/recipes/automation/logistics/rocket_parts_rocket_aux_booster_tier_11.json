@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 3,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_fuselage_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ntr_core"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rocket_nozzle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/sputnikite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rocket_aux_booster_tier_11",
+   "count": 1
+  }
+ ]
+}

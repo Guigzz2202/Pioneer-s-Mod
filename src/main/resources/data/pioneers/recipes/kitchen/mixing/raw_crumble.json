@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/crumble_fruits"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 5,
+ "results": [
+  {
+   "item": "pioneers:raw_crumble",
+   "count": 1
+  }
+ ]
+}

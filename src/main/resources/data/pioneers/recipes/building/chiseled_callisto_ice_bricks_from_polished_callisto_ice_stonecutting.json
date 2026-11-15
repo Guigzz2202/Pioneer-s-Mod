@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_callisto_ice"
+ },
+ "result": "pioneers:chiseled_callisto_ice_bricks",
+ "count": 1
+}

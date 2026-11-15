@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:ingots/bronze"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:bronze_block",
+  "count": 1
+ }
+}

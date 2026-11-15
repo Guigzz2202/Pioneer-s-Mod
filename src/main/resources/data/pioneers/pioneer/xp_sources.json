@@ -1,0 +1,178 @@
+{
+ "building.glass": {
+  "skill": "building",
+  "xp": 1
+ },
+ "building.place": {
+  "skill": "building",
+  "xp": 0.05
+ },
+ "building.structure": {
+  "skill": "building",
+  "xp": 50
+ },
+ "combat.hostile": {
+  "skill": "combat",
+  "xp": 3
+ },
+ "combat.sentinel": {
+  "skill": "combat",
+  "xp": 40
+ },
+ "cooking.dish": {
+  "skill": "cooking",
+  "xp": 5
+ },
+ "engineering.component": {
+  "skill": "engineering",
+  "xp": 4
+ },
+ "engineering.machine": {
+  "skill": "engineering",
+  "xp": 15
+ },
+ "engineering.machining": {
+  "skill": "engineering",
+  "xp": 1
+ },
+ "farming.extract": {
+  "skill": "farming",
+  "xp": 1
+ },
+ "farming.harvest": {
+  "skill": "farming",
+  "xp": 1
+ },
+ "farming.sow": {
+  "skill": "farming",
+  "xp": 0.2
+ },
+ "fishing.catch": {
+  "skill": "fishing",
+  "xp": 3
+ },
+ "hunting.herd": {
+  "skill": "hunting",
+  "xp": 25
+ },
+ "hunting.kill": {
+  "skill": "hunting",
+  "xp": 4
+ },
+ "hunting.skin": {
+  "skill": "hunting",
+  "xp": 1
+ },
+ "husbandry.birth": {
+  "skill": "husbandry",
+  "xp": 8
+ },
+ "husbandry.care": {
+  "skill": "husbandry",
+  "xp": 1
+ },
+ "logistics.rail100": {
+  "skill": "logistics",
+  "xp": 2
+ },
+ "logistics.route": {
+  "skill": "logistics",
+  "xp": 10
+ },
+ "mining.deep": {
+  "skill": "mining",
+  "xp": 2
+ },
+ "mining.ore": {
+  "skill": "mining",
+  "xp": 1
+ },
+ "mining.stone": {
+  "skill": "mining",
+  "xp": 0.1
+ },
+ "nuclear.cycle": {
+  "skill": "nuclear",
+  "xp": 30
+ },
+ "nuclear.decon": {
+  "skill": "nuclear",
+  "xp": 20
+ },
+ "restoration.done": {
+  "skill": "restoration",
+  "xp": 200
+ },
+ "restoration.stage": {
+  "skill": "restoration",
+  "xp": 60
+ },
+ "robotics.program": {
+  "skill": "robotics",
+  "xp": 10
+ },
+ "robotics.robot": {
+  "skill": "robotics",
+  "xp": 25
+ },
+ "salvage.derelict": {
+  "skill": "salvage",
+  "xp": 4
+ },
+ "salvage.sort": {
+  "skill": "salvage",
+  "xp": 2
+ },
+ "smithing.cast": {
+  "skill": "smithing",
+  "xp": 2
+ },
+ "smithing.forge": {
+  "skill": "smithing",
+  "xp": 3
+ },
+ "smithing.process": {
+  "skill": "smithing",
+  "xp": 1
+ },
+ "smithing.quench": {
+  "skill": "smithing",
+  "xp": 5
+ },
+ "smithing.shape": {
+  "skill": "smithing",
+  "xp": 1
+ },
+ "smithing.smelt": {
+  "skill": "smithing",
+  "xp": 1
+ },
+ "smithing.treat": {
+  "skill": "smithing",
+  "xp": 2
+ },
+ "spaceflight.landing": {
+  "skill": "spaceflight",
+  "xp": 40
+ },
+ "spaceflight.launch": {
+  "skill": "spaceflight",
+  "xp": 100
+ },
+ "trade.caravan": {
+  "skill": "trade",
+  "xp": 15
+ },
+ "trade.listing": {
+  "skill": "trade",
+  "xp": 3
+ },
+ "trade.npc": {
+  "skill": "trade",
+  "xp": 1
+ },
+ "trade.stall_sale": {
+  "skill": "trade",
+  "xp": 1
+ }
+}

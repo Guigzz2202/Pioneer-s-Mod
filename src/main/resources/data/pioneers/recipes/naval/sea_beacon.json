@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/glowstone"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/red"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/galvanized_steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/brass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:sea_beacon",
+  "count": 2
+ }
+}

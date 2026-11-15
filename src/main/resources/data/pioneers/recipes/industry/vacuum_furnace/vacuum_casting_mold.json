@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 240,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_shell_mold"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alumina_ceramic"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vacuum_casting_mold",
+   "count": 1
+  }
+ ]
+}

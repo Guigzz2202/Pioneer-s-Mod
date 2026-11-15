@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "WFW",
+  "PGP",
+  "L L"
+ ],
+ "key": {
+  "W": {
+   "tag": "forge:string"
+  },
+  "F": {
+   "tag": "pioneers:tools/files"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "G": {
+   "item": "pioneers:wooden_peg"
+  }
+ },
+ "result": {
+  "item": "pioneers:luthier_bench",
+  "count": 1
+ }
+}

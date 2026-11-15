@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/brass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_steam_engineer_shoes",
+   "count": 1
+  }
+ ]
+}

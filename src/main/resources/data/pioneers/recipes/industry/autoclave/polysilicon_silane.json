@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 0,
+ "time": 160,
+ "gases": [
+  {
+   "gas": "pioneers:silane",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:polysilicon",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 1000
+  }
+ ]
+}

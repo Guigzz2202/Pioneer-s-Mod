@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:unfired_fire_brick"
+ },
+ "temperature": 850,
+ "time": 400,
+ "result": {
+  "item": "pioneers:fire_brick",
+  "count": 1
+ }
+}

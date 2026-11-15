@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 2,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:spire_crystal"
+   },
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 1000
+  },
+  {
+   "gas": "pioneers:nitrogen_15",
+   "amount": 5
+  }
+ ]
+}

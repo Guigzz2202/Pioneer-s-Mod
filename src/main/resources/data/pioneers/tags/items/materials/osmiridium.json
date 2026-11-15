@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:osmiridium_nugget",
+  "pioneers:osmiridium_rod",
+  "pioneers:osmiridium_ingot",
+  "pioneers:osmiridium_plate",
+  "pioneers:osmiridium_dust",
+  "pioneers:osmiridium_block",
+  "pioneers:osmiridium_billet"
+ ]
+}

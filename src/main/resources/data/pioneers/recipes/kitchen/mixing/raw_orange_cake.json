@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cake_batter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:orange"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:raw_orange_cake",
+   "count": 1
+  }
+ ]
+}

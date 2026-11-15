@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:solar_simulation",
+ "planet": {
+  "item": "pioneers:simulated_neptune"
+ },
+ "duration": 400,
+ "outputs": [
+  {
+   "item": "pioneers:ruachite_ingot",
+   "count": 2
+  },
+  {
+   "item": "pioneers:diamond",
+   "count": 2
+  },
+  {
+   "item": "minecraft:blue_ice",
+   "count": 4
+  }
+ ]
+}

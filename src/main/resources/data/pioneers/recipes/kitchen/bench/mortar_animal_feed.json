@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:soybean"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:animal_feed",
+  "count": 1
+ }
+}

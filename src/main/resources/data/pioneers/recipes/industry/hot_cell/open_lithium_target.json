@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:irradiated_lithium_target"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zircaloy_plate",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:tritium",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:helium_3",
+   "amount": 50
+  }
+ ]
+}

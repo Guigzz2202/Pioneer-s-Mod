@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:diamond_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:diamond",
+  "count": 9
+ }
+}

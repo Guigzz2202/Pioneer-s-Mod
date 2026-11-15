@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  " I ",
+  "IDI",
+  "ISI"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:plates/lunarium"
+  },
+  "S": {
+   "tag": "forge:rods/steel"
+  },
+  "D": {
+   "tag": "forge:gems/diamond"
+  }
+ },
+ "result": {
+  "item": "pioneers:drill_head_lunarium"
+ }
+}

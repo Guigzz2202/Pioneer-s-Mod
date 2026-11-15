@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:solar_simulation",
+ "planet": {
+  "item": "pioneers:simulated_venus"
+ },
+ "duration": 200,
+ "outputs": [
+  {
+   "item": "pioneers:venusium_ingot",
+   "count": 4
+  },
+  {
+   "count": 8,
+   "item": "minecraft:gunpowder"
+  },
+  {
+   "item": "minecraft:basalt",
+   "count": 16
+  }
+ ]
+}

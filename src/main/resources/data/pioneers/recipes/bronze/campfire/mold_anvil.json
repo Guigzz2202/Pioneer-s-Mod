@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:campfire_cooking",
+ "category": "misc",
+ "ingredient": {
+  "item": "pioneers:unfired_anvil_mold"
+ },
+ "result": "pioneers:anvil_mold",
+ "experience": 0.1,
+ "cookingtime": 900
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_callisto_ice"
+ },
+ "result": "pioneers:polished_callisto_ice",
+ "count": 1
+}

@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:tolimanite_plate",
+  "pioneers:tolimanite_rod",
+  "pioneers:tolimanite_billet"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "#minecraft:sand",
+  "#minecraft:terracotta",
+  "#minecraft:dirt",
+  "minecraft:grass_block",
+  "minecraft:snow_block",
+  "minecraft:gravel",
+  "minecraft:red_sandstone",
+  "minecraft:sandstone"
+ ]
+}

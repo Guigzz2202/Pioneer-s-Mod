@@ -1,0 +1,26 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:artichoke",
+  "pioneers:basil",
+  "pioneers:bok_choy",
+  "pioneers:broccoli",
+  "pioneers:cauliflower",
+  "pioneers:cucumber",
+  "pioneers:garlic",
+  "pioneers:green_bean",
+  "pioneers:kale",
+  "pioneers:leek",
+  "pioneers:lettuce",
+  "pioneers:onion",
+  "pioneers:parsnip",
+  "pioneers:pea_pod",
+  "pioneers:radish",
+  "pioneers:red_cabbage",
+  "pioneers:rhubarb",
+  "pioneers:spinach",
+  "pioneers:sweet_potato",
+  "pioneers:tomato",
+  "pioneers:zucchini"
+ ]
+}

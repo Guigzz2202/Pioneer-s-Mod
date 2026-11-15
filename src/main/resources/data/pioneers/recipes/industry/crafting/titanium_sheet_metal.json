@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/titanium"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:bolts/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/nickel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/titanium"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:titanium_sheet_metal",
+  "count": 1
+ }
+}

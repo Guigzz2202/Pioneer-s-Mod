@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "LKL",
+  "GPG",
+  "W W"
+ ],
+ "key": {
+  "L": {
+   "item": "minecraft:leather"
+  },
+  "K": {
+   "tag": "pioneers:tools/knives"
+  },
+  "G": {
+   "item": "pioneers:wooden_peg"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "W": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "item": "pioneers:tanner_bench",
+  "count": 1
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:vanadinite"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_vanadinite",
+  "count": 2
+ }
+}

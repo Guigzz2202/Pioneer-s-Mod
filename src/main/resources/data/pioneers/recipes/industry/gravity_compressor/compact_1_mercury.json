@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gravity_compressor",
+ "tier": 3,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planet_rocks/mercury"
+   },
+   "count": 64
+  },
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/mercurium"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:compacted_mercury",
+   "count": 1
+  }
+ ],
+ "energy": 200000000
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:barley_sugar",
+   "count": 4
+  }
+ ]
+}

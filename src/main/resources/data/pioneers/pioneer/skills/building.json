@@ -1,0 +1,17 @@
+{
+ "order": 0,
+ "icon": "pioneers:textures/gui/pioneer/skill/building.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "building.queue_speed",
+   "value": 0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "building.reach",
+   "value": 1.0,
+   "unit": "abs"
+  }
+ ]
+}

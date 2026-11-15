@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_wire"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_peg"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:rat_trap",
+  "count": 1
+ }
+}

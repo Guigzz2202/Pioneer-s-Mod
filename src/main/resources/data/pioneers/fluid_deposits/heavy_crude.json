@@ -1,0 +1,23 @@
+{
+ "category": "oil",
+ "fluid": "pioneers:heavy_crude_oil",
+ "reserve": [
+  8000000,
+  24000000
+ ],
+ "rate": 25,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_ocean",
+   "weight": 5
+  },
+  {
+   "biomes": "#minecraft:is_deep_ocean",
+   "weight": 5
+  },
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 2
+  }
+ ]
+}

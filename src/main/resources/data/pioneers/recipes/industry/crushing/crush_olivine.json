@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:olivine"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_olivine",
+  "count": 2
+ }
+}

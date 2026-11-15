@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:casting",
+ "mold": "pioneers:plate_mold",
+ "metal": "iron",
+ "amount": 144,
+ "result": {
+  "item": "pioneers:iron_plate",
+  "count": 1
+ },
+ "cool": 200
+}

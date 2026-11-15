@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "exhaust_stack",
+ "tier": 0,
+ "time": 20,
+ "gases": [
+  {
+   "gas": "pioneers:exhaust_steam",
+   "amount": 2000
+  }
+ ]
+}

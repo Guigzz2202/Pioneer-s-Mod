@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:sawing",
+ "input": {
+  "tag": "minecraft:acacia_logs"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:acacia_planks",
+   "count": 6
+  },
+  {
+   "item": "pioneers:sawdust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

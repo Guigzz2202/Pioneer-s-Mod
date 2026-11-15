@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...SCCS...",
+  "..TKRRKT..",
+  "...SAAS...",
+  ".........."
+ ],
+ "key": {
+  "S": {
+   "item": "pioneers:machine_frame_basic"
+  },
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "T": {
+   "item": "pioneers:elite_gas_buffer"
+  },
+  "K": {
+   "tag": "forge:plates/krakenite"
+  },
+  "R": {
+   "item": "pioneers:robot_core"
+  },
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  }
+ },
+ "result": {
+  "item": "pioneers:drone_bay"
+ },
+ "energy": 80000000,
+ "duration": 800,
+ "research": "gas_harvesting"
+}

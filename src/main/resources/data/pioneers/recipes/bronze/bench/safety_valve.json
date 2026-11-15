@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:safety_valve",
+  "count": 1
+ }
+}

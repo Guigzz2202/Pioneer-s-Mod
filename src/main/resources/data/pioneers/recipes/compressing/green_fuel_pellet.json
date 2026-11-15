@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:enriched_uranium_dioxide"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:green_fuel_pellet",
+  "count": 4
+ }
+}

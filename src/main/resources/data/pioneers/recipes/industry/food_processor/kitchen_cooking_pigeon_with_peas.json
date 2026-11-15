@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_pigeon"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pea_pod"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bacon"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pigeon_with_peas",
+   "count": 2
+  }
+ ]
+}

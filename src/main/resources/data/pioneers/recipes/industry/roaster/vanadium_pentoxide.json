@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 200,
+ "family": "roaster",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ammonium_metavanadate"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_pentoxide",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 150
+  }
+ ],
+ "temperature": 500
+}

@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:proxima_glacier_ice_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:proxima_glacier_ice_brick_slab",
+  "count": 6
+ }
+}

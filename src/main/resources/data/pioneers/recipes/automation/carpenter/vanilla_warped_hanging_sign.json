@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:chain"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stripped_warped_stem"
+   },
+   "count": 6
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:warped_hanging_sign",
+   "count": 6
+  }
+ ]
+}

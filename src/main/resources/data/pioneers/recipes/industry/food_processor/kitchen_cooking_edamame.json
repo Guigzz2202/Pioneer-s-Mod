@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:soybean"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:edamame",
+   "count": 2
+  }
+ ]
+}

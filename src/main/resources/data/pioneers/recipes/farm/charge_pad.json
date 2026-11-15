@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/lunarium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:capacitor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "pioneers:charge_pad",
+  "count": 1
+ }
+}

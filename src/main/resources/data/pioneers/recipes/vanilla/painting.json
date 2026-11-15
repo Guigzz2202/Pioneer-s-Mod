@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:painting",
+  "count": 1
+ }
+}

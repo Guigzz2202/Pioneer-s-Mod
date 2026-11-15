@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:chests/wooden"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_item_loader",
+  "count": 1
+ }
+}

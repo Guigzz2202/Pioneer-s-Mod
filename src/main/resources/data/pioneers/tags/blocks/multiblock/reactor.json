@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:breeding_blanket",
+    "pioneers:confinement_coil",
+    "pioneers:diamond_reflector",
+    "pioneers:direct_converter",
+    "pioneers:fast_fuel_channel",
+    "pioneers:fragment_collector",
+    "pioneers:fuel_channel",
+    "pioneers:solenoid_coil",
+    "pioneers:stellarator_coil",
+    "pioneers:toroidal_coil",
+    "pioneers:vacuum_chamber"
+  ]
+}

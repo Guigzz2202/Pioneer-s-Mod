@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pear"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:chocolate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:poached_pear",
+   "count": 2
+  }
+ ]
+}

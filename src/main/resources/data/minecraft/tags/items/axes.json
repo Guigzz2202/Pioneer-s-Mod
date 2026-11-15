@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:graviton_axe",
+  "pioneers:stellaris_axe",
+  "pioneers:neutronic_multitool",
+  "pioneers:singularity_multitool",
+  "pioneers:voltaic_chainsaw"
+ ]
+}

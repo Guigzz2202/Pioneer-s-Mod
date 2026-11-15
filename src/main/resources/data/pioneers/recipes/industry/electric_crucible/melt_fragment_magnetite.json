@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 20,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:magnetite_fragment"
+   },
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_iron",
+   "amount": 36
+  }
+ ]
+}

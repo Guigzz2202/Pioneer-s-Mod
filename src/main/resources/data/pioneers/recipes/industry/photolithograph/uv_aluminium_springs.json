@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 2,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:foils/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:engraving_objectives/uv"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_spring",
+   "count": 1
+  }
+ ]
+}

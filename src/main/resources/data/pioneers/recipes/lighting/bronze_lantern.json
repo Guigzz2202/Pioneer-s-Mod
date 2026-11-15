@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:lamp_fuels"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_wire"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:bronze_lantern",
+  "count": 1
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lapis_dust"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:blue_dye",
+   "count": 2
+  }
+ ]
+}

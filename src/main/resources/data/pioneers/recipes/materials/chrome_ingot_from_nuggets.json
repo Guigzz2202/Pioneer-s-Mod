@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/chrome"
+  },
+  {
+   "tag": "forge:nuggets/chrome"
+  },
+  {
+   "tag": "forge:nuggets/chrome"
+  },
+  {
+   "tag": "forge:nuggets/chrome"
+  },
+  {
+   "tag": "forge:nuggets/chrome"
+  },
+  {
+   "tag": "forge:nuggets/chrome"
+  },
+  {
+   "tag": "forge:nuggets/chrome"
+  },
+  {
+   "tag": "forge:nuggets/chrome"
+  },
+  {
+   "tag": "forge:nuggets/chrome"
+  }
+ ],
+ "result": {
+  "item": "pioneers:chrome_ingot",
+  "count": 1
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 1,
+ "time": 865,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/titanium"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_plate",
+   "count": 9
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/titanium_aluminide"
+  }
+ ],
+ "result": {
+  "item": "pioneers:titanium_aluminide_nugget",
+  "count": 9
+ }
+}

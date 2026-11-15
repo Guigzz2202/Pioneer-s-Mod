@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:emerald_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:emerald",
+  "count": 9
+ }
+}

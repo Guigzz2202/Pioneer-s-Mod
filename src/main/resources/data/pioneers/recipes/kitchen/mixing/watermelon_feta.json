@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:melon_slice"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cheese"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:olives"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bowl"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:watermelon_feta",
+   "count": 2
+  }
+ ]
+}

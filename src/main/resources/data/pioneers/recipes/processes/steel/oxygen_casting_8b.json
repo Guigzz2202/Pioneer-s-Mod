@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 320,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crude_steel"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferrovanadium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_vanadium_steel",
+   "amount": 1296
+  }
+ ],
+ "temperature": 1650
+}

@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 0,
+ "time": 210,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/galvanized_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_logistic_cable"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:harbor_crane",
+   "count": 1
+  }
+ ]
+}

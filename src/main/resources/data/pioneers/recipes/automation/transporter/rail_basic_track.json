@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rail_profile"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:treated_tie"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gravel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_track",
+   "count": 16
+  }
+ ]
+}

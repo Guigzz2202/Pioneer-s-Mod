@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  },
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:logs"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:wood_veneer",
+  "count": 3
+ }
+}

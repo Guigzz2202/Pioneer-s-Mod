@@ -1,0 +1,23 @@
+{
+ "replace": false,
+ "values": [
+  "#minecraft:dirt",
+  "minecraft:clay",
+  "minecraft:mud",
+  "minecraft:packed_mud",
+  "minecraft:gravel",
+  "#minecraft:sand",
+  "minecraft:coarse_dirt",
+  "minecraft:rooted_dirt",
+  "minecraft:dirt_path",
+  "minecraft:farmland",
+  "#forge:cobblestone",
+  "#minecraft:base_stone_overworld",
+  "minecraft:bricks",
+  "minecraft:mud_bricks",
+  "pioneers:clay_drain",
+  "pioneers:ash_layer",
+  "pioneers:alluvial_gravel",
+  "pioneers:black_sand"
+ ]
+}

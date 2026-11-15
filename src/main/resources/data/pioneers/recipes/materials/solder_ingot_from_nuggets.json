@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/solder"
+  },
+  {
+   "tag": "forge:nuggets/solder"
+  },
+  {
+   "tag": "forge:nuggets/solder"
+  },
+  {
+   "tag": "forge:nuggets/solder"
+  },
+  {
+   "tag": "forge:nuggets/solder"
+  },
+  {
+   "tag": "forge:nuggets/solder"
+  },
+  {
+   "tag": "forge:nuggets/solder"
+  },
+  {
+   "tag": "forge:nuggets/solder"
+  },
+  {
+   "tag": "forge:nuggets/solder"
+  }
+ ],
+ "result": {
+  "item": "pioneers:solder_ingot",
+  "count": 1
+ }
+}

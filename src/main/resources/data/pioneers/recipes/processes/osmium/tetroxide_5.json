@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "sintering_furnace",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:osmium_dust"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:osmium_ingot",
+   "count": 2
+  }
+ ],
+ "temperature": 2200
+}

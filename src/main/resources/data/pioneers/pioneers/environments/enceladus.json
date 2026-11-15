@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:enceladus",
+ "gravity": 0.084,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "cold",
+ "nitrogen": 0,
+ "temperature": -190
+}

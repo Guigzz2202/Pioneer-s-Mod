@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:white_rice"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pea_pod"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fried_rice",
+   "count": 2
+  }
+ ]
+}

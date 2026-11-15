@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "PSP",
+  "CMC",
+  "PRP"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/steel"
+  },
+  "S": {
+   "item": "minecraft:spyglass"
+  },
+  "C": {
+   "item": "pioneers:circuit_mk1"
+  },
+  "M": {
+   "item": "pioneers:copper_coil"
+  },
+  "R": {
+   "tag": "forge:rods/steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:seismograph"
+ }
+}

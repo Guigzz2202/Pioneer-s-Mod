@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:treated_wood"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:barrel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:warehouse_counter",
+  "count": 1
+ }
+}

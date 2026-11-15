@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:conamarite_concentrate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:europa_salt"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:conamarite_salts",
+   "count": 2
+  },
+  {
+   "item": "pioneers:magnesium_chloride",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "temperature": 200
+}

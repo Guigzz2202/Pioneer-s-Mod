@@ -1,0 +1,34 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:stellarator"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.stellarator.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.stellarator.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "fusion_ignition_mk2"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/tokamak",
+ "rewards": {
+  "experience": 500
+ }
+}

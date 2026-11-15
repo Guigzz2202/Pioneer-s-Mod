@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 200,
+ "family": "vacuum_column",
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:vacuum_gas_oil",
+   "amount": 50
+  },
+  {
+   "fluid": "pioneers:base_oil",
+   "amount": 800
+  },
+  {
+   "fluid": "pioneers:fuel_oil",
+   "amount": 50
+  },
+  {
+   "fluid": "pioneers:vacuum_residue",
+   "amount": 50
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 10
+  }
+ ],
+ "industrial": true
+}

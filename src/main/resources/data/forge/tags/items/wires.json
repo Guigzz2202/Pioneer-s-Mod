@@ -1,0 +1,31 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:wires/iron",
+  "#forge:wires/copper",
+  "#forge:wires/gold",
+  "#forge:wires/solder",
+  "#forge:wires/nickel",
+  "#forge:wires/silver",
+  "#forge:wires/aluminium",
+  "#forge:wires/zirconium",
+  "#forge:wires/tungsten",
+  "#forge:wires/titanium",
+  "#forge:wires/platinum",
+  "#forge:wires/niobium",
+  "#forge:wires/invar",
+  "#forge:wires/electrum",
+  "#forge:wires/constantan",
+  "#forge:wires/stainless_steel",
+  "#forge:wires/duralumin",
+  "#forge:wires/nichrome",
+  "#forge:wires/vanadium_steel",
+  "#forge:wires/nitinol",
+  "#forge:wires/niobium_titanium",
+  "#forge:wires/bronze",
+  "#forge:wires/brass",
+  "#forge:wires/steel",
+  "#forge:wires/galvanized_steel",
+  "#forge:wires/red_alloy"
+ ]
+}

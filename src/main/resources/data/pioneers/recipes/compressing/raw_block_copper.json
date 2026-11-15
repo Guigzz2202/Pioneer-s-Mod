@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:raw_materials/copper"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:raw_copper_block",
+  "count": 1
+ }
+}

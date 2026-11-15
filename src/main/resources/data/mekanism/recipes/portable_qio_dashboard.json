@@ -1,0 +1,28 @@
+{
+ "conditions": [
+  {
+   "type": "forge:mod_loaded",
+   "modid": "mekanism"
+  }
+ ],
+ "type": "minecraft:crafting_shaped",
+ "key": {
+  "#": {
+   "item": "mekanism:qio_dashboard"
+  },
+  "A": {
+   "tag": "forge:pellets/polonium"
+  },
+  "C": {
+   "tag": "forge:circuits/elite"
+  }
+ },
+ "pattern": [
+  " A ",
+  "A#A",
+  " C "
+ ],
+ "result": {
+  "item": "mekanism:portable_qio_dashboard"
+ }
+}

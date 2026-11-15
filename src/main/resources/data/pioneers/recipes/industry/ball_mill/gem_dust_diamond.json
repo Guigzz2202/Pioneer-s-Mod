@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 1,
+ "time": 100,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/diamond"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 10
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:diamond_dust",
+   "count": 1
+  }
+ ]
+}

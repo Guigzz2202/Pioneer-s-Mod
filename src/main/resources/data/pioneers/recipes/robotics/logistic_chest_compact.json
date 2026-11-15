@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "T",
+  "T"
+ ],
+ "key": {
+  "T": {
+   "item": "pioneers:logistic_chest_tiny"
+  }
+ },
+ "result": {
+  "item": "pioneers:logistic_chest_compact"
+ }
+}

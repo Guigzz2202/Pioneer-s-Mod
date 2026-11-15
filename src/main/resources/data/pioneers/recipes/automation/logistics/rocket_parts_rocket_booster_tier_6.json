@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 3,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_fuselage_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryogenic_turbopump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk3"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rocket_nozzle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vestalite"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/ahunite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rocket_booster_tier_6",
+   "count": 1
+  }
+ ]
+}

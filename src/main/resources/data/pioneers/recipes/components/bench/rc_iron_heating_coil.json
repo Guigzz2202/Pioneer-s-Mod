@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:porcelain_insulator"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_heating_coil",
+  "count": 1
+ }
+}

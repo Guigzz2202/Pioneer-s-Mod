@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 40,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 500
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/lunarium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:beams/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:robotic_casing",
+  "count": 4
+ }
+}

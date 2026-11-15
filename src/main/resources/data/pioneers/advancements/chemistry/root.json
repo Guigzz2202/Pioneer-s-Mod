@@ -1,0 +1,57 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:raw_oil_bucket"
+  },
+  "title": {
+   "translate": "advancements.pioneers.chemistry.root.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.chemistry.root.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false,
+  "background": "pioneers:textures/block/tar_sand.png"
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:seismograph"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:tar_sand_chunk"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_pumpjack"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ ]
+}

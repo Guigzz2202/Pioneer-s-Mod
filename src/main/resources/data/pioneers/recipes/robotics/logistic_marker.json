@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " G ",
+  "ICI",
+  " R "
+ ],
+ "key": {
+  "G": {
+   "tag": "forge:dusts/glowstone"
+  },
+  "I": {
+   "tag": "forge:rods/iron"
+  },
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "R": {
+   "tag": "forge:dusts/redstone"
+  }
+ },
+ "result": {
+  "item": "pioneers:logistic_marker",
+  "count": 4
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cooling_tower",
+ "tier": 0,
+ "time": 20,
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 4000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 475
+  }
+ ]
+}

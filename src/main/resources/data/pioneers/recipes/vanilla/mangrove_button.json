@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:mangrove_planks"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:mangrove_button",
+  "count": 1
+ }
+}

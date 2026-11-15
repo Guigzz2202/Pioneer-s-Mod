@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:smithing_table",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:glass_fiber"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fiberglass_sheet",
+   "count": 1
+  }
+ ]
+}

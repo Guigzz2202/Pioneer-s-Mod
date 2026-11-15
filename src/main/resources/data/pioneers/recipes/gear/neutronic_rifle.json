@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  " R "
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:neutronic_plating"
+  },
+  "C": {
+   "item": "pioneers:neutronic_cell"
+  },
+  "R": {
+   "item": "pioneers:osmiridium_rod"
+  },
+  "X": {
+   "item": "pioneers:stellaris_rifle"
+  }
+ },
+ "result": {
+  "item": "pioneers:neutronic_rifle",
+  "count": 1
+ }
+}

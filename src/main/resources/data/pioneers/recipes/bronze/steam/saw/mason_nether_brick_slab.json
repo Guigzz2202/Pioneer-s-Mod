@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:nether_bricks"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:nether_brick_slab",
+  "count": 6
+ },
+ "time": 40
+}

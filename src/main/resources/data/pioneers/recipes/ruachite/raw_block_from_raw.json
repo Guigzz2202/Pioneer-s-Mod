@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:raw_materials/ruachite"
+  }
+ },
+ "result": {
+  "item": "pioneers:raw_ruachite_block"
+ }
+}

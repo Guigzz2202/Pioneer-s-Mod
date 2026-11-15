@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:pitchblende",
+ "material": "pitchblende",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  6000,
+  18000
+ ],
+ "color": "#78963C",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#forge:is_snowy",
+   "weight": 2
+  },
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 1
+  }
+ ]
+}

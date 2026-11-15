@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_pallas_rock"
+ },
+ "result": "pioneers:polished_pallas_rock_wall",
+ "count": 1
+}

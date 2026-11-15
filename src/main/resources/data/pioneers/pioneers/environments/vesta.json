@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:vesta",
+ "gravity": 0.09,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "vacuum",
+ "nitrogen": 0,
+ "temperature": -105
+}

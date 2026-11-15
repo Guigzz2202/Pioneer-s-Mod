@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:nether_brick"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:nether_wart"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:red_nether_bricks",
+   "count": 1
+  }
+ ]
+}

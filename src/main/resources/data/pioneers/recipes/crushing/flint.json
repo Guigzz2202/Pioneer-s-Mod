@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "minecraft:flint"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:flint_dust",
+  "count": 1
+ }
+}

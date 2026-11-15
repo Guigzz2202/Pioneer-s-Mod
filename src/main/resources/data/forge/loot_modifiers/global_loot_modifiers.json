@@ -1,0 +1,33 @@
+{
+ "replace": false,
+ "entries": [
+  "pioneers:plant_fiber_from_grass",
+  "pioneers:plant_fiber_by_hand",
+  "pioneers:miscanthus_from_grass",
+  "pioneers:wild_seeds",
+  "pioneers:fruit_saplings",
+  "pioneers:earthworms",
+  "pioneers:music_disc_aube_sur_les_labours",
+  "pioneers:music_disc_le_chant_des_bles",
+  "pioneers:music_disc_les_ailes_du_moulin",
+  "pioneers:music_disc_les_ailes_du_moulin_1",
+  "pioneers:music_disc_l_enclume_et_le_soufflet",
+  "pioneers:music_disc_le_souffle_de_la_vapeur",
+  "pioneers:music_disc_le_souffle_de_la_vapeur_1",
+  "pioneers:music_disc_les_hautes_cheminees",
+  "pioneers:music_disc_les_hautes_cheminees_1",
+  "pioneers:music_disc_cornues_et_alambics",
+  "pioneers:music_disc_cornues_et_alambics_1",
+  "pioneers:music_disc_le_train_de_la_cote",
+  "pioneers:music_disc_le_train_de_la_cote_1",
+  "pioneers:music_disc_le_train_de_la_cote_2",
+  "pioneers:music_disc_lueur_de_tcherenkov",
+  "pioneers:music_disc_lueur_de_tcherenkov_1",
+  "pioneers:music_disc_veillee_aux_etoiles",
+  "pioneers:music_disc_veillee_aux_etoiles_1",
+  "pioneers:music_disc_veillee_aux_etoiles_2",
+  "pioneers:wild_spores",
+  "pioneers:replace_vanilla",
+  "pioneers:modular_tool"
+ ]
+}

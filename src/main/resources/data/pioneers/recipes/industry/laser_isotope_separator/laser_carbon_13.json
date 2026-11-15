@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge_cascade",
+ "tier": 3,
+ "time": 300,
+ "family": "laser_isotope_separator",
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 4000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_13_dioxide",
+   "amount": 60
+  },
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 3940
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:pressing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:apple"
+   },
+   "count": 4
+  }
+ ],
+ "time": 200,
+ "strokes": 6,
+ "fluid_result": {
+  "fluid": "pioneers:apple_juice",
+  "amount": 500
+ }
+}

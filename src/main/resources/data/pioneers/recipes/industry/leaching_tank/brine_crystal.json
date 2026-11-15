@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 2,
+ "time": 80,
+ "family": "leaching_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:brine_crystal"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:salt",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:lithium_brine",
+   "amount": 500
+  }
+ ]
+}

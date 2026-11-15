@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:zirconium_nugget",
+  "pioneers:zirconium_rod",
+  "pioneers:zirconium_ingot",
+  "pioneers:zirconium_plate",
+  "pioneers:zirconium_dust",
+  "pioneers:zirconium_wire",
+  "pioneers:zirconium_block",
+  "pioneers:zirconium_billet"
+ ]
+}

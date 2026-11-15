@@ -1,0 +1,60 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 400,
+ "family": "fischer_tropsch_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:pyrolysis_gas",
+   "amount": 5000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:paraffin_wax",
+   "count": 1
+  },
+  {
+   "item": "pioneers:iron_catalyst",
+   "count": 1,
+   "chance": 0.97
+  },
+  {
+   "item": "pioneers:spent_iron_catalyst",
+   "count": 1,
+   "chance": 0.03
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:diesel",
+   "amount": 250
+  },
+  {
+   "fluid": "pioneers:kerosene",
+   "amount": 100
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 50
+  }
+ ],
+ "industrial": true,
+ "pressure": 8,
+ "air": 200
+}

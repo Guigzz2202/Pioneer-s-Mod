@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 2,
+ "time": 430,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 9
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_gear",
+   "count": 2
+  },
+  {
+   "item": "pioneers:titanium_nugget",
+   "count": 9
+  }
+ ]
+}

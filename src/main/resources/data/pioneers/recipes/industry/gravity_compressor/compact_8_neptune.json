@@ -1,0 +1,41 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gravity_compressor",
+ "tier": 3,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:triton_nitrogen_ice"
+   },
+   "count": 32
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:triton_rock"
+   },
+   "count": 16
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 48000
+  },
+  {
+   "gas": "pioneers:helium",
+   "amount": 12000
+  },
+  {
+   "gas": "pioneers:methane",
+   "amount": 12000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:compacted_neptune",
+   "count": 1
+  }
+ ],
+ "energy": 200000000
+}

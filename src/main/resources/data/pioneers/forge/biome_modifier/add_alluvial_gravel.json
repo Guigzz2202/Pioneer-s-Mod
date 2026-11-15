@@ -1,0 +1,6 @@
+{
+ "type": "forge:add_features",
+ "biomes": "#minecraft:is_river",
+ "features": "pioneers:alluvial_gravel_disk",
+ "step": "underground_ores"
+}

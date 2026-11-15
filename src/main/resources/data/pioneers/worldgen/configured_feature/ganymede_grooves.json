@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "pioneers:ganymede_bright_ice"
+  },
+  "mode": "ridge",
+  "min_length": 22,
+  "max_length": 30,
+  "width": 3,
+  "depth": 2,
+  "curl": 0.05
+ }
+}

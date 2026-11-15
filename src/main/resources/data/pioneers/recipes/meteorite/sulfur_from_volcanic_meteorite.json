@@ -1,0 +1,18 @@
+{
+ "conditions": [
+  {
+   "type": "forge:mod_loaded",
+   "modid": "mekanism"
+  }
+ ],
+ "type": "mekanism:crushing",
+ "input": {
+  "ingredient": {
+   "item": "pioneers:volcanic_meteorite"
+  }
+ },
+ "output": {
+  "item": "mekanism:dust_sulfur",
+  "count": 2
+ }
+}

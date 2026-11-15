@@ -1,0 +1,108 @@
+{
+ "type": "pioneers:europa",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:europa",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:conamara_chaos",
+     "parameters": {
+      "temperature": [
+       0.32,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:europa_bands",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.32
+      ],
+      "humidity": [
+       -0.06,
+       0.06
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:europa_ridged_plains",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.32
+      ],
+      "humidity": [
+       -1.0,
+       -0.06
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:europa_ridged_plains",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.32
+      ],
+      "humidity": [
+       0.06,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

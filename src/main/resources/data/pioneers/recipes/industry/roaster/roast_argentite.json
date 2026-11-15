@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 200,
+ "family": "roaster",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:argentite_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silver_dust",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 300
+  }
+ ],
+ "impurity": 1,
+ "ore": true
+}

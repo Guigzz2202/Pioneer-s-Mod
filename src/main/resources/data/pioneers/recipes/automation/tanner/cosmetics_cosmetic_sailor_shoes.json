@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/black"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_sailor_shoes",
+   "count": 1
+  }
+ ]
+}

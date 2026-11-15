@@ -1,0 +1,57 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 240,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rocket_nozzle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plasma_heating_klystron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryostat"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/osmiridium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iridium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sulcite_hts_tape"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fusion_drive_core",
+   "count": 1
+  }
+ ]
+}

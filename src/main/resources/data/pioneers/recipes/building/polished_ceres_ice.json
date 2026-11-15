@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:packed_ceres_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_ceres_ice",
+  "count": 4
+ }
+}

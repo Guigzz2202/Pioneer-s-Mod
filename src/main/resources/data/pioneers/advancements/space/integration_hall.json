@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:rocket_integration_hall"
+  },
+  "title": {
+   "translate": "advancements.pioneers.space.integration_hall.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.space.integration_hall.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "assembly_hall_rocket"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:space/root"
+}

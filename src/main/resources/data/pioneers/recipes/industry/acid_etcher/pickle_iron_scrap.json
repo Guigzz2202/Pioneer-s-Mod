@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 0,
+ "time": 160,
+ "family": "acid_etcher",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_scrap"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_dust",
+   "count": 1
+  }
+ ]
+}

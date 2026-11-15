@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "..MM..MM..",
+  "..MAOPAM..",
+  "...MCCM...",
+  "...MMMM..."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "C": {
+   "tag": "pioneers:circuits/elite"
+  },
+  "M": {
+   "tag": "forge:plates/marsium"
+  },
+  "O": {
+   "item": "pioneers:elite_gas_buffer"
+  },
+  "P": {
+   "item": "pioneers:thermal_suit_chestplate"
+  }
+ },
+ "result": {
+  "item": "pioneers:acid_suit_chestplate"
+ },
+ "energy": 30000000,
+ "duration": 500,
+ "research": "acid_suit"
+}

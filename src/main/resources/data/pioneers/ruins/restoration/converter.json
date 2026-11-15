@@ -1,0 +1,297 @@
+{
+ "1": {
+  "days": 5,
+  "items": [
+   {
+    "id": "#forge:rods/brass",
+    "count": 708
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 708
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 708
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 531
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 354
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 354
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 354
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 177
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 177
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 177
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 89
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "pioneers:converter",
+    "count": 3
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:steel_ingot",
+   "count": 48
+  }
+ },
+ "2": {
+  "days": 10,
+  "items": [
+   {
+    "id": "#forge:plates/duralumin",
+    "count": 783
+   },
+   {
+    "id": "#forge:rings/electrum",
+    "count": 696
+   },
+   {
+    "id": "#forge:sheets/aluminium",
+    "count": 696
+   },
+   {
+    "id": "#forge:rods/duralumin",
+    "count": 696
+   },
+   {
+    "id": "#forge:beams/galvanized_steel",
+    "count": 348
+   },
+   {
+    "id": "#forge:screws/aluminium",
+    "count": 348
+   },
+   {
+    "id": "#forge:springs/aluminium",
+    "count": 348
+   },
+   {
+    "id": "#forge:plates/aluminium",
+    "count": 174
+   },
+   {
+    "id": "#forge:bolts/aluminium",
+    "count": 174
+   },
+   {
+    "id": "#forge:rings/aluminium",
+    "count": 174
+   },
+   {
+    "id": "pioneers:circuit_mk2",
+    "count": 87
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 12
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 9
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 6
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "pioneers:converter",
+    "count": 3
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 3
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 2
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:aluminium_ingot",
+   "count": 96
+  }
+ },
+ "3": {
+  "days": 20,
+  "items": [
+   {
+    "id": "#forge:plates/stainless_steel",
+    "count": 783
+   },
+   {
+    "id": "#forge:springs/vanadium_steel",
+    "count": 696
+   },
+   {
+    "id": "#forge:sheets/titanium",
+    "count": 696
+   },
+   {
+    "id": "#forge:rods/titanium",
+    "count": 696
+   },
+   {
+    "id": "#forge:beams/titanium",
+    "count": 348
+   },
+   {
+    "id": "#forge:screws/titanium",
+    "count": 348
+   },
+   {
+    "id": "#forge:springs/nickel",
+    "count": 348
+   },
+   {
+    "id": "#forge:plates/titanium",
+    "count": 174
+   },
+   {
+    "id": "#forge:bolts/titanium",
+    "count": 174
+   },
+   {
+    "id": "#forge:rings/titanium",
+    "count": 174
+   },
+   {
+    "id": "pioneers:circuit_mk3",
+    "count": 87
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 12
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 9
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 6
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "pioneers:converter",
+    "count": 3
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 3
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 2
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:titanium_ingot",
+   "count": 160
+  }
+ }
+}

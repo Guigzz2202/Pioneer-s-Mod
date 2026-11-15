@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:roasted_cocoa"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cocoa_butter",
+   "count": 1
+  },
+  {
+   "item": "pioneers:cocoa_powder",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 90
+  }
+ ]
+}

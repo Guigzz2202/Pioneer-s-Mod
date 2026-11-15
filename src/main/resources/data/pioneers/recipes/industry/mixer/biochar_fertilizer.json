@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:biochar"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:digestate",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fertilizer",
+   "count": 2
+  }
+ ]
+}

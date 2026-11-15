@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:rabbit_hide"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_peg"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_winter_top",
+  "count": 1
+ }
+}

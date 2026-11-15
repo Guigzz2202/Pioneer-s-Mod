@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/iron"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_miner_top",
+   "count": 1
+  }
+ ]
+}

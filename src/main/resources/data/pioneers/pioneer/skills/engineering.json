@@ -1,0 +1,17 @@
+{
+ "order": 3,
+ "icon": "pioneers:textures/gui/pioneer/skill/engineering.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "engineering.tool_wear",
+   "value": -0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "engineering.kit_saving",
+   "value": 0.25,
+   "unit": "pct"
+  }
+ ]
+}

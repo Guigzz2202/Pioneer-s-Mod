@@ -1,0 +1,133 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "school",
+ "variant": 1,
+ "min_tier": 2,
+ "size": [
+  9,
+  9,
+  7
+ ],
+ "palette": [
+  "minecraft:spruce_planks",
+  "minecraft:cracked_stone_bricks",
+  "minecraft:bricks",
+  "minecraft:spruce_door[facing=south,half=lower,hinge=left,open=true,powered=false]",
+  "minecraft:mossy_cobblestone",
+  "minecraft:spruce_stairs[facing=north,half=bottom]",
+  "minecraft:spruce_slab[type=top]",
+  "minecraft:chest[facing=east,type=single,waterlogged=false]",
+  "minecraft:spruce_slab[type=bottom]",
+  "minecraft:stone_bricks",
+  "minecraft:spruce_door[facing=south,half=upper,hinge=left,open=true,powered=false]",
+  "minecraft:polished_blackstone_pressure_plate",
+  "minecraft:glass_pane",
+  "minecraft:black_terracotta",
+  "minecraft:cobweb",
+  "minecraft:cobblestone",
+  "minecraft:dark_oak_stairs[facing=south,half=bottom]",
+  "minecraft:dark_oak_stairs[facing=north,half=bottom]",
+  "minecraft:dark_oak_slab[type=bottom]"
+ ],
+ "layers": [
+  [
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa"
+  ],
+  [
+   "bcccdcecb",
+   "cfff.fffc",
+   "cggg.gggc",
+   "efff.fffc",
+   "cggg.gggc",
+   "ch..i...c",
+   "bcccccccb"
+  ],
+  [
+   "jccckcccj",
+   "c.......c",
+   ".lll.lllm",
+   "c.......c",
+   ".l.......",
+   "c.......c",
+   "jccnnnccj"
+  ],
+  [
+   "jcccccccj",
+   "co......c",
+   "c.......c",
+   "e.......c",
+   "p.o.....c",
+   "c.......c",
+   "jccnnnccb"
+  ],
+  [
+   "qqqqqqqqq",
+   "c.......c",
+   "c.......p",
+   "c.......c",
+   "c.......c",
+   "c.......c",
+   "rrrr..rrr"
+  ],
+  [
+   ".........",
+   "qqqqqqqqq",
+   "c.......c",
+   "c.......c",
+   "c.......c",
+   "rrrr...rr",
+   "........."
+  ],
+  [
+   ".........",
+   ".........",
+   "qqqqqqqqq",
+   "c.......c",
+   "rrrrrr.rr",
+   ".........",
+   "........."
+  ],
+  [
+   ".........",
+   ".........",
+   ".........",
+   "sssss.sss",
+   ".........",
+   ".........",
+   "........."
+  ],
+  [
+   ".........",
+   ".........",
+   ".........",
+   ".........",
+   ".........",
+   ".........",
+   "........."
+  ]
+ ],
+ "chests": [
+  [
+   1,
+   1,
+   5
+  ]
+ ],
+ "frames": [
+  {
+   "pos": [
+    4,
+    2,
+    5
+   ],
+   "facing": "north",
+   "item": "minecraft:paper"
+  }
+ ]
+}

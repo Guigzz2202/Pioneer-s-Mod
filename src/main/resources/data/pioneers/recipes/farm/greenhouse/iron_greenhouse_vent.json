@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_greenhouse_glass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_rod"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_nail"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_greenhouse_vent",
+  "count": 2
+ }
+}

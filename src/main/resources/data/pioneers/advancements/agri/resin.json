@@ -1,0 +1,44 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:raw_resin"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.resin.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.resin.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "resin_tap"
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:raw_resin"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:agri/root"
+}

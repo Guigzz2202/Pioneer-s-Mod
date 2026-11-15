@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/niobium_titanium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:niobium_titanium_nugget",
+  "count": 9
+ }
+}

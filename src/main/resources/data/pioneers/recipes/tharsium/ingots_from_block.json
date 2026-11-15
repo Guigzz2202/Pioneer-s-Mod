@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:storage_blocks/tharsium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:tharsium_ingot",
+  "count": 9
+ }
+}

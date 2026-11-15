@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ground_gold"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 300
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_dust",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 200
+  }
+ ]
+}

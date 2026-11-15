@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_titania_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:titania_rock_bricks",
+  "count": 4
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:renewable_diesel_bucket"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.renewable_diesel.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.renewable_diesel.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_oil_press"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_hydrocracker"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:agri/press"
+}

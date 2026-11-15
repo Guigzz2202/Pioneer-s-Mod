@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 7,
+  "discard_chance_on_air_exposure": 1.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:miranda_rock"
+    },
+    "state": {
+     "Name": "pioneers:veronite_ore"
+    }
+   }
+  ]
+ }
+}

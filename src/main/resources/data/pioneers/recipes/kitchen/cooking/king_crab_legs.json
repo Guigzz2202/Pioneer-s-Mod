@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_king_crab"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:herb_butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:king_crab_legs",
+   "count": 1
+  }
+ ]
+}

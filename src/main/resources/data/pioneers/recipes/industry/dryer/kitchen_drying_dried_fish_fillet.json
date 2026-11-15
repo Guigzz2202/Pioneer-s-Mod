@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 450,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fish_fillet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dried_fish_fillet",
+   "count": 1
+  }
+ ]
+}

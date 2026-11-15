@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:callisto_ice"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:packed_callisto_ice",
+  "count": 1
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/titanium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_scythe_blade",
+   "count": 1
+  }
+ ]
+}

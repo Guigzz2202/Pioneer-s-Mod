@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:assembly",
+ "station": "module",
+ "pattern": [
+  "a.........",
+  "..S.A.S...",
+  "..SPGPS...",
+  "...PCP....",
+  ".........."
+ ],
+ "key": {
+  "A": {
+   "item": "minecraft:lightning_rod"
+  },
+  "C": {
+   "item": "pioneers:programmed_flight_computer"
+  },
+  "G": {
+   "tag": "forge:foils/gold"
+  },
+  "P": {
+   "item": "pioneers:aluminium_fuselage_panel"
+  },
+  "S": {
+   "item": "minecraft:daylight_detector"
+  },
+  "a": {
+   "tag": "forge:gears/duralumin"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_module_probe"
+ },
+ "energy": 6000000,
+ "duration": 200
+}

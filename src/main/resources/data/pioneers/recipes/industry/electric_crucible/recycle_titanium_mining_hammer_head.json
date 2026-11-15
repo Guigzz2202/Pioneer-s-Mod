@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_mining_hammer_head"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.05
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_titanium",
+   "amount": 360
+  }
+ ]
+}

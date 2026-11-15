@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "luthier",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:note_block",
+  "count": 1
+ }
+}

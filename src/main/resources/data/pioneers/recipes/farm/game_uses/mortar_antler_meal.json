@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:deer_antler"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:bone_meal",
+  "count": 2
+ }
+}

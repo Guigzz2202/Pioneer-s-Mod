@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:impact_wrench"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.impact_wrench.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.impact_wrench.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:impact_wrench"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/compressor"
+}

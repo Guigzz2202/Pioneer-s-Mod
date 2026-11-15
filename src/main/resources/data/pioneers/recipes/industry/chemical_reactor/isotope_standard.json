@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen_15",
+   "amount": 50
+  },
+  {
+   "gas": "pioneers:carbon_13_dioxide",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:isotope_standard",
+   "count": 4
+  }
+ ]
+}

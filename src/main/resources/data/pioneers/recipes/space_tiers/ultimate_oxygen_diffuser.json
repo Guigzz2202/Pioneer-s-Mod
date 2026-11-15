@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_oxygen_diffuser"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:upgrade_kit_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_oxygen_diffuser",
+  "count": 1
+ }
+}

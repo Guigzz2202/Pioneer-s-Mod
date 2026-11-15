@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 1,
+ "time": 160,
+ "family": "hydrocracker",
+ "fluids": [
+  {
+   "fluid": "pioneers:kerosene",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:rp1",
+   "amount": 950
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_sulfide",
+   "amount": 20
+  }
+ ],
+ "industrial": true,
+ "pressure": 8,
+ "air": 300
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:chest"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_basic"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_item_buffer",
+   "count": 1
+  }
+ ]
+}

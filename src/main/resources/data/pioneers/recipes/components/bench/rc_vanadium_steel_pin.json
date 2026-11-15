@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/vanadium_steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:vanadium_steel_pin",
+  "count": 4
+ }
+}

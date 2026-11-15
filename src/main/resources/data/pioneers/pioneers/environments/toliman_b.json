@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:toliman_b",
+ "gravity": 1.25,
+ "breathable": false,
+ "suit_tier": 4,
+ "hazard": "pressure",
+ "nitrogen": 8,
+ "temperature": 38
+}

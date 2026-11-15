@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:carrot",
+  "minecraft:beetroot",
+  "pioneers:cucumber",
+  "pioneers:onion",
+  "pioneers:garlic",
+  "pioneers:red_cabbage",
+  "pioneers:cauliflower",
+  "pioneers:green_bean",
+  "pioneers:bell_pepper",
+  "pioneers:hot_pepper",
+  "pioneers:radish",
+  "pioneers:artichoke",
+  "pioneers:zucchini",
+  "pioneers:eggplant",
+  "pioneers:parsnip",
+  "pioneers:olives",
+  "pioneers:pea_pod"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:jam"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm.jam.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm.jam.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:jam"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:pickles"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:farm/kitchen"
+}

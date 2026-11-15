@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 2,
+ "time": 670,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/nichrome"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nichrome_plate",
+   "count": 9
+  }
+ ]
+}

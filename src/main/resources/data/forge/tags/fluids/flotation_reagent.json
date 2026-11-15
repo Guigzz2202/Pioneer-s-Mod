@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:flotation_reagent",
+  "pioneers:flowing_flotation_reagent"
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 2400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:honey_water",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:mead",
+   "amount": 1000
+  }
+ ]
+}

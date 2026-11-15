@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/nichrome"
+  },
+  {
+   "tag": "forge:nuggets/nichrome"
+  },
+  {
+   "tag": "forge:nuggets/nichrome"
+  },
+  {
+   "tag": "forge:nuggets/nichrome"
+  },
+  {
+   "tag": "forge:nuggets/nichrome"
+  },
+  {
+   "tag": "forge:nuggets/nichrome"
+  },
+  {
+   "tag": "forge:nuggets/nichrome"
+  },
+  {
+   "tag": "forge:nuggets/nichrome"
+  },
+  {
+   "tag": "forge:nuggets/nichrome"
+  }
+ ],
+ "result": {
+  "item": "pioneers:nichrome_ingot",
+  "count": 1
+ }
+}

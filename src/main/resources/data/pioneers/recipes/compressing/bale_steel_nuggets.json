@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:nuggets/steel"
+ },
+ "count": 40,
+ "result": {
+  "item": "pioneers:iron_scrap_bale",
+  "count": 1
+ }
+}

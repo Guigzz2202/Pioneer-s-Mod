@@ -1,0 +1,57 @@
+{
+ "has_precipitation": false,
+ "temperature": 2.0,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 0,
+  "fog_color": 0,
+  "water_color": 4159204,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.rocky",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:io_cave"
+  ]
+ },
+ "features": [
+  [],
+  [
+   "pioneers:io_lava_lake"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [
+   "pioneers:io_patches",
+   "pioneers:lokite_ore",
+   "pioneers:lokite_ore_rich"
+  ],
+  [],
+  [
+   "pioneers:io_lava_spring"
+  ],
+  [
+   "pioneers:boulder",
+   "pioneers:sulfur_torch",
+   "pioneers:meteorite_volcanic_common"
+  ],
+  [
+   "pioneers:io_fluid_cleanup"
+  ]
+ ]
+}

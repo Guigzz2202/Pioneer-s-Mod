@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pineapple"
+   },
+   "count": 1
+  }
+ ],
+ "time": 240,
+ "results": [
+  {
+   "item": "pioneers:grilled_pineapple",
+   "count": 2
+  }
+ ]
+}

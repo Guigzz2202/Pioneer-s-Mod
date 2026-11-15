@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:dried_tea"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 200,
+ "results": [
+  {
+   "item": "pioneers:tea",
+   "count": 2
+  }
+ ]
+}

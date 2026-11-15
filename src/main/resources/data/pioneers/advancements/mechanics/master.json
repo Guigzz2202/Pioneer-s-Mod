@@ -1,0 +1,79 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:iron_flywheel"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.master.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.master.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "beam_engine"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "lift"
+   }
+  },
+  "c2": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "windmill"
+   }
+  },
+  "c3": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "water_wheel"
+   }
+  },
+  "c4": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "machine_sifter"
+   }
+  },
+  "c5": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "charcoal_pit"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ],
+  [
+   "c3"
+  ],
+  [
+   "c4"
+  ],
+  [
+   "c5"
+  ]
+ ],
+ "parent": "pioneers:mechanics/beam_engine",
+ "rewards": {
+  "experience": 200
+ }
+}

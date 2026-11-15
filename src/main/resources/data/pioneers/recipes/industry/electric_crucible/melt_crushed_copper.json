@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:crushed_ores/copper"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_copper",
+   "amount": 144
+  }
+ ],
+ "tier_yield": [
+  1.5,
+  2,
+  2.5,
+  3
+ ]
+}

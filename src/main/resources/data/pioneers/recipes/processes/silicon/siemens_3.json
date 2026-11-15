@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "family": "distillation_tower",
+ "tier": 1,
+ "time": 200,
+ "industrial": true,
+ "fluids": [
+  {
+   "fluid": "pioneers:trichlorosilane",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:pure_trichlorosilane",
+   "amount": 900
+  },
+  {
+   "fluid": "pioneers:silicon_tetrachloride",
+   "amount": 100
+  }
+ ]
+}

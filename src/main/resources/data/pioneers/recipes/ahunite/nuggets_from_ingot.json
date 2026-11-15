@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/ahunite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:ahunite_nugget",
+  "count": 9
+ }
+}

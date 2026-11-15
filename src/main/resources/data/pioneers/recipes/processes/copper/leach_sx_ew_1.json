@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 1,
+ "time": 2400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tailings"
+   },
+   "count": 8
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:sand",
+   "count": 2,
+   "chance": 0.5
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:copper_leach_liquor",
+   "amount": 1000
+  }
+ ]
+}

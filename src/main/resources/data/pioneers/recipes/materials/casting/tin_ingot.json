@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:casting",
+ "mold": "pioneers:ingot_mold",
+ "metal": "tin",
+ "amount": 144,
+ "result": {
+  "item": "pioneers:tin_ingot",
+  "count": 1
+ },
+ "cool": 200
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:book"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:bookshelf",
+   "count": 1
+  }
+ ]
+}

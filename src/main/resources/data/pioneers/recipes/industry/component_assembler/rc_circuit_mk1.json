@@ -1,0 +1,57 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 240,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:etched_board"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vacuum_tube"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_resistor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:paper_capacitor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:relay"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/solder"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_connector"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:circuit_mk1",
+   "count": 2
+  }
+ ]
+}

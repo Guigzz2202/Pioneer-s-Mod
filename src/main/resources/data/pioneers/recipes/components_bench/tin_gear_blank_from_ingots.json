@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/tin"
+   },
+   "count": 5
+  }
+ ],
+ "result": {
+  "item": "pioneers:tin_gear_blank",
+  "count": 1
+ }
+}

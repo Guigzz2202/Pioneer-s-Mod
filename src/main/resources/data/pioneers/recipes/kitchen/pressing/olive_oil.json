@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:pressing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:olives"
+   },
+   "count": 6
+  }
+ ],
+ "time": 200,
+ "strokes": 6,
+ "fluid_result": {
+  "fluid": "pioneers:plant_oil",
+  "amount": 250
+ }
+}

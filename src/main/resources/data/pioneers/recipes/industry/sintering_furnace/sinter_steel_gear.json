@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 1,
+ "time": 300,
+ "family": "sintering_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:steel_green_compact"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_gear",
+   "count": 1
+  }
+ ]
+}

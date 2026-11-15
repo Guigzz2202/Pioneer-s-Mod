@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:cut_phobos_sandstone"
+  }
+ },
+ "result": {
+  "item": "pioneers:cut_phobos_sandstone_slab",
+  "count": 6
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:ingot_mold"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.mold_fired.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.mold_fired.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:ingot_mold"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:nugget_mold"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:plate_mold"
+      ]
+     }
+    ]
+   }
+  },
+  "c3": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:rod_mold"
+      ]
+     }
+    ]
+   }
+  },
+  "c4": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:gear_mold"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2",
+   "c3",
+   "c4"
+  ]
+ ],
+ "parent": "pioneers:bronze/pottery"
+}

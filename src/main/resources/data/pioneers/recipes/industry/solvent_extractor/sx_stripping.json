@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 160,
+ "family": "solvent_extractor",
+ "fluids": [
+  {
+   "fluid": "pioneers:loaded_solvent",
+   "amount": 100
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ammonium_diuranate",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 95
+  }
+ ]
+}

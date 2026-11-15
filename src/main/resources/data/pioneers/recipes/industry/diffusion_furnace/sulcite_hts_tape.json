@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 3,
+ "time": 400,
+ "family": "diffusion_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sulcite_dust"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rare_earth_oxide"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sulcite_hts_tape",
+   "count": 2
+  }
+ ]
+}

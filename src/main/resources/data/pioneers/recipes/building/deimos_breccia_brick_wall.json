@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:deimos_breccia_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:deimos_breccia_brick_wall",
+  "count": 6
+ }
+}

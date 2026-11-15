@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:yogurt"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "tag": "forge:milk",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:yogurt",
+   "count": 3
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:redstone_torch",
+  "count": 1
+ }
+}

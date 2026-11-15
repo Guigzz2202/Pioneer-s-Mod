@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:trappist_1d_rock"
+ },
+ "result": "pioneers:chiseled_trappist_1d_rock_bricks",
+ "count": 1
+}

@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ferroniobium"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_chloride",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:niobium_fluoride_solution",
+   "amount": 1000
+  }
+ ]
+}

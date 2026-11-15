@@ -1,0 +1,26 @@
+{
+ "result": "pioneers:chalcopyrite",
+ "material": "chalcopyrite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#D2B446",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 6
+  },
+  {
+   "biomes": "#minecraft:is_badlands",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_plains",
+   "weight": 3
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sauerkraut"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smoked_sausage"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ham"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wine"
+   },
+   "count": 1
+  }
+ ],
+ "time": 600,
+ "results": [
+  {
+   "item": "pioneers:choucroute",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_heat_exchanger"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium_aluminide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iridium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/silver"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stainless_steel_fitting"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_heat_exchanger",
+   "count": 2
+  }
+ ]
+}

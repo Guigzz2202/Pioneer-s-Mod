@@ -1,0 +1,17 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:apple_sapling",
+  "pioneers:pear_sapling",
+  "pioneers:cherry_sapling",
+  "pioneers:apricot_sapling",
+  "pioneers:peach_sapling",
+  "pioneers:plum_sapling",
+  "pioneers:orange_sapling",
+  "pioneers:lemon_sapling",
+  "pioneers:pomegranate_sapling",
+  "pioneers:mango_sapling",
+  "pioneers:banana_sapling",
+  "pioneers:olive_sapling"
+ ]
+}

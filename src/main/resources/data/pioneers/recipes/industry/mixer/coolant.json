@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:creosote",
+   "amount": 50
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:coolant",
+   "amount": 1000
+  }
+ ]
+}

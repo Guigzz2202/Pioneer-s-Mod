@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 170,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:cobblestone"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_rope"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/bronze"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:siege_flag",
+   "count": 1
+  }
+ ]
+}

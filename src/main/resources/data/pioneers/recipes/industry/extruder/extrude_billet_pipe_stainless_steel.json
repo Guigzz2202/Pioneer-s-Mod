@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 1,
+ "time": 335,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:stainless_steel_billet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tube_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stainless_steel_pipe",
+   "count": 18
+  },
+  {
+   "item": "pioneers:tube_die",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_bladed_rotor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_bearing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vanadium_steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:turbine_rotor_advanced",
+   "count": 2
+  }
+ ]
+}

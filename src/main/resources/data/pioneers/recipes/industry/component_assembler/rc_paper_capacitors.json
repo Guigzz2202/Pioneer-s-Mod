@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/tin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beeswax"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:paper_capacitor",
+   "count": 8
+  }
+ ]
+}

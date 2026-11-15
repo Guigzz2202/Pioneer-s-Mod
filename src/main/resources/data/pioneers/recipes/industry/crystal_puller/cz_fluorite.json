@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 1,
+ "time": 400,
+ "family": "crystal_puller",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:calcium_fluoride"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fluorite",
+   "count": 1
+  }
+ ]
+}

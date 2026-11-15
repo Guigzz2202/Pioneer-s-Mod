@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 48,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:blueberry"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "tag": "forge:milk",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_blueberry_muffins",
+   "count": 1
+  }
+ ]
+}

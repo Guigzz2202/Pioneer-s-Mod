@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:hematite_fragment"
+ },
+ "count": 4,
+ "result": {
+  "item": "pioneers:raw_iron",
+  "count": 1
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:smooth_stone"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:water_trough",
+  "count": 1
+ }
+}

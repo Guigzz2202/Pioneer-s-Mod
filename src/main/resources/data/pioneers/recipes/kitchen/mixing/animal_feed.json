@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:corn"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:barley"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:soybean"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:animal_feed",
+   "count": 4
+  }
+ ]
+}

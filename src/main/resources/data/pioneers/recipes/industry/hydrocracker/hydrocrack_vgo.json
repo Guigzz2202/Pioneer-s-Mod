@@ -1,0 +1,56 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 1,
+ "time": 160,
+ "family": "hydrocracker",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nickel_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:vacuum_gas_oil",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_catalyst",
+   "count": 1,
+   "chance": 0.97
+  },
+  {
+   "item": "pioneers:spent_nickel_catalyst",
+   "count": 1,
+   "chance": 0.03
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:diesel",
+   "amount": 400
+  },
+  {
+   "fluid": "pioneers:kerosene",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 200
+  }
+ ],
+ "industrial": true,
+ "pressure": 5,
+ "air": 300
+}

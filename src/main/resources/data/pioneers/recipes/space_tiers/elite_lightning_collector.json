@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_lightning_collector"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:capacitor"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:elite_lightning_collector",
+  "count": 1
+ }
+}

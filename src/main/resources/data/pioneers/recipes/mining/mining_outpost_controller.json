@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/advanced"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_basic"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_basic"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:map"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:mining_outpost_controller",
+  "count": 1
+ }
+}

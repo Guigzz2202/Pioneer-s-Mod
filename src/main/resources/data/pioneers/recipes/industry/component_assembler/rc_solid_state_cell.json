@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lithium_carbonate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:zirconia_ceramic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/copper"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:solid_state_cell",
+   "count": 4
+  }
+ ]
+}

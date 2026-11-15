@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "pioneers:roasted_cocoa"
+ },
+ "count": 1,
+ "turns": 4,
+ "results": [
+  {
+   "item": "pioneers:cocoa_powder",
+   "count": 2
+  },
+  {
+   "item": "pioneers:cocoa_powder",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

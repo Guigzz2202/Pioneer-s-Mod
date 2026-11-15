@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:brass_wire_mesh",
+  "count": 1
+ }
+}

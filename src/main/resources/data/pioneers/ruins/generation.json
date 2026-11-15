@@ -1,0 +1,108 @@
+{
+ "_doc": "Genere par tools/gc/ruins/gen_data.py (ne pas modifier a la main). Espacements en chunks, distances en blocs.",
+ "candidates": 3,
+ "exclusion_chunks": 4,
+ "reference": [
+  0,
+  0
+ ],
+ "max_half_extent": 15,
+ "margin": 3,
+ "annex_distance": [
+  24,
+  80
+ ],
+ "annex_clearance": 22,
+ "cabinet_second_interior": 60,
+ "tiers": [
+  {
+   "tier": 1,
+   "spacing": 24,
+   "separation": 8,
+   "spawn_distance": 0,
+   "wear": [
+    0.25,
+    0.4
+   ],
+   "worn": 0.2,
+   "cells": [
+    40,
+    450
+   ],
+   "max_height": 22,
+   "rubble": 0.1,
+   "relief": 10,
+   "center_water": 0,
+   "deep_corners": 1,
+   "exclude_biomes": [
+    "#minecraft:is_ocean",
+    "#minecraft:is_deep_ocean",
+    "#minecraft:is_river",
+    "minecraft:stony_peaks",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks"
+   ],
+   "modes": {
+    "surface": 1
+   }
+  },
+  {
+   "tier": 2,
+   "spacing": 40,
+   "separation": 14,
+   "spawn_distance": 600,
+   "wear": [
+    0.35,
+    0.5
+   ],
+   "worn": 0.32,
+   "cells": [
+    150,
+    820
+   ],
+   "max_height": 26,
+   "rubble": 0.11,
+   "relief": 16,
+   "center_water": 1,
+   "deep_corners": 2,
+   "exclude_biomes": [
+    "#minecraft:is_deep_ocean",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks"
+   ],
+   "modes": {
+    "surface": 5,
+    "sunken": 3
+   }
+  },
+  {
+   "tier": 3,
+   "spacing": 64,
+   "separation": 24,
+   "spawn_distance": 1500,
+   "wear": [
+    0.45,
+    0.6
+   ],
+   "worn": 0.45,
+   "cells": [
+    240,
+    1400
+   ],
+   "max_height": 30,
+   "rubble": 0.12,
+   "relief": 999,
+   "center_water": 999,
+   "deep_corners": 5,
+   "exclude_biomes": [],
+   "depth": [
+    14,
+    28
+   ],
+   "modes": {
+    "underground": 3,
+    "flank": 2
+   }
+  }
+ ]
+}

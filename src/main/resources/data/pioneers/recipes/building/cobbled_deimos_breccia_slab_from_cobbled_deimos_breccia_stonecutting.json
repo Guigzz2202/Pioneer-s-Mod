@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_deimos_breccia"
+ },
+ "result": "pioneers:cobbled_deimos_breccia_slab",
+ "count": 2
+}

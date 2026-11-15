@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:crushed_ores/gold"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:gold_acid_solution",
+   "amount": 100
+  }
+ ],
+ "tier_yield": [
+  2.5,
+  2.5,
+  3,
+  3.5
+ ]
+}

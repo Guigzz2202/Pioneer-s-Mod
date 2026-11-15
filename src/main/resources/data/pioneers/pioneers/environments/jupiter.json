@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:jupiter",
+ "breathable": false,
+ "hazard": "pressure",
+ "nitrogen": 0,
+ "gravity": 1.6,
+ "suit_tier": 4,
+ "temperature": -110
+}

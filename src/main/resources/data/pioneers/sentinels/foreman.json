@@ -1,0 +1,25 @@
+{
+  "_comment": "Contremaitre (MKIII seul) : trois phases selon la sante (phase2, phase3 = fractions de PV). Phase 1 : appelle summons Patrouilleurs. Phase 2 : charge et coups de zone. Phase 3 : surchauffe, tourelles integrees.",
+  "role": "foreman",
+  "phase2": 0.6,
+  "phase3": 0.25,
+  "summons": 2,
+  "attack_interval": 30,
+  "charge_interval": 120,
+  "charge_speed": 0.9,
+  "charge_ticks": 12,
+  "charge_damage": 12,
+  "slam_interval": 80,
+  "slam_radius": 4,
+  "slam_damage": 10,
+  "gun_interval": 20,
+  "gun_damage": 6,
+  "gun_range": 18,
+  "overheat_speed": 1.25,
+  "knockback_resistance": 1,
+  "follow_range": 32,
+  "boss_radius": 48,
+  "tiers": {
+    "3": {"health": 400, "damage": 14, "speed": 0.22, "armor": 8, "xp": 80}
+  }
+}

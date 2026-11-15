@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:miscanthus"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wood_chips",
+   "count": 3
+  },
+  {
+   "item": "pioneers:plant_fiber",
+   "count": 1
+  }
+ ]
+}

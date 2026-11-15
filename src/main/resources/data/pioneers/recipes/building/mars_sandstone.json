@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:mars_sand"
+  }
+ },
+ "result": {
+  "item": "pioneers:mars_sandstone",
+  "count": 1
+ }
+}

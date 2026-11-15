@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wooden_slabs"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bookshelf"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:lectern",
+  "count": 1
+ }
+}

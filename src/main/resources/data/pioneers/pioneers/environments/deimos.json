@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:deimos",
+ "gravity": 0.0804,
+ "breathable": false,
+ "suit_tier": 2,
+ "hazard": "vacuum",
+ "nitrogen": 0,
+ "temperature": -40
+}

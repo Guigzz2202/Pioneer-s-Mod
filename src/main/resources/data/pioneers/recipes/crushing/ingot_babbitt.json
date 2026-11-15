@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:ingots/babbitt"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:babbitt_dust",
+  "count": 1
+ }
+}

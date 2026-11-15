@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cauliflower"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:curry_paste"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato"
+   },
+   "count": 1
+  }
+ ],
+ "time": 420,
+ "results": [
+  {
+   "item": "pioneers:aloo_gobi",
+   "count": 2
+  }
+ ]
+}

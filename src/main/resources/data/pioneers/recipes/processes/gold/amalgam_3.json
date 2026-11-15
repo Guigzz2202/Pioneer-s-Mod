@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ground_gold"
+   },
+   "count": 5
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:mercury",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_amalgam",
+   "count": 4
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 1.0
+  }
+ ]
+}

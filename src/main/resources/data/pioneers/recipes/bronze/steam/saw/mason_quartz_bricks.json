@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:quartz_block"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:quartz_bricks",
+  "count": 4
+ },
+ "time": 40
+}

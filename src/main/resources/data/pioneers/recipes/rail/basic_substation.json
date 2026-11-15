@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_energy_buffer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_breaker"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wire_ropes/copper"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/silver"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_substation",
+  "count": 1
+ }
+}

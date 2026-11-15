@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "quench_tank",
+ "tier": 0,
+ "time": 320,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:steel_chestplate"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hardened_steel_chestplate",
+   "count": 1
+  }
+ ]
+}

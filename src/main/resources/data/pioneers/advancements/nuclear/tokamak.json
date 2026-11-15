@@ -1,0 +1,34 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:tokamak"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.tokamak.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.tokamak.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "fusion_ignition_mk1"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/tritium",
+ "rewards": {
+  "experience": 500
+ }
+}

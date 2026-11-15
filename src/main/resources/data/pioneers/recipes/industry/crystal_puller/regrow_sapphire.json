@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 1,
+ "time": 400,
+ "family": "crystal_puller",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire_dust"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sapphire",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planks"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hide_glue"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_peg"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:wooden_beam",
+  "count": 1
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:ink_sac"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beeswax"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:clan_charter",
+  "count": 1
+ }
+}

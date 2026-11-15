@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honeycomb"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:waxed_copper_block",
+   "count": 1
+  }
+ ]
+}

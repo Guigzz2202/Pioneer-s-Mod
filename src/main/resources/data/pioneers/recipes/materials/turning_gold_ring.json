@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:turning",
+ "input": {
+  "tag": "forge:rods/gold"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "pioneers:gold_ring",
+   "count": 1
+  }
+ ]
+}

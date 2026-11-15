@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "P",
+  "P",
+  "P"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:production_tubing",
+  "count": 3
+ }
+}

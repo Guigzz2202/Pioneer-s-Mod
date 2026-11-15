@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:ceres_rock_bricks"
+ },
+ "result": "pioneers:ceres_rock_brick_wall",
+ "count": 1
+}

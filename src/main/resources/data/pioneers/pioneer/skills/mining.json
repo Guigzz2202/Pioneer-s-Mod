@@ -1,0 +1,17 @@
+{
+ "order": 1,
+ "icon": "pioneers:textures/gui/pioneer/skill/mining.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "mining.speed",
+   "value": 0.2,
+   "unit": "pct"
+  },
+  {
+   "key": "mining.pick_wear",
+   "value": -0.15,
+   "unit": "pct"
+  }
+ ]
+}

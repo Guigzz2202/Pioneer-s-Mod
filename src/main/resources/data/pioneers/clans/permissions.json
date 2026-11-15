@@ -1,0 +1,173 @@
+{
+ "permissions": [
+  {
+   "id": "invite",
+   "family": "members",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "kick",
+   "family": "members",
+   "decision": "kick",
+   "reserved": [
+    "empire"
+   ]
+  },
+  {
+   "id": "promote",
+   "family": "members",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "view_identities",
+   "family": "members",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "view_stats",
+   "family": "members",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "claim",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "zones",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "build",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "containers",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "machines",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "transit",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "chunkload",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "seals",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "treasury_view",
+   "family": "treasury",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "withdraw",
+   "family": "treasury",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "set_taxes",
+   "family": "treasury",
+   "decision": "taxes",
+   "reserved": [
+    "empire"
+   ]
+  },
+  {
+   "id": "bonuses",
+   "family": "treasury",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "propose",
+   "family": "government",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "edit_roles",
+   "family": "government",
+   "decision": "roles",
+   "reserved": [
+    "democracy",
+    "empire"
+   ]
+  },
+  {
+   "id": "edit_identity",
+   "family": "government",
+   "decision": "identity",
+   "reserved": [
+    "empire"
+   ]
+  },
+  {
+   "id": "declare_war",
+   "family": "government",
+   "decision": "war",
+   "reserved": [
+    "empire"
+   ]
+  },
+  {
+   "id": "diplomacy",
+   "family": "government",
+   "decision": "treaty",
+   "reserved": [
+    "empire"
+   ]
+  },
+  {
+   "id": "siege",
+   "family": "government",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "moderate",
+   "family": "communication",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "pin",
+   "family": "communication",
+   "decision": "",
+   "reserved": []
+  },
+  {
+   "id": "buy_claims",
+   "family": "territory",
+   "decision": "",
+   "reserved": []
+  }
+ ]
+}

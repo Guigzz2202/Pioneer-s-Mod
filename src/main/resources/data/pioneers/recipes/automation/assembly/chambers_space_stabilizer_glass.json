@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:space_stabilizer_casing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire_glass"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:space_stabilizer_glass",
+   "count": 1
+  }
+ ]
+}

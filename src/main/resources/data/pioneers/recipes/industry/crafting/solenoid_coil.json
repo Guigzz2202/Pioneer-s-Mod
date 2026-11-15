@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:nbti_cable"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/invar"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:solenoid_coil",
+  "count": 4
+ }
+}

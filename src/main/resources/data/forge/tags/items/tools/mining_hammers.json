@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:copper_mining_hammer",
+  "pioneers:iron_mining_hammer",
+  "pioneers:bronze_mining_hammer",
+  "pioneers:steel_mining_hammer",
+  "pioneers:hardened_steel_mining_hammer",
+  "pioneers:brass_mining_hammer",
+  "pioneers:titanium_mining_hammer",
+  "pioneers:stainless_steel_mining_hammer",
+  "pioneers:duralumin_mining_hammer",
+  "pioneers:gold_mining_hammer",
+  "pioneers:tungsten_carbide_mining_hammer",
+  "pioneers:vanadium_steel_mining_hammer",
+  "pioneers:stellite_mining_hammer",
+  "pioneers:osmiridium_mining_hammer",
+  "pioneers:titanium_aluminide_mining_hammer",
+  "pioneers:nitinol_mining_hammer"
+ ]
+}

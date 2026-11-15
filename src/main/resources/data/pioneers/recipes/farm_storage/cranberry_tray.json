@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cranberry"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:cranberry_tray",
+  "count": 1
+ }
+}

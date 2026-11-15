@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bell_pepper"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:bell_pepper_tray",
+  "count": 1
+ }
+}

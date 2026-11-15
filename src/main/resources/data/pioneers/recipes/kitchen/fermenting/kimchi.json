@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bok_choy"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dried_chili"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 6000,
+ "results": [
+  {
+   "item": "pioneers:kimchi",
+   "count": 3
+  }
+ ]
+}

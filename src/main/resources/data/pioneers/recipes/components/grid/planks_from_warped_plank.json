@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:warped_plank"
+  },
+  {
+   "item": "pioneers:warped_plank"
+  },
+  {
+   "item": "pioneers:warped_plank"
+  },
+  {
+   "item": "pioneers:warped_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:warped_planks",
+  "count": 1
+ }
+}

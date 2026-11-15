@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "minecraft:amethyst_shard"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:amethyst_dust",
+  "count": 1
+ }
+}

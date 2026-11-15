@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 0,
+ "time": 160,
+ "family": "crystal_puller",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:polysilicon"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/quartz"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silicon_boule",
+   "count": 1
+  }
+ ]
+}

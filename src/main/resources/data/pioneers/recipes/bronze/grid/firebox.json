@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "IPI",
+  "BFB",
+  "BBB"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:plates/iron"
+  },
+  "P": {
+   "tag": "forge:plates/copper"
+  },
+  "F": {
+   "item": "minecraft:furnace"
+  },
+  "B": {
+   "item": "pioneers:fire_brick"
+  }
+ },
+ "result": {
+  "item": "pioneers:firebox",
+  "count": 1
+ }
+}

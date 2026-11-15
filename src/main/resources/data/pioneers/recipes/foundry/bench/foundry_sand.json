@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "molder",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:zircon_sand"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:sand"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:foundry_sand",
+  "count": 4
+ }
+}

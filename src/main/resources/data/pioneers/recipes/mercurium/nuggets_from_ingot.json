@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/mercurium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:mercurium_nugget",
+  "count": 9
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_atom_08",
+ "display": {
+  "icon": {
+   "item": "pioneers:rocket_tier_1"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_atom_09.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_atom_09.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:rabbit"
+   },
+   "count": 1
+  }
+ ],
+ "time": 360,
+ "results": [
+  {
+   "item": "pioneers:roast_rabbit",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 225,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_crumble"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crumble",
+   "count": 1
+  }
+ ]
+}

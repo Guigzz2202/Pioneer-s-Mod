@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "a.........",
+  "...ACCA...",
+  "...ASUA...",
+  "...HHHH...",
+  ".........."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "C": {
+   "tag": "pioneers:circuits/elite"
+  },
+  "S": {
+   "item": "pioneers:surface_scanner"
+  },
+  "U": {
+   "tag": "forge:rods/tigrite"
+  },
+  "H": {
+   "item": "pioneers:plastic_sheet"
+  },
+  "a": {
+   "item": "pioneers:isotope_standard"
+  }
+ },
+ "result": {
+  "item": "pioneers:gas_scanner"
+ },
+ "energy": 30000000,
+ "duration": 400,
+ "research": "gas_harvesting"
+}

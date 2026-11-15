@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_screw"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_composite_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/chrome"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:machine_frame_elite",
+   "count": 2
+  }
+ ]
+}

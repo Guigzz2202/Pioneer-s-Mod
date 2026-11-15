@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:string"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:blank_notebook",
+  "count": 1
+ }
+}

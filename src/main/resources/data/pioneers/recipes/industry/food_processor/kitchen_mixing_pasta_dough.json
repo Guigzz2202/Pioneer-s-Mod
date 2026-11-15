@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 64,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pasta_dough",
+   "count": 2
+  }
+ ]
+}

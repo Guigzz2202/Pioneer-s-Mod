@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:warehouse_crate_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:treated_wood"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_bolt"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:warehouse_crate_hatch",
+   "count": 1
+  }
+ ]
+}

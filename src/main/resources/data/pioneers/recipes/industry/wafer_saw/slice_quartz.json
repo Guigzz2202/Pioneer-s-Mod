@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 0,
+ "time": 200,
+ "family": "wafer_saw",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:quartz_block"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:quartz",
+   "count": 4
+  },
+  {
+   "item": "pioneers:quartz_dust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

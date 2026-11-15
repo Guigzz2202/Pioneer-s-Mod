@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_titan_ice"
+ },
+ "result": "pioneers:polished_titan_ice_slab",
+ "count": 2
+}

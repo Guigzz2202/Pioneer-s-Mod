@@ -1,0 +1,108 @@
+{
+ "type": "pioneers:trappist_1e",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:trappist_1e",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:trappist_1e_slate_hills",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       0.4,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:trappist_1e_crimson_lakes",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       -0.45
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.4
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:trappist_1e_glowcap_forest",
+     "parameters": {
+      "temperature": [
+       0.0,
+       1.0
+      ],
+      "humidity": [
+       -0.45,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.4
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:trappist_1e_violet_meadows",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.0
+      ],
+      "humidity": [
+       -0.45,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.4
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

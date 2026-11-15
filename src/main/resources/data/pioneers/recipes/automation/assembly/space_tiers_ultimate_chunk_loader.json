@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_chunk_loader"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:upgrade_kit_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/niobium_titanium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_chunk_loader",
+   "count": 1
+  }
+ ]
+}

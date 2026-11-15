@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:titanium_aluminide_nugget",
+  "pioneers:titanium_aluminide_rod",
+  "pioneers:titanium_aluminide_ingot",
+  "pioneers:titanium_aluminide_plate",
+  "pioneers:titanium_aluminide_dust",
+  "pioneers:titanium_aluminide_block",
+  "pioneers:titanium_aluminide_billet"
+ ]
+}

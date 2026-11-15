@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tire"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_bearing"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/meteoritite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rover_wheel",
+   "count": 2
+  }
+ ]
+}

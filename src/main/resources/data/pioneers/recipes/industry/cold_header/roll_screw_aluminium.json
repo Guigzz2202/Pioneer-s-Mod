@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 1,
+ "time": 120,
+ "family": "cold_header",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_wire_rod"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 25
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_screw",
+   "count": 8
+  }
+ ]
+}

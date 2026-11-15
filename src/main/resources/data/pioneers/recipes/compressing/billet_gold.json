@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:slabs/gold"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:gold_billet",
+  "count": 1
+ }
+}

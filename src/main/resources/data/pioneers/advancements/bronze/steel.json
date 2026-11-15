@@ -1,0 +1,34 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:steel_ingot"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.steel.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.steel.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "steel"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:bronze/blast_formed",
+ "rewards": {
+  "experience": 300
+ }
+}

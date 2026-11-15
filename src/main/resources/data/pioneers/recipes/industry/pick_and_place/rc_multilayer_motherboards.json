@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:multilayer_pcb"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gold_plated_connector"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:niobium_capacitor"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:planar_inductor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mosfet"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:multilayer_motherboard",
+   "count": 2
+  }
+ ]
+}

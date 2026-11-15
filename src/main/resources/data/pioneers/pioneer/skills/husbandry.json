@@ -1,0 +1,17 @@
+{
+ "order": 6,
+ "icon": "pioneers:textures/gui/pioneer/skill/husbandry.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "husbandry.care_speed",
+   "value": 0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "husbandry.breed_delay",
+   "value": -0.2,
+   "unit": "pct"
+  }
+ ]
+}

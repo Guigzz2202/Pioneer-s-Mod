@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 1,
+ "time": 200,
+ "family": "wafer_saw",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:reclaimed_silicon"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silicon",
+   "count": 1
+  },
+  {
+   "item": "pioneers:silicon",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

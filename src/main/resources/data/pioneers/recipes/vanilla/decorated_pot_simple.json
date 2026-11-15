@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:brick"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:decorated_pot",
+  "count": 1
+ }
+}

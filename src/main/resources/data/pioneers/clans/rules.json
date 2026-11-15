@@ -1,0 +1,73 @@
+{
+ "charter": {
+  "cost": 1000,
+  "signers": 2,
+  "radius": 8,
+  "minutes": 10
+ },
+ "identity": {
+  "name_min": 3,
+  "name_max": 24,
+  "tag_min": 2,
+  "tag_max": 4,
+  "motto_max": 60,
+  "banned_words": [
+   "merde",
+   "putain",
+   "connard",
+   "connasse",
+   "salope",
+   "encule",
+   "enfoire",
+   "batard",
+   "pute",
+   "bordel",
+   "nique",
+   "fuck",
+   "shit",
+   "bitch",
+   "cunt",
+   "dick",
+   "pussy",
+   "asshole",
+   "bastard",
+   "whore",
+   "slut",
+   "nazi",
+   "hitler",
+   "admin",
+   "moderat",
+   "operator"
+  ]
+ },
+ "members": {
+  "invite_minutes": 10,
+  "rejoin_days": 3,
+  "absence_days": 30,
+  "dissolve_days": 7,
+  "active_days": 7,
+  "max_roles": 12
+ },
+ "vote": {
+  "hours": 24,
+  "quorum": 0.4,
+  "retry_hours": 24,
+  "history": 20,
+  "text_max": 100
+ },
+ "regime_change": {
+  "cost": 2000,
+  "delay_days": 7,
+  "cooldown_days": 30
+ },
+ "treasury": {
+  "spend_share": 0.25,
+  "market_tax_max": 15,
+  "market_radius": 32,
+  "alert_share": 0.5,
+  "alert_min": 5000
+ },
+ "clock": {
+  "max_jump_minutes": 60
+ }
+}

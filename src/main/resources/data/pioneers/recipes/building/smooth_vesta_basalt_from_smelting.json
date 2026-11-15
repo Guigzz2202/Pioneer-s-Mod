@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smelting",
+ "category": "blocks",
+ "ingredient": {
+  "item": "pioneers:vesta_basalt"
+ },
+ "result": "pioneers:smooth_vesta_basalt",
+ "experience": 0.1,
+ "cookingtime": 200
+}

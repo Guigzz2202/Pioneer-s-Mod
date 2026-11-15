@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  "..........",
+  "...MMMM...",
+  "..MAECAM..",
+  "...KKKK...",
+  "...W..W..."
+ ],
+ "key": {
+  "K": {
+   "item": "pioneers:robot_chassis"
+  },
+  "W": {
+   "item": "pioneers:track_tread"
+  },
+  "M": {
+   "tag": "forge:plates/sputnikite"
+  },
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "E": {
+   "item": "pioneers:ultimate_electric_motor"
+  }
+ },
+ "result": {
+  "item": "pioneers:turtle_mk4"
+ },
+ "energy": 32000000,
+ "duration": 600,
+ "research": "robotics"
+}

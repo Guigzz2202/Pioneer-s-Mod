@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:osmium_nugget"
+  },
+  {
+   "item": "pioneers:osmium_nugget"
+  },
+  {
+   "item": "pioneers:osmium_nugget"
+  },
+  {
+   "item": "pioneers:osmium_nugget"
+  },
+  {
+   "item": "pioneers:osmium_nugget"
+  },
+  {
+   "item": "pioneers:osmium_nugget"
+  },
+  {
+   "item": "pioneers:osmium_nugget"
+  },
+  {
+   "item": "pioneers:osmium_nugget"
+  },
+  {
+   "item": "pioneers:osmium_nugget"
+  }
+ ],
+ "result": {
+  "item": "pioneers:osmium_ingot",
+  "count": 1
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 300,
+ "family": "tank_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 16
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_dust"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:cyan_stained_glass",
+   "count": 16
+  }
+ ]
+}

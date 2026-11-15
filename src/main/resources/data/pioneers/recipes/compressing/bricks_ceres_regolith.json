@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:ceres_regolith"
+ },
+ "count": 4,
+ "result": {
+  "item": "pioneers:ceres_rock_bricks",
+  "count": 2
+ },
+ "binder": {
+  "item": "pioneers:quicklime"
+ },
+ "binder_count": 1
+}

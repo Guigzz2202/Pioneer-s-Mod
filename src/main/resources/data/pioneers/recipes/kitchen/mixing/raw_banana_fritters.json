@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:banana"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:batter"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:raw_banana_fritters",
+   "count": 2
+  }
+ ]
+}

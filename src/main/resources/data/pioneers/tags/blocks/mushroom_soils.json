@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:mushroom_substrate",
+  "minecraft:mycelium",
+  "minecraft:podzol"
+ ]
+}

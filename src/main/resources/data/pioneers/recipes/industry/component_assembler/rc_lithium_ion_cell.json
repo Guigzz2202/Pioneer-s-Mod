@@ -1,0 +1,57 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 240,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lithium_carbonate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/cobalt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:graphite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/aluminium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electrolyte"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fluorite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lithium_ion_cell",
+   "count": 4
+  }
+ ]
+}

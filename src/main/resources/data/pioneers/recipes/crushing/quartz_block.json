@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:quartz_block"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:quartz",
+  "count": 4
+ }
+}

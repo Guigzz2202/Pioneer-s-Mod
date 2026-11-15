@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 160,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 1000
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 500
+  }
+ ]
+}

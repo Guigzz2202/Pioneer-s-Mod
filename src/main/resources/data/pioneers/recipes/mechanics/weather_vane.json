@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "CNC",
+  " S ",
+  " S "
+ ],
+ "key": {
+  "C": {
+   "tag": "forge:plates/copper"
+  },
+  "N": {
+   "tag": "forge:nuggets/iron"
+  },
+  "S": {
+   "tag": "forge:rods/wooden"
+  }
+ },
+ "result": {
+  "item": "pioneers:weather_vane",
+  "count": 1
+ }
+}

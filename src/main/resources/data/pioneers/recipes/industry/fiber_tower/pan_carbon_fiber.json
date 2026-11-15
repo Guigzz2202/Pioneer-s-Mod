@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 2,
+ "time": 300,
+ "family": "fiber_tower",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:polymer_pellets"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:carbon_fiber",
+   "count": 3
+  }
+ ]
+}

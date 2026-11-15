@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/nickel"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cobalt_dust",
+   "count": 1,
+   "chance": 0.05
+  },
+  {
+   "item": "pioneers:pgm_concentrate",
+   "count": 1,
+   "chance": 0.1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nickel_carbonyl",
+   "amount": 100
+  }
+ ]
+}

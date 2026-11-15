@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:sheets/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:silicon"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:electrical_steel_sheet",
+   "count": 4
+  }
+ ]
+}

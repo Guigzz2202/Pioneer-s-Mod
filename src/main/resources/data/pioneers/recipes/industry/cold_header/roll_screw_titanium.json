@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 1,
+ "time": 180,
+ "family": "cold_header",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_wire_rod"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 25
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_screw",
+   "count": 8
+  }
+ ]
+}

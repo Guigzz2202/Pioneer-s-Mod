@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:apple"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:baked_apple",
+   "count": 1
+  }
+ ]
+}

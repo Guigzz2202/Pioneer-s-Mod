@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:venus",
+ "gravity": 0.9,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "acid",
+ "nitrogen": 1,
+ "temperature": 464
+}

@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rail_works",
+ "tier": 2,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_maglev_locomotive"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_electric_motor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_bearing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tharsium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_maglev_locomotive",
+   "count": 1
+  }
+ ]
+}

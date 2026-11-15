@@ -1,0 +1,14 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:salmon",
+  "pioneers:herring",
+  "pioneers:mackerel",
+  "pioneers:sardine",
+  "pioneers:anchovy",
+  "pioneers:tuna",
+  "pioneers:swordfish",
+  "pioneers:lanternfish",
+  "pioneers:oarfish"
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fire_brick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fire_clay"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/bronze"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:foundry_vat",
+   "count": 1
+  }
+ ]
+}

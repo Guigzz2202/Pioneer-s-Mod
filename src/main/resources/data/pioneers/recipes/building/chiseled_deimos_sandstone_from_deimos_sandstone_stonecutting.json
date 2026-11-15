@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:deimos_sandstone"
+ },
+ "result": "pioneers:chiseled_deimos_sandstone",
+ "count": 1
+}

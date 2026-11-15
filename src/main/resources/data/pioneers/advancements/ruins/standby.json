@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:perimeter_console_mk1"
+  },
+  "title": {
+   "translate": "advancements.pioneers.ruins.standby.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.ruins.standby.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "ruin_standby"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:ruins/root"
+}

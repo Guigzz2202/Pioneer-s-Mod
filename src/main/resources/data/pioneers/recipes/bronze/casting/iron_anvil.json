@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:casting",
+ "mold": "pioneers:anvil_mold",
+ "metal": "iron",
+ "amount": 1440,
+ "cool": 400,
+ "result": {
+  "item": "pioneers:iron_anvil",
+  "count": 1
+ }
+}

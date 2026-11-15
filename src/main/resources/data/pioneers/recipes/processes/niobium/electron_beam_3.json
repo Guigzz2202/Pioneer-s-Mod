@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 3,
+ "time": 360,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pyrochlore_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tailings",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:niobium_fluoride_solution",
+   "amount": 1500
+  }
+ ],
+ "temperature": 180
+}

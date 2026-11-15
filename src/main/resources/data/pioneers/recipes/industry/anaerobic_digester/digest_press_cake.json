@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 600,
+ "family": "anaerobic_digester",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:press_cake"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fertilizer",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:digestate",
+   "amount": 300
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:biogas",
+   "amount": 600
+  }
+ ]
+}

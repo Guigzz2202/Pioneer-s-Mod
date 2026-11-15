@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "results": [
+  {
+   "item": "pioneers:caramel",
+   "count": 2
+  }
+ ]
+}

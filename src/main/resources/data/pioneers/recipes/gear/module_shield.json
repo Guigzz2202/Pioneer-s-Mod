@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:electrolytic_capacitor"
+  },
+  {
+   "item": "pioneers:electrolytic_capacitor"
+  },
+  {
+   "item": "pioneers:copper_coil"
+  },
+  {
+   "item": "pioneers:copper_coil"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_shield",
+  "count": 1
+ }
+}

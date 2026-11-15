@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "family": "catalytic_reactor",
+ "gases": [
+  {
+   "gas": "pioneers:natural_gas",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 2000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:carbon_tetrachloride",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 2000
+  }
+ ]
+}

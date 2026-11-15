@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:moon",
+ "gravity": 0.17,
+ "breathable": false,
+ "suit_tier": 1,
+ "hazard": "vacuum",
+ "nitrogen": 0,
+ "temperature": -20
+}

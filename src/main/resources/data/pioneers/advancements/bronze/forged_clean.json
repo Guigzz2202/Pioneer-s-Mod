@@ -1,0 +1,34 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:iron_anvil"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.forged_clean.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.forged_clean.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "smith_clean"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:bronze/forged",
+ "rewards": {
+  "experience": 300
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iodine"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:methanol",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iodine",
+   "count": 1,
+   "chance": 0.9
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:acetic_acid",
+   "amount": 500
+  }
+ ]
+}

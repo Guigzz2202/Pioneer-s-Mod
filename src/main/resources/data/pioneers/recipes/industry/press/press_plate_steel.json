@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plate_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:plate_die",
+   "count": 1
+  }
+ ]
+}

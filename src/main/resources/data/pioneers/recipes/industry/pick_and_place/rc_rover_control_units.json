@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 2,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:robot_core"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:parabolic_antenna"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:inertial_measurement_unit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:camera_module"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rover_control_unit",
+   "count": 2
+  }
+ ]
+}

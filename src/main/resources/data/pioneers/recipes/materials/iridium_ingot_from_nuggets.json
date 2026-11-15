@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/iridium"
+  },
+  {
+   "tag": "forge:nuggets/iridium"
+  },
+  {
+   "tag": "forge:nuggets/iridium"
+  },
+  {
+   "tag": "forge:nuggets/iridium"
+  },
+  {
+   "tag": "forge:nuggets/iridium"
+  },
+  {
+   "tag": "forge:nuggets/iridium"
+  },
+  {
+   "tag": "forge:nuggets/iridium"
+  },
+  {
+   "tag": "forge:nuggets/iridium"
+  },
+  {
+   "tag": "forge:nuggets/iridium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:iridium_ingot",
+  "count": 1
+ }
+}

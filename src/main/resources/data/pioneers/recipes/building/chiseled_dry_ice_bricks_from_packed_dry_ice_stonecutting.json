@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_dry_ice"
+ },
+ "result": "pioneers:chiseled_dry_ice_bricks",
+ "count": 1
+}

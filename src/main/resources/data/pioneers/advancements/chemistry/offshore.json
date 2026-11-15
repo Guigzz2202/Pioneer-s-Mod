@@ -1,0 +1,34 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:offshore_platform"
+  },
+  "title": {
+   "translate": "advancements.pioneers.chemistry.offshore.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.chemistry.offshore.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_offshore_platform"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:chemistry/derrick",
+ "rewards": {
+  "experience": 500
+ }
+}

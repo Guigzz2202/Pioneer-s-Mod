@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:tungsten_plate"
+  },
+  {
+   "item": "pioneers:tungsten_plate"
+  },
+  {
+   "item": "pioneers:fiberglass_sheet"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_thermal",
+  "count": 1
+ }
+}

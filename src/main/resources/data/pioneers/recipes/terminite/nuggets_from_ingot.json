@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/terminite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:terminite_nugget",
+  "count": 9
+ }
+}

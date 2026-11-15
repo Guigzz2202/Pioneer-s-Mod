@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:relay"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:backplane"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:power_supply_unit"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:relay_cabinet",
+  "count": 1
+ }
+}

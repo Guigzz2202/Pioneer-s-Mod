@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:tin_ingot",
+  "pioneers:tin_ring",
+  "pioneers:tin_spring",
+  "pioneers:tin_dust",
+  "pioneers:tin_block",
+  "pioneers:tin_gear",
+  "pioneers:tin_plate",
+  "pioneers:tin_rod",
+  "pioneers:crushed_tin",
+  "pioneers:raw_tin_block",
+  "pioneers:raw_tin",
+  "pioneers:tin_nugget",
+  "pioneers:tin_sheet",
+  "pioneers:tin_slab",
+  "pioneers:tin_billet",
+  "pioneers:tin_gear_blank"
+ ]
+}

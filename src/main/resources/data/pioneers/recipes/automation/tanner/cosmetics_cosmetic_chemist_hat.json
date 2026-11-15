@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rubber_sheet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:glass_lens"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_chemist_hat",
+   "count": 1
+  }
+ ]
+}

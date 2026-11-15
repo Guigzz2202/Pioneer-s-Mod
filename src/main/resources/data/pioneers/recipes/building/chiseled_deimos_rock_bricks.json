@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#",
+  "#"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:deimos_rock_brick_slab"
+  }
+ },
+ "result": {
+  "item": "pioneers:chiseled_deimos_rock_bricks",
+  "count": 1
+ }
+}

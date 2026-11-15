@@ -1,0 +1,66 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:coelacanth"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm.legendary.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm.legendary.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:coelacanth"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:oarfish"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:arapaima"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ ],
+ "parent": "pioneers:farm/fish",
+ "rewards": {
+  "experience": 300
+ }
+}

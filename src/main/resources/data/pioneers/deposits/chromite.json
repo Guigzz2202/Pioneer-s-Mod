@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:chromite",
+ "material": "chromite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#6E6460",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 5
+  },
+  {
+   "biomes": "#forge:is_dry",
+   "weight": 4
+  }
+ ]
+}

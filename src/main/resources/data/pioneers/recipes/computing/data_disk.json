@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " P ",
+  "PIP",
+  " P "
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:plastic_sheet"
+  },
+  "I": {
+   "tag": "forge:dusts/iron"
+  }
+ },
+ "result": {
+  "item": "pioneers:data_disk",
+  "count": 2
+ }
+}

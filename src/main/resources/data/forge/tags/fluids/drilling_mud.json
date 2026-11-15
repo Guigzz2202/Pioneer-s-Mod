@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:drilling_mud",
+  "pioneers:flowing_drilling_mud"
+ ]
+}

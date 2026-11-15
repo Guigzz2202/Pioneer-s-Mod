@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "CCC",
+  "LPL",
+  "CCC"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:basic_logistic_cable"
+  },
+  "L": {
+   "item": "pioneers:ptfe_sheet"
+  },
+  "P": {
+   "tag": "forge:pipes/stainless_steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:advanced_logistic_cable",
+  "count": 6
+ }
+}

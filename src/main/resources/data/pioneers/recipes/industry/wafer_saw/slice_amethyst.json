@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 0,
+ "time": 200,
+ "family": "wafer_saw",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:amethyst_block"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:amethyst_shard",
+   "count": 4
+  },
+  {
+   "item": "pioneers:amethyst_dust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

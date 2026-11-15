@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:rubber_sheet"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_nuclear_scientist_shoes",
+  "count": 1
+ }
+}

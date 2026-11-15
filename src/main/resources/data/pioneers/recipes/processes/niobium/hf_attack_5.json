@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "roaster",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:niobium_hydroxide"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:niobium_pentoxide",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 200
+  }
+ ],
+ "temperature": 900
+}

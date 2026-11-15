@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:rosin"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sawdust"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hemp_fiber"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:primitive_plastic_mix",
+  "count": 3
+ }
+}

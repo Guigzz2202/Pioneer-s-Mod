@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:distilling",
+ "fluid": {
+  "fluid": "pioneers:wine",
+  "amount": 1000
+ },
+ "time": 800,
+ "fluid_result": {
+  "fluid": "pioneers:brandy",
+  "amount": 250
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 48,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/leafy_greens"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:banana"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:apple"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bottle"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "tag": "forge:milk",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:green_smoothie",
+   "count": 1
+  }
+ ]
+}

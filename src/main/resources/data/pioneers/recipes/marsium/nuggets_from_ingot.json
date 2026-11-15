@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/marsium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:marsium_nugget",
+  "count": 9
+ }
+}

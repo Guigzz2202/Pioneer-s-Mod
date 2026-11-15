@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/copper"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cooking_pot",
+  "count": 1
+ }
+}

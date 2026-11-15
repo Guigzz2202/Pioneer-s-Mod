@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "synthesizer",
+ "tier": 3,
+ "time": 2400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:compacted_saturn"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:empty_simulated_saturn",
+   "count": 1
+  }
+ ],
+ "data": [
+  {
+   "type": "pioneers:saturnian",
+   "amount": 6000000
+  },
+  {
+   "type": "pioneers:sidereal",
+   "amount": 2000000
+  }
+ ],
+ "energy": 100000000
+}

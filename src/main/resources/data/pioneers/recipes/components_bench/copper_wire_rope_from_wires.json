@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:copper_wire_rope",
+  "count": 1
+ }
+}

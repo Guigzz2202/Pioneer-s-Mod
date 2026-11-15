@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_proxima_d_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_proxima_d_rock_slab",
+  "count": 6
+ }
+}

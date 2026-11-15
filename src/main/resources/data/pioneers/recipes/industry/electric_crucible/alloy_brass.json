@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/copper"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/zinc"
+   },
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_brass",
+   "amount": 576
+  }
+ ]
+}

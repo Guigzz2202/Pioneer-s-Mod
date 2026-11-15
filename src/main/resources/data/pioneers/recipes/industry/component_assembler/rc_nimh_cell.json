@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:foils/nickel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rare_earth_oxide"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electrolyte"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plastic_sheet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nimh_cell",
+   "count": 4
+  }
+ ]
+}

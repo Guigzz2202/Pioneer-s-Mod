@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:firebox_advanced",
+    "pioneers:firebox_basic",
+    "pioneers:firebox_elite",
+    "pioneers:firebox_ultimate"
+  ]
+}

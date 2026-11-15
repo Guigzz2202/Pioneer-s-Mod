@@ -1,0 +1,40 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:basic_fermenter"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.co2.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.co2.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_hydroponic_farm"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_fermenter"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:agri/hydroponics"
+}

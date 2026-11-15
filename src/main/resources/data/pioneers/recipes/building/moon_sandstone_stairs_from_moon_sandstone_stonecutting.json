@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:moon_sandstone"
+ },
+ "result": "pioneers:moon_sandstone_stairs",
+ "count": 1
+}

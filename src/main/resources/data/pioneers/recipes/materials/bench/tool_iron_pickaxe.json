@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_pickaxe_head"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:bindings"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_pickaxe",
+  "count": 1
+ }
+}

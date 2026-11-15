@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "mixer",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:stone_bricks"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:moss_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:mossy_stone_bricks",
+  "count": 1
+ },
+ "time": 80
+}

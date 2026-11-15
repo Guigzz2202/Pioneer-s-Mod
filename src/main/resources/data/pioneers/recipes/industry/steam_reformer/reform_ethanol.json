@@ -1,0 +1,47 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "family": "steam_reformer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nickel_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_catalyst",
+   "count": 1,
+   "chance": 0.99
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 2400
+  },
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 700
+  }
+ ],
+ "industrial": true,
+ "pressure": 4,
+ "air": 150
+}

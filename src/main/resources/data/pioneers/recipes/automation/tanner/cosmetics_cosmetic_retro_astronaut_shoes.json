@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rubber_sheet"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_foil"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_retro_astronaut_shoes",
+   "count": 1
+  }
+ ]
+}

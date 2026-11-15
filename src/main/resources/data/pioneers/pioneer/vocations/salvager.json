@@ -1,0 +1,34 @@
+{
+ "order": 7,
+ "affinities": [
+  "salvage",
+  "restoration"
+ ],
+ "feature": "",
+ "emblem": "pioneers:textures/gui/pioneer/vocation/salvager.png",
+ "advantage": {
+  "trait": "ragpicker_eye",
+  "modifiers": [
+   {
+    "key": "salvager.glow",
+    "value": 24.0,
+    "unit": "abs"
+   },
+   {
+    "key": "salvager.extra_draws",
+    "value": 0.25,
+    "unit": "pct"
+   }
+  ]
+ },
+ "defect": {
+  "trait": "fragile_lungs",
+  "modifiers": [
+   {
+    "key": "salvager.exposure",
+    "value": 0.15,
+    "unit": "pct"
+   }
+  ]
+ }
+}

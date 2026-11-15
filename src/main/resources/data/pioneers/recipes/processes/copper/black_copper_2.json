@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "roaster",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:crushed_ores/copper"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_calcine",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 300
+  }
+ ],
+ "temperature": 700
+}

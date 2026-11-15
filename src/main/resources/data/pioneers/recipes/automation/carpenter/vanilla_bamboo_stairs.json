@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bamboo_planks"
+   },
+   "count": 6
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:bamboo_stairs",
+   "count": 4
+  }
+ ]
+}

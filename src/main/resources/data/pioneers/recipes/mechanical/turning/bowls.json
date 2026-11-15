@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:turning",
+ "input": {
+  "tag": "minecraft:wooden_slabs"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:bowl",
+   "count": 2
+  }
+ ]
+}

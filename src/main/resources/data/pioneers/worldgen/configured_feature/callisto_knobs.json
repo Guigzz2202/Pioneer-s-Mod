@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:callisto_rock"
+  },
+  "tip": {
+   "Name": "pioneers:callisto_ice"
+  },
+  "min_height": 5,
+  "max_height": 12,
+  "radius": 2,
+  "elongation": 1.0
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/cooked_shellfish"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mayonnaise"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:seafood_platter",
+   "count": 1
+  }
+ ]
+}

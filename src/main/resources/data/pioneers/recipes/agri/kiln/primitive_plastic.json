@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:primitive_plastic_mix"
+ },
+ "temperature": 160,
+ "time": 240,
+ "result": {
+  "item": "pioneers:primitive_plastic",
+  "count": 1
+ }
+}

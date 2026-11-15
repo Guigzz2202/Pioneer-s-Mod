@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/babbitt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/bronze"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:plain_bearing",
+   "count": 4
+  }
+ ]
+}

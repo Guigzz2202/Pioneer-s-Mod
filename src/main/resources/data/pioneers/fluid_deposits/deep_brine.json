@@ -1,0 +1,23 @@
+{
+ "category": "brine",
+ "fluid": "pioneers:brine",
+ "reserve": [
+  4000000,
+  12000000
+ ],
+ "rate": 60,
+ "biomes": [
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 5
+  },
+  {
+   "biomes": "#minecraft:is_beach",
+   "weight": 6
+  },
+  {
+   "biomes": "#minecraft:is_ocean",
+   "weight": 3
+  }
+ ]
+}

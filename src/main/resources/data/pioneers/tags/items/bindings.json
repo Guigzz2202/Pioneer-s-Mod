@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:plant_fiber",
+  "minecraft:string",
+  "minecraft:leather",
+  "pioneers:cotton_thread"
+ ]
+}

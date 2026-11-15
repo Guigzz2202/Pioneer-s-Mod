@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:string"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:hive_frame",
+  "count": 4
+ }
+}

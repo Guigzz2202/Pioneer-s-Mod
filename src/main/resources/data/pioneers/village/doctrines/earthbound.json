@@ -1,0 +1,142 @@
+{
+ "id": "earthbound",
+ "version": "rural",
+ "max_age": 1,
+ "workshop_max_age": null,
+ "accept_families": [
+  "crop",
+  "grain",
+  "vegetable",
+  "fruit",
+  "berry",
+  "seed",
+  "seed_rare",
+  "sapling",
+  "fertilizer",
+  "plant",
+  "flower",
+  "mushroom",
+  "herb",
+  "straw",
+  "fodder",
+  "meat_raw",
+  "meat_cooked",
+  "meat_cured",
+  "fish",
+  "fish_cooked",
+  "seafood",
+  "egg",
+  "milk",
+  "dairy",
+  "fat",
+  "honey",
+  "wax",
+  "wool",
+  "string",
+  "cloth",
+  "leather",
+  "hide",
+  "tannin",
+  "feather",
+  "bone",
+  "bait",
+  "salt",
+  "food",
+  "drink",
+  "tea",
+  "dye",
+  "wood",
+  "plank",
+  "stick",
+  "tool_wood",
+  "tool_stone",
+  "tool_bone",
+  "weapon_wood",
+  "weapon_stone",
+  "flint",
+  "dirt",
+  "arrow",
+  "bow",
+  "fishing_rod"
+ ],
+ "refuse_families": [
+  "component",
+  "machine",
+  "scrap",
+  "metal_worked",
+  "tool_metal",
+  "weapon_metal",
+  "armor",
+  "ingot",
+  "nugget",
+  "ore",
+  "gem",
+  "logistics",
+  "vehicle",
+  "equipment",
+  "electronics",
+  "nuclear",
+  "space",
+  "cosmic",
+  "chemical",
+  "fuel",
+  "potion",
+  "paper",
+  "book",
+  "map",
+  "compass",
+  "manual",
+  "glass",
+  "coal",
+  "dust"
+ ],
+ "buy_bonus": [],
+ "scraps": [],
+ "exclusive": [
+  {
+   "item": "pioneers:pineapple_seeds",
+   "count": 4
+  },
+  {
+   "item": "pioneers:melon_seeds",
+   "count": 4
+  },
+  {
+   "item": "pioneers:pumpkin_seeds",
+   "count": 4
+  },
+  {
+   "item": "pioneers:starfruit_seeds",
+   "count": 4
+  },
+  {
+   "item": "pioneers:compost",
+   "count": 8
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 8
+  },
+  {
+   "item": "pioneers:stone_hammer",
+   "count": 1
+  },
+  {
+   "item": "pioneers:stone_mortar",
+   "count": 1
+  },
+  {
+   "item": "pioneers:flint_knife",
+   "count": 1
+  },
+  {
+   "item": "pioneers:flint_shovel",
+   "count": 1
+  }
+ ],
+ "workers": false,
+ "notebook_affinity": 0,
+ "librarian_notebook_affinity": 0,
+ "caravan_factor": 1,
+ "guaranteed": []
+}

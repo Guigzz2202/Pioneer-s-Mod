@@ -1,0 +1,23 @@
+{
+ "category": "gas",
+ "gas": "pioneers:natural_gas",
+ "reserve": [
+  16000000,
+  64000000
+ ],
+ "rate": 120,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_deep_ocean",
+   "weight": 8
+  },
+  {
+   "biomes": "#minecraft:is_ocean",
+   "weight": 4
+  },
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 4
+  }
+ ]
+}

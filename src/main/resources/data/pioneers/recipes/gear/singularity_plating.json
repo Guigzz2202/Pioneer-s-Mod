@@ -1,0 +1,33 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "NEN",
+  "QBQ",
+  "TNP"
+ ],
+ "key": {
+  "N": {
+   "item": "pioneers:neutronium_plate"
+  },
+  "Q": {
+   "item": "pioneers:quasar_crystal"
+  },
+  "E": {
+   "item": "pioneers:edenite_plate"
+  },
+  "B": {
+   "item": "pioneers:borealite_plate"
+  },
+  "T": {
+   "item": "pioneers:thalassite_plate"
+  },
+  "P": {
+   "item": "pioneers:pyrrhite_plate"
+  }
+ },
+ "result": {
+  "item": "pioneers:singularity_plating",
+  "count": 2
+ }
+}

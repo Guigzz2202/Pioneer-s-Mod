@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PCP",
+  "GXG",
+  "III"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/bronze"
+  },
+  "C": {
+   "item": "pioneers:bronze_logistic_cable"
+  },
+  "G": {
+   "tag": "forge:gears/bronze"
+  },
+  "X": {
+   "tag": "forge:rods/iron"
+  },
+  "I": {
+   "tag": "forge:plates/iron"
+  }
+ },
+ "result": {
+  "item": "pioneers:steam_rolling_mill",
+  "count": 1
+ }
+}

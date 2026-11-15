@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:storage_blocks/edenite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:edenite_ingot",
+  "count": 9
+ }
+}

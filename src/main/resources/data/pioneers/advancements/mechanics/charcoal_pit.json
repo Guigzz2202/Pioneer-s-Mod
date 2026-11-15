@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:charcoal"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.charcoal_pit.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.charcoal_pit.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "charcoal_pit"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:mechanics/root"
+}

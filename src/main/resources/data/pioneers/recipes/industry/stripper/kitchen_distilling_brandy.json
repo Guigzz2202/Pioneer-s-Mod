@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "family": "stripper",
+ "tier": 0,
+ "time": 400,
+ "fluids": [
+  {
+   "fluid": "pioneers:wine",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:brandy",
+   "amount": 250
+  }
+ ]
+}

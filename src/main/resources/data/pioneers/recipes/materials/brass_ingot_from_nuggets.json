@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/brass"
+  },
+  {
+   "tag": "forge:nuggets/brass"
+  },
+  {
+   "tag": "forge:nuggets/brass"
+  },
+  {
+   "tag": "forge:nuggets/brass"
+  },
+  {
+   "tag": "forge:nuggets/brass"
+  },
+  {
+   "tag": "forge:nuggets/brass"
+  },
+  {
+   "tag": "forge:nuggets/brass"
+  },
+  {
+   "tag": "forge:nuggets/brass"
+  },
+  {
+   "tag": "forge:nuggets/brass"
+  }
+ ],
+ "result": {
+  "item": "pioneers:brass_ingot",
+  "count": 1
+ }
+}

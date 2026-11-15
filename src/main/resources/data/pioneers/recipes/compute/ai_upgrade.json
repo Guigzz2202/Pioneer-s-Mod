@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "CSC",
+  "BNB",
+  "CRC"
+ ],
+ "key": {
+  "S": {
+   "item": "pioneers:robotic_upgrade_speed"
+  },
+  "B": {
+   "item": "pioneers:robotic_upgrade_battery"
+  },
+  "N": {
+   "item": "pioneers:ai_model_neural"
+  },
+  "C": {
+   "tag": "pioneers:circuits/elite"
+  },
+  "R": {
+   "item": "pioneers:ram_module"
+  }
+ },
+ "result": {
+  "item": "pioneers:ai_upgrade"
+ }
+}

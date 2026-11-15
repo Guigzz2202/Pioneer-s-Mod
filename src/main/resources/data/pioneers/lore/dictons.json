@@ -1,0 +1,26 @@
+{
+ "restorers": [
+  "dicton.pioneers.restorers.0",
+  "dicton.pioneers.restorers.1",
+  "dicton.pioneers.restorers.2",
+  "dicton.pioneers.restorers.3",
+  "dicton.pioneers.restorers.4",
+  "dicton.pioneers.restorers.5"
+ ],
+ "bare_hands": [
+  "dicton.pioneers.bare_hands.0",
+  "dicton.pioneers.bare_hands.1",
+  "dicton.pioneers.bare_hands.2",
+  "dicton.pioneers.bare_hands.3",
+  "dicton.pioneers.bare_hands.4",
+  "dicton.pioneers.bare_hands.5"
+ ],
+ "peddlers": [
+  "dicton.pioneers.peddlers.0",
+  "dicton.pioneers.peddlers.1",
+  "dicton.pioneers.peddlers.2",
+  "dicton.pioneers.peddlers.3",
+  "dicton.pioneers.peddlers.4",
+  "dicton.pioneers.peddlers.5"
+ ]
+}

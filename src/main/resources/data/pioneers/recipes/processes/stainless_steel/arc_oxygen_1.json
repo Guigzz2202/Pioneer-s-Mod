@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "arc_furnace",
+ "tier": 1,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_scrap"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferrochrome"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferronickel"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crude_stainless",
+   "count": 7
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 200
+  }
+ ],
+ "temperature": 1650
+}

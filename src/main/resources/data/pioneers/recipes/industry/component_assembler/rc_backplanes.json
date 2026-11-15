@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:etched_board"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_connector"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:backplane",
+   "count": 2
+  }
+ ]
+}

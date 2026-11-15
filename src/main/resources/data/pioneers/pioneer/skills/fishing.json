@@ -1,0 +1,17 @@
+{
+ "order": 7,
+ "icon": "pioneers:textures/gui/pioneer/skill/fishing.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "fishing.bite_delay",
+   "value": -0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "fishing.reel_speed",
+   "value": 0.2,
+   "unit": "pct"
+  }
+ ]
+}

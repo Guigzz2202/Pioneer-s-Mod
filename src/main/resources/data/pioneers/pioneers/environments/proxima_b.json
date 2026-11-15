@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:proxima_b",
+ "gravity": 1.1,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "radiation",
+ "nitrogen": 2,
+ "temperature": -12
+}

@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "blast_furnace",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pig_iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crude_steel",
+   "count": 4
+  },
+  {
+   "item": "pioneers:vanadium_slag",
+   "count": 1,
+   "chance": 0.2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 400
+  }
+ ],
+ "industrial": true,
+ "temperature": 1650
+}

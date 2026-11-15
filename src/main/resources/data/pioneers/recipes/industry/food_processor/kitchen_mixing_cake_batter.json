@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "tag": "forge:milk",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cake_batter",
+   "count": 1
+  }
+ ]
+}

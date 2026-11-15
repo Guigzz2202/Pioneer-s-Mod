@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/titanium_aluminide"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_aluminide_hoe_head",
+   "count": 1
+  }
+ ]
+}

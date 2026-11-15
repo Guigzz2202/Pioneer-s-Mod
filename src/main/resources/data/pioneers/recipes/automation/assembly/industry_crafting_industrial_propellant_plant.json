@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_propellant_plant"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_screw"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_exchanger"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:compressor_unit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:industrial_propellant_plant",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "reduction_furnace",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lead_zinc_sinter"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_bullion",
+   "count": 1
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:zinc_vapor",
+   "amount": 144
+  }
+ ],
+ "temperature": 1100
+}

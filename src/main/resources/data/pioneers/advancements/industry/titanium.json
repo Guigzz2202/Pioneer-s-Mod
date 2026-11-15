@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:kroll_reactor"
+  },
+  "title": {
+   "translate": "advancements.pioneers.industry.titanium.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.industry.titanium.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_kroll_reactor"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:industry/aluminium"
+}

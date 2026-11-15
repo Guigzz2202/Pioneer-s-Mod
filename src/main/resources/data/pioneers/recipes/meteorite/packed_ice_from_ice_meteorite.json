@@ -1,0 +1,12 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "building",
+ "ingredients": [
+  {
+   "item": "pioneers:ice_meteorite"
+  }
+ ],
+ "result": {
+  "item": "minecraft:packed_ice"
+ }
+}

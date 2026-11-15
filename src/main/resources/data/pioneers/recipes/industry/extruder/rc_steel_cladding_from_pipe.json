@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 1,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:pipes/stainless_steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tube_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_cladding_tube",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tube_die",
+   "count": 1
+  }
+ ]
+}

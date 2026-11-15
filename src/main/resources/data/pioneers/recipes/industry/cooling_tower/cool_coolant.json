@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cooling_tower",
+ "tier": 0,
+ "time": 20,
+ "fluids": [
+  {
+   "fluid": "pioneers:hot_coolant",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:coolant",
+   "amount": 1000
+  }
+ ]
+}

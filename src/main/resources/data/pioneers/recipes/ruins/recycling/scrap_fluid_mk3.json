@@ -1,0 +1,85 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "recycler",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:scrap_fluid_mk3"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_dust",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "draws": {
+  "rolls": [
+   2,
+   3
+  ],
+  "pool": [
+   {
+    "item": "pioneers:stainless_steel_fitting",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:metal_gasket",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:titanium_valve",
+    "weight": 6,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:elite_centrifugal_pump",
+    "weight": 1,
+    "count": [
+     1,
+     1
+    ]
+   },
+   {
+    "item": "pioneers:hepa_filter",
+    "weight": 6,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:composite_tank",
+    "weight": 4,
+    "count": [
+     1,
+     2
+    ]
+   },
+   {
+    "item": "pioneers:turbopump",
+    "weight": 2,
+    "count": [
+     1,
+     1
+    ]
+   }
+  ]
+ }
+}

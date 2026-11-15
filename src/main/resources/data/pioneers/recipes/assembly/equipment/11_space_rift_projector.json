@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...TEET...",
+  "..PCVVCP..",
+  "...TXXT...",
+  ".........."
+ ],
+ "key": {
+  "T": {
+   "tag": "forge:plates/thalassite"
+  },
+  "E": {
+   "item": "minecraft:end_crystal"
+  },
+  "P": {
+   "tag": "forge:rods/pyrrhite"
+  },
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "V": {
+   "item": "pioneers:void_singularity_cell"
+  },
+  "X": {
+   "item": "pioneers:space_simulator_casing"
+  }
+ },
+ "result": {
+  "item": "pioneers:space_rift_projector"
+ },
+ "energy": 500000000,
+ "duration": 1200,
+ "research": "solar_simulation"
+}

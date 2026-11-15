@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:trappist_1d_rock"
+ },
+ "result": "pioneers:polished_trappist_1d_rock",
+ "count": 1
+}

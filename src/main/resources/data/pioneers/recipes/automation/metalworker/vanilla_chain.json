@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bender",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rings/iron"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:chain",
+   "count": 2
+  }
+ ]
+}

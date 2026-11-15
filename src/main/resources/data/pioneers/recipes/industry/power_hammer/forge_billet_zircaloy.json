@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 1,
+ "time": 360,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/zircaloy"
+   },
+   "count": 9
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zircaloy_billet",
+   "count": 1
+  }
+ ]
+}

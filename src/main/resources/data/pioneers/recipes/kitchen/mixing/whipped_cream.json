@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 10,
+ "results": [
+  {
+   "item": "pioneers:whipped_cream",
+   "count": 2
+  }
+ ]
+}

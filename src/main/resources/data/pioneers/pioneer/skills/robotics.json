@@ -1,0 +1,17 @@
+{
+ "order": 4,
+ "icon": "pioneers:textures/gui/pioneer/skill/robotics.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "robotics.remote_range",
+   "value": 0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "robotics.programmer_slots",
+   "value": 0.2,
+   "unit": "pct"
+  }
+ ]
+}

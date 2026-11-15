@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:stellite_nugget",
+  "pioneers:stellite_rod",
+  "pioneers:stellite_gear",
+  "pioneers:stellite_plate",
+  "pioneers:stellite_ingot",
+  "pioneers:stellite_dust",
+  "pioneers:stellite_block",
+  "pioneers:stellite_billet"
+ ]
+}

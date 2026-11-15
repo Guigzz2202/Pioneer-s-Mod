@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:glass_engraving_objective",
+  "pioneers:uv_engraving_objective",
+  "pioneers:euv_engraving_objective"
+ ]
+}

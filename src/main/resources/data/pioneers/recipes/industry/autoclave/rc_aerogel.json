@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/quartz"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 250
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aerogel",
+   "count": 4
+  }
+ ]
+}

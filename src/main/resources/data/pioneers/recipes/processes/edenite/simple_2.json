@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "reduction_furnace",
+ "tier": 3,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:edenite_dust"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:edenite_ingot",
+   "count": 1
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "temperature": 1200
+}

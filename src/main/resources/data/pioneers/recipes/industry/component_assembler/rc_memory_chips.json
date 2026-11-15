@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:etched_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dip_package"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/gold"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:memory_chip",
+   "count": 8
+  }
+ ]
+}

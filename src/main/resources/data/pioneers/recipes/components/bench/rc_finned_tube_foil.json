@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:pipes/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/copper"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:finned_tube",
+  "count": 2
+ }
+}

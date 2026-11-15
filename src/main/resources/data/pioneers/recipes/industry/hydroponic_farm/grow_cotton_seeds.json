@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cotton_seeds"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cotton",
+   "count": 2
+  },
+  {
+   "item": "pioneers:cotton_seeds",
+   "count": 1
+  },
+  {
+   "item": "pioneers:cotton_seeds",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

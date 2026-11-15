@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "solvent_extractor",
+ "tier": 1,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:copper_leach_liquor",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 50
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:copper_loaded_organic",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:acid_raffinate",
+   "amount": 800
+  }
+ ]
+}

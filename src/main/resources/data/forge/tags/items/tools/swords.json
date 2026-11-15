@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:copper_sword",
+  "pioneers:bronze_sword",
+  "pioneers:steel_sword",
+  "pioneers:iron_sword",
+  "pioneers:hardened_steel_sword",
+  "pioneers:brass_sword",
+  "pioneers:titanium_sword",
+  "pioneers:stainless_steel_sword",
+  "pioneers:duralumin_sword",
+  "pioneers:tungsten_carbide_sword",
+  "pioneers:vanadium_steel_sword",
+  "pioneers:stellite_sword",
+  "pioneers:osmiridium_sword",
+  "pioneers:titanium_aluminide_sword",
+  "pioneers:nitinol_sword",
+  "pioneers:gold_sword"
+ ]
+}

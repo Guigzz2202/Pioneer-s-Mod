@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 200,
+ "family": "electrorefiner",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:copper_scrap_bale"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:copper_sulfate",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_ingot",
+   "count": 1,
+   "chance": 0.95
+  },
+  {
+   "item": "pioneers:anode_slime",
+   "count": 1,
+   "chance": 0.05
+  }
+ ],
+ "pure": true
+}

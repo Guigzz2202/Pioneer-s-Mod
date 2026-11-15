@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 3,
+ "time": 10,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ingot_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_cobalt",
+   "amount": 152
+  },
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 10
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cobalt_ingot",
+   "count": 1
+  },
+  {
+   "item": "pioneers:ingot_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:cobalt_nugget",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 76
+  }
+ ]
+}

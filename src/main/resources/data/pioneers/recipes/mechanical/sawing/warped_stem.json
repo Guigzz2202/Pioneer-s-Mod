@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:sawing",
+ "input": {
+  "tag": "minecraft:warped_stems"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:warped_planks",
+   "count": 6
+  },
+  {
+   "item": "pioneers:sawdust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

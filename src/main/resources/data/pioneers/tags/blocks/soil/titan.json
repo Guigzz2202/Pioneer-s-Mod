@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:titan_ice",
+  "pioneers:titan_pebbles",
+  "pioneers:titan_sand",
+  "pioneers:titan_tholin"
+ ]
+}

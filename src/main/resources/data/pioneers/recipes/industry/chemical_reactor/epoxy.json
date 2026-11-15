@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sodium_hydroxide"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:phenol",
+   "amount": 400
+  },
+  {
+   "fluid": "pioneers:acetone",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:epichlorohydrin",
+   "amount": 400
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 800
+  },
+  {
+   "fluid": "pioneers:brine",
+   "amount": 200
+  }
+ ]
+}

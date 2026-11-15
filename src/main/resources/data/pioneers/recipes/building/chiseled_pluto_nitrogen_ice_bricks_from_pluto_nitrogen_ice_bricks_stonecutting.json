@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:pluto_nitrogen_ice_bricks"
+ },
+ "result": "pioneers:chiseled_pluto_nitrogen_ice_bricks",
+ "count": 1
+}

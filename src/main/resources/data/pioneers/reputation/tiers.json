@@ -1,0 +1,41 @@
+{
+ "_doc": "Paliers de reputation de peuple (-300..+300) et leurs effets sur les prix (achat, vente).",
+ "min": -300,
+ "max": 300,
+ "tiers": [
+  {
+   "id": "hostile",
+   "buy": 0.0,
+   "sell": 0.0,
+   "refuse": true,
+   "max": -200
+  },
+  {
+   "id": "wary",
+   "buy": 0.1,
+   "sell": -0.1,
+   "max": -60
+  },
+  {
+   "id": "unknown",
+   "buy": 0.0,
+   "sell": 0.0,
+   "max": 59
+  },
+  {
+   "id": "esteemed",
+   "buy": -0.05,
+   "sell": 0.05,
+   "exclusive": true,
+   "max": 149
+  },
+  {
+   "id": "ally",
+   "buy": -0.1,
+   "sell": 0.1,
+   "exclusive": true,
+   "workers_trust": 2,
+   "max": 300
+  }
+ ]
+}

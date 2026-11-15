@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 2,
+ "time": 300,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:worn_uv_engraving_objective"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fluorite_lens"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire_dust"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:uv_engraving_objective",
+   "count": 1
+  }
+ ]
+}

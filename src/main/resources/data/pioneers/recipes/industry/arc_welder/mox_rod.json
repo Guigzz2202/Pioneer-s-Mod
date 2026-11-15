@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 200,
+ "family": "arc_welder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:steel_cladding_tube"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mox_pellet"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mox_rod",
+   "count": 1
+  }
+ ]
+}

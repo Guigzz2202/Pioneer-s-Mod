@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/river"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rye_bread"
+   },
+   "count": 1
+  }
+ ],
+ "time": 420,
+ "results": [
+  {
+   "item": "pioneers:fish_in_beer",
+   "count": 1
+  }
+ ]
+}

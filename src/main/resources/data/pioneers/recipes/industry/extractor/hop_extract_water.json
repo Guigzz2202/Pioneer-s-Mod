@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hops"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hop_extract",
+   "count": 1
+  },
+  {
+   "item": "pioneers:compost",
+   "count": 1
+  }
+ ]
+}

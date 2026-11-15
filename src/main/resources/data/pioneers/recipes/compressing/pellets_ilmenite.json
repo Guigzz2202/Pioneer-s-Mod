@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:ilmenite_concentrate"
+ },
+ "count": 2,
+ "result": {
+  "item": "pioneers:ilmenite_pellets",
+  "count": 2
+ },
+ "binder": {
+  "item": "minecraft:clay_ball"
+ },
+ "binder_count": 1
+}

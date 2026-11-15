@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 0,
+ "time": 60,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zircon"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crushed_zircon_sand",
+   "count": 2
+  }
+ ]
+}

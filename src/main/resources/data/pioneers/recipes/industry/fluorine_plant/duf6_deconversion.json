@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 300,
+ "family": "fluorine_plant",
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:depleted_uranium_hexafluoride",
+   "amount": 1300
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:depleted_uranium_dioxide",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 500
+  }
+ ],
+ "industrial": true
+}

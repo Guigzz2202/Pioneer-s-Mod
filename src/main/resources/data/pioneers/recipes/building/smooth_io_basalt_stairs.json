@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#  ",
+  "## ",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:smooth_io_basalt"
+  }
+ },
+ "result": {
+  "item": "pioneers:smooth_io_basalt_stairs",
+  "count": 4
+ }
+}

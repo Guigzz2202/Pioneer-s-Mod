@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 2,
+ "time": 100,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:steel_wire_rod"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_balls",
+   "count": 16
+  }
+ ]
+}

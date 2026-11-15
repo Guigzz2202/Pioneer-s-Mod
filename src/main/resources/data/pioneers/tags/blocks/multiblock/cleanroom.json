@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:cleanroom_casing",
+    "pioneers:cleanroom_filter",
+    "pioneers:cleanroom_glass"
+  ]
+}

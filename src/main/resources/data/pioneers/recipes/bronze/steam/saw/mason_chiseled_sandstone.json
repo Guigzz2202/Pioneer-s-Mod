@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:sandstone_slab"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "minecraft:chiseled_sandstone",
+  "count": 1
+ },
+ "time": 40
+}

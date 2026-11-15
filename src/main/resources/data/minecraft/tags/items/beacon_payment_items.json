@@ -1,0 +1,15 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:lunarium_ingot",
+  "pioneers:marsium_ingot",
+  "pioneers:tharsium_ingot",
+  "pioneers:venusium_ingot",
+  "pioneers:mercurium_ingot",
+  "pioneers:iron_ingot",
+  "pioneers:gold_ingot",
+  "pioneers:emerald",
+  "pioneers:diamond",
+  "pioneers:netherite_ingot"
+ ]
+}

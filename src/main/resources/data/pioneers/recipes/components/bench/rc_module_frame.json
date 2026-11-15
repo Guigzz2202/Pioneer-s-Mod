@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "advanced_components",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_bolt"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_frame",
+  "count": 1
+ }
+}

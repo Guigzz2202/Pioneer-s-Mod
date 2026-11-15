@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:green_bean",
+  "pioneers:pea_pod",
+  "pioneers:soybean"
+ ]
+}

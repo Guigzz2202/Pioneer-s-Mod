@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "synthesizer",
+ "tier": 3,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:compacted_venus"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:empty_simulated_venus",
+   "count": 1
+  }
+ ],
+ "data": [
+  {
+   "type": "pioneers:venusian",
+   "amount": 4000000
+  },
+  {
+   "type": "pioneers:solar",
+   "amount": 1000000
+  }
+ ],
+ "energy": 50000000
+}

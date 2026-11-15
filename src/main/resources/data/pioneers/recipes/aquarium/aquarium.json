@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resin_glue"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:aquarium",
+  "count": 2
+ }
+}

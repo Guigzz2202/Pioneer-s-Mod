@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:lantern"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:village_lamppost",
+   "count": 1
+  }
+ ]
+}

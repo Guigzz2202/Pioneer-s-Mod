@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:scrap_robotic_mk1",
+  "pioneers:scrap_robotic_mk2",
+  "pioneers:scrap_robotic_mk3"
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:hygiea",
+ "gravity": 0.084,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "vacuum",
+ "nitrogen": 0,
+ "temperature": -105
+}

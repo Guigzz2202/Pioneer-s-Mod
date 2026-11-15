@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_resin"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:insulating_varnish",
+   "count": 4
+  }
+ ]
+}

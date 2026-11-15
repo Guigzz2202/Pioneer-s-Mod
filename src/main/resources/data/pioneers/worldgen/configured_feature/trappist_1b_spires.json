@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:trappist_1b_obsidian_crust"
+  },
+  "tip": {
+   "Name": "pioneers:trappist_1b_rock"
+  },
+  "min_height": 8,
+  "max_height": 20,
+  "radius": 2,
+  "elongation": 3.0
+ }
+}

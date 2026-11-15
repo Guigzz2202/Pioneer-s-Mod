@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_venus_basalt"
+ },
+ "result": "pioneers:chiseled_venus_basalt",
+ "count": 1
+}

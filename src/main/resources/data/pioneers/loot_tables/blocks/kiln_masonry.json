@@ -1,0 +1,104 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:alternatives",
+     "children": [
+      {
+       "type": "minecraft:item",
+       "name": "minecraft:bricks",
+       "conditions": [
+        {
+         "condition": "minecraft:block_state_property",
+         "block": "pioneers:kiln_masonry",
+         "properties": {
+          "form": "bricks"
+         }
+        }
+       ]
+      },
+      {
+       "type": "minecraft:item",
+       "name": "minecraft:brick_stairs",
+       "conditions": [
+        {
+         "condition": "minecraft:block_state_property",
+         "block": "pioneers:kiln_masonry",
+         "properties": {
+          "form": "stair_bottom"
+         }
+        }
+       ]
+      },
+      {
+       "type": "minecraft:item",
+       "name": "minecraft:brick_stairs",
+       "conditions": [
+        {
+         "condition": "minecraft:block_state_property",
+         "block": "pioneers:kiln_masonry",
+         "properties": {
+          "form": "stair_top"
+         }
+        }
+       ]
+      },
+      {
+       "type": "minecraft:item",
+       "name": "minecraft:brick_slab",
+       "conditions": [
+        {
+         "condition": "minecraft:block_state_property",
+         "block": "pioneers:kiln_masonry",
+         "properties": {
+          "form": "slab_bottom"
+         }
+        }
+       ]
+      },
+      {
+       "type": "minecraft:item",
+       "name": "minecraft:brick_slab",
+       "conditions": [
+        {
+         "condition": "minecraft:block_state_property",
+         "block": "pioneers:kiln_masonry",
+         "properties": {
+          "form": "slab_top"
+         }
+        }
+       ]
+      },
+      {
+       "type": "minecraft:item",
+       "name": "minecraft:brick_slab",
+       "conditions": [
+        {
+         "condition": "minecraft:block_state_property",
+         "block": "pioneers:kiln_masonry",
+         "properties": {
+          "form": "slab_double"
+         }
+        }
+       ],
+       "functions": [
+        {
+         "function": "minecraft:set_count",
+         "count": 2
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:survives_explosion"
+    }
+   ]
+  }
+ ]
+}

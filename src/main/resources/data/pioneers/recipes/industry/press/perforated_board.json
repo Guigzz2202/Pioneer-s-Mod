@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:primitive_plastic"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:perforated_board",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 435,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:gear_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_duralumin",
+   "amount": 812
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:duralumin_gear_blank",
+   "count": 1
+  },
+  {
+   "item": "pioneers:gear_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:duralumin_nugget",
+   "count": 10
+  },
+  {
+   "item": "pioneers:duralumin_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

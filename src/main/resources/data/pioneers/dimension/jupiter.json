@@ -1,0 +1,108 @@
+{
+ "type": "pioneers:jupiter",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:jupiter",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:great_red_spot",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       1.0
+      ],
+      "humidity": [
+       0.55,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:jupiter_polar_cyclones",
+     "parameters": {
+      "temperature": [
+       0.5,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       0.55
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:jupiter_north_belt",
+     "parameters": {
+      "temperature": [
+       -0.1,
+       0.5
+      ],
+      "humidity": [
+       -1.0,
+       0.55
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:jupiter_equatorial_zone",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       -0.1
+      ],
+      "humidity": [
+       -1.0,
+       0.55
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

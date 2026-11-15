@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "pioneers:charcoal"
+ },
+ "count": 1,
+ "turns": 3,
+ "results": [
+  {
+   "item": "minecraft:black_dye",
+   "count": 1
+  },
+  {
+   "item": "pioneers:wood_ash",
+   "count": 1,
+   "chance": 0.2
+  }
+ ]
+}

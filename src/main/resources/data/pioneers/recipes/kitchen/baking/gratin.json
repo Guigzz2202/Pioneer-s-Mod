@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_gratin"
+   },
+   "count": 1
+  }
+ ],
+ "time": 600,
+ "results": [
+  {
+   "item": "pioneers:gratin",
+   "count": 1
+  }
+ ]
+}

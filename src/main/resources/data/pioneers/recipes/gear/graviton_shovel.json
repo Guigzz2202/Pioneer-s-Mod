@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  " P ",
+  " C ",
+  " R "
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:graviton_plating"
+  },
+  "C": {
+   "item": "pioneers:graviton_cell"
+  },
+  "R": {
+   "item": "pioneers:nitinol_rod"
+  }
+ },
+ "result": {
+  "item": "pioneers:graviton_shovel",
+  "count": 1
+ }
+}

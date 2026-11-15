@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 2,
+ "time": 200,
+ "gases": [
+  {
+   "gas": "pioneers:osmium_tetroxide",
+   "amount": 200
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:osmium_dust",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 50
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:sawing",
+ "input": {
+  "item": "minecraft:cherry_planks"
+ },
+ "count": 1,
+ "turns": 1,
+ "results": [
+  {
+   "item": "minecraft:cherry_slab",
+   "count": 2
+  },
+  {
+   "item": "pioneers:sawdust",
+   "count": 1,
+   "chance": 0.15
+  }
+ ]
+}

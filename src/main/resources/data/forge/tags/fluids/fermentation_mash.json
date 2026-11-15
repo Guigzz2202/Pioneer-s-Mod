@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:fermentation_mash",
+  "pioneers:flowing_fermentation_mash"
+ ]
+}

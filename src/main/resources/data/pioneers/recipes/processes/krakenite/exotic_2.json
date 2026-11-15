@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:krakenite_concentrate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titan_tholin"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:krakenite_salts",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 150
+  }
+ ],
+ "temperature": 200
+}

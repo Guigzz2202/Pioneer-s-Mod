@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:electrolytic_capacitor"
+  },
+  {
+   "item": "pioneers:electrolytic_capacitor"
+  },
+  {
+   "item": "pioneers:capacitor"
+  },
+  {
+   "item": "pioneers:lithium_carbonate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_battery",
+  "count": 1
+ }
+}

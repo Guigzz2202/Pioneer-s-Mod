@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cheese"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cookies"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:berry_coulis"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:raw_cheesecake",
+   "count": 1
+  }
+ ]
+}

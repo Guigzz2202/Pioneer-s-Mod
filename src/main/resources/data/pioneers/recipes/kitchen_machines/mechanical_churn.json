@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PCP",
+  "PBP",
+  "LXL"
+ ],
+ "key": {
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "C": {
+   "item": "pioneers:wooden_cog"
+  },
+  "B": {
+   "item": "pioneers:butter_churn"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:mechanical_churn",
+  "count": 1
+ }
+}

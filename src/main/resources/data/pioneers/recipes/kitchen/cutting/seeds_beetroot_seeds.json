@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:beetroot"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:beetroot_seeds",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:beams/steel",
+  "#forge:beams/titanium",
+  "#forge:beams/galvanized_steel",
+  "#forge:beams/duralumin",
+  "#forge:beams/aluminium",
+  "#forge:beams/stainless_steel"
+ ]
+}

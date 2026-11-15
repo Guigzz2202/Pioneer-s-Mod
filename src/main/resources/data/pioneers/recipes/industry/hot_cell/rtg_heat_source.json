@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:plutonium_238_dioxide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iridium_plate"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 25
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rtg_heat_source",
+   "count": 1
+  }
+ ]
+}

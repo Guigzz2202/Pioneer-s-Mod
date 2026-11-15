@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "minecraft:sugar_cane"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:sugar",
+   "count": 2
+  },
+  {
+   "item": "minecraft:sugar",
+   "count": 1,
+   "chance": 0.3
+  }
+ ]
+}

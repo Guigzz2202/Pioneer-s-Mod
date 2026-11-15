@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 155,
+ "family": "arc_welder",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:sheets/nickel"
+   },
+   "count": 3
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_pipe",
+   "count": 2
+  },
+  {
+   "item": "pioneers:nickel_nugget",
+   "count": 4
+  }
+ ]
+}

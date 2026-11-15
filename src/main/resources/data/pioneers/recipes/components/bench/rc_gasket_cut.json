@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:vulcanized_rubber"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:gasket",
+  "count": 2
+ }
+}

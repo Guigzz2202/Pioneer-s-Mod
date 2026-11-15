@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:oak_planks"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:oak_pressure_plate",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:fish_fillet"
+   },
+   "count": 1
+  }
+ ],
+ "time": 160,
+ "results": [
+  {
+   "item": "pioneers:grilled_fish",
+   "count": 1
+  }
+ ]
+}

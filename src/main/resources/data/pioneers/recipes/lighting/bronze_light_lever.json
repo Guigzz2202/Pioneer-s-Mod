@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bronze_wire"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_nail"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:bronze_light_lever",
+  "count": 1
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "CCC",
+  "VLM",
+  "CCC"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:elite_logistic_cable"
+  },
+  "V": {
+   "item": "pioneers:venusium_liner"
+  },
+  "L": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "M": {
+   "item": "pioneers:mercurium_heat_spreader"
+  }
+ },
+ "result": {
+  "item": "pioneers:ultimate_logistic_cable",
+  "count": 6
+ }
+}

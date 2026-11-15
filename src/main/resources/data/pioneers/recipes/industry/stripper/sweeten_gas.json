@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 60,
+ "family": "stripper",
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:sour_gas",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:natural_gas",
+   "amount": 880
+  },
+  {
+   "gas": "pioneers:hydrogen_sulfide",
+   "amount": 120
+  }
+ ]
+}

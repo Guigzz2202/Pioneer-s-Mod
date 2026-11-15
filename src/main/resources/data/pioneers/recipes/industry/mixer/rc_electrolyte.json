@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 140,
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 500
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:electrolyte",
+   "count": 4
+  }
+ ]
+}

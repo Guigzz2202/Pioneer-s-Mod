@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:logs"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:barrel_stave"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:aging_barrel",
+  "count": 1
+ }
+}

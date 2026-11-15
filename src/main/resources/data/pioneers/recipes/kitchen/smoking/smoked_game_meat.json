@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:smoking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:dried_game_meat"
+   },
+   "count": 1
+  }
+ ],
+ "time": 2400,
+ "results": [
+  {
+   "item": "pioneers:smoked_game_meat",
+   "count": 1
+  }
+ ]
+}

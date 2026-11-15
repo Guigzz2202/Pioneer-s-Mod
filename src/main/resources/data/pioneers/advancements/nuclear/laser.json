@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:centrifuge_cascade"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.laser.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.laser.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_laser_isotope_separator"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/cascade"
+}

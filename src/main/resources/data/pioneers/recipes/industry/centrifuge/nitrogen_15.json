@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 1,
+ "time": 400,
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 10000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 9963
+  },
+  {
+   "gas": "pioneers:nitrogen_15",
+   "amount": 37
+  }
+ ]
+}

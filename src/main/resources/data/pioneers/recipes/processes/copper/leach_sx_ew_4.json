@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:copper_sulfate",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_ingot",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 250
+  }
+ ]
+}

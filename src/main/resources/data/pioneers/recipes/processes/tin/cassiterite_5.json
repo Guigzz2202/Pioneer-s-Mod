@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crude_tin"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_tin",
+   "amount": 270
+  }
+ ],
+ "temperature": 520
+}

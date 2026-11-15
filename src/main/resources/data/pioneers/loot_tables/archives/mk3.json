@@ -1,0 +1,65 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": {
+    "type": "minecraft:uniform",
+    "min": 2,
+    "max": 4
+   },
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:lore_page",
+     "functions": [
+      {
+       "function": "pioneers:lore_entry",
+       "tier": "mk3"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rolls": {
+    "type": "minecraft:uniform",
+    "min": 2,
+    "max": 3
+   },
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:parchment_note",
+     "functions": [
+      {
+       "function": "pioneers:parchment_note"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:scrap_structure_mk3",
+     "functions": [
+      {
+       "function": "minecraft:set_count",
+       "count": {
+        "type": "minecraft:uniform",
+        "min": 6,
+        "max": 10
+       }
+      },
+      {
+       "function": "pioneers:site_scrap",
+       "tier": 3
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

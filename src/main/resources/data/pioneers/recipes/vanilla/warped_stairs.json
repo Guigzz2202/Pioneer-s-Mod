@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:warped_planks"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:warped_stairs",
+  "count": 4
+ }
+}

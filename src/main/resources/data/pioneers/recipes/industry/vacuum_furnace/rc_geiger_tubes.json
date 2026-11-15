@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 180,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/nickel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/emerald"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:neon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:geiger_tube",
+   "count": 4
+  }
+ ]
+}

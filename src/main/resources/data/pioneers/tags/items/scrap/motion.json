@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:scrap_motion_mk1",
+  "pioneers:scrap_motion_mk2",
+  "pioneers:scrap_motion_mk3"
+ ]
+}

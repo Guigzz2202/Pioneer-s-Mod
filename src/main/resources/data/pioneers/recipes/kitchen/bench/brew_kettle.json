@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/copper"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:brew_kettle",
+  "count": 1
+ }
+}

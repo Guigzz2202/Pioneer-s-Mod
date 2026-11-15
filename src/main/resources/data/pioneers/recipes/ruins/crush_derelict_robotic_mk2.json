@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:derelict_robotic_mk2"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:scrap_robotic_mk2",
+  "count": 2
+ }
+}

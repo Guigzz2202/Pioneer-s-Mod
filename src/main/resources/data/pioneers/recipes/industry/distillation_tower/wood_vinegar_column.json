@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 160,
+ "family": "distillation_tower",
+ "fluids": [
+  {
+   "fluid": "pioneers:wood_vinegar",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:methanol",
+   "amount": 80
+  },
+  {
+   "fluid": "pioneers:acetic_acid",
+   "amount": 150
+  },
+  {
+   "fluid": "pioneers:wood_tar",
+   "amount": 50
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 650
+  }
+ ],
+ "industrial": true
+}

@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:slag"
+ },
+ "count": 4,
+ "result": {
+  "item": "minecraft:smooth_basalt",
+  "count": 2
+ },
+ "binder": {
+  "item": "pioneers:quicklime"
+ },
+ "binder_count": 1
+}

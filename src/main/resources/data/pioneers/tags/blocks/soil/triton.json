@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:triton_frost",
+  "pioneers:triton_nitrogen_ice",
+  "pioneers:triton_rock"
+ ]
+}

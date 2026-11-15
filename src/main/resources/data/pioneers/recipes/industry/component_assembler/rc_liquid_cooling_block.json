@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stainless_steel_fitting"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:liquid_cooling_block",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "roaster",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ammonium_chloroplatinate"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platinum_dust",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 150
+  }
+ ],
+ "temperature": 800
+}

@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 160,
+ "fluids": [
+  {
+   "fluid": "pioneers:vanadyl_sulfate_solution",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:liquid_ammonia",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ammonium_metavanadate",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sour_water",
+   "amount": 200
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "sintering_furnace",
+ "tier": 3,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_dust"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_ingot",
+   "count": 2
+  }
+ ],
+ "temperature": 2400
+}

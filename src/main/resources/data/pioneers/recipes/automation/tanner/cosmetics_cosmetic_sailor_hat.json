@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/white"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/blue"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_sailor_hat",
+   "count": 1
+  }
+ ]
+}

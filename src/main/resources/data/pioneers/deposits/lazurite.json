@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:lazurite",
+ "material": "lazurite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#DCDCE6",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 3
+  },
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 2
+  }
+ ]
+}

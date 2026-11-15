@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ferrochrome"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:chrome_alum",
+   "count": 2
+  }
+ ]
+}

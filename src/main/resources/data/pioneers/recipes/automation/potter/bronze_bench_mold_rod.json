@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "compressor",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:unfired_rod_mold",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:diogenite"
+ },
+ "result": "pioneers:polished_diogenite",
+ "count": 1
+}

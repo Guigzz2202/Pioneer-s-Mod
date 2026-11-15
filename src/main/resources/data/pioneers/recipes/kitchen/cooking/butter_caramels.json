@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:caramel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:butter_caramels",
+   "count": 6
+  }
+ ]
+}

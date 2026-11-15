@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:chocolate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cocoa_powder"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:chocolate_truffles",
+   "count": 6
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:brick"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:kitchen_stove",
+  "count": 1
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:sandblaster"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.blower.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.blower.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:air_blower"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:sandblaster"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/compressor"
+}

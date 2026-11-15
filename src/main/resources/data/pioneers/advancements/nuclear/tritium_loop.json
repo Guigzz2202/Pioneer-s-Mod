@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:lithium_ceramic_pebbles"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.tritium_loop.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.tritium_loop.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "tritium_self_sufficient"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/tokamak"
+}

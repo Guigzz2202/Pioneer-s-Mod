@@ -1,0 +1,76 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:rain_diamond"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.uranus.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.uranus.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:diamond_lattice"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:veronite_superconductor"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:messinite_ceramic"
+      ]
+     }
+    ]
+   }
+  },
+  "c3": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:ruachite_crystal_grid"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2",
+   "c3"
+  ]
+ ],
+ "parent": "pioneers:nuclear/fast"
+}

@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "aa........",
+  "...MAAM...",
+  "...MPMM...",
+  "...M..M...",
+  "...A..A..."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "M": {
+   "tag": "forge:plates/marsium"
+  },
+  "P": {
+   "item": "pioneers:thermal_suit_leggings"
+  },
+  "a": {
+   "tag": "forge:plates/deimite"
+  }
+ },
+ "result": {
+  "item": "pioneers:acid_suit_leggings"
+ },
+ "energy": 30000000,
+ "duration": 500,
+ "research": "acid_suit"
+}

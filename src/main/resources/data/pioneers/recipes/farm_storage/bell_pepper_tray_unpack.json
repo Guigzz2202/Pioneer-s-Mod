@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:bell_pepper_tray"
+  }
+ ],
+ "result": {
+  "item": "pioneers:bell_pepper",
+  "count": 9
+ }
+}

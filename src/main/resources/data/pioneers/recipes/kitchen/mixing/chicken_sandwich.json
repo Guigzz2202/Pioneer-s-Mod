@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:roast_chicken"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mayonnaise"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lettuce"
+   },
+   "count": 1
+  }
+ ],
+ "time": 240,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:chicken_sandwich",
+   "count": 2
+  }
+ ]
+}

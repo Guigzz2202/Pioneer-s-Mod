@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hygeite_salts"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crude_hygeite",
+   "count": 2
+  },
+  {
+   "item": "pioneers:cobalt_dust",
+   "count": 1,
+   "chance": 0.1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 100
+  }
+ ]
+}

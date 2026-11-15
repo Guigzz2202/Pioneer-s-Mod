@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:chain"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stripped_cherry_log"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:cherry_hanging_sign",
+  "count": 6
+ }
+}

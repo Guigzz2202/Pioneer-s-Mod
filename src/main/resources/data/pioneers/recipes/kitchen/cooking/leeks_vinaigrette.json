@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:leek"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinaigrette"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 240,
+ "results": [
+  {
+   "item": "pioneers:leeks_vinaigrette",
+   "count": 2
+  }
+ ]
+}

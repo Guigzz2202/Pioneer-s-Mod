@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:spent_fuel_assembly_hot",
+  "pioneers:spent_mox_assembly_hot",
+  "pioneers:irradiated_depleted_blanket",
+  "pioneers:irradiated_thorium_blanket"
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:gray_reef_shark"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_shark_meat",
+   "count": 4
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 2,
+   "chance": 0.5
+  }
+ ]
+}

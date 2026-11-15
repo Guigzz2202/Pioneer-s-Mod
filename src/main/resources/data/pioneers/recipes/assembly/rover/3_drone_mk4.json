@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  "..R....R..",
+  "...HMMH...",
+  "...ACEA...",
+  "...HMMH...",
+  "..R....R.."
+ ],
+ "key": {
+  "R": {
+   "item": "pioneers:ultimate_electric_motor"
+  },
+  "H": {
+   "item": "pioneers:plastic_sheet"
+  },
+  "M": {
+   "tag": "forge:rods/sputnikite"
+  },
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "E": {
+   "item": "pioneers:solid_state_cell"
+  }
+ },
+ "result": {
+  "item": "pioneers:drone_mk4"
+ },
+ "energy": 24000000,
+ "duration": 600,
+ "research": "robotics"
+}

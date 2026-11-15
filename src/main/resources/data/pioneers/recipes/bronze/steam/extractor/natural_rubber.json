@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_latex"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:natural_rubber",
+  "count": 1
+ },
+ "time": 120
+}

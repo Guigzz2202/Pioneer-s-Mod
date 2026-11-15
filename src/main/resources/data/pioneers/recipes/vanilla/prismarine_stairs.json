@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:prismarine"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:prismarine_stairs",
+  "count": 4
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "order": 2,
+ "affinities": [
+  "engineering",
+  "nuclear"
+ ],
+ "feature": "",
+ "emblem": "pioneers:textures/gui/pioneer/vocation/engineer.png",
+ "advantage": {
+  "trait": "diagnosis",
+  "modifiers": [
+   {
+    "key": "engineer.diagnosis",
+    "value": 1.0,
+    "unit": "abs"
+   }
+  ]
+ },
+ "defect": {
+  "trait": "frail_body",
+  "modifiers": [
+   {
+    "key": "engineer.damage_taken",
+    "value": 0.1,
+    "unit": "pct"
+   }
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:wooden_logistic_cable",
+  "count": 6
+ }
+}

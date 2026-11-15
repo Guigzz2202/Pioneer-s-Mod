@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:mercury_sandstone"
+  }
+ },
+ "result": {
+  "item": "pioneers:cut_mercury_sandstone",
+  "count": 4
+ }
+}

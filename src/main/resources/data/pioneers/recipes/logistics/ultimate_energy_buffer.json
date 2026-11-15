@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_energy_buffer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:upgrade_kit_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:solid_state_cell"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vanadium"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_energy_buffer",
+  "count": 1
+ }
+}

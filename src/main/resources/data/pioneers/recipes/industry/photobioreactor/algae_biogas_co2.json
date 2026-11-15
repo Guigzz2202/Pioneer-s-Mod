@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 400,
+ "family": "photobioreactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:microalgae"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:biogas",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:microalgae",
+   "count": 3
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 280
+  }
+ ]
+}

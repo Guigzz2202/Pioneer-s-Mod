@@ -1,0 +1,17 @@
+{
+ "order": 11,
+ "icon": "pioneers:textures/gui/pioneer/skill/salvage.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "salvage.break_speed",
+   "value": 0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "salvage.sort_speed",
+   "value": 0.25,
+   "unit": "pct"
+  }
+ ]
+}

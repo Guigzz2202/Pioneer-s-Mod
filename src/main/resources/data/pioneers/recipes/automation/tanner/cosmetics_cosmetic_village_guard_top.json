@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/blue"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_village_guard_top",
+   "count": 1
+  }
+ ]
+}

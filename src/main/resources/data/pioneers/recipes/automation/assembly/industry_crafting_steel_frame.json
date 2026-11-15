@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 260,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:bolts/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/bronze"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/copper"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_frame",
+   "count": 2
+  }
+ ]
+}

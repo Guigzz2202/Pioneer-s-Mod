@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 1,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sand_mold"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_iron",
+   "amount": 1120
+  },
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 140
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:cauldron",
+   "count": 1
+  },
+  {
+   "item": "pioneers:sand_mold",
+   "count": 1
+  },
+  {
+   "item": "pioneers:iron_nugget",
+   "count": 7
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 126
+  }
+ ]
+}

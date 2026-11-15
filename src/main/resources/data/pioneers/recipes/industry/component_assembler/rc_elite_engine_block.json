@@ -1,0 +1,69 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 280,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/chrome"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:crankshaft"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:camshaft"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:poppet_valve"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston_ring"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:spark_plug"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:injector"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_engine_block",
+   "count": 2
+  }
+ ]
+}

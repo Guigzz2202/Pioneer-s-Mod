@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cement"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gravel"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/galvanized_steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:harbor_quay",
+  "count": 8
+ }
+}

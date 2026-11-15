@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:block_signal"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:glowstone_dust"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:chain_signal",
+  "count": 1
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/zirconium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ball_valve"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_fitting"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_chemical_reactor",
+   "count": 1
+  }
+ ]
+}

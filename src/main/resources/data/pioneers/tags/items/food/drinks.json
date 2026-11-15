@@ -1,0 +1,33 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:coffee",
+  "pioneers:tea",
+  "pioneers:hot_chocolate",
+  "pioneers:apple_juice",
+  "pioneers:orange_juice",
+  "pioneers:grape_juice",
+  "pioneers:pear_juice",
+  "pioneers:lemonade",
+  "pioneers:beer",
+  "pioneers:wine",
+  "pioneers:aged_wine",
+  "pioneers:cider",
+  "pioneers:perry",
+  "pioneers:mead",
+  "pioneers:whisky",
+  "pioneers:vodka",
+  "pioneers:rum",
+  "pioneers:brandy",
+  "pioneers:kvass",
+  "pioneers:green_smoothie",
+  "pioneers:rhubarb_lemonade",
+  "pioneers:agua_fresca",
+  "pioneers:smoothie",
+  "pioneers:pomegranate_juice",
+  "pioneers:mango_lassi",
+  "pioneers:island_punch",
+  "pioneers:champagne",
+  "pioneers:sparkling_cider"
+ ]
+}

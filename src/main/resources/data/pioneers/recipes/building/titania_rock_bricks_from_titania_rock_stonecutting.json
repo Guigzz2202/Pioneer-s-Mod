@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:titania_rock"
+ },
+ "result": "pioneers:titania_rock_bricks",
+ "count": 1
+}

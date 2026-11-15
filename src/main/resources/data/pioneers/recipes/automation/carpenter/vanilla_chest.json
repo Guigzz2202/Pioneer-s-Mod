@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_peg"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:chest",
+   "count": 1
+  }
+ ]
+}

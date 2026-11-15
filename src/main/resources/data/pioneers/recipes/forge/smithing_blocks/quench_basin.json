@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PBP",
+  "P P",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "B": {
+   "tag": "pioneers:bindings"
+  }
+ },
+ "result": {
+  "item": "pioneers:quench_basin",
+  "count": 1
+ }
+}

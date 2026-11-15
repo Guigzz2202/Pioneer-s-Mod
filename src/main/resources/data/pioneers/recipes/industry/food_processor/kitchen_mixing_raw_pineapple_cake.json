@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 48,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cake_batter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pineapple"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:caramel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cherries"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_pineapple_cake",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:light_gray_concrete_powder"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/light_blue"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:light_blue_concrete_powder",
+  "count": 8
+ }
+}

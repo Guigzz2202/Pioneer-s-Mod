@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ferrite_magnet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/copper"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:epoxy_board"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:planar_inductor",
+   "count": 8
+  }
+ ]
+}

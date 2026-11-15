@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:industrial_data_port",
+    "pioneers:industrial_energy_port",
+    "pioneers:industrial_fluid_port",
+    "pioneers:industrial_gas_port",
+    "pioneers:industrial_heat_port",
+    "pioneers:industrial_item_port",
+    "pioneers:industrial_pressure_port"
+  ]
+}

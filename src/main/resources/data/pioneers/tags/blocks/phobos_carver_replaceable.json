@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:phobos_rock",
+  "pioneers:phobos_regolith",
+  "pioneers:phobos_dust",
+  "pioneers:phobos_breccia"
+ ]
+}

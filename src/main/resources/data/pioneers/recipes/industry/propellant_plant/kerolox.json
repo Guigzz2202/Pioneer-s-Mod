@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "propellant_plant",
+ "tier": 1,
+ "time": 100,
+ "fluids": [
+  {
+   "fluid": "pioneers:rp1",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:liquid_oxygen",
+   "amount": 700
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:kerolox",
+   "amount": 1000
+  }
+ ]
+}

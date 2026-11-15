@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 0,
+ "time": 240,
+ "family": "delayed_coker",
+ "fluids": [
+  {
+   "fluid": "pioneers:vacuum_residue",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:petroleum_coke",
+   "count": 4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:diesel",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 100
+  }
+ ],
+ "industrial": true
+}

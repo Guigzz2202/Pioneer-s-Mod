@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:vanadium_steel_nugget",
+    "pioneers:vanadium_steel_ring",
+    "pioneers:vanadium_steel_rod",
+    "pioneers:vanadium_steel_plate",
+    "pioneers:vanadium_steel_dust",
+    "pioneers:vanadium_steel_wire",
+    "pioneers:vanadium_steel_block",
+    "pioneers:vanadium_steel_gear",
+    "pioneers:vanadium_steel_spring",
+    "pioneers:vanadium_steel_ingot"
+  ]
+}

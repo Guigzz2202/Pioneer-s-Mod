@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/babbitt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/bronze"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:plain_bearing",
+  "count": 2
+ }
+}

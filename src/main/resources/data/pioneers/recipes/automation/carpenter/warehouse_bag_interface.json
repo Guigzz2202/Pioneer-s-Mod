@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:treated_wood"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_hopper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_nail"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:bag_interface",
+   "count": 1
+  }
+ ]
+}

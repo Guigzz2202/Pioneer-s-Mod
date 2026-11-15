@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planks"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:wooden_lath",
+  "count": 2
+ }
+}

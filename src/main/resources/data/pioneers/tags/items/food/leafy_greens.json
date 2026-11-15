@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:lettuce",
+  "pioneers:spinach",
+  "pioneers:kale",
+  "pioneers:bok_choy"
+ ]
+}

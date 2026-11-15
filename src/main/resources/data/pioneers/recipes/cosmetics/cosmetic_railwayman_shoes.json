@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_rivet"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_railwayman_shoes",
+  "count": 1
+ }
+}

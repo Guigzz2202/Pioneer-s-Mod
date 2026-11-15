@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:soybean"
+   },
+   "count": 3
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 360,
+ "results": [
+  {
+   "item": "pioneers:tofu",
+   "count": 2
+  }
+ ]
+}

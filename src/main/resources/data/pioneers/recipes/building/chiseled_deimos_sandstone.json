@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#",
+  "#"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:deimos_sandstone_slab"
+  }
+ },
+ "result": {
+  "item": "pioneers:chiseled_deimos_sandstone",
+  "count": 1
+ }
+}

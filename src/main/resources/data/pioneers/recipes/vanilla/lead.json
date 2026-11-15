@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_rope"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:lead",
+  "count": 1
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pig_iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hemp_fiber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resin_glue"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:brake_unit",
+  "count": 1
+ }
+}

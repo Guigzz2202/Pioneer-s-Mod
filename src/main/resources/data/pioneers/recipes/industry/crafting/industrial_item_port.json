@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hopper"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:industrial_item_port",
+  "count": 1
+ }
+}

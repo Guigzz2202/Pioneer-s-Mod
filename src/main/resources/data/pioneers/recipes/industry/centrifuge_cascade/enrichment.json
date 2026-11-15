@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge_cascade",
+ "tier": 1,
+ "time": 400,
+ "gases": [
+  {
+   "gas": "pioneers:uranium_hexafluoride",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:enriched_uranium_hexafluoride",
+   "amount": 100
+  },
+  {
+   "gas": "pioneers:depleted_uranium_hexafluoride",
+   "amount": 900
+  }
+ ],
+ "industrial": true
+}

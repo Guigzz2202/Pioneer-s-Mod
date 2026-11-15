@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 300,
+ "family": "leaching_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pitchblende_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_dust",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:uranium_solution",
+   "amount": 1000
+  }
+ ]
+}

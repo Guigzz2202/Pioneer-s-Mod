@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_nail"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wooden_track",
+   "count": 16
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pasta_dough"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 5,
+ "results": [
+  {
+   "item": "pioneers:fresh_pasta",
+   "count": 2
+  }
+ ]
+}

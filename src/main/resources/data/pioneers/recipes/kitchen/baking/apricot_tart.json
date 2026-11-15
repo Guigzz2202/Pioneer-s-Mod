@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_apricot_tart"
+   },
+   "count": 1
+  }
+ ],
+ "time": 500,
+ "results": [
+  {
+   "item": "pioneers:apricot_tart",
+   "count": 1
+  }
+ ]
+}

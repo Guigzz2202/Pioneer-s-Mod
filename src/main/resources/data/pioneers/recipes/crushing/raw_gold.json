@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:raw_materials/gold"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_gold",
+  "count": 2
+ }
+}

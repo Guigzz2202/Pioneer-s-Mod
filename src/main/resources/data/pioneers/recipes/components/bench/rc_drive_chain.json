@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:drive_chain",
+  "count": 1
+ }
+}

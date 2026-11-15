@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:veronite_superconductor"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:messinite_ceramic"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:confinement_coil",
+  "count": 8
+ }
+}

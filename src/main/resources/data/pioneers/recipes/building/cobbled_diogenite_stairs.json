@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#  ",
+  "## ",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:cobbled_diogenite"
+  }
+ },
+ "result": {
+  "item": "pioneers:cobbled_diogenite_stairs",
+  "count": 4
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 7
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:leather_horse_armor",
+   "count": 1
+  }
+ ]
+}

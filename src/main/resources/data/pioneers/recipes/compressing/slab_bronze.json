@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:storage_blocks/bronze"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:bronze_slab",
+  "count": 1
+ }
+}

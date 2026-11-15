@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_fiber"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_valve"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:composite_tank",
+   "count": 2
+  }
+ ]
+}

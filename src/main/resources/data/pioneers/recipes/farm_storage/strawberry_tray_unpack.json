@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:strawberry_tray"
+  }
+ ],
+ "result": {
+  "item": "pioneers:strawberry",
+  "count": 9
+ }
+}

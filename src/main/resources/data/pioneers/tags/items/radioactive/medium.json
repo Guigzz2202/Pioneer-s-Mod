@@ -1,0 +1,15 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:spent_fuel_assembly",
+  "pioneers:corium_chunk",
+  "pioneers:spent_mox_assembly",
+  "pioneers:irradiated_lithium_target",
+  "pioneers:irradiated_neptunium_target",
+  "pioneers:cladding_hulls",
+  "pioneers:plutonium_dioxide",
+  "pioneers:plutonium_238_dioxide",
+  "pioneers:vitrified_waste_canister",
+  "pioneers:spent_fragment_cartridge"
+ ]
+}

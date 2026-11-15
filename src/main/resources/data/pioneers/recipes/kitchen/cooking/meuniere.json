@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/white"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 1
+  }
+ ],
+ "time": 240,
+ "results": [
+  {
+   "item": "pioneers:meuniere",
+   "count": 1
+  }
+ ]
+}

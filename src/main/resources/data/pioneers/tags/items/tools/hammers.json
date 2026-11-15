@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:iron_hammer",
+  "pioneers:copper_hammer",
+  "pioneers:stone_hammer",
+  "pioneers:bronze_hammer",
+  "pioneers:steel_hammer",
+  "pioneers:brass_hammer",
+  "pioneers:titanium_hammer",
+  "pioneers:stainless_steel_hammer",
+  "pioneers:duralumin_hammer",
+  "pioneers:vanadium_steel_hammer",
+  "pioneers:tungsten_carbide_hammer",
+  "pioneers:osmiridium_hammer",
+  "pioneers:stellite_hammer",
+  "pioneers:titanium_aluminide_hammer",
+  "pioneers:nitinol_hammer",
+  "pioneers:hardened_steel_hammer",
+  "pioneers:gold_hammer"
+ ]
+}

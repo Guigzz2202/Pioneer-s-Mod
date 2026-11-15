@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:glass_bottle"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:industrial_gas_port",
+  "count": 1
+ }
+}

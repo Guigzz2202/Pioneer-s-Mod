@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:radish"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:radish_seeds",
+   "count": 2
+  }
+ ]
+}

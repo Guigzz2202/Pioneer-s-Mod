@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:vanadium_nugget",
+  "pioneers:vanadium_rod",
+  "pioneers:vanadium_ingot",
+  "pioneers:vanadium_plate",
+  "pioneers:vanadium_dust",
+  "pioneers:vanadium_block",
+  "pioneers:vanadium_billet"
+ ]
+}

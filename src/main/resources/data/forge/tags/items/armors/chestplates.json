@@ -1,0 +1,19 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:bronze_chestplate",
+  "pioneers:iron_chestplate",
+  "pioneers:gold_chestplate",
+  "pioneers:steel_chestplate",
+  "pioneers:hardened_steel_chestplate",
+  "pioneers:titanium_chestplate",
+  "pioneers:tungsten_carbide_chestplate",
+  "pioneers:nitinol_chestplate",
+  "pioneers:graviton_chestplate",
+  "pioneers:stellaris_chestplate",
+  "pioneers:neutronic_chestplate",
+  "pioneers:singularity_chestplate",
+  "pioneers:voltaic_chestplate",
+  "pioneers:hydrogen_jetpack"
+ ]
+}

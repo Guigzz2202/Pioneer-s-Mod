@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:angora_wool"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:white_wool",
+  "count": 1
+ }
+}

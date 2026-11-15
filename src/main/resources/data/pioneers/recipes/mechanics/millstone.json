@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " H ",
+  "SSS",
+  "PXP"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:hopper"
+  },
+  "S": {
+   "item": "minecraft:smooth_stone"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:millstone",
+  "count": 1
+ }
+}

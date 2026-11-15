@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillery",
+ "tier": 1,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:crude_titanium_tetrachloride",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:silicon_tetrachloride",
+   "amount": 40
+  }
+ ]
+}

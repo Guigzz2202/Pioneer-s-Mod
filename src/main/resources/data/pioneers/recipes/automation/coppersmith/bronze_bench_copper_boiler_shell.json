@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_rivet"
+   },
+   "count": 8
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_boiler_shell",
+   "count": 1
+  }
+ ]
+}

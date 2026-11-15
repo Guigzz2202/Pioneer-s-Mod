@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "converter",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/steel"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferrovanadium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 300
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_ingot",
+   "count": 9
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 3,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:pgm_chloride_liquor",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 200
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:iridium_chloride_liquor",
+   "amount": 800
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:osmium_tetroxide",
+   "amount": 200
+  }
+ ]
+}

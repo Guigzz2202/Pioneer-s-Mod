@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:ingots/iron"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:iron_block",
+  "count": 1
+ }
+}

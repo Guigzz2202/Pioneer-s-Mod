@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:derelict_fluid_mk3"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:scrap_fluid_mk3",
+  "count": 2
+ }
+}

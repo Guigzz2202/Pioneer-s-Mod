@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:bag_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "RTR",
+  "TBT",
+  " T "
+ ],
+ "key": {
+  "R": {
+   "item": "pioneers:iron_ring"
+  },
+  "T": {
+   "item": "pioneers:tanned_leather"
+  },
+  "B": {
+   "item": "pioneers:leather_backpack"
+  }
+ },
+ "result": {
+  "item": "pioneers:tanned_backpack",
+  "count": 1
+ }
+}

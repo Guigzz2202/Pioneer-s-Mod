@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:trappist_1e_rock_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:trappist_1e_rock_brick_wall",
+  "count": 6
+ }
+}

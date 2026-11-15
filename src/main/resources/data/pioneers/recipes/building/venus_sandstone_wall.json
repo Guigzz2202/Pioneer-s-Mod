@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:venus_sandstone"
+  }
+ },
+ "result": {
+  "item": "pioneers:venus_sandstone_wall",
+  "count": 6
+ }
+}

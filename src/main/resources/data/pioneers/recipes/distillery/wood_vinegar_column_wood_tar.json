@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillery",
+ "tier": 0,
+ "time": 240,
+ "fluids": [
+  {
+   "fluid": "pioneers:wood_vinegar",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:wood_tar",
+   "amount": 50
+  }
+ ]
+}

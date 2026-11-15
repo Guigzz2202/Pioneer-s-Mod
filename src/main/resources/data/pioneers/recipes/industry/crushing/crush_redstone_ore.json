@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:redstone_ore"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_redstone_ore",
+  "count": 2
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 120,
+ "family": "optical_sorter",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_corundum"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rough_ruby",
+   "count": 1,
+   "chance": 0.3
+  },
+  {
+   "item": "pioneers:rough_sapphire",
+   "count": 1,
+   "chance": 0.3
+  },
+  {
+   "item": "pioneers:alumina",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "ore": true
+}

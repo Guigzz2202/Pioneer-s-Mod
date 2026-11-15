@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:wooden_cog"
+  },
+  {
+   "item": "pioneers:wooden_cog"
+  },
+  {
+   "item": "pioneers:wooden_cog"
+  },
+  {
+   "tag": "forge:plates/iron"
+  },
+  {
+   "tag": "minecraft:planks"
+  }
+ ],
+ "result": {
+  "item": "pioneers:reverser",
+  "count": 1
+ }
+}

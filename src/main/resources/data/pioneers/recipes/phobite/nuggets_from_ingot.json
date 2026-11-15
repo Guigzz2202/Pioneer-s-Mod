@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/phobite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:phobite_nugget",
+  "count": 9
+ }
+}

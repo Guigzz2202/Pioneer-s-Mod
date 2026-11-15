@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "transporter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_track"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:buffer_stop",
+  "count": 1
+ }
+}

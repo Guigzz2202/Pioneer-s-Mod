@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 16,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:venus_rock"
+    },
+    "state": {
+     "Name": "pioneers:sulfur_crust"
+    }
+   },
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:tessera_rock"
+    },
+    "state": {
+     "Name": "pioneers:sulfur_crust"
+    }
+   }
+  ]
+ }
+}

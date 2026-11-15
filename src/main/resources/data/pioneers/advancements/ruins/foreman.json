@@ -1,0 +1,39 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:memory_module"
+  },
+  "title": {
+   "translate": "advancements.pioneers.ruins.foreman.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.ruins.foreman.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "pioneers:sentinel_foreman"
+      }
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:ruins/sentinel"
+}

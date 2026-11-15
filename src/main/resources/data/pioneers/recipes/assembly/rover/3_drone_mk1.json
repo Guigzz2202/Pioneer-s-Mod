@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  "..R....R..",
+  "...HMMH...",
+  "...ACEA...",
+  "...HMMH...",
+  "..R....R.."
+ ],
+ "key": {
+  "R": {
+   "item": "pioneers:electric_motor"
+  },
+  "H": {
+   "item": "pioneers:plastic_sheet"
+  },
+  "M": {
+   "tag": "forge:rods/lunarium"
+  },
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "A": {
+   "tag": "forge:plates/stainless_steel"
+  },
+  "E": {
+   "item": "pioneers:capacitor"
+  }
+ },
+ "result": {
+  "item": "pioneers:drone_mk1"
+ },
+ "energy": 6000000,
+ "duration": 300,
+ "research": "robotics"
+}

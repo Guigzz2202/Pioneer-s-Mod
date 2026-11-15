@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 100,
+ "fluids": [
+  {
+   "fluid": "pioneers:fish_oil",
+   "amount": 500
+  },
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:soap",
+   "count": 3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:glycerol",
+   "amount": 120
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 13668448,
+  "fog_color": 12087368,
+  "water_color": 4159204,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "particle": {
+   "options": {
+    "type": "minecraft:dust",
+    "color": [
+     0.55,
+     0.32,
+     0.24
+    ],
+    "scale": 1.0
+   },
+   "probability": 0.004
+  },
+  "music": {
+   "sound": "pioneers:music.space.rocky",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:mars_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [
+   "pioneers:crater_rare"
+  ],
+  [],
+  [],
+  [],
+  [
+   "pioneers:marsium_ore",
+   "pioneers:hematite_ore"
+  ],
+  [],
+  [],
+  [
+   "pioneers:boulder_rare",
+   "pioneers:scarlet_thistle",
+   "pioneers:meteorite_iron_rare"
+  ]
+ ]
+}

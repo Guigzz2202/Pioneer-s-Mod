@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 960,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:radish"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinegar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pickles",
+   "count": 1,
+   "nbt": {
+    "Source": "pioneers:radish"
+   }
+  }
+ ]
+}

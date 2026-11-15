@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:gems/zircon"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:zircon_dust",
+  "count": 1
+ }
+}

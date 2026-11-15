@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:copper_prospector"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.prospect.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.prospect.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "prospect"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:bronze/flint_tools"
+}

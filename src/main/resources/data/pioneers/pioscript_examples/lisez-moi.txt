@@ -1,0 +1,20 @@
+Disquette d'exemples PioScript (Pioneer's)
+
+Ouvrez un fichier dans la liste de gauche, puis Lancer (ou F5).
+Les fichiers d'une disquette s'appellent a:nom (lecteur A) ou b:nom (lecteur B) ;
+sans lettre, ils sont sur le disque interne (c:).
+
+bonjour.py     console, saisie, boucle
+clignotant.py  sortie redstone qui clignote
+compteur.py    compte les impulsions redstone, note dans un fichier
+tableau.py     tableau de bord d'une machine liee sur les ecrans lies
+reacteur.py    regulation d'un reacteur a fission (liaison 1)
+vol.py         programme les ordinateurs de vol du lecteur A (sondes, fusees)
+rail.py        tableau des trains et gare fermee quand son quai est plein
+journal.py     journal JSON (heure, meteo, mesure), moyenne et barre a l'ecran
+fonctions.txt  toutes les fonctions de PioScript (aussi : help() et F1)
+
+Aide : bouton ? du terminal (ou F1 sur un mot), ou help("nom") dans un programme.
+
+Liaisons : configurateur de liaison, Maj + clic droit sur la machine,
+puis clic droit sur l'ordinateur. link(1) .. link(4) dans le programme.

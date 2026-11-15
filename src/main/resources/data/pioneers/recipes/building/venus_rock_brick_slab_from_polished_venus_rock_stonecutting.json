@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_venus_rock"
+ },
+ "result": "pioneers:venus_rock_brick_slab",
+ "count": 2
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_trappist_1f_blue_ice"
+ },
+ "result": "pioneers:chiseled_trappist_1f_blue_ice_bricks",
+ "count": 1
+}

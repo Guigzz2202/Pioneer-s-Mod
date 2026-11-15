@@ -1,0 +1,60 @@
+{
+ "id": "empire",
+ "order": 1,
+ "representative": {
+  "mode": "appointed",
+  "term_days": 0,
+  "reelectable": true
+ },
+ "council": {
+  "min": 0,
+  "max": 0
+ },
+ "decisions": {
+  "taxes": {
+   "by": "representative"
+  },
+  "roles": {
+   "by": "representative"
+  },
+  "kick": {
+   "by": "representative"
+  },
+  "spend": {
+   "by": "representative"
+  },
+  "war": {
+   "by": "representative"
+  },
+  "treaty": {
+   "by": "representative"
+  },
+  "regime": {
+   "by": "representative"
+  },
+  "identity": {
+   "by": "representative"
+  }
+ },
+ "caps": {
+  "activity_tax": 40,
+  "dues": 150
+ },
+ "succession": "heir",
+ "counter_power": {
+  "type": "revolution",
+  "cooldown_days": 30,
+  "imposes": "democracy",
+  "by": "members",
+  "majority": "three_quarters",
+  "base": "electorate"
+ },
+ "advantage": {
+  "claim_budget": 0.0,
+  "dividend": false
+ },
+ "federal": {
+  "contribution_max": 20,
+  "weight_cap": 0.4
+ }
+}

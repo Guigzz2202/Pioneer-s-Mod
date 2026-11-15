@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:space_simulator_casing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire_glass"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/terminite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/borealite"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:space_simulator_glass",
+  "count": 1
+ }
+}

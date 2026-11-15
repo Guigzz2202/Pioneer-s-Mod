@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:soybean"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 240,
+ "results": [
+  {
+   "item": "pioneers:edamame",
+   "count": 2
+  }
+ ]
+}

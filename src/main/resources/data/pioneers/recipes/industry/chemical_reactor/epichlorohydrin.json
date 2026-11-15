@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sodium_hydroxide"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:glycerol",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:epichlorohydrin",
+   "amount": 500
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ]
+}

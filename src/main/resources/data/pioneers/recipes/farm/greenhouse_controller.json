@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/lunarium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/basic"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_basic"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:greenhouse_controller",
+  "count": 1
+ }
+}

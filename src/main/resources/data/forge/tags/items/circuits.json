@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:circuits/mk1",
+  "#forge:circuits/mk2",
+  "#forge:circuits/mk3",
+  "#forge:circuits/mk4"
+ ]
+}

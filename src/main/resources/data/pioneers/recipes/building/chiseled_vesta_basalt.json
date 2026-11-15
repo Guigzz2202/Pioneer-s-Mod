@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#",
+  "#"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:vesta_basalt_brick_slab"
+  }
+ },
+ "result": {
+  "item": "pioneers:chiseled_vesta_basalt",
+  "count": 1
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:copper_excavator",
+  "pioneers:iron_excavator",
+  "pioneers:bronze_excavator",
+  "pioneers:steel_excavator",
+  "pioneers:hardened_steel_excavator",
+  "pioneers:brass_excavator",
+  "pioneers:titanium_excavator",
+  "pioneers:stainless_steel_excavator",
+  "pioneers:duralumin_excavator",
+  "pioneers:gold_excavator",
+  "pioneers:tungsten_carbide_excavator",
+  "pioneers:vanadium_steel_excavator",
+  "pioneers:stellite_excavator",
+  "pioneers:osmiridium_excavator",
+  "pioneers:titanium_aluminide_excavator",
+  "pioneers:nitinol_excavator"
+ ]
+}

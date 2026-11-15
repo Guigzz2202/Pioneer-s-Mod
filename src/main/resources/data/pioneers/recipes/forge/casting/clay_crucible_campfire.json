@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:campfire_cooking",
+ "category": "misc",
+ "ingredient": {
+  "item": "pioneers:unfired_crucible"
+ },
+ "result": "pioneers:clay_crucible",
+ "experience": 0.2,
+ "cookingtime": 600
+}

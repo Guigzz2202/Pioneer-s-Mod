@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 960,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hot_pepper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinegar"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hot_sauce",
+   "count": 3
+  }
+ ]
+}

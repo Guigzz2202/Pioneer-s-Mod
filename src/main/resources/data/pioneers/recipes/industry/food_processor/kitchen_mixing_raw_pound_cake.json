@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 64,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_pound_cake",
+   "count": 1
+  }
+ ]
+}

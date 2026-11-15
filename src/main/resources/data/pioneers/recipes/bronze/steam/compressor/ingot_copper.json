@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "compressor",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/copper"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:copper_ingot",
+  "count": 1
+ },
+ "time": 160
+}

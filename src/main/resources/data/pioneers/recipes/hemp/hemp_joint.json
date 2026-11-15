@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dried_hemp_flower"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:hemp_joint",
+  "count": 2
+ }
+}

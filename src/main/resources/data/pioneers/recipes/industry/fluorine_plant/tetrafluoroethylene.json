@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 200,
+ "family": "fluorine_plant",
+ "fluids": [
+  {
+   "fluid": "pioneers:chloroform",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:tetrafluoroethylene",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 300
+  }
+ ],
+ "industrial": true
+}

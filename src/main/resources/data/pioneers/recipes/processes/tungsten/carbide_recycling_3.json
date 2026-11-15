@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "family": "ball_mill",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:friable_carbide"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_carbide_dust",
+   "count": 1
+  }
+ ]
+}

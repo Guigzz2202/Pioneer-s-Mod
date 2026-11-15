@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:photovoltaic_cell"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:multilayer_insulation"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/silver"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/amethyst"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/nitinol"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/electrum"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:space_solar_panel",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:netherite_plate",
+  "pioneers:netherite_block",
+  "pioneers:netherite_nugget",
+  "pioneers:netherite_ingot",
+  "pioneers:netherite_dust",
+  "pioneers:netherite_billet"
+ ]
+}

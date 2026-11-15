@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:prismarine_shard"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:black_dye"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:dark_prismarine",
+  "count": 1
+ }
+}

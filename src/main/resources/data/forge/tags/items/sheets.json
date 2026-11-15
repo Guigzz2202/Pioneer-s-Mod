@@ -1,0 +1,17 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:sheets/tin",
+  "#forge:sheets/steel",
+  "#forge:sheets/aluminium",
+  "#forge:sheets/tungsten",
+  "#forge:sheets/titanium",
+  "#forge:sheets/galvanized_steel",
+  "#forge:sheets/stainless_steel",
+  "#forge:sheets/copper",
+  "#forge:sheets/brass",
+  "#forge:sheets/nickel",
+  "#forge:sheets/magnesium",
+  "#forge:sheets/duralumin"
+ ]
+}

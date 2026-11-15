@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#  ",
+  "## ",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_mars_ochre_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_mars_ochre_rock_stairs",
+  "count": 4
+ }
+}

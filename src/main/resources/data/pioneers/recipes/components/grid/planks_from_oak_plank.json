@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:oak_plank"
+  },
+  {
+   "item": "pioneers:oak_plank"
+  },
+  {
+   "item": "pioneers:oak_plank"
+  },
+  {
+   "item": "pioneers:oak_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:oak_planks",
+  "count": 1
+ }
+}

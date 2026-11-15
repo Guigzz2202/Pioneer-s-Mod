@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bayer_digester",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_hydroxide"
+   },
+   "count": 3
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 300
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sodium_aluminate_liquor",
+   "amount": 900
+  }
+ ],
+ "pressure": 5,
+ "air": 150
+}

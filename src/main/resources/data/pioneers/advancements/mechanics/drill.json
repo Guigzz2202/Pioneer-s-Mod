@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:mechanical_drill"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.drill.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.drill.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "machine_drill"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:mechanics/jaw_crusher"
+}

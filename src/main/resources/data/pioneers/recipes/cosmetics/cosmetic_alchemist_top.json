@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "item": "minecraft:shears"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/purple"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/gold"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:glass_bottle"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_alchemist_top",
+  "count": 1
+ }
+}

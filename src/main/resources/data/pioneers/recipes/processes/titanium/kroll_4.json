@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ilmenite_concentrate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 600
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_chloride",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:crude_titanium_tetrachloride",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 300
+  }
+ ],
+ "temperature": 1000
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:cobblestone"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/quartz"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:observer",
+   "count": 1
+  }
+ ]
+}

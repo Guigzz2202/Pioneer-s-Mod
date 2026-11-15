@@ -1,0 +1,17 @@
+{
+ "order": 10,
+ "icon": "pioneers:textures/gui/pioneer/skill/logistics.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "logistics.driven_speed",
+   "value": 0.15,
+   "unit": "pct"
+  },
+  {
+   "key": "logistics.copy_config",
+   "value": 1.0,
+   "unit": "abs"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:redstone_torch"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/quartz"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stone"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:comparator",
+   "count": 1
+  }
+ ]
+}

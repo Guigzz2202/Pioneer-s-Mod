@@ -1,0 +1,15 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:apple",
+  "pioneers:apricot",
+  "pioneers:plum",
+  "pioneers:peach",
+  "pioneers:mango",
+  "pioneers:banana",
+  "pioneers:pear",
+  "pioneers:cherries",
+  "pioneers:starfruit",
+  "pioneers:pineapple"
+ ]
+}

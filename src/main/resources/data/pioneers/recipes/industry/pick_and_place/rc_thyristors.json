@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:etched_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_package"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:thyristor",
+   "count": 8
+  }
+ ]
+}

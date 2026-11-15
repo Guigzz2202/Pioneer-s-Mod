@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 360,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:corn_starch"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 450
+  },
+  {
+   "fluid": "pioneers:vinasse",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 220
+  }
+ ]
+}

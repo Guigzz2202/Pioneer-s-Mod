@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "AGA",
+  "GAG",
+  "AGA"
+ ],
+ "key": {
+  "A": {
+   "item": "pioneers:asphalt"
+  },
+  "G": {
+   "item": "minecraft:gravel"
+  }
+ },
+ "result": {
+  "item": "pioneers:robotic_road",
+  "count": 8
+ }
+}

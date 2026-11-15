@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "III",
+  "III",
+  "III"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:ingots/stainless_steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:stainless_steel_block",
+  "count": 1
+ }
+}

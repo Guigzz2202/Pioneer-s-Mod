@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "aquafarm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:kelp"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:kelp",
+   "count": 6
+  },
+  {
+   "item": "pioneers:crushed_shells",
+   "count": 1,
+   "chance": 0.3
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:string"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:bow",
+  "count": 1
+ }
+}

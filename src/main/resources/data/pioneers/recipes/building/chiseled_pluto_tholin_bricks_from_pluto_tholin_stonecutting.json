@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:pluto_tholin"
+ },
+ "result": "pioneers:chiseled_pluto_tholin_bricks",
+ "count": 1
+}

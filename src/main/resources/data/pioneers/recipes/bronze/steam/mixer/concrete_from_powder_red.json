@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "mixer",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:red_concrete_powder"
+   },
+   "count": 8
+  }
+ ],
+ "result": {
+  "item": "minecraft:red_concrete",
+  "count": 8
+ },
+ "time": 80,
+ "water": 1000
+}

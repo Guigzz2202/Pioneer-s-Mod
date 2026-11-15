@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pyrolysis_oven",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tar_sand_chunk"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:sand",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:synthetic_crude",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:pyrolysis_gas",
+   "amount": 50
+  }
+ ]
+}

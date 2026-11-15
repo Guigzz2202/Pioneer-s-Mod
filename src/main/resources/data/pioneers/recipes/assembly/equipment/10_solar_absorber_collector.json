@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "..GGGGGG..",
+  "..MVAAVM..",
+  "...CXXC...",
+  ".........."
+ ],
+ "key": {
+  "G": {
+   "item": "pioneers:industrial_glass"
+  },
+  "M": {
+   "tag": "forge:plates/mercurium"
+  },
+  "V": {
+   "tag": "forge:rods/venusium"
+  },
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "X": {
+   "item": "pioneers:solar_absorber_casing"
+  }
+ },
+ "result": {
+  "item": "pioneers:solar_absorber_collector",
+  "count": 4
+ },
+ "energy": 100000000,
+ "duration": 600,
+ "research": "solar_absorption"
+}

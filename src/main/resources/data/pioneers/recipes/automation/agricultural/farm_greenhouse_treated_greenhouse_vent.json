@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:treated_greenhouse_glass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:treated_wood"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_nail"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:treated_greenhouse_vent",
+   "count": 2
+  }
+ ]
+}

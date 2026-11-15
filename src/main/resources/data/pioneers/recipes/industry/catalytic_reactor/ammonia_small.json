@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 120,
+ "family": "catalytic_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 750
+  },
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_catalyst",
+   "count": 1,
+   "chance": 0.95
+  },
+  {
+   "item": "pioneers:spent_iron_catalyst",
+   "count": 1,
+   "chance": 0.05
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 500
+  }
+ ]
+}

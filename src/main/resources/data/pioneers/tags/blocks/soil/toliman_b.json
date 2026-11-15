@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:toliman_moss",
+  "pioneers:toliman_soil",
+  "pioneers:toliman_silt",
+  "pioneers:verdigris_rock"
+ ]
+}

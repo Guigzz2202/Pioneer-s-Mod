@@ -1,0 +1,33 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PCP",
+  "GEG",
+  "RHR"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/bronze"
+  },
+  "C": {
+   "item": "pioneers:bronze_logistic_cable"
+  },
+  "G": {
+   "tag": "forge:gears/bronze"
+  },
+  "E": {
+   "item": "pioneers:steam_engine"
+  },
+  "R": {
+   "tag": "forge:rods/bronze"
+  },
+  "H": {
+   "item": "pioneers:bronze_pickaxe_head"
+  }
+ },
+ "result": {
+  "item": "pioneers:steam_drill",
+  "count": 1
+ }
+}

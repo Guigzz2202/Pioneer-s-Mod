@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:gems/quartz"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:quartz_dust",
+  "count": 1
+ }
+}

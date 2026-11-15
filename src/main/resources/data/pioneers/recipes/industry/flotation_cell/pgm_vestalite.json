@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 3,
+ "time": 200,
+ "family": "flotation_cell",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:vestalite_dust"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:asteroid_pgm_concentrate",
+   "count": 1
+  }
+ ]
+}

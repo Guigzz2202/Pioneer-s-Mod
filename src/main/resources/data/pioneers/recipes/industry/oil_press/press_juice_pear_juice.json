@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 60,
+ "family": "oil_press",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pear"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:press_cake",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:pear_juice",
+   "amount": 250
+  }
+ ]
+}

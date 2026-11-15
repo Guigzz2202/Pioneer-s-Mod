@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish"
+   },
+   "count": 1
+  }
+ ],
+ "time": 3600,
+ "results": [
+  {
+   "item": "pioneers:dried_fish_fillet",
+   "count": 2
+  }
+ ]
+}

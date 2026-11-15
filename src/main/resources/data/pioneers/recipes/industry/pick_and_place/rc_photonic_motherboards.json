@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 2,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_substrate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_chip"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gold_plated_connector"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:supercapacitor"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:photonic_motherboard",
+   "count": 2
+  }
+ ]
+}

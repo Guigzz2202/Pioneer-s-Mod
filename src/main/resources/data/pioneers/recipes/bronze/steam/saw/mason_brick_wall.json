@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:bricks"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:brick_wall",
+  "count": 6
+ },
+ "time": 40
+}

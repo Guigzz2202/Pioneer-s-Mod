@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 100,
+ "fluids": [
+  {
+   "fluid": "pioneers:phenol",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:formaldehyde",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 600
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "TTT",
+  "WBG",
+  "TRT"
+ ],
+ "key": {
+  "T": {
+   "tag": "forge:pipes/steel"
+  },
+  "W": {
+   "tag": "forge:wires/copper"
+  },
+  "B": {
+   "item": "pioneers:fire_brick"
+  },
+  "G": {
+   "tag": "forge:glass_panes"
+  },
+  "R": {
+   "item": "pioneers:natural_rubber"
+  }
+ },
+ "result": {
+  "item": "pioneers:basic_logistic_cable",
+  "count": 8
+ }
+}

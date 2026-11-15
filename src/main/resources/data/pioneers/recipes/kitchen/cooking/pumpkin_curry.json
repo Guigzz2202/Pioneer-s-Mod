@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:pumpkin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:curry_paste"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  }
+ ],
+ "time": 420,
+ "results": [
+  {
+   "item": "pioneers:pumpkin_curry",
+   "count": 3
+  }
+ ]
+}

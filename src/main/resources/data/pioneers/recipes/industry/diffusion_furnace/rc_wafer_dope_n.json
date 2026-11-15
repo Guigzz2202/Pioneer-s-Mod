@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 140,
+ "family": "diffusion_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:silicon_wafer"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:phosphine",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:doped_wafer",
+   "count": 1
+  }
+ ]
+}

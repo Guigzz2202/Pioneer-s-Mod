@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 200,
+ "strokes": 8,
+ "results": [
+  {
+   "item": "pioneers:dough",
+   "count": 2
+  }
+ ]
+}

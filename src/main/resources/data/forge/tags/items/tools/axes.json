@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:flint_axe",
+  "pioneers:copper_axe",
+  "pioneers:bronze_axe",
+  "pioneers:steel_axe",
+  "pioneers:iron_axe",
+  "pioneers:hardened_steel_axe",
+  "pioneers:brass_axe",
+  "pioneers:titanium_axe",
+  "pioneers:stainless_steel_axe",
+  "pioneers:duralumin_axe",
+  "pioneers:tungsten_carbide_axe",
+  "pioneers:vanadium_steel_axe",
+  "pioneers:stellite_axe",
+  "pioneers:osmiridium_axe",
+  "pioneers:titanium_aluminide_axe",
+  "pioneers:nitinol_axe",
+  "pioneers:gold_axe"
+ ]
+}

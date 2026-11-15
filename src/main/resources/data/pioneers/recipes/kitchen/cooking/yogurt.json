@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:yogurt"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "tag": "forge:milk",
+  "amount": 500
+ },
+ "time": 400,
+ "results": [
+  {
+   "item": "pioneers:yogurt",
+   "count": 3
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:mercury_polar_ice"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:packed_mercury_polar_ice",
+  "count": 1
+ }
+}

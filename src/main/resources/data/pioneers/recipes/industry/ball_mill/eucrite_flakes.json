@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 2,
+ "time": 80,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:eucrite_flakes"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_dust",
+   "count": 1
+  },
+  {
+   "item": "pioneers:nickel_dust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

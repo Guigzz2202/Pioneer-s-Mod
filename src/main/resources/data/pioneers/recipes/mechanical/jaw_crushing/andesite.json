@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "item": "minecraft:andesite"
+ },
+ "count": 1,
+ "turns": 3,
+ "results": [
+  {
+   "item": "minecraft:gravel",
+   "count": 1
+  },
+  {
+   "item": "pioneers:magnetite_fragment",
+   "count": 1,
+   "chance": 0.04
+  }
+ ]
+}

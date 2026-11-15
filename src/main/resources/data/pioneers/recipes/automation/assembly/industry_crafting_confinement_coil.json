@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:veronite_superconductor"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:messinite_ceramic"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:confinement_coil",
+   "count": 8
+  }
+ ]
+}

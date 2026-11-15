@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:flint_shovel",
+  "pioneers:copper_shovel",
+  "pioneers:bronze_shovel",
+  "pioneers:steel_shovel",
+  "pioneers:iron_shovel",
+  "pioneers:hardened_steel_shovel",
+  "pioneers:brass_shovel",
+  "pioneers:titanium_shovel",
+  "pioneers:stainless_steel_shovel",
+  "pioneers:duralumin_shovel",
+  "pioneers:tungsten_carbide_shovel",
+  "pioneers:vanadium_steel_shovel",
+  "pioneers:stellite_shovel",
+  "pioneers:osmiridium_shovel",
+  "pioneers:titanium_aluminide_shovel",
+  "pioneers:nitinol_shovel",
+  "pioneers:gold_shovel"
+ ]
+}

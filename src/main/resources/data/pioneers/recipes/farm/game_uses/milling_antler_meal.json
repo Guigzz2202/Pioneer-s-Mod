@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "pioneers:deer_antler"
+ },
+ "count": 1,
+ "turns": 4,
+ "results": [
+  {
+   "item": "minecraft:bone_meal",
+   "count": 4
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

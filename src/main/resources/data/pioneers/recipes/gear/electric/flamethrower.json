@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "component_assembler",
+ "tier": 0,
+ "time": 280,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:voltaic_cell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gas_capsule"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nozzle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_pipe"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resistor"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:flamethrower",
+   "count": 1
+  }
+ ]
+}

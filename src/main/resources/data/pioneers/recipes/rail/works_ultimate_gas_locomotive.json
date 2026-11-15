@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rail_works",
+ "tier": 3,
+ "time": 500,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_gas_locomotive"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_engine_block"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_bearing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/titanium_aluminide"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_gas_locomotive",
+   "count": 1
+  }
+ ]
+}

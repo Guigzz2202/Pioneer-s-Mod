@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:torch_bulb"
+   },
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_sulfur",
+   "amount": 500
+  }
+ ]
+}

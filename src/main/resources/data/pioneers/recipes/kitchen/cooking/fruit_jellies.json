@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/jam_fruits"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lemon"
+   },
+   "count": 1
+  }
+ ],
+ "time": 360,
+ "results": [
+  {
+   "item": "pioneers:fruit_jellies",
+   "count": 6
+  }
+ ]
+}

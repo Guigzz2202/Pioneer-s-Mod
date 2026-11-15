@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cement"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gravel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:yellow_dye"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platform_slab",
+   "count": 6
+  }
+ ]
+}

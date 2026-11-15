@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:flute",
+  "pioneers:guitar",
+  "pioneers:accordion",
+  "pioneers:drum"
+ ]
+}

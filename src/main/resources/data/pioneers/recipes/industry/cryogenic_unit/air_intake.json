@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 20,
+ "gas_results": [
+  {
+   "gas": "pioneers:air",
+   "amount": 1000
+  }
+ ]
+}

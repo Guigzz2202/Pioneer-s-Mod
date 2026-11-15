@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/stainless_steel"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "pioneers:stainless_rail_profile",
+  "count": 4
+ }
+}

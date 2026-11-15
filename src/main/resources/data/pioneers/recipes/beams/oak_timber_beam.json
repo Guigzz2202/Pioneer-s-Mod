@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:oak_logs"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:oak_timber_beam",
+  "count": 1
+ }
+}

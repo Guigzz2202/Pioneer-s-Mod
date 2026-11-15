@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 700
+  },
+  {
+   "fluid": "pioneers:liquid_ammonia",
+   "amount": 100
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ethylene",
+   "amount": 200
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:amine_solution",
+   "amount": 1000
+  }
+ ]
+}

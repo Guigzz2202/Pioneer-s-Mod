@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:cleanroom_casing",
+  "pioneers:industrial_photolithograph",
+  "pioneers:semiconductor_fab",
+  "pioneers:data_center",
+  "pioneers:quantum_computer"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "minecraft:leaves"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:plant_fiber",
+  "count": 1
+ },
+ "time": 120
+}

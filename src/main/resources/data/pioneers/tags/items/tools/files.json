@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:iron_file",
+  "pioneers:copper_file",
+  "pioneers:bronze_file",
+  "pioneers:steel_file",
+  "pioneers:brass_file",
+  "pioneers:titanium_file",
+  "pioneers:stainless_steel_file",
+  "pioneers:duralumin_file",
+  "pioneers:vanadium_steel_file",
+  "pioneers:tungsten_carbide_file",
+  "pioneers:osmiridium_file",
+  "pioneers:stellite_file",
+  "pioneers:titanium_aluminide_file",
+  "pioneers:nitinol_file",
+  "pioneers:hardened_steel_file",
+  "pioneers:gold_file"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 120,
+ "family": "catalytic_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nickel_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 1000
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 4000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_catalyst",
+   "count": 1,
+   "chance": 0.98
+  },
+  {
+   "item": "pioneers:spent_nickel_catalyst",
+   "count": 1,
+   "chance": 0.02
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 1000
+  }
+ ]
+}

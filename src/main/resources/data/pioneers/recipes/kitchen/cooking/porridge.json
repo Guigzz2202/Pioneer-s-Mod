@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:oat_flakes"
+   },
+   "count": 2
+  }
+ ],
+ "fluid": {
+  "tag": "forge:milk",
+  "amount": 250
+ },
+ "time": 240,
+ "results": [
+  {
+   "item": "pioneers:porridge",
+   "count": 2
+  }
+ ]
+}

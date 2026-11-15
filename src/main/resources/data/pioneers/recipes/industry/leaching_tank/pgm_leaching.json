@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 2,
+ "time": 240,
+ "family": "leaching_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:asteroid_pgm_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:aqua_regia",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:osmiridium_dust",
+   "count": 2
+  },
+  {
+   "item": "pioneers:platinum_dust",
+   "count": 1
+  }
+ ]
+}

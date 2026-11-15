@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:malachite_fragment"
+  },
+  {
+   "item": "pioneers:malachite_fragment"
+  },
+  {
+   "item": "pioneers:malachite_fragment"
+  },
+  {
+   "item": "pioneers:malachite_fragment"
+  }
+ ],
+ "result": {
+  "item": "pioneers:raw_copper",
+  "count": 1
+ }
+}

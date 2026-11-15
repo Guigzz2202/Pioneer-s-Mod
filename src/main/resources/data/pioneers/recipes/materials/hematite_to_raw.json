@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:hematite_fragment"
+  },
+  {
+   "item": "pioneers:hematite_fragment"
+  },
+  {
+   "item": "pioneers:hematite_fragment"
+  },
+  {
+   "item": "pioneers:hematite_fragment"
+  }
+ ],
+ "result": {
+  "item": "pioneers:raw_iron",
+  "count": 1
+ }
+}

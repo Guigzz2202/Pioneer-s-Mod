@@ -1,0 +1,22 @@
+{
+ "order": 15,
+ "icon": "pioneers:textures/gui/pioneer/skill/trade.png",
+ "feature": "economy",
+ "modifiers": [
+  {
+   "key": "trade.quota",
+   "value": 0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "trade.stall_tax_pp",
+   "value": -2.5,
+   "unit": "abs"
+  },
+  {
+   "key": "trade.stall_listings",
+   "value": 3.0,
+   "unit": "abs"
+  }
+ ]
+}

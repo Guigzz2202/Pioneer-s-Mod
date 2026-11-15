@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:gearbox"
+  },
+  {
+   "item": "pioneers:wooden_cog"
+  },
+  {
+   "item": "pioneers:wooden_cog"
+  },
+  {
+   "item": "minecraft:lever"
+  }
+ ],
+ "result": {
+  "item": "pioneers:gearshift",
+  "count": 1
+ }
+}

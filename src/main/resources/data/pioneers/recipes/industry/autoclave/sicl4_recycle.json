@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 1,
+ "time": 120,
+ "fluids": [
+  {
+   "fluid": "pioneers:silicon_tetrachloride",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:trichlorosilane",
+   "amount": 800
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 500
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  "PaP"
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:singularity_plating"
+  },
+  "C": {
+   "item": "pioneers:singularity_cell"
+  },
+  "X": {
+   "item": "pioneers:neutronic_leggings"
+  },
+  "a": {
+   "tag": "forge:rods/borealite"
+  }
+ },
+ "result": {
+  "item": "pioneers:singularity_leggings",
+  "count": 1
+ }
+}

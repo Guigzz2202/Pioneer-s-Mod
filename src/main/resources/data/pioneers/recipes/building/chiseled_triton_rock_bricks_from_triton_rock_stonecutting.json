@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:triton_rock"
+ },
+ "result": "pioneers:chiseled_triton_rock_bricks",
+ "count": 1
+}

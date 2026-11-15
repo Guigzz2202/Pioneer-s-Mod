@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "compressor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:wheat"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "minecraft:hay_block",
+  "count": 1
+ },
+ "time": 160
+}

@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:vanadium_steel_knife_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiberglass_sheet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:vanadium_steel_knife",
+  "count": 1
+ }
+}

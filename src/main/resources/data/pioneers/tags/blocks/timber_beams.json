@@ -1,0 +1,17 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:oak_timber_beam",
+  "pioneers:spruce_timber_beam",
+  "pioneers:birch_timber_beam",
+  "pioneers:jungle_timber_beam",
+  "pioneers:acacia_timber_beam",
+  "pioneers:dark_oak_timber_beam",
+  "pioneers:mangrove_timber_beam",
+  "pioneers:cherry_timber_beam",
+  "pioneers:bamboo_timber_beam",
+  "pioneers:crimson_timber_beam",
+  "pioneers:warped_timber_beam",
+  "pioneers:treated_timber_beam"
+ ]
+}

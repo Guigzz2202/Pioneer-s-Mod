@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PHP",
+  "SCS",
+  "PHP"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/titanium"
+  },
+  "H": {
+   "item": "pioneers:sulcite_hts_tape"
+  },
+  "S": {
+   "tag": "forge:pipes/stainless_steel"
+  },
+  "C": {
+   "item": "pioneers:superconducting_coil"
+  }
+ },
+ "result": {
+  "item": "pioneers:superconducting_cable",
+  "count": 8
+ }
+}

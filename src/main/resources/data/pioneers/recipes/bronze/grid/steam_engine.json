@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PCP",
+  "RFR",
+  "III"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/bronze"
+  },
+  "C": {
+   "item": "pioneers:bronze_logistic_cable"
+  },
+  "R": {
+   "tag": "forge:rods/iron"
+  },
+  "F": {
+   "item": "pioneers:iron_flywheel"
+  },
+  "I": {
+   "tag": "forge:plates/iron"
+  }
+ },
+ "result": {
+  "item": "pioneers:steam_engine",
+  "count": 1
+ }
+}

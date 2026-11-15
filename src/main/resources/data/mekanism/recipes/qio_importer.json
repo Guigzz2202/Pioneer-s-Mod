@@ -1,0 +1,34 @@
+{
+ "conditions": [
+  {
+   "type": "forge:mod_loaded",
+   "modid": "mekanism"
+  }
+ ],
+ "type": "minecraft:crafting_shaped",
+ "key": {
+  "#": {
+   "item": "minecraft:sticky_piston"
+  },
+  "A": {
+   "tag": "forge:pellets/polonium"
+  },
+  "C": {
+   "tag": "forge:circuits/elite"
+  },
+  "I": {
+   "tag": "forge:ingots/lead"
+  },
+  "R": {
+   "tag": "mekanism:alloys/reinforced"
+  }
+ },
+ "pattern": [
+  "IRI",
+  "ACA",
+  " # "
+ ],
+ "result": {
+  "item": "mekanism:qio_importer"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:argentite"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_argentite",
+  "count": 2
+ }
+}

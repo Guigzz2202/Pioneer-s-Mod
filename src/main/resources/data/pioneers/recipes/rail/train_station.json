@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "transporter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:clock"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:train_station",
+  "count": 1
+ }
+}

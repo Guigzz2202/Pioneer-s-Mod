@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rosin"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:soap",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "blast_furnace",
+ "tier": 1,
+ "time": 500,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:chromite_pellets"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hot_air",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ferrochrome",
+   "count": 2
+  },
+  {
+   "item": "pioneers:chromium_slag",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:blast_furnace_gas",
+   "amount": 600
+  }
+ ]
+}

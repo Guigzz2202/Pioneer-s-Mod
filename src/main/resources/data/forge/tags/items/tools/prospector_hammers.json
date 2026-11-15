@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:copper_prospector",
+  "pioneers:bronze_prospector",
+  "pioneers:steel_prospector",
+  "pioneers:iron_prospector",
+  "pioneers:hardened_steel_prospector",
+  "pioneers:brass_prospector",
+  "pioneers:titanium_prospector",
+  "pioneers:stainless_steel_prospector",
+  "pioneers:duralumin_prospector",
+  "pioneers:tungsten_carbide_prospector",
+  "pioneers:vanadium_steel_prospector",
+  "pioneers:stellite_prospector",
+  "pioneers:osmiridium_prospector",
+  "pioneers:titanium_aluminide_prospector",
+  "pioneers:nitinol_prospector",
+  "pioneers:gold_prospector"
+ ]
+}

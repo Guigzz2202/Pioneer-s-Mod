@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:crushed_ores/iron"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:screened_iron_ore",
+   "count": 3
+  },
+  {
+   "item": "pioneers:iron_dust",
+   "count": 1
+  }
+ ]
+}

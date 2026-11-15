@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_food_processor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_faucet"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:industrial_food_processor",
+  "count": 1
+ }
+}

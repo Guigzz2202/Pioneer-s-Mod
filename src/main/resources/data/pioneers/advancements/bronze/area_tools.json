@@ -1,0 +1,46 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:bronze_mining_hammer"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.area_tools.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.area_tools.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "tag": "forge:tools/mining_hammers"
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "tag": "forge:tools/excavators"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:bronze/forged"
+}

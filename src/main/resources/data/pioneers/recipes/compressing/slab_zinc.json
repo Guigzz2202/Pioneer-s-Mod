@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:storage_blocks/zinc"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:zinc_slab",
+  "count": 1
+ }
+}

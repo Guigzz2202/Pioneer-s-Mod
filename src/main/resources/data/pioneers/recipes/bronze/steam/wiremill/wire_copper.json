@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "wiremill",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/copper"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:copper_wire",
+  "count": 2
+ },
+ "time": 120
+}

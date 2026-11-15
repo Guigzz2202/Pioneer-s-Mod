@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/nichrome"
+  }
+ ],
+ "result": {
+  "item": "pioneers:nichrome_nugget",
+  "count": 9
+ }
+}

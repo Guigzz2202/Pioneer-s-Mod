@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "CVC",
+  "PSP",
+  "CVC"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:circuit_mk4"
+  },
+  "V": {
+   "item": "pioneers:veronite_superconductor"
+  },
+  "P": {
+   "item": "pioneers:photonic_crystal"
+  },
+  "S": {
+   "item": "pioneers:stellaris_cell"
+  }
+ },
+ "result": {
+  "item": "pioneers:neutronic_cell",
+  "count": 1
+ }
+}

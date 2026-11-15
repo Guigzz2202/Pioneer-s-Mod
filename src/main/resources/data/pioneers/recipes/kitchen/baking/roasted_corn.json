@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:corn"
+   },
+   "count": 1
+  }
+ ],
+ "time": 240,
+ "results": [
+  {
+   "item": "pioneers:roasted_corn",
+   "count": 1
+  }
+ ]
+}

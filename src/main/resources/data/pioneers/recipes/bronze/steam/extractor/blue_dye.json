@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:cornflower"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:blue_dye",
+  "count": 2
+ },
+ "time": 120
+}

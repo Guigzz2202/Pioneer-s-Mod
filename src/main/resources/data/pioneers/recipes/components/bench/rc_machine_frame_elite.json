@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "advanced_components",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_screw"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_composite_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/chrome"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:machine_frame_elite",
+  "count": 1
+ }
+}

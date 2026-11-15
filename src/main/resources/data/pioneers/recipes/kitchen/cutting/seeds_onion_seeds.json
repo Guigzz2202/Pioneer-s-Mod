@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:onion_seeds",
+   "count": 2
+  }
+ ]
+}

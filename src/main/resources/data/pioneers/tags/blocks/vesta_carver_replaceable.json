@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:vesta_basalt",
+  "pioneers:vesta_regolith",
+  "pioneers:diogenite",
+  "pioneers:vesta_dark_regolith"
+ ]
+}

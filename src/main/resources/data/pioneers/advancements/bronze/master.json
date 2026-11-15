@@ -1,0 +1,70 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:steel_boiler_shell"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.master.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.master.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "pour_bronze"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "steam_engine"
+   }
+  },
+  "c2": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "drill_ore"
+   }
+  },
+  "c3": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "steel"
+   }
+  },
+  "c4": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "steam_press"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ],
+  [
+   "c3"
+  ],
+  [
+   "c4"
+  ]
+ ],
+ "parent": "pioneers:bronze/steel",
+ "rewards": {
+  "experience": 300
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "..........",
+  "...M..M...",
+  "..MM..MM..",
+  "..AA..AA.."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/steel"
+  },
+  "M": {
+   "item": "pioneers:plastic_sheet"
+  }
+ },
+ "result": {
+  "item": "pioneers:space_suit_boots"
+ },
+ "energy": 4000000,
+ "duration": 300,
+ "research": "space_suit"
+}

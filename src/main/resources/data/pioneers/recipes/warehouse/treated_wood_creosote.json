@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planks"
+   },
+   "count": 16
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:creosote_bucket"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:treated_wood",
+  "count": 16
+ }
+}

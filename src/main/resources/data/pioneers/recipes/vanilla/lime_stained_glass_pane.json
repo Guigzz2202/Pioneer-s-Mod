@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:lime_stained_glass"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:lime_stained_glass_pane",
+  "count": 16
+ }
+}

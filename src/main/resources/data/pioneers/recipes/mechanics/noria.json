@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "B B",
+  " W ",
+  "B B"
+ ],
+ "key": {
+  "B": {
+   "item": "minecraft:bucket"
+  },
+  "W": {
+   "item": "pioneers:water_wheel"
+  }
+ },
+ "result": {
+  "item": "pioneers:noria",
+  "count": 1
+ }
+}

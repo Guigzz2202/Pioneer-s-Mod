@@ -1,0 +1,16 @@
+{
+ "type": "pioneers:fluid_cleanup",
+ "config": {
+  "fluid": {
+   "Name": "minecraft:water",
+   "Properties": {
+    "level": "0"
+   }
+  },
+  "barrier": {
+   "Name": "pioneers:titan_ice"
+  },
+  "min_y": 50,
+  "max_level": 61
+ }
+}

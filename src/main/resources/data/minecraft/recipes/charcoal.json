@@ -1,0 +1,16 @@
+{
+ "conditions": [
+  {
+   "type": "pioneers:config",
+   "key": "furnaceCharcoal"
+  }
+ ],
+ "type": "minecraft:smelting",
+ "category": "misc",
+ "ingredient": {
+  "tag": "minecraft:logs_that_burn"
+ },
+ "result": "pioneers:charcoal",
+ "experience": 0.15,
+ "cookingtime": 200
+}

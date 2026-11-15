@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:americium_241"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_beryl"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:neutron_source",
+   "count": 1
+  }
+ ]
+}

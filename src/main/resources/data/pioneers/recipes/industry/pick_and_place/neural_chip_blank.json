@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 2,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:processor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:microchip"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ram_module"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:neural_chip_blank",
+   "count": 1
+  }
+ ]
+}

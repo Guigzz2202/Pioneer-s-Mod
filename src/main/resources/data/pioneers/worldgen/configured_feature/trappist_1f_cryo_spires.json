@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:trappist_1f_blue_ice"
+  },
+  "tip": {
+   "Name": "pioneers:trappist_1f_snow"
+  },
+  "min_height": 10,
+  "max_height": 24,
+  "radius": 2,
+  "elongation": 3.0
+ }
+}

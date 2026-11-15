@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:mercury_polar_ice_bricks"
+ },
+ "result": "pioneers:mercury_polar_ice_brick_slab",
+ "count": 2
+}

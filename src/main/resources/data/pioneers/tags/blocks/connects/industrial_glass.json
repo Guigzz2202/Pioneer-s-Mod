@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:industrial_glass",
+  "pioneers:industrial_glass_advanced",
+  "pioneers:industrial_glass_elite",
+  "pioneers:industrial_glass_ultimate"
+ ]
+}

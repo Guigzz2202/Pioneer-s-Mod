@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 2,
+ "time": 430,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_ring",
+   "count": 32
+  },
+  {
+   "item": "pioneers:titanium_nugget",
+   "count": 9
+  }
+ ]
+}

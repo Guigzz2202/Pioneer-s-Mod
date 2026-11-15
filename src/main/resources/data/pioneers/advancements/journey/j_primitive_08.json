@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_primitive_07",
+ "display": {
+  "icon": {
+   "item": "pioneers:ingot_mold"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_primitive_08.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_primitive_08.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

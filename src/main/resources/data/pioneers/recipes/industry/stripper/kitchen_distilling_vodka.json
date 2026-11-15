@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "family": "stripper",
+ "tier": 0,
+ "time": 400,
+ "fluids": [
+  {
+   "fluid": "pioneers:potato_wash",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:vodka",
+   "amount": 250
+  }
+ ]
+}

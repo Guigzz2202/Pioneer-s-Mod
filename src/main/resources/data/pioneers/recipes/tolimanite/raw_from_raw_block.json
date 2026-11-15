@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:raw_tolimanite_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:raw_tolimanite",
+  "count": 9
+ }
+}

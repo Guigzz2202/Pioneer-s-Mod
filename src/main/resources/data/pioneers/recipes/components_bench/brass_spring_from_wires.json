@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/brass"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "pioneers:brass_spring",
+  "count": 1
+ }
+}

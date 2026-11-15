@@ -1,0 +1,26 @@
+{
+ "result": "pioneers:redstone_ore",
+ "material": "redstone_ore",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#DC1E18",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 4
+  },
+  {
+   "biomes": "#minecraft:is_badlands",
+   "weight": 4
+  },
+  {
+   "biomes": "#forge:is_plains",
+   "weight": 2
+  }
+ ]
+}

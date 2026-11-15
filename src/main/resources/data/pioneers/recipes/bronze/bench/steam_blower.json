@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bronze_logistic_cable"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:steam_blower",
+  "count": 1
+ }
+}

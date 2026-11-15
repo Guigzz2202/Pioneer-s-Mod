@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rings/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:flint"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plant_fiber"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:flint_and_steel",
+  "count": 1
+ }
+}

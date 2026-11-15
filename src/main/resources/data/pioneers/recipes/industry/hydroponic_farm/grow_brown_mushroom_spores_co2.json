@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:brown_mushroom_spores"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nutrient_solution",
+   "amount": 250
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:brown_mushroom",
+   "count": 6
+  },
+  {
+   "item": "pioneers:brown_mushroom_spores",
+   "count": 2
+  }
+ ]
+}

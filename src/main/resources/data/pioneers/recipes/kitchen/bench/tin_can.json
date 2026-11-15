@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/tin"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:tin_can",
+  "count": 2
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:tessera_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_tessera_rock",
+  "count": 4
+ }
+}

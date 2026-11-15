@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 80,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gear_blanks/bronze"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:bronze_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:bronze_nugget",
+   "count": 4
+  }
+ ]
+}

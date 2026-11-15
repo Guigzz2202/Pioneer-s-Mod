@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:iron_mortar",
+  "pioneers:copper_mortar",
+  "pioneers:stone_mortar",
+  "pioneers:bronze_mortar",
+  "pioneers:steel_mortar",
+  "pioneers:brass_mortar",
+  "pioneers:titanium_mortar",
+  "pioneers:stainless_steel_mortar",
+  "pioneers:duralumin_mortar",
+  "pioneers:vanadium_steel_mortar",
+  "pioneers:tungsten_carbide_mortar",
+  "pioneers:osmiridium_mortar",
+  "pioneers:stellite_mortar",
+  "pioneers:titanium_aluminide_mortar",
+  "pioneers:nitinol_mortar",
+  "pioneers:hardened_steel_mortar",
+  "pioneers:gold_mortar"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:moon_sand"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.helium_3.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.helium_3.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_cracker"
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:moon_sand"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:nuclear/root"
+}

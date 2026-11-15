@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 18,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:ganymede_regolith"
+    },
+    "state": {
+     "Name": "pioneers:ganymede_bright_ice"
+    }
+   }
+  ]
+ }
+}

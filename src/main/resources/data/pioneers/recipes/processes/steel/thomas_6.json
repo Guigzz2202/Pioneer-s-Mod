@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "blast_furnace",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pig_iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hot_air",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_ingot",
+   "count": 4
+  },
+  {
+   "item": "pioneers:thomas_slag",
+   "count": 2
+  }
+ ],
+ "industrial": true,
+ "temperature": 1600,
+ "impurity": 1
+}

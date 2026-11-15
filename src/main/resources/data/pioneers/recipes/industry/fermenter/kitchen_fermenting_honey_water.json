@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:honey_bottle"
+   },
+   "count": 3
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:glass_bottle",
+   "count": 3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:honey_water",
+   "amount": 1000
+  }
+ ]
+}

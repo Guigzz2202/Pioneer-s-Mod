@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 80,
+ "family": "roaster",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sulfur"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 400
+  }
+ ]
+}

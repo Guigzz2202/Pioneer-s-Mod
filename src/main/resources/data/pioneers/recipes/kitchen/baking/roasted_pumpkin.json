@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:pumpkin"
+   },
+   "count": 1
+  }
+ ],
+ "time": 420,
+ "results": [
+  {
+   "item": "pioneers:roasted_pumpkin",
+   "count": 2
+  }
+ ]
+}

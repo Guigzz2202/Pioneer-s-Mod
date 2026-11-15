@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryogenic_valve"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_composite_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:inertial_measurement_unit"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_rock_generator",
+  "count": 1
+ }
+}

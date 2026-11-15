@@ -1,0 +1,46 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:plastic_sheet"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.recycling.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.recycling.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_pyrolysis_oven"
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:plastic_sheet"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:agri/fast_pyrolysis"
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_pgm_cake"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iridium_residue",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:osmium_tetroxide",
+   "amount": 100
+  }
+ ]
+}

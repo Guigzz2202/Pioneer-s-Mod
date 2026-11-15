@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bender",
+ "tier": 2,
+ "time": 55,
+ "family": "spring_coiler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/vanadium_steel"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_spring",
+   "count": 1
+  }
+ ]
+}

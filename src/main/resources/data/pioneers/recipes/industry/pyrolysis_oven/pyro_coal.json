@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pyrolysis_oven",
+ "tier": 0,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:coal"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:coke",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:coal_tar",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:coke_oven_gas",
+   "amount": 400
+  }
+ ]
+}

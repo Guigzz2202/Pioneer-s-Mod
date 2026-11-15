@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...MAAM...",
+  "...MPMM...",
+  "...M..M...",
+  "...A..A..."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/stainless_steel"
+  },
+  "M": {
+   "tag": "forge:plates/lunarium"
+  },
+  "P": {
+   "item": "pioneers:space_suit_leggings"
+  }
+ },
+ "result": {
+  "item": "pioneers:thermal_suit_leggings"
+ },
+ "energy": 12000000,
+ "duration": 400,
+ "research": "thermal_suit"
+}

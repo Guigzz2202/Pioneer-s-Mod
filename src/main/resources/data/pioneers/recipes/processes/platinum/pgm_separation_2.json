@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "solvent_extractor",
+ "tier": 2,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:chloroplatinic_solution",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ammonium_chloroplatinate",
+   "count": 3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 400
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 45
+  }
+ ]
+}

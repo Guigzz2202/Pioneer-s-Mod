@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:purpur_block"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:purpur_stairs",
+  "count": 4
+ },
+ "time": 40
+}

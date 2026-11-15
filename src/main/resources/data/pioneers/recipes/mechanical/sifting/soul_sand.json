@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:sifting",
+ "input": {
+  "item": "minecraft:soul_sand"
+ },
+ "count": 1,
+ "turns": 6,
+ "results": [
+  {
+   "item": "pioneers:quartz",
+   "count": 1,
+   "chance": 0.6
+  },
+  {
+   "item": "minecraft:nether_wart",
+   "count": 1,
+   "chance": 0.04
+  },
+  {
+   "item": "pioneers:gold_flake",
+   "count": 1,
+   "chance": 0.35
+  }
+ ]
+}

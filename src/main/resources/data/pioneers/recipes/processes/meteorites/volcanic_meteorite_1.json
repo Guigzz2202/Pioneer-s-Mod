@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "family": "ball_mill",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:volcanic_meteorite"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sulfur",
+   "count": 2
+  },
+  {
+   "item": "minecraft:basalt",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

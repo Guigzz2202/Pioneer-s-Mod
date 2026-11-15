@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:trappist_1e_rock",
+  "pioneers:trappist_1e_soil",
+  "pioneers:trappist_1e_glowmoss"
+ ]
+}

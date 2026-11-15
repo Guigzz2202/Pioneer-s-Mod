@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:casting",
+ "mold": "pioneers:rod_mold",
+ "metal": "iron",
+ "amount": 144,
+ "result": {
+  "item": "pioneers:iron_rod",
+  "count": 2
+ },
+ "cool": 200
+}

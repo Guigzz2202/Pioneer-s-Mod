@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 160,
+ "family": "tank_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:amethyst_dust"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:tinted_glass",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 14,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:mars_clay"
+    },
+    "state": {
+     "Name": "pioneers:mars_gypsum"
+    }
+   },
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:mars_layered_rock"
+    },
+    "state": {
+     "Name": "pioneers:mars_gypsum"
+    }
+   },
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:mars_rock"
+    },
+    "state": {
+     "Name": "pioneers:mars_gypsum"
+    }
+   }
+  ]
+ }
+}

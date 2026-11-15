@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 1,
+ "time": 400,
+ "fluids": [
+  {
+   "fluid": "pioneers:copper_leach_liquor",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_dust",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ]
+}

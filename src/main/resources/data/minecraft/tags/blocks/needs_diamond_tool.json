@@ -1,0 +1,33 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:mercurium_ore",
+  "pioneers:mercurium_block",
+  "pioneers:tharsium_block",
+  "pioneers:tharsium_ore",
+  "pioneers:lokite_ore",
+  "pioneers:conamarite_ore",
+  "pioneers:sulcite_ore",
+  "pioneers:valhallite_ore",
+  "pioneers:tigrite_ore",
+  "pioneers:krakenite_ore",
+  "pioneers:veronite_ore",
+  "pioneers:messinite_ore",
+  "pioneers:ruachite_ore",
+  "pioneers:sputnikite_ore",
+  "pioneers:mordorite_ore",
+  "pioneers:terminite_ore",
+  "pioneers:flarium_ore",
+  "pioneers:pyrrhite_ore",
+  "pioneers:thalassite_ore",
+  "pioneers:edenite_ore",
+  "pioneers:neutronium_block",
+  "pioneers:dark_matter_block",
+  "pioneers:corium",
+  "pioneers:cooled_corium",
+  "pioneers:dry_storage_cask",
+  "pioneers:waste_package",
+  "pioneers:rtg",
+  "pioneers:netherite_block"
+ ]
+}

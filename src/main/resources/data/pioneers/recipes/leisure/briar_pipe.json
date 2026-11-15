@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  },
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:logs"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:briar_pipe",
+  "count": 1
+ }
+}

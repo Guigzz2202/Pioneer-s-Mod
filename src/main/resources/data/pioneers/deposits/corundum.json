@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:corundum",
+ "material": "corundum",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  6000,
+  16000
+ ],
+ "color": "#BE3C50",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#forge:is_savanna",
+   "weight": 3
+  },
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 2
+  }
+ ]
+}

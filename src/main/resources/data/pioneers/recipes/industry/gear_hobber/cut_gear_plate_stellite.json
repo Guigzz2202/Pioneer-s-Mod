@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 530,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/stellite"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellite_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:stellite_nugget",
+   "count": 9
+  }
+ ]
+}

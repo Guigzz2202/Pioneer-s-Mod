@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "mixer",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:sand"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:fire_clay",
+  "count": 3
+ },
+ "time": 80,
+ "water": 250
+}

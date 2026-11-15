@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 210,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:spinach"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tofu"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:curry_paste"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:saag",
+   "count": 2
+  }
+ ]
+}

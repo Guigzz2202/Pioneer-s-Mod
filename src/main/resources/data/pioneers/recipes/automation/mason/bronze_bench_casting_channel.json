@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fire_brick"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fire_clay"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:casting_channel",
+   "count": 4
+  }
+ ]
+}

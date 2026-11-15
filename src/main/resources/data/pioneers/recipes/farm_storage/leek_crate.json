@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:leek"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:leek_crate",
+  "count": 1
+ }
+}

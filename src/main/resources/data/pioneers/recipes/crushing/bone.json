@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "minecraft:bone"
+ },
+ "count": 1,
+ "result": {
+  "item": "minecraft:bone_meal",
+  "count": 5
+ }
+}

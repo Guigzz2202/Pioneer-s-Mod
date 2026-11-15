@@ -1,0 +1,41 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/leafy_greens"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:banana"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:apple"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bottle"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "tag": "forge:milk",
+  "amount": 250
+ },
+ "time": 300,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:green_smoothie",
+   "count": 1
+  }
+ ]
+}

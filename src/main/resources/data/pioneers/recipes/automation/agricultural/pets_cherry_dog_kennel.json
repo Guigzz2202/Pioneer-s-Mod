@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:cherry_planks"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_lath"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hay_block"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cherry_dog_kennel",
+   "count": 1
+  }
+ ]
+}

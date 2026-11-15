@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:bottle",
+  "count": 3
+ }
+}

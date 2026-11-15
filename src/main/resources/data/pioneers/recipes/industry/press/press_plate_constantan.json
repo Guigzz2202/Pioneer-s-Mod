@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 0,
+ "time": 220,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/constantan"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plate_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:constantan_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:plate_die",
+   "count": 1
+  }
+ ]
+}

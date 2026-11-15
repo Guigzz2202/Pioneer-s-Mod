@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beeswax"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_wire"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:bronze_chandelier",
+  "count": 1
+ }
+}

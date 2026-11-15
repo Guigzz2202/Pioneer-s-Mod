@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:enceladus_ice"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:packed_enceladus_ice",
+  "count": 1
+ }
+}

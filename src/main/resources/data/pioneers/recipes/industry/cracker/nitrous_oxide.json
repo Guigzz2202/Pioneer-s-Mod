@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ammonium_nitrate"
+   },
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 50
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrous_oxide",
+   "amount": 250
+  }
+ ]
+}

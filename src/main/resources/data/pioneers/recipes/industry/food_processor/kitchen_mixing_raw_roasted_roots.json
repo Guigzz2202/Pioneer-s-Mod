@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/roots"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honey_bottle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_roasted_roots",
+   "count": 1
+  },
+  {
+   "item": "minecraft:glass_bottle",
+   "count": 1
+  }
+ ]
+}

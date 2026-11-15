@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/edenite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:edenite_nugget",
+  "count": 9
+ }
+}

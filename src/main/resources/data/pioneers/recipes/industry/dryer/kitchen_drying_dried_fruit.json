@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 900,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/dryable_fruits"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dried_fruit",
+   "count": 1
+  }
+ ]
+}

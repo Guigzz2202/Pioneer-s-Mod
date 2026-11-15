@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:electric_motor"
+  },
+  {
+   "item": "pioneers:rubber_sheet"
+  },
+  {
+   "item": "pioneers:rubber_sheet"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_hydro",
+  "count": 1
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "blast_furnace",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sponge_iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hot_air",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pig_iron",
+   "count": 4
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:blast_furnace_gas",
+   "amount": 400
+  }
+ ]
+}

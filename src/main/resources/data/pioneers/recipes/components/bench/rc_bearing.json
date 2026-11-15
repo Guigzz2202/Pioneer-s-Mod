@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rings/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_balls"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:grease"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:bearing",
+  "count": 2
+ }
+}

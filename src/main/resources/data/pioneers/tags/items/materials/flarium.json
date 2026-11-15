@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:flarium_plate",
+  "pioneers:flarium_rod",
+  "pioneers:flarium_billet"
+ ]
+}

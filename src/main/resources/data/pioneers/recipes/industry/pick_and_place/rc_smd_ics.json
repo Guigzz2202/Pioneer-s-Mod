@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fine_etched_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_package"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/gold"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:smd_integrated_circuit",
+   "count": 8
+  }
+ ]
+}

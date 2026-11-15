@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 500,
+ "family": "plasma_sprayer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lunar_alloy_plate"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nichrome_dust"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:meteoritite_rod"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_rod"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:neutronic_plating",
+   "count": 2
+  }
+ ]
+}

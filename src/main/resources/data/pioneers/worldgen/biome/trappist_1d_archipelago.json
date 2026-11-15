@@ -1,0 +1,53 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 10135240,
+  "fog_color": 12104904,
+  "water_color": 3037864,
+  "water_fog_color": 662074,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.exoplanet",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:trappist_1d_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "pioneers:trappist_1d_shale_patches",
+   "pioneers:thalassite_ore",
+   "pioneers:thalassite_ore_rich"
+  ],
+  [],
+  [],
+  [
+   "pioneers:boulder_rare",
+   "pioneers:tide_kelp",
+   "pioneers:meteorite_rock_rare"
+  ],
+  [
+   "pioneers:trappist_1d_fluid_cleanup"
+  ]
+ ]
+}

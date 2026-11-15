@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "lathe",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:pipes/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:honed_cylinder",
+  "count": 1
+ },
+ "time": 120,
+ "byproduct": {
+  "item": "pioneers:steel_nugget",
+  "count": 2
+ },
+ "chance": 1.0
+}

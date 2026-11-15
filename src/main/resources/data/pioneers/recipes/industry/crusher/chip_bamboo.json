@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bamboo"
+   },
+   "count": 8
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wood_chips",
+   "count": 2
+  },
+  {
+   "item": "pioneers:plant_fiber",
+   "count": 1
+  }
+ ]
+}

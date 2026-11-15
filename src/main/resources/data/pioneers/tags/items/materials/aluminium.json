@@ -1,0 +1,27 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:aluminium_nugget",
+  "pioneers:aluminium_ring",
+  "pioneers:aluminium_rod",
+  "pioneers:aluminium_plate",
+  "pioneers:aluminium_dust",
+  "pioneers:aluminium_wire",
+  "pioneers:aluminium_block",
+  "pioneers:aluminium_bolt",
+  "pioneers:aluminium_gear",
+  "pioneers:aluminium_foil",
+  "pioneers:aluminium_spring",
+  "pioneers:aluminium_ingot",
+  "pioneers:aluminium_screw",
+  "pioneers:aluminium_wire_rope",
+  "pioneers:aluminium_sheet",
+  "pioneers:aluminium_slab",
+  "pioneers:aluminium_wire_rod",
+  "pioneers:aluminium_beam_blank",
+  "pioneers:aluminium_gear_blank",
+  "pioneers:aluminium_beam",
+  "pioneers:aluminium_pipe",
+  "pioneers:aluminium_billet"
+ ]
+}

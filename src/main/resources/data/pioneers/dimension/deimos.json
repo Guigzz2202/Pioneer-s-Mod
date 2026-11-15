@@ -1,0 +1,132 @@
+{
+ "type": "pioneers:deimos",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:deimos",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:deimos_bright_ridges",
+     "parameters": {
+      "temperature": [
+       0.37,
+       0.53
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:deimos_filled_craters",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.37
+      ],
+      "humidity": [
+       0.35,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:deimos_filled_craters",
+     "parameters": {
+      "temperature": [
+       0.53,
+       1.0
+      ],
+      "humidity": [
+       0.35,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:deimos_smooth_plains",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.37
+      ],
+      "humidity": [
+       -1.0,
+       0.35
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:deimos_smooth_plains",
+     "parameters": {
+      "temperature": [
+       0.53,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       0.35
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

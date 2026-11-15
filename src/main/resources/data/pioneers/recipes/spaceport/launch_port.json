@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hopper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_gas_buffer"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:launch_pad"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/basic"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:launch_port",
+  "count": 2
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:madeleine_batter"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "results": [
+  {
+   "item": "pioneers:madeleines",
+   "count": 4
+  }
+ ]
+}

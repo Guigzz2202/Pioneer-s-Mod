@@ -1,0 +1,110 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "refectory",
+ "variant": 1,
+ "min_tier": 1,
+ "size": [
+  9,
+  8,
+  6
+ ],
+ "palette": [
+  "minecraft:oak_planks",
+  "minecraft:stone_bricks",
+  "minecraft:mossy_cobblestone",
+  "minecraft:bricks",
+  "minecraft:oak_door[facing=south,half=lower,hinge=right,open=false,powered=false]",
+  "minecraft:oak_stairs[facing=north,half=bottom]",
+  "minecraft:chest[facing=west,type=single,waterlogged=false]",
+  "minecraft:oak_slab[type=top]",
+  "minecraft:cobblestone",
+  "minecraft:cauldron",
+  "minecraft:barrel[facing=up,open=false]",
+  "minecraft:oak_stairs[facing=south,half=bottom]",
+  "minecraft:smoker[facing=west,lit=false]",
+  "minecraft:cracked_stone_bricks",
+  "minecraft:oak_door[facing=south,half=upper,hinge=right,open=false,powered=false]",
+  "minecraft:heavy_weighted_pressure_plate",
+  "minecraft:flower_pot",
+  "minecraft:candle[candles=1,lit=false]",
+  "minecraft:brick_slab[type=bottom]",
+  "minecraft:glass_pane",
+  "minecraft:cobweb",
+  "minecraft:dark_oak_stairs[facing=south,half=bottom]",
+  "minecraft:dark_oak_stairs[facing=north,half=bottom]"
+ ],
+ "layers": [
+  [
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa",
+   "aaaaaaaaa"
+  ],
+  [
+   "bcddedddb",
+   "d.fffffgd",
+   "d.hhhhhid",
+   "i.hhhhhjd",
+   "dklllllmd",
+   "bdcdddddn"
+  ],
+  [
+   "bddcodddb",
+   "d.......d",
+   "..pqprp..",
+   "d.prprpsd",
+   "......s..",
+   "bd.dtd.d."
+  ],
+  [
+   "bdddidddb",
+   "d.......d",
+   "d.......d",
+   "d...uu..d",
+   "d........",
+   "bdidddd.."
+  ],
+  [
+   "vvvvvvvvv",
+   "d.......d",
+   "c.......d",
+   "d.......d",
+   "d........",
+   "wwwwwww.."
+  ],
+  [
+   ".........",
+   "vvvvvvvvv",
+   "d.......d",
+   "d........",
+   "wwwwww...",
+   "........."
+  ],
+  [
+   ".........",
+   ".........",
+   "vvvvvvv.v",
+   "wwwwww...",
+   ".........",
+   "........."
+  ],
+  [
+   ".........",
+   ".........",
+   ".........",
+   ".........",
+   ".........",
+   "........."
+  ]
+ ],
+ "chests": [
+  [
+   7,
+   1,
+   1
+  ]
+ ],
+ "frames": []
+}

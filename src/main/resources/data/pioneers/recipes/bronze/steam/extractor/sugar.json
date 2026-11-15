@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:sugar_cane"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:sugar",
+  "count": 2
+ },
+ "time": 120
+}

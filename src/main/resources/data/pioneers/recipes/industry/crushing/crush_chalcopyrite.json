@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:chalcopyrite"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_chalcopyrite",
+  "count": 2
+ }
+}

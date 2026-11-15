@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:solar_simulation",
+ "planet": {
+  "item": "pioneers:simulated_uranus"
+ },
+ "duration": 400,
+ "outputs": [
+  {
+   "item": "pioneers:veronite_ingot",
+   "count": 2
+  },
+  {
+   "item": "pioneers:messinite_ingot",
+   "count": 2
+  },
+  {
+   "item": "minecraft:blue_ice",
+   "count": 4
+  }
+ ]
+}

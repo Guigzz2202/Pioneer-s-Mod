@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 120,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:basalt"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:peridot_dust"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:polished_basalt",
+   "count": 4
+  }
+ ]
+}

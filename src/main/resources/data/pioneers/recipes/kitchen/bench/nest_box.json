@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hay_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:nest_box",
+  "count": 2
+ }
+}

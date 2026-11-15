@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:moon_sand",
+  "pioneers:moon_rock",
+  "pioneers:mare_regolith",
+  "pioneers:frozen_regolith",
+  "pioneers:lunar_basalt"
+ ]
+}

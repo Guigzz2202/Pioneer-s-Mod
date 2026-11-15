@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_trappist_1e_rock"
+ },
+ "result": "pioneers:cobbled_trappist_1e_rock_wall",
+ "count": 1
+}

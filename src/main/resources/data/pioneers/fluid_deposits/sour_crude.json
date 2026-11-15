@@ -1,0 +1,21 @@
+{
+ "category": "oil",
+ "fluid": "pioneers:sour_crude_oil",
+ "reserve": [
+  6000000,
+  18000000
+ ],
+ "rate": 35,
+ "biomes": [
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 6
+  },
+  {
+   "biomes": "#minecraft:is_ocean",
+   "weight": 2
+  }
+ ],
+ "byproduct": "pioneers:sour_gas",
+ "share": 0.15
+}

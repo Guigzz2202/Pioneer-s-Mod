@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "family": "fluidized_bed_reactor",
+ "tier": 1,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:silicon"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 1500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:trichlorosilane",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "temperature": 300
+}

@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:campfire_cooking",
+ "category": "food",
+ "ingredient": {
+  "item": "pioneers:raw_pigeon"
+ },
+ "result": "pioneers:cooked_pigeon",
+ "experience": 0.35,
+ "cookingtime": 600
+}

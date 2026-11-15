@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 200,
+ "family": "fluidized_bed_reactor",
+ "fluids": [
+  {
+   "fluid": "pioneers:uranyl_nitrate",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:uranium_trioxide",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen_dioxide",
+   "amount": 250
+  }
+ ]
+}

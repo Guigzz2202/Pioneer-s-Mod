@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_fuselage_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ntr_core"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk4"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rocket_nozzle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/ruachite"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/messinite"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:rocket_booster_tier_10",
+  "count": 1
+ }
+}

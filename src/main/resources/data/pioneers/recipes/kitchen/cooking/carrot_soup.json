@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:carrot"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:orange"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 360,
+ "results": [
+  {
+   "item": "pioneers:carrot_soup",
+   "count": 3
+  }
+ ]
+}

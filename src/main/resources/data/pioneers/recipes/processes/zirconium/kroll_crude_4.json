@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zircon_sand_concentrate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zircon_dust",
+   "count": 1,
+   "chance": 0.1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:crude_zirconium_tetrachloride",
+   "amount": 500
+  }
+ ],
+ "temperature": 1000
+}

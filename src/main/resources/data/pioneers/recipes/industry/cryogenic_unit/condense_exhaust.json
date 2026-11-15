@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 20,
+ "gases": [
+  {
+   "gas": "pioneers:exhaust_steam",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 125
+  }
+ ]
+}

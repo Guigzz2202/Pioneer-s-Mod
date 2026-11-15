@@ -1,0 +1,19 @@
+{
+ "result": "pioneers:raw_gold",
+ "material": "gold",
+ "dimension": "minecraft:the_nether",
+ "tier": 1,
+ "reserve": [
+  40000,
+  120000
+ ],
+ "outcrop": "pioneers:gold_outcrop",
+ "color": "#E0B432",
+ "fallback": 10,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_nether",
+   "weight": 10
+  }
+ ]
+}

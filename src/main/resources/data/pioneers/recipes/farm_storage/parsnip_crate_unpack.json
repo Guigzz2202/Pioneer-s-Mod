@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:parsnip_crate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:parsnip",
+  "count": 9
+ }
+}

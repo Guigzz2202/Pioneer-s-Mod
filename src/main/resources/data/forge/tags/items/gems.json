@@ -1,0 +1,19 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:gems/ruby",
+  "#forge:gems/sapphire",
+  "#forge:gems/topaz",
+  "#forge:gems/peridot",
+  "#forge:gems/tanzanite",
+  "#forge:gems/zircon",
+  "#forge:gems/diamond",
+  "#forge:gems/emerald",
+  "#forge:gems/lapis",
+  "#forge:gems/quartz",
+  "pioneers:diamond",
+  "pioneers:emerald",
+  "pioneers:lapis",
+  "pioneers:quartz"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinegar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 8,
+ "results": [
+  {
+   "item": "pioneers:mayonnaise",
+   "count": 3
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 1,
+ "time": 160,
+ "family": "magnetic_separator",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ground_chromite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:chromite_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:iron_dust",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "ore": true
+}

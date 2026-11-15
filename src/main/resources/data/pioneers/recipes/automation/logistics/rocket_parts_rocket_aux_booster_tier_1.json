@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 2,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_fuselage_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:turbopump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rocket_nozzle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/titanium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rocket_aux_booster_tier_1",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:industrial_pyrolysis_oven"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.pyrolysis.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.pyrolysis.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_pyrolysis_oven"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:agri/chipper"
+}

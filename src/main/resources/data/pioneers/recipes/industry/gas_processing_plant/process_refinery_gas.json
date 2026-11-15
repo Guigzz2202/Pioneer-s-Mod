@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 0,
+ "time": 120,
+ "family": "gas_processing_plant",
+ "gases": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 4000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:lpg",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 2400
+  },
+  {
+   "gas": "pioneers:ethane",
+   "amount": 800
+  }
+ ],
+ "industrial": true
+}

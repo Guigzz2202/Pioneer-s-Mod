@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:andesite"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:andesite_stairs",
+  "count": 4
+ },
+ "time": 40
+}

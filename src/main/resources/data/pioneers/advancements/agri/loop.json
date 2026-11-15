@@ -1,0 +1,61 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:fertilizer"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.loop.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.loop.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_anaerobic_digester"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_steam_reformer"
+   }
+  },
+  "c2": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_ammonia_plant"
+   }
+  },
+  "c3": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_hydroponic_farm"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ],
+  [
+   "c3"
+  ]
+ ],
+ "parent": "pioneers:agri/reformer",
+ "rewards": {
+  "experience": 500
+ }
+}

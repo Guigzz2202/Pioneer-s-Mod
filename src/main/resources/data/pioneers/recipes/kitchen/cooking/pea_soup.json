@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pea_pod"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ham"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 420,
+ "results": [
+  {
+   "item": "pioneers:pea_soup",
+   "count": 3
+  }
+ ]
+}

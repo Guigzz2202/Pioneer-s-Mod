@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:artichoke"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vinaigrette"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 500
+ },
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:artichokes_vinaigrette",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  "..........",
+  "...MMMM...",
+  "..MAECAM..",
+  "...KKKK...",
+  "...W..W..."
+ ],
+ "key": {
+  "K": {
+   "item": "pioneers:robot_chassis"
+  },
+  "W": {
+   "item": "pioneers:track_tread"
+  },
+  "M": {
+   "tag": "forge:plates/venusium"
+  },
+  "C": {
+   "tag": "pioneers:circuits/advanced"
+  },
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "E": {
+   "item": "pioneers:advanced_electric_motor"
+  }
+ },
+ "result": {
+  "item": "pioneers:turtle_mk2"
+ },
+ "energy": 16000000,
+ "duration": 400,
+ "research": "robotics"
+}

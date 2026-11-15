@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 260,
+ "family": "vacuum_column",
+ "fluids": [
+  {
+   "fluid": "pioneers:heavy_crude_oil",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:paraffin_wax",
+   "count": 1,
+   "chance": 0.2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:vacuum_gas_oil",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:base_oil",
+   "amount": 100
+  },
+  {
+   "fluid": "pioneers:fuel_oil",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:vacuum_residue",
+   "amount": 400
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 20
+  }
+ ],
+ "industrial": true
+}

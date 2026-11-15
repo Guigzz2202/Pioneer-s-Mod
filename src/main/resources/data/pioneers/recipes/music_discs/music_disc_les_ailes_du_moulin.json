@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "luthier",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:blank_music_disc"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:light_blue_dye"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_cog"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:music_disc_les_ailes_du_moulin",
+  "count": 1
+ }
+}

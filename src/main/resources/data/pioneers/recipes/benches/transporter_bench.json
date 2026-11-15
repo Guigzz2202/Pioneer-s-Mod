@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "IHI",
+  "PGP",
+  "L L"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:plates/iron"
+  },
+  "H": {
+   "tag": "pioneers:tools/hammers"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "G": {
+   "item": "pioneers:wooden_peg"
+  }
+ },
+ "result": {
+  "item": "pioneers:transporter_bench",
+  "count": 1
+ }
+}

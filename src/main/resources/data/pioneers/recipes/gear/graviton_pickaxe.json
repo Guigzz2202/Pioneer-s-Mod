@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  " R "
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:graviton_plating"
+  },
+  "C": {
+   "item": "pioneers:graviton_cell"
+  },
+  "R": {
+   "item": "pioneers:nitinol_rod"
+  },
+  "X": {
+   "item": "pioneers:voltaic_drill"
+  }
+ },
+ "result": {
+  "item": "pioneers:graviton_pickaxe",
+  "count": 1
+ }
+}

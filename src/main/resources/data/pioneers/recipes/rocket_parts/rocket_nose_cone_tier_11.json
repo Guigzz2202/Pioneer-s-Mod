@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_fuselage_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_shield_tile"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:programmed_flight_computer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/sputnikite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quantum_avionics"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/mordorite"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:rocket_nose_cone_tier_11",
+  "count": 1
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 420,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/osmiridium"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:osmiridium_mining_hammer_head",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:trappist_1b",
+ "gravity": 1.0,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "heat",
+ "nitrogen": 0,
+ "temperature": 400
+}

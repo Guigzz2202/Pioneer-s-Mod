@@ -1,0 +1,186 @@
+{
+ "events": {
+  "shortage": [
+   "dialogue.pioneers.events.shortage.0",
+   "dialogue.pioneers.events.shortage.1",
+   "dialogue.pioneers.events.shortage.2",
+   "dialogue.pioneers.events.shortage.3",
+   "dialogue.pioneers.events.shortage.4"
+  ],
+  "surplus": [
+   "dialogue.pioneers.events.surplus.0",
+   "dialogue.pioneers.events.surplus.1",
+   "dialogue.pioneers.events.surplus.2",
+   "dialogue.pioneers.events.surplus.3",
+   "dialogue.pioneers.events.surplus.4"
+  ],
+  "caravan": [
+   "dialogue.pioneers.events.caravan.0",
+   "dialogue.pioneers.events.caravan.1",
+   "dialogue.pioneers.events.caravan.2",
+   "dialogue.pioneers.events.caravan.3",
+   "dialogue.pioneers.events.caravan.4"
+  ]
+ },
+ "board": {
+  "shortage": [
+   "dialogue.pioneers.board.shortage.0",
+   "dialogue.pioneers.board.shortage.1",
+   "dialogue.pioneers.board.shortage.2"
+  ],
+  "surplus": [
+   "dialogue.pioneers.board.surplus.0",
+   "dialogue.pioneers.board.surplus.1",
+   "dialogue.pioneers.board.surplus.2"
+  ],
+  "caravan": [
+   "dialogue.pioneers.board.caravan.0",
+   "dialogue.pioneers.board.caravan.1",
+   "dialogue.pioneers.board.caravan.2"
+  ]
+ },
+ "vocation": {
+  "builder": [
+   "dialogue.pioneers.vocation.builder.0"
+  ],
+  "miner_smelter": [
+   "dialogue.pioneers.vocation.miner_smelter.0"
+  ],
+  "engineer": [
+   "dialogue.pioneers.vocation.engineer.0"
+  ],
+  "logistician": [
+   "dialogue.pioneers.vocation.logistician.0"
+  ],
+  "farmer": [
+   "dialogue.pioneers.vocation.farmer.0"
+  ],
+  "herder_angler": [
+   "dialogue.pioneers.vocation.herder_angler.0"
+  ],
+  "scout": [
+   "dialogue.pioneers.vocation.scout.0"
+  ],
+  "salvager": [
+   "dialogue.pioneers.vocation.salvager.0"
+  ],
+  "astronaut": [
+   "dialogue.pioneers.vocation.astronaut.0"
+  ],
+  "trader": [
+   "dialogue.pioneers.vocation.trader.0"
+  ],
+  "generalist": [
+   "dialogue.pioneers.vocation.generalist.0"
+  ]
+ },
+ "services": {
+  "water": [
+   "dialogue.pioneers.services.water.0",
+   "dialogue.pioneers.services.water.1"
+  ],
+  "energy": [
+   "dialogue.pioneers.services.energy.0",
+   "dialogue.pioneers.services.energy.1"
+  ],
+  "workshop": [
+   "dialogue.pioneers.services.workshop.0",
+   "dialogue.pioneers.services.workshop.1"
+  ],
+  "storage": [
+   "dialogue.pioneers.services.storage.0",
+   "dialogue.pioneers.services.storage.1"
+  ],
+  "archives": [
+   "dialogue.pioneers.services.archives.0",
+   "dialogue.pioneers.services.archives.1"
+  ]
+ },
+ "confidence": {
+  "ruin": [
+   "dialogue.pioneers.confidence.ruin.0",
+   "dialogue.pioneers.confidence.ruin.1",
+   "dialogue.pioneers.confidence.ruin.2"
+  ],
+  "code": [
+   "dialogue.pioneers.confidence.code.0",
+   "dialogue.pioneers.confidence.code.1",
+   "dialogue.pioneers.confidence.code.2"
+  ],
+  "cache": [
+   "dialogue.pioneers.confidence.cache.0",
+   "dialogue.pioneers.confidence.cache.1",
+   "dialogue.pioneers.confidence.cache.2"
+  ],
+  "seeds": [
+   "dialogue.pioneers.confidence.seeds.0",
+   "dialogue.pioneers.confidence.seeds.1",
+   "dialogue.pioneers.confidence.seeds.2"
+  ]
+ },
+ "workers": {
+  "hire": [
+   "dialogue.pioneers.workers.hire.0",
+   "dialogue.pioneers.workers.hire.1",
+   "dialogue.pioneers.workers.hire.2",
+   "dialogue.pioneers.workers.hire.3"
+  ],
+  "refuse_bare_hands": [
+   "dialogue.pioneers.workers.refuse_bare_hands.0",
+   "dialogue.pioneers.workers.refuse_bare_hands.1",
+   "dialogue.pioneers.workers.refuse_bare_hands.2",
+   "dialogue.pioneers.workers.refuse_bare_hands.3"
+  ],
+  "leave": [
+   "dialogue.pioneers.workers.leave.0",
+   "dialogue.pioneers.workers.leave.1",
+   "dialogue.pioneers.workers.leave.2",
+   "dialogue.pioneers.workers.leave.3"
+  ]
+ },
+ "repair": {
+  "amends": [
+   "dialogue.pioneers.repair.amends.0",
+   "dialogue.pioneers.repair.amends.1",
+   "dialogue.pioneers.repair.amends.2",
+   "dialogue.pioneers.repair.amends.3",
+   "dialogue.pioneers.repair.amends.4"
+  ],
+  "accept": [
+   "dialogue.pioneers.repair.accept.0",
+   "dialogue.pioneers.repair.accept.1",
+   "dialogue.pioneers.repair.accept.2",
+   "dialogue.pioneers.repair.accept.3"
+  ],
+  "done": [
+   "dialogue.pioneers.repair.done.0",
+   "dialogue.pioneers.repair.done.1",
+   "dialogue.pioneers.repair.done.2",
+   "dialogue.pioneers.repair.done.3"
+  ],
+  "emissary_greet": [
+   "dialogue.pioneers.repair.emissary_greet.0",
+   "dialogue.pioneers.repair.emissary_greet.1",
+   "dialogue.pioneers.repair.emissary_greet.2"
+  ],
+  "emissary_refuse": [
+   "dialogue.pioneers.repair.emissary_refuse.0",
+   "dialogue.pioneers.repair.emissary_refuse.1"
+  ]
+ },
+ "niais": [
+  "dialogue.pioneers.niais.0",
+  "dialogue.pioneers.niais.1",
+  "dialogue.pioneers.niais.2",
+  "dialogue.pioneers.niais.3",
+  "dialogue.pioneers.niais.4",
+  "dialogue.pioneers.niais.5",
+  "dialogue.pioneers.niais.6",
+  "dialogue.pioneers.niais.7",
+  "dialogue.pioneers.niais.8",
+  "dialogue.pioneers.niais.9",
+  "dialogue.pioneers.niais.10",
+  "dialogue.pioneers.niais.11",
+  "dialogue.pioneers.niais.12"
+ ]
+}

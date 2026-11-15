@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fluorite_lens"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:co2_laser"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/titanium"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:elite_photolithograph",
+  "count": 1
+ }
+}

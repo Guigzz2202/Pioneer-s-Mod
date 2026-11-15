@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "NDN",
+  "DMD",
+  "NDN"
+ ],
+ "key": {
+  "D": {
+   "item": "minecraft:black_dye"
+  },
+  "N": {
+   "item": "pioneers:iron_nugget"
+  },
+  "M": {
+   "tag": "forge:plates/steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:music_disc_station"
+ }
+}

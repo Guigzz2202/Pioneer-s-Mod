@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:platinum_nugget",
+  "pioneers:platinum_rod",
+  "pioneers:platinum_plate",
+  "pioneers:platinum_dust",
+  "pioneers:platinum_wire",
+  "pioneers:platinum_block",
+  "pioneers:platinum_foil",
+  "pioneers:platinum_ingot"
+ ]
+}

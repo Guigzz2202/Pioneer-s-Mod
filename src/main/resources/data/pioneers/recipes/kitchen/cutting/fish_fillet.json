@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:fish_fillet",
+   "count": 2
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 1,
+   "chance": 0.3
+  }
+ ]
+}

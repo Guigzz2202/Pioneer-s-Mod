@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:campfire_cooking",
+ "category": "food",
+ "ingredient": {
+  "item": "pioneers:raw_big_game_meat"
+ },
+ "result": "pioneers:cooked_big_game_meat",
+ "experience": 0.35,
+ "cookingtime": 600
+}

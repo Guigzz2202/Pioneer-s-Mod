@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 80,
+ "family": "magnetic_separator",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:iron_bars"
+   },
+   "count": 8
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_scrap",
+   "count": 1
+  }
+ ]
+}

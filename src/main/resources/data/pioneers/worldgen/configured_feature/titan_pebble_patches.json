@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 16,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:titan_sand"
+    },
+    "state": {
+     "Name": "pioneers:titan_pebbles"
+    }
+   },
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:titan_tholin"
+    },
+    "state": {
+     "Name": "pioneers:titan_pebbles"
+    }
+   }
+  ]
+ }
+}

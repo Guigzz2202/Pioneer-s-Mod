@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_mercury_rock"
+ },
+ "result": "pioneers:cobbled_mercury_rock_slab",
+ "count": 2
+}

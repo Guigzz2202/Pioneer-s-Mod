@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#  ",
+  "## ",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:cobbled_ceres_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:cobbled_ceres_rock_stairs",
+  "count": 4
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 200,
+ "family": "fluorine_plant",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:alumina"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:cryolite",
+   "amount": 250
+  }
+ ],
+ "industrial": true
+}

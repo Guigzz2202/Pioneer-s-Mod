@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "FS",
+  "SP"
+ ],
+ "key": {
+  "F": {
+   "item": "minecraft:flint"
+  },
+  "S": {
+   "tag": "forge:rods/wooden"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "item": "pioneers:hand_crank",
+  "count": 1
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_trappist_1f_blue_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:trappist_1f_blue_ice_bricks",
+  "count": 4
+ }
+}

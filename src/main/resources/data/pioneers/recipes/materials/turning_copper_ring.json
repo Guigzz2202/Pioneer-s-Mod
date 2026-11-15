@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:turning",
+ "input": {
+  "tag": "forge:rods/copper"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "pioneers:copper_ring",
+   "count": 1
+  }
+ ]
+}

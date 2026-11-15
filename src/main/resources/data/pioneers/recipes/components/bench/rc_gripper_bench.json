@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "advanced_components",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:piston"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:gripper",
+  "count": 1
+ }
+}

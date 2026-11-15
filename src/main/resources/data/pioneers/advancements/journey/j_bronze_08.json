@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_bronze_07",
+ "display": {
+  "icon": {
+   "item": "pioneers:primitive_plastic"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_bronze_08.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_bronze_08.description"
+  },
+  "frame": "goal",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

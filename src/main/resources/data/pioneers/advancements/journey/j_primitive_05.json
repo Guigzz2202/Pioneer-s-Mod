@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_primitive_04",
+ "display": {
+  "icon": {
+   "item": "pioneers:stone_hammer"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_primitive_05.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_primitive_05.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

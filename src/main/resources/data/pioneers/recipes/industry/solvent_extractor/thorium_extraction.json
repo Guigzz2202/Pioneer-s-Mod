@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 240,
+ "family": "solvent_extractor",
+ "fluids": [
+  {
+   "fluid": "pioneers:thorium_nitrate",
+   "amount": 500
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:thorium_dioxide",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 48
+  },
+  {
+   "fluid": "pioneers:acid_raffinate",
+   "amount": 300
+  }
+ ]
+}

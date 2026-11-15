@@ -1,0 +1,6317 @@
+{
+ "replace": false,
+ "values": [
+  {
+   "id": "pioneers:acid_suit_boots",
+   "required": false
+  },
+  {
+   "id": "pioneers:acid_suit_chestplate",
+   "required": false
+  },
+  {
+   "id": "pioneers:acid_suit_helmet",
+   "required": false
+  },
+  {
+   "id": "pioneers:acid_suit_leggings",
+   "required": false
+  },
+  {
+   "id": "pioneers:advanced_force_field_generator",
+   "required": false
+  },
+  {
+   "id": "pioneers:advanced_maglev_locomotive",
+   "required": false
+  },
+  {
+   "id": "pioneers:aerostat_buoyancy_cell",
+   "required": false
+  },
+  {
+   "id": "pioneers:aerostat_deck",
+   "required": false
+  },
+  {
+   "id": "pioneers:aerostat_hull",
+   "required": false
+  },
+  {
+   "id": "pioneers:aerostat_kit",
+   "required": false
+  },
+  {
+   "id": "pioneers:aerostat_landing_pad",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:ahunite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:ai_upgrade",
+   "required": false
+  },
+  {
+   "id": "pioneers:alabaster_orchid",
+   "required": false
+  },
+  {
+   "id": "pioneers:alabaster_orchid_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:alabaster_petal",
+   "required": false
+  },
+  {
+   "id": "pioneers:amber_gourd",
+   "required": false
+  },
+  {
+   "id": "pioneers:amber_gourd_vine",
+   "required": false
+  },
+  {
+   "id": "pioneers:amber_gourd_vine_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:ash_berry",
+   "required": false
+  },
+  {
+   "id": "pioneers:ash_berry_bush",
+   "required": false
+  },
+  {
+   "id": "pioneers:ash_berry_bush_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:asteroid_pgm_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:atmospheric_suit_boots",
+   "required": false
+  },
+  {
+   "id": "pioneers:atmospheric_suit_chestplate",
+   "required": false
+  },
+  {
+   "id": "pioneers:atmospheric_suit_helmet",
+   "required": false
+  },
+  {
+   "id": "pioneers:atmospheric_suit_leggings",
+   "required": false
+  },
+  {
+   "id": "pioneers:aurora_bloom",
+   "required": false
+  },
+  {
+   "id": "pioneers:aurora_bloom_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:aurora_petal",
+   "required": false
+  },
+  {
+   "id": "pioneers:basic_force_field_generator",
+   "required": false
+  },
+  {
+   "id": "pioneers:basic_maglev_locomotive",
+   "required": false
+  },
+  {
+   "id": "pioneers:bell_fruit",
+   "required": false
+  },
+  {
+   "id": "pioneers:beryllium_mirror",
+   "required": false
+  },
+  {
+   "id": "pioneers:bga_package",
+   "required": false
+  },
+  {
+   "id": "pioneers:binary_pear",
+   "required": false
+  },
+  {
+   "id": "pioneers:bloomstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:brine_crystal",
+   "required": false
+  },
+  {
+   "id": "pioneers:brine_reed",
+   "required": false
+  },
+  {
+   "id": "pioneers:brine_reed_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:callisto_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:callisto_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:callisto_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:callisto_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:callisto_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:callisto_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:callisto_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cantaloupe_vine",
+   "required": false
+  },
+  {
+   "id": "pioneers:cantaloupe_vine_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:carbide_cutting_tool",
+   "required": false
+  },
+  {
+   "id": "pioneers:carbide_scrap",
+   "required": false
+  },
+  {
+   "id": "pioneers:carbon_creeper",
+   "required": false
+  },
+  {
+   "id": "pioneers:carbon_creeper_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:carbon_fuselage_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:carbon_tendril",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceramic_composite_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceramic_fuselage_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceramic_substrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_clay",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:ceres_salt",
+   "required": false
+  },
+  {
+   "id": "pioneers:chaos_coral",
+   "required": false
+  },
+  {
+   "id": "pioneers:chaos_coral_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:chaos_polyp",
+   "required": false
+  },
+  {
+   "id": "pioneers:charge_pad",
+   "required": false
+  },
+  {
+   "id": "pioneers:charon_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:charon_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:charon_tholin",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_callisto_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_ceres_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_deimos_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_enceladus_blue_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_enceladus_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_europa_deep_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_europa_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_europa_lineae_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_ganymede_bright_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_io_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_lunar_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_lunar_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_mars_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_mars_polar_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_mars_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_mercury_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_mercury_polar_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_mercury_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_miranda_banded_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_moon_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_phobos_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_pluto_methane_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_pluto_nitrogen_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_pluto_water_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_proxima_glacier_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_titan_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_trappist_1f_blue_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_trappist_1f_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_triton_nitrogen_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_venus_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_venus_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:chiseled_vesta_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:cinder_cactus",
+   "required": false
+  },
+  {
+   "id": "pioneers:cinder_cactus_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:cinder_fig",
+   "required": false
+  },
+  {
+   "id": "pioneers:circuit_mk4",
+   "required": false
+  },
+  {
+   "id": "pioneers:cliff_ivy",
+   "required": false
+  },
+  {
+   "id": "pioneers:cliff_ivy_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_callisto_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_ceres_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_charon_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_deimos_breccia",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_deimos_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_diogenite",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_ganymede_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_hygiea_carbon_crust",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_hygiea_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_mars_layered_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_mars_ochre_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_mars_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_mercury_dark_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_mercury_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_miranda_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_moon_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_pallas_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_phobos_breccia",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_phobos_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_pluto_tholin",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_proxima_d_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_proxima_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_tessera_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_titania_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_trappist_1b_obsidian_crust",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_trappist_1b_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_trappist_1d_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_trappist_1e_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_trappist_1f_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_triton_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_venus_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:cobbled_verdigris_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:column_pump_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:conamarite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:confinement_coil",
+   "required": false
+  },
+  {
+   "id": "pioneers:corona_cactus",
+   "required": false
+  },
+  {
+   "id": "pioneers:corona_cactus_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:corona_pad",
+   "required": false
+  },
+  {
+   "id": "pioneers:cracked_io_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:cracked_lunar_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:cracked_mars_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:cracked_mercury_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:cracked_venus_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:cracked_vesta_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:crater_lint",
+   "required": false
+  },
+  {
+   "id": "pioneers:crater_moss",
+   "required": false
+  },
+  {
+   "id": "pioneers:crater_moss_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_ahunite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_borealite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_conamarite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_deimite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_edenite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_flarium",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_hygeite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_krakenite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_lokite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_lunarium",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_marsium",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_mercurium",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_messinite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_mordorite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_pallasite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_phobite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_pyrrhite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_ruachite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_sputnikite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_sulcite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_terminite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_thalassite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_tharsium",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_tigrite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_tolimanite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_valhallite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_venusium",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_veronite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_vestalite",
+   "required": false
+  },
+  {
+   "id": "pioneers:cryogenic_turbopump",
+   "required": false
+  },
+  {
+   "id": "pioneers:cryogenic_valve",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_deimos_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_deimos_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_mars_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_mars_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_mercury_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_mercury_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_moon_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_moon_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_phobos_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_phobos_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_venus_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:cut_venus_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:dark_matter",
+   "required": false
+  },
+  {
+   "id": "pioneers:dark_matter_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:data_crystal_5d",
+   "required": false
+  },
+  {
+   "id": "pioneers:deep_haze",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_breccia",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_bright_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_sandstone_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_sandstone_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_sandstone_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_sandstone_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_sandstone_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:diamond_heatsink",
+   "required": false
+  },
+  {
+   "id": "pioneers:diamond_lattice",
+   "required": false
+  },
+  {
+   "id": "pioneers:diamond_reflector",
+   "required": false
+  },
+  {
+   "id": "pioneers:diogenite",
+   "required": false
+  },
+  {
+   "id": "pioneers:direct_converter",
+   "required": false
+  },
+  {
+   "id": "pioneers:dread_bramble",
+   "required": false
+  },
+  {
+   "id": "pioneers:dread_bramble_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:dread_spine",
+   "required": false
+  },
+  {
+   "id": "pioneers:drill_head_lunarium",
+   "required": false
+  },
+  {
+   "id": "pioneers:drill_head_marsium",
+   "required": false
+  },
+  {
+   "id": "pioneers:drill_head_mercurium",
+   "required": false
+  },
+  {
+   "id": "pioneers:drill_head_neutronium",
+   "required": false
+  },
+  {
+   "id": "pioneers:drill_head_venusium",
+   "required": false
+  },
+  {
+   "id": "pioneers:drill_string_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:drone_armor_plating",
+   "required": false
+  },
+  {
+   "id": "pioneers:drone_bay",
+   "required": false
+  },
+  {
+   "id": "pioneers:drone_mk1",
+   "required": false
+  },
+  {
+   "id": "pioneers:drone_mk2",
+   "required": false
+  },
+  {
+   "id": "pioneers:drone_mk3",
+   "required": false
+  },
+  {
+   "id": "pioneers:drone_mk4",
+   "required": false
+  },
+  {
+   "id": "pioneers:dry_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:dusk_cap",
+   "required": false
+  },
+  {
+   "id": "pioneers:dusk_mushroom",
+   "required": false
+  },
+  {
+   "id": "pioneers:dusk_mushroom_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:eden_berry",
+   "required": false
+  },
+  {
+   "id": "pioneers:eden_berry_bush",
+   "required": false
+  },
+  {
+   "id": "pioneers:eden_berry_bush_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:edenite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:elite_force_field_generator",
+   "required": false
+  },
+  {
+   "id": "pioneers:elite_maglev_locomotive",
+   "required": false
+  },
+  {
+   "id": "pioneers:ember_pod",
+   "required": false
+  },
+  {
+   "id": "pioneers:ember_pod_plant",
+   "required": false
+  },
+  {
+   "id": "pioneers:ember_pod_plant_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_blue_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_blue_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_blue_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_blue_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_blue_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:enceladus_snow",
+   "required": false
+  },
+  {
+   "id": "pioneers:eucrite_flakes",
+   "required": false
+  },
+  {
+   "id": "pioneers:eucrite_lichen",
+   "required": false
+  },
+  {
+   "id": "pioneers:eucrite_lichen_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_deep_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_deep_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_deep_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_deep_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_deep_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_lineae_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_lineae_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_lineae_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_lineae_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_lineae_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:europa_salt",
+   "required": false
+  },
+  {
+   "id": "pioneers:euv_engraving_objective",
+   "required": false
+  },
+  {
+   "id": "pioneers:euv_etched_wafer",
+   "required": false
+  },
+  {
+   "id": "pioneers:factory_ai_core",
+   "required": false
+  },
+  {
+   "id": "pioneers:fearcap",
+   "required": false
+  },
+  {
+   "id": "pioneers:fearcap_mushroom",
+   "required": false
+  },
+  {
+   "id": "pioneers:fearcap_mushroom_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:ferrovine",
+   "required": false
+  },
+  {
+   "id": "pioneers:ferrovine_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:fiber_laser",
+   "required": false
+  },
+  {
+   "id": "pioneers:firebox_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:first_wall_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:flare_crystal",
+   "required": false
+  },
+  {
+   "id": "pioneers:flare_spine",
+   "required": false
+  },
+  {
+   "id": "pioneers:flare_thorn",
+   "required": false
+  },
+  {
+   "id": "pioneers:flare_thorn_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:fragment_collector",
+   "required": false
+  },
+  {
+   "id": "pioneers:fragment_fuel_cartridge",
+   "required": false
+  },
+  {
+   "id": "pioneers:fragment_reactor",
+   "required": false
+  },
+  {
+   "id": "pioneers:friable_carbide",
+   "required": false
+  },
+  {
+   "id": "pioneers:frost_bell",
+   "required": false
+  },
+  {
+   "id": "pioneers:frost_bell_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:frost_fern",
+   "required": false
+  },
+  {
+   "id": "pioneers:frost_fern_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:frost_frond",
+   "required": false
+  },
+  {
+   "id": "pioneers:frost_petal",
+   "required": false
+  },
+  {
+   "id": "pioneers:frozen_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:fusion_drive_core",
+   "required": false
+  },
+  {
+   "id": "pioneers:fusion_propellant_bucket",
+   "required": false
+  },
+  {
+   "id": "pioneers:ganymede_bright_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:ganymede_bright_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:ganymede_bright_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:ganymede_bright_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:ganymede_bright_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:ganymede_frost",
+   "required": false
+  },
+  {
+   "id": "pioneers:ganymede_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:ganymede_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:gas_scanner",
+   "required": false
+  },
+  {
+   "id": "pioneers:geo_spectrometer",
+   "required": false
+  },
+  {
+   "id": "pioneers:geyser_plume",
+   "required": false
+  },
+  {
+   "id": "pioneers:geyser_plume_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:glowcap_cap",
+   "required": false
+  },
+  {
+   "id": "pioneers:glowcap_stem",
+   "required": false
+  },
+  {
+   "id": "pioneers:greenhouse_controller",
+   "required": false
+  },
+  {
+   "id": "pioneers:greenhouse_port",
+   "required": false
+  },
+  {
+   "id": "pioneers:hbm_stack",
+   "required": false
+  },
+  {
+   "id": "pioneers:heart_bloom",
+   "required": false
+  },
+  {
+   "id": "pioneers:heart_bloom_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:heart_petal",
+   "required": false
+  },
+  {
+   "id": "pioneers:heating_coil_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:hematite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:heu_dioxide",
+   "required": false
+  },
+  {
+   "id": "pioneers:hollow_crust",
+   "required": false
+  },
+  {
+   "id": "pioneers:holographic_projector",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygiea_carbon_crust",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygiea_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygiea_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:ice_lily",
+   "required": false
+  },
+  {
+   "id": "pioneers:ice_lily_bulb",
+   "required": false
+  },
+  {
+   "id": "pioneers:ice_lily_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:ice_meteorite",
+   "required": false
+  },
+  {
+   "id": "pioneers:industrial_casing_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:industrial_glass_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:io_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:io_basalt_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:io_basalt_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:io_basalt_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:io_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:io_red_sulfur",
+   "required": false
+  },
+  {
+   "id": "pioneers:io_so2_frost",
+   "required": false
+  },
+  {
+   "id": "pioneers:io_sulfur",
+   "required": false
+  },
+  {
+   "id": "pioneers:iridium_chloride_liquor_bucket",
+   "required": false
+  },
+  {
+   "id": "pioneers:iridium_crucible",
+   "required": false
+  },
+  {
+   "id": "pioneers:iron_meteorite",
+   "required": false
+  },
+  {
+   "id": "pioneers:ivy_strand",
+   "required": false
+  },
+  {
+   "id": "pioneers:josephson_junction",
+   "required": false
+  },
+  {
+   "id": "pioneers:jupiter_cloud_cream",
+   "required": false
+  },
+  {
+   "id": "pioneers:jupiter_cloud_ochre",
+   "required": false
+  },
+  {
+   "id": "pioneers:jupiter_cloud_red",
+   "required": false
+  },
+  {
+   "id": "pioneers:jupiter_cloud_white",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:krakenite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:lantern_fruit",
+   "required": false
+  },
+  {
+   "id": "pioneers:life_support_unit",
+   "required": false
+  },
+  {
+   "id": "pioneers:logistic_chest_large",
+   "required": false
+  },
+  {
+   "id": "pioneers:logistic_chest_medium",
+   "required": false
+  },
+  {
+   "id": "pioneers:logistic_chest_small",
+   "required": false
+  },
+  {
+   "id": "pioneers:logistic_terminal",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:lokite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_alloy_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_alloy_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_basalt_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_basalt_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_basalt_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_ore_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunarium_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:machine_frame_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:machine_hull_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:magma_bramble",
+   "required": false
+  },
+  {
+   "id": "pioneers:magma_bramble_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:mare_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_basalt_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_basalt_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_basalt_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_clay",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_dark_sand",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_gypsum",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_layered_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_ochre_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_permafrost",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_polar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_polar_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_polar_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_polar_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_polar_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sand",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sandstone_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sandstone_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sandstone_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sandstone_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:mars_sandstone_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:marsium_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_heat_spreader",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurium_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_basalt_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_basalt_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_basalt_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_dark_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_polar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_polar_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_polar_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_polar_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_polar_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_sandstone_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_sandstone_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_sandstone_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_sandstone_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercury_sandstone_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:messina_lantern",
+   "required": false
+  },
+  {
+   "id": "pioneers:messina_lantern_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_ceramic",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:messinite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:metallic_fiber",
+   "required": false
+  },
+  {
+   "id": "pioneers:metallic_hydrogen",
+   "required": false
+  },
+  {
+   "id": "pioneers:meteoritite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:meteoritite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:meteoritite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:meteoritite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:meteoritite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:meteoritite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:meteoritite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:methane_pith",
+   "required": false
+  },
+  {
+   "id": "pioneers:methane_reed",
+   "required": false
+  },
+  {
+   "id": "pioneers:methane_reed_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:mining_port",
+   "required": false
+  },
+  {
+   "id": "pioneers:miranda_banded_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:miranda_banded_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:miranda_banded_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:miranda_banded_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:miranda_banded_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:miranda_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:miranda_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:module_flight",
+   "required": false
+  },
+  {
+   "id": "pioneers:module_plasma_edge",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sand",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sandstone_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sandstone_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sandstone_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sandstone_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:moon_sandstone_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordor_burr",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordor_thistle",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordor_thistle_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:mordorite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:multilayer_insulation",
+   "required": false
+  },
+  {
+   "id": "pioneers:music_disc_deux_soleils",
+   "required": false
+  },
+  {
+   "id": "pioneers:music_disc_lumiere_cendree",
+   "required": false
+  },
+  {
+   "id": "pioneers:music_disc_neige_de_pluton",
+   "required": false
+  },
+  {
+   "id": "pioneers:music_disc_orbite_lointaine",
+   "required": false
+  },
+  {
+   "id": "pioneers:music_disc_regolithe",
+   "required": false
+  },
+  {
+   "id": "pioneers:music_disc_rouge_eternel",
+   "required": false
+  },
+  {
+   "id": "pioneers:music_disc_sous_les_nuages",
+   "required": false
+  },
+  {
+   "id": "pioneers:music_disc_tharsis",
+   "required": false
+  },
+  {
+   "id": "pioneers:neptune_cloud",
+   "required": false
+  },
+  {
+   "id": "pioneers:neptune_cloud_dark",
+   "required": false
+  },
+  {
+   "id": "pioneers:neptune_cloud_white",
+   "required": false
+  },
+  {
+   "id": "pioneers:neuromorphic_processor",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_boots",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_cell",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_chestplate",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_helmet",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_leggings",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_multitool",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_plating",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronic_rifle",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronium_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronium_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronium_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:neutronium_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_axe",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_axe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_excavator",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_excavator_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_file",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_file_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_hoe",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_hoe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_knife",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_knife_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_mining_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_mining_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_mortar",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_mortar_bowl",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_pickaxe",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_pickaxe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_prospector",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_prospector_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_saw",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_saw_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_scythe",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_scythe_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_shovel",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_shovel_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_sword",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitinol_sword_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitrogen_spire",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitrogen_spire_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:ntr_core",
+   "required": false
+  },
+  {
+   "id": "pioneers:nvme_ssd",
+   "required": false
+  },
+  {
+   "id": "pioneers:occator_bell",
+   "required": false
+  },
+  {
+   "id": "pioneers:occator_bell_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:olivine_bud",
+   "required": false
+  },
+  {
+   "id": "pioneers:olivine_sprout",
+   "required": false
+  },
+  {
+   "id": "pioneers:olivine_sprout_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:orbital_station_kit",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_axe",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_axe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_excavator",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_excavator_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_file",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_file_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_hoe",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_hoe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_knife",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_knife_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_mining_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_mining_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_mortar",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_mortar_bowl",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_pickaxe",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_pickaxe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_prospector",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_prospector_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_saw",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_saw_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_scythe",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_scythe_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_shovel",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_shovel_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_sword",
+   "required": false
+  },
+  {
+   "id": "pioneers:osmiridium_sword_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_callisto_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_ceres_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_enceladus_blue_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_enceladus_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_europa_deep_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_europa_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_europa_lineae_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_ganymede_bright_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_lunar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_mars_polar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_mercury_polar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_miranda_banded_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_pluto_methane_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_pluto_nitrogen_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_pluto_water_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_proxima_glacier_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_titan_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_trappist_1f_blue_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_trappist_1f_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:packed_triton_nitrogen_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:pale_fluff",
+   "required": false
+  },
+  {
+   "id": "pioneers:pale_tuft",
+   "required": false
+  },
+  {
+   "id": "pioneers:pale_tuft_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallas_bright_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallas_fan",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallas_fan_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallas_frond",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallas_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallas_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:pallasite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:pele_fern",
+   "required": false
+  },
+  {
+   "id": "pioneers:pele_fern_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:pele_frond",
+   "required": false
+  },
+  {
+   "id": "pioneers:pgm_chloride_liquor_bucket",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_breccia",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_sandstone_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_sandstone_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_sandstone_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_sandstone_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_sandstone_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:photonic_chip",
+   "required": false
+  },
+  {
+   "id": "pioneers:photonic_crystal",
+   "required": false
+  },
+  {
+   "id": "pioneers:photonic_motherboard",
+   "required": false
+  },
+  {
+   "id": "pioneers:photonic_tensor_accelerator",
+   "required": false
+  },
+  {
+   "id": "pioneers:piezo_actuator",
+   "required": false
+  },
+  {
+   "id": "pioneers:plasma_heating_klystron",
+   "required": false
+  },
+  {
+   "id": "pioneers:plume_down",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_frost",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_methane_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_methane_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_methane_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_methane_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_methane_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_nitrogen_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_nitrogen_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_nitrogen_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_nitrogen_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_nitrogen_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_tholin",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_water_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_water_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_water_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_water_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:pluto_water_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_callisto_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_callisto_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_callisto_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_callisto_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_ceres_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_ceres_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_ceres_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_ceres_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_enceladus_blue_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_enceladus_blue_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_enceladus_blue_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_enceladus_blue_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_enceladus_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_enceladus_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_enceladus_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_enceladus_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_deep_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_deep_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_deep_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_deep_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_lineae_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_lineae_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_lineae_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_europa_lineae_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_ganymede_bright_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_ganymede_bright_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_ganymede_bright_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_ganymede_bright_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_io_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_lunar_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_lunar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_lunar_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_lunar_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_lunar_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mars_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mars_polar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mars_polar_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mars_polar_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mars_polar_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mercury_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mercury_polar_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mercury_polar_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mercury_polar_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_mercury_polar_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_miranda_banded_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_miranda_banded_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_miranda_banded_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_miranda_banded_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_methane_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_methane_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_methane_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_methane_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_nitrogen_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_nitrogen_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_nitrogen_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_nitrogen_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_water_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_water_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_water_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_pluto_water_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_proxima_glacier_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_proxima_glacier_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_proxima_glacier_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_proxima_glacier_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_titan_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_titan_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_titan_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_titan_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_trappist_1f_blue_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_trappist_1f_blue_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_trappist_1f_blue_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_trappist_1f_blue_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_trappist_1f_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_trappist_1f_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_trappist_1f_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_trappist_1f_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_triton_nitrogen_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_triton_nitrogen_ice_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_triton_nitrogen_ice_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_triton_nitrogen_ice_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_venus_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:polished_vesta_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_d_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_d_slag",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_frost",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_glacier_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_glacier_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_glacier_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_glacier_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_glacier_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_scoria",
+   "required": false
+  },
+  {
+   "id": "pioneers:proxima_twilight_soil",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:pyrrhite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:quantum_avionics",
+   "required": false
+  },
+  {
+   "id": "pioneers:quantum_computer",
+   "required": false
+  },
+  {
+   "id": "pioneers:quasar_crystal",
+   "required": false
+  },
+  {
+   "id": "pioneers:quasar_lamp",
+   "required": false
+  },
+  {
+   "id": "pioneers:qubit_chip",
+   "required": false
+  },
+  {
+   "id": "pioneers:rain_diamond",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_ahunite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_ahunite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_borealite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_borealite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_conamarite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_conamarite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_deimite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_deimite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_edenite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_edenite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_flarium",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_flarium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_hygeite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_hygeite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_krakenite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_krakenite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_lokite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_lokite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_lunarium",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_lunarium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_marsium",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_marsium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_mercurium",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_mercurium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_messinite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_messinite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_meteoritite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_meteoritite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_mordorite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_mordorite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_pallasite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_pallasite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_phobite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_phobite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_pyrrhite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_pyrrhite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_ruachite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_ruachite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_sputnikite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_sputnikite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_sulcite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_sulcite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_terminite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_terminite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_thalassite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_thalassite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_tharsium",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_tharsium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_tigrite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_tigrite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_tolimanite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_tolimanite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_valhallite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_valhallite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_venusium",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_venusium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_veronite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_veronite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_vestalite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_vestalite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_casing",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_port",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_relay",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_upgrade_battery",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_upgrade_cargo",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_upgrade_charging",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_upgrade_efficiency",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_upgrade_fortune",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_upgrade_range",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_upgrade_speed",
+   "required": false
+  },
+  {
+   "id": "pioneers:rock_meteorite",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_10",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_11",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_12",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_13",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_2",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_3",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_4",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_5",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_6",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_7",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_8",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_aux_booster_tier_9",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_10",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_11",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_12",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_13",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_2",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_3",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_4",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_5",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_6",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_7",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_8",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_booster_tier_9",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_module_efficiency",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_module_speed",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_10",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_11",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_12",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_13",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_2",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_3",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_4",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_5",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_6",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_7",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_8",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_nose_cone_tier_9",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_10",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_11",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_12",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_13",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_2",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_3",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_4",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_5",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_6",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_7",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_8",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tank_tier_9",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_10",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_11",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_12",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_13",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_2",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_3",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_4",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_5",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_6",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_7",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_8",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_tier_9",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_10",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_11",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_12",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_13",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_2",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_3",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_4",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_5",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_6",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_7",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_8",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_wing_tier_9",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_chassis",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_control_unit",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_dock",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_drill_arm",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_mk1",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_mk2",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_mk3",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_mk4",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_module_battery",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_module_cargo",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_module_overclock",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_module_refinery",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_module_scanner",
+   "required": false
+  },
+  {
+   "id": "pioneers:rover_wheel",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_crystal_grid",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:ruachite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:rust_fern",
+   "required": false
+  },
+  {
+   "id": "pioneers:rust_fern_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:rust_fiber",
+   "required": false
+  },
+  {
+   "id": "pioneers:saturn_cloud_gold",
+   "required": false
+  },
+  {
+   "id": "pioneers:saturn_cloud_hex",
+   "required": false
+  },
+  {
+   "id": "pioneers:saturn_cloud_pale",
+   "required": false
+  },
+  {
+   "id": "pioneers:scarlet_resin",
+   "required": false
+  },
+  {
+   "id": "pioneers:scarlet_thistle",
+   "required": false
+  },
+  {
+   "id": "pioneers:scarlet_thistle_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:selenite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:selenite_lichen",
+   "required": false
+  },
+  {
+   "id": "pioneers:selenite_lichen_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:silver_bean",
+   "required": false
+  },
+  {
+   "id": "pioneers:silver_bean_vine",
+   "required": false
+  },
+  {
+   "id": "pioneers:silver_bean_vine_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_boots",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_cell",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_chestplate",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_core",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_helmet",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_leggings",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_multitool",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_plating",
+   "required": false
+  },
+  {
+   "id": "pioneers:singularity_rifle",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_deimos_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_deimos_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_deimos_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_io_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_io_basalt_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_io_basalt_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_lunar_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_lunar_basalt_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_lunar_basalt_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mars_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mars_basalt_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mars_basalt_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mars_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mars_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mars_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mercury_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mercury_basalt_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mercury_basalt_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mercury_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mercury_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_mercury_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_moon_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_moon_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_moon_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_phobos_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_phobos_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_phobos_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_venus_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_venus_basalt_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_venus_basalt_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_venus_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_venus_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_venus_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_vesta_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_vesta_basalt_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:smooth_vesta_basalt_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:solar_absorber_casing",
+   "required": false
+  },
+  {
+   "id": "pioneers:solar_absorber_collector",
+   "required": false
+  },
+  {
+   "id": "pioneers:solar_absorber_controller",
+   "required": false
+  },
+  {
+   "id": "pioneers:solar_absorber_port",
+   "required": false
+  },
+  {
+   "id": "pioneers:solar_heliotrope",
+   "required": false
+  },
+  {
+   "id": "pioneers:solar_heliotrope_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:solid_state_cell",
+   "required": false
+  },
+  {
+   "id": "pioneers:soot_puff",
+   "required": false
+  },
+  {
+   "id": "pioneers:soot_puffball",
+   "required": false
+  },
+  {
+   "id": "pioneers:soot_puffball_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_rift_projector",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_simulator_casing",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_simulator_controller",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_simulator_glass",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_simulator_port",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_solar_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_stabilizer_casing",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_stabilizer_controller",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_stabilizer_emitter",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_stabilizer_glass",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_stabilizer_port",
+   "required": false
+  },
+  {
+   "id": "pioneers:space_stabilizer_power_port",
+   "required": false
+  },
+  {
+   "id": "pioneers:spent_fragment_cartridge",
+   "required": false
+  },
+  {
+   "id": "pioneers:spire_crystal",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:stardust",
+   "required": false
+  },
+  {
+   "id": "pioneers:stardust_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_core",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_fuselage_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellarator",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellarator_coil",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_axe",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_boots",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_chestplate",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_helmet",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_hoe",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_leggings",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_pickaxe",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_plating",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_rifle",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellaris_shovel",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_axe",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_axe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_excavator",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_excavator_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_file",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_file_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_gear",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_hoe",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_hoe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_knife",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_knife_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_mining_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_mining_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_mortar",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_mortar_bowl",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_pickaxe",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_pickaxe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_prospector",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_prospector_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_saw",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_saw_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_scythe",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_scythe_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_shovel",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_shovel_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_sword",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_sword_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellite_wrench",
+   "required": false
+  },
+  {
+   "id": "pioneers:stickney_moss",
+   "required": false
+  },
+  {
+   "id": "pioneers:stickney_moss_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:stickney_spores",
+   "required": false
+  },
+  {
+   "id": "pioneers:storm_cloud",
+   "required": false
+  },
+  {
+   "id": "pioneers:stromatolite",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_hts_tape",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcus_grass",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcus_grass_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulcus_straw",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulfur_bloom",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulfur_bloom_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulfur_crust",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulfur_pollen",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulfur_torch",
+   "required": false
+  },
+  {
+   "id": "pioneers:sulfur_torch_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:supercapacitor",
+   "required": false
+  },
+  {
+   "id": "pioneers:superconducting_generator",
+   "required": false
+  },
+  {
+   "id": "pioneers:superconducting_transformer",
+   "required": false
+  },
+  {
+   "id": "pioneers:synthesizer",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:tessera_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:thalassite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsis_tuber",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsis_tuber_plant",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsis_tuber_plant_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_magnet",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:tharsium_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:thermal_suit_boots",
+   "required": false
+  },
+  {
+   "id": "pioneers:thermal_suit_chestplate",
+   "required": false
+  },
+  {
+   "id": "pioneers:thermal_suit_helmet",
+   "required": false
+  },
+  {
+   "id": "pioneers:thermal_suit_leggings",
+   "required": false
+  },
+  {
+   "id": "pioneers:tholin_fiber",
+   "required": false
+  },
+  {
+   "id": "pioneers:tholin_sedge",
+   "required": false
+  },
+  {
+   "id": "pioneers:tholin_sedge_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:tide_kelp",
+   "required": false
+  },
+  {
+   "id": "pioneers:tide_kelp_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:tide_pearl",
+   "required": false
+  },
+  {
+   "id": "pioneers:tiger_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:tiger_grass",
+   "required": false
+  },
+  {
+   "id": "pioneers:tiger_grass_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:tigrite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_pebbles",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_sand",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_tholin",
+   "required": false
+  },
+  {
+   "id": "pioneers:titania_frost",
+   "required": false
+  },
+  {
+   "id": "pioneers:titania_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:titania_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_axe",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_axe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_excavator",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_excavator_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_file",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_file_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_hoe",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_hoe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_knife",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_knife_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_mining_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_mining_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_mortar",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_mortar_bowl",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_pickaxe",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_pickaxe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_prospector",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_prospector_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_saw",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_saw_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_scythe",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_scythe_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_shovel",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_shovel_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_sword",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanium_aluminide_sword_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:tokamak",
+   "required": false
+  },
+  {
+   "id": "pioneers:toliman_moss",
+   "required": false
+  },
+  {
+   "id": "pioneers:toliman_silt",
+   "required": false
+  },
+  {
+   "id": "pioneers:toliman_soil",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tolimanite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:torch_bulb",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1b_ash",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1b_obsidian_crust",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1b_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1d_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1d_sand",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1d_shale",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1e_glowmoss",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1e_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1e_soil",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_blue_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_blue_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_blue_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_blue_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_blue_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:trappist_1f_snow",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_cantaloupe",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_dark_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_frost",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_nitrogen_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_nitrogen_ice_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_nitrogen_ice_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_nitrogen_ice_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_nitrogen_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:triton_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_bolt",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_axe",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_axe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_boots",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_chestplate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_excavator",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_excavator_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_file",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_file_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_helmet",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_hoe",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_hoe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_knife",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_knife_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_leggings",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_mining_hammer",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_mining_hammer_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_mortar",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_mortar_bowl",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_pickaxe",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_pickaxe_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_prospector",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_prospector_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_saw",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_saw_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_scythe",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_scythe_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_shovel",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_shovel_head",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_sword",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_sword_blade",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_carbide_wrench",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_heating_element",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_screw",
+   "required": false
+  },
+  {
+   "id": "pioneers:tungsten_tile",
+   "required": false
+  },
+  {
+   "id": "pioneers:turbine_rotor_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:turtle_mk1",
+   "required": false
+  },
+  {
+   "id": "pioneers:turtle_mk2",
+   "required": false
+  },
+  {
+   "id": "pioneers:turtle_mk3",
+   "required": false
+  },
+  {
+   "id": "pioneers:turtle_mk4",
+   "required": false
+  },
+  {
+   "id": "pioneers:twilight_bulb",
+   "required": false
+  },
+  {
+   "id": "pioneers:twilight_lily",
+   "required": false
+  },
+  {
+   "id": "pioneers:twilight_lily_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:twinleaf",
+   "required": false
+  },
+  {
+   "id": "pioneers:twinleaf_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_air_car",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_autoclave",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_battery_car",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_bearing",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_bladed_rotor",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_boxcar",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_casting_machine",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_centrifugal_pump",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_chemical_bath",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_chemical_reactor",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_chunk_loader",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_cracker",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_crusher",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_cryogenic_unit",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_crystallizer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_diesel_locomotive",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_dryer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_dynamo",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_electric_crucible",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_electric_locomotive",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_electric_motor",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_electrolyzer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_energy_buffer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_engine_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_extruder",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_flat_car",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_fluid_buffer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_force_field_generator",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_furnace",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_gas_buffer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_gas_locomotive",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_gas_tank_car",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_gas_turbine",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_heat_buffer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_heat_exchanger",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_hopper_car",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_hydro_turbine",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_induction_furnace",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_item_buffer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_lightning_collector",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_liquid_combustion_generator",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_machining_center",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_maglev_locomotive",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_microbial_fuel_cell",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_mixer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_ore_separator",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_passenger_car",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_photolithograph",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_pick_and_place",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_piston",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_planetary_gear",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_pressure_buffer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_radiator",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_recycler",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_robot_van",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_rolling_mill",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_sawmill",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_solar_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_solid_combustion_generator",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_substation",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_tank_car",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_tender",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_track",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_unloading_pit",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_wind_rotor",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_wiremill",
+   "required": false
+  },
+  {
+   "id": "pioneers:upgrade_kit_ultimate",
+   "required": false
+  },
+  {
+   "id": "pioneers:uranium_nanopowder",
+   "required": false
+  },
+  {
+   "id": "pioneers:uranus_cloud",
+   "required": false
+  },
+  {
+   "id": "pioneers:uranus_haze",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhalla_berry",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhalla_shrub",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhalla_shrub_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:valhallite_shielding",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_ash",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_basalt_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_basalt_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_basalt_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_sandstone",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_sandstone_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_sandstone_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_sandstone_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_sandstone_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_sandstone_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_sandstone_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:venus_sandstone_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_liner",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:venusium_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:verdigris_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:veronite_superconductor",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_basalt",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_basalt_brick_slab",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_basalt_brick_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_basalt_brick_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_basalt_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_dark_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_hip",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_regolith",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_rose",
+   "required": false
+  },
+  {
+   "id": "pioneers:vesta_rose_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestalite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:void_singularity_cell",
+   "required": false
+  },
+  {
+   "id": "pioneers:volcanic_meteorite",
+   "required": false
+  },
+  {
+   "id": "pioneers:volcanic_thorn",
+   "required": false
+  },
+  {
+   "id": "pioneers:zone_planner",
+   "required": false
+  }
+ ]
+}

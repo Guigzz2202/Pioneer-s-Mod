@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "solvent_extractor",
+ "tier": 3,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:iridium_chloride_liquor",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iridium_residue",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 500
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 45
+  }
+ ]
+}

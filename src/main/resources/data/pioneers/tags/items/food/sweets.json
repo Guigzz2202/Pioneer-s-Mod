@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:barley_sugar",
+  "pioneers:butter_caramels",
+  "pioneers:fruit_jellies",
+  "pioneers:marshmallows",
+  "pioneers:nougat",
+  "pioneers:lollipop",
+  "pioneers:sour_drops",
+  "pioneers:chocolate_truffles"
+ ]
+}

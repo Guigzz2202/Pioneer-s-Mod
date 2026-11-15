@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:red_mushroom_spores"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:red_mushroom",
+   "count": 2
+  },
+  {
+   "item": "pioneers:red_mushroom_spores",
+   "count": 1
+  }
+ ]
+}

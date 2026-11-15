@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:unfired_cup",
+  "count": 2
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:slabs/steel"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:steel_billet",
+  "count": 1
+ }
+}

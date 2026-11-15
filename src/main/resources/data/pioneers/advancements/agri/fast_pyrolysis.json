@@ -1,0 +1,46 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:bio_oil_bucket"
+  },
+  "title": {
+   "translate": "advancements.pioneers.agri.fast_pyrolysis.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.agri.fast_pyrolysis.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_pyrolysis_oven"
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:machine_frame_advanced"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:agri/pyrolysis"
+}

@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smelting",
+ "category": "blocks",
+ "ingredient": {
+  "item": "pioneers:mars_layered_rock"
+ },
+ "result": "pioneers:smooth_mars_layered_rock",
+ "experience": 0.1,
+ "cookingtime": 200
+}

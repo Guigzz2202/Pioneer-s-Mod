@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:plume_streak",
+ "config": {
+  "vent": {
+   "Name": "pioneers:triton_dark_dust"
+  },
+  "deposit": {
+   "Name": "pioneers:triton_dark_dust"
+  },
+  "length": 12
+ }
+}

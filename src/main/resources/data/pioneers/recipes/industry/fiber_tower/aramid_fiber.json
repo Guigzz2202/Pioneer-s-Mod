@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 2,
+ "time": 300,
+ "family": "fiber_tower",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:polymer_pellets"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:aniline",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aramid_fiber",
+   "count": 4
+  }
+ ]
+}

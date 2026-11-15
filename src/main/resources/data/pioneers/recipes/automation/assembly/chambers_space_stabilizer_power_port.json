@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:space_stabilizer_casing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_energy_buffer"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:space_stabilizer_power_port",
+   "count": 1
+  }
+ ]
+}

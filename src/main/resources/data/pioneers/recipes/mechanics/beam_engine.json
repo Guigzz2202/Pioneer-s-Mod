@@ -1,0 +1,33 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "RLP",
+  "CFC",
+  "BBB"
+ ],
+ "key": {
+  "R": {
+   "tag": "forge:rods/iron"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "P": {
+   "item": "pioneers:iron_flywheel"
+  },
+  "C": {
+   "item": "pioneers:copper_block"
+  },
+  "F": {
+   "item": "minecraft:furnace"
+  },
+  "B": {
+   "item": "minecraft:bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:beam_engine",
+  "count": 1
+ }
+}

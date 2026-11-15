@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:phobite_plate",
+  "pioneers:phobite_rod",
+  "pioneers:phobite_billet"
+ ]
+}

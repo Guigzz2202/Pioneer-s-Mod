@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:preserving",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:milk_bucket"
+   },
+   "count": 1
+  }
+ ],
+ "time": 6000,
+ "results": [
+  {
+   "item": "pioneers:yogurt",
+   "count": 3
+  },
+  {
+   "item": "minecraft:bucket",
+   "count": 1
+  }
+ ]
+}

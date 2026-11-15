@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:europa_ice",
+  "pioneers:europa_deep_ice",
+  "pioneers:europa_lineae_ice",
+  "pioneers:europa_salt"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:green_bean"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "results": [
+  {
+   "item": "pioneers:sauteed_green_beans",
+   "count": 2
+  }
+ ]
+}

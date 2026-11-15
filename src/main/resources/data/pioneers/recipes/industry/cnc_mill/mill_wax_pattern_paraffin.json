@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 160,
+ "family": "cnc_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:paraffin_wax"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wax_pattern",
+   "count": 2
+  }
+ ]
+}

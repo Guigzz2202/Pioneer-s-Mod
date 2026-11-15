@@ -1,0 +1,13 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "liquid_combustion_generator",
+ "tier": 0,
+ "time": 160,
+ "fluids": [
+  {
+   "fluid": "pioneers:wood_tar",
+   "amount": 100
+  }
+ ],
+ "energy": 1024
+}

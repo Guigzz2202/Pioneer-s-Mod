@@ -1,0 +1,50 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:bronze_sprinkler"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm.sprinkler.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm.sprinkler.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:bronze_sprinkler"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:steel_sprinkler"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:farm/root"
+}

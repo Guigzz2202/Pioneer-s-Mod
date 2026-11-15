@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:gold_flake"
+  },
+  {
+   "item": "pioneers:gold_flake"
+  },
+  {
+   "item": "pioneers:gold_flake"
+  },
+  {
+   "item": "pioneers:gold_flake"
+  },
+  {
+   "item": "pioneers:gold_flake"
+  },
+  {
+   "item": "pioneers:gold_flake"
+  },
+  {
+   "item": "pioneers:gold_flake"
+  },
+  {
+   "item": "pioneers:gold_flake"
+  },
+  {
+   "item": "pioneers:gold_flake"
+  }
+ ],
+ "result": {
+  "item": "pioneers:gold_nugget",
+  "count": 1
+ }
+}

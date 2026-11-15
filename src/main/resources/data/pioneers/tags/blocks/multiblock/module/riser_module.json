@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:column_pump_advanced",
+    "pioneers:column_pump_basic",
+    "pioneers:column_pump_elite",
+    "pioneers:column_pump_ultimate"
+  ]
+}

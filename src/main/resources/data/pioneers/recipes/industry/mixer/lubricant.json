@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:graphite"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:base_oil",
+   "amount": 900
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 1000
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 260,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/nickel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/chrome"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nichrome_ingot",
+   "count": 5
+  }
+ ],
+ "pure": true
+}

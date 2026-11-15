@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:deimos_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_deimos_rock",
+  "count": 4
+ }
+}

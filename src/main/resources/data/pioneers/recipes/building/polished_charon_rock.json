@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:charon_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_charon_rock",
+  "count": 4
+ }
+}

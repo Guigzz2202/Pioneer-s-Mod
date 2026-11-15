@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:nuggets/mordorite"
+  }
+ },
+ "result": {
+  "item": "pioneers:mordorite_ingot"
+ }
+}

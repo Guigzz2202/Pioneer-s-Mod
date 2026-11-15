@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 400,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:worn_euv_engraving_objective"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beryllium_mirror"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rare_earth_oxide"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:euv_engraving_objective",
+   "count": 1
+  }
+ ]
+}

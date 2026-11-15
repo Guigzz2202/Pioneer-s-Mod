@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 2,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:silicon"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:reclaimed_silicon",
+   "count": 3
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

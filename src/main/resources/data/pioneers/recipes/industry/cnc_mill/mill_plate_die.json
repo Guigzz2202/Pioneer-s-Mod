@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 240,
+ "family": "cnc_mill",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/vanadium_steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:plate_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:vanadium_steel_nugget",
+   "count": 9
+  }
+ ]
+}

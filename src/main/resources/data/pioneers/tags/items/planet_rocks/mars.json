@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:mars_rock",
+  "pioneers:mars_basalt",
+  "pioneers:mars_layered_rock",
+  "pioneers:mars_ochre_rock",
+  "pioneers:mars_sand"
+ ]
+}

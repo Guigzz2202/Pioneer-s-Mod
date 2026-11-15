@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/zinc"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plate_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zinc_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:plate_die",
+   "count": 1
+  }
+ ]
+}

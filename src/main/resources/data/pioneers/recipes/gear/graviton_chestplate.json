@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:graviton_plating"
+  },
+  "C": {
+   "item": "pioneers:graviton_cell"
+  },
+  "X": {
+   "item": "pioneers:voltaic_chestplate"
+  }
+ },
+ "result": {
+  "item": "pioneers:graviton_chestplate",
+  "count": 1
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "tag": "forge:raw_materials/iron"
+ },
+ "count": 1,
+ "turns": 4,
+ "results": [
+  {
+   "item": "pioneers:crushed_iron",
+   "count": 2
+  }
+ ]
+}

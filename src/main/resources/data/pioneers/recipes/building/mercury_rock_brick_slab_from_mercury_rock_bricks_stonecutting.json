@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:mercury_rock_bricks"
+ },
+ "result": "pioneers:mercury_rock_brick_slab",
+ "count": 2
+}

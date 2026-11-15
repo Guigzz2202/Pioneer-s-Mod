@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "blast_furnace",
+ "tier": 0,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_ore_pellets"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:charcoal"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hot_air",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pig_iron",
+   "count": 3
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:blast_furnace_gas",
+   "amount": 600
+  }
+ ]
+}

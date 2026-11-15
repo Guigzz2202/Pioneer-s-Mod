@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "roaster",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zinc_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zinc_calcine",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 400
+  }
+ ],
+ "temperature": 900
+}

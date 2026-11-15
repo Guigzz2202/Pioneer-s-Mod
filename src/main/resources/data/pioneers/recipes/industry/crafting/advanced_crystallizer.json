@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:separation_membrane"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lcd_panel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:advanced_crystallizer",
+  "count": 1
+ }
+}

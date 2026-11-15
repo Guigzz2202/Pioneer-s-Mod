@@ -1,0 +1,24 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:stainless_steel_nugget",
+  "pioneers:stainless_steel_ring",
+  "pioneers:stainless_steel_rod",
+  "pioneers:stainless_steel_plate",
+  "pioneers:stainless_steel_dust",
+  "pioneers:stainless_steel_wire",
+  "pioneers:stainless_steel_block",
+  "pioneers:stainless_steel_gear",
+  "pioneers:stainless_steel_spring",
+  "pioneers:stainless_steel_ingot",
+  "pioneers:stainless_steel_pipe",
+  "pioneers:stainless_steel_sheet",
+  "pioneers:stainless_steel_wire_mesh",
+  "pioneers:stainless_steel_slab",
+  "pioneers:stainless_steel_billet",
+  "pioneers:stainless_steel_wire_rod",
+  "pioneers:stainless_steel_beam_blank",
+  "pioneers:stainless_steel_gear_blank",
+  "pioneers:stainless_steel_beam"
+ ]
+}

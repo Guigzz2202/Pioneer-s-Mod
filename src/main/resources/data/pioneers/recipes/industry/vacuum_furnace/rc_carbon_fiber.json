@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 140,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:polymer_pellets"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:carbon_fiber",
+   "count": 4
+  }
+ ]
+}

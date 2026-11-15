@@ -1,0 +1,65 @@
+{
+ "type": "pioneers:sifting",
+ "input": {
+  "item": "minecraft:dirt"
+ },
+ "count": 1,
+ "turns": 6,
+ "results": [
+  {
+   "item": "pioneers:wheat_seeds",
+   "count": 1,
+   "chance": 0.1
+  },
+  {
+   "item": "pioneers:beetroot_seeds",
+   "count": 1,
+   "chance": 0.05
+  },
+  {
+   "item": "pioneers:pumpkin_seeds",
+   "count": 1,
+   "chance": 0.03
+  },
+  {
+   "item": "pioneers:melon_seeds",
+   "count": 1,
+   "chance": 0.03
+  },
+  {
+   "item": "minecraft:potato",
+   "count": 1,
+   "chance": 0.03
+  },
+  {
+   "item": "minecraft:carrot",
+   "count": 1,
+   "chance": 0.03
+  },
+  {
+   "item": "minecraft:flint",
+   "count": 1,
+   "chance": 0.08
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 1,
+   "chance": 0.05
+  },
+  {
+   "item": "minecraft:clay_ball",
+   "count": 1,
+   "chance": 0.06
+  },
+  {
+   "item": "minecraft:sugar_cane",
+   "count": 1,
+   "chance": 0.02
+  },
+  {
+   "item": "minecraft:cocoa_beans",
+   "count": 1,
+   "chance": 0.01
+  }
+ ]
+}

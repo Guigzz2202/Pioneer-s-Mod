@@ -1,0 +1,31 @@
+{
+ "result": "pioneers:raw_tin",
+ "material": "tin",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  30000,
+  120000
+ ],
+ "outcrop": "pioneers:cassiterite_outcrop",
+ "color": "#54402C",
+ "fallback": 2,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_forest",
+   "weight": 6
+  },
+  {
+   "biomes": "#forge:is_plains",
+   "weight": 6
+  },
+  {
+   "biomes": "#minecraft:is_taiga",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_snowy",
+   "weight": 8
+  }
+ ]
+}

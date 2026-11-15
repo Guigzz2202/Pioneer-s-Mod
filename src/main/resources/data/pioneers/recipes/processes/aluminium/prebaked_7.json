@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:petroleum_coke"
+ },
+ "count": 3,
+ "result": {
+  "item": "pioneers:green_anode",
+  "count": 1
+ }
+}

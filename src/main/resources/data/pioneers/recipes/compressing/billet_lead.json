@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:slabs/lead"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:lead_billet",
+  "count": 1
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  "abd"
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:singularity_plating"
+  },
+  "C": {
+   "item": "pioneers:singularity_cell"
+  },
+  "X": {
+   "item": "pioneers:neutronic_boots"
+  },
+  "a": {
+   "tag": "forge:plates/thalassite"
+  },
+  "b": {
+   "tag": "forge:plates/pyrrhite"
+  },
+  "d": {
+   "tag": "forge:rods/thalassite"
+  }
+ },
+ "result": {
+  "item": "pioneers:singularity_boots",
+  "count": 1
+ }
+}

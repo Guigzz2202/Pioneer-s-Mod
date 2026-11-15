@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:preserving",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/jam_fruits"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "time": 3600,
+ "results": [
+  {
+   "item": "pioneers:jam",
+   "count": 1
+  }
+ ],
+ "source": true
+}

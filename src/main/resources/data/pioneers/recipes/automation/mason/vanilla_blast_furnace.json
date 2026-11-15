@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/iron"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:furnace"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:smooth_stone"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:blast_furnace",
+   "count": 1
+  }
+ ]
+}

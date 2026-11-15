@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 0,
+ "time": 100,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:peridot"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 10
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:peridot_dust",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "id": "peddlers",
+ "player": false,
+ "doctrine": "mercantile",
+ "share": 20,
+ "color": "4E8F7E",
+ "dye": "cyan",
+ "emblem": "pioneers:textures/gui/village/people_peddlers.png"
+}

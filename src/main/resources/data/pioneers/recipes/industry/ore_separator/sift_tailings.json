@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tailings"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:sand",
+   "count": 1
+  },
+  {
+   "item": "minecraft:clay_ball",
+   "count": 1,
+   "chance": 0.3
+  },
+  {
+   "item": "minecraft:gravel",
+   "count": 1,
+   "chance": 0.3
+  }
+ ]
+}

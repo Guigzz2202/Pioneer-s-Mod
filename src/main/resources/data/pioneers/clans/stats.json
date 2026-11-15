@@ -1,0 +1,104 @@
+{
+ "_doc": "MAJ RP bloc 4 (par. 9) : potentiel de frappe P = 10 C + 20 A + 10 R + V (decision 5) ; production en jetons-equivalent (objet de reference de la table de valeurs x nombre d'actions x fatigue), plafond par joueur et par jour de jeu.",
+ "days": 30,
+ "aggregate_minutes": 10,
+ "production_cap": 10000,
+ "potential": {
+  "combat": 10,
+  "weapon": 20,
+  "armor": 10,
+  "scout": 10,
+  "scout_vocation": "scout",
+  "vocation_bonus": 0.05,
+  "vocation_bonus_max": 0.15,
+  "weapon_damage": [
+   3,
+   5,
+   6.5,
+   9
+  ],
+  "armor_score": [
+   0.2,
+   0.55,
+   0.8,
+   1.05
+  ],
+  "armor_reference": [
+   3,
+   8,
+   6,
+   3
+  ],
+  "toughness_reference": 12,
+  "bow": 1,
+  "crossbow": 2,
+  "rifle": 4,
+  "brackets": [
+   400,
+   1500
+  ],
+  "min_interval_seconds": 60,
+  "_doc": "weapon_damage : seuils des tiers 1..4 (degats ajoutes de l'arme) ; armor_score : protection / reference de l'emplacement (tete, torse, jambes, pieds) + robustesse / 12 ; brackets : faible < 400 <= moyen < 1500 <= fort."
+ },
+ "production": {
+  "_doc": "action de xp_sources -> objet de reference (count = quantite par action) ; value = repli en centiemes de jeton.",
+  "mining.ore": {
+   "item": "pioneers:raw_copper",
+   "value": 400
+  },
+  "mining.deep": {
+   "item": "pioneers:raw_iron",
+   "value": 700
+  },
+  "mining.stone": {
+   "item": "minecraft:cobblestone",
+   "value": 2
+  },
+  "farming.harvest": {
+   "item": "minecraft:wheat",
+   "count": 2,
+   "value": 38
+  },
+  "fishing.catch": {
+   "item": "minecraft:cod",
+   "value": 15
+  },
+  "husbandry.birth": {
+   "item": "minecraft:beef",
+   "count": 3,
+   "value": 75
+  },
+  "husbandry.care": {
+   "item": "minecraft:white_wool",
+   "value": 50
+  },
+  "cooking.dish": {
+   "value": 60
+  },
+  "engineering.component": {
+   "item": "pioneers:iron_plate",
+   "value": 360
+  },
+  "smithing.smelt": {
+   "item": "pioneers:iron_ingot",
+   "value": 400
+  },
+  "smithing.cast": {
+   "item": "pioneers:bronze_ingot",
+   "count": 2,
+   "value": 510
+  },
+  "smithing.forge": {
+   "item": "pioneers:iron_plate",
+   "value": 360
+  },
+  "salvage.derelict": {
+   "item": "pioneers:scrap_structure_mk1",
+   "value": 100
+  },
+  "salvage.sort": {
+   "item": "pioneers:scrap_structure_mk1",
+   "value": 100
+  }
+ }
+}

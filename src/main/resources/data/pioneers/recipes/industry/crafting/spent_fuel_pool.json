@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:boron_carbide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_heat_exchanger"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:spent_fuel_pool",
+  "count": 1
+ }
+}

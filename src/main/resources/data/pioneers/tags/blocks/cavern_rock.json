@@ -1,0 +1,15 @@
+{
+ "replace": false,
+ "values": [
+  "#minecraft:base_stone_overworld",
+  "#minecraft:base_stone_nether",
+  "#minecraft:stone_ore_replaceables",
+  "#minecraft:deepslate_ore_replaceables",
+  "#forge:ores",
+  "minecraft:calcite",
+  "minecraft:dripstone_block",
+  "minecraft:smooth_basalt",
+  "minecraft:obsidian",
+  "minecraft:bedrock"
+ ]
+}

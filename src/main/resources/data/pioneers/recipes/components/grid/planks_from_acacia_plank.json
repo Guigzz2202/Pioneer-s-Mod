@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:acacia_plank"
+  },
+  {
+   "item": "pioneers:acacia_plank"
+  },
+  {
+   "item": "pioneers:acacia_plank"
+  },
+  {
+   "item": "pioneers:acacia_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:acacia_planks",
+  "count": 1
+ }
+}

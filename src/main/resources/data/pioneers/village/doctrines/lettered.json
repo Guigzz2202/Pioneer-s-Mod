@@ -1,0 +1,130 @@
+{
+ "id": "lettered",
+ "version": "standard",
+ "max_age": 1,
+ "workshop_max_age": 2,
+ "accept_families": [
+  "armor",
+  "arrow",
+  "bait",
+  "bone",
+  "book",
+  "bow",
+  "brick",
+  "building",
+  "clay",
+  "cloth",
+  "coal",
+  "compass",
+  "container",
+  "drink",
+  "dye",
+  "fat",
+  "feather",
+  "fertilizer",
+  "fish",
+  "fishing_rod",
+  "flint",
+  "flower",
+  "fodder",
+  "food",
+  "grain",
+  "herb",
+  "hide",
+  "ingot",
+  "ink",
+  "leather",
+  "map",
+  "meat_cooked",
+  "meat_cured",
+  "meat_raw",
+  "mob_drop",
+  "mushroom",
+  "ore",
+  "paper",
+  "potion",
+  "salt",
+  "sand",
+  "seed",
+  "seed_rare",
+  "stick",
+  "stone",
+  "stone_worked",
+  "straw",
+  "string",
+  "tannin",
+  "tea",
+  "tool_metal",
+  "tool_stone",
+  "vegetable",
+  "weapon_metal",
+  "weapon_stone",
+  "whetstone",
+  "wood",
+  "wool"
+ ],
+ "refuse_families": [
+  "component",
+  "machine",
+  "scrap"
+ ],
+ "buy_bonus": [
+  {
+   "families": [
+    "paper",
+    "ink"
+   ],
+   "factor": 1.25
+  }
+ ],
+ "scraps": [],
+ "exclusive": [
+  {
+   "item": "pioneers:manual_astronaut",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_builder",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_engineer",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_farmer",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_herder_angler",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_logistician",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_miner_smelter",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_salvager",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_scout",
+   "count": 1
+  },
+  {
+   "item": "pioneers:manual_trader",
+   "count": 1
+  }
+ ],
+ "workers": true,
+ "notebook_affinity": 10,
+ "librarian_notebook_affinity": 30,
+ "caravan_factor": 1,
+ "guaranteed": [
+  "minecraft:librarian"
+ ]
+}

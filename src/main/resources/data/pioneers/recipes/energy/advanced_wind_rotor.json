@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_bladed_rotor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/duralumin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_screw"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:advanced_wind_rotor",
+  "count": 1
+ }
+}

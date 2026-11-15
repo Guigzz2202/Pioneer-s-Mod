@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:polyethylene_pellets"
+   },
+   "count": 4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 300
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 50
+  }
+ ]
+}

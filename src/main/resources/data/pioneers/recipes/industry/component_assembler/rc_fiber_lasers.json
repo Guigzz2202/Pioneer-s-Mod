@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 140,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:optical_fiber_strand"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:laser_diode"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fiber_laser",
+   "count": 2
+  }
+ ]
+}

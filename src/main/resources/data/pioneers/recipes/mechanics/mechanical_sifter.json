@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SMS",
+  "S S",
+  "PXP"
+ ],
+ "key": {
+  "S": {
+   "tag": "forge:rods/wooden"
+  },
+  "M": {
+   "item": "pioneers:fiber_mesh"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:mechanical_sifter",
+  "count": 1
+ }
+}

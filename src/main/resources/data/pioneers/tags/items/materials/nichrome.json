@@ -1,0 +1,16 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:nichrome_nugget",
+  "pioneers:nichrome_ring",
+  "pioneers:nichrome_rod",
+  "pioneers:nichrome_plate",
+  "pioneers:nichrome_dust",
+  "pioneers:nichrome_wire",
+  "pioneers:nichrome_block",
+  "pioneers:nichrome_gear",
+  "pioneers:nichrome_spring",
+  "pioneers:nichrome_ingot",
+  "pioneers:nichrome_billet"
+ ]
+}

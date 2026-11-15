@@ -1,0 +1,333 @@
+{
+ "1": {
+  "days": 5,
+  "items": [
+   {
+    "id": "#forge:rods/brass",
+    "count": 1540
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 1540
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 1540
+   },
+   {
+    "id": "pioneers:tempered_glass_pane",
+    "count": 1308
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 1155
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 770
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 770
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 770
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 385
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 385
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 385
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 193
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_photolithograph",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "pioneers:incandescent_bulb",
+    "count": 3
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:steel_ingot",
+   "count": 48
+  }
+ },
+ "2": {
+  "days": 10,
+  "items": [
+   {
+    "id": "#forge:plates/duralumin",
+    "count": 1719
+   },
+   {
+    "id": "#forge:rings/electrum",
+    "count": 1528
+   },
+   {
+    "id": "#forge:sheets/aluminium",
+    "count": 1528
+   },
+   {
+    "id": "#forge:rods/duralumin",
+    "count": 1528
+   },
+   {
+    "id": "pioneers:borosilicate_glass",
+    "count": 1308
+   },
+   {
+    "id": "#forge:beams/galvanized_steel",
+    "count": 764
+   },
+   {
+    "id": "#forge:screws/aluminium",
+    "count": 764
+   },
+   {
+    "id": "#forge:springs/aluminium",
+    "count": 764
+   },
+   {
+    "id": "#forge:plates/aluminium",
+    "count": 382
+   },
+   {
+    "id": "#forge:bolts/aluminium",
+    "count": 382
+   },
+   {
+    "id": "#forge:rings/aluminium",
+    "count": 382
+   },
+   {
+    "id": "pioneers:circuit_mk2",
+    "count": 191
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 12
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 9
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 6
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_photolithograph",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 3
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "pioneers:incandescent_bulb",
+    "count": 3
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 2
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:aluminium_ingot",
+   "count": 96
+  }
+ },
+ "3": {
+  "days": 20,
+  "items": [
+   {
+    "id": "#forge:plates/stainless_steel",
+    "count": 1719
+   },
+   {
+    "id": "#forge:springs/vanadium_steel",
+    "count": 1528
+   },
+   {
+    "id": "#forge:sheets/titanium",
+    "count": 1528
+   },
+   {
+    "id": "#forge:rods/titanium",
+    "count": 1528
+   },
+   {
+    "id": "pioneers:fused_silica",
+    "count": 1308
+   },
+   {
+    "id": "#forge:beams/titanium",
+    "count": 764
+   },
+   {
+    "id": "#forge:screws/titanium",
+    "count": 764
+   },
+   {
+    "id": "#forge:springs/nickel",
+    "count": 764
+   },
+   {
+    "id": "#forge:plates/titanium",
+    "count": 382
+   },
+   {
+    "id": "#forge:bolts/titanium",
+    "count": 382
+   },
+   {
+    "id": "#forge:rings/titanium",
+    "count": 382
+   },
+   {
+    "id": "pioneers:circuit_mk3",
+    "count": 191
+   },
+   {
+    "id": "#forge:rods/brass",
+    "count": 12
+   },
+   {
+    "id": "#forge:sheets/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:rods/steel",
+    "count": 12
+   },
+   {
+    "id": "#forge:plates/copper",
+    "count": 9
+   },
+   {
+    "id": "#forge:beams/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:screws/steel",
+    "count": 6
+   },
+   {
+    "id": "#forge:springs/bronze",
+    "count": 6
+   },
+   {
+    "id": "pioneers:copper_coil",
+    "count": 6
+   },
+   {
+    "id": "pioneers:basic_photolithograph",
+    "count": 6
+   },
+   {
+    "id": "minecraft:hopper",
+    "count": 6
+   },
+   {
+    "id": "minecraft:bucket",
+    "count": 6
+   },
+   {
+    "id": "#forge:plates/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:bolts/steel",
+    "count": 3
+   },
+   {
+    "id": "#forge:rings/copper",
+    "count": 3
+   },
+   {
+    "id": "pioneers:machine_hull_basic",
+    "count": 3
+   },
+   {
+    "id": "pioneers:incandescent_bulb",
+    "count": 3
+   },
+   {
+    "id": "#forge:storage_blocks/bronze",
+    "count": 2
+   }
+  ],
+  "ingots": {
+   "id": "pioneers:titanium_ingot",
+   "count": 160
+  }
+ }
+}

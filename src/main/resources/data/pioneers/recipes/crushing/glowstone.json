@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "minecraft:glowstone"
+ },
+ "count": 1,
+ "result": {
+  "item": "minecraft:glowstone_dust",
+  "count": 4
+ }
+}

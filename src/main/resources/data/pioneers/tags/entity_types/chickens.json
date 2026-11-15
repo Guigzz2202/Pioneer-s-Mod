@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:chicken",
+  "pioneers:leghorn_chicken",
+  "pioneers:marans_chicken",
+  "pioneers:brahma_chicken",
+  "pioneers:gauloise_chicken",
+  "pioneers:silkie_chicken"
+ ]
+}

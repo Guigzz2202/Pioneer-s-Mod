@@ -1,0 +1,16 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:lead_rod",
+  "pioneers:raw_lead",
+  "pioneers:crushed_lead",
+  "pioneers:raw_lead_block",
+  "pioneers:lead_nugget",
+  "pioneers:lead_dust",
+  "pioneers:lead_ingot",
+  "pioneers:lead_plate",
+  "pioneers:lead_block",
+  "pioneers:lead_slab",
+  "pioneers:lead_billet"
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/gold"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/silver"
+   },
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_electrum",
+   "amount": 288
+  }
+ ]
+}

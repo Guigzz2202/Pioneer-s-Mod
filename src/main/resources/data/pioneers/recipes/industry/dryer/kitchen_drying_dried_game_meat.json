@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 750,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/smokable_game"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dried_game_meat",
+   "count": 1
+  }
+ ]
+}

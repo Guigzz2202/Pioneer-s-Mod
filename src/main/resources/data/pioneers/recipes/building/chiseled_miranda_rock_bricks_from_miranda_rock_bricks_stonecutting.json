@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:miranda_rock_bricks"
+ },
+ "result": "pioneers:chiseled_miranda_rock_bricks",
+ "count": 1
+}

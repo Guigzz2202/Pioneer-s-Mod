@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:casting",
+ "mold": "pioneers:rod_mold",
+ "metal": "babbitt",
+ "amount": 144,
+ "result": {
+  "item": "pioneers:babbitt_rod",
+  "count": 2
+ },
+ "cool": 200
+}

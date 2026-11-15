@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:logs"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hay_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:caravan_relay",
+  "count": 1
+ }
+}

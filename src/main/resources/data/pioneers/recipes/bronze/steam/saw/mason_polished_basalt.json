@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:basalt"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:polished_basalt",
+  "count": 4
+ },
+ "time": 40
+}

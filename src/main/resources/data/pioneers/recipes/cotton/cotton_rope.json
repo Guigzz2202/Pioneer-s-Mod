@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cotton_thread"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:fiber_rope",
+  "count": 2
+ }
+}

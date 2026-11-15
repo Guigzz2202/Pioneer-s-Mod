@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 0,
+ "time": 220,
+ "family": "forge",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/gold"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_pickaxe_head",
+   "count": 1
+  }
+ ],
+ "industrial": true,
+ "temperature": 450
+}

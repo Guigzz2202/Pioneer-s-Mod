@@ -1,0 +1,21 @@
+{
+  "_comment": "Sentinelles (MAJ RP, bloc 1) : regles communes. Durees en ticks, distances en blocs. Lues au chargement des donnees (SentinelData).",
+  "wake_interval": 10,
+  "wake_radius": 6,
+  "wake_radius_sneaking": 3,
+  "awake_radius": 16,
+  "awake_radius_sneaking": 10,
+  "alert_ticks": 30,
+  "sleep_after": 600,
+  "give_up": 1200,
+  "leash": 40,
+  "home": 1.5,
+  "stun_ticks": 60,
+  "lost_sight": 100,
+  "site_wake_margin": 8,
+  "orphan_wake_radius": 24,
+  "phrase_radius": 16,
+  "phrase_cooldown": 60,
+  "chase_speed": 1.0,
+  "return_speed": 0.8
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:gravel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cement"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:concrete_shell_panel",
+  "count": 16
+ }
+}

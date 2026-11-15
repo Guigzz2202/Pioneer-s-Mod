@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "toolmaker",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:copper_knife_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:knife_handles"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:bindings"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:copper_knife",
+  "count": 1
+ }
+}

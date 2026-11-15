@@ -1,0 +1,27 @@
+{
+ "result": "pioneers:raw_zinc",
+ "material": "zinc",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  30000,
+  120000
+ ],
+ "outcrop": "pioneers:sphalerite_outcrop",
+ "color": "#B07020",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_jungle",
+   "weight": 8
+  },
+  {
+   "biomes": "minecraft:mangrove_swamp",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_swamp",
+   "weight": 6
+  }
+ ]
+}

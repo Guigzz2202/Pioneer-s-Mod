@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rye"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honey_bottle"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "tag": "forge:milk",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rye_porridge",
+   "count": 2
+  },
+  {
+   "item": "minecraft:glass_bottle",
+   "count": 1
+  }
+ ]
+}

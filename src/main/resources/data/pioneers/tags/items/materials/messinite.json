@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:messinite_plate",
+  "pioneers:messinite_rod",
+  "pioneers:messinite_billet"
+ ]
+}

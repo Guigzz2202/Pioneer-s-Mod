@@ -1,0 +1,31 @@
+{
+ "parent": "pioneers:farm_machines/mechanical_kitchen",
+ "display": {
+  "icon": {
+   "item": "pioneers:basic_food_processor"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm_machines.food_processor.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm_machines.food_processor.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_food_processor"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ]
+}

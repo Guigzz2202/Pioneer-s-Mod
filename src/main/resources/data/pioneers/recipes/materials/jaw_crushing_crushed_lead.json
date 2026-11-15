@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "tag": "forge:raw_materials/lead"
+ },
+ "count": 1,
+ "turns": 4,
+ "results": [
+  {
+   "item": "pioneers:crushed_lead",
+   "count": 2
+  }
+ ]
+}

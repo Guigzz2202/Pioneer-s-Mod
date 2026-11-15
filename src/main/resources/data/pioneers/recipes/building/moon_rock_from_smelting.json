@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smelting",
+ "category": "blocks",
+ "ingredient": {
+  "item": "pioneers:cobbled_moon_rock"
+ },
+ "result": "pioneers:moon_rock",
+ "experience": 0.1,
+ "cookingtime": 200
+}

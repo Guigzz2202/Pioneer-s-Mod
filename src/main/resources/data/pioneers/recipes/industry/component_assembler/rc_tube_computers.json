@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:vacuum_tube"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:relay"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:etched_board"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_wire"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_connector"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vacuum_tube_computer",
+   "count": 2
+  }
+ ]
+}

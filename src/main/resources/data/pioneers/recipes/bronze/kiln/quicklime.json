@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "minecraft:calcite"
+ },
+ "temperature": 820,
+ "time": 400,
+ "result": {
+  "item": "pioneers:quicklime",
+  "count": 1
+ }
+}

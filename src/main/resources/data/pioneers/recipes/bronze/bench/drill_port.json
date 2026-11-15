@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:drill_base"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bronze_logistic_cable"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hopper"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:drill_port",
+  "count": 1
+ }
+}

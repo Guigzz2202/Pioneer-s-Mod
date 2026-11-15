@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_fuselage_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/veronite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_shield_tile"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/valhallite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/messinite"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:rocket_wing_tier_9",
+  "count": 2
+ }
+}

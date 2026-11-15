@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 2,
+ "time": 440,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iridium_billet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iridium_rod",
+   "count": 18
+  },
+  {
+   "item": "pioneers:extrusion_die",
+   "count": 1
+  }
+ ]
+}

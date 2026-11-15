@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "luthier",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/diamond"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:jukebox",
+  "count": 1
+ }
+}

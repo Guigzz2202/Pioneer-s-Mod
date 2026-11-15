@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:grapes"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:grapes_tray",
+  "count": 1
+ }
+}

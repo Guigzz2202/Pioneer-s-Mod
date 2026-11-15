@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:frying_pan",
+  "count": 1
+ }
+}

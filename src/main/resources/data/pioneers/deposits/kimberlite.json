@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:kimberlite",
+ "material": "kimberlite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  4000,
+  12000
+ ],
+ "color": "#648C82",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#forge:is_savanna",
+   "weight": 2
+  },
+  {
+   "biomes": "#forge:is_plains",
+   "weight": 1
+  }
+ ]
+}

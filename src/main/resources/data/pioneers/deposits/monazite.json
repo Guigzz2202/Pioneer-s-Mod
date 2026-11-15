@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:monazite",
+ "material": "monazite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  6000,
+  18000
+ ],
+ "color": "#E6AA5A",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_beach",
+   "weight": 4
+  },
+  {
+   "biomes": "#minecraft:is_river",
+   "weight": 2
+  }
+ ]
+}

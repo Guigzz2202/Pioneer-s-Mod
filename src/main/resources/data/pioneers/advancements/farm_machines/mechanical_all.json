@@ -1,0 +1,67 @@
+{
+ "parent": "pioneers:farm_machines/mechanical_kitchen",
+ "display": {
+  "icon": {
+   "item": "pioneers:mechanical_honey_extractor"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm_machines.mechanical_all.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm_machines.mechanical_all.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "kitchen_press"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "kitchen_churn"
+   }
+  },
+  "c2": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "kitchen_chopper"
+   }
+  },
+  "c3": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "kitchen_kneader"
+   }
+  },
+  "c4": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "kitchen_honey_extractor"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ],
+  [
+   "c3"
+  ],
+  [
+   "c4"
+  ]
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 5909064,
+  "fog_color": 3808822,
+  "water_color": 9054778,
+  "water_fog_color": 2755092,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.exoplanet",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:trappist_1e_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [
+   "pioneers:crater_rare"
+  ],
+  [],
+  [],
+  [],
+  [
+   "pioneers:edenite_ore",
+   "pioneers:edenite_ore_rich"
+  ],
+  [],
+  [],
+  [
+   "pioneers:boulder_field",
+   "pioneers:meteorite_rock"
+  ],
+  [
+   "pioneers:trappist_1e_fluid_cleanup"
+  ]
+ ]
+}

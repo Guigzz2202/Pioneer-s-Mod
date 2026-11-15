@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:flint_hoe",
+  "pioneers:copper_hoe",
+  "pioneers:bronze_hoe",
+  "pioneers:steel_hoe",
+  "pioneers:iron_hoe",
+  "pioneers:hardened_steel_hoe",
+  "pioneers:brass_hoe",
+  "pioneers:titanium_hoe",
+  "pioneers:stainless_steel_hoe",
+  "pioneers:duralumin_hoe",
+  "pioneers:tungsten_carbide_hoe",
+  "pioneers:vanadium_steel_hoe",
+  "pioneers:stellite_hoe",
+  "pioneers:osmiridium_hoe",
+  "pioneers:titanium_aluminide_hoe",
+  "pioneers:nitinol_hoe",
+  "pioneers:gold_hoe"
+ ]
+}

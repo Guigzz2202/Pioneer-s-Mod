@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 260,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/tungsten"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/tungsten"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:bolts/tungsten"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/tungsten"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/gold"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_frame",
+   "count": 2
+  }
+ ]
+}

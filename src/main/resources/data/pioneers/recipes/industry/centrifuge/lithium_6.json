@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 2,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lithium_carbonate"
+   },
+   "count": 16
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lithium_6",
+   "count": 1
+  }
+ ]
+}

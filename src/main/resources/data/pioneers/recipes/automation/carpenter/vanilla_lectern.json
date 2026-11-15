@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wooden_slabs"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bookshelf"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:lectern",
+   "count": 1
+  }
+ ]
+}

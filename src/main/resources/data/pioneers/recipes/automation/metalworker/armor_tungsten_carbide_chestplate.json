@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten_carbide"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_carbide_chestplate",
+   "count": 1
+  }
+ ]
+}

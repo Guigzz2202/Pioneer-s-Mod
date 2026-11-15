@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:ink_sac"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beeswax"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:string"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:federal_pact",
+  "count": 1
+ }
+}

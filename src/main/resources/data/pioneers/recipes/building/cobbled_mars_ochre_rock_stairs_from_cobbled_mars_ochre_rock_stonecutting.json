@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_mars_ochre_rock"
+ },
+ "result": "pioneers:cobbled_mars_ochre_rock_stairs",
+ "count": 1
+}

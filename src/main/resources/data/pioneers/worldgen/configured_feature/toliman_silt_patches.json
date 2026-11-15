@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 24,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:toliman_moss"
+    },
+    "state": {
+     "Name": "pioneers:toliman_silt"
+    }
+   },
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:toliman_soil"
+    },
+    "state": {
+     "Name": "pioneers:toliman_silt"
+    }
+   }
+  ]
+ }
+}

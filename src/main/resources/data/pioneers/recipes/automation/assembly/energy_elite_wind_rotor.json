@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:elite_bladed_rotor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/duralumin"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_screw"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_wind_rotor",
+   "count": 1
+  }
+ ]
+}

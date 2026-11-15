@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/roots"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honey_bottle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooking_oil"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:raw_roasted_roots",
+   "count": 1
+  }
+ ]
+}

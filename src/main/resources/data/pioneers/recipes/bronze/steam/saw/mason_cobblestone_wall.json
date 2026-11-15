@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:cobblestone"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:cobblestone_wall",
+  "count": 6
+ },
+ "time": 40
+}

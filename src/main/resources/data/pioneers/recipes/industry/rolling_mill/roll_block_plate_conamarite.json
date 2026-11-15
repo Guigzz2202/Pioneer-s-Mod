@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 3,
+ "time": 960,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/conamarite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:conamarite_plate",
+   "count": 9
+  }
+ ]
+}

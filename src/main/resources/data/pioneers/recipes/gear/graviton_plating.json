@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "TNT",
+  "NCN",
+  "TNT"
+ ],
+ "key": {
+  "T": {
+   "item": "pioneers:titanium_aluminide_plate"
+  },
+  "N": {
+   "item": "pioneers:nitinol_plate"
+  },
+  "C": {
+   "item": "pioneers:carbon_composite_panel"
+  }
+ },
+ "result": {
+  "item": "pioneers:graviton_plating",
+  "count": 2
+ }
+}

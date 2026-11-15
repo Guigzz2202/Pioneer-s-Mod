@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/iron"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:lantern"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:village_lamppost",
+  "count": 1
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_trappist_1b_obsidian_crust"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_trappist_1b_obsidian_crust_wall",
+  "count": 6
+ }
+}

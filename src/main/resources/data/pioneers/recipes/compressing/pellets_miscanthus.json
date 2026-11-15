@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:miscanthus"
+ },
+ "count": 2,
+ "result": {
+  "item": "pioneers:wood_pellets",
+  "count": 3
+ }
+}

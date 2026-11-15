@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:hygiea_rock_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:hygiea_rock_brick_slab",
+  "count": 6
+ }
+}

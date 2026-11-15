@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bayer_digester",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sodium_aluminate_liquor",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sodium_aluminate_liquor",
+   "amount": 950
+  },
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 50
+  }
+ ],
+ "pressure": 8,
+ "air": 150
+}

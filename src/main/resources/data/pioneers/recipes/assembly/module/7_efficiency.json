@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:assembly",
+ "station": "module",
+ "pattern": [
+  "a.........",
+  "...PTTP...",
+  "...PTTP...",
+  "...PAAP...",
+  ".........."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:plates/stainless_steel"
+  },
+  "P": {
+   "item": "pioneers:aluminium_fuselage_panel"
+  },
+  "T": {
+   "item": "pioneers:rocket_tank_tier_2"
+  },
+  "a": {
+   "tag": "forge:gears/duralumin"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_module_efficiency"
+ },
+ "energy": 6000000,
+ "duration": 200,
+ "research": "cryo_tanks"
+}

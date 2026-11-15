@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_crayfish"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:corn"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:potato"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hot_pepper"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 1000
+ },
+ "time": 360,
+ "results": [
+  {
+   "item": "pioneers:crayfish_boil",
+   "count": 1
+  }
+ ]
+}

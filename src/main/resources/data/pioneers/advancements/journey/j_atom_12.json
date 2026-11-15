@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_atom_11",
+ "display": {
+  "icon": {
+   "item": "pioneers:fission_reactor"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_atom_12.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_atom_12.description"
+  },
+  "frame": "goal",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

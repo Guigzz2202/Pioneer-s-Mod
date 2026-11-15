@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:ceres",
+ "gravity": 0.092,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "vacuum",
+ "nitrogen": 0,
+ "temperature": -105
+}

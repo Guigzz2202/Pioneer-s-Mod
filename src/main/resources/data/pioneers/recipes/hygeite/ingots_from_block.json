@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:storage_blocks/hygeite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:hygeite_ingot",
+  "count": 9
+ }
+}

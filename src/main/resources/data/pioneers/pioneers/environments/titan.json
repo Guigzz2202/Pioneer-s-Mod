@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:titan",
+ "gravity": 0.14,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "cold",
+ "nitrogen": 6,
+ "temperature": -179
+}

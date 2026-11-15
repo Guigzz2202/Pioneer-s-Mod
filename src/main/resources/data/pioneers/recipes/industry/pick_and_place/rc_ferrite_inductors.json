@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ferrite_magnet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_wire"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ferrite_inductor",
+   "count": 8
+  }
+ ]
+}

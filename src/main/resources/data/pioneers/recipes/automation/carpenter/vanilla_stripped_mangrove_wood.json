@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stripped_mangrove_log"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:stripped_mangrove_wood",
+   "count": 3
+  }
+ ]
+}

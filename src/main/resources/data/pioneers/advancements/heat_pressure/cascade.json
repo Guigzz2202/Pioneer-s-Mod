@@ -1,0 +1,61 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:industrial_heat_port"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.cascade.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.cascade.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_pyrolysis_oven"
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:industrial_heat_port"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:basic_logistic_cable"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/heat_store"
+}

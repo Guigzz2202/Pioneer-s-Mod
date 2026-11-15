@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:rubber_sheet"
+  },
+  {
+   "item": "pioneers:rubber_sheet"
+  },
+  {
+   "item": "pioneers:titanium_spring"
+  },
+  {
+   "item": "pioneers:titanium_spring"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_dampers",
+  "count": 1
+ }
+}

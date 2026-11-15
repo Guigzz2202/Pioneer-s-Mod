@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "shaking_table",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/tin"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cassiterite_concentrate",
+   "count": 1
+  }
+ ]
+}

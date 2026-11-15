@@ -1,0 +1,15 @@
+{
+  "_comment": "Reparateur : soigne ses semblables (heal PV toutes les heal_interval ticks, a heal_radius blocs). MKIII : bulle de bouclier (shield_duration ticks toutes les shield_interval ticks, degats reduits de shield_reduction).",
+  "role": "repairer",
+  "heal": 4,
+  "heal_interval": 20,
+  "heal_radius": 6,
+  "support_radius": 12,
+  "flee_distance": 4,
+  "knockback_resistance": 0.2,
+  "follow_range": 20,
+  "tiers": {
+    "2": {"health": 40, "speed": 0.25, "armor": 2, "xp": 10},
+    "3": {"health": 60, "speed": 0.27, "armor": 4, "shield_duration": 100, "shield_interval": 400, "shield_reduction": 0.6, "xp": 16}
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:assembly",
+ "station": "module",
+ "pattern": [
+  "aab.......",
+  "..PPPPPP..",
+  "..POOOOP..",
+  "...PPPP...",
+  ".........."
+ ],
+ "key": {
+  "O": {
+   "tag": "forge:plates/osmiridium"
+  },
+  "P": {
+   "item": "pioneers:carbon_fuselage_panel"
+  },
+  "a": {
+   "tag": "forge:rings/duralumin"
+  },
+  "b": {
+   "tag": "forge:plates/netherite"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_module_shield"
+ },
+ "energy": 6000000,
+ "duration": 200,
+ "research": "thermal_shielding"
+}

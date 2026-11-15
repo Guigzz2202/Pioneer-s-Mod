@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bottler",
+ "tier": 0,
+ "time": 20,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bucket"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:drilling_mud",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:drilling_mud_bucket",
+   "count": 1
+  }
+ ]
+}

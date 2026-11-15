@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP"
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:stellaris_plating"
+  },
+  "C": {
+   "item": "pioneers:stellaris_cell"
+  },
+  "X": {
+   "item": "pioneers:graviton_helmet"
+  }
+ },
+ "result": {
+  "item": "pioneers:stellaris_helmet",
+  "count": 1
+ }
+}

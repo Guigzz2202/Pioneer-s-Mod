@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "LML",
+  "MCM",
+  "LML"
+ ],
+ "key": {
+  "L": {
+   "tag": "forge:plates/lunarium"
+  },
+  "M": {
+   "item": "pioneers:logistic_marker"
+  },
+  "C": {
+   "tag": "forge:chests/wooden"
+  }
+ },
+ "result": {
+  "item": "pioneers:logistic_chest_small"
+ }
+}

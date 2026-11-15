@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 290,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/duralumin"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:duralumin_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:duralumin_nugget",
+   "count": 9
+  }
+ ]
+}

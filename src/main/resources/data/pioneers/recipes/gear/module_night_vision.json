@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "minecraft:glowstone_dust"
+  },
+  {
+   "item": "minecraft:glowstone_dust"
+  },
+  {
+   "item": "pioneers:tanzanite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_night_vision",
+  "count": 1
+ }
+}

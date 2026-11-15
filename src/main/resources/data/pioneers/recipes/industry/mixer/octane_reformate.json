@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 40,
+ "fluids": [
+  {
+   "fluid": "pioneers:gasoline",
+   "amount": 800
+  },
+  {
+   "fluid": "pioneers:reformate",
+   "amount": 200
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:high_octane_gasoline",
+   "amount": 1000
+  }
+ ]
+}

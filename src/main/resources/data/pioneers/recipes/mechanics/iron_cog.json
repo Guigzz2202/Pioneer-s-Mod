@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:gears/iron"
+  },
+  {
+   "item": "pioneers:iron_shaft"
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_cog",
+  "count": 1
+ }
+}

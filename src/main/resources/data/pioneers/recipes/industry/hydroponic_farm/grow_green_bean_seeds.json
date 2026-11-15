@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:green_bean_seeds"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:green_bean",
+   "count": 3
+  },
+  {
+   "item": "pioneers:green_bean_seeds",
+   "count": 1
+  }
+ ]
+}

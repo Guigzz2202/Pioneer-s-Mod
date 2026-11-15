@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "QAQ",
+  "VSV",
+  "QAQ"
+ ],
+ "key": {
+  "Q": {
+   "item": "pioneers:qubit_chip"
+  },
+  "A": {
+   "item": "pioneers:quantum_avionics"
+  },
+  "V": {
+   "item": "pioneers:void_singularity_cell"
+  },
+  "S": {
+   "item": "pioneers:neutronic_cell"
+  }
+ },
+ "result": {
+  "item": "pioneers:singularity_cell",
+  "count": 1
+ }
+}

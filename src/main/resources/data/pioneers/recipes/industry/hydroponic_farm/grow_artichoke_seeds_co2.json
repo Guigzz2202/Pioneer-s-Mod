@@ -1,0 +1,41 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:artichoke_seeds"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nutrient_solution",
+   "amount": 250
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:artichoke",
+   "count": 4
+  },
+  {
+   "item": "pioneers:artichoke_seeds",
+   "count": 2
+  },
+  {
+   "item": "pioneers:artichoke_seeds",
+   "count": 2,
+   "chance": 0.5
+  }
+ ]
+}

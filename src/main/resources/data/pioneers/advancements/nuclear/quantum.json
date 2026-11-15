@@ -1,0 +1,34 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:quantum_computer"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.quantum.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.quantum.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "quantum_coherence"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/data_center",
+ "rewards": {
+  "experience": 500
+ }
+}

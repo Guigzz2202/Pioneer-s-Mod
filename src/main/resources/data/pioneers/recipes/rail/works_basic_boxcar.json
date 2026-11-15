@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rail_works",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:particle_board"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bronze_bushing"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_boxcar",
+   "count": 1
+  }
+ ]
+}

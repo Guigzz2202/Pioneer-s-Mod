@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "pioneers:potato_mash",
+  "amount": 1000
+ },
+ "time": 9600,
+ "fluid_result": {
+  "fluid": "pioneers:potato_wash",
+  "amount": 1000
+ }
+}

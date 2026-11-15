@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:turning",
+ "input": {
+  "tag": "forge:ingots/galvanized_steel"
+ },
+ "count": 1,
+ "turns": 10,
+ "results": [
+  {
+   "item": "pioneers:galvanized_steel_rod",
+   "count": 2
+  }
+ ]
+}

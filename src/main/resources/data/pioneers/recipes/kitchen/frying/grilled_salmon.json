@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:salmon"
+   },
+   "count": 1
+  }
+ ],
+ "time": 180,
+ "results": [
+  {
+   "item": "pioneers:grilled_salmon",
+   "count": 1
+  }
+ ]
+}

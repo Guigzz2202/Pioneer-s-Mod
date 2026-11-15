@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:wooden_shaft"
+  },
+  {
+   "item": "pioneers:wooden_shaft"
+  },
+  {
+   "item": "minecraft:leather"
+  },
+  {
+   "tag": "forge:plates/iron"
+  },
+  {
+   "tag": "minecraft:planks"
+  }
+ ],
+ "result": {
+  "item": "pioneers:clutch",
+  "count": 1
+ }
+}

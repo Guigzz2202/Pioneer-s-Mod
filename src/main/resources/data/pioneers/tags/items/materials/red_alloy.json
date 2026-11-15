@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:red_alloy_ingot",
+  "pioneers:red_alloy_nugget",
+  "pioneers:red_alloy_dust",
+  "pioneers:red_alloy_plate",
+  "pioneers:red_alloy_rod",
+  "pioneers:red_alloy_wire",
+  "pioneers:red_alloy_block"
+ ]
+}

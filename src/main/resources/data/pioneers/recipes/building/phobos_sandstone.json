@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:phobos_regolith"
+  }
+ },
+ "result": {
+  "item": "pioneers:phobos_sandstone",
+  "count": 1
+ }
+}

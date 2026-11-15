@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_crystallizer"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cartridge_filter"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:industrial_crystallizer",
+   "count": 1
+  }
+ ]
+}

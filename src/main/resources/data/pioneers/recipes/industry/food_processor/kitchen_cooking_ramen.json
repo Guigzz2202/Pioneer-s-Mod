@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 210,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fresh_pasta"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bok_choy"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:soy_sauce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:chicken_broth"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ramen",
+   "count": 2
+  }
+ ]
+}

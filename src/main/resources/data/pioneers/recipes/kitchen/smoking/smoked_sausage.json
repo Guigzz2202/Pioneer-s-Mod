@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:smoking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:saucisson"
+   },
+   "count": 1
+  }
+ ],
+ "time": 2000,
+ "results": [
+  {
+   "item": "pioneers:smoked_sausage",
+   "count": 1
+  }
+ ]
+}

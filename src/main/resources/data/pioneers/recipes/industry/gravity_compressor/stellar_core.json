@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gravity_compressor",
+ "tier": 2,
+ "time": 400,
+ "gases": [
+  {
+   "gas": "pioneers:plutonium",
+   "amount": 100000
+  },
+  {
+   "gas": "pioneers:deuterium",
+   "amount": 100000
+  },
+  {
+   "gas": "pioneers:tritium",
+   "amount": 100000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_core",
+   "count": 1
+  }
+ ],
+ "energy": 100000000
+}

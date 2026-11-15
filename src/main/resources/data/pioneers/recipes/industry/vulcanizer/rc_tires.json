@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 0,
+ "time": 140,
+ "family": "vulcanizer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:vulcanized_rubber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wire_ropes/steel"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tire",
+   "count": 2
+  }
+ ]
+}

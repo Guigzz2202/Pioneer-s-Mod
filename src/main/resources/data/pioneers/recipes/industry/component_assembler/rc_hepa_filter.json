@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 140,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:glass_fiber"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hepa_filter",
+   "count": 2
+  }
+ ]
+}

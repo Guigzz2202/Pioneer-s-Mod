@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 2,
+ "time": 80,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:flare_spine"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cobalt_dust",
+   "count": 1
+  }
+ ]
+}

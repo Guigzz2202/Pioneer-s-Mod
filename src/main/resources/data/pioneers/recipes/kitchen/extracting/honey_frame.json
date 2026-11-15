@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:extracting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:honey_frame"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:beeswax",
+   "count": 1
+  },
+  {
+   "item": "minecraft:honeycomb",
+   "count": 1,
+   "chance": 0.5
+  },
+  {
+   "item": "pioneers:hive_frame",
+   "count": 1
+  }
+ ],
+ "fluid_result": {
+  "fluid": "pioneers:honey",
+  "amount": 250
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:cow",
+  "pioneers:holstein_cow",
+  "pioneers:jersey_cow",
+  "pioneers:charolais_cow",
+  "pioneers:highland_cow",
+  "pioneers:angus_cow"
+ ]
+}

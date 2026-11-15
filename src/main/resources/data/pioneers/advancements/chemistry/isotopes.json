@@ -1,0 +1,40 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:lithium_6"
+  },
+  "title": {
+   "translate": "advancements.pioneers.chemistry.isotopes.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.chemistry.isotopes.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:lithium_6"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:chemistry/asu",
+ "rewards": {
+  "experience": 500
+ }
+}

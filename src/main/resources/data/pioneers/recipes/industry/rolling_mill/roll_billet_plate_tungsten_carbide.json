@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 3,
+ "time": 900,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_carbide_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_carbide_plate",
+   "count": 9
+  }
+ ]
+}

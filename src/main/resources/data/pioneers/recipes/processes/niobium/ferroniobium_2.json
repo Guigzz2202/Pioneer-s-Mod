@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "shaking_table",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_pegmatite"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pyrochlore_concentrate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:quartz",
+   "count": 1,
+   "chance": 0.4
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "ore": true
+}

@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/stellite"
+  },
+  {
+   "tag": "forge:nuggets/stellite"
+  },
+  {
+   "tag": "forge:nuggets/stellite"
+  },
+  {
+   "tag": "forge:nuggets/stellite"
+  },
+  {
+   "tag": "forge:nuggets/stellite"
+  },
+  {
+   "tag": "forge:nuggets/stellite"
+  },
+  {
+   "tag": "forge:nuggets/stellite"
+  },
+  {
+   "tag": "forge:nuggets/stellite"
+  },
+  {
+   "tag": "forge:nuggets/stellite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:stellite_ingot",
+  "count": 1
+ }
+}

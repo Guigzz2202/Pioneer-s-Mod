@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:smooth_venus_sandstone"
+  }
+ },
+ "result": {
+  "item": "pioneers:smooth_venus_sandstone_slab",
+  "count": 6
+ }
+}

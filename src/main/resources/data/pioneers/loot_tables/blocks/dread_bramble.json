@@ -1,0 +1,58 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:alternatives",
+     "children": [
+      {
+       "type": "minecraft:item",
+       "name": "pioneers:dread_bramble",
+       "conditions": [
+        {
+         "condition": "minecraft:match_tool",
+         "predicate": {
+          "items": [
+           "minecraft:shears"
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "type": "minecraft:item",
+       "name": "pioneers:dread_bramble_seeds",
+       "functions": [
+        {
+         "function": "minecraft:set_count",
+         "count": {
+          "type": "minecraft:uniform",
+          "min": 1,
+          "max": 2
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rolls": 1,
+   "conditions": [
+    {
+     "condition": "minecraft:random_chance",
+     "chance": 0.35
+    }
+   ],
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:dread_spine"
+    }
+   ]
+  }
+ ]
+}

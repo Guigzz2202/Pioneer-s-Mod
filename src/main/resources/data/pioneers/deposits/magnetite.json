@@ -1,0 +1,35 @@
+{
+ "result": "pioneers:raw_iron",
+ "material": "iron",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  40000,
+  160000
+ ],
+ "outcrop": "pioneers:magnetite_outcrop",
+ "color": "#3A3A42",
+ "fallback": 4,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 10
+  },
+  {
+   "biomes": "#minecraft:is_hill",
+   "weight": 10
+  },
+  {
+   "biomes": "#forge:is_mountain",
+   "weight": 10
+  },
+  {
+   "biomes": "#minecraft:is_forest",
+   "weight": 6
+  },
+  {
+   "biomes": "#forge:is_plains",
+   "weight": 6
+  }
+ ]
+}

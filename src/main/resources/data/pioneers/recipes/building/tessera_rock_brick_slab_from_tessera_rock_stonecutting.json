@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:tessera_rock"
+ },
+ "result": "pioneers:tessera_rock_brick_slab",
+ "count": 2
+}

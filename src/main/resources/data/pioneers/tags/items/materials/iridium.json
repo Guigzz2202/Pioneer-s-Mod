@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:iridium_nugget",
+  "pioneers:iridium_rod",
+  "pioneers:iridium_ingot",
+  "pioneers:iridium_plate",
+  "pioneers:iridium_dust",
+  "pioneers:iridium_block",
+  "pioneers:iridium_billet"
+ ]
+}

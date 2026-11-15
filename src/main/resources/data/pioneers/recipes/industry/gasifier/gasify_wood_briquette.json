@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 120,
+ "family": "gasifier",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:wood_briquette"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 250
+  },
+  {
+   "gas": "pioneers:steam",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wood_ash",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:syngas",
+   "amount": 2000
+  }
+ ],
+ "industrial": true
+}

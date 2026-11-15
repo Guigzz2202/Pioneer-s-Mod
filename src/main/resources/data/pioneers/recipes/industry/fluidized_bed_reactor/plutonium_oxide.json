@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 2,
+ "time": 300,
+ "family": "fluidized_bed_reactor",
+ "fluids": [
+  {
+   "fluid": "pioneers:plutonium_nitrate",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:plutonium_dioxide",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen_dioxide",
+   "amount": 100
+  }
+ ]
+}

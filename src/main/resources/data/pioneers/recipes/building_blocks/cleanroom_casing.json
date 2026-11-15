@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pvc_sheet"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:polystyrene_foam"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:cleanroom_casing",
+  "count": 4
+ }
+}

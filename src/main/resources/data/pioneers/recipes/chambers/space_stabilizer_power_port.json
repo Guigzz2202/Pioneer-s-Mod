@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:space_stabilizer_casing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_energy_buffer"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:space_stabilizer_power_port",
+  "count": 1
+ }
+}

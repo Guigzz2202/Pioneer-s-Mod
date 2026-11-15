@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:cobblestone"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:moss_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:mossy_cobblestone",
+  "count": 1
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 1,
+ "time": 55,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/gold"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_wire",
+   "count": 1
+  }
+ ]
+}

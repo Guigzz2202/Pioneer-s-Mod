@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_deimos_rock"
+ },
+ "result": "pioneers:cobbled_deimos_rock_stairs",
+ "count": 1
+}

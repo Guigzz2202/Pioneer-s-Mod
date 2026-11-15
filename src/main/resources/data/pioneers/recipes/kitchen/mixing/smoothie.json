@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/smoothie_fruits"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:yogurt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bottle"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:smoothie",
+   "count": 1
+  }
+ ]
+}

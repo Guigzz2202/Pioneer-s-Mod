@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/tungsten"
+  },
+  {
+   "tag": "forge:nuggets/tungsten"
+  },
+  {
+   "tag": "forge:nuggets/tungsten"
+  },
+  {
+   "tag": "forge:nuggets/tungsten"
+  },
+  {
+   "tag": "forge:nuggets/tungsten"
+  },
+  {
+   "tag": "forge:nuggets/tungsten"
+  },
+  {
+   "tag": "forge:nuggets/tungsten"
+  },
+  {
+   "tag": "forge:nuggets/tungsten"
+  },
+  {
+   "tag": "forge:nuggets/tungsten"
+  }
+ ],
+ "result": {
+  "item": "pioneers:tungsten_ingot",
+  "count": 1
+ }
+}

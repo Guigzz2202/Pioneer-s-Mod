@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:zircon_sand",
+ "material": "zircon_sand",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#E6C896",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_beach",
+   "weight": 6
+  },
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 4
+  }
+ ]
+}

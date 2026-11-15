@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 2,
+ "time": 200,
+ "family": "wire_strander",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/niobium_titanium"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nbti_cable",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:turning",
+ "input": {
+  "tag": "forge:ingots/babbitt"
+ },
+ "count": 1,
+ "turns": 10,
+ "results": [
+  {
+   "item": "pioneers:babbitt_rod",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:conamarite_plate",
+  "pioneers:conamarite_rod",
+  "pioneers:conamarite_billet"
+ ]
+}

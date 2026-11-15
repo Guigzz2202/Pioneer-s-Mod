@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/river"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wine"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:brown_mushroom"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "time": 480,
+ "results": [
+  {
+   "item": "pioneers:matelote",
+   "count": 3
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 2,
+ "time": 40,
+ "family": "calender",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crater_lint"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:string",
+   "count": 4
+  }
+ ]
+}

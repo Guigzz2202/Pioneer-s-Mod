@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:smooth_stone"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "tag": "forge:beams/steel"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:launch_pad",
+  "count": 16
+ }
+}

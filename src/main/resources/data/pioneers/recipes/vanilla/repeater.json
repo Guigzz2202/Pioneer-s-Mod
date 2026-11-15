@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:redstone_torch"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stone"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:repeater",
+  "count": 1
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 2,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:scarlet_resin"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:acetone",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 500
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/fish/oily"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tomato_sauce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "results": [
+  {
+   "item": "pioneers:sardines_tomato",
+   "count": 2
+  }
+ ]
+}

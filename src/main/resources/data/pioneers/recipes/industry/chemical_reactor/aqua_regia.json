@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 40,
+ "fluids": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 250
+  },
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 750
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:aqua_regia",
+   "amount": 1000
+  }
+ ]
+}

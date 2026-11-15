@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 1,
+ "time": 100,
+ "fluids": [
+  {
+   "fluid": "pioneers:kerosene",
+   "amount": 900
+  },
+  {
+   "fluid": "pioneers:amine_solution",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 1000
+  }
+ ]
+}

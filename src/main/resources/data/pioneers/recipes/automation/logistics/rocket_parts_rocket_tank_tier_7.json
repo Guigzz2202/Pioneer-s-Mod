@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 3,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_fuselage_panel"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:polystyrene_foam"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_fluid_buffer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/sulcite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/lokite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/conamarite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rocket_tank_tier_7",
+   "count": 1
+  }
+ ]
+}

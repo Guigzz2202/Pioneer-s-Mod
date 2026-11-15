@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 2,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:wolframite_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tailings",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sodium_tungstate_solution",
+   "amount": 500
+  }
+ ],
+ "temperature": 200
+}

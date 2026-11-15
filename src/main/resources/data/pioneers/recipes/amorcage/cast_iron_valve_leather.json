@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cast_iron_housing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/brass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/brass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:leather_gasket"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cast_iron_valve",
+  "count": 1
+ }
+}

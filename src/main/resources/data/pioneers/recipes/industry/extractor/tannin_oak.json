@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:oak_logs"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tannin",
+   "count": 2
+  },
+  {
+   "item": "pioneers:wood_chips",
+   "count": 2
+  }
+ ]
+}

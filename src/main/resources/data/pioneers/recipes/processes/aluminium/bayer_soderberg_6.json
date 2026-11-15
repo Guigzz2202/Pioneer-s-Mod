@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "roaster",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_hydroxide"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:alumina",
+   "count": 2
+  }
+ ],
+ "temperature": 1100
+}

@@ -1,0 +1,12 @@
+{
+  "_comment": "Gardien : beviaire lourd, melee. front_shield = part des degats arretee de face (MKIII), front_angle en degres.",
+  "role": "guardian",
+  "attack_interval": 25,
+  "knockback_resistance": 0.6,
+  "follow_range": 24,
+  "tiers": {
+    "1": {"health": 60, "damage": 6, "speed": 0.20, "armor": 2, "xp": 8},
+    "2": {"health": 100, "damage": 9, "speed": 0.22, "armor": 4, "xp": 14},
+    "3": {"health": 160, "damage": 13, "speed": 0.24, "armor": 6, "front_shield": 0.5, "front_angle": 60, "xp": 22}
+  }
+}

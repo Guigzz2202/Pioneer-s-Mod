@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "item": "minecraft:shears"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "pioneers:cosmetic_desert_bottom",
+  "count": 1
+ }
+}

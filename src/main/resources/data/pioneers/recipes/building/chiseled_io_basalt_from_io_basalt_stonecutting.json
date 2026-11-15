@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:io_basalt"
+ },
+ "result": "pioneers:chiseled_io_basalt",
+ "count": 1
+}

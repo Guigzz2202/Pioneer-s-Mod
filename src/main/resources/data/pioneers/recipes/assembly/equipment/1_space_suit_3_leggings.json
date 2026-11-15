@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...MAAM...",
+  "...MMMM...",
+  "...M..M...",
+  "...A..A..."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:rings/steel"
+  },
+  "M": {
+   "item": "pioneers:plastic_sheet"
+  }
+ },
+ "result": {
+  "item": "pioneers:space_suit_leggings"
+ },
+ "energy": 4000000,
+ "duration": 300,
+ "research": "space_suit"
+}

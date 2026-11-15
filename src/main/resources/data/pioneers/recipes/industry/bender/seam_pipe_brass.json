@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bender",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:sheets/brass"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:brass_pipe",
+   "count": 2
+  }
+ ]
+}

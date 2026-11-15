@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rail_profile"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:concrete_tie"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gravel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:bolts/steel"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:advanced_track",
+   "count": 16
+  }
+ ]
+}

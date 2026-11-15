@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SRS",
+  "RGR",
+  "SRS"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:smooth_stone"
+  },
+  "R": {
+   "tag": "forge:dusts/redstone"
+  },
+  "G": {
+   "tag": "forge:dusts/glowstone"
+  }
+ },
+ "result": {
+  "item": "pioneers:robotic_road",
+  "count": 8
+ }
+}

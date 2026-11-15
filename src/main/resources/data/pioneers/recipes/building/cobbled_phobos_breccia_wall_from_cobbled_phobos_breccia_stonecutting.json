@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_phobos_breccia"
+ },
+ "result": "pioneers:cobbled_phobos_breccia_wall",
+ "count": 1
+}

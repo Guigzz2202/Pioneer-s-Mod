@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:piston"
+  },
+  {
+   "item": "pioneers:titanium_spring"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_step",
+  "count": 1
+ }
+}

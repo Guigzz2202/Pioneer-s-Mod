@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:add_item",
+ "item": "pioneers:music_disc_le_chant_des_bles",
+ "min": 1,
+ "max": 1,
+ "chance": 0.04,
+ "conditions": [
+  {
+   "condition": "minecraft:any_of",
+   "terms": [
+    {
+     "condition": "forge:loot_table_id",
+     "loot_table_id": "minecraft:chests/village/village_plains_house"
+    },
+    {
+     "condition": "forge:loot_table_id",
+     "loot_table_id": "minecraft:chests/village/village_savanna_house"
+    },
+    {
+     "condition": "forge:loot_table_id",
+     "loot_table_id": "minecraft:chests/village/village_taiga_house"
+    },
+    {
+     "condition": "forge:loot_table_id",
+     "loot_table_id": "minecraft:chests/village/village_snowy_house"
+    },
+    {
+     "condition": "forge:loot_table_id",
+     "loot_table_id": "minecraft:chests/village/village_desert_house"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillery",
+ "tier": 1,
+ "time": 360,
+ "fluids": [
+  {
+   "fluid": "pioneers:raw_oil",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:diesel",
+   "amount": 200
+  }
+ ]
+}

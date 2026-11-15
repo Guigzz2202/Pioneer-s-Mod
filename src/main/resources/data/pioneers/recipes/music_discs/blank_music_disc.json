@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "luthier",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:rosin"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beeswax"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:coals"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:blank_music_disc",
+  "count": 1
+ }
+}

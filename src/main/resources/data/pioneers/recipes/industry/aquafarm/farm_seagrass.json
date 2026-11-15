@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "aquafarm",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:seagrass"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:seagrass",
+   "count": 6
+  }
+ ]
+}

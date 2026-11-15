@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/bronze"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:bronze_plate",
+  "count": 1
+ }
+}

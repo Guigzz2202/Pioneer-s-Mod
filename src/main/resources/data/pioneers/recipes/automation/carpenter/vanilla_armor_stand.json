@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:smooth_stone_slab"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:armor_stand",
+   "count": 1
+  }
+ ]
+}

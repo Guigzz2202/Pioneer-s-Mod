@@ -1,0 +1,17 @@
+{
+ "order": 14,
+ "icon": "pioneers:textures/gui/pioneer/skill/nuclear.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "nuclear.exposure",
+   "value": -0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "nuclear.decon_speed",
+   "value": 0.25,
+   "unit": "pct"
+  }
+ ]
+}

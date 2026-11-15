@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:tachometer"
+  },
+  {
+   "tag": "forge:springs/iron"
+  }
+ ],
+ "result": {
+  "item": "pioneers:dynamometer",
+  "count": 1
+ }
+}

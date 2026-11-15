@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:artichoke_crate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:artichoke",
+  "count": 9
+ }
+}

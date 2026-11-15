@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 2,
+ "time": 80,
+ "family": "leaching_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:chaos_polyp"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iodine",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:brine",
+   "amount": 1000
+  }
+ ]
+}

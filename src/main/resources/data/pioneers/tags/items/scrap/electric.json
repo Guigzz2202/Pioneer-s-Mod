@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:scrap_electric_mk1",
+  "pioneers:scrap_electric_mk2",
+  "pioneers:scrap_electric_mk3"
+ ]
+}

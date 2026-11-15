@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 200,
+ "family": "flotation_cell",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ground_chalcopyrite"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:flotation_reagent",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:chalcopyrite_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "ore": true
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 1,
+ "time": 160,
+ "family": "fiber_tower",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_glass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:glass_fiber",
+   "count": 4
+  }
+ ]
+}

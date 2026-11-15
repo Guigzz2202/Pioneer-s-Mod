@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 240,
+ "family": "fluidized_bed_reactor",
+ "gases": [
+  {
+   "gas": "pioneers:depleted_uranium_hexafluoride",
+   "amount": 1000
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:depleted_uranium_tetrafluoride",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 500
+  }
+ ]
+}

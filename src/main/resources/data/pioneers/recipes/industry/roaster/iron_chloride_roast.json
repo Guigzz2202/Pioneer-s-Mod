@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 160,
+ "family": "roaster",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_chloride"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 150
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_dust",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 200
+  }
+ ]
+}

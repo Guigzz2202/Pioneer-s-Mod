@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:mercury_rock"
+ },
+ "result": "pioneers:chiseled_mercury_rock_bricks",
+ "count": 1
+}

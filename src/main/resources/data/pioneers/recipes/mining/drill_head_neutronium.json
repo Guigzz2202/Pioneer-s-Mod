@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  " N ",
+  "NDN",
+  "NMN"
+ ],
+ "key": {
+  "N": {
+   "item": "pioneers:neutronium_plate"
+  },
+  "D": {
+   "item": "pioneers:drill_head_mercurium"
+  },
+  "M": {
+   "item": "pioneers:dark_matter"
+  }
+ },
+ "result": {
+  "item": "pioneers:drill_head_neutronium"
+ }
+}

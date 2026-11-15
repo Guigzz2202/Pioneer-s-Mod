@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:add_item",
+ "item": "pioneers:music_disc_veillee_aux_etoiles",
+ "min": 1,
+ "max": 1,
+ "chance": 0.04,
+ "conditions": [
+  {
+   "condition": "minecraft:any_of",
+   "terms": [
+    {
+     "condition": "forge:loot_table_id",
+     "loot_table_id": "minecraft:chests/ruined_portal"
+    }
+   ]
+  }
+ ]
+}

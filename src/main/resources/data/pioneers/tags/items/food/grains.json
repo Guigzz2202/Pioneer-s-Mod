@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:barley",
+  "pioneers:oats",
+  "pioneers:rye",
+  "pioneers:amaranth",
+  "pioneers:corn"
+ ]
+}

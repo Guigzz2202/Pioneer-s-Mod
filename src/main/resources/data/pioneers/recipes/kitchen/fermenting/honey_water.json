@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:honey_bottle"
+   },
+   "count": 3
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 1000
+ },
+ "time": 200,
+ "results": [
+  {
+   "item": "minecraft:glass_bottle",
+   "count": 3
+  }
+ ],
+ "fluid_result": {
+  "fluid": "pioneers:honey_water",
+  "amount": 1000
+ }
+}

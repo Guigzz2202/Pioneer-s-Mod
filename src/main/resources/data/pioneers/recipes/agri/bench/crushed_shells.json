@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:nautilus_shell"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:crushed_shells",
+  "count": 4
+ }
+}

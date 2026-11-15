@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smelting",
+ "category": "blocks",
+ "ingredient": {
+  "item": "pioneers:deimos_sandstone"
+ },
+ "result": "pioneers:smooth_deimos_sandstone",
+ "experience": 0.1,
+ "cookingtime": 200
+}

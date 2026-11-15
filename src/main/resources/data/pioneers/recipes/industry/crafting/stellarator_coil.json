@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sulcite_hts_tape"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium_aluminide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/invar"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:stellarator_coil",
+  "count": 8
+ }
+}

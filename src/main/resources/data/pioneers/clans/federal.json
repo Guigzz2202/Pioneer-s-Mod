@@ -1,0 +1,139 @@
+{
+ "_doc": "MAJ RP bloc 4 (lots 8 et 9) : factions (federations de 2 a 8 clans) et peuples de joueurs (secession). Delais reels, ralliement en jours de jeu. Plafonds de contribution et poids maximal d'un clan : regimes/*.json (federal).",
+ "pact": {
+  "cost": 3000,
+  "min_clan_level": 2,
+  "expire_days": 7
+ },
+ "identity": {
+  "tag_min": 3,
+  "tag_max": 5
+ },
+ "composition": {
+  "min_clans": 2,
+  "max_clans": 8,
+  "leave_notice_hours": 24,
+  "rejoin_days": 7
+ },
+ "levels": [
+  0,
+  5000,
+  15000,
+  40000,
+  100000
+ ],
+ "zones_per_level": 20,
+ "chunkload_base": 1,
+ "war_cost": 500,
+ "government": {
+  "term_days": 14,
+  "rotation_days": 14,
+  "regime_cooldown_days": 30,
+  "recall_majority": "three_quarters",
+  "decisions": {
+   "admit": "kick",
+   "exclude": "kick",
+   "contribution": "taxes",
+   "spend": "spend",
+   "war": "war",
+   "peace": "treaty",
+   "treaty": "treaty",
+   "workers": "spend",
+   "regime": "regime",
+   "rally": "spend"
+  }
+ },
+ "secession": {
+  "min_level": 3,
+  "min_age_days": 30,
+  "min_clans": 3,
+  "min_active": 24,
+  "cost": 20000,
+  "schism": -60,
+  "schism_people": "restorers",
+  "majority": {
+   "democracy": "three_quarters",
+   "empire": "representative",
+   "council": "three_quarters",
+   "cooperative": "unanimity"
+  }
+ },
+ "people": {
+  "name_min": 3,
+  "name_max": 24,
+  "motto_max": 60,
+  "salute_max": 60,
+  "doctrine_cooldown_days": 60,
+  "tints": [
+   {
+    "id": "ochre",
+    "rgb": "B8812C",
+    "dye": "orange"
+   },
+   {
+    "id": "purple",
+    "rgb": "7A2A6A",
+    "dye": "purple"
+   },
+   {
+    "id": "cobalt",
+    "rgb": "2E5BD0",
+    "dye": "light_blue"
+   },
+   {
+    "id": "amber",
+    "rgb": "F0B229",
+    "dye": "yellow"
+   },
+   {
+    "id": "sage",
+    "rgb": "8EA67A",
+    "dye": "green"
+   },
+   {
+    "id": "rust",
+    "rgb": "9E4127",
+    "dye": "brown"
+   },
+   {
+    "id": "ivory",
+    "rgb": "EAE3CC",
+    "dye": "white"
+   },
+   {
+    "id": "lampblack",
+    "rgb": "2B2927",
+    "dye": "black"
+   }
+  ],
+  "doctrines": {
+   "lettered": "restorers",
+   "earthbound": "bare_hands",
+   "mercantile": "peddlers"
+  },
+  "reserved_names": [
+   "restaurateurs",
+   "restorers",
+   "mains nues",
+   "bare hands",
+   "colporteurs",
+   "peddlers"
+  ]
+ },
+ "rally": {
+  "radius": 200,
+  "min_reputation": 60,
+  "origin_tier": "esteemed",
+  "cost": 5000,
+  "days": 3,
+  "interval_days": 7,
+  "max": 6,
+  "origin_penalty": -40
+ },
+ "decline": {
+  "min_clans": 2,
+  "min_active": 12,
+  "days": 14,
+  "name_release_days": 30
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:crushed_shells"
+ },
+ "temperature": 850,
+ "time": 300,
+ "result": {
+  "item": "pioneers:quicklime",
+  "count": 1
+ }
+}

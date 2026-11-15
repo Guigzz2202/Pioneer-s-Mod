@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:red_dye"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:white_dye"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:crossing_barrier",
+   "count": 2
+  }
+ ]
+}

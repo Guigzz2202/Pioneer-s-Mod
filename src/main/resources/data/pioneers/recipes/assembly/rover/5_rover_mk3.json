@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  "....U.....",
+  "...AMMA...",
+  ".CCBEBCCD.",
+  ".R..R..R..",
+  ".........."
+ ],
+ "key": {
+  "U": {
+   "item": "pioneers:rover_control_unit"
+  },
+  "C": {
+   "tag": "pioneers:circuits/elite"
+  },
+  "D": {
+   "item": "pioneers:rover_drill_arm"
+  },
+  "R": {
+   "item": "pioneers:rover_wheel"
+  },
+  "M": {
+   "tag": "forge:plates/krakenite"
+  },
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "E": {
+   "item": "pioneers:elite_electric_motor"
+  },
+  "B": {
+   "item": "pioneers:fuel_cell_stack"
+  }
+ },
+ "result": {
+  "item": "pioneers:rover_mk3"
+ },
+ "energy": 30000000,
+ "duration": 500,
+ "research": "robotics"
+}

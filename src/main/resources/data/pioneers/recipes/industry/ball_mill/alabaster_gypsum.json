@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 2,
+ "time": 60,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:alabaster_petal"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gypsum",
+   "count": 2
+  }
+ ]
+}

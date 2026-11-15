@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:urea"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ammonium_nitrate"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:phosphoric_acid",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fertilizer",
+   "count": 6
+  }
+ ]
+}

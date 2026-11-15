@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": [
+    {
+     "item": "minecraft:red_sandstone"
+    },
+    {
+     "item": "minecraft:chiseled_red_sandstone"
+    }
+   ],
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:red_sandstone_slab",
+  "count": 6
+ }
+}

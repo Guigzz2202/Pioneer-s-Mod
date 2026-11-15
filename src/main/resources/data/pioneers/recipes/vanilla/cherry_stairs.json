@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:cherry_planks"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:cherry_stairs",
+  "count": 4
+ }
+}

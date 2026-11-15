@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:radish_crate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:radish",
+  "count": 9
+ }
+}

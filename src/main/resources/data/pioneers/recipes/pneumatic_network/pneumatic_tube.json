@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/brass"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:pneumatic_tube",
+  "count": 8
+ }
+}

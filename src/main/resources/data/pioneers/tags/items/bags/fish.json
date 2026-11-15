@@ -1,0 +1,17 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:cod",
+  "minecraft:salmon",
+  "minecraft:tropical_fish",
+  "minecraft:pufferfish",
+  "#pioneers:fish",
+  "pioneers:raw_green_crab",
+  "pioneers:raw_lobster",
+  "pioneers:raw_crayfish",
+  "pioneers:raw_shrimp",
+  "pioneers:raw_king_crab",
+  "pioneers:seashell",
+  "#pioneers:fishing_bait"
+ ]
+}

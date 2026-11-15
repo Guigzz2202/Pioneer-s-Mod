@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 2,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:frost_frond"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:packed_ice",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 250
+  }
+ ]
+}

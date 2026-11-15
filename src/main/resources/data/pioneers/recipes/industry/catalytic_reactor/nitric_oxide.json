@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "family": "catalytic_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:platinum_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 1250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platinum_catalyst",
+   "count": 1,
+   "chance": 0.98
+  },
+  {
+   "item": "pioneers:spent_platinum_catalyst",
+   "count": 1,
+   "chance": 0.02
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitric_oxide",
+   "amount": 500
+  }
+ ]
+}

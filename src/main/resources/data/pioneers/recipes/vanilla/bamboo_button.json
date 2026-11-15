@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:bamboo_planks"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:bamboo_button",
+  "count": 1
+ }
+}

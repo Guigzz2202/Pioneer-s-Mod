@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 3,
+ "time": 170,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lunar_alloy_plate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:concrete_tie"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/elite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ultimate_track",
+   "count": 16
+  }
+ ]
+}

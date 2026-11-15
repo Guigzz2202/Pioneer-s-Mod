@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/pyrrhite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:pyrrhite_nugget",
+  "count": 9
+ }
+}

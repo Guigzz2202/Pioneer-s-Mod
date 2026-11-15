@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SSS",
+  "SXS",
+  "SSS"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:smooth_stone"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:stone_flywheel",
+  "count": 1
+ }
+}

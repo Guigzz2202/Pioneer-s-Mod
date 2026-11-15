@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "family": "vacuum_furnace",
+ "tier": 3,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crude_thalassite"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:thalassite_ingot",
+   "count": 2
+  }
+ ],
+ "temperature": 1800
+}

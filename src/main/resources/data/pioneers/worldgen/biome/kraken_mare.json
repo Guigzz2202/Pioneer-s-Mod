@@ -1,0 +1,52 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 11565626,
+  "fog_color": 9199148,
+  "water_color": 3811866,
+  "water_fog_color": 1971212,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.distant",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:titan_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "pioneers:titan_pebble_patches",
+   "pioneers:krakenite_ore",
+   "pioneers:krakenite_ore_rich"
+  ],
+  [],
+  [],
+  [
+   "pioneers:methane_reed",
+   "pioneers:meteorite_ice_rare"
+  ],
+  [
+   "pioneers:titan_fluid_cleanup"
+  ]
+ ]
+}

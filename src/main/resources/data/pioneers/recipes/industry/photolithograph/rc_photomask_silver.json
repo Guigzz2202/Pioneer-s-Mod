@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/silver"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/invar"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:photomask",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "parent": "pioneers:farm_machines/mechanical_kitchen",
+ "display": {
+  "icon": {
+   "item": "pioneers:mechanical_kneader"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm_machines.mechanical_kneader.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm_machines.mechanical_kneader.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "kitchen_kneader"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ]
+}

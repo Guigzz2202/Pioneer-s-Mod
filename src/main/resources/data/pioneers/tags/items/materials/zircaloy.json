@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:zircaloy_nugget",
+  "pioneers:zircaloy_rod",
+  "pioneers:zircaloy_ingot",
+  "pioneers:zircaloy_plate",
+  "pioneers:zircaloy_dust",
+  "pioneers:zircaloy_block",
+  "pioneers:zircaloy_pipe",
+  "pioneers:zircaloy_billet"
+ ]
+}

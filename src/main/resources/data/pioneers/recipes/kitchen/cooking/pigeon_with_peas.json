@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_pigeon"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pea_pod"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bacon"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 480,
+ "results": [
+  {
+   "item": "pioneers:pigeon_with_peas",
+   "count": 2
+  }
+ ]
+}

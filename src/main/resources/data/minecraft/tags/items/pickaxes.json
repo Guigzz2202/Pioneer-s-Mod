@@ -1,0 +1,27 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:flint_pickaxe",
+  "pioneers:copper_pickaxe",
+  "pioneers:bronze_pickaxe",
+  "pioneers:steel_pickaxe",
+  "pioneers:iron_pickaxe",
+  "pioneers:hardened_steel_pickaxe",
+  "pioneers:brass_pickaxe",
+  "pioneers:titanium_pickaxe",
+  "pioneers:stainless_steel_pickaxe",
+  "pioneers:duralumin_pickaxe",
+  "pioneers:tungsten_carbide_pickaxe",
+  "pioneers:vanadium_steel_pickaxe",
+  "pioneers:stellite_pickaxe",
+  "pioneers:osmiridium_pickaxe",
+  "pioneers:titanium_aluminide_pickaxe",
+  "pioneers:nitinol_pickaxe",
+  "pioneers:gold_pickaxe",
+  "pioneers:graviton_pickaxe",
+  "pioneers:stellaris_pickaxe",
+  "pioneers:neutronic_multitool",
+  "pioneers:singularity_multitool",
+  "pioneers:voltaic_drill"
+ ]
+}

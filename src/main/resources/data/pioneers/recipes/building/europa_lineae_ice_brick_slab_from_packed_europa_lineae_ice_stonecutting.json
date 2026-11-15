@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_europa_lineae_ice"
+ },
+ "result": "pioneers:europa_lineae_ice_brick_slab",
+ "count": 2
+}

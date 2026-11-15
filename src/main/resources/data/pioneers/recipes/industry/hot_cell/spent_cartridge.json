@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 3,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:spent_fragment_cartridge"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:diamond_lattice",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:high_level_waste",
+   "amount": 300
+  }
+ ]
+}

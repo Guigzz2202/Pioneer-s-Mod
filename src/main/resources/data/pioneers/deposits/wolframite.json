@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:wolframite",
+ "material": "wolframite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  8000,
+  24000
+ ],
+ "color": "#6E6050",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 2
+  },
+  {
+   "biomes": "#forge:is_snowy",
+   "weight": 1
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "semiconductor_fab",
+ "tier": 1,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:epoxy_board"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/copper"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 100
+  },
+  {
+   "fluid": "pioneers:etchant",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:multilayer_pcb",
+   "count": 2
+  }
+ ]
+}

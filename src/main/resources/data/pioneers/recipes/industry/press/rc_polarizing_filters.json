@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/tanzanite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plastic_sheet"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:polarizing_filter",
+   "count": 4
+  }
+ ]
+}

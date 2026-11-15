@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "advanced_components",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_wire_mesh"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:activated_carbon"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:cartridge_filter",
+  "count": 1
+ }
+}

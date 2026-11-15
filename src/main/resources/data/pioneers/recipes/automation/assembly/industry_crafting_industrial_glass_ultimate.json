@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sapphire_glass"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:industrial_glass_ultimate",
+   "count": 1
+  }
+ ]
+}

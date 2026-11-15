@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "minecraft:cocoa_beans"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:brown_dye",
+   "count": 2
+  }
+ ]
+}

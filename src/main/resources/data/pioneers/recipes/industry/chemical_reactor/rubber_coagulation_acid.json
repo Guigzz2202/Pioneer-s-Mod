@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 60,
+ "fluids": [
+  {
+   "fluid": "pioneers:latex",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:acetic_acid",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:synthetic_rubber",
+   "count": 3
+  }
+ ]
+}

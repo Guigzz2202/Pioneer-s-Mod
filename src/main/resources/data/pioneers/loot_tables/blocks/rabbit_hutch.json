@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:rabbit_hutch"
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:survives_explosion"
+    },
+    {
+     "condition": "minecraft:inverted",
+     "term": {
+      "condition": "minecraft:block_state_property",
+      "block": "pioneers:rabbit_hutch",
+      "properties": {
+       "part": "side"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

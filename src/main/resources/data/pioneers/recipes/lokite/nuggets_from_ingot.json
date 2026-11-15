@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/lokite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:lokite_nugget",
+  "count": 9
+ }
+}

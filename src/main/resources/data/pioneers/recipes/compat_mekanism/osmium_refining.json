@@ -1,0 +1,33 @@
+{
+ "conditions": [
+  {
+   "type": "forge:mod_loaded",
+   "modid": "mekanism"
+  }
+ ],
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "family": "vacuum_furnace",
+ "tier": 3,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "mekanism:ingot_osmium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:osmium_ingot",
+   "count": 1
+  }
+ ]
+}

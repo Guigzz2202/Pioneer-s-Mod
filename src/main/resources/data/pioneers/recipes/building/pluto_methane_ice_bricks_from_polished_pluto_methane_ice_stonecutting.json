@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_pluto_methane_ice"
+ },
+ "result": "pioneers:pluto_methane_ice_bricks",
+ "count": 1
+}

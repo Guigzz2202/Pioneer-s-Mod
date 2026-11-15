@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "minecraft:clay"
+ },
+ "temperature": 650,
+ "time": 300,
+ "result": {
+  "item": "minecraft:terracotta",
+  "count": 1
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:raw_resin"
+ },
+ "temperature": 200,
+ "time": 200,
+ "result": {
+  "item": "pioneers:rosin",
+  "count": 1
+ }
+}

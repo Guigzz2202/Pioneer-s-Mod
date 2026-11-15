@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:callisto_rock",
+  "pioneers:callisto_regolith",
+  "pioneers:callisto_ice"
+ ]
+}

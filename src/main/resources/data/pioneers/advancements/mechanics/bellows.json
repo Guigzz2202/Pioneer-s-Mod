@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:bellows"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.bellows.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.bellows.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "machine_bellows"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:mechanics/jaw_crusher"
+}

@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 1,
+ "time": 200,
+ "family": "continuous_caster",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rod_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_titanium",
+   "amount": 1296
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_billet",
+   "count": 1
+  },
+  {
+   "item": "pioneers:rod_die",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:exhaust_steam",
+   "amount": 1520
+  }
+ ],
+ "industrial": true
+}

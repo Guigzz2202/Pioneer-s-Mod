@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pgm_residue"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sodium_hydroxide"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fused_pgm_cake",
+   "count": 1
+  }
+ ],
+ "temperature": 900
+}

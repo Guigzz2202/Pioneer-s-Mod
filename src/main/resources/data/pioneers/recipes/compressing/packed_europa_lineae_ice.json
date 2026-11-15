@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:europa_lineae_ice"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:packed_europa_lineae_ice",
+  "count": 1
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:white_rice"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pea_pod"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:zucchini"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:grated_cheese"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:spring_rice",
+   "count": 2
+  }
+ ]
+}

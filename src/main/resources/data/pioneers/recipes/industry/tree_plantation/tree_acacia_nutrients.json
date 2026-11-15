@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "tree_plantation",
+ "tier": 0,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:acacia_sapling"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nutrient_solution",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:acacia_log",
+   "count": 9
+  },
+  {
+   "item": "minecraft:acacia_sapling",
+   "count": 1
+  },
+  {
+   "item": "minecraft:stick",
+   "count": 3
+  },
+  {
+   "item": "minecraft:stick",
+   "count": 2
+  }
+ ]
+}

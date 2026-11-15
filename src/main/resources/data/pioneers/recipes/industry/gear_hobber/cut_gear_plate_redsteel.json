@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 290,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/redsteel"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:redsteel_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:redsteel_nugget",
+   "count": 9
+  }
+ ]
+}

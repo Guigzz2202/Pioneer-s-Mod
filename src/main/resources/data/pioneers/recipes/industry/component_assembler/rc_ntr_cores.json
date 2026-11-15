@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rocket_nozzle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryogenic_turbopump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:zircaloy_tube"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lead_shielding"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fuel_assembly"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ntr_core",
+   "count": 1
+  }
+ ]
+}

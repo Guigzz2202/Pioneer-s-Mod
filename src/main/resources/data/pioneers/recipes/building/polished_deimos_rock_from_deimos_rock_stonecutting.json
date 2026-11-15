@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:deimos_rock"
+ },
+ "result": "pioneers:polished_deimos_rock",
+ "count": 1
+}

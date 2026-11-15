@@ -1,0 +1,64 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:plc"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.control_room.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.control_room.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "nuclear_criticality"
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:plc"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:supervision_screen"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ]
+ ],
+ "parent": "pioneers:nuclear/criticality",
+ "rewards": {
+  "experience": 500
+ }
+}

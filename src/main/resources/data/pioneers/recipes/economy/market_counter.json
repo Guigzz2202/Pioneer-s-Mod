@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:wooden_slabs"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:canvas"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:market_counter",
+  "count": 1
+ }
+}

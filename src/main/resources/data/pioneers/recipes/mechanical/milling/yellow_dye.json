@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "minecraft:dandelion"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:yellow_dye",
+   "count": 3
+  }
+ ]
+}

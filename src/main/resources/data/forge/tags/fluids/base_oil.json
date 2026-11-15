@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:base_oil",
+  "pioneers:flowing_base_oil"
+ ]
+}

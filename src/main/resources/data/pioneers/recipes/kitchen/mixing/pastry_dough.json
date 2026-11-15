@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 200,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:pastry_dough",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:preserving",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sturgeon_roe"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "time": 4800,
+ "results": [
+  {
+   "item": "pioneers:caviar",
+   "count": 1
+  }
+ ]
+}

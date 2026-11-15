@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 1,
+ "time": 200,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rough_topaz"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:topaz",
+   "count": 1
+  },
+  {
+   "item": "pioneers:topaz_dust",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

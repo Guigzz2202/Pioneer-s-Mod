@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  " R "
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:stellaris_plating"
+  },
+  "C": {
+   "item": "pioneers:stellaris_cell"
+  },
+  "R": {
+   "item": "pioneers:stellite_rod"
+  },
+  "X": {
+   "item": "pioneers:graviton_axe"
+  }
+ },
+ "result": {
+  "item": "pioneers:stellaris_axe",
+  "count": 1
+ }
+}

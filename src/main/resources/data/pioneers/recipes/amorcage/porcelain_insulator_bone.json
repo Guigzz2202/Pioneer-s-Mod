@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/quartz"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bone_meal"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:porcelain_insulator",
+  "count": 1
+ }
+}

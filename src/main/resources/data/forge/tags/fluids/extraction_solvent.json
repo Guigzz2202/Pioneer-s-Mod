@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:extraction_solvent",
+  "pioneers:flowing_extraction_solvent"
+ ]
+}

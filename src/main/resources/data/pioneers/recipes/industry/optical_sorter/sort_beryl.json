@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 120,
+ "family": "optical_sorter",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_beryl"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:emerald",
+   "count": 1,
+   "chance": 0.4
+  },
+  {
+   "item": "pioneers:rough_peridot",
+   "count": 1,
+   "chance": 0.05
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "ore": true
+}

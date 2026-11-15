@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 2,
+ "time": 60,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:mordor_burr"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:graphite",
+   "count": 1,
+   "chance": 0.5
+  },
+  {
+   "item": "pioneers:carbon_black",
+   "count": 1
+  }
+ ]
+}

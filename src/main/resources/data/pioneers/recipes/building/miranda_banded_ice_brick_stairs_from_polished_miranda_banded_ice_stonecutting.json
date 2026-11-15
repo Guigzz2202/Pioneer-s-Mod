@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_miranda_banded_ice"
+ },
+ "result": "pioneers:miranda_banded_ice_brick_stairs",
+ "count": 1
+}

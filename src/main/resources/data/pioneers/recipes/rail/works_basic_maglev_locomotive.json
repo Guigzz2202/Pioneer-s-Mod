@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rail_works",
+ "tier": 3,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lunar_alloy_plate"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tharsium_magnet"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electric_motor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tharsium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_maglev_locomotive",
+   "count": 1
+  }
+ ]
+}

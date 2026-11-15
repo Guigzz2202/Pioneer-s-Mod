@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "solvent_extractor",
+ "tier": 1,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:niobium_fluoride_solution",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:niobium_hydroxide",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:fluoride_raffinate",
+   "amount": 800
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 45
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:synthetic_rubber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_black"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sulfur"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:aniline",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rubber_compound",
+   "count": 3
+  }
+ ]
+}

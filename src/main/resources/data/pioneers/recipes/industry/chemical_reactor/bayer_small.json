@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bauxite_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tailings",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sodium_aluminate_liquor",
+   "amount": 500
+  }
+ ],
+ "temperature": 240
+}

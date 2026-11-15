@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/silver"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:silvered_mirror",
+  "count": 2
+ }
+}

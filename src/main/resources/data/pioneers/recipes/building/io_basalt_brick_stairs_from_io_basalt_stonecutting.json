@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:io_basalt"
+ },
+ "result": "pioneers:io_basalt_brick_stairs",
+ "count": 1
+}

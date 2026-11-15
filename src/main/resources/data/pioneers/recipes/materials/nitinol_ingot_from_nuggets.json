@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/nitinol"
+  },
+  {
+   "tag": "forge:nuggets/nitinol"
+  },
+  {
+   "tag": "forge:nuggets/nitinol"
+  },
+  {
+   "tag": "forge:nuggets/nitinol"
+  },
+  {
+   "tag": "forge:nuggets/nitinol"
+  },
+  {
+   "tag": "forge:nuggets/nitinol"
+  },
+  {
+   "tag": "forge:nuggets/nitinol"
+  },
+  {
+   "tag": "forge:nuggets/nitinol"
+  },
+  {
+   "tag": "forge:nuggets/nitinol"
+  }
+ ],
+ "result": {
+  "item": "pioneers:nitinol_ingot",
+  "count": 1
+ }
+}

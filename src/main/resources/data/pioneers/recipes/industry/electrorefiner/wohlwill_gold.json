@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 2,
+ "time": 240,
+ "family": "electrorefiner",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:gold_ingot"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_ingot",
+   "count": 2
+  }
+ ],
+ "pure": true,
+ "impure_only": true
+}

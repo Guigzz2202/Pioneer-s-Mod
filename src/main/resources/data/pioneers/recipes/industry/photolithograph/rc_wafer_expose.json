@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:doped_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:p_doped_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/amethyst"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:exposed_wafer",
+   "count": 2
+  }
+ ]
+}

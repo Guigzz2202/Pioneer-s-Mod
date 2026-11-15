@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 1,
+ "time": 385,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/lead"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_plate",
+   "count": 9
+  }
+ ]
+}

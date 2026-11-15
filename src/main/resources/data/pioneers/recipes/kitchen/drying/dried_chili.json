@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:hot_pepper"
+   },
+   "count": 1
+  }
+ ],
+ "time": 2400,
+ "results": [
+  {
+   "item": "pioneers:dried_chili",
+   "count": 1
+  }
+ ]
+}

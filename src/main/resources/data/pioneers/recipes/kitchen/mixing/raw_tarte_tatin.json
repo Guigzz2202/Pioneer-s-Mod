@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pastry_dough"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:apple"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:caramel"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_tarte_tatin",
+   "count": 1
+  }
+ ]
+}

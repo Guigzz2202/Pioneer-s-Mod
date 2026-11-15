@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:press_cake"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:animal_feed",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:plant_oil",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 90
+  }
+ ]
+}

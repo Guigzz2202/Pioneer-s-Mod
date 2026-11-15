@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:tortilla"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:minced_meat"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salsa"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lettuce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:grated_cheese"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:tacos",
+   "count": 2
+  }
+ ]
+}

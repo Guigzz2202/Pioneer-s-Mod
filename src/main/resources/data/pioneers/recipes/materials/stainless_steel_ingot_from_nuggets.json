@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  },
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  },
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  },
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  },
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  },
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  },
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  },
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  },
+  {
+   "tag": "forge:nuggets/stainless_steel"
+  }
+ ],
+ "result": {
+  "item": "pioneers:stainless_steel_ingot",
+  "count": 1
+ }
+}

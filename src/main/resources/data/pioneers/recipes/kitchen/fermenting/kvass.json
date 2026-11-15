@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:rye_bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 1000
+ },
+ "time": 4800,
+ "results": [
+  {
+   "item": "pioneers:kvass",
+   "count": 4
+  }
+ ]
+}

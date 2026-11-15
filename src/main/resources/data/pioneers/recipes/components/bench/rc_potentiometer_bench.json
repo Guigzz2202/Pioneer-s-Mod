@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:graphite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/brass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:primitive_plastic"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:potentiometer",
+  "count": 2
+ }
+}

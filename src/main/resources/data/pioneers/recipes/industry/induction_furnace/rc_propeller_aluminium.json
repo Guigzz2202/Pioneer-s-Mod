@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:propeller",
+   "count": 2
+  }
+ ]
+}

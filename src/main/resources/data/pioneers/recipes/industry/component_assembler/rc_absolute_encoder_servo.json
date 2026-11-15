@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:motor_stator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rare_earth_magnet"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:optical_sensor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:jewel_pivot"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk3"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:absolute_encoder_servo",
+   "count": 2
+  }
+ ]
+}

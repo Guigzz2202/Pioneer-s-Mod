@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:trappist_1b_obsidian_crust_bricks"
+ },
+ "result": "pioneers:chiseled_trappist_1b_obsidian_crust_bricks",
+ "count": 1
+}

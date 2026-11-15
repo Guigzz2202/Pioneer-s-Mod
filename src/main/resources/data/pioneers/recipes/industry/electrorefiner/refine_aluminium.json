@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 160,
+ "family": "electrorefiner",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_ingot"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:copper_sulfate",
+   "amount": 20
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_ingot",
+   "count": 1
+  },
+  {
+   "item": "pioneers:anode_slime",
+   "count": 1,
+   "chance": 0.05
+  }
+ ],
+ "impure_only": true
+}

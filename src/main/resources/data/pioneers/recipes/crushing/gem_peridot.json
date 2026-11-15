@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:gems/peridot"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:peridot_dust",
+  "count": 1
+ }
+}

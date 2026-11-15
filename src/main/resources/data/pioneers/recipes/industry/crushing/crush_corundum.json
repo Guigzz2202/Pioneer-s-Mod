@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:corundum"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_corundum",
+  "count": 2
+ }
+}

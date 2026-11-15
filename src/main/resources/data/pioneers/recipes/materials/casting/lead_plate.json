@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:casting",
+ "mold": "pioneers:plate_mold",
+ "metal": "lead",
+ "amount": 144,
+ "result": {
+  "item": "pioneers:lead_plate",
+  "count": 1
+ },
+ "cool": 200
+}

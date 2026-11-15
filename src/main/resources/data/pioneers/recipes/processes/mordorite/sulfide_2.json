@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "roaster",
+ "tier": 3,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:mordorite_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mordorite_salts",
+   "count": 2
+  },
+  {
+   "item": "pioneers:sulfur",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 200
+  }
+ ],
+ "temperature": 700
+}

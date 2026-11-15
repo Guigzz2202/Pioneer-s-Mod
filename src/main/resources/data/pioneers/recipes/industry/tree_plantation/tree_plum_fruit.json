@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "tree_plantation",
+ "tier": 0,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:plum_sapling"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:dark_oak_log",
+   "count": 6
+  },
+  {
+   "item": "pioneers:plum_sapling",
+   "count": 1
+  },
+  {
+   "item": "minecraft:stick",
+   "count": 2
+  },
+  {
+   "item": "pioneers:plum",
+   "count": 4
+  }
+ ]
+}

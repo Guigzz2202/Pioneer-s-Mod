@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:campfire_cooking",
+ "category": "food",
+ "ingredient": {
+  "item": "pioneers:raw_green_crab"
+ },
+ "result": "pioneers:cooked_green_crab",
+ "experience": 0.35,
+ "cookingtime": 600
+}

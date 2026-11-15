@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "CSC",
+  "PPP",
+  "L L"
+ ],
+ "key": {
+  "C": {
+   "item": "minecraft:clay_ball"
+  },
+  "S": {
+   "item": "minecraft:smooth_stone_slab"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "item": "pioneers:potter_bench",
+  "count": 1
+ }
+}

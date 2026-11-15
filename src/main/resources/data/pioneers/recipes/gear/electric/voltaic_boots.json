@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "component_assembler",
+ "tier": 0,
+ "time": 220,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/galvanized_steel"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:voltaic_cell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_spring"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rubber_sheet"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:voltaic_boots",
+   "count": 1
+  }
+ ]
+}

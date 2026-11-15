@@ -1,0 +1,25 @@
+{
+ "category": "oil",
+ "fluid": "pioneers:raw_oil",
+ "reserve": [
+  4000000,
+  16000000
+ ],
+ "rate": 40,
+ "biomes": [
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 8
+  },
+  {
+   "biomes": "#minecraft:is_ocean",
+   "weight": 5
+  },
+  {
+   "biomes": "#minecraft:is_deep_ocean",
+   "weight": 7
+  }
+ ],
+ "byproduct": "pioneers:natural_gas",
+ "share": 0.1
+}

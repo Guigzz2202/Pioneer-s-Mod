@@ -1,0 +1,75 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "guard_post",
+ "variant": 2,
+ "min_tier": 2,
+ "size": [
+  5,
+  5,
+  5
+ ],
+ "palette": [
+  "minecraft:mossy_cobblestone",
+  "minecraft:cobblestone",
+  "minecraft:stone_bricks",
+  "minecraft:oak_door[facing=south,half=lower,hinge=left,open=true,powered=false]",
+  "minecraft:cracked_stone_bricks",
+  "minecraft:chest[facing=west,type=single,waterlogged=false]",
+  "minecraft:oak_stairs[facing=north,half=bottom]",
+  "minecraft:oak_slab[type=top]",
+  "minecraft:lectern[facing=west,has_book=false]",
+  "minecraft:oak_door[facing=south,half=upper,hinge=left,open=true,powered=false]",
+  "minecraft:glass_pane",
+  "minecraft:flower_pot",
+  "minecraft:potted_dead_bush",
+  "minecraft:oak_planks",
+  "minecraft:mossy_stone_bricks",
+  "minecraft:stone_brick_wall",
+  "minecraft:stone_brick_slab[type=bottom]"
+ ],
+ "layers": [
+  [
+   "abcca",
+   "bbaba",
+   "bbabb",
+   "ccbaa",
+   "ccaab"
+  ],
+  [
+   "bcdeb",
+   "b..fc",
+   "a.g.e",
+   "ehhic",
+   "bbccb"
+  ],
+  [
+   "bcjca",
+   "e...e",
+   "....k",
+   "alm.b",
+   ".e.ca"
+  ],
+  [
+   "cceec",
+   "cnnnc",
+   "cnnnc",
+   "..nno",
+   "..ooc"
+  ],
+  [
+   "p.p.p",
+   ".qqq.",
+   ".qq.p",
+   "..qq.",
+   "..p.p"
+  ]
+ ],
+ "chests": [
+  [
+   3,
+   1,
+   1
+  ]
+ ],
+ "frames": []
+}

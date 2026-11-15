@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:paddy_rice"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:paddy_rice_sack",
+  "count": 1
+ }
+}

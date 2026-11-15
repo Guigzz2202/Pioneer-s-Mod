@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "advanced_components",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/redsteel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:copper_coil"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:motor_stator",
+  "count": 1
+ }
+}

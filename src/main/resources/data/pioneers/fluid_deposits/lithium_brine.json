@@ -1,0 +1,15 @@
+{
+ "category": "brine",
+ "fluid": "pioneers:lithium_brine",
+ "reserve": [
+  2000000,
+  6000000
+ ],
+ "rate": 40,
+ "biomes": [
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 2
+  }
+ ]
+}

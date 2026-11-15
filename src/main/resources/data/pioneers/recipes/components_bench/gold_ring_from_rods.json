@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/gold"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:gold_ring",
+  "count": 1
+ }
+}

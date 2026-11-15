@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "quench_tank",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:steel_helmet"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hardened_steel_helmet",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 60,
+ "fluids": [
+  {
+   "fluid": "pioneers:fish_oil",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 600
+  }
+ ]
+}

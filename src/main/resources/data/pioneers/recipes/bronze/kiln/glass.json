@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "tag": "forge:sand"
+ },
+ "temperature": 700,
+ "time": 200,
+ "result": {
+  "item": "minecraft:glass",
+  "count": 1
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 1,
+ "time": 215,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_wire_rod",
+   "count": 9
+  }
+ ]
+}

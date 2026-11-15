@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:rhubarb"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:strawberry"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:oats"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 4,
+ "results": [
+  {
+   "item": "pioneers:raw_strawberry_rhubarb_crisp",
+   "count": 1
+  }
+ ]
+}

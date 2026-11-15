@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:zircon_sand"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_zircon_sand",
+  "count": 2
+ }
+}

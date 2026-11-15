@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 1,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_substation"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:solid_state_relay"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vanadium_flow_cell"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vanadium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_substation",
+   "count": 1
+  }
+ ]
+}

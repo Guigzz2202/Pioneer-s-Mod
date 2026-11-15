@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:chloroplatinic_solution",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:liquid_ammonia",
+   "amount": 100
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ammonium_chloroplatinate",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sour_water",
+   "amount": 200
+  }
+ ]
+}

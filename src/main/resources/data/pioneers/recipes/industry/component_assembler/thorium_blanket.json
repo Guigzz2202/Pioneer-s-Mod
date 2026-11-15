@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 300,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:thorium_dioxide"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_cladding_tube"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:thorium_blanket_assembly",
+   "count": 1
+  }
+ ]
+}

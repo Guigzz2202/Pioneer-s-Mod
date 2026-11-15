@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 200,
+ "family": "polymerizer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zeolite_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:phenol",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:formaldehyde",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:primitive_plastic",
+   "count": 4
+  },
+  {
+   "item": "pioneers:zeolite_catalyst",
+   "count": 1,
+   "chance": 0.98
+  },
+  {
+   "item": "pioneers:spent_zeolite_catalyst",
+   "count": 1,
+   "chance": 0.02
+  }
+ ]
+}

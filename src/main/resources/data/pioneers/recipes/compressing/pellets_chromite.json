@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:chromite_concentrate"
+ },
+ "count": 2,
+ "result": {
+  "item": "pioneers:chromite_pellets",
+  "count": 2
+ },
+ "binder": {
+  "item": "minecraft:clay_ball"
+ },
+ "binder_count": 1
+}

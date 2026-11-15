@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " C ",
+  "PBP",
+  "PXP"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:iron_cog"
+  },
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "B": {
+   "item": "pioneers:mixing_bowl"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:mechanical_kneader",
+  "count": 1
+ }
+}

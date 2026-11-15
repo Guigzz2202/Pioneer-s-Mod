@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 2,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:sodium_tungstate_solution",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:kerosene",
+   "amount": 50
+  },
+  {
+   "fluid": "pioneers:liquid_ammonia",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ammonium_tungstate_solution",
+   "amount": 800
+  },
+  {
+   "fluid": "pioneers:brine",
+   "amount": 200
+  }
+ ]
+}

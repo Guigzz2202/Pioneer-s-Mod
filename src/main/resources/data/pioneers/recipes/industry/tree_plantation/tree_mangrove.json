@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "tree_plantation",
+ "tier": 0,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:mangrove_propagule"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:mangrove_log",
+   "count": 6
+  },
+  {
+   "item": "minecraft:mangrove_propagule",
+   "count": 1
+  },
+  {
+   "item": "minecraft:stick",
+   "count": 2
+  },
+  {
+   "item": "minecraft:mangrove_roots",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

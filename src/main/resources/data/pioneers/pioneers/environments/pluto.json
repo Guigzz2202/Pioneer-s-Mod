@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:pluto",
+ "gravity": 0.104,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "cold",
+ "nitrogen": 0.5,
+ "temperature": -229
+}

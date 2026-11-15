@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 0,
+ "time": 95,
+ "family": "calender",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_sheet",
+   "count": 2
+  }
+ ]
+}

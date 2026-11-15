@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 200,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/cobalt"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 25
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cobalt_ingot",
+   "count": 1
+  }
+ ]
+}

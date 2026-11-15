@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 3,
+ "time": 10,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:plate_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_galvanized_steel",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 10
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:galvanized_steel_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:plate_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:steel_nugget",
+   "count": 3
+  },
+  {
+   "item": "pioneers:steel_nugget",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 76
+  }
+ ]
+}

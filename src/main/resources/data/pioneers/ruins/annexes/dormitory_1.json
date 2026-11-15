@@ -1,0 +1,112 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "dormitory",
+ "variant": 1,
+ "min_tier": 1,
+ "size": [
+  10,
+  8,
+  6
+ ],
+ "palette": [
+  "minecraft:spruce_planks",
+  "minecraft:cracked_stone_bricks",
+  "minecraft:bricks",
+  "minecraft:stone_bricks",
+  "minecraft:mossy_cobblestone",
+  "minecraft:flower_pot",
+  "minecraft:brown_bed[facing=south,occupied=false,part=foot]",
+  "minecraft:light_gray_bed[facing=south,occupied=false,part=foot]",
+  "minecraft:brown_bed[facing=south,occupied=false,part=head]",
+  "minecraft:light_gray_bed[facing=south,occupied=false,part=head]",
+  "minecraft:chest[facing=west,type=single,waterlogged=false]",
+  "minecraft:glass_pane",
+  "minecraft:cobweb",
+  "minecraft:dark_oak_stairs[facing=south,half=bottom]",
+  "minecraft:dark_oak_stairs[facing=north,half=bottom]"
+ ],
+ "layers": [
+  [
+   "aaaaaaaaaa",
+   "aaaaaaaaaa",
+   "aaaaaaaaaa",
+   "aaaaaaaaaa",
+   "aaaaaaaaaa",
+   "aaaaaaaaaa"
+  ],
+  [
+   "bccc.ccccd",
+   "c........c",
+   "ef...f.f.c",
+   "cg.h.h.g.c",
+   "ci.j.j.ikc",
+   "dccccecccb"
+  ],
+  [
+   "bccc.ccccd",
+   "c........c",
+   ".........l",
+   "c........c",
+   ".........l",
+   "..cccccccb"
+  ],
+  [
+   "dccccccccb",
+   "c........c",
+   "cm.......c",
+   "c.m......c",
+   ".........c",
+   "...cc.cc.b"
+  ],
+  [
+   "nnnnnnnnnn",
+   "c........c",
+   "c........e",
+   ".........c",
+   ".........c",
+   "...ooooooo"
+  ],
+  [
+   "..........",
+   "nnnnnnnnnn",
+   "c........c",
+   ".........c",
+   "...ooooooo",
+   ".........."
+  ],
+  [
+   "..........",
+   "..........",
+   ".n.nnnnnnn",
+   "...ooooooo",
+   "..........",
+   ".........."
+  ],
+  [
+   "..........",
+   "..........",
+   "..........",
+   "..........",
+   "..........",
+   ".........."
+  ]
+ ],
+ "chests": [
+  [
+   8,
+   1,
+   4
+  ]
+ ],
+ "frames": [
+  {
+   "pos": [
+    3,
+    2,
+    4
+   ],
+   "facing": "north",
+   "item": "minecraft:paper"
+  }
+ ]
+}

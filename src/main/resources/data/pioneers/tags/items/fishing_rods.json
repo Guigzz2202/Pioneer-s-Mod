@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:bamboo_fishing_rod",
+  "pioneers:bronze_fishing_rod",
+  "pioneers:steel_fishing_rod"
+ ]
+}

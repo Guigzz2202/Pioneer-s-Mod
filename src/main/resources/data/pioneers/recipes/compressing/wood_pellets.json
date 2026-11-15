@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:sawdust"
+ },
+ "count": 4,
+ "result": {
+  "item": "pioneers:wood_pellets",
+  "count": 2
+ }
+}

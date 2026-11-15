@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 2,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_carbide_dust"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vanadium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stellite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:carbide_cutting_tool",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:chrome_alum"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:chrome_dust",
+   "count": 2
+  },
+  {
+   "item": "pioneers:fertilizer",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 150
+  }
+ ]
+}

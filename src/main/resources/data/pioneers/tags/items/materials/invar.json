@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:invar_nugget",
+    "pioneers:invar_ring",
+    "pioneers:invar_rod",
+    "pioneers:invar_plate",
+    "pioneers:invar_dust",
+    "pioneers:invar_wire",
+    "pioneers:invar_block",
+    "pioneers:invar_gear",
+    "pioneers:invar_spring",
+    "pioneers:invar_ingot"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:mercury_sandstone"
+ },
+ "result": "pioneers:cut_mercury_sandstone",
+ "count": 1
+}

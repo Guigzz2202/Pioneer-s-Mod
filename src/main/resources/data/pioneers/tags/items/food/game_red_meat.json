@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:raw_venison",
+  "pioneers:raw_boar_meat",
+  "pioneers:raw_bison_meat",
+  "pioneers:raw_bear_meat",
+  "pioneers:raw_big_game_meat",
+  "pioneers:raw_whale_meat",
+  "pioneers:raw_seal_meat"
+ ]
+}

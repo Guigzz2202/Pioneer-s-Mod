@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/zircaloy"
+  },
+  {
+   "tag": "forge:nuggets/zircaloy"
+  },
+  {
+   "tag": "forge:nuggets/zircaloy"
+  },
+  {
+   "tag": "forge:nuggets/zircaloy"
+  },
+  {
+   "tag": "forge:nuggets/zircaloy"
+  },
+  {
+   "tag": "forge:nuggets/zircaloy"
+  },
+  {
+   "tag": "forge:nuggets/zircaloy"
+  },
+  {
+   "tag": "forge:nuggets/zircaloy"
+  },
+  {
+   "tag": "forge:nuggets/zircaloy"
+  }
+ ],
+ "result": {
+  "item": "pioneers:zircaloy_ingot",
+  "count": 1
+ }
+}

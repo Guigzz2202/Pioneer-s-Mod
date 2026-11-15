@@ -1,0 +1,18 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:nickel_nugget",
+  "pioneers:nickel_ring",
+  "pioneers:nickel_rod",
+  "pioneers:nickel_plate",
+  "pioneers:nickel_dust",
+  "pioneers:nickel_wire",
+  "pioneers:nickel_block",
+  "pioneers:nickel_gear",
+  "pioneers:nickel_foil",
+  "pioneers:nickel_spring",
+  "pioneers:nickel_ingot",
+  "pioneers:nickel_sheet",
+  "pioneers:nickel_pipe"
+ ]
+}

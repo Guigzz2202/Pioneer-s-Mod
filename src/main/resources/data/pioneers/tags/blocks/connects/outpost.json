@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:mining_port",
+    "pioneers:mining_outpost_controller"
+  ]
+}

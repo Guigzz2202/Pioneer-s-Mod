@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rosin"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sawdust"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plant_fiber"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:primitive_plastic_mix",
+   "count": 2
+  }
+ ]
+}

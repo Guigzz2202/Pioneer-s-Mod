@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_miranda_rock"
+ },
+ "result": "pioneers:polished_miranda_rock_stairs",
+ "count": 1
+}

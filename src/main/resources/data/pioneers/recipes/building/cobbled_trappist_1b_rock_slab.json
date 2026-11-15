@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:cobbled_trappist_1b_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:cobbled_trappist_1b_rock_slab",
+  "count": 6
+ }
+}

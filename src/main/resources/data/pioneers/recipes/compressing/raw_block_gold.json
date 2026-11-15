@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:raw_materials/gold"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:raw_gold_block",
+  "count": 1
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_proxima_rock"
+ },
+ "result": "pioneers:cobbled_proxima_rock_slab",
+ "count": 2
+}

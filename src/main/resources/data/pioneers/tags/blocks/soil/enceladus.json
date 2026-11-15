@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:enceladus_blue_ice",
+  "pioneers:enceladus_ice",
+  "pioneers:enceladus_snow"
+ ]
+}

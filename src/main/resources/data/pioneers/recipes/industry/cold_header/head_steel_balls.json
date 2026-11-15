@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 1,
+ "time": 120,
+ "family": "cold_header",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/steel"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 25
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_balls",
+   "count": 16
+  }
+ ]
+}

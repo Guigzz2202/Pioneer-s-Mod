@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 1800,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/zirconium"
+   },
+   "count": 10
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:zirconium_ingot",
+   "count": 9
+  }
+ ]
+}

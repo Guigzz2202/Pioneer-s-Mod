@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:logistic_marker"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:logistic_chest_small"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/lunarium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:microprocessor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:logistic_terminal",
+  "count": 1
+ }
+}

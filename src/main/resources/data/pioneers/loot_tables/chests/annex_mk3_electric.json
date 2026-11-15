@@ -1,0 +1,216 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": {
+    "type": "minecraft:uniform",
+    "min": 1,
+    "max": 3
+   },
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:parchment_note",
+     "functions": [
+      {
+       "function": "pioneers:parchment_note"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:scrap_electric_mk3",
+     "functions": [
+      {
+       "function": "minecraft:set_count",
+       "count": {
+        "type": "minecraft:uniform",
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rolls": {
+    "type": "minecraft:uniform",
+    "min": 2,
+    "max": 5
+   },
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:bread",
+     "weight": 20,
+     "functions": [
+      {
+       "function": "minecraft:set_count",
+       "count": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:coal",
+     "weight": 16,
+     "functions": [
+      {
+       "function": "minecraft:set_count",
+       "count": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:charcoal",
+     "weight": 8,
+     "functions": [
+      {
+       "function": "minecraft:set_count",
+       "count": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:flint_pickaxe",
+     "weight": 5,
+     "functions": [
+      {
+       "function": "minecraft:set_damage",
+       "damage": {
+        "type": "minecraft:uniform",
+        "min": 0.25,
+        "max": 0.7
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:flint_axe",
+     "weight": 5,
+     "functions": [
+      {
+       "function": "minecraft:set_damage",
+       "damage": {
+        "type": "minecraft:uniform",
+        "min": 0.25,
+        "max": 0.7
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:flint_shovel",
+     "weight": 5,
+     "functions": [
+      {
+       "function": "minecraft:set_damage",
+       "damage": {
+        "type": "minecraft:uniform",
+        "min": 0.25,
+        "max": 0.7
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:flint_hoe",
+     "weight": 3,
+     "functions": [
+      {
+       "function": "minecraft:set_damage",
+       "damage": {
+        "type": "minecraft:uniform",
+        "min": 0.25,
+        "max": 0.7
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:iron_pickaxe",
+     "weight": 4,
+     "functions": [
+      {
+       "function": "minecraft:set_damage",
+       "damage": {
+        "type": "minecraft:uniform",
+        "min": 0.2,
+        "max": 0.6
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:iron_axe",
+     "weight": 4,
+     "functions": [
+      {
+       "function": "minecraft:set_damage",
+       "damage": {
+        "type": "minecraft:uniform",
+        "min": 0.2,
+        "max": 0.6
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:iron_shovel",
+     "weight": 4,
+     "functions": [
+      {
+       "function": "minecraft:set_damage",
+       "damage": {
+        "type": "minecraft:uniform",
+        "min": 0.2,
+        "max": 0.6
+       }
+      }
+     ]
+    },
+    {
+     "type": "minecraft:item",
+     "name": "pioneers:iron_hoe",
+     "weight": 2,
+     "functions": [
+      {
+       "function": "minecraft:set_damage",
+       "damage": {
+        "type": "minecraft:uniform",
+        "min": 0.2,
+        "max": 0.6
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

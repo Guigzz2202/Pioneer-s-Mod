@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:glass",
+      "required": false
+    },
+    {
+      "id": "#forge:glass_blocks",
+      "required": false
+    },
+    {
+      "id": "mekanism:structural_glass",
+      "required": false
+    }
+  ]
+}

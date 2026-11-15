@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:iron_scrap"
+ },
+ "count": 4,
+ "result": {
+  "item": "pioneers:iron_scrap_bale",
+  "count": 1
+ }
+}

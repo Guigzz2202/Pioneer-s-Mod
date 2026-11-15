@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:casting",
+ "mold": "pioneers:gear_mold",
+ "metal": "iron",
+ "amount": 576,
+ "result": {
+  "item": "pioneers:iron_gear",
+  "count": 1
+ },
+ "cool": 300
+}

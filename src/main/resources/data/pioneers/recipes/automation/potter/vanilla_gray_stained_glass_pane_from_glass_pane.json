@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:glass_pane"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:gray_dye"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:gray_stained_glass_pane",
+   "count": 8
+  }
+ ]
+}

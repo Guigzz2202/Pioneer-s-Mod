@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "mixer",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:mud"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:wheat"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:packed_mud",
+  "count": 1
+ },
+ "time": 80
+}

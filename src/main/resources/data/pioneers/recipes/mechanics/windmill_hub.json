@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "N N",
+  " C ",
+  "PPP"
+ ],
+ "key": {
+  "N": {
+   "tag": "forge:nuggets/iron"
+  },
+  "C": {
+   "item": "pioneers:wooden_cogwheel"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "item": "pioneers:windmill_hub",
+  "count": 1
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_proxima_glacier_ice"
+ },
+ "result": "pioneers:proxima_glacier_ice_brick_stairs",
+ "count": 1
+}

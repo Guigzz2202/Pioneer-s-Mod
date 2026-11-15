@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_bronze_06",
+ "display": {
+  "icon": {
+   "item": "pioneers:steel_ingot"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_bronze_07.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_bronze_07.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

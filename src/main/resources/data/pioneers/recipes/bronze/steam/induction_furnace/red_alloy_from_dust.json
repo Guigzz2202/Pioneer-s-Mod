@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "induction_furnace",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/red_alloy"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:red_alloy_ingot",
+  "count": 1
+ },
+ "time": 60
+}

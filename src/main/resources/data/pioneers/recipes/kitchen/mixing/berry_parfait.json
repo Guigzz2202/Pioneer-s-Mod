@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:yogurt"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/berries"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:granola"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:berry_parfait",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sweet_potato"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:sweet_potato_crate",
+  "count": 1
+ }
+}

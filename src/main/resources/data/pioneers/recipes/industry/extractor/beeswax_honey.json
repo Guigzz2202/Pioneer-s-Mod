@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:honey_frame"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:beeswax",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:honey",
+   "amount": 250
+  }
+ ]
+}

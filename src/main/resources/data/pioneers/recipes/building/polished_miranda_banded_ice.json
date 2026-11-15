@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:packed_miranda_banded_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_miranda_banded_ice",
+  "count": 4
+ }
+}

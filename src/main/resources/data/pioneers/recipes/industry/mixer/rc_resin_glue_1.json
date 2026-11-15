@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_resin"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rosin"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:resin_glue",
+   "count": 4
+  }
+ ]
+}

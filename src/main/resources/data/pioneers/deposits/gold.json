@@ -1,0 +1,35 @@
+{
+ "result": "pioneers:raw_gold",
+ "material": "gold",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  16000,
+  60000
+ ],
+ "outcrop": "pioneers:gold_outcrop",
+ "color": "#E0B432",
+ "fallback": 0,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_badlands",
+   "weight": 5
+  },
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 5
+  },
+  {
+   "biomes": "#minecraft:is_savanna",
+   "weight": 5
+  },
+  {
+   "biomes": "#minecraft:is_jungle",
+   "weight": 6
+  },
+  {
+   "biomes": "minecraft:mangrove_swamp",
+   "weight": 6
+  }
+ ]
+}

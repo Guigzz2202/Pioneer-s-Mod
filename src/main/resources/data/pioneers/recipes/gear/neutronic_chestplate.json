@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:neutronic_plating"
+  },
+  "C": {
+   "item": "pioneers:neutronic_cell"
+  },
+  "X": {
+   "item": "pioneers:stellaris_chestplate"
+  }
+ },
+ "result": {
+  "item": "pioneers:neutronic_chestplate",
+  "count": 1
+ }
+}

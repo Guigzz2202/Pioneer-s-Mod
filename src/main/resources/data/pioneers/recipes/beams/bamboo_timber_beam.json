@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:bamboo_blocks"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:bamboo_timber_beam",
+  "count": 1
+ }
+}

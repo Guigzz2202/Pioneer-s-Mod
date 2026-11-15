@@ -1,0 +1,19 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:bronze_rod",
+  "pioneers:bronze_ring",
+  "pioneers:bronze_gear",
+  "pioneers:bronze_nugget",
+  "pioneers:bronze_dust",
+  "pioneers:bronze_ingot",
+  "pioneers:bronze_plate",
+  "pioneers:bronze_spring",
+  "pioneers:bronze_block",
+  "pioneers:bronze_slab",
+  "pioneers:bronze_billet",
+  "pioneers:bronze_wire_rod",
+  "pioneers:bronze_gear_blank",
+  "pioneers:bronze_wire"
+ ]
+}

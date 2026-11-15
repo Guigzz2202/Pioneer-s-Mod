@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fish_fillet"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:fish_bait",
+   "count": 4
+  }
+ ]
+}

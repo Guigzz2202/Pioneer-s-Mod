@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "propellant_plant",
+ "tier": 3,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 100
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:deuterium",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:helium_3",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:fusion_propellant",
+   "amount": 250
+  }
+ ]
+}

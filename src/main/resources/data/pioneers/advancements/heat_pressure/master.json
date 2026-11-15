@@ -1,0 +1,85 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:ultimate_heat_buffer"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.master.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.master.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:ultimate_heat_buffer"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:ultimate_pressure_buffer"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:pneumatic_tube_station"
+      ]
+     }
+    ]
+   }
+  },
+  "c3": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:ultimate_radiator"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ],
+  [
+   "c3"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/tubes",
+ "rewards": {
+  "experience": 500
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_charon_rock"
+ },
+ "result": "pioneers:smooth_charon_rock_slab",
+ "count": 2
+}

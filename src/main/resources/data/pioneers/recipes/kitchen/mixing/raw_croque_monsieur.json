@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bread"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ham"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:grated_cheese"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bechamel"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:raw_croque_monsieur",
+   "count": 2
+  }
+ ]
+}

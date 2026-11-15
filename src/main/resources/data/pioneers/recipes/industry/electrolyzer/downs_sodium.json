@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_halite"
+   },
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:liquid_sodium",
+   "amount": 250
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 250
+  }
+ ],
+ "industrial": true
+}

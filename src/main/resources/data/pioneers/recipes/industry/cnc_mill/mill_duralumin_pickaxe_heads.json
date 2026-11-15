@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 1,
+ "time": 400,
+ "family": "cnc_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:duralumin_billet"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:duralumin_pickaxe_head",
+   "count": 2
+  },
+  {
+   "item": "pioneers:duralumin_nugget",
+   "count": 27
+  }
+ ]
+}

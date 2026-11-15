@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:hand_crank"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.first_crank.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.first_crank.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "first_crank"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:mechanics/root"
+}

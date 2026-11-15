@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:platinum_sponge"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platinum_ingot",
+   "count": 2
+  }
+ ],
+ "temperature": 1800,
+ "impurity": 2
+}

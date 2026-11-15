@@ -1,0 +1,17 @@
+{
+ "order": 13,
+ "icon": "pioneers:textures/gui/pioneer/skill/spaceflight.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "space.oxygen",
+   "value": -0.2,
+   "unit": "pct"
+  },
+  {
+   "key": "space.fuel",
+   "value": -0.1,
+   "unit": "pct"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 2,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iridium"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iridium_crucible",
+   "count": 2
+  }
+ ]
+}

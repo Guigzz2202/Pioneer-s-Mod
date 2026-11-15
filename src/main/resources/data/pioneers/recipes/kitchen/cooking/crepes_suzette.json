@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:cooking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pancakes"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:orange"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:butter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brandy"
+   },
+   "count": 1
+  }
+ ],
+ "time": 160,
+ "results": [
+  {
+   "item": "pioneers:crepes_suzette",
+   "count": 1
+  }
+ ]
+}

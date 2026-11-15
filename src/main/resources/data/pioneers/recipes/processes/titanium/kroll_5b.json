@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "family": "stripper",
+ "tier": 1,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:crude_titanium_tetrachloride",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:vanadium_oxytrichloride",
+   "amount": 30
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:titanium_tetrachloride",
+   "amount": 700
+  }
+ ]
+}

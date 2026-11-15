@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:microalgae"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:press_cake",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:algae_oil",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 90
+  }
+ ]
+}

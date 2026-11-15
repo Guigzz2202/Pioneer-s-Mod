@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_hygiea_carbon_crust"
+ },
+ "result": "pioneers:hygiea_carbon_crust_bricks",
+ "count": 1
+}

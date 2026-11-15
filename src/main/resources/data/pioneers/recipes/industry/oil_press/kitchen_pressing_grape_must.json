@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "oil_press",
+ "tier": 0,
+ "time": 48,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:grapes"
+   },
+   "count": 4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:grape_must",
+   "amount": 500
+  }
+ ]
+}

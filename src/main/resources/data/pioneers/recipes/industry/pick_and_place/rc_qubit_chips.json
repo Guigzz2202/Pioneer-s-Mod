@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 2,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:josephson_junction"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bga_package"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/niobium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:qubit_chip",
+   "count": 1
+  }
+ ]
+}

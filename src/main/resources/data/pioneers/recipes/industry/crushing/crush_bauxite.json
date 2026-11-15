@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:bauxite"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_bauxite",
+  "count": 2
+ }
+}

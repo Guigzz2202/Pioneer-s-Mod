@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "compressor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:clay_ball"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:clay",
+  "count": 1
+ },
+ "time": 160
+}

@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "blast_furnace",
+ "tier": 2,
+ "time": 500,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ilmenite_pellets"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hot_air",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_slag",
+   "count": 4
+  },
+  {
+   "item": "pioneers:pig_iron",
+   "count": 2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:blast_furnace_gas",
+   "amount": 600
+  }
+ ]
+}

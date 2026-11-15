@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:wood_ash"
+ },
+ "count": 4,
+ "result": {
+  "item": "minecraft:bricks",
+  "count": 1
+ },
+ "binder": {
+  "item": "pioneers:quicklime"
+ },
+ "binder_count": 4
+}

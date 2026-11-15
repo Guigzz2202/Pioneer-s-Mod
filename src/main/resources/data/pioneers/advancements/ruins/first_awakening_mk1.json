@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:restoration_plaque"
+  },
+  "title": {
+   "translate": "advancements.pioneers.ruins.first_awakening_mk1.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.ruins.first_awakening_mk1.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "ruin_restored_mk1"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:ruins/root"
+}

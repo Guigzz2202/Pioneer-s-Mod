@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:orange"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:essential_oil",
+   "count": 1
+  },
+  {
+   "item": "pioneers:compost",
+   "count": 1
+  }
+ ]
+}

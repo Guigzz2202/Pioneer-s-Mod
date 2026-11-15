@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:synthetic_crude",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:lpg",
+   "amount": 20
+  },
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:kerosene",
+   "amount": 200
+  },
+  {
+   "fluid": "pioneers:diesel",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:fuel_oil",
+   "amount": 100
+  },
+  {
+   "fluid": "pioneers:atmospheric_residue",
+   "amount": 50
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 30
+  }
+ ]
+}

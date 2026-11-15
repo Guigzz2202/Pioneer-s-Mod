@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pyrolysis_oven",
+ "tier": 1,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:wood_pellets"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:biochar",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:bio_oil",
+   "amount": 350
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:pyrolysis_gas",
+   "amount": 200
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/titanium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:metal_gasket"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:column_pump_ultimate",
+   "count": 2
+  }
+ ]
+}

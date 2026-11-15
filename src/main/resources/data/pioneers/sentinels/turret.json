@@ -1,0 +1,15 @@
+{
+  "_comment": "Tourelle : fixe, tir a 18 blocs. MKIII : laser charge (laser_charge ticks, visible) puis tir.",
+  "role": "turret",
+  "range": 18,
+  "awake_radius": 18,
+  "awake_radius_sneaking": 12,
+  "fire_interval": 30,
+  "aim_tolerance": 12,
+  "knockback_resistance": 1,
+  "follow_range": 20,
+  "tiers": {
+    "2": {"health": 80, "damage": 6, "armor": 6, "xp": 12},
+    "3": {"health": 120, "damage": 9, "armor": 8, "laser_charge": 30, "fire_interval": 40, "xp": 18}
+  }
+}

@@ -1,0 +1,14 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:nitinol_nugget",
+  "pioneers:nitinol_rod",
+  "pioneers:nitinol_plate",
+  "pioneers:nitinol_dust",
+  "pioneers:nitinol_wire",
+  "pioneers:nitinol_block",
+  "pioneers:nitinol_spring",
+  "pioneers:nitinol_ingot",
+  "pioneers:nitinol_billet"
+ ]
+}

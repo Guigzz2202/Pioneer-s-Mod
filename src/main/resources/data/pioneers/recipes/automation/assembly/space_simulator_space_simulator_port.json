@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:space_simulator_casing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_energy_buffer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/terminite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/edenite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:space_simulator_port",
+   "count": 1
+  }
+ ]
+}

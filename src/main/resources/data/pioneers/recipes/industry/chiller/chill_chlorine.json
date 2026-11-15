@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 40,
+ "family": "chiller",
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:liquid_chlorine",
+   "amount": 125
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "aquafarm",
+ "tier": 0,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bowfin"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fish_feed"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:bowfin",
+   "count": 4
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 1,
+   "chance": 0.3
+  }
+ ]
+}

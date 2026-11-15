@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 320,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pgm_concentrate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrochloric_acid",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pgm_residue",
+   "count": 1,
+   "chance": 0.4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:chloroplatinic_solution",
+   "amount": 500
+  }
+ ],
+ "temperature": 90
+}

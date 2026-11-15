@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rocket",
+ "pattern": [
+  ".WW.......",
+  "AWPPPPPP..",
+  "BTTTTPPPPN",
+  "AWPPPPPP..",
+  ".WW......."
+ ],
+ "key": {
+  "A": {
+   "item": "pioneers:rocket_aux_booster_tier_9"
+  },
+  "B": {
+   "item": "pioneers:rocket_booster_tier_9"
+  },
+  "N": {
+   "item": "pioneers:rocket_nose_cone_tier_9"
+  },
+  "P": {
+   "item": "pioneers:ceramic_fuselage_panel"
+  },
+  "T": {
+   "item": "pioneers:rocket_tank_tier_9"
+  },
+  "W": {
+   "item": "pioneers:rocket_wing_tier_9"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_tier_9"
+ },
+ "energy": 820000000,
+ "duration": 1800,
+ "blueprint": "pioneers:rocket_blueprint_tier_9"
+}

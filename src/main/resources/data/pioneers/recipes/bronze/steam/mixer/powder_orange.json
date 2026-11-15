@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "mixer",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:gravel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sand"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/orange"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:orange_concrete_powder",
+  "count": 8
+ },
+ "time": 120
+}

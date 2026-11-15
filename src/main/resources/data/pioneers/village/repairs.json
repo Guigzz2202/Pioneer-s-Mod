@@ -1,0 +1,62 @@
+{
+ "_doc": "MAJ RP 1.9.1 : hostilite des villages (fuite, distance, golems, treve du drapeau blanc) et rachat des fautes (amende honorable, emissaire Colporteur, taches de reparation). Gains plafonnes par ReputationApi (+30 par peuple et par jour) et arretes a 0. Rien ne remonte avec le temps. Genere par tools/gc/rp/village_data.py.",
+ "hostility": {
+  "flee_affinity": -60,
+  "distance_affinity": -20,
+  "golem_call_affinity": -60,
+  "golem_village_average": -40,
+  "flee_range": 12,
+  "keep_distance": 4,
+  "call_range": 24,
+  "hit_witness_range": 16,
+  "call_seconds": 30,
+  "message_seconds": 30,
+  "truce_board_range": 24,
+  "truce_break_days": 1
+ },
+ "village_factor": 3,
+ "max_depth": 300,
+ "window_days": 3,
+ "amends": {
+  "base_tokens": 50,
+  "depth_divisor": 40,
+  "goods_factor": 1.5,
+  "goods_max": 256,
+  "per_day": 2,
+  "people_gain": 10,
+  "villager_gain": 5
+ },
+ "emissary": {
+  "fee_factor": 1.5,
+  "days": 2,
+  "people_gain": 15,
+  "per_day": 1,
+  "reach": 6
+ },
+ "quests": {
+  "deliver": {
+   "people_gain": 12,
+   "villager_gain": 6,
+   "days": 2,
+   "factor": 2.5
+  },
+  "watch": {
+   "people_gain": 15,
+   "villager_gain": 8,
+   "days": 2,
+   "count": 3,
+   "presence": 0.7
+  },
+  "replant": {
+   "people_gain": 10,
+   "villager_gain": 6,
+   "days": 2,
+   "count": 6
+  },
+  "raid": {
+   "people_gain": 25,
+   "villager_gain": 10,
+   "days": 5
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...SFFS...",
+  "...TCCT...",
+  "...SFFS...",
+  ".........."
+ ],
+ "key": {
+  "C": {
+   "tag": "pioneers:circuits/advanced"
+  },
+  "F": {
+   "item": "pioneers:electrolytic_capacitor"
+  },
+  "S": {
+   "tag": "forge:plates/steel"
+  },
+  "T": {
+   "item": "pioneers:basic_gas_buffer"
+  }
+ },
+ "result": {
+  "item": "pioneers:life_support_unit",
+  "count": 2
+ },
+ "energy": 8000000,
+ "duration": 300,
+ "research": "life_support"
+}

@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:mare_regolith"
+ },
+ "count": 4,
+ "result": {
+  "item": "pioneers:moon_rock_bricks",
+  "count": 2
+ },
+ "binder": {
+  "item": "pioneers:quicklime"
+ },
+ "binder_count": 1
+}

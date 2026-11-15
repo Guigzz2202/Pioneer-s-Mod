@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 120,
+ "family": "arc_welder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lithium_6"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/zircaloy"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 25
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lithium_target",
+   "count": 1
+  }
+ ]
+}

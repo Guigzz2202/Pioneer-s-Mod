@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:crushed_iron",
+  "pioneers:crushed_copper",
+  "pioneers:crushed_tin",
+  "pioneers:crushed_lead",
+  "pioneers:crushed_zinc",
+  "pioneers:crushed_gold"
+ ]
+}

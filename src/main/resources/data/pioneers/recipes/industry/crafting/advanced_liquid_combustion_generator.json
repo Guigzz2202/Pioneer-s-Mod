@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_engine_block"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alternator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/silver"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:reed_relay"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:advanced_liquid_combustion_generator",
+  "count": 1
+ }
+}

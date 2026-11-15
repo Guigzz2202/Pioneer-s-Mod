@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:soda_ash",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:brine",
+   "amount": 200
+  }
+ ]
+}

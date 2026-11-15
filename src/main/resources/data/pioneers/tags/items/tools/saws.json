@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:iron_saw",
+  "pioneers:copper_saw",
+  "pioneers:flint_saw",
+  "pioneers:bronze_saw",
+  "pioneers:steel_saw",
+  "pioneers:brass_saw",
+  "pioneers:titanium_saw",
+  "pioneers:stainless_steel_saw",
+  "pioneers:duralumin_saw",
+  "pioneers:vanadium_steel_saw",
+  "pioneers:tungsten_carbide_saw",
+  "pioneers:osmiridium_saw",
+  "pioneers:stellite_saw",
+  "pioneers:titanium_aluminide_saw",
+  "pioneers:nitinol_saw",
+  "pioneers:hardened_steel_saw",
+  "pioneers:gold_saw"
+ ]
+}

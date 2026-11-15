@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:babbitt_nugget",
+  "pioneers:babbitt_ring",
+  "pioneers:babbitt_plate",
+  "pioneers:babbitt_block",
+  "pioneers:babbitt_dust",
+  "pioneers:babbitt_ingot",
+  "pioneers:babbitt_rod"
+ ]
+}

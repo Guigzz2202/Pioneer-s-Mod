@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:vestalite_plate",
+  "pioneers:vestalite_rod",
+  "pioneers:vestalite_billet"
+ ]
+}

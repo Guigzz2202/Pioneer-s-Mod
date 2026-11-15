@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:flour"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:egg"
+   },
+   "count": 2
+  }
+ ],
+ "time": 200,
+ "strokes": 8,
+ "results": [
+  {
+   "item": "pioneers:pasta_dough",
+   "count": 2
+  }
+ ]
+}

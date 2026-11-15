@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:moon_rock"
+ },
+ "result": "pioneers:polished_moon_rock",
+ "count": 1
+}

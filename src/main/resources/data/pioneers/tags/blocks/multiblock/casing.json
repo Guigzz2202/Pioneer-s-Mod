@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:industrial_casing_advanced",
+    "pioneers:industrial_casing_basic",
+    "pioneers:industrial_casing_elite",
+    "pioneers:industrial_casing_scorched",
+    "pioneers:industrial_casing_ultimate"
+  ]
+}

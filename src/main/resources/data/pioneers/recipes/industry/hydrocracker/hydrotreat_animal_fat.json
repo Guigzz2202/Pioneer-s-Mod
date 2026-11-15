@@ -1,0 +1,62 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 1,
+ "time": 160,
+ "family": "hydrocracker",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nickel_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:animal_fat",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 1500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_catalyst",
+   "count": 1,
+   "chance": 0.98
+  },
+  {
+   "item": "pioneers:spent_nickel_catalyst",
+   "count": 1,
+   "chance": 0.02
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:renewable_diesel",
+   "amount": 700
+  },
+  {
+   "fluid": "pioneers:bio_kerosene",
+   "amount": 150
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:propane",
+   "amount": 100
+  }
+ ],
+ "industrial": true,
+ "pressure": 8,
+ "air": 300
+}

@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/meteoritite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:meteoritite_nugget",
+  "count": 9
+ }
+}

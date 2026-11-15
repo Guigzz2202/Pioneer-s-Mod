@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:leek_crate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:leek",
+  "count": 9
+ }
+}

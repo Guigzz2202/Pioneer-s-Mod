@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:vanadium_steel_sword_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiberglass_sheet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/steel"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_sword",
+   "count": 1
+  }
+ ]
+}

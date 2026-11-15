@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "C C",
+  "CBC",
+  "CCC"
+ ],
+ "key": {
+  "C": {
+   "item": "minecraft:brick"
+  },
+  "B": {
+   "item": "minecraft:bucket"
+  }
+ },
+ "result": {
+  "item": "pioneers:clay_drain",
+  "count": 1
+ }
+}

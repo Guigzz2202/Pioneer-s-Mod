@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 70,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nitinol_knife_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiberglass_sheet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/steel"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nitinol_knife",
+   "count": 1
+  }
+ ]
+}

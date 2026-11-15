@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:wooden_track",
+  "pioneers:basic_track",
+  "pioneers:advanced_track",
+  "pioneers:elite_track",
+  "pioneers:ultimate_track"
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_europa_ice"
+ },
+ "result": "pioneers:europa_ice_brick_wall",
+ "count": 1
+}

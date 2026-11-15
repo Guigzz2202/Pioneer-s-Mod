@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 600,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/tungsten_carbide"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_carbide_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:tungsten_carbide_dust",
+   "count": 1
+  }
+ ]
+}

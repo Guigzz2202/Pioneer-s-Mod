@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 1,
+ "time": 400,
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 10000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 9890
+  },
+  {
+   "gas": "pioneers:carbon_13_dioxide",
+   "amount": 110
+  }
+ ]
+}

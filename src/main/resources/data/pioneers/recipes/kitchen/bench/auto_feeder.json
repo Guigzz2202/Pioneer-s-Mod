@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_logistic_cable"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:auto_feeder",
+  "count": 1
+ }
+}

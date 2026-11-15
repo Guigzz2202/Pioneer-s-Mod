@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:ink_sac"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:black_dye",
+   "count": 3
+  },
+  {
+   "item": "pioneers:compost",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

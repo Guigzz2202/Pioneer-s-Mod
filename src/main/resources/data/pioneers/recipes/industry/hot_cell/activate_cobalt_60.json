@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/cobalt"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:neutron_source"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cobalt_60",
+   "count": 4
+  },
+  {
+   "item": "pioneers:neutron_source",
+   "count": 1,
+   "chance": 0.9
+  }
+ ]
+}

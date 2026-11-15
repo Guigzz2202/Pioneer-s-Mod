@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:dusts/aluminium"
+ },
+ "count": 4,
+ "result": {
+  "item": "pioneers:aluminium_scrap_bale",
+  "count": 1
+ }
+}

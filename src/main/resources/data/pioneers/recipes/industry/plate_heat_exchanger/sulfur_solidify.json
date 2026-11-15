@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 40,
+ "family": "plate_heat_exchanger",
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_sulfur",
+   "amount": 1000
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sulfur",
+   "count": 4
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 800
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 0,
+ "time": 140,
+ "family": "forge",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hardened_steel_ingot"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hardened_steel_file_blade",
+   "count": 1
+  }
+ ],
+ "industrial": true,
+ "temperature": 900
+}

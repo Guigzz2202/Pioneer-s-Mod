@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:potato_sticks"
+   },
+   "count": 1
+  }
+ ],
+ "time": 160,
+ "results": [
+  {
+   "item": "pioneers:fries",
+   "count": 1
+  }
+ ]
+}

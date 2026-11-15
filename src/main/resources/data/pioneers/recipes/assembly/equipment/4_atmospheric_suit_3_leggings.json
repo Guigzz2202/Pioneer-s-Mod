@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...MAAM...",
+  "...MPMM...",
+  "...MFFM...",
+  "...R..R..."
+ ],
+ "key": {
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "M": {
+   "tag": "forge:plates/sputnikite"
+  },
+  "R": {
+   "tag": "forge:rods/mordorite"
+  },
+  "P": {
+   "item": "pioneers:acid_suit_leggings"
+  },
+  "F": {
+   "item": "pioneers:aramid_fiber"
+  }
+ },
+ "result": {
+  "item": "pioneers:atmospheric_suit_leggings"
+ },
+ "energy": 80000000,
+ "duration": 700,
+ "research": "atmospheric_suit"
+}

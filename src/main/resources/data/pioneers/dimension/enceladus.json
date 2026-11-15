@@ -1,0 +1,84 @@
+{
+ "type": "pioneers:enceladus",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:enceladus",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:tiger_stripes",
+     "parameters": {
+      "temperature": [
+       0.29,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:enceladus_cratered_terrain",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.29
+      ],
+      "humidity": [
+       0.3,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:enceladus_smooth_plains",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.29
+      ],
+      "humidity": [
+       -1.0,
+       0.3
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

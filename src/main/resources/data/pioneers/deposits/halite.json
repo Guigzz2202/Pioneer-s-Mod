@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:halite",
+ "material": "halite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#FAF0F0",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 6
+  },
+  {
+   "biomes": "#minecraft:is_beach",
+   "weight": 4
+  }
+ ]
+}

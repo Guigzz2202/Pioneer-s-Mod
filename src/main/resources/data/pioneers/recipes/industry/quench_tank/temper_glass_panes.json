@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 200,
+ "family": "quench_tank",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:glass_panes"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tempered_glass_pane",
+   "count": 4
+  }
+ ]
+}

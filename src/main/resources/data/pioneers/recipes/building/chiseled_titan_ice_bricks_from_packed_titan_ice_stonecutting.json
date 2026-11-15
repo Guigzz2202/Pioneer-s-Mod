@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_titan_ice"
+ },
+ "result": "pioneers:chiseled_titan_ice_bricks",
+ "count": 1
+}

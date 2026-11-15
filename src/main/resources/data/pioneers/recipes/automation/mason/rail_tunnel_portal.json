@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stone_bricks"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cement"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tunnel_portal",
+   "count": 4
+  }
+ ]
+}

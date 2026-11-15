@@ -1,0 +1,16 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:gear_blanks/copper",
+  "#forge:gear_blanks/bronze",
+  "#forge:gear_blanks/brass",
+  "#forge:gear_blanks/steel",
+  "#forge:gear_blanks/aluminium",
+  "#forge:gear_blanks/titanium",
+  "#forge:gear_blanks/stainless_steel",
+  "#forge:gear_blanks/duralumin",
+  "#forge:gear_blanks/iron",
+  "#forge:gear_blanks/gold",
+  "#forge:gear_blanks/tin"
+ ]
+}

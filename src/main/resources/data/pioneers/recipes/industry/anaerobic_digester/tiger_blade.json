@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 2,
+ "time": 300,
+ "family": "anaerobic_digester",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tiger_blade"
+   },
+   "count": 8
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:digestate",
+   "amount": 150
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:biogas",
+   "amount": 600
+  }
+ ]
+}

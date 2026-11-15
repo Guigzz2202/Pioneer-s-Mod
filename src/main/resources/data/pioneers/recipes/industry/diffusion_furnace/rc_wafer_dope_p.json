@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 140,
+ "family": "diffusion_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:silicon_wafer"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:diborane",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:p_doped_wafer",
+   "count": 1
+  }
+ ]
+}

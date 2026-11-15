@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:sugar_cane"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plant_fiber"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basket",
+   "count": 1
+  }
+ ]
+}

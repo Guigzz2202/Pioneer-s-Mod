@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:sheep",
+  "pioneers:merino_sheep",
+  "pioneers:suffolk_sheep",
+  "pioneers:texel_sheep",
+  "pioneers:ouessant_sheep",
+  "pioneers:jacob_sheep"
+ ]
+}

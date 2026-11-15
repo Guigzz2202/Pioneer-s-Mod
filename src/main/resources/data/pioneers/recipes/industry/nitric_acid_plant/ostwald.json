@@ -1,0 +1,56 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 160,
+ "family": "nitric_acid_plant",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:platinum_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 1000
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platinum_catalyst",
+   "count": 1,
+   "chance": 0.99
+  },
+  {
+   "item": "pioneers:spent_platinum_catalyst",
+   "count": 1,
+   "chance": 0.01
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrous_oxide",
+   "amount": 20
+  }
+ ],
+ "industrial": true
+}

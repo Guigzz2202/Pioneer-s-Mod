@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:slime_ball"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:piston"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:sticky_piston",
+  "count": 1
+ }
+}

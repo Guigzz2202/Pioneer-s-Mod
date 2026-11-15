@@ -1,0 +1,57 @@
+{
+ "functions": [
+  {
+   "id": "town_hall",
+   "level": 1,
+   "max": 1
+  },
+  {
+   "id": "warehouse",
+   "level": 1,
+   "max": 4
+  },
+  {
+   "id": "workshop",
+   "level": 2,
+   "max": 4,
+   "radius": 48
+  },
+  {
+   "id": "market",
+   "level": 2,
+   "max": 3,
+   "radius": 32
+  },
+  {
+   "id": "watchtower",
+   "level": 3,
+   "max": 3,
+   "radius": 128,
+   "alert_cooldown_seconds": 300,
+   "alert_permission": "siege"
+  },
+  {
+   "id": "barracks",
+   "level": 4,
+   "max": 2,
+   "radius": 16,
+   "rest_effects": [
+    {
+     "effect": "minecraft:regeneration",
+     "seconds": 30,
+     "amplifier": 0
+    },
+    {
+     "effect": "minecraft:saturation",
+     "seconds": 2,
+     "amplifier": 0
+    }
+   ]
+  },
+  {
+   "id": "archives",
+   "level": 5,
+   "max": 1
+  }
+ ]
+}

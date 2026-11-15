@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:anode_slime"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_dust",
+   "count": 1,
+   "chance": 0.6
+  },
+  {
+   "item": "pioneers:silver_dust",
+   "count": 2,
+   "chance": 0.8
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:copper_sulfate",
+   "amount": 250
+  }
+ ]
+}

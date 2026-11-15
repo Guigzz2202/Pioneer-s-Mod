@@ -1,0 +1,17 @@
+{
+ "category": "gas",
+ "gas": "pioneers:natural_gas",
+ "reserve": [
+  8000000,
+  24000000
+ ],
+ "rate": 80,
+ "biomes": [
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 2
+  }
+ ],
+ "byproduct": "pioneers:helium",
+ "share": 0.05
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_dust",
+  "count": 1
+ }
+}

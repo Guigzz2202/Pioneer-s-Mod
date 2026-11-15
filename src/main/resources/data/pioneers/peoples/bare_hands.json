@@ -1,0 +1,9 @@
+{
+ "id": "bare_hands",
+ "player": false,
+ "doctrine": "earthbound",
+ "share": 50,
+ "color": "8C8A84",
+ "dye": "light_gray",
+ "emblem": "pioneers:textures/gui/village/people_bare_hands.png"
+}

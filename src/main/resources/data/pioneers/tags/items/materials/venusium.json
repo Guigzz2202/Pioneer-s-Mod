@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:venusium_plate",
+  "pioneers:venusium_rod",
+  "pioneers:venusium_billet"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PWP",
+  "SMS",
+  "L L"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/steel"
+  },
+  "W": {
+   "tag": "forge:tools/wrench"
+  },
+  "S": {
+   "tag": "forge:rods/steel"
+  },
+  "M": {
+   "item": "pioneers:metalworker_bench"
+  },
+  "L": {
+   "tag": "forge:ingots/steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:assembly_bench",
+  "count": 1
+ }
+}

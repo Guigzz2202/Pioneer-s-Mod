@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "mixer",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:light_gray_concrete_powder"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/purple"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:purple_concrete_powder",
+  "count": 8
+ },
+ "time": 80
+}

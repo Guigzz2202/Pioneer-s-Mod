@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "transporter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bamboo_fishing_rod"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:warped_fungus"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:warped_fungus_on_a_stick",
+  "count": 1
+ }
+}

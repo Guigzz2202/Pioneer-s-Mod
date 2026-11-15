@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cement"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gravel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:yellow_dye"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:platform_slab",
+  "count": 6
+ }
+}

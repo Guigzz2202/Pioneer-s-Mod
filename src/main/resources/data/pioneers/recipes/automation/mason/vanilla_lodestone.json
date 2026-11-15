@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:chiseled_stone_bricks"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/netherite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:lodestone",
+   "count": 1
+  }
+ ]
+}

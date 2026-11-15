@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:cement"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:sand"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:gravel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dyes/brown"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:brown_concrete",
+   "count": 8
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  ".....U....",
+  "...AMMA...",
+  "..RMCEMR..",
+  "...M..M...",
+  "...W..W..."
+ ],
+ "key": {
+  "U": {
+   "item": "pioneers:robot_core"
+  },
+  "R": {
+   "item": "pioneers:robot_arm"
+  },
+  "W": {
+   "item": "pioneers:robot_wheel"
+  },
+  "M": {
+   "tag": "forge:plates/sputnikite"
+  },
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "E": {
+   "item": "pioneers:ultimate_electric_motor"
+  }
+ },
+ "result": {
+  "item": "pioneers:robot_mk4"
+ },
+ "energy": 24000000,
+ "duration": 600,
+ "research": "robotics"
+}

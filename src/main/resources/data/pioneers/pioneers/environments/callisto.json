@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:callisto",
+ "gravity": 0.13,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "cold",
+ "nitrogen": 0,
+ "temperature": -190
+}

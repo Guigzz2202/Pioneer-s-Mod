@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "shipyard",
+ "tier": 0,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:chest"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:jungle_boat"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:jungle_chest_boat",
+   "count": 1
+  }
+ ]
+}

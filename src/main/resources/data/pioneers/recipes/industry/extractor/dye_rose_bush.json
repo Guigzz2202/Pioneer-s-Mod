@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:rose_bush"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:red_dye",
+   "count": 6
+  },
+  {
+   "item": "pioneers:compost",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

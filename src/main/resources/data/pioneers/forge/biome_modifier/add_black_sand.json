@@ -1,0 +1,12 @@
+{
+ "type": "forge:add_features",
+ "biomes": [
+  "minecraft:beach",
+  "minecraft:stony_shore",
+  "minecraft:ocean",
+  "minecraft:warm_ocean",
+  "minecraft:lukewarm_ocean"
+ ],
+ "features": "pioneers:black_sand_disk",
+ "step": "underground_ores"
+}

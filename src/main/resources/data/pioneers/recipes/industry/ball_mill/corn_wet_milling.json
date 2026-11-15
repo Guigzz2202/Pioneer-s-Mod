@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 0,
+ "time": 80,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:corn"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:corn_starch",
+   "count": 2
+  },
+  {
+   "item": "pioneers:press_cake",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

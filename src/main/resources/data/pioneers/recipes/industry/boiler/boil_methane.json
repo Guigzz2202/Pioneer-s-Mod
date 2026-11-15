@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "boiler",
+ "tier": 0,
+ "time": 80,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 2400
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 19200
+  }
+ ]
+}

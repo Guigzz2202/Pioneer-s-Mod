@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:deimos_regolith"
+  }
+ },
+ "result": {
+  "item": "pioneers:deimos_sandstone",
+  "count": 1
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:drill_bit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:boron_carbide"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/stainless_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:pipes/titanium"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:drill_string_elite",
+  "count": 2
+ }
+}

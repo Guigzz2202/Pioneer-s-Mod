@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_pound_cake"
+   },
+   "count": 1
+  }
+ ],
+ "time": 480,
+ "results": [
+  {
+   "item": "pioneers:pound_cake",
+   "count": 1
+  }
+ ]
+}

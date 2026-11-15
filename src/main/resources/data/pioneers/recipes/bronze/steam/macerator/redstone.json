@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "macerator",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:redstone_ore"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:redstone",
+  "count": 4
+ },
+ "time": 160
+}

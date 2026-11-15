@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "family": "vacuum_furnace",
+ "tier": 2,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:reclaimed_silicon"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:float_zone_silicon",
+   "count": 1
+  }
+ ],
+ "temperature": 1420
+}

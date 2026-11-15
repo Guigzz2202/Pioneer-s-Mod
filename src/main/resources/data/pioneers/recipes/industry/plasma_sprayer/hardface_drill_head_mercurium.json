@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 500,
+ "family": "plasma_sprayer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:drill_head_steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mercurium_rod"
+   },
+   "count": 10
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_dust"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nichrome_dust"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:drill_head_mercurium",
+   "count": 1
+  }
+ ]
+}

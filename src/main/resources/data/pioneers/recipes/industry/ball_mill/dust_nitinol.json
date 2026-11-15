@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 2,
+ "time": 100,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/nitinol"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 10
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nitinol_dust",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_resin"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:resin_glue",
+  "count": 2
+ },
+ "time": 120,
+ "byproduct": {
+  "item": "pioneers:rosin",
+  "count": 1
+ },
+ "chance": 0.25
+}

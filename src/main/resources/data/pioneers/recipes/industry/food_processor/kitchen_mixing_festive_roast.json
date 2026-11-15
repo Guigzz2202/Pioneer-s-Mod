@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:roast_chicken"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cranberry_sauce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mashed_potatoes"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:glazed_carrots"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:festive_roast",
+   "count": 1
+  }
+ ]
+}

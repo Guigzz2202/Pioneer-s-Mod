@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 360,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sand_mold"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_lead",
+   "amount": 180
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_ball",
+   "count": 16
+  },
+  {
+   "item": "pioneers:sand_mold",
+   "count": 1
+  },
+  {
+   "item": "pioneers:lead_nugget",
+   "count": 2
+  },
+  {
+   "item": "pioneers:lead_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

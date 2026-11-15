@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 2400,
+ "fluids": [
+  {
+   "fluid": "pioneers:grape_must",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:wine",
+   "amount": 1000
+  }
+ ]
+}

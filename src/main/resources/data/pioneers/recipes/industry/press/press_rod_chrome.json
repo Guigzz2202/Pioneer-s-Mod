@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 1,
+ "time": 280,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/chrome"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rod_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:chrome_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:rod_die",
+   "count": 1
+  }
+ ]
+}

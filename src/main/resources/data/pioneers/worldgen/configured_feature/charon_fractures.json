@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "pioneers:charon_regolith"
+  },
+  "mode": "trench",
+  "min_length": 16,
+  "max_length": 26,
+  "width": 3,
+  "depth": 3,
+  "curl": 0.12
+ }
+}

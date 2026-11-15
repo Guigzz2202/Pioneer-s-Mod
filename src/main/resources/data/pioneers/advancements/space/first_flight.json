@@ -1,0 +1,34 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:rocket_tier_1"
+  },
+  "title": {
+   "translate": "advancements.pioneers.space.first_flight.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.space.first_flight.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "space_manned_launch"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:space/first_probe",
+ "rewards": {
+  "experience": 500
+ }
+}

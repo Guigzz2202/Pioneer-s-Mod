@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:column_pump_advanced",
+    "pioneers:column_pump_basic",
+    "pioneers:column_pump_elite",
+    "pioneers:column_pump_ultimate",
+    "pioneers:drill_string_advanced",
+    "pioneers:drill_string_basic",
+    "pioneers:drill_string_elite",
+    "pioneers:drill_string_ultimate",
+    "pioneers:turbine_rotor_advanced",
+    "pioneers:turbine_rotor_basic",
+    "pioneers:turbine_rotor_elite",
+    "pioneers:turbine_rotor_ultimate"
+  ]
+}

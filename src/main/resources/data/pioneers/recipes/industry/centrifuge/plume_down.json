@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:plume_down"
+   },
+   "count": 8
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:heavy_water",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 100
+  }
+ ]
+}

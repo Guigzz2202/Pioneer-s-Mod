@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_titan_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:titan_ice_bricks",
+  "count": 4
+ }
+}

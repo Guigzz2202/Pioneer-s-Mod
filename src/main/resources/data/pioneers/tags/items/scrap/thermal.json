@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:scrap_thermal_mk1",
+  "pioneers:scrap_thermal_mk2",
+  "pioneers:scrap_thermal_mk3"
+ ]
+}

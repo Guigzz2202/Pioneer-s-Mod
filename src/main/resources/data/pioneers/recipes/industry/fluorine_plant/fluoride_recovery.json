@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 160,
+ "family": "fluorine_plant",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:calcium_fluoride",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "industrial": true
+}

@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 190,
+ "family": "arc_welder",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 3
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_beam",
+   "count": 2
+  },
+  {
+   "item": "pioneers:aluminium_nugget",
+   "count": 9
+  }
+ ]
+}

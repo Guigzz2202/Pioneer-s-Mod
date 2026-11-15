@@ -1,0 +1,39 @@
+{
+ "result": "pioneers:raw_copper",
+ "material": "copper",
+ "dimension": "minecraft:overworld",
+ "tier": 1,
+ "reserve": [
+  40000,
+  160000
+ ],
+ "outcrop": "pioneers:malachite_outcrop",
+ "color": "#328C5A",
+ "fallback": 4,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 8
+  },
+  {
+   "biomes": "#minecraft:is_hill",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_mountain",
+   "weight": 8
+  },
+  {
+   "biomes": "#minecraft:is_badlands",
+   "weight": 10
+  },
+  {
+   "biomes": "#forge:is_desert",
+   "weight": 10
+  },
+  {
+   "biomes": "#minecraft:is_savanna",
+   "weight": 10
+  }
+ ]
+}

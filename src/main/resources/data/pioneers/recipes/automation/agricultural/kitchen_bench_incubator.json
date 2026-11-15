@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:lantern"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hay_block"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:incubator",
+   "count": 1
+  }
+ ]
+}

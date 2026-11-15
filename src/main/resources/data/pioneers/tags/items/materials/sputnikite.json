@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:sputnikite_plate",
+  "pioneers:sputnikite_rod",
+  "pioneers:sputnikite_billet"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:copper_calcine"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:sand"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_matte",
+   "count": 2
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1
+  }
+ ],
+ "temperature": 1250
+}

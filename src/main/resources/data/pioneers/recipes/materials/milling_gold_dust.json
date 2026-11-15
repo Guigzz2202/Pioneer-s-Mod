@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "pioneers:crushed_gold"
+ },
+ "count": 1,
+ "turns": 4,
+ "results": [
+  {
+   "item": "pioneers:gold_dust",
+   "count": 1
+  },
+  {
+   "item": "pioneers:gold_dust",
+   "count": 1,
+   "chance": 0.1
+  }
+ ]
+}

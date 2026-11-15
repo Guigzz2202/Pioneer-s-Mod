@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:doped_wafer"
+  },
+  {
+   "item": "pioneers:doped_wafer"
+  },
+  {
+   "item": "pioneers:circuit_mk2"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_solar",
+  "count": 1
+ }
+}

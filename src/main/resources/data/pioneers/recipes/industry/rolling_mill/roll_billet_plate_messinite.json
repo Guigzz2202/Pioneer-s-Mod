@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 3,
+ "time": 720,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:messinite_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:messinite_plate",
+   "count": 9
+  }
+ ]
+}

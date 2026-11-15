@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:bio_oil",
+  "pioneers:flowing_bio_oil"
+ ]
+}

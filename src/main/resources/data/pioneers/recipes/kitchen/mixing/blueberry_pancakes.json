@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pancakes"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:blueberry"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honey_bottle"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:blueberry_pancakes",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "synthesizer",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:empty_simulated_mercury"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 600
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 300
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:proto_simulated_mercury",
+   "count": 1
+  }
+ ],
+ "energy": 20000000
+}

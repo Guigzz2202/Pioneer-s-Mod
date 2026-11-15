@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:roast_chicken"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cranberry_sauce"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mashed_potatoes"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:glazed_carrots"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 2,
+ "results": [
+  {
+   "item": "pioneers:festive_roast",
+   "count": 1
+  }
+ ]
+}

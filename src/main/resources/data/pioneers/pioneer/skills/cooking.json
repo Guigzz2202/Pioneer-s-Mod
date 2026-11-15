@@ -1,0 +1,17 @@
+{
+ "order": 8,
+ "icon": "pioneers:textures/gui/pioneer/skill/cooking.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "cooking.hand_speed",
+   "value": 0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "cooking.effect_duration",
+   "value": 0.2,
+   "unit": "pct"
+  }
+ ]
+}

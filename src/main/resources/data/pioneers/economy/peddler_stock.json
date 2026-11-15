@@ -1,0 +1,687 @@
+{
+ "_doc": "Stock des Colporteurs (section 4) : a chaque visite, slots tires par categorie (poids), quantite tiree dans count (bornes comprises). Prix : 130 % de la valeur de base. Ils achetent tout objet de values.json sauf les familles buys_except_families (composants du catalogue et machines). MAJ Recettes (lot 9a) : objets de luxe (luxury).",
+ "slots": {
+  "resources": 6,
+  "tools": 3,
+  "scraps": 1,
+  "relics": 2,
+  "luxury": 1
+ },
+ "resources": [
+  {
+   "item": "minecraft:acacia_log",
+   "weight": 16,
+   "count": [
+    8,
+    32
+   ]
+  },
+  {
+   "item": "minecraft:birch_log",
+   "weight": 16,
+   "count": [
+    8,
+    32
+   ]
+  },
+  {
+   "item": "minecraft:dark_oak_log",
+   "weight": 16,
+   "count": [
+    8,
+    32
+   ]
+  },
+  {
+   "item": "minecraft:jungle_log",
+   "weight": 16,
+   "count": [
+    8,
+    32
+   ]
+  },
+  {
+   "item": "minecraft:oak_log",
+   "weight": 16,
+   "count": [
+    8,
+    32
+   ]
+  },
+  {
+   "item": "minecraft:spruce_log",
+   "weight": 16,
+   "count": [
+    8,
+    32
+   ]
+  },
+  {
+   "item": "minecraft:polished_andesite",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:polished_diorite",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:polished_granite",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:smooth_stone",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:bricks",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "pioneers:coal",
+   "weight": 17,
+   "count": [
+    13,
+    52
+   ]
+  },
+  {
+   "item": "pioneers:charcoal",
+   "weight": 16,
+   "count": [
+    8,
+    32
+   ]
+  },
+  {
+   "item": "minecraft:flint",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "pioneers:salt",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:prismarine_crystals",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "pioneers:quartz",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "pioneers:copper_ingot",
+   "weight": 12,
+   "count": [
+    3,
+    12
+   ]
+  },
+  {
+   "item": "pioneers:bronze_ingot",
+   "weight": 12,
+   "count": [
+    2,
+    8
+   ]
+  },
+  {
+   "item": "pioneers:tin_ingot",
+   "weight": 11,
+   "count": [
+    2,
+    8
+   ]
+  },
+  {
+   "item": "pioneers:iron_ingot",
+   "weight": 10,
+   "count": [
+    2,
+    8
+   ]
+  },
+  {
+   "item": "minecraft:wheat",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "pioneers:barley",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:brown_mushroom",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:red_mushroom",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:potato",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:melon_slice",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:sweet_berries",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:glow_berries",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:white_wool",
+   "weight": 18,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:leather",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:egg",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:chicken",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:rabbit",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:cod",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:salmon",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:honeycomb",
+   "weight": 19,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:feather",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:string",
+   "weight": 20,
+   "count": [
+    16,
+    64
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "item": "minecraft:shears",
+   "weight": 3,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:copper_shovel",
+   "weight": 6,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:bronze_shovel",
+   "weight": 5,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:iron_shovel",
+   "weight": 5,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:copper_hoe",
+   "weight": 4,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:bronze_hoe",
+   "weight": 4,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:stone_hammer",
+   "weight": 10,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:stone_mortar",
+   "weight": 10,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:flint_knife",
+   "weight": 10,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:copper_knife",
+   "weight": 6,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:bronze_knife",
+   "weight": 5,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "minecraft:arrow",
+   "weight": 10,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:bow",
+   "weight": 9,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:bamboo_fishing_rod",
+   "weight": 9,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "pioneers:bronze_fishing_rod",
+   "weight": 3,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "minecraft:glass_bottle",
+   "weight": 10,
+   "count": [
+    16,
+    64
+   ]
+  },
+  {
+   "item": "minecraft:bucket",
+   "weight": 2,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "minecraft:leather_boots",
+   "weight": 8,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "minecraft:leather_helmet",
+   "weight": 7,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "minecraft:leather_leggings",
+   "weight": 7,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "minecraft:leather_chestplate",
+   "weight": 6,
+   "count": [
+    1,
+    1
+   ]
+  },
+  {
+   "item": "minecraft:compass",
+   "weight": 2,
+   "count": [
+    1,
+    4
+   ]
+  }
+ ],
+ "scraps": [
+  {
+   "item": "pioneers:scrap_electric_mk1",
+   "weight": 4,
+   "count": [
+    1,
+    4
+   ]
+  },
+  {
+   "item": "pioneers:scrap_electric_mk2",
+   "weight": 2,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:scrap_electronic_mk1",
+   "weight": 4,
+   "count": [
+    1,
+    4
+   ]
+  },
+  {
+   "item": "pioneers:scrap_electronic_mk2",
+   "weight": 2,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:scrap_fluid_mk1",
+   "weight": 4,
+   "count": [
+    1,
+    4
+   ]
+  },
+  {
+   "item": "pioneers:scrap_fluid_mk2",
+   "weight": 2,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:scrap_motion_mk1",
+   "weight": 4,
+   "count": [
+    1,
+    4
+   ]
+  },
+  {
+   "item": "pioneers:scrap_motion_mk2",
+   "weight": 2,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:scrap_robotic_mk1",
+   "weight": 4,
+   "count": [
+    1,
+    4
+   ]
+  },
+  {
+   "item": "pioneers:scrap_robotic_mk2",
+   "weight": 2,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:scrap_sensor_mk1",
+   "weight": 4,
+   "count": [
+    1,
+    4
+   ]
+  },
+  {
+   "item": "pioneers:scrap_sensor_mk2",
+   "weight": 2,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:scrap_structure_mk1",
+   "weight": 4,
+   "count": [
+    1,
+    4
+   ]
+  },
+  {
+   "item": "pioneers:scrap_structure_mk2",
+   "weight": 2,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:scrap_thermal_mk1",
+   "weight": 4,
+   "count": [
+    1,
+    4
+   ]
+  },
+  {
+   "item": "pioneers:scrap_thermal_mk2",
+   "weight": 2,
+   "count": [
+    1,
+    2
+   ]
+  }
+ ],
+ "relics": [],
+ "luxury": [
+  {
+   "item": "pioneers:silver_gear",
+   "weight": 1,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:silver_spring",
+   "weight": 1,
+   "count": [
+    1,
+    3
+   ]
+  },
+  {
+   "item": "pioneers:silver_ring",
+   "weight": 4,
+   "count": [
+    2,
+    6
+   ]
+  },
+  {
+   "item": "pioneers:electrum_gear",
+   "weight": 1,
+   "count": [
+    1,
+    2
+   ]
+  },
+  {
+   "item": "pioneers:electrum_spring",
+   "weight": 1,
+   "count": [
+    1,
+    3
+   ]
+  },
+  {
+   "item": "pioneers:electrum_ring",
+   "weight": 4,
+   "count": [
+    2,
+    6
+   ]
+  }
+ ],
+ "buys_except_families": [
+  "component",
+  "machine"
+ ]
+}

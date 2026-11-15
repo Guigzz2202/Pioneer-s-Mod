@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:treated_greenhouse_vent",
+  "pioneers:iron_greenhouse_vent"
+ ]
+}

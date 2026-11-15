@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:smooth_hygiea_carbon_crust"
+ },
+ "result": "pioneers:smooth_hygiea_carbon_crust_slab",
+ "count": 2
+}

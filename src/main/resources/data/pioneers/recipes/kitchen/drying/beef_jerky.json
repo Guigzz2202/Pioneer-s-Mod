@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:beef"
+   },
+   "count": 1
+  }
+ ],
+ "time": 2400,
+ "results": [
+  {
+   "item": "pioneers:beef_jerky",
+   "count": 1
+  }
+ ],
+ "smoke": true
+}

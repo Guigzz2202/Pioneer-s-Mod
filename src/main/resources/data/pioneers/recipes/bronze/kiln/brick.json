@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "minecraft:clay_ball"
+ },
+ "temperature": 600,
+ "time": 160,
+ "result": {
+  "item": "minecraft:brick",
+  "count": 1
+ }
+}

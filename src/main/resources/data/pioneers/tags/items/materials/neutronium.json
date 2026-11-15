@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:neutronium_plate",
+  "pioneers:neutronium_rod",
+  "pioneers:neutronium_billet"
+ ]
+}

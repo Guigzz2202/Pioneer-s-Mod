@@ -1,0 +1,14 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:cheese_sandwich",
+  "pioneers:tuna_sandwich",
+  "pioneers:club_sandwich",
+  "pioneers:egg_sandwich",
+  "pioneers:salmon_sandwich",
+  "pioneers:veggie_sandwich",
+  "pioneers:chicken_sandwich",
+  "pioneers:pate_sandwich",
+  "pioneers:panini"
+ ]
+}

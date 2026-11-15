@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:solar_simulation",
+ "planet": {
+  "item": "pioneers:simulated_mars"
+ },
+ "duration": 200,
+ "outputs": [
+  {
+   "item": "pioneers:marsium_ingot",
+   "count": 4
+  },
+  {
+   "item": "pioneers:tharsium_ingot",
+   "count": 2
+  },
+  {
+   "item": "minecraft:red_sand",
+   "count": 16
+  }
+ ]
+}

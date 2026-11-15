@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 0,
+ "time": 100,
+ "family": "calender",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:vulcanized_rubber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:conveyor_belt",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_diogenite"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_diogenite_wall",
+  "count": 6
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:supervision_screen"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vacuum_tube_computer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:basic_logistic_cable"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:power_supply_unit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:core_memory"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:network_terminal",
+  "count": 1
+ }
+}

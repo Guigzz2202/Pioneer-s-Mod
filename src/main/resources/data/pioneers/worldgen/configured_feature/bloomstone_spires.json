@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:bloomstone"
+  },
+  "tip": {
+   "Name": "pioneers:bloomstone"
+  },
+  "min_height": 5,
+  "max_height": 12,
+  "radius": 1,
+  "elongation": 2.0
+ }
+}

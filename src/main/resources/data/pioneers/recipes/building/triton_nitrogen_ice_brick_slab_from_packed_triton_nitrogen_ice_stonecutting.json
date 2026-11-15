@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_triton_nitrogen_ice"
+ },
+ "result": "pioneers:triton_nitrogen_ice_brick_slab",
+ "count": 2
+}

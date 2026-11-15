@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "steam_turbine",
+ "tier": 0,
+ "time": 64,
+ "fluids": [
+  {
+   "fluid": "pioneers:hot_coolant",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:butane",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:coolant",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:butane",
+   "amount": 1000
+  }
+ ],
+ "energy": 6144
+}

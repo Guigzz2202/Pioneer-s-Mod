@@ -1,0 +1,31 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:copper_spring",
+  "pioneers:copper_ring",
+  "minecraft:copper_ingot",
+  "pioneers:copper_dust",
+  "minecraft:copper_block",
+  "pioneers:copper_gear",
+  "pioneers:copper_plate",
+  "pioneers:copper_rod",
+  "pioneers:crushed_copper",
+  "minecraft:raw_copper_block",
+  "minecraft:raw_copper",
+  "pioneers:copper_nugget",
+  "pioneers:copper_wire",
+  "pioneers:copper_foil",
+  "pioneers:copper_ingot",
+  "pioneers:raw_copper_block",
+  "pioneers:raw_copper",
+  "pioneers:copper_block",
+  "pioneers:copper_pipe",
+  "pioneers:copper_wire_rope",
+  "pioneers:copper_wire_mesh",
+  "pioneers:copper_slab",
+  "pioneers:copper_billet",
+  "pioneers:copper_wire_rod",
+  "pioneers:copper_gear_blank",
+  "pioneers:copper_sheet"
+ ]
+}

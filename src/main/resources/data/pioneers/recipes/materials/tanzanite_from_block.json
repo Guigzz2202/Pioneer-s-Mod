@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:tanzanite_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:tanzanite",
+  "count": 9
+ }
+}

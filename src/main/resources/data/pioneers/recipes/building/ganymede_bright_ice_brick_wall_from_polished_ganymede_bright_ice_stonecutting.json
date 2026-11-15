@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_ganymede_bright_ice"
+ },
+ "result": "pioneers:ganymede_bright_ice_brick_wall",
+ "count": 1
+}

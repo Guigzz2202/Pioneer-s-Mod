@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "induction_furnace",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:pig_iron"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/zircon"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:cast_iron_housing",
+  "count": 2
+ },
+ "time": 120
+}

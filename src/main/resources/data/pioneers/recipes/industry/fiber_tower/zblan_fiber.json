@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 3,
+ "time": 300,
+ "family": "fiber_tower",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fluorite_dust"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:zirconium_dust"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:optical_fiber_strand",
+   "count": 8
+  }
+ ]
+}

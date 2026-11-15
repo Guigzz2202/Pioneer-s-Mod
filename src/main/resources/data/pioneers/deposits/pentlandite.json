@@ -1,0 +1,26 @@
+{
+ "result": "pioneers:pentlandite",
+ "material": "pentlandite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#C8BE78",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_taiga",
+   "weight": 6
+  },
+  {
+   "biomes": "#forge:is_snowy",
+   "weight": 6
+  },
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 3
+  }
+ ]
+}

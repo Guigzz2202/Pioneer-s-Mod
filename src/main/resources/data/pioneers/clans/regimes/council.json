@@ -1,0 +1,77 @@
+{
+ "id": "council",
+ "order": 2,
+ "representative": {
+  "mode": "council",
+  "term_days": 14,
+  "reelectable": true,
+  "election": {
+   "by": "council",
+   "majority": "simple"
+  }
+ },
+ "council": {
+  "min": 3,
+  "max": 7,
+  "per_members": 0.5,
+  "term_days": 28,
+  "election": {
+   "by": "members",
+   "majority": "simple"
+  }
+ },
+ "decisions": {
+  "taxes": {
+   "by": "council",
+   "majority": "simple"
+  },
+  "roles": {
+   "by": "council",
+   "majority": "simple"
+  },
+  "kick": {
+   "by": "council",
+   "majority": "simple"
+  },
+  "spend": {
+   "by": "council",
+   "majority": "simple"
+  },
+  "war": {
+   "by": "council",
+   "majority": "simple"
+  },
+  "treaty": {
+   "by": "council",
+   "majority": "simple"
+  },
+  "regime": {
+   "by": "council",
+   "majority": "two_thirds"
+  },
+  "identity": {
+   "by": "council",
+   "majority": "simple"
+  }
+ },
+ "caps": {
+  "activity_tax": 25,
+  "dues": 100
+ },
+ "succession": "council",
+ "counter_power": {
+  "type": "no_confidence",
+  "cooldown_days": 7,
+  "by": "council",
+  "majority": "two_thirds",
+  "base": "electorate"
+ },
+ "advantage": {
+  "claim_budget": 0.0,
+  "dividend": false
+ },
+ "federal": {
+  "contribution_max": 12,
+  "weight_cap": 0.4
+ }
+}

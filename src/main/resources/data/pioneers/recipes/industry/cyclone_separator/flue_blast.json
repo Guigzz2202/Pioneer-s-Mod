@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 0,
+ "time": 40,
+ "family": "cyclone_separator",
+ "gases": [
+  {
+   "gas": "pioneers:blast_furnace_gas",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.3
+  },
+  {
+   "item": "pioneers:thomas_slag",
+   "count": 1,
+   "chance": 0.2
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:blast_furnace_gas",
+   "amount": 960
+  }
+ ]
+}

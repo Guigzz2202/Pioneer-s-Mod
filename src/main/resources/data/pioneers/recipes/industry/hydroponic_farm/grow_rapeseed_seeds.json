@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rapeseed_seeds"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rapeseed",
+   "count": 3
+  },
+  {
+   "item": "pioneers:rapeseed_seeds",
+   "count": 1
+  },
+  {
+   "item": "pioneers:rapeseed_seeds",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

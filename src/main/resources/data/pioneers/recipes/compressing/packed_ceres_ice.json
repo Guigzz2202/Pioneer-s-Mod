@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:ceres_ice"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:packed_ceres_ice",
+  "count": 1
+ }
+}

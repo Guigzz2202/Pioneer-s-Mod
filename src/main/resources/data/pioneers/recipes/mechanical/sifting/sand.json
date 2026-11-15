@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:sifting",
+ "input": {
+  "item": "minecraft:sand"
+ },
+ "count": 1,
+ "turns": 6,
+ "results": [
+  {
+   "item": "pioneers:cassiterite_fragment",
+   "count": 1,
+   "chance": 0.5
+  },
+  {
+   "item": "pioneers:malachite_fragment",
+   "count": 1,
+   "chance": 0.7
+  },
+  {
+   "item": "pioneers:gold_flake",
+   "count": 1,
+   "chance": 0.02
+  },
+  {
+   "item": "minecraft:clay_ball",
+   "count": 1,
+   "chance": 0.6
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 240,
+ "family": "electrorefiner",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ferronickel"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nickel_sulfate_solution",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_ingot",
+   "count": 1
+  },
+  {
+   "item": "pioneers:iron_dust",
+   "count": 1
+  }
+ ],
+ "pure": true
+}

@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:europa_lineae_ice_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:europa_lineae_ice_brick_wall",
+  "count": 6
+ }
+}

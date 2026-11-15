@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "family": "fluidized_bed_reactor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bischofite"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:magnesium_chloride",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 300
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 150
+  }
+ ],
+ "temperature": 350
+}

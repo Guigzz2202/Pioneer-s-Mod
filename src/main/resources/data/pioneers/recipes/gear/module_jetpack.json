@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:advanced_electric_motor"
+  },
+  {
+   "item": "pioneers:advanced_electric_motor"
+  },
+  {
+   "item": "pioneers:titanium_aluminide_plate"
+  },
+  {
+   "item": "pioneers:titanium_aluminide_plate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_jetpack",
+  "count": 1
+ }
+}

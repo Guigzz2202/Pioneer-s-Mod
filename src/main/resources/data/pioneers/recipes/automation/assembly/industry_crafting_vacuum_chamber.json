@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:first_wall_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_glass"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_tile"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/invar"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vacuum_chamber",
+   "count": 8
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "NPN",
+  "PCP",
+  "NPN"
+ ],
+ "key": {
+  "N": {
+   "tag": "forge:nuggets/iron"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "C": {
+   "item": "pioneers:wooden_cog"
+  }
+ },
+ "result": {
+  "item": "pioneers:gearbox",
+  "count": 1
+ }
+}

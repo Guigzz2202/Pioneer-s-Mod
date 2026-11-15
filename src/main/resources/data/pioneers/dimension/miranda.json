@@ -1,0 +1,108 @@
+{
+ "type": "pioneers:miranda",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:miranda",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:miranda_coronae",
+     "parameters": {
+      "temperature": [
+       0.35,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:verona_rupes",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.35
+      ],
+      "humidity": [
+       -0.09,
+       0.09
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:miranda_cratered_terrain",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.35
+      ],
+      "humidity": [
+       -1.0,
+       -0.09
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:miranda_cratered_terrain",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.35
+      ],
+      "humidity": [
+       0.09,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

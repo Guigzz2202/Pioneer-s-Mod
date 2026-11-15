@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:magnesium_nugget",
+  "pioneers:magnesium_dust",
+  "pioneers:magnesium_ingot",
+  "pioneers:magnesium_plate",
+  "pioneers:magnesium_rod",
+  "pioneers:magnesium_sheet"
+ ]
+}

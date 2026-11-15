@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:constantan_nugget",
+    "pioneers:constantan_ring",
+    "pioneers:constantan_rod",
+    "pioneers:constantan_plate",
+    "pioneers:constantan_dust",
+    "pioneers:constantan_wire",
+    "pioneers:constantan_block",
+    "pioneers:constantan_gear",
+    "pioneers:constantan_spring",
+    "pioneers:constantan_ingot"
+  ]
+}

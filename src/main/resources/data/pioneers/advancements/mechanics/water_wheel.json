@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:water_wheel"
+  },
+  "title": {
+   "translate": "advancements.pioneers.mechanics.water_wheel.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.mechanics.water_wheel.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "water_wheel"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:mechanics/cogs"
+}

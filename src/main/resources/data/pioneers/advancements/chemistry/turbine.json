@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:gas_turbine"
+  },
+  "title": {
+   "translate": "advancements.pioneers.chemistry.turbine.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.chemistry.turbine.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_gas_turbine"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:chemistry/distill"
+}

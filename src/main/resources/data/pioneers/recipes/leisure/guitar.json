@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "luthier",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/knives"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:spruce_planks"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:string"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/nickel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:raw_resin"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:guitar",
+  "count": 1
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "_doc": "MAJ RP bloc 3 \u00a710 : actes de reputation (points par peuple, + = gain plafonne par jour, - jamais plafonne). 'once' : une fois par cle (ruine, villageois...).",
+ "dismantle": {
+  "restorers": 0,
+  "bare_hands": 6,
+  "peddlers": 6
+ },
+ "restore": {
+  "restorers": 20,
+  "bare_hands": -15,
+  "peddlers": 0,
+  "uncapped": true
+ },
+ "sentinel_killed": {
+  "restorers": 0,
+  "bare_hands": 6,
+  "peddlers": 6
+ },
+ "standby": {
+  "restorers": 6,
+  "bare_hands": 0,
+  "peddlers": 0
+ },
+ "sell_scraps": {
+  "restorers": 0,
+  "bare_hands": -6,
+  "peddlers": 6
+ },
+ "sell_farm": {
+  "restorers": 0,
+  "bare_hands": 3,
+  "peddlers": 0
+ },
+ "read_lore": {
+  "restorers": 1,
+  "bare_hands": 0,
+  "peddlers": 0,
+  "daily": 5
+ },
+ "trust_4": {
+  "own": 2
+ },
+ "kill_villager": {
+  "restorers": -10,
+  "bare_hands": -10,
+  "peddlers": -10,
+  "own": -60
+ },
+ "kill_peddler": {
+  "restorers": 0,
+  "bare_hands": 0,
+  "peddlers": -100
+ }
+}

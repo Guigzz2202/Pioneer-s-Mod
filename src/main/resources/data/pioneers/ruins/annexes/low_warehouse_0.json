@@ -1,0 +1,77 @@
+{
+ "_doc": "Genere par tools/gc/ruins/annex_gen.py (ne pas modifier a la main).",
+ "type": "low_warehouse",
+ "variant": 0,
+ "min_tier": 2,
+ "size": [
+  8,
+  5,
+  6
+ ],
+ "palette": [
+  "minecraft:cobblestone",
+  "minecraft:mossy_cobblestone",
+  "minecraft:stone_bricks",
+  "minecraft:cracked_stone_bricks",
+  "minecraft:barrel[facing=up,open=false]",
+  "minecraft:chest[facing=north,type=single,waterlogged=false]",
+  "minecraft:mossy_stone_bricks",
+  "minecraft:oak_planks",
+  "minecraft:stone_brick_slab[type=bottom]"
+ ],
+ "layers": [
+  [
+   "aaaaaaab",
+   "caaaacaa",
+   "cbaaacaa",
+   "bccaccba",
+   "abaaaccb",
+   "bbcaccca"
+  ],
+  [
+   "acc..dcb",
+   "ae....eb",
+   "ce.....b",
+   "df....ec",
+   "be..f.ea",
+   "acccccdb"
+  ],
+  [
+   ".dd..cab",
+   "ae....eg",
+   ".e......",
+   "c.....ec",
+   "c......a",
+   "aaddccab"
+  ],
+  [
+   ".caggcac",
+   "chhhhhhc",
+   "chhhhhhg",
+   "chhhhhha",
+   "ghhhhhhc",
+   "cccacacc"
+  ],
+  [
+   "........",
+   "..iii.i.",
+   ".iii.ii.",
+   ".iiiiii.",
+   ".iiiiii.",
+   "........"
+  ]
+ ],
+ "chests": [
+  [
+   1,
+   1,
+   3
+  ],
+  [
+   4,
+   1,
+   4
+  ]
+ ],
+ "frames": []
+}

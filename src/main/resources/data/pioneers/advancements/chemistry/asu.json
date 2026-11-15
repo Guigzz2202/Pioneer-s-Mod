@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:industrial_gas_separator"
+  },
+  "title": {
+   "translate": "advancements.pioneers.chemistry.asu.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.chemistry.asu.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_air_separation_unit"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:chemistry/root"
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 200,
+ "family": "quench_tank",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/vanadium_steel"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_pin",
+   "count": 4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 90
+  }
+ ]
+}

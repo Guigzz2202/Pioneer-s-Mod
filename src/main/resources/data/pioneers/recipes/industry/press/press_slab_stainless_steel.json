@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 1,
+ "time": 335,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/stainless_steel"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stainless_steel_slab",
+   "count": 1
+  }
+ ]
+}

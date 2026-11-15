@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "kroll_reactor",
+ "tier": 2,
+ "time": 600,
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_sodium",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:titanium_tetrachloride",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_sponge",
+   "count": 1
+  },
+  {
+   "item": "pioneers:salt",
+   "count": 4
+  }
+ ]
+}

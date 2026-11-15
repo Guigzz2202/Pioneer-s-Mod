@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cake_batter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cocoa_powder"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cherries"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:whipped_cream"
+   },
+   "count": 1
+  }
+ ],
+ "time": 300,
+ "strokes": 6,
+ "results": [
+  {
+   "item": "pioneers:raw_black_forest",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "PCP",
+  "PXP",
+  "aRb"
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:singularity_plating"
+  },
+  "C": {
+   "item": "pioneers:singularity_cell"
+  },
+  "R": {
+   "item": "pioneers:osmiridium_rod"
+  },
+  "X": {
+   "item": "pioneers:neutronic_multitool"
+  },
+  "a": {
+   "item": "pioneers:neutronium_rod"
+  },
+  "b": {
+   "tag": "forge:rods/borealite"
+  }
+ },
+ "result": {
+  "item": "pioneers:singularity_multitool",
+  "count": 1
+ }
+}

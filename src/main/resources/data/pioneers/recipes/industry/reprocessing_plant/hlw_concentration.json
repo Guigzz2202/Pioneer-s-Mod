@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 400,
+ "family": "reprocessing_plant",
+ "fluids": [
+  {
+   "fluid": "pioneers:high_level_waste",
+   "amount": 2000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:high_level_waste",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 800
+  }
+ ],
+ "industrial": true
+}

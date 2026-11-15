@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 170,
+ "family": "arc_welder",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:sheets/aluminium"
+   },
+   "count": 3
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_pipe",
+   "count": 2
+  },
+  {
+   "item": "pioneers:aluminium_nugget",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "lathe",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:steel_balls",
+  "count": 8
+ },
+ "time": 80,
+ "byproduct": {
+  "item": "pioneers:steel_nugget",
+  "count": 4
+ },
+ "chance": 1.0
+}

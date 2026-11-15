@@ -1,0 +1,18 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:bronze_boots",
+  "pioneers:iron_boots",
+  "pioneers:gold_boots",
+  "pioneers:steel_boots",
+  "pioneers:hardened_steel_boots",
+  "pioneers:titanium_boots",
+  "pioneers:tungsten_carbide_boots",
+  "pioneers:nitinol_boots",
+  "pioneers:graviton_boots",
+  "pioneers:stellaris_boots",
+  "pioneers:neutronic_boots",
+  "pioneers:singularity_boots",
+  "pioneers:voltaic_boots"
+ ]
+}

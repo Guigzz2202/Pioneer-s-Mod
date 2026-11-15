@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:europa_lineae_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:packed_europa_lineae_ice",
+  "count": 1
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 1,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:alumina"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/titanium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sapphire_boule",
+   "count": 1
+  }
+ ]
+}

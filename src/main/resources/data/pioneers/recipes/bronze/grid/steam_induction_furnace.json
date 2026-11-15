@@ -1,0 +1,33 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PCP",
+  "KFK",
+  "GXG"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/bronze"
+  },
+  "C": {
+   "item": "pioneers:bronze_logistic_cable"
+  },
+  "K": {
+   "item": "pioneers:copper_coil"
+  },
+  "F": {
+   "item": "pioneers:fire_bricks"
+  },
+  "G": {
+   "tag": "forge:gears/bronze"
+  },
+  "X": {
+   "tag": "forge:rings/bronze"
+  }
+ },
+ "result": {
+  "item": "pioneers:steam_induction_furnace",
+  "count": 1
+ }
+}

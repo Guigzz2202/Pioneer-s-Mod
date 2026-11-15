@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 130,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:switching_power_supply"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:server_blade"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:liquid_cooling_block"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:computer"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:data_center",
+   "count": 1
+  }
+ ]
+}

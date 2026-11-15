@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "converter",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:copper_matte"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:blister_copper",
+   "count": 2
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:sulfur_dioxide",
+   "amount": 300
+  }
+ ]
+}

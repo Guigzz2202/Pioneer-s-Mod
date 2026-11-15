@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:corn"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:barley"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:soybean"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:animal_feed",
+   "count": 4
+  }
+ ]
+}

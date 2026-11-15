@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:chest"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:tripwire_hook"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:trapped_chest",
+  "count": 1
+ }
+}

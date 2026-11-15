@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 64,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:curd"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fresh_cheese_wheel",
+   "count": 1
+  }
+ ]
+}

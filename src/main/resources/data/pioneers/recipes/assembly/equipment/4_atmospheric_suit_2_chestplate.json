@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..R.FF.R..",
+  "..MM..MM..",
+  "..MAOPAM..",
+  "...MCCM...",
+  "..RMMMMR.."
+ ],
+ "key": {
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "M": {
+   "tag": "forge:plates/sputnikite"
+  },
+  "O": {
+   "item": "pioneers:ultimate_gas_buffer"
+  },
+  "R": {
+   "tag": "forge:rods/mordorite"
+  },
+  "P": {
+   "item": "pioneers:acid_suit_chestplate"
+  },
+  "F": {
+   "item": "pioneers:aramid_fiber"
+  }
+ },
+ "result": {
+  "item": "pioneers:atmospheric_suit_chestplate"
+ },
+ "energy": 80000000,
+ "duration": 700,
+ "research": "atmospheric_suit"
+}

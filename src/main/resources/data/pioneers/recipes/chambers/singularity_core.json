@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "OCO",
+  "CVC",
+  "OCO"
+ ],
+ "key": {
+  "O": {
+   "tag": "forge:plates/osmiridium"
+  },
+  "C": {
+   "tag": "pioneers:circuits/ultimate"
+  },
+  "V": {
+   "item": "pioneers:void_singularity_cell"
+  }
+ },
+ "result": {
+  "item": "pioneers:singularity_core"
+ }
+}

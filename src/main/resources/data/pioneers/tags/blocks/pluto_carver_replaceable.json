@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:pluto_tholin",
+  "pioneers:pluto_frost",
+  "pioneers:pluto_nitrogen_ice",
+  "pioneers:pluto_methane_ice",
+  "pioneers:pluto_water_ice"
+ ]
+}

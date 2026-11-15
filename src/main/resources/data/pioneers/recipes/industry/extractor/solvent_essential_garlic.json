@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:essential_oil",
+   "count": 1
+  },
+  {
+   "item": "pioneers:compost",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 90
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:radish"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 250
+ },
+ "time": 6000,
+ "results": [
+  {
+   "item": "pioneers:kimchi_radish",
+   "count": 3
+  }
+ ]
+}

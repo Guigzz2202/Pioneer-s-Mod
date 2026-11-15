@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:stone_bricks"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stone_brick_slab"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:village_fountain",
+  "count": 1
+ }
+}

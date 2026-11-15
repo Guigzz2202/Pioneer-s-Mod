@@ -1,0 +1,70 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:industrial_casing_ultimate"
+  },
+  "title": {
+   "translate": "advancements.pioneers.industry.master.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.industry.master.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_converter"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_potline"
+   }
+  },
+  "c2": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_kroll_reactor"
+   }
+  },
+  "c3": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_steam_turbine"
+   }
+  },
+  "c4": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "industry_formed_3"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ],
+  [
+   "c1"
+  ],
+  [
+   "c2"
+  ],
+  [
+   "c3"
+  ],
+  [
+   "c4"
+  ]
+ ],
+ "parent": "pioneers:industry/formed_3",
+ "rewards": {
+  "experience": 500
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:abrasive_disc"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:glass_lens",
+  "count": 2
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:storage_blocks/pallasite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:pallasite_ingot",
+  "count": 9
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:treated_wood"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:glass_pane"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_wire"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:treated_greenhouse_glass",
+  "count": 4
+ }
+}

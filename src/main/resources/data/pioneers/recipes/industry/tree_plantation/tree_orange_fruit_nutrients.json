@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "tree_plantation",
+ "tier": 0,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:orange_sapling"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nutrient_solution",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:jungle_log",
+   "count": 9
+  },
+  {
+   "item": "pioneers:orange_sapling",
+   "count": 1
+  },
+  {
+   "item": "minecraft:stick",
+   "count": 3
+  },
+  {
+   "item": "pioneers:orange",
+   "count": 4
+  }
+ ]
+}

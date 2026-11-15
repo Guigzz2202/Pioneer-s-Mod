@@ -1,0 +1,38 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:heated_metal"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.forged.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.forged.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "smith_part"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "forged"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:bronze/cast"
+}

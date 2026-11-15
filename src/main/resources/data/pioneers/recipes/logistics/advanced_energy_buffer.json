@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_energy_buffer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:upgrade_kit_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_glass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/cobalt"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nimh_cell"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lithium_carbonate"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:advanced_energy_buffer",
+  "count": 1
+ }
+}

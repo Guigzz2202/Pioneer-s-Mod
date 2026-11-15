@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "reduction_furnace",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_oxide"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 1500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_dust",
+   "count": 2
+  }
+ ],
+ "temperature": 900
+}

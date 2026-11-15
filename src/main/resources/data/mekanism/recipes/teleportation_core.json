@@ -1,0 +1,31 @@
+{
+ "conditions": [
+  {
+   "type": "forge:mod_loaded",
+   "modid": "mekanism"
+  }
+ ],
+ "type": "minecraft:crafting_shaped",
+ "key": {
+  "A": {
+   "tag": "mekanism:alloys/atomic"
+  },
+  "P": {
+   "item": "mekanism:pellet_antimatter"
+  },
+  "U": {
+   "tag": "forge:circuits/ultimate"
+  },
+  "S": {
+   "item": "pioneers:stellar_core"
+  }
+ },
+ "pattern": [
+  "APA",
+  "USU",
+  "APA"
+ ],
+ "result": {
+  "item": "mekanism:teleportation_core"
+ }
+}

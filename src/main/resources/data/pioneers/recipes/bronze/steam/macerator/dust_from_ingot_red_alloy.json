@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "macerator",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/red_alloy"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:red_alloy_dust",
+  "count": 1
+ },
+ "time": 120
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 2,
+ "time": 300,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/tungsten"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_bolt",
+   "count": 4
+  }
+ ]
+}

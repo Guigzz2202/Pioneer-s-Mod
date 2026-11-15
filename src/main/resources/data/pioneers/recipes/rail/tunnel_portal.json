@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:stone_bricks"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cement"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:tunnel_portal",
+  "count": 4
+ }
+}

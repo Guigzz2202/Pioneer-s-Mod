@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 600,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:uranium_nanopowder"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_lattice"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:messinite_ceramic"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fragment_fuel_cartridge",
+   "count": 1
+  }
+ ]
+}

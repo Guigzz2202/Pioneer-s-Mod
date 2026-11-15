@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:lunar_ice"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:packed_lunar_ice",
+  "count": 1
+ }
+}

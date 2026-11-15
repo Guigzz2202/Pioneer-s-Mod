@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gravity_compressor",
+ "tier": 3,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planet_rocks/earth"
+   },
+   "count": 64
+  },
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/iron"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 8000
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:compacted_earth",
+   "count": 1
+  }
+ ],
+ "energy": 200000000
+}

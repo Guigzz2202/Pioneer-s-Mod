@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 20,
+ "family": "plate_heat_exchanger",
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_chlorine",
+   "amount": 125
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 12
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 1000
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:exposed_cut_copper_stairs"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honeycomb"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:waxed_exposed_cut_copper_stairs",
+   "count": 1
+  }
+ ]
+}

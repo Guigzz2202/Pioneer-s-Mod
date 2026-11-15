@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cucumber"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:cucumber_tray",
+  "count": 1
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "TTT",
+  "BXB",
+  "L L"
+ ],
+ "key": {
+  "T": {
+   "tag": "minecraft:wooden_slabs"
+  },
+  "B": {
+   "tag": "forge:plates/iron"
+  },
+  "X": {
+   "item": "pioneers:iron_shaft"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "item": "pioneers:mechanical_saw",
+  "count": 1
+ }
+}

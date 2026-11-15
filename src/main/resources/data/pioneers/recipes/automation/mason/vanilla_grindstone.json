@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stone_slab"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:grindstone",
+   "count": 1
+  }
+ ]
+}

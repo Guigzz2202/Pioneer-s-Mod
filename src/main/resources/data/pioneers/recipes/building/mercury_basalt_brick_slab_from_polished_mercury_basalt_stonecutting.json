@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_mercury_basalt"
+ },
+ "result": "pioneers:mercury_basalt_brick_slab",
+ "count": 2
+}

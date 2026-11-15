@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 0,
+ "time": 60,
+ "fluids": [
+  {
+   "fluid": "pioneers:molasses",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:sugar",
+   "count": 3
+  }
+ ]
+}

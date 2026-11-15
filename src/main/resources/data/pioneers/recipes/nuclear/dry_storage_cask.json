@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "CAC",
+  "APA",
+  "CAC"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:cement"
+  },
+  "A": {
+   "item": "pioneers:spent_fuel_assembly"
+  },
+  "P": {
+   "tag": "forge:plates/stainless_steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:dry_storage_cask",
+  "count": 1
+ }
+}

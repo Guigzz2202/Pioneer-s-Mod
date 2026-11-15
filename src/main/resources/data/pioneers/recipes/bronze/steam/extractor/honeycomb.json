@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:honeycomb_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:honeycomb",
+  "count": 4
+ },
+ "time": 120
+}

@@ -1,0 +1,31 @@
+{
+ "notebook": "pioneers:blank_notebook",
+ "notebooks": 1,
+ "scrap_tag": "pioneers:scrap/mk3",
+ "scraps": 16,
+ "categories": 4,
+ "category_tags": [
+  "pioneers:scrap/structure",
+  "pioneers:scrap/motion",
+  "pioneers:scrap/fluid",
+  "pioneers:scrap/thermal",
+  "pioneers:scrap/electric",
+  "pioneers:scrap/electronic",
+  "pioneers:scrap/sensor",
+  "pioneers:scrap/robotic"
+ ],
+ "components_by_age": [
+  "pioneers:bronze_bushing",
+  "pioneers:bearing",
+  "pioneers:advanced_bearing",
+  "pioneers:elite_bearing",
+  "pioneers:ultimate_bearing"
+ ],
+ "components": 4,
+ "age_markers": [
+  "pioneers:circuit_mk1",
+  "pioneers:circuit_mk2",
+  "pioneers:circuit_mk3",
+  "pioneers:circuit_mk4"
+ ]
+}

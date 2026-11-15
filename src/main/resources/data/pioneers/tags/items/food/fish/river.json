@@ -1,0 +1,28 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:brook_trout",
+  "pioneers:arctic_char",
+  "pioneers:grayling",
+  "pioneers:pike",
+  "pioneers:sturgeon",
+  "pioneers:burbot",
+  "pioneers:carp",
+  "pioneers:perch",
+  "pioneers:roach",
+  "pioneers:bream",
+  "pioneers:zander",
+  "pioneers:catfish",
+  "pioneers:tench",
+  "pioneers:eel",
+  "pioneers:barbel",
+  "pioneers:tilapia",
+  "pioneers:arapaima",
+  "pioneers:electric_eel",
+  "pioneers:gar",
+  "pioneers:snakehead",
+  "pioneers:bowfin",
+  "pioneers:cavefish",
+  "pioneers:glowfish"
+ ]
+}

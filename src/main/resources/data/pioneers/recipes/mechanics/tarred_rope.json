@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:fiber_rope"
+  },
+  {
+   "item": "pioneers:fiber_rope"
+  },
+  {
+   "item": "pioneers:fiber_rope"
+  },
+  {
+   "item": "pioneers:fiber_rope"
+  },
+  {
+   "item": "pioneers:creosote_bucket"
+  }
+ ],
+ "result": {
+  "item": "pioneers:tarred_rope",
+  "count": 4
+ }
+}

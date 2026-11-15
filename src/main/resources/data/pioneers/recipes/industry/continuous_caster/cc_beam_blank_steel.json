@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 1,
+ "time": 200,
+ "family": "continuous_caster",
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_steel",
+   "amount": 1296
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_beam_blank",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:exhaust_steam",
+   "amount": 1520
+  }
+ ],
+ "industrial": true
+}

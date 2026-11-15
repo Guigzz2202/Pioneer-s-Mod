@@ -1,0 +1,41 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bamboo_fishing_rod"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/bronze"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:string"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:bronze_fishing_rod"
+ }
+}

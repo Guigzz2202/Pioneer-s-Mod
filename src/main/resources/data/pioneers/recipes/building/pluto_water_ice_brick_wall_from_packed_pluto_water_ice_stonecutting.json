@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_pluto_water_ice"
+ },
+ "result": "pioneers:pluto_water_ice_brick_wall",
+ "count": 1
+}

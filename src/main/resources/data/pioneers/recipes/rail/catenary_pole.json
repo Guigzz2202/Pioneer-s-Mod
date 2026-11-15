@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/copper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/galvanized_steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wire_ropes/copper"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:catenary_pole",
+  "count": 4
+ }
+}

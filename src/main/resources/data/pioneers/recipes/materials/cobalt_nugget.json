@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/cobalt"
+  }
+ ],
+ "result": {
+  "item": "pioneers:cobalt_nugget",
+  "count": 9
+ }
+}

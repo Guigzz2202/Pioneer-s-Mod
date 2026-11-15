@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_mercury_dark_rock"
+ },
+ "result": "pioneers:polished_mercury_dark_rock_stairs",
+ "count": 1
+}

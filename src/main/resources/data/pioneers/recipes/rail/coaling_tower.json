@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:chests/wooden"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:coaling_tower",
+  "count": 1
+ }
+}

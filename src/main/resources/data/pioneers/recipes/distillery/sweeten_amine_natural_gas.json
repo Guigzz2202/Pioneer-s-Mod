@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillery",
+ "tier": 0,
+ "time": 60,
+ "fluids": [
+  {
+   "fluid": "pioneers:amine_solution",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:sour_gas",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:natural_gas",
+   "amount": 880
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:bronze_helmet",
+  "pioneers:iron_helmet",
+  "pioneers:gold_helmet",
+  "pioneers:steel_helmet",
+  "pioneers:hardened_steel_helmet",
+  "pioneers:titanium_helmet",
+  "pioneers:tungsten_carbide_helmet",
+  "pioneers:nitinol_helmet",
+  "pioneers:graviton_helmet",
+  "pioneers:stellaris_helmet",
+  "pioneers:neutronic_helmet",
+  "pioneers:singularity_helmet",
+  "pioneers:voltaic_helmet"
+ ]
+}

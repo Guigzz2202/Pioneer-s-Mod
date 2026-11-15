@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "WOW",
+  "OSO",
+  "WOW"
+ ],
+ "key": {
+  "W": {
+   "item": "pioneers:tungsten_carbide_plate"
+  },
+  "O": {
+   "item": "pioneers:osmiridium_plate"
+  },
+  "S": {
+   "item": "pioneers:stellite_plate"
+  }
+ },
+ "result": {
+  "item": "pioneers:stellaris_plating",
+  "count": 2
+ }
+}

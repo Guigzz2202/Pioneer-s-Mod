@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:iron_knife",
+  "pioneers:copper_knife",
+  "pioneers:flint_knife",
+  "pioneers:bronze_knife",
+  "pioneers:steel_knife",
+  "pioneers:brass_knife",
+  "pioneers:titanium_knife",
+  "pioneers:stainless_steel_knife",
+  "pioneers:duralumin_knife",
+  "pioneers:vanadium_steel_knife",
+  "pioneers:tungsten_carbide_knife",
+  "pioneers:osmiridium_knife",
+  "pioneers:stellite_knife",
+  "pioneers:titanium_aluminide_knife",
+  "pioneers:nitinol_knife",
+  "pioneers:hardened_steel_knife",
+  "pioneers:gold_knife"
+ ]
+}

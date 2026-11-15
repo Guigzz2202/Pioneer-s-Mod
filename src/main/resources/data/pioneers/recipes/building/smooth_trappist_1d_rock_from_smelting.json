@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smelting",
+ "category": "blocks",
+ "ingredient": {
+  "item": "pioneers:trappist_1d_rock"
+ },
+ "result": "pioneers:smooth_trappist_1d_rock",
+ "experience": 0.1,
+ "cookingtime": 200
+}

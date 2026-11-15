@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:bag_upgrade",
+ "category": "equipment",
+ "tier": 1,
+ "pattern": [
+  "RTR",
+  "TBT",
+  " T "
+ ],
+ "key": {
+  "R": {
+   "item": "pioneers:iron_ring"
+  },
+  "T": {
+   "item": "pioneers:tanned_leather"
+  },
+  "B": {
+   "item": "pioneers:fish_bag"
+  }
+ },
+ "result": {
+  "item": "pioneers:fish_bag",
+  "count": 1
+ }
+}

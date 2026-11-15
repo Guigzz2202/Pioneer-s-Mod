@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 0,
+ "time": 40,
+ "gases": [
+  {
+   "gas": "pioneers:pyrolysis_gas",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:syngas",
+   "amount": 600
+  },
+  {
+   "gas": "pioneers:methane",
+   "amount": 200
+  }
+ ]
+}

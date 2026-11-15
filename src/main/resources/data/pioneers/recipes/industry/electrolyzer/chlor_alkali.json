@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 0,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:brine",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:salt",
+   "count": 1,
+   "chance": 0.1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 500
+  }
+ ]
+}

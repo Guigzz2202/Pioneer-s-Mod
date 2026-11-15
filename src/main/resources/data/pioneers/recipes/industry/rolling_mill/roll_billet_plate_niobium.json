@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 1,
+ "time": 540,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:niobium_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:niobium_plate",
+   "count": 9
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "leaching_tank",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:zinc_calcine"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/zinc"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:copper_dust",
+   "count": 1,
+   "chance": 0.1
+  },
+  {
+   "item": "pioneers:lead_dust",
+   "count": 1,
+   "chance": 0.15
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:zinc_sulfate",
+   "amount": 1000
+  }
+ ]
+}

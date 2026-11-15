@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:churning",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cream"
+   },
+   "count": 2
+  }
+ ],
+ "time": 200,
+ "strokes": 14,
+ "results": [
+  {
+   "item": "pioneers:butter",
+   "count": 1
+  }
+ ]
+}

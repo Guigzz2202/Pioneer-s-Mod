@@ -1,0 +1,70 @@
+{
+ "smalltalk": [
+  "dialogue.pioneers.bare_hands.smalltalk.0",
+  "dialogue.pioneers.bare_hands.smalltalk.1",
+  "dialogue.pioneers.bare_hands.smalltalk.2",
+  "dialogue.pioneers.bare_hands.smalltalk.3",
+  "dialogue.pioneers.bare_hands.smalltalk.4",
+  "dialogue.pioneers.bare_hands.smalltalk.5",
+  "dialogue.pioneers.bare_hands.smalltalk.6",
+  "dialogue.pioneers.bare_hands.smalltalk.7",
+  "dialogue.pioneers.bare_hands.smalltalk.8",
+  "dialogue.pioneers.bare_hands.smalltalk.9",
+  "dialogue.pioneers.bare_hands.smalltalk.10",
+  "dialogue.pioneers.bare_hands.smalltalk.11",
+  "dialogue.pioneers.bare_hands.smalltalk.12",
+  "dialogue.pioneers.bare_hands.smalltalk.13",
+  "dialogue.pioneers.bare_hands.smalltalk.14",
+  "dialogue.pioneers.bare_hands.smalltalk.15"
+ ],
+ "warm": [
+  "dialogue.pioneers.bare_hands.warm.0",
+  "dialogue.pioneers.bare_hands.warm.1",
+  "dialogue.pioneers.bare_hands.warm.2",
+  "dialogue.pioneers.bare_hands.warm.3",
+  "dialogue.pioneers.bare_hands.warm.4",
+  "dialogue.pioneers.bare_hands.warm.5",
+  "dialogue.pioneers.bare_hands.warm.6",
+  "dialogue.pioneers.bare_hands.warm.7",
+  "dialogue.pioneers.bare_hands.warm.8",
+  "dialogue.pioneers.bare_hands.warm.9"
+ ],
+ "places": [
+  "dialogue.pioneers.bare_hands.places.0",
+  "dialogue.pioneers.bare_hands.places.1",
+  "dialogue.pioneers.bare_hands.places.2",
+  "dialogue.pioneers.bare_hands.places.3",
+  "dialogue.pioneers.bare_hands.places.4"
+ ],
+ "cold": [
+  "dialogue.pioneers.bare_hands.cold.0",
+  "dialogue.pioneers.bare_hands.cold.1",
+  "dialogue.pioneers.bare_hands.cold.2",
+  "dialogue.pioneers.bare_hands.cold.3",
+  "dialogue.pioneers.bare_hands.cold.4",
+  "dialogue.pioneers.bare_hands.cold.5",
+  "dialogue.pioneers.bare_hands.cold.6"
+ ],
+ "contempt": [
+  "dialogue.pioneers.bare_hands.contempt.0",
+  "dialogue.pioneers.bare_hands.contempt.1",
+  "dialogue.pioneers.bare_hands.contempt.2",
+  "dialogue.pioneers.bare_hands.contempt.3",
+  "dialogue.pioneers.bare_hands.contempt.4",
+  "dialogue.pioneers.bare_hands.contempt.5",
+  "dialogue.pioneers.bare_hands.contempt.6",
+  "dialogue.pioneers.bare_hands.contempt.7",
+  "dialogue.pioneers.bare_hands.contempt.8"
+ ],
+ "insult": [
+  "dialogue.pioneers.bare_hands.insult.0",
+  "dialogue.pioneers.bare_hands.insult.1",
+  "dialogue.pioneers.bare_hands.insult.2",
+  "dialogue.pioneers.bare_hands.insult.3",
+  "dialogue.pioneers.bare_hands.insult.4",
+  "dialogue.pioneers.bare_hands.insult.5",
+  "dialogue.pioneers.bare_hands.insult.6",
+  "dialogue.pioneers.bare_hands.insult.7",
+  "dialogue.pioneers.bare_hands.insult.8"
+ ]
+}

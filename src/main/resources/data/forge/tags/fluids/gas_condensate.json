@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:gas_condensate",
+  "pioneers:flowing_gas_condensate"
+ ]
+}

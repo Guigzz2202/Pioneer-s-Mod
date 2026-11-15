@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:circuit_mk3"
+  },
+  {
+   "item": "pioneers:microchip"
+  },
+  {
+   "item": "pioneers:peridot"
+  },
+  {
+   "item": "pioneers:osmiridium_plate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_nanites",
+  "count": 1
+ }
+}

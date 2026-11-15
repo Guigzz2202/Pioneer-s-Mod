@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 3,
+ "time": 300,
+ "family": "potline",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:alumina"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:cryolite",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_ingot",
+   "count": 4
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 600
+  }
+ ],
+ "industrial": true
+}

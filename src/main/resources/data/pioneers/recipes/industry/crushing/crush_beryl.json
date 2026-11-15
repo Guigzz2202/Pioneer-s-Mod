@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:beryl"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_beryl",
+  "count": 2
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/galvanized_steel"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:railing",
+  "count": 8
+ }
+}

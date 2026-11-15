@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:sawing",
+ "input": {
+  "item": "minecraft:dark_oak_planks"
+ },
+ "count": 1,
+ "turns": 1,
+ "results": [
+  {
+   "item": "minecraft:dark_oak_slab",
+   "count": 2
+  },
+  {
+   "item": "pioneers:sawdust",
+   "count": 1,
+   "chance": 0.15
+  }
+ ]
+}

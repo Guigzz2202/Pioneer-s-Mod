@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:frost_petal"
+   },
+   "count": 8
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:neon",
+   "amount": 20
+  },
+  {
+   "gas": "pioneers:helium",
+   "amount": 50
+  }
+ ]
+}

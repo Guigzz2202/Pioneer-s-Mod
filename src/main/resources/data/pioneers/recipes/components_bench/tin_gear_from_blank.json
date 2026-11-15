@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:gear_blanks/tin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tin"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "pioneers:tin_gear",
+  "count": 1
+ }
+}

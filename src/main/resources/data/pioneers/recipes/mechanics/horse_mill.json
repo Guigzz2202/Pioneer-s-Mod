@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " W ",
+  "LHL",
+  " L "
+ ],
+ "key": {
+  "W": {
+   "item": "pioneers:wooden_cogwheel"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "H": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:horse_mill",
+  "count": 1
+ }
+}

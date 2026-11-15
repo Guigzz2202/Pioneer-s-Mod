@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "LML",
+  "PLP",
+  "LML"
+ ],
+ "key": {
+  "L": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "M": {
+   "item": "pioneers:meteoritite_plate"
+  },
+  "P": {
+   "item": "pioneers:sputnikite_plate"
+  }
+ },
+ "result": {
+  "item": "pioneers:neutronic_plating",
+  "count": 2
+ }
+}

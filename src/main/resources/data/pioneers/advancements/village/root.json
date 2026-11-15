@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:needs_board"
+  },
+  "title": {
+   "translate": "advancements.pioneers.village.root.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.village.root.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false,
+  "background": "pioneers:textures/block/village/place_stone.png"
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "village_talk"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ]
+}

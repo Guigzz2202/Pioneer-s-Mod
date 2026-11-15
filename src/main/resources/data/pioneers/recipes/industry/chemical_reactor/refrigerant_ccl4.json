@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 100,
+ "fluids": [
+  {
+   "fluid": "pioneers:carbon_tetrachloride",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 600
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:refrigerant",
+   "amount": 400
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 600
+  }
+ ]
+}

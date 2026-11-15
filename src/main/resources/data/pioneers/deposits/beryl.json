@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:beryl",
+ "material": "beryl",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  6000,
+  16000
+ ],
+ "color": "#3CBE6E",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 2
+  },
+  {
+   "biomes": "#minecraft:is_jungle",
+   "weight": 2
+  }
+ ]
+}

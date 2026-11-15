@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:mercury_regolith"
+  }
+ },
+ "result": {
+  "item": "pioneers:mercury_sandstone",
+  "count": 1
+ }
+}

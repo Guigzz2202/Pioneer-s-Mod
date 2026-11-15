@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 240,
+ "family": "shaking_table",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ground_gold"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_dust",
+   "count": 2
+  },
+  {
+   "item": "pioneers:silver_dust",
+   "count": 1,
+   "chance": 0.1
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

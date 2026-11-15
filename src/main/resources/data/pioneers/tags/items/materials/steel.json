@@ -1,0 +1,26 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:steel_rod",
+  "pioneers:steel_ring",
+  "pioneers:steel_gear",
+  "pioneers:steel_nugget",
+  "pioneers:steel_dust",
+  "pioneers:steel_ingot",
+  "pioneers:steel_bolt",
+  "pioneers:steel_screw",
+  "pioneers:steel_plate",
+  "pioneers:steel_spring",
+  "pioneers:steel_block",
+  "pioneers:steel_beam",
+  "pioneers:steel_wire_rope",
+  "pioneers:steel_pipe",
+  "pioneers:steel_sheet",
+  "pioneers:steel_wire_rod",
+  "pioneers:steel_beam_blank",
+  "pioneers:steel_gear_blank",
+  "pioneers:steel_wire",
+  "pioneers:steel_slab",
+  "pioneers:steel_billet"
+ ]
+}

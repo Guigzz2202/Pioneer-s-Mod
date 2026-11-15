@@ -1,0 +1,21 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:cod",
+  "pioneers:pollock",
+  "pioneers:halibut",
+  "pioneers:wolffish",
+  "pioneers:sea_bass",
+  "pioneers:sea_bream",
+  "pioneers:sole",
+  "pioneers:turbot",
+  "pioneers:red_mullet",
+  "pioneers:conger",
+  "pioneers:monkfish",
+  "pioneers:grouper",
+  "pioneers:barracuda",
+  "pioneers:mahi_mahi",
+  "pioneers:anglerfish",
+  "pioneers:coelacanth"
+ ]
+}

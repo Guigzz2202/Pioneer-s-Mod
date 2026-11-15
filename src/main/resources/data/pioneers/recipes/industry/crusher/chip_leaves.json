@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 0,
+ "time": 40,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:leaves"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:wood_chips",
+   "count": 1
+  },
+  {
+   "item": "pioneers:plant_fiber",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 500,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:saucisson"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:smoked_sausage",
+   "count": 1
+  }
+ ]
+}

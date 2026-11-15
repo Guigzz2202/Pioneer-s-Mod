@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "minecraft:snow_block"
+ },
+ "count": 4,
+ "result": {
+  "item": "minecraft:ice",
+  "count": 1
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_zirconia"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:coke"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:crude_zirconium_tetrachloride",
+   "amount": 500
+  }
+ ],
+ "temperature": 1000
+}

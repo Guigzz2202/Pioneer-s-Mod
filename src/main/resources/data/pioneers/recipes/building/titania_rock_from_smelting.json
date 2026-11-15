@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:smelting",
+ "category": "blocks",
+ "ingredient": {
+  "item": "pioneers:cobbled_titania_rock"
+ },
+ "result": "pioneers:titania_rock",
+ "experience": 0.1,
+ "cookingtime": 200
+}

@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "solvent_extractor",
+ "tier": 3,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:sodium_tungstate_solution",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:ammonium_tungstate_solution",
+   "amount": 900
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 45
+  }
+ ]
+}

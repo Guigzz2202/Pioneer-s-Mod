@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "advanced_components",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/duralumin"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_screw"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gasket"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:machine_frame_advanced",
+  "count": 1
+ }
+}

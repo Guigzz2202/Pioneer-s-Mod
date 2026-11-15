@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ferrochrome"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferronickel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_scrap"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stainless_steel_ingot",
+   "count": 6
+  }
+ ],
+ "temperature": 1600,
+ "impurity": 2
+}

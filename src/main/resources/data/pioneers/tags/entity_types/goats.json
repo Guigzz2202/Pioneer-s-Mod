@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:goat",
+  "pioneers:alpine_goat",
+  "pioneers:saanen_goat",
+  "pioneers:boer_goat",
+  "pioneers:angora_goat",
+  "pioneers:poitevine_goat"
+ ]
+}

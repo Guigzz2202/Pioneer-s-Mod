@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:aging",
+ "fluid": {
+  "fluid": "pioneers:raw_whisky",
+  "amount": 1000
+ },
+ "time": 24000,
+ "fluid_result": {
+  "fluid": "pioneers:whisky",
+  "amount": 1000
+ }
+}

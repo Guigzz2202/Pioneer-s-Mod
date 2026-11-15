@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "family": "catalytic_reactor",
+ "gases": [
+  {
+   "gas": "pioneers:acetylene",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:hydrogen_chloride",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:vinyl_chloride",
+   "amount": 500
+  }
+ ]
+}

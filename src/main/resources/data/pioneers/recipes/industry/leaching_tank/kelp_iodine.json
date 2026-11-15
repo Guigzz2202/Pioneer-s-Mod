@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 120,
+ "family": "leaching_tank",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:dried_kelp"
+   },
+   "count": 16
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iodine",
+   "count": 1
+  },
+  {
+   "item": "pioneers:soda_ash",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

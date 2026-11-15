@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "pioneers:europa_ice"
+  },
+  "mode": "ridge",
+  "min_length": 16,
+  "max_length": 28,
+  "width": 5,
+  "depth": 3,
+  "curl": 0.12,
+  "center": {
+   "Name": "pioneers:europa_lineae_ice"
+  }
+ }
+}

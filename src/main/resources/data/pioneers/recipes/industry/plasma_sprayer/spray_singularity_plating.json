@@ -1,0 +1,57 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 600,
+ "family": "plasma_sprayer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:neutronium_plate"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quasar_crystal"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:edenite_rod"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borealite_rod"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:thalassite_rod"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pyrrhite_rod"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:singularity_plating",
+   "count": 2
+  }
+ ]
+}

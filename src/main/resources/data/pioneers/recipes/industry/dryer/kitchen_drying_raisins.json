@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 900,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:grapes"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raisins",
+   "count": 1
+  }
+ ]
+}

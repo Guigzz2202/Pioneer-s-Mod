@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:foils/platinum"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:separation_membrane"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:graphite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fuel_cell_stack",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:gold_spring",
+  "pioneers:gold_ring",
+  "minecraft:gold_ingot",
+  "pioneers:gold_dust",
+  "minecraft:gold_block",
+  "pioneers:gold_gear",
+  "pioneers:gold_plate",
+  "pioneers:gold_rod",
+  "pioneers:crushed_gold",
+  "minecraft:raw_gold_block",
+  "minecraft:raw_gold",
+  "minecraft:gold_nugget",
+  "pioneers:gold_wire",
+  "pioneers:gold_foil",
+  "pioneers:gold_nugget",
+  "pioneers:gold_ingot",
+  "pioneers:raw_gold_block",
+  "pioneers:raw_gold",
+  "pioneers:gold_block",
+  "pioneers:gold_slab",
+  "pioneers:gold_billet",
+  "pioneers:gold_wire_rod",
+  "pioneers:gold_gear_blank"
+ ]
+}

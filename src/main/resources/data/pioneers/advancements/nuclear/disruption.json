@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:tungsten_tile"
+  },
+  "title": {
+   "translate": "advancements.pioneers.nuclear.disruption.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.nuclear.disruption.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": true
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "fusion_disruption"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:nuclear/tokamak"
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 400,
+ "family": "reprocessing_plant",
+ "fluids": [
+  {
+   "fluid": "pioneers:plutonium_nitrate",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:plutonium_dioxide",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 300
+  }
+ ],
+ "industrial": true
+}

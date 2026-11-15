@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:gears/steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cast_iron_housing"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:planetary_gear",
+  "count": 1
+ }
+}

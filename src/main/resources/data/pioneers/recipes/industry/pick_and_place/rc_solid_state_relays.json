@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:thyristor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_package"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:solid_state_relay",
+   "count": 4
+  }
+ ]
+}

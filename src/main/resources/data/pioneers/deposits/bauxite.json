@@ -1,0 +1,26 @@
+{
+ "result": "pioneers:bauxite",
+ "material": "bauxite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#D28C64",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_jungle",
+   "weight": 8
+  },
+  {
+   "biomes": "#forge:is_savanna",
+   "weight": 6
+  },
+  {
+   "biomes": "#forge:is_plains",
+   "weight": 2
+  }
+ ]
+}

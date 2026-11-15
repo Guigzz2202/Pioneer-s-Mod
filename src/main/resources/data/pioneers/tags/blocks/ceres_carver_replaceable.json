@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:ceres_rock",
+  "pioneers:ceres_regolith",
+  "pioneers:ceres_clay",
+  "pioneers:ceres_salt",
+  "pioneers:ceres_ice"
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "MSM",
+  "SSS",
+  "C C"
+ ],
+ "key": {
+  "M": {
+   "tag": "pioneers:tools/mortars"
+  },
+  "S": {
+   "item": "minecraft:smooth_stone"
+  },
+  "C": {
+   "tag": "forge:cobblestone"
+  }
+ },
+ "result": {
+  "item": "pioneers:mason_bench",
+  "count": 1
+ }
+}

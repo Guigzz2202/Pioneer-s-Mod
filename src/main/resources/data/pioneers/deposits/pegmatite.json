@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:pegmatite",
+ "material": "pegmatite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#E6A03C",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_forest",
+   "weight": 3
+  },
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 3
+  }
+ ]
+}

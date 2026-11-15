@@ -1,0 +1,18 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:bronze_leggings",
+  "pioneers:iron_leggings",
+  "pioneers:gold_leggings",
+  "pioneers:steel_leggings",
+  "pioneers:hardened_steel_leggings",
+  "pioneers:titanium_leggings",
+  "pioneers:tungsten_carbide_leggings",
+  "pioneers:nitinol_leggings",
+  "pioneers:graviton_leggings",
+  "pioneers:stellaris_leggings",
+  "pioneers:neutronic_leggings",
+  "pioneers:singularity_leggings",
+  "pioneers:voltaic_leggings"
+ ]
+}

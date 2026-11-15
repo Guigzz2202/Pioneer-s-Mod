@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 270,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_fish_pie"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fish_pie",
+   "count": 1
+  }
+ ]
+}

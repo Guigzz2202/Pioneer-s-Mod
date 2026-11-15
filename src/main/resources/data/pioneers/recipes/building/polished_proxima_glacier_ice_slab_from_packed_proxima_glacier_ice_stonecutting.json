@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_proxima_glacier_ice"
+ },
+ "result": "pioneers:polished_proxima_glacier_ice_slab",
+ "count": 2
+}

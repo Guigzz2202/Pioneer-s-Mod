@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:nitinol_spring"
+  },
+  {
+   "item": "pioneers:nitinol_spring"
+  },
+  {
+   "item": "pioneers:piston"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_jump",
+  "count": 1
+ }
+}

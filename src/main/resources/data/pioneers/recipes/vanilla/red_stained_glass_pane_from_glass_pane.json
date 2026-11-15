@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:glass_pane"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:red_dye"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:red_stained_glass_pane",
+  "count": 8
+ }
+}

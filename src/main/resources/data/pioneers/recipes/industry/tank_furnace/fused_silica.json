@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 300,
+ "family": "tank_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:quartz_dust"
+   },
+   "count": 3
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fused_silica",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 100,
+ "family": "catalytic_reactor",
+ "gases": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 1500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:ozone",
+   "amount": 1000
+  }
+ ]
+}

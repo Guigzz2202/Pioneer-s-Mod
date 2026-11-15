@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_phobos_breccia"
+ },
+ "result": "pioneers:polished_phobos_breccia_stairs",
+ "count": 1
+}

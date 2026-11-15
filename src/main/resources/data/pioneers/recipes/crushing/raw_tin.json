@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:raw_materials/tin"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_tin",
+  "count": 2
+ }
+}

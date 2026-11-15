@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:spruce_logs"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_resin",
+   "count": 1
+  },
+  {
+   "item": "pioneers:wood_chips",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:turpentine",
+   "amount": 100
+  }
+ ]
+}

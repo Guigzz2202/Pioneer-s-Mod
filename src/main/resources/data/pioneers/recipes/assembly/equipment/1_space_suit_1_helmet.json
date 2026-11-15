@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "...MMMM...",
+  "...MGGM...",
+  "...ACCA...",
+  ".........."
+ ],
+ "key": {
+  "A": {
+   "tag": "forge:rings/steel"
+  },
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "G": {
+   "tag": "forge:glass"
+  },
+  "M": {
+   "item": "pioneers:plastic_sheet"
+  }
+ },
+ "result": {
+  "item": "pioneers:space_suit_helmet"
+ },
+ "energy": 4000000,
+ "duration": 300,
+ "research": "space_suit"
+}

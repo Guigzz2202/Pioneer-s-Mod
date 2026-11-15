@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cured_tobacco"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "pioneers:cigar",
+  "count": 2
+ }
+}

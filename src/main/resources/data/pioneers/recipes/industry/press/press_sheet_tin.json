@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 0,
+ "time": 50,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/tin"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:press_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tin_sheet",
+   "count": 1
+  },
+  {
+   "item": "pioneers:press_die",
+   "count": 1
+  }
+ ]
+}

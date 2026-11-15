@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:planks"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:barrel_stave",
+  "count": 1
+ }
+}

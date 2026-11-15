@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:campfire_cooking",
+ "category": "food",
+ "ingredient": {
+  "item": "pioneers:raw_seal_meat"
+ },
+ "result": "pioneers:cooked_seal_meat",
+ "experience": 0.35,
+ "cookingtime": 600
+}

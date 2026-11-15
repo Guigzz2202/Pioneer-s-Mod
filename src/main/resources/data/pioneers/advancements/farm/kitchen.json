@@ -1,0 +1,63 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:cooking_pot"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm.kitchen.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm.kitchen.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:cooking_pot"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:cutting_board"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:mixing_bowl"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ ],
+ "parent": "pioneers:farm/root"
+}

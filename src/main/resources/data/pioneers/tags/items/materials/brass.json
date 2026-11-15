@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:brass_rod",
+  "pioneers:brass_ring",
+  "pioneers:brass_gear",
+  "pioneers:brass_nugget",
+  "pioneers:brass_dust",
+  "pioneers:brass_ingot",
+  "pioneers:brass_plate",
+  "pioneers:brass_spring",
+  "pioneers:brass_block",
+  "pioneers:brass_pipe",
+  "pioneers:brass_wire_mesh",
+  "pioneers:brass_slab",
+  "pioneers:brass_billet",
+  "pioneers:brass_wire_rod",
+  "pioneers:brass_gear_blank",
+  "pioneers:brass_wire",
+  "pioneers:brass_sheet"
+ ]
+}

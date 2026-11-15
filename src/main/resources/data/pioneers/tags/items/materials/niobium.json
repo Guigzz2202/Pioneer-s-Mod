@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:niobium_nugget",
+  "pioneers:niobium_rod",
+  "pioneers:niobium_ingot",
+  "pioneers:niobium_plate",
+  "pioneers:niobium_dust",
+  "pioneers:niobium_wire",
+  "pioneers:niobium_block",
+  "pioneers:niobium_billet"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sunflower_seeds"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:sunflower_seeds_sack",
+  "count": 1
+ }
+}

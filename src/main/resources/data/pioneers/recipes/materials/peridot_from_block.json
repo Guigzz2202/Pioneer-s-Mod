@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:peridot_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:peridot",
+  "count": 9
+ }
+}

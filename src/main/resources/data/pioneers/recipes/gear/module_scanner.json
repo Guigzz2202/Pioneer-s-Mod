@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:microchip"
+  },
+  {
+   "item": "pioneers:copper_coil"
+  },
+  {
+   "item": "pioneers:topaz"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_scanner",
+  "count": 1
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_tarte_tatin"
+   },
+   "count": 1
+  }
+ ],
+ "time": 500,
+ "results": [
+  {
+   "item": "pioneers:tarte_tatin",
+   "count": 1
+  }
+ ]
+}

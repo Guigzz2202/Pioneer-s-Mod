@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " P ",
+  "NBN",
+  "LXL"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "N": {
+   "tag": "forge:ingots/iron"
+  },
+  "B": {
+   "item": "pioneers:cutting_board"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:mechanical_chopper",
+  "count": 1
+ }
+}

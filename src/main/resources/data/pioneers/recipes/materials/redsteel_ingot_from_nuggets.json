@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/redsteel"
+  },
+  {
+   "tag": "forge:nuggets/redsteel"
+  },
+  {
+   "tag": "forge:nuggets/redsteel"
+  },
+  {
+   "tag": "forge:nuggets/redsteel"
+  },
+  {
+   "tag": "forge:nuggets/redsteel"
+  },
+  {
+   "tag": "forge:nuggets/redsteel"
+  },
+  {
+   "tag": "forge:nuggets/redsteel"
+  },
+  {
+   "tag": "forge:nuggets/redsteel"
+  },
+  {
+   "tag": "forge:nuggets/redsteel"
+  }
+ ],
+ "result": {
+  "item": "pioneers:redsteel_ingot",
+  "count": 1
+ }
+}

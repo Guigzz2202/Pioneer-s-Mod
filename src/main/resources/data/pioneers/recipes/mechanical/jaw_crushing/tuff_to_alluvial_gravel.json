@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "item": "minecraft:tuff"
+ },
+ "count": 1,
+ "turns": 3,
+ "results": [
+  {
+   "item": "pioneers:alluvial_gravel",
+   "count": 1
+  }
+ ]
+}

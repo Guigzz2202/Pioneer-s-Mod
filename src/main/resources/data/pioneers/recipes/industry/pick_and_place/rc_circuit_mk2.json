@@ -1,0 +1,68 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 0,
+ "time": 280,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:printed_circuit_board"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:transistor"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:silicon_diode"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resistor"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:capacitor"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electrolytic_capacitor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quartz_oscillator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/solder"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk1"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:circuit_mk2",
+   "count": 2
+  }
+ ]
+}

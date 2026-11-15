@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 2,
+ "time": 400,
+ "family": "membrane_cell",
+ "fluids": [
+  {
+   "fluid": "pioneers:tritiated_water",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:tritium",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 250
+  }
+ ]
+}

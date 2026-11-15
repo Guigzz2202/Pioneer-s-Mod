@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "FCF",
+  "F F",
+  "FBF"
+ ],
+ "key": {
+  "C": {
+   "tag": "forge:ingots/copper"
+  },
+  "F": {
+   "item": "pioneers:fire_brick"
+  },
+  "B": {
+   "item": "minecraft:brick"
+  }
+ },
+ "result": {
+  "item": "pioneers:crucible_furnace",
+  "count": 1
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:wire_rods/copper",
+  "#forge:wire_rods/bronze",
+  "#forge:wire_rods/brass",
+  "#forge:wire_rods/steel",
+  "#forge:wire_rods/aluminium",
+  "#forge:wire_rods/titanium",
+  "#forge:wire_rods/galvanized_steel",
+  "#forge:wire_rods/stainless_steel",
+  "#forge:wire_rods/duralumin",
+  "#forge:wire_rods/iron",
+  "#forge:wire_rods/gold"
+ ]
+}

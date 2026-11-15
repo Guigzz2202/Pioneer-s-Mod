@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:jaw_crushing",
+ "input": {
+  "item": "minecraft:bricks"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:brick",
+   "count": 3
+  },
+  {
+   "item": "minecraft:clay_ball",
+   "count": 1,
+   "chance": 0.3
+  }
+ ]
+}

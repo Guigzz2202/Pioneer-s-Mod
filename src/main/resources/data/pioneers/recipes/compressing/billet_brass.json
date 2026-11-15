@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:slabs/brass"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:brass_billet",
+  "count": 1
+ }
+}

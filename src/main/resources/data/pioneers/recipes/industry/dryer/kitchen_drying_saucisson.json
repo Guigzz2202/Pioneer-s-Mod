@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 750,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_sausage"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:saucisson",
+   "count": 1
+  }
+ ]
+}

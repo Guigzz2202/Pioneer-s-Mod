@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:mixing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:bottle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:food/sugar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "pioneers:cider",
+  "amount": 250
+ },
+ "time": 300,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:sparkling_cider_tirage",
+   "count": 1
+  }
+ ]
+}

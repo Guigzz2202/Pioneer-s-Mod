@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:pig",
+  "pioneers:large_white_pig",
+  "pioneers:gascon_pig",
+  "pioneers:duroc_pig",
+  "pioneers:pietrain_pig",
+  "pioneers:kunekune_pig"
+ ]
+}

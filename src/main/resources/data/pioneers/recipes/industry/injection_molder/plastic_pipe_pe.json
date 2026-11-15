@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 120,
+ "family": "injection_molder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:polyethylene_pellets"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tube_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:plastic_pipe",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tube_die",
+   "count": 1
+  }
+ ]
+}

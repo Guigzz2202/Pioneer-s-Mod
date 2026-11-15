@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "magnetic_separator",
+ "tier": 2,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rock_meteorite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:raw_meteoritite",
+   "count": 1
+  },
+  {
+   "item": "minecraft:gravel",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

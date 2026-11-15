@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 100,
+ "fluids": [
+  {
+   "fluid": "pioneers:lead_acid_solution",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_dust",
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 25
+  }
+ ]
+}

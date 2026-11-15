@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:mars",
+ "gravity": 0.38,
+ "breathable": false,
+ "suit_tier": 2,
+ "hazard": "cold",
+ "nitrogen": 0.5,
+ "temperature": -63
+}

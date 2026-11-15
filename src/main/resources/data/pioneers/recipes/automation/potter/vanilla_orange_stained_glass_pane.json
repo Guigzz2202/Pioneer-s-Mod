@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 0,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:orange_stained_glass"
+   },
+   "count": 6
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:orange_stained_glass_pane",
+   "count": 16
+  }
+ ]
+}

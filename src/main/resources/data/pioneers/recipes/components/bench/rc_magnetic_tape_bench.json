@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:magnetic_tape",
+  "count": 2
+ }
+}

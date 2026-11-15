@@ -1,0 +1,101 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "recycler",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:scrap_motion_mk3"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_dust",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "draws": {
+  "rolls": [
+   2,
+   3
+  ],
+  "pool": [
+   {
+    "item": "pioneers:elite_electric_motor",
+    "weight": 1,
+    "count": [
+     1,
+     1
+    ]
+   },
+   {
+    "item": "pioneers:elite_bearing",
+    "weight": 2,
+    "count": [
+     1,
+     1
+    ]
+   },
+   {
+    "item": "pioneers:elite_piston",
+    "weight": 2,
+    "count": [
+     1,
+     1
+    ]
+   },
+   {
+    "item": "pioneers:elite_planetary_gear",
+    "weight": 2,
+    "count": [
+     1,
+     1
+    ]
+   },
+   {
+    "item": "pioneers:elite_bladed_rotor",
+    "weight": 2,
+    "count": [
+     1,
+     1
+    ]
+   },
+   {
+    "item": "pioneers:elite_engine_block",
+    "weight": 4,
+    "count": [
+     1,
+     2
+    ]
+   },
+   {
+    "item": "pioneers:absolute_encoder_servo",
+    "weight": 1,
+    "count": [
+     1,
+     1
+    ]
+   },
+   {
+    "item": "pioneers:permanent_magnet_alternator",
+    "weight": 1,
+    "count": [
+     1,
+     1
+    ]
+   },
+   {
+    "item": "pioneers:piston_rod",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   }
+  ]
+ }
+}

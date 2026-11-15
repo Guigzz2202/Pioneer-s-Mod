@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_bladed_rotor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium_aluminide"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_bearing"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_bladed_rotor",
+   "count": 2
+  }
+ ]
+}

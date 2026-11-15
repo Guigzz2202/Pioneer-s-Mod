@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 0,
+ "time": 60,
+ "family": "wire_strander",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hemp_fiber"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fiber_rope",
+   "count": 3
+  }
+ ]
+}

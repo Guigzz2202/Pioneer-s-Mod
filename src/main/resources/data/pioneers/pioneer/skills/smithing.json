@@ -1,0 +1,17 @@
+{
+ "order": 2,
+ "icon": "pioneers:textures/gui/pioneer/skill/smithing.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "smithing.cooling",
+   "value": -0.25,
+   "unit": "pct"
+  },
+  {
+   "key": "smithing.hit_loss",
+   "value": -0.25,
+   "unit": "pct"
+  }
+ ]
+}

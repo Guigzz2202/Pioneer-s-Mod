@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 140,
+ "family": "polymerizer",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:polymer_pellets"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:aniline",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aramid_fiber",
+   "count": 4
+  }
+ ]
+}

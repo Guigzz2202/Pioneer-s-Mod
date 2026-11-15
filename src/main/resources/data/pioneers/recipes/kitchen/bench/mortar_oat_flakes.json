@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:oats"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:oat_flakes",
+  "count": 1
+ }
+}

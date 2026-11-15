@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " C ",
+  "PHP",
+  "PXP"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:iron_cog"
+  },
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "H": {
+   "item": "pioneers:honey_extractor"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  }
+ },
+ "result": {
+  "item": "pioneers:mechanical_honey_extractor",
+  "count": 1
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 3,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ruachite_dust"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ruachite_crystal_grid",
+   "count": 1
+  }
+ ]
+}

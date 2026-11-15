@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "centrifuge",
+ "tier": 0,
+ "time": 100,
+ "family": "desalter",
+ "fluids": [
+  {
+   "fluid": "pioneers:raw_oil",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:salt",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:desalted_crude",
+   "amount": 980
+  },
+  {
+   "fluid": "pioneers:produced_water",
+   "amount": 150
+  }
+ ]
+}

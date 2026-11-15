@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:pluto_tholin"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_pluto_tholin",
+  "count": 4
+ }
+}

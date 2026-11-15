@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "induction_furnace",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:basalt"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/peridot"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rock_wool",
+   "count": 4
+  }
+ ]
+}

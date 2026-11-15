@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:space_stabilizer_casing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:comparator"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:space_stabilizer_controller",
+   "count": 1
+  }
+ ]
+}

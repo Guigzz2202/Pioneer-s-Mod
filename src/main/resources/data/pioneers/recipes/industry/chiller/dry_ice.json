@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 40,
+ "family": "chiller",
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dry_ice",
+   "count": 1
+  }
+ ]
+}

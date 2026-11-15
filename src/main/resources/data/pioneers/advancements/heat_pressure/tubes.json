@@ -1,0 +1,31 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:pneumatic_tube_station"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.tubes.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.tubes.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "tube_ride"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/compressor"
+}

@@ -1,0 +1,19 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:mars_rock",
+  "pioneers:mars_sand",
+  "pioneers:mars_basalt",
+  "pioneers:mars_dark_sand",
+  "pioneers:mars_layered_rock",
+  "pioneers:mars_ochre_rock",
+  "pioneers:mars_clay",
+  "pioneers:mars_gypsum",
+  "pioneers:mars_permafrost",
+  "pioneers:mars_polar_ice",
+  "pioneers:marsium_ore",
+  "pioneers:tharsium_ore",
+  "pioneers:hematite_ore",
+  "pioneers:stromatolite"
+ ]
+}

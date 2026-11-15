@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/dryable_fruits"
+   },
+   "count": 1
+  }
+ ],
+ "time": 3600,
+ "results": [
+  {
+   "item": "pioneers:dried_fruit",
+   "count": 1
+  }
+ ]
+}

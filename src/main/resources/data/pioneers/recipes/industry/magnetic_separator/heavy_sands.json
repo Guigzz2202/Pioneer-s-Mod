@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 200,
+ "family": "magnetic_separator",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ground_zircon_sand"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ilmenite_concentrate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:zircon_sand_concentrate",
+   "count": 2
+  }
+ ]
+}

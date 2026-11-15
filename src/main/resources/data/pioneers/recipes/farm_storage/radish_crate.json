@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:radish"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:radish_crate",
+  "count": 1
+ }
+}

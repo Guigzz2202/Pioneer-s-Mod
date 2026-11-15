@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fine_etched_wafer"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_package"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ram_module"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:multilayer_pcb"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:liquid_cooling_block"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gpu_accelerator",
+   "count": 1
+  }
+ ]
+}

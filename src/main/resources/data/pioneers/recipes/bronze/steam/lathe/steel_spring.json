@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "lathe",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:steel_spring",
+  "count": 1
+ },
+ "time": 24
+}

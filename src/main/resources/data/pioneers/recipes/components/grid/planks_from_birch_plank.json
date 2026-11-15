@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:birch_plank"
+  },
+  {
+   "item": "pioneers:birch_plank"
+  },
+  {
+   "item": "pioneers:birch_plank"
+  },
+  {
+   "item": "pioneers:birch_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:birch_planks",
+  "count": 1
+ }
+}

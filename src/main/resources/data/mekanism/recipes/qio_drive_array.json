@@ -1,0 +1,34 @@
+{
+ "conditions": [
+  {
+   "type": "forge:mod_loaded",
+   "modid": "mekanism"
+  }
+ ],
+ "type": "mekanism:mek_data",
+ "key": {
+  "#": {
+   "tag": "mekanism:personal_storage"
+  },
+  "C": {
+   "tag": "forge:circuits/elite"
+  },
+  "G": {
+   "tag": "forge:glass_panes"
+  },
+  "I": {
+   "tag": "forge:pellets/polonium"
+  },
+  "X": {
+   "item": "mekanism:steel_casing"
+  }
+ },
+ "pattern": [
+  "IGI",
+  "C#C",
+  "IXI"
+ ],
+ "result": {
+  "item": "mekanism:qio_drive_array"
+ }
+}

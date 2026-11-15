@@ -1,0 +1,9 @@
+{
+ "id": "restorers",
+ "player": false,
+ "doctrine": "lettered",
+ "share": 30,
+ "color": "2F4B8C",
+ "dye": "blue",
+ "emblem": "pioneers:textures/gui/village/people_restorers.png"
+}

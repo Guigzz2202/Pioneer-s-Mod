@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:smoking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cured_ham"
+   },
+   "count": 1
+  }
+ ],
+ "time": 3000,
+ "results": [
+  {
+   "item": "pioneers:ham",
+   "count": 1
+  }
+ ]
+}

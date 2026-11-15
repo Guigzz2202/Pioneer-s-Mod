@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:bone"
+   },
+   "count": 4
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hide_glue",
+   "count": 2
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 3
+  }
+ ]
+}

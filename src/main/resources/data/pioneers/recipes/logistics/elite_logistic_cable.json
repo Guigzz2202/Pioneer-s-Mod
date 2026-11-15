@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "CCC",
+  "CPC",
+  "CCC"
+ ],
+ "key": {
+  "C": {
+   "item": "pioneers:advanced_logistic_cable"
+  },
+  "P": {
+   "tag": "forge:pipes/titanium"
+  }
+ },
+ "result": {
+  "item": "pioneers:elite_logistic_cable",
+  "count": 8
+ }
+}

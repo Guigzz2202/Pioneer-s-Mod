@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "III",
+  "III",
+  "III"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:ingots/redsteel"
+  }
+ },
+ "result": {
+  "item": "pioneers:redsteel_block",
+  "count": 1
+ }
+}

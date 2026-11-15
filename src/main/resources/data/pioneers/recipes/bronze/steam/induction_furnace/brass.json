@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "induction_furnace",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/copper"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/zinc"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:brass_ingot",
+  "count": 4
+ },
+ "time": 120
+}

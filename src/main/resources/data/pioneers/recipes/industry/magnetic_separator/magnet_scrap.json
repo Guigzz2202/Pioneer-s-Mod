@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 100,
+ "family": "magnetic_separator",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_scrap"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_dust",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tin_nugget",
+   "count": 1,
+   "chance": 0.2
+  }
+ ]
+}

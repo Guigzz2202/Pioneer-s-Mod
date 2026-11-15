@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 150,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:wooden_slabs"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:honeycomb"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hive_frame"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:apiary",
+   "count": 1
+  }
+ ]
+}

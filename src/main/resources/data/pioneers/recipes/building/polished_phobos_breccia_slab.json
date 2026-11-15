@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_phobos_breccia"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_phobos_breccia_slab",
+  "count": 6
+ }
+}

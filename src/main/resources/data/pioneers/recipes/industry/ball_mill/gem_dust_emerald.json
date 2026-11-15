@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 1,
+ "time": 100,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/emerald"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 10
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:emerald_dust",
+   "count": 1
+  }
+ ]
+}

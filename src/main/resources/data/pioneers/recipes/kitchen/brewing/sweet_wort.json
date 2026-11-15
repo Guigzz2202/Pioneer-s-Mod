@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:brewing",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_malt"
+   },
+   "count": 4
+  }
+ ],
+ "fluid": {
+  "fluid": "minecraft:water",
+  "amount": 1000
+ },
+ "time": 600,
+ "fluid_result": {
+  "fluid": "pioneers:sweet_wort",
+  "amount": 1000
+ }
+}

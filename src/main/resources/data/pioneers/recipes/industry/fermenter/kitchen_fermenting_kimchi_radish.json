@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:radish"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:garlic"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:kimchi_radish",
+   "count": 3
+  }
+ ]
+}

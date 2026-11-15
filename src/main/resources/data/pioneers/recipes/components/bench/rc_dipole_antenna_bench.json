@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/copper"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/galvanized_steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:dipole_antenna",
+  "count": 1
+ }
+}

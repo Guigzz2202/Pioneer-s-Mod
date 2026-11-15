@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "food_processor",
+ "tier": 0,
+ "time": 960,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/game_red_meat"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bacon"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:onion"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:salt"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:game_pate",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:multilayer_pcb"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_integrated_circuit"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rom_chip"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_resistor"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:niobium_capacitor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:planar_inductor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mosfet"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gold_plated_connector"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/solder"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk2"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:circuit_mk3",
+   "count": 2
+  }
+ ]
+}

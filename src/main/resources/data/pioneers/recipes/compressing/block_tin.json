@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:ingots/tin"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:tin_block",
+  "count": 1
+ }
+}

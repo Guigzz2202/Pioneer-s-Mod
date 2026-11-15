@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:moon_sand"
+   },
+   "count": 16
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:sand",
+   "count": 12
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:helium_3",
+   "amount": 25
+  }
+ ]
+}

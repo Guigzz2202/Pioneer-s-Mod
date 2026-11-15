@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cake_batter"
+   },
+   "count": 1
+  }
+ ],
+ "time": 600,
+ "results": [
+  {
+   "item": "pioneers:cake",
+   "count": 1
+  }
+ ]
+}

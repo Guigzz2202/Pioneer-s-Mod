@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:silver_nugget",
+    "pioneers:silver_ring",
+    "pioneers:silver_rod",
+    "pioneers:silver_plate",
+    "pioneers:silver_dust",
+    "pioneers:silver_wire",
+    "pioneers:silver_block",
+    "pioneers:silver_gear",
+    "pioneers:silver_foil",
+    "pioneers:silver_spring",
+    "pioneers:silver_ingot"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:pallas",
+ "gravity": 0.088,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "vacuum",
+ "nitrogen": 0,
+ "temperature": -105
+}

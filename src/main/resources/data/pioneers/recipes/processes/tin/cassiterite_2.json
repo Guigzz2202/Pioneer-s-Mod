@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "shaking_table",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:crushed_ores/tin"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cassiterite_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:niobium_dust",
+   "count": 1,
+   "chance": 0.08
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "ore": true
+}

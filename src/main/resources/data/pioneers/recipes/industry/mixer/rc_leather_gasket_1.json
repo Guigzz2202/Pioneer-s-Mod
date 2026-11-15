@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tanned_leather"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:wood_tar",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:leather_gasket",
+   "count": 4
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:alumina"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:duralumin_dust"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:thermal_paste",
+   "count": 4
+  }
+ ]
+}

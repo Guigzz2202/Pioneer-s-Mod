@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/tolimanite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:tolimanite_nugget",
+  "count": 9
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:chicken"
+   },
+   "count": 1
+  }
+ ],
+ "time": 400,
+ "results": [
+  {
+   "item": "pioneers:roast_chicken",
+   "count": 1
+  }
+ ]
+}

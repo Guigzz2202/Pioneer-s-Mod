@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:titania_frost",
+  "pioneers:titania_regolith",
+  "pioneers:titania_rock"
+ ]
+}

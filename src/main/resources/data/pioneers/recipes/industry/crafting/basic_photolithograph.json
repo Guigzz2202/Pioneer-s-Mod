@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:incandescent_bulb"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:glass_lens"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/brass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_photolithograph",
+  "count": 1
+ }
+}

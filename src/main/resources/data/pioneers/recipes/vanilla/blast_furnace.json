@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/iron"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:furnace"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:smooth_stone"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:blast_furnace",
+  "count": 1
+ }
+}

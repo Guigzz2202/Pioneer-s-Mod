@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:mars_polar_ice_bricks"
+ },
+ "result": "pioneers:chiseled_mars_polar_ice_bricks",
+ "count": 1
+}

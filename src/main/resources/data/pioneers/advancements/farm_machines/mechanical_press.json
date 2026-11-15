@@ -1,0 +1,31 @@
+{
+ "parent": "pioneers:farm_machines/mechanical_kitchen",
+ "display": {
+  "icon": {
+   "item": "pioneers:mechanical_press"
+  },
+  "title": {
+   "translate": "advancements.pioneers.farm_machines.mechanical_press.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.farm_machines.mechanical_press.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "kitchen_press"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "has_precipitation": false,
+ "temperature": 2.0,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 14856794,
+  "fog_color": 12159566,
+  "water_color": 13213760,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.rocky",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:venus_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "pioneers:venusium_ore",
+   "pioneers:venus_sulfur_veins"
+  ],
+  [],
+  [
+   "pioneers:venus_lava_spring"
+  ],
+  [
+   "pioneers:boulder_field",
+   "pioneers:sulfur_bloom",
+   "pioneers:meteorite_rock_rare"
+  ],
+  [
+   "pioneers:venus_fluid_cleanup"
+  ]
+ ]
+}

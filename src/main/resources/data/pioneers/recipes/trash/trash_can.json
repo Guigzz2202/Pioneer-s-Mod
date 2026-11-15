@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "coppersmith",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/bronze"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:wooden_hopper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:flint"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:trash_can",
+  "count": 1
+ }
+}

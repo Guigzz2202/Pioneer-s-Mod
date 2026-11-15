@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:power_supply_unit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fire_brick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooling_fan"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_dryer",
+  "count": 1
+ }
+}

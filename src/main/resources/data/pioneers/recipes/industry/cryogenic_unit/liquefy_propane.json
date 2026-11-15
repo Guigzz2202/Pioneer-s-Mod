@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cryogenic_unit",
+ "tier": 0,
+ "time": 60,
+ "gases": [
+  {
+   "gas": "pioneers:propane",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:lpg",
+   "amount": 125
+  }
+ ]
+}

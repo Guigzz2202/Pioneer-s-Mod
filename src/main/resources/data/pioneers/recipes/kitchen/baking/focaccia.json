@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:baking",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_focaccia"
+   },
+   "count": 1
+  }
+ ],
+ "time": 400,
+ "results": [
+  {
+   "item": "pioneers:focaccia",
+   "count": 1
+  }
+ ]
+}

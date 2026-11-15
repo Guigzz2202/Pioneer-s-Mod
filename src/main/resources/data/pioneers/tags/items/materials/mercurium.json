@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:mercurium_plate",
+  "pioneers:mercurium_rod",
+  "pioneers:mercurium_billet"
+ ]
+}

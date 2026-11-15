@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:water_bucket"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wire_meshes/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:centrifugal_pump"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:aquafarm",
+  "count": 1
+ }
+}

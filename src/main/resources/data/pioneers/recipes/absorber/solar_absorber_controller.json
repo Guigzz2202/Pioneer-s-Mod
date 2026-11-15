@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/ultimate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:solar_absorber_casing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:comparator"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:solar_absorber_controller",
+  "count": 1
+ }
+}

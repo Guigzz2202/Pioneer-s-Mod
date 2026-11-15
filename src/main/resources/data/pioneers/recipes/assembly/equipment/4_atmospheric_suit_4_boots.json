@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:assembly",
+ "station": "equipment",
+ "pattern": [
+  "..........",
+  "..........",
+  "...M..M...",
+  "..MP..MM..",
+  "..RA..AR.."
+ ],
+ "key": {
+  "A": {
+   "item": "pioneers:lunar_alloy_plate"
+  },
+  "M": {
+   "tag": "forge:plates/sputnikite"
+  },
+  "R": {
+   "tag": "forge:rods/mordorite"
+  },
+  "P": {
+   "item": "pioneers:acid_suit_boots"
+  }
+ },
+ "result": {
+  "item": "pioneers:atmospheric_suit_boots"
+ },
+ "energy": 80000000,
+ "duration": 700,
+ "research": "atmospheric_suit"
+}

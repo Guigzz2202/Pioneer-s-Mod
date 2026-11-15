@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_sausage"
+   },
+   "count": 1
+  }
+ ],
+ "time": 3000,
+ "results": [
+  {
+   "item": "pioneers:saucisson",
+   "count": 1
+  }
+ ]
+}

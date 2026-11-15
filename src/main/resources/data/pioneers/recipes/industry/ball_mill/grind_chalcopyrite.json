@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 0,
+ "time": 160,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_chalcopyrite"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ground_chalcopyrite",
+   "count": 1
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.1
+  }
+ ],
+ "ore": true
+}

@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_atom_06",
+ "display": {
+  "icon": {
+   "item": "pioneers:research_table"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_atom_07.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_atom_07.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

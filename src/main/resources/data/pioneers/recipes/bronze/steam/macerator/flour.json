@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "macerator",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:wheat"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:flour",
+  "count": 2
+ },
+ "time": 160
+}

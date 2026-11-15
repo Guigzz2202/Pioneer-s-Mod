@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bayer_digester",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:red_mud",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 150
+  },
+  {
+   "fluid": "pioneers:red_mud",
+   "amount": 850
+  }
+ ],
+ "pressure": 8,
+ "air": 150
+}

@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/krakenite"
+  }
+ ],
+ "result": {
+  "item": "pioneers:krakenite_nugget",
+  "count": 9
+ }
+}

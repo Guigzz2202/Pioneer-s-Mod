@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:circuit_mk3"
+  },
+  {
+   "item": "pioneers:capacitor"
+  },
+  {
+   "item": "pioneers:capacitor"
+  },
+  {
+   "item": "pioneers:tungsten_plate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_volley",
+  "count": 1
+ }
+}

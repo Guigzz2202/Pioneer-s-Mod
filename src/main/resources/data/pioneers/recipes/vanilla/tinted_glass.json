@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:amethyst_shard"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:glass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:tinted_glass",
+  "count": 2
+ }
+}

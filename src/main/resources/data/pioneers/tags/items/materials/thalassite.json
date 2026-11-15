@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:thalassite_plate",
+  "pioneers:thalassite_rod",
+  "pioneers:thalassite_billet"
+ ]
+}

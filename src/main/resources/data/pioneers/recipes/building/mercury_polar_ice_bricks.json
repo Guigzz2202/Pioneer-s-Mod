@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_mercury_polar_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:mercury_polar_ice_bricks",
+  "count": 4
+ }
+}

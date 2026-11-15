@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 1,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:lead_bullion"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/zinc"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silver_zinc_crust",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_lead",
+   "amount": 576
+  }
+ ],
+ "temperature": 700
+}

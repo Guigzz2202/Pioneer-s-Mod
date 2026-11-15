@@ -1,0 +1,25 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:apple",
+  "minecraft:sweet_berries",
+  "minecraft:melon_slice",
+  "pioneers:pear",
+  "pioneers:cherries",
+  "pioneers:apricot",
+  "pioneers:peach",
+  "pioneers:plum",
+  "pioneers:orange",
+  "pioneers:lemon",
+  "pioneers:pomegranate",
+  "pioneers:mango",
+  "pioneers:banana",
+  "pioneers:strawberry",
+  "pioneers:blueberry",
+  "pioneers:cranberry",
+  "pioneers:grapes",
+  "pioneers:pineapple",
+  "pioneers:starfruit",
+  "pioneers:rhubarb"
+ ]
+}

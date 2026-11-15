@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:deimos_breccia"
+ },
+ "result": "pioneers:deimos_breccia_brick_wall",
+ "count": 1
+}

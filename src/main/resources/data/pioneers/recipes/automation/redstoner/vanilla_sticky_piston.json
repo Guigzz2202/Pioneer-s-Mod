@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:slime_ball"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:piston"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:sticky_piston",
+   "count": 1
+  }
+ ]
+}

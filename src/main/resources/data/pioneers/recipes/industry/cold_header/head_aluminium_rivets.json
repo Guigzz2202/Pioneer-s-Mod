@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 1,
+ "time": 100,
+ "family": "cold_header",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_rivet",
+   "count": 12
+  }
+ ]
+}

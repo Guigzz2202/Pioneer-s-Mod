@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:venus_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_venus_rock",
+  "count": 4
+ }
+}

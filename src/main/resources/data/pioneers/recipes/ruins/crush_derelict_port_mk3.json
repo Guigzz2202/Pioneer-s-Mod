@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:derelict_port_mk3"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:scrap_structure_mk3",
+  "count": 1
+ }
+}

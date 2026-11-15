@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 80,
+ "family": "optical_sorter",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:gravel"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:flint",
+   "count": 2
+  },
+  {
+   "item": "pioneers:gold_flake",
+   "count": 1,
+   "chance": 0.15
+  },
+  {
+   "item": "pioneers:rough_topaz",
+   "count": 1,
+   "chance": 0.01
+  }
+ ]
+}

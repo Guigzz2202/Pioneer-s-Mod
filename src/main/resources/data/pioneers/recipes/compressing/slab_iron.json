@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:storage_blocks/iron"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:iron_slab",
+  "count": 1
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:raw_materials/mercurium"
+  }
+ },
+ "result": {
+  "item": "pioneers:raw_mercurium_block"
+ }
+}

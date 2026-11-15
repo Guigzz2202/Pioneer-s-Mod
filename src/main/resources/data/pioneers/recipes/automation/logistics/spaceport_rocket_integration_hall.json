@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 1,
+ "time": 170,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk2"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_piston"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:advanced_electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wire_ropes/aluminium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rocket_integration_hall",
+   "count": 1
+  }
+ ]
+}

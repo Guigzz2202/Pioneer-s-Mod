@@ -1,0 +1,76 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:basic_heat_buffer"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.heat_store.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.heat_store.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:basic_heat_buffer"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:advanced_heat_buffer"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:elite_heat_buffer"
+      ]
+     }
+    ]
+   }
+  },
+  "c3": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:ultimate_heat_buffer"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2",
+   "c3"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/root"
+}

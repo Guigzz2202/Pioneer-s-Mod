@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:fermenting",
+ "fluid": {
+  "fluid": "pioneers:pear_juice",
+  "amount": 1000
+ },
+ "time": 9600,
+ "fluid_result": {
+  "fluid": "pioneers:perry",
+  "amount": 1000
+ }
+}

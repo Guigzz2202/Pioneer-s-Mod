@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:beetroot"
+   },
+   "count": 9
+  }
+ ],
+ "result": {
+  "item": "pioneers:beetroot_crate",
+  "count": 1
+ }
+}

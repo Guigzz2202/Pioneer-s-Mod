@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:zucchini_tray"
+  }
+ ],
+ "result": {
+  "item": "pioneers:zucchini",
+  "count": 9
+ }
+}

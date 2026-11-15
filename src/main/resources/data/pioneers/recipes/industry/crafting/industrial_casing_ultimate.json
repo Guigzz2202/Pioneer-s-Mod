@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk4"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:beams/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/tungsten"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/tungsten"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/osmium"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_frame"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:industrial_casing_ultimate",
+  "count": 6
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:warped_stem"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:warped_hyphae",
+  "count": 3
+ }
+}

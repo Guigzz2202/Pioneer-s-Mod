@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gravity_compressor",
+ "tier": 3,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:metallic_hydrogen"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:europa_ice"
+   },
+   "count": 32
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 64000
+  },
+  {
+   "gas": "pioneers:helium",
+   "amount": 16000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:compacted_jupiter",
+   "count": 1
+  }
+ ],
+ "energy": 200000000
+}

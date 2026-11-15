@@ -1,0 +1,156 @@
+{
+ "type": "pioneers:mercury",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:mercury",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:mercury_polar_craters",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       0.25,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:caloris_planitia",
+     "parameters": {
+      "temperature": [
+       0.27,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.25
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:mercury_hollows",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.27
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       0.45,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.25
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:lobate_scarps",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.27
+      ],
+      "humidity": [
+       -0.06,
+       0.06
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -1.0,
+       0.25
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:mercury_highlands",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.27
+      ],
+      "humidity": [
+       -1.0,
+       -0.06
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -1.0,
+       0.25
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:mercury_highlands",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.27
+      ],
+      "humidity": [
+       0.06,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -1.0,
+       0.25
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:circuit_mk3"
+  },
+  {
+   "item": "minecraft:fermented_spider_eye"
+  },
+  {
+   "item": "pioneers:osmiridium_plate"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_vampirism",
+  "count": 1
+ }
+}

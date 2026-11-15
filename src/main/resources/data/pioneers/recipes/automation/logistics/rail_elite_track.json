@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "family": "logistics_assembler",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:stainless_rail_profile"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:concrete_tie"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gravel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:bolts/titanium"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_track",
+   "count": 16
+  }
+ ]
+}

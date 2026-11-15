@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rail_works",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:engine_block"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gasket"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:circuits/advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lead_acid_battery"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_diesel_locomotive",
+   "count": 1
+  }
+ ]
+}

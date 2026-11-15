@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "macerator",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:flint"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:flint_dust",
+  "count": 2
+ },
+ "time": 160
+}

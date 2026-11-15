@@ -1,0 +1,16 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:oak_plank",
+  "pioneers:spruce_plank",
+  "pioneers:birch_plank",
+  "pioneers:jungle_plank",
+  "pioneers:acacia_plank",
+  "pioneers:dark_oak_plank",
+  "pioneers:mangrove_plank",
+  "pioneers:cherry_plank",
+  "pioneers:bamboo_plank",
+  "pioneers:crimson_plank",
+  "pioneers:warped_plank"
+ ]
+}

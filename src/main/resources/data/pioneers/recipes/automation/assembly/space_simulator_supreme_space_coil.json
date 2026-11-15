@@ -1,0 +1,50 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 190,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:glowstone"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_logistic_cable"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:space_simulator_casing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:veronite_superconductor"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/flarium"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:supreme_space_coil",
+   "count": 4
+  }
+ ]
+}

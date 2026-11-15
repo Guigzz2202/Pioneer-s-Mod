@@ -1,0 +1,228 @@
+{
+ "type": "pioneers:mars",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:mars",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:polar_ice_cap",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       0.45,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:tharsis_volcanoes",
+     "parameters": {
+      "temperature": [
+       0.3,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:valles_marineris",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.3
+      ],
+      "humidity": [
+       -0.055,
+       0.055
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:dune_sea",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.3
+      ],
+      "humidity": [
+       -1.0,
+       -0.055
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       0.35,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:jezero_delta",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.3
+      ],
+      "humidity": [
+       -1.0,
+       -0.055
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -1.0,
+       -0.4
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:arcadia_planitia",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.3
+      ],
+      "humidity": [
+       -1.0,
+       -0.055
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -0.4,
+       0.35
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:dune_sea",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.3
+      ],
+      "humidity": [
+       0.055,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       0.35,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:jezero_delta",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.3
+      ],
+      "humidity": [
+       0.055,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -1.0,
+       -0.4
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:arcadia_planitia",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.3
+      ],
+      "humidity": [
+       0.055,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       0.45
+      ],
+      "erosion": [
+       -0.4,
+       0.35
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "smalltalk": [
+  "dialogue.pioneers.peddlers.smalltalk.0",
+  "dialogue.pioneers.peddlers.smalltalk.1",
+  "dialogue.pioneers.peddlers.smalltalk.2",
+  "dialogue.pioneers.peddlers.smalltalk.3",
+  "dialogue.pioneers.peddlers.smalltalk.4",
+  "dialogue.pioneers.peddlers.smalltalk.5",
+  "dialogue.pioneers.peddlers.smalltalk.6",
+  "dialogue.pioneers.peddlers.smalltalk.7",
+  "dialogue.pioneers.peddlers.smalltalk.8",
+  "dialogue.pioneers.peddlers.smalltalk.9",
+  "dialogue.pioneers.peddlers.smalltalk.10",
+  "dialogue.pioneers.peddlers.smalltalk.11",
+  "dialogue.pioneers.peddlers.smalltalk.12",
+  "dialogue.pioneers.peddlers.smalltalk.13",
+  "dialogue.pioneers.peddlers.smalltalk.14",
+  "dialogue.pioneers.peddlers.smalltalk.15"
+ ],
+ "warm": [
+  "dialogue.pioneers.peddlers.warm.0",
+  "dialogue.pioneers.peddlers.warm.1",
+  "dialogue.pioneers.peddlers.warm.2",
+  "dialogue.pioneers.peddlers.warm.3",
+  "dialogue.pioneers.peddlers.warm.4",
+  "dialogue.pioneers.peddlers.warm.5",
+  "dialogue.pioneers.peddlers.warm.6",
+  "dialogue.pioneers.peddlers.warm.7",
+  "dialogue.pioneers.peddlers.warm.8",
+  "dialogue.pioneers.peddlers.warm.9"
+ ],
+ "places": [
+  "dialogue.pioneers.peddlers.places.0",
+  "dialogue.pioneers.peddlers.places.1",
+  "dialogue.pioneers.peddlers.places.2",
+  "dialogue.pioneers.peddlers.places.3",
+  "dialogue.pioneers.peddlers.places.4"
+ ],
+ "cold": [
+  "dialogue.pioneers.peddlers.cold.0",
+  "dialogue.pioneers.peddlers.cold.1",
+  "dialogue.pioneers.peddlers.cold.2",
+  "dialogue.pioneers.peddlers.cold.3",
+  "dialogue.pioneers.peddlers.cold.4",
+  "dialogue.pioneers.peddlers.cold.5",
+  "dialogue.pioneers.peddlers.cold.6"
+ ],
+ "contempt": [
+  "dialogue.pioneers.peddlers.contempt.0",
+  "dialogue.pioneers.peddlers.contempt.1",
+  "dialogue.pioneers.peddlers.contempt.2",
+  "dialogue.pioneers.peddlers.contempt.3",
+  "dialogue.pioneers.peddlers.contempt.4",
+  "dialogue.pioneers.peddlers.contempt.5",
+  "dialogue.pioneers.peddlers.contempt.6",
+  "dialogue.pioneers.peddlers.contempt.7",
+  "dialogue.pioneers.peddlers.contempt.8"
+ ],
+ "insult": [
+  "dialogue.pioneers.peddlers.insult.0",
+  "dialogue.pioneers.peddlers.insult.1",
+  "dialogue.pioneers.peddlers.insult.2",
+  "dialogue.pioneers.peddlers.insult.3",
+  "dialogue.pioneers.peddlers.insult.4",
+  "dialogue.pioneers.peddlers.insult.5",
+  "dialogue.pioneers.peddlers.insult.6",
+  "dialogue.pioneers.peddlers.insult.7",
+  "dialogue.pioneers.peddlers.insult.8"
+ ]
+}

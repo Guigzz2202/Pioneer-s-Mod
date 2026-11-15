@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/root",
+ "display": {
+  "icon": {
+   "item": "pioneers:stellar_core"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_endgame_01.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_endgame_01.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

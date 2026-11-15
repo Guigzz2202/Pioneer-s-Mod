@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 1,
+ "time": 85,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:press_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stainless_steel_sheet",
+   "count": 2
+  },
+  {
+   "item": "pioneers:press_die",
+   "count": 1
+  }
+ ]
+}

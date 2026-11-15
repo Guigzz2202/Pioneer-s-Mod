@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nickel_ring"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nickel_sulfate_solution",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_foil",
+   "count": 5
+  }
+ ]
+}

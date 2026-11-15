@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 200,
+ "family": "vacuum_column",
+ "fluids": [
+  {
+   "fluid": "pioneers:coal_tar",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pitch",
+   "count": 3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:vacuum_gas_oil",
+   "amount": 50
+  },
+  {
+   "fluid": "pioneers:base_oil",
+   "amount": 50
+  },
+  {
+   "fluid": "pioneers:creosote",
+   "amount": 300
+  },
+  {
+   "fluid": "pioneers:vacuum_residue",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 10
+  }
+ ],
+ "industrial": true
+}

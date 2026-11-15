@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 0,
+ "time": 200,
+ "family": "acid_etcher",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:sheets/aluminium"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_foil",
+   "count": 2
+  }
+ ]
+}

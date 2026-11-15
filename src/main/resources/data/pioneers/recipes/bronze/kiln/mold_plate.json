@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:unfired_plate_mold"
+ },
+ "temperature": 650,
+ "time": 300,
+ "result": {
+  "item": "pioneers:plate_mold",
+  "count": 1
+ }
+}

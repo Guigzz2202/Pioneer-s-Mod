@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:smooth_stone_slab"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:armor_stand",
+  "count": 1
+ }
+}

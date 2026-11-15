@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:wither_skeleton_skull"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:skull_banner_pattern",
+  "count": 1
+ }
+}

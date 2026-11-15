@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "minecraft:clay_ball"
+ },
+ "count": 4,
+ "result": {
+  "item": "minecraft:clay",
+  "count": 1
+ }
+}

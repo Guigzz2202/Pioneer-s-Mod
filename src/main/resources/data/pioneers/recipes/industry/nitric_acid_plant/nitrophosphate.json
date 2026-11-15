@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 200,
+ "family": "nitric_acid_plant",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:phosphate_rock"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fertilizer",
+   "count": 4
+  }
+ ],
+ "industrial": true
+}

@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:lantern"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hay_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:incubator",
+  "count": 1
+ }
+}

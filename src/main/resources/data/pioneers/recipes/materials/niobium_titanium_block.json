@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "III",
+  "III",
+  "III"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:ingots/niobium_titanium"
+  }
+ },
+ "result": {
+  "item": "pioneers:niobium_titanium_block",
+  "count": 1
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cartridge_filter"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tempered_glass_pane"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_exchanger"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:basic_crystallizer",
+   "count": 1
+  }
+ ]
+}

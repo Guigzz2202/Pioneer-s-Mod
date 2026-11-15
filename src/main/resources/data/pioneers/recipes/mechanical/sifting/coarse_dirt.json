@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:sifting",
+ "input": {
+  "item": "minecraft:coarse_dirt"
+ },
+ "count": 1,
+ "turns": 6,
+ "results": [
+  {
+   "item": "minecraft:flint",
+   "count": 1,
+   "chance": 0.2
+  },
+  {
+   "item": "pioneers:magnetite_fragment",
+   "count": 1,
+   "chance": 0.4
+  },
+  {
+   "item": "pioneers:wheat_seeds",
+   "count": 1,
+   "chance": 0.06
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/tin"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/copper"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/lead"
+   },
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_babbitt",
+   "amount": 1440
+  }
+ ]
+}

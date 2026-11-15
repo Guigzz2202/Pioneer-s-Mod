@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "minecraft:sugar_cane"
+ },
+ "count": 1,
+ "result": {
+  "item": "minecraft:sugar",
+  "count": 2
+ }
+}

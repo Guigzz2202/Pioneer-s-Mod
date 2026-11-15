@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 1,
+ "time": 120,
+ "family": "fiber_tower",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:glass"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:glass_fiber",
+   "count": 4
+  }
+ ]
+}

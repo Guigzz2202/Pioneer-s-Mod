@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:iron_plate"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_rod"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_greenhouse_frame",
+  "count": 4
+ }
+}

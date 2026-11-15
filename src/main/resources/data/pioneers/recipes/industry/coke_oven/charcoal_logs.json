@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "coke_oven",
+ "tier": 0,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "minecraft:logs_that_burn"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:charcoal",
+   "count": 4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:creosote",
+   "amount": 250
+  }
+ ]
+}

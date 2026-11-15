@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rover",
+ "pattern": [
+  "..R....R..",
+  "...HMMH...",
+  "...ACEA...",
+  "...HMMH...",
+  "..R....R.."
+ ],
+ "key": {
+  "R": {
+   "item": "pioneers:advanced_electric_motor"
+  },
+  "H": {
+   "item": "pioneers:plastic_sheet"
+  },
+  "M": {
+   "tag": "forge:rods/venusium"
+  },
+  "C": {
+   "tag": "pioneers:circuits/advanced"
+  },
+  "A": {
+   "tag": "forge:plates/titanium"
+  },
+  "E": {
+   "item": "pioneers:nimh_cell"
+  }
+ },
+ "result": {
+  "item": "pioneers:drone_mk2"
+ },
+ "energy": 12000000,
+ "duration": 400,
+ "research": "robotics"
+}

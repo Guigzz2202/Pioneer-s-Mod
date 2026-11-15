@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:dark_oak_planks"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "minecraft:dark_oak_stairs",
+  "count": 4
+ }
+}

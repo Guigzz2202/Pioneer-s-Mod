@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/mortars"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:malt"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:crushed_malt",
+  "count": 1
+ }
+}

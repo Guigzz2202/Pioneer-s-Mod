@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:deimite_plate",
+  "pioneers:deimite_rod",
+  "pioneers:deimite_billet"
+ ]
+}

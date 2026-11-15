@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "item": "pioneers:press_cake"
+ },
+ "count": 2,
+ "result": {
+  "item": "pioneers:animal_feed",
+  "count": 3
+ },
+ "binder": {
+  "item": "pioneers:corn"
+ },
+ "binder_count": 1
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 1,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/brass"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:brass_wire",
+   "count": 1
+  }
+ ]
+}

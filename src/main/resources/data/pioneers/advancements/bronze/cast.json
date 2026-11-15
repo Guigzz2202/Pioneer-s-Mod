@@ -1,0 +1,38 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:casting_table"
+  },
+  "title": {
+   "translate": "advancements.pioneers.bronze.cast.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.bronze.cast.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "cast"
+   }
+  },
+  "c1": {
+   "trigger": "pioneers:mechanics",
+   "conditions": {
+    "event": "mold_cast"
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1"
+  ]
+ ],
+ "parent": "pioneers:bronze/kiln"
+}

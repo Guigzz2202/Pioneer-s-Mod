@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:gear_upgrade",
+ "category": "equipment",
+ "pattern": [
+  "AXS",
+  "PCP",
+  "HR "
+ ],
+ "key": {
+  "A": {
+   "item": "pioneers:stellaris_axe"
+  },
+  "X": {
+   "item": "pioneers:stellaris_pickaxe"
+  },
+  "S": {
+   "item": "pioneers:stellaris_shovel"
+  },
+  "H": {
+   "item": "pioneers:stellaris_hoe"
+  },
+  "P": {
+   "item": "pioneers:neutronic_plating"
+  },
+  "C": {
+   "item": "pioneers:neutronic_cell"
+  },
+  "R": {
+   "item": "pioneers:osmiridium_rod"
+  }
+ },
+ "result": {
+  "item": "pioneers:neutronic_multitool",
+  "count": 1
+ }
+}

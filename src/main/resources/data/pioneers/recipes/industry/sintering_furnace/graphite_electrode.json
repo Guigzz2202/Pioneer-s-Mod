@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 0,
+ "time": 300,
+ "family": "sintering_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:graphite"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pitch"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:graphite_electrode",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:fusion_propellant",
+  "pioneers:flowing_fusion_propellant"
+ ]
+}

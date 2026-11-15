@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:polished_ganymede_bright_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:ganymede_bright_ice_bricks",
+  "count": 4
+ }
+}

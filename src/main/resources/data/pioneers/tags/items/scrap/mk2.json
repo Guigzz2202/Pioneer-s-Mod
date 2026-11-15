@@ -1,0 +1,13 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:scrap_structure_mk2",
+  "pioneers:scrap_motion_mk2",
+  "pioneers:scrap_fluid_mk2",
+  "pioneers:scrap_thermal_mk2",
+  "pioneers:scrap_electric_mk2",
+  "pioneers:scrap_electronic_mk2",
+  "pioneers:scrap_sensor_mk2",
+  "pioneers:scrap_robotic_mk2"
+ ]
+}

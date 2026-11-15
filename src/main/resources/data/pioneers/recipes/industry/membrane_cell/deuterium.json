@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 1,
+ "time": 200,
+ "family": "membrane_cell",
+ "fluids": [
+  {
+   "fluid": "pioneers:heavy_water",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:deuterium",
+   "amount": 1000
+  },
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 500
+  }
+ ]
+}

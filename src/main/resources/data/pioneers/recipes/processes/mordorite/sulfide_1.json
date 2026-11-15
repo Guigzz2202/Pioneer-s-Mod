@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "flotation_cell",
+ "tier": 3,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:raw_mordorite"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:flotation_reagent",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mordorite_concentrate",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.4
+  }
+ ],
+ "ore": true
+}

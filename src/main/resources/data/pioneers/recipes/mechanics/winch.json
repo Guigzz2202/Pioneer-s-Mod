@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PXP",
+  "RRR",
+  "PXP"
+ ],
+ "key": {
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "X": {
+   "item": "pioneers:wooden_shaft"
+  },
+  "R": {
+   "item": "pioneers:fiber_rope"
+  }
+ },
+ "result": {
+  "item": "pioneers:winch",
+  "count": 1
+ }
+}

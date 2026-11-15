@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "pioneers:enceladus_ice"
+  },
+  "mode": "ridge",
+  "min_length": 20,
+  "max_length": 28,
+  "width": 5,
+  "depth": 2,
+  "curl": 0.06,
+  "center": {
+   "Name": "pioneers:enceladus_blue_ice"
+  }
+ }
+}

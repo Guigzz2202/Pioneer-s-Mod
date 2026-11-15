@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "tier": 0,
+ "time": 120,
+ "family": "optical_sorter",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_olivine"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rough_peridot",
+   "count": 1,
+   "chance": 0.4
+  },
+  {
+   "item": "pioneers:tailings",
+   "count": 1,
+   "chance": 0.4
+  }
+ ],
+ "ore": true
+}

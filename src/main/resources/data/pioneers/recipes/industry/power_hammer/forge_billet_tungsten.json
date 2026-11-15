@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 2,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/tungsten"
+   },
+   "count": 9
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tungsten_billet",
+   "count": 1
+  }
+ ]
+}

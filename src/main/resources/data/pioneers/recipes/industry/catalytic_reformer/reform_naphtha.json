@@ -1,0 +1,54 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 160,
+ "family": "catalytic_reformer",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:platinum_catalyst"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:naphtha",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platinum_catalyst",
+   "count": 1,
+   "chance": 0.97
+  },
+  {
+   "item": "pioneers:spent_platinum_catalyst",
+   "count": 1,
+   "chance": 0.03
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:reformate",
+   "amount": 700
+  },
+  {
+   "fluid": "pioneers:benzene",
+   "amount": 100
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 200
+  },
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 50
+  }
+ ],
+ "industrial": true
+}

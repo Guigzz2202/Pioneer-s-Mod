@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:pegmatite"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_pegmatite",
+  "count": 2
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 2,
+ "time": 300,
+ "family": "potline",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_scrap_bale"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/copper"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:cryolite",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_ingot",
+   "count": 7
+  }
+ ],
+ "industrial": true,
+ "pure": true
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:bamboo_plank"
+  },
+  {
+   "item": "pioneers:bamboo_plank"
+  },
+  {
+   "item": "pioneers:bamboo_plank"
+  },
+  {
+   "item": "pioneers:bamboo_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:bamboo_planks",
+  "count": 1
+ }
+}

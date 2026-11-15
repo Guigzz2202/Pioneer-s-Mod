@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "family": "fluidized_bed_reactor",
+ "tier": 2,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_slag"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 800
+  },
+  {
+   "gas": "pioneers:carbon_monoxide",
+   "amount": 400
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_chloride",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:crude_titanium_tetrachloride",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 400
+  }
+ ],
+ "temperature": 1000
+}

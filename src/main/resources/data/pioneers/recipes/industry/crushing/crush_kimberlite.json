@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:kimberlite"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_kimberlite",
+  "count": 2
+ }
+}

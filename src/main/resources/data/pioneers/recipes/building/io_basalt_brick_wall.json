@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:io_basalt_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:io_basalt_brick_wall",
+  "count": 6
+ }
+}

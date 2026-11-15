@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "propellant_plant",
+ "tier": 1,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:kerosene",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 200
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:rp1",
+   "amount": 900
+  }
+ ]
+}

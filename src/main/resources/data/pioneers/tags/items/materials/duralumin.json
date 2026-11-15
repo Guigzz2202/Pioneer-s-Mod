@@ -1,0 +1,22 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:duralumin_nugget",
+  "pioneers:duralumin_ring",
+  "pioneers:duralumin_rod",
+  "pioneers:duralumin_plate",
+  "pioneers:duralumin_dust",
+  "pioneers:duralumin_wire",
+  "pioneers:duralumin_block",
+  "pioneers:duralumin_gear",
+  "pioneers:duralumin_spring",
+  "pioneers:duralumin_ingot",
+  "pioneers:duralumin_beam",
+  "pioneers:duralumin_slab",
+  "pioneers:duralumin_billet",
+  "pioneers:duralumin_wire_rod",
+  "pioneers:duralumin_beam_blank",
+  "pioneers:duralumin_gear_blank",
+  "pioneers:duralumin_sheet"
+ ]
+}

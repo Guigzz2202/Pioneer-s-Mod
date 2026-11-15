@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "HCH",
+  "CUC",
+  "HCH"
+ ],
+ "key": {
+  "H": {
+   "item": "pioneers:compacted_hulls"
+  },
+  "C": {
+   "tag": "forge:plates/stainless_steel"
+  },
+  "U": {
+   "tag": "forge:plates/copper"
+  }
+ },
+ "result": {
+  "item": "pioneers:waste_package",
+  "count": 1
+ }
+}

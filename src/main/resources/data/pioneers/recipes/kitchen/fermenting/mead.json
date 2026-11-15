@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:fermenting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:yeast"
+   },
+   "count": 1
+  }
+ ],
+ "fluid": {
+  "fluid": "pioneers:honey_water",
+  "amount": 1000
+ },
+ "time": 12000,
+ "fluid_result": {
+  "fluid": "pioneers:mead",
+  "amount": 1000
+ }
+}

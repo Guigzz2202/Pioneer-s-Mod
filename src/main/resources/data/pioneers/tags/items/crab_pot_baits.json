@@ -1,0 +1,16 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:fish_bait",
+  "pioneers:earthworm",
+  "minecraft:rotten_flesh",
+  "minecraft:cod",
+  "minecraft:salmon",
+  "#pioneers:fish",
+  {
+   "id": "pioneers:fish_fillet",
+   "required": false
+  },
+  "pioneers:raw_shrimp"
+ ]
+}

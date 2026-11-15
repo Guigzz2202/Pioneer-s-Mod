@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:wheat"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "minecraft:small_flowers"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:string"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cosmetic_botanist_hat",
+   "count": 1
+  }
+ ]
+}

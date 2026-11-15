@@ -1,0 +1,171 @@
+{
+ "roles": [
+  {
+   "id": "representative",
+   "rank": 100,
+   "color": 4,
+   "withdraw_cap": 2000,
+   "fixed": true,
+   "perms": [
+    "*"
+   ]
+  },
+  {
+   "id": "lieutenant",
+   "rank": 80,
+   "color": 11,
+   "withdraw_cap": 1000,
+   "fixed": false,
+   "perms": [
+    "invite",
+    "kick",
+    "promote",
+    "view_identities",
+    "view_stats",
+    "claim",
+    "zones",
+    "build",
+    "containers",
+    "machines",
+    "transit",
+    "chunkload",
+    "seals",
+    "buy_claims",
+    "treasury_view",
+    "withdraw",
+    "set_taxes",
+    "bonuses",
+    "propose",
+    "edit_roles",
+    "edit_identity",
+    "declare_war",
+    "diplomacy",
+    "siege",
+    "moderate",
+    "pin"
+   ]
+  },
+  {
+   "id": "steward",
+   "rank": 60,
+   "color": 1,
+   "withdraw_cap": 2000,
+   "fixed": false,
+   "perms": [
+    "view_identities",
+    "view_stats",
+    "build",
+    "containers",
+    "machines",
+    "transit",
+    "buy_claims",
+    "treasury_view",
+    "withdraw",
+    "set_taxes",
+    "bonuses",
+    "propose"
+   ]
+  },
+  {
+   "id": "surveyor",
+   "rank": 55,
+   "color": 5,
+   "withdraw_cap": 0,
+   "fixed": false,
+   "perms": [
+    "view_identities",
+    "view_stats",
+    "claim",
+    "zones",
+    "build",
+    "containers",
+    "machines",
+    "transit",
+    "chunkload",
+    "seals",
+    "propose"
+   ]
+  },
+  {
+   "id": "guard",
+   "rank": 50,
+   "color": 14,
+   "withdraw_cap": 200,
+   "fixed": false,
+   "perms": [
+    "view_identities",
+    "view_stats",
+    "claim",
+    "zones",
+    "build",
+    "containers",
+    "machines",
+    "transit",
+    "chunkload",
+    "siege",
+    "propose"
+   ]
+  },
+  {
+   "id": "recruiter",
+   "rank": 45,
+   "color": 3,
+   "withdraw_cap": 0,
+   "fixed": false,
+   "perms": [
+    "invite",
+    "kick",
+    "promote",
+    "view_identities",
+    "view_stats",
+    "build",
+    "containers",
+    "machines",
+    "propose"
+   ]
+  },
+  {
+   "id": "artisan",
+   "rank": 40,
+   "color": 12,
+   "withdraw_cap": 100,
+   "fixed": false,
+   "perms": [
+    "view_identities",
+    "view_stats",
+    "build",
+    "containers",
+    "machines",
+    "transit",
+    "seals",
+    "propose"
+   ]
+  },
+  {
+   "id": "member",
+   "rank": 30,
+   "color": 13,
+   "withdraw_cap": 0,
+   "fixed": false,
+   "perms": [
+    "view_identities",
+    "view_stats",
+    "build",
+    "containers",
+    "machines",
+    "propose"
+   ]
+  },
+  {
+   "id": "recruit",
+   "rank": 10,
+   "color": 8,
+   "withdraw_cap": 0,
+   "fixed": true,
+   "perms": [
+    "build",
+    "machines"
+   ]
+  }
+ ]
+}

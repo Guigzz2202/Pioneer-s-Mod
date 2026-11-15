@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:callisto_rock_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:callisto_rock_brick_wall",
+  "count": 6
+ }
+}

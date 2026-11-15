@@ -1,0 +1,15 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:lunarium_block",
+  "pioneers:marsium_block",
+  "pioneers:tharsium_block",
+  "pioneers:venusium_block",
+  "pioneers:mercurium_block",
+  "pioneers:iron_block",
+  "pioneers:gold_block",
+  "pioneers:emerald_block",
+  "pioneers:diamond_block",
+  "pioneers:netherite_block"
+ ]
+}

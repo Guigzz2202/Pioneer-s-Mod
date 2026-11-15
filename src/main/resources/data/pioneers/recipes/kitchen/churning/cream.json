@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:churning",
+ "fluid": {
+  "tag": "forge:milk",
+  "amount": 1000
+ },
+ "time": 200,
+ "strokes": 10,
+ "results": [
+  {
+   "item": "pioneers:cream",
+   "count": 2
+  }
+ ]
+}

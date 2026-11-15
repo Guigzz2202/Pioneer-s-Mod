@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:cleanroom_casing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:glass_fiber"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cartridge_filter"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cooling_fan"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:led"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:cleanroom_filter",
+  "count": 1
+ }
+}

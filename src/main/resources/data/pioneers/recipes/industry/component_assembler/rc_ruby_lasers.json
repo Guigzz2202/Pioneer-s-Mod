@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/ruby"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:silvered_mirror"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:neon_tube"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ruby_laser",
+   "count": 2
+  }
+ ]
+}

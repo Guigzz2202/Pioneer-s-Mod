@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 20,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:mercury_regolith"
+    },
+    "state": {
+     "Name": "pioneers:hollow_crust"
+    }
+   },
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:mercury_dark_rock"
+    },
+    "state": {
+     "Name": "pioneers:hollow_crust"
+    }
+   }
+  ]
+ }
+}

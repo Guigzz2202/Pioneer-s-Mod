@@ -1,0 +1,23 @@
+{
+ "parent": "pioneers:journey/j_atom_09",
+ "display": {
+  "icon": {
+   "item": "pioneers:space_suit_helmet"
+  },
+  "title": {
+   "translate": "advancements.pioneers.journey.j_atom_10.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.journey.j_atom_10.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": false,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

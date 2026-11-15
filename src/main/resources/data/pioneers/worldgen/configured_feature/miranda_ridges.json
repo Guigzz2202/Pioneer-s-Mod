@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "pioneers:miranda_banded_ice"
+  },
+  "mode": "ridge",
+  "min_length": 18,
+  "max_length": 28,
+  "width": 3,
+  "depth": 3,
+  "curl": 0.35
+ }
+}

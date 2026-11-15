@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:krakenite_plate",
+  "pioneers:krakenite_rod",
+  "pioneers:krakenite_billet"
+ ]
+}

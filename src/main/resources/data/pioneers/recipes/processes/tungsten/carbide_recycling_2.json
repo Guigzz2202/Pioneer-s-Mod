@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:carbide_scrap"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/zinc"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:friable_carbide",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_zinc",
+   "amount": 130
+  }
+ ],
+ "temperature": 900
+}

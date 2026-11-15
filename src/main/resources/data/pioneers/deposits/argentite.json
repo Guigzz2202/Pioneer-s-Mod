@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:argentite",
+ "material": "argentite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  24000,
+  80000
+ ],
+ "color": "#BEC4CE",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_mountain",
+   "weight": 4
+  },
+  {
+   "biomes": "#minecraft:is_badlands",
+   "weight": 3
+  }
+ ]
+}

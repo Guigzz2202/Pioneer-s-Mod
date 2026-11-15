@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:drying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "pioneers:food/smokable_game"
+   },
+   "count": 1
+  }
+ ],
+ "time": 3000,
+ "results": [
+  {
+   "item": "pioneers:dried_game_meat",
+   "count": 1
+  }
+ ]
+}

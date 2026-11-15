@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 0,
+ "time": 220,
+ "family": "forge",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tempered_steel_ingot"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_mortar_bowl",
+   "count": 1
+  }
+ ],
+ "industrial": true,
+ "temperature": 900
+}

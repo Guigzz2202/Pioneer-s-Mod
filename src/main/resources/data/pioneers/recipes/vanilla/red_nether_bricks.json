@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:nether_brick"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:nether_wart"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "minecraft:red_nether_bricks",
+  "count": 1
+ }
+}

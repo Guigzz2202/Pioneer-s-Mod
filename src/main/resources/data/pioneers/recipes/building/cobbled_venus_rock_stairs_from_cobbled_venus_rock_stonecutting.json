@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:cobbled_venus_rock"
+ },
+ "result": "pioneers:cobbled_venus_rock_stairs",
+ "count": 1
+}

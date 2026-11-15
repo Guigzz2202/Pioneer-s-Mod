@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 400,
+ "family": "photobioreactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:microalgae"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:digestate",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:microalgae",
+   "count": 4
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:oxygen",
+   "amount": 500
+  }
+ ]
+}

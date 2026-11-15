@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rod_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_silver",
+   "amount": 228
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silver_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:rod_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:silver_nugget",
+   "count": 5
+  },
+  {
+   "item": "pioneers:silver_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

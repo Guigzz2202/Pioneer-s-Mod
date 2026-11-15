@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:cutting",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:mutton"
+   },
+   "count": 1
+  }
+ ],
+ "time": 200,
+ "strokes": 3,
+ "results": [
+  {
+   "item": "pioneers:minced_meat",
+   "count": 2
+  }
+ ]
+}

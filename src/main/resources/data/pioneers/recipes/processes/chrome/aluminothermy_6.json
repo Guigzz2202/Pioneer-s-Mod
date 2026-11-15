@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "family": "reduction_furnace",
+ "tier": 1,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:chromium_oxide"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/aluminium"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:chrome_dust",
+   "count": 2
+  },
+  {
+   "item": "pioneers:alumina",
+   "count": 1
+  }
+ ]
+}

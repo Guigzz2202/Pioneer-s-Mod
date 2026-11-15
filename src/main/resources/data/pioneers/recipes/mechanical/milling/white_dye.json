@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "minecraft:lily_of_the_valley"
+ },
+ "count": 1,
+ "turns": 2,
+ "results": [
+  {
+   "item": "minecraft:white_dye",
+   "count": 3
+  }
+ ]
+}

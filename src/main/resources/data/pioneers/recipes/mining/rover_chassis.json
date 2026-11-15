@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "MAM",
+  "M M",
+  "MMM"
+ ],
+ "key": {
+  "M": {
+   "tag": "forge:plates/meteoritite"
+  },
+  "A": {
+   "tag": "forge:plates/stainless_steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:rover_chassis",
+  "count": 2
+ }
+}

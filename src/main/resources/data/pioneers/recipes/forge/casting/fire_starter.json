@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "minecraft:stick"
+  },
+  {
+   "item": "minecraft:stick"
+  },
+  {
+   "item": "minecraft:stick"
+  },
+  {
+   "item": "pioneers:plant_fiber"
+  },
+  {
+   "item": "pioneers:plant_fiber"
+  }
+ ],
+ "result": {
+  "item": "pioneers:fire_starter"
+ }
+}

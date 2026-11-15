@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:foils/nickel",
+  "#forge:foils/silver",
+  "#forge:foils/aluminium",
+  "#forge:foils/platinum",
+  "#forge:foils/electrum",
+  "#forge:foils/copper",
+  "#forge:foils/gold"
+ ]
+}

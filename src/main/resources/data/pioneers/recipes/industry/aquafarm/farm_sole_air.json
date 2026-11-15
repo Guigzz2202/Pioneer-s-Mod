@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "aquafarm",
+ "tier": 0,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sole"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fish_feed"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sole",
+   "count": 5
+  },
+  {
+   "item": "minecraft:bone_meal",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "pressure": 2,
+ "air": 400
+}

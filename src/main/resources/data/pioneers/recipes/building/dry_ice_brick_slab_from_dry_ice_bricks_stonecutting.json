@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:dry_ice_bricks"
+ },
+ "result": "pioneers:dry_ice_brick_slab",
+ "count": 2
+}

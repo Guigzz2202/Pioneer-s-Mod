@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:triton_rock"
+ },
+ "result": "pioneers:polished_triton_rock_wall",
+ "count": 1
+}

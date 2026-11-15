@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "transporter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:basic_track"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stone_pressure_plate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:detector_track",
+  "count": 4
+ }
+}

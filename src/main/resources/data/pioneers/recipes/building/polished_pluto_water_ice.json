@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:packed_pluto_water_ice"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_pluto_water_ice",
+  "count": 4
+ }
+}

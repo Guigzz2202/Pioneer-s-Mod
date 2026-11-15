@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:printed_circuit_board"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:brass_connector"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electrolytic_capacitor"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quartz_oscillator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferrite_inductor"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:motherboard",
+   "count": 2
+  }
+ ]
+}

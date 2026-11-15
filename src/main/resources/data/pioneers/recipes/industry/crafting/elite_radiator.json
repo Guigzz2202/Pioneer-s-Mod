@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/titanium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/copper"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_elite"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:elite_radiator",
+  "count": 1
+ }
+}

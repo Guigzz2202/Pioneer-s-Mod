@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "aI ",
+  "IDI",
+  "ISI"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:plates/mercurium"
+  },
+  "S": {
+   "tag": "forge:rods/steel"
+  },
+  "D": {
+   "tag": "forge:rods/tharsium"
+  },
+  "a": {
+   "tag": "forge:rods/tungsten_carbide"
+  }
+ },
+ "result": {
+  "item": "pioneers:drill_head_mercurium"
+ }
+}

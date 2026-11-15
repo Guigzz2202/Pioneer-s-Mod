@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:io_basalt",
+  "pioneers:io_sulfur",
+  "pioneers:io_red_sulfur",
+  "pioneers:io_so2_frost"
+ ]
+}

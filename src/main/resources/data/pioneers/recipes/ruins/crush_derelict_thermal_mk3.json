@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "item": "pioneers:derelict_thermal_mk3"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:scrap_thermal_mk3",
+  "count": 2
+ }
+}

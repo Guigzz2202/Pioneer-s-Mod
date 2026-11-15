@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 1,
+ "time": 200,
+ "family": "distillation_tower",
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 120
+  }
+ ],
+ "industrial": true
+}

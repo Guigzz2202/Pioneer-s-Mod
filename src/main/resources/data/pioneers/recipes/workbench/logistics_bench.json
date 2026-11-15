@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PWP",
+  "GBG",
+  "S S"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/steel"
+  },
+  "W": {
+   "tag": "forge:tools/wrench"
+  },
+  "G": {
+   "tag": "forge:gears/steel"
+  },
+  "B": {
+   "item": "pioneers:transporter_bench"
+  },
+  "S": {
+   "tag": "forge:rods/steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:logistics_bench",
+  "count": 1
+ }
+}

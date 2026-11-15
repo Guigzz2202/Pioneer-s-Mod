@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:unfired_cup"
+ },
+ "temperature": 700,
+ "time": 200,
+ "result": {
+  "item": "pioneers:cup"
+ }
+}

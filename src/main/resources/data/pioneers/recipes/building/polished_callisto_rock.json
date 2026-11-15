@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:callisto_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_callisto_rock",
+  "count": 4
+ }
+}

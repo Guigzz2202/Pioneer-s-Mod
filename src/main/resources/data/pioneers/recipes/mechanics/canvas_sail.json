@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SCC",
+  "SCC",
+  "S  "
+ ],
+ "key": {
+  "S": {
+   "tag": "forge:rods/wooden"
+  },
+  "C": {
+   "item": "pioneers:canvas"
+  }
+ },
+ "result": {
+  "item": "pioneers:canvas_sail",
+  "count": 1
+ }
+}

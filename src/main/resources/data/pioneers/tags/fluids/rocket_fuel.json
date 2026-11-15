@@ -1,0 +1,17 @@
+{
+ "replace": false,
+ "values": [
+  {
+   "id": "mekanism:hydrogen",
+   "required": false
+  },
+  {
+   "id": "#forge:hydrogen",
+   "required": false
+  },
+  "pioneers:kerolox",
+  "pioneers:hydrolox",
+  "pioneers:liquid_hydrogen",
+  "pioneers:fusion_propellant"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillation_column",
+ "tier": 0,
+ "time": 80,
+ "family": "stripper",
+ "fluids": [
+  {
+   "fluid": "pioneers:sour_water",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 200
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_sulfide",
+   "amount": 100
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "family": "vacuum_furnace",
+ "tier": 2,
+ "time": 900,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:titanium_scrap_bale"
+   },
+   "count": 5
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_ingot",
+   "count": 19
+  }
+ ],
+ "temperature": 1700
+}

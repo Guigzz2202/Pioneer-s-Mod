@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:frying",
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:batter"
+   },
+   "count": 1
+  }
+ ],
+ "time": 140,
+ "results": [
+  {
+   "item": "pioneers:pancakes",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 80,
+ "family": "oil_press",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:pufferfish"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fish_meal",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:fish_oil",
+   "amount": 40
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dryer",
+ "tier": 0,
+ "time": 900,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tobacco_leaf"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cured_tobacco",
+   "count": 1
+  }
+ ]
+}

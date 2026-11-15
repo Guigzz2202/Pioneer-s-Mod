@@ -1,0 +1,13 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "liquid_combustion_generator",
+ "tier": 0,
+ "time": 200,
+ "fluids": [
+  {
+   "fluid": "pioneers:biodiesel",
+   "amount": 100
+  }
+ ],
+ "energy": 3072
+}

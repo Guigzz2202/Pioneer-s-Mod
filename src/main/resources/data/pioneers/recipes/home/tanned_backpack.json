@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:tanned_leather"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_rope"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_ring"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:tanned_backpack",
+  "count": 1
+ }
+}

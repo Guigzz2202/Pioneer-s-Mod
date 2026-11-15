@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:planks"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:paper"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:letter_bin",
+  "count": 1
+ }
+}

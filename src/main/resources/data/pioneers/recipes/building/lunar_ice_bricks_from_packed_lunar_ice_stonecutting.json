@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:packed_lunar_ice"
+ },
+ "result": "pioneers:lunar_ice_bricks",
+ "count": 1
+}

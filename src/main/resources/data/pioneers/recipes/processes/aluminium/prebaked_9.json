@@ -1,0 +1,41 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "family": "potline",
+ "tier": 1,
+ "time": 240,
+ "industrial": true,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:alumina"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:prebaked_anode"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:cryolite",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_ingot",
+   "count": 4
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 60
+  }
+ ],
+ "temperature": 960
+}

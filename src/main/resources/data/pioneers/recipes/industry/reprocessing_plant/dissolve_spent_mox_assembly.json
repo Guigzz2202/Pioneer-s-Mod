@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 600,
+ "family": "reprocessing_plant",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:spent_mox_assembly"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cladding_hulls",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:dissolved_fuel",
+   "amount": 2000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:krypton",
+   "amount": 50
+  }
+ ],
+ "industrial": true
+}

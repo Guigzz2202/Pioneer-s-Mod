@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:launch_pad",
+  "pioneers:launch_pad_core",
+  "pioneers:launch_port"
+ ]
+}

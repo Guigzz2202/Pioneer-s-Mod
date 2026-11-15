@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crusher",
+ "tier": 3,
+ "time": 100,
+ "family": "ball_mill",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/stellite"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 10
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellite_dust",
+   "count": 1
+  }
+ ]
+}

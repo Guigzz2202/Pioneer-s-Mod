@@ -1,0 +1,22 @@
+{
+ "result": "pioneers:ilmenite",
+ "material": "ilmenite",
+ "dimension": "minecraft:overworld",
+ "tier": 2,
+ "reserve": [
+  8000,
+  24000
+ ],
+ "color": "#6E6E7C",
+ "fallback": 1,
+ "biomes": [
+  {
+   "biomes": "#minecraft:is_beach",
+   "weight": 2
+  },
+  {
+   "biomes": "#minecraft:is_ocean",
+   "weight": 1
+  }
+ ]
+}

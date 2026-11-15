@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "aG ",
+  "ICI",
+  "IEI"
+ ],
+ "key": {
+  "G": {
+   "tag": "forge:glass_panes"
+  },
+  "I": {
+   "tag": "forge:plates/steel"
+  },
+  "C": {
+   "tag": "pioneers:circuits/basic"
+  },
+  "E": {
+   "item": "pioneers:zinc_carbon_cell"
+  },
+  "a": {
+   "tag": "forge:wires/invar"
+  }
+ },
+ "result": {
+  "item": "pioneers:surface_scanner"
+ }
+}

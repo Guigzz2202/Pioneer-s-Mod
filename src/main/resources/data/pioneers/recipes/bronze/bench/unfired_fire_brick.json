@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "potter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:fire_clay"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:unfired_fire_brick",
+  "count": 1
+ }
+}

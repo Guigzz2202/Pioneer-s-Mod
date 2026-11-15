@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "FPF",
+  "FCF",
+  "FFF"
+ ],
+ "key": {
+  "F": {
+   "item": "pioneers:fire_brick"
+  },
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "C": {
+   "item": "pioneers:crucible"
+  }
+ },
+ "result": {
+  "item": "pioneers:blast_furnace",
+  "count": 1
+ }
+}

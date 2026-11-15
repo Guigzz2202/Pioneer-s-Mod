@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_cell",
+ "tier": 2,
+ "time": 400,
+ "family": "reprocessing_plant",
+ "fluids": [
+  {
+   "fluid": "pioneers:uranyl_nitrate",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:uranium_trioxide",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 600
+  }
+ ],
+ "industrial": true
+}

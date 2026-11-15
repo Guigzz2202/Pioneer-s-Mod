@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:chest"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:bamboo_raft"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:bamboo_chest_raft",
+  "count": 1
+ }
+}

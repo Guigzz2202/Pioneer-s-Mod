@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:enceladus_ice_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:enceladus_ice_brick_wall",
+  "count": 6
+ }
+}

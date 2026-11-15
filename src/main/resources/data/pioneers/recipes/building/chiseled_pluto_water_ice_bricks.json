@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#",
+  "#"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:pluto_water_ice_brick_slab"
+  }
+ },
+ "result": {
+  "item": "pioneers:chiseled_pluto_water_ice_bricks",
+  "count": 1
+ }
+}

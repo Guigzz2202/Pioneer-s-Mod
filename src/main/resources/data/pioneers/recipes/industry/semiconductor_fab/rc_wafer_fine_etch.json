@@ -1,0 +1,52 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "semiconductor_fab",
+ "tier": 1,
+ "time": 220,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:implanted_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fluorite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photomask"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 50
+  },
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 100
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fine_etched_wafer",
+   "count": 1
+  },
+  {
+   "item": "pioneers:photomask",
+   "count": 1
+  }
+ ]
+}

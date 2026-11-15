@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/stainless_steel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_cladding_tube"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:fast_fuel_channel",
+  "count": 2
+ }
+}

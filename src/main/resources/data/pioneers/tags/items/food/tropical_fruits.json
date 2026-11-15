@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:pineapple",
+  "pioneers:starfruit",
+  "pioneers:mango",
+  "pioneers:banana",
+  "pioneers:pomegranate"
+ ]
+}

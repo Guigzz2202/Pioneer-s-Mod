@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "compressor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "pioneers:fire_clay"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "pioneers:unfired_fire_brick",
+  "count": 4
+ },
+ "time": 80
+}

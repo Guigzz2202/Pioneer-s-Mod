@@ -1,0 +1,66 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:nitinol_pickaxe"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.tools_tier5.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.tools_tier5.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:osmiridium_pickaxe"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:titanium_aluminide_pickaxe"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:nitinol_pickaxe"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/tools_tier4",
+ "rewards": {
+  "experience": 500
+ }
+}

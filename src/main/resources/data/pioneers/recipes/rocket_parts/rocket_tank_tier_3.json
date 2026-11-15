@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_fuselage_panel"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:polystyrene_foam"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_fluid_buffer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/marsium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/deimite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/phobite"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:rocket_tank_tier_3",
+  "count": 1
+ }
+}

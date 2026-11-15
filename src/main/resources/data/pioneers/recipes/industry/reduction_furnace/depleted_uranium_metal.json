@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "furnace",
+ "tier": 1,
+ "time": 300,
+ "family": "reduction_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:depleted_uranium_tetrafluoride"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:dusts/magnesium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 25
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:depleted_uranium_ingot",
+   "count": 1
+  },
+  {
+   "item": "pioneers:magnesium_fluoride",
+   "count": 1
+  }
+ ]
+}

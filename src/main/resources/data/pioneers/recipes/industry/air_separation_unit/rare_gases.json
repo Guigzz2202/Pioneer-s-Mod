@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 1,
+ "time": 600,
+ "family": "air_separation_unit",
+ "gas_results": [
+  {
+   "gas": "pioneers:neon",
+   "amount": 20
+  },
+  {
+   "gas": "pioneers:krypton",
+   "amount": 4
+  },
+  {
+   "gas": "pioneers:xenon",
+   "amount": 1
+  }
+ ],
+ "industrial": true
+}

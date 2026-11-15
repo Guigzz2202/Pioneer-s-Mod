@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "cracker",
+ "tier": 0,
+ "time": 200,
+ "family": "steam_cracker",
+ "fluids": [
+  {
+   "fluid": "pioneers:gas_condensate",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:steam",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:benzene",
+   "amount": 80
+  },
+  {
+   "fluid": "pioneers:fuel_oil",
+   "amount": 40
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:ethylene",
+   "amount": 320
+  },
+  {
+   "gas": "pioneers:propylene",
+   "amount": 160
+  },
+  {
+   "gas": "pioneers:butadiene",
+   "amount": 70
+  },
+  {
+   "gas": "pioneers:refinery_gas",
+   "amount": 150
+  }
+ ],
+ "industrial": true
+}

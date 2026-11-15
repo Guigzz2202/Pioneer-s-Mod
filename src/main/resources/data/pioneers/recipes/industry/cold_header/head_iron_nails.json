@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 1,
+ "time": 80,
+ "family": "cold_header",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:wires/iron"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:iron_nail",
+   "count": 16
+  }
+ ]
+}

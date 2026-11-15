@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 0,
+ "time": 60,
+ "gases": [
+  {
+   "gas": "pioneers:natural_gas",
+   "amount": 1000
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:natural_gas",
+   "amount": 990
+  },
+  {
+   "gas": "pioneers:helium",
+   "amount": 10
+  }
+ ]
+}

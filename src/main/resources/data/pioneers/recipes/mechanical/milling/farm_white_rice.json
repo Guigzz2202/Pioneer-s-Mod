@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:milling",
+ "input": {
+  "item": "pioneers:paddy_rice"
+ },
+ "count": 1,
+ "turns": 4,
+ "results": [
+  {
+   "item": "pioneers:white_rice",
+   "count": 1
+  },
+  {
+   "item": "pioneers:white_rice",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

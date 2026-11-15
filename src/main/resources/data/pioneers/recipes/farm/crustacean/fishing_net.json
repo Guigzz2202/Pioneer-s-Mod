@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "agricultural",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:fiber_rope"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:stick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:flint"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:fishing_net",
+  "count": 1
+ }
+}

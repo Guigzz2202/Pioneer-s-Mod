@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:venus_sandstone"
+ },
+ "result": "pioneers:venus_sandstone_brick_wall",
+ "count": 1
+}

@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PWP",
+  "GBG",
+  "S S"
+ ],
+ "key": {
+  "P": {
+   "tag": "forge:plates/steel"
+  },
+  "W": {
+   "tag": "forge:tools/wrench"
+  },
+  "G": {
+   "tag": "forge:wires/copper"
+  },
+  "B": {
+   "item": "pioneers:components_bench"
+  },
+  "S": {
+   "tag": "forge:rods/steel"
+  }
+ },
+ "result": {
+  "item": "pioneers:advanced_components_bench",
+  "count": 1
+ }
+}

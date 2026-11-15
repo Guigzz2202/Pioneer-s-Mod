@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#",
+  "#"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:moon_rock_brick_slab"
+  }
+ },
+ "result": {
+  "item": "pioneers:chiseled_moon_rock_bricks",
+  "count": 1
+ }
+}

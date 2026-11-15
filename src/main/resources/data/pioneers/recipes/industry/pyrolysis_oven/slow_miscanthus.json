@@ -1,0 +1,36 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pyrolysis_oven",
+ "tier": 0,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:miscanthus"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:biochar",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:wood_vinegar",
+   "amount": 80
+  },
+  {
+   "fluid": "pioneers:wood_tar",
+   "amount": 30
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:wood_gas",
+   "amount": 150
+  }
+ ]
+}

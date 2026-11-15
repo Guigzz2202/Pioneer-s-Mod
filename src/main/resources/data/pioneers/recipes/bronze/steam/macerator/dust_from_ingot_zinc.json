@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "macerator",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/zinc"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:zinc_dust",
+  "count": 1
+ },
+ "time": 120
+}

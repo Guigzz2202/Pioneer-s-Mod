@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sawmill",
+ "tier": 0,
+ "time": 140,
+ "family": "wafer_saw",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:silicon_boule"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ultrapure_water",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silicon_wafer",
+   "count": 8
+  },
+  {
+   "item": "pioneers:silicon",
+   "count": 1
+  }
+ ]
+}

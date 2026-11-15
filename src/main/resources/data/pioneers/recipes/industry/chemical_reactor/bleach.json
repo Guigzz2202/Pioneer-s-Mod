@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 60,
+ "fluids": [
+  {
+   "fluid": "pioneers:caustic_soda",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:sodium_hypochlorite",
+   "amount": 500
+  },
+  {
+   "fluid": "pioneers:brine",
+   "amount": 100
+  }
+ ]
+}

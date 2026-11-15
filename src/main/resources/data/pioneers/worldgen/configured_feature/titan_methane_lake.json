@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:flat_pool",
+ "config": {
+  "fluid": {
+   "Name": "minecraft:water",
+   "Properties": {
+    "level": "0"
+   }
+  },
+  "barrier": {
+   "Name": "pioneers:titan_ice"
+  },
+  "min_radius": 4,
+  "max_radius": 8,
+  "scorch": 0.0
+ }
+}

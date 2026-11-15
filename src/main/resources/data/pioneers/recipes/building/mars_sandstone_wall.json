@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:mars_sandstone"
+  }
+ },
+ "result": {
+  "item": "pioneers:mars_sandstone_wall",
+  "count": 6
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:crushing",
+ "input": {
+  "tag": "forge:raw_materials/zinc"
+ },
+ "count": 1,
+ "result": {
+  "item": "pioneers:crushed_zinc",
+  "count": 2
+ }
+}

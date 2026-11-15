@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "fermenter",
+ "tier": 0,
+ "time": 1200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bok_choy"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dried_chili"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:kimchi",
+   "count": 3
+  }
+ ]
+}

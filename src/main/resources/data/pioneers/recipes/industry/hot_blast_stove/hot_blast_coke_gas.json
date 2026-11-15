@@ -1,0 +1,19 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hot_blast_stove",
+ "tier": 0,
+ "time": 60,
+ "gases": [
+  {
+   "gas": "pioneers:coke_oven_gas",
+   "amount": 200
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:hot_air",
+   "amount": 1000
+  }
+ ],
+ "industrial": true
+}

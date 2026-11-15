@@ -1,0 +1,19 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:tungsten_nugget",
+  "pioneers:tungsten_ring",
+  "pioneers:tungsten_rod",
+  "pioneers:tungsten_plate",
+  "pioneers:tungsten_dust",
+  "pioneers:tungsten_wire",
+  "pioneers:tungsten_block",
+  "pioneers:tungsten_bolt",
+  "pioneers:tungsten_gear",
+  "pioneers:tungsten_spring",
+  "pioneers:tungsten_ingot",
+  "pioneers:tungsten_screw",
+  "pioneers:tungsten_sheet",
+  "pioneers:tungsten_billet"
+ ]
+}

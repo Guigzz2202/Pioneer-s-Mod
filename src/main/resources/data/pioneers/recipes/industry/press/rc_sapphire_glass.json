@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 1,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:gems/sapphire"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_disc"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sapphire_glass",
+   "count": 4
+  },
+  {
+   "item": "pioneers:diamond_disc",
+   "count": 1,
+   "chance": 0.9
+  }
+ ]
+}

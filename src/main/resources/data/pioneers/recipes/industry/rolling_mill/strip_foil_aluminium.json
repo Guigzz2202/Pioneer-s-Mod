@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 2,
+ "time": 360,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_slab"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_foil",
+   "count": 36
+  }
+ ]
+}

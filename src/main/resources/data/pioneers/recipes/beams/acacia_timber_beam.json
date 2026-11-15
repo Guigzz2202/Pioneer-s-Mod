@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "minecraft:acacia_logs"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:acacia_timber_beam",
+  "count": 1
+ }
+}

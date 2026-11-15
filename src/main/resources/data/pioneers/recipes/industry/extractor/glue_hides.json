@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:rabbit_hide"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hide_glue",
+   "count": 2
+  },
+  {
+   "item": "pioneers:compost",
+   "count": 1,
+   "chance": 0.5
+  }
+ ]
+}

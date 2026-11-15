@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:alumina"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:resin_glue"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/zircon"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:abrasive_disc",
+  "count": 1
+ }
+}

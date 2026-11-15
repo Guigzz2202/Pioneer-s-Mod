@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_mars_rock"
+ },
+ "result": "pioneers:mars_rock_bricks",
+ "count": 1
+}

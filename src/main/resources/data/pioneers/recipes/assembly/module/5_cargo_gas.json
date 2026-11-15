@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:assembly",
+ "station": "module",
+ "pattern": [
+  "aa........",
+  "...PPPP...",
+  "...PXXP...",
+  "...PPPP...",
+  ".........."
+ ],
+ "key": {
+  "P": {
+   "item": "pioneers:aluminium_fuselage_panel"
+  },
+  "X": {
+   "item": "pioneers:basic_gas_buffer"
+  },
+  "a": {
+   "tag": "forge:pipes/aluminium"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_module_cargo_gas"
+ },
+ "energy": 6000000,
+ "duration": 200,
+ "blueprint": "pioneers:rocket_blueprint_cargo"
+}

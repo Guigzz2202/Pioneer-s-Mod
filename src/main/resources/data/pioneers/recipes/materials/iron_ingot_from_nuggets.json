@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/iron"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  },
+  {
+   "tag": "forge:nuggets/iron"
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_ingot",
+  "count": 1
+ }
+}

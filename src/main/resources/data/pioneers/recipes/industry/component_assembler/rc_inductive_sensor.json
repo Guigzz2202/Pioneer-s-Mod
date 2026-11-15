@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferrite_magnet"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:primitive_plastic"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:inductive_sensor",
+   "count": 2
+  }
+ ]
+}

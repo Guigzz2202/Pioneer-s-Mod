@@ -1,0 +1,34 @@
+{
+ "order": 9,
+ "affinities": [
+  "trade",
+  "logistics"
+ ],
+ "feature": "economy",
+ "emblem": "pioneers:textures/gui/pioneer/vocation/trader.png",
+ "advantage": {
+  "trait": "haggling",
+  "modifiers": [
+   {
+    "key": "trader.buy",
+    "value": -0.1,
+    "unit": "pct"
+   },
+   {
+    "key": "trader.sell",
+    "value": 0.1,
+    "unit": "pct"
+   }
+  ]
+ },
+ "defect": {
+  "trait": "conspicuous",
+  "modifiers": [
+   {
+    "key": "trader.detection",
+    "value": 0.15,
+    "unit": "pct"
+   }
+  ]
+ }
+}

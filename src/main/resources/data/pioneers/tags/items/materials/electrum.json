@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "pioneers:electrum_nugget",
+    "pioneers:electrum_ring",
+    "pioneers:electrum_rod",
+    "pioneers:electrum_plate",
+    "pioneers:electrum_dust",
+    "pioneers:electrum_wire",
+    "pioneers:electrum_block",
+    "pioneers:electrum_gear",
+    "pioneers:electrum_foil",
+    "pioneers:electrum_spring",
+    "pioneers:electrum_ingot"
+  ]
+}

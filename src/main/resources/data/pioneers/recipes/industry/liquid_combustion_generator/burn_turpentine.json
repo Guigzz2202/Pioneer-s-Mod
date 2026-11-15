@@ -1,0 +1,13 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "liquid_combustion_generator",
+ "tier": 0,
+ "time": 160,
+ "fluids": [
+  {
+   "fluid": "pioneers:turpentine",
+   "amount": 100
+  }
+ ],
+ "energy": 2048
+}

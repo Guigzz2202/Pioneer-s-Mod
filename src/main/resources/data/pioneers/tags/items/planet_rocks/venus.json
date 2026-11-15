@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:venus_rock",
+  "pioneers:venus_basalt",
+  "pioneers:venus_regolith",
+  "pioneers:venus_ash"
+ ]
+}

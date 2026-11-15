@@ -1,0 +1,16 @@
+{
+ "replace": false,
+ "values": [
+  "minecraft:lectern",
+  "minecraft:jukebox",
+  "#minecraft:flower_pots",
+  "minecraft:chiseled_bookshelf",
+  "minecraft:decorated_pot",
+  "#minecraft:campfires",
+  "minecraft:composter",
+  "minecraft:cauldron",
+  "minecraft:water_cauldron",
+  "minecraft:lava_cauldron",
+  "minecraft:powder_snow_cauldron"
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:enameled_wire"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ferrite_magnet"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:choke_coil",
+  "count": 2
+ }
+}

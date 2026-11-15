@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "##",
+  "##"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:ceres_rock"
+  }
+ },
+ "result": {
+  "item": "pioneers:polished_ceres_rock",
+  "count": 4
+ }
+}

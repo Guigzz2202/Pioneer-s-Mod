@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 0,
+ "time": 80,
+ "family": "catalytic_reactor",
+ "gases": [
+  {
+   "gas": "pioneers:ethylene",
+   "amount": 500
+  },
+  {
+   "gas": "pioneers:chlorine",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:dichloroethane",
+   "amount": 500
+  }
+ ]
+}

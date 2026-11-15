@@ -1,0 +1,54 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:pig_iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:crankshaft"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:camshaft"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:poppet_valve"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston_ring"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plain_bearing"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:engine_block",
+  "count": 1
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 0,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pig_iron"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:crankshaft"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:camshaft"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:poppet_valve"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston_ring"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plain_bearing"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:engine_block",
+   "count": 2
+  }
+ ]
+}

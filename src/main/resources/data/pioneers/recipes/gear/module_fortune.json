@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "equipment",
+ "ingredients": [
+  {
+   "item": "pioneers:module_frame"
+  },
+  {
+   "item": "pioneers:gold_plate"
+  },
+  {
+   "item": "pioneers:lapis"
+  },
+  {
+   "item": "pioneers:lapis"
+  },
+  {
+   "item": "pioneers:circuit_mk2"
+  }
+ ],
+ "result": {
+  "item": "pioneers:module_fortune",
+  "count": 1
+ }
+}

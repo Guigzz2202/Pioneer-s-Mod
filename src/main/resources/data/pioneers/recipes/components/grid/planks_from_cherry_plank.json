@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+  {
+   "item": "pioneers:cherry_plank"
+  },
+  {
+   "item": "pioneers:cherry_plank"
+  },
+  {
+   "item": "pioneers:cherry_plank"
+  },
+  {
+   "item": "pioneers:cherry_plank"
+  }
+ ],
+ "result": {
+  "item": "minecraft:cherry_planks",
+  "count": 1
+ }
+}

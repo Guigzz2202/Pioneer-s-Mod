@@ -1,0 +1,46 @@
+{
+ "_doc": "MAJ RP bloc 4 (par. 10) : diplomatie et guerre. Temps REEL du serveur ; creneaux en heures de l'horloge locale du serveur.",
+ "declaration": {
+  "cost": 500,
+  "reason_max": 100,
+  "notice_hours": 24,
+  "min_age_days": 3,
+  "max_ratio": 4.0,
+  "member_floor": 10,
+  "max_outgoing": 1,
+  "max_wars": 3,
+  "_doc": "member_floor : potentiel minimal compte par membre actif dans le rapport de force (un pionnier n'est jamais nul)."
+ },
+ "windows": {
+  "count": 2,
+  "hours": 2,
+  "change_days": 7,
+  "default": [
+   19,
+   21
+  ]
+ },
+ "siege": {
+  "radius": 8,
+  "check_ticks": 20,
+  "capture_minutes": 10,
+  "capture_minutes_offline": 30,
+  "captures_per_day": 3,
+  "hold_minutes": 15,
+  "idle_seconds": 300,
+  "seal_hours": 24,
+  "town_hall_share": 0.5,
+  "_doc": "idle_seconds : le drapeau tombe sans attaquant a portee pendant ce temps."
+ },
+ "end": {
+  "expire_days": 7,
+  "truce_days": 3,
+  "tribute_share": 0.05,
+  "tribute_max": 5000
+ },
+ "treaties": {
+  "non_aggression_days": 7,
+  "rupture_hours": 24,
+  "offer_hours": 48
+ }
+}

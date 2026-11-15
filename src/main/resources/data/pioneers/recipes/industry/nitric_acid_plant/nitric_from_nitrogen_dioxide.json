@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 200,
+ "family": "nitric_acid_plant",
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen_dioxide",
+   "amount": 1000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 650
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitric_oxide",
+   "amount": 300
+  }
+ ],
+ "industrial": true
+}

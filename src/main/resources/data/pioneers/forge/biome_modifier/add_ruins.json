@@ -1,0 +1,9 @@
+{
+ "type": "forge:add_features",
+ "biomes": "#minecraft:is_overworld",
+ "features": [
+  "pioneers:ruin",
+  "pioneers:ruin_annex"
+ ],
+ "step": "surface_structures"
+}

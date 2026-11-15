@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "logistics",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_fuselage_panel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/sputnikite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heat_shield_tile"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/mordorite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/valhallite"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:rocket_wing_tier_11",
+  "count": 2
+ }
+}

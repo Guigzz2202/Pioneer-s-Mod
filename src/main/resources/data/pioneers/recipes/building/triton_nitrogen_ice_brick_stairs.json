@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "#  ",
+  "## ",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "item": "pioneers:triton_nitrogen_ice_bricks"
+  }
+ },
+ "result": {
+  "item": "pioneers:triton_nitrogen_ice_brick_stairs",
+  "count": 4
+ }
+}

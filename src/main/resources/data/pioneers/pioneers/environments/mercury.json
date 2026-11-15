@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:mercury",
+ "gravity": 0.38,
+ "breathable": false,
+ "suit_tier": 3,
+ "hazard": "heat",
+ "nitrogen": 0,
+ "temperature": 167
+}

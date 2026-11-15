@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 40,
+ "fluids": [
+  {
+   "fluid": "pioneers:hydrofluoric_acid",
+   "amount": 250
+  },
+  {
+   "fluid": "pioneers:nitric_acid",
+   "amount": 250
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:etchant",
+   "amount": 500
+  }
+ ]
+}

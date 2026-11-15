@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 2,
+ "time": 290,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:duralumin_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:duralumin_ring",
+   "count": 32
+  },
+  {
+   "item": "pioneers:duralumin_nugget",
+   "count": 9
+  }
+ ]
+}

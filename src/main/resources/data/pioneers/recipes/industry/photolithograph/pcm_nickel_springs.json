@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:foils/nickel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:engraving_objectives/glass"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nickel_spring",
+   "count": 1
+  }
+ ]
+}

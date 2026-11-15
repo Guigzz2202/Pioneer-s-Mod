@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "compressor",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:sand"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "minecraft:sandstone",
+  "count": 1
+ },
+ "time": 160
+}

@@ -1,0 +1,37 @@
+{
+ "type": "pioneers:assembly",
+ "station": "rocket",
+ "pattern": [
+  ".WW.......",
+  "AWPPPPPP..",
+  "BTTTTPPPPN",
+  "AWPPPPPP..",
+  ".WW......."
+ ],
+ "key": {
+  "A": {
+   "item": "pioneers:rocket_aux_booster_tier_6"
+  },
+  "B": {
+   "item": "pioneers:rocket_booster_tier_6"
+  },
+  "N": {
+   "item": "pioneers:rocket_nose_cone_tier_6"
+  },
+  "P": {
+   "item": "pioneers:carbon_fuselage_panel"
+  },
+  "T": {
+   "item": "pioneers:rocket_tank_tier_6"
+  },
+  "W": {
+   "item": "pioneers:rocket_wing_tier_6"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_tier_6"
+ },
+ "energy": 350000000,
+ "duration": 1000,
+ "blueprint": "pioneers:rocket_blueprint_tier_6"
+}

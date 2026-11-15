@@ -1,0 +1,12 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:treated_greenhouse_glass",
+  "pioneers:treated_greenhouse_frame",
+  "pioneers:treated_greenhouse_vent",
+  "pioneers:iron_greenhouse_glass",
+  "pioneers:iron_greenhouse_frame",
+  "pioneers:iron_greenhouse_vent",
+  "pioneers:greenhouse_regulator"
+ ]
+}

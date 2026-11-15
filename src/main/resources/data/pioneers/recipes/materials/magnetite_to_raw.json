@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:magnetite_fragment"
+  },
+  {
+   "item": "pioneers:magnetite_fragment"
+  },
+  {
+   "item": "pioneers:magnetite_fragment"
+  },
+  {
+   "item": "pioneers:magnetite_fragment"
+  }
+ ],
+ "result": {
+  "item": "pioneers:raw_iron",
+  "count": 1
+ }
+}

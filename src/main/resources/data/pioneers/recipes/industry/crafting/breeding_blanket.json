@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_tile"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beryllium_pebbles"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:first_wall_panel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lithium_ceramic_pebbles"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/zircaloy"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:breeding_blanket",
+  "count": 8
+ }
+}

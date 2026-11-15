@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "extractor",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "minecraft:wool"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:string",
+  "count": 4
+ },
+ "time": 120
+}

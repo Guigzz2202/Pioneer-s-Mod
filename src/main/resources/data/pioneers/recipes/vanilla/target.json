@@ -1,0 +1,23 @@
+{
+ "type": "pioneers:bench",
+ "bench": "redstoner",
+ "tools": [],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:dusts/redstone"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:hay_block"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:target",
+  "count": 1
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 60,
+ "family": "oil_press",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:sugar_cane"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:press_cake",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:cane_juice",
+   "amount": 250
+  }
+ ]
+}

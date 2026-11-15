@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "ore_separator",
+ "family": "magnetic_separator",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crushed_ilmenite"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ilmenite_concentrate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:iron_dust",
+   "count": 1,
+   "chance": 0.3
+  }
+ ],
+ "ore": true
+}

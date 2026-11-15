@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 240,
+ "family": "fluidized_bed_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:uranium_tetrafluoride"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:fluorine",
+   "amount": 500
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:uranium_hexafluoride",
+   "amount": 1000
+  }
+ ]
+}

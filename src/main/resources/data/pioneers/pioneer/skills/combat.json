@@ -1,0 +1,17 @@
+{
+ "order": 9,
+ "icon": "pioneers:textures/gui/pioneer/skill/combat.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "combat.damage",
+   "value": 0.15,
+   "unit": "pct"
+  },
+  {
+   "key": "combat.sentinel_damage_taken",
+   "value": -0.25,
+   "unit": "pct"
+  }
+ ]
+}

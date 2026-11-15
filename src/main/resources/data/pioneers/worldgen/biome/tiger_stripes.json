@@ -1,0 +1,52 @@
+{
+ "has_precipitation": false,
+ "temperature": -0.7,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 0,
+  "fog_color": 0,
+  "water_color": 4159204,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.distant",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:enceladus_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [],
+  [],
+  [
+   "pioneers:enceladus_tiger_stripes",
+   "pioneers:enceladus_stripe_ridges"
+  ],
+  [],
+  [
+   "pioneers:enceladus_blue_patches",
+   "pioneers:tigrite_ore"
+  ],
+  [],
+  [],
+  [
+   "pioneers:geyser_plume",
+   "pioneers:tiger_grass",
+   "pioneers:meteorite_ice_rare"
+  ]
+ ]
+}

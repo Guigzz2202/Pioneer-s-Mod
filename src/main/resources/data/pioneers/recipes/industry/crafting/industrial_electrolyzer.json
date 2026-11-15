@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_anode"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:oil_transformer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:graphite_electrode"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:industrial_electrolyzer",
+  "count": 1
+ }
+}

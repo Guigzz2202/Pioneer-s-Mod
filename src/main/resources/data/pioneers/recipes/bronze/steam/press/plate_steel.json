@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "press",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plate_die"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:steel_plate",
+  "count": 1
+ },
+ "time": 100,
+ "byproduct": {
+  "item": "pioneers:plate_die",
+  "count": 1
+ },
+ "chance": 1.0
+}

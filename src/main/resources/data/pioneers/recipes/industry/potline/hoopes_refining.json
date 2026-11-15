@@ -1,0 +1,35 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electrolyzer",
+ "tier": 2,
+ "time": 300,
+ "family": "potline",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/aluminium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/copper"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:cryolite",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_ingot",
+   "count": 4
+  }
+ ],
+ "industrial": true,
+ "pure": true
+}

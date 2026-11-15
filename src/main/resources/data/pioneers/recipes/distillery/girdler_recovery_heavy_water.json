@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "distillery",
+ "tier": 1,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:heavy_hydrogen_sulfide",
+   "amount": 100
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:heavy_water",
+   "amount": 100
+  }
+ ]
+}

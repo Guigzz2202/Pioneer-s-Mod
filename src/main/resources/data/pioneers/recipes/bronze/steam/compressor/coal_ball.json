@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "compressor",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "minecraft:coals"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:coal_ball",
+  "count": 1
+ },
+ "time": 80
+}

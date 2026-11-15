@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 2,
+ "time": 145,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/nitinol"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nitinol_wire",
+   "count": 1
+  }
+ ]
+}

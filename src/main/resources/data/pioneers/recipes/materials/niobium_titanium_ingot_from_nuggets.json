@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  },
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  },
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  },
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  },
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  },
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  },
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  },
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  },
+  {
+   "tag": "forge:nuggets/niobium_titanium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:niobium_titanium_ingot",
+  "count": 1
+ }
+}

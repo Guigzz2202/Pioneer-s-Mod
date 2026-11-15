@@ -1,0 +1,11 @@
+{
+ "type": "pioneers:compressing",
+ "input": {
+  "tag": "forge:raw_materials/lead"
+ },
+ "count": 9,
+ "result": {
+  "item": "pioneers:raw_lead_block",
+  "count": 1
+ }
+}

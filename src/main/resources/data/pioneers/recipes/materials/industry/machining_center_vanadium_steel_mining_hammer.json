@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 2,
+ "time": 420,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/vanadium_steel"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_mining_hammer_head",
+   "count": 1
+  }
+ ]
+}

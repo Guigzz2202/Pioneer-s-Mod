@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "III",
+  "III",
+  "III"
+ ],
+ "key": {
+  "I": {
+   "tag": "forge:ingots/constantan"
+  }
+ },
+ "result": {
+  "item": "pioneers:constantan_block",
+  "count": 1
+ }
+}

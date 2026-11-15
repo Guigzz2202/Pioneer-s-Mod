@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 1,
+ "time": 240,
+ "family": "fluidized_bed_reactor",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:uranium_dioxide"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen_fluoride",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:uranium_tetrafluoride",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 200
+  }
+ ]
+}

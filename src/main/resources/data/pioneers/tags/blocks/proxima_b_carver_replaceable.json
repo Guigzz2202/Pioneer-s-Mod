@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:proxima_rock",
+  "pioneers:proxima_twilight_soil",
+  "pioneers:proxima_glacier_ice",
+  "pioneers:proxima_scoria",
+  "pioneers:proxima_frost"
+ ]
+}

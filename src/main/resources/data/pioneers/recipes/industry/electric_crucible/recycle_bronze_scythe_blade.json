@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 0,
+ "time": 60,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:bronze_scythe_blade"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:slag",
+   "count": 1,
+   "chance": 0.05
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molten_bronze",
+   "amount": 144
+  }
+ ]
+}

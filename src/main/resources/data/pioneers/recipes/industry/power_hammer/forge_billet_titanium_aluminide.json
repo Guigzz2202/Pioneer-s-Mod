@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 2,
+ "time": 430,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/titanium_aluminide"
+   },
+   "count": 9
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_aluminide_billet",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/solder"
+  }
+ ],
+ "result": {
+  "item": "pioneers:solder_nugget",
+  "count": 9
+ }
+}

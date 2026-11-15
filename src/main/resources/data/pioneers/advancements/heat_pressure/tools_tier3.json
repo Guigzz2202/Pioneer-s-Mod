@@ -1,0 +1,63 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:titanium_pickaxe"
+  },
+  "title": {
+   "translate": "advancements.pioneers.heat_pressure.tools_tier3.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.heat_pressure.tools_tier3.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:titanium_pickaxe"
+      ]
+     }
+    ]
+   }
+  },
+  "c1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:stainless_steel_pickaxe"
+      ]
+     }
+    ]
+   }
+  },
+  "c2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:duralumin_pickaxe"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ ],
+ "parent": "pioneers:heat_pressure/root"
+}

@@ -1,0 +1,19 @@
+{
+ "replace": false,
+ "values": [
+  "#forge:slabs/copper",
+  "#forge:slabs/bronze",
+  "#forge:slabs/brass",
+  "#forge:slabs/aluminium",
+  "#forge:slabs/titanium",
+  "#forge:slabs/galvanized_steel",
+  "#forge:slabs/stainless_steel",
+  "#forge:slabs/duralumin",
+  "#forge:slabs/steel",
+  "#forge:slabs/iron",
+  "#forge:slabs/gold",
+  "#forge:slabs/tin",
+  "#forge:slabs/lead",
+  "#forge:slabs/zinc"
+ ]
+}

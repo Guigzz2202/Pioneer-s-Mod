@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "hydroponic_farm",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pea_seeds"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:nutrient_solution",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pea_pod",
+   "count": 5
+  },
+  {
+   "item": "pioneers:pea_seeds",
+   "count": 2
+  }
+ ]
+}

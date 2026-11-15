@@ -1,0 +1,40 @@
+{
+ "display": {
+  "icon": {
+   "item": "pioneers:fusion_drive_core"
+  },
+  "title": {
+   "translate": "advancements.pioneers.space.fusion_drive.title"
+  },
+  "description": {
+   "translate": "advancements.pioneers.space.fusion_drive.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "c0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "pioneers:fusion_drive_core"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "c0"
+  ]
+ ],
+ "parent": "pioneers:space/ntr_core",
+ "rewards": {
+  "experience": 500
+ }
+}

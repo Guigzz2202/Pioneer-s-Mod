@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "carpenter",
+ "tools": [
+  {
+   "tag": "pioneers:tools/saws"
+  },
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/wooden"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:string"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/iron"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:tripwire_hook"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:crossbow",
+  "count": 1
+ }
+}

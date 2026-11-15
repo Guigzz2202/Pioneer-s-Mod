@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:solar_simulation",
+ "planet": {
+  "item": "pioneers:simulated_saturn"
+ },
+ "duration": 400,
+ "outputs": [
+  {
+   "item": "pioneers:tigrite_ingot",
+   "count": 2
+  },
+  {
+   "item": "pioneers:krakenite_ingot",
+   "count": 2
+  },
+  {
+   "item": "minecraft:packed_ice",
+   "count": 8
+  }
+ ]
+}

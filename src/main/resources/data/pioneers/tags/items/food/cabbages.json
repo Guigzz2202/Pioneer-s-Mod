@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:red_cabbage",
+  "pioneers:cauliflower",
+  "pioneers:broccoli",
+  "pioneers:kale",
+  "pioneers:bok_choy"
+ ]
+}

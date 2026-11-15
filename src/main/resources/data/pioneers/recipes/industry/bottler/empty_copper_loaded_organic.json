@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bottler",
+ "tier": 0,
+ "time": 20,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:copper_loaded_organic_bucket"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "minecraft:bucket",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:copper_loaded_organic",
+   "amount": 1000
+  }
+ ]
+}

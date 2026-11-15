@@ -1,0 +1,29 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "family": "solvent_extractor",
+ "tier": 1,
+ "time": 300,
+ "fluids": [
+  {
+   "fluid": "pioneers:nickel_cobalt_liquor",
+   "amount": 1000
+  },
+  {
+   "fluid": "pioneers:extraction_solvent",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cobalt_sulfate",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:nickel_sulfate_solution",
+   "amount": 1000
+  }
+ ]
+}

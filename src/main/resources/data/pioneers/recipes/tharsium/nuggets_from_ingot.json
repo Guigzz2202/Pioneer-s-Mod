@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/tharsium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:tharsium_nugget",
+  "count": 9
+ }
+}

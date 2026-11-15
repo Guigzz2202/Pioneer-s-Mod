@@ -1,0 +1,27 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 0,
+ "time": 80,
+ "family": "oil_press",
+ "items": [
+  {
+   "ingredient": {
+    "item": "minecraft:beetroot"
+   },
+   "count": 6
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:bagasse",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:molasses",
+   "amount": 200
+  }
+ ]
+}

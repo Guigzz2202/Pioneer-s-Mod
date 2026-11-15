@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "KEK",
+  "KMK",
+  "KKK"
+ ],
+ "key": {
+  "K": {
+   "tag": "forge:plates/krakenite"
+  },
+  "E": {
+   "tag": "pioneers:circuits/elite"
+  },
+  "M": {
+   "item": "pioneers:logistic_chest_medium"
+  }
+ },
+ "result": {
+  "item": "pioneers:logistic_chest_large"
+ }
+}

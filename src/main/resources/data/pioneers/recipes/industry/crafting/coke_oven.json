@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:fire_brick"
+   },
+   "count": 8
+  }
+ ],
+ "result": {
+  "item": "pioneers:coke_oven",
+  "count": 1
+ }
+}

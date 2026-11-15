@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "saw",
+ "inputs": [
+  {
+   "ingredient": {
+    "item": "minecraft:blackstone"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:blackstone_slab",
+  "count": 6
+ },
+ "time": 40
+}

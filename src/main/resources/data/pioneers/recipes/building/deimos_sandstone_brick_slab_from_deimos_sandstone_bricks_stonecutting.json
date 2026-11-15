@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:deimos_sandstone_bricks"
+ },
+ "result": "pioneers:deimos_sandstone_brick_slab",
+ "count": 2
+}

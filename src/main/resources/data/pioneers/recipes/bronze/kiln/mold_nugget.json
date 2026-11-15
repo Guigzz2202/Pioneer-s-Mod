@@ -1,0 +1,12 @@
+{
+ "type": "pioneers:kiln",
+ "input": {
+  "item": "pioneers:unfired_nugget_mold"
+ },
+ "temperature": 650,
+ "time": 300,
+ "result": {
+  "item": "pioneers:nugget_mold",
+  "count": 1
+ }
+}

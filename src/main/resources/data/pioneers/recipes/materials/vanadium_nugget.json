@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "forge:ingots/vanadium"
+  }
+ ],
+ "result": {
+  "item": "pioneers:vanadium_nugget",
+  "count": 9
+ }
+}

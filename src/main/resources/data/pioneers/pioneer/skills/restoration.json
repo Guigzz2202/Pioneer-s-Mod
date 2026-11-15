@@ -1,0 +1,17 @@
+{
+ "order": 12,
+ "icon": "pioneers:textures/gui/pioneer/skill/restoration.png",
+ "feature": "",
+ "modifiers": [
+  {
+   "key": "restoration.cost",
+   "value": -0.2,
+   "unit": "pct"
+  },
+  {
+   "key": "restoration.duration",
+   "value": -0.25,
+   "unit": "pct"
+  }
+ ]
+}

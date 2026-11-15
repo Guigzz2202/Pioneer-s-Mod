@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/brass"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:brass_wire",
+  "count": 1
+ }
+}

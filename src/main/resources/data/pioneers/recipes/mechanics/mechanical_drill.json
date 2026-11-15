@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "LCL",
+  "LXL",
+  "PIP"
+ ],
+ "key": {
+  "L": {
+   "tag": "minecraft:logs"
+  },
+  "C": {
+   "item": "pioneers:wooden_cog"
+  },
+  "X": {
+   "item": "pioneers:iron_shaft"
+  },
+  "P": {
+   "tag": "forge:plates/iron"
+  },
+  "I": {
+   "tag": "forge:ingots/iron"
+  }
+ },
+ "result": {
+  "item": "pioneers:mechanical_drill",
+  "count": 1
+ }
+}

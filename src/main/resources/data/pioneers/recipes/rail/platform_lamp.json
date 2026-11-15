@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "minecraft:lantern"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:platform_lamp",
+  "count": 2
+ }
+}

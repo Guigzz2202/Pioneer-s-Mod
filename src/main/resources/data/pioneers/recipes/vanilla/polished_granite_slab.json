@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:bench",
+ "bench": "mason",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:polished_granite"
+   },
+   "count": 3
+  }
+ ],
+ "result": {
+  "item": "minecraft:polished_granite_slab",
+  "count": 6
+ }
+}

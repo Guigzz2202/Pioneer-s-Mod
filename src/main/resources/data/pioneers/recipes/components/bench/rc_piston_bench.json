@@ -1,0 +1,42 @@
+{
+ "type": "pioneers:bench",
+ "bench": "metalworker",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:honed_cylinder"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piston_ring"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:leather_gasket"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:piston",
+  "count": 1
+ }
+}

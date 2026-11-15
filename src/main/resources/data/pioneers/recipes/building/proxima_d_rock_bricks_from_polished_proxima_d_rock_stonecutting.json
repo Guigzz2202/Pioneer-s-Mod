@@ -1,0 +1,8 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "item": "pioneers:polished_proxima_d_rock"
+ },
+ "result": "pioneers:proxima_d_rock_bricks",
+ "count": 1
+}

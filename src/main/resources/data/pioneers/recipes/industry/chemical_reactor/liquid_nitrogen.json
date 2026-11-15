@@ -1,0 +1,18 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_reactor",
+ "tier": 2,
+ "time": 200,
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 2000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 250
+  }
+ ]
+}

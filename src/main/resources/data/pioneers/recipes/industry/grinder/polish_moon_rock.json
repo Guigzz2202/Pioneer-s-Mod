@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 120,
+ "family": "grinder",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:moon_rock"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quartz_dust"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "minecraft:water",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:polished_moon_rock",
+   "count": 3
+  }
+ ]
+}

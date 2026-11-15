@@ -1,0 +1,421 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "recycler",
+ "tier": 0,
+ "time": 800,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:scrap_structure_mk1"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:steel_dust",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "draws": {
+  "rolls": [
+   2,
+   3
+  ],
+  "pool": [
+   {
+    "item": "pioneers:copper_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:silver_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:gold_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:constantan_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:nichrome_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:platinum_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:niobium_titanium_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:tungsten_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:solder_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:nickel_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:niobium_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:nitinol_wire",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:copper_foil",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:aluminium_foil",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:gold_foil",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:electrum_foil",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:platinum_foil",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:silver_foil",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:nickel_foil",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:steel_sheet",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:galvanized_steel_sheet",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:stainless_steel_sheet",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:aluminium_sheet",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:titanium_sheet",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:tungsten_sheet",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:tin_sheet",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:copper_pipe",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:brass_pipe",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:steel_pipe",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:stainless_steel_pipe",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:titanium_pipe",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:zircaloy_pipe",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:steel_beam",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:galvanized_steel_beam",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:duralumin_beam",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:titanium_beam",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:iron_wire_mesh",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:copper_wire_mesh",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:brass_wire_mesh",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:stainless_steel_wire_mesh",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:steel_wire_rope",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:galvanized_steel_wire_rope",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:copper_wire_rope",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:aluminium_wire_rope",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:steel_screw",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:steel_bolt",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:vanadium_steel_pin",
+    "weight": 12,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:machine_frame_basic",
+    "weight": 6,
+    "count": [
+     1,
+     3
+    ]
+   },
+   {
+    "item": "pioneers:module_frame",
+    "weight": 6,
+    "count": [
+     1,
+     3
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 0,
+ "time": 40,
+ "fluids": [
+  {
+   "fluid": "pioneers:digestate",
+   "amount": 500
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 500
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:nutrient_solution",
+   "amount": 600
+  }
+ ]
+}

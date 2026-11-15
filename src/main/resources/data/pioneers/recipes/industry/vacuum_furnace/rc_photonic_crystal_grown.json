@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 2,
+ "time": 180,
+ "family": "vacuum_furnace",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gems/sapphire"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iridium_crucible"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:photonic_crystal",
+   "count": 1
+  },
+  {
+   "item": "pioneers:iridium_crucible",
+   "count": 1,
+   "chance": 0.9
+  }
+ ]
+}

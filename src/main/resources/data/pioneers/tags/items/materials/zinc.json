@@ -1,0 +1,14 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:raw_zinc",
+  "pioneers:crushed_zinc",
+  "pioneers:raw_zinc_block",
+  "pioneers:zinc_nugget",
+  "pioneers:zinc_dust",
+  "pioneers:zinc_ingot",
+  "pioneers:zinc_plate",
+  "pioneers:zinc_block",
+  "pioneers:zinc_slab"
+ ]
+}

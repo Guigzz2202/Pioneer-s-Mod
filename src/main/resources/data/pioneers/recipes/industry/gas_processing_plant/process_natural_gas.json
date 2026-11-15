@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gas_separator",
+ "tier": 0,
+ "time": 200,
+ "family": "gas_processing_plant",
+ "fluids": [
+  {
+   "fluid": "pioneers:amine_solution",
+   "amount": 100
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:natural_gas",
+   "amount": 10000
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:lpg",
+   "amount": 120
+  },
+  {
+   "fluid": "pioneers:gas_condensate",
+   "amount": 100
+  },
+  {
+   "fluid": "pioneers:amine_solution",
+   "amount": 90
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:methane",
+   "amount": 7600
+  },
+  {
+   "gas": "pioneers:ethane",
+   "amount": 800
+  },
+  {
+   "gas": "pioneers:helium",
+   "amount": 10
+  }
+ ],
+ "industrial": true
+}

@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:turning",
+ "input": {
+  "tag": "forge:rods/tin"
+ },
+ "count": 2,
+ "turns": 4,
+ "results": [
+  {
+   "item": "pioneers:tin_spring",
+   "count": 1
+  }
+ ]
+}

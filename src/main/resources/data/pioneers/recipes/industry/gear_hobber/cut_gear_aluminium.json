@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 240,
+ "family": "gear_hobber",
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:aluminium_gear_blank"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:aluminium_nugget",
+   "count": 4
+  }
+ ]
+}

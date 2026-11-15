@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extractor",
+ "tier": 2,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rapeseed"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:press_cake",
+   "count": 2
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:plant_oil",
+   "amount": 360
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 900
+  }
+ ]
+}
