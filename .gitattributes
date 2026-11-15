@@ -1,0 +1,11 @@
+# Fins de ligne : LF partout dans le dépôt, CRLF pour les scripts Windows
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binaires
+*.png binary
+*.ogg binary
+*.nbt binary
+*.jar binary
+*.zip binary

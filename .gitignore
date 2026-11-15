@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ForgeGradle : dossiers de lancement et de données
+run/
+run-data/
+logs/
+*.log
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers mis de côté avant suppression (ancienne méthode de livraison)
+_to_delete/
+/tools
