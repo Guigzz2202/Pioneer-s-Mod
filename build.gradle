@@ -41,6 +41,8 @@ minecraft {
 
         client {
             property 'forge.enabledGameTestNamespaces', mod_id
+            // 1.0.6 : le chargement des ressources du mod dépasse le tas par défaut (1/4 de la mémoire)
+            jvmArgs '-Xmx4G'
             // 1.0.6 : -PquickPlay=<sauvegarde> ouvre directement un monde de run/saves (essais du jeu sans écran)
             if (project.hasProperty('quickPlay')) {
                 args '--quickPlaySingleplayer', project.property('quickPlay')
