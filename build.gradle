@@ -41,6 +41,10 @@ minecraft {
 
         client {
             property 'forge.enabledGameTestNamespaces', mod_id
+            // 1.0.6 : -PquickPlay=<sauvegarde> ouvre directement un monde de run/saves (essais du jeu sans écran)
+            if (project.hasProperty('quickPlay')) {
+                args '--quickPlaySingleplayer', project.property('quickPlay')
+            }
         }
 
         server {
