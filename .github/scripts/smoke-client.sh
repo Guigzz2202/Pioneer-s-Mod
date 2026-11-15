@@ -26,8 +26,14 @@ for i in $(seq 1 360); do   # 30 min au plus
     sleep 20; import -display $DISPLAY_NUM -window root "$OUT/menu.png" 2>/dev/null
     [ -z "$WORLD" ] && { verdict="ok"; break; }
   fi
-  if [ -n "$WORLD" ] && grep -qE "joined the game|Loaded [0-9]+ advancements" "$LOG"; then
-    sleep 60; import -display $DISPLAY_NUM -window root "$OUT/monde.png" 2>/dev/null
+  # écran « Worlds using Experimental Settings » (dimensions du mod) : on valide « Proceed »
+  if [ -n "$WORLD" ] && [ -z "$PROCEED" ] && grep -qE "Loaded [0-9]+ advancements" "$LOG"; then
+    sleep 20; import -display $DISPLAY_NUM -window root "$OUT/avertissement.png" 2>/dev/null
+    xdotool mousemove 478 437 click 1 2>/dev/null; sleep 2; xdotool key Tab Return 2>/dev/null
+    PROCEED=1
+  fi
+  if [ -n "$WORLD" ] && grep -qE "joined the game" "$LOG"; then
+    sleep 90; import -display $DISPLAY_NUM -window root "$OUT/monde.png" 2>/dev/null
     grep -qE "Crash report saved|---- Minecraft Crash Report ----" "$LOG" && verdict="plantage" || verdict="ok"
     break
   fi
