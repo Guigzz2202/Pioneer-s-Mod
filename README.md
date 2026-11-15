@@ -22,4 +22,4 @@ Java 17 est nécessaire : Gradle le télécharge tout seul si besoin.
 
 ## Organisation
 - Les ressources générées (modèles, textures, recettes, langue…) sont produites par les générateurs du dépôt privé **Pioneer-s-Mod-tools**. Il faut les changer par ces générateurs, jamais à la main.
-- L'architecture du code est décrite dans `docs/architecture.md` (à venir, 1.0.6).
+- L’architecture du code (domaines, règles de rangement) est décrite dans `docs/architecture.md`.
