@@ -1,16 +1,16 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.geology.DepositTypes;
-import fr.pioneers.geology.fluid.FluidDepositTypes;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.world.geology.DepositTypes;
+import fr.pioneers.world.geology.fluid.FluidDepositTypes;
 import fr.pioneers.guide.JourneyProgress;
 import fr.pioneers.guide.JourneySteps;
 import fr.pioneers.guide.JourneyTracker;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.network.PacketDeposits;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.core.network.PacketDeposits;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import io.netty.buffer.Unpooled;
 import java.util.HashSet;
 import java.util.List;

@@ -1,6 +1,6 @@
 package fr.pioneers.core.energy;
 
-import fr.pioneers.clan.ClanApi;
+import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.core.Directions;
 import java.util.function.BiPredicate;
 import java.util.function.LongUnaryOperator;

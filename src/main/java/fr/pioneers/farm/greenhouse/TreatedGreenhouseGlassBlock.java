@@ -1,6 +1,6 @@
 package fr.pioneers.farm.greenhouse;
 
-import fr.pioneers.common.block.Connections;
+import fr.pioneers.core.common.block.Connections;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 

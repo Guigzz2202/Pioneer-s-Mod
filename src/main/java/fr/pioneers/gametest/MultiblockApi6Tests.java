@@ -4,14 +4,14 @@ import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.api.multiblock.HouseShapes;
 import fr.pioneers.api.multiblock.MultiblockLogic;
 import fr.pioneers.api.multiblock.MultiblockValues;
-import fr.pioneers.bronze.blast.BlastFurnaceTile;
-import fr.pioneers.common.projector.Blueprint;
-import fr.pioneers.common.projector.ProjectedStructure;
+import fr.pioneers.tech.bronze.blast.BlastFurnaceTile;
+import fr.pioneers.core.common.projector.Blueprint;
+import fr.pioneers.core.common.projector.ProjectedStructure;
 import fr.pioneers.core.machine.MachineBlock;
-import fr.pioneers.geology.drill.SteamDrillTile;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.nuclear.FissionCore;
+import fr.pioneers.world.geology.drill.SteamDrillTile;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.nuclear.FissionCore;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -103,7 +103,7 @@ public final class MultiblockApi6Tests {
             BlockEntity be = h.getBlockEntity(c);
             Gt.check(be instanceof BlastFurnaceTile, "pas de haut fourneau en " + c);
             BlastFurnaceTile tile = (BlastFurnaceTile) be;
-            Gt.check(BlastFurnaceTile.fault(fr.pioneers.industry.multi.Structure.View.of(h.getLevel()), h.absolutePos(c), tile.facing()) == null,
+            Gt.check(BlastFurnaceTile.fault(fr.pioneers.tech.industry.multi.Structure.View.of(h.getLevel()), h.absolutePos(c), tile.facing()) == null,
                   "plan du haut fourneau : case fautive");
             Gt.check(tile.formed(), "le haut fourneau construit au plan ne se forme pas");
             roundTrip(tile, "haut fourneau forme");
@@ -119,7 +119,7 @@ public final class MultiblockApi6Tests {
             BlockEntity be = h.getBlockEntity(anchor);
             Gt.check(be instanceof SteamDrillTile, "pas de foreuse en " + anchor);
             SteamDrillTile tile = (SteamDrillTile) be;
-            Gt.check(SteamDrillTile.fault(fr.pioneers.industry.multi.Structure.View.of(h.getLevel()), h.absolutePos(anchor), tile.facing()) == null,
+            Gt.check(SteamDrillTile.fault(fr.pioneers.tech.industry.multi.Structure.View.of(h.getLevel()), h.absolutePos(anchor), tile.facing()) == null,
                   "plan de la foreuse : case fautive");
             Gt.check(tile.formed(), "la foreuse construite au plan ne se forme pas");
             roundTrip(tile, "foreuse formee");

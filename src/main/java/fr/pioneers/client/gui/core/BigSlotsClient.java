@@ -1,6 +1,6 @@
 package fr.pioneers.client.gui.core;
 
-import fr.pioneers.network.PacketBigSlots;
+import fr.pioneers.core.network.PacketBigSlots;
 import java.util.Locale;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

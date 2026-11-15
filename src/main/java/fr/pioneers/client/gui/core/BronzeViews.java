@@ -1,11 +1,11 @@
 package fr.pioneers.client.gui.core;
 
 import fr.pioneers.api.machine.StandardLayout;
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchTile;
-import fr.pioneers.bronze.bench.BenchType;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchTile;
+import fr.pioneers.tech.bronze.bench.BenchType;
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.recipe.PiRecipes;
+import fr.pioneers.core.recipes.PiRecipes;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;

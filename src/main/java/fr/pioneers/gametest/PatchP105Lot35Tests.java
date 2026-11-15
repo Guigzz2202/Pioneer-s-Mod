@@ -1,13 +1,13 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.machines.SteamProcessTile;
-import fr.pioneers.common.PiRemaps;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
+import fr.pioneers.core.common.PiRemaps;
 import fr.pioneers.farm.PiFarm;
-import fr.pioneers.home.PiHome;
-import fr.pioneers.home.bag.BagDeposit;
-import fr.pioneers.home.bag.BagKind;
-import fr.pioneers.home.bag.BagStore;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.building.home.PiHome;
+import fr.pioneers.building.home.bag.BagDeposit;
+import fr.pioneers.building.home.bag.BagKind;
+import fr.pioneers.building.home.bag.BagStore;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -160,7 +160,7 @@ public final class PatchP105Lot35Tests {
         BlockPos at = new BlockPos(3, 1, 3);
         //1.0.5-beta (lot 38) : la presse a vapeur n'est plus un atelier d'etabli (elle aplatit : machine de traitement) ; une presse d'etabli
         //sauvee avant (verrou « recipe », 6 materiaux) se relit : materiaux poses au sol, verrou efface
-        h.setBlock(at, PiBronze.STEAM_MACHINES.get(fr.pioneers.bronze.machines.SteamMachine.PRESS).getBlock().defaultBlockState());
+        h.setBlock(at, PiBronze.STEAM_MACHINES.get(fr.pioneers.tech.bronze.machines.SteamMachine.PRESS).getBlock().defaultBlockState());
         Gt.check(h.getBlockEntity(at) instanceof SteamProcessTile, "presse a vapeur posee");
         SteamProcessTile press = (SteamProcessTile) h.getBlockEntity(at);
         ResourceLocation gone = new ResourceLocation("pioneers", "aquarium/aquarium");

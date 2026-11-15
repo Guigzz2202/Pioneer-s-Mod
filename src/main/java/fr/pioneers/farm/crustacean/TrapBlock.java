@@ -157,10 +157,10 @@ public class TrapBlock extends BaseEntityBlock implements SimpleWaterloggedBlock
         }
         //1.0.5-beta (lot 31, retour 42) : panier de peche en main : il APPATE le casier (appat et ver de terre d'abord, puis les autres appats
         //du tag : poissons, crevettes) ; ce qui n'entre pas revient au panier ; casier deja plein d'appat : on releve la prise
-        if (kind == Kind.POT && held.getItem() instanceof fr.pioneers.home.bag.BagItem bag && bag.kind == fr.pioneers.home.bag.BagKind.FISH_BAG) {
-            ItemStack bait = fr.pioneers.home.bag.BagStore.take(held, bag.kind, s -> s.is(fr.pioneers.farm.fish.PiRodItem.BAIT), 64, false);
+        if (kind == Kind.POT && held.getItem() instanceof fr.pioneers.building.home.bag.BagItem bag && bag.kind == fr.pioneers.building.home.bag.BagKind.FISH_BAG) {
+            ItemStack bait = fr.pioneers.building.home.bag.BagStore.take(held, bag.kind, s -> s.is(fr.pioneers.farm.fish.PiRodItem.BAIT), 64, false);
             if (bait.isEmpty()) {
-                bait = fr.pioneers.home.bag.BagStore.take(held, bag.kind, s -> s.is(PiCrustaceans.BAITS), 64, false);
+                bait = fr.pioneers.building.home.bag.BagStore.take(held, bag.kind, s -> s.is(PiCrustaceans.BAITS), 64, false);
             }
             if (!bait.isEmpty()) {
                 int before = bait.getCount();
@@ -168,7 +168,7 @@ public class TrapBlock extends BaseEntityBlock implements SimpleWaterloggedBlock
                 if (player.getAbilities().instabuild) {
                     rest = bait.copyWithCount(before);
                 }
-                fr.pioneers.home.bag.BagStore.giveBack(held, bag.kind, rest);
+                fr.pioneers.building.home.bag.BagStore.giveBack(held, bag.kind, rest);
                 if (rest.getCount() < before) {
                     level.playSound(null, pos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 0.6F, 1.2F);
                     return InteractionResult.CONSUME;
@@ -179,7 +179,7 @@ public class TrapBlock extends BaseEntityBlock implements SimpleWaterloggedBlock
         for (ItemStack s : tile.takeCatch()) {
             got += s.getCount();
             //1.0.5-beta (lot 31) : panier de peche d'abord (crustaces crus), puis l'inventaire, puis au sol
-            fr.pioneers.home.bag.BagEvents.give(player, s);
+            fr.pioneers.building.home.bag.BagEvents.give(player, s);
         }
         if (got > 0) {
             level.playSound(null, pos, SoundEvents.FISHING_BOBBER_SPLASH, SoundSource.BLOCKS, 0.5F, 1.1F);

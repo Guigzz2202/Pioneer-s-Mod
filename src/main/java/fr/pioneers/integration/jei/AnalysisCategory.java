@@ -1,7 +1,7 @@
 package fr.pioneers.integration.jei;
 
 import fr.pioneers.api.data.DataStack;
-import fr.pioneers.data.DataUnits;
+import fr.pioneers.core.data.DataUnits;
 import java.util.List;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;

@@ -1,6 +1,6 @@
 package fr.pioneers.farm.greenhouse;
 
-import fr.pioneers.common.block.Connections;
+import fr.pioneers.core.common.block.Connections;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;

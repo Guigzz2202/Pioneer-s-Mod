@@ -1,7 +1,7 @@
 package fr.pioneers.core.machine;
 
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.registries.PiTileEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;

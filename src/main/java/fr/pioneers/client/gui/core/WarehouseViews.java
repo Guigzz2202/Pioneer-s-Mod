@@ -2,15 +2,15 @@ package fr.pioneers.client.gui.core;
 
 import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.client.warehouse.CounterClient;
+import fr.pioneers.logistics.warehouse.client.CounterClient;
 import fr.pioneers.core.Texts;
-import fr.pioneers.network.PacketWarehouse;
-import fr.pioneers.network.PiNetwork;
-import fr.pioneers.warehouse.CounterCart;
-import fr.pioneers.warehouse.CounterTile;
-import fr.pioneers.warehouse.CounterUnit;
-import fr.pioneers.warehouse.Parcel;
-import fr.pioneers.warehouse.StockKey;
+import fr.pioneers.core.network.PacketWarehouse;
+import fr.pioneers.core.network.PiNetwork;
+import fr.pioneers.logistics.warehouse.CounterCart;
+import fr.pioneers.logistics.warehouse.CounterTile;
+import fr.pioneers.logistics.warehouse.CounterUnit;
+import fr.pioneers.logistics.warehouse.Parcel;
+import fr.pioneers.logistics.warehouse.StockKey;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -492,7 +492,7 @@ final class WarehouseViews {
 
     /** Fabrications d'une recette demandee (1 a 64 ; 0 la retire avec sa part du panier) : le serveur refait le plan et repond. */
     private void setCraft(CounterTile tile, PacketWarehouse.CraftView cv, int times) {
-        int n = Math.max(0, Math.min(fr.pioneers.warehouse.RecipeAsk.MAX_TIMES, times));
+        int n = Math.max(0, Math.min(fr.pioneers.logistics.warehouse.RecipeAsk.MAX_TIMES, times));
         if (n == craftTimes(cv)) {
             return;
         }
@@ -1365,7 +1365,7 @@ final class WarehouseViews {
             GuiDraw.text(g, gui.font(), Component.translatable("gui.pioneers.warehouse.io.inlet.waiting", Texts.format(held)), sx, side.y() + 20 + n * 7, 0.6F,
                   held > 0 ? WOOD : PiMenuScreen.DIM, sw);
             //1.0.5-beta (lot 45, retour 65) : case de sac (sous la carte) et sa carte : son contenu part en colis vers les caisses
-            fr.pioneers.home.bag.BagView bagView = tile.bagContents();
+            fr.pioneers.building.home.bag.BagView bagView = tile.bagContents();
             if (bagView != null) {
                 StandardLayout.Rect bc = CounterTile.IO_BAG;
                 gui.fieldAt(g, bc.x(), bc.y(), bc.w(), bc.h());

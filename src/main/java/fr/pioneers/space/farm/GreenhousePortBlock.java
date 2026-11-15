@@ -1,7 +1,7 @@
 package fr.pioneers.space.farm;
 
-import fr.pioneers.common.port.PortConfigurable;
-import fr.pioneers.registries.PiTileEntityTypes;
+import fr.pioneers.core.common.port.PortConfigurable;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.InteractionHand;

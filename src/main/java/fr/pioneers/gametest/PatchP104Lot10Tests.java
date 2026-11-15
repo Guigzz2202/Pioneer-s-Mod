@@ -1,16 +1,16 @@
 package fr.pioneers.gametest;
 
 import com.mojang.authlib.GameProfile;
-import fr.pioneers.caravan.CaravanData;
-import fr.pioneers.caravan.CaravanRules;
-import fr.pioneers.caravan.Caravans;
-import fr.pioneers.caravan.DromedaryEntity;
-import fr.pioneers.caravan.GeneratedCaravan;
-import fr.pioneers.caravan.PacketCaravanRoute;
-import fr.pioneers.caravan.PiCaravan;
-import fr.pioneers.caravan.RelayTile;
-import fr.pioneers.caravan.RelayUnit;
-import fr.pioneers.caravan.RouteSheetItem;
+import fr.pioneers.logistics.caravan.CaravanData;
+import fr.pioneers.logistics.caravan.CaravanRules;
+import fr.pioneers.logistics.caravan.Caravans;
+import fr.pioneers.logistics.caravan.DromedaryEntity;
+import fr.pioneers.logistics.caravan.GeneratedCaravan;
+import fr.pioneers.logistics.caravan.PacketCaravanRoute;
+import fr.pioneers.logistics.caravan.PiCaravan;
+import fr.pioneers.logistics.caravan.RelayTile;
+import fr.pioneers.logistics.caravan.RelayUnit;
+import fr.pioneers.logistics.caravan.RouteSheetItem;
 import fr.pioneers.farm.herd.GeneratedHerd;
 import fr.pioneers.farm.herd.HerdData;
 import fr.pioneers.farm.herd.HerdRules;
@@ -183,12 +183,12 @@ public final class PatchP104Lot10Tests {
         HerdRules.rollHorse(PiHerd.get(small), pony, new Random(3));
         ItemStack heavy = Caravans.unequip(null, c, dc);
         Gt.check(PiCaravan.get(c).pack == false, "cisailles : le bat est retire");
-        Gt.check(fr.pioneers.caravan.PackSaddleItem.stacks(heavy) == 0, "bat vide retire vide");
-        var fill = fr.pioneers.caravan.PackSaddleItem.contents(heavy);
+        Gt.check(fr.pioneers.logistics.caravan.PackSaddleItem.stacks(heavy) == 0, "bat vide retire vide");
+        var fill = fr.pioneers.logistics.caravan.PackSaddleItem.contents(heavy);
         for (int i = 0; i < 20; i++) {
             fill.setStackInSlot(i, new ItemStack(Items.DIRT));
         }
-        fr.pioneers.caravan.PackSaddleItem.store(heavy, fill);
+        fr.pioneers.logistics.caravan.PackSaddleItem.store(heavy, fill);
         Gt.check(!Caravans.equip(null, small, PiCaravan.get(small), heavy), "20 piles : trop pour un poney");
         Gt.check(Caravans.equip(null, c, PiCaravan.get(c), heavy) && count(PiCaravan.get(c), Items.DIRT) == 20 * 1, "le contenu revient avec le bat");
         s.done();
@@ -250,7 +250,7 @@ public final class PatchP104Lot10Tests {
         Caravans.tickHead(h.getLevel(), horse, d);
         Gt.equal(CaravanData.STOPPED, d.state, "relais retire : la caravane s'arrete");
         Gt.equal(CaravanData.REASON_RELAY_GONE, d.reason, "raison : relais disparu");
-        Gt.check(!fr.pioneers.caravan.CaravanTickets.holds(horse.getUUID()), "plus de ticket de chunks a l'arret");
+        Gt.check(!fr.pioneers.logistics.caravan.CaravanTickets.holds(horse.getUUID()), "plus de ticket de chunks a l'arret");
         //Ordre des etapes : boucle et aller-retour ; feuille : monter, retirer, mode
         Gt.check(CaravanRules.next(3, 2, 1, true)[0] == 0, "boucle : apres la derniere, la premiere");
         int[] n = CaravanRules.next(3, 2, 1, false);

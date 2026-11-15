@@ -1,7 +1,7 @@
 package fr.pioneers.core.vanilla;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.registries.PiCreativeTabs;
+import fr.pioneers.core.registries.PiCreativeTabs;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;

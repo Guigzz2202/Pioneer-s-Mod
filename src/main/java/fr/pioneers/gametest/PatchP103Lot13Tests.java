@@ -1,6 +1,6 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.economy.LedgerLabels;
+import fr.pioneers.society.economy.LedgerLabels;
 import fr.pioneers.farm.PiFarm;
 import fr.pioneers.farm.PiKitchen;
 import fr.pioneers.farm.crop.FarmCropBlock;

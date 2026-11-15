@@ -2,7 +2,7 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.multiblock.HouseShapes;
-import fr.pioneers.bronze.blast.BlastFurnaceTile;
+import fr.pioneers.tech.bronze.blast.BlastFurnaceTile;
 import fr.pioneers.core.Action;
 import fr.pioneers.core.Automation;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
@@ -13,7 +13,7 @@ import fr.pioneers.farm.herd.GeneratedHerd;
 import fr.pioneers.farm.herd.HerdData;
 import fr.pioneers.farm.herd.HerdRules;
 import fr.pioneers.farm.herd.PiHerd;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.Random;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -35,7 +35,7 @@ import org.jetbrains.annotations.NotNull;
  * 1.0.4-beta (lot 28) : une case d'aquarium et ses HABITANTS (aucune entite : un poisson ou un crustace = espece, taille, graine du trajet).
  * Poissons : autant que les PLACES du bassin le permettent (1.0.5-beta lot 14, {@link AquariumRules}), {@link #FISH_MAX} au plus par case ;
  * {@link #CRUSTACEAN_MAX} crustaces par case ; pas d'elevage (ni faim, ni ponte, ni croissance).
- * Synchronisation complete (habitants) au client, qui les fait nager ({@code J:client/farm/aquarium/AquariumRenderer}). Case cassee : les
+ * Synchronisation complete (habitants) au client, qui les fait nager ({@code J:farm/client/aquarium/AquariumRenderer}). Case cassee : les
  * habitants sont relaches (entites) a sa place.
  * <p>
  * 1.0.5-beta (lot 25) : la COMPOSITION du fond ({@link AquariumDecor}) : {@link #ground} et {@link #piece} par emplacement (4 par case,

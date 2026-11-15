@@ -1,16 +1,16 @@
 package fr.pioneers.integration.jei;
 
-import fr.pioneers.forge.ForgeMetals;
-import fr.pioneers.forge.HeatedMetal;
-import fr.pioneers.forge.SmithingGrid;
-import fr.pioneers.forge.SmithingRecipe;
-import fr.pioneers.forge.automation.QuenchBasinTile;
-import fr.pioneers.forge.smithing.HearthUnit;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiForge;
+import fr.pioneers.tech.forge.ForgeMetals;
+import fr.pioneers.tech.forge.HeatedMetal;
+import fr.pioneers.tech.forge.SmithingGrid;
+import fr.pioneers.tech.forge.SmithingRecipe;
+import fr.pioneers.tech.forge.automation.QuenchBasinTile;
+import fr.pioneers.tech.forge.smithing.HearthUnit;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.core.registries.PiForge;
 import java.util.ArrayList;
 import java.util.List;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

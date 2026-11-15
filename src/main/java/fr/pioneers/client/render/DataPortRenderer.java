@@ -7,7 +7,7 @@ import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.api.data.IDataConfigurable;
 import fr.pioneers.core.Directions;
 import fr.pioneers.core.RelativeSide;
-import fr.pioneers.transport.logistic.LogisticCableBlock;
+import fr.pioneers.logistics.transport.logistic.LogisticCableBlock;
 import java.util.Map;
 import java.util.WeakHashMap;
 import java.util.function.Consumer;

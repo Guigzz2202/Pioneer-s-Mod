@@ -1,7 +1,7 @@
 package fr.pioneers.space;
 
-import fr.pioneers.client.space.RocketItemRenderer;
-import fr.pioneers.common.PiLang;
+import fr.pioneers.space.client.RocketItemRenderer;
+import fr.pioneers.core.common.PiLang;
 import fr.pioneers.core.tooltip.Tooltips;
 import fr.pioneers.space.module.RocketCargo;
 import fr.pioneers.space.module.RocketModule;

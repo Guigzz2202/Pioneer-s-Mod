@@ -1,9 +1,9 @@
 package fr.pioneers.integration.jei;
 
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiMachineKit;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.core.registries.PiMachineKit;
 import java.util.ArrayList;
 import java.util.List;
 import mezz.jei.api.constants.VanillaTypes;

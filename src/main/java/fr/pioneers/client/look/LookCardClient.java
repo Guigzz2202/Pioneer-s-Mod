@@ -1,10 +1,10 @@
 package fr.pioneers.client.look;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.look.LookCards;
+import fr.pioneers.core.common.look.LookCards;
 import fr.pioneers.farm.FarmCard;
-import fr.pioneers.network.PacketLookCard;
-import fr.pioneers.network.PiNetwork;
+import fr.pioneers.core.network.PacketLookCard;
+import fr.pioneers.core.network.PiNetwork;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.phys.BlockHitResult;

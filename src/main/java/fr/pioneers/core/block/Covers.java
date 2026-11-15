@@ -1,9 +1,9 @@
 package fr.pioneers.core.block;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.clan.ClanApi;
-import fr.pioneers.kinetics.parts.ShaftBlock;
-import fr.pioneers.transport.logistic.LogisticCableBlock;
+import fr.pioneers.society.clan.ClanApi;
+import fr.pioneers.tech.kinetics.parts.ShaftBlock;
+import fr.pioneers.logistics.transport.logistic.LogisticCableBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;

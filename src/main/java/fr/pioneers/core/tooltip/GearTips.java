@@ -25,7 +25,7 @@ import net.minecraft.world.item.ItemStack;
  *     spatiales) : son nom, dans la couleur du rang correspondant ;</li>
  *     <li>STATE (aqua) : mode, chargement ; NOTES : effets (vert = atout, or = particularite, rouge = manque) ; HINTS : aide d'usage.</li>
  * </ol>
- * La durabilite des outils et des armures du mod est ecrite par l'evenement d'infobulle commun ({@code J:materials/ToolProfiles}), sauf en
+ * La durabilite des outils et des armures du mod est ecrite par l'evenement d'infobulle commun ({@code J:tech/materials/ToolProfiles}), sauf en
  * infobulle avancee (F3 + H : Minecraft l'affiche deja). Code commun, sans classe du client.
  */
 public final class GearTips {

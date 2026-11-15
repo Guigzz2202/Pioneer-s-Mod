@@ -1,11 +1,11 @@
 package fr.pioneers.integration.jei;
 
-import fr.pioneers.bronze.Hearth;
-import fr.pioneers.bronze.steam.BoilerPages;
-import fr.pioneers.bronze.steam.BoilerPart;
-import fr.pioneers.bronze.steam.SteamAccessory;
-import fr.pioneers.bronze.steam.SteamRules;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.Hearth;
+import fr.pioneers.tech.bronze.steam.BoilerPages;
+import fr.pioneers.tech.bronze.steam.BoilerPart;
+import fr.pioneers.tech.bronze.steam.SteamAccessory;
+import fr.pioneers.tech.bronze.steam.SteamRules;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedHashMap;

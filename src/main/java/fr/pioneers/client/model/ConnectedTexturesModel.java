@@ -1,7 +1,7 @@
 package fr.pioneers.client.model;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.block.Connections;
+import fr.pioneers.core.common.block.Connections;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.client.renderer.RenderType;

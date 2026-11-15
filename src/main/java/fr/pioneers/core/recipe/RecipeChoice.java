@@ -2,10 +2,10 @@ package fr.pioneers.core.recipe;
 
 import fr.pioneers.api.data.DataStack;
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.bronze.bench.BenchRecipe.Counted;
-import fr.pioneers.industry.recipe.IndustrialRecipe.FluidIn;
-import fr.pioneers.industry.recipe.IndustrialRecipe.GasAmount;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.bronze.bench.BenchRecipe.Counted;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe.FluidIn;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe.GasAmount;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.List;

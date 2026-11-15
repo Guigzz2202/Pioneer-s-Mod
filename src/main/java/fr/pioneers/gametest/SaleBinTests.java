@@ -1,12 +1,12 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.economy.EconomyApi;
-import fr.pioneers.economy.EconomyBlocks;
-import fr.pioneers.economy.Values;
-import fr.pioneers.economy.bin.SaleBinBlock;
-import fr.pioneers.economy.bin.SaleBinRules;
-import fr.pioneers.economy.bin.SaleBinTile;
-import fr.pioneers.village.VillageData;
+import fr.pioneers.society.economy.EconomyApi;
+import fr.pioneers.society.economy.EconomyBlocks;
+import fr.pioneers.society.economy.Values;
+import fr.pioneers.society.economy.bin.SaleBinBlock;
+import fr.pioneers.society.economy.bin.SaleBinRules;
+import fr.pioneers.society.economy.bin.SaleBinTile;
+import fr.pioneers.society.village.VillageData;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

@@ -2,7 +2,7 @@ package fr.pioneers.client.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import fr.pioneers.content.absorber.AbsorberControllerTile;
+import fr.pioneers.space.content.absorber.AbsorberControllerTile;
 import fr.pioneers.core.RenderClock;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;

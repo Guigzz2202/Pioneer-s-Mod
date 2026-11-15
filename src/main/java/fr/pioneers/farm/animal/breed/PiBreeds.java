@@ -3,7 +3,7 @@ package fr.pioneers.farm.animal.breed;
 import fr.pioneers.farm.animal.AnimalSpecies;
 import fr.pioneers.farm.animal.BreedDef;
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiEntityTypes;
 import java.util.ArrayList;
 import java.util.IdentityHashMap;
 import java.util.List;

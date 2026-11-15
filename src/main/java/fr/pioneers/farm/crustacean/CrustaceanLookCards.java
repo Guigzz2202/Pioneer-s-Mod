@@ -1,6 +1,6 @@
 package fr.pioneers.farm.crustacean;
 
-import fr.pioneers.common.look.LookCards;
+import fr.pioneers.core.common.look.LookCards;
 import fr.pioneers.farm.FarmCard.Line;
 import fr.pioneers.farm.FarmCard;
 import fr.pioneers.farm.fish.FishSpawns;

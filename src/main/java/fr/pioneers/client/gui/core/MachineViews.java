@@ -5,7 +5,7 @@ import fr.pioneers.api.data.IDataTank;
 import fr.pioneers.api.gas.GasStack;
 import fr.pioneers.core.Texts;
 import fr.pioneers.core.gas.BasicGasTank;
-import fr.pioneers.data.DataUnits;
+import fr.pioneers.core.data.DataUnits;
 import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;

@@ -1,7 +1,7 @@
 package fr.pioneers.farm.greenhouse;
 
-import fr.pioneers.common.projector.Blueprint;
-import fr.pioneers.common.projector.ProjectedStructure.Ghost;
+import fr.pioneers.core.common.projector.Blueprint;
+import fr.pioneers.core.common.projector.ProjectedStructure.Ghost;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;

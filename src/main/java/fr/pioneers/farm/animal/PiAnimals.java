@@ -1,7 +1,7 @@
 package fr.pioneers.farm.animal;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.network.PiNetwork;
+import fr.pioneers.core.network.PiNetwork;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;

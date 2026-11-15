@@ -1,22 +1,22 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
 import fr.pioneers.core.profile.PioneerApi;
-import fr.pioneers.economy.PriceService;
-import fr.pioneers.economy.Values;
+import fr.pioneers.society.economy.PriceService;
+import fr.pioneers.society.economy.Values;
 import fr.pioneers.farm.GeneratedFarm;
 import fr.pioneers.farm.PiFarm;
 import fr.pioneers.farm.PiKitchen;
 import fr.pioneers.farm.food.LampOil;
 import fr.pioneers.farm.kitchen.KitchenRecipe;
 import fr.pioneers.farm.kitchen.Station;
-import fr.pioneers.home.line.Clothesline;
-import fr.pioneers.lighting.LightFixtureBlock;
-import fr.pioneers.lighting.PiLighting;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.reputation.ReputationApi;
-import fr.pioneers.village.VillagerTrade;
-import fr.pioneers.village.Villagers;
+import fr.pioneers.building.home.line.Clothesline;
+import fr.pioneers.building.lighting.LightFixtureBlock;
+import fr.pioneers.building.lighting.PiLighting;
+import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.society.reputation.ReputationApi;
+import fr.pioneers.society.village.VillagerTrade;
+import fr.pioneers.society.village.Villagers;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -184,7 +184,7 @@ public final class PatchP105Lot11Tests {
         double pct = Values.partner("villager", "buys", 0.5) * partner.doctrineFactor();
         double mods = ReputationApi.tier(p, partner.people()).sell() + PioneerApi.modifier(p, "trader.sell");
         double unit = Math.min(base * pct * (1 + mods), base * pct * Values.partner("cap", "sell_max", 1.2)) * partner.eventFactor()
-              * fr.pioneers.village.FoundingRules.priceFactor(partner.founder(), false);
+              * fr.pioneers.society.village.FoundingRules.priceFactor(partner.founder(), false);
         Gt.equal(Math.max(1, Math.round(unit)), q.unit(), "prix unitaire = valeur x part du villageois");
         s.done();
     }

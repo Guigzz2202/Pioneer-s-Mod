@@ -76,7 +76,7 @@ public final class RecipeLock {
         id = tag.contains(NBT, Tag.TAG_STRING) ? ResourceLocation.tryParse(tag.getString(NBT)) : null;
         //1.0.4-beta (lot 23) : verrou pose avant le renommage des cles de machine (dossiers de recettes renommes)
         if (id != null) {
-            id = fr.pioneers.common.PiRemaps.recipeId(id);
+            id = fr.pioneers.core.common.PiRemaps.recipeId(id);
         }
     }
 

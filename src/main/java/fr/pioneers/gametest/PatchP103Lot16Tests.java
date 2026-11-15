@@ -1,13 +1,13 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.clan.Clan;
-import fr.pioneers.clan.ClanApi;
-import fr.pioneers.clan.territory.Access;
-import fr.pioneers.clan.territory.ClanAccess;
-import fr.pioneers.clan.territory.ClanTerritory;
-import fr.pioneers.clan.territory.TerritoryRules;
-import fr.pioneers.clan.territory.ZonePerms;
-import fr.pioneers.economy.EconomyApi;
+import fr.pioneers.society.clan.Clan;
+import fr.pioneers.society.clan.ClanApi;
+import fr.pioneers.society.clan.territory.Access;
+import fr.pioneers.society.clan.territory.ClanAccess;
+import fr.pioneers.society.clan.territory.ClanTerritory;
+import fr.pioneers.society.clan.territory.TerritoryRules;
+import fr.pioneers.society.clan.territory.ZonePerms;
+import fr.pioneers.society.economy.EconomyApi;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
@@ -55,7 +55,7 @@ public final class PatchP103Lot16Tests {
         Gt.check(EconomyApi.enabled(), "economie coupee : l'achat de claims en a besoin");
         ServerPlayer rep = s.player("gtbuy", "Acheteuse", new BlockPos(4, 2, 4));
         Clan c = s.clan("GtAchat" + Integer.toHexString(h.absolutePos(BlockPos.ZERO).hashCode() & 0xfff), rep);
-        long now = fr.pioneers.clan.core.ClanClock.now();
+        long now = fr.pioneers.society.clan.core.ClanClock.now();
         c.treasury = 1000;
         int before = ClanTerritory.budget(c, now);
         Gt.equal(null, ClanTerritory.buy(rep, 1, 0), "achat d'un claim");

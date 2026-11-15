@@ -1,9 +1,9 @@
 package fr.pioneers.client.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import fr.pioneers.content.stabilizer.Regime;
-import fr.pioneers.content.stabilizer.StabilizerCoreTile;
-import fr.pioneers.content.stabilizer.StabilizerState;
+import fr.pioneers.space.content.stabilizer.Regime;
+import fr.pioneers.space.content.stabilizer.StabilizerCoreTile;
+import fr.pioneers.space.content.stabilizer.StabilizerState;
 import java.util.UUID;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;

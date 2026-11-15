@@ -1,7 +1,7 @@
 package fr.pioneers.space.giant;
 
-import fr.pioneers.item.ItemWithDescription;
-import fr.pioneers.registries.PiSounds;
+import fr.pioneers.space.item.ItemWithDescription;
+import fr.pioneers.core.registries.PiSounds;
 import fr.pioneers.space.PiDimensions;
 import java.util.EnumMap;
 import java.util.List;

@@ -1,7 +1,7 @@
 package fr.pioneers.farm.food;
 
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.registries.PiTileEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 import java.util.HashMap;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

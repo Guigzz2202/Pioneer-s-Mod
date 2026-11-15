@@ -1,16 +1,16 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.industry.recipe.OreYields;
-import fr.pioneers.kinetics.machines.MechanicalRecipe;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.machine.ProcessingRecipe;
-import fr.pioneers.materials.GeneratedMaterials;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiMachineKit;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.industry.recipe.OreYields;
+import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.tech.machine.ProcessingRecipe;
+import fr.pioneers.tech.materials.GeneratedMaterials;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.core.registries.PiMachineKit;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.Locale;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -156,7 +156,7 @@ public final class PatchP103Lot3Tests {
         Gt.Scope s = Gt.begin(h);
         MinecraftServer server = h.getLevel().getServer();
         Recipe<?> leach = server.getRecipeManager().byKey(rl("processes/iron/acid_leach_2")).orElse(null);
-        Gt.check(leach instanceof fr.pioneers.industry.recipe.IndustrialRecipe r && r.tier() == 1, "lixiviation du fer : recette MK2 absente");
+        Gt.check(leach instanceof fr.pioneers.tech.industry.recipe.IndustrialRecipe r && r.tier() == 1, "lixiviation du fer : recette MK2 absente");
         //1.0.4-beta (lot 13) : la cuve de lixiviation est fondue dans l'extracteur (famille leaching_tank, meme tier)
         AtelierTile tank = atelier(h, new BlockPos(2, 2, 2), IndustryMachine.EXTRACTOR, CableTier.ADVANCED);
         Gt.check(tank.setLockedRecipe(rl("processes/iron/acid_leach_2")), "lixiviation absente de l'extracteur MK2");
@@ -193,7 +193,7 @@ public final class PatchP103Lot3Tests {
         Gt.equal(72, plate, "plaque de fer fondue : 50 %");
         Gt.equal(144, ingot, "lingot de fer fondu : 100 %");
         Recipe<?> rec = server.getRecipeManager().byKey(rl("industry/electric_crucible/recycle_iron_plate")).orElse(null);
-        Gt.check(rec instanceof fr.pioneers.industry.recipe.IndustrialRecipe r && r.fluidResults().get(0).getAmount() == 72,
+        Gt.check(rec instanceof fr.pioneers.tech.industry.recipe.IndustrialRecipe r && r.fluidResults().get(0).getAmount() == 72,
               "creuset electrique : plaque de fer -> 72 mB");
         //les trois broyeurs : 1 minerai brut -> 2 concasses, sans tirage en plus
         Recipe<?> jaw = server.getRecipeManager().byKey(rl("materials/jaw_crushing_crushed_iron")).orElse(null);
@@ -202,9 +202,9 @@ public final class PatchP103Lot3Tests {
         Recipe<?> kit = server.getRecipeManager().byKey(rl("crushing/raw_iron")).orElse(null);
         Gt.check(kit instanceof ProcessingRecipe p && p.getResult().getCount() == 2, "recette du kit : 2 concasses (gardee en JSON)");
         //1.0.5-beta (lot 38) : la recette du kit est DOMINEE par celle du concasseur (famille broyage, 3 au MKI) : le broyeur MKI ne la fait plus
-        Gt.check(fr.pioneers.industry.recipe.IndustryRecipes.dominated(h.getLevel(), fr.pioneers.industry.IndustryMachine.CRUSHER).contains(rl("crushing/raw_iron")),
+        Gt.check(fr.pioneers.tech.industry.recipe.IndustryRecipes.dominated(h.getLevel(), fr.pioneers.tech.industry.IndustryMachine.CRUSHER).contains(rl("crushing/raw_iron")),
               "broyeur MKN : crushing/raw_iron dominee");
-        fr.pioneers.industry.recipe.IndustrialRecipe crush = OreYields.crushOf(h.getLevel(), "iron", new ItemStack(item("crushed_iron")));
+        fr.pioneers.tech.industry.recipe.IndustrialRecipe crush = OreYields.crushOf(h.getLevel(), "iron", new ItemStack(item("crushed_iron")));
         Gt.check(crush != null && crush.converted() && crush.results().get(0).stack().getCount() * crush.tierYield(0) == 3
                  && crush.results().get(0).stack().getCount() * crush.tierYield(3) == 3, "broyeur MKN : 3 concasses (recette du concasseur, plafond T1)");
         //lot 38 : la recette a vapeur « minerai brut -> 2 concasses » est retiree (doublon sans gain) : le broyeur a vapeur fait celle du

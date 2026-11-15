@@ -1,6 +1,6 @@
 package fr.pioneers.mixin;
 
-import fr.pioneers.fauna.FaunaAi;
+import fr.pioneers.world.fauna.FaunaAi;
 import net.minecraft.world.entity.Mob;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

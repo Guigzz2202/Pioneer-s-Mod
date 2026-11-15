@@ -4,7 +4,7 @@ import fr.pioneers.core.RenderClock;
 import fr.pioneers.space.giant.GasPocketEntity;
 import fr.pioneers.space.giant.HarvesterDroneEntity;
 import fr.pioneers.space.giant.PocketKind;
-import fr.pioneers.tile.TileEntityDroneBay;
+import fr.pioneers.space.tile.TileEntityDroneBay;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.ChatFormatting;

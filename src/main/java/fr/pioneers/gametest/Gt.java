@@ -2,24 +2,24 @@ package fr.pioneers.gametest;
 
 import com.mojang.authlib.GameProfile;
 import fr.pioneers.api.machine.unit.ToolBay;
-import fr.pioneers.clan.Clan;
-import fr.pioneers.clan.ClanApi;
-import fr.pioneers.clan.ClanData;
-import fr.pioneers.clan.Faction;
-import fr.pioneers.clan.core.ClanClock;
-import fr.pioneers.clan.core.ClanCore;
-import fr.pioneers.clan.core.ClanRoles;
-import fr.pioneers.clan.faction.FactionSaved;
-import fr.pioneers.clan.territory.ClanChunkloading;
-import fr.pioneers.clan.territory.ClanTerritory;
-import fr.pioneers.clan.war.ClanDiplomacy;
-import fr.pioneers.clan.war.Siege;
-import fr.pioneers.clan.war.War;
+import fr.pioneers.society.clan.Clan;
+import fr.pioneers.society.clan.ClanApi;
+import fr.pioneers.society.clan.ClanData;
+import fr.pioneers.society.clan.Faction;
+import fr.pioneers.society.clan.core.ClanClock;
+import fr.pioneers.society.clan.core.ClanCore;
+import fr.pioneers.society.clan.core.ClanRoles;
+import fr.pioneers.society.clan.faction.FactionSaved;
+import fr.pioneers.society.clan.territory.ClanChunkloading;
+import fr.pioneers.society.clan.territory.ClanTerritory;
+import fr.pioneers.society.clan.war.ClanDiplomacy;
+import fr.pioneers.society.clan.war.Siege;
+import fr.pioneers.society.clan.war.War;
 import fr.pioneers.core.profile.PioneerCap;
 import fr.pioneers.core.profile.PioneerProfile;
-import fr.pioneers.reputation.PeopleApi;
-import fr.pioneers.ruins.RuinSites;
-import fr.pioneers.village.VillageData;
+import fr.pioneers.society.reputation.PeopleApi;
+import fr.pioneers.world.ruins.RuinSites;
+import fr.pioneers.society.village.VillageData;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelOutboundHandlerAdapter;
 import io.netty.channel.ChannelPromise;
@@ -77,11 +77,11 @@ public final class Gt {
      * 1.0.4-beta (lot 11) : bloc compact d'une machine du catalogue a ce tier : atelier, ou machine du KIT (broyeur, four industriel,
      * compacteur, qui ont absorbe d'autres machines : leurs recettes recues tournent par la voie B de KitProcess).
      */
-    public static net.minecraft.world.level.block.Block compact(fr.pioneers.industry.IndustryMachine m, fr.pioneers.transport.CableTier t) {
-        if (m.atelier == fr.pioneers.industry.IndustryMachine.Atelier.KIT) {
-            return fr.pioneers.registries.PiMachineKit.MACHINES.get(fr.pioneers.machine.MachineKind.valueOf(m.name())).get(t).getBlock();
+    public static net.minecraft.world.level.block.Block compact(fr.pioneers.tech.industry.IndustryMachine m, fr.pioneers.logistics.transport.CableTier t) {
+        if (m.atelier == fr.pioneers.tech.industry.IndustryMachine.Atelier.KIT) {
+            return fr.pioneers.core.registries.PiMachineKit.MACHINES.get(fr.pioneers.tech.machine.MachineKind.valueOf(m.name())).get(t).getBlock();
         }
-        return fr.pioneers.registries.PiIndustry.ATELIERS.get(m).get(t).getBlock();
+        return fr.pioneers.core.registries.PiIndustry.ATELIERS.get(m).get(t).getBlock();
     }
 
 

@@ -1,13 +1,13 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.industry.engraving.EngravingObjectiveItem;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiMachineKit;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.industry.engraving.EngravingObjectiveItem;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.core.registries.PiMachineKit;
+import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;

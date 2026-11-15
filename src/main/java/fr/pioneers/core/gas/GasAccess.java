@@ -2,8 +2,8 @@ package fr.pioneers.core.gas;
 
 import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.api.gas.IGasHandler;
-import fr.pioneers.compat.mekanism.MekanismCompat;
-import fr.pioneers.compat.mekanism.MekanismGasBridge;
+import fr.pioneers.core.compat.mekanism.MekanismCompat;
+import fr.pioneers.core.compat.mekanism.MekanismGasBridge;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;

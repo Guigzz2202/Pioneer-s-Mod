@@ -1,12 +1,12 @@
 package fr.pioneers.integration.jei;
 
 import fr.pioneers.farm.kitchen.Station;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.kinetics.kitchen.KitchenMachineType;
-import fr.pioneers.kinetics.kitchen.PiKitchenMachines;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.kinetics.kitchen.KitchenMachineType;
+import fr.pioneers.tech.kinetics.kitchen.PiKitchenMachines;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.EnumMap;

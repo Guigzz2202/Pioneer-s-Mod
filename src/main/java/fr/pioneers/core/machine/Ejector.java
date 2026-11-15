@@ -2,12 +2,12 @@ package fr.pioneers.core.machine;
 
 import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.api.pressure.IPressureHandler;
-import fr.pioneers.clan.ClanApi;
+import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.core.Directions;
 import fr.pioneers.core.pressure.PressureExchange;
 import fr.pioneers.core.side.SideConfig;
 import fr.pioneers.core.side.SideType;
-import fr.pioneers.transport.Transfer;
+import fr.pioneers.logistics.transport.Transfer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;

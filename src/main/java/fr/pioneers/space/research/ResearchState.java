@@ -1,7 +1,7 @@
 package fr.pioneers.space.research;
 
-import fr.pioneers.network.PacketResearch;
-import fr.pioneers.network.PiNetwork;
+import fr.pioneers.core.network.PacketResearch;
+import fr.pioneers.core.network.PiNetwork;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.EnumSet;

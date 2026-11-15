@@ -1,10 +1,10 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.core.profile.KnownPlayers;
-import fr.pioneers.forge.HeatGlow;
-import fr.pioneers.paperwork.PaperBinKind;
-import fr.pioneers.ruins.LoreIndex;
-import fr.pioneers.wild.Boar;
+import fr.pioneers.tech.forge.HeatGlow;
+import fr.pioneers.society.paperwork.PaperBinKind;
+import fr.pioneers.world.ruins.LoreIndex;
+import fr.pioneers.world.wild.Boar;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;

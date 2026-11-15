@@ -2,9 +2,9 @@ package fr.pioneers.client.gui.core;
 
 import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.home.bag.BagInterfaceTile;
-import fr.pioneers.home.bag.BagKind;
-import fr.pioneers.home.bag.BagView;
+import fr.pioneers.building.home.bag.BagInterfaceTile;
+import fr.pioneers.building.home.bag.BagKind;
+import fr.pioneers.building.home.bag.BagView;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.ChatFormatting;

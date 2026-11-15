@@ -1,6 +1,6 @@
 package fr.pioneers.farm.aquarium;
 
-import fr.pioneers.common.block.Connections;
+import fr.pioneers.core.common.block.Connections;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.TagKey;
@@ -27,7 +27,7 @@ import org.jetbrains.annotations.Nullable;
  * poissons et crustaces du mod (et poissons vanilla) au seau, ils nagent dedans ; pas d'elevage ») : bloc de verre a cadre d'acier noirci,
  * TEXTURES CONNECTEES (famille {@code pioneers:connects/aquarium} : les aquariums voisins forment un seul bassin, cadre seulement sur le
  * pourtour), {@link #FILLED} = eau dedans (seau d'eau : remplit la case vide la plus basse du bassin ; seau vide : reprend l'eau de la case
- * pleine la plus haute sans habitant). Habitants et eau : {@link AquariumTile} ; rendu {@code J:client/farm/aquarium/AquariumRenderer}.
+ * pleine la plus haute sans habitant). Habitants et eau : {@link AquariumTile} ; rendu {@code J:farm/client/aquarium/AquariumRenderer}.
  */
 public class AquariumBlock extends AbstractGlassBlock implements EntityBlock, Connections.Connected {
 

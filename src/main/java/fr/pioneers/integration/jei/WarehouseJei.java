@@ -1,12 +1,12 @@
 package fr.pioneers.integration.jei;
 
-import fr.pioneers.client.warehouse.CounterClient;
-import fr.pioneers.network.PacketWarehouse;
-import fr.pioneers.network.PiNetwork;
-import fr.pioneers.warehouse.CounterTile;
-import fr.pioneers.warehouse.CounterUnit;
-import fr.pioneers.warehouse.RecipeAsk;
-import fr.pioneers.warehouse.StockKey;
+import fr.pioneers.logistics.warehouse.client.CounterClient;
+import fr.pioneers.core.network.PacketWarehouse;
+import fr.pioneers.core.network.PiNetwork;
+import fr.pioneers.logistics.warehouse.CounterTile;
+import fr.pioneers.logistics.warehouse.CounterUnit;
+import fr.pioneers.logistics.warehouse.RecipeAsk;
+import fr.pioneers.logistics.warehouse.StockKey;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;

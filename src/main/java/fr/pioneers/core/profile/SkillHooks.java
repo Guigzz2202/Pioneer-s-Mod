@@ -2,8 +2,8 @@ package fr.pioneers.core.profile;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.block.PiBlockEntity;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -127,7 +127,7 @@ public final class SkillHooks {
             PioneerApi.gain(player, "engineering.component", made, null);
         }
         //Robotique : un robot monte a la main
-        if (result.getItem() instanceof fr.pioneers.robotics.ItemRobotUnit) {
+        if (result.getItem() instanceof fr.pioneers.logistics.robotics.ItemRobotUnit) {
             PioneerApi.gain(player, "robotics.robot", made, null);
         }
     }

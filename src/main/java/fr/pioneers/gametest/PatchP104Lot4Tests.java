@@ -1,17 +1,17 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.core.vanilla.VanillaRecipeFilter;
-import fr.pioneers.economy.SpaceGoods;
+import fr.pioneers.society.economy.SpaceGoods;
 import fr.pioneers.farm.animal.AnimalSpecies;
 import fr.pioneers.farm.animal.PetFood;
-import fr.pioneers.home.PiHome;
-import fr.pioneers.home.bag.BagContents;
-import fr.pioneers.home.bag.BagKind;
-import fr.pioneers.home.bag.FishStacking;
-import fr.pioneers.home.basket.BasketTile;
-import fr.pioneers.village.VillageCatalog;
-import fr.pioneers.village.VillagerTrade;
-import fr.pioneers.village.Villagers;
+import fr.pioneers.building.home.PiHome;
+import fr.pioneers.building.home.bag.BagContents;
+import fr.pioneers.building.home.bag.BagKind;
+import fr.pioneers.building.home.bag.FishStacking;
+import fr.pioneers.building.home.basket.BasketTile;
+import fr.pioneers.society.village.VillageCatalog;
+import fr.pioneers.society.village.VillagerTrade;
+import fr.pioneers.society.village.Villagers;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;

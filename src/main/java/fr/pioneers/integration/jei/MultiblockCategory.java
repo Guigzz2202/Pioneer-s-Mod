@@ -6,17 +6,17 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import fr.pioneers.Pioneers;
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.common.projector.Blueprint;
-import fr.pioneers.common.projector.BlueprintBill;
-import fr.pioneers.common.projector.Projections;
+import fr.pioneers.core.common.projector.Blueprint;
+import fr.pioneers.core.common.projector.BlueprintBill;
+import fr.pioneers.core.common.projector.Projections;
 import fr.pioneers.core.Texts;
-import fr.pioneers.industry.multi.Cleanroom;
-import fr.pioneers.industry.multi.IndustrialBlueprint;
-import fr.pioneers.naval.HarborBlueprint;
-import fr.pioneers.registries.PiIndustry;
+import fr.pioneers.tech.industry.multi.Cleanroom;
+import fr.pioneers.tech.industry.multi.IndustrialBlueprint;
+import fr.pioneers.logistics.naval.HarborBlueprint;
+import fr.pioneers.core.registries.PiIndustry;
 import fr.pioneers.space.assembly.AssemblyHallBlueprint;
 import fr.pioneers.space.base.BaseBlueprint;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -175,12 +175,12 @@ public class MultiblockCategory extends PiCategory<MultiblockCategory.Entry> {
         sizeTip.add(Component.translatable("jei.pioneers.multiblock.size_tip").withStyle(ChatFormatting.GRAY));
         fr.pioneers.api.multiblock.MultiblockSpec spec = b.controller() == null ? null : fr.pioneers.api.multiblock.MultiblockRegistry.of(b.controller());
         if (spec != null && spec.shape() == fr.pioneers.api.multiblock.MultiblockSpec.Shape.TEMPLATE) {
-            if (b.controller() instanceof fr.pioneers.industry.multi.ControllerBlock c && Cleanroom.is(c.machine)) {
+            if (b.controller() instanceof fr.pioneers.tech.industry.multi.ControllerBlock c && Cleanroom.is(c.machine)) {
                 //1.0.4-beta (lot 32) : salle blanche : ses vraies valeurs (operations a la fois, FE/t ; GOPS, QOPS), jamais l'echelle MKI -> MKIV
                 Cleanroom.lines(c.machine).forEach(line -> sizeTip.add(line.copy().withStyle(ChatFormatting.DARK_AQUA)));
             } else {
-                sizeTip.add(Component.translatable("jei.pioneers.multiblock.parallel", fr.pioneers.industry.Tiers.parallelCap(0),
-                      fr.pioneers.industry.Tiers.parallelCap(1), fr.pioneers.industry.Tiers.parallelCap(2), fr.pioneers.industry.Tiers.parallelCap(3))
+                sizeTip.add(Component.translatable("jei.pioneers.multiblock.parallel", fr.pioneers.tech.industry.Tiers.parallelCap(0),
+                      fr.pioneers.tech.industry.Tiers.parallelCap(1), fr.pioneers.tech.industry.Tiers.parallelCap(2), fr.pioneers.tech.industry.Tiers.parallelCap(3))
                       .withStyle(ChatFormatting.DARK_AQUA));
             }
             var compact = fr.pioneers.api.multiblock.MultiblockRegistry.compact(spec);

@@ -2,8 +2,8 @@ package fr.pioneers.client.minimap;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.client.PiKeys;
-import fr.pioneers.client.clan.ui.ClanMapAccess;
-import fr.pioneers.client.rp.RpClient;
+import fr.pioneers.society.clan.client.ui.ClanMapAccess;
+import fr.pioneers.society.rp.client.RpClient;
 import fr.pioneers.core.profile.RpActions;
 import java.nio.file.Path;
 import java.util.Locale;

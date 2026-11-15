@@ -3,7 +3,7 @@ package fr.pioneers.client;
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.environment.BodyEnvironment.Hazard;
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.network.PacketSurvivalStatus;
+import fr.pioneers.core.network.PacketSurvivalStatus;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

@@ -1,17 +1,17 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.BronzeBlock;
-import fr.pioneers.bronze.foundry.CastingTableTile;
-import fr.pioneers.bronze.foundry.CrucibleFurnaceTile;
-import fr.pioneers.bronze.foundry.Metals;
+import fr.pioneers.tech.bronze.BronzeBlock;
+import fr.pioneers.tech.bronze.foundry.CastingTableTile;
+import fr.pioneers.tech.bronze.foundry.CrucibleFurnaceTile;
+import fr.pioneers.tech.bronze.foundry.Metals;
 import fr.pioneers.core.fluid.Buckets;
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.core.registries.PiBronze;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
-import fr.pioneers.forge.automation.QuenchBasinTile;
-import fr.pioneers.kinetics.rope.WinchTile;
-import fr.pioneers.registries.PiForge;
-import fr.pioneers.registries.PiKinetics;
+import fr.pioneers.tech.forge.automation.QuenchBasinTile;
+import fr.pioneers.tech.kinetics.rope.WinchTile;
+import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.core.registries.PiKinetics;
 import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

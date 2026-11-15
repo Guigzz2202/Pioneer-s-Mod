@@ -180,8 +180,8 @@ public final class KnownPlayers extends SavedData {
         ListTag l = new ListTag();
         //1.0.5-beta (lot 19, relecture) : le lien compte <-> personnage reste PRIVE (regle des clans : permission « Voir les identites », qui
         //« ne sort jamais du clan ») : le nom de pionnier n'accompagne le compte que pour un membre de MON clan, si mon role le permet
-        fr.pioneers.clan.Clan mine = fr.pioneers.clan.ClanApi.clanOf(server, player.getUUID());
-        boolean ids = mine != null && fr.pioneers.clan.core.ClanRoles.has(mine, player.getUUID(), fr.pioneers.clan.Permission.VIEW_IDENTITIES);
+        fr.pioneers.society.clan.Clan mine = fr.pioneers.society.clan.ClanApi.clanOf(server, player.getUUID());
+        boolean ids = mine != null && fr.pioneers.society.clan.core.ClanRoles.has(mine, player.getUUID(), fr.pioneers.society.clan.Permission.VIEW_IDENTITIES);
         for (Known k : list(all, online, player.getUUID(), query, "pay".equals(purpose))) {
             CompoundTag c = new CompoundTag();
             c.putUUID("u", k.id());

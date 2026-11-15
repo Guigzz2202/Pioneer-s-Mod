@@ -1,10 +1,10 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.registries.PiTransport;
-import fr.pioneers.transport.CableTier;
-import fr.pioneers.transport.buffer.BufferTile;
-import fr.pioneers.transport.buffer.BufferType;
+import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.CableTier;
+import fr.pioneers.logistics.transport.buffer.BufferTile;
+import fr.pioneers.logistics.transport.buffer.BufferType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

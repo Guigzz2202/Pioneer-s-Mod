@@ -8,7 +8,7 @@ import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.PiClientConfig;
+import fr.pioneers.core.common.PiClientConfig;
 import java.util.Random;
 import java.util.UUID;
 import net.minecraft.client.Camera;

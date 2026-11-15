@@ -1,15 +1,15 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
 import fr.pioneers.farm.food.DishShelfBlock;
 import fr.pioneers.farm.food.DishShelfTile;
 import fr.pioneers.farm.food.ShelfJoints;
 import fr.pioneers.farm.food.WallShelfBlock;
-import fr.pioneers.home.HomeWoods;
-import fr.pioneers.home.PiHome;
-import fr.pioneers.home.basket.BasketHeap;
-import fr.pioneers.home.basket.BasketTile;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.building.home.HomeWoods;
+import fr.pioneers.building.home.PiHome;
+import fr.pioneers.building.home.basket.BasketHeap;
+import fr.pioneers.building.home.basket.BasketTile;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.HashSet;
 import java.util.Set;
 import net.minecraft.core.BlockPos;

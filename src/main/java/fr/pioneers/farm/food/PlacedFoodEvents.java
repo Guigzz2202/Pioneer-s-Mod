@@ -1,7 +1,7 @@
 package fr.pioneers.farm.food;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.clan.ClanApi;
+import fr.pioneers.society.clan.ClanApi;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;

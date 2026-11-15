@@ -1,14 +1,14 @@
 package fr.pioneers.client.gui.core;
 
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.bronze.bench.BenchRecipe.Counted;
+import fr.pioneers.tech.bronze.bench.BenchRecipe.Counted;
 import fr.pioneers.client.gui.GuiDraw;
 import fr.pioneers.core.Texts;
 import fr.pioneers.core.recipe.RecipeChoice;
 import fr.pioneers.core.recipe.RecipeLockable;
-import fr.pioneers.industry.recipe.IndustrialRecipe.FluidIn;
-import fr.pioneers.industry.recipe.IndustrialRecipe.GasAmount;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe.FluidIn;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe.GasAmount;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

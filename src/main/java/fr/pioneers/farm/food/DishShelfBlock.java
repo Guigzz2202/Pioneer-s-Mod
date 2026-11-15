@@ -2,13 +2,13 @@ package fr.pioneers.farm.food;
 
 import fr.pioneers.core.registry.BlockEntry;
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.home.HomeWoods;
+import fr.pioneers.building.home.HomeWoods;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
-import fr.pioneers.registries.PiTileEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

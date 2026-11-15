@@ -6,8 +6,8 @@ import fr.pioneers.api.multiblock.MultiblockValues;
 import fr.pioneers.client.gui.GuiDraw;
 import fr.pioneers.core.Texts;
 import fr.pioneers.core.machine.MachineGui;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.ControllerTile;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -431,12 +431,12 @@ final class CoreViews {
             int level = MultiblockViews.cleanroomTier(gui);
             if (quantum) {
                 tip.add(Component.translatable("compute.pioneers.gui.rule_quantum_cleanroom",
-                      GuiMachine.compact(fr.pioneers.compute.ComputeCore.MATRIX_QOPS * (1 << level)), Texts.grouped(fr.pioneers.compute.ComputeCore.MATRIX_FE << 2 * level))
+                      GuiMachine.compact(fr.pioneers.tech.compute.ComputeCore.MATRIX_QOPS * (1 << level)), Texts.grouped(fr.pioneers.tech.compute.ComputeCore.MATRIX_FE << 2 * level))
                       .withStyle(ChatFormatting.GRAY));
                 tip.add(Component.translatable("compute.pioneers.gui.rule_helium").withStyle(ChatFormatting.GRAY));
             } else {
                 tip.add(Component.translatable("compute.pioneers.gui.rule_racks_cleanroom",
-                      GuiMachine.compact(fr.pioneers.compute.ComputeCore.RACK_GOPS * (1 << level)), Texts.grouped(fr.pioneers.compute.ComputeCore.RACK_FE << 2 * level))
+                      GuiMachine.compact(fr.pioneers.tech.compute.ComputeCore.RACK_GOPS * (1 << level)), Texts.grouped(fr.pioneers.tech.compute.ComputeCore.RACK_FE << 2 * level))
                       .withStyle(ChatFormatting.GRAY));
                 tip.add(Component.translatable("compute.pioneers.gui.rule_heat").withStyle(ChatFormatting.GRAY));
                 tip.add(Component.translatable("compute.pioneers.gui.telemetry", String.format(Locale.ROOT, "%.1f", v(gui, MultiblockValues.C_TELEMETRY) / 10.0))

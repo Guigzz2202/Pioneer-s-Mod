@@ -11,7 +11,7 @@ import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideConfig;
 import fr.pioneers.farm.crop.FarmCropBlock;
 import fr.pioneers.farm.tree.FruitSaplingBlock;
-import fr.pioneers.industry.multi.PortBlock;
+import fr.pioneers.tech.industry.multi.PortBlock;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -51,7 +51,7 @@ import org.jetbrains.annotations.Nullable;
  * Aucune energie, aucune case : l'interface (vue maison, corps {@code GreenhouseViews}) ne fait que montrer l'etat de la serre.
  */
 public class GreenhouseRegulatorTile extends MachineTile implements MultiblockCore.House.Holder, MultiblockPort,
-      fr.pioneers.common.projector.Projections.Dynamic {
+      fr.pioneers.core.common.projector.Projections.Dynamic {
 
     /** Relecture periodique : une fois par minute. */
     public static final int PERIOD = 1200;
@@ -513,7 +513,7 @@ public class GreenhouseRegulatorTile extends MachineTile implements MultiblockCo
 
     /** Maj + clic droit : le plan des fautes d'abord (serre non formee qui en a), puis l'exemple de serre. */
     @Override
-    public List<fr.pioneers.common.projector.Blueprint> projectionPlans() {
+    public List<fr.pioneers.core.common.projector.Blueprint> projectionPlans() {
         if (formed() || faults.isEmpty()) {
             return List.of();
         }

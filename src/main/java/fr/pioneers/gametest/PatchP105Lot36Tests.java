@@ -1,13 +1,13 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchTile;
-import fr.pioneers.bronze.bench.BenchType;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchTile;
+import fr.pioneers.tech.bronze.bench.BenchType;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.vanilla.VanillaRecipeFilter;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

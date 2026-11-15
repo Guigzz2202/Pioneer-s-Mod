@@ -1,6 +1,6 @@
 package fr.pioneers.client.look;
 
-import fr.pioneers.common.PiClientConfig;
+import fr.pioneers.core.common.PiClientConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 
 /**

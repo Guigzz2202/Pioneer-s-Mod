@@ -1,18 +1,18 @@
 package fr.pioneers.integration.jei;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchType;
-import fr.pioneers.bronze.foundry.CastingRecipe;
-import fr.pioneers.bronze.foundry.KilnRecipe;
-import fr.pioneers.bronze.foundry.Metals;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamRecipe;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchType;
+import fr.pioneers.tech.bronze.foundry.CastingRecipe;
+import fr.pioneers.tech.bronze.foundry.KilnRecipe;
+import fr.pioneers.tech.bronze.foundry.Metals;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamRecipe;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
-import fr.pioneers.geology.DepositType;
-import fr.pioneers.industry.recipe.Remanents;
-import fr.pioneers.materials.GeneratedMaterials;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.world.geology.DepositType;
+import fr.pioneers.tech.industry.recipe.Remanents;
+import fr.pioneers.tech.materials.GeneratedMaterials;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
@@ -149,8 +149,8 @@ final class BronzeCategories {
 
         /** La coulee se fait-elle au moule pose (pince + creuset en argile : 2 lingots au plus, ou le moule d'enclume en plusieurs fois) ? */
         static boolean byTongs(CastingRecipe recipe) {
-            return fr.pioneers.forge.ForgeMetals.crucible(recipe.metal())
-                   && (recipe.amount() <= fr.pioneers.forge.MoltenLoad.CLAY_CRUCIBLE_MB || recipe.mold() == PiBronze.ANVIL_MOLD.get());
+            return fr.pioneers.tech.forge.ForgeMetals.crucible(recipe.metal())
+                   && (recipe.amount() <= fr.pioneers.tech.forge.MoltenLoad.CLAY_CRUCIBLE_MB || recipe.mold() == PiBronze.ANVIL_MOLD.get());
         }
 
         @Override
@@ -164,7 +164,7 @@ final class BronzeCategories {
             }
             if (byTongs(recipe)) {
                 out.add(JeiDraw.Chip.of(JeiDraw.Pic.INFO, Component.translatable("jei.pioneers.casting_all.tongs"), JeiDraw.LIGHT,
-                      Component.translatable("jei.pioneers.casting_all.tongs_tip", fr.pioneers.forge.MoltenLoad.CLAY_CRUCIBLE_MB)));
+                      Component.translatable("jei.pioneers.casting_all.tongs_tip", fr.pioneers.tech.forge.MoltenLoad.CLAY_CRUCIBLE_MB)));
             }
             out.add(JeiDraw.Chip.of(JeiDraw.Pic.COLD, Component.translatable("jei.pioneers.forge.cool", recipe.coolTicks() / 20), JeiDraw.DIM));
             return out;

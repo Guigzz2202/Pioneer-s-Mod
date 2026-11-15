@@ -1,14 +1,14 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchTile;
-import fr.pioneers.bronze.bench.BenchType;
-import fr.pioneers.cosmetic.CosmeticActions;
-import fr.pioneers.cosmetic.CosmeticCap;
-import fr.pioneers.cosmetic.CosmeticPiece;
-import fr.pioneers.cosmetic.PiCosmetics;
-import fr.pioneers.cosmetic.Wardrobe;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchTile;
+import fr.pioneers.tech.bronze.bench.BenchType;
+import fr.pioneers.equipment.cosmetic.CosmeticActions;
+import fr.pioneers.equipment.cosmetic.CosmeticCap;
+import fr.pioneers.equipment.cosmetic.CosmeticPiece;
+import fr.pioneers.equipment.cosmetic.PiCosmetics;
+import fr.pioneers.equipment.cosmetic.Wardrobe;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.List;
 import java.util.UUID;
 import net.minecraft.core.BlockPos;

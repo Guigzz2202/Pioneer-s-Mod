@@ -1,16 +1,16 @@
 package fr.pioneers.space.assembly;
 
-import fr.pioneers.common.block.Connections;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.IndustrialGlassBlock;
-import fr.pioneers.industry.multi.IndustryStyle;
-import fr.pioneers.industry.multi.PortBlock;
-import fr.pioneers.industry.multi.SheetMetalBlock;
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.industry.multi.StructureFrameBlock;
-import fr.pioneers.registries.PiBlocks;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiWorksMachines;
+import fr.pioneers.core.common.block.Connections;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.IndustrialGlassBlock;
+import fr.pioneers.tech.industry.multi.IndustryStyle;
+import fr.pioneers.tech.industry.multi.PortBlock;
+import fr.pioneers.tech.industry.multi.SheetMetalBlock;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.tech.industry.multi.StructureFrameBlock;
+import fr.pioneers.core.registries.PiBlocks;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.core.registries.PiWorksMachines;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

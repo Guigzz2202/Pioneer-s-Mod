@@ -6,8 +6,8 @@ import fr.pioneers.core.ContentsListener;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.recipe.RecipeChoice;
 import fr.pioneers.core.recipe.RecipeLockable;
-import fr.pioneers.industry.RockSamples;
-import fr.pioneers.industry.recipe.Remanents;
+import fr.pioneers.tech.industry.RockSamples;
+import fr.pioneers.tech.industry.recipe.Remanents;
 import java.util.List;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -47,7 +47,7 @@ public final class ToolBay {
     /**
      * 1.0.5-beta (lot 46, retour 72 : « echantillon + eau + lave jamais consommee ») : CASE D'ECHANTILLON du generateur de roches, meme
      * mecanisme que la case Outil (case reservee, derniere case, jamais extraite de l'exterieur ni ejectee, lisere dore) : une roche de la liste
-     * permise au tier de la machine ({@code tier} 0..3 : {@link fr.pioneers.industry.RockSamples#refusal}), UNE seule ; fantome : le pave.
+     * permise au tier de la machine ({@code tier} 0..3 : {@link fr.pioneers.tech.industry.RockSamples#refusal}), UNE seule ; fantome : le pave.
      */
     public static ItemSlot sample(int tier, @Nullable ContentsListener changed, int x, int y) {
         return new Sample(tier, changed, x, y).ghost(Items.COBBLESTONE);
@@ -137,10 +137,10 @@ public final class ToolBay {
     /** La case Outil d'une machine (atelier, controleur de multibloc, machine a vapeur), ou null. */
     @Nullable
     public static ItemSlot of(@Nullable net.minecraft.world.level.block.entity.BlockEntity be) {
-        if (be instanceof fr.pioneers.bronze.machines.SteamProcessTile steam) {
+        if (be instanceof fr.pioneers.tech.bronze.machines.SteamProcessTile steam) {
             return steam.process().toolSlot();
         }
-        if (be instanceof fr.pioneers.industry.recipe.RecipeMatch.Buffers b && !b.toolSlots().isEmpty()) {
+        if (be instanceof fr.pioneers.tech.industry.recipe.RecipeMatch.Buffers b && !b.toolSlots().isEmpty()) {
             return b.toolSlots().get(0);
         }
         return null;

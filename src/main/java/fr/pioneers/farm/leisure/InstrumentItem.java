@@ -1,7 +1,7 @@
 package fr.pioneers.farm.leisure;
 
-import fr.pioneers.client.farm.leisure.InstrumentScreen;
-import fr.pioneers.client.farm.leisure.LeisureClient;
+import fr.pioneers.farm.client.leisure.InstrumentScreen;
+import fr.pioneers.farm.client.leisure.LeisureClient;
 import fr.pioneers.core.tooltip.Tooltips;
 import java.util.List;
 import java.util.function.Consumer;

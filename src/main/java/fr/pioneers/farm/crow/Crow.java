@@ -48,7 +48,7 @@ import org.jetbrains.annotations.Nullable;
  * <p>
  * 1.0.5-beta (lot 4, spec §3 « population persistante ») : le corbeau ne disparait plus. Repu (ou las de chercher), il s'eloigne des
  * joueurs puis SE REPOSE un jour de jeu ({@link #REST}) sans piller, et reprend sa vie de corbeau de la zone ; il est compte dans le groupe
- * des oiseaux du repeuplement ({@link fr.pioneers.fauna.FaunaRegistry}). {@link CrowSpawner} appelle d'abord les corbeaux de la zone vers
+ * des oiseaux du repeuplement ({@link fr.pioneers.world.fauna.FaunaRegistry}). {@link CrowSpawner} appelle d'abord les corbeaux de la zone vers
  * un champ ({@link #summon}, {@link CallGoal}). Reglage {@code fauna.enabled} faux : comportement d'avant (il disparait loin des joueurs).
  * <p>
  * 1.0.2-beta (Guillaume : « ameliorer la fluidite de deplacement des corbeaux, eviter la chute libre ; ils ne sont pas attires par les champs :
@@ -165,7 +165,7 @@ public class Crow extends PathfinderMob implements FlyingAnimal {
     /** 1.0.5-beta (lot 4) : persistant (faune) ; sans la faune persistante, il disparait loin des joueurs comme avant. */
     @Override
     public boolean removeWhenFarAway(double distance) {
-        return !fr.pioneers.fauna.FaunaSettings.current().enabled();
+        return !fr.pioneers.world.fauna.FaunaSettings.current().enabled();
     }
 
     /** Au repos (repu) : ni pillage ni ronde. */
@@ -188,7 +188,7 @@ public class Crow extends PathfinderMob implements FlyingAnimal {
 
     /** Repu ou las : repos d'un jour (sans la faune persistante : il disparait, comme avant). */
     void rest() {
-        if (!fr.pioneers.fauna.FaunaSettings.current().enabled()) {
+        if (!fr.pioneers.world.fauna.FaunaSettings.current().enabled()) {
             discard();
             return;
         }

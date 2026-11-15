@@ -1,6 +1,6 @@
 package fr.pioneers.space.event;
 
-import fr.pioneers.common.PiCommonConfig;
+import fr.pioneers.core.common.PiCommonConfig;
 import fr.pioneers.space.SolarSystem.Body;
 import java.util.Locale;
 import org.jetbrains.annotations.Nullable;

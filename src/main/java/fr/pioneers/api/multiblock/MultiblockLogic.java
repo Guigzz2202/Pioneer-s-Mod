@@ -1,8 +1,8 @@
 package fr.pioneers.api.multiblock;
 
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.nuclear.ReactorView;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.tech.nuclear.ReactorView;
 import java.util.function.LongPredicate;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;

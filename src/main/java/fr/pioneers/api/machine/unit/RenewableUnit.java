@@ -2,7 +2,7 @@ package fr.pioneers.api.machine.unit;
 
 import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.core.machine.MachineTile;
-import fr.pioneers.energy.EnergyKind;
+import fr.pioneers.tech.energy.EnergyKind;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
 

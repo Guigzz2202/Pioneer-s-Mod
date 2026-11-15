@@ -1,10 +1,10 @@
 package fr.pioneers.space.giant;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.PiCommonConfig;
-import fr.pioneers.gear.GearEvents;
-import fr.pioneers.item.ItemSpaceSuit;
-import fr.pioneers.registries.PiEntityTypes;
+import fr.pioneers.core.common.PiCommonConfig;
+import fr.pioneers.equipment.gear.GearEvents;
+import fr.pioneers.space.item.ItemSpaceSuit;
+import fr.pioneers.core.registries.PiEntityTypes;
 import fr.pioneers.space.PiDimensions;
 import fr.pioneers.space.SolarSystem;
 import fr.pioneers.space.environment.SurvivalHandler;

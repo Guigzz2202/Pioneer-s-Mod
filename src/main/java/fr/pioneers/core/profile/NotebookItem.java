@@ -28,7 +28,7 @@ public class NotebookItem extends Item {
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, @NotNull Player player, @NotNull InteractionHand hand) {
         if (level.isClientSide) {
-            DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> fr.pioneers.client.rp.RpClient.openNotebook(null));
+            DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> fr.pioneers.society.rp.client.RpClient.openNotebook(null));
         }
         return InteractionResultHolder.sidedSuccess(player.getItemInHand(hand), level.isClientSide);
     }

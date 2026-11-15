@@ -1,7 +1,7 @@
 package fr.pioneers.space;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.geology.OutcropFeature;
+import fr.pioneers.world.geology.OutcropFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraftforge.registries.DeferredRegister;

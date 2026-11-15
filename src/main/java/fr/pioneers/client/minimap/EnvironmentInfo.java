@@ -1,10 +1,10 @@
 package fr.pioneers.client.minimap;
 
 import fr.pioneers.farm.crop.Climate;
-import fr.pioneers.network.PacketEnvironment;
+import fr.pioneers.core.network.PacketEnvironment;
 import fr.pioneers.space.environment.EnvironmentSync;
-import fr.pioneers.season.SeasonTexts;
-import fr.pioneers.season.Seasons;
+import fr.pioneers.world.season.SeasonTexts;
+import fr.pioneers.world.season.Seasons;
 import java.util.Locale;
 import javax.annotation.Nullable;
 import net.minecraft.client.Minecraft;

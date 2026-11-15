@@ -2,8 +2,8 @@ package fr.pioneers.farm.herd;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.item.ItemWithDescription;
-import fr.pioneers.network.PiNetwork;
+import fr.pioneers.space.item.ItemWithDescription;
+import fr.pioneers.core.network.PiNetwork;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;

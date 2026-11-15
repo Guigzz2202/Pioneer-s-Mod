@@ -8,16 +8,16 @@ import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.api.machine.tier.GeneratedTierFamilies;
 import fr.pioneers.api.machine.tier.TierRecipes;
 import fr.pioneers.api.machine.unit.ProcessUnit;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamProcess;
-import fr.pioneers.bronze.machines.SteamProcessTile;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamProcess;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
 import fr.pioneers.client.gui.GuiDraw;
 import fr.pioneers.core.Texts;
 import fr.pioneers.core.side.SideType;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.Tiers;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.industry.recipe.Remanents;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.Tiers;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.industry.recipe.Remanents;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -198,7 +198,7 @@ final class StandardView implements MachineScreens.View {
         int tier = tile.tier.ordinal();
         if (m != null && m.kind == IndustryMachine.Kind.WATER) {
             //1.0.5-beta (lot 46) : bloc a eau : debit (mB/t) en tete et en ligne, consommation
-            String rate = Texts.grouped(fr.pioneers.industry.GeneratedLot46.WATER_RATE[tier]);
+            String rate = Texts.grouped(fr.pioneers.tech.industry.GeneratedLot46.WATER_RATE[tier]);
             headline = status == ProcessUnit.WORKING ? Component.translatable("gui.pioneers.water.rate_value", rate) : Component.empty();
             rows.add(new GuiMachine.Row(Component.translatable("gui.pioneers.info.using"), Component.literal(Texts.grouped(Tiers.power(tile.tier)) + " FE/t"),
                   CONSUMPTION));
@@ -261,7 +261,7 @@ final class StandardView implements MachineScreens.View {
         rows.add(new InfoRow("global_tier", Component.translatable("tier.pioneers.global." + SteamProcess.TIER), 0xFF000000 | GeneratedTierFamilies.COLORS[1]));
         rows.add(new InfoRow("family", Component.translatable("tier.pioneers.family." + steam.process().family), PiMenuScreen.TEXT));
         rows.add(new InfoRow("steam_use", AgeViews.mbt(steam.process().steamUse), 0xFFE0A030));
-        rows.add(new InfoRow("steam_reserve", AgeViews.mb(fr.pioneers.bronze.steam.SteamRules.PROCESS_RESERVE), PiMenuScreen.TEXT));
+        rows.add(new InfoRow("steam_reserve", AgeViews.mb(fr.pioneers.tech.bronze.steam.SteamRules.PROCESS_RESERVE), PiMenuScreen.TEXT));
         rows.add(new InfoRow("tier_speed", Component.translatable("gui.pioneers.tier.speed_value", 2), PiMenuScreen.TEXT));
         rows.add(new InfoRow("tier_yield", Component.translatable("gui.pioneers.tier.yield_value", yieldText(fr.pioneers.api.machine.PowerRules.yieldFactor(1, 0))),
               0xFF7BD87B));

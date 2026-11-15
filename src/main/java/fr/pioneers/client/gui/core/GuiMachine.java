@@ -18,11 +18,11 @@ import fr.pioneers.core.recipe.RecipeLockable;
 import fr.pioneers.core.side.SideConfig;
 import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.side.SideType;
-import fr.pioneers.industry.Tiers;
-import fr.pioneers.industry.recipe.Remanents;
-import fr.pioneers.network.PacketRecipeLock;
-import fr.pioneers.network.PacketTileAction;
-import fr.pioneers.network.PiNetwork;
+import fr.pioneers.tech.industry.Tiers;
+import fr.pioneers.tech.industry.recipe.Remanents;
+import fr.pioneers.core.network.PacketRecipeLock;
+import fr.pioneers.core.network.PacketTileAction;
+import fr.pioneers.core.network.PiNetwork;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -453,7 +453,7 @@ public class GuiMachine extends PiMenuScreen<MachineMenu> {
     /** Envoie un reglage a valeur au serveur (PacketMachineSetting, garde PacketGuard). */
     void sendSetting(int setting, int value) {
         if (tile() != null) {
-            PiNetwork.CHANNEL.sendToServer(new fr.pioneers.network.PacketMachineSetting(tile().getBlockPos(), setting, value));
+            PiNetwork.CHANNEL.sendToServer(new fr.pioneers.core.network.PacketMachineSetting(tile().getBlockPos(), setting, value));
             sentSetting = setting;
             sentValue = value;
             sentAt = net.minecraft.Util.getMillis();
@@ -1014,10 +1014,10 @@ public class GuiMachine extends PiMenuScreen<MachineMenu> {
         }
         net.minecraft.world.item.ItemStack carried = menu.getCarried();
         if (!carried.isEmpty()) {
-            String why = fr.pioneers.industry.RockSamples.refusal(carried, tier);
+            String why = fr.pioneers.tech.industry.RockSamples.refusal(carried, tier);
             if (why != null) {
-                Component reason = fr.pioneers.industry.RockSamples.TIER.equals(why)
-                                   ? Component.translatable("gui.pioneers.sample.why.tier", tierName(fr.pioneers.industry.RockSamples.minTier(carried)))
+                Component reason = fr.pioneers.tech.industry.RockSamples.TIER.equals(why)
+                                   ? Component.translatable("gui.pioneers.sample.why.tier", tierName(fr.pioneers.tech.industry.RockSamples.minTier(carried)))
                                    : Component.translatable("gui.pioneers.sample.why." + why);
                 tooltip(List.of(Component.translatable("gui.pioneers.sample.refused", reason).withStyle(ChatFormatting.RED)));
             }
@@ -1030,7 +1030,7 @@ public class GuiMachine extends PiMenuScreen<MachineMenu> {
             tip.add(Component.translatable("gui.pioneers.sample.slot.fluids").withStyle(ChatFormatting.GRAY));
             net.minecraft.network.chat.MutableComponent names = Component.empty();
             int n = 0;
-            for (net.minecraft.world.item.Item item : fr.pioneers.industry.RockSamples.items(tier)) {
+            for (net.minecraft.world.item.Item item : fr.pioneers.tech.industry.RockSamples.items(tier)) {
                 if (n > 0) {
                     names.append(", ");
                 }

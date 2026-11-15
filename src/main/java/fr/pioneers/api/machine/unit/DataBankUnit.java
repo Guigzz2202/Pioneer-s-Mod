@@ -8,7 +8,7 @@ import fr.pioneers.api.machine.resource.ResourceStore;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.side.SideType;
-import fr.pioneers.data.BasicDataTank;
+import fr.pioneers.core.data.BasicDataTank;
 import java.util.EnumMap;
 import java.util.Map;
 import net.minecraft.core.Direction;

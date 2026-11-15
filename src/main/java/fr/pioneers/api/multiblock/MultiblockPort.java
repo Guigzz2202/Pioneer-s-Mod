@@ -1,8 +1,8 @@
 package fr.pioneers.api.multiblock;
 
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.multi.PortBlock;
-import fr.pioneers.industry.multi.Structures;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.multi.PortBlock;
+import fr.pioneers.tech.industry.multi.Structures;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;

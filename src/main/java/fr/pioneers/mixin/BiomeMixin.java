@@ -1,6 +1,6 @@
 package fr.pioneers.mixin;
 
-import fr.pioneers.weather.Precipitations;
+import fr.pioneers.world.weather.Precipitations;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.biome.Biome;

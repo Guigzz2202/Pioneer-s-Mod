@@ -1,7 +1,7 @@
 package fr.pioneers.farm.hemp;
 
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.item.ItemWithDescription;
+import fr.pioneers.space.item.ItemWithDescription;
 import java.util.List;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.Item;

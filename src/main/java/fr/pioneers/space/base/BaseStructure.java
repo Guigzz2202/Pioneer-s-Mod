@@ -1,15 +1,15 @@
 package fr.pioneers.space.base;
 
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.common.block.Connections;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.IndustrialGlassBlock;
-import fr.pioneers.industry.multi.IndustryStyle;
-import fr.pioneers.industry.multi.SheetMetalBlock;
-import fr.pioneers.industry.multi.StructureFrameBlock;
-import fr.pioneers.registries.PiBaseMachines;
-import fr.pioneers.registries.PiBlocks;
-import fr.pioneers.registries.PiIndustry;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.core.common.block.Connections;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.IndustrialGlassBlock;
+import fr.pioneers.tech.industry.multi.IndustryStyle;
+import fr.pioneers.tech.industry.multi.SheetMetalBlock;
+import fr.pioneers.tech.industry.multi.StructureFrameBlock;
+import fr.pioneers.core.registries.PiBaseMachines;
+import fr.pioneers.core.registries.PiBlocks;
+import fr.pioneers.core.registries.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

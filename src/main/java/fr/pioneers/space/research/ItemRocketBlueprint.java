@@ -1,6 +1,6 @@
 package fr.pioneers.space.research;
 
-import fr.pioneers.common.PiLang;
+import fr.pioneers.core.common.PiLang;
 import fr.pioneers.core.tooltip.Tooltips;
 import fr.pioneers.space.RocketTier;
 import java.util.List;

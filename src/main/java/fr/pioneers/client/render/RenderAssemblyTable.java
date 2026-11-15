@@ -2,9 +2,9 @@ package fr.pioneers.client.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import fr.pioneers.client.space.FxTicks;
+import fr.pioneers.space.client.FxTicks;
 import fr.pioneers.core.RenderClock;
-import fr.pioneers.tile.TileEntityAssemblyTable;
+import fr.pioneers.space.tile.TileEntityAssemblyTable;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;

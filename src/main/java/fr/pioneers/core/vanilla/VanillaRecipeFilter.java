@@ -1,11 +1,11 @@
 package fr.pioneers.core.vanilla;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchType;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchType;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashSet;

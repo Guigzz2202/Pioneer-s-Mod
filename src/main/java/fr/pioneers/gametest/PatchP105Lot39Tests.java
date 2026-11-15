@@ -3,23 +3,23 @@ package fr.pioneers.gametest;
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.machine.tier.TierRecipes;
 import fr.pioneers.api.machine.tier.TierRecipes.TierRecipe;
-import fr.pioneers.bronze.autofoundry.AutoFoundryTile;
-import fr.pioneers.bronze.foundry.CrucibleFurnaceTile;
-import fr.pioneers.bronze.foundry.CrucibleUnit;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamProcessTile;
-import fr.pioneers.common.PiRemaps;
+import fr.pioneers.tech.bronze.autofoundry.AutoFoundryTile;
+import fr.pioneers.tech.bronze.foundry.CrucibleFurnaceTile;
+import fr.pioneers.tech.bronze.foundry.CrucibleUnit;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
+import fr.pioneers.core.common.PiRemaps;
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.forge.ForgeMetals;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.IoMigration;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.forge.ForgeMetals;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.IoMigration;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
@@ -318,15 +318,15 @@ public final class PatchP105Lot39Tests {
         }
         //1.0.5-beta (lot 42) : les lots rendus sont dans la table generee GeneratedBatchRefund (un seul mecanisme : BatchRefund)
         int seen = 0;
-        for (Map.Entry<String, String[]> e : fr.pioneers.industry.multi.GeneratedBatchRefund.TABLE.entrySet()) {
+        for (Map.Entry<String, String[]> e : fr.pioneers.tech.industry.multi.GeneratedBatchRefund.TABLE.entrySet()) {
             if (!e.getKey().startsWith("electric_crucible|")) {
                 continue;
             }
             seen++;
-            fr.pioneers.industry.multi.BatchRefund.Inputs in = fr.pioneers.industry.multi.BatchRefund.parse(e.getValue());
+            fr.pioneers.tech.industry.multi.BatchRefund.Inputs in = fr.pioneers.tech.industry.multi.BatchRefund.parse(e.getValue());
             Gt.check(!in.items().isEmpty(), "entrees rendues : " + e.getKey());
-            for (fr.pioneers.industry.multi.BatchRefund.Ref x : in.items()) {
-                Gt.check(fr.pioneers.industry.multi.BatchRefund.item(x.ref()) != net.minecraft.world.item.Items.AIR, "objet rendu connu : " + x.ref());
+            for (fr.pioneers.tech.industry.multi.BatchRefund.Ref x : in.items()) {
+                Gt.check(fr.pioneers.tech.industry.multi.BatchRefund.item(x.ref()) != net.minecraft.world.item.Items.AIR, "objet rendu connu : " + x.ref());
                 Gt.check(x.count() > 0, "nombre rendu : " + e.getKey());
             }
             //la recette n'est plus au creuset (partie au four a induction, ou retiree)
@@ -336,10 +336,10 @@ public final class PatchP105Lot39Tests {
         Gt.check(seen >= 27, "lots du creuset dans la table : " + seen);
         //un creuset industriel dont le lot en cours (2 operations) etait l'acier par induction : entrees rendues dans ses tampons de sortie
         ControllerTile ctrl = (ControllerTile) place(h, new BlockPos(3, 2, 3), PiIndustry.CONTROLLERS.get(IndustryMachine.ELECTRIC_CRUCIBLE).getBlock());
-        Gt.check(fr.pioneers.industry.multi.BatchRefund.of(ctrl, rl("industry/induction_furnace/induction_steel"), 2), "lot d'acier par induction rendu");
+        Gt.check(fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("industry/induction_furnace/induction_steel"), 2), "lot d'acier par induction rendu");
         Gt.equal(4, count(ctrl.itemOutputs(), item("iron_ingot")), "2 operations : 4 lingots de fer rendus");
         Gt.equal(2, count(ctrl.itemOutputs(), item("coke")), "2 operations : 2 cokes rendus");
-        Gt.check(!fr.pioneers.industry.multi.BatchRefund.of(ctrl, rl("industry/electric_crucible/melt_raw_iron"), 1), "recette gardee : rien a rendre");
+        Gt.check(!fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("industry/electric_crucible/melt_raw_iron"), 1), "recette gardee : rien a rendre");
         s.done();
     }
 }

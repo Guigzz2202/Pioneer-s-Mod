@@ -230,9 +230,9 @@ public final class LiveRelease {
     @Nullable
     public static Mob liveFish(Level level, int species, float size) {
         if (FishSpawns.catchOnly(GeneratedFish.SPECIES[species])) {
-            Mob shark = fr.pioneers.wild.PiWild9.GRAY_REEF_SHARK.get().create(level);
-            if (shark instanceof fr.pioneers.wild.WildAnimal w) {
-                w.setSex(level.random.nextBoolean() ? fr.pioneers.wild.WildRules.MALE : fr.pioneers.wild.WildRules.FEMALE);
+            Mob shark = fr.pioneers.world.wild.PiWild9.GRAY_REEF_SHARK.get().create(level);
+            if (shark instanceof fr.pioneers.world.wild.WildAnimal w) {
+                w.setSex(level.random.nextBoolean() ? fr.pioneers.world.wild.WildRules.MALE : fr.pioneers.world.wild.WildRules.FEMALE);
             }
             if (shark != null) {
                 shark.setPersistenceRequired();

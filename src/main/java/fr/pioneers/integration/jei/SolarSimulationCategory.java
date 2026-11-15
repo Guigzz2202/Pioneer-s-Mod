@@ -1,11 +1,11 @@
 package fr.pioneers.integration.jei;
 
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.content.spacesim.SpaceSimControllerTile;
+import fr.pioneers.space.content.spacesim.SpaceSimControllerTile;
 import fr.pioneers.core.gas.PiGasTypes;
-import fr.pioneers.recipe.SolarSimulationRecipe;
-import fr.pioneers.registries.PiItems;
-import fr.pioneers.registries.PiSpaceSim;
+import fr.pioneers.core.recipes.SolarSimulationRecipe;
+import fr.pioneers.core.registries.PiItems;
+import fr.pioneers.core.registries.PiSpaceSim;
 import fr.pioneers.space.research.ResearchNode;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;

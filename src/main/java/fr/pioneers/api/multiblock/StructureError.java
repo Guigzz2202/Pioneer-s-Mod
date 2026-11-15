@@ -1,12 +1,12 @@
 package fr.pioneers.api.multiblock;
 
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.NbtRoles;
-import fr.pioneers.industry.multi.PartBlock;
-import fr.pioneers.industry.multi.Signature;
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.NbtRoles;
+import fr.pioneers.tech.industry.multi.PartBlock;
+import fr.pioneers.tech.industry.multi.Signature;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.Locale;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

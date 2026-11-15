@@ -1,8 +1,8 @@
 package fr.pioneers.space;
 
-import fr.pioneers.common.block.ConnectedBlock;
-import fr.pioneers.common.block.Connections;
-import fr.pioneers.registries.PiBaseMachines;
+import fr.pioneers.core.common.block.ConnectedBlock;
+import fr.pioneers.core.common.block.Connections;
+import fr.pioneers.core.registries.PiBaseMachines;
 import java.util.Objects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

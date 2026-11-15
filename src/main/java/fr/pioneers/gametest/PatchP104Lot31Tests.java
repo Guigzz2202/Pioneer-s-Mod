@@ -1,9 +1,9 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.multi.GeneratedNbtShapes;
-import fr.pioneers.industry.multi.NbtRoles;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.multi.GeneratedNbtShapes;
+import fr.pioneers.tech.industry.multi.NbtRoles;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;

@@ -21,9 +21,9 @@ public final class RpBootstrap {
         Diagnosis.init();
         WaypointTeleport.init();                       //1.0.4-beta (lot 29) : teleportation des administrateurs aux waypoints
         fr.pioneers.guide.party.PartyService.init();   //1.0.4-beta (lot 29) : mode partie du guide
-        fr.pioneers.ruins.RuinsBootstrap.init(modBus);
-        fr.pioneers.economy.EconomyBootstrap.init(modBus);
-        fr.pioneers.village.VillageBootstrap.init(modBus);
-        fr.pioneers.clan.ClanBootstrap.init(modBus);
+        fr.pioneers.world.ruins.RuinsBootstrap.init(modBus);
+        fr.pioneers.society.economy.EconomyBootstrap.init(modBus);
+        fr.pioneers.society.village.VillageBootstrap.init(modBus);
+        fr.pioneers.society.clan.ClanBootstrap.init(modBus);
     }
 }

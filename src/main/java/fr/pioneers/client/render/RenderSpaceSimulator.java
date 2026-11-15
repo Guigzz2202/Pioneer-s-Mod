@@ -2,9 +2,9 @@ package fr.pioneers.client.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import fr.pioneers.content.spacesim.SpaceSimControllerTile;
-import fr.pioneers.content.spacesim.SpaceSimMode;
-import fr.pioneers.content.spacesim.SpaceSimShape;
+import fr.pioneers.space.content.spacesim.SpaceSimControllerTile;
+import fr.pioneers.space.content.spacesim.SpaceSimMode;
+import fr.pioneers.space.content.spacesim.SpaceSimShape;
 import fr.pioneers.core.RenderClock;
 import java.util.Random;
 import java.util.UUID;

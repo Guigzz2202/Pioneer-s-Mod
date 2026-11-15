@@ -1,9 +1,9 @@
 package fr.pioneers.space;
 
-import fr.pioneers.common.PiCommonConfig;
-import fr.pioneers.common.PiLang;
-import fr.pioneers.network.PacketCapsuleInput;
-import fr.pioneers.registries.PiSounds;
+import fr.pioneers.core.common.PiCommonConfig;
+import fr.pioneers.core.common.PiLang;
+import fr.pioneers.core.network.PacketCapsuleInput;
+import fr.pioneers.core.registries.PiSounds;
 import fr.pioneers.space.environment.Environments;
 import fr.pioneers.space.giant.Aerostats;
 import net.minecraft.ChatFormatting;

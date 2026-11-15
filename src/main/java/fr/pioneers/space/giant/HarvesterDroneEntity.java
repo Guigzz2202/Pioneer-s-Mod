@@ -1,10 +1,10 @@
 package fr.pioneers.space.giant;
 
-import fr.pioneers.registries.PiRobotics;
-import fr.pioneers.registries.PiSounds;
-import fr.pioneers.robotics.UnitKind;
-import fr.pioneers.robotics.UnitTier;
-import fr.pioneers.tile.TileEntityDroneBay;
+import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.core.registries.PiSounds;
+import fr.pioneers.logistics.robotics.UnitKind;
+import fr.pioneers.logistics.robotics.UnitTier;
+import fr.pioneers.space.tile.TileEntityDroneBay;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;

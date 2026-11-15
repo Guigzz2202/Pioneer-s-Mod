@@ -1,24 +1,24 @@
 package fr.pioneers.api.multiblock;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.industry.construction.CleanroomGlassBlock;
-import fr.pioneers.industry.construction.CleanroomPanelBlock;
-import fr.pioneers.industry.construction.FireboxWallBlock;
-import fr.pioneers.industry.construction.HeatingCoilBlock;
-import fr.pioneers.industry.construction.PiConstruction;
-import fr.pioneers.industry.construction.StackedColumnBlock;
-import fr.pioneers.industry.construction.TwinConnectedBlock;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.ConcreteShellBlock;
-import fr.pioneers.industry.multi.ControllerBlock;
-import fr.pioneers.industry.multi.IndustrialGlassBlock;
-import fr.pioneers.industry.multi.ModuleBlock;
-import fr.pioneers.industry.multi.PartBlock;
-import fr.pioneers.industry.multi.PortBlock;
-import fr.pioneers.industry.multi.SheetMetalBlock;
-import fr.pioneers.industry.multi.StructureFrameBlock;
-import fr.pioneers.nuclear.ReactorBlock;
-import fr.pioneers.registries.PiBlocks;
+import fr.pioneers.tech.industry.construction.CleanroomGlassBlock;
+import fr.pioneers.tech.industry.construction.CleanroomPanelBlock;
+import fr.pioneers.tech.industry.construction.FireboxWallBlock;
+import fr.pioneers.tech.industry.construction.HeatingCoilBlock;
+import fr.pioneers.tech.industry.construction.PiConstruction;
+import fr.pioneers.tech.industry.construction.StackedColumnBlock;
+import fr.pioneers.tech.industry.construction.TwinConnectedBlock;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.ConcreteShellBlock;
+import fr.pioneers.tech.industry.multi.ControllerBlock;
+import fr.pioneers.tech.industry.multi.IndustrialGlassBlock;
+import fr.pioneers.tech.industry.multi.ModuleBlock;
+import fr.pioneers.tech.industry.multi.PartBlock;
+import fr.pioneers.tech.industry.multi.PortBlock;
+import fr.pioneers.tech.industry.multi.SheetMetalBlock;
+import fr.pioneers.tech.industry.multi.StructureFrameBlock;
+import fr.pioneers.tech.nuclear.ReactorBlock;
+import fr.pioneers.core.registries.PiBlocks;
 import java.util.List;
 import java.util.function.Predicate;
 import net.minecraft.core.registries.Registries;
@@ -69,10 +69,10 @@ public record Role(String name, TagKey<Block> tag, Predicate<BlockState> byClass
      * Role des modules d'une sorte : classe ModuleBlock de cette sorte, ou tag {@code pioneers:multiblock/module/<sorte>}. 1.0.4-beta (lot 23) :
      * plus de bloc « Colonne montante » : la colonne montante de la plate-forme offshore est une POMPE A COLONNE (bloc empilable du lot 22).
      */
-    public static Role module(fr.pioneers.industry.IndustryModule module) {
+    public static Role module(fr.pioneers.tech.industry.IndustryModule module) {
         return new Role("module", TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Pioneers.MODID, "multiblock/module/" + module.id())),
               s -> s.getBlock() instanceof ModuleBlock m && m.module == module
-                   || module == fr.pioneers.industry.IndustryModule.RISER && s.getBlock() instanceof StackedColumnBlock c && c.family.equals("column_pump"));
+                   || module == fr.pioneers.tech.industry.IndustryModule.RISER && s.getBlock() instanceof StackedColumnBlock c && c.family.equals("column_pump"));
     }
 
     /** Le bloc est-il accepte (classe, ou tag une fois les tags charges) ? */

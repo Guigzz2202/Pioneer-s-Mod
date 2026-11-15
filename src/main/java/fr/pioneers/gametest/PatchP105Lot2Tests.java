@@ -1,12 +1,12 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.season.SeasonData;
-import fr.pioneers.season.SeasonEvents;
-import fr.pioneers.season.SeasonPrecipitation;
-import fr.pioneers.season.Seasons.Season;
-import fr.pioneers.weather.Precipitation;
-import fr.pioneers.weather.PrecipitationType;
-import fr.pioneers.weather.Precipitations;
+import fr.pioneers.world.season.SeasonData;
+import fr.pioneers.world.season.SeasonEvents;
+import fr.pioneers.world.season.SeasonPrecipitation;
+import fr.pioneers.world.season.Seasons.Season;
+import fr.pioneers.world.weather.Precipitation;
+import fr.pioneers.world.weather.PrecipitationType;
+import fr.pioneers.world.weather.Precipitations;
 import java.util.concurrent.atomic.AtomicReference;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;

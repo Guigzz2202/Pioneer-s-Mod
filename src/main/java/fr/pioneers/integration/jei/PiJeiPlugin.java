@@ -3,50 +3,50 @@ package fr.pioneers.integration.jei;
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.machine.MachineRegistry;
 import fr.pioneers.api.machine.MachineSpec;
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchTile;
-import fr.pioneers.bronze.bench.BenchType;
-import fr.pioneers.bronze.foundry.CastingRecipe;
-import fr.pioneers.bronze.foundry.KilnRecipe;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamProcessTile;
-import fr.pioneers.bronze.machines.SteamRecipe;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchTile;
+import fr.pioneers.tech.bronze.bench.BenchType;
+import fr.pioneers.tech.bronze.foundry.CastingRecipe;
+import fr.pioneers.tech.bronze.foundry.KilnRecipe;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
+import fr.pioneers.tech.bronze.machines.SteamRecipe;
 import fr.pioneers.client.gui.core.GuiMachine;
-import fr.pioneers.client.guide.GuideLinks;
-import fr.pioneers.content.universe.GalaxyType;
+import fr.pioneers.guide.client.GuideLinks;
+import fr.pioneers.space.content.universe.GalaxyType;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
 import fr.pioneers.core.vanilla.VanillaReplacements;
-import fr.pioneers.geology.DepositType;
-import fr.pioneers.geology.DepositTypes;
-import fr.pioneers.geology.fluid.FluidDepositType;
-import fr.pioneers.geology.fluid.FluidDepositTypes;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.Cleanroom;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.kinetics.machines.MachineType;
-import fr.pioneers.kinetics.machines.MechanicalRecipe;
-import fr.pioneers.mechanics.PiMechanics;
-import fr.pioneers.recipe.AssemblyRecipe;
-import fr.pioneers.recipe.AssemblyStation;
-import fr.pioneers.recipe.PiRecipes;
-import fr.pioneers.recipe.SolarSimulationRecipe;
-import fr.pioneers.registries.PiBaseMachines;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiCosmicBlocks;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiItems;
-import fr.pioneers.registries.PiKinetics;
-import fr.pioneers.registries.PiRobotics;
-import fr.pioneers.registries.PiScienceMachines;
-import fr.pioneers.registries.PiSpaceSim;
-import fr.pioneers.registries.PiStabilizer;
-import fr.pioneers.registries.PiTransport;
-import fr.pioneers.registries.PiWorksMachines;
-import fr.pioneers.robotics.UnitKind;
-import fr.pioneers.robotics.UnitTier;
+import fr.pioneers.world.geology.DepositType;
+import fr.pioneers.world.geology.DepositTypes;
+import fr.pioneers.world.geology.fluid.FluidDepositType;
+import fr.pioneers.world.geology.fluid.FluidDepositTypes;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.Cleanroom;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.kinetics.machines.MachineType;
+import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
+import fr.pioneers.tech.mechanics.PiMechanics;
+import fr.pioneers.core.recipes.AssemblyRecipe;
+import fr.pioneers.core.recipes.AssemblyStation;
+import fr.pioneers.core.recipes.PiRecipes;
+import fr.pioneers.core.recipes.SolarSimulationRecipe;
+import fr.pioneers.core.registries.PiBaseMachines;
+import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.core.registries.PiCosmicBlocks;
+import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.core.registries.PiItems;
+import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.core.registries.PiScienceMachines;
+import fr.pioneers.core.registries.PiSpaceSim;
+import fr.pioneers.core.registries.PiStabilizer;
+import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.core.registries.PiWorksMachines;
+import fr.pioneers.logistics.robotics.UnitKind;
+import fr.pioneers.logistics.robotics.UnitTier;
 import fr.pioneers.space.SolarSystem.Body;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.HashMap;
@@ -331,12 +331,12 @@ public class PiJeiPlugin implements IModPlugin {
         List<IndustrialRecipe> out = new ArrayList<>(IndustryRecipes.of(level, IndustryMachine.SOLID_COMBUSTION_GENERATOR));
         List<IndustrialRecipe> solids = new ArrayList<>();
         for (net.minecraft.world.item.Item item : net.minecraftforge.registries.ForgeRegistries.ITEMS) {
-            IndustrialRecipe r = fr.pioneers.industry.GeneratorOutput.solidFuel(new ItemStack(item));
+            IndustrialRecipe r = fr.pioneers.tech.industry.GeneratorOutput.solidFuel(new ItemStack(item));
             if (r != null) {
                 solids.add(r);
             }
         }
-        solids.sort(java.util.Comparator.comparingLong((IndustrialRecipe r) -> -fr.pioneers.industry.GeneratorOutput.total(r, false))
+        solids.sort(java.util.Comparator.comparingLong((IndustrialRecipe r) -> -fr.pioneers.tech.industry.GeneratorOutput.total(r, false))
               .thenComparing(r -> r.getId().toString()));
         out.addAll(solids);
         return out;
@@ -400,7 +400,7 @@ public class PiJeiPlugin implements IModPlugin {
                     shown = shown.stream().filter(r -> !MeltingCategories.isMelt(r)).toList();
                 }
                 //1.0.4-beta (lot 11, fusion des machines) : machine de base : recettes rangees par famille (propres d'abord), pastille de famille
-                if (fr.pioneers.industry.GeneratedFusions.BASE.containsValue(m.key)) {
+                if (fr.pioneers.tech.industry.GeneratedFusions.BASE.containsValue(m.key)) {
                     shown = shown.stream().sorted(java.util.Comparator.comparingInt(IndustryCategory::familyRank)).toList();
                 }
                 registration.addRecipes(recipeType, shown);
@@ -448,7 +448,7 @@ public class PiJeiPlugin implements IModPlugin {
                   @Override
                   public java.util.List<net.minecraft.client.renderer.Rect2i> getGuiExtraAreas(
                         net.minecraft.client.gui.screens.inventory.InventoryScreen screen) {
-                      return fr.pioneers.client.cosmetic.CosmeticPanel.areas(screen);
+                      return fr.pioneers.equipment.cosmetic.client.CosmeticPanel.areas(screen);
                   }
               });
         //MAJ Recettes (lot 7) : glisser un objet sur la case « Recette » verrouille la recette qui le fait
@@ -474,8 +474,8 @@ public class PiJeiPlugin implements IModPlugin {
         registration.addRecipeCatalysts(DRONE_HARVEST, PiBaseMachines.DRONE_BAY, PiRobotics.UNITS.get(UnitKind.DRONE).get(UnitTier.T1).get(), PiItems.GAS_SCANNER.get());
         registration.addRecipeCatalysts(SOLAR_ABSORBER, PiCosmicBlocks.ABSORBER_COLLECTOR, PiCosmicBlocks.ABSORBER_CASING, PiCosmicBlocks.ABSORBER_PORT);
         KitchenCategory.catalysts(registration);
-        registration.addRecipeCatalysts(DryingLineCategory.TYPE, fr.pioneers.home.PiHome.ROPE_HOOK.getBlock(), fr.pioneers.registries.PiKinetics.FIBER_ROPE.get(),
-              fr.pioneers.registries.PiKinetics.TARRED_ROPE.get(), fr.pioneers.registries.PiKinetics.LEATHER_BELT.get());
+        registration.addRecipeCatalysts(DryingLineCategory.TYPE, fr.pioneers.building.home.PiHome.ROPE_HOOK.getBlock(), fr.pioneers.core.registries.PiKinetics.FIBER_ROPE.get(),
+              fr.pioneers.core.registries.PiKinetics.TARRED_ROPE.get(), fr.pioneers.core.registries.PiKinetics.LEATHER_BELT.get());
         KitchenMachineCatalysts.register(registration);   //1.6 : postes mecaniques et machines electriques de la cuisine
         registration.addRecipeCatalysts(MECHANICAL.get(MachineType.SIFTER), PiMechanics.HAND_SIEVE);
         BENCH.forEach((type, recipeType) -> registration.addRecipeCatalyst(PiBronze.BENCHES.get(type).getBlock(), recipeType));

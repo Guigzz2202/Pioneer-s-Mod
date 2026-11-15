@@ -1,11 +1,11 @@
 package fr.pioneers.api.multiblock;
 
-import fr.pioneers.bronze.steam.BoilerPart;
-import fr.pioneers.bronze.steam.SteamAccessory;
-import fr.pioneers.common.projector.ProjectedStructure.Plan;
-import fr.pioneers.industry.construction.PiConstruction;
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.steam.BoilerPart;
+import fr.pioneers.tech.bronze.steam.SteamAccessory;
+import fr.pioneers.core.common.projector.ProjectedStructure.Plan;
+import fr.pioneers.tech.industry.construction.PiConstruction;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.core.registries.PiBronze;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -112,9 +112,9 @@ public final class HouseNbt {
             case 'd' -> b == PiBronze.BOILER_PARTS.get(BoilerPart.STEAM_DOME).getBlock();
             case 'k' -> b == PiBronze.BOILER_PARTS.get(BoilerPart.CHIMNEY).getBlock();
             //1.0.5-beta (lot 23) : la maconnerie finie du four de potier forme tient lieu de ses briques, escaliers et dalle
-            case 'r' -> b == Blocks.BRICKS || fr.pioneers.bronze.foundry.KilnMasonry.fits('r', s);
-            case '/' -> b == Blocks.BRICK_STAIRS || fr.pioneers.bronze.foundry.KilnMasonry.fits('/', s);
-            case '_' -> b == Blocks.BRICK_SLAB || fr.pioneers.bronze.foundry.KilnMasonry.fits('_', s);
+            case 'r' -> b == Blocks.BRICKS || fr.pioneers.tech.bronze.foundry.KilnMasonry.fits('r', s);
+            case '/' -> b == Blocks.BRICK_STAIRS || fr.pioneers.tech.bronze.foundry.KilnMasonry.fits('/', s);
+            case '_' -> b == Blocks.BRICK_SLAB || fr.pioneers.tech.bronze.foundry.KilnMasonry.fits('_', s);
             case 'I' -> s.isAir();
             case 'w' -> true;
             default -> false;
@@ -261,7 +261,7 @@ public final class HouseNbt {
     public static void paintFire(net.minecraft.world.level.Level level, BlockPos controller, Direction front, String key, int heat) {
         for (BlockPos p : positions(controller, front, key, "X")) {
             if (level.isLoaded(p)) {
-                fr.pioneers.bronze.autofoundry.FoundryPartBlock.paint(level, p, heat, false);
+                fr.pioneers.tech.bronze.autofoundry.FoundryPartBlock.paint(level, p, heat, false);
             }
         }
     }

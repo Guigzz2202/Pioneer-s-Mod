@@ -1,9 +1,9 @@
 package fr.pioneers.client.minimap;
 
-import fr.pioneers.client.rp.RpClient;
-import fr.pioneers.naval.ShipEntity;
-import fr.pioneers.rail.train.RailCarEntity;
-import fr.pioneers.robotics.RobotUnitEntity;
+import fr.pioneers.society.rp.client.RpClient;
+import fr.pioneers.logistics.naval.ShipEntity;
+import fr.pioneers.logistics.rail.train.RailCarEntity;
+import fr.pioneers.logistics.robotics.RobotUnitEntity;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.client.multiplayer.ClientLevel;

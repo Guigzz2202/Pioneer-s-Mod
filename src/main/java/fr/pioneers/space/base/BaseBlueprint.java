@@ -1,10 +1,10 @@
 package fr.pioneers.space.base;
 
-import fr.pioneers.common.projector.Blueprint;
-import fr.pioneers.common.projector.ProjectedStructure;
-import fr.pioneers.common.projector.Projections;
-import fr.pioneers.registries.PiBlocks;
-import fr.pioneers.registries.PiIndustry;
+import fr.pioneers.core.common.projector.Blueprint;
+import fr.pioneers.core.common.projector.ProjectedStructure;
+import fr.pioneers.core.common.projector.Projections;
+import fr.pioneers.core.registries.PiBlocks;
+import fr.pioneers.core.registries.PiIndustry;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;

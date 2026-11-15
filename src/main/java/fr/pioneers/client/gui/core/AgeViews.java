@@ -6,18 +6,18 @@ import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.client.gui.GuiDraw;
 import fr.pioneers.core.Texts;
-import fr.pioneers.forge.ForgeHeat;
-import fr.pioneers.forge.HeatedMetal;
-import fr.pioneers.forge.smithing.ForgeHearthTile;
-import fr.pioneers.forge.smithing.HearthUnit;
-import fr.pioneers.industry.atelier.DynamoTile;
-import fr.pioneers.industry.atelier.DynamoUnit;
-import fr.pioneers.industry.bronze.CokeOvenProcess;
-import fr.pioneers.industry.bronze.CokeOvenTile;
-import fr.pioneers.kinetics.KineticTile;
-import fr.pioneers.kinetics.machines.MachineType;
-import fr.pioneers.kinetics.machines.MechanicalMachineTile;
-import fr.pioneers.kinetics.machines.MechanicalProcess;
+import fr.pioneers.tech.forge.ForgeHeat;
+import fr.pioneers.tech.forge.HeatedMetal;
+import fr.pioneers.tech.forge.smithing.ForgeHearthTile;
+import fr.pioneers.tech.forge.smithing.HearthUnit;
+import fr.pioneers.tech.industry.atelier.DynamoTile;
+import fr.pioneers.tech.industry.atelier.DynamoUnit;
+import fr.pioneers.tech.industry.bronze.CokeOvenProcess;
+import fr.pioneers.tech.industry.bronze.CokeOvenTile;
+import fr.pioneers.tech.kinetics.KineticTile;
+import fr.pioneers.tech.kinetics.machines.MachineType;
+import fr.pioneers.tech.kinetics.machines.MechanicalMachineTile;
+import fr.pioneers.tech.kinetics.machines.MechanicalProcess;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -259,7 +259,7 @@ final class AgeViews {
         public void draw(GuiMachine gui, GuiGraphics g, int mouseX, int mouseY, BlockEntity be) {
             double stored = gui.value(UiValues.STEAM), capacity = gui.value(UiValues.STEAM_MAX), air = gui.value(UiValues.BLAST) / 1000.0;
             double used = gui.value(UiValues.STEAM_USE) / 100.0;
-            steamGauge(gui, g, mouseX, mouseY, StandardLayout.POWER, stored, capacity, fr.pioneers.bronze.steam.SteamRules.BLOWER_USE);
+            steamGauge(gui, g, mouseX, mouseY, StandardLayout.POWER, stored, capacity, fr.pioneers.tech.bronze.steam.SteamRules.BLOWER_USE);
             Rect card = new Rect(StandardLayout.PANEL_X, StandardLayout.TOP, StandardLayout.WIDTH - 8 - StandardLayout.PANEL_X, StandardLayout.GAUGE_H);
             List<GuiMachine.Row> crow = new ArrayList<>();
             crow.add(GuiMachine.Row.of("gui.pioneers.steam.bellows_equiv", GuiMachine.literal(String.format(Locale.ROOT, "x%.1f", air))));
@@ -280,7 +280,7 @@ final class AgeViews {
 
         @Override
         void info(GuiMachine gui, BlockEntity be, List<StandardView.InfoRow> rows) {
-            rows.add(new StandardView.InfoRow("steam_use", mbt(fr.pioneers.bronze.steam.SteamRules.BLOWER_USE), 0xFFE0A030));
+            rows.add(new StandardView.InfoRow("steam_use", mbt(fr.pioneers.tech.bronze.steam.SteamRules.BLOWER_USE), 0xFFE0A030));
             rows.add(new StandardView.InfoRow("blast", GuiMachine.literal("x3"), PiMenuScreen.TEXT));
         }
     }

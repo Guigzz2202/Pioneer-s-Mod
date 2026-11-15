@@ -1,7 +1,7 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import java.util.List;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;

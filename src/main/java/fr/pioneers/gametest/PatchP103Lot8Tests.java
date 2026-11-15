@@ -13,7 +13,7 @@ import fr.pioneers.farm.animal.breed.PiGoat;
 import fr.pioneers.farm.animal.breed.PiSheep;
 import fr.pioneers.farm.fish.GeneratedFish;
 import fr.pioneers.farm.fish.PiFish;
-import fr.pioneers.robotics.ZoneScanner;
+import fr.pioneers.logistics.robotics.ZoneScanner;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;

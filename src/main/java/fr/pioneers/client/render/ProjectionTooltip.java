@@ -1,7 +1,7 @@
 package fr.pioneers.client.render;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.projector.Projections;
+import fr.pioneers.core.common.projector.Projections;
 import fr.pioneers.core.tooltip.Tooltips;
 import net.minecraft.world.item.BlockItem;
 import net.minecraftforge.api.distmarker.Dist;

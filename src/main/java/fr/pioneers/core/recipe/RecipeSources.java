@@ -1,23 +1,23 @@
 package fr.pioneers.core.recipe;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.foundry.CrucibleUnit;
-import fr.pioneers.bronze.foundry.Metals;
-import fr.pioneers.forge.ForgeMetals;
-import fr.pioneers.materials.GeneratedMaterials;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.foundry.CrucibleUnit;
+import fr.pioneers.tech.bronze.foundry.Metals;
+import fr.pioneers.tech.forge.ForgeMetals;
+import fr.pioneers.tech.materials.GeneratedMaterials;
 import fr.pioneers.core.PiTags;
 import fr.pioneers.farm.kitchen.KitchenRecipe;
 import fr.pioneers.farm.kitchen.Station;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.kinetics.kitchen.KitchenMachineType;
-import fr.pioneers.kinetics.kitchen.KitchenProcess;
-import fr.pioneers.kinetics.machines.MechanicalRecipe;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.machine.ProcessingRecipe;
-import fr.pioneers.recipe.PiRecipes;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.kinetics.kitchen.KitchenMachineType;
+import fr.pioneers.tech.kinetics.kitchen.KitchenProcess;
+import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.tech.machine.ProcessingRecipe;
+import fr.pioneers.core.recipes.PiRecipes;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -188,15 +188,15 @@ public final class RecipeSources {
                 }
                 //1.0.3-beta (lot 5) : le broyeur fait aussi les recettes de l'ancienne dechiqueteuse (pioneers:industrial, machine crusher)
                 if (MachineKind.CRUSHER.name.equals(name)) {
-                    for (fr.pioneers.industry.recipe.IndustrialRecipe r : fr.pioneers.api.machine.unit.KitProcess.industrial(level)) {
+                    for (fr.pioneers.tech.industry.recipe.IndustrialRecipe r : fr.pioneers.api.machine.unit.KitProcess.industrial(level)) {
                         out.add(RecipeChoice.of(r).withTime(MachineKind.CRUSHER.ticks(CableTier.BASIC), false));
                     }
                 }
             }
             //1.0.4-beta (lot 11, fusion des machines) : recettes RECUES des machines absorbees (voie B de KitProcess, duree de leur recette)
-            fr.pioneers.industry.IndustryMachine machine = fr.pioneers.industry.IndustryMachine.byKey(name);
+            fr.pioneers.tech.industry.IndustryMachine machine = fr.pioneers.tech.industry.IndustryMachine.byKey(name);
             if (machine != null) {
-                for (fr.pioneers.industry.recipe.IndustrialRecipe r : fr.pioneers.industry.recipe.IndustryRecipes.kitReceived(level, machine)) {
+                for (fr.pioneers.tech.industry.recipe.IndustrialRecipe r : fr.pioneers.tech.industry.recipe.IndustryRecipes.kitReceived(level, machine)) {
                     out.add(RecipeChoice.of(r));
                 }
             }

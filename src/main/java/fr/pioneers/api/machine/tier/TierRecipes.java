@@ -2,18 +2,18 @@ package fr.pioneers.api.machine.tier;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.machine.PowerRules;
-import fr.pioneers.bronze.bench.BenchRecipe.Counted;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamRecipe;
+import fr.pioneers.tech.bronze.bench.BenchRecipe.Counted;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamRecipe;
 import fr.pioneers.core.PiTags;
 import fr.pioneers.core.recipe.RecipeChoice;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.machine.ProcessingRecipe;
-import fr.pioneers.kinetics.machines.MechanicalRecipe;
-import fr.pioneers.recipe.PiRecipes;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiIndustry;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.machine.ProcessingRecipe;
+import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
+import fr.pioneers.core.recipes.PiRecipes;
+import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.core.registries.PiIndustry;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -505,7 +505,7 @@ public final class TierRecipes {
 
     /** Ajoute la recette ouverte si elle tient dans la machine (l'outil va dans la case Outil) et ne double pas une recette de la famille. */
     private static void add(List<TierRecipe> out, List<TierRecipe> low, SteamMachine machine, TierRecipe t) {
-        int tool = fr.pioneers.industry.recipe.Remanents.toolInput(fr.pioneers.industry.recipe.Remanents.STEAM + machine.key(), t.inputs());
+        int tool = fr.pioneers.tech.industry.recipe.Remanents.toolInput(fr.pioneers.tech.industry.recipe.Remanents.STEAM + machine.key(), t.inputs());
         if (t.inputs().size() - (tool >= 0 ? 1 : 0) > machine.inputs) {
             return;
         }

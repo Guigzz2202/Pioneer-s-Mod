@@ -1,18 +1,18 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamRecipe;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamRecipe;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.vanilla.VanillaReplacements;
-import fr.pioneers.geology.DepositType;
-import fr.pioneers.geology.DepositTypes;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiIndustry;
+import fr.pioneers.world.geology.DepositType;
+import fr.pioneers.world.geology.DepositTypes;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.core.registries.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -211,8 +211,8 @@ public final class PatchP105Lot40Tests {
                 if (out.isEmpty() || !out.is(it)) {
                     continue;
                 }
-                Gt.check(!(r instanceof fr.pioneers.bronze.bench.BenchRecipe) && !(r instanceof CraftingRecipe)
-                      && !(r instanceof fr.pioneers.bronze.foundry.KilnRecipe), m + " : recette a la main " + r.getId());
+                Gt.check(!(r instanceof fr.pioneers.tech.bronze.bench.BenchRecipe) && !(r instanceof CraftingRecipe)
+                      && !(r instanceof fr.pioneers.tech.bronze.foundry.KilnRecipe), m + " : recette a la main " + r.getId());
                 steam |= r instanceof SteamRecipe;
             }
             Gt.check(steam, m + " : une recette en machine a vapeur (tier 1)");
@@ -253,11 +253,11 @@ public final class PatchP105Lot40Tests {
         ControllerTile ctrl = (ControllerTile) h.getBlockEntity(at);
         Gt.check(ctrl != null, "controleur de presse industrielle pose");
         //monde existant : lot de 2 operations de tiges a la matrice (entrees deja prises) : rendues dans les sorties
-        Gt.check(fr.pioneers.industry.multi.BatchRefund.of(ctrl, rl("industry/press/press_rod_nickel"), 2), "lot de tiges rendu");
+        Gt.check(fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("industry/press/press_rod_nickel"), 2), "lot de tiges rendu");
         Gt.equal(2, count(ctrl.itemOutputs(), item("nickel_ingot")), "2 operations : 2 lingots de nickel rendus");
         Gt.equal(2, count(ctrl.itemOutputs(), item("rod_die")), "2 operations : 2 matrices a tige rendues");
-        Gt.check(!fr.pioneers.industry.multi.BatchRefund.of(ctrl, rl("industry/press/press_plate_nickel"), 1), "plaque a la presse : rien a rendre");
-        Gt.check(fr.pioneers.industry.multi.BatchRefund.of(ctrl, rl("automation/potter/bronze_bench_unfired_fire_brick"), 3),
+        Gt.check(!fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("industry/press/press_plate_nickel"), 1), "plaque a la presse : rien a rendre");
+        Gt.check(fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("automation/potter/bronze_bench_unfired_fire_brick"), 3),
               "copie retiree de la brique crue : lot rendu");
         Gt.equal(6, count(ctrl.itemOutputs(), item("fire_clay")), "3 operations : 6 argiles refractaires rendues");
         s.done();

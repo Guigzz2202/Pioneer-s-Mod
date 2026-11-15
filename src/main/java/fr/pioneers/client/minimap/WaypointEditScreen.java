@@ -1,7 +1,7 @@
 package fr.pioneers.client.minimap;
 
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.client.robotics.RoboticsScreen;
+import fr.pioneers.logistics.robotics.client.RoboticsScreen;
 import fr.pioneers.core.profile.RpActions;
 import fr.pioneers.core.profile.RpNet;
 import java.util.Locale;

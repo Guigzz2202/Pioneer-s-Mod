@@ -29,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
  * le clapier sur DEUX cases, comme un lit : case PRINCIPALE ({@link Part#MAIN}, la tuile {@link HutchTile}, la ou on clique) et case LATERALE
  * ({@link Part#SIDE}, a droite vue de face : {@link #sideOf}) ; un clic sur la laterale vaut un clic sur la principale, casser l'une casse
  * l'autre (la principale rend le clapier, la laterale rien). Les lapins loges se voient dans les deux cases
- * ({@code J:client/farm/herd/HutchRabbits}).
+ * ({@code J:farm/client/herd/HutchRabbits}).
  * <p>
  * Mondes d'avant : un clapier 1 x 1 se charge en {@link Part#SINGLE} (valeur par defaut : etat d'avant sans « part ») ; il reste valide tel
  * quel (meme modele, memes lapins) et devient double tout seul des que la case a sa droite est libre ({@link #grow}, appele par la tuile).

@@ -1,8 +1,8 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.clan.Clan;
-import fr.pioneers.clan.ui.ClanMapNet;
-import fr.pioneers.clan.ui.ClanMates;
+import fr.pioneers.society.clan.Clan;
+import fr.pioneers.society.clan.ui.ClanMapNet;
+import fr.pioneers.society.clan.ui.ClanMates;
 import fr.pioneers.core.profile.RpActions;
 import fr.pioneers.core.profile.RpNet;
 import java.util.List;

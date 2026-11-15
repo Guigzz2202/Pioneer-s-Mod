@@ -5,7 +5,7 @@ import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.core.RelativeSide;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.side.SideConfig;
-import fr.pioneers.network.PacketTileAction;
+import fr.pioneers.core.network.PacketTileAction;
 import java.util.List;
 import net.minecraft.server.level.ServerPlayer;
 import org.jetbrains.annotations.Nullable;

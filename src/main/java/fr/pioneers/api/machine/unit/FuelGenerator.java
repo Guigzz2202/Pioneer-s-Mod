@@ -1,10 +1,10 @@
 package fr.pioneers.api.machine.unit;
 
 import fr.pioneers.core.machine.MachineTile;
-import fr.pioneers.industry.GeneratorOutput;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.Tiers;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.GeneratorOutput;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.Tiers;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import net.minecraft.nbt.CompoundTag;
 import org.jetbrains.annotations.Nullable;
 

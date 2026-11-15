@@ -1,14 +1,14 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.machines.SteamBlowerTile;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamProcess;
-import fr.pioneers.bronze.machines.SteamProcessTile;
-import fr.pioneers.bronze.steam.FireboxTile;
-import fr.pioneers.bronze.steam.SteamEngineTile;
-import fr.pioneers.bronze.steam.SteamRules;
-import fr.pioneers.bronze.steam.SteamVolume;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.machines.SteamBlowerTile;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamProcess;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
+import fr.pioneers.tech.bronze.steam.FireboxTile;
+import fr.pioneers.tech.bronze.steam.SteamEngineTile;
+import fr.pioneers.tech.bronze.steam.SteamRules;
+import fr.pioneers.tech.bronze.steam.SteamVolume;
+import fr.pioneers.core.registries.PiBronze;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -73,8 +73,8 @@ public final class PatchP102Lot3Tests {
     // ================================================================== chaudiere : le seul danger est de chauffer sans eau
     private static FireboxTile boiler(GameTestHelper h, BlockPos at) {
         FireboxTile f = place(h, at, PiBronze.FIREBOX.getBlock(), FireboxTile.class);
-        h.setBlock(at.above(), PiBronze.BOILER_PARTS.get(fr.pioneers.bronze.steam.BoilerPart.COPPER_SHELL).getBlock());
-        h.setBlock(at.above(2), PiBronze.BOILER_PARTS.get(fr.pioneers.bronze.steam.BoilerPart.STEAM_DOME).getBlock());
+        h.setBlock(at.above(), PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.COPPER_SHELL).getBlock());
+        h.setBlock(at.above(2), PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.STEAM_DOME).getBlock());
         f.house().checkNow();
         Gt.check(f.formed(), "chaudiere non formee");
         f.guiSlots().get(0).setStack(new ItemStack(Items.COAL, 16));

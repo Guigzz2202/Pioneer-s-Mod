@@ -18,13 +18,13 @@ import fr.pioneers.core.item.GasCapsuleItem;
 import fr.pioneers.core.machine.Averager;
 import fr.pioneers.core.side.SideConfig;
 import fr.pioneers.core.side.SideMode;
-import fr.pioneers.transport.CableTier;
-import fr.pioneers.transport.buffer.BufferType;
-import fr.pioneers.transport.buffer.EnergyBufferBlock;
-import fr.pioneers.transport.buffer.HeatBufferBlock;
-import fr.pioneers.transport.buffer.PressureBufferBlock;
-import fr.pioneers.transport.logistic.CableLevel;
-import fr.pioneers.transport.logistic.ChannelKind;
+import fr.pioneers.logistics.transport.CableTier;
+import fr.pioneers.logistics.transport.buffer.BufferType;
+import fr.pioneers.logistics.transport.buffer.EnergyBufferBlock;
+import fr.pioneers.logistics.transport.buffer.HeatBufferBlock;
+import fr.pioneers.logistics.transport.buffer.PressureBufferBlock;
+import fr.pioneers.logistics.transport.logistic.CableLevel;
+import fr.pioneers.logistics.transport.logistic.ChannelKind;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.EnumSet;
@@ -558,7 +558,7 @@ public class StorageUnit {
         CompoundTag contents = new CompoundTag();
         store.save(contents);
         if (!contents.isEmpty()) {
-            tag.put(fr.pioneers.transport.buffer.BufferTile.NBT_CONTENTS, contents);
+            tag.put(fr.pioneers.logistics.transport.buffer.BufferTile.NBT_CONTENTS, contents);
         }
         tag.put("config", sides.save());
         if (front != Direction.NORTH) {
@@ -570,7 +570,7 @@ public class StorageUnit {
     }
 
     public void load(CompoundTag tag) {
-        CompoundTag contents = tag.getCompound(fr.pioneers.transport.buffer.BufferTile.NBT_CONTENTS);
+        CompoundTag contents = tag.getCompound(fr.pioneers.logistics.transport.buffer.BufferTile.NBT_CONTENTS);
         sides.load(tag.getCompound("config"));
         Direction f = tag.contains("front") ? Direction.byName(tag.getString("front")) : null;
         front = f != null && f.getAxis().isHorizontal() ? f : Direction.NORTH;

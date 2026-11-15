@@ -1,7 +1,7 @@
 package fr.pioneers.space;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.registries.PiSpaceMachines;
+import fr.pioneers.core.registries.PiSpaceMachines;
 import java.util.ArrayList;
 import net.minecraft.core.BlockPos;
 import net.minecraftforge.common.world.ForgeChunkManager;
@@ -22,7 +22,7 @@ public final class ChunkLoaderTickets {
                 }
             }
             //1.9 (MAJ RP, bloc 4) : tickets des clans (au nom de l'identifiant du clan), valides contre ClanData
-            fr.pioneers.clan.territory.ClanChunkloading.validate(level, helper);
+            fr.pioneers.society.clan.territory.ClanChunkloading.validate(level, helper);
         });
     }
 }

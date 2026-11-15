@@ -9,7 +9,7 @@ import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.recipe.RecipeLock;
 import fr.pioneers.core.recipe.RecipeLockable;
 import fr.pioneers.core.side.SideType;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.nbt.CompoundTag;

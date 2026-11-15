@@ -1,7 +1,7 @@
 package fr.pioneers.core.profile;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.registries.PiSounds;
+import fr.pioneers.core.registries.PiSounds;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.registries.RegistryObject;
 

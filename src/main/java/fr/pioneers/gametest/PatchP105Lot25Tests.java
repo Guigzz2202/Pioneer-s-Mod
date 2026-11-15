@@ -181,7 +181,7 @@ public final class PatchP105Lot25Tests {
         }
         Gt.equal(0L, (long) wild, "jamais de requin gris en apparition de poisson");
         Gt.check(caught > 40 && caught < 600, "requin gris a la peche en mer chaude : rare (" + caught + " / 20000)");
-        Gt.check(LiveRelease.liveFish(h.getLevel(), sh, 1F) instanceof fr.pioneers.wild.Shark, "relache : le vrai requin gris");
+        Gt.check(LiveRelease.liveFish(h.getLevel(), sh, 1F) instanceof fr.pioneers.world.wild.Shark, "relache : le vrai requin gris");
         s.done();
     }
 }

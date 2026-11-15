@@ -1,13 +1,13 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.common.block.Connections;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.core.common.block.Connections;
 import fr.pioneers.core.registry.BlockEntry;
-import fr.pioneers.industry.construction.FireboxWallBlock;
-import fr.pioneers.industry.construction.TwinConnectedBlock;
-import fr.pioneers.industry.construction.PiConstruction;
-import fr.pioneers.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.construction.FireboxWallBlock;
+import fr.pioneers.tech.industry.construction.TwinConnectedBlock;
+import fr.pioneers.tech.industry.construction.PiConstruction;
+import fr.pioneers.tech.industry.multi.CasingBlock;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

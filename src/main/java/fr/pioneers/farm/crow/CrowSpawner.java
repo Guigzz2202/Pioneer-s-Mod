@@ -1,7 +1,7 @@
 package fr.pioneers.farm.crow;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.PiCommonConfig;
+import fr.pioneers.core.common.PiCommonConfig;
 import fr.pioneers.farm.crop.CropTile;
 import fr.pioneers.farm.crop.FarmCropBlock;
 import fr.pioneers.farm.device.DeviceSites;
@@ -97,7 +97,7 @@ public final class CrowSpawner {
             List<BlockPos> aim = open.isEmpty() ? crops : open;
             int flock = 2 + Math.min(2, crops.size() / 40 + level.random.nextInt(2));
             BlockPos field = aim.get(level.random.nextInt(aim.size()));
-            if (!fr.pioneers.fauna.FaunaSettings.current().enabled()) {
+            if (!fr.pioneers.world.fauna.FaunaSettings.current().enabled()) {
                 spawnFlock(level, field, Math.min(room, flock));
                 continue;
             }
@@ -129,26 +129,26 @@ public final class CrowSpawner {
      * 1.0.5-beta (lot 4) : le manque arrive de loin, en vol, a {@link #ARRIVE_MIN}..{@link #ARRIVE_MAX} blocs du champ : place permise
      * par le repeuplement (joueurs, vue, claims, villages), groupe des oiseaux de la zone sous son plafond. Rend le nombre arrive.
      */
-    public static int arrive(ServerLevel level, BlockPos field, int n, RandomSource r, @Nullable List<fr.pioneers.fauna.FaunaSpawner.Viewer> viewers) {
-        fr.pioneers.fauna.FaunaSettings s = fr.pioneers.fauna.FaunaSettings.current();
-        fr.pioneers.fauna.FaunaSpecies sp = fr.pioneers.fauna.FaunaRegistry.byId("pioneers:crow");
+    public static int arrive(ServerLevel level, BlockPos field, int n, RandomSource r, @Nullable List<fr.pioneers.world.fauna.FaunaSpawner.Viewer> viewers) {
+        fr.pioneers.world.fauna.FaunaSettings s = fr.pioneers.world.fauna.FaunaSettings.current();
+        fr.pioneers.world.fauna.FaunaSpecies sp = fr.pioneers.world.fauna.FaunaRegistry.byId("pioneers:crow");
         if (sp == null) {
             return 0;
         }
-        fr.pioneers.fauna.FaunaSpawner.Limits limits = viewers == null ? fr.pioneers.fauna.FaunaSpawner.Limits.repopulation(level, s)
-              : new fr.pioneers.fauna.FaunaSpawner.Limits(viewers, s.playerDistance(), s.villageDistance(), true, 160);
+        fr.pioneers.world.fauna.FaunaSpawner.Limits limits = viewers == null ? fr.pioneers.world.fauna.FaunaSpawner.Limits.repopulation(level, s)
+              : new fr.pioneers.world.fauna.FaunaSpawner.Limits(viewers, s.playerDistance(), s.villageDistance(), true, 160);
         for (int t = 0; t < 16; t++) {
             double a = r.nextDouble() * Math.PI * 2, d = ARRIVE_MIN + r.nextDouble() * (ARRIVE_MAX - ARRIVE_MIN);
             int x = net.minecraft.util.Mth.floor(field.getX() + 0.5 + Math.cos(a) * d), z = net.minecraft.util.Mth.floor(field.getZ() + 0.5 + Math.sin(a) * d);
             if (!level.hasChunk(x >> 4, z >> 4)) {
                 continue;
             }
-            long zone = fr.pioneers.fauna.FaunaRules.zoneKey(x, z);
-            int birds = fr.pioneers.fauna.FaunaCounter.of(level).groups(zone)[fr.pioneers.fauna.FaunaGroup.BIRD.ordinal()];
-            int room = Math.min(n, s.cap(fr.pioneers.fauna.FaunaGroup.BIRD) - birds);
+            long zone = fr.pioneers.world.fauna.FaunaRules.zoneKey(x, z);
+            int birds = fr.pioneers.world.fauna.FaunaCounter.of(level).groups(zone)[fr.pioneers.world.fauna.FaunaGroup.BIRD.ordinal()];
+            int room = Math.min(n, s.cap(fr.pioneers.world.fauna.FaunaGroup.BIRD) - birds);
             int y = level.getHeight(Heightmap.Types.MOTION_BLOCKING, x, z) + 8 + r.nextInt(4);
             BlockPos at = new BlockPos(x, y, z);
-            if (room <= 0 || !fr.pioneers.fauna.FaunaSpawner.allowed(level, at, sp, limits)) {
+            if (room <= 0 || !fr.pioneers.world.fauna.FaunaSpawner.allowed(level, at, sp, limits)) {
                 continue;
             }
             int placed = 0;

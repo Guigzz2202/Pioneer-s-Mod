@@ -3,7 +3,7 @@ package fr.pioneers.farm.herd;
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.registry.PiCoreRegistries;
 import fr.pioneers.farm.animal.breed.BreedConversion;
-import fr.pioneers.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiEntityTypes;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.IdentityHashMap;

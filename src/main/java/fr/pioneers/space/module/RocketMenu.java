@@ -3,7 +3,7 @@ package fr.pioneers.space.module;
 import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.api.data.DataType;
 import fr.pioneers.api.gas.Gas;
-import fr.pioneers.registries.PiMenus;
+import fr.pioneers.core.registries.PiMenus;
 import fr.pioneers.space.RocketEntity;
 import fr.pioneers.space.RocketTier;
 import java.util.ArrayList;

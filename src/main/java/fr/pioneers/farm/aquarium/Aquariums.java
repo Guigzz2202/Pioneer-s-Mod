@@ -70,9 +70,9 @@ public final class Aquariums {
         int fish = fishSpecies(held);
         //1.0.4-beta (lot 35) : poisson cru en main (pas un seau : fishSpecies ne voit que les seaux)
         //1.0.5-beta (lot 31, retour 42) : PANIER DE PECHE en main : le poisson CHOISI dans le panier (sinon le premier qui peut vivre au bassin)
-        ItemStack creel = held.getItem() instanceof fr.pioneers.home.bag.BagItem b && b.kind == fr.pioneers.home.bag.BagKind.FISH_BAG ? held : ItemStack.EMPTY;
+        ItemStack creel = held.getItem() instanceof fr.pioneers.building.home.bag.BagItem b && b.kind == fr.pioneers.building.home.bag.BagKind.FISH_BAG ? held : ItemStack.EMPTY;
         ItemStack live = creel.isEmpty() ? held
-                         : fr.pioneers.home.bag.BagStore.takeOne(creel, fr.pioneers.home.bag.BagKind.FISH_BAG, s -> LiveRelease.fishSpecies(s) >= 0, true);
+                         : fr.pioneers.building.home.bag.BagStore.takeOne(creel, fr.pioneers.building.home.bag.BagKind.FISH_BAG, s -> LiveRelease.fishSpecies(s) >= 0, true);
         int handFish = fish < 0 && !crab && !water && !empty && !live.isEmpty() ? LiveRelease.fishSpecies(live) : -1;
         if (!water && !empty && !crab && fish < 0 && handFish < 0) {
             return InteractionResult.PASS;
@@ -131,7 +131,7 @@ public final class Aquariums {
             if (handFish >= 0) {
                 if (!player.getAbilities().instabuild) {
                     if (!creel.isEmpty()) {
-                        fr.pioneers.home.bag.BagStore.takeOne(creel, fr.pioneers.home.bag.BagKind.FISH_BAG, s -> LiveRelease.fishSpecies(s) >= 0, false);
+                        fr.pioneers.building.home.bag.BagStore.takeOne(creel, fr.pioneers.building.home.bag.BagKind.FISH_BAG, s -> LiveRelease.fishSpecies(s) >= 0, false);
                     } else {
                         held.shrink(1);
                     }
