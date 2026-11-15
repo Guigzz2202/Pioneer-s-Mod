@@ -1,0 +1,348 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/rp/desk_wood",
+  "wood": "pioneers:block/rp/desk_wood",
+  "leather": "pioneers:block/rp/desk_leather",
+  "pages": "pioneers:block/rp/desk_pages_lit",
+  "ribbon": "minecraft:block/blue_wool"
+ },
+ "elements": [
+  {
+   "from": [
+    2,
+    0,
+    2
+   ],
+   "to": [
+    14,
+    2,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wood"
+    },
+    "south": {
+     "texture": "#wood"
+    },
+    "east": {
+     "texture": "#wood"
+    },
+    "west": {
+     "texture": "#wood"
+    },
+    "up": {
+     "texture": "#wood"
+    },
+    "down": {
+     "texture": "#wood"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    2,
+    3
+   ],
+   "to": [
+    13,
+    3,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wood"
+    },
+    "south": {
+     "texture": "#wood"
+    },
+    "east": {
+     "texture": "#wood"
+    },
+    "west": {
+     "texture": "#wood"
+    },
+    "up": {
+     "texture": "#wood"
+    },
+    "down": {
+     "texture": "#wood"
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    3,
+    6
+   ],
+   "to": [
+    10,
+    10,
+    10
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wood"
+    },
+    "south": {
+     "texture": "#wood"
+    },
+    "east": {
+     "texture": "#wood"
+    },
+    "west": {
+     "texture": "#wood"
+    },
+    "up": {
+     "texture": "#wood"
+    },
+    "down": {
+     "texture": "#wood"
+    }
+   }
+  },
+  {
+   "from": [
+    5,
+    9,
+    5
+   ],
+   "to": [
+    11,
+    11,
+    11
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wood"
+    },
+    "south": {
+     "texture": "#wood"
+    },
+    "east": {
+     "texture": "#wood"
+    },
+    "west": {
+     "texture": "#wood"
+    },
+    "up": {
+     "texture": "#wood"
+    },
+    "down": {
+     "texture": "#wood"
+    }
+   }
+  },
+  {
+   "from": [
+    1,
+    11,
+    2
+   ],
+   "to": [
+    15,
+    12.5,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wood"
+    },
+    "south": {
+     "texture": "#wood"
+    },
+    "east": {
+     "texture": "#wood"
+    },
+    "west": {
+     "texture": "#wood"
+    },
+    "up": {
+     "texture": "#wood"
+    },
+    "down": {
+     "texture": "#wood"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     12,
+     8
+    ],
+    "axis": "x",
+    "angle": -22.5
+   }
+  },
+  {
+   "from": [
+    1,
+    12.5,
+    2
+   ],
+   "to": [
+    15,
+    13,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wood"
+    },
+    "south": {
+     "texture": "#wood"
+    },
+    "east": {
+     "texture": "#wood"
+    },
+    "west": {
+     "texture": "#wood"
+    },
+    "up": {
+     "texture": "#wood"
+    },
+    "down": {
+     "texture": "#wood"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     12,
+     8
+    ],
+    "axis": "x",
+    "angle": -22.5
+   }
+  },
+  {
+   "from": [
+    2.5,
+    12.5,
+    3.5
+   ],
+   "to": [
+    13.5,
+    13,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#leather"
+    },
+    "south": {
+     "texture": "#leather"
+    },
+    "east": {
+     "texture": "#leather"
+    },
+    "west": {
+     "texture": "#leather"
+    },
+    "up": {
+     "texture": "#leather"
+    },
+    "down": {
+     "texture": "#leather"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     12,
+     8
+    ],
+    "axis": "x",
+    "angle": -22.5
+   }
+  },
+  {
+   "from": [
+    3,
+    13,
+    4
+   ],
+   "to": [
+    13,
+    13.6,
+    12.5
+   ],
+   "faces": {
+    "up": {
+     "texture": "#pages",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "north": {
+     "texture": "#leather"
+    },
+    "south": {
+     "texture": "#leather"
+    },
+    "east": {
+     "texture": "#leather"
+    },
+    "west": {
+     "texture": "#leather"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     12,
+     8
+    ],
+    "axis": "x",
+    "angle": -22.5
+   }
+  },
+  {
+   "from": [
+    8.2,
+    12.6,
+    12.4
+   ],
+   "to": [
+    8.8,
+    13.7,
+    14.2
+   ],
+   "faces": {
+    "north": {
+     "texture": "#ribbon"
+    },
+    "south": {
+     "texture": "#ribbon"
+    },
+    "east": {
+     "texture": "#ribbon"
+    },
+    "west": {
+     "texture": "#ribbon"
+    },
+    "up": {
+     "texture": "#ribbon"
+    },
+    "down": {
+     "texture": "#ribbon"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     12,
+     8
+    ],
+    "axis": "x",
+    "angle": -22.5
+   }
+  }
+ ]
+}

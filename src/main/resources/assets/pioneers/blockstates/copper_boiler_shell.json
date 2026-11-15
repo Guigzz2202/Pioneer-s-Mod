@@ -1,0 +1,7 @@
+{
+ "variants": {
+  "": {
+   "model": "pioneers:block/mechanics/copper_boiler_shell"
+  }
+ }
+}

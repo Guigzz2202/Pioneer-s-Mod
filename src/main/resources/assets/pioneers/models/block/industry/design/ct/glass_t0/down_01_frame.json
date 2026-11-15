@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/g_down_01",
+ "textures": {
+  "t": "pioneers:block/industry/design/glass/t0_frame"
+ }
+}

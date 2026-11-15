@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pioneers:block/lightning_conductor"
+    }
+  }
+}

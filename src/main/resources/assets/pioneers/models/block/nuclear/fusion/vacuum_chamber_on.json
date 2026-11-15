@@ -1,0 +1,48 @@
+{
+ "render_type": "minecraft:translucent",
+ "textures": {
+  "g": "pioneers:block/nuclear/fusion/chamber_on",
+  "particle": "pioneers:block/nuclear/fusion/chamber_off"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#g",
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#g",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#g",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#g",
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#g",
+     "cullface": "up"
+    },
+    "down": {
+     "texture": "#g",
+     "cullface": "down"
+    }
+   }
+  }
+ ],
+ "parent": "minecraft:block/block"
+}

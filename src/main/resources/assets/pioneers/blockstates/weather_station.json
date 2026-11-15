@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pioneers:block/farm/device/weather_station"
+    },
+    "facing=east": {
+      "model": "pioneers:block/farm/device/weather_station",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pioneers:block/farm/device/weather_station",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pioneers:block/farm/device/weather_station",
+      "y": 270
+    }
+  }
+}

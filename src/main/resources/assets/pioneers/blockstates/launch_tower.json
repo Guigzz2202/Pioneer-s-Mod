@@ -1,0 +1,88 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "pioneers:block/launch_tower"
+      }
+    },
+    {
+      "when": {
+        "arm": "true",
+        "facing": "north"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_arm"
+      }
+    },
+    {
+      "when": {
+        "arm": "true",
+        "facing": "east"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_arm",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "arm": "true",
+        "facing": "south"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_arm",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "arm": "true",
+        "facing": "west"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_arm",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "top": "true"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_top"
+      }
+    },
+    {
+      "when": {
+        "tier": "1"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_tier_1"
+      }
+    },
+    {
+      "when": {
+        "tier": "2"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_tier_2"
+      }
+    },
+    {
+      "when": {
+        "tier": "3"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_tier_3"
+      }
+    },
+    {
+      "when": {
+        "tier": "4"
+      },
+      "apply": {
+        "model": "pioneers:block/launch_tower_tier_4"
+      }
+    }
+  ]
+}

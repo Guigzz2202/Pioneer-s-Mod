@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "pioneers:block/greenhouse/controller_on",
+    "side": "pioneers:block/greenhouse/casing",
+    "top": "pioneers:block/greenhouse/casing"
+  }
+}

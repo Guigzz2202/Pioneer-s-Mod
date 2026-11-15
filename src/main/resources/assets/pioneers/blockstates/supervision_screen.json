@@ -1,0 +1,711 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "facing": "north"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_base"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_left"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_right"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_up"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_down"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "left": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_lu"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "right": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_ru"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "left": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_ld"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "right": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_rd"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "left": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_left_u"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "left": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_left_d"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "right": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_right_u"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "right": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_right_d"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "up": "false",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_up_l"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "up": "false",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_up_r"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "down": "false",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_down_l"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "down": "false",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_down_r"
+   }
+  },
+  {
+   "when": {
+    "facing": "east"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_base",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_left",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_right",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_up",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_down",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "left": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_lu",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "right": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_ru",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "left": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_ld",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "right": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_rd",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "left": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_left_u",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "left": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_left_d",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "right": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_right_u",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "right": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_right_d",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "up": "false",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_up_l",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "up": "false",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_up_r",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "down": "false",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_down_l",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "down": "false",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_down_r",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "south"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_base",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_left",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_right",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_up",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_down",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "left": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_lu",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "right": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_ru",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "left": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_ld",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "right": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_rd",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "left": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_left_u",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "left": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_left_d",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "right": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_right_u",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "right": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_right_d",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "up": "false",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_up_l",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "up": "false",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_up_r",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "down": "false",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_down_l",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "down": "false",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_down_r",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "west"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_base",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_left",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_right",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_up",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_down",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "left": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_lu",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "right": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_ru",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "left": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_ld",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "right": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_corner_rd",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "left": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_left_u",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "left": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_left_d",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "right": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_right_u",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "right": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_right_d",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "up": "false",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_up_l",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "up": "false",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_up_r",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "down": "false",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_down_l",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "down": "false",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/computing/screen_frame_end_down_r",
+    "y": 270
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "pioneers:block/io_basalt"
+  },
+  "axis=z": {
+   "model": "pioneers:block/io_basalt_horizontal",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "pioneers:block/io_basalt_horizontal",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

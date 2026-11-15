@@ -1,0 +1,283 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/kitchen/wood",
+  "rope": "pioneers:block/farm/kitchen/rope",
+  "iron": "pioneers:block/farm/kitchen/iron"
+ },
+ "elements": [
+  {
+   "from": [
+    2.5,
+    1.0,
+    7.65
+   ],
+   "to": [
+    13.5,
+    1.6,
+    8.35
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.5,
+      7.65,
+      13.5,
+      8.35
+     ],
+     "texture": "#rope"
+    },
+    "down": {
+     "uv": [
+      2.5,
+      7.65,
+      13.5,
+      8.35
+     ],
+     "texture": "#rope"
+    },
+    "north": {
+     "uv": [
+      2.5,
+      14.4,
+      13.5,
+      15.0
+     ],
+     "texture": "#rope"
+    },
+    "south": {
+     "uv": [
+      2.5,
+      14.4,
+      13.5,
+      15.0
+     ],
+     "texture": "#rope"
+    },
+    "east": {
+     "uv": [
+      7.65,
+      14.4,
+      8.35,
+      15.0
+     ],
+     "texture": "#rope"
+    },
+    "west": {
+     "uv": [
+      7.65,
+      14.4,
+      8.35,
+      15.0
+     ],
+     "texture": "#rope"
+    }
+   }
+  },
+  {
+   "from": [
+    4.0,
+    0.2,
+    7.5
+   ],
+   "to": [
+    5.2,
+    1.2,
+    8.5
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      4.0,
+      7.5,
+      5.2,
+      8.5
+     ],
+     "texture": "#iron"
+    },
+    "down": {
+     "uv": [
+      4.0,
+      7.5,
+      5.2,
+      8.5
+     ],
+     "texture": "#iron"
+    },
+    "north": {
+     "uv": [
+      10.8,
+      14.8,
+      12.0,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "south": {
+     "uv": [
+      4.0,
+      14.8,
+      5.2,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "east": {
+     "uv": [
+      7.5,
+      14.8,
+      8.5,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "west": {
+     "uv": [
+      7.5,
+      14.8,
+      8.5,
+      15.8
+     ],
+     "texture": "#iron"
+    }
+   }
+  },
+  {
+   "from": [
+    7.4,
+    0.2,
+    7.5
+   ],
+   "to": [
+    8.6,
+    1.2,
+    8.5
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      7.4,
+      7.5,
+      8.6,
+      8.5
+     ],
+     "texture": "#iron"
+    },
+    "down": {
+     "uv": [
+      7.4,
+      7.5,
+      8.6,
+      8.5
+     ],
+     "texture": "#iron"
+    },
+    "north": {
+     "uv": [
+      7.4,
+      14.8,
+      8.6,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "south": {
+     "uv": [
+      7.4,
+      14.8,
+      8.6,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "east": {
+     "uv": [
+      7.5,
+      14.8,
+      8.5,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "west": {
+     "uv": [
+      7.5,
+      14.8,
+      8.5,
+      15.8
+     ],
+     "texture": "#iron"
+    }
+   }
+  },
+  {
+   "from": [
+    10.8,
+    0.2,
+    7.5
+   ],
+   "to": [
+    12.0,
+    1.2,
+    8.5
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      10.8,
+      7.5,
+      12.0,
+      8.5
+     ],
+     "texture": "#iron"
+    },
+    "down": {
+     "uv": [
+      10.8,
+      7.5,
+      12.0,
+      8.5
+     ],
+     "texture": "#iron"
+    },
+    "north": {
+     "uv": [
+      4.0,
+      14.8,
+      5.2,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "south": {
+     "uv": [
+      10.8,
+      14.8,
+      12.0,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "east": {
+     "uv": [
+      7.5,
+      14.8,
+      8.5,
+      15.8
+     ],
+     "texture": "#iron"
+    },
+    "west": {
+     "uv": [
+      7.5,
+      14.8,
+      8.5,
+      15.8
+     ],
+     "texture": "#iron"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/callisto_rock_bricks",
+  "top": "pioneers:block/callisto_rock_bricks",
+  "side": "pioneers:block/callisto_rock_bricks"
+ }
+}

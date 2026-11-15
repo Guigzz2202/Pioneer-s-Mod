@@ -1,0 +1,10 @@
+{
+ "parent": "pioneers:block/home/template/tool_rack_wall",
+ "textures": {
+  "post": "pioneers:block/home/wood/mangrove_post",
+  "board": "pioneers:block/home/wood/mangrove_board",
+  "end": "pioneers:block/home/wood/mangrove_end",
+  "particle": "pioneers:block/home/wood/mangrove_board",
+  "dark": "pioneers:block/home/wood/mangrove_dark"
+ }
+}

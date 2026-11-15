@@ -1,0 +1,1198 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "heat": "0",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_wall_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "north": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_n_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "north": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_w_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath_strip_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "north": "true",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath_corner_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "north": "true",
+    "up": "true",
+    "above_north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "north": "true",
+    "up": "true",
+    "above_north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_a_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "north": "true",
+    "up": "true",
+    "above_north": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_b_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_wall_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_n_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_w_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath_strip_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "true",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath_corner_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "true",
+    "up": "true",
+    "above_east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "true",
+    "up": "true",
+    "above_east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_a_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "east": "true",
+    "up": "true",
+    "above_east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_b_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_wall_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "false",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_n_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "true",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_w_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath_strip_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "true",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath_corner_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "true",
+    "up": "true",
+    "above_south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "true",
+    "up": "true",
+    "above_south": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_a_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "south": "true",
+    "up": "true",
+    "above_south": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_b_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_wall_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_n_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_corner_w_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath_strip_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "true",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath_corner_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "true",
+    "up": "true",
+    "above_west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "true",
+    "up": "true",
+    "above_west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_a_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "west": "true",
+    "up": "true",
+    "above_west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_skirt_b_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_floor"
+   }
+  },
+  {
+   "when": {
+    "heat": "0",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_0_bath"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_wall_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_n_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_w_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath_strip_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "true",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath_corner_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "true",
+    "up": "true",
+    "above_north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "true",
+    "up": "true",
+    "above_north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_a_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "north": "true",
+    "up": "true",
+    "above_north": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_b_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_wall_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_n_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_w_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath_strip_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "true",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath_corner_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "true",
+    "up": "true",
+    "above_east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "true",
+    "up": "true",
+    "above_east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_a_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "east": "true",
+    "up": "true",
+    "above_east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_b_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_wall_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "false",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_n_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "true",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_w_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath_strip_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "true",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath_corner_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "true",
+    "up": "true",
+    "above_south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "true",
+    "up": "true",
+    "above_south": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_a_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "south": "true",
+    "up": "true",
+    "above_south": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_b_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_wall_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_n_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_corner_w_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath_strip_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "true",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath_corner_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "true",
+    "up": "true",
+    "above_west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "true",
+    "up": "true",
+    "above_west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_a_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "west": "true",
+    "up": "true",
+    "above_west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_skirt_b_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_floor"
+   }
+  },
+  {
+   "when": {
+    "heat": "1",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_1_bath"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_wall_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_n_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_w_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath_strip_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "true",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath_corner_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "true",
+    "up": "true",
+    "above_north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "true",
+    "up": "true",
+    "above_north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_a_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "north": "true",
+    "up": "true",
+    "above_north": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_b_north"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_wall_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_n_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_w_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath_strip_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "true",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath_corner_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "true",
+    "up": "true",
+    "above_east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "true",
+    "up": "true",
+    "above_east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_a_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "east": "true",
+    "up": "true",
+    "above_east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_b_east"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_wall_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "false",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_n_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "true",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_w_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath_strip_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "true",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath_corner_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "true",
+    "up": "true",
+    "above_south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "true",
+    "up": "true",
+    "above_south": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_a_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "south": "true",
+    "up": "true",
+    "above_south": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_b_south"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_wall_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_n_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_corner_w_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath_strip_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "true",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath_corner_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "true",
+    "up": "true",
+    "above_west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "true",
+    "up": "true",
+    "above_west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_a_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "west": "true",
+    "up": "true",
+    "above_west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_skirt_b_west"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_floor"
+   }
+  },
+  {
+   "when": {
+    "heat": "2|3",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/foundry_vat_2_bath"
+   }
+  }
+ ]
+}

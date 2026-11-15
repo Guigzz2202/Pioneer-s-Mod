@@ -1,0 +1,6 @@
+{
+ "loader": "pioneers:connected",
+ "parent": "minecraft:block/block",
+ "tiles": "pioneers:block/solar_absorber_collector",
+ "active_tiles": "pioneers:block/solar_absorber_collector_on"
+}

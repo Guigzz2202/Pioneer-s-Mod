@@ -1,0 +1,29 @@
+{
+ "loader": "forge:separate_transforms",
+ "gui_light": "front",
+ "base": {
+  "parent": "pioneers:item/hunt/geo/harpoon"
+ },
+ "perspectives": {
+  "gui": {
+   "parent": "minecraft:item/generated",
+   "textures": {
+    "layer0": "pioneers:item/hunt/harpoon"
+   }
+  }
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "pioneers:aim": 1
+   },
+   "model": "pioneers:item/harpoon_aim"
+  },
+  {
+   "predicate": {
+    "pioneers:thrown": 1
+   },
+   "model": "pioneers:item/harpoon_thrown"
+  }
+ ]
+}

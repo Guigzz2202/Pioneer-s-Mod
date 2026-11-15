@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "pioneers:block/smooth_verdigris_rock_slab"
+  },
+  "type=top": {
+   "model": "pioneers:block/smooth_verdigris_rock_slab_top"
+  },
+  "type=double": {
+   "model": "pioneers:block/smooth_verdigris_rock"
+  }
+ }
+}

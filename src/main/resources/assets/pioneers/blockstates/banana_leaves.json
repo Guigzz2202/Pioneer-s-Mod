@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "fruit=2": {
+   "model": "pioneers:block/farm/trees/banana_leaves_blossom"
+  },
+  "fruit=3": {
+   "model": "pioneers:block/farm/trees/banana_leaves_unripe"
+  },
+  "fruit=4": {
+   "model": "pioneers:block/farm/trees/banana_leaves_ripe"
+  },
+  "fruit=0": {
+   "model": "pioneers:block/farm/trees/banana_leaves"
+  },
+  "fruit=1": {
+   "model": "pioneers:block/farm/trees/banana_leaves"
+  }
+ }
+}

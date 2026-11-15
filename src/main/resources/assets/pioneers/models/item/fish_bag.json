@@ -1,0 +1,330 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "wicker": "pioneers:block/home/bag/wicker",
+  "leather": "pioneers:block/home/bag/leather",
+  "strap": "pioneers:block/home/bag/strap",
+  "leaf": "pioneers:block/home/bag/leaf",
+  "brass": "pioneers:block/home/brass",
+  "iron": "pioneers:block/home/iron",
+  "particle": "pioneers:block/home/bag/wicker"
+ },
+ "elements": [
+  {
+   "from": [
+    3,
+    1,
+    5
+   ],
+   "to": [
+    13,
+    9,
+    11
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wicker"
+    },
+    "south": {
+     "texture": "#wicker"
+    },
+    "east": {
+     "texture": "#wicker"
+    },
+    "west": {
+     "texture": "#wicker"
+    },
+    "up": {
+     "texture": "#wicker"
+    },
+    "down": {
+     "texture": "#wicker"
+    }
+   }
+  },
+  {
+   "from": [
+    2.8,
+    9,
+    4.8
+   ],
+   "to": [
+    13.2,
+    10,
+    11.2
+   ],
+   "faces": {
+    "north": {
+     "texture": "#leather"
+    },
+    "south": {
+     "texture": "#leather"
+    },
+    "east": {
+     "texture": "#leather"
+    },
+    "west": {
+     "texture": "#leather"
+    },
+    "up": {
+     "texture": "#leather"
+    },
+    "down": {
+     "texture": "#leather"
+    }
+   }
+  },
+  {
+   "from": [
+    7.4,
+    7.2,
+    4.6
+   ],
+   "to": [
+    8.6,
+    9.2,
+    5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "from": [
+    2.4,
+    5,
+    7.5
+   ],
+   "to": [
+    2.8,
+    12,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#strap"
+    },
+    "south": {
+     "texture": "#strap"
+    },
+    "west": {
+     "texture": "#strap"
+    },
+    "up": {
+     "texture": "#strap"
+    },
+    "down": {
+     "texture": "#strap"
+    }
+   }
+  },
+  {
+   "from": [
+    13.2,
+    5,
+    7.5
+   ],
+   "to": [
+    13.6,
+    12,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#strap"
+    },
+    "south": {
+     "texture": "#strap"
+    },
+    "east": {
+     "texture": "#strap"
+    },
+    "up": {
+     "texture": "#strap"
+    },
+    "down": {
+     "texture": "#strap"
+    }
+   }
+  },
+  {
+   "from": [
+    2.4,
+    12,
+    7.5
+   ],
+   "to": [
+    13.6,
+    12.6,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#strap"
+    },
+    "south": {
+     "texture": "#strap"
+    },
+    "east": {
+     "texture": "#strap"
+    },
+    "west": {
+     "texture": "#strap"
+    },
+    "up": {
+     "texture": "#strap"
+    },
+    "down": {
+     "texture": "#strap"
+    }
+   }
+  },
+  {
+   "from": [
+    9.5,
+    10,
+    6.2
+   ],
+   "to": [
+    11.5,
+    11.2,
+    7.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#leaf"
+    },
+    "south": {
+     "texture": "#leaf"
+    },
+    "east": {
+     "texture": "#leaf"
+    },
+    "west": {
+     "texture": "#leaf"
+    },
+    "up": {
+     "texture": "#leaf"
+    }
+   }
+  }
+ ],
+ "display": {
+  "gui": {
+   "rotation": [
+    24,
+    205,
+    0
+   ],
+   "translation": [
+    0,
+    0.5,
+    0
+   ],
+   "scale": [
+    0.78,
+    0.78,
+    0.78
+   ]
+  },
+  "ground": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0,
+    3,
+    0
+   ],
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ]
+  },
+  "fixed": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ]
+  },
+  "thirdperson_righthand": {
+   "rotation": [
+    75,
+    45,
+    0
+   ],
+   "translation": [
+    0,
+    2.5,
+    0
+   ],
+   "scale": [
+    0.42,
+    0.42,
+    0.42
+   ]
+  },
+  "firstperson_righthand": {
+   "rotation": [
+    0,
+    135,
+    0
+   ],
+   "translation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    0.42,
+    0.42,
+    0.42
+   ]
+  },
+  "firstperson_lefthand": {
+   "rotation": [
+    0,
+    225,
+    0
+   ],
+   "translation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    0.42,
+    0.42,
+    0.42
+   ]
+  }
+ }
+}

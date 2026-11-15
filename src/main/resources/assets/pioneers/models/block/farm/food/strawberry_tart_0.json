@@ -1,0 +1,625 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/food/strawberry_tart_crust",
+  "pie_tin": "pioneers:block/farm/food/pie_tin",
+  "strawberry_tart_top": "pioneers:block/farm/food/strawberry_tart_top",
+  "strawberry_tart_crust": "pioneers:block/farm/food/strawberry_tart_crust",
+  "strawberry_tart_inner": "pioneers:block/farm/food/strawberry_tart_inner"
+ },
+ "elements": [
+  {
+   "from": [
+    1.0,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    1,
+    15
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      1.0,
+      1,
+      15,
+      15
+     ],
+     "texture": "#pie_tin"
+    },
+    "down": {
+     "uv": [
+      1.0,
+      1,
+      15,
+      15
+     ],
+     "texture": "#pie_tin"
+    },
+    "north": {
+     "uv": [
+      1,
+      15,
+      15.0,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "south": {
+     "uv": [
+      1.0,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "east": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "west": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    }
+   }
+  },
+  {
+   "from": [
+    1.4,
+    1,
+    1.4
+   ],
+   "to": [
+    14.6,
+    4,
+    14.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      1.4,
+      1.4,
+      14.6,
+      14.6
+     ],
+     "texture": "#strawberry_tart_top"
+    },
+    "down": {
+     "uv": [
+      1.4,
+      1.4,
+      14.6,
+      14.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "south": {
+     "uv": [
+      1.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "east": {
+     "uv": [
+      1.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "west": {
+     "uv": [
+      1.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#strawberry_tart_inner"
+    }
+   }
+  },
+  {
+   "from": [
+    1.4,
+    4,
+    1.4
+   ],
+   "to": [
+    14.6,
+    4.6,
+    2.4
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      1.4,
+      1.4,
+      14.6,
+      2.4
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "down": {
+     "uv": [
+      1.4,
+      13.6,
+      14.6,
+      14.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "south": {
+     "uv": [
+      1.4,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "east": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "west": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    1.4,
+    4,
+    13.6
+   ],
+   "to": [
+    14.6,
+    4.6,
+    14.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      1.4,
+      13.6,
+      14.6,
+      14.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "down": {
+     "uv": [
+      1.4,
+      1.4,
+      14.6,
+      2.4
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "south": {
+     "uv": [
+      1.4,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "east": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "west": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    13.6,
+    4,
+    2.4
+   ],
+   "to": [
+    14.6,
+    4.6,
+    13.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      13.6,
+      2.4,
+      14.6,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "down": {
+     "uv": [
+      13.6,
+      2.4,
+      14.6,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "south": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "east": {
+     "uv": [
+      2.4,
+      11.4,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "west": {
+     "uv": [
+      2.4,
+      11.4,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    1.4,
+    4,
+    2.4
+   ],
+   "to": [
+    2.4,
+    4.6,
+    13.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      1.4,
+      2.4,
+      2.4,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "down": {
+     "uv": [
+      1.4,
+      2.4,
+      2.4,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "north": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "south": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "east": {
+     "uv": [
+      2.4,
+      11.4,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "west": {
+     "uv": [
+      2.4,
+      11.4,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    4.0,
+    4,
+    2.4
+   ],
+   "to": [
+    5.0,
+    4.4,
+    13.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      4.0,
+      2.4,
+      5.0,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "down": {
+     "uv": [
+      4.0,
+      2.4,
+      5.0,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "north": {
+     "uv": [
+      11.0,
+      11.6,
+      12.0,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "south": {
+     "uv": [
+      4.0,
+      11.6,
+      5.0,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "east": {
+     "uv": [
+      2.4,
+      11.6,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "west": {
+     "uv": [
+      2.4,
+      11.6,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    4,
+    2.4
+   ],
+   "to": [
+    8.5,
+    4.4,
+    13.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      7.5,
+      2.4,
+      8.5,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "down": {
+     "uv": [
+      7.5,
+      2.4,
+      8.5,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "north": {
+     "uv": [
+      7.5,
+      11.6,
+      8.5,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "south": {
+     "uv": [
+      7.5,
+      11.6,
+      8.5,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "east": {
+     "uv": [
+      2.4,
+      11.6,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "west": {
+     "uv": [
+      2.4,
+      11.6,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    11.0,
+    4,
+    2.4
+   ],
+   "to": [
+    12.0,
+    4.4,
+    13.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      11.0,
+      2.4,
+      12.0,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "down": {
+     "uv": [
+      11.0,
+      2.4,
+      12.0,
+      13.6
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "north": {
+     "uv": [
+      4.0,
+      11.6,
+      5.0,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "south": {
+     "uv": [
+      11.0,
+      11.6,
+      12.0,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "east": {
+     "uv": [
+      2.4,
+      11.6,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    },
+    "west": {
+     "uv": [
+      2.4,
+      11.6,
+      13.6,
+      12
+     ],
+     "texture": "#strawberry_tart_crust"
+    }
+   }
+  }
+ ]
+}

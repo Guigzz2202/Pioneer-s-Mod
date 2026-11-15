@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "facing=south,stand=false": {
+   "model": "pioneers:block/mechanics/forge_clay_crucible"
+  },
+  "facing=south,stand=true": {
+   "model": "pioneers:block/mechanics/forge_clay_crucible_stand"
+  },
+  "facing=west,stand=false": {
+   "model": "pioneers:block/mechanics/forge_clay_crucible",
+   "y": 90
+  },
+  "facing=west,stand=true": {
+   "model": "pioneers:block/mechanics/forge_clay_crucible_stand",
+   "y": 90
+  },
+  "facing=north,stand=false": {
+   "model": "pioneers:block/mechanics/forge_clay_crucible",
+   "y": 180
+  },
+  "facing=north,stand=true": {
+   "model": "pioneers:block/mechanics/forge_clay_crucible_stand",
+   "y": 180
+  },
+  "facing=east,stand=false": {
+   "model": "pioneers:block/mechanics/forge_clay_crucible",
+   "y": 270
+  },
+  "facing=east,stand=true": {
+   "model": "pioneers:block/mechanics/forge_clay_crucible_stand",
+   "y": 270
+  }
+ }
+}

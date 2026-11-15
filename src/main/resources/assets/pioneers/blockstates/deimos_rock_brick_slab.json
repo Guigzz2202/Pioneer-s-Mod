@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "pioneers:block/deimos_rock_brick_slab"
+  },
+  "type=top": {
+   "model": "pioneers:block/deimos_rock_brick_slab_top"
+  },
+  "type=double": {
+   "model": "pioneers:block/deimos_rock_bricks"
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pioneers:block/farm/device/auto_feeder"
+    },
+    "facing=east": {
+      "model": "pioneers:block/farm/device/auto_feeder",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pioneers:block/farm/device/auto_feeder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pioneers:block/farm/device/auto_feeder",
+      "y": 270
+    }
+  }
+}

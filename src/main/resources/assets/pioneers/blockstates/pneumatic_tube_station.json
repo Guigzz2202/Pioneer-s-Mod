@@ -1,0 +1,50 @@
+{
+ "variants": {
+  "active=false,facing=north": {
+   "model": "pioneers:block/pneumatic/station"
+  },
+  "active=true,facing=north": {
+   "model": "pioneers:block/pneumatic/station_on"
+  },
+  "active=false,facing=east": {
+   "model": "pioneers:block/pneumatic/station",
+   "y": 90
+  },
+  "active=true,facing=east": {
+   "model": "pioneers:block/pneumatic/station_on",
+   "y": 90
+  },
+  "active=false,facing=south": {
+   "model": "pioneers:block/pneumatic/station",
+   "y": 180
+  },
+  "active=true,facing=south": {
+   "model": "pioneers:block/pneumatic/station_on",
+   "y": 180
+  },
+  "active=false,facing=west": {
+   "model": "pioneers:block/pneumatic/station",
+   "y": 270
+  },
+  "active=true,facing=west": {
+   "model": "pioneers:block/pneumatic/station_on",
+   "y": 270
+  },
+  "active=false,facing=up": {
+   "model": "pioneers:block/pneumatic/station",
+   "x": 270
+  },
+  "active=true,facing=up": {
+   "model": "pioneers:block/pneumatic/station_on",
+   "x": 270
+  },
+  "active=false,facing=down": {
+   "model": "pioneers:block/pneumatic/station",
+   "x": 90
+  },
+  "active=true,facing=down": {
+   "model": "pioneers:block/pneumatic/station_on",
+   "x": 90
+  }
+ }
+}

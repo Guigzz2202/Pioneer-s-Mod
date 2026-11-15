@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/cube_all",
+ "textures": {
+  "all": "pioneers:block/cracked_venus_rock_bricks"
+ }
+}

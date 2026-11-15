@@ -1,0 +1,124 @@
+{
+ "variants": {
+  "axis=y,powered=false,ratio=0": {
+   "model": "pioneers:block/mechanics/clutch"
+  },
+  "axis=y,powered=false,ratio=1": {
+   "model": "pioneers:block/mechanics/clutch"
+  },
+  "axis=y,powered=false,ratio=2": {
+   "model": "pioneers:block/mechanics/clutch"
+  },
+  "axis=y,powered=false,ratio=3": {
+   "model": "pioneers:block/mechanics/clutch"
+  },
+  "axis=y,powered=false,ratio=4": {
+   "model": "pioneers:block/mechanics/clutch"
+  },
+  "axis=y,powered=true,ratio=0": {
+   "model": "pioneers:block/mechanics/clutch_open"
+  },
+  "axis=y,powered=true,ratio=1": {
+   "model": "pioneers:block/mechanics/clutch_open"
+  },
+  "axis=y,powered=true,ratio=2": {
+   "model": "pioneers:block/mechanics/clutch_open"
+  },
+  "axis=y,powered=true,ratio=3": {
+   "model": "pioneers:block/mechanics/clutch_open"
+  },
+  "axis=y,powered=true,ratio=4": {
+   "model": "pioneers:block/mechanics/clutch_open"
+  },
+  "axis=z,powered=false,ratio=0": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90
+  },
+  "axis=z,powered=false,ratio=1": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90
+  },
+  "axis=z,powered=false,ratio=2": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90
+  },
+  "axis=z,powered=false,ratio=3": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90
+  },
+  "axis=z,powered=false,ratio=4": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90
+  },
+  "axis=z,powered=true,ratio=0": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90
+  },
+  "axis=z,powered=true,ratio=1": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90
+  },
+  "axis=z,powered=true,ratio=2": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90
+  },
+  "axis=z,powered=true,ratio=3": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90
+  },
+  "axis=z,powered=true,ratio=4": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90
+  },
+  "axis=x,powered=false,ratio=0": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=false,ratio=1": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=false,ratio=2": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=false,ratio=3": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=false,ratio=4": {
+   "model": "pioneers:block/mechanics/clutch",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=true,ratio=0": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=true,ratio=1": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=true,ratio=2": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=true,ratio=3": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90,
+   "y": 90
+  },
+  "axis=x,powered=true,ratio=4": {
+   "model": "pioneers:block/mechanics/clutch_open",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

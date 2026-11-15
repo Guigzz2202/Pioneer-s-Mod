@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/cube_column",
+ "textures": {
+  "side": "pioneers:block/mars_layered_rock",
+  "end": "pioneers:block/mars_layered_rock_top"
+ }
+}

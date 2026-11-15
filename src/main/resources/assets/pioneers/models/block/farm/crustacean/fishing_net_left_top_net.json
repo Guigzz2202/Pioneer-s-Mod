@@ -1,0 +1,42 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/kitchen/wood",
+  "net": "pioneers:block/farm/crustacean/net"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    14.4,
+    7.98
+   ],
+   "to": [
+    2.5,
+    16,
+    8.02
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      13.5,
+      0,
+      16,
+      1.6
+     ],
+     "texture": "#net"
+    },
+    "south": {
+     "uv": [
+      0,
+      0,
+      2.5,
+      1.6
+     ],
+     "texture": "#net"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "planks_end": "pioneers:block/warehouse/planks_end",
+  "particle": "pioneers:block/warehouse/planks_a"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0.5
+   ],
+   "to": [
+    16,
+    16,
+    1.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#planks_end"
+    }
+   }
+  }
+ ]
+}

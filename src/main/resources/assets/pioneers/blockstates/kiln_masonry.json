@@ -1,0 +1,240 @@
+{
+ "variants": {
+  "form=bricks,role=base,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_base_0"
+  },
+  "form=bricks,role=body,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_body_0"
+  },
+  "form=bricks,role=chimney,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_chimney_0"
+  },
+  "form=bricks,role=chimney_top,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_chimney_top_0"
+  },
+  "form=slab_bottom,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_bottom_0"
+  },
+  "form=slab_top,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_top_0"
+  },
+  "form=slab_double,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_double_0"
+  },
+  "form=stair_bottom,facing=east,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_0",
+   "uvlock": true
+  },
+  "form=stair_bottom,facing=south,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_0",
+   "uvlock": true,
+   "y": 90
+  },
+  "form=stair_bottom,facing=west,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_0",
+   "uvlock": true,
+   "y": 180
+  },
+  "form=stair_bottom,facing=north,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_0",
+   "uvlock": true,
+   "y": 270
+  },
+  "form=stair_top,facing=east,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_0",
+   "uvlock": true
+  },
+  "form=stair_top,facing=south,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_0",
+   "uvlock": true,
+   "y": 90
+  },
+  "form=stair_top,facing=west,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_0",
+   "uvlock": true,
+   "y": 180
+  },
+  "form=stair_top,facing=north,heat=0": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_0",
+   "uvlock": true,
+   "y": 270
+  },
+  "form=bricks,role=base,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_base_1"
+  },
+  "form=bricks,role=body,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_body_1"
+  },
+  "form=bricks,role=chimney,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_chimney_1"
+  },
+  "form=bricks,role=chimney_top,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_chimney_top_1"
+  },
+  "form=slab_bottom,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_bottom_1"
+  },
+  "form=slab_top,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_top_1"
+  },
+  "form=slab_double,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_double_1"
+  },
+  "form=stair_bottom,facing=east,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_1",
+   "uvlock": true
+  },
+  "form=stair_bottom,facing=south,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_1",
+   "uvlock": true,
+   "y": 90
+  },
+  "form=stair_bottom,facing=west,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_1",
+   "uvlock": true,
+   "y": 180
+  },
+  "form=stair_bottom,facing=north,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_1",
+   "uvlock": true,
+   "y": 270
+  },
+  "form=stair_top,facing=east,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_1",
+   "uvlock": true
+  },
+  "form=stair_top,facing=south,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_1",
+   "uvlock": true,
+   "y": 90
+  },
+  "form=stair_top,facing=west,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_1",
+   "uvlock": true,
+   "y": 180
+  },
+  "form=stair_top,facing=north,heat=1": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_1",
+   "uvlock": true,
+   "y": 270
+  },
+  "form=bricks,role=base,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_base_2"
+  },
+  "form=bricks,role=body,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_body_2"
+  },
+  "form=bricks,role=chimney,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_chimney_2"
+  },
+  "form=bricks,role=chimney_top,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_chimney_top_2"
+  },
+  "form=slab_bottom,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_bottom_2"
+  },
+  "form=slab_top,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_top_2"
+  },
+  "form=slab_double,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_double_2"
+  },
+  "form=stair_bottom,facing=east,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_2",
+   "uvlock": true
+  },
+  "form=stair_bottom,facing=south,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_2",
+   "uvlock": true,
+   "y": 90
+  },
+  "form=stair_bottom,facing=west,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_2",
+   "uvlock": true,
+   "y": 180
+  },
+  "form=stair_bottom,facing=north,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_2",
+   "uvlock": true,
+   "y": 270
+  },
+  "form=stair_top,facing=east,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_2",
+   "uvlock": true
+  },
+  "form=stair_top,facing=south,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_2",
+   "uvlock": true,
+   "y": 90
+  },
+  "form=stair_top,facing=west,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_2",
+   "uvlock": true,
+   "y": 180
+  },
+  "form=stair_top,facing=north,heat=2": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_2",
+   "uvlock": true,
+   "y": 270
+  },
+  "form=bricks,role=base,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_base_3"
+  },
+  "form=bricks,role=body,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_body_3"
+  },
+  "form=bricks,role=chimney,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_chimney_3"
+  },
+  "form=bricks,role=chimney_top,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_bricks_chimney_top_3"
+  },
+  "form=slab_bottom,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_bottom_3"
+  },
+  "form=slab_top,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_top_3"
+  },
+  "form=slab_double,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_slab_double_3"
+  },
+  "form=stair_bottom,facing=east,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_3",
+   "uvlock": true
+  },
+  "form=stair_bottom,facing=south,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_3",
+   "uvlock": true,
+   "y": 90
+  },
+  "form=stair_bottom,facing=west,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_3",
+   "uvlock": true,
+   "y": 180
+  },
+  "form=stair_bottom,facing=north,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_bottom_3",
+   "uvlock": true,
+   "y": 270
+  },
+  "form=stair_top,facing=east,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_3",
+   "uvlock": true
+  },
+  "form=stair_top,facing=south,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_3",
+   "uvlock": true,
+   "y": 90
+  },
+  "form=stair_top,facing=west,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_3",
+   "uvlock": true,
+   "y": 180
+  },
+  "form=stair_top,facing=north,heat=3": {
+   "model": "pioneers:block/mechanics/heat/kiln_stair_top_3",
+   "uvlock": true,
+   "y": 270
+  }
+ }
+}

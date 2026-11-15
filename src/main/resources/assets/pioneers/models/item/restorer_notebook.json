@@ -1,0 +1,20 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/rp/restorer_notebook"
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "pioneers:clasps": 0.5
+   },
+   "model": "pioneers:item/rp/restorer_notebook_clasp"
+  },
+  {
+   "predicate": {
+    "pioneers:clasps": 1.0
+   },
+   "model": "pioneers:item/rp/restorer_notebook_gold"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/hunt/cherry_gun_rack"
+  },
+  "facing=east": {
+   "model": "pioneers:block/hunt/cherry_gun_rack",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/hunt/cherry_gun_rack",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/hunt/cherry_gun_rack",
+   "y": 270
+  }
+ }
+}

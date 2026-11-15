@@ -1,0 +1,33 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "#t"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    8,
+    0
+   ],
+   "to": [
+    0,
+    16,
+    8
+   ],
+   "shade": true,
+   "faces": {
+    "west": {
+     "uv": [
+      0,
+      0,
+      8,
+      8
+     ],
+     "texture": "#t",
+     "cullface": "west"
+    }
+   }
+  }
+ ]
+}

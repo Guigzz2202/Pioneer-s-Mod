@@ -1,0 +1,179 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "base": "pioneers:block/space_stabilizer_emitter_star/base",
+  "body": "pioneers:block/space_stabilizer_emitter_star/body",
+  "coil": "pioneers:block/space_stabilizer_emitter_star/coil",
+  "emitter": "pioneers:block/space_stabilizer_emitter_star/emitter",
+  "particle": "pioneers:block/space_stabilizer_emitter_star/base"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    3,
+    16
+   ],
+   "faces": {
+    "down": {
+     "texture": "#base",
+     "cullface": "down"
+    },
+    "up": {
+     "texture": "#base"
+    },
+    "north": {
+     "texture": "#base"
+    },
+    "south": {
+     "texture": "#base"
+    },
+    "west": {
+     "texture": "#base"
+    },
+    "east": {
+     "texture": "#base"
+    }
+   }
+  },
+  {
+   "from": [
+    5,
+    3,
+    5
+   ],
+   "to": [
+    11,
+    10,
+    11
+   ],
+   "faces": {
+    "up": {
+     "texture": "#body"
+    },
+    "north": {
+     "texture": "#body"
+    },
+    "south": {
+     "texture": "#body"
+    },
+    "west": {
+     "texture": "#body"
+    },
+    "east": {
+     "texture": "#body"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    4.5,
+    3
+   ],
+   "to": [
+    13,
+    6.5,
+    13
+   ],
+   "forge_data": {
+    "block_light": 15,
+    "sky_light": 15
+   },
+   "faces": {
+    "down": {
+     "texture": "#coil"
+    },
+    "up": {
+     "texture": "#coil"
+    },
+    "north": {
+     "texture": "#coil"
+    },
+    "south": {
+     "texture": "#coil"
+    },
+    "west": {
+     "texture": "#coil"
+    },
+    "east": {
+     "texture": "#coil"
+    }
+   }
+  },
+  {
+   "from": [
+    3.5,
+    7.5,
+    3.5
+   ],
+   "to": [
+    12.5,
+    9,
+    12.5
+   ],
+   "forge_data": {
+    "block_light": 15,
+    "sky_light": 15
+   },
+   "faces": {
+    "down": {
+     "texture": "#coil"
+    },
+    "up": {
+     "texture": "#coil"
+    },
+    "north": {
+     "texture": "#coil"
+    },
+    "south": {
+     "texture": "#coil"
+    },
+    "west": {
+     "texture": "#coil"
+    },
+    "east": {
+     "texture": "#coil"
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    10,
+    6
+   ],
+   "to": [
+    10,
+    15,
+    10
+   ],
+   "forge_data": {
+    "block_light": 15,
+    "sky_light": 15
+   },
+   "faces": {
+    "up": {
+     "texture": "#emitter"
+    },
+    "north": {
+     "texture": "#emitter"
+    },
+    "south": {
+     "texture": "#emitter"
+    },
+    "west": {
+     "texture": "#emitter"
+    },
+    "east": {
+     "texture": "#emitter"
+    }
+   }
+  }
+ ]
+}

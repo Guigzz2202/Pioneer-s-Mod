@@ -1,0 +1,140 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "brass": "pioneers:block/mechanics/brass",
+  "steel": "pioneers:block/mechanics/steel",
+  "steel_plate": "pioneers:block/mechanics/steel_plate",
+  "opal_off": "pioneers:block/lighting/opal_off",
+  "particle": "pioneers:block/mechanics/steel_plate"
+ },
+ "elements": [
+  {
+   "from": [
+    3.5,
+    15,
+    3.5
+   ],
+   "to": [
+    12.5,
+    16,
+    12.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#steel_plate"
+    },
+    "south": {
+     "texture": "#steel_plate"
+    },
+    "east": {
+     "texture": "#steel_plate"
+    },
+    "west": {
+     "texture": "#steel_plate"
+    },
+    "up": {
+     "texture": "#steel_plate"
+    },
+    "down": {
+     "texture": "#steel_plate"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    14,
+    3
+   ],
+   "to": [
+    13,
+    15,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#steel"
+    },
+    "south": {
+     "texture": "#steel"
+    },
+    "east": {
+     "texture": "#steel"
+    },
+    "west": {
+     "texture": "#steel"
+    },
+    "down": {
+     "texture": "#steel"
+    },
+    "up": {
+     "texture": "#steel"
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    12.5,
+    4
+   ],
+   "to": [
+    12,
+    14,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#opal_off"
+    },
+    "south": {
+     "texture": "#opal_off"
+    },
+    "east": {
+     "texture": "#opal_off"
+    },
+    "west": {
+     "texture": "#opal_off"
+    },
+    "down": {
+     "texture": "#opal_off"
+    },
+    "up": {
+     "texture": "#opal_off"
+    }
+   }
+  },
+  {
+   "from": [
+    7.25,
+    12.25,
+    7.25
+   ],
+   "to": [
+    8.75,
+    12.5,
+    8.75
+   ],
+   "faces": {
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    }
+   }
+  }
+ ]
+}

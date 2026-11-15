@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/farm/kitchen/vat_stave"
+ },
+ "elements": []
+}

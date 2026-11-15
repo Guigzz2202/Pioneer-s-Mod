@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/logistic_terminal"
+  },
+  "facing=east": {
+   "model": "pioneers:block/logistic_terminal",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/logistic_terminal",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/logistic_terminal",
+   "y": 270
+  }
+ }
+}

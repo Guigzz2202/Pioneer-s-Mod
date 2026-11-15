@@ -1,0 +1,244 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/base"
+   }
+  },
+  {
+   "when": {
+    "covered": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/wall"
+   }
+  },
+  {
+   "when": {
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/center"
+   }
+  },
+  {
+   "when": {
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/band_north"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/edge_north"
+   }
+  },
+  {
+   "when": {
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/fender_north"
+   }
+  },
+  {
+   "when": {
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/band_south"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/edge_south"
+   }
+  },
+  {
+   "when": {
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/fender_south"
+   }
+  },
+  {
+   "when": {
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/band_west"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/edge_west"
+   }
+  },
+  {
+   "when": {
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/fender_west"
+   }
+  },
+  {
+   "when": {
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/band_east"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/edge_east"
+   }
+  },
+  {
+   "when": {
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/fender_east"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "north": "true"
+     },
+     {
+      "east": "true"
+     },
+     {
+      "ne": "true"
+     }
+    ]
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/cband_ne"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "false",
+    "ne": "false",
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/corner_ne"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "north": "true"
+     },
+     {
+      "west": "true"
+     },
+     {
+      "nw": "true"
+     }
+    ]
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/cband_nw"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "west": "false",
+    "nw": "false",
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/corner_nw"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "south": "true"
+     },
+     {
+      "east": "true"
+     },
+     {
+      "se": "true"
+     }
+    ]
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/cband_se"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "false",
+    "se": "false",
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/corner_se"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "south": "true"
+     },
+     {
+      "west": "true"
+     },
+     {
+      "sw": "true"
+     }
+    ]
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/cband_sw"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "west": "false",
+    "sw": "false",
+    "covered": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/naval/quay/corner_sw"
+   }
+  }
+ ]
+}

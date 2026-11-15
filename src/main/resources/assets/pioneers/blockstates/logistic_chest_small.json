@@ -1,0 +1,79 @@
+{
+ "variants": {
+  "facing=north,role=provider": {
+   "model": "pioneers:block/logistic_chest_small_provider"
+  },
+  "facing=north,role=unload": {
+   "model": "pioneers:block/logistic_chest_small_unload"
+  },
+  "facing=north,role=storage": {
+   "model": "pioneers:block/logistic_chest_small_storage"
+  },
+  "facing=north,role=requester": {
+   "model": "pioneers:block/logistic_chest_small_requester"
+  },
+  "facing=north,role=buffer": {
+   "model": "pioneers:block/logistic_chest_small_buffer"
+  },
+  "facing=east,role=provider": {
+   "model": "pioneers:block/logistic_chest_small_provider",
+   "y": 90
+  },
+  "facing=east,role=unload": {
+   "model": "pioneers:block/logistic_chest_small_unload",
+   "y": 90
+  },
+  "facing=east,role=storage": {
+   "model": "pioneers:block/logistic_chest_small_storage",
+   "y": 90
+  },
+  "facing=east,role=requester": {
+   "model": "pioneers:block/logistic_chest_small_requester",
+   "y": 90
+  },
+  "facing=east,role=buffer": {
+   "model": "pioneers:block/logistic_chest_small_buffer",
+   "y": 90
+  },
+  "facing=south,role=provider": {
+   "model": "pioneers:block/logistic_chest_small_provider",
+   "y": 180
+  },
+  "facing=south,role=unload": {
+   "model": "pioneers:block/logistic_chest_small_unload",
+   "y": 180
+  },
+  "facing=south,role=storage": {
+   "model": "pioneers:block/logistic_chest_small_storage",
+   "y": 180
+  },
+  "facing=south,role=requester": {
+   "model": "pioneers:block/logistic_chest_small_requester",
+   "y": 180
+  },
+  "facing=south,role=buffer": {
+   "model": "pioneers:block/logistic_chest_small_buffer",
+   "y": 180
+  },
+  "facing=west,role=provider": {
+   "model": "pioneers:block/logistic_chest_small_provider",
+   "y": 270
+  },
+  "facing=west,role=unload": {
+   "model": "pioneers:block/logistic_chest_small_unload",
+   "y": 270
+  },
+  "facing=west,role=storage": {
+   "model": "pioneers:block/logistic_chest_small_storage",
+   "y": 270
+  },
+  "facing=west,role=requester": {
+   "model": "pioneers:block/logistic_chest_small_requester",
+   "y": 270
+  },
+  "facing=west,role=buffer": {
+   "model": "pioneers:block/logistic_chest_small_buffer",
+   "y": 270
+  }
+ }
+}

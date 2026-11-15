@@ -1,0 +1,221 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "iron": "pioneers:block/mechanics/iron",
+  "oak": "pioneers:block/mechanics/oak",
+  "oak_dark": "pioneers:block/mechanics/oak_dark",
+  "particle": "pioneers:block/mechanics/oak"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    4,
+    14.5
+   ],
+   "to": [
+    11,
+    12,
+    16
+   ],
+   "faces": {
+    "south": {
+     "texture": "#oak"
+    },
+    "north": {
+     "texture": "#oak"
+    },
+    "east": {
+     "texture": "#oak"
+    },
+    "west": {
+     "texture": "#oak"
+    },
+    "up": {
+     "texture": "#oak"
+    },
+    "down": {
+     "texture": "#oak"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    4.75,
+    14.25
+   ],
+   "to": [
+    8.5,
+    5.5,
+    14.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#iron"
+    },
+    "east": {
+     "texture": "#iron"
+    },
+    "west": {
+     "texture": "#iron"
+    },
+    "up": {
+     "texture": "#iron"
+    },
+    "down": {
+     "texture": "#iron"
+    },
+    "south": {
+     "texture": "#iron"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    10.5,
+    14.25
+   ],
+   "to": [
+    8.5,
+    11.25,
+    14.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#iron"
+    },
+    "east": {
+     "texture": "#iron"
+    },
+    "west": {
+     "texture": "#iron"
+    },
+    "up": {
+     "texture": "#iron"
+    },
+    "down": {
+     "texture": "#iron"
+    },
+    "south": {
+     "texture": "#iron"
+    }
+   }
+  },
+  {
+   "from": [
+    6.25,
+    6.5,
+    13.0
+   ],
+   "to": [
+    9.75,
+    9.5,
+    14.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#oak_dark"
+    },
+    "east": {
+     "texture": "#oak_dark"
+    },
+    "west": {
+     "texture": "#oak_dark"
+    },
+    "up": {
+     "texture": "#oak_dark"
+    },
+    "down": {
+     "texture": "#oak_dark"
+    },
+    "south": {
+     "texture": "#oak_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    7.25,
+    7.25,
+    7.25
+   ],
+   "to": [
+    8.75,
+    8.75,
+    13.0
+   ],
+   "faces": {
+    "north": {
+     "texture": "#oak"
+    },
+    "east": {
+     "texture": "#oak"
+    },
+    "west": {
+     "texture": "#oak"
+    },
+    "up": {
+     "texture": "#oak"
+    },
+    "down": {
+     "texture": "#oak"
+    },
+    "south": {
+     "texture": "#oak"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     13.75
+    ],
+    "axis": "x",
+    "angle": -45
+   }
+  },
+  {
+   "from": [
+    6.75,
+    6.75,
+    5.75
+   ],
+   "to": [
+    9.25,
+    9.25,
+    7.25
+   ],
+   "faces": {
+    "south": {
+     "texture": "#oak_dark"
+    },
+    "north": {
+     "texture": "#oak_dark"
+    },
+    "east": {
+     "texture": "#oak_dark"
+    },
+    "west": {
+     "texture": "#oak_dark"
+    },
+    "up": {
+     "texture": "#oak_dark"
+    },
+    "down": {
+     "texture": "#oak_dark"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     13.75
+    ],
+    "axis": "x",
+    "angle": -45
+   }
+  }
+ ]
+}

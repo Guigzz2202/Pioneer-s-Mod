@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/cobbled_titania_rock",
+  "top": "pioneers:block/cobbled_titania_rock",
+  "side": "pioneers:block/cobbled_titania_rock"
+ }
+}

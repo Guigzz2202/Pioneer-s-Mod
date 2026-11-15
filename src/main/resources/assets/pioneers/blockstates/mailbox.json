@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/economy/mailbox"
+  },
+  "facing=east": {
+   "model": "pioneers:block/economy/mailbox",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/economy/mailbox",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/economy/mailbox",
+   "y": 270
+  }
+ }
+}

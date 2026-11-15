@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/table_apron_south_cw",
+ "textures": {
+  "board": "pioneers:block/home/wood/crimson_board",
+  "post": "pioneers:block/home/wood/crimson_post",
+  "dark": "pioneers:block/home/wood/crimson_dark",
+  "end": "pioneers:block/home/wood/crimson_end",
+  "top": "pioneers:block/home/wood/crimson_top",
+  "panel": "pioneers:block/home/wood/crimson_panel",
+  "particle": "pioneers:block/home/wood/crimson_board"
+ }
+}

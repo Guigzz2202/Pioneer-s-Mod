@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/mechanics/wood_lathe"
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/wood_lathe",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/wood_lathe",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/wood_lathe",
+   "y": 270
+  }
+ }
+}

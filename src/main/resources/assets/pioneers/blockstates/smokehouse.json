@@ -1,0 +1,124 @@
+{
+ "variants": {
+  "facing=north,lit=false,part=0": {
+   "model": "pioneers:block/farm/kitchen/smokehouse"
+  },
+  "facing=north,lit=false,part=1": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part"
+  },
+  "facing=north,lit=false,part=2": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part"
+  },
+  "facing=north,lit=false,part=3": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part"
+  },
+  "facing=north,lit=true,part=0": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_lit"
+  },
+  "facing=north,lit=true,part=1": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part"
+  },
+  "facing=north,lit=true,part=2": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part"
+  },
+  "facing=north,lit=true,part=3": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part"
+  },
+  "facing=east,lit=false,part=0": {
+   "model": "pioneers:block/farm/kitchen/smokehouse",
+   "y": 90
+  },
+  "facing=east,lit=false,part=1": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 90
+  },
+  "facing=east,lit=false,part=2": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 90
+  },
+  "facing=east,lit=false,part=3": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 90
+  },
+  "facing=east,lit=true,part=0": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_lit",
+   "y": 90
+  },
+  "facing=east,lit=true,part=1": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 90
+  },
+  "facing=east,lit=true,part=2": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 90
+  },
+  "facing=east,lit=true,part=3": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 90
+  },
+  "facing=south,lit=false,part=0": {
+   "model": "pioneers:block/farm/kitchen/smokehouse",
+   "y": 180
+  },
+  "facing=south,lit=false,part=1": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 180
+  },
+  "facing=south,lit=false,part=2": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 180
+  },
+  "facing=south,lit=false,part=3": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 180
+  },
+  "facing=south,lit=true,part=0": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_lit",
+   "y": 180
+  },
+  "facing=south,lit=true,part=1": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 180
+  },
+  "facing=south,lit=true,part=2": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 180
+  },
+  "facing=south,lit=true,part=3": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 180
+  },
+  "facing=west,lit=false,part=0": {
+   "model": "pioneers:block/farm/kitchen/smokehouse",
+   "y": 270
+  },
+  "facing=west,lit=false,part=1": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 270
+  },
+  "facing=west,lit=false,part=2": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 270
+  },
+  "facing=west,lit=false,part=3": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 270
+  },
+  "facing=west,lit=true,part=0": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_lit",
+   "y": 270
+  },
+  "facing=west,lit=true,part=1": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 270
+  },
+  "facing=west,lit=true,part=2": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 270
+  },
+  "facing=west,lit=true,part=3": {
+   "model": "pioneers:block/farm/kitchen/smokehouse_part",
+   "y": 270
+  }
+ }
+}

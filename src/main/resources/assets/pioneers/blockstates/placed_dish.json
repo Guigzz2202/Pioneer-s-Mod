@@ -1,0 +1,43 @@
+{
+ "variants": {
+  "base=plate,facing=north": {
+   "model": "pioneers:block/farm/dish/placed_dish"
+  },
+  "base=board,facing=north": {
+   "model": "pioneers:block/farm/dish/placed_dish_board"
+  },
+  "base=none,facing=north": {
+   "model": "pioneers:block/farm/dish/placed_dish_none"
+  },
+  "base=plate,facing=east": {
+   "model": "pioneers:block/farm/dish/placed_dish"
+  },
+  "base=board,facing=east": {
+   "model": "pioneers:block/farm/dish/placed_dish_board",
+   "y": 90
+  },
+  "base=none,facing=east": {
+   "model": "pioneers:block/farm/dish/placed_dish_none"
+  },
+  "base=plate,facing=south": {
+   "model": "pioneers:block/farm/dish/placed_dish"
+  },
+  "base=board,facing=south": {
+   "model": "pioneers:block/farm/dish/placed_dish_board",
+   "y": 180
+  },
+  "base=none,facing=south": {
+   "model": "pioneers:block/farm/dish/placed_dish_none"
+  },
+  "base=plate,facing=west": {
+   "model": "pioneers:block/farm/dish/placed_dish"
+  },
+  "base=board,facing=west": {
+   "model": "pioneers:block/farm/dish/placed_dish_board",
+   "y": 270
+  },
+  "base=none,facing=west": {
+   "model": "pioneers:block/farm/dish/placed_dish_none"
+  }
+ }
+}

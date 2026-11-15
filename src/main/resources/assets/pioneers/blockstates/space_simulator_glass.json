@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "enabled=false": {
+   "model": "pioneers:block/space_simulator_glass"
+  },
+  "enabled=true": {
+   "model": "pioneers:block/space_simulator_glass"
+  }
+ }
+}

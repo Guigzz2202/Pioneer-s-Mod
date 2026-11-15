@@ -1,0 +1,119 @@
+{
+ "loader": "forge:separate_transforms",
+ "gui_light": "front",
+ "base": {
+  "parent": "pioneers:block/rail/placeholder",
+  "display": {
+   "gui": {
+    "rotation": [
+     30,
+     225,
+     0
+    ],
+    "translation": [
+     -0.575,
+     -2.384,
+     0.0
+    ],
+    "scale": [
+     0.4324,
+     0.4324,
+     0.4324
+    ]
+   },
+   "ground": {
+    "rotation": [
+     0,
+     0,
+     0
+    ],
+    "translation": [
+     0,
+     3,
+     0
+    ],
+    "scale": [
+     0.173,
+     0.173,
+     0.173
+    ]
+   },
+   "fixed": {
+    "rotation": [
+     0,
+     0,
+     0
+    ],
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "scale": [
+     0.3459,
+     0.3459,
+     0.3459
+    ]
+   },
+   "thirdperson_righthand": {
+    "rotation": [
+     75,
+     45,
+     0
+    ],
+    "translation": [
+     0,
+     2.5,
+     0
+    ],
+    "scale": [
+     0.2595,
+     0.2595,
+     0.2595
+    ]
+   },
+   "firstperson_righthand": {
+    "rotation": [
+     0,
+     45,
+     0
+    ],
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "scale": [
+     0.2768,
+     0.2768,
+     0.2768
+    ]
+   },
+   "firstperson_lefthand": {
+    "rotation": [
+     0,
+     225,
+     0
+    ],
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "scale": [
+     0.2768,
+     0.2768,
+     0.2768
+    ]
+   }
+  }
+ },
+ "perspectives": {
+  "gui": {
+   "parent": "minecraft:item/generated",
+   "textures": {
+    "layer0": "pioneers:item/rail/posts/basic_fluid_loader"
+   }
+  }
+ }
+}

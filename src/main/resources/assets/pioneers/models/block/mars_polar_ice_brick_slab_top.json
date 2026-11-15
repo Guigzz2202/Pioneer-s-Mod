@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/mars_polar_ice_bricks",
+  "top": "pioneers:block/mars_polar_ice_bricks",
+  "side": "pioneers:block/mars_polar_ice_bricks"
+ }
+}

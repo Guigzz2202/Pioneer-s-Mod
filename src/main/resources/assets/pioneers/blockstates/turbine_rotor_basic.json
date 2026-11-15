@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "part=single": {
+   "model": "pioneers:block/industry/building/stacked/turbine_rotor_basic/single"
+  },
+  "part=bottom": {
+   "model": "pioneers:block/industry/building/stacked/turbine_rotor_basic/bottom"
+  },
+  "part=middle": {
+   "model": "pioneers:block/industry/building/stacked/turbine_rotor_basic/middle"
+  },
+  "part=top": {
+   "model": "pioneers:block/industry/building/stacked/turbine_rotor_basic/top"
+  }
+ }
+}

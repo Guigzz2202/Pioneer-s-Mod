@@ -1,0 +1,475 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:item/planet/earth",
+  "surface": "pioneers:item/planet/earth",
+  "atmosphere": "pioneers:item/planet/earth_atmosphere"
+ },
+ "elements": [
+  {
+   "from": [
+    5.5,
+    4,
+    5.5
+   ],
+   "to": [
+    10.5,
+    12,
+    10.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      5.5,
+      4,
+      10.5,
+      12
+     ],
+     "texture": "#surface"
+    },
+    "south": {
+     "uv": [
+      5.5,
+      4,
+      10.5,
+      12
+     ],
+     "texture": "#surface"
+    },
+    "east": {
+     "uv": [
+      5.5,
+      4,
+      10.5,
+      12
+     ],
+     "texture": "#surface"
+    },
+    "west": {
+     "uv": [
+      5.5,
+      4,
+      10.5,
+      12
+     ],
+     "texture": "#surface"
+    },
+    "up": {
+     "uv": [
+      5.5,
+      5.5,
+      10.5,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "down": {
+     "uv": [
+      5.5,
+      5.5,
+      10.5,
+      10.5
+     ],
+     "texture": "#surface"
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    5.5,
+    5.5
+   ],
+   "to": [
+    12,
+    10.5,
+    10.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      4,
+      5.5,
+      12,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "south": {
+     "uv": [
+      4,
+      5.5,
+      12,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "east": {
+     "uv": [
+      5.5,
+      5.5,
+      10.5,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "west": {
+     "uv": [
+      5.5,
+      5.5,
+      10.5,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "up": {
+     "uv": [
+      4,
+      5.5,
+      12,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "down": {
+     "uv": [
+      4,
+      5.5,
+      12,
+      10.5
+     ],
+     "texture": "#surface"
+    }
+   }
+  },
+  {
+   "from": [
+    5.5,
+    5.5,
+    4
+   ],
+   "to": [
+    10.5,
+    10.5,
+    12
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      5.5,
+      5.5,
+      10.5,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "south": {
+     "uv": [
+      5.5,
+      5.5,
+      10.5,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "east": {
+     "uv": [
+      4,
+      5.5,
+      12,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "west": {
+     "uv": [
+      4,
+      5.5,
+      12,
+      10.5
+     ],
+     "texture": "#surface"
+    },
+    "up": {
+     "uv": [
+      5.5,
+      4,
+      10.5,
+      12
+     ],
+     "texture": "#surface"
+    },
+    "down": {
+     "uv": [
+      5.5,
+      4,
+      10.5,
+      12
+     ],
+     "texture": "#surface"
+    }
+   }
+  },
+  {
+   "from": [
+    4.75,
+    4.75,
+    4.75
+   ],
+   "to": [
+    11.25,
+    11.25,
+    11.25
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      4.75,
+      4.75,
+      11.25,
+      11.25
+     ],
+     "texture": "#surface"
+    },
+    "south": {
+     "uv": [
+      4.75,
+      4.75,
+      11.25,
+      11.25
+     ],
+     "texture": "#surface"
+    },
+    "east": {
+     "uv": [
+      4.75,
+      4.75,
+      11.25,
+      11.25
+     ],
+     "texture": "#surface"
+    },
+    "west": {
+     "uv": [
+      4.75,
+      4.75,
+      11.25,
+      11.25
+     ],
+     "texture": "#surface"
+    },
+    "up": {
+     "uv": [
+      4.75,
+      4.75,
+      11.25,
+      11.25
+     ],
+     "texture": "#surface"
+    },
+    "down": {
+     "uv": [
+      4.75,
+      4.75,
+      11.25,
+      11.25
+     ],
+     "texture": "#surface"
+    }
+   }
+  },
+  {
+   "from": [
+    4.9,
+    3.4,
+    4.9
+   ],
+   "to": [
+    11.1,
+    12.6,
+    11.1
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      4.9,
+      4.9,
+      11.1,
+      11.1
+     ],
+     "texture": "#atmosphere"
+    },
+    "down": {
+     "uv": [
+      4.9,
+      4.9,
+      11.1,
+      11.1
+     ],
+     "texture": "#atmosphere"
+    }
+   }
+  },
+  {
+   "from": [
+    3.3,
+    4.8,
+    4.8
+   ],
+   "to": [
+    12.7,
+    11.2,
+    11.2
+   ],
+   "faces": {
+    "east": {
+     "uv": [
+      4.8,
+      4.8,
+      11.2,
+      11.2
+     ],
+     "texture": "#atmosphere"
+    },
+    "west": {
+     "uv": [
+      4.8,
+      4.8,
+      11.2,
+      11.2
+     ],
+     "texture": "#atmosphere"
+    }
+   }
+  },
+  {
+   "from": [
+    4.7,
+    4.7,
+    3.2
+   ],
+   "to": [
+    11.3,
+    11.3,
+    12.8
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      4.7,
+      4.7,
+      11.3,
+      11.3
+     ],
+     "texture": "#atmosphere"
+    },
+    "south": {
+     "uv": [
+      4.7,
+      4.7,
+      11.3,
+      11.3
+     ],
+     "texture": "#atmosphere"
+    }
+   }
+  }
+ ],
+ "display": {
+  "gui": {
+   "rotation": [
+    25,
+    30,
+    0
+   ],
+   "scale": [
+    1.1,
+    1.1,
+    1.1
+   ]
+  },
+  "ground": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0,
+    3,
+    0
+   ],
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ]
+  },
+  "fixed": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ]
+  },
+  "head": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ]
+  },
+  "thirdperson_righthand": {
+   "rotation": [
+    75,
+    45,
+    0
+   ],
+   "translation": [
+    0,
+    2.5,
+    0
+   ],
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ]
+  },
+  "firstperson_righthand": {
+   "rotation": [
+    0,
+    45,
+    0
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    0.6
+   ]
+  },
+  "firstperson_lefthand": {
+   "rotation": [
+    0,
+    225,
+    0
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    0.6
+   ]
+  }
+ },
+ "render_type": "minecraft:translucent"
+}

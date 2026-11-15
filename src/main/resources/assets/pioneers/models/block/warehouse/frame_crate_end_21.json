@@ -1,0 +1,84 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "planks_c": "pioneers:block/warehouse/planks_c",
+  "angle": "pioneers:block/warehouse/angle",
+  "particle": "pioneers:block/warehouse/angle"
+ },
+ "elements": [
+  {
+   "from": [
+    14.5,
+    0,
+    0
+   ],
+   "to": [
+    15.5,
+    16,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "#planks_c"
+    }
+   }
+  },
+  {
+   "from": [
+    15.5,
+    0,
+    13.0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "#angle"
+    },
+    "north": {
+     "texture": "#angle"
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    0,
+    14.5
+   ],
+   "to": [
+    16,
+    16,
+    15.5
+   ],
+   "faces": {
+    "south": {
+     "texture": "#planks_c"
+    }
+   }
+  },
+  {
+   "from": [
+    13.0,
+    0,
+    15.5
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "south": {
+     "texture": "#angle"
+    },
+    "west": {
+     "texture": "#angle"
+    }
+   }
+  }
+ ]
+}

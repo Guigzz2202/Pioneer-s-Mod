@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/shelf_board_top_left_open",
+ "textures": {
+  "board": "pioneers:block/home/wood/spruce_board",
+  "post": "pioneers:block/home/wood/spruce_post",
+  "dark": "pioneers:block/home/wood/spruce_dark",
+  "end": "pioneers:block/home/wood/spruce_end",
+  "top": "pioneers:block/home/wood/spruce_top",
+  "panel": "pioneers:block/home/wood/spruce_panel",
+  "particle": "pioneers:block/home/wood/spruce_board"
+ }
+}

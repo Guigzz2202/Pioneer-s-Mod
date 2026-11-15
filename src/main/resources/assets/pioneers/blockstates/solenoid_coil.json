@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "active=false": {
+   "model": "pioneers:block/nuclear/fusion/solenoid_coil"
+  },
+  "active=true": {
+   "model": "pioneers:block/nuclear/fusion/solenoid_coil_on"
+  }
+ }
+}

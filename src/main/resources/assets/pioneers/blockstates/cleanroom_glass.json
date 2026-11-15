@@ -1,0 +1,868 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/cleanroom_glass/up_11_inner"
+   }
+  }
+ ]
+}

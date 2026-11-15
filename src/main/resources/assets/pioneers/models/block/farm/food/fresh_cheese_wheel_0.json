@@ -1,0 +1,592 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/food/fresh_cheese_wheel_rind_0",
+  "fresh_cheese_wheel_top_0": "pioneers:block/farm/food/fresh_cheese_wheel_top_0",
+  "fresh_cheese_wheel_rind_0": "pioneers:block/farm/food/fresh_cheese_wheel_rind_0",
+  "cheese_band": "pioneers:block/farm/food/cheese_band"
+ },
+ "elements": [
+  {
+   "from": [
+    2.2,
+    0,
+    5.598
+   ],
+   "to": [
+    13.8,
+    6.2,
+    10.402
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.2,
+      5.598,
+      13.8,
+      10.402
+     ],
+     "texture": "#fresh_cheese_wheel_top_0"
+    },
+    "down": {
+     "uv": [
+      2.2,
+      5.598,
+      13.8,
+      10.402
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "north": {
+     "uv": [
+      2.2,
+      9.8,
+      13.8,
+      16
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "south": {
+     "uv": [
+      2.2,
+      9.8,
+      13.8,
+      16
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "east": {
+     "uv": [
+      5.598,
+      9.8,
+      10.402,
+      16
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "west": {
+     "uv": [
+      5.598,
+      9.8,
+      10.402,
+      16
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    }
+   }
+  },
+  {
+   "from": [
+    5.598,
+    0.02,
+    2.2
+   ],
+   "to": [
+    10.402,
+    6.18,
+    13.8
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      5.598,
+      2.2,
+      10.402,
+      13.8
+     ],
+     "texture": "#fresh_cheese_wheel_top_0"
+    },
+    "down": {
+     "uv": [
+      5.598,
+      2.2,
+      10.402,
+      13.8
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "north": {
+     "uv": [
+      5.598,
+      9.82,
+      10.402,
+      15.98
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "south": {
+     "uv": [
+      5.598,
+      9.82,
+      10.402,
+      15.98
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "east": {
+     "uv": [
+      2.2,
+      9.82,
+      13.8,
+      15.98
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "west": {
+     "uv": [
+      2.2,
+      9.82,
+      13.8,
+      15.98
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    }
+   }
+  },
+  {
+   "from": [
+    2.2,
+    0.04,
+    5.598
+   ],
+   "to": [
+    13.8,
+    6.16,
+    10.402
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.2,
+      5.598,
+      13.8,
+      10.402
+     ],
+     "texture": "#fresh_cheese_wheel_top_0"
+    },
+    "down": {
+     "uv": [
+      2.2,
+      5.598,
+      13.8,
+      10.402
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "north": {
+     "uv": [
+      2.2,
+      9.84,
+      13.8,
+      15.96
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "south": {
+     "uv": [
+      2.2,
+      9.84,
+      13.8,
+      15.96
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "east": {
+     "uv": [
+      5.598,
+      9.84,
+      10.402,
+      15.96
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "west": {
+     "uv": [
+      5.598,
+      9.84,
+      10.402,
+      15.96
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    }
+   },
+   "rotation": {
+    "axis": "y",
+    "angle": 45,
+    "origin": [
+     8,
+     3.1,
+     8
+    ]
+   }
+  },
+  {
+   "from": [
+    2.2,
+    0.06,
+    5.598
+   ],
+   "to": [
+    13.8,
+    6.14,
+    10.402
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.2,
+      5.598,
+      13.8,
+      10.402
+     ],
+     "texture": "#fresh_cheese_wheel_top_0"
+    },
+    "down": {
+     "uv": [
+      2.2,
+      5.598,
+      13.8,
+      10.402
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "north": {
+     "uv": [
+      2.2,
+      9.86,
+      13.8,
+      15.94
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "south": {
+     "uv": [
+      2.2,
+      9.86,
+      13.8,
+      15.94
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "east": {
+     "uv": [
+      5.598,
+      9.86,
+      10.402,
+      15.94
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    },
+    "west": {
+     "uv": [
+      5.598,
+      9.86,
+      10.402,
+      15.94
+     ],
+     "texture": "#fresh_cheese_wheel_rind_0"
+    }
+   },
+   "rotation": {
+    "axis": "y",
+    "angle": -45,
+    "origin": [
+     8,
+     3.1,
+     8
+    ]
+   }
+  },
+  {
+   "from": [
+    2.0,
+    2.6,
+    5.515
+   ],
+   "to": [
+    14.0,
+    3.4,
+    10.485
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.0,
+      5.515,
+      14.0,
+      10.485
+     ],
+     "texture": "#cheese_band"
+    },
+    "down": {
+     "uv": [
+      2.0,
+      5.515,
+      14.0,
+      10.485
+     ],
+     "texture": "#cheese_band"
+    },
+    "north": {
+     "uv": [
+      2.0,
+      12.6,
+      14.0,
+      13.4
+     ],
+     "texture": "#cheese_band"
+    },
+    "south": {
+     "uv": [
+      2.0,
+      12.6,
+      14.0,
+      13.4
+     ],
+     "texture": "#cheese_band"
+    },
+    "east": {
+     "uv": [
+      5.515,
+      12.6,
+      10.485,
+      13.4
+     ],
+     "texture": "#cheese_band"
+    },
+    "west": {
+     "uv": [
+      5.515,
+      12.6,
+      10.485,
+      13.4
+     ],
+     "texture": "#cheese_band"
+    }
+   }
+  },
+  {
+   "from": [
+    5.515,
+    2.62,
+    2.0
+   ],
+   "to": [
+    10.485,
+    3.38,
+    14.0
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      5.515,
+      2.0,
+      10.485,
+      14.0
+     ],
+     "texture": "#cheese_band"
+    },
+    "down": {
+     "uv": [
+      5.515,
+      2.0,
+      10.485,
+      14.0
+     ],
+     "texture": "#cheese_band"
+    },
+    "north": {
+     "uv": [
+      5.515,
+      12.62,
+      10.485,
+      13.38
+     ],
+     "texture": "#cheese_band"
+    },
+    "south": {
+     "uv": [
+      5.515,
+      12.62,
+      10.485,
+      13.38
+     ],
+     "texture": "#cheese_band"
+    },
+    "east": {
+     "uv": [
+      2.0,
+      12.62,
+      14.0,
+      13.38
+     ],
+     "texture": "#cheese_band"
+    },
+    "west": {
+     "uv": [
+      2.0,
+      12.62,
+      14.0,
+      13.38
+     ],
+     "texture": "#cheese_band"
+    }
+   }
+  },
+  {
+   "from": [
+    2.0,
+    2.64,
+    5.515
+   ],
+   "to": [
+    14.0,
+    3.36,
+    10.485
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.0,
+      5.515,
+      14.0,
+      10.485
+     ],
+     "texture": "#cheese_band"
+    },
+    "down": {
+     "uv": [
+      2.0,
+      5.515,
+      14.0,
+      10.485
+     ],
+     "texture": "#cheese_band"
+    },
+    "north": {
+     "uv": [
+      2.0,
+      12.64,
+      14.0,
+      13.36
+     ],
+     "texture": "#cheese_band"
+    },
+    "south": {
+     "uv": [
+      2.0,
+      12.64,
+      14.0,
+      13.36
+     ],
+     "texture": "#cheese_band"
+    },
+    "east": {
+     "uv": [
+      5.515,
+      12.64,
+      10.485,
+      13.36
+     ],
+     "texture": "#cheese_band"
+    },
+    "west": {
+     "uv": [
+      5.515,
+      12.64,
+      10.485,
+      13.36
+     ],
+     "texture": "#cheese_band"
+    }
+   },
+   "rotation": {
+    "axis": "y",
+    "angle": 45,
+    "origin": [
+     8,
+     3.0,
+     8
+    ]
+   }
+  },
+  {
+   "from": [
+    2.0,
+    2.66,
+    5.515
+   ],
+   "to": [
+    14.0,
+    3.34,
+    10.485
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.0,
+      5.515,
+      14.0,
+      10.485
+     ],
+     "texture": "#cheese_band"
+    },
+    "down": {
+     "uv": [
+      2.0,
+      5.515,
+      14.0,
+      10.485
+     ],
+     "texture": "#cheese_band"
+    },
+    "north": {
+     "uv": [
+      2.0,
+      12.66,
+      14.0,
+      13.34
+     ],
+     "texture": "#cheese_band"
+    },
+    "south": {
+     "uv": [
+      2.0,
+      12.66,
+      14.0,
+      13.34
+     ],
+     "texture": "#cheese_band"
+    },
+    "east": {
+     "uv": [
+      5.515,
+      12.66,
+      10.485,
+      13.34
+     ],
+     "texture": "#cheese_band"
+    },
+    "west": {
+     "uv": [
+      5.515,
+      12.66,
+      10.485,
+      13.34
+     ],
+     "texture": "#cheese_band"
+    }
+   },
+   "rotation": {
+    "axis": "y",
+    "angle": -45,
+    "origin": [
+     8,
+     3.0,
+     8
+    ]
+   }
+  }
+ ]
+}

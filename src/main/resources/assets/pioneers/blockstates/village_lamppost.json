@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "half=lower,lit=false": {
+   "model": "pioneers:block/village/village_lamppost_lower"
+  },
+  "half=lower,lit=true": {
+   "model": "pioneers:block/village/village_lamppost_lower"
+  },
+  "half=upper,lit=false": {
+   "model": "pioneers:block/village/village_lamppost_upper_unlit"
+  },
+  "half=upper,lit=true": {
+   "model": "pioneers:block/village/village_lamppost_upper_lit"
+  }
+ }
+}

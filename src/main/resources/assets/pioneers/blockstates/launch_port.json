@@ -1,0 +1,28 @@
+{
+ "variants": {
+  "mode=item_input": {
+   "model": "pioneers:block/launch_port_item_input"
+  },
+  "mode=item_output": {
+   "model": "pioneers:block/launch_port_item_output"
+  },
+  "mode=fluid_input": {
+   "model": "pioneers:block/launch_port_fluid_input"
+  },
+  "mode=fluid_output": {
+   "model": "pioneers:block/launch_port_fluid_output"
+  },
+  "mode=gas_input": {
+   "model": "pioneers:block/launch_port_gas_input"
+  },
+  "mode=gas_output": {
+   "model": "pioneers:block/launch_port_gas_output"
+  },
+  "mode=data_input": {
+   "model": "pioneers:block/launch_port_data_input"
+  },
+  "mode=data_output": {
+   "model": "pioneers:block/launch_port_data_output"
+  }
+ }
+}

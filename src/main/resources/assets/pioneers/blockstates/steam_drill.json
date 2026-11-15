@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/mechanics/steam_drill"
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/steam_drill",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/steam_drill",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/steam_drill",
+   "y": 270
+  }
+ }
+}

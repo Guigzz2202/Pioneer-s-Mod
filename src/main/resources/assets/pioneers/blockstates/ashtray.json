@@ -1,0 +1,49 @@
+{
+ "variants": {
+  "cigar=0,facing=east": {
+   "model": "pioneers:block/farm/ashtray"
+  },
+  "cigar=1,facing=east": {
+   "model": "pioneers:block/farm/ashtray_cigar"
+  },
+  "cigar=2,facing=east": {
+   "model": "pioneers:block/farm/ashtray_cigar_lit"
+  },
+  "cigar=0,facing=south": {
+   "model": "pioneers:block/farm/ashtray",
+   "y": 90
+  },
+  "cigar=1,facing=south": {
+   "model": "pioneers:block/farm/ashtray_cigar",
+   "y": 90
+  },
+  "cigar=2,facing=south": {
+   "model": "pioneers:block/farm/ashtray_cigar_lit",
+   "y": 90
+  },
+  "cigar=0,facing=west": {
+   "model": "pioneers:block/farm/ashtray",
+   "y": 180
+  },
+  "cigar=1,facing=west": {
+   "model": "pioneers:block/farm/ashtray_cigar",
+   "y": 180
+  },
+  "cigar=2,facing=west": {
+   "model": "pioneers:block/farm/ashtray_cigar_lit",
+   "y": 180
+  },
+  "cigar=0,facing=north": {
+   "model": "pioneers:block/farm/ashtray",
+   "y": 270
+  },
+  "cigar=1,facing=north": {
+   "model": "pioneers:block/farm/ashtray_cigar",
+   "y": 270
+  },
+  "cigar=2,facing=north": {
+   "model": "pioneers:block/farm/ashtray_cigar_lit",
+   "y": 270
+  }
+ }
+}

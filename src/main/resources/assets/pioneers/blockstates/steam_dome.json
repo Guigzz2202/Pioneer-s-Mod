@@ -1,0 +1,138 @@
+{
+ "multipart": [
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_dome"
+   },
+   "when": {
+    "steel": "false"
+   }
+  },
+  {
+   "when": {
+    "steel": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0"
+   }
+  },
+  {
+   "when": {
+    "steel": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "steel": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "steel": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "steel": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "steel": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_dome_steel"
+   },
+   "when": {
+    "steel": "true"
+   }
+  },
+  {
+   "when": {
+    "steel": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0"
+   }
+  },
+  {
+   "when": {
+    "steel": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "steel": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "steel": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "steel": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "steel": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  }
+ ]
+}

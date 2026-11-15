@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/template_wall_side_tall",
+ "textures": {
+  "wall": "pioneers:block/proxima_glacier_ice_bricks"
+ }
+}

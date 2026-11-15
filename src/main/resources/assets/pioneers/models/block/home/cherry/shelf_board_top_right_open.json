@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/shelf_board_top_right_open",
+ "textures": {
+  "board": "pioneers:block/home/wood/cherry_board",
+  "post": "pioneers:block/home/wood/cherry_post",
+  "dark": "pioneers:block/home/wood/cherry_dark",
+  "end": "pioneers:block/home/wood/cherry_end",
+  "top": "pioneers:block/home/wood/cherry_top",
+  "panel": "pioneers:block/home/wood/cherry_panel",
+  "particle": "pioneers:block/home/wood/cherry_board"
+ }
+}

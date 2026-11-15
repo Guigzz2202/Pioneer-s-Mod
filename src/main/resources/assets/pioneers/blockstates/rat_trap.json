@@ -1,0 +1,64 @@
+{
+ "variants": {
+  "facing=north,trap=empty": {
+   "model": "pioneers:block/wild/rat_trap_empty"
+  },
+  "facing=east,trap=empty": {
+   "model": "pioneers:block/wild/rat_trap_empty",
+   "y": 90
+  },
+  "facing=south,trap=empty": {
+   "model": "pioneers:block/wild/rat_trap_empty",
+   "y": 180
+  },
+  "facing=west,trap=empty": {
+   "model": "pioneers:block/wild/rat_trap_empty",
+   "y": 270
+  },
+  "facing=north,trap=seeds": {
+   "model": "pioneers:block/wild/rat_trap_seeds"
+  },
+  "facing=east,trap=seeds": {
+   "model": "pioneers:block/wild/rat_trap_seeds",
+   "y": 90
+  },
+  "facing=south,trap=seeds": {
+   "model": "pioneers:block/wild/rat_trap_seeds",
+   "y": 180
+  },
+  "facing=west,trap=seeds": {
+   "model": "pioneers:block/wild/rat_trap_seeds",
+   "y": 270
+  },
+  "facing=north,trap=cheese": {
+   "model": "pioneers:block/wild/rat_trap_cheese"
+  },
+  "facing=east,trap=cheese": {
+   "model": "pioneers:block/wild/rat_trap_cheese",
+   "y": 90
+  },
+  "facing=south,trap=cheese": {
+   "model": "pioneers:block/wild/rat_trap_cheese",
+   "y": 180
+  },
+  "facing=west,trap=cheese": {
+   "model": "pioneers:block/wild/rat_trap_cheese",
+   "y": 270
+  },
+  "facing=north,trap=caught": {
+   "model": "pioneers:block/wild/rat_trap_caught"
+  },
+  "facing=east,trap=caught": {
+   "model": "pioneers:block/wild/rat_trap_caught",
+   "y": 90
+  },
+  "facing=south,trap=caught": {
+   "model": "pioneers:block/wild/rat_trap_caught",
+   "y": 180
+  },
+  "facing=west,trap=caught": {
+   "model": "pioneers:block/wild/rat_trap_caught",
+   "y": 270
+  }
+ }
+}

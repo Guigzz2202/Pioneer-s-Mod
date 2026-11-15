@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/cube_bottom_top",
+ "textures": {
+  "side": "pioneers:block/ruins/motion_mk3_worn",
+  "top": "pioneers:block/ruins/motion_mk3_worn_top",
+  "bottom": "pioneers:block/ruins/casing_mk3_worn"
+ }
+}

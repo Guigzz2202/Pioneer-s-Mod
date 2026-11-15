@@ -1,0 +1,139 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/food/pineapple_cake_crust",
+  "pineapple_cake_top": "pioneers:block/farm/food/pineapple_cake_top",
+  "pineapple_cake_crust": "pioneers:block/farm/food/pineapple_cake_crust",
+  "pineapple_cake_inner": "pioneers:block/farm/food/pineapple_cake_inner"
+ },
+ "elements": [
+  {
+   "from": [
+    10.333,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    8,
+    15
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      10.333,
+      1,
+      15,
+      15
+     ],
+     "texture": "#pineapple_cake_top"
+    },
+    "down": {
+     "uv": [
+      10.333,
+      1,
+      15,
+      15
+     ],
+     "texture": "#pineapple_cake_crust"
+    },
+    "north": {
+     "uv": [
+      1,
+      8,
+      5.667,
+      16
+     ],
+     "texture": "#pineapple_cake_crust"
+    },
+    "south": {
+     "uv": [
+      10.333,
+      8,
+      15,
+      16
+     ],
+     "texture": "#pineapple_cake_crust"
+    },
+    "east": {
+     "uv": [
+      1,
+      8,
+      15,
+      16
+     ],
+     "texture": "#pineapple_cake_crust"
+    },
+    "west": {
+     "uv": [
+      1,
+      8,
+      15,
+      16
+     ],
+     "texture": "#pineapple_cake_inner"
+    }
+   }
+  },
+  {
+   "from": [
+    10.933,
+    8,
+    1.6
+   ],
+   "to": [
+    14.4,
+    8.6,
+    14.4
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      10.933,
+      1.6,
+      14.4,
+      14.4
+     ],
+     "texture": "#pineapple_cake_top"
+    },
+    "north": {
+     "uv": [
+      1.6,
+      7.4,
+      5.067,
+      8
+     ],
+     "texture": "#pineapple_cake_top"
+    },
+    "south": {
+     "uv": [
+      10.933,
+      7.4,
+      14.4,
+      8
+     ],
+     "texture": "#pineapple_cake_top"
+    },
+    "east": {
+     "uv": [
+      1.6,
+      7.4,
+      14.4,
+      8
+     ],
+     "texture": "#pineapple_cake_top"
+    },
+    "west": {
+     "uv": [
+      1.6,
+      7.4,
+      14.4,
+      8
+     ],
+     "texture": "#pineapple_cake_top"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "variants": {
+  "facing=up,regime=none": {
+   "model": "pioneers:block/space_stabilizer_emitter"
+  },
+  "facing=down,regime=none": {
+   "model": "pioneers:block/space_stabilizer_emitter",
+   "x": 180
+  },
+  "facing=north,regime=none": {
+   "model": "pioneers:block/space_stabilizer_emitter",
+   "x": 90
+  },
+  "facing=south,regime=none": {
+   "model": "pioneers:block/space_stabilizer_emitter",
+   "x": 90,
+   "y": 180
+  },
+  "facing=west,regime=none": {
+   "model": "pioneers:block/space_stabilizer_emitter",
+   "x": 90,
+   "y": 270
+  },
+  "facing=east,regime=none": {
+   "model": "pioneers:block/space_stabilizer_emitter",
+   "x": 90,
+   "y": 90
+  },
+  "facing=up,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_emitter_singularity"
+  },
+  "facing=down,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_emitter_singularity",
+   "x": 180
+  },
+  "facing=north,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_emitter_singularity",
+   "x": 90
+  },
+  "facing=south,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_emitter_singularity",
+   "x": 90,
+   "y": 180
+  },
+  "facing=west,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_emitter_singularity",
+   "x": 90,
+   "y": 270
+  },
+  "facing=east,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_emitter_singularity",
+   "x": 90,
+   "y": 90
+  },
+  "facing=up,regime=star": {
+   "model": "pioneers:block/space_stabilizer_emitter_star"
+  },
+  "facing=down,regime=star": {
+   "model": "pioneers:block/space_stabilizer_emitter_star",
+   "x": 180
+  },
+  "facing=north,regime=star": {
+   "model": "pioneers:block/space_stabilizer_emitter_star",
+   "x": 90
+  },
+  "facing=south,regime=star": {
+   "model": "pioneers:block/space_stabilizer_emitter_star",
+   "x": 90,
+   "y": 180
+  },
+  "facing=west,regime=star": {
+   "model": "pioneers:block/space_stabilizer_emitter_star",
+   "x": 90,
+   "y": 270
+  },
+  "facing=east,regime=star": {
+   "model": "pioneers:block/space_stabilizer_emitter_star",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

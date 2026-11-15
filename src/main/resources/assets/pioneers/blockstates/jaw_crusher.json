@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/mechanics/jaw_crusher"
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/jaw_crusher",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/jaw_crusher",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/jaw_crusher",
+   "y": 270
+  }
+ }
+}

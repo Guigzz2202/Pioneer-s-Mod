@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/farm/storage/bell_pepper_tray"
+  },
+  "facing=east": {
+   "model": "pioneers:block/farm/storage/bell_pepper_tray",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/farm/storage/bell_pepper_tray",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/farm/storage/bell_pepper_tray",
+   "y": 270
+  }
+ }
+}

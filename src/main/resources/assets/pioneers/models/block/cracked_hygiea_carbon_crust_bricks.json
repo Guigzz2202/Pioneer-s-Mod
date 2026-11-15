@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/cube_all",
+ "textures": {
+  "all": "pioneers:block/cracked_hygiea_carbon_crust_bricks"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "variants": {
+  "facing=north,notices=0": {
+   "model": "pioneers:block/village/needs_board_0"
+  },
+  "facing=north,notices=1": {
+   "model": "pioneers:block/village/needs_board_1"
+  },
+  "facing=north,notices=2": {
+   "model": "pioneers:block/village/needs_board_2"
+  },
+  "facing=east,notices=0": {
+   "model": "pioneers:block/village/needs_board_0",
+   "y": 90
+  },
+  "facing=east,notices=1": {
+   "model": "pioneers:block/village/needs_board_1",
+   "y": 90
+  },
+  "facing=east,notices=2": {
+   "model": "pioneers:block/village/needs_board_2",
+   "y": 90
+  },
+  "facing=south,notices=0": {
+   "model": "pioneers:block/village/needs_board_0",
+   "y": 180
+  },
+  "facing=south,notices=1": {
+   "model": "pioneers:block/village/needs_board_1",
+   "y": 180
+  },
+  "facing=south,notices=2": {
+   "model": "pioneers:block/village/needs_board_2",
+   "y": 180
+  },
+  "facing=west,notices=0": {
+   "model": "pioneers:block/village/needs_board_0",
+   "y": 270
+  },
+  "facing=west,notices=1": {
+   "model": "pioneers:block/village/needs_board_1",
+   "y": 270
+  },
+  "facing=west,notices=2": {
+   "model": "pioneers:block/village/needs_board_2",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/west_01",
+ "textures": {
+  "t": "pioneers:block/industry/building/firebox_ultimate_grate_inner"
+ }
+}

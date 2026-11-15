@@ -1,0 +1,119 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/data/port_housing",
+  "socket": "pioneers:block/data/socket",
+  "housing": "pioneers:block/data/port_housing"
+ },
+ "elements": [
+  {
+   "from": [
+    4,
+    -0.05,
+    4
+   ],
+   "to": [
+    12,
+    2,
+    12
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      4,
+      14,
+      12,
+      16
+     ],
+     "texture": "#housing"
+    },
+    "south": {
+     "uv": [
+      4,
+      14,
+      12,
+      16
+     ],
+     "texture": "#housing"
+    },
+    "east": {
+     "uv": [
+      4,
+      14,
+      12,
+      16
+     ],
+     "texture": "#housing"
+    },
+    "west": {
+     "uv": [
+      4,
+      14,
+      12,
+      16
+     ],
+     "texture": "#housing"
+    },
+    "down": {
+     "uv": [
+      4,
+      4,
+      12,
+      12
+     ],
+     "texture": "#socket"
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    2,
+    7
+   ],
+   "to": [
+    9,
+    12,
+    9
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      7,
+      4,
+      9,
+      14
+     ],
+     "texture": "#housing"
+    },
+    "south": {
+     "uv": [
+      7,
+      4,
+      9,
+      14
+     ],
+     "texture": "#housing"
+    },
+    "east": {
+     "uv": [
+      7,
+      4,
+      9,
+      14
+     ],
+     "texture": "#housing"
+    },
+    "west": {
+     "uv": [
+      7,
+      4,
+      9,
+      14
+     ],
+     "texture": "#housing"
+    }
+   }
+  }
+ ]
+}

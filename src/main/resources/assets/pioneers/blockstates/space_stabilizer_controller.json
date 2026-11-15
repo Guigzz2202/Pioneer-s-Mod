@@ -1,0 +1,22 @@
+{
+ "variants": {
+  "enabled=false,regime=none": {
+   "model": "pioneers:block/space_stabilizer_controller"
+  },
+  "enabled=true,regime=none": {
+   "model": "pioneers:block/space_stabilizer_controller"
+  },
+  "enabled=false,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_controller_singularity"
+  },
+  "enabled=true,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_controller_singularity"
+  },
+  "enabled=false,regime=star": {
+   "model": "pioneers:block/space_stabilizer_controller_star"
+  },
+  "enabled=true,regime=star": {
+   "model": "pioneers:block/space_stabilizer_controller_star"
+  }
+ }
+}

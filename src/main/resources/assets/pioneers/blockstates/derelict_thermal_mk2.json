@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "worn=false": {
+   "model": "pioneers:block/ruins/derelict_thermal_mk2"
+  },
+  "worn=true": {
+   "model": "pioneers:block/ruins/derelict_thermal_mk2_worn"
+  }
+ }
+}

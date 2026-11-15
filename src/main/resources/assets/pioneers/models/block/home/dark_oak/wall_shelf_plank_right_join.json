@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/wall_shelf_plank_right_join",
+ "textures": {
+  "board": "pioneers:block/home/wood/dark_oak_board",
+  "post": "pioneers:block/home/wood/dark_oak_post",
+  "dark": "pioneers:block/home/wood/dark_oak_dark",
+  "end": "pioneers:block/home/wood/dark_oak_end",
+  "top": "pioneers:block/home/wood/dark_oak_top",
+  "panel": "pioneers:block/home/wood/dark_oak_panel",
+  "particle": "pioneers:block/home/wood/dark_oak_board"
+ }
+}

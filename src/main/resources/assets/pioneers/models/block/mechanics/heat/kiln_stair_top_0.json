@@ -1,0 +1,145 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "ss": "pioneers:block/mechanics/smooth_stone",
+  "i": "pioneers:block/mechanics/iron",
+  "br": "pioneers:block/mechanics/brass",
+  "soot": "pioneers:block/mechanics/chimney_soot",
+  "ib": "pioneers:block/mechanics/iron_bright",
+  "particle": "pioneers:block/mechanics/brick",
+  "a": "pioneers:block/mechanics/brick"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    8,
+    0
+   ],
+   "to": [
+    16,
+    15.0,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#a",
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#a",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#a",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#a",
+     "cullface": "west"
+    }
+   }
+  },
+  {
+   "from": [
+    -0.4,
+    15.0,
+    -0.4
+   ],
+   "to": [
+    16.4,
+    16,
+    16.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "south": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    8,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    8,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#a",
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#a",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#a",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#a"
+    },
+    "down": {
+     "texture": "#a",
+     "cullface": "down"
+    }
+   }
+  }
+ ]
+}

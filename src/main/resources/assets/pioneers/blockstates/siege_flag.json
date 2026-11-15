@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/clan/siege_flag"
+  },
+  "facing=west": {
+   "model": "pioneers:block/clan/siege_flag",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/clan/siege_flag",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/clan/siege_flag",
+   "y": 270
+  }
+ }
+}

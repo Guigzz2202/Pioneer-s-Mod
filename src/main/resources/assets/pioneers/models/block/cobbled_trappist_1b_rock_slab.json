@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab",
+ "textures": {
+  "bottom": "pioneers:block/cobbled_trappist_1b_rock",
+  "top": "pioneers:block/cobbled_trappist_1b_rock",
+  "side": "pioneers:block/cobbled_trappist_1b_rock"
+ }
+}

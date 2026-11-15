@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/farm/storage/carrot_crate"
+  },
+  "facing=east": {
+   "model": "pioneers:block/farm/storage/carrot_crate",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/farm/storage/carrot_crate",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/farm/storage/carrot_crate",
+   "y": 270
+  }
+ }
+}

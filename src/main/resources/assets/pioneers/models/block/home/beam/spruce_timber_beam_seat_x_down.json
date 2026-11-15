@@ -1,0 +1,75 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "side": "pioneers:block/home/beam/spruce_beam_side",
+  "end": "pioneers:block/home/beam/spruce_beam_end",
+  "particle": "pioneers:block/home/beam/spruce_beam_side"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    2
+   ],
+   "to": [
+    16,
+    2,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#side",
+     "uv": [
+      0,
+      0,
+      2,
+      16
+     ],
+     "rotation": 90
+    },
+    "south": {
+     "texture": "#side",
+     "uv": [
+      0,
+      0,
+      2,
+      16
+     ],
+     "rotation": 90
+    },
+    "west": {
+     "texture": "#end",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ],
+     "cullface": "west"
+    },
+    "east": {
+     "texture": "#end",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ],
+     "cullface": "east"
+    },
+    "down": {
+     "texture": "#side",
+     "uv": [
+      2,
+      0,
+      14,
+      16
+     ],
+     "rotation": 90,
+     "cullface": "down"
+    }
+   }
+  }
+ ]
+}

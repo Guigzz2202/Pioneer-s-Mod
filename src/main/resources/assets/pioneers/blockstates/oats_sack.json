@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/farm/storage/oats_sack"
+  },
+  "facing=east": {
+   "model": "pioneers:block/farm/storage/oats_sack",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/farm/storage/oats_sack",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/farm/storage/oats_sack",
+   "y": 270
+  }
+ }
+}

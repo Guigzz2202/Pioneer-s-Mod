@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/machine/lightning_collector",
+ "textures": {
+  "tier": "pioneers:block/buffer/common/tier_basic"
+ }
+}

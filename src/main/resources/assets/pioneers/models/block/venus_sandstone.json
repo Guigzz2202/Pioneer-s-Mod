@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/cube_bottom_top",
+ "textures": {
+  "top": "pioneers:block/venus_sandstone_top",
+  "bottom": "pioneers:block/venus_sandstone_bottom",
+  "side": "pioneers:block/venus_sandstone"
+ }
+}

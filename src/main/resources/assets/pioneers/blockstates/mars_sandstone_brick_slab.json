@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "pioneers:block/mars_sandstone_brick_slab"
+  },
+  "type=top": {
+   "model": "pioneers:block/mars_sandstone_brick_slab_top"
+  },
+  "type=double": {
+   "model": "pioneers:block/mars_sandstone_bricks"
+  }
+ }
+}

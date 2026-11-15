@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "pioneers:block/greenhouse/iron_greenhouse_frame"
+  },
+  "axis=z": {
+   "model": "pioneers:block/greenhouse/iron_greenhouse_frame",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "pioneers:block/greenhouse/iron_greenhouse_frame",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

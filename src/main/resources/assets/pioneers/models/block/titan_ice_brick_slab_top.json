@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/titan_ice_bricks",
+  "top": "pioneers:block/titan_ice_bricks",
+  "side": "pioneers:block/titan_ice_bricks"
+ }
+}

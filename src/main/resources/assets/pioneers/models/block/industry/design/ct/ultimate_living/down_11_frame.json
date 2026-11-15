@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/down_11",
+ "textures": {
+  "t": "pioneers:block/industry/design/casing/ultimate_living_frame"
+ }
+}

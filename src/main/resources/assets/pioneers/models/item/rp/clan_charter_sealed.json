@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/rp/clan_charter_sealed",
+  "layer1": "pioneers:item/rp/clan_charter_wax"
+ }
+}

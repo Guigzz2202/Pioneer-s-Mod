@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/home/crimson/chair"
+  },
+  "facing=east": {
+   "model": "pioneers:block/home/crimson/chair",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/home/crimson/chair",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/home/crimson/chair",
+   "y": 270
+  }
+ }
+}

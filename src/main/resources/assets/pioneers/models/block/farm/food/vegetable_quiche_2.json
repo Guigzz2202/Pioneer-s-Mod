@@ -1,0 +1,353 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/food/vegetable_quiche_crust",
+  "pie_tin": "pioneers:block/farm/food/pie_tin",
+  "vegetable_quiche_top": "pioneers:block/farm/food/vegetable_quiche_top",
+  "vegetable_quiche_crust": "pioneers:block/farm/food/vegetable_quiche_crust",
+  "vegetable_quiche_inner": "pioneers:block/farm/food/vegetable_quiche_inner"
+ },
+ "elements": [
+  {
+   "from": [
+    8.0,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    1,
+    15
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      8.0,
+      1,
+      15,
+      15
+     ],
+     "texture": "#pie_tin"
+    },
+    "down": {
+     "uv": [
+      8.0,
+      1,
+      15,
+      15
+     ],
+     "texture": "#pie_tin"
+    },
+    "north": {
+     "uv": [
+      1,
+      15,
+      8.0,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "south": {
+     "uv": [
+      8.0,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "east": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "west": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    }
+   }
+  },
+  {
+   "from": [
+    8.4,
+    1,
+    1.4
+   ],
+   "to": [
+    14.6,
+    4,
+    14.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      8.4,
+      1.4,
+      14.6,
+      14.6
+     ],
+     "texture": "#vegetable_quiche_top"
+    },
+    "down": {
+     "uv": [
+      8.4,
+      1.4,
+      14.6,
+      14.6
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      12,
+      7.6,
+      15
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "south": {
+     "uv": [
+      8.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "east": {
+     "uv": [
+      1.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "west": {
+     "uv": [
+      1.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#vegetable_quiche_inner"
+    }
+   }
+  },
+  {
+   "from": [
+    8.4,
+    4,
+    1.4
+   ],
+   "to": [
+    14.6,
+    4.6,
+    2.4
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      8.4,
+      1.4,
+      14.6,
+      2.4
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "down": {
+     "uv": [
+      8.4,
+      13.6,
+      14.6,
+      14.6
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      7.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "south": {
+     "uv": [
+      8.4,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "east": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "west": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    8.4,
+    4,
+    13.6
+   ],
+   "to": [
+    14.6,
+    4.6,
+    14.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      8.4,
+      13.6,
+      14.6,
+      14.6
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "down": {
+     "uv": [
+      8.4,
+      1.4,
+      14.6,
+      2.4
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      7.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "south": {
+     "uv": [
+      8.4,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "east": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "west": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    13.6,
+    4,
+    2.4
+   ],
+   "to": [
+    14.6,
+    4.6,
+    13.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      13.6,
+      2.4,
+      14.6,
+      13.6
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "down": {
+     "uv": [
+      13.6,
+      2.4,
+      14.6,
+      13.6
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "south": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "east": {
+     "uv": [
+      2.4,
+      11.4,
+      13.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    },
+    "west": {
+     "uv": [
+      2.4,
+      11.4,
+      13.6,
+      12
+     ],
+     "texture": "#vegetable_quiche_crust"
+    }
+   }
+  }
+ ]
+}

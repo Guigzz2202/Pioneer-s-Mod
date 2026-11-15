@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/smooth_hygiea_carbon_crust",
+  "top": "pioneers:block/smooth_hygiea_carbon_crust",
+  "side": "pioneers:block/smooth_hygiea_carbon_crust_slab_side"
+ }
+}

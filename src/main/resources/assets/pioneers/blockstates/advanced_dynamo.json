@@ -1,0 +1,76 @@
+{
+ "variants": {
+  "axis=x,facing=north": {
+   "model": "pioneers:block/industry/advanced_dynamo_side",
+   "y": 90
+  },
+  "axis=x,facing=south": {
+   "model": "pioneers:block/industry/advanced_dynamo_side",
+   "y": 270
+  },
+  "axis=x,facing=east": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "y": 90
+  },
+  "axis=x,facing=west": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "y": 90
+  },
+  "axis=x,facing=up": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "y": 90
+  },
+  "axis=x,facing=down": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "x": 180,
+   "y": 90
+  },
+  "axis=y,facing=north": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "x": 90
+  },
+  "axis=y,facing=south": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "x": 90,
+   "y": 180
+  },
+  "axis=y,facing=east": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "x": 90,
+   "y": 90
+  },
+  "axis=y,facing=west": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "x": 90,
+   "y": 270
+  },
+  "axis=y,facing=up": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "x": 90
+  },
+  "axis=y,facing=down": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "x": 90
+  },
+  "axis=z,facing=north": {
+   "model": "pioneers:block/industry/advanced_dynamo"
+  },
+  "axis=z,facing=south": {
+   "model": "pioneers:block/industry/advanced_dynamo"
+  },
+  "axis=z,facing=east": {
+   "model": "pioneers:block/industry/advanced_dynamo_side",
+   "y": 180
+  },
+  "axis=z,facing=west": {
+   "model": "pioneers:block/industry/advanced_dynamo_side"
+  },
+  "axis=z,facing=up": {
+   "model": "pioneers:block/industry/advanced_dynamo"
+  },
+  "axis=z,facing=down": {
+   "model": "pioneers:block/industry/advanced_dynamo",
+   "x": 180
+  }
+ }
+}

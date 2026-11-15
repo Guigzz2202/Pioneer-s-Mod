@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/cube_all",
+ "textures": {
+  "all": "pioneers:block/packed_proxima_glacier_ice"
+ }
+}

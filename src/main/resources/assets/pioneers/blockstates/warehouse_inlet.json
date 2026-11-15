@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/warehouse/inlet",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/warehouse/inlet",
+   "y": 270
+  },
+  "facing=south": {
+   "model": "pioneers:block/warehouse/inlet"
+  },
+  "facing=west": {
+   "model": "pioneers:block/warehouse/inlet",
+   "y": 90
+  }
+ }
+}

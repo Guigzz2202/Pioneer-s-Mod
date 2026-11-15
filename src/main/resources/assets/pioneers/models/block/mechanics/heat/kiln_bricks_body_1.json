@@ -1,0 +1,88 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "ss": "pioneers:block/mechanics/smooth_stone",
+  "i": "pioneers:block/mechanics/iron",
+  "br": "pioneers:block/mechanics/brass",
+  "soot": "pioneers:block/mechanics/chimney_soot",
+  "ib": "pioneers:block/mechanics/iron_bright",
+  "particle": "pioneers:block/mechanics/kiln_brick_warm",
+  "a": "pioneers:block/mechanics/kiln_brick_warm"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "up"
+    },
+    "down": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "down"
+    }
+   }
+  }
+ ]
+}

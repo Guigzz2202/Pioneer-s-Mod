@@ -1,0 +1,124 @@
+{
+ "parent": "pioneers:block/machine/geo_spectrometer",
+ "display": {
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    0.0,
+    -0.41,
+    0.0
+   ],
+   "scale": [
+    0.571,
+    0.571,
+    0.571
+   ]
+  },
+  "ground": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0.0,
+    2.59,
+    0.0
+   ],
+   "scale": [
+    0.228,
+    0.228,
+    0.228
+   ]
+  },
+  "fixed": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0.0,
+    -0.41,
+    0.0
+   ],
+   "scale": [
+    0.457,
+    0.457,
+    0.457
+   ]
+  },
+  "thirdperson_righthand": {
+   "rotation": [
+    75,
+    45,
+    0
+   ],
+   "translation": [
+    0.0,
+    2.09,
+    0.0
+   ],
+   "scale": [
+    0.342,
+    0.342,
+    0.342
+   ]
+  },
+  "firstperson_righthand": {
+   "rotation": [
+    0,
+    45,
+    0
+   ],
+   "translation": [
+    0.0,
+    -0.41,
+    0.0
+   ],
+   "scale": [
+    0.365,
+    0.365,
+    0.365
+   ]
+  },
+  "firstperson_lefthand": {
+   "rotation": [
+    0,
+    225,
+    0
+   ],
+   "translation": [
+    0.0,
+    -0.41,
+    0.0
+   ],
+   "scale": [
+    0.365,
+    0.365,
+    0.365
+   ]
+  },
+  "head": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0.0,
+    11.59,
+    0.0
+   ],
+   "scale": [
+    0.731,
+    0.731,
+    0.731
+   ]
+  }
+ }
+}

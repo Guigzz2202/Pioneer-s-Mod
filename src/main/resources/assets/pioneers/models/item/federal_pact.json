@@ -1,0 +1,14 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/rp/federal_pact"
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "pioneers:sealed": 1.0
+   },
+   "model": "pioneers:item/rp/federal_pact_sealed"
+  }
+ ]
+}

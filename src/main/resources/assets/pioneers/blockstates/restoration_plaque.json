@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/ruins/restoration_plaque"
+  },
+  "facing=east": {
+   "model": "pioneers:block/ruins/restoration_plaque",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/ruins/restoration_plaque",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/ruins/restoration_plaque",
+   "y": 270
+  }
+ }
+}

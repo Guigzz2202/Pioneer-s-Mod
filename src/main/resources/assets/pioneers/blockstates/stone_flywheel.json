@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "pioneers:block/mechanics/stone_flywheel"
+  },
+  "axis=z": {
+   "model": "pioneers:block/mechanics/stone_flywheel",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "pioneers:block/mechanics/stone_flywheel",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

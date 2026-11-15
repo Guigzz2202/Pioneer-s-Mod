@@ -1,0 +1,9 @@
+{
+ "parent": "pioneers:block/hunt/template/gun_rack",
+ "textures": {
+  "board": "pioneers:block/home/wood/acacia_board",
+  "dark": "pioneers:block/home/wood/acacia_dark",
+  "end": "pioneers:block/home/wood/acacia_end",
+  "particle": "pioneers:block/home/wood/acacia_board"
+ }
+}

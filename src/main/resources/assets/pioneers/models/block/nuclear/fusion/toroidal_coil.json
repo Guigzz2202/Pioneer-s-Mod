@@ -1,0 +1,42 @@
+{
+ "textures": {
+  "t": "pioneers:block/nuclear/fusion/case_top",
+  "s": "pioneers:block/nuclear/fusion/tf_side",
+  "particle": "pioneers:block/nuclear/fusion/case"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#s"
+    },
+    "south": {
+     "texture": "#s"
+    },
+    "east": {
+     "texture": "#s"
+    },
+    "west": {
+     "texture": "#s"
+    },
+    "up": {
+     "texture": "#t"
+    },
+    "down": {
+     "texture": "#t"
+    }
+   }
+  }
+ ],
+ "parent": "minecraft:block/block"
+}

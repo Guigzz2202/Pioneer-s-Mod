@@ -1,0 +1,134 @@
+{
+ "variants": {
+  "facing=up,role=provider": {
+   "model": "pioneers:block/logistic_marker_provider"
+  },
+  "facing=up,role=unload": {
+   "model": "pioneers:block/logistic_marker_unload"
+  },
+  "facing=up,role=storage": {
+   "model": "pioneers:block/logistic_marker_storage"
+  },
+  "facing=up,role=requester": {
+   "model": "pioneers:block/logistic_marker_requester"
+  },
+  "facing=up,role=buffer": {
+   "model": "pioneers:block/logistic_marker_buffer"
+  },
+  "facing=down,role=provider": {
+   "model": "pioneers:block/logistic_marker_provider",
+   "x": 180
+  },
+  "facing=down,role=unload": {
+   "model": "pioneers:block/logistic_marker_unload",
+   "x": 180
+  },
+  "facing=down,role=storage": {
+   "model": "pioneers:block/logistic_marker_storage",
+   "x": 180
+  },
+  "facing=down,role=requester": {
+   "model": "pioneers:block/logistic_marker_requester",
+   "x": 180
+  },
+  "facing=down,role=buffer": {
+   "model": "pioneers:block/logistic_marker_buffer",
+   "x": 180
+  },
+  "facing=north,role=provider": {
+   "model": "pioneers:block/logistic_marker_provider",
+   "x": 90
+  },
+  "facing=north,role=unload": {
+   "model": "pioneers:block/logistic_marker_unload",
+   "x": 90
+  },
+  "facing=north,role=storage": {
+   "model": "pioneers:block/logistic_marker_storage",
+   "x": 90
+  },
+  "facing=north,role=requester": {
+   "model": "pioneers:block/logistic_marker_requester",
+   "x": 90
+  },
+  "facing=north,role=buffer": {
+   "model": "pioneers:block/logistic_marker_buffer",
+   "x": 90
+  },
+  "facing=south,role=provider": {
+   "model": "pioneers:block/logistic_marker_provider",
+   "x": 90,
+   "y": 180
+  },
+  "facing=south,role=unload": {
+   "model": "pioneers:block/logistic_marker_unload",
+   "x": 90,
+   "y": 180
+  },
+  "facing=south,role=storage": {
+   "model": "pioneers:block/logistic_marker_storage",
+   "x": 90,
+   "y": 180
+  },
+  "facing=south,role=requester": {
+   "model": "pioneers:block/logistic_marker_requester",
+   "x": 90,
+   "y": 180
+  },
+  "facing=south,role=buffer": {
+   "model": "pioneers:block/logistic_marker_buffer",
+   "x": 90,
+   "y": 180
+  },
+  "facing=east,role=provider": {
+   "model": "pioneers:block/logistic_marker_provider",
+   "x": 90,
+   "y": 90
+  },
+  "facing=east,role=unload": {
+   "model": "pioneers:block/logistic_marker_unload",
+   "x": 90,
+   "y": 90
+  },
+  "facing=east,role=storage": {
+   "model": "pioneers:block/logistic_marker_storage",
+   "x": 90,
+   "y": 90
+  },
+  "facing=east,role=requester": {
+   "model": "pioneers:block/logistic_marker_requester",
+   "x": 90,
+   "y": 90
+  },
+  "facing=east,role=buffer": {
+   "model": "pioneers:block/logistic_marker_buffer",
+   "x": 90,
+   "y": 90
+  },
+  "facing=west,role=provider": {
+   "model": "pioneers:block/logistic_marker_provider",
+   "x": 90,
+   "y": 270
+  },
+  "facing=west,role=unload": {
+   "model": "pioneers:block/logistic_marker_unload",
+   "x": 90,
+   "y": 270
+  },
+  "facing=west,role=storage": {
+   "model": "pioneers:block/logistic_marker_storage",
+   "x": 90,
+   "y": 270
+  },
+  "facing=west,role=requester": {
+   "model": "pioneers:block/logistic_marker_requester",
+   "x": 90,
+   "y": 270
+  },
+  "facing=west,role=buffer": {
+   "model": "pioneers:block/logistic_marker_buffer",
+   "x": 90,
+   "y": 270
+  }
+ }
+}

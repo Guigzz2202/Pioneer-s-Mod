@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab",
+ "textures": {
+  "bottom": "pioneers:block/polished_ceres_rock",
+  "top": "pioneers:block/polished_ceres_rock",
+  "side": "pioneers:block/polished_ceres_rock"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/pet/dark_oak_cat_basket"
+  },
+  "facing=east": {
+   "model": "pioneers:block/pet/dark_oak_cat_basket",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/pet/dark_oak_cat_basket",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/pet/dark_oak_cat_basket",
+   "y": 270
+  }
+ }
+}

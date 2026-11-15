@@ -1,0 +1,9 @@
+{
+ "parent": "pioneers:block/industry/ultimate_dynamo",
+ "transform": {
+  "rotation": {
+   "z": 90
+  },
+  "origin": "center"
+ }
+}

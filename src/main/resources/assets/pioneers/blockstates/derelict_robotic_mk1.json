@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "worn=false": {
+   "model": "pioneers:block/ruins/derelict_robotic_mk1"
+  },
+  "worn=true": {
+   "model": "pioneers:block/ruins/derelict_robotic_mk1_worn"
+  }
+ }
+}

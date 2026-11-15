@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/naval/harbor_quay"
+  },
+  "facing=west": {
+   "model": "pioneers:block/naval/harbor_quay",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/naval/harbor_quay",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/naval/harbor_quay",
+   "y": 270
+  }
+ }
+}

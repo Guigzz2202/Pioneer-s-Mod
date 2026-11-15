@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/village/market_counter"
+  },
+  "facing=east": {
+   "model": "pioneers:block/village/market_counter",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/village/market_counter",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/village/market_counter",
+   "y": 270
+  }
+ }
+}

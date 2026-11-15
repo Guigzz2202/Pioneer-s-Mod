@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/home/dark_oak/chair"
+  },
+  "facing=east": {
+   "model": "pioneers:block/home/dark_oak/chair",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/home/dark_oak/chair",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/home/dark_oak/chair",
+   "y": 270
+  }
+ }
+}

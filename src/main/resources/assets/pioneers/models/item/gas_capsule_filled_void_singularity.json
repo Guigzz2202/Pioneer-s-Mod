@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/gas_capsule",
+  "layer1": "pioneers:item/gas_capsule_gas_void_singularity",
+  "layer2": "pioneers:item/gas_capsule_shine"
+ }
+}

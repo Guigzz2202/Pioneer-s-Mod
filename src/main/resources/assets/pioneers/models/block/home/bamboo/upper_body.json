@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/upper_body",
+ "textures": {
+  "board": "pioneers:block/home/wood/bamboo_board",
+  "post": "pioneers:block/home/wood/bamboo_post",
+  "dark": "pioneers:block/home/wood/bamboo_dark",
+  "end": "pioneers:block/home/wood/bamboo_end",
+  "top": "pioneers:block/home/wood/bamboo_top",
+  "panel": "pioneers:block/home/wood/bamboo_panel",
+  "particle": "pioneers:block/home/wood/bamboo_board"
+ }
+}

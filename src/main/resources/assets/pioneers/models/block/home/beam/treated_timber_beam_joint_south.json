@@ -1,0 +1,72 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "joint": "pioneers:block/home/beam/treated_beam_joint",
+  "end": "pioneers:block/home/beam/treated_beam_end",
+  "particle": "pioneers:block/home/beam/treated_beam_side"
+ },
+ "elements": [
+  {
+   "from": [
+    2,
+    2,
+    14
+   ],
+   "to": [
+    14,
+    14,
+    16
+   ],
+   "faces": {
+    "south": {
+     "texture": "#end",
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ],
+     "cullface": "south"
+    },
+    "west": {
+     "texture": "#joint",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ],
+     "rotation": 90
+    },
+    "east": {
+     "texture": "#joint",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ],
+     "rotation": 90
+    },
+    "up": {
+     "texture": "#joint",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#joint",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ]
+    }
+   }
+  }
+ ]
+}

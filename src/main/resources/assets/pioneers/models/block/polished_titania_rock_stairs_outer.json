@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/outer_stairs",
+ "textures": {
+  "bottom": "pioneers:block/polished_titania_rock",
+  "top": "pioneers:block/polished_titania_rock",
+  "side": "pioneers:block/polished_titania_rock"
+ }
+}

@@ -1,0 +1,7 @@
+{
+ "variants": {
+  "": {
+   "model": "pioneers:block/basic_item_buffer"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "active=false": {
+   "model": "pioneers:block/village/village_fountain_dry"
+  },
+  "active=true": {
+   "model": "pioneers:block/village/village_fountain_active"
+  }
+ }
+}

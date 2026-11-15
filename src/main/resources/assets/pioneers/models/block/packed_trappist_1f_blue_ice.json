@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/cube_all",
+ "textures": {
+  "all": "pioneers:block/packed_trappist_1f_blue_ice"
+ }
+}

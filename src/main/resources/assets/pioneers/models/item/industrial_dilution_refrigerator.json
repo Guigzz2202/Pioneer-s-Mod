@@ -1,0 +1,22 @@
+{
+ "parent": "pioneers:block/industry/part/industrial_dilution_refrigerator_item",
+ "display": {
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    -0.0,
+    3.646,
+    0
+   ],
+   "scale": [
+    0.5217,
+    0.5217,
+    0.5217
+   ]
+  }
+ }
+}

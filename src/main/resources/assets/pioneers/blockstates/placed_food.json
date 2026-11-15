@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/farm/dish/placed_dish_none"
+  },
+  "facing=east": {
+   "model": "pioneers:block/farm/dish/placed_dish_none"
+  },
+  "facing=south": {
+   "model": "pioneers:block/farm/dish/placed_dish_none"
+  },
+  "facing=west": {
+   "model": "pioneers:block/farm/dish/placed_dish_none"
+  }
+ }
+}

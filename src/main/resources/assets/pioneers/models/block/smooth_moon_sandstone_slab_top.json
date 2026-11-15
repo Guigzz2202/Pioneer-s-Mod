@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/moon_sandstone_top",
+  "top": "pioneers:block/moon_sandstone_top",
+  "side": "pioneers:block/moon_sandstone_top"
+ }
+}

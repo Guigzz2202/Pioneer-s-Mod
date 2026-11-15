@@ -1,0 +1,74 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "joint": "pioneers:block/home/beam/mangrove_beam_joint",
+  "end": "pioneers:block/home/beam/mangrove_beam_end",
+  "particle": "pioneers:block/home/beam/mangrove_beam_side"
+ },
+ "elements": [
+  {
+   "from": [
+    14,
+    2,
+    2
+   ],
+   "to": [
+    16,
+    14,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#joint",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ],
+     "rotation": 90
+    },
+    "south": {
+     "texture": "#joint",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ],
+     "rotation": 90
+    },
+    "east": {
+     "texture": "#end",
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ],
+     "cullface": "east"
+    },
+    "up": {
+     "texture": "#joint",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ],
+     "rotation": 90
+    },
+    "down": {
+     "texture": "#joint",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ],
+     "rotation": 90
+    }
+   }
+  }
+ ]
+}

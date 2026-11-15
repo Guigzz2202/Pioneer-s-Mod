@@ -1,0 +1,782 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "bronze": "pioneers:block/mechanics/bronze",
+  "bronze_dark": "pioneers:block/mechanics/bronze_dark",
+  "brass": "pioneers:block/mechanics/brass",
+  "wax": "pioneers:block/mechanics/cream",
+  "flame": "pioneers:block/lighting/flame",
+  "particle": "pioneers:block/mechanics/bronze"
+ },
+ "elements": [
+  {
+   "from": [
+    6,
+    15,
+    6
+   ],
+   "to": [
+    10,
+    16,
+    10
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    }
+   }
+  },
+  {
+   "from": [
+    7.6,
+    8,
+    7.6
+   ],
+   "to": [
+    8.4,
+    15,
+    8.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze_dark"
+    },
+    "south": {
+     "texture": "#bronze_dark"
+    },
+    "east": {
+     "texture": "#bronze_dark"
+    },
+    "west": {
+     "texture": "#bronze_dark"
+    },
+    "down": {
+     "texture": "#bronze_dark"
+    },
+    "up": {
+     "texture": "#bronze_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    6,
+    6.5
+   ],
+   "to": [
+    9.5,
+    8,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    }
+   }
+  },
+  {
+   "from": [
+    7.25,
+    5,
+    7.25
+   ],
+   "to": [
+    8.75,
+    6,
+    8.75
+   ],
+   "faces": {
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "from": [
+    2.5,
+    6.5,
+    7.5
+   ],
+   "to": [
+    13.5,
+    7.25,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze_dark"
+    },
+    "south": {
+     "texture": "#bronze_dark"
+    },
+    "up": {
+     "texture": "#bronze_dark"
+    },
+    "down": {
+     "texture": "#bronze_dark"
+    },
+    "west": {
+     "texture": "#bronze_dark"
+    },
+    "east": {
+     "texture": "#bronze_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    6.48,
+    2.5
+   ],
+   "to": [
+    8.5,
+    7.27,
+    13.5
+   ],
+   "faces": {
+    "east": {
+     "texture": "#bronze_dark"
+    },
+    "west": {
+     "texture": "#bronze_dark"
+    },
+    "up": {
+     "texture": "#bronze_dark"
+    },
+    "down": {
+     "texture": "#bronze_dark"
+    },
+    "north": {
+     "texture": "#bronze_dark"
+    },
+    "south": {
+     "texture": "#bronze_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    1.5,
+    7.25,
+    6.5
+   ],
+   "to": [
+    4.5,
+    8.25,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    }
+   }
+  },
+  {
+   "from": [
+    2.4,
+    8.25,
+    7.4
+   ],
+   "to": [
+    3.6,
+    11,
+    8.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wax"
+    },
+    "south": {
+     "texture": "#wax"
+    },
+    "east": {
+     "texture": "#wax"
+    },
+    "west": {
+     "texture": "#wax"
+    },
+    "up": {
+     "texture": "#wax"
+    },
+    "down": {
+     "texture": "#wax"
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    11,
+    7.95
+   ],
+   "to": [
+    4,
+    13.5,
+    8.05
+   ],
+   "faces": {
+    "north": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    2.95,
+    11,
+    7
+   ],
+   "to": [
+    3.05,
+    13.5,
+    9
+   ],
+   "faces": {
+    "east": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    11.5,
+    7.25,
+    6.5
+   ],
+   "to": [
+    14.5,
+    8.25,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    }
+   }
+  },
+  {
+   "from": [
+    12.4,
+    8.25,
+    7.4
+   ],
+   "to": [
+    13.6,
+    11,
+    8.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wax"
+    },
+    "south": {
+     "texture": "#wax"
+    },
+    "east": {
+     "texture": "#wax"
+    },
+    "west": {
+     "texture": "#wax"
+    },
+    "up": {
+     "texture": "#wax"
+    },
+    "down": {
+     "texture": "#wax"
+    }
+   }
+  },
+  {
+   "from": [
+    12,
+    11,
+    7.95
+   ],
+   "to": [
+    14,
+    13.5,
+    8.05
+   ],
+   "faces": {
+    "north": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    12.95,
+    11,
+    7
+   ],
+   "to": [
+    13.05,
+    13.5,
+    9
+   ],
+   "faces": {
+    "east": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    7.25,
+    1.5
+   ],
+   "to": [
+    9.5,
+    8.25,
+    4.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    }
+   }
+  },
+  {
+   "from": [
+    7.4,
+    8.25,
+    2.4
+   ],
+   "to": [
+    8.6,
+    11,
+    3.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wax"
+    },
+    "south": {
+     "texture": "#wax"
+    },
+    "east": {
+     "texture": "#wax"
+    },
+    "west": {
+     "texture": "#wax"
+    },
+    "up": {
+     "texture": "#wax"
+    },
+    "down": {
+     "texture": "#wax"
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    11,
+    2.95
+   ],
+   "to": [
+    9,
+    13.5,
+    3.05
+   ],
+   "faces": {
+    "north": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    7.95,
+    11,
+    2
+   ],
+   "to": [
+    8.05,
+    13.5,
+    4
+   ],
+   "faces": {
+    "east": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    7.25,
+    11.5
+   ],
+   "to": [
+    9.5,
+    8.25,
+    14.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    }
+   }
+  },
+  {
+   "from": [
+    7.4,
+    8.25,
+    12.4
+   ],
+   "to": [
+    8.6,
+    11,
+    13.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wax"
+    },
+    "south": {
+     "texture": "#wax"
+    },
+    "east": {
+     "texture": "#wax"
+    },
+    "west": {
+     "texture": "#wax"
+    },
+    "up": {
+     "texture": "#wax"
+    },
+    "down": {
+     "texture": "#wax"
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    11,
+    12.95
+   ],
+   "to": [
+    9,
+    13.5,
+    13.05
+   ],
+   "faces": {
+    "north": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    7.95,
+    11,
+    12
+   ],
+   "to": [
+    8.05,
+    13.5,
+    14
+   ],
+   "faces": {
+    "east": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#flame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

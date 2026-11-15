@@ -1,0 +1,32 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "fb": "pioneers:block/mechanics/fire_brick",
+  "particle": "pioneers:block/mechanics/fire_brick"
+ },
+ "elements": [
+  {
+   "from": [
+    6,
+    1.5,
+    4.5
+   ],
+   "to": [
+    10,
+    5,
+    6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#fb"
+    },
+    "south": {
+     "texture": "#fb"
+    },
+    "up": {
+     "texture": "#fb"
+    }
+   }
+  }
+ ]
+}

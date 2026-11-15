@@ -1,0 +1,27 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/mechanics/hand_crank"
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/hand_crank",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/mechanics/hand_crank",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/hand_crank",
+   "y": 270
+  },
+  "facing=up": {
+   "model": "pioneers:block/mechanics/hand_crank",
+   "x": 270
+  },
+  "facing=down": {
+   "model": "pioneers:block/mechanics/hand_crank",
+   "x": 90
+  }
+ }
+}

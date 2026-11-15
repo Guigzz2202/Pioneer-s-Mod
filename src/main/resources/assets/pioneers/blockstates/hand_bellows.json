@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/mechanics/forge_hand_bellows"
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/forge_hand_bellows",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/forge_hand_bellows",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/forge_hand_bellows",
+   "y": 270
+  }
+ }
+}

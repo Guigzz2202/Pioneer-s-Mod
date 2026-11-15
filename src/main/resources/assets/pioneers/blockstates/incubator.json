@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pioneers:block/farm/device/incubator"
+    },
+    "facing=east": {
+      "model": "pioneers:block/farm/device/incubator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pioneers:block/farm/device/incubator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pioneers:block/farm/device/incubator",
+      "y": 270
+    }
+  }
+}

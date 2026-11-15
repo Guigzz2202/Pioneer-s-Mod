@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/nuclear/dry_storage_cask"
+  },
+  "facing=east": {
+   "model": "pioneers:block/nuclear/dry_storage_cask",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/nuclear/dry_storage_cask",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/nuclear/dry_storage_cask",
+   "y": 270
+  }
+ }
+}

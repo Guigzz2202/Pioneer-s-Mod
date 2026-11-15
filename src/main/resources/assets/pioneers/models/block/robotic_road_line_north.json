@@ -1,0 +1,33 @@
+{
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "t": "pioneers:block/robotics/road_line",
+  "particle": "pioneers:block/robotics/road_top"
+ },
+ "elements": [
+  {
+   "from": [
+    7,
+    16.02,
+    0
+   ],
+   "to": [
+    9,
+    16.04,
+    9
+   ],
+   "shade": false,
+   "faces": {
+    "up": {
+     "texture": "#t",
+     "uv": [
+      7,
+      0,
+      9,
+      9
+     ]
+    }
+   }
+  }
+ ]
+}

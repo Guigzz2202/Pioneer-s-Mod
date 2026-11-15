@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "active=false": {
+   "model": "pioneers:block/industry/module/server_rack"
+  },
+  "active=true": {
+   "model": "pioneers:block/industry/module/server_rack_on"
+  }
+ }
+}

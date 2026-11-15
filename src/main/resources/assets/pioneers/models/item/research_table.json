@@ -1,0 +1,124 @@
+{
+ "parent": "pioneers:block/machine/research_table",
+ "display": {
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    0.0,
+    -1.79,
+    0.0
+   ],
+   "scale": [
+    0.392,
+    0.392,
+    0.392
+   ]
+  },
+  "ground": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0.0,
+    1.21,
+    0.0
+   ],
+   "scale": [
+    0.157,
+    0.157,
+    0.157
+   ]
+  },
+  "fixed": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0.0,
+    -1.79,
+    0.0
+   ],
+   "scale": [
+    0.313,
+    0.313,
+    0.313
+   ]
+  },
+  "thirdperson_righthand": {
+   "rotation": [
+    75,
+    45,
+    0
+   ],
+   "translation": [
+    0.0,
+    0.71,
+    0.0
+   ],
+   "scale": [
+    0.235,
+    0.235,
+    0.235
+   ]
+  },
+  "firstperson_righthand": {
+   "rotation": [
+    0,
+    45,
+    0
+   ],
+   "translation": [
+    0.0,
+    -1.79,
+    0.0
+   ],
+   "scale": [
+    0.251,
+    0.251,
+    0.251
+   ]
+  },
+  "firstperson_lefthand": {
+   "rotation": [
+    0,
+    225,
+    0
+   ],
+   "translation": [
+    0.0,
+    -1.79,
+    0.0
+   ],
+   "scale": [
+    0.251,
+    0.251,
+    0.251
+   ]
+  },
+  "head": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0.0,
+    10.21,
+    0.0
+   ],
+   "scale": [
+    0.502,
+    0.502,
+    0.502
+   ]
+  }
+ }
+}

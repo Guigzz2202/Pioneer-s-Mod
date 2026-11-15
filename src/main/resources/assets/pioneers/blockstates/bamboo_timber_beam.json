@@ -1,0 +1,117 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "axis": "y"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam"
+   }
+  },
+  {
+   "when": {
+    "axis": "z"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam",
+    "x": 90
+   }
+  },
+  {
+   "when": {
+    "axis": "x"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam",
+    "x": 90,
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_joint_north"
+   }
+  },
+  {
+   "when": {
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_joint_south"
+   }
+  },
+  {
+   "when": {
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_joint_west"
+   }
+  },
+  {
+   "when": {
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_joint_east"
+   }
+  },
+  {
+   "when": {
+    "axis": "x|z",
+    "up": "joint"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_joint_up"
+   }
+  },
+  {
+   "when": {
+    "axis": "x|z",
+    "down": "joint"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_joint_down"
+   }
+  },
+  {
+   "when": {
+    "axis": "x",
+    "down": "seat"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_seat_x_down"
+   }
+  },
+  {
+   "when": {
+    "axis": "x",
+    "up": "seat"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_seat_x_up"
+   }
+  },
+  {
+   "when": {
+    "axis": "z",
+    "down": "seat"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_seat_z_down"
+   }
+  },
+  {
+   "when": {
+    "axis": "z",
+    "up": "seat"
+   },
+   "apply": {
+    "model": "pioneers:block/home/beam/bamboo_timber_beam_seat_z_up"
+   }
+  }
+ ]
+}

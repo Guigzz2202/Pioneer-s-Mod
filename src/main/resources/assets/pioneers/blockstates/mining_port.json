@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "mode=input": {
+   "model": "pioneers:block/mining_port_input"
+  },
+  "mode=output": {
+   "model": "pioneers:block/mining_port_output"
+  },
+  "mode=energy": {
+   "model": "pioneers:block/mining_port_energy"
+  }
+ }
+}

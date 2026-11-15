@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/cube_column",
+ "textures": {
+  "side": "pioneers:block/mechanics/charred_side",
+  "end": "pioneers:block/mechanics/charred_top"
+ }
+}

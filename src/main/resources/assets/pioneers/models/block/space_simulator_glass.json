@@ -1,0 +1,6 @@
+{
+ "loader": "pioneers:connected",
+ "parent": "minecraft:block/block",
+ "tiles": "pioneers:block/space_simulator_glass",
+ "render_type": "minecraft:translucent"
+}

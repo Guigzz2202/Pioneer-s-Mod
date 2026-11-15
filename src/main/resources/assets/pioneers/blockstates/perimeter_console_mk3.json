@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "facing=north,worn=false": {
+   "model": "pioneers:block/ruins/perimeter_console_mk3"
+  },
+  "facing=north,worn=true": {
+   "model": "pioneers:block/ruins/perimeter_console_mk3_worn"
+  },
+  "facing=east,worn=false": {
+   "model": "pioneers:block/ruins/perimeter_console_mk3",
+   "y": 90
+  },
+  "facing=east,worn=true": {
+   "model": "pioneers:block/ruins/perimeter_console_mk3_worn",
+   "y": 90
+  },
+  "facing=south,worn=false": {
+   "model": "pioneers:block/ruins/perimeter_console_mk3",
+   "y": 180
+  },
+  "facing=south,worn=true": {
+   "model": "pioneers:block/ruins/perimeter_console_mk3_worn",
+   "y": 180
+  },
+  "facing=west,worn=false": {
+   "model": "pioneers:block/ruins/perimeter_console_mk3",
+   "y": 270
+  },
+  "facing=west,worn=true": {
+   "model": "pioneers:block/ruins/perimeter_console_mk3_worn",
+   "y": 270
+  }
+ }
+}

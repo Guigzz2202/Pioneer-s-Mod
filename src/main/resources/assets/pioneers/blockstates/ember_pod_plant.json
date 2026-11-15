@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pioneers:block/plants/ember_pod_plant"
+    }
+  }
+}

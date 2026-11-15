@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "pioneers:block/polished_mercury_polar_ice_slab"
+  },
+  "type=top": {
+   "model": "pioneers:block/polished_mercury_polar_ice_slab_top"
+  },
+  "type=double": {
+   "model": "pioneers:block/polished_mercury_polar_ice"
+  }
+ }
+}

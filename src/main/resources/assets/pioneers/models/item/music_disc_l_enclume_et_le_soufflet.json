@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/music_disc_l_enclume_et_le_soufflet"
+ }
+}

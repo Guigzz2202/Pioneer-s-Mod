@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/cube_bottom_top",
+ "textures": {
+  "side": "pioneers:block/ruins/fluid_mk2",
+  "top": "pioneers:block/ruins/fluid_mk2_top",
+  "bottom": "pioneers:block/ruins/casing_mk2"
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "variants": {
+  "facing=south,shape=ingot": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_ingot"
+  },
+  "facing=south,shape=nugget": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_nugget"
+  },
+  "facing=south,shape=plate": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_plate"
+  },
+  "facing=south,shape=rod": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_rod"
+  },
+  "facing=south,shape=gear": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_gear"
+  },
+  "facing=west,shape=ingot": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_ingot",
+   "y": 90
+  },
+  "facing=west,shape=nugget": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_nugget",
+   "y": 90
+  },
+  "facing=west,shape=plate": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_plate",
+   "y": 90
+  },
+  "facing=west,shape=rod": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_rod",
+   "y": 90
+  },
+  "facing=west,shape=gear": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_gear",
+   "y": 90
+  },
+  "facing=north,shape=ingot": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_ingot",
+   "y": 180
+  },
+  "facing=north,shape=nugget": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_nugget",
+   "y": 180
+  },
+  "facing=north,shape=plate": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_plate",
+   "y": 180
+  },
+  "facing=north,shape=rod": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_rod",
+   "y": 180
+  },
+  "facing=north,shape=gear": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_gear",
+   "y": 180
+  },
+  "facing=east,shape=ingot": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_ingot",
+   "y": 270
+  },
+  "facing=east,shape=nugget": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_nugget",
+   "y": 270
+  },
+  "facing=east,shape=plate": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_plate",
+   "y": 270
+  },
+  "facing=east,shape=rod": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_rod",
+   "y": 270
+  },
+  "facing=east,shape=gear": {
+   "model": "pioneers:block/mechanics/forge_placed_mold_gear",
+   "y": 270
+  }
+ }
+}

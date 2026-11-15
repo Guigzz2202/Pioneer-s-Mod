@@ -1,0 +1,6 @@
+{
+ "loader": "pioneers:connected",
+ "parent": "minecraft:block/block",
+ "tiles": "pioneers:block/space_stabilizer_controller_singularity",
+ "active_tiles": "pioneers:block/space_stabilizer_controller_on_singularity"
+}

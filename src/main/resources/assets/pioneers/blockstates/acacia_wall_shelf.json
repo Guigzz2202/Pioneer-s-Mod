@@ -1,0 +1,312 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "facing": "north"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_left_open"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_left_join"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_left"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_right_open"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_right_join"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_right"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "mid": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_mid"
+   }
+  },
+  {
+   "when": {
+    "facing": "east"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_left_open",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_left_join",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_left",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_right_open",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_right_join",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_right",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "mid": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_mid",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "south"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_left_open",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_left_join",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_left",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_right_open",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_right_join",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_right",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "mid": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_mid",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "west"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_left_open",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_left_join",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_left",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_right_open",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_plank_right_join",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_right",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "mid": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/acacia/wall_shelf_bracket_mid",
+    "y": 270
+   }
+  }
+ ]
+}

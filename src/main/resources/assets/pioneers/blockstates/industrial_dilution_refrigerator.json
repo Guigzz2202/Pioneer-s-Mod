@@ -1,0 +1,56 @@
+{
+ "variants": {
+  "active=false,facing=up": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator"
+  },
+  "active=true,facing=up": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator_on"
+  },
+  "active=false,facing=down": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator",
+   "x": 180
+  },
+  "active=true,facing=down": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator_on",
+   "x": 180
+  },
+  "active=false,facing=north": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator",
+   "x": 90
+  },
+  "active=true,facing=north": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator_on",
+   "x": 90
+  },
+  "active=false,facing=south": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator",
+   "x": 90,
+   "y": 180
+  },
+  "active=true,facing=south": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator_on",
+   "x": 90,
+   "y": 180
+  },
+  "active=false,facing=east": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator",
+   "x": 90,
+   "y": 90
+  },
+  "active=true,facing=east": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator_on",
+   "x": 90,
+   "y": 90
+  },
+  "active=false,facing=west": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator",
+   "x": 90,
+   "y": 270
+  },
+  "active=true,facing=west": {
+   "model": "pioneers:block/industry/part/industrial_dilution_refrigerator_on",
+   "x": 90,
+   "y": 270
+  }
+ }
+}

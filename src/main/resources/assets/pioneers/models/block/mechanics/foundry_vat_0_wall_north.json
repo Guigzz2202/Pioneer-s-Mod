@@ -1,0 +1,104 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "i": "pioneers:block/mechanics/iron",
+  "brick": "pioneers:block/mechanics/fire_brick",
+  "particle": "pioneers:block/mechanics/fire_brick"
+ },
+ "elements": [
+  {
+   "from": [
+    3,
+    0,
+    0
+   ],
+   "to": [
+    13,
+    16,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#brick",
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#brick"
+    },
+    "up": {
+     "texture": "#brick"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    1.0,
+    -0.3
+   ],
+   "to": [
+    13,
+    2.2,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "#i"
+    },
+    "up": {
+     "texture": "#i",
+     "uv": [
+      3,
+      15.7,
+      13,
+      16.0
+     ]
+    },
+    "down": {
+     "texture": "#i",
+     "uv": [
+      3,
+      0.0,
+      13,
+      0.3
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    13.0,
+    -0.3
+   ],
+   "to": [
+    13,
+    14.2,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "#i"
+    },
+    "up": {
+     "texture": "#i",
+     "uv": [
+      3,
+      15.7,
+      13,
+      16.0
+     ]
+    },
+    "down": {
+     "texture": "#i",
+     "uv": [
+      3,
+      0.0,
+      13,
+      0.3
+     ]
+    }
+   }
+  }
+ ]
+}

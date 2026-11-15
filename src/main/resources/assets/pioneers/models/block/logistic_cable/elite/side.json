@@ -1,0 +1,134 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/logistic_cable/elite/center",
+  "center": "pioneers:block/logistic_cable/elite/center",
+  "side": "pioneers:block/logistic_cable/elite/side",
+  "hoop": "pioneers:block/logistic_cable/elite/hoop",
+  "collar": "pioneers:block/logistic_cable/elite/collar"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    5,
+    0
+   ],
+   "to": [
+    11,
+    11,
+    5
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      5,
+      0,
+      11,
+      5
+     ],
+     "texture": "#side"
+    },
+    "down": {
+     "uv": [
+      5,
+      5,
+      11,
+      0
+     ],
+     "texture": "#side"
+    },
+    "east": {
+     "uv": [
+      5,
+      0,
+      11,
+      5
+     ],
+     "texture": "#side",
+     "rotation": 90
+    },
+    "west": {
+     "uv": [
+      5,
+      5,
+      11,
+      0
+     ],
+     "texture": "#side",
+     "rotation": 90
+    }
+   }
+  },
+  {
+   "from": [
+    4.65,
+    4.65,
+    0
+   ],
+   "to": [
+    11.35,
+    11.35,
+    1.0
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      4.65,
+      0,
+      11.35,
+      1.0
+     ],
+     "texture": "#hoop"
+    },
+    "down": {
+     "uv": [
+      4.65,
+      1.0,
+      11.35,
+      0
+     ],
+     "texture": "#hoop"
+    },
+    "east": {
+     "uv": [
+      4.65,
+      0,
+      11.35,
+      1.0
+     ],
+     "texture": "#hoop",
+     "rotation": 90
+    },
+    "west": {
+     "uv": [
+      4.65,
+      1.0,
+      11.35,
+      0
+     ],
+     "texture": "#hoop",
+     "rotation": 90
+    },
+    "north": {
+     "uv": [
+      4.65,
+      11,
+      11.35,
+      15.5
+     ],
+     "texture": "#hoop"
+    },
+    "south": {
+     "uv": [
+      4.65,
+      11,
+      11.35,
+      15.5
+     ],
+     "texture": "#hoop"
+    }
+   }
+  }
+ ]
+}

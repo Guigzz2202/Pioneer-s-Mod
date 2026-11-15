@@ -1,0 +1,602 @@
+{
+ "multipart": [
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_furnace"
+   },
+   "when": {
+    "facing": "south",
+    "lit": "false"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_4",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_furnace_on"
+   },
+   "when": {
+    "facing": "south",
+    "lit": "true"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_4",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "lit": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_furnace",
+    "y": 90
+   },
+   "when": {
+    "facing": "west",
+    "lit": "false"
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5"
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_4",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_furnace_on",
+    "y": 90
+   },
+   "when": {
+    "facing": "west",
+    "lit": "true"
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5"
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_4",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "lit": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_furnace",
+    "y": 180
+   },
+   "when": {
+    "facing": "north",
+    "lit": "false"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_4",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_furnace_on",
+    "y": 180
+   },
+   "when": {
+    "facing": "north",
+    "lit": "true"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_4",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "lit": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_furnace",
+    "y": 270
+   },
+   "when": {
+    "facing": "east",
+    "lit": "false"
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5"
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_4",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_furnace_on",
+    "y": 270
+   },
+   "when": {
+    "facing": "east",
+    "lit": "true"
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5"
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0_5",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_4",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "lit": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/steam_port_0",
+    "x": 90
+   }
+  }
+ ]
+}

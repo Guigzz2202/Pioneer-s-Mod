@@ -1,0 +1,10 @@
+{
+ "parent": "minecraft:block/orientable_with_bottom",
+ "textures": {
+  "front": "pioneers:block/drone_bay/front",
+  "side": "pioneers:block/drone_bay/side",
+  "top": "pioneers:block/drone_bay/top",
+  "bottom": "pioneers:block/drone_bay/bottom",
+  "particle": "pioneers:block/drone_bay/side"
+ }
+}

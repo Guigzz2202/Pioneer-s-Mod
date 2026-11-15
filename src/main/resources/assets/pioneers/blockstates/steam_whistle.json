@@ -1,0 +1,30 @@
+{
+ "variants": {
+  "facing=up": {
+   "model": "pioneers:block/mechanics/steam_whistle"
+  },
+  "facing=down": {
+   "model": "pioneers:block/mechanics/steam_whistle",
+   "x": 180
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/steam_whistle",
+   "x": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/mechanics/steam_whistle",
+   "x": 90,
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/steam_whistle",
+   "x": 90,
+   "y": 90
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/steam_whistle",
+   "x": 90,
+   "y": 270
+  }
+ }
+}

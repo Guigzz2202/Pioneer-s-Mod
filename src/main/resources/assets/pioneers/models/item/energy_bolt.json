@@ -1,0 +1,32 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/gear/energy_bolt_graviton"
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "custom_model_data": 1
+   },
+   "model": "pioneers:item/energy_bolt_graviton"
+  },
+  {
+   "predicate": {
+    "custom_model_data": 2
+   },
+   "model": "pioneers:item/energy_bolt_stellaris"
+  },
+  {
+   "predicate": {
+    "custom_model_data": 3
+   },
+   "model": "pioneers:item/energy_bolt_neutronic"
+  },
+  {
+   "predicate": {
+    "custom_model_data": 4
+   },
+   "model": "pioneers:item/energy_bolt_singularity"
+  }
+ ]
+}

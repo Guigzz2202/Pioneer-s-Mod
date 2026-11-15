@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/shelf_board_low_right_join",
+ "textures": {
+  "board": "pioneers:block/home/wood/acacia_board",
+  "post": "pioneers:block/home/wood/acacia_post",
+  "dark": "pioneers:block/home/wood/acacia_dark",
+  "end": "pioneers:block/home/wood/acacia_end",
+  "top": "pioneers:block/home/wood/acacia_top",
+  "panel": "pioneers:block/home/wood/acacia_panel",
+  "particle": "pioneers:block/home/wood/acacia_board"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/pet/cherry_dog_kennel"
+  },
+  "facing=east": {
+   "model": "pioneers:block/pet/cherry_dog_kennel",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/pet/cherry_dog_kennel",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/pet/cherry_dog_kennel",
+   "y": 270
+  }
+ }
+}

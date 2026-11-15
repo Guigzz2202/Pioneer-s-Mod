@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/g_north_00",
+ "textures": {
+  "t": "pioneers:block/farm/aquarium/aquarium_inner"
+ }
+}

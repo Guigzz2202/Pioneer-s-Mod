@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/cobbled_pluto_tholin",
+  "top": "pioneers:block/cobbled_pluto_tholin",
+  "side": "pioneers:block/cobbled_pluto_tholin"
+ }
+}

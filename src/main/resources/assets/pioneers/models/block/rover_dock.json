@@ -1,0 +1,491 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/outpost/dock",
+  "top": "pioneers:block/outpost/dock",
+  "side": "pioneers:block/outpost/casing",
+  "glow": "pioneers:block/outpost/dock_glow",
+  "metal": "pioneers:block/outpost/radar",
+  "lamp": "pioneers:block/outpost/port_input"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    2,
+    16
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ],
+     "texture": "#side"
+    },
+    "south": {
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ],
+     "texture": "#side"
+    },
+    "east": {
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ],
+     "texture": "#side"
+    },
+    "west": {
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ],
+     "texture": "#side"
+    },
+    "up": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#top"
+    },
+    "down": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#side"
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    2,
+    2
+   ],
+   "to": [
+    14,
+    3,
+    14
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      2,
+      13,
+      14,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "south": {
+     "uv": [
+      2,
+      13,
+      14,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "east": {
+     "uv": [
+      2,
+      13,
+      14,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "west": {
+     "uv": [
+      2,
+      13,
+      14,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "up": {
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ],
+     "texture": "#top"
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    3.02,
+    2
+   ],
+   "to": [
+    14,
+    3.03,
+    14
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ],
+     "texture": "#glow",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   },
+   "shade": false
+  },
+  {
+   "from": [
+    0.5,
+    2,
+    13.5
+   ],
+   "to": [
+    2.5,
+    9,
+    15.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      13.5,
+      7,
+      15.5,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "south": {
+     "uv": [
+      0.5,
+      7,
+      2.5,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "east": {
+     "uv": [
+      0.5,
+      7,
+      2.5,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "west": {
+     "uv": [
+      13.5,
+      7,
+      15.5,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "up": {
+     "uv": [
+      0.5,
+      13.5,
+      2.5,
+      15.5
+     ],
+     "texture": "#metal"
+    },
+    "down": {
+     "uv": [
+      0.5,
+      0.5,
+      2.5,
+      2.5
+     ],
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "from": [
+    0.75,
+    9,
+    13.75
+   ],
+   "to": [
+    2.25,
+    10,
+    15.25
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      13.75,
+      6,
+      15.25,
+      7
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "uv": [
+      0.75,
+      6,
+      2.25,
+      7
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "east": {
+     "uv": [
+      0.75,
+      6,
+      2.25,
+      7
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "uv": [
+      13.75,
+      6,
+      15.25,
+      7
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "up": {
+     "uv": [
+      0.75,
+      13.75,
+      2.25,
+      15.25
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "down": {
+     "uv": [
+      0.75,
+      0.75,
+      2.25,
+      2.25
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   },
+   "shade": false
+  },
+  {
+   "from": [
+    13.5,
+    2,
+    13.5
+   ],
+   "to": [
+    15.5,
+    9,
+    15.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0.5,
+      7,
+      2.5,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "south": {
+     "uv": [
+      13.5,
+      7,
+      15.5,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "east": {
+     "uv": [
+      0.5,
+      7,
+      2.5,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "west": {
+     "uv": [
+      13.5,
+      7,
+      15.5,
+      14
+     ],
+     "texture": "#metal"
+    },
+    "up": {
+     "uv": [
+      13.5,
+      13.5,
+      15.5,
+      15.5
+     ],
+     "texture": "#metal"
+    },
+    "down": {
+     "uv": [
+      13.5,
+      0.5,
+      15.5,
+      2.5
+     ],
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "from": [
+    13.75,
+    9,
+    13.75
+   ],
+   "to": [
+    15.25,
+    10,
+    15.25
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0.75,
+      6,
+      2.25,
+      7
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "uv": [
+      13.75,
+      6,
+      15.25,
+      7
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "east": {
+     "uv": [
+      0.75,
+      6,
+      2.25,
+      7
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "uv": [
+      13.75,
+      6,
+      15.25,
+      7
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "up": {
+     "uv": [
+      13.75,
+      13.75,
+      15.25,
+      15.25
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "down": {
+     "uv": [
+      13.75,
+      0.75,
+      15.25,
+      2.25
+     ],
+     "texture": "#lamp",
+     "forge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   },
+   "shade": false
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/smooth_io_basalt",
+  "top": "pioneers:block/smooth_io_basalt",
+  "side": "pioneers:block/smooth_io_basalt"
+ }
+}

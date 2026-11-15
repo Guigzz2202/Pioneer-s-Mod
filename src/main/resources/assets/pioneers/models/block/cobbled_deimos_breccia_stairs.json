@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/stairs",
+ "textures": {
+  "bottom": "pioneers:block/cobbled_deimos_breccia",
+  "top": "pioneers:block/cobbled_deimos_breccia",
+  "side": "pioneers:block/cobbled_deimos_breccia"
+ }
+}

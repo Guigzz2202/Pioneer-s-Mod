@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/smooth_phobos_rock",
+  "top": "pioneers:block/smooth_phobos_rock",
+  "side": "pioneers:block/smooth_phobos_rock_slab_side"
+ }
+}

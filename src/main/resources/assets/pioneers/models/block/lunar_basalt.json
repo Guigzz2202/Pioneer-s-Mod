@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/cube_column",
+ "textures": {
+  "side": "pioneers:block/lunar_basalt",
+  "end": "pioneers:block/lunar_basalt_top"
+ }
+}

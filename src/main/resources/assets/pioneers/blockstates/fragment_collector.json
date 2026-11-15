@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "active=false": {
+   "model": "pioneers:block/nuclear/reactor/fragment_collector"
+  },
+  "active=true": {
+   "model": "pioneers:block/nuclear/reactor/fragment_collector_on"
+  }
+ }
+}

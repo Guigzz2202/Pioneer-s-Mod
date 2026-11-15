@@ -1,0 +1,31 @@
+{
+ "variants": {
+  "pressure=0": {
+   "model": "pioneers:block/creative_pressure_buffer"
+  },
+  "pressure=1": {
+   "model": "pioneers:block/creative_pressure_buffer_p1"
+  },
+  "pressure=2": {
+   "model": "pioneers:block/creative_pressure_buffer_p2"
+  },
+  "pressure=3": {
+   "model": "pioneers:block/creative_pressure_buffer_p3"
+  },
+  "pressure=4": {
+   "model": "pioneers:block/creative_pressure_buffer_p4"
+  },
+  "pressure=5": {
+   "model": "pioneers:block/creative_pressure_buffer_p5"
+  },
+  "pressure=6": {
+   "model": "pioneers:block/creative_pressure_buffer_p6"
+  },
+  "pressure=7": {
+   "model": "pioneers:block/creative_pressure_buffer_p7"
+  },
+  "pressure=8": {
+   "model": "pioneers:block/creative_pressure_buffer_p8"
+  }
+ }
+}

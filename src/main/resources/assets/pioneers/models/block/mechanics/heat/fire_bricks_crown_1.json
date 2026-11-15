@@ -1,0 +1,145 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/mechanics/fire_brick_warm",
+  "a": "pioneers:block/mechanics/fire_brick_warm",
+  "ss": "pioneers:block/mechanics/smooth_stone",
+  "i": "pioneers:block/mechanics/iron"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    12,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#a",
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#a",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#a",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#a",
+     "cullface": "west"
+    },
+    "down": {
+     "texture": "#a",
+     "cullface": "down"
+    }
+   }
+  },
+  {
+   "from": [
+    -0.5,
+    12,
+    -0.5
+   ],
+   "to": [
+    16.5,
+    14,
+    16.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      2,
+      16,
+      4
+     ]
+    },
+    "south": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      2,
+      16,
+      4
+     ]
+    },
+    "east": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      2,
+      16,
+      4
+     ]
+    },
+    "west": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      2,
+      16,
+      4
+     ]
+    },
+    "up": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    14,
+    3
+   ],
+   "to": [
+    13,
+    15.5,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#ss"
+    },
+    "south": {
+     "texture": "#ss"
+    },
+    "east": {
+     "texture": "#ss"
+    },
+    "west": {
+     "texture": "#ss"
+    },
+    "up": {
+     "texture": "#ss"
+    },
+    "down": {
+     "texture": "#ss"
+    }
+   }
+  }
+ ]
+}

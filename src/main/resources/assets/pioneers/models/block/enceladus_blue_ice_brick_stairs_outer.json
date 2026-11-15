@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/outer_stairs",
+ "textures": {
+  "bottom": "pioneers:block/enceladus_blue_ice_bricks",
+  "top": "pioneers:block/enceladus_blue_ice_bricks",
+  "side": "pioneers:block/enceladus_blue_ice_bricks"
+ }
+}

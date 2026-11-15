@@ -1,0 +1,68 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "particle": "pioneers:block/naval/quay_fender",
+  "f": "pioneers:block/naval/quay_fender"
+ },
+ "elements": [
+  {
+   "from": [
+    -1,
+    5,
+    3
+   ],
+   "to": [
+    0,
+    11,
+    13
+   ],
+   "faces": {
+    "west": {
+     "texture": "#f",
+     "uv": [
+      3,
+      5,
+      13,
+      11
+     ]
+    },
+    "up": {
+     "texture": "#f",
+     "uv": [
+      15,
+      3,
+      16,
+      13
+     ]
+    },
+    "down": {
+     "texture": "#f",
+     "uv": [
+      15,
+      3,
+      16,
+      13
+     ]
+    },
+    "north": {
+     "texture": "#f",
+     "uv": [
+      0,
+      5,
+      1,
+      11
+     ]
+    },
+    "south": {
+     "texture": "#f",
+     "uv": [
+      15,
+      5,
+      16,
+      11
+     ]
+    }
+   }
+  }
+ ]
+}

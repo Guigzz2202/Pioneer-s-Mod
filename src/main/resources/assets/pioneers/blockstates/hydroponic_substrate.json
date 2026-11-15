@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "tilled=false": {
+      "model": "pioneers:block/hydroponic_substrate"
+    },
+    "tilled=true": {
+      "model": "pioneers:block/hydroponic_substrate_tilled"
+    }
+  }
+}

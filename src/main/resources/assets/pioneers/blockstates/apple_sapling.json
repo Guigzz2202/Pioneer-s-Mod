@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "stage=0": {
+   "model": "pioneers:block/farm/trees/apple_sapling"
+  },
+  "stage=1": {
+   "model": "pioneers:block/farm/trees/apple_sapling"
+  }
+ }
+}

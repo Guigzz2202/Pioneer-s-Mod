@@ -1,0 +1,123 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "i": "pioneers:block/mechanics/iron",
+  "brick": "pioneers:block/mechanics/fire_brick_hot",
+  "particle": "pioneers:block/mechanics/fire_brick_hot"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    13
+   ],
+   "to": [
+    3,
+    16,
+    16
+   ],
+   "faces": {
+    "west": {
+     "texture": "#brick",
+     "cullface": "west",
+     "forge_data": {
+      "block_light": 9,
+      "sky_light": 15
+     }
+    },
+    "east": {
+     "texture": "#brick",
+     "forge_data": {
+      "block_light": 9,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#brick",
+     "forge_data": {
+      "block_light": 9,
+      "sky_light": 15
+     }
+    },
+    "up": {
+     "texture": "#brick",
+     "forge_data": {
+      "block_light": 9,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    -0.3000000000000007,
+    1.0,
+    13
+   ],
+   "to": [
+    0,
+    2.2,
+    16
+   ],
+   "faces": {
+    "west": {
+     "texture": "#i"
+    },
+    "up": {
+     "texture": "#i",
+     "uv": [
+      15.7,
+      13,
+      16.0,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#i",
+     "uv": [
+      15.7,
+      0,
+      16.0,
+      3
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    -0.3000000000000007,
+    13.0,
+    13
+   ],
+   "to": [
+    0,
+    14.2,
+    16
+   ],
+   "faces": {
+    "west": {
+     "texture": "#i"
+    },
+    "up": {
+     "texture": "#i",
+     "uv": [
+      15.7,
+      13,
+      16.0,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#i",
+     "uv": [
+      15.7,
+      0,
+      16.0,
+      3
+     ]
+    }
+   }
+  }
+ ]
+}

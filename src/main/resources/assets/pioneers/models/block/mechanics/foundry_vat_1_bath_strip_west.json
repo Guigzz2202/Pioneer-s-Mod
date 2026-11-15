@@ -1,0 +1,30 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "bath": "pioneers:block/mechanics/foundry_vat_top_warm",
+  "particle": "pioneers:block/mechanics/fire_brick_warm"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    3
+   ],
+   "to": [
+    3,
+    12,
+    13
+   ],
+   "faces": {
+    "up": {
+     "texture": "#bath",
+     "forge_data": {
+      "block_light": 9,
+      "sky_light": 15
+     }
+    }
+   }
+  }
+ ]
+}

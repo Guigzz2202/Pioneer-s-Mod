@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "pioneers:block/mechanics/tachometer"
+  },
+  "axis=z": {
+   "model": "pioneers:block/mechanics/tachometer",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "pioneers:block/mechanics/tachometer",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

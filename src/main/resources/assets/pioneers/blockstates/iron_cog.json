@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "pioneers:block/mechanics/iron_cog"
+  },
+  "axis=z": {
+   "model": "pioneers:block/mechanics/iron_cog",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "pioneers:block/mechanics/iron_cog",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

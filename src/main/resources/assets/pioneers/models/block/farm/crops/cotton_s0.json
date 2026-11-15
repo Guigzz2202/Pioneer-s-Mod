@@ -1,0 +1,97 @@
+{
+ "parent": "minecraft:block/block",
+ "ambientocclusion": false,
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/crops/cotton_s0",
+  "crop": "pioneers:block/farm/crops/cotton_s0"
+ },
+ "elements": [
+  {
+   "from": [
+    0.8,
+    -1.0,
+    8
+   ],
+   "to": [
+    15.2,
+    15.0,
+    8
+   ],
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     8
+    ],
+    "axis": "y",
+    "angle": 45,
+    "rescale": true
+   },
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#crop"
+    },
+    "south": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#crop"
+    }
+   }
+  },
+  {
+   "from": [
+    8,
+    -1.0,
+    0.8
+   ],
+   "to": [
+    8,
+    15.0,
+    15.2
+   ],
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     8
+    ],
+    "axis": "y",
+    "angle": 45,
+    "rescale": true
+   },
+   "shade": false,
+   "faces": {
+    "east": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#crop"
+    },
+    "west": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#crop"
+    }
+   }
+  }
+ ]
+}

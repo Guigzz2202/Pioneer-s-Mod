@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/g_east_11",
+ "textures": {
+  "t": "pioneers:block/greenhouse/treated_glass_inner"
+ }
+}

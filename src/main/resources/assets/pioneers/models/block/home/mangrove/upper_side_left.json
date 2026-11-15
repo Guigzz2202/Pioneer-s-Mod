@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/upper_side_left",
+ "textures": {
+  "board": "pioneers:block/home/wood/mangrove_board",
+  "post": "pioneers:block/home/wood/mangrove_post",
+  "dark": "pioneers:block/home/wood/mangrove_dark",
+  "end": "pioneers:block/home/wood/mangrove_end",
+  "top": "pioneers:block/home/wood/mangrove_top",
+  "panel": "pioneers:block/home/wood/mangrove_panel",
+  "particle": "pioneers:block/home/wood/mangrove_board"
+ }
+}

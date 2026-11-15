@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/orientable",
+ "textures": {
+  "front": "pioneers:block/ruins/cabinet_mk3",
+  "side": "pioneers:block/ruins/panel_mk3",
+  "top": "pioneers:block/ruins/panel_mk3"
+ }
+}

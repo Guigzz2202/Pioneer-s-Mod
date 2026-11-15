@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/east_01",
+ "textures": {
+  "t": "pioneers:block/industry/design/casing/elite_living_frame"
+ }
+}

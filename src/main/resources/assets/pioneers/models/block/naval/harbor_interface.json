@@ -1,0 +1,12 @@
+{
+ "parent": "block/cube",
+ "textures": {
+  "particle": "pioneers:block/naval/harbor_interface",
+  "north": "pioneers:block/naval/harbor_interface",
+  "south": "pioneers:block/naval/harbor_interface",
+  "east": "pioneers:block/naval/harbor_interface",
+  "west": "pioneers:block/naval/harbor_interface",
+  "up": "pioneers:block/naval/quay_top",
+  "down": "pioneers:block/naval/quay_wall"
+ }
+}

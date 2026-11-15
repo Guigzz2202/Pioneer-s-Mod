@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pioneers:item/plants/ember_pod_plant_seeds"
+  }
+}

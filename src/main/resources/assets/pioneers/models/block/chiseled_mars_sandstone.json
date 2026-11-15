@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/cube_column",
+ "textures": {
+  "end": "pioneers:block/mars_sandstone_top",
+  "side": "pioneers:block/chiseled_mars_sandstone"
+ }
+}

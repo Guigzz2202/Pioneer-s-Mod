@@ -1,0 +1,26 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/mechanics/water_gauge"
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/water_gauge",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/water_gauge",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/water_gauge",
+   "y": 270
+  },
+  "facing=up": {
+   "model": "pioneers:block/mechanics/water_gauge_top"
+  },
+  "facing=down": {
+   "model": "pioneers:block/mechanics/water_gauge_top",
+   "x": 180
+  }
+ }
+}

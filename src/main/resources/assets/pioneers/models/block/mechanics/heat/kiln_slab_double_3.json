@@ -1,0 +1,178 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "ss": "pioneers:block/mechanics/smooth_stone",
+  "i": "pioneers:block/mechanics/iron",
+  "br": "pioneers:block/mechanics/brass",
+  "soot": "pioneers:block/mechanics/chimney_soot",
+  "ib": "pioneers:block/mechanics/iron_bright",
+  "particle": "pioneers:block/mechanics/kiln_brick_glow",
+  "a": "pioneers:block/mechanics/kiln_brick_glow"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    15.0,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "north",
+     "forge_data": {
+      "block_light": 12,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "south",
+     "forge_data": {
+      "block_light": 12,
+      "sky_light": 15
+     }
+    },
+    "east": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "east",
+     "forge_data": {
+      "block_light": 12,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "west",
+     "forge_data": {
+      "block_light": 12,
+      "sky_light": 15
+     }
+    },
+    "up": {
+     "texture": "#a",
+     "forge_data": {
+      "block_light": 12,
+      "sky_light": 15
+     }
+    },
+    "down": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "down",
+     "forge_data": {
+      "block_light": 12,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    -0.4,
+    15.0,
+    -0.4
+   ],
+   "to": [
+    16.4,
+    16,
+    16.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#ss",
+     "cullface": "north",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "south": {
+     "texture": "#ss",
+     "cullface": "south",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "#ss",
+     "cullface": "east",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "#ss",
+     "cullface": "west",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "#ss",
+     "cullface": "up",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  }
+ ]
+}

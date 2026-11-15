@@ -1,0 +1,53 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/mechanics/clay_raw",
+  "s": "pioneers:block/mechanics/stone",
+  "ss": "pioneers:block/mechanics/smooth_stone",
+  "i": "pioneers:block/mechanics/iron",
+  "o": "pioneers:block/mechanics/oak",
+  "p": "pioneers:block/mechanics/oak_planks",
+  "l": "pioneers:block/mechanics/leather",
+  "an": "pioneers:block/mechanics/anvil",
+  "b": "pioneers:block/mechanics/bronze",
+  "bd": "pioneers:block/mechanics/bronze_dark",
+  "co": "pioneers:block/mechanics/coals",
+  "cl": "pioneers:block/mechanics/clay_raw",
+  "brk": "pioneers:block/mechanics/brick",
+  "mo": "pioneers:block/mechanics/molten"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    3,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#cl"
+    },
+    "south": {
+     "texture": "#cl"
+    },
+    "east": {
+     "texture": "#cl"
+    },
+    "west": {
+     "texture": "#cl"
+    },
+    "up": {
+     "texture": "#cl"
+    },
+    "down": {
+     "texture": "#cl"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "pioneers:block/polished_deimos_breccia_slab"
+  },
+  "type=top": {
+   "model": "pioneers:block/polished_deimos_breccia_slab_top"
+  },
+  "type=double": {
+   "model": "pioneers:block/polished_deimos_breccia"
+  }
+ }
+}

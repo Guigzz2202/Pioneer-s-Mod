@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "part=single": {
+   "model": "pioneers:block/industry/building/stacked/column_pump_elite/single"
+  },
+  "part=bottom": {
+   "model": "pioneers:block/industry/building/stacked/column_pump_elite/bottom"
+  },
+  "part=middle": {
+   "model": "pioneers:block/industry/building/stacked/column_pump_elite/middle"
+  },
+  "part=top": {
+   "model": "pioneers:block/industry/building/stacked/column_pump_elite/top"
+  }
+ }
+}

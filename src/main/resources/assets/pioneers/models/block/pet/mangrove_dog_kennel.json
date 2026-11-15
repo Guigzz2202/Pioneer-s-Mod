@@ -1,0 +1,9 @@
+{
+ "parent": "pioneers:block/pet/template/dog_kennel",
+ "textures": {
+  "board": "pioneers:block/home/wood/mangrove_board",
+  "dark": "pioneers:block/home/wood/mangrove_dark",
+  "end": "pioneers:block/home/wood/mangrove_end",
+  "particle": "pioneers:block/home/wood/mangrove_board"
+ }
+}

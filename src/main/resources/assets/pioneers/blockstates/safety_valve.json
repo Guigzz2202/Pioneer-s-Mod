@@ -1,0 +1,30 @@
+{
+ "variants": {
+  "facing=up": {
+   "model": "pioneers:block/mechanics/safety_valve"
+  },
+  "facing=down": {
+   "model": "pioneers:block/mechanics/safety_valve",
+   "x": 180
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/safety_valve",
+   "x": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/mechanics/safety_valve",
+   "x": 90,
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/safety_valve",
+   "x": 90,
+   "y": 90
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/safety_valve",
+   "x": 90,
+   "y": 270
+  }
+ }
+}

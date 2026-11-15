@@ -1,0 +1,29 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/gas_capsule",
+  "layer1": "pioneers:item/gas_capsule_shine"
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "pioneers:filled": 1
+   },
+   "model": "pioneers:item/gas_capsule_filled"
+  },
+  {
+   "predicate": {
+    "pioneers:filled": 1,
+    "pioneers:gas_kind": 1
+   },
+   "model": "pioneers:item/gas_capsule_filled_void_singularity"
+  },
+  {
+   "predicate": {
+    "pioneers:filled": 1,
+    "pioneers:gas_kind": 2
+   },
+   "model": "pioneers:item/gas_capsule_filled_stellar_plasma"
+  }
+ ]
+}

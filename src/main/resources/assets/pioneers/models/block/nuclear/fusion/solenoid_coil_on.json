@@ -1,0 +1,155 @@
+{
+ "textures": {
+  "p": "pioneers:block/nuclear/fusion/pancake",
+  "c": "pioneers:block/nuclear/fusion/case_top",
+  "f": "pioneers:block/nuclear/fusion/frost_on",
+  "particle": "pioneers:block/nuclear/fusion/pancake"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    16,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#p"
+    },
+    "south": {
+     "texture": "#p"
+    },
+    "east": {
+     "texture": "#p"
+    },
+    "west": {
+     "texture": "#p"
+    },
+    "up": {
+     "texture": "#p"
+    },
+    "down": {
+     "texture": "#p"
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    15,
+    0
+   ],
+   "to": [
+    16,
+    16.02,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#c",
+     "uv": [
+      0,
+      14.98,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#c",
+     "uv": [
+      0,
+      14.98,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#c",
+     "uv": [
+      0,
+      14.98,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#c",
+     "uv": [
+      0,
+      14.98,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#c"
+    },
+    "down": {
+     "texture": "#c"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    -0.02,
+    3
+   ],
+   "to": [
+    13,
+    16.04,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#f",
+     "uv": [
+      3,
+      0.0,
+      13,
+      16.0
+     ]
+    },
+    "south": {
+     "texture": "#f",
+     "uv": [
+      3,
+      0.0,
+      13,
+      16.0
+     ]
+    },
+    "east": {
+     "texture": "#f",
+     "uv": [
+      3,
+      0.0,
+      13,
+      16.0
+     ]
+    },
+    "west": {
+     "texture": "#f",
+     "uv": [
+      3,
+      0.0,
+      13,
+      16.0
+     ]
+    },
+    "up": {
+     "texture": "#f"
+    },
+    "down": {
+     "texture": "#f"
+    }
+   }
+  }
+ ],
+ "parent": "minecraft:block/block"
+}

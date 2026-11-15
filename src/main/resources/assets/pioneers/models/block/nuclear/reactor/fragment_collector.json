@@ -1,0 +1,279 @@
+{
+ "textures": {
+  "h": "pioneers:block/nuclear/reactor/housing",
+  "g": "pioneers:block/nuclear/reactor/grille",
+  "gold": "pioneers:block/nuclear/reactor/gold_off",
+  "particle": "pioneers:block/nuclear/reactor/housing"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#h"
+    },
+    "south": {
+     "texture": "#h"
+    },
+    "east": {
+     "texture": "#h"
+    },
+    "west": {
+     "texture": "#h"
+    },
+    "up": {
+     "texture": "#h"
+    },
+    "down": {
+     "texture": "#h"
+    }
+   }
+  },
+  {
+   "from": [
+    -0.01,
+    -0.01,
+    -0.01
+   ],
+   "to": [
+    16.01,
+    2,
+    16.01
+   ],
+   "faces": {
+    "north": {
+     "texture": "#g",
+     "uv": [
+      0.0,
+      13.99,
+      16.0,
+      16.0
+     ]
+    },
+    "south": {
+     "texture": "#g",
+     "uv": [
+      0.0,
+      13.99,
+      16.0,
+      16.0
+     ]
+    },
+    "east": {
+     "texture": "#g",
+     "uv": [
+      0.0,
+      13.99,
+      16.0,
+      16.0
+     ]
+    },
+    "west": {
+     "texture": "#g",
+     "uv": [
+      0.0,
+      13.99,
+      16.0,
+      16.0
+     ]
+    },
+    "up": {
+     "texture": "#g",
+     "uv": [
+      0.0,
+      0.0,
+      16.0,
+      16.0
+     ]
+    },
+    "down": {
+     "texture": "#g",
+     "uv": [
+      0.0,
+      0.0,
+      16.0,
+      16.0
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    -0.02,
+    1
+   ],
+   "to": [
+    4,
+    2.5,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#gold",
+     "uv": [
+      12,
+      13.48,
+      14,
+      16.0
+     ]
+    },
+    "south": {
+     "texture": "#gold",
+     "uv": [
+      2,
+      13.48,
+      4,
+      16.0
+     ]
+    },
+    "east": {
+     "texture": "#gold",
+     "uv": [
+      1,
+      13.48,
+      15,
+      16.0
+     ]
+    },
+    "west": {
+     "texture": "#gold",
+     "uv": [
+      1,
+      13.48,
+      15,
+      16.0
+     ]
+    },
+    "up": {
+     "texture": "#gold"
+    },
+    "down": {
+     "texture": "#gold"
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    -0.02,
+    1
+   ],
+   "to": [
+    8,
+    2.5,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#gold",
+     "uv": [
+      8,
+      13.48,
+      10,
+      16.0
+     ]
+    },
+    "south": {
+     "texture": "#gold",
+     "uv": [
+      6,
+      13.48,
+      8,
+      16.0
+     ]
+    },
+    "east": {
+     "texture": "#gold",
+     "uv": [
+      1,
+      13.48,
+      15,
+      16.0
+     ]
+    },
+    "west": {
+     "texture": "#gold",
+     "uv": [
+      1,
+      13.48,
+      15,
+      16.0
+     ]
+    },
+    "up": {
+     "texture": "#gold"
+    },
+    "down": {
+     "texture": "#gold"
+    }
+   }
+  },
+  {
+   "from": [
+    10,
+    -0.02,
+    1
+   ],
+   "to": [
+    12,
+    2.5,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#gold",
+     "uv": [
+      4,
+      13.48,
+      6,
+      16.0
+     ]
+    },
+    "south": {
+     "texture": "#gold",
+     "uv": [
+      10,
+      13.48,
+      12,
+      16.0
+     ]
+    },
+    "east": {
+     "texture": "#gold",
+     "uv": [
+      1,
+      13.48,
+      15,
+      16.0
+     ]
+    },
+    "west": {
+     "texture": "#gold",
+     "uv": [
+      1,
+      13.48,
+      15,
+      16.0
+     ]
+    },
+    "up": {
+     "texture": "#gold"
+    },
+    "down": {
+     "texture": "#gold"
+    }
+   }
+  }
+ ],
+ "parent": "minecraft:block/block"
+}

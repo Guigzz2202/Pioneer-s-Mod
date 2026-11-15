@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/up_00",
+ "textures": {
+  "t": "pioneers:block/industry/design/casing/ultimate_digital_h"
+ }
+}

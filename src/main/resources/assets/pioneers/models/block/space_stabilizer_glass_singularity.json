@@ -1,0 +1,6 @@
+{
+ "loader": "pioneers:connected",
+ "parent": "minecraft:block/block",
+ "tiles": "pioneers:block/space_stabilizer_glass_singularity",
+ "render_type": "minecraft:translucent"
+}

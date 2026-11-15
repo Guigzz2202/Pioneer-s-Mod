@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab",
+ "textures": {
+  "bottom": "pioneers:block/europa_ice_bricks",
+  "top": "pioneers:block/europa_ice_bricks",
+  "side": "pioneers:block/europa_ice_bricks"
+ }
+}

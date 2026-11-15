@@ -1,0 +1,829 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "west": "false",
+    "north": "false",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "false",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_frame_mk1"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "false",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_frame_mk2"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "false",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_frame_mk3"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "false",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_frame_mk4"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "false",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "false",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_h_mk1"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "false",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_h_mk2"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "false",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_h_mk3"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "false",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_h_mk4"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "true",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "true",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_v_mk1"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "true",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_v_mk2"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "true",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_v_mk3"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "true",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_v_mk4"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "true",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "true",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_inner_mk1"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "true",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_inner_mk2"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "true",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_inner_mk3"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "north": "true",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_00_inner_mk4"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "false",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "false",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_frame_mk1"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "false",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_frame_mk2"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "false",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_frame_mk3"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "false",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_frame_mk4"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "false",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "false",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_h_mk1"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "false",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_h_mk2"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "false",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_h_mk3"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "false",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_h_mk4"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "true",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "true",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_v_mk1"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "true",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_v_mk2"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "true",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_v_mk3"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "true",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_v_mk4"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "true",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "true",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_inner_mk1"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "true",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_inner_mk2"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "true",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_inner_mk3"
+   }
+  },
+  {
+   "when": {
+    "west": "true",
+    "south": "true",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_01_inner_mk4"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "false",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "false",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_frame_mk1"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "false",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_frame_mk2"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "false",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_frame_mk3"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "false",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_frame_mk4"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "false",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "false",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_h_mk1"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "false",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_h_mk2"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "false",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_h_mk3"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "false",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_h_mk4"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "true",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "true",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_v_mk1"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "true",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_v_mk2"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "true",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_v_mk3"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "true",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_v_mk4"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "true",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "true",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_inner_mk1"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "true",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_inner_mk2"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "true",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_inner_mk3"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "north": "true",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_10_inner_mk4"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "false",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "false",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_frame_mk1"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "false",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_frame_mk2"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "false",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_frame_mk3"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "false",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_frame_mk4"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "false",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "false",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_h_mk1"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "false",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_h_mk2"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "false",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_h_mk3"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "false",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_h_mk4"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "true",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "true",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_v_mk1"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "true",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_v_mk2"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "true",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_v_mk3"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "true",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_v_mk4"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "true",
+    "tier": "0"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "true",
+    "tier": "1"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_inner_mk1"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "true",
+    "tier": "2"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_inner_mk2"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "true",
+    "tier": "3"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_inner_mk3"
+   }
+  },
+  {
+   "when": {
+    "east": "true",
+    "south": "true",
+    "tier": "4"
+   },
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/up_11_inner_mk4"
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/down_plain"
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/north_plain"
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/south_plain"
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/east_plain"
+   }
+  },
+  {
+   "apply": {
+    "model": "pioneers:block/connected/launch_pad/west_plain"
+   }
+  }
+ ]
+}

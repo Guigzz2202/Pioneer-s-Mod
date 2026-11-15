@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/proxima_glacier_ice_bricks",
+  "top": "pioneers:block/proxima_glacier_ice_bricks",
+  "side": "pioneers:block/proxima_glacier_ice_bricks"
+ }
+}

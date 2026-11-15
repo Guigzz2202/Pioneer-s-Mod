@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/mechanics/mechanical_honey_extractor"
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/mechanical_honey_extractor",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/mechanical_honey_extractor",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/mechanical_honey_extractor",
+   "y": 270
+  }
+ }
+}

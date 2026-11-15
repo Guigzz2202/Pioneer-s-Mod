@@ -1,0 +1,254 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "facing": "south",
+    "wall": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "wall": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "wall": "true",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_left_open"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "wall": "true",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_left_join"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "wall": "true",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_right_open"
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "wall": "true",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_right_join"
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "wall": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "wall": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "wall": "true",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_left_open",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "wall": "true",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_left_join",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "wall": "true",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_right_open",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "wall": "true",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_right_join",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "wall": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "wall": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "wall": "true",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_left_open",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "wall": "true",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_left_join",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "wall": "true",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_right_open",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "wall": "true",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_right_join",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "wall": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "wall": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "wall": "true",
+    "left": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_left_open",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "wall": "true",
+    "left": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_left_join",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "wall": "true",
+    "right": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_right_open",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "wall": "true",
+    "right": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/crimson/tool_rack_wall_right_join",
+    "y": 270
+   }
+  }
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "bronze": "pioneers:block/mechanics/bronze",
+  "bronze_dark": "pioneers:block/mechanics/bronze_dark",
+  "bronze_plate": "pioneers:block/mechanics/bronze_plate",
+  "brass": "pioneers:block/mechanics/brass",
+  "glass_off": "pioneers:block/lighting/glass_off",
+  "particle": "pioneers:block/mechanics/bronze"
+ },
+ "elements": [
+  {
+   "from": [
+    6,
+    3,
+    15
+   ],
+   "to": [
+    10,
+    13,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze_plate"
+    },
+    "south": {
+     "texture": "#bronze_plate"
+    },
+    "east": {
+     "texture": "#bronze_plate"
+    },
+    "west": {
+     "texture": "#bronze_plate"
+    },
+    "up": {
+     "texture": "#bronze_plate"
+    },
+    "down": {
+     "texture": "#bronze_plate"
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    3.5,
+    14.5
+   ],
+   "to": [
+    9.5,
+    4.5,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze_dark"
+    },
+    "east": {
+     "texture": "#bronze_dark"
+    },
+    "west": {
+     "texture": "#bronze_dark"
+    },
+    "up": {
+     "texture": "#bronze_dark"
+    },
+    "down": {
+     "texture": "#bronze_dark"
+    },
+    "south": {
+     "texture": "#bronze_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    11.5,
+    14.5
+   ],
+   "to": [
+    9.5,
+    12.5,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze_dark"
+    },
+    "east": {
+     "texture": "#bronze_dark"
+    },
+    "west": {
+     "texture": "#bronze_dark"
+    },
+    "up": {
+     "texture": "#bronze_dark"
+    },
+    "down": {
+     "texture": "#bronze_dark"
+    },
+    "south": {
+     "texture": "#bronze_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    5,
+    11
+   ],
+   "to": [
+    8.5,
+    6,
+    14.5
+   ],
+   "faces": {
+    "east": {
+     "texture": "#bronze_dark"
+    },
+    "west": {
+     "texture": "#bronze_dark"
+    },
+    "up": {
+     "texture": "#bronze_dark"
+    },
+    "down": {
+     "texture": "#bronze_dark"
+    },
+    "north": {
+     "texture": "#bronze_dark"
+    },
+    "south": {
+     "texture": "#bronze_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    6.75,
+    4.25,
+    9.25
+   ],
+   "to": [
+    9.25,
+    5,
+    11.75
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze_dark"
+    },
+    "south": {
+     "texture": "#bronze_dark"
+    },
+    "east": {
+     "texture": "#bronze_dark"
+    },
+    "west": {
+     "texture": "#bronze_dark"
+    },
+    "up": {
+     "texture": "#bronze_dark"
+    },
+    "down": {
+     "texture": "#bronze_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    4.98,
+    8.5
+   ],
+   "to": [
+    10,
+    7,
+    12.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    7,
+    9
+   ],
+   "to": [
+    9.5,
+    12,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#glass_off"
+    },
+    "south": {
+     "texture": "#glass_off"
+    },
+    "east": {
+     "texture": "#glass_off"
+    },
+    "west": {
+     "texture": "#glass_off"
+    },
+    "up": {
+     "texture": "#glass_off"
+    },
+    "down": {
+     "texture": "#glass_off"
+    }
+   }
+  },
+  {
+   "from": [
+    6.25,
+    12,
+    8.75
+   ],
+   "to": [
+    9.75,
+    12.75,
+    12.25
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    }
+   }
+  },
+  {
+   "from": [
+    5.75,
+    6.5,
+    8.25
+   ],
+   "to": [
+    6.0,
+    7.0,
+    12.75
+   ],
+   "faces": {
+    "west": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    },
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    }
+   }
+  }
+ ]
+}

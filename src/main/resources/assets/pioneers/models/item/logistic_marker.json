@@ -1,0 +1,22 @@
+{
+ "parent": "pioneers:block/logistic_marker_neutral",
+ "display": {
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    -0.0,
+    4.596,
+    0
+   ],
+   "scale": [
+    1.0635,
+    1.0635,
+    1.0635
+   ]
+  }
+ }
+}

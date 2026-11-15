@@ -1,0 +1,34 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "t": "pioneers:block/launch_pad/ct/plate_v_mk1",
+  "particle": "pioneers:block/launch_pad/ct/plate_v_mk1"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    16,
+    8
+   ],
+   "to": [
+    8,
+    16,
+    16
+   ],
+   "shade": true,
+   "faces": {
+    "up": {
+     "uv": [
+      0,
+      8,
+      8,
+      16
+     ],
+     "texture": "#t",
+     "cullface": "up"
+    }
+   }
+  }
+ ]
+}

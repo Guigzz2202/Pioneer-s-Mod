@@ -1,0 +1,14 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/clay_bucket"
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "pioneers:filled": 1
+   },
+   "model": "pioneers:item/clay_bucket_filled"
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "panel": "pioneers:block/ruins/panel_mk2",
+  "face": "pioneers:block/ruins/console_mk2",
+  "particle": "pioneers:block/ruins/panel_mk2"
+ },
+ "elements": [
+  {
+   "from": [
+    3,
+    0,
+    3
+   ],
+   "to": [
+    13,
+    9,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#panel"
+    },
+    "south": {
+     "texture": "#panel"
+    },
+    "east": {
+     "texture": "#panel"
+    },
+    "west": {
+     "texture": "#panel"
+    },
+    "up": {
+     "texture": "#panel"
+    },
+    "down": {
+     "texture": "#panel"
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    9,
+    2
+   ],
+   "to": [
+    14,
+    13,
+    14
+   ],
+   "rotation": {
+    "origin": [
+     8,
+     11,
+     8
+    ],
+    "axis": "x",
+    "angle": -22.5
+   },
+   "faces": {
+    "up": {
+     "texture": "#face",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "north": {
+     "texture": "#panel"
+    },
+    "south": {
+     "texture": "#panel"
+    },
+    "east": {
+     "texture": "#panel"
+    },
+    "west": {
+     "texture": "#panel"
+    },
+    "down": {
+     "texture": "#panel"
+    }
+   }
+  }
+ ]
+}

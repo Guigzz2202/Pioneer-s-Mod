@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "mode=input": {
+      "model": "pioneers:block/greenhouse_port_input"
+    },
+    "mode=output": {
+      "model": "pioneers:block/greenhouse_port_output"
+    },
+    "mode=energy": {
+      "model": "pioneers:block/greenhouse_port_energy"
+    }
+  }
+}

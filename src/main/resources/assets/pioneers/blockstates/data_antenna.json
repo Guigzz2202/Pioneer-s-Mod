@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "active=false": {
+   "model": "pioneers:block/machine/data_antenna"
+  },
+  "active=true": {
+   "model": "pioneers:block/machine/data_antenna_on"
+  }
+ }
+}

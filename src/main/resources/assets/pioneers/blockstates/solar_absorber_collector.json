@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "enabled=false": {
+   "model": "pioneers:block/solar_absorber_collector"
+  },
+  "enabled=true": {
+   "model": "pioneers:block/solar_absorber_collector"
+  }
+ }
+}

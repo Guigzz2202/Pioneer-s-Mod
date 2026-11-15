@@ -1,0 +1,149 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "ss": "pioneers:block/mechanics/smooth_stone",
+  "i": "pioneers:block/mechanics/iron",
+  "br": "pioneers:block/mechanics/brass",
+  "soot": "pioneers:block/mechanics/chimney_soot",
+  "ib": "pioneers:block/mechanics/iron_bright",
+  "particle": "pioneers:block/mechanics/kiln_brick_warm",
+  "a": "pioneers:block/mechanics/kiln_brick_warm"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    15.0,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#a"
+    },
+    "down": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "down"
+    }
+   }
+  },
+  {
+   "from": [
+    -0.4,
+    15.0,
+    -0.4
+   ],
+   "to": [
+    16.4,
+    16,
+    16.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "south": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#ss",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  }
+ ]
+}

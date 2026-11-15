@@ -1,0 +1,31 @@
+{
+ "variants": {
+  "charge=0": {
+   "model": "pioneers:block/basic_energy_buffer"
+  },
+  "charge=1": {
+   "model": "pioneers:block/basic_energy_buffer_c1"
+  },
+  "charge=2": {
+   "model": "pioneers:block/basic_energy_buffer_c2"
+  },
+  "charge=3": {
+   "model": "pioneers:block/basic_energy_buffer_c3"
+  },
+  "charge=4": {
+   "model": "pioneers:block/basic_energy_buffer_c4"
+  },
+  "charge=5": {
+   "model": "pioneers:block/basic_energy_buffer_c5"
+  },
+  "charge=6": {
+   "model": "pioneers:block/basic_energy_buffer_c6"
+  },
+  "charge=7": {
+   "model": "pioneers:block/basic_energy_buffer_c7"
+  },
+  "charge=8": {
+   "model": "pioneers:block/basic_energy_buffer_c8"
+  }
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/kitchen/board_top",
+  "board_top": "pioneers:block/farm/kitchen/board_top",
+  "board_side": "pioneers:block/farm/kitchen/board_side",
+  "dark": "pioneers:block/farm/kitchen/dark",
+  "wood_dark": "pioneers:block/farm/kitchen/wood_dark"
+ },
+ "elements": [
+  {
+   "from": [
+    2.0,
+    0,
+    2.6
+   ],
+   "to": [
+    14.0,
+    1.2,
+    13.4
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.0,
+      2.6,
+      14.0,
+      13.4
+     ],
+     "texture": "#board_top"
+    },
+    "down": {
+     "uv": [
+      2.0,
+      2.6,
+      14.0,
+      13.4
+     ],
+     "texture": "#board_side"
+    },
+    "north": {
+     "uv": [
+      2.0,
+      14.8,
+      14.0,
+      16
+     ],
+     "texture": "#board_side"
+    },
+    "south": {
+     "uv": [
+      2.0,
+      14.8,
+      14.0,
+      16
+     ],
+     "texture": "#board_side"
+    },
+    "east": {
+     "uv": [
+      2.6,
+      14.8,
+      13.4,
+      16
+     ],
+     "texture": "#board_side"
+    },
+    "west": {
+     "uv": [
+      2.6,
+      14.8,
+      13.4,
+      16
+     ],
+     "texture": "#board_side"
+    }
+   }
+  },
+  {
+   "from": [
+    14.0,
+    0,
+    6.6
+   ],
+   "to": [
+    15.7,
+    1.2,
+    9.4
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      14.0,
+      6.6,
+      15.7,
+      9.4
+     ],
+     "texture": "#board_top"
+    },
+    "down": {
+     "uv": [
+      14.0,
+      6.6,
+      15.7,
+      9.4
+     ],
+     "texture": "#board_side"
+    },
+    "north": {
+     "uv": [
+      0.3,
+      14.8,
+      2.0,
+      16
+     ],
+     "texture": "#board_side"
+    },
+    "south": {
+     "uv": [
+      14.0,
+      14.8,
+      15.7,
+      16
+     ],
+     "texture": "#board_side"
+    },
+    "east": {
+     "uv": [
+      6.6,
+      14.8,
+      9.4,
+      16
+     ],
+     "texture": "#board_side"
+    },
+    "west": {
+     "uv": [
+      6.6,
+      14.8,
+      9.4,
+      16
+     ],
+     "texture": "#board_side"
+    }
+   }
+  },
+  {
+   "from": [
+    14.6,
+    1.15,
+    7.6
+   ],
+   "to": [
+    15.2,
+    1.22,
+    8.4
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      14.6,
+      7.6,
+      15.2,
+      8.4
+     ],
+     "texture": "#dark"
+    }
+   }
+  },
+  {
+   "from": [
+    2.6,
+    1.15,
+    3.1
+   ],
+   "to": [
+    13.4,
+    1.22,
+    3.5
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.6,
+      3.1,
+      13.4,
+      3.5
+     ],
+     "texture": "#wood_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    2.6,
+    1.15,
+    12.5
+   ],
+   "to": [
+    13.4,
+    1.22,
+    12.9
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      2.6,
+      12.5,
+      13.4,
+      12.9
+     ],
+     "texture": "#wood_dark"
+    }
+   }
+  }
+ ]
+}

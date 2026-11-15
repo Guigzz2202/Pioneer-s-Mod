@@ -1,0 +1,304 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/mechanics/fire_brick",
+  "a": "pioneers:block/mechanics/fire_brick",
+  "cd": "pioneers:block/mechanics/coke_door",
+  "st": "pioneers:block/mechanics/steel",
+  "sp": "pioneers:block/mechanics/steel_plate",
+  "ib": "pioneers:block/mechanics/iron_bright",
+  "bd": "pioneers:block/mechanics/bronze_dark"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "up"
+    },
+    "down": {
+     "texture": "#a",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "cullface": "down"
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    12.2,
+    -0.5
+   ],
+   "to": [
+    16,
+    13.4,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "#st",
+     "cullface": "north"
+    },
+    "east": {
+     "texture": "#st",
+     "uv": [
+      0.0,
+      2.5999999999999996,
+      0.5,
+      3.8000000000000007
+     ]
+    },
+    "west": {
+     "texture": "#st",
+     "uv": [
+      15.5,
+      2.5999999999999996,
+      16.0,
+      3.8000000000000007
+     ]
+    },
+    "up": {
+     "texture": "#st",
+     "uv": [
+      0,
+      15.5,
+      16,
+      16.0
+     ]
+    },
+    "down": {
+     "texture": "#st",
+     "uv": [
+      0,
+      0.0,
+      16,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    12.2,
+    16
+   ],
+   "to": [
+    16,
+    13.4,
+    16.5
+   ],
+   "faces": {
+    "south": {
+     "texture": "#st",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#st",
+     "uv": [
+      15.5,
+      2.5999999999999996,
+      16.0,
+      3.8000000000000007
+     ]
+    },
+    "west": {
+     "texture": "#st",
+     "uv": [
+      0.0,
+      2.5999999999999996,
+      0.5,
+      3.8000000000000007
+     ]
+    },
+    "up": {
+     "texture": "#st",
+     "uv": [
+      0,
+      0.0,
+      16,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "#st",
+     "uv": [
+      0,
+      15.5,
+      16,
+      16.0
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    16,
+    12.2,
+    0
+   ],
+   "to": [
+    16.5,
+    13.4,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#st",
+     "uv": [
+      15.5,
+      2.5999999999999996,
+      16.0,
+      3.8000000000000007
+     ]
+    },
+    "south": {
+     "texture": "#st",
+     "uv": [
+      0.0,
+      2.5999999999999996,
+      0.5,
+      3.8000000000000007
+     ]
+    },
+    "east": {
+     "texture": "#st",
+     "cullface": "east"
+    },
+    "up": {
+     "texture": "#st",
+     "uv": [
+      0.0,
+      0,
+      0.5,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#st",
+     "uv": [
+      0.0,
+      0,
+      0.5,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    -0.5,
+    12.2,
+    0
+   ],
+   "to": [
+    0,
+    13.4,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#st",
+     "uv": [
+      0.0,
+      2.5999999999999996,
+      0.5,
+      3.8000000000000007
+     ]
+    },
+    "south": {
+     "texture": "#st",
+     "uv": [
+      15.5,
+      2.5999999999999996,
+      16.0,
+      3.8000000000000007
+     ]
+    },
+    "west": {
+     "texture": "#st",
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#st",
+     "uv": [
+      15.5,
+      0,
+      16.0,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#st",
+     "uv": [
+      15.5,
+      0,
+      16.0,
+      16
+     ]
+    }
+   }
+  }
+ ]
+}

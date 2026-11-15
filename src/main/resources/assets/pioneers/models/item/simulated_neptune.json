@@ -1,0 +1,377 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:item/planet/neptune",
+  "surface": "pioneers:item/planet/neptune"
+ },
+ "elements": [
+  {
+   "from": [
+    4.5,
+    3,
+    4.5
+   ],
+   "to": [
+    11.5,
+    13,
+    11.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      4.5,
+      3,
+      11.5,
+      13
+     ],
+     "texture": "#surface"
+    },
+    "south": {
+     "uv": [
+      4.5,
+      3,
+      11.5,
+      13
+     ],
+     "texture": "#surface"
+    },
+    "east": {
+     "uv": [
+      4.5,
+      3,
+      11.5,
+      13
+     ],
+     "texture": "#surface"
+    },
+    "west": {
+     "uv": [
+      4.5,
+      3,
+      11.5,
+      13
+     ],
+     "texture": "#surface"
+    },
+    "up": {
+     "uv": [
+      4.5,
+      4.5,
+      11.5,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "down": {
+     "uv": [
+      4.5,
+      4.5,
+      11.5,
+      11.5
+     ],
+     "texture": "#surface"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    4.5,
+    4.5
+   ],
+   "to": [
+    13,
+    11.5,
+    11.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      3,
+      4.5,
+      13,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "south": {
+     "uv": [
+      3,
+      4.5,
+      13,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "east": {
+     "uv": [
+      4.5,
+      4.5,
+      11.5,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "west": {
+     "uv": [
+      4.5,
+      4.5,
+      11.5,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "up": {
+     "uv": [
+      3,
+      4.5,
+      13,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "down": {
+     "uv": [
+      3,
+      4.5,
+      13,
+      11.5
+     ],
+     "texture": "#surface"
+    }
+   }
+  },
+  {
+   "from": [
+    4.5,
+    4.5,
+    3
+   ],
+   "to": [
+    11.5,
+    11.5,
+    13
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      4.5,
+      4.5,
+      11.5,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "south": {
+     "uv": [
+      4.5,
+      4.5,
+      11.5,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "east": {
+     "uv": [
+      3,
+      4.5,
+      13,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "west": {
+     "uv": [
+      3,
+      4.5,
+      13,
+      11.5
+     ],
+     "texture": "#surface"
+    },
+    "up": {
+     "uv": [
+      4.5,
+      3,
+      11.5,
+      13
+     ],
+     "texture": "#surface"
+    },
+    "down": {
+     "uv": [
+      4.5,
+      3,
+      11.5,
+      13
+     ],
+     "texture": "#surface"
+    }
+   }
+  },
+  {
+   "from": [
+    3.75,
+    3.75,
+    3.75
+   ],
+   "to": [
+    12.25,
+    12.25,
+    12.25
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      3.75,
+      3.75,
+      12.25,
+      12.25
+     ],
+     "texture": "#surface"
+    },
+    "south": {
+     "uv": [
+      3.75,
+      3.75,
+      12.25,
+      12.25
+     ],
+     "texture": "#surface"
+    },
+    "east": {
+     "uv": [
+      3.75,
+      3.75,
+      12.25,
+      12.25
+     ],
+     "texture": "#surface"
+    },
+    "west": {
+     "uv": [
+      3.75,
+      3.75,
+      12.25,
+      12.25
+     ],
+     "texture": "#surface"
+    },
+    "up": {
+     "uv": [
+      3.75,
+      3.75,
+      12.25,
+      12.25
+     ],
+     "texture": "#surface"
+    },
+    "down": {
+     "uv": [
+      3.75,
+      3.75,
+      12.25,
+      12.25
+     ],
+     "texture": "#surface"
+    }
+   }
+  }
+ ],
+ "display": {
+  "gui": {
+   "rotation": [
+    25,
+    30,
+    0
+   ],
+   "scale": [
+    1.1,
+    1.1,
+    1.1
+   ]
+  },
+  "ground": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0,
+    3,
+    0
+   ],
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ]
+  },
+  "fixed": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ]
+  },
+  "head": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ]
+  },
+  "thirdperson_righthand": {
+   "rotation": [
+    75,
+    45,
+    0
+   ],
+   "translation": [
+    0,
+    2.5,
+    0
+   ],
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ]
+  },
+  "firstperson_righthand": {
+   "rotation": [
+    0,
+    45,
+    0
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    0.6
+   ]
+  },
+  "firstperson_lefthand": {
+   "rotation": [
+    0,
+    225,
+    0
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    0.6
+   ]
+  }
+ }
+}

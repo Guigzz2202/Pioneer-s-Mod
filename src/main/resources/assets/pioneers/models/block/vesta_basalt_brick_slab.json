@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab",
+ "textures": {
+  "bottom": "pioneers:block/vesta_basalt_bricks",
+  "top": "pioneers:block/vesta_basalt_bricks",
+  "side": "pioneers:block/vesta_basalt_bricks"
+ }
+}

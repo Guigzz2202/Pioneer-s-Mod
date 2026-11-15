@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "pioneers:block/polished_lunar_basalt"
+  },
+  "axis=z": {
+   "model": "pioneers:block/polished_lunar_basalt_horizontal",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "pioneers:block/polished_lunar_basalt_horizontal",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

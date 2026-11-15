@@ -1,0 +1,144 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "i": "pioneers:block/mechanics/iron",
+  "fb": "pioneers:block/mechanics/fire_brick",
+  "ash": "pioneers:block/mechanics/ash",
+  "particle": "pioneers:block/mechanics/fire_brick"
+ },
+ "elements": [
+  {
+   "from": [
+    4.5,
+    0,
+    0
+   ],
+   "to": [
+    11.5,
+    1.5,
+    4.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#fb"
+    },
+    "east": {
+     "texture": "#fb"
+    },
+    "west": {
+     "texture": "#fb"
+    },
+    "up": {
+     "texture": "#ash"
+    },
+    "down": {
+     "texture": "#fb"
+    }
+   }
+  },
+  {
+   "from": [
+    4.5,
+    1.5,
+    0
+   ],
+   "to": [
+    6,
+    5,
+    4.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#fb"
+    },
+    "east": {
+     "texture": "#fb"
+    },
+    "west": {
+     "texture": "#fb"
+    },
+    "up": {
+     "texture": "#fb"
+    }
+   }
+  },
+  {
+   "from": [
+    10,
+    1.5,
+    0
+   ],
+   "to": [
+    11.5,
+    5,
+    4.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#fb"
+    },
+    "east": {
+     "texture": "#fb"
+    },
+    "west": {
+     "texture": "#fb"
+    },
+    "up": {
+     "texture": "#fb"
+    }
+   }
+  },
+  {
+   "from": [
+    4.2,
+    0,
+    1.6
+   ],
+   "to": [
+    6.0,
+    5.3,
+    2.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#i"
+    },
+    "south": {
+     "texture": "#i"
+    },
+    "west": {
+     "texture": "#i"
+    },
+    "up": {
+     "texture": "#i"
+    }
+   }
+  },
+  {
+   "from": [
+    10.0,
+    0,
+    1.6
+   ],
+   "to": [
+    11.8,
+    5.3,
+    2.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#i"
+    },
+    "south": {
+     "texture": "#i"
+    },
+    "east": {
+     "texture": "#i"
+    },
+    "up": {
+     "texture": "#i"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "loader": "forge:separate_transforms",
+ "gui_light": "front",
+ "base": {
+  "parent": "pioneers:block/rail/placeholder",
+  "display": {
+   "gui": {
+    "rotation": [
+     30,
+     225,
+     0
+    ],
+    "translation": [
+     -0.0,
+     -2.362,
+     0.0
+    ],
+    "scale": [
+     0.5486,
+     0.5486,
+     0.5486
+    ]
+   },
+   "ground": {
+    "rotation": [
+     0,
+     0,
+     0
+    ],
+    "translation": [
+     0,
+     3,
+     0
+    ],
+    "scale": [
+     0.2194,
+     0.2194,
+     0.2194
+    ]
+   },
+   "fixed": {
+    "rotation": [
+     0,
+     0,
+     0
+    ],
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "scale": [
+     0.4389,
+     0.4389,
+     0.4389
+    ]
+   },
+   "thirdperson_righthand": {
+    "rotation": [
+     75,
+     45,
+     0
+    ],
+    "translation": [
+     0,
+     2.5,
+     0
+    ],
+    "scale": [
+     0.3291,
+     0.3291,
+     0.3291
+    ]
+   },
+   "firstperson_righthand": {
+    "rotation": [
+     0,
+     45,
+     0
+    ],
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "scale": [
+     0.3511,
+     0.3511,
+     0.3511
+    ]
+   },
+   "firstperson_lefthand": {
+    "rotation": [
+     0,
+     225,
+     0
+    ],
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "scale": [
+     0.3511,
+     0.3511,
+     0.3511
+    ]
+   }
+  }
+ },
+ "perspectives": {
+  "gui": {
+   "parent": "minecraft:item/generated",
+   "textures": {
+    "layer0": "pioneers:item/rail/posts/water_crane"
+   }
+  }
+ }
+}

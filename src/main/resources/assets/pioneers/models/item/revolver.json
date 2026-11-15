@@ -1,0 +1,23 @@
+{
+ "loader": "forge:separate_transforms",
+ "gui_light": "front",
+ "base": {
+  "parent": "pioneers:item/hunt/geo/revolver"
+ },
+ "perspectives": {
+  "gui": {
+   "parent": "minecraft:item/generated",
+   "textures": {
+    "layer0": "pioneers:item/hunt/revolver"
+   }
+  }
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "pioneers:reload": 1
+   },
+   "model": "pioneers:item/revolver_open"
+  }
+ ]
+}

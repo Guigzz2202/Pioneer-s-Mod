@@ -1,0 +1,73 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "t": "pioneers:block/industry/design/casing/ultimate_thermal_inner",
+  "particle": "pioneers:block/industry/design/casing/ultimate_thermal_inner"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "south": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#t",
+     "cullface": "south"
+    },
+    "west": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#t",
+     "cullface": "west"
+    },
+    "east": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#t",
+     "cullface": "east"
+    },
+    "down": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#t",
+     "cullface": "down"
+    },
+    "up": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#t",
+     "cullface": "up"
+    }
+   }
+  }
+ ]
+}

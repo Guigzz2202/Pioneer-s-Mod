@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/west_10",
+ "textures": {
+  "t": "pioneers:block/industry/design/casing/advanced_nuclear_inner"
+ }
+}

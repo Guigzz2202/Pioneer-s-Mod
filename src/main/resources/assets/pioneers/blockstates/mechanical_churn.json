@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/mechanics/mechanical_churn"
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/mechanical_churn",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/mechanical_churn",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/mechanical_churn",
+   "y": 270
+  }
+ }
+}

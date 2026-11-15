@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/cube_bottom_top",
+ "textures": {
+  "side": "pioneers:block/ruins/robotic_mk1",
+  "top": "pioneers:block/ruins/robotic_mk1_top",
+  "bottom": "pioneers:block/ruins/casing_mk1"
+ }
+}

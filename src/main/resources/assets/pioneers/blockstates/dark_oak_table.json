@@ -1,0 +1,149 @@
+{
+ "multipart": [
+  {
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_top"
+   }
+  },
+  {
+   "when": {
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_north"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_north_ccw"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_north_cw"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_leg_north"
+   }
+  },
+  {
+   "when": {
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_east"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_east_ccw"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_east_cw"
+   }
+  },
+  {
+   "when": {
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_leg_east"
+   }
+  },
+  {
+   "when": {
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_south"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_south_ccw"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_south_cw"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_leg_south"
+   }
+  },
+  {
+   "when": {
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_west"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_west_ccw"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_apron_west_cw"
+   }
+  },
+  {
+   "when": {
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/dark_oak/table_leg_west"
+   }
+  }
+ ]
+}

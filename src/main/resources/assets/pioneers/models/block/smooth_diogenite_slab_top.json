@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/smooth_diogenite",
+  "top": "pioneers:block/smooth_diogenite",
+  "side": "pioneers:block/smooth_diogenite_slab_side"
+ }
+}

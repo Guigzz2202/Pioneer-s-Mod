@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab",
+ "textures": {
+  "bottom": "pioneers:block/smooth_mars_layered_rock",
+  "top": "pioneers:block/smooth_mars_layered_rock",
+  "side": "pioneers:block/smooth_mars_layered_rock_slab_side"
+ }
+}

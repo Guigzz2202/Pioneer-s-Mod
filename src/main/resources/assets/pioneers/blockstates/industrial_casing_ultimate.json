@@ -1,0 +1,7684 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "neutral",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_neutral/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "thermal",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_thermal/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "electric",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_electric/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "fluid",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_fluid/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "mechanical",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_mechanical/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "living",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_living/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "nuclear",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_nuclear/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "style": "digital",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/design/ct/ultimate_digital/up_11_inner"
+   }
+  }
+ ]
+}

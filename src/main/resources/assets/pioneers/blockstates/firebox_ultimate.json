@@ -1,0 +1,1924 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "false",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate/up_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/north_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/south_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/west_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "north": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "false",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "true",
+    "down": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "false",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "true",
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "false",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "true",
+    "up": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "false",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "south": "true",
+    "up": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/east_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/down_11_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_00_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_00_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_00_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_00_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_01_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_01_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_01_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "west": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_01_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_10_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_10_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_10_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_10_inner"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_11_frame"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_11_h"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_11_v"
+   }
+  },
+  {
+   "when": {
+    "lit": "true",
+    "east": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/building/ct/firebox_ultimate_lit/up_11_inner"
+   }
+  }
+ ]
+}

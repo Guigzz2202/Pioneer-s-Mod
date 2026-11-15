@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/energy/wind_rotor"
+  },
+  "facing=east": {
+   "model": "pioneers:block/energy/wind_rotor"
+  },
+  "facing=south": {
+   "model": "pioneers:block/energy/wind_rotor"
+  },
+  "facing=west": {
+   "model": "pioneers:block/energy/wind_rotor"
+  }
+ }
+}

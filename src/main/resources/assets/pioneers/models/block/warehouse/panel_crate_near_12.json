@@ -1,0 +1,50 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "planks_top_a": "pioneers:block/warehouse/planks_top_a",
+  "band": "pioneers:block/warehouse/band",
+  "particle": "pioneers:block/warehouse/planks_a"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    14.5,
+    0
+   ],
+   "to": [
+    16,
+    15.5,
+    16
+   ],
+   "faces": {
+    "up": {
+     "texture": "#planks_top_a"
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    15.5,
+    6.5
+   ],
+   "to": [
+    16,
+    16,
+    9.5
+   ],
+   "faces": {
+    "up": {
+     "texture": "#band"
+    },
+    "north": {
+     "texture": "#band"
+    },
+    "south": {
+     "texture": "#band"
+    }
+   }
+  }
+ ]
+}

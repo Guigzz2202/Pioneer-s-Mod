@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/farm/food/pickles",
+  "layer1": "pioneers:item/farm/food/pickles_content"
+ }
+}

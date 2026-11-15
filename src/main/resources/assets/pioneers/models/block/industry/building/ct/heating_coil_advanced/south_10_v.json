@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/south_10",
+ "textures": {
+  "t": "pioneers:block/industry/building/coil_advanced_side_v"
+ }
+}

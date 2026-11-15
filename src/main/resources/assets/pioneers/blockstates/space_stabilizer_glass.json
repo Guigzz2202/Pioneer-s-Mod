@@ -1,0 +1,22 @@
+{
+ "variants": {
+  "enabled=false,regime=none": {
+   "model": "pioneers:block/space_stabilizer_glass"
+  },
+  "enabled=true,regime=none": {
+   "model": "pioneers:block/space_stabilizer_glass"
+  },
+  "enabled=false,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_glass_singularity"
+  },
+  "enabled=true,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_glass_singularity"
+  },
+  "enabled=false,regime=star": {
+   "model": "pioneers:block/space_stabilizer_glass_star"
+  },
+  "enabled=true,regime=star": {
+   "model": "pioneers:block/space_stabilizer_glass_star"
+  }
+ }
+}

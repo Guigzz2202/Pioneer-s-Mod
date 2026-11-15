@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/cube_bottom_top",
+ "textures": {
+  "top": "pioneers:block/launch_pad/port_data_output",
+  "bottom": "pioneers:block/launch_pad/plate",
+  "side": "pioneers:block/launch_pad/port_side_data_output"
+ }
+}

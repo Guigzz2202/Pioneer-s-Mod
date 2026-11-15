@@ -1,0 +1,536 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "facing": "north",
+    "upper": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_body"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_doors"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "false",
+    "left": "false",
+    "shape": "straight|inner_left|inner_right|outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_end_left"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "false",
+    "right": "false",
+    "shape": "straight|inner_left|inner_right|outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_end_right"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "false",
+    "left": "false",
+    "shape": "outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_side_left"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "false",
+    "right": "false",
+    "shape": "outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_side_right"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_body"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_doors"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "true",
+    "left": "false",
+    "shape": "straight|inner_left|inner_right|outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_end_left"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "true",
+    "right": "false",
+    "shape": "straight|inner_left|inner_right|outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_end_right"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "true",
+    "left": "false",
+    "shape": "outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_side_left"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "upper": "true",
+    "right": "false",
+    "shape": "outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_side_right"
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_body",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_doors",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "false",
+    "left": "false",
+    "shape": "straight|inner_left|inner_right|outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_end_left",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "false",
+    "right": "false",
+    "shape": "straight|inner_left|inner_right|outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_end_right",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "false",
+    "left": "false",
+    "shape": "outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_side_left",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "false",
+    "right": "false",
+    "shape": "outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_side_right",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_body",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_doors",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "true",
+    "left": "false",
+    "shape": "straight|inner_left|inner_right|outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_end_left",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "true",
+    "right": "false",
+    "shape": "straight|inner_left|inner_right|outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_end_right",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "true",
+    "left": "false",
+    "shape": "outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_side_left",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "upper": "true",
+    "right": "false",
+    "shape": "outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_side_right",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_body",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_doors",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "false",
+    "left": "false",
+    "shape": "straight|inner_left|inner_right|outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_end_left",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "false",
+    "right": "false",
+    "shape": "straight|inner_left|inner_right|outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_end_right",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "false",
+    "left": "false",
+    "shape": "outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_side_left",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "false",
+    "right": "false",
+    "shape": "outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_side_right",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_body",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_doors",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "true",
+    "left": "false",
+    "shape": "straight|inner_left|inner_right|outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_end_left",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "true",
+    "right": "false",
+    "shape": "straight|inner_left|inner_right|outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_end_right",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "true",
+    "left": "false",
+    "shape": "outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_side_left",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "upper": "true",
+    "right": "false",
+    "shape": "outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_side_right",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_body",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_doors",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "false",
+    "left": "false",
+    "shape": "straight|inner_left|inner_right|outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_end_left",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "false",
+    "right": "false",
+    "shape": "straight|inner_left|inner_right|outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_end_right",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "false",
+    "left": "false",
+    "shape": "outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_side_left",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "false",
+    "right": "false",
+    "shape": "outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/counter_side_right",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_body",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_doors",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "true",
+    "left": "false",
+    "shape": "straight|inner_left|inner_right|outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_end_left",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "true",
+    "right": "false",
+    "shape": "straight|inner_left|inner_right|outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_end_right",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "true",
+    "left": "false",
+    "shape": "outer_left"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_side_left",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "upper": "true",
+    "right": "false",
+    "shape": "outer_right"
+   },
+   "apply": {
+    "model": "pioneers:block/home/mangrove/upper_side_right",
+    "y": 270
+   }
+  }
+ ]
+}

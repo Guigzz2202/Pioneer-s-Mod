@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/machine/force_field_generator",
+ "textures": {
+  "tier": "pioneers:block/buffer/common/tier_elite"
+ }
+}

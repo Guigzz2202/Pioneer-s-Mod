@@ -1,0 +1,22 @@
+{
+ "parent": "pioneers:block/farm/kitchen/kitchen_stove",
+ "display": {
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    -0.0,
+    -1.657,
+    0
+   ],
+   "scale": [
+    0.4936,
+    0.4936,
+    0.4936
+   ]
+  }
+ }
+}

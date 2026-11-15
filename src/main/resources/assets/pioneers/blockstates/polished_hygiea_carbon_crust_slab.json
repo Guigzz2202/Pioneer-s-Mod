@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "pioneers:block/polished_hygiea_carbon_crust_slab"
+  },
+  "type=top": {
+   "model": "pioneers:block/polished_hygiea_carbon_crust_slab_top"
+  },
+  "type=double": {
+   "model": "pioneers:block/polished_hygiea_carbon_crust"
+  }
+ }
+}

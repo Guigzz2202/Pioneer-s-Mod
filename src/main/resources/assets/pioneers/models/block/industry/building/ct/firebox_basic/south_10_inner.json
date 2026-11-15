@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/south_10",
+ "textures": {
+  "t": "pioneers:block/industry/building/firebox_basic_grate_inner"
+ }
+}

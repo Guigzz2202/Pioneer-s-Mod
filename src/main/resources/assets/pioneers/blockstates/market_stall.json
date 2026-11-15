@@ -1,0 +1,739 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "white"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_white"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "orange"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_orange"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "magenta"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_magenta"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "light_blue"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_light_blue"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "yellow"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_yellow"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "lime"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_lime"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "pink"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_pink"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "gray"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_gray"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "light_gray"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_light_gray"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "cyan"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_cyan"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "purple"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_purple"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "blue"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_blue"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "brown"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_brown"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "green"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_green"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "red"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_red"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "half": "lower",
+    "color": "black"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_black"
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "white"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_white",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "orange"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_orange",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "magenta"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_magenta",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "light_blue"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_light_blue",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "yellow"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_yellow",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "lime"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_lime",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "pink"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_pink",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "gray"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_gray",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "light_gray"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_light_gray",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "cyan"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_cyan",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "purple"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_purple",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "blue"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_blue",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "brown"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_brown",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "green"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_green",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "red"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_red",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "half": "lower",
+    "color": "black"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_black",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "white"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_white",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "orange"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_orange",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "magenta"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_magenta",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "light_blue"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_light_blue",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "yellow"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_yellow",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "lime"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_lime",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "pink"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_pink",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "gray"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_gray",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "light_gray"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_light_gray",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "cyan"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_cyan",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "purple"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_purple",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "blue"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_blue",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "brown"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_brown",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "green"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_green",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "red"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_red",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "half": "lower",
+    "color": "black"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_black",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "white"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_white",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "orange"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_orange",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "magenta"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_magenta",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "light_blue"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_light_blue",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "yellow"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_yellow",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "lime"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_lime",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "pink"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_pink",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "gray"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_gray",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "light_gray"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_light_gray",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "cyan"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_cyan",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "purple"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_purple",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "blue"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_blue",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "brown"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_brown",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "green"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_green",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "red"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_red",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "half": "lower",
+    "color": "black"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_roof_black",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "half": "upper"
+   },
+   "apply": {
+    "model": "pioneers:block/village/market_stall_upper"
+   }
+  }
+ ]
+}

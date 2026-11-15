@@ -1,0 +1,9 @@
+{
+ "parent": "pioneers:block/wild/template/bird_house_post",
+ "textures": {
+  "board": "pioneers:block/home/wood/birch_board",
+  "dark": "pioneers:block/home/wood/birch_dark",
+  "end": "pioneers:block/home/wood/birch_end",
+  "particle": "pioneers:block/home/wood/birch_board"
+ }
+}

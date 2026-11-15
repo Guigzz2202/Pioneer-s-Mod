@@ -1,0 +1,87 @@
+{
+ "multipart": [
+  {
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_core"
+   }
+  },
+  {
+   "when": {
+    "north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_arm"
+   }
+  },
+  {
+   "when": {
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_end"
+   }
+  },
+  {
+   "when": {
+    "east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_arm",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_end",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_arm",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_end",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_arm",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_end",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "down": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/mechanics/casting_channel_spout"
+   }
+  }
+ ]
+}

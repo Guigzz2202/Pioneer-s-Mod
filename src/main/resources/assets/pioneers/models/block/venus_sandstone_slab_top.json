@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "pioneers:block/venus_sandstone_bottom",
+  "top": "pioneers:block/venus_sandstone_top",
+  "side": "pioneers:block/venus_sandstone"
+ }
+}

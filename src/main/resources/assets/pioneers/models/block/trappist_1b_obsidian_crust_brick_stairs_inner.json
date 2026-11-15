@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/inner_stairs",
+ "textures": {
+  "bottom": "pioneers:block/trappist_1b_obsidian_crust_bricks",
+  "top": "pioneers:block/trappist_1b_obsidian_crust_bricks",
+  "side": "pioneers:block/trappist_1b_obsidian_crust_bricks"
+ }
+}

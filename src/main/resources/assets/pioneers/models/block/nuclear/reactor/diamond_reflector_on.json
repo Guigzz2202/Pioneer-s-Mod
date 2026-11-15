@@ -1,0 +1,41 @@
+{
+ "textures": {
+  "d": "pioneers:block/nuclear/reactor/diamond",
+  "particle": "pioneers:block/nuclear/reactor/diamond"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#d"
+    },
+    "south": {
+     "texture": "#d"
+    },
+    "east": {
+     "texture": "#d"
+    },
+    "west": {
+     "texture": "#d"
+    },
+    "up": {
+     "texture": "#d"
+    },
+    "down": {
+     "texture": "#d"
+    }
+   }
+  }
+ ],
+ "parent": "minecraft:block/block"
+}

@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/stairs",
+ "textures": {
+  "bottom": "pioneers:block/cobbled_ganymede_rock",
+  "top": "pioneers:block/cobbled_ganymede_rock",
+  "side": "pioneers:block/cobbled_ganymede_rock"
+ }
+}

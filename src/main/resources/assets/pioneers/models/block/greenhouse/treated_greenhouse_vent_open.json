@@ -1,0 +1,83 @@
+{
+ "parent": "minecraft:block/thin_block",
+ "render_type": "minecraft:translucent",
+ "textures": {
+  "particle": "pioneers:block/greenhouse/treated_vent",
+  "texture": "pioneers:block/greenhouse/treated_vent"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    13
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#texture"
+    },
+    "south": {
+     "uv": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "texture": "#texture",
+     "cullface": "south"
+    },
+    "up": {
+     "uv": [
+      0,
+      13,
+      16,
+      16
+     ],
+     "texture": "#texture",
+     "cullface": "up"
+    },
+    "down": {
+     "uv": [
+      0,
+      16,
+      16,
+      13
+     ],
+     "texture": "#texture",
+     "cullface": "down"
+    },
+    "east": {
+     "uv": [
+      13,
+      0,
+      16,
+      16
+     ],
+     "texture": "#texture",
+     "cullface": "east"
+    },
+    "west": {
+     "uv": [
+      16,
+      0,
+      13,
+      16
+     ],
+     "texture": "#texture",
+     "cullface": "west"
+    }
+   }
+  }
+ ]
+}

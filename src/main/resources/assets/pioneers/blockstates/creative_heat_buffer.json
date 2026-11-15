@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "heat=0": {
+   "model": "pioneers:block/creative_heat_buffer"
+  },
+  "heat=1": {
+   "model": "pioneers:block/creative_heat_buffer_h1"
+  },
+  "heat=2": {
+   "model": "pioneers:block/creative_heat_buffer_h2"
+  },
+  "heat=3": {
+   "model": "pioneers:block/creative_heat_buffer_h3"
+  },
+  "heat=4": {
+   "model": "pioneers:block/creative_heat_buffer_h4"
+  }
+ }
+}

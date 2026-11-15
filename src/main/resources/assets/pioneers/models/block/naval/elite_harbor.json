@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/naval/harbor",
+ "textures": {
+  "tier": "pioneers:block/buffer/common/tier_elite"
+ }
+}

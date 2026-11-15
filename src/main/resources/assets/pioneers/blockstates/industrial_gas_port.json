@@ -1,0 +1,20 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "output": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_gas_port_in"
+   }
+  },
+  {
+   "when": {
+    "output": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_gas_port_out"
+   }
+  }
+ ]
+}

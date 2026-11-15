@@ -1,0 +1,49 @@
+{
+ "variants": {
+  "facing=north,part=single": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch"
+  },
+  "facing=north,part=main": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch_main"
+  },
+  "facing=north,part=side": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch_side"
+  },
+  "facing=east,part=single": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch",
+   "y": 90
+  },
+  "facing=east,part=main": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch_main",
+   "y": 90
+  },
+  "facing=east,part=side": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch_side",
+   "y": 90
+  },
+  "facing=south,part=single": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch",
+   "y": 180
+  },
+  "facing=south,part=main": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch_main",
+   "y": 180
+  },
+  "facing=south,part=side": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch_side",
+   "y": 180
+  },
+  "facing=west,part=single": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch",
+   "y": 270
+  },
+  "facing=west,part=main": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch_main",
+   "y": 270
+  },
+  "facing=west,part=side": {
+   "model": "pioneers:block/farm/hutch/rabbit_hutch_side",
+   "y": 270
+  }
+ }
+}

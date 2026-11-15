@@ -1,0 +1,30 @@
+{
+ "variants": {
+  "facing=up": {
+   "model": "pioneers:block/home/rope_hook"
+  },
+  "facing=down": {
+   "model": "pioneers:block/home/rope_hook",
+   "x": 180
+  },
+  "facing=north": {
+   "model": "pioneers:block/home/rope_hook",
+   "x": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/home/rope_hook",
+   "x": 90,
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/home/rope_hook",
+   "x": 90,
+   "y": 90
+  },
+  "facing=west": {
+   "model": "pioneers:block/home/rope_hook",
+   "x": 90,
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "variants": {
+  "facing=south,form=ingot": {
+   "model": "pioneers:block/mechanics/auto_mold_ingot"
+  },
+  "facing=south,form=nugget": {
+   "model": "pioneers:block/mechanics/auto_mold_nugget"
+  },
+  "facing=south,form=plate": {
+   "model": "pioneers:block/mechanics/auto_mold_plate"
+  },
+  "facing=south,form=rod": {
+   "model": "pioneers:block/mechanics/auto_mold_rod"
+  },
+  "facing=south,form=gear": {
+   "model": "pioneers:block/mechanics/auto_mold_gear"
+  },
+  "facing=south,form=anvil": {
+   "model": "pioneers:block/mechanics/auto_mold_anvil"
+  },
+  "facing=west,form=ingot": {
+   "model": "pioneers:block/mechanics/auto_mold_ingot",
+   "y": 90
+  },
+  "facing=west,form=nugget": {
+   "model": "pioneers:block/mechanics/auto_mold_nugget",
+   "y": 90
+  },
+  "facing=west,form=plate": {
+   "model": "pioneers:block/mechanics/auto_mold_plate",
+   "y": 90
+  },
+  "facing=west,form=rod": {
+   "model": "pioneers:block/mechanics/auto_mold_rod",
+   "y": 90
+  },
+  "facing=west,form=gear": {
+   "model": "pioneers:block/mechanics/auto_mold_gear",
+   "y": 90
+  },
+  "facing=west,form=anvil": {
+   "model": "pioneers:block/mechanics/auto_mold_anvil",
+   "y": 90
+  },
+  "facing=north,form=ingot": {
+   "model": "pioneers:block/mechanics/auto_mold_ingot",
+   "y": 180
+  },
+  "facing=north,form=nugget": {
+   "model": "pioneers:block/mechanics/auto_mold_nugget",
+   "y": 180
+  },
+  "facing=north,form=plate": {
+   "model": "pioneers:block/mechanics/auto_mold_plate",
+   "y": 180
+  },
+  "facing=north,form=rod": {
+   "model": "pioneers:block/mechanics/auto_mold_rod",
+   "y": 180
+  },
+  "facing=north,form=gear": {
+   "model": "pioneers:block/mechanics/auto_mold_gear",
+   "y": 180
+  },
+  "facing=north,form=anvil": {
+   "model": "pioneers:block/mechanics/auto_mold_anvil",
+   "y": 180
+  },
+  "facing=east,form=ingot": {
+   "model": "pioneers:block/mechanics/auto_mold_ingot",
+   "y": 270
+  },
+  "facing=east,form=nugget": {
+   "model": "pioneers:block/mechanics/auto_mold_nugget",
+   "y": 270
+  },
+  "facing=east,form=plate": {
+   "model": "pioneers:block/mechanics/auto_mold_plate",
+   "y": 270
+  },
+  "facing=east,form=rod": {
+   "model": "pioneers:block/mechanics/auto_mold_rod",
+   "y": 270
+  },
+  "facing=east,form=gear": {
+   "model": "pioneers:block/mechanics/auto_mold_gear",
+   "y": 270
+  },
+  "facing=east,form=anvil": {
+   "model": "pioneers:block/mechanics/auto_mold_anvil",
+   "y": 270
+  }
+ }
+}

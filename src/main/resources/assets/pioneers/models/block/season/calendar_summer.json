@@ -1,0 +1,341 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/season/calendar_board",
+  "board": "pioneers:block/season/calendar_board",
+  "paper": "pioneers:block/season/calendar_paper",
+  "page": "pioneers:block/season/calendar_page_summer",
+  "bar": "pioneers:block/season/calendar_bar",
+  "brass": "pioneers:block/season/calendar_brass",
+  "nail": "pioneers:block/season/calendar_nail"
+ },
+ "elements": [
+  {
+   "from": [
+    3,
+    1,
+    15.2
+   ],
+   "to": [
+    13,
+    13.6,
+    16
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      3,
+      2.4,
+      13,
+      15
+     ],
+     "texture": "#board"
+    },
+    "east": {
+     "uv": [
+      0,
+      2.4,
+      0.8,
+      15
+     ],
+     "texture": "#board"
+    },
+    "west": {
+     "uv": [
+      15.2,
+      2.4,
+      16,
+      15
+     ],
+     "texture": "#board"
+    },
+    "down": {
+     "uv": [
+      3,
+      0,
+      13,
+      0.8
+     ],
+     "texture": "#board"
+    }
+   }
+  },
+  {
+   "from": [
+    3.5,
+    1.5,
+    14.8
+   ],
+   "to": [
+    12.5,
+    13.5,
+    15.2
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      3.5,
+      2.5,
+      12.5,
+      14.5
+     ],
+     "texture": "#page"
+    },
+    "east": {
+     "uv": [
+      0.8,
+      2.5,
+      1.2,
+      14.5
+     ],
+     "texture": "#paper"
+    },
+    "west": {
+     "uv": [
+      14.8,
+      2.5,
+      15.2,
+      14.5
+     ],
+     "texture": "#paper"
+    },
+    "down": {
+     "uv": [
+      3.5,
+      0.8,
+      12.5,
+      1.2
+     ],
+     "texture": "#paper"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    13.6,
+    14.4
+   ],
+   "to": [
+    13,
+    15.2,
+    16
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      3,
+      0.8,
+      13,
+      2.4
+     ],
+     "texture": "#bar"
+    },
+    "east": {
+     "uv": [
+      0,
+      0.8,
+      1.6,
+      2.4
+     ],
+     "texture": "#bar"
+    },
+    "west": {
+     "uv": [
+      14.4,
+      0.8,
+      16,
+      2.4
+     ],
+     "texture": "#bar"
+    },
+    "up": {
+     "uv": [
+      3,
+      14.4,
+      13,
+      16
+     ],
+     "texture": "#bar"
+    },
+    "down": {
+     "uv": [
+      3,
+      0,
+      13,
+      1.6
+     ],
+     "texture": "#bar"
+    }
+   }
+  },
+  {
+   "from": [
+    5.5,
+    12.8,
+    14.6
+   ],
+   "to": [
+    6.5,
+    14.2,
+    14.8
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      9.5,
+      1.8,
+      10.5,
+      3.2
+     ],
+     "texture": "#brass"
+    },
+    "east": {
+     "uv": [
+      1.2,
+      1.8,
+      1.4,
+      3.2
+     ],
+     "texture": "#brass"
+    },
+    "west": {
+     "uv": [
+      14.6,
+      1.8,
+      14.8,
+      3.2
+     ],
+     "texture": "#brass"
+    },
+    "up": {
+     "uv": [
+      5.5,
+      14.6,
+      6.5,
+      14.8
+     ],
+     "texture": "#brass"
+    },
+    "down": {
+     "uv": [
+      5.5,
+      1.2,
+      6.5,
+      1.4
+     ],
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "from": [
+    9.5,
+    12.8,
+    14.6
+   ],
+   "to": [
+    10.5,
+    14.2,
+    14.8
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      5.5,
+      1.8,
+      6.5,
+      3.2
+     ],
+     "texture": "#brass"
+    },
+    "east": {
+     "uv": [
+      1.2,
+      1.8,
+      1.4,
+      3.2
+     ],
+     "texture": "#brass"
+    },
+    "west": {
+     "uv": [
+      14.6,
+      1.8,
+      14.8,
+      3.2
+     ],
+     "texture": "#brass"
+    },
+    "up": {
+     "uv": [
+      9.5,
+      14.6,
+      10.5,
+      14.8
+     ],
+     "texture": "#brass"
+    },
+    "down": {
+     "uv": [
+      9.5,
+      1.2,
+      10.5,
+      1.4
+     ],
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    15.2,
+    15.2
+   ],
+   "to": [
+    8.5,
+    15.6,
+    16
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      7.5,
+      0.4,
+      8.5,
+      0.8
+     ],
+     "texture": "#nail"
+    },
+    "east": {
+     "uv": [
+      0,
+      0.4,
+      0.8,
+      0.8
+     ],
+     "texture": "#nail"
+    },
+    "west": {
+     "uv": [
+      15.2,
+      0.4,
+      16,
+      0.8
+     ],
+     "texture": "#nail"
+    },
+    "up": {
+     "uv": [
+      7.5,
+      15.2,
+      8.5,
+      16
+     ],
+     "texture": "#nail"
+    }
+   }
+  }
+ ]
+}

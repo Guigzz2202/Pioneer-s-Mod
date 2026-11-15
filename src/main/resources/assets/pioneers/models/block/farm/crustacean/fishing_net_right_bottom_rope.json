@@ -1,0 +1,60 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/kitchen/wood",
+  "rope": "pioneers:block/farm/kitchen/rope"
+ },
+ "elements": [
+  {
+   "from": [
+    13.5,
+    1.0,
+    7.65
+   ],
+   "to": [
+    16,
+    1.6,
+    8.35
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      14.4,
+      2.5,
+      15.0
+     ],
+     "texture": "#rope"
+    },
+    "south": {
+     "uv": [
+      13.5,
+      14.4,
+      16,
+      15.0
+     ],
+     "texture": "#rope"
+    },
+    "up": {
+     "uv": [
+      13.5,
+      7.65,
+      16,
+      8.35
+     ],
+     "texture": "#rope"
+    },
+    "down": {
+     "uv": [
+      13.5,
+      7.65,
+      16,
+      8.35
+     ],
+     "texture": "#rope"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "variants": {
+  "facing=south,lit=false,heat=0": {
+   "model": "pioneers:block/mechanics/tuyere"
+  },
+  "facing=south,lit=false,heat=1": {
+   "model": "pioneers:block/mechanics/heat/tuyere_1"
+  },
+  "facing=south,lit=false,heat=2": {
+   "model": "pioneers:block/mechanics/heat/tuyere_2"
+  },
+  "facing=south,lit=false,heat=3": {
+   "model": "pioneers:block/mechanics/heat/tuyere_3"
+  },
+  "facing=south,lit=true,heat=0": {
+   "model": "pioneers:block/mechanics/tuyere_lit"
+  },
+  "facing=south,lit=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/tuyere_1_lit"
+  },
+  "facing=south,lit=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/tuyere_2_lit"
+  },
+  "facing=south,lit=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/tuyere_3_lit"
+  },
+  "facing=west,lit=false,heat=0": {
+   "model": "pioneers:block/mechanics/tuyere",
+   "y": 90
+  },
+  "facing=west,lit=false,heat=1": {
+   "model": "pioneers:block/mechanics/heat/tuyere_1",
+   "y": 90
+  },
+  "facing=west,lit=false,heat=2": {
+   "model": "pioneers:block/mechanics/heat/tuyere_2",
+   "y": 90
+  },
+  "facing=west,lit=false,heat=3": {
+   "model": "pioneers:block/mechanics/heat/tuyere_3",
+   "y": 90
+  },
+  "facing=west,lit=true,heat=0": {
+   "model": "pioneers:block/mechanics/tuyere_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/tuyere_1_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/tuyere_2_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/tuyere_3_lit",
+   "y": 90
+  },
+  "facing=north,lit=false,heat=0": {
+   "model": "pioneers:block/mechanics/tuyere",
+   "y": 180
+  },
+  "facing=north,lit=false,heat=1": {
+   "model": "pioneers:block/mechanics/heat/tuyere_1",
+   "y": 180
+  },
+  "facing=north,lit=false,heat=2": {
+   "model": "pioneers:block/mechanics/heat/tuyere_2",
+   "y": 180
+  },
+  "facing=north,lit=false,heat=3": {
+   "model": "pioneers:block/mechanics/heat/tuyere_3",
+   "y": 180
+  },
+  "facing=north,lit=true,heat=0": {
+   "model": "pioneers:block/mechanics/tuyere_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/tuyere_1_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/tuyere_2_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/tuyere_3_lit",
+   "y": 180
+  },
+  "facing=east,lit=false,heat=0": {
+   "model": "pioneers:block/mechanics/tuyere",
+   "y": 270
+  },
+  "facing=east,lit=false,heat=1": {
+   "model": "pioneers:block/mechanics/heat/tuyere_1",
+   "y": 270
+  },
+  "facing=east,lit=false,heat=2": {
+   "model": "pioneers:block/mechanics/heat/tuyere_2",
+   "y": 270
+  },
+  "facing=east,lit=false,heat=3": {
+   "model": "pioneers:block/mechanics/heat/tuyere_3",
+   "y": 270
+  },
+  "facing=east,lit=true,heat=0": {
+   "model": "pioneers:block/mechanics/tuyere_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/tuyere_1_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/tuyere_2_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/tuyere_3_lit",
+   "y": 270
+  }
+ }
+}

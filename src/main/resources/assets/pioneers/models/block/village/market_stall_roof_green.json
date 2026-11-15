@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/village/market_stall_roof",
+ "textures": {
+  "awning": "pioneers:block/village/stall_awning_green"
+ }
+}

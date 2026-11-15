@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=south": {
+   "model": "pioneers:block/mechanics/noria"
+  },
+  "facing=west": {
+   "model": "pioneers:block/mechanics/noria",
+   "y": 90
+  },
+  "facing=north": {
+   "model": "pioneers:block/mechanics/noria",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/mechanics/noria",
+   "y": 270
+  }
+ }
+}

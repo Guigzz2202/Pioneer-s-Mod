@@ -1,0 +1,9 @@
+{
+ "parent": "pioneers:block/pet/template/cat_basket",
+ "textures": {
+  "board": "pioneers:block/home/wood/dark_oak_board",
+  "dark": "pioneers:block/home/wood/dark_oak_dark",
+  "end": "pioneers:block/home/wood/dark_oak_end",
+  "particle": "pioneers:block/home/wood/dark_oak_board"
+ }
+}

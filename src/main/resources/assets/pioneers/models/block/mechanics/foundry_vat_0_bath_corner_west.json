@@ -1,0 +1,26 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "bath": "pioneers:block/mechanics/foundry_vat_top",
+  "particle": "pioneers:block/mechanics/fire_brick"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    13
+   ],
+   "to": [
+    3,
+    12,
+    16
+   ],
+   "faces": {
+    "up": {
+     "texture": "#bath"
+    }
+   }
+  }
+ ]
+}

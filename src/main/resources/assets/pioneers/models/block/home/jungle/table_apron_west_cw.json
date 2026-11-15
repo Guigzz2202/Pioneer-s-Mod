@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/table_apron_west_cw",
+ "textures": {
+  "board": "pioneers:block/home/wood/jungle_board",
+  "post": "pioneers:block/home/wood/jungle_post",
+  "dark": "pioneers:block/home/wood/jungle_dark",
+  "end": "pioneers:block/home/wood/jungle_end",
+  "top": "pioneers:block/home/wood/jungle_top",
+  "panel": "pioneers:block/home/wood/jungle_panel",
+  "particle": "pioneers:block/home/wood/jungle_board"
+ }
+}

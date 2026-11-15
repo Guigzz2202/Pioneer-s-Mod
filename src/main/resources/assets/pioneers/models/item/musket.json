@@ -1,0 +1,47 @@
+{
+ "loader": "forge:separate_transforms",
+ "gui_light": "front",
+ "base": {
+  "parent": "pioneers:item/hunt/geo/musket"
+ },
+ "perspectives": {
+  "gui": {
+   "parent": "minecraft:item/generated",
+   "textures": {
+    "layer0": "pioneers:item/hunt/musket"
+   }
+  }
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "pioneers:loaded": 1
+   },
+   "model": "pioneers:item/musket_loaded"
+  },
+  {
+   "predicate": {
+    "pioneers:reload": 0.01
+   },
+   "model": "pioneers:item/musket_reload_1"
+  },
+  {
+   "predicate": {
+    "pioneers:reload": 0.3
+   },
+   "model": "pioneers:item/musket_reload_2"
+  },
+  {
+   "predicate": {
+    "pioneers:reload": 0.55
+   },
+   "model": "pioneers:item/musket_reload_3"
+  },
+  {
+   "predicate": {
+    "pioneers:reload": 0.82
+   },
+   "model": "pioneers:item/musket_reload_4"
+  }
+ ]
+}

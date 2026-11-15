@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/g_south_10",
+ "textures": {
+  "t": "pioneers:block/greenhouse/iron_glass_frame"
+ }
+}

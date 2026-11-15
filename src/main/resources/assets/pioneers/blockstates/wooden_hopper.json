@@ -1,0 +1,40 @@
+{
+ "variants": {
+  "enabled=true,facing=down": {
+   "model": "pioneers:block/mechanics/wooden_hopper"
+  },
+  "enabled=false,facing=down": {
+   "model": "pioneers:block/mechanics/wooden_hopper"
+  },
+  "enabled=true,facing=north": {
+   "model": "pioneers:block/mechanics/wooden_hopper_side"
+  },
+  "enabled=false,facing=north": {
+   "model": "pioneers:block/mechanics/wooden_hopper_side"
+  },
+  "enabled=true,facing=east": {
+   "model": "pioneers:block/mechanics/wooden_hopper_side",
+   "y": 90
+  },
+  "enabled=false,facing=east": {
+   "model": "pioneers:block/mechanics/wooden_hopper_side",
+   "y": 90
+  },
+  "enabled=true,facing=south": {
+   "model": "pioneers:block/mechanics/wooden_hopper_side",
+   "y": 180
+  },
+  "enabled=false,facing=south": {
+   "model": "pioneers:block/mechanics/wooden_hopper_side",
+   "y": 180
+  },
+  "enabled=true,facing=west": {
+   "model": "pioneers:block/mechanics/wooden_hopper_side",
+   "y": 270
+  },
+  "enabled=false,facing=west": {
+   "model": "pioneers:block/mechanics/wooden_hopper_side",
+   "y": 270
+  }
+ }
+}

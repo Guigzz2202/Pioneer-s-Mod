@@ -1,0 +1,9 @@
+{
+ "parent": "pioneers:block/home/template/tool_rack",
+ "textures": {
+  "post": "pioneers:block/home/wood/bamboo_post",
+  "board": "pioneers:block/home/wood/bamboo_board",
+  "end": "pioneers:block/home/wood/bamboo_end",
+  "particle": "pioneers:block/home/wood/bamboo_board"
+ }
+}

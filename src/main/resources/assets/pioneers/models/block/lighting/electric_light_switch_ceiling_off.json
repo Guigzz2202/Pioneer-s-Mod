@@ -1,0 +1,252 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "brass": "pioneers:block/mechanics/brass",
+  "bakelite": "pioneers:block/lighting/bakelite",
+  "particle": "pioneers:block/lighting/bakelite"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    14.75,
+    4
+   ],
+   "to": [
+    11,
+    16,
+    12
+   ],
+   "faces": {
+    "up": {
+     "texture": "#bakelite"
+    },
+    "down": {
+     "texture": "#bakelite"
+    },
+    "east": {
+     "texture": "#bakelite"
+    },
+    "west": {
+     "texture": "#bakelite"
+    },
+    "north": {
+     "texture": "#bakelite"
+    },
+    "south": {
+     "texture": "#bakelite"
+    }
+   }
+  },
+  {
+   "from": [
+    6.25,
+    14.25,
+    5.25
+   ],
+   "to": [
+    9.75,
+    14.75,
+    10.75
+   ],
+   "faces": {
+    "down": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "from": [
+    6.75,
+    14.0,
+    5.75
+   ],
+   "to": [
+    9.25,
+    14.25,
+    10.25
+   ],
+   "faces": {
+    "down": {
+     "texture": "#bakelite"
+    },
+    "east": {
+     "texture": "#bakelite"
+    },
+    "west": {
+     "texture": "#bakelite"
+    },
+    "north": {
+     "texture": "#bakelite"
+    },
+    "south": {
+     "texture": "#bakelite"
+    },
+    "up": {
+     "texture": "#bakelite"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    14.5,
+    10.75
+   ],
+   "to": [
+    8.5,
+    14.75,
+    11.5
+   ],
+   "faces": {
+    "down": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    14.5,
+    4.5
+   ],
+   "to": [
+    8.5,
+    14.75,
+    5.25
+   ],
+   "faces": {
+    "down": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "from": [
+    7.25,
+    11.25,
+    7.0
+   ],
+   "to": [
+    8.75,
+    14.0,
+    9.0
+   ],
+   "faces": {
+    "down": {
+     "texture": "#bakelite"
+    },
+    "east": {
+     "texture": "#bakelite"
+    },
+    "west": {
+     "texture": "#bakelite"
+    },
+    "north": {
+     "texture": "#bakelite"
+    },
+    "south": {
+     "texture": "#bakelite"
+    },
+    "up": {
+     "texture": "#bakelite"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     13.75,
+     8
+    ],
+    "axis": "x",
+    "angle": -22.5
+   }
+  },
+  {
+   "from": [
+    7.25,
+    10.75,
+    7.0
+   ],
+   "to": [
+    8.75,
+    11.25,
+    9.0
+   ],
+   "faces": {
+    "down": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     13.75,
+     8
+    ],
+    "axis": "x",
+    "angle": -22.5
+   }
+  }
+ ]
+}

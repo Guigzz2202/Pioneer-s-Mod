@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/template_wall_post",
+ "textures": {
+  "wall": "pioneers:block/trappist_1b_obsidian_crust_bricks"
+ }
+}

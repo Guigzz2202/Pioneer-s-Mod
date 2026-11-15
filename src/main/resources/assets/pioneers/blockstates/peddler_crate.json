@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/village/peddler_crate"
+  },
+  "facing=east": {
+   "model": "pioneers:block/village/peddler_crate",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/village/peddler_crate",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/village/peddler_crate",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "particle": "pioneers:block/naval/quay_side",
+  "t": "pioneers:block/naval/quay_band"
+ },
+ "elements": [
+  {
+   "from": [
+    12.5,
+    16,
+    3.5
+   ],
+   "to": [
+    16,
+    16.02,
+    12.5
+   ],
+   "faces": {
+    "up": {
+     "texture": "#t",
+     "uv": [
+      12.5,
+      3.5,
+      16,
+      12.5
+     ],
+     "cullface": "up"
+    }
+   }
+  }
+ ]
+}

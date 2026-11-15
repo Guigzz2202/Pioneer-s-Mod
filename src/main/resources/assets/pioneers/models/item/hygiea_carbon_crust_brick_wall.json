@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/wall_inventory",
+ "textures": {
+  "wall": "pioneers:block/hygiea_carbon_crust_bricks"
+ }
+}

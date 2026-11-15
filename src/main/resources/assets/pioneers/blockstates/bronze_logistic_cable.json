@@ -1,0 +1,238 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "north": "cable|plug",
+    "south": "cable|plug",
+    "east": "none",
+    "west": "none",
+    "up": "none",
+    "down": "none"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/core_plain"
+   }
+  },
+  {
+   "when": {
+    "north": "none",
+    "south": "none",
+    "east": "cable|plug",
+    "west": "cable|plug",
+    "up": "none",
+    "down": "none"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/core_plain"
+   }
+  },
+  {
+   "when": {
+    "north": "none",
+    "south": "none",
+    "east": "none",
+    "west": "none",
+    "up": "cable|plug",
+    "down": "cable|plug"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/core_plain"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "north": "cable|plug",
+      "west": "cable|plug"
+     },
+     {
+      "north": "cable|plug",
+      "up": "cable|plug"
+     },
+     {
+      "south": "cable|plug",
+      "west": "cable|plug"
+     },
+     {
+      "south": "cable|plug",
+      "up": "cable|plug"
+     },
+     {
+      "east": "cable|plug",
+      "north": "cable|plug"
+     },
+     {
+      "east": "cable|plug",
+      "south": "cable|plug"
+     },
+     {
+      "east": "cable|plug",
+      "up": "cable|plug"
+     },
+     {
+      "up": "cable|plug",
+      "west": "cable|plug"
+     },
+     {
+      "down": "cable|plug",
+      "north": "cable|plug"
+     },
+     {
+      "down": "cable|plug",
+      "south": "cable|plug"
+     },
+     {
+      "down": "cable|plug",
+      "east": "cable|plug"
+     },
+     {
+      "down": "cable|plug",
+      "west": "cable|plug"
+     },
+     {
+      "north": "cable|plug",
+      "south": "none"
+     },
+     {
+      "south": "cable|plug",
+      "north": "none"
+     },
+     {
+      "east": "cable|plug",
+      "west": "none"
+     },
+     {
+      "west": "cable|plug",
+      "east": "none"
+     },
+     {
+      "up": "cable|plug",
+      "down": "none"
+     },
+     {
+      "down": "cable|plug",
+      "up": "none"
+     },
+     {
+      "north": "none",
+      "south": "none",
+      "east": "none",
+      "west": "none",
+      "up": "none",
+      "down": "none"
+     }
+    ]
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/core"
+   }
+  },
+  {
+   "when": {
+    "north": "cable"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/side"
+   }
+  },
+  {
+   "when": {
+    "north": "plug"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/plug"
+   }
+  },
+  {
+   "when": {
+    "south": "cable"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/side",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "south": "plug"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/plug",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "east": "cable"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/side",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "east": "plug"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/plug",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "west": "cable"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/side",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "west": "plug"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/plug",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "up": "cable"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/side",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "up": "plug"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/plug",
+    "x": 270
+   }
+  },
+  {
+   "when": {
+    "down": "cable"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/side",
+    "x": 90
+   }
+  },
+  {
+   "when": {
+    "down": "plug"
+   },
+   "apply": {
+    "model": "pioneers:block/logistic_cable/bronze/plug",
+    "x": 90
+   }
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/cube_column",
+ "textures": {
+  "end": "pioneers:block/venus_sandstone_top",
+  "side": "pioneers:block/chiseled_venus_sandstone"
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "board": "#board",
+  "post": "#post",
+  "dark": "#dark",
+  "end": "#end",
+  "top": "#top",
+  "panel": "#panel",
+  "brass": "pioneers:block/home/brass",
+  "iron": "pioneers:block/home/iron",
+  "particle": "#board"
+ },
+ "elements": [
+  {
+   "from": [
+    0.5,
+    0.05,
+    3.5
+   ],
+   "to": [
+    1.75,
+    1.55,
+    15.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#board"
+    },
+    "south": {
+     "texture": "#board"
+    },
+    "west": {
+     "texture": "#board"
+    },
+    "up": {
+     "texture": "#top"
+    },
+    "down": {
+     "texture": "#board"
+    }
+   }
+  },
+  {
+   "from": [
+    0.5,
+    1.55,
+    3.5
+   ],
+   "to": [
+    1.75,
+    2.05,
+    4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#dark"
+    },
+    "south": {
+     "texture": "#dark"
+    },
+    "up": {
+     "texture": "#dark"
+    },
+    "west": {
+     "texture": "#dark"
+    }
+   }
+  },
+  {
+   "from": [
+    0.5,
+    1.55,
+    15
+   ],
+   "to": [
+    1.75,
+    2.55,
+    15.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#board"
+    },
+    "south": {
+     "texture": "#board"
+    },
+    "up": {
+     "texture": "#dark"
+    },
+    "west": {
+     "texture": "#board"
+    }
+   }
+  }
+ ]
+}

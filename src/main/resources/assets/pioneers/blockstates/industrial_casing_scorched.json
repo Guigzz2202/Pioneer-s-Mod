@@ -1,0 +1,28 @@
+{
+ "variants": {
+  "style=neutral": {
+   "model": "pioneers:block/industry/industrial_casing_scorched"
+  },
+  "style=thermal": {
+   "model": "pioneers:block/industry/industrial_casing_scorched"
+  },
+  "style=electric": {
+   "model": "pioneers:block/industry/industrial_casing_scorched"
+  },
+  "style=fluid": {
+   "model": "pioneers:block/industry/industrial_casing_scorched"
+  },
+  "style=mechanical": {
+   "model": "pioneers:block/industry/industrial_casing_scorched"
+  },
+  "style=living": {
+   "model": "pioneers:block/industry/industrial_casing_scorched"
+  },
+  "style=nuclear": {
+   "model": "pioneers:block/industry/industrial_casing_scorched"
+  },
+  "style=digital": {
+   "model": "pioneers:block/industry/industrial_casing_scorched"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "noria=false": {
+   "model": "pioneers:block/mechanics/wooden_fluid_buffer"
+  },
+  "noria=true": {
+   "model": "pioneers:block/mechanics/wooden_fluid_buffer_noria"
+  }
+ }
+}

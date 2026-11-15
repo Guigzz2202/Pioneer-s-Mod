@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/warehouse/outlet",
+   "y": 180
+  },
+  "facing=east": {
+   "model": "pioneers:block/warehouse/outlet",
+   "y": 270
+  },
+  "facing=south": {
+   "model": "pioneers:block/warehouse/outlet"
+  },
+  "facing=west": {
+   "model": "pioneers:block/warehouse/outlet",
+   "y": 90
+  }
+ }
+}

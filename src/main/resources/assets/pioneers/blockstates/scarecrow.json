@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "facing=north,half=lower,head=0": {
+      "model": "pioneers:block/farm/device/scarecrow_lower"
+    },
+    "facing=north,half=lower,head=1": {
+      "model": "pioneers:block/farm/device/scarecrow_lower"
+    },
+    "facing=north,half=lower,head=2": {
+      "model": "pioneers:block/farm/device/scarecrow_lower"
+    },
+    "facing=north,half=upper,head=0": {
+      "model": "pioneers:block/farm/device/scarecrow_upper"
+    },
+    "facing=north,half=upper,head=1": {
+      "model": "pioneers:block/farm/device/scarecrow_upper"
+    },
+    "facing=north,half=upper,head=2": {
+      "model": "pioneers:block/farm/device/scarecrow_upper"
+    },
+    "facing=east,half=lower,head=0": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 90
+    },
+    "facing=east,half=lower,head=1": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 90
+    },
+    "facing=east,half=lower,head=2": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 90
+    },
+    "facing=east,half=upper,head=0": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 90
+    },
+    "facing=east,half=upper,head=1": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 90
+    },
+    "facing=east,half=upper,head=2": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 90
+    },
+    "facing=south,half=lower,head=0": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 180
+    },
+    "facing=south,half=lower,head=1": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 180
+    },
+    "facing=south,half=lower,head=2": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 180
+    },
+    "facing=south,half=upper,head=0": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 180
+    },
+    "facing=south,half=upper,head=1": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 180
+    },
+    "facing=south,half=upper,head=2": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 180
+    },
+    "facing=west,half=lower,head=0": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 270
+    },
+    "facing=west,half=lower,head=1": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 270
+    },
+    "facing=west,half=lower,head=2": {
+      "model": "pioneers:block/farm/device/scarecrow_lower",
+      "y": 270
+    },
+    "facing=west,half=upper,head=0": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 270
+    },
+    "facing=west,half=upper,head=1": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 270
+    },
+    "facing=west,half=upper,head=2": {
+      "model": "pioneers:block/farm/device/scarecrow_upper",
+      "y": 270
+    }
+  }
+}

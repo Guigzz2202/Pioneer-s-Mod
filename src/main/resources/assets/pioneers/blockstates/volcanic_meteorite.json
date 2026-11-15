@@ -1,0 +1,51 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "pioneers:block/volcanic_meteorite_a"
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_a",
+    "y": 90
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_a",
+    "y": 180
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_a",
+    "y": 270
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_b"
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_b",
+    "y": 90
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_b",
+    "y": 180
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_b",
+    "y": 270
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_c"
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_c",
+    "y": 90
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_c",
+    "y": 180
+   },
+   {
+    "model": "pioneers:block/volcanic_meteorite_c",
+    "y": 270
+   }
+  ]
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/up_01",
+ "textures": {
+  "t": "pioneers:block/industry/building/cleanroom_casing_v"
+ }
+}

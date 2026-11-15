@@ -1,0 +1,244 @@
+{
+ "variants": {
+  "facing=south,lit=false,formed=false,heat=0": {
+   "model": "pioneers:block/mechanics/blast_furnace"
+  },
+  "facing=south,lit=false,formed=false,heat=1": {
+   "model": "pioneers:block/mechanics/blast_furnace"
+  },
+  "facing=south,lit=false,formed=false,heat=2": {
+   "model": "pioneers:block/mechanics/blast_furnace"
+  },
+  "facing=south,lit=false,formed=false,heat=3": {
+   "model": "pioneers:block/mechanics/blast_furnace"
+  },
+  "facing=south,lit=false,formed=true,heat=0": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_0"
+  },
+  "facing=south,lit=false,formed=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_1"
+  },
+  "facing=south,lit=false,formed=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_2"
+  },
+  "facing=south,lit=false,formed=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_3"
+  },
+  "facing=south,lit=true,formed=false,heat=0": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit"
+  },
+  "facing=south,lit=true,formed=false,heat=1": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit"
+  },
+  "facing=south,lit=true,formed=false,heat=2": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit"
+  },
+  "facing=south,lit=true,formed=false,heat=3": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit"
+  },
+  "facing=south,lit=true,formed=true,heat=0": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_0_lit"
+  },
+  "facing=south,lit=true,formed=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_1_lit"
+  },
+  "facing=south,lit=true,formed=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_2_lit"
+  },
+  "facing=south,lit=true,formed=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_3_lit"
+  },
+  "facing=west,lit=false,formed=false,heat=0": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 90
+  },
+  "facing=west,lit=false,formed=false,heat=1": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 90
+  },
+  "facing=west,lit=false,formed=false,heat=2": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 90
+  },
+  "facing=west,lit=false,formed=false,heat=3": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 90
+  },
+  "facing=west,lit=false,formed=true,heat=0": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_0",
+   "y": 90
+  },
+  "facing=west,lit=false,formed=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_1",
+   "y": 90
+  },
+  "facing=west,lit=false,formed=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_2",
+   "y": 90
+  },
+  "facing=west,lit=false,formed=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_3",
+   "y": 90
+  },
+  "facing=west,lit=true,formed=false,heat=0": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,formed=false,heat=1": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,formed=false,heat=2": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,formed=false,heat=3": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,formed=true,heat=0": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_0_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,formed=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_1_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,formed=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_2_lit",
+   "y": 90
+  },
+  "facing=west,lit=true,formed=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_3_lit",
+   "y": 90
+  },
+  "facing=north,lit=false,formed=false,heat=0": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 180
+  },
+  "facing=north,lit=false,formed=false,heat=1": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 180
+  },
+  "facing=north,lit=false,formed=false,heat=2": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 180
+  },
+  "facing=north,lit=false,formed=false,heat=3": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 180
+  },
+  "facing=north,lit=false,formed=true,heat=0": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_0",
+   "y": 180
+  },
+  "facing=north,lit=false,formed=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_1",
+   "y": 180
+  },
+  "facing=north,lit=false,formed=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_2",
+   "y": 180
+  },
+  "facing=north,lit=false,formed=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_3",
+   "y": 180
+  },
+  "facing=north,lit=true,formed=false,heat=0": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,formed=false,heat=1": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,formed=false,heat=2": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,formed=false,heat=3": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,formed=true,heat=0": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_0_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,formed=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_1_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,formed=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_2_lit",
+   "y": 180
+  },
+  "facing=north,lit=true,formed=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_3_lit",
+   "y": 180
+  },
+  "facing=east,lit=false,formed=false,heat=0": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 270
+  },
+  "facing=east,lit=false,formed=false,heat=1": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 270
+  },
+  "facing=east,lit=false,formed=false,heat=2": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 270
+  },
+  "facing=east,lit=false,formed=false,heat=3": {
+   "model": "pioneers:block/mechanics/blast_furnace",
+   "y": 270
+  },
+  "facing=east,lit=false,formed=true,heat=0": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_0",
+   "y": 270
+  },
+  "facing=east,lit=false,formed=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_1",
+   "y": 270
+  },
+  "facing=east,lit=false,formed=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_2",
+   "y": 270
+  },
+  "facing=east,lit=false,formed=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_3",
+   "y": 270
+  },
+  "facing=east,lit=true,formed=false,heat=0": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,formed=false,heat=1": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,formed=false,heat=2": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,formed=false,heat=3": {
+   "model": "pioneers:block/mechanics/blast_furnace_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,formed=true,heat=0": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_0_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,formed=true,heat=1": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_1_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,formed=true,heat=2": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_2_lit",
+   "y": 270
+  },
+  "facing=east,lit=true,formed=true,heat=3": {
+   "model": "pioneers:block/mechanics/heat/blast_furnace_formed_3_lit",
+   "y": 270
+  }
+ }
+}

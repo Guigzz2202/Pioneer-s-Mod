@@ -1,0 +1,353 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/food/pear_tart_crust",
+  "pie_tin": "pioneers:block/farm/food/pie_tin",
+  "pear_tart_top": "pioneers:block/farm/food/pear_tart_top",
+  "pear_tart_crust": "pioneers:block/farm/food/pear_tart_crust",
+  "pear_tart_inner": "pioneers:block/farm/food/pear_tart_inner"
+ },
+ "elements": [
+  {
+   "from": [
+    11.5,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    1,
+    15
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      11.5,
+      1,
+      15,
+      15
+     ],
+     "texture": "#pie_tin"
+    },
+    "down": {
+     "uv": [
+      11.5,
+      1,
+      15,
+      15
+     ],
+     "texture": "#pie_tin"
+    },
+    "north": {
+     "uv": [
+      1,
+      15,
+      4.5,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "south": {
+     "uv": [
+      11.5,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "east": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    },
+    "west": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#pie_tin"
+    }
+   }
+  },
+  {
+   "from": [
+    11.9,
+    1,
+    1.4
+   ],
+   "to": [
+    14.6,
+    4,
+    14.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      11.9,
+      1.4,
+      14.6,
+      14.6
+     ],
+     "texture": "#pear_tart_top"
+    },
+    "down": {
+     "uv": [
+      11.9,
+      1.4,
+      14.6,
+      14.6
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      12,
+      4.1,
+      15
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "south": {
+     "uv": [
+      11.9,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "east": {
+     "uv": [
+      1.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "west": {
+     "uv": [
+      1.4,
+      12,
+      14.6,
+      15
+     ],
+     "texture": "#pear_tart_inner"
+    }
+   }
+  },
+  {
+   "from": [
+    11.9,
+    4,
+    1.4
+   ],
+   "to": [
+    14.6,
+    4.6,
+    2.4
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      11.9,
+      1.4,
+      14.6,
+      2.4
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "down": {
+     "uv": [
+      11.9,
+      13.6,
+      14.6,
+      14.6
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      4.1,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "south": {
+     "uv": [
+      11.9,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "east": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "west": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    11.9,
+    4,
+    13.6
+   ],
+   "to": [
+    14.6,
+    4.6,
+    14.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      11.9,
+      13.6,
+      14.6,
+      14.6
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "down": {
+     "uv": [
+      11.9,
+      1.4,
+      14.6,
+      2.4
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      4.1,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "south": {
+     "uv": [
+      11.9,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "east": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "west": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    }
+   }
+  },
+  {
+   "from": [
+    13.6,
+    4,
+    2.4
+   ],
+   "to": [
+    14.6,
+    4.6,
+    13.6
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      13.6,
+      2.4,
+      14.6,
+      13.6
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "down": {
+     "uv": [
+      13.6,
+      2.4,
+      14.6,
+      13.6
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "north": {
+     "uv": [
+      1.4,
+      11.4,
+      2.4,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "south": {
+     "uv": [
+      13.6,
+      11.4,
+      14.6,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "east": {
+     "uv": [
+      2.4,
+      11.4,
+      13.6,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    },
+    "west": {
+     "uv": [
+      2.4,
+      11.4,
+      13.6,
+      12
+     ],
+     "texture": "#pear_tart_crust"
+    }
+   }
+  }
+ ]
+}

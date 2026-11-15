@@ -1,0 +1,249 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "pioneers:block/mechanics/steel_plate",
+  "o": "pioneers:block/mechanics/oak",
+  "d": "pioneers:block/mechanics/oak_dark",
+  "e": "pioneers:block/mechanics/oak_end",
+  "p": "pioneers:block/mechanics/oak_planks",
+  "i": "pioneers:block/mechanics/iron",
+  "ip": "pioneers:block/mechanics/iron_plate",
+  "ib": "pioneers:block/mechanics/iron_bright",
+  "c": "pioneers:block/mechanics/copper",
+  "s": "pioneers:block/mechanics/stone",
+  "m": "pioneers:block/mechanics/millstone",
+  "cs": "pioneers:block/mechanics/casing_side",
+  "cp": "pioneers:block/mechanics/casing_port",
+  "b": "pioneers:block/mechanics/bronze",
+  "an": "pioneers:block/mechanics/anvil",
+  "l": "pioneers:block/mechanics/leather",
+  "cv": "pioneers:block/mechanics/canvas",
+  "h": "pioneers:block/mechanics/hay",
+  "bd": "pioneers:block/mechanics/bronze_dark",
+  "bp": "pioneers:block/mechanics/bronze_plate",
+  "br": "pioneers:block/mechanics/brass",
+  "st": "pioneers:block/mechanics/steel",
+  "sp": "pioneers:block/mechanics/steel_plate",
+  "cp2": "pioneers:block/mechanics/copper_plate",
+  "fb": "pioneers:block/mechanics/fire_brick",
+  "gv": "pioneers:block/mechanics/alluvial_gravel",
+  "ss": "pioneers:block/mechanics/smooth_stone",
+  "cl": "pioneers:block/mechanics/clay_raw",
+  "gl": "pioneers:block/mechanics/glass",
+  "co": "pioneers:block/mechanics/coals",
+  "gf": "pioneers:block/mechanics/gauge_face",
+  "brk": "pioneers:block/mechanics/brick",
+  "ash": "pioneers:block/mechanics/ash",
+  "mo": "pioneers:block/mechanics/molten"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#sp",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#sp",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#sp",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#sp",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#sp",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#sp",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    -0.3,
+    0.5,
+    -0.3
+   ],
+   "to": [
+    16.3,
+    1.7,
+    16.3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#i",
+     "uv": [
+      0.0,
+      14.3,
+      16.0,
+      15.5
+     ]
+    },
+    "south": {
+     "texture": "#i",
+     "uv": [
+      0.0,
+      14.3,
+      16.0,
+      15.5
+     ]
+    },
+    "east": {
+     "texture": "#i",
+     "uv": [
+      0.0,
+      14.3,
+      16.0,
+      15.5
+     ]
+    },
+    "west": {
+     "texture": "#i",
+     "uv": [
+      0.0,
+      14.3,
+      16.0,
+      15.5
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    -0.3,
+    14.3,
+    -0.3
+   ],
+   "to": [
+    16.3,
+    15.5,
+    16.3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#i",
+     "uv": [
+      0.0,
+      0.5,
+      16.0,
+      1.7
+     ]
+    },
+    "south": {
+     "texture": "#i",
+     "uv": [
+      0.0,
+      0.5,
+      16.0,
+      1.7
+     ]
+    },
+    "east": {
+     "texture": "#i",
+     "uv": [
+      0.0,
+      0.5,
+      16.0,
+      1.7
+     ]
+    },
+    "west": {
+     "texture": "#i",
+     "uv": [
+      0.0,
+      0.5,
+      16.0,
+      1.7
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    7.4,
+    1.7,
+    -0.3
+   ],
+   "to": [
+    8.6,
+    14.3,
+    16.3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#i"
+    },
+    "south": {
+     "texture": "#i"
+    }
+   }
+  },
+  {
+   "from": [
+    -0.3,
+    1.7,
+    7.4
+   ],
+   "to": [
+    16.3,
+    14.3,
+    8.6
+   ],
+   "faces": {
+    "east": {
+     "texture": "#i"
+    },
+    "west": {
+     "texture": "#i"
+    }
+   }
+  }
+ ]
+}

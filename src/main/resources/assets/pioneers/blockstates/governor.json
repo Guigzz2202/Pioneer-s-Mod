@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "pioneers:block/mechanics/governor"
+  },
+  "axis=z": {
+   "model": "pioneers:block/mechanics/governor",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "pioneers:block/mechanics/governor",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

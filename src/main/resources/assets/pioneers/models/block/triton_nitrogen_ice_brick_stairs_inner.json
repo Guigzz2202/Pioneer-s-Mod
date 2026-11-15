@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/inner_stairs",
+ "textures": {
+  "bottom": "pioneers:block/triton_nitrogen_ice_bricks",
+  "top": "pioneers:block/triton_nitrogen_ice_bricks",
+  "side": "pioneers:block/triton_nitrogen_ice_bricks"
+ }
+}

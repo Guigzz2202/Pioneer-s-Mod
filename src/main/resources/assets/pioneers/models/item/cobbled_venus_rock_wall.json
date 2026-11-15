@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/wall_inventory",
+ "textures": {
+  "wall": "pioneers:block/cobbled_venus_rock"
+ }
+}

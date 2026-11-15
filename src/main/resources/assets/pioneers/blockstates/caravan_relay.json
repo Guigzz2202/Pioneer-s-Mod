@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/caravan/caravan_relay"
+  },
+  "facing=east": {
+   "model": "pioneers:block/caravan/caravan_relay",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/caravan/caravan_relay",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/caravan/caravan_relay",
+   "y": 270
+  }
+ }
+}

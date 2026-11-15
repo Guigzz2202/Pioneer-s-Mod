@@ -1,0 +1,5 @@
+{
+ "loader": "pioneers:connected",
+ "parent": "minecraft:block/block",
+ "tiles": "pioneers:block/space_stabilizer_power_port_star"
+}

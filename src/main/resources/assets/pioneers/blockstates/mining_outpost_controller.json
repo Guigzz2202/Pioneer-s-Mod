@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "active=false,facing=north": {
+   "model": "pioneers:block/mining_outpost_controller"
+  },
+  "active=true,facing=north": {
+   "model": "pioneers:block/mining_outpost_controller_active"
+  },
+  "active=false,facing=east": {
+   "model": "pioneers:block/mining_outpost_controller",
+   "y": 90
+  },
+  "active=true,facing=east": {
+   "model": "pioneers:block/mining_outpost_controller_active",
+   "y": 90
+  },
+  "active=false,facing=south": {
+   "model": "pioneers:block/mining_outpost_controller",
+   "y": 180
+  },
+  "active=true,facing=south": {
+   "model": "pioneers:block/mining_outpost_controller_active",
+   "y": 180
+  },
+  "active=false,facing=west": {
+   "model": "pioneers:block/mining_outpost_controller",
+   "y": 270
+  },
+  "active=true,facing=west": {
+   "model": "pioneers:block/mining_outpost_controller_active",
+   "y": 270
+  }
+ }
+}

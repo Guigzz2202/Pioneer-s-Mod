@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/machine/oxygen_diffuser",
+ "textures": {
+  "tier": "pioneers:block/buffer/common/tier_elite"
+ }
+}

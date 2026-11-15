@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "enabled=false": {
+   "model": "pioneers:block/supreme_space_coil"
+  },
+  "enabled=true": {
+   "model": "pioneers:block/supreme_space_coil"
+  }
+ }
+}

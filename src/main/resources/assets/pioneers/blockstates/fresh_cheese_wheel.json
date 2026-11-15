@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "ripening=0": {
+      "model": "pioneers:block/farm/food/fresh_cheese_wheel_0"
+    },
+    "ripening=1": {
+      "model": "pioneers:block/farm/food/fresh_cheese_wheel_1"
+    },
+    "ripening=2": {
+      "model": "pioneers:block/farm/food/fresh_cheese_wheel_2"
+    },
+    "ripening=3": {
+      "model": "pioneers:block/farm/food/fresh_cheese_wheel_3"
+    }
+  }
+}

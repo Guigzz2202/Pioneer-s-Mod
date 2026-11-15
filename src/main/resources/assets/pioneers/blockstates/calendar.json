@@ -1,0 +1,64 @@
+{
+ "variants": {
+  "facing=north,season=0": {
+   "model": "pioneers:block/season/calendar_spring"
+  },
+  "facing=north,season=1": {
+   "model": "pioneers:block/season/calendar_summer"
+  },
+  "facing=north,season=2": {
+   "model": "pioneers:block/season/calendar_autumn"
+  },
+  "facing=north,season=3": {
+   "model": "pioneers:block/season/calendar_winter"
+  },
+  "facing=east,season=0": {
+   "model": "pioneers:block/season/calendar_spring",
+   "y": 90
+  },
+  "facing=east,season=1": {
+   "model": "pioneers:block/season/calendar_summer",
+   "y": 90
+  },
+  "facing=east,season=2": {
+   "model": "pioneers:block/season/calendar_autumn",
+   "y": 90
+  },
+  "facing=east,season=3": {
+   "model": "pioneers:block/season/calendar_winter",
+   "y": 90
+  },
+  "facing=south,season=0": {
+   "model": "pioneers:block/season/calendar_spring",
+   "y": 180
+  },
+  "facing=south,season=1": {
+   "model": "pioneers:block/season/calendar_summer",
+   "y": 180
+  },
+  "facing=south,season=2": {
+   "model": "pioneers:block/season/calendar_autumn",
+   "y": 180
+  },
+  "facing=south,season=3": {
+   "model": "pioneers:block/season/calendar_winter",
+   "y": 180
+  },
+  "facing=west,season=0": {
+   "model": "pioneers:block/season/calendar_spring",
+   "y": 270
+  },
+  "facing=west,season=1": {
+   "model": "pioneers:block/season/calendar_summer",
+   "y": 270
+  },
+  "facing=west,season=2": {
+   "model": "pioneers:block/season/calendar_autumn",
+   "y": 270
+  },
+  "facing=west,season=3": {
+   "model": "pioneers:block/season/calendar_winter",
+   "y": 270
+  }
+ }
+}

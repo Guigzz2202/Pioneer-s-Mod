@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "active=false,facing=north": {
+      "model": "pioneers:block/launch_pad_core"
+    },
+    "active=true,facing=north": {
+      "model": "pioneers:block/launch_pad_core_active"
+    },
+    "active=false,facing=east": {
+      "model": "pioneers:block/launch_pad_core"
+    },
+    "active=true,facing=east": {
+      "model": "pioneers:block/launch_pad_core_active"
+    },
+    "active=false,facing=south": {
+      "model": "pioneers:block/launch_pad_core"
+    },
+    "active=true,facing=south": {
+      "model": "pioneers:block/launch_pad_core_active"
+    },
+    "active=false,facing=west": {
+      "model": "pioneers:block/launch_pad_core"
+    },
+    "active=true,facing=west": {
+      "model": "pioneers:block/launch_pad_core_active"
+    }
+  }
+}

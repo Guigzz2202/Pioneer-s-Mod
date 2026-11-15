@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/upper_side_left",
+ "textures": {
+  "board": "pioneers:block/home/wood/warped_board",
+  "post": "pioneers:block/home/wood/warped_post",
+  "dark": "pioneers:block/home/wood/warped_dark",
+  "end": "pioneers:block/home/wood/warped_end",
+  "top": "pioneers:block/home/wood/warped_top",
+  "panel": "pioneers:block/home/wood/warped_panel",
+  "particle": "pioneers:block/home/wood/warped_board"
+ }
+}

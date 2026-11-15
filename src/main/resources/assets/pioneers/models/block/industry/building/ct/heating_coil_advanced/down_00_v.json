@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/down_00",
+ "textures": {
+  "t": "pioneers:block/industry/building/coil_advanced_end_v"
+ }
+}

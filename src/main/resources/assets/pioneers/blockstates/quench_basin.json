@@ -1,0 +1,79 @@
+{
+ "variants": {
+  "facing=south,level=0": {
+   "model": "pioneers:block/mechanics/forge_quench_basin"
+  },
+  "facing=south,level=1": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_1"
+  },
+  "facing=south,level=2": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_2"
+  },
+  "facing=south,level=3": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_3"
+  },
+  "facing=south,level=4": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_4"
+  },
+  "facing=west,level=0": {
+   "model": "pioneers:block/mechanics/forge_quench_basin",
+   "y": 90
+  },
+  "facing=west,level=1": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_1",
+   "y": 90
+  },
+  "facing=west,level=2": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_2",
+   "y": 90
+  },
+  "facing=west,level=3": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_3",
+   "y": 90
+  },
+  "facing=west,level=4": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_4",
+   "y": 90
+  },
+  "facing=north,level=0": {
+   "model": "pioneers:block/mechanics/forge_quench_basin",
+   "y": 180
+  },
+  "facing=north,level=1": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_1",
+   "y": 180
+  },
+  "facing=north,level=2": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_2",
+   "y": 180
+  },
+  "facing=north,level=3": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_3",
+   "y": 180
+  },
+  "facing=north,level=4": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_4",
+   "y": 180
+  },
+  "facing=east,level=0": {
+   "model": "pioneers:block/mechanics/forge_quench_basin",
+   "y": 270
+  },
+  "facing=east,level=1": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_1",
+   "y": 270
+  },
+  "facing=east,level=2": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_2",
+   "y": 270
+  },
+  "facing=east,level=3": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_3",
+   "y": 270
+  },
+  "facing=east,level=4": {
+   "model": "pioneers:block/mechanics/forge_quench_basin_4",
+   "y": 270
+  }
+ }
+}

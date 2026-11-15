@@ -1,0 +1,73 @@
+{
+ "multipart": [
+  {
+   "apply": {
+    "model": "pioneers:block/robotic_road"
+   }
+  },
+  {
+   "when": {
+    "north": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/robotic_road_curb_north"
+   }
+  },
+  {
+   "when": {
+    "line_north": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/robotic_road_line_north"
+   }
+  },
+  {
+   "when": {
+    "south": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/robotic_road_curb_south"
+   }
+  },
+  {
+   "when": {
+    "line_south": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/robotic_road_line_south"
+   }
+  },
+  {
+   "when": {
+    "east": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/robotic_road_curb_east"
+   }
+  },
+  {
+   "when": {
+    "line_east": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/robotic_road_line_east"
+   }
+  },
+  {
+   "when": {
+    "west": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/robotic_road_curb_west"
+   }
+  },
+  {
+   "when": {
+    "line_west": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/robotic_road_line_west"
+   }
+  }
+ ]
+}

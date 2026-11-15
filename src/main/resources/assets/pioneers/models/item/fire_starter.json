@@ -1,0 +1,233 @@
+{
+ "loader": "forge:separate_transforms",
+ "gui_light": "front",
+ "base": {
+  "parent": "pioneers:item/held3d/fire_starter"
+ },
+ "perspectives": {
+  "gui": {
+   "parent": "minecraft:item/generated",
+   "textures": {
+    "layer0": "pioneers:item/fire_starter"
+   }
+  }
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "pioneers:drill": 0.02703
+   },
+   "model": "pioneers:item/fire_starter_drill_0_0"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.05405
+   },
+   "model": "pioneers:item/fire_starter_drill_0_1"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.08108
+   },
+   "model": "pioneers:item/fire_starter_drill_0_2"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.10811
+   },
+   "model": "pioneers:item/fire_starter_drill_0_3"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.13514
+   },
+   "model": "pioneers:item/fire_starter_drill_0_4"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.16216
+   },
+   "model": "pioneers:item/fire_starter_drill_0_5"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.18919
+   },
+   "model": "pioneers:item/fire_starter_drill_0_6"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.21622
+   },
+   "model": "pioneers:item/fire_starter_drill_0_7"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.24324
+   },
+   "model": "pioneers:item/fire_starter_drill_0_8"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.27027
+   },
+   "model": "pioneers:item/fire_starter_drill_0_9"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.2973
+   },
+   "model": "pioneers:item/fire_starter_drill_0_10"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.32432
+   },
+   "model": "pioneers:item/fire_starter_drill_0_11"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.35135
+   },
+   "model": "pioneers:item/fire_starter_drill_1_0"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.37838
+   },
+   "model": "pioneers:item/fire_starter_drill_1_1"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.40541
+   },
+   "model": "pioneers:item/fire_starter_drill_1_2"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.43243
+   },
+   "model": "pioneers:item/fire_starter_drill_1_3"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.45946
+   },
+   "model": "pioneers:item/fire_starter_drill_1_4"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.48649
+   },
+   "model": "pioneers:item/fire_starter_drill_1_5"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.51351
+   },
+   "model": "pioneers:item/fire_starter_drill_1_6"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.54054
+   },
+   "model": "pioneers:item/fire_starter_drill_1_7"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.56757
+   },
+   "model": "pioneers:item/fire_starter_drill_1_8"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.59459
+   },
+   "model": "pioneers:item/fire_starter_drill_1_9"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.62162
+   },
+   "model": "pioneers:item/fire_starter_drill_1_10"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.64865
+   },
+   "model": "pioneers:item/fire_starter_drill_1_11"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.67568
+   },
+   "model": "pioneers:item/fire_starter_drill_2_0"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.7027
+   },
+   "model": "pioneers:item/fire_starter_drill_2_1"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.72973
+   },
+   "model": "pioneers:item/fire_starter_drill_2_2"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.75676
+   },
+   "model": "pioneers:item/fire_starter_drill_2_3"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.78378
+   },
+   "model": "pioneers:item/fire_starter_drill_2_4"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.81081
+   },
+   "model": "pioneers:item/fire_starter_drill_2_5"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.83784
+   },
+   "model": "pioneers:item/fire_starter_drill_2_6"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.86486
+   },
+   "model": "pioneers:item/fire_starter_drill_2_7"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.89189
+   },
+   "model": "pioneers:item/fire_starter_drill_2_8"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.91892
+   },
+   "model": "pioneers:item/fire_starter_drill_2_9"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.94595
+   },
+   "model": "pioneers:item/fire_starter_drill_2_10"
+  },
+  {
+   "predicate": {
+    "pioneers:drill": 0.97297
+   },
+   "model": "pioneers:item/fire_starter_drill_2_11"
+  }
+ ]
+}

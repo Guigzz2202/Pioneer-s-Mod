@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "active=false,facing=north": {
+   "model": "pioneers:block/naval/elite_harbor"
+  },
+  "active=true,facing=north": {
+   "model": "pioneers:block/naval/elite_harbor"
+  },
+  "active=false,facing=east": {
+   "model": "pioneers:block/naval/elite_harbor",
+   "y": 90
+  },
+  "active=true,facing=east": {
+   "model": "pioneers:block/naval/elite_harbor",
+   "y": 90
+  },
+  "active=false,facing=south": {
+   "model": "pioneers:block/naval/elite_harbor",
+   "y": 180
+  },
+  "active=true,facing=south": {
+   "model": "pioneers:block/naval/elite_harbor",
+   "y": 180
+  },
+  "active=false,facing=west": {
+   "model": "pioneers:block/naval/elite_harbor",
+   "y": 270
+  },
+  "active=true,facing=west": {
+   "model": "pioneers:block/naval/elite_harbor",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "loader": "forge:separate_transforms",
+ "gui_light": "side",
+ "display": {
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1.25,
+    1.25,
+    1.25
+   ]
+  }
+ },
+ "base": {
+  "parent": "pioneers:block/logistic_cable/wooden/core"
+ },
+ "perspectives": {
+  "gui": {
+   "parent": "pioneers:item/wooden_logistic_cable_gui"
+  }
+ }
+}

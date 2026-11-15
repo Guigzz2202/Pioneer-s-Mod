@@ -1,0 +1,12 @@
+{
+ "parent": "pioneers:block/home/template/wall_shelf_bracket_mid",
+ "textures": {
+  "board": "pioneers:block/home/wood/birch_board",
+  "post": "pioneers:block/home/wood/birch_post",
+  "dark": "pioneers:block/home/wood/birch_dark",
+  "end": "pioneers:block/home/wood/birch_end",
+  "top": "pioneers:block/home/wood/birch_top",
+  "panel": "pioneers:block/home/wood/birch_panel",
+  "particle": "pioneers:block/home/wood/birch_board"
+ }
+}

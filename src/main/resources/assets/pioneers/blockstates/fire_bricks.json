@@ -1,0 +1,184 @@
+{
+ "variants": {
+  "heat=0,part=none": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_0"
+  },
+  "heat=0,part=plinth": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_plinth_0"
+  },
+  "heat=0,part=stack": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_stack_0"
+  },
+  "heat=0,part=band": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_band_0"
+  },
+  "heat=0,part=crown": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_crown_0"
+  },
+  "heat=0,part=coke_wall": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_wall_0"
+  },
+  "heat=0,part=coke_corner": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_0"
+  },
+  "heat=0,part=coke_door": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_door_0"
+  },
+  "heat=0,part=coke_cap": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_cap_0"
+  },
+  "heat=0,part=coke_chimney": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_chimney_0"
+  },
+  "heat=0,part=coke_corner_nw": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_0"
+  },
+  "heat=0,part=coke_corner_ne": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_0",
+   "y": 90
+  },
+  "heat=0,part=coke_corner_se": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_0",
+   "y": 180
+  },
+  "heat=0,part=coke_corner_sw": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_0",
+   "y": 270
+  },
+  "heat=1,part=none": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_1"
+  },
+  "heat=1,part=plinth": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_plinth_1"
+  },
+  "heat=1,part=stack": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_stack_1"
+  },
+  "heat=1,part=band": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_band_1"
+  },
+  "heat=1,part=crown": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_crown_1"
+  },
+  "heat=1,part=coke_wall": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_wall_1"
+  },
+  "heat=1,part=coke_corner": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_1"
+  },
+  "heat=1,part=coke_door": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_door_1"
+  },
+  "heat=1,part=coke_cap": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_cap_1"
+  },
+  "heat=1,part=coke_chimney": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_chimney_1"
+  },
+  "heat=1,part=coke_corner_nw": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_1"
+  },
+  "heat=1,part=coke_corner_ne": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_1",
+   "y": 90
+  },
+  "heat=1,part=coke_corner_se": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_1",
+   "y": 180
+  },
+  "heat=1,part=coke_corner_sw": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_1",
+   "y": 270
+  },
+  "heat=2,part=none": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_2"
+  },
+  "heat=2,part=plinth": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_plinth_2"
+  },
+  "heat=2,part=stack": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_stack_2"
+  },
+  "heat=2,part=band": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_band_2"
+  },
+  "heat=2,part=crown": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_crown_2"
+  },
+  "heat=2,part=coke_wall": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_wall_2"
+  },
+  "heat=2,part=coke_corner": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_2"
+  },
+  "heat=2,part=coke_door": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_door_2"
+  },
+  "heat=2,part=coke_cap": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_cap_2"
+  },
+  "heat=2,part=coke_chimney": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_chimney_2"
+  },
+  "heat=2,part=coke_corner_nw": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_2"
+  },
+  "heat=2,part=coke_corner_ne": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_2",
+   "y": 90
+  },
+  "heat=2,part=coke_corner_se": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_2",
+   "y": 180
+  },
+  "heat=2,part=coke_corner_sw": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_2",
+   "y": 270
+  },
+  "heat=3,part=none": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_3"
+  },
+  "heat=3,part=plinth": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_plinth_3"
+  },
+  "heat=3,part=stack": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_stack_3"
+  },
+  "heat=3,part=band": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_band_3"
+  },
+  "heat=3,part=crown": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_crown_3"
+  },
+  "heat=3,part=coke_wall": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_wall_3"
+  },
+  "heat=3,part=coke_corner": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_3"
+  },
+  "heat=3,part=coke_door": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_door_3"
+  },
+  "heat=3,part=coke_cap": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_cap_3"
+  },
+  "heat=3,part=coke_chimney": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_chimney_3"
+  },
+  "heat=3,part=coke_corner_nw": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_3"
+  },
+  "heat=3,part=coke_corner_ne": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_3",
+   "y": 90
+  },
+  "heat=3,part=coke_corner_se": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_3",
+   "y": 180
+  },
+  "heat=3,part=coke_corner_sw": {
+   "model": "pioneers:block/mechanics/heat/fire_bricks_coke_corner_nw_3",
+   "y": 270
+  }
+ }
+}

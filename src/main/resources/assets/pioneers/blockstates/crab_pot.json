@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/farm/crustacean/crab_pot"
+  },
+  "facing=east": {
+   "model": "pioneers:block/farm/crustacean/crab_pot",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/farm/crustacean/crab_pot",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/farm/crustacean/crab_pot",
+   "y": 270
+  }
+ }
+}

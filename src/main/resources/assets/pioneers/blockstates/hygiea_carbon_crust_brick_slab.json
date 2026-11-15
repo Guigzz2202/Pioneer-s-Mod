@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "pioneers:block/hygiea_carbon_crust_brick_slab"
+  },
+  "type=top": {
+   "model": "pioneers:block/hygiea_carbon_crust_brick_slab_top"
+  },
+  "type=double": {
+   "model": "pioneers:block/hygiea_carbon_crust_bricks"
+  }
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "post": "#post",
+  "board": "#board",
+  "end": "#end",
+  "dark": "#dark",
+  "particle": "#board"
+ },
+ "elements": [
+  {
+   "from": [
+    14.5,
+    2,
+    0
+   ],
+   "to": [
+    16,
+    14.2,
+    1
+   ],
+   "faces": {
+    "north": {
+     "texture": "#board"
+    },
+    "south": {
+     "texture": "#board"
+    },
+    "west": {
+     "texture": "#board"
+    },
+    "east": {
+     "texture": "#board"
+    },
+    "up": {
+     "texture": "#board"
+    },
+    "down": {
+     "texture": "#board"
+    }
+   }
+  },
+  {
+   "from": [
+    14.5,
+    14.2,
+    0
+   ],
+   "to": [
+    16,
+    15.4,
+    1.8
+   ],
+   "faces": {
+    "north": {
+     "texture": "#post"
+    },
+    "south": {
+     "texture": "#post"
+    },
+    "west": {
+     "texture": "#post"
+    },
+    "east": {
+     "texture": "#post"
+    },
+    "up": {
+     "texture": "#end"
+    },
+    "down": {
+     "texture": "#post"
+    }
+   }
+  },
+  {
+   "from": [
+    14.5,
+    1,
+    0
+   ],
+   "to": [
+    16,
+    2,
+    2
+   ],
+   "faces": {
+    "north": {
+     "texture": "#post"
+    },
+    "south": {
+     "texture": "#post"
+    },
+    "west": {
+     "texture": "#post"
+    },
+    "east": {
+     "texture": "#post"
+    },
+    "up": {
+     "texture": "#board"
+    },
+    "down": {
+     "texture": "#post"
+    }
+   }
+  },
+  {
+   "from": [
+    14.5,
+    7.4,
+    1
+   ],
+   "to": [
+    16,
+    8.2,
+    1.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#dark"
+    },
+    "south": {
+     "texture": "#dark"
+    },
+    "west": {
+     "texture": "#dark"
+    },
+    "east": {
+     "texture": "#dark"
+    },
+    "up": {
+     "texture": "#dark"
+    },
+    "down": {
+     "texture": "#dark"
+    }
+   }
+  }
+ ]
+}

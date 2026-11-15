@@ -1,0 +1,223 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "bronze": "pioneers:block/mechanics/bronze",
+  "bronze_dark": "pioneers:block/mechanics/bronze_dark",
+  "bronze_plate": "pioneers:block/mechanics/bronze_plate",
+  "brass": "pioneers:block/mechanics/brass",
+  "iron": "pioneers:block/mechanics/iron",
+  "particle": "pioneers:block/mechanics/bronze"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    4,
+    14.5
+   ],
+   "to": [
+    11,
+    12,
+    16
+   ],
+   "faces": {
+    "south": {
+     "texture": "#bronze_plate"
+    },
+    "north": {
+     "texture": "#bronze_plate"
+    },
+    "east": {
+     "texture": "#bronze_plate"
+    },
+    "west": {
+     "texture": "#bronze_plate"
+    },
+    "up": {
+     "texture": "#bronze_plate"
+    },
+    "down": {
+     "texture": "#bronze_plate"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    4.75,
+    14.25
+   ],
+   "to": [
+    8.5,
+    5.5,
+    14.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#iron"
+    },
+    "east": {
+     "texture": "#iron"
+    },
+    "west": {
+     "texture": "#iron"
+    },
+    "up": {
+     "texture": "#iron"
+    },
+    "down": {
+     "texture": "#iron"
+    },
+    "south": {
+     "texture": "#iron"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    10.5,
+    14.25
+   ],
+   "to": [
+    8.5,
+    11.25,
+    14.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#iron"
+    },
+    "east": {
+     "texture": "#iron"
+    },
+    "west": {
+     "texture": "#iron"
+    },
+    "up": {
+     "texture": "#iron"
+    },
+    "down": {
+     "texture": "#iron"
+    },
+    "south": {
+     "texture": "#iron"
+    }
+   }
+  },
+  {
+   "from": [
+    6.25,
+    6.5,
+    13.0
+   ],
+   "to": [
+    9.75,
+    9.5,
+    14.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze_dark"
+    },
+    "east": {
+     "texture": "#bronze_dark"
+    },
+    "west": {
+     "texture": "#bronze_dark"
+    },
+    "up": {
+     "texture": "#bronze_dark"
+    },
+    "down": {
+     "texture": "#bronze_dark"
+    },
+    "south": {
+     "texture": "#bronze_dark"
+    }
+   }
+  },
+  {
+   "from": [
+    7.25,
+    7.25,
+    7.25
+   ],
+   "to": [
+    8.75,
+    8.75,
+    13.0
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bronze"
+    },
+    "east": {
+     "texture": "#bronze"
+    },
+    "west": {
+     "texture": "#bronze"
+    },
+    "up": {
+     "texture": "#bronze"
+    },
+    "down": {
+     "texture": "#bronze"
+    },
+    "south": {
+     "texture": "#bronze"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     13.75
+    ],
+    "axis": "x",
+    "angle": -45
+   }
+  },
+  {
+   "from": [
+    6.75,
+    6.75,
+    5.75
+   ],
+   "to": [
+    9.25,
+    9.25,
+    7.25
+   ],
+   "faces": {
+    "south": {
+     "texture": "#brass"
+    },
+    "north": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     13.75
+    ],
+    "axis": "x",
+    "angle": -45
+   }
+  }
+ ]
+}

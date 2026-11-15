@@ -1,0 +1,45 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "particle": "pioneers:block/naval/quay_side",
+  "side": "pioneers:block/naval/quay_side",
+  "wall": "pioneers:block/naval/quay_wall",
+  "top": "pioneers:block/naval/quay_top"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#side",
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#side",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#side",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#side",
+     "cullface": "west"
+    },
+    "down": {
+     "texture": "#side",
+     "cullface": "down"
+    }
+   }
+  }
+ ]
+}

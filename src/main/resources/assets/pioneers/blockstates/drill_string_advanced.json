@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "part=single": {
+   "model": "pioneers:block/industry/building/stacked/drill_string_advanced/single"
+  },
+  "part=bottom": {
+   "model": "pioneers:block/industry/building/stacked/drill_string_advanced/bottom"
+  },
+  "part=middle": {
+   "model": "pioneers:block/industry/building/stacked/drill_string_advanced/middle"
+  },
+  "part=top": {
+   "model": "pioneers:block/industry/building/stacked/drill_string_advanced/top"
+  }
+ }
+}

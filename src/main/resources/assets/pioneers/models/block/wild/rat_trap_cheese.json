@@ -1,0 +1,269 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "metal": "pioneers:block/wild/trap_metal",
+  "base": "pioneers:block/wild/trap_base",
+  "seeds": "pioneers:block/wild/bait_seeds",
+  "cheese": "pioneers:block/wild/bait_cheese",
+  "rat": "pioneers:block/wild/trap_rat",
+  "particle": "pioneers:block/wild/trap_base"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    0,
+    2
+   ],
+   "to": [
+    11,
+    1,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#base"
+    },
+    "south": {
+     "texture": "#base"
+    },
+    "east": {
+     "texture": "#base"
+    },
+    "west": {
+     "texture": "#base"
+    },
+    "up": {
+     "texture": "#base"
+    },
+    "down": {
+     "texture": "#base"
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    1,
+    7.5
+   ],
+   "to": [
+    10,
+    2,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    1,
+    3
+   ],
+   "to": [
+    9,
+    1.4,
+    6.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    1,
+    9
+   ],
+   "to": [
+    8.5,
+    1.6,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "from": [
+    5.4,
+    1,
+    8.5
+   ],
+   "to": [
+    6,
+    1.6,
+    14.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "from": [
+    10,
+    1,
+    8.5
+   ],
+   "to": [
+    10.6,
+    1.6,
+    14.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "from": [
+    5.38,
+    0.96,
+    13.8
+   ],
+   "to": [
+    10.62,
+    1.64,
+    14.44
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    1.4,
+    3.4
+   ],
+   "to": [
+    9,
+    2.8,
+    5.8
+   ],
+   "faces": {
+    "north": {
+     "texture": "#cheese"
+    },
+    "south": {
+     "texture": "#cheese"
+    },
+    "east": {
+     "texture": "#cheese"
+    },
+    "west": {
+     "texture": "#cheese"
+    },
+    "up": {
+     "texture": "#cheese"
+    },
+    "down": {
+     "texture": "#cheese"
+    }
+   }
+  }
+ ]
+}

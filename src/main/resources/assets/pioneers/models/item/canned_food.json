@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/farm/food/canned_food",
+  "layer1": "pioneers:item/farm/food/canned_food_content"
+ }
+}

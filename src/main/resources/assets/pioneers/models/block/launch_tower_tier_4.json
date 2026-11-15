@@ -1,0 +1,137 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "tier": "pioneers:block/buffer/common/tier_ultimate",
+    "particle": "pioneers:block/buffer/common/tier_ultimate"
+  },
+  "elements": [
+    {
+      "from": [
+        0.4,
+        5,
+        0.4
+      ],
+      "to": [
+        3.6,
+        9.5,
+        3.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tier"
+        },
+        "south": {
+          "texture": "#tier"
+        },
+        "east": {
+          "texture": "#tier"
+        },
+        "west": {
+          "texture": "#tier"
+        },
+        "up": {
+          "texture": "#tier"
+        },
+        "down": {
+          "texture": "#tier"
+        }
+      }
+    },
+    {
+      "from": [
+        12.4,
+        5,
+        0.4
+      ],
+      "to": [
+        15.6,
+        9.5,
+        3.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tier"
+        },
+        "south": {
+          "texture": "#tier"
+        },
+        "east": {
+          "texture": "#tier"
+        },
+        "west": {
+          "texture": "#tier"
+        },
+        "up": {
+          "texture": "#tier"
+        },
+        "down": {
+          "texture": "#tier"
+        }
+      }
+    },
+    {
+      "from": [
+        0.4,
+        5,
+        12.4
+      ],
+      "to": [
+        3.6,
+        9.5,
+        15.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tier"
+        },
+        "south": {
+          "texture": "#tier"
+        },
+        "east": {
+          "texture": "#tier"
+        },
+        "west": {
+          "texture": "#tier"
+        },
+        "up": {
+          "texture": "#tier"
+        },
+        "down": {
+          "texture": "#tier"
+        }
+      }
+    },
+    {
+      "from": [
+        12.4,
+        5,
+        12.4
+      ],
+      "to": [
+        15.6,
+        9.5,
+        15.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tier"
+        },
+        "south": {
+          "texture": "#tier"
+        },
+        "east": {
+          "texture": "#tier"
+        },
+        "west": {
+          "texture": "#tier"
+        },
+        "up": {
+          "texture": "#tier"
+        },
+        "down": {
+          "texture": "#tier"
+        }
+      }
+    }
+  ]
+}

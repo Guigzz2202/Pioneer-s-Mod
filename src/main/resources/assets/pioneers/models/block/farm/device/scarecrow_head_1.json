@@ -1,0 +1,149 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "pioneers:block/farm/device/burlap",
+  "pumpkin_top": "minecraft:block/pumpkin_top",
+  "carved_pumpkin": "minecraft:block/carved_pumpkin",
+  "pumpkin_side": "minecraft:block/pumpkin_side",
+  "wood_dark": "pioneers:block/farm/kitchen/wood_dark"
+ },
+ "elements": [
+  {
+   "from": [
+    4.8,
+    8.8,
+    4.8
+   ],
+   "to": [
+    11.2,
+    15.2,
+    11.2
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      4.8,
+      4.8,
+      11.2,
+      11.2
+     ],
+     "texture": "#pumpkin_top"
+    },
+    "down": {
+     "uv": [
+      4.8,
+      4.8,
+      11.2,
+      11.2
+     ],
+     "texture": "#pumpkin_top"
+    },
+    "north": {
+     "uv": [
+      4.8,
+      0.8,
+      11.2,
+      7.2
+     ],
+     "texture": "#carved_pumpkin"
+    },
+    "south": {
+     "uv": [
+      4.8,
+      0.8,
+      11.2,
+      7.2
+     ],
+     "texture": "#pumpkin_side"
+    },
+    "east": {
+     "uv": [
+      4.8,
+      0.8,
+      11.2,
+      7.2
+     ],
+     "texture": "#pumpkin_side"
+    },
+    "west": {
+     "uv": [
+      4.8,
+      0.8,
+      11.2,
+      7.2
+     ],
+     "texture": "#pumpkin_side"
+    }
+   }
+  },
+  {
+   "from": [
+    7.6,
+    15.2,
+    7.6
+   ],
+   "to": [
+    8.4,
+    16.4,
+    8.4
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      7.6,
+      7.6,
+      8.4,
+      8.4
+     ],
+     "texture": "#wood_dark"
+    },
+    "down": {
+     "uv": [
+      7.6,
+      7.6,
+      8.4,
+      8.4
+     ],
+     "texture": "#wood_dark"
+    },
+    "north": {
+     "uv": [
+      7.6,
+      15.6,
+      8.4,
+      16
+     ],
+     "texture": "#wood_dark"
+    },
+    "south": {
+     "uv": [
+      7.6,
+      15.6,
+      8.4,
+      16
+     ],
+     "texture": "#wood_dark"
+    },
+    "east": {
+     "uv": [
+      7.6,
+      15.6,
+      8.4,
+      16
+     ],
+     "texture": "#wood_dark"
+    },
+    "west": {
+     "uv": [
+      7.6,
+      15.6,
+      8.4,
+      16
+     ],
+     "texture": "#wood_dark"
+    }
+   }
+  }
+ ]
+}

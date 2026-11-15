@@ -1,0 +1,7 @@
+{
+ "variants": {
+  "": {
+   "model": "pioneers:block/marsium_block"
+  }
+ }
+}

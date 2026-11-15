@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/north_00",
+ "textures": {
+  "t": "pioneers:block/industry/design/casing/basic_electric_v"
+ }
+}

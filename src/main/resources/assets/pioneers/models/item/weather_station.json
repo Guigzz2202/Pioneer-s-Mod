@@ -1,0 +1,22 @@
+{
+ "parent": "pioneers:block/farm/device/weather_station",
+ "display": {
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    -0.0,
+    -2.551,
+    0
+   ],
+   "scale": [
+    0.5491,
+    0.5491,
+    0.5491
+   ]
+  }
+ }
+}

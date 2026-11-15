@@ -1,0 +1,75 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "side": "pioneers:block/home/beam/oak_beam_side",
+  "end": "pioneers:block/home/beam/oak_beam_end",
+  "particle": "pioneers:block/home/beam/oak_beam_side"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    14,
+    2
+   ],
+   "to": [
+    16,
+    16,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#side",
+     "uv": [
+      0,
+      0,
+      2,
+      16
+     ],
+     "rotation": 90
+    },
+    "south": {
+     "texture": "#side",
+     "uv": [
+      0,
+      0,
+      2,
+      16
+     ],
+     "rotation": 90
+    },
+    "west": {
+     "texture": "#end",
+     "uv": [
+      2,
+      0,
+      14,
+      2
+     ],
+     "cullface": "west"
+    },
+    "east": {
+     "texture": "#end",
+     "uv": [
+      2,
+      0,
+      14,
+      2
+     ],
+     "cullface": "east"
+    },
+    "up": {
+     "texture": "#side",
+     "uv": [
+      2,
+      0,
+      14,
+      16
+     ],
+     "rotation": 90,
+     "cullface": "up"
+    }
+   }
+  }
+ ]
+}

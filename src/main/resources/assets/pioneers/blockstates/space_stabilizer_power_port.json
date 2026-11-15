@@ -1,0 +1,22 @@
+{
+ "variants": {
+  "enabled=false,regime=none": {
+   "model": "pioneers:block/space_stabilizer_power_port"
+  },
+  "enabled=true,regime=none": {
+   "model": "pioneers:block/space_stabilizer_power_port"
+  },
+  "enabled=false,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_power_port_singularity"
+  },
+  "enabled=true,regime=singularity": {
+   "model": "pioneers:block/space_stabilizer_power_port_singularity"
+  },
+  "enabled=false,regime=star": {
+   "model": "pioneers:block/space_stabilizer_power_port_star"
+  },
+  "enabled=true,regime=star": {
+   "model": "pioneers:block/space_stabilizer_power_port_star"
+  }
+ }
+}

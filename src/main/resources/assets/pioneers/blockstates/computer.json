@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "active=false,facing=north": {
+   "model": "pioneers:block/computing/computer"
+  },
+  "active=true,facing=north": {
+   "model": "pioneers:block/computing/computer_on"
+  },
+  "active=false,facing=east": {
+   "model": "pioneers:block/computing/computer",
+   "y": 90
+  },
+  "active=true,facing=east": {
+   "model": "pioneers:block/computing/computer_on",
+   "y": 90
+  },
+  "active=false,facing=south": {
+   "model": "pioneers:block/computing/computer",
+   "y": 180
+  },
+  "active=true,facing=south": {
+   "model": "pioneers:block/computing/computer_on",
+   "y": 180
+  },
+  "active=false,facing=west": {
+   "model": "pioneers:block/computing/computer",
+   "y": 270
+  },
+  "active=true,facing=west": {
+   "model": "pioneers:block/computing/computer_on",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pioneers:block/paperwork/archive_bin"
+  },
+  "facing=east": {
+   "model": "pioneers:block/paperwork/archive_bin",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pioneers:block/paperwork/archive_bin",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pioneers:block/paperwork/archive_bin",
+   "y": 270
+  }
+ }
+}

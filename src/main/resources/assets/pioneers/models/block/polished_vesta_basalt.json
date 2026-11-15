@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/cube_column",
+ "textures": {
+  "side": "pioneers:block/polished_vesta_basalt",
+  "end": "pioneers:block/polished_vesta_basalt_top"
+ }
+}
