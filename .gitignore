@@ -1,13 +1,13 @@
 # Gradle
 .gradle/
 build/
-out/
+/out/
 !gradle/wrapper/gradle-wrapper.jar
 
 # ForgeGradle : dossiers de lancement et de données
 run/
 run-data/
-logs/
+/logs/
 *.log
 
 # IDE
@@ -19,7 +19,7 @@ logs/
 .classpath
 .project
 .settings/
-bin/
+/bin/
 
 # Système
 .DS_Store
