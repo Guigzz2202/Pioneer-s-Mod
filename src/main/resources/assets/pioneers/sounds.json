@@ -1,0 +1,2310 @@
+{
+  "music.space.rocky": {
+    "sounds": [
+      {
+        "name": "pioneers:music/regolithe",
+        "stream": true
+      },
+      {
+        "name": "pioneers:music/tharsis",
+        "stream": true
+      },
+      {
+        "name": "pioneers:music/orbite_lointaine",
+        "stream": true,
+        "volume": 0.8
+      }
+    ]
+  },
+  "music.space.distant": {
+    "sounds": [
+      {
+        "name": "pioneers:music/orbite_lointaine",
+        "stream": true,
+        "volume": 0.8
+      },
+      {
+        "name": "pioneers:music/neige_de_pluton",
+        "stream": true,
+        "volume": 0.8
+      },
+      {
+        "name": "pioneers:music/lumiere_cendree",
+        "stream": true,
+        "volume": 0.85
+      }
+    ]
+  },
+  "music.space.exoplanet": {
+    "sounds": [
+      {
+        "name": "pioneers:music/deux_soleils",
+        "stream": true
+      },
+      {
+        "name": "pioneers:music/rouge_eternel",
+        "stream": true
+      },
+      {
+        "name": "pioneers:music/lumiere_cendree",
+        "stream": true,
+        "volume": 0.85
+      }
+    ]
+  },
+  "music.space.gas_giant": {
+    "sounds": [
+      {
+        "name": "pioneers:music/sous_les_nuages",
+        "stream": true,
+        "volume": 0.85
+      },
+      {
+        "name": "pioneers:music/neige_de_pluton",
+        "stream": true,
+        "volume": 0.8
+      }
+    ]
+  },
+  "music.space.orbit": {
+    "sounds": [
+      {
+        "name": "pioneers:music/station",
+        "stream": true,
+        "volume": 0.85
+      },
+      {
+        "name": "pioneers:music/orbite_lointaine",
+        "stream": true,
+        "volume": 0.8
+      },
+      {
+        "name": "pioneers:music/sous_les_nuages",
+        "stream": true,
+        "volume": 0.85
+      }
+    ]
+  },
+  "transit.burn": {
+    "subtitle": "subtitles.pioneers.transit.burn",
+    "sounds": [
+      "pioneers:transit/burn"
+    ]
+  },
+  "transit.warp": {
+    "subtitle": "subtitles.pioneers.transit.warp",
+    "sounds": [
+      "pioneers:transit/warp"
+    ]
+  },
+  "capsule.thruster": {
+    "subtitle": "subtitles.pioneers.capsule.thruster",
+    "sounds": [
+      "pioneers:capsule/thruster"
+    ]
+  },
+  "capsule.chute": {
+    "subtitle": "subtitles.pioneers.capsule.chute",
+    "sounds": [
+      "pioneers:capsule/chute"
+    ]
+  },
+  "capsule.touchdown": {
+    "subtitle": "subtitles.pioneers.capsule.touchdown",
+    "sounds": [
+      "pioneers:capsule/touchdown"
+    ]
+  },
+  "capsule.alarm": {
+    "subtitle": "subtitles.pioneers.capsule.alarm",
+    "sounds": [
+      "pioneers:capsule/alarm"
+    ]
+  },
+  "drone.hum": {
+    "subtitle": "subtitles.pioneers.drone.hum",
+    "sounds": [
+      "pioneers:drone/hum"
+    ]
+  },
+  "drone.dock": {
+    "subtitle": "subtitles.pioneers.drone.dock",
+    "sounds": [
+      "pioneers:drone/dock"
+    ]
+  },
+  "scanner.ping": {
+    "subtitle": "subtitles.pioneers.scanner.ping",
+    "sounds": [
+      "pioneers:scanner/ping"
+    ]
+  },
+  "pocket.harvest": {
+    "subtitle": "subtitles.pioneers.pocket.harvest",
+    "sounds": [
+      "pioneers:pocket/harvest"
+    ]
+  },
+  "event.alarm": {
+    "subtitle": "subtitles.pioneers.event.alarm",
+    "sounds": [
+      "pioneers:event/alarm"
+    ]
+  },
+  "event.meteor": {
+    "subtitle": "subtitles.pioneers.event.meteor",
+    "sounds": [
+      "pioneers:event/meteor"
+    ]
+  },
+  "absorber.hum": {
+    "subtitle": "subtitles.pioneers.absorber.hum",
+    "sounds": [
+      "pioneers:absorber/hum"
+    ]
+  },
+  "simulator.hum": {
+    "subtitle": "subtitles.pioneers.simulator.hum",
+    "sounds": [
+      "pioneers:simulator/hum"
+    ]
+  },
+  "music_disc.regolithe": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/regolithe",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.tharsis": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/tharsis",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.lumiere_cendree": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/lumiere_cendree",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.orbite_lointaine": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/orbite_lointaine",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.neige_de_pluton": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/neige_de_pluton",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.sous_les_nuages": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/sous_les_nuages",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.station": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/station",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.deux_soleils": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/deux_soleils",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.rouge_eternel": {
+    "sounds": [
+      {
+        "name": "pioneers:records/space/rouge_eternel",
+        "stream": true
+      }
+    ]
+  },
+  "bronze.steam_hiss": {
+    "subtitle": "subtitles.pioneers.bronze.steam_hiss",
+    "sounds": [
+      "pioneers:bronze/steam_hiss"
+    ]
+  },
+  "bronze.steam_whistle": {
+    "subtitle": "subtitles.pioneers.bronze.steam_whistle",
+    "sounds": [
+      "pioneers:bronze/steam_whistle"
+    ]
+  },
+  "bronze.steam_chuff": {
+    "subtitle": "subtitles.pioneers.bronze.steam_chuff",
+    "sounds": [
+      "pioneers:bronze/steam_chuff"
+    ]
+  },
+  "bronze.steam_hammer": {
+    "subtitle": "subtitles.pioneers.bronze.steam_hammer",
+    "sounds": [
+      "pioneers:bronze/steam_hammer"
+    ]
+  },
+  "bronze.drill": {
+    "subtitle": "subtitles.pioneers.bronze.drill",
+    "sounds": [
+      "pioneers:bronze/drill"
+    ]
+  },
+  "bronze.blast_roar": {
+    "subtitle": "subtitles.pioneers.bronze.blast_roar",
+    "sounds": [
+      "pioneers:bronze/blast_roar"
+    ]
+  },
+  "nuclear.reactor_mk1": {
+    "subtitle": "subtitles.pioneers.nuclear.reactor_mk1",
+    "sounds": [
+      {
+        "name": "pioneers:nuclear/reactor_mk1",
+        "stream": false
+      }
+    ]
+  },
+  "nuclear.reactor_mk2": {
+    "subtitle": "subtitles.pioneers.nuclear.reactor_mk2",
+    "sounds": [
+      {
+        "name": "pioneers:nuclear/reactor_mk2",
+        "stream": false
+      }
+    ]
+  },
+  "nuclear.reactor_mk3": {
+    "subtitle": "subtitles.pioneers.nuclear.reactor_mk3",
+    "sounds": [
+      {
+        "name": "pioneers:nuclear/reactor_mk3",
+        "stream": false
+      }
+    ]
+  },
+  "nuclear.reactor_mk4": {
+    "subtitle": "subtitles.pioneers.nuclear.reactor_mk4",
+    "sounds": [
+      {
+        "name": "pioneers:nuclear/reactor_mk4",
+        "stream": false
+      }
+    ]
+  },
+  "nuclear.reactor_mk5": {
+    "subtitle": "subtitles.pioneers.nuclear.reactor_mk5",
+    "sounds": [
+      {
+        "name": "pioneers:nuclear/reactor_mk5",
+        "stream": false
+      }
+    ]
+  },
+  "nuclear.data_center": {
+    "subtitle": "subtitles.pioneers.nuclear.data_center",
+    "sounds": [
+      {
+        "name": "pioneers:nuclear/data_center",
+        "stream": false
+      }
+    ]
+  },
+  "nuclear.quantum_computer": {
+    "subtitle": "subtitles.pioneers.nuclear.quantum_computer",
+    "sounds": [
+      {
+        "name": "pioneers:nuclear/quantum_computer",
+        "stream": false
+      }
+    ]
+  },
+  "farm.crow_caw": {
+    "subtitle": "subtitles.pioneers.farm.crow_caw",
+    "sounds": [
+      "pioneers:farm/crow_caw_1",
+      "pioneers:farm/crow_caw_2",
+      "pioneers:farm/crow_caw_3",
+      "pioneers:farm/crow_caw_4",
+      "pioneers:farm/crow_caw_5",
+      "pioneers:farm/crow_caw_6",
+      "pioneers:farm/crow_caw_7"
+    ]
+  },
+  "music_disc.aube_sur_les_labours": {
+    "sounds": [
+      {
+        "name": "pioneers:records/aube_sur_les_labours",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.le_chant_des_bles": {
+    "sounds": [
+      {
+        "name": "pioneers:records/le_chant_des_bles",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.les_ailes_du_moulin": {
+    "sounds": [
+      {
+        "name": "pioneers:records/les_ailes_du_moulin",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.l_enclume_et_le_soufflet": {
+    "sounds": [
+      {
+        "name": "pioneers:records/l_enclume_et_le_soufflet",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.le_souffle_de_la_vapeur": {
+    "sounds": [
+      {
+        "name": "pioneers:records/le_souffle_de_la_vapeur",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.les_hautes_cheminees": {
+    "sounds": [
+      {
+        "name": "pioneers:records/les_hautes_cheminees",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.cornues_et_alambics": {
+    "sounds": [
+      {
+        "name": "pioneers:records/cornues_et_alambics",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.le_train_de_la_cote": {
+    "sounds": [
+      {
+        "name": "pioneers:records/le_train_de_la_cote",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.lueur_de_tcherenkov": {
+    "sounds": [
+      {
+        "name": "pioneers:records/lueur_de_tcherenkov",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.veillee_aux_etoiles": {
+    "sounds": [
+      {
+        "name": "pioneers:records/veillee_aux_etoiles",
+        "stream": true
+      }
+    ]
+  },
+  "leisure.flute": {
+    "subtitle": "subtitles.pioneers.leisure.flute",
+    "sounds": [
+      "pioneers:leisure/flute"
+    ]
+  },
+  "leisure.guitar": {
+    "subtitle": "subtitles.pioneers.leisure.guitar",
+    "sounds": [
+      "pioneers:leisure/guitar"
+    ]
+  },
+  "leisure.accordion": {
+    "subtitle": "subtitles.pioneers.leisure.accordion",
+    "sounds": [
+      "pioneers:leisure/accordion"
+    ]
+  },
+  "leisure.drum_kick": {
+    "subtitle": "subtitles.pioneers.leisure.drum",
+    "sounds": [
+      "pioneers:leisure/drum_kick"
+    ]
+  },
+  "leisure.drum_snare": {
+    "subtitle": "subtitles.pioneers.leisure.drum",
+    "sounds": [
+      "pioneers:leisure/drum_snare"
+    ]
+  },
+  "leisure.drum_tom_high": {
+    "subtitle": "subtitles.pioneers.leisure.drum",
+    "sounds": [
+      "pioneers:leisure/drum_tom_high"
+    ]
+  },
+  "leisure.drum_tom_low": {
+    "subtitle": "subtitles.pioneers.leisure.drum",
+    "sounds": [
+      "pioneers:leisure/drum_tom_low"
+    ]
+  },
+  "leisure.drum_hat": {
+    "subtitle": "subtitles.pioneers.leisure.drum",
+    "sounds": [
+      "pioneers:leisure/drum_hat"
+    ]
+  },
+  "leisure.drum_hat_open": {
+    "subtitle": "subtitles.pioneers.leisure.drum",
+    "sounds": [
+      "pioneers:leisure/drum_hat_open"
+    ]
+  },
+  "leisure.drum_crash": {
+    "subtitle": "subtitles.pioneers.leisure.drum",
+    "sounds": [
+      "pioneers:leisure/drum_crash"
+    ]
+  },
+  "leisure.drum_clap": {
+    "subtitle": "subtitles.pioneers.leisure.drum",
+    "sounds": [
+      "pioneers:leisure/drum_clap"
+    ]
+  },
+  "leisure.pipe_puff": {
+    "subtitle": "subtitles.pioneers.leisure.pipe_puff",
+    "sounds": [
+      "pioneers:leisure/pipe_puff"
+    ]
+  },
+  "leisure.exhale": {
+    "subtitle": "subtitles.pioneers.leisure.exhale",
+    "sounds": [
+      "pioneers:leisure/exhale"
+    ]
+  },
+  "leisure.match": {
+    "subtitle": "subtitles.pioneers.leisure.match",
+    "sounds": [
+      "pioneers:leisure/match"
+    ]
+  },
+  "leisure.pipe_fill": {
+    "subtitle": "subtitles.pioneers.leisure.pipe_fill",
+    "sounds": [
+      "pioneers:leisure/pipe_fill"
+    ]
+  },
+  "music.earth.aube_sur_les_labours": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/aube_sur_les_labours",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.le_chant_des_bles": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/le_chant_des_bles",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.les_ailes_du_moulin": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/les_ailes_du_moulin",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.l_enclume_et_le_soufflet": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/l_enclume_et_le_soufflet",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.le_souffle_de_la_vapeur": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/le_souffle_de_la_vapeur",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.les_hautes_cheminees": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/les_hautes_cheminees",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.cornues_et_alambics": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/cornues_et_alambics",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.le_train_de_la_cote": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/le_train_de_la_cote",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.lueur_de_tcherenkov": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/lueur_de_tcherenkov",
+        "stream": true
+      }
+    ]
+  },
+  "music.earth.veillee_aux_etoiles": {
+    "sounds": [
+      {
+        "name": "pioneers:music/earth/veillee_aux_etoiles",
+        "stream": true
+      }
+    ]
+  },
+  "rp.page": {
+    "subtitle": "subtitles.pioneers.rp.page",
+    "sounds": [
+      "pioneers:rp/page"
+    ]
+  },
+  "rp.level_up": {
+    "subtitle": "subtitles.pioneers.rp.level_up",
+    "sounds": [
+      "pioneers:rp/level_up"
+    ]
+  },
+  "rp.mastery": {
+    "subtitle": "subtitles.pioneers.rp.mastery",
+    "sounds": [
+      "pioneers:rp/mastery"
+    ]
+  },
+  "rp.seal": {
+    "subtitle": "subtitles.pioneers.rp.seal",
+    "sounds": [
+      "pioneers:rp/seal"
+    ]
+  },
+  "rp.rewrite": {
+    "subtitle": "subtitles.pioneers.rp.rewrite",
+    "sounds": [
+      "pioneers:rp/rewrite"
+    ]
+  },
+  "rp.book_close": {
+    "subtitle": "subtitles.pioneers.rp.book_close",
+    "sounds": [
+      "pioneers:rp/book_close"
+    ]
+  },
+  "rp.servo_wake": {
+    "subtitle": "subtitles.pioneers.rp.servo_wake",
+    "sounds": [
+      "pioneers:rp/servo_wake"
+    ]
+  },
+  "rp.metal_step": {
+    "subtitle": "subtitles.pioneers.rp.metal_step",
+    "sounds": [
+      "pioneers:rp/metal_step"
+    ]
+  },
+  "rp.alarm": {
+    "subtitle": "subtitles.pioneers.rp.alarm",
+    "sounds": [
+      "pioneers:rp/alarm"
+    ]
+  },
+  "rp.piston": {
+    "subtitle": "subtitles.pioneers.rp.piston",
+    "sounds": [
+      "pioneers:rp/piston"
+    ]
+  },
+  "rp.shutdown": {
+    "subtitle": "subtitles.pioneers.rp.shutdown",
+    "sounds": [
+      "pioneers:rp/shutdown"
+    ]
+  },
+  "rp.laser_charge": {
+    "subtitle": "subtitles.pioneers.rp.laser_charge",
+    "sounds": [
+      "pioneers:rp/laser_charge"
+    ]
+  },
+  "rp.shred": {
+    "subtitle": "subtitles.pioneers.rp.shred",
+    "sounds": [
+      "pioneers:rp/shred"
+    ]
+  },
+  "rp.keypad": {
+    "subtitle": "subtitles.pioneers.rp.keypad",
+    "sounds": [
+      "pioneers:rp/keypad"
+    ]
+  },
+  "rp.quill": {
+    "subtitle": "subtitles.pioneers.rp.quill",
+    "sounds": [
+      "pioneers:rp/quill"
+    ]
+  },
+  "rp.paper_pin": {
+    "subtitle": "subtitles.pioneers.rp.paper_pin",
+    "sounds": [
+      "pioneers:rp/paper_pin"
+    ]
+  },
+  "rp.llama_bells": {
+    "subtitle": "subtitles.pioneers.rp.llama_bells",
+    "sounds": [
+      "pioneers:rp/llama_bells"
+    ]
+  },
+  "rp.trust": {
+    "subtitle": "subtitles.pioneers.rp.trust",
+    "sounds": [
+      "pioneers:rp/trust"
+    ]
+  },
+  "rp.ballot": {
+    "subtitle": "subtitles.pioneers.rp.ballot",
+    "sounds": [
+      "pioneers:rp/ballot"
+    ]
+  },
+  "rp.intrusion": {
+    "subtitle": "subtitles.pioneers.rp.intrusion",
+    "sounds": [
+      "pioneers:rp/intrusion"
+    ]
+  },
+  "rp.siege_horn": {
+    "subtitle": "subtitles.pioneers.rp.siege_horn",
+    "sounds": [
+      "pioneers:rp/siege_horn"
+    ]
+  },
+  "rp.capture_up": {
+    "subtitle": "subtitles.pioneers.rp.capture_up",
+    "sounds": [
+      "pioneers:rp/capture_up"
+    ]
+  },
+  "rp.capture_down": {
+    "subtitle": "subtitles.pioneers.rp.capture_down",
+    "sounds": [
+      "pioneers:rp/capture_down"
+    ]
+  },
+  "rp.truce": {
+    "subtitle": "subtitles.pioneers.rp.truce",
+    "sounds": [
+      "pioneers:rp/truce"
+    ]
+  },
+  "wild.boar.ambient": {
+    "subtitle": "subtitles.pioneers.wild.boar.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.pig.ambient",
+        "type": "event",
+        "pitch": 0.72
+      },
+      {
+        "name": "minecraft:entity.pig.ambient",
+        "type": "event",
+        "pitch": 0.68
+      },
+      {
+        "name": "minecraft:entity.hoglin.ambient",
+        "type": "event",
+        "pitch": 1.1
+      }
+    ]
+  },
+  "wild.boar.hurt": {
+    "subtitle": "subtitles.pioneers.wild.boar.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.pig.ambient",
+        "type": "event",
+        "pitch": 0.6
+      },
+      {
+        "name": "minecraft:entity.hoglin.hurt",
+        "type": "event",
+        "pitch": 1.15
+      }
+    ]
+  },
+  "wild.boar.death": {
+    "subtitle": "subtitles.pioneers.wild.boar.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.pig.death",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.boar.charge": {
+    "subtitle": "subtitles.pioneers.wild.boar.charge",
+    "sounds": [
+      {
+        "name": "minecraft:entity.hoglin.angry",
+        "type": "event",
+        "pitch": 1.1
+      }
+    ]
+  },
+  "wild.deer.ambient": {
+    "subtitle": "subtitles.pioneers.wild.deer.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.goat.ambient",
+        "type": "event",
+        "pitch": 0.8
+      },
+      {
+        "name": "minecraft:entity.goat.ambient",
+        "type": "event",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "wild.deer.hurt": {
+    "subtitle": "subtitles.pioneers.wild.deer.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.goat.hurt",
+        "type": "event",
+        "pitch": 0.85
+      }
+    ]
+  },
+  "wild.deer.death": {
+    "subtitle": "subtitles.pioneers.wild.deer.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.goat.death",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.deer.bell": {
+    "subtitle": "subtitles.pioneers.wild.deer.bell",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cow.ambient",
+        "type": "event",
+        "pitch": 0.55
+      },
+      {
+        "name": "minecraft:entity.cow.ambient",
+        "type": "event",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "wild.turkey.ambient": {
+    "subtitle": "subtitles.pioneers.wild.turkey.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.ambient",
+        "type": "event",
+        "pitch": 0.62
+      },
+      {
+        "name": "minecraft:entity.chicken.ambient",
+        "type": "event",
+        "pitch": 0.6
+      },
+      {
+        "name": "minecraft:entity.chicken.ambient",
+        "type": "event",
+        "pitch": 0.58
+      }
+    ]
+  },
+  "wild.turkey.hurt": {
+    "subtitle": "subtitles.pioneers.wild.turkey.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.turkey.death": {
+    "subtitle": "subtitles.pioneers.wild.turkey.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 0.55
+      }
+    ]
+  },
+  "wild.turkey.strut": {
+    "subtitle": "subtitles.pioneers.wild.turkey.strut",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.ambient",
+        "type": "event",
+        "pitch": 0.5
+      },
+      {
+        "name": "minecraft:entity.parrot.ambient",
+        "type": "event",
+        "pitch": 0.55
+      }
+    ]
+  },
+  "wild.hare.ambient": {
+    "subtitle": "subtitles.pioneers.wild.hare.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.rabbit.ambient",
+        "type": "event",
+        "pitch": 0.85
+      }
+    ]
+  },
+  "wild.hare.hurt": {
+    "subtitle": "subtitles.pioneers.wild.hare.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.rabbit.hurt",
+        "type": "event",
+        "pitch": 0.85
+      }
+    ]
+  },
+  "wild.hare.death": {
+    "subtitle": "subtitles.pioneers.wild.hare.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.rabbit.death",
+        "type": "event",
+        "pitch": 0.85
+      }
+    ]
+  },
+  "wild.hare.jump": {
+    "subtitle": "subtitles.pioneers.wild.hare.jump",
+    "sounds": [
+      {
+        "name": "minecraft:entity.rabbit.jump",
+        "type": "event",
+        "pitch": 0.9
+      }
+    ]
+  },
+  "wild.bison.ambient": {
+    "subtitle": "subtitles.pioneers.wild.bison.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cow.ambient",
+        "type": "event",
+        "pitch": 0.55
+      },
+      {
+        "name": "minecraft:entity.cow.ambient",
+        "type": "event",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "wild.bison.hurt": {
+    "subtitle": "subtitles.pioneers.wild.bison.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cow.hurt",
+        "type": "event",
+        "pitch": 0.55
+      }
+    ]
+  },
+  "wild.bison.death": {
+    "subtitle": "subtitles.pioneers.wild.bison.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cow.hurt",
+        "type": "event",
+        "pitch": 0.45
+      }
+    ]
+  },
+  "wild.bison.angry": {
+    "subtitle": "subtitles.pioneers.wild.bison.angry",
+    "sounds": [
+      {
+        "name": "minecraft:entity.ravager.ambient",
+        "type": "event",
+        "pitch": 0.9
+      },
+      {
+        "name": "minecraft:entity.hoglin.angry",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.gray_wolf.ambient": {
+    "subtitle": "subtitles.pioneers.wild.gray_wolf.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.wolf.pant",
+        "type": "event",
+        "pitch": 0.85
+      },
+      {
+        "name": "minecraft:entity.wolf.whine",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.gray_wolf.hurt": {
+    "subtitle": "subtitles.pioneers.wild.gray_wolf.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.wolf.hurt",
+        "type": "event",
+        "pitch": 0.85
+      }
+    ]
+  },
+  "wild.gray_wolf.death": {
+    "subtitle": "subtitles.pioneers.wild.gray_wolf.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.wolf.death",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.gray_wolf.howl": {
+    "subtitle": "subtitles.pioneers.wild.gray_wolf.howl",
+    "sounds": [
+      {
+        "name": "minecraft:entity.wolf.howl",
+        "type": "event",
+        "pitch": 0.85
+      },
+      {
+        "name": "minecraft:entity.wolf.howl",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.gray_wolf.growl": {
+    "subtitle": "subtitles.pioneers.wild.gray_wolf.growl",
+    "sounds": [
+      {
+        "name": "minecraft:entity.wolf.growl",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.bear.ambient": {
+    "subtitle": "subtitles.pioneers.wild.bear.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.ambient",
+        "type": "event",
+        "pitch": 0.8
+      },
+      {
+        "name": "minecraft:entity.polar_bear.ambient",
+        "type": "event",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "wild.bear.hurt": {
+    "subtitle": "subtitles.pioneers.wild.bear.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.hurt",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.bear.death": {
+    "subtitle": "subtitles.pioneers.wild.bear.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.death",
+        "type": "event",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "wild.bear.roar": {
+    "subtitle": "subtitles.pioneers.wild.bear.roar",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.warning",
+        "type": "event",
+        "pitch": 0.75
+      },
+      {
+        "name": "minecraft:entity.polar_bear.warning",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.woodpecker.ambient": {
+    "subtitle": "subtitles.pioneers.wild.woodpecker.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.parrot.ambient",
+        "type": "event",
+        "pitch": 1.35
+      },
+      {
+        "name": "minecraft:entity.parrot.ambient",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.woodpecker.hurt": {
+    "subtitle": "subtitles.pioneers.wild.woodpecker.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 1.5
+      }
+    ]
+  },
+  "wild.woodpecker.death": {
+    "subtitle": "subtitles.pioneers.wild.woodpecker.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.woodpecker.drum": {
+    "subtitle": "subtitles.pioneers.wild.woodpecker.drum",
+    "sounds": [
+      {
+        "name": "minecraft:block.wood.break",
+        "type": "event",
+        "pitch": 1.8
+      },
+      {
+        "name": "minecraft:block.wood.break",
+        "type": "event",
+        "pitch": 1.75
+      },
+      {
+        "name": "minecraft:block.wood.break",
+        "type": "event",
+        "pitch": 1.85
+      }
+    ]
+  },
+  "wild.rat.ambient": {
+    "subtitle": "subtitles.pioneers.wild.rat.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.bat.ambient",
+        "type": "event",
+        "pitch": 0.75
+      },
+      {
+        "name": "minecraft:entity.bat.ambient",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.rat.hurt": {
+    "subtitle": "subtitles.pioneers.wild.rat.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.silverfish.hurt",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.rat.death": {
+    "subtitle": "subtitles.pioneers.wild.rat.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.silverfish.death",
+        "type": "event",
+        "pitch": 1.4
+      }
+    ]
+  },
+  "wild.rat.steal": {
+    "subtitle": "subtitles.pioneers.wild.rat.steal",
+    "sounds": [
+      {
+        "name": "minecraft:entity.bat.ambient",
+        "type": "event",
+        "pitch": 0.95
+      },
+      {
+        "name": "minecraft:entity.silverfish.ambient",
+        "type": "event",
+        "pitch": 1.4
+      }
+    ]
+  },
+  "wild.pigeon.ambient": {
+    "subtitle": "subtitles.pioneers.wild.pigeon.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.ambient",
+        "type": "event",
+        "pitch": 0.45
+      },
+      {
+        "name": "minecraft:entity.chicken.ambient",
+        "type": "event",
+        "pitch": 0.42
+      }
+    ]
+  },
+  "wild.pigeon.hurt": {
+    "subtitle": "subtitles.pioneers.wild.pigeon.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 0.9
+      }
+    ]
+  },
+  "wild.pigeon.death": {
+    "subtitle": "subtitles.pioneers.wild.pigeon.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "wild.pigeon.flap": {
+    "subtitle": "subtitles.pioneers.wild.pigeon.flap",
+    "sounds": [
+      {
+        "name": "minecraft:entity.bat.takeoff",
+        "type": "event",
+        "pitch": 1.25
+      }
+    ]
+  },
+  "wild.snake.ambient": {
+    "subtitle": "subtitles.pioneers.wild.snake.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.hiss",
+        "type": "event",
+        "pitch": 0.7
+      },
+      {
+        "name": "minecraft:entity.cat.hiss",
+        "type": "event",
+        "pitch": 0.68
+      }
+    ]
+  },
+  "wild.snake.hurt": {
+    "subtitle": "subtitles.pioneers.wild.snake.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.silverfish.hurt",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.snake.death": {
+    "subtitle": "subtitles.pioneers.wild.snake.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.silverfish.death",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.snake.bite": {
+    "subtitle": "subtitles.pioneers.wild.snake.bite",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.hiss",
+        "type": "event",
+        "pitch": 1.15
+      },
+      {
+        "name": "minecraft:entity.cat.hiss",
+        "type": "event",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "wild.giraffe.ambient": {
+    "subtitle": "subtitles.pioneers.wild.giraffe.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.llama.ambient",
+        "type": "event",
+        "pitch": 0.7
+      },
+      {
+        "name": "minecraft:entity.horse.breathe",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.giraffe.hurt": {
+    "subtitle": "subtitles.pioneers.wild.giraffe.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.llama.hurt",
+        "type": "event",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "wild.giraffe.death": {
+    "subtitle": "subtitles.pioneers.wild.giraffe.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.llama.death",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.giraffe.kick": {
+    "subtitle": "subtitles.pioneers.wild.giraffe.kick",
+    "sounds": [
+      {
+        "name": "minecraft:entity.horse.angry",
+        "type": "event",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "wild.lion.ambient": {
+    "subtitle": "subtitles.pioneers.wild.lion.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.purreow",
+        "type": "event",
+        "pitch": 0.45
+      }
+    ]
+  },
+  "wild.lion.hurt": {
+    "subtitle": "subtitles.pioneers.wild.lion.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.hurt",
+        "type": "event",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "wild.lion.death": {
+    "subtitle": "subtitles.pioneers.wild.lion.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.death",
+        "type": "event",
+        "pitch": 0.42
+      }
+    ]
+  },
+  "wild.lion.roar": {
+    "subtitle": "subtitles.pioneers.wild.lion.roar",
+    "sounds": [
+      {
+        "name": "minecraft:entity.ravager.roar",
+        "type": "event",
+        "pitch": 1.25
+      },
+      {
+        "name": "minecraft:entity.ravager.roar",
+        "type": "event",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "wild.lion.growl": {
+    "subtitle": "subtitles.pioneers.wild.lion.growl",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.warning",
+        "type": "event",
+        "pitch": 1.25
+      },
+      {
+        "name": "minecraft:entity.polar_bear.warning",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.rhino.ambient": {
+    "subtitle": "subtitles.pioneers.wild.rhino.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.hoglin.ambient",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.rhino.hurt": {
+    "subtitle": "subtitles.pioneers.wild.rhino.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.hoglin.hurt",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.rhino.death": {
+    "subtitle": "subtitles.pioneers.wild.rhino.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.hoglin.death",
+        "type": "event",
+        "pitch": 0.55
+      }
+    ]
+  },
+  "wild.rhino.charge": {
+    "subtitle": "subtitles.pioneers.wild.rhino.charge",
+    "sounds": [
+      {
+        "name": "minecraft:entity.hoglin.angry",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.elephant.ambient": {
+    "subtitle": "subtitles.pioneers.wild.elephant.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.ravager.ambient",
+        "type": "event",
+        "pitch": 0.55
+      }
+    ]
+  },
+  "wild.elephant.hurt": {
+    "subtitle": "subtitles.pioneers.wild.elephant.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.ravager.hurt",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.elephant.death": {
+    "subtitle": "subtitles.pioneers.wild.elephant.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.ravager.death",
+        "type": "event",
+        "pitch": 0.55
+      }
+    ]
+  },
+  "wild.elephant.trumpet": {
+    "subtitle": "subtitles.pioneers.wild.elephant.trumpet",
+    "sounds": [
+      {
+        "name": "minecraft:event.raid.horn",
+        "type": "event",
+        "pitch": 1.35
+      },
+      {
+        "name": "minecraft:event.raid.horn",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.monkey.ambient": {
+    "subtitle": "subtitles.pioneers.wild.monkey.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.parrot.ambient",
+        "type": "event",
+        "pitch": 0.85
+      },
+      {
+        "name": "minecraft:entity.parrot.ambient",
+        "type": "event",
+        "pitch": 0.8
+      },
+      {
+        "name": "minecraft:entity.fox.screech",
+        "type": "event",
+        "pitch": 1.6
+      }
+    ]
+  },
+  "wild.monkey.hurt": {
+    "subtitle": "subtitles.pioneers.wild.monkey.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.fox.hurt",
+        "type": "event",
+        "pitch": 1.4
+      }
+    ]
+  },
+  "wild.monkey.death": {
+    "subtitle": "subtitles.pioneers.wild.monkey.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.fox.death",
+        "type": "event",
+        "pitch": 1.4
+      }
+    ]
+  },
+  "wild.monkey.eat": {
+    "subtitle": "subtitles.pioneers.wild.monkey.eat",
+    "sounds": [
+      {
+        "name": "minecraft:entity.generic.eat",
+        "type": "event",
+        "pitch": 1.25
+      }
+    ]
+  },
+  "wild.monkey.steal": {
+    "subtitle": "subtitles.pioneers.wild.monkey.steal",
+    "sounds": [
+      {
+        "name": "minecraft:entity.fox.screech",
+        "type": "event",
+        "pitch": 1.7
+      }
+    ]
+  },
+  "wild.tiger.ambient": {
+    "subtitle": "subtitles.pioneers.wild.tiger.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.purreow",
+        "type": "event",
+        "pitch": 0.4
+      }
+    ]
+  },
+  "wild.tiger.hurt": {
+    "subtitle": "subtitles.pioneers.wild.tiger.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.hurt",
+        "type": "event",
+        "pitch": 0.45
+      }
+    ]
+  },
+  "wild.tiger.death": {
+    "subtitle": "subtitles.pioneers.wild.tiger.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.death",
+        "type": "event",
+        "pitch": 0.4
+      }
+    ]
+  },
+  "wild.tiger.roar": {
+    "subtitle": "subtitles.pioneers.wild.tiger.roar",
+    "sounds": [
+      {
+        "name": "minecraft:entity.ravager.roar",
+        "type": "event",
+        "pitch": 1.1
+      },
+      {
+        "name": "minecraft:entity.ravager.roar",
+        "type": "event",
+        "pitch": 1.15
+      }
+    ]
+  },
+  "wild.tiger.growl": {
+    "subtitle": "subtitles.pioneers.wild.tiger.growl",
+    "sounds": [
+      {
+        "name": "minecraft:entity.cat.hiss",
+        "type": "event",
+        "pitch": 0.45
+      }
+    ]
+  },
+  "wild.blue_whale.ambient": {
+    "subtitle": "subtitles.pioneers.wild.blue_whale.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.elder_guardian.ambient",
+        "type": "event",
+        "pitch": 0.45,
+        "volume": 2.0
+      },
+      {
+        "name": "minecraft:entity.dolphin.ambient_water",
+        "type": "event",
+        "pitch": 0.3,
+        "volume": 2.0
+      }
+    ]
+  },
+  "wild.blue_whale.hurt": {
+    "subtitle": "subtitles.pioneers.wild.blue_whale.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.hurt",
+        "type": "event",
+        "pitch": 0.4
+      }
+    ]
+  },
+  "wild.blue_whale.death": {
+    "subtitle": "subtitles.pioneers.wild.blue_whale.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.death",
+        "type": "event",
+        "pitch": 0.3
+      }
+    ]
+  },
+  "wild.blue_whale.blow": {
+    "subtitle": "subtitles.pioneers.wild.blue_whale.blow",
+    "sounds": [
+      {
+        "name": "minecraft:entity.puffer_fish.blow_up",
+        "type": "event",
+        "pitch": 0.4,
+        "volume": 2.0
+      },
+      {
+        "name": "minecraft:entity.player.splash",
+        "type": "event",
+        "pitch": 0.5,
+        "volume": 1.5
+      }
+    ]
+  },
+  "wild.humpback_whale.ambient": {
+    "subtitle": "subtitles.pioneers.wild.humpback_whale.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.elder_guardian.ambient",
+        "type": "event",
+        "pitch": 0.6,
+        "volume": 2.0
+      },
+      {
+        "name": "minecraft:entity.dolphin.ambient_water",
+        "type": "event",
+        "pitch": 0.4,
+        "volume": 2.0
+      }
+    ]
+  },
+  "wild.humpback_whale.hurt": {
+    "subtitle": "subtitles.pioneers.wild.humpback_whale.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.hurt",
+        "type": "event",
+        "pitch": 0.4
+      }
+    ]
+  },
+  "wild.humpback_whale.death": {
+    "subtitle": "subtitles.pioneers.wild.humpback_whale.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.death",
+        "type": "event",
+        "pitch": 0.35
+      }
+    ]
+  },
+  "wild.humpback_whale.blow": {
+    "subtitle": "subtitles.pioneers.wild.humpback_whale.blow",
+    "sounds": [
+      {
+        "name": "minecraft:entity.puffer_fish.blow_up",
+        "type": "event",
+        "pitch": 0.45,
+        "volume": 1.8
+      },
+      {
+        "name": "minecraft:entity.player.splash",
+        "type": "event",
+        "pitch": 0.55,
+        "volume": 1.4
+      }
+    ]
+  },
+  "wild.orca.ambient": {
+    "subtitle": "subtitles.pioneers.wild.orca.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.ambient",
+        "type": "event",
+        "pitch": 0.6
+      },
+      {
+        "name": "minecraft:entity.dolphin.play",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.orca.hurt": {
+    "subtitle": "subtitles.pioneers.wild.orca.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.hurt",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.orca.death": {
+    "subtitle": "subtitles.pioneers.wild.orca.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.death",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.orca.blow": {
+    "subtitle": "subtitles.pioneers.wild.orca.blow",
+    "sounds": [
+      {
+        "name": "minecraft:entity.puffer_fish.blow_up",
+        "type": "event",
+        "pitch": 0.7,
+        "volume": 1.2
+      }
+    ]
+  },
+  "wild.orca.attack": {
+    "subtitle": "subtitles.pioneers.wild.orca.attack",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.attack",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.sperm_whale.ambient": {
+    "subtitle": "subtitles.pioneers.wild.sperm_whale.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.elder_guardian.ambient",
+        "type": "event",
+        "pitch": 0.5,
+        "volume": 1.6
+      },
+      {
+        "name": "minecraft:block.wood.hit",
+        "type": "event",
+        "pitch": 0.5,
+        "volume": 1.5
+      }
+    ]
+  },
+  "wild.sperm_whale.hurt": {
+    "subtitle": "subtitles.pioneers.wild.sperm_whale.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.hurt",
+        "type": "event",
+        "pitch": 0.4
+      }
+    ]
+  },
+  "wild.sperm_whale.death": {
+    "subtitle": "subtitles.pioneers.wild.sperm_whale.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.death",
+        "type": "event",
+        "pitch": 0.3
+      }
+    ]
+  },
+  "wild.sperm_whale.blow": {
+    "subtitle": "subtitles.pioneers.wild.sperm_whale.blow",
+    "sounds": [
+      {
+        "name": "minecraft:entity.puffer_fish.blow_up",
+        "type": "event",
+        "pitch": 0.45,
+        "volume": 1.8
+      },
+      {
+        "name": "minecraft:entity.player.splash",
+        "type": "event",
+        "pitch": 0.5,
+        "volume": 1.4
+      }
+    ]
+  },
+  "wild.sperm_whale.attack": {
+    "subtitle": "subtitles.pioneers.wild.sperm_whale.attack",
+    "sounds": [
+      {
+        "name": "minecraft:entity.ravager.attack",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.great_white_shark.ambient": {
+    "subtitle": "subtitles.pioneers.wild.great_white_shark.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.swim",
+        "type": "event",
+        "pitch": 0.6,
+        "volume": 0.6
+      }
+    ]
+  },
+  "wild.great_white_shark.hurt": {
+    "subtitle": "subtitles.pioneers.wild.great_white_shark.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.hurt",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.great_white_shark.death": {
+    "subtitle": "subtitles.pioneers.wild.great_white_shark.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.death",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.great_white_shark.bite": {
+    "subtitle": "subtitles.pioneers.wild.great_white_shark.bite",
+    "sounds": [
+      {
+        "name": "minecraft:entity.evoker_fangs.attack",
+        "type": "event",
+        "pitch": 0.8999999999999999
+      }
+    ]
+  },
+  "wild.hammerhead_shark.ambient": {
+    "subtitle": "subtitles.pioneers.wild.hammerhead_shark.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.swim",
+        "type": "event",
+        "pitch": 0.75,
+        "volume": 0.6
+      }
+    ]
+  },
+  "wild.hammerhead_shark.hurt": {
+    "subtitle": "subtitles.pioneers.wild.hammerhead_shark.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.hurt",
+        "type": "event",
+        "pitch": 0.95
+      }
+    ]
+  },
+  "wild.hammerhead_shark.death": {
+    "subtitle": "subtitles.pioneers.wild.hammerhead_shark.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.death",
+        "type": "event",
+        "pitch": 0.85
+      }
+    ]
+  },
+  "wild.hammerhead_shark.bite": {
+    "subtitle": "subtitles.pioneers.wild.hammerhead_shark.bite",
+    "sounds": [
+      {
+        "name": "minecraft:entity.evoker_fangs.attack",
+        "type": "event",
+        "pitch": 1.05
+      }
+    ]
+  },
+  "wild.tiger_shark.ambient": {
+    "subtitle": "subtitles.pioneers.wild.tiger_shark.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.swim",
+        "type": "event",
+        "pitch": 0.65,
+        "volume": 0.6
+      }
+    ]
+  },
+  "wild.tiger_shark.hurt": {
+    "subtitle": "subtitles.pioneers.wild.tiger_shark.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.hurt",
+        "type": "event",
+        "pitch": 0.8500000000000001
+      }
+    ]
+  },
+  "wild.tiger_shark.death": {
+    "subtitle": "subtitles.pioneers.wild.tiger_shark.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.death",
+        "type": "event",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "wild.tiger_shark.bite": {
+    "subtitle": "subtitles.pioneers.wild.tiger_shark.bite",
+    "sounds": [
+      {
+        "name": "minecraft:entity.evoker_fangs.attack",
+        "type": "event",
+        "pitch": 0.95
+      }
+    ]
+  },
+  "wild.whale_shark.ambient": {
+    "subtitle": "subtitles.pioneers.wild.whale_shark.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.swim",
+        "type": "event",
+        "pitch": 0.4,
+        "volume": 0.8
+      }
+    ]
+  },
+  "wild.whale_shark.hurt": {
+    "subtitle": "subtitles.pioneers.wild.whale_shark.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.hurt",
+        "type": "event",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "wild.whale_shark.death": {
+    "subtitle": "subtitles.pioneers.wild.whale_shark.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.death",
+        "type": "event",
+        "pitch": 0.45
+      }
+    ]
+  },
+  "wild.gray_reef_shark.ambient": {
+    "subtitle": "subtitles.pioneers.wild.gray_reef_shark.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.swim",
+        "type": "event",
+        "pitch": 0.9,
+        "volume": 0.6
+      }
+    ]
+  },
+  "wild.gray_reef_shark.hurt": {
+    "subtitle": "subtitles.pioneers.wild.gray_reef_shark.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.hurt",
+        "type": "event",
+        "pitch": 1.1
+      }
+    ]
+  },
+  "wild.gray_reef_shark.death": {
+    "subtitle": "subtitles.pioneers.wild.gray_reef_shark.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.guardian.death",
+        "type": "event",
+        "pitch": 1.0
+      }
+    ]
+  },
+  "wild.gray_reef_shark.bite": {
+    "subtitle": "subtitles.pioneers.wild.gray_reef_shark.bite",
+    "sounds": [
+      {
+        "name": "minecraft:entity.evoker_fangs.attack",
+        "type": "event",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "wild.manta_ray.ambient": {
+    "subtitle": "subtitles.pioneers.wild.manta_ray.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.dolphin.swim",
+        "type": "event",
+        "pitch": 0.6,
+        "volume": 0.6
+      }
+    ]
+  },
+  "wild.manta_ray.hurt": {
+    "subtitle": "subtitles.pioneers.wild.manta_ray.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.squid.hurt",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.manta_ray.death": {
+    "subtitle": "subtitles.pioneers.wild.manta_ray.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.squid.death",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.seal.ambient": {
+    "subtitle": "subtitles.pioneers.wild.seal.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.ambient_baby",
+        "type": "event",
+        "pitch": 1.1
+      },
+      {
+        "name": "minecraft:entity.goat.ambient",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.seal.hurt": {
+    "subtitle": "subtitles.pioneers.wild.seal.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.hurt",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.seal.death": {
+    "subtitle": "subtitles.pioneers.wild.seal.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.death",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.seal.splash": {
+    "subtitle": "subtitles.pioneers.wild.seal.splash",
+    "sounds": [
+      {
+        "name": "minecraft:entity.generic.splash",
+        "type": "event",
+        "pitch": 1.1
+      }
+    ]
+  },
+  "wild.sea_lion.ambient": {
+    "subtitle": "subtitles.pioneers.wild.sea_lion.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.wolf.ambient",
+        "type": "event",
+        "pitch": 0.55
+      },
+      {
+        "name": "minecraft:entity.polar_bear.warning",
+        "type": "event",
+        "pitch": 1.6
+      }
+    ]
+  },
+  "wild.sea_lion.hurt": {
+    "subtitle": "subtitles.pioneers.wild.sea_lion.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.hurt",
+        "type": "event",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "wild.sea_lion.death": {
+    "subtitle": "subtitles.pioneers.wild.sea_lion.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.polar_bear.death",
+        "type": "event",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "wild.sea_lion.splash": {
+    "subtitle": "subtitles.pioneers.wild.sea_lion.splash",
+    "sounds": [
+      {
+        "name": "minecraft:entity.generic.splash",
+        "type": "event",
+        "pitch": 1.0
+      }
+    ]
+  },
+  "wild.seagull.ambient": {
+    "subtitle": "subtitles.pioneers.wild.seagull.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.parrot.ambient",
+        "type": "event",
+        "pitch": 1.3
+      },
+      {
+        "name": "minecraft:entity.parrot.imitate.vex",
+        "type": "event",
+        "pitch": 1.6
+      }
+    ]
+  },
+  "wild.seagull.hurt": {
+    "subtitle": "subtitles.pioneers.wild.seagull.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 1.3
+      }
+    ]
+  },
+  "wild.seagull.death": {
+    "subtitle": "subtitles.pioneers.wild.seagull.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.death",
+        "type": "event",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "wild.seagull.steal": {
+    "subtitle": "subtitles.pioneers.wild.seagull.steal",
+    "sounds": [
+      {
+        "name": "minecraft:entity.parrot.ambient",
+        "type": "event",
+        "pitch": 1.8
+      },
+      {
+        "name": "minecraft:entity.fox.screech",
+        "type": "event",
+        "pitch": 1.9
+      }
+    ]
+  },
+  "wild.penguin.ambient": {
+    "subtitle": "subtitles.pioneers.wild.penguin.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.goat.ambient",
+        "type": "event",
+        "pitch": 1.5
+      },
+      {
+        "name": "minecraft:entity.parrot.ambient",
+        "type": "event",
+        "pitch": 0.6
+      }
+    ]
+  },
+  "wild.penguin.hurt": {
+    "subtitle": "subtitles.pioneers.wild.penguin.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "wild.penguin.death": {
+    "subtitle": "subtitles.pioneers.wild.penguin.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.death",
+        "type": "event",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "wild.penguin.splash": {
+    "subtitle": "subtitles.pioneers.wild.penguin.splash",
+    "sounds": [
+      {
+        "name": "minecraft:entity.generic.splash",
+        "type": "event",
+        "pitch": 1.4
+      }
+    ]
+  },
+  "wild.razorbill.ambient": {
+    "subtitle": "subtitles.pioneers.wild.razorbill.ambient",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.ambient",
+        "type": "event",
+        "pitch": 0.6
+      },
+      {
+        "name": "minecraft:entity.goat.ambient",
+        "type": "event",
+        "pitch": 1.8
+      }
+    ]
+  },
+  "wild.razorbill.hurt": {
+    "subtitle": "subtitles.pioneers.wild.razorbill.hurt",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.hurt",
+        "type": "event",
+        "pitch": 1.0
+      }
+    ]
+  },
+  "wild.razorbill.death": {
+    "subtitle": "subtitles.pioneers.wild.razorbill.death",
+    "sounds": [
+      {
+        "name": "minecraft:entity.chicken.death",
+        "type": "event",
+        "pitch": 0.9
+      }
+    ]
+  },
+  "wild.razorbill.splash": {
+    "subtitle": "subtitles.pioneers.wild.razorbill.splash",
+    "sounds": [
+      {
+        "name": "minecraft:entity.generic.splash",
+        "type": "event",
+        "pitch": 1.6
+      }
+    ]
+  },
+  "bronze.blast_crackle": {
+    "subtitle": "subtitles.pioneers.bronze.blast_crackle",
+    "sounds": [
+      "pioneers:bronze/blast_crackle"
+    ]
+  },
+  "bronze.coke_crackle": {
+    "subtitle": "subtitles.pioneers.bronze.coke_crackle",
+    "sounds": [
+      "pioneers:bronze/coke_crackle"
+    ]
+  }
+}
