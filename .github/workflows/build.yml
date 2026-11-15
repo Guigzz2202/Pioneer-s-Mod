@@ -52,3 +52,46 @@ jobs:
           path: build/libs/*.jar
           if-no-files-found: error
           retention-days: 14
+
+  jeu:
+    # Démarrage réel : serveur dédié jusqu'à « Done », puis client sans écran (Xvfb) qui ouvre ce monde ; captures d'écran en artefact.
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Paquets d'affichage
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq xvfb imagemagick libgl1-mesa-dri >/dev/null
+
+      - name: Compilation
+        run: ./gradlew build -x test --console=plain
+
+      - name: Serveur dédié
+        run: |
+          mkdir -p essais && bash .github/scripts/smoke-server.sh . essais smoke | tee -a essais/verdict.txt
+          grep -q "SERVEUR : TOUT EST BON" essais/verdict.txt
+
+      - name: Client et monde
+        run: |
+          CLIENT_HEAP=6G bash .github/scripts/smoke-client.sh . essais smoke | tee -a essais/verdict.txt
+          grep -q "CLIENT : TOUT EST BON" essais/verdict.txt
+
+      - name: Captures et journaux
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jeu-${{ github.sha }}
+          path: |
+            essais/*.png
+            essais/*.log
+            essais/verdict.txt
+            run/crash-reports/*.txt
+          if-no-files-found: warn
+          retention-days: 14
