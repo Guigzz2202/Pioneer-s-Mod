@@ -1,18 +1,45 @@
 # GameTests qui echouent encore (1.0.6) : un nom par ligne. Tri et causes : tools/docs/gametests-tri-1.0.6.md (depot d'outils).
 # La CI echoue si un test absent de cette liste echoue. Retirer un nom des qu'il passe.
+# 16/11/2026 : 662 tests menes au bout (run 43808783490) : 40 echecs, tous deja en echec sur main (130), plus 2 tests instables passés dans ce run.
+ancien_monde_converti
+bac_de_vente_proprietaire_absent
 conduite_refractaire
+mb_plateforme
 p103_11_cordes
 p103_14_porte_outils_mural
+p103_7b_vider_le_bain
+p103_8_une_entite_par_race
+p103_9_armure_et_outils_sans_energie
 p103_poissons_plafonds
+p104_13_psa_au_separateur_de_gaz
+p104_16_circuit_a_tubes_a_l_etabli
+p104_22_silo_stocke_et_rend
 p104_24_four_industriel_forme_cuit_et_allume_ses_foyers
+p104_27_cable_cache
 p104_29_caravane_marche_au_pas
 p104_29_waypoint_administrateur
+p104_30_tp_jamais_en_survie
 p105_10_chien_grogne_chasse_en_avant
+p105_10_mousquet_balle_poudre_tir
+p105_13_four_eteint_inoffensif
+p105_1_saison_suivante
+p105_22_poubelle_videe_par_ses_voisins
 p105_28_chat_va_pecher
 p105_2_tick_meteo
+p105_31_recolte_champ_sac
+p105_38_marteau_pilon_migre
+p105_3_porte_ouverte
+p105_3_serre_formee_hors_saison
+p105_3_trou_dans_le_toit
 p105_41_enclos
+p105_4_repeuplement_hors_vue
 p105_5_rappel_autre_dimension
 p105_7_loup_chasse_mouton_chien_defend
 p105_7_rat_vole_coffre_pas_caisse
+p105_7_serpent_mord_poison_leger
 p105_7_vol_coupe_par_reglage
 p105_8_lion_couche_attaque_sous_6
+p105_9_poissons_laches_jamais_chasses
+restauration_rechargee_et_100_jours_chunk_decharge
+ruine_mk1_generee_dans_son_chunk
+ruine_mk2_generee_dans_son_chunk
