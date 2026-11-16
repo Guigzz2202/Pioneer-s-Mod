@@ -94,6 +94,10 @@ public final class PatchP105Lot1Tests {
         Gt.Scope s = Gt.begin(h);
         keepCalendar(s);
         ServerLevel level = s.level;
+        //1.0.6 : horloge au moins a un jour : sinon « now - GRACE_TICKS » est negatif, lu comme « aucun compte » (-1) et le compte repart
+        if (level.getDayTime() < FarmCropBlock.GRACE_TICKS) {
+            level.setDayTime(level.getDayTime() + 2 * FarmCropBlock.GRACE_TICKS);
+        }
         BlockPos soil = h.absolutePos(new BlockPos(4, 1, 4)), pos = soil.above();
         level.setBlock(soil, Blocks.FARMLAND.defaultBlockState().setValue(net.minecraft.world.level.block.FarmBlock.MOISTURE, 7), 3);
         CropDef def = hostileCrop(s, pos);

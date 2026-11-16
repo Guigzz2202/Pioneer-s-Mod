@@ -120,7 +120,9 @@ public final class PatchP104Lot24Tests {
             tile.itemInputs().get(0).setStack(one.copyWithCount(Math.min(one.getMaxStackSize(), r.items().get(0).count() * 8)));
             h.succeedWhen(() -> {
                 tile.getEnergy().setStored(tile.getEnergy().getCapacity());
-                Gt.check(fire.stream().allMatch(p -> h.getLevel().getBlockState(p).getValue(FireboxWallBlock.LIT)), "foyers eteints en marche");
+                Gt.check(fire.stream().allMatch(p -> h.getLevel().getBlockState(p).getValue(FireboxWallBlock.LIT)), "foyers eteints en marche (recette " + r.getId() + ", entree "
+                      + tile.itemInputs().get(0).getStack() + ", sorties " + tile.itemOutputs().stream().map(o -> o.getStack().toString()).toList()
+                      + ", etat " + tile.guiValue(3) + ")");
                 //Rupture : une paroi de foyer cassee, les autres s'eteignent
                 h.getLevel().destroyBlock(fire.get(0), false);
                 tile.requestCheck();

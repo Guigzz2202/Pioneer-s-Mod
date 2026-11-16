@@ -221,7 +221,8 @@ public final class FoundryTests {
             boolean[] wantSteel = {true, false, false};
             for (int z = 0; z < lines.length; z++) {
                 LogisticNetwork net = LogisticNetworks.network(h.getLevel(), h.absolutePos(new BlockPos(2, 2, 1 + 2 * z)));
-                Gt.check(net != null, "reseau de la ligne " + z + " pas encore construit");
+                Gt.check(net != null, "reseau de la ligne " + z + " pas encore construit (" + LogisticNetworks.networks(h.getLevel()).size()
+                      + " reseaux ; cable " + h.getBlockState(new BlockPos(1, 2, 1 + 2 * z)) + ")");
                 Gt.equal(wantSteel[z], net.level.accepts(ChannelKind.FLUID, steelT, false), "ligne " + z + " : acier fondu");
                 Gt.check(net.level.accepts(ChannelKind.FLUID, tinT, false), "ligne " + z + " : l'etain fondu passe partout");
             }
