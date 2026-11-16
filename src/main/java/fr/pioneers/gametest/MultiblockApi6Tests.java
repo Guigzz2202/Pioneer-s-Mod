@@ -130,8 +130,8 @@ public final class MultiblockApi6Tests {
         Map<BlockPos, ProjectedStructure.Ghost> layout = HouseShapes.BOILER.layout(0, BlockPos.ZERO, fwd);
         java.util.List<BlockPos> keys = new java.util.ArrayList<>(layout.keySet());
         keys.sort(java.util.Comparator.<BlockPos>comparingInt(p -> p.getY()).thenComparingInt(p -> p.getX()).thenComparingInt(p -> p.getZ()));
-        net.minecraft.world.level.block.Block chim = fr.pioneers.core.registries.PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.CHIMNEY).getBlock();
-        net.minecraft.world.level.block.Block shell = fr.pioneers.core.registries.PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.COPPER_SHELL).getBlock();
+        net.minecraft.world.level.block.Block chim = fr.pioneers.tech.bronze.PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.CHIMNEY).getBlock();
+        net.minecraft.world.level.block.Block shell = fr.pioneers.tech.bronze.PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.COPPER_SHELL).getBlock();
         BlockPos top = null;
         int n = 0;
         for (BlockPos k : keys) {
