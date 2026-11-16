@@ -11,6 +11,7 @@ p105_10_chien_grogne_chasse_en_avant
 p105_28_chat_va_pecher
 p105_2_tick_meteo
 p105_41_enclos
+p105_5_rappel_autre_dimension
 p105_7_loup_chasse_mouton_chien_defend
 p105_7_rat_vole_coffre_pas_caisse
 p105_7_vol_coupe_par_reglage

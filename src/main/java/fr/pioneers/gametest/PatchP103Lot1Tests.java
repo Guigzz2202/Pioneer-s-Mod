@@ -116,14 +116,14 @@ public final class PatchP103Lot1Tests {
             Gt.check(PiFish.waterBody(h.getLevel(), lake, PiFish.BODY_SCAN).size() >= PiFish.BODY_SCAN, "lac : grande etendue");
             Gt.check(!PiFish.crowded(h.getLevel(), pond, PiFish.BREED_CAP), "mare vide : un poisson peut y naitre");
             fish(h, 2, 2, 2);
-            h.runAfterDelay(2, () -> {
+            Gt.later(h, 2, () -> {
                 Gt.check(PiFish.crowded(h.getLevel(), pond, PiFish.BREED_CAP), "mare de 32 blocs : pleine avec 1 poisson (avant : 9)");
                 Gt.check(PiFish.crowded(h.getLevel(), pond, PiFish.SPAWN_CAP), "mare : plus d'apparition naturelle non plus");
                 Gt.check(!PiFish.crowded(h.getLevel(), lake, PiFish.BREED_CAP), "le lac voisin n'est pas compte dans la mare");
                 for (int i = 0; i < PiFish.BREED_CAP; i++) {
                     fish(h, 8 + i, 2, 12);
                 }
-                h.runAfterDelay(2, () -> {
+                Gt.later(h, 2, () -> {
                     Gt.check(PiFish.crowded(h.getLevel(), lake, PiFish.BREED_CAP), "lac : plus de ponte ni d'eclosion a 4 poissons");
                     Gt.check(PiFish.crowded(h.getLevel(), lake, PiFish.BREED_CAP) && !PiFish.crowded(h.getLevel(), lake, PiFish.SPAWN_CAP + 10),
                           "le plafond de zone vient du nombre de poissons, pas de la taille du lac");

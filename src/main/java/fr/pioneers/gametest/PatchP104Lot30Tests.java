@@ -86,7 +86,7 @@ public final class PatchP104Lot30Tests {
             h.setBlock(sheet, port);
             tile.requestCheck();
             BlockPos at = sheet;
-            h.runAfterDelay(3, () -> {
+            Gt.later(h, 3, () -> {
                 Gt.check(tile.formed(), "four : un port a la place d'une tole doit etre accepte");
                 BlockState painted = h.getBlockState(at);
                 Gt.check(painted.getValue(Connections.ON_SHEET), "port sur une tole : peau de tole");

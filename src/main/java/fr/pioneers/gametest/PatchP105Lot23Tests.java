@@ -252,7 +252,7 @@ public final class PatchP105Lot23Tests {
             //Bouche cassee : briques, escaliers et dalle rendus
             Direction front = kiln.facing();
             h.getLevel().destroyBlock(ctrl, false);
-            h.runAfterDelay(2, () -> {
+            Gt.later(h, 2, () -> {
                 for (HouseNbt.Cell cell : HouseNbt.cells(KilnTile.SHAPE)) {
                     if (KilnMasonry.masonry(cell.letter())) {
                         BlockState st = h.getLevel().getBlockState(HouseNbt.at(ctrl, front, cell));

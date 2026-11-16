@@ -126,7 +126,7 @@ public final class PatchP104Lot24Tests {
                 //Rupture : une paroi de foyer cassee, les autres s'eteignent
                 h.getLevel().destroyBlock(fire.get(0), false);
                 tile.requestCheck();
-                h.runAfterDelay(3, () -> {
+                Gt.later(h, 3, () -> {
                     Gt.check(!tile.formed(), "four toujours forme sans une paroi de foyer");
                     for (int i = 1; i < fire.size(); i++) {
                         Gt.check(!h.getLevel().getBlockState(fire.get(i)).getValue(FireboxWallBlock.LIT), "foyer encore allume apres la rupture");
@@ -189,7 +189,7 @@ public final class PatchP104Lot24Tests {
             ControllerTile again = MultiblockApiTests.controller(h, c);
             again.load(saved);
             again.requestCheck();
-            h.runAfterDelay(3, () -> {
+            Gt.later(h, 3, () -> {
                 Gt.check(!again.formed(), "ancienne forme : formee a tort");
                 Gt.check(again.guiValue(5) != Structure.Error.NONE.ordinal(), "ancienne forme : pas d'erreur commune");
                 Gt.equal(17, again.itemInputs().get(0).getCount(), "contenu du controleur garde");
@@ -220,7 +220,7 @@ public final class PatchP104Lot24Tests {
             BlockPos p = HouseNbt.at(h.absolutePos(c), kiln.facing(), brick);
             h.getLevel().destroyBlock(p, false);
             kiln.requestCheck();
-            h.runAfterDelay(3, () -> {
+            Gt.later(h, 3, () -> {
                 Gt.check(!kiln.formed(), "four de potier forme sans une brique");
                 s.done();
             });
@@ -241,7 +241,7 @@ public final class PatchP104Lot24Tests {
                   "tuyere du four a coke a l'arriere");
             h.getLevel().destroyBlock(HouseNbt.at(h.absolutePos(c), oven.facing(), t), false);
             oven.requestCheck();
-            h.runAfterDelay(3, () -> {
+            Gt.later(h, 3, () -> {
                 Gt.check(!oven.formed(), "four a coke forme sans sa tuyere");
                 s.done();
             });
@@ -270,12 +270,12 @@ public final class PatchP104Lot24Tests {
             HouseNbt.Cell d = HouseNbt.first(FireboxTile.SHAPE, 'd');
             BlockPos dome = HouseNbt.at(h.absolutePos(c), box.facing(), d);
             Gt.check(!h.getLevel().getBlockState(dome).getValue(BoilerPartBlock.STEEL), "dome sur du cuivre : virole en acier a tort");
-            h.runAfterDelay(3, () -> {
+            Gt.later(h, 3, () -> {
                 Gt.check(box.formed(), "chaudiere defaite par une cheminee plus haute");
                 Gt.check(box.draft() > draft, "cheminee plus haute : tirage pas meilleur");
                 //Corps du dessous en acier : le dome prend la couleur de l'acier
                 h.getLevel().setBlock(dome.below(), PiBronze.BOILER_PARTS.get(BoilerPart.STEEL_SHELL).getBlock().defaultBlockState(), 3);
-                h.runAfterDelay(2, () -> {
+                Gt.later(h, 2, () -> {
                     Gt.check(h.getLevel().getBlockState(dome).getValue(BoilerPartBlock.STEEL), "dome sur de l'acier : virole pas grise");
                     s.done();
                 });

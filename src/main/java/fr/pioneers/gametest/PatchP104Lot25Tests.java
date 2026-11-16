@@ -84,7 +84,7 @@ public final class PatchP104Lot25Tests {
             //un morceau du train ote : la structure se defait, le reste du train est de nouveau dessine par le monde
             h.getLevel().destroyBlock(cells.get(3), false);
             tile.requestCheck();
-            h.runAfterDelay(3, () -> {
+            Gt.later(h, 3, () -> {
                 Gt.check(!tile.formed(), "foreuse formee sans son train");
                 for (BlockPos p : cells) {
                     BlockState st = h.getLevel().getBlockState(p);
@@ -113,7 +113,7 @@ public final class PatchP104Lot25Tests {
             }
             h.getLevel().destroyBlock(HouseNbt.at(drill.getBlockPos(), drill.facing(), HouseNbt.first(SteamDrillTile.SHAPE, 'c')), false);
             drill.requestCheck();
-            h.runAfterDelay(5, () -> {
+            Gt.later(h, 5, () -> {
                 Gt.check(!drill.formed(), "foreuse a vapeur formee sans sa couronne");
                 for (BlockPos p : cells) {
                     BlockState st = h.getLevel().getBlockState(p);

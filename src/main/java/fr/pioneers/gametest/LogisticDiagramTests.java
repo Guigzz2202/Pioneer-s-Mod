@@ -140,7 +140,7 @@ public final class LogisticDiagramTests {
             Gt.equal(DiagramEdits.Result.OK, DiagramService.edit(player, point(uid, in, chestKey)), "point du coffre");
             Gt.equal(DiagramEdits.Result.OK, DiagramService.edit(player, point(uid, out, bufferKey)), "point du buffer");
             final int channel = uid;
-            h.runAfterDelay(60, () -> {
+            Gt.later(h, 60, () -> {
                 Gt.equal(0, bufferItems(h), "objets passes par la face touchee (fermee)");
                 Gt.equal(16, chestItems(h), "objets sortis du coffre sans destination");
                 //Face d'acces du buffer : le dessus (independante de la face touchee)
@@ -148,7 +148,7 @@ public final class LogisticDiagramTests {
                 top.face = RelativeSide.TOP.ordinal();
                 Gt.equal(DiagramEdits.Result.OK, DiagramService.edit(player, point(channel, top, bufferKey)), "changement de face");
                 Gt.equal(RelativeSide.TOP.ordinal(), net.config().point(bufferKey, channel).face, "face d'acces enregistree");
-                h.runAfterDelay(80, () -> {
+                Gt.later(h, 80, () -> {
                     int got = bufferItems(h);
                     Gt.check(got > 0, "rien n'est arrive par la face du dessus");
                     Gt.equal(16, got + chestItems(h), "objets crees ou perdus");

@@ -65,7 +65,7 @@ public final class PatchP105Lot29Tests {
             long sent = tail.syncedAt();
             Gt.check(v > 1, "le reseau tourne (" + v + " tr/min)");
             Gt.check(Math.abs(v - crank(h).getSpeed()) < 1e-6, "rapport 1 : le dernier arbre tourne a la vitesse de la manivelle");
-            h.runAfterDelay(260, () -> {
+            Gt.later(h, 260, () -> {
                 Gt.check(KineticNetworks.network(h.getLevel(), last) == net, "aucune reconstruction du reseau en regime stable");
                 Gt.check(Math.abs(tail.getSpeed() - v) <= 0.01 * v, "vitesse stable");
                 Gt.equal(sent, tail.syncedAt(), "aucun envoi aux clients en 260 ticks de regime stable (instant du dernier envoi)");

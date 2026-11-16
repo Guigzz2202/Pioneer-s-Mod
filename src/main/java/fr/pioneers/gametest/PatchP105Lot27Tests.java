@@ -203,7 +203,7 @@ public final class PatchP105Lot27Tests {
             BlockPos k = HouseNbt.at(h.absolutePos(c), box.facing(), HouseNbt.first(FireboxTile.SHAPE, 'k')).above();
             h.getLevel().destroyBlock(k, false);
             box.requestCheck();
-            h.runAfterDelay(3, () -> {
+            Gt.later(h, 3, () -> {
                 Gt.check(box.formed(), "chaudiere defaite sans tube de niveau");
                 Gt.check(HouseNbt.fault(Structure.View.of(h.getLevel()), h.absolutePos(c), box.facing(), FireboxTile.SHAPE) == null,
                       "case fautive sans tube de niveau");

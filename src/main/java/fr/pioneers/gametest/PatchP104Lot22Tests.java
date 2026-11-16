@@ -180,9 +180,9 @@ public final class PatchP104Lot22Tests {
             Gt.check(tile.formed(), "silo : la structure ne se forme pas (" + tile.guiValue(5) + ")");
             ItemSlot in = tile.itemInputs().get(0), out = tile.itemOutputs().get(0);
             in.setStack(new ItemStack(Items.COBBLESTONE, 64));
-            h.runAfterDelay(4, () -> {
+            Gt.later(h, 4, () -> {
                 in.setStack(new ItemStack(Items.COBBLESTONE, 40));
-                h.runAfterDelay(4, () -> {
+                Gt.later(h, 4, () -> {
                     long[] v = SiloCore.unpack(tile.guiValue(SiloCore.VALUE_STORED));
                     Gt.equal(104L, v[0], "objets tenus");
                     Gt.check(in.isEmpty(), "entree pas videe dans le stock");

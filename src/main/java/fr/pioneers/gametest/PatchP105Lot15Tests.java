@@ -105,7 +105,7 @@ public final class PatchP105Lot15Tests {
             HouseNbt.Cell t = HouseNbt.first(CokeOvenTile.SHAPE, 'T');
             h.getLevel().destroyBlock(HouseNbt.at(ctrl, oven.facing(), t), false);
             oven.requestCheck();
-            h.runAfterDelay(4, () -> {
+            Gt.later(h, 4, () -> {
                 Gt.check(!oven.formed(), "four a coke forme sans sa tuyere");
                 Gt.check(!h.getLevel().getBlockState(ctrl).getValue(HouseControllerBlock.FORMED), "controleur redevenu non forme");
                 Gt.equal(FireBricksBlock.Part.NONE, h.getLevel().getBlockState(chimney).getValue(FireBricksBlock.PART), "brique redevenue libre");

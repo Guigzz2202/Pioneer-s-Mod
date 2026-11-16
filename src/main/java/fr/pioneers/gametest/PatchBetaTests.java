@@ -239,7 +239,7 @@ public final class PatchBetaTests {
             Gt.equal(128, ores(furnace), "minerais intacts");
             furnace.handleCustom(null, CrucibleFurnaceTile.AUTO);
             Gt.check(furnace.autoPour(), "interrupteur rallume");
-            h.runAfterDelay(20, () -> {
+            Gt.later(h, 20, () -> {
                 Gt.check(table.busy(), "interrupteur rallume : la coulee repart");
                 s.done();
             });

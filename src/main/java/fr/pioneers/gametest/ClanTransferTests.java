@@ -116,7 +116,7 @@ public final class ClanTransferTests {
             Gt.equal(0, items(h, target), "objets passes chez le voisin neutre");
             Gt.equal(16, items(h, source), "objets retires de la source");
             b.ally();
-            h.runAfterDelay(40, () -> {
+            Gt.later(h, 40, () -> {
                 Gt.check(items(h, target) > 0, "rien n'est passe entre allies");
                 Gt.equal(16, items(h, source) + items(h, target), "objets crees ou perdus");
                 b.s.done();
@@ -155,7 +155,7 @@ public final class ClanTransferTests {
         h.runAfterDelay(40, () -> {
             Gt.equal(0, items(h, target), "objets ejectes chez le voisin neutre");
             b.ally();
-            h.runAfterDelay(40, () -> {
+            Gt.later(h, 40, () -> {
                 Gt.check(items(h, target) > 0, "rien n'est sorti entre allies");
                 Gt.equal(16, m.itemOutputs().get(0).getCount() + items(h, target), "objets crees ou perdus");
                 b.s.done();
@@ -196,7 +196,7 @@ public final class ClanTransferTests {
         h.runAfterDelay(30, () -> {
             Gt.check(vd.steam() <= 1e-6, "vapeur passee chez le voisin neutre : " + vd.steam());
             b.ally();
-            h.runAfterDelay(30, () -> {
+            Gt.later(h, 30, () -> {
                 Gt.check(vd.steam() > 1e-3, "aucune vapeur passee entre allies");
                 b.s.done();
             });
@@ -254,7 +254,7 @@ public final class ClanTransferTests {
             Gt.check(l != null && r != null, what + " : reseaux non construits");
             Gt.check(l != r, what + " : un reseau traverse la frontiere du voisin neutre");
             b.ally();
-            h.runAfterDelay(10, () -> {
+            Gt.later(h, 10, () -> {
                 Object l2 = of.at(h, b.left(2)), r2 = of.at(h, b.right(2));
                 Gt.check(l2 != null && l2 == r2, what + " : le reseau ne traverse pas la frontiere entre allies");
                 b.s.done();
@@ -297,9 +297,9 @@ public final class ClanTransferTests {
             h.assertBlockPresent(Blocks.COBBLESTONE, pushed);
             h.setBlock(power, Blocks.AIR);
             b.ally();
-            h.runAfterDelay(4, () -> {
+            Gt.later(h, 4, () -> {
                 h.setBlock(power, Blocks.REDSTONE_BLOCK);
-                h.runAfterDelay(10, () -> {
+                Gt.later(h, 10, () -> {
                     h.assertBlockPresent(Blocks.COBBLESTONE, pushed.east());
                     b.s.done();
                 });
