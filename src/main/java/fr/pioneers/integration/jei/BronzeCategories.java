@@ -324,8 +324,12 @@ final class BronzeCategories {
             Component steam = Component.translatable("jei.pioneers.steam_machine", seconds(recipe.time()),
                   fr.pioneers.core.Texts.format(Math.round(recipe.time() * recipe.machine().steamUse())));
             JeiDraw.Chip energy = TierChips.electric(family, recipe.minTier(), recipe.time());
-            return List.of(energy != null ? energy : TierChips.duration(JeiDraw.Pic.STEAM, recipe.time(), steam),
-                  TierChips.minTier(recipe.minTier(), recipe.getId(), recipe.inputs(), recipe.result(), family));
+            List<JeiDraw.Chip> out = new ArrayList<>(List.of(energy != null ? energy : TierChips.duration(JeiDraw.Pic.STEAM, recipe.time(), steam)));
+            JeiDraw.Chip yield = TierChips.yieldOf(recipe.minTier(), recipe.getId(), recipe.inputs(), recipe.result());
+            if (yield != null) {
+                out.add(yield);
+            }
+            return out;
         }
 
         @Override

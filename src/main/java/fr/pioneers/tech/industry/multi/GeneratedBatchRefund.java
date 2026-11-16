@@ -12,18 +12,20 @@ import java.util.Map;
 public final class GeneratedBatchRefund {
 
     /** Nombre d'entrees de la table (controle). */
-    public static final int SIZE = 752;
+    public static final int SIZE = 1176;
 
     public static final Map<String, String[]> TABLE;
 
     static {
-        Map<String, String[]> m = new HashMap<>(1504);
+        Map<String, String[]> m = new HashMap<>(2352);
         part0(m);
         part1(m);
         part2(m);
         part3(m);
         part4(m);
         part5(m);
+        part6(m);
+        part7(m);
         TABLE = Map.copyOf(m);
     }
 
@@ -35,13 +37,443 @@ public final class GeneratedBatchRefund {
         m.put("arc_furnace|processes/steel/arc_scrap_2b", new String[]{"pioneers:iron_scrap*10,pioneers:graphite_electrode*1", "", ""});
         m.put("arc_furnace|processes/steel/oxygen_casting_9", new String[]{"pioneers:crude_steel*4,pioneers:quicklime*1", "", "pioneers:argon*100"});
         m.put("arc_furnace|processes/steel/oxygen_casting_9b", new String[]{"pioneers:crude_steel*8,pioneers:ferroniobium*1,pioneers:quicklime*1", "", "pioneers:argon*100"});
+        m.put("assembler|automation/agricultural/farm_greenhouse_greenhouse_regulator", new String[]{"#forge:plates/brass*2,pioneers:copper_wire*2,minecraft:glass_pane*1,pioneers:iron_nail*2,#minecraft:planks*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_aging_barrel", new String[]{"#minecraft:logs*2,pioneers:barrel_stave*6,#forge:plates/iron*2", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_apiary", new String[]{"#minecraft:planks*5,#minecraft:wooden_slabs*2,minecraft:honeycomb*2,pioneers:hive_frame*2", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_butter_churn", new String[]{"pioneers:barrel_stave*4,minecraft:stick*2,#forge:plates/iron*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_cheese_press", new String[]{"pioneers:wooden_machine_bed*1,#forge:rods/iron*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_compost_bin", new String[]{"#minecraft:planks*4,pioneers:wooden_lath*6", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_cutting_board", new String[]{"#minecraft:planks*2,#minecraft:wooden_slabs*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_drying_rack", new String[]{"pioneers:wooden_lath*6,pioneers:fiber_rope*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_feeder", new String[]{"#minecraft:planks*5,pioneers:wooden_lath*2,#forge:plates/iron*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_fermenting_vat", new String[]{"pioneers:barrel_stave*8,#forge:plates/iron*2", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_fruit_press", new String[]{"#minecraft:planks*5,#forge:rods/iron*2,#forge:plates/iron*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_incubator", new String[]{"#minecraft:planks*3,#forge:glass*2,minecraft:lantern*1,minecraft:hay_block*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_mixing_bowl", new String[]{"#minecraft:planks*3", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_nest_box", new String[]{"#minecraft:planks*3,minecraft:hay_block*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_preserves_jar", new String[]{"#forge:glass*3,#minecraft:wooden_slabs*1", "", ""});
+        m.put("assembler|automation/agricultural/kitchen_bench_smokehouse", new String[]{"#minecraft:planks*6,minecraft:brick*4,#forge:plates/iron*1,#forge:rods/iron*1", "", ""});
+        m.put("assembler|automation/assembly/absorber_solar_absorber_controller", new String[]{"#pioneers:circuits/ultimate*4,pioneers:solar_absorber_casing*4,minecraft:comparator*1", "", ""});
+        m.put("assembler|automation/assembly/chambers_space_stabilizer_controller", new String[]{"pioneers:space_stabilizer_casing*4,#pioneers:circuits/ultimate*2,minecraft:comparator*1", "", ""});
+        m.put("assembler|automation/assembly/compute_ai_lab", new String[]{"pioneers:machine_hull_elite*1,pioneers:computer*1,pioneers:gpu_accelerator*2,pioneers:ram_module*4,pioneers:multilayer_motherboard*1", "", ""});
+        m.put("assembler|automation/assembly/compute_factory_ai_core", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:neuromorphic_processor*2,pioneers:photonic_tensor_accelerator*2,pioneers:quantum_computer*1,pioneers:ai_lab*1", "", ""});
+        m.put("assembler|automation/assembly/computing_computer", new String[]{"pioneers:machine_hull_elite*1,pioneers:microprocessor*1,pioneers:dram_module*2,pioneers:motherboard*1,pioneers:plc*1", "", ""});
+        m.put("assembler|automation/assembly/computing_network_terminal", new String[]{"pioneers:supervision_screen*1,pioneers:vacuum_tube_computer*1,pioneers:basic_logistic_cable*4,pioneers:power_supply_unit*1,pioneers:machine_frame_basic*1,pioneers:core_memory*1", "", ""});
+        m.put("assembler|automation/assembly/computing_plc", new String[]{"pioneers:machine_hull_elite*1,pioneers:microprocessor*1,pioneers:relay_cabinet*1,pioneers:absolute_encoder_servo*2,pioneers:elite_electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/computing_relay_cabinet", new String[]{"pioneers:machine_hull_basic*1,pioneers:relay*8,pioneers:backplane*1,#forge:glass_panes*1,pioneers:power_supply_unit*1", "", ""});
+        m.put("assembler|automation/assembly/energy_advanced_geothermal_plant", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_heat_exchanger*2,pioneers:advanced_centrifugal_pump*1,pioneers:alternator*1,#forge:pipes/brass*1", "", ""});
+        m.put("assembler|automation/assembly/energy_advanced_hydro_turbine", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_bladed_rotor*1,pioneers:alternator*1,pioneers:ball_valve*1,#forge:rings/babbitt*1", "", ""});
+        m.put("assembler|automation/assembly/energy_advanced_microbial_fuel_cell", new String[]{"pioneers:machine_hull_advanced*1,pioneers:graphite_electrode*2,pioneers:separation_membrane*2,pioneers:power_inverter*1,pioneers:wiring_harness*2", "", ""});
+        m.put("assembler|automation/assembly/energy_advanced_solar_panel", new String[]{"pioneers:machine_hull_advanced*1,pioneers:photovoltaic_cell*4,pioneers:borosilicate_glass*2,pioneers:power_inverter*1", "", ""});
+        m.put("assembler|automation/assembly/energy_advanced_wind_turbine", new String[]{"pioneers:machine_hull_advanced*1,pioneers:alternator*1,pioneers:advanced_planetary_gear*1,#forge:rings/electrum*1,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/energy_basic_geothermal_plant", new String[]{"pioneers:machine_hull_basic*1,pioneers:heat_exchanger*2,pioneers:centrifugal_pump*1,pioneers:dynamo_unit*1,#forge:pipes/brass*1", "", ""});
+        m.put("assembler|automation/assembly/energy_basic_hydro_turbine", new String[]{"pioneers:machine_hull_basic*1,pioneers:bladed_rotor*1,pioneers:dynamo_unit*1,pioneers:cast_iron_valve*1,#forge:rings/babbitt*1", "", ""});
+        m.put("assembler|automation/assembly/energy_basic_microbial_fuel_cell", new String[]{"pioneers:machine_hull_basic*1,pioneers:graphite_electrode*2,pioneers:cartridge_filter*2,pioneers:power_supply_unit*1,pioneers:enameled_wire*2", "", ""});
+        m.put("assembler|automation/assembly/energy_basic_solar_panel", new String[]{"pioneers:machine_hull_basic*1,pioneers:silicon*4,pioneers:tempered_glass_pane*2,pioneers:power_supply_unit*1", "", ""});
+        m.put("assembler|automation/assembly/energy_basic_wind_turbine", new String[]{"pioneers:machine_hull_basic*1,pioneers:dynamo_unit*1,pioneers:planetary_gear*1,#forge:rings/copper*1,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/energy_elite_geothermal_plant", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_heat_exchanger*2,pioneers:elite_centrifugal_pump*1,pioneers:permanent_magnet_alternator*1,#forge:pipes/titanium*1", "", ""});
+        m.put("assembler|automation/assembly/energy_elite_hydro_turbine", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_bladed_rotor*1,pioneers:permanent_magnet_alternator*1,pioneers:titanium_valve*1,#forge:rings/babbitt*1", "", ""});
+        m.put("assembler|automation/assembly/energy_elite_microbial_fuel_cell", new String[]{"pioneers:machine_hull_elite*1,pioneers:graphite_electrode*2,pioneers:hepa_filter*2,pioneers:variable_frequency_drive*1,pioneers:wiring_harness*2", "", ""});
+        m.put("assembler|automation/assembly/energy_elite_solar_panel", new String[]{"pioneers:machine_hull_elite*1,pioneers:photovoltaic_cell*4,pioneers:sapphire_glass*2,pioneers:variable_frequency_drive*1", "", ""});
+        m.put("assembler|automation/assembly/energy_elite_wind_turbine", new String[]{"pioneers:machine_hull_elite*1,pioneers:permanent_magnet_alternator*1,pioneers:elite_planetary_gear*1,#forge:rings/silver*1,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/energy_ultimate_geothermal_plant", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_heat_exchanger*2,pioneers:ultimate_centrifugal_pump*1,pioneers:superconducting_generator*1,#forge:pipes/titanium*1", "", ""});
+        m.put("assembler|automation/assembly/energy_ultimate_hydro_turbine", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_bladed_rotor*1,pioneers:superconducting_generator*1,pioneers:cryogenic_valve*1,#forge:rings/babbitt*1", "", ""});
+        m.put("assembler|automation/assembly/energy_ultimate_microbial_fuel_cell", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:graphite_electrode*2,pioneers:hepa_filter*2,pioneers:supercapacitor*1,pioneers:wiring_harness*2", "", ""});
+        m.put("assembler|automation/assembly/energy_ultimate_solar_panel", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:space_solar_panel*4,pioneers:fused_silica*2,pioneers:supercapacitor*1", "", ""});
+        m.put("assembler|automation/assembly/energy_ultimate_wind_turbine", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:superconducting_generator*1,pioneers:ultimate_planetary_gear*1,#forge:rings/gold*1,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/farm_greenhouse_controller", new String[]{"#forge:plates/lunarium*4,#pioneers:circuits/basic*2,#forge:glass_panes*2,pioneers:machine_frame_basic*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_assembler", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:gripper*1,pioneers:advanced_piston*1,#forge:springs/electrum*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_autoclave", new String[]{"pioneers:machine_hull_advanced*1,pioneers:ptfe_gasket*1,pioneers:advanced_centrifugal_pump*1,pioneers:ball_valve*2,pioneers:brass_fitting*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_bender", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,pioneers:advanced_bearing*2,pioneers:press_die*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_bottler", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_centrifugal_pump*1,pioneers:brass_faucet*2,#forge:gears/constantan*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_casting_machine", new String[]{"pioneers:machine_hull_advanced*1,#forge:gears/vanadium_steel*1,pioneers:advanced_piston*1,pioneers:alumina_ceramic*4,pioneers:press_die*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_centrifuge", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_bladed_rotor*1,pioneers:advanced_bearing*2,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_chemical_bath", new String[]{"pioneers:machine_hull_advanced*1,#forge:plates/zinc*1,pioneers:iron_heating_coil*2,pioneers:alumina_ceramic*4,pioneers:advanced_centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_chemical_reactor", new String[]{"pioneers:machine_hull_advanced*1,#forge:plates/zirconium*1,pioneers:advanced_centrifugal_pump*1,pioneers:ball_valve*2,pioneers:brass_fitting*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_cracker", new String[]{"pioneers:machine_hull_advanced*1,#forge:pipes/nickel*1,pioneers:iron_heating_coil*2,pioneers:alumina_ceramic*4,pioneers:advanced_centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_cryogenic_unit", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:compressor_unit*1,#forge:gears/constantan*1,pioneers:timing_belt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_crystallizer", new String[]{"pioneers:machine_hull_advanced*1,pioneers:separation_membrane*2,pioneers:borosilicate_glass*1,pioneers:lcd_panel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_distillery", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_heat_exchanger*2,pioneers:advanced_centrifugal_pump*1,pioneers:ball_valve*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_dryer", new String[]{"pioneers:machine_hull_advanced*1,#forge:springs/iron*1,pioneers:power_inverter*1,pioneers:alumina_ceramic*4,pioneers:propeller*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_dynamo", new String[]{"pioneers:machine_hull_advanced*1,pioneers:alternator*1,#forge:rings/electrum*1,pioneers:advanced_planetary_gear*1,pioneers:advanced_bearing*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_electric_crucible", new String[]{"pioneers:machine_hull_advanced*1,pioneers:graphite*1,pioneers:iron_heating_coil*2,pioneers:alumina_ceramic*4,pioneers:advanced_piston*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_electrolyzer", new String[]{"pioneers:machine_hull_advanced*1,pioneers:dry_transformer*1,#forge:plates/platinum*2,pioneers:advanced_centrifugal_pump*1,#forge:rings/constantan*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_extractor", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,#forge:gears/bronze*1,pioneers:ball_valve*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_extruder", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,#forge:rings/nickel*1,pioneers:advanced_centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_fermenter", new String[]{"pioneers:machine_hull_advanced*1,#forge:gears/bronze*1,pioneers:advanced_centrifugal_pump*1,pioneers:ball_valve*2,pioneers:advanced_heat_exchanger*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_food_processor", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_centrifugal_pump*1,pioneers:brass_faucet*2,pioneers:advanced_electric_motor*1,#forge:gears/bronze*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_gas_separator", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_heat_exchanger*1,pioneers:compressor_unit*1,pioneers:separation_membrane*1,pioneers:power_inverter*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_gas_turbine", new String[]{"pioneers:machine_hull_advanced*1,#forge:gears/vanadium_steel*1,pioneers:advanced_bladed_rotor*1,pioneers:alternator*1,pioneers:ball_valve*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_gear_hobber", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:steel_saw_blade*1,pioneers:drill_bit*1,pioneers:cast_iron_machine_bed*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_induction_furnace", new String[]{"pioneers:machine_hull_advanced*1,pioneers:dry_transformer*1,pioneers:induction_coil*2,pioneers:capacitor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_liquid_combustion_generator", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_engine_block*1,pioneers:alternator*1,#forge:gears/silver*1,pioneers:reed_relay*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_machining_center", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:drill_bit*1,pioneers:cast_iron_machine_bed*1,pioneers:advanced_piston*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_mixer", new String[]{"pioneers:machine_hull_advanced*1,#forge:gears/nickel*1,pioneers:advanced_centrifugal_pump*1,pioneers:ball_valve*2,pioneers:brass_fitting*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_ore_separator", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,pioneers:advanced_centrifugal_pump*1,#forge:wire_meshes/brass*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_photolithograph", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_centrifugal_pump*1,pioneers:neon_tube*1,pioneers:ruby_laser*1,#forge:gears/invar*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_pick_and_place", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_centrifugal_pump*1,pioneers:separation_membrane*2,pioneers:servo_motor*1,#forge:springs/electrum*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_power_hammer", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,pioneers:cast_iron_machine_bed*2,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_press", new String[]{"pioneers:machine_hull_advanced*1,#forge:plates/babbitt*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,pioneers:advanced_bearing*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_propellant_plant", new String[]{"pioneers:machine_frame_advanced*1,pioneers:aluminium_screw*4,pioneers:advanced_heat_exchanger*1,pioneers:compressor_unit*1,pioneers:rock_wool*2,pioneers:pressure_bottle*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_recycler", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,pioneers:steel_saw_blade*1,pioneers:alnico_magnet*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_reduction_furnace", new String[]{"pioneers:machine_hull_advanced*1,pioneers:ball_valve*1,pioneers:iron_heating_coil*2,pioneers:alumina_ceramic*4,pioneers:power_inverter*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_rock_generator", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_piston*1,pioneers:ball_valve*2,pioneers:alumina_ceramic*2,pioneers:inductive_sensor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_rolling_mill", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,#forge:gears/constantan*1,#forge:rings/babbitt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_sawmill", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:steel_saw_blade*1,pioneers:drive_chain*2,pioneers:rubber_belt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_solid_combustion_generator", new String[]{"pioneers:machine_hull_advanced*1,pioneers:alumina_ceramic*2,pioneers:alternator*1,#forge:wire_meshes/iron*1,#forge:pipes/aluminium*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_water_source", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_centrifugal_pump*1,pioneers:advanced_heat_exchanger*1,pioneers:ball_valve*1,pioneers:reed_relay*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_advanced_wiremill", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,pioneers:advanced_bearing*2,#forge:rings/vanadium_steel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_aquafarm", new String[]{"pioneers:machine_hull_basic*1,minecraft:water_bucket*2,#forge:wire_meshes/copper*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_arc_furnace", new String[]{"pioneers:machine_hull_basic*1,pioneers:graphite_electrode*2,pioneers:piston*1,pioneers:oil_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_assembler", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:gripper*1,pioneers:bearing*2,#forge:springs/steel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_autoclave", new String[]{"pioneers:machine_hull_basic*1,pioneers:leather_gasket*1,pioneers:centrifugal_pump*1,pioneers:cast_iron_valve*2,pioneers:brass_fitting*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_bender", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:piston*1,pioneers:bearing*2,pioneers:press_die*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_bottler", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:centrifugal_pump*1,pioneers:brass_faucet*2,#forge:gears/copper*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_casting_machine", new String[]{"pioneers:machine_hull_basic*1,#forge:gears/iron*1,pioneers:power_supply_unit*1,pioneers:fire_brick*4,pioneers:ingot_die*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_centrifuge", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:bladed_rotor*1,pioneers:bearing*2,pioneers:leather_belt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_chemical_bath", new String[]{"pioneers:machine_hull_basic*1,#forge:plates/zinc*1,pioneers:iron_heating_coil*2,pioneers:fire_brick*4,pioneers:power_supply_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_chemical_reactor", new String[]{"pioneers:machine_hull_basic*1,#forge:plates/lead*1,pioneers:centrifugal_pump*1,pioneers:cast_iron_valve*2,pioneers:brass_fitting*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_cracker", new String[]{"pioneers:machine_hull_basic*1,#forge:pipes/steel*1,pioneers:iron_heating_coil*2,pioneers:fire_brick*4,pioneers:power_supply_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_cryogenic_unit", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:compressor_unit*1,#forge:gears/copper*1,pioneers:leather_belt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_crystallizer", new String[]{"pioneers:machine_hull_basic*1,pioneers:cartridge_filter*2,pioneers:tempered_glass_pane*1,pioneers:heat_exchanger*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_distillery", new String[]{"pioneers:machine_hull_basic*1,pioneers:heat_exchanger*2,pioneers:centrifugal_pump*1,pioneers:cast_iron_valve*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_dryer", new String[]{"pioneers:machine_hull_basic*1,#forge:springs/iron*1,pioneers:power_supply_unit*1,pioneers:fire_brick*4,pioneers:cooling_fan*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_dynamo", new String[]{"pioneers:machine_hull_basic*1,pioneers:copper_coil*1,#forge:rings/copper*1,#forge:gears/bronze*1,pioneers:bearing*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_electric_crucible", new String[]{"pioneers:machine_hull_basic*1,pioneers:fire_brick*5,pioneers:iron_heating_coil*2,pioneers:power_supply_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_electrolyzer", new String[]{"pioneers:machine_hull_basic*1,pioneers:oil_transformer*1,pioneers:graphite_electrode*2,#forge:rings/copper*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_extractor", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:piston*1,#forge:gears/bronze*1,pioneers:cast_iron_valve*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_extruder", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:planetary_gear*1,#forge:rings/steel*1,pioneers:toggle_switch*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_fermenter", new String[]{"pioneers:machine_hull_basic*1,#forge:gears/bronze*1,pioneers:centrifugal_pump*1,pioneers:cast_iron_valve*2,pioneers:heat_exchanger*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_food_processor", new String[]{"pioneers:machine_hull_basic*1,pioneers:centrifugal_pump*1,pioneers:brass_faucet*2,pioneers:electric_motor*1,#forge:gears/bronze*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_gas_separator", new String[]{"pioneers:machine_hull_basic*1,pioneers:heat_exchanger*1,pioneers:compressor_unit*1,pioneers:cartridge_filter*1,pioneers:power_supply_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_gas_turbine", new String[]{"pioneers:machine_hull_basic*1,#forge:gears/iron*1,pioneers:bladed_rotor*1,pioneers:dynamo_unit*1,#forge:gears/copper*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_gear_hobber", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:steel_saw_blade*1,pioneers:drill_bit*1,pioneers:cast_iron_machine_bed*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_induction_furnace", new String[]{"pioneers:machine_hull_basic*1,pioneers:oil_transformer*1,pioneers:copper_coil*2,pioneers:paper_capacitor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_liquid_combustion_generator", new String[]{"pioneers:machine_hull_basic*1,pioneers:engine_block*1,pioneers:dynamo_unit*1,#forge:gears/brass*1,pioneers:pressure_sensor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_machining_center", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:drill_bit*1,pioneers:cast_iron_machine_bed*1,pioneers:bearing*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_mixer", new String[]{"pioneers:machine_hull_basic*1,#forge:gears/bronze*1,pioneers:centrifugal_pump*1,pioneers:cast_iron_valve*2,pioneers:brass_fitting*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_ore_separator", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:planetary_gear*1,pioneers:bearing*2,#forge:wire_meshes/iron*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_photolithograph", new String[]{"pioneers:machine_hull_basic*1,pioneers:incandescent_bulb*1,pioneers:glass_lens*1,#forge:gears/brass*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_pick_and_place", new String[]{"pioneers:machine_hull_basic*1,pioneers:cartridge_filter*2,pioneers:stepper_motor*1,#forge:springs/nickel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_power_hammer", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:piston*1,pioneers:cast_iron_machine_bed*2,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_press", new String[]{"pioneers:machine_hull_basic*1,#forge:plates/babbitt*1,pioneers:electric_motor*1,pioneers:piston*1,pioneers:bearing*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_propellant_plant", new String[]{"pioneers:machine_frame_basic*1,pioneers:steel_screw*4,pioneers:heat_exchanger*1,pioneers:compressor_unit*1,pioneers:rock_wool*2,pioneers:pressure_bottle*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_recycler", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:planetary_gear*1,pioneers:steel_saw_blade*1,pioneers:lodestone*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_reduction_furnace", new String[]{"pioneers:machine_hull_basic*1,pioneers:cast_iron_valve*1,pioneers:iron_heating_coil*2,pioneers:fire_brick*4,pioneers:power_supply_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_rock_generator", new String[]{"pioneers:machine_hull_basic*1,pioneers:piston*1,pioneers:cast_iron_valve*2,pioneers:fire_brick*2,pioneers:toggle_switch*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_rolling_mill", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:planetary_gear*1,#forge:gears/copper*1,#forge:rings/babbitt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_sawmill", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:steel_saw_blade*1,pioneers:drive_chain*2,pioneers:leather_belt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_solid_combustion_generator", new String[]{"pioneers:machine_hull_basic*1,pioneers:fire_brick*2,pioneers:copper_coil*1,#forge:wire_meshes/iron*1,#forge:pipes/steel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_water_source", new String[]{"pioneers:machine_hull_basic*1,pioneers:centrifugal_pump*1,pioneers:heat_exchanger*1,pioneers:cast_iron_valve*1,pioneers:pressure_sensor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_basic_wiremill", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:planetary_gear*1,pioneers:bearing*2,#forge:rings/steel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_bayer_digester", new String[]{"pioneers:machine_hull_basic*1,minecraft:cauldron*2,#forge:gears/bronze*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_boiler", new String[]{"pioneers:machine_hull_basic*1,pioneers:copper_boiler_shell*2,#forge:rings/tin*4,pioneers:heat_exchanger*3", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_centrifuge_cascade", new String[]{"pioneers:machine_hull_elite*1,pioneers:compressor_unit*1,pioneers:elite_centrifuge*2,pioneers:elite_electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_coke_oven", new String[]{"pioneers:fire_brick*8", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_converter", new String[]{"pioneers:machine_hull_basic*1,minecraft:cauldron*2,pioneers:planetary_gear*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_cooling_tower", new String[]{"pioneers:machine_hull_basic*1,pioneers:heat_exchanger*2,pioneers:cooling_fan*2,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_data_center", new String[]{"pioneers:machine_hull_elite*1,pioneers:switching_power_supply*2,pioneers:server_blade*2,pioneers:liquid_cooling_block*2,pioneers:computer*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_distillation_column", new String[]{"pioneers:machine_hull_basic*1,pioneers:heat_exchanger*3,#forge:pipes/steel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_drill", new String[]{"pioneers:machine_hull_basic*1,pioneers:steam_drill*2,#forge:wire_ropes/galvanized_steel*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_assembler", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:gripper*1,pioneers:elite_bearing*2,#forge:springs/silver*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_autoclave", new String[]{"pioneers:machine_hull_elite*1,pioneers:metal_gasket*1,pioneers:elite_centrifugal_pump*1,pioneers:titanium_valve*2,pioneers:stainless_steel_fitting*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_bender", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,pioneers:variable_frequency_drive*1,pioneers:press_die*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_bottler", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:elite_centrifugal_pump*1,pioneers:brass_faucet*2,#forge:gears/electrum*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_casting_machine", new String[]{"pioneers:machine_hull_elite*1,#forge:gears/nichrome*1,pioneers:variable_frequency_drive*1,pioneers:zirconia_ceramic*4,pioneers:press_die*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_centrifuge", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:elite_bladed_rotor*1,pioneers:elite_bearing*2,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_chemical_bath", new String[]{"pioneers:machine_hull_elite*1,#forge:rods/chrome*1,pioneers:nichrome_coil*2,pioneers:zirconia_ceramic*4,pioneers:elite_centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_chemical_reactor", new String[]{"pioneers:machine_hull_elite*1,#forge:plates/zirconium*1,pioneers:elite_centrifugal_pump*1,pioneers:titanium_valve*2", "", ""});
+    }
+
+    private static void part1(Map<String, String[]> m) {
+        m.put("assembler|automation/assembly/industry_crafting_elite_cracker", new String[]{"pioneers:machine_hull_elite*1,#forge:pipes/nickel*1,pioneers:nichrome_coil*2,pioneers:zirconia_ceramic*4,pioneers:elite_centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_cryogenic_unit", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:compressor_unit*1,#forge:gears/electrum*1,pioneers:timing_belt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_crystallizer", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_centrifugal_pump*1,pioneers:sapphire_glass*1,pioneers:oled_panel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_distillery", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_heat_exchanger*2,pioneers:elite_centrifugal_pump*1,pioneers:titanium_valve*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_dryer", new String[]{"pioneers:machine_hull_elite*1,#forge:springs/nichrome*1,pioneers:variable_frequency_drive*1,pioneers:alumina_ceramic*4,pioneers:propeller*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_dynamo", new String[]{"pioneers:machine_hull_elite*1,pioneers:alternator*1,#forge:rings/electrum*1,pioneers:advanced_planetary_gear*1,pioneers:variable_frequency_drive*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_electric_crucible", new String[]{"pioneers:machine_hull_elite*1,#forge:plates/platinum*1,pioneers:nichrome_coil*2,pioneers:zirconia_ceramic*4,pioneers:elite_piston*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_electrolyzer", new String[]{"pioneers:machine_hull_elite*1,pioneers:amorphous_core_transformer*1,#forge:plates/platinum*2,pioneers:elite_centrifugal_pump*1,#forge:rings/constantan*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_extractor", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:elite_piston*1,#forge:gears/stainless_steel*1,pioneers:titanium_valve*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_extruder", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:elite_planetary_gear*1,#forge:rings/nichrome*1,pioneers:camera_module*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_fermenter", new String[]{"pioneers:machine_hull_elite*1,#forge:gears/stainless_steel*1,pioneers:elite_centrifugal_pump*1,pioneers:titanium_valve*2,pioneers:elite_heat_exchanger*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_food_processor", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_centrifugal_pump*1,pioneers:brass_faucet*2,pioneers:advanced_electric_motor*1,pioneers:variable_frequency_drive*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_gas_separator", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_heat_exchanger*1,pioneers:compressor_unit*1,pioneers:hepa_filter*1,pioneers:elite_electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_gas_turbine", new String[]{"pioneers:machine_hull_elite*1,#forge:gears/nichrome*1,pioneers:elite_bladed_rotor*1,pioneers:permanent_magnet_alternator*1,#forge:gears/electrum*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_gear_hobber", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:diamond_disc*1,pioneers:drill_bit*1,pioneers:cast_iron_machine_bed*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_induction_furnace", new String[]{"pioneers:machine_hull_elite*1,pioneers:amorphous_core_transformer*1,pioneers:silver_coil*2,pioneers:niobium_capacitor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_liquid_combustion_generator", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_engine_block*1,pioneers:permanent_magnet_alternator*1,#forge:gears/silver*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_machining_center", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:drill_bit*1,pioneers:cast_iron_machine_bed*1,pioneers:elite_bearing*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_mixer", new String[]{"pioneers:machine_hull_elite*1,#forge:gears/nickel*1,pioneers:advanced_centrifugal_pump*1,pioneers:ball_valve*2,pioneers:variable_frequency_drive*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_ore_separator", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_electric_motor*1,pioneers:elite_planetary_gear*1,pioneers:elite_bearing*2,#forge:wire_meshes/stainless_steel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_photolithograph", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_centrifugal_pump*1,pioneers:fluorite_lens*1,pioneers:co2_laser*1,#forge:gears/titanium*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_pick_and_place", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_centrifugal_pump*1,pioneers:hepa_filter*2,pioneers:absolute_encoder_servo*1,#forge:springs/silver*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_power_hammer", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,pioneers:cast_iron_machine_bed*2,pioneers:variable_frequency_drive*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_press", new String[]{"pioneers:machine_hull_elite*1,#forge:plates/babbitt*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,pioneers:variable_frequency_drive*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_propellant_plant", new String[]{"pioneers:machine_frame_elite*1,pioneers:titanium_screw*4,pioneers:elite_heat_exchanger*1,pioneers:compressor_unit*1,pioneers:aerogel*2,pioneers:composite_tank*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_recycler", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_electric_motor*1,pioneers:variable_frequency_drive*1,pioneers:steel_saw_blade*1,pioneers:alnico_magnet*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_reduction_furnace", new String[]{"pioneers:machine_hull_elite*1,pioneers:titanium_valve*1,pioneers:nichrome_coil*2,pioneers:zirconia_ceramic*4,pioneers:variable_frequency_drive*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_rock_generator", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_piston*1,pioneers:titanium_valve*2,pioneers:zirconia_ceramic*2,pioneers:camera_module*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_rolling_mill", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,pioneers:variable_frequency_drive*1,#forge:rings/babbitt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_sawmill", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_electric_motor*1,pioneers:steel_saw_blade*1,pioneers:drive_chain*2,pioneers:variable_frequency_drive*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_solid_combustion_generator", new String[]{"pioneers:machine_hull_elite*1,pioneers:alumina_ceramic*2,pioneers:alternator*1,pioneers:variable_frequency_drive*1,#forge:pipes/aluminium*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_water_source", new String[]{"pioneers:machine_hull_elite*1,pioneers:elite_centrifugal_pump*1,pioneers:elite_heat_exchanger*1,pioneers:titanium_valve*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_elite_wiremill", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,pioneers:variable_frequency_drive*1,#forge:rings/vanadium_steel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_exhaust_stack", new String[]{"pioneers:machine_hull_basic*1,pioneers:fire_brick*4,pioneers:cast_iron_valve*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_fast_reactor", new String[]{"pioneers:machine_hull_elite*1,#forge:plates/stainless_steel*4,pioneers:neutron_source*2,pioneers:depleted_uranium_plate*1,#forge:wires/constantan*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_fission_reactor", new String[]{"pioneers:machine_hull_elite*1,#forge:plates/zircaloy*4,pioneers:control_rod_cluster*2,pioneers:depleted_uranium_plate*1,#forge:wires/constantan*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_fragment_reactor", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:messinite_ceramic*2,pioneers:neutron_source*2,pioneers:veronite_superconductor*2,pioneers:diamond_lattice*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_gas_holder", new String[]{"pioneers:machine_hull_basic*1,#forge:plates/galvanized_steel*2,pioneers:pressure_sensor*2,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_gas_turbine", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_gas_turbine*2,#forge:gears/iron*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_gravity_compressor", new String[]{"pioneers:superconducting_coil*2,pioneers:machine_frame_basic*1,pioneers:steel_screw*4,pioneers:amorphous_core_transformer*1,pioneers:elite_planetary_gear*2,#forge:sheets/steel*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_hot_blast_stove", new String[]{"pioneers:machine_hull_basic*1,pioneers:fire_brick*2,pioneers:cast_iron_valve*1,pioneers:iron_heating_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_hydroponic_farm", new String[]{"pioneers:machine_hull_basic*1,pioneers:compost_bin*2,#forge:pipes/brass*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_assembler", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_assembler*2,pioneers:electric_motor*1,pioneers:gripper*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_autoclave", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_autoclave*2,pioneers:leather_gasket*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_bender", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_bender*2,pioneers:electric_motor*1,pioneers:piston*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_blast_furnace", new String[]{"pioneers:machine_hull_basic*1,pioneers:blast_furnace*2,pioneers:iron_heating_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_bottler", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_bottler*2,pioneers:electric_motor*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_casting_machine", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_casting_machine*2,#forge:gears/iron*1,pioneers:iron_heating_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_centrifuge", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_centrifuge*2,pioneers:electric_motor*1,pioneers:bladed_rotor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_chemical_bath", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_chemical_bath*2,#forge:plates/zinc*1,pioneers:iron_heating_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_chemical_reactor", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_chemical_reactor*2,#forge:plates/lead*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_coke_oven", new String[]{"pioneers:machine_hull_basic*1,pioneers:coke_oven*2,pioneers:iron_heating_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_compressor", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_compressor*2,pioneers:electric_motor*1,pioneers:piston*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_cracker", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_cracker*2,#forge:pipes/steel*1,pioneers:iron_heating_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_crusher", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_crusher*2,pioneers:electric_motor*1,pioneers:planetary_gear*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_cryogenic_unit", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_cryogenic_unit*2,pioneers:electric_motor*1,pioneers:compressor_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_crystallizer", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_crystallizer*2,pioneers:cartridge_filter*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_dryer", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_dryer*2,#forge:springs/iron*1,pioneers:iron_heating_coil*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_electric_crucible", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_electric_crucible*2,pioneers:fire_brick*1,pioneers:iron_heating_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_electrolyzer", new String[]{"pioneers:machine_hull_basic*1,pioneers:carbon_anode*2,pioneers:oil_transformer*1,pioneers:graphite_electrode*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_extractor", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_extractor*2,pioneers:electric_motor*1,pioneers:piston*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_extruder", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_extruder*2,pioneers:electric_motor*1,pioneers:planetary_gear*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_fermenter", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_fermenter*2,#forge:gears/bronze*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_fluid_pump", new String[]{"pioneers:machine_hull_basic*1,pioneers:centrifugal_pump*2,pioneers:piston_pump*1,#forge:gears/brass*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_food_processor", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_food_processor*2,pioneers:centrifugal_pump*1,pioneers:brass_faucet*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_furnace", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_furnace*2,pioneers:iron_heating_coil*2,pioneers:fire_brick*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_gas_separator", new String[]{"pioneers:machine_hull_basic*1,pioneers:heat_exchanger*2,#forge:wire_meshes/iron*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_gear_hobber", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_gear_hobber*2,pioneers:electric_motor*1,pioneers:steel_saw_blade*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_hot_cell", new String[]{"pioneers:machine_hull_elite*1,#forge:plates/lead*6,pioneers:servo_motor*2,pioneers:sapphire_glass*1,pioneers:elite_electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_liquid_combustion_generator", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_liquid_combustion_generator*2,pioneers:engine_block*1,pioneers:dynamo_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_machining_center", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_machining_center*2,pioneers:electric_motor*1,pioneers:drill_bit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_mixer", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_mixer*2,#forge:gears/bronze*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_ore_separator", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_ore_separator*2,pioneers:electric_motor*1,pioneers:planetary_gear*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_photolithograph", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_photolithograph*2,pioneers:incandescent_bulb*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_pick_and_place", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_pick_and_place*2,pioneers:cartridge_filter*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_power_hammer", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_power_hammer*2,pioneers:electric_motor*1,pioneers:piston*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_press", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_press*2,#forge:plates/babbitt*1,pioneers:electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_propellant_plant", new String[]{"pioneers:basic_propellant_plant*2,pioneers:machine_frame_basic*1,pioneers:steel_screw*4,pioneers:heat_exchanger*1,pioneers:compressor_unit*1,#forge:sheets/steel*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_pumpjack", new String[]{"pioneers:machine_hull_basic*1,pioneers:piston*2,#forge:wire_ropes/galvanized_steel*1,pioneers:electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_pyrolysis_oven", new String[]{"pioneers:machine_hull_basic*1,pioneers:fire_brick*2,#forge:gears/iron*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_recycler", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_recycler*2,pioneers:electric_motor*1,pioneers:planetary_gear*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_reduction_furnace", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_reduction_furnace*2,pioneers:cast_iron_valve*1,pioneers:iron_heating_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_rolling_mill", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_rolling_mill*2,pioneers:electric_motor*1,pioneers:planetary_gear*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_sawmill", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_sawmill*2,pioneers:electric_motor*1,pioneers:steel_saw_blade*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_solid_combustion_generator", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_solid_combustion_generator*2,pioneers:fire_brick*2,pioneers:dynamo_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_industrial_wiremill", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_wiremill*2,pioneers:electric_motor*1,pioneers:planetary_gear*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_item_silo", new String[]{"pioneers:machine_hull_basic*1,#forge:gears/copper*1,pioneers:electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_kroll_reactor", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_heat_exchanger*2,pioneers:pressure_bottle*1,pioneers:iron_heating_coil*2,pioneers:advanced_centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_offshore_platform", new String[]{"pioneers:machine_hull_basic*1,pioneers:piston*2,#forge:plates/zinc*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_quantum_computer", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:cryostat*1,pioneers:qubit_chip*2,pioneers:ultimate_centrifugal_pump*1,pioneers:computer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_rail_works", new String[]{"pioneers:basic_track*2,pioneers:machine_frame_basic*1,pioneers:steel_screw*4,pioneers:electric_motor*1,pioneers:stepper_motor*1,#forge:sheets/steel*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_semiconductor_fab", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_photolithograph*1,pioneers:cartridge_filter*2,pioneers:basic_pick_and_place*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_shipyard", new String[]{"pioneers:basic_harbor*2,pioneers:machine_frame_basic*1,pioneers:steel_screw*4,pioneers:electric_motor*1,pioneers:stepper_motor*1,#forge:sheets/steel*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_spent_fuel_pool", new String[]{"pioneers:machine_hull_elite*1,#forge:plates/stainless_steel*4,pioneers:boron_carbide*2,pioneers:elite_centrifugal_pump*1,pioneers:elite_heat_exchanger*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_steam_turbine", new String[]{"pioneers:machine_hull_basic*1,pioneers:bladed_rotor*2,#forge:rings/babbitt*1,pioneers:dynamo_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_stellarator", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:tungsten_tile*4,pioneers:sulcite_hts_tape*4,pioneers:plasma_heating_klystron*2,pioneers:superconducting_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_storage_tank", new String[]{"pioneers:machine_hull_basic*1,minecraft:bucket*2,#forge:gears/copper*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_synthesizer", new String[]{"pioneers:quantum_avionics*2,pioneers:machine_frame_basic*1,pioneers:steel_screw*4,pioneers:circuit_mk4*1,pioneers:hepa_filter*2,#forge:sheets/steel*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_tokamak", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:tungsten_tile*4,pioneers:ultimate_centrifugal_pump*1,pioneers:plasma_heating_klystron*2,pioneers:superconducting_coil*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_tree_plantation", new String[]{"pioneers:machine_hull_basic*1,#minecraft:saplings*2,pioneers:steel_saw_blade*1,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_assembler", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:gripper*1,pioneers:ultimate_bearing*2,#forge:springs/gold*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_autoclave", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:metal_gasket*1,pioneers:ultimate_centrifugal_pump*1,pioneers:cryogenic_valve*2,pioneers:stainless_steel_fitting*4", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_bender", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_electric_motor*1,pioneers:elite_piston*1,pioneers:superconducting_transformer*1,pioneers:press_die*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_bottler", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:ultimate_centrifugal_pump*1,pioneers:brass_faucet*2,#forge:gears/gold*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_casting_machine", new String[]{"pioneers:machine_hull_ultimate*1,#forge:gears/stellite*1,pioneers:ultimate_planetary_gear*1,pioneers:ceramic_composite_panel*4,pioneers:press_die*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_centrifuge", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:ultimate_bladed_rotor*1,pioneers:ultimate_bearing*2,pioneers:brake_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_chemical_bath", new String[]{"pioneers:machine_hull_ultimate*1,#forge:rods/chrome*1,pioneers:tungsten_heating_element*2,pioneers:ceramic_composite_panel*4,pioneers:ultimate_centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_chemical_reactor", new String[]{"pioneers:machine_hull_ultimate*1,#forge:plates/zirconium*1,pioneers:ultimate_centrifugal_pump*1,pioneers:cryogenic_valve*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_cracker", new String[]{"pioneers:machine_hull_ultimate*1,#forge:pipes/nickel*1,pioneers:tungsten_heating_element*2,pioneers:ceramic_composite_panel*4,pioneers:ultimate_centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_cryogenic_unit", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:compressor_unit*1,#forge:gears/gold*1,pioneers:timing_belt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_crystallizer", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_centrifugal_pump*1,pioneers:fused_silica*1,pioneers:holographic_projector*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_distillery", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_heat_exchanger*2,pioneers:ultimate_centrifugal_pump*1,pioneers:cryogenic_valve*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_dryer", new String[]{"pioneers:machine_hull_ultimate*1,#forge:springs/tungsten*1,pioneers:superconducting_transformer*1,pioneers:zirconia_ceramic*4,pioneers:propeller*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_dynamo", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:permanent_magnet_alternator*1,#forge:rings/silver*1,pioneers:elite_planetary_gear*1,pioneers:superconducting_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_electric_crucible", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:iridium_crucible*1,pioneers:tungsten_heating_element*2,pioneers:ceramic_composite_panel*4,pioneers:tharsium_magnet*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_electrolyzer", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:superconducting_transformer*1,#forge:plates/iridium*2,pioneers:ultimate_centrifugal_pump*1,#forge:rings/constantan*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_extractor", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:ultimate_piston*1,#forge:gears/stainless_steel*1,pioneers:cryogenic_valve*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_extruder", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:ultimate_planetary_gear*1,#forge:rings/tungsten*1,pioneers:inertial_measurement_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_fermenter", new String[]{"pioneers:machine_hull_ultimate*1,#forge:gears/stainless_steel*1,pioneers:ultimate_centrifugal_pump*1,pioneers:cryogenic_valve*2,pioneers:ultimate_heat_exchanger*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_food_processor", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_centrifugal_pump*1,pioneers:brass_faucet*2,pioneers:elite_electric_motor*1,pioneers:superconducting_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_gas_separator", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_heat_exchanger*1,pioneers:compressor_unit*1,pioneers:hepa_filter*1,pioneers:ultimate_electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_gas_turbine", new String[]{"pioneers:machine_hull_ultimate*1,#forge:gears/stellite*1,pioneers:ultimate_bladed_rotor*1,#forge:rods/iridium*1,#forge:gears/gold*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_gear_hobber", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:diamond_disc*1,pioneers:carbide_cutting_tool*1,pioneers:cast_iron_machine_bed*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_induction_furnace", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:superconducting_transformer*1,pioneers:superconducting_coil*2,pioneers:supercapacitor*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_liquid_combustion_generator", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_engine_block*1,pioneers:superconducting_generator*1,#forge:gears/silver*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_machining_center", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:carbide_cutting_tool*1,pioneers:cast_iron_machine_bed*1,pioneers:ultimate_bearing*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_mixer", new String[]{"pioneers:machine_hull_ultimate*1,#forge:gears/nickel*1,pioneers:elite_centrifugal_pump*1,pioneers:titanium_valve*2,pioneers:superconducting_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_ore_separator", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_electric_motor*1,pioneers:ultimate_planetary_gear*1,pioneers:ultimate_bearing*2,#forge:wire_meshes/stainless_steel*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_photolithograph", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:tharsium_magnet*1,pioneers:arc_lamp*1,pioneers:fiber_laser*1,#forge:gears/tungsten_carbide*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_pick_and_place", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:photonic_motherboard*1,pioneers:ultimate_centrifugal_pump*1,pioneers:piezo_actuator*1,#forge:springs/gold*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_power_hammer", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_electric_motor*1,pioneers:elite_piston*1,pioneers:cast_iron_machine_bed*2,pioneers:superconducting_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_press", new String[]{"pioneers:machine_hull_ultimate*1,#forge:plates/babbitt*1,pioneers:elite_electric_motor*1,pioneers:elite_piston*1,pioneers:superconducting_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_propellant_plant", new String[]{"pioneers:machine_frame_ultimate*1,pioneers:tungsten_screw*4,pioneers:ultimate_heat_exchanger*1,pioneers:compressor_unit*1,pioneers:multilayer_insulation*2,pioneers:composite_tank*2", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_recycler", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_electric_motor*1,pioneers:superconducting_transformer*1,pioneers:diamond_disc*1,pioneers:rare_earth_magnet*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_reduction_furnace", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:cryogenic_valve*1,pioneers:tungsten_heating_element*2,pioneers:ceramic_composite_panel*4,pioneers:superconducting_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_rock_generator", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_piston*1,pioneers:cryogenic_valve*2,pioneers:ceramic_composite_panel*2,pioneers:inertial_measurement_unit*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_rolling_mill", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_electric_motor*1,pioneers:elite_planetary_gear*1,pioneers:superconducting_transformer*1,#forge:rings/babbitt*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_sawmill", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_electric_motor*1,pioneers:diamond_disc*1,pioneers:drive_chain*2,pioneers:superconducting_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_solid_combustion_generator", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:zirconia_ceramic*2,pioneers:permanent_magnet_alternator*1,pioneers:oxygen_sensor*1,pioneers:superconducting_transformer*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_water_source", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:ultimate_centrifugal_pump*1,pioneers:ultimate_heat_exchanger*1,pioneers:cryogenic_valve*1", "", ""});
+        m.put("assembler|automation/assembly/industry_crafting_ultimate_wiremill", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_electric_motor*1,pioneers:elite_planetary_gear*1,pioneers:superconducting_transformer*1,#forge:rings/tungsten*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_advanced_energy_buffer", new String[]{"pioneers:basic_energy_buffer*1,pioneers:upgrade_kit_advanced*1,pioneers:borosilicate_glass*1,#forge:plates/cobalt*2,pioneers:nimh_cell*4,pioneers:lithium_carbonate*2", "", ""});
+        m.put("assembler|automation/assembly/logistics_advanced_fluid_buffer", new String[]{"pioneers:basic_fluid_buffer*1,pioneers:upgrade_kit_advanced*1,pioneers:borosilicate_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_advanced_gas_buffer", new String[]{"pioneers:basic_gas_buffer*1,pioneers:upgrade_kit_advanced*1,pioneers:borosilicate_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_advanced_heat_buffer", new String[]{"pioneers:basic_heat_buffer*1,pioneers:upgrade_kit_advanced*1,pioneers:borosilicate_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_advanced_item_buffer", new String[]{"pioneers:basic_item_buffer*1,pioneers:upgrade_kit_advanced*1,pioneers:borosilicate_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_advanced_pressure_buffer", new String[]{"pioneers:basic_pressure_buffer*1,pioneers:upgrade_kit_advanced*1,pioneers:borosilicate_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_air_compressor", new String[]{"pioneers:machine_hull_basic*1,pioneers:piston*1,#forge:glass_panes*2,pioneers:electric_motor*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_basic_energy_buffer", new String[]{"#forge:plates/steel*4,pioneers:copper_coil*4,pioneers:machine_frame_basic*1,pioneers:lead_acid_battery*4,pioneers:circuit_breaker*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_basic_fluid_buffer", new String[]{"#forge:plates/steel*4,minecraft:bucket*4,pioneers:machine_frame_basic*1", "", ""});
+    }
+
+    private static void part2(Map<String, String[]> m) {
+        m.put("assembler|automation/assembly/logistics_basic_gas_buffer", new String[]{"#forge:plates/steel*4,#forge:plates/galvanized_steel*4,pioneers:machine_frame_basic*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_basic_heat_buffer", new String[]{"#forge:plates/steel*4,#forge:plates/copper*4,pioneers:machine_frame_basic*1,#forge:rods/constantan*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_basic_item_buffer", new String[]{"#forge:plates/steel*4,minecraft:chest*4,pioneers:machine_frame_basic*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_basic_pressure_buffer", new String[]{"#forge:plates/steel*4,#forge:rings/steel*4,pioneers:machine_frame_basic*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_electric_heater", new String[]{"pioneers:machine_hull_basic*1,pioneers:copper_coil*2,minecraft:furnace*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_elite_energy_buffer", new String[]{"pioneers:advanced_energy_buffer*1,pioneers:upgrade_kit_elite*1,pioneers:sapphire_glass*1,pioneers:vanadium_flow_cell*2,#forge:rods/vanadium*2,#forge:plates/vanadium*4", "", ""});
+        m.put("assembler|automation/assembly/logistics_elite_fluid_buffer", new String[]{"pioneers:advanced_fluid_buffer*1,pioneers:upgrade_kit_elite*1,pioneers:sapphire_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_elite_gas_buffer", new String[]{"pioneers:advanced_gas_buffer*1,pioneers:upgrade_kit_elite*1,pioneers:sapphire_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_elite_heat_buffer", new String[]{"pioneers:advanced_heat_buffer*1,pioneers:upgrade_kit_elite*1,pioneers:sapphire_glass*1,#forge:plates/nichrome*2", "", ""});
+        m.put("assembler|automation/assembly/logistics_elite_item_buffer", new String[]{"pioneers:advanced_item_buffer*1,pioneers:upgrade_kit_elite*1,pioneers:sapphire_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_elite_pressure_buffer", new String[]{"pioneers:advanced_pressure_buffer*1,pioneers:upgrade_kit_elite*1,pioneers:sapphire_glass*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_ultimate_energy_buffer", new String[]{"pioneers:elite_energy_buffer*1,pioneers:upgrade_kit_ultimate*1,pioneers:fused_silica*1,pioneers:solid_state_cell*4,#forge:rods/vanadium*2", "", ""});
+        m.put("assembler|automation/assembly/logistics_ultimate_fluid_buffer", new String[]{"pioneers:elite_fluid_buffer*1,pioneers:upgrade_kit_ultimate*1,pioneers:fused_silica*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_ultimate_gas_buffer", new String[]{"pioneers:elite_gas_buffer*1,pioneers:upgrade_kit_ultimate*1,pioneers:fused_silica*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_ultimate_heat_buffer", new String[]{"pioneers:elite_heat_buffer*1,pioneers:upgrade_kit_ultimate*1,pioneers:fused_silica*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_ultimate_item_buffer", new String[]{"pioneers:elite_item_buffer*1,pioneers:upgrade_kit_ultimate*1,pioneers:fused_silica*1", "", ""});
+        m.put("assembler|automation/assembly/logistics_ultimate_pressure_buffer", new String[]{"pioneers:elite_pressure_buffer*1,pioneers:upgrade_kit_ultimate*1,pioneers:fused_silica*1", "", ""});
+        m.put("assembler|automation/assembly/machines_advanced_compressor", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,pioneers:advanced_bearing*2,pioneers:timing_belt*1", "", ""});
+        m.put("assembler|automation/assembly/machines_advanced_crusher", new String[]{"pioneers:machine_hull_advanced*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,pioneers:advanced_bearing*2,pioneers:inductive_sensor*1", "", ""});
+        m.put("assembler|automation/assembly/machines_advanced_furnace", new String[]{"pioneers:machine_hull_advanced*1,pioneers:iron_heating_coil*2,pioneers:alumina_ceramic*4,pioneers:power_inverter*1,#forge:rings/tin*1", "", ""});
+        m.put("assembler|automation/assembly/machines_basic_compressor", new String[]{"pioneers:machine_hull_basic*1,pioneers:electric_motor*1,pioneers:piston*1,pioneers:bearing*2,pioneers:leather_belt*1", "", ""});
+        m.put("assembler|automation/assembly/machines_basic_crusher", new String[]{"pioneers:machine_hull_basic*1,pioneers:copper_coil*1,#forge:gears/bronze*1,pioneers:bearing*2,pioneers:toggle_switch*1", "", ""});
+        m.put("assembler|automation/assembly/machines_basic_furnace", new String[]{"pioneers:machine_hull_basic*1,pioneers:iron_heating_coil*2,pioneers:fire_brick*4,pioneers:power_supply_unit*1,#forge:rings/tin*1", "", ""});
+        m.put("assembler|automation/assembly/machines_elite_compressor", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_electric_motor*1,pioneers:advanced_piston*1,pioneers:variable_frequency_drive*1,pioneers:timing_belt*1", "", ""});
+        m.put("assembler|automation/assembly/machines_elite_crusher", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_electric_motor*1,pioneers:advanced_planetary_gear*1,pioneers:variable_frequency_drive*1,pioneers:inductive_sensor*1", "", ""});
+        m.put("assembler|automation/assembly/machines_elite_furnace", new String[]{"pioneers:machine_hull_elite*1,pioneers:iron_heating_coil*2,pioneers:alumina_ceramic*4,pioneers:variable_frequency_drive*1,#forge:rings/tin*1", "", ""});
+        m.put("assembler|automation/assembly/machines_ultimate_compressor", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_electric_motor*1,pioneers:elite_piston*1,pioneers:superconducting_transformer*1,pioneers:timing_belt*1", "", ""});
+        m.put("assembler|automation/assembly/machines_ultimate_crusher", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_electric_motor*1,pioneers:elite_planetary_gear*1,pioneers:superconducting_transformer*1,pioneers:camera_module*1", "", ""});
+        m.put("assembler|automation/assembly/machines_ultimate_furnace", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:nichrome_coil*2,pioneers:zirconia_ceramic*4,pioneers:superconducting_transformer*1,#forge:rings/tin*1", "", ""});
+        m.put("assembler|automation/assembly/mining_mining_outpost_controller", new String[]{"#pioneers:circuits/advanced*4,pioneers:industrial_casing_basic*2,pioneers:machine_frame_basic*2,minecraft:map*1", "", ""});
+        m.put("assembler|automation/assembly/research_advanced_data_bank", new String[]{"pioneers:machine_hull_advanced*1,pioneers:basic_data_bank*1,pioneers:hard_disk_drive*2", "", ""});
+        m.put("assembler|automation/assembly/research_asteroid_crusher", new String[]{"#forge:plates/steel*4,#forge:rods/steel*4,minecraft:hopper*1,#pioneers:circuits/basic*1,pioneers:machine_frame_basic*1", "", ""});
+        m.put("assembler|automation/assembly/research_basic_data_bank", new String[]{"pioneers:machine_hull_basic*1,pioneers:basic_logistic_cable*2,pioneers:magnetic_tape*4", "", ""});
+        m.put("assembler|automation/assembly/research_bio_sequencer", new String[]{"#forge:glass_panes*2,minecraft:brewing_stand*1,#forge:plates/steel*4,#pioneers:circuits/basic*1,pioneers:machine_frame_basic*1", "", ""});
+        m.put("assembler|automation/assembly/research_biome_analyzer", new String[]{"#forge:plates/steel*4,#pioneers:circuits/advanced*2,pioneers:biome_data_cell*2,pioneers:machine_frame_basic*1,pioneers:isotope_standard*1", "", ""});
+        m.put("assembler|automation/assembly/research_data_antenna", new String[]{"#forge:wires/gold*2,#forge:plates/titanium*4,pioneers:circuit_mk2*1,pioneers:machine_frame_advanced*1,pioneers:tanzanite*1,#forge:plates/magnesium*1", "", ""});
+        m.put("assembler|automation/assembly/research_elite_data_bank", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_data_bank*1,pioneers:ssd*2", "", ""});
+        m.put("assembler|automation/assembly/research_geo_spectrometer", new String[]{"#forge:glass_panes*2,#forge:rods/lunarium*2,#forge:plates/steel*4,pioneers:analog_computer*1,pioneers:machine_frame_basic*1,pioneers:topaz_prism*1", "", ""});
+        m.put("assembler|automation/assembly/research_research_table", new String[]{"#forge:glass_panes*3,pioneers:computer*1,#forge:plates/titanium*2,pioneers:machine_frame_advanced*1,pioneers:vector_coprocessor*2,pioneers:isotope_standard*1", "", ""});
+        m.put("assembler|automation/assembly/research_ultimate_data_bank", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_data_bank*1,pioneers:nvme_ssd*2,pioneers:lunar_alloy_plate*4", "", ""});
+        m.put("assembler|automation/assembly/space_simulator_space_simulator_controller", new String[]{"#pioneers:circuits/ultimate*4,pioneers:space_simulator_casing*4,minecraft:nether_star*1,pioneers:qubit_chip*2,pioneers:superconducting_coil*4,pioneers:data_crystal_5d*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_advanced_chunk_loader", new String[]{"pioneers:basic_chunk_loader*1,pioneers:upgrade_kit_advanced*1,#pioneers:circuits/advanced*2,#forge:wires/niobium*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_advanced_force_field_generator", new String[]{"pioneers:basic_force_field_generator*1,pioneers:upgrade_kit_advanced*1,#pioneers:circuits/advanced*2,#forge:wires/niobium*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_advanced_lightning_collector", new String[]{"pioneers:machine_hull_advanced*1,pioneers:basic_lightning_collector*1,#forge:wires/niobium*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_advanced_oxygen_diffuser", new String[]{"pioneers:basic_oxygen_diffuser*1,pioneers:upgrade_kit_advanced*1,#pioneers:circuits/advanced*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_basic_chunk_loader", new String[]{"#forge:plates/steel*4,#forge:ender_pearls*4,#pioneers:circuits/advanced*1", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_basic_force_field_generator", new String[]{"#forge:rods/tharsium*8,#pioneers:circuits/elite*1,#forge:plates/titanium*2,#forge:storage_blocks/tharsium*1,pioneers:capacitor*1,#forge:plates/niobium_titanium*1", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_basic_lightning_collector", new String[]{"pioneers:machine_hull_basic*1,#forge:storage_blocks/copper*2,pioneers:paper_capacitor*1", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_basic_oxygen_diffuser", new String[]{"#forge:plates/steel*2,#forge:pipes/steel*4,minecraft:iron_bars*1,pioneers:basic_gas_buffer*2,pioneers:life_support_unit*1,#pioneers:circuits/advanced*1", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_elite_chunk_loader", new String[]{"pioneers:advanced_chunk_loader*1,pioneers:upgrade_kit_elite*1,#pioneers:circuits/elite*2,#forge:rods/niobium_titanium*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_elite_force_field_generator", new String[]{"pioneers:advanced_force_field_generator*1,pioneers:upgrade_kit_elite*1,#pioneers:circuits/elite*2,#forge:plates/niobium_titanium*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_elite_lightning_collector", new String[]{"pioneers:machine_hull_elite*1,pioneers:advanced_lightning_collector*1,pioneers:capacitor*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_elite_oxygen_diffuser", new String[]{"pioneers:advanced_oxygen_diffuser*1,pioneers:upgrade_kit_elite*1,#pioneers:circuits/elite*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_ultimate_chunk_loader", new String[]{"pioneers:elite_chunk_loader*1,pioneers:upgrade_kit_ultimate*1,#pioneers:circuits/ultimate*2,#forge:rods/niobium_titanium*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_ultimate_force_field_generator", new String[]{"pioneers:elite_force_field_generator*1,pioneers:upgrade_kit_ultimate*1,#pioneers:circuits/ultimate*2,#forge:plates/niobium_titanium*2", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_ultimate_lightning_collector", new String[]{"pioneers:machine_hull_ultimate*1,pioneers:elite_lightning_collector*1,#forge:rods/osmium*1", "", ""});
+        m.put("assembler|automation/assembly/space_tiers_ultimate_oxygen_diffuser", new String[]{"pioneers:elite_oxygen_diffuser*1,pioneers:upgrade_kit_ultimate*1,#pioneers:circuits/ultimate*2", "", ""});
         m.put("assembler|automation/carpenter/agri_bench_hemp_canvas", new String[]{"pioneers:hemp_fiber*4", "", ""});
         m.put("assembler|automation/carpenter/bronze_bench_canvas", new String[]{"pioneers:plant_fiber*6", "", ""});
         m.put("assembler|automation/carpenter/bronze_bench_canvas_string", new String[]{"minecraft:string*3", "", ""});
+        m.put("assembler|automation/carpenter/caravan_caravan_relay", new String[]{"#minecraft:logs*2,#minecraft:planks*4,#forge:rings/iron*1,#forge:rings/bronze*1,minecraft:hay_block*1", "", ""});
         m.put("assembler|automation/carpenter/cotton_cotton_canvas", new String[]{"pioneers:cotton_thread*3", "", ""});
+        m.put("assembler|automation/carpenter/herd_rabbit_hutch", new String[]{"#minecraft:planks*6,minecraft:iron_bars*2,minecraft:hay_block*1", "", ""});
         m.put("assembler|automation/carpenter/leisure_cigar", new String[]{"pioneers:cured_tobacco*3", "", ""});
+        m.put("assembler|automation/carpenter/warehouse_bag_interface", new String[]{"pioneers:treated_wood*4,pioneers:wooden_hopper*1,minecraft:leather*2,pioneers:iron_nail*2", "", ""});
+        m.put("assembler|automation/carpenter/warehouse_warehouse_counter", new String[]{"pioneers:treated_wood*6,minecraft:barrel*1,#forge:plates/brass*1,#forge:plates/steel*1", "", ""});
+        m.put("assembler|automation/carpenter/warehouse_warehouse_inlet", new String[]{"pioneers:treated_wood*4,pioneers:wooden_hopper*1,#forge:plates/steel*1,pioneers:iron_nail*2", "", ""});
+        m.put("assembler|automation/carpenter/warehouse_warehouse_outlet", new String[]{"pioneers:treated_wood*4,pioneers:wooden_hopper*1,#forge:plates/steel*1,pioneers:steel_bolt*2", "", ""});
+        m.put("assembler|automation/coppersmith/bronze_bench_auto_foundry", new String[]{"pioneers:crucible_furnace*1,pioneers:fire_brick*4,#forge:plates/bronze*2,#forge:gears/bronze*1", "", ""});
+        m.put("assembler|automation/coppersmith/bronze_bench_auto_mold", new String[]{"pioneers:casting_table*1,#forge:plates/iron*2,#forge:plates/bronze*1", "", ""});
+        m.put("assembler|automation/coppersmith/bronze_bench_steam_blower", new String[]{"#forge:plates/copper*4,#forge:gears/bronze*1,pioneers:bronze_logistic_cable*1,minecraft:leather*2", "", ""});
+        m.put("assembler|automation/coppersmith/kitchen_bench_brew_kettle", new String[]{"#forge:plates/copper*6,#forge:rods/copper*2", "", ""});
+        m.put("assembler|automation/coppersmith/kitchen_bench_cooking_pot", new String[]{"#forge:plates/copper*4,#forge:rods/copper*1", "", ""});
+        m.put("assembler|automation/coppersmith/kitchen_bench_copper_still", new String[]{"#forge:plates/copper*6,#forge:rods/copper*3,#forge:plates/iron*1", "", ""});
+        m.put("assembler|automation/logistics/naval_advanced_harbor", new String[]{"pioneers:basic_harbor*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,pioneers:advanced_bearing*2,#forge:beams/duralumin*2", "", ""});
+        m.put("assembler|automation/logistics/naval_basic_harbor", new String[]{"#forge:plates/steel*6,#forge:chests/wooden*1,pioneers:basic_logistic_cable*4,#forge:rods/steel*4", "", ""});
+        m.put("assembler|automation/logistics/naval_elite_harbor", new String[]{"pioneers:advanced_harbor*1,#forge:plates/titanium*4,#pioneers:circuits/elite*1,pioneers:elite_bearing*2,#forge:rings/titanium*2", "", ""});
+        m.put("assembler|automation/logistics/naval_ultimate_harbor", new String[]{"pioneers:elite_harbor*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1,pioneers:ultimate_bearing*2,#forge:wires/tungsten*2", "", ""});
+        m.put("assembler|automation/logistics/rail_advanced_air_loader", new String[]{"pioneers:basic_air_loader*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,#forge:pipes/aluminium*2", "", ""});
+        m.put("assembler|automation/logistics/rail_advanced_data_loader", new String[]{"pioneers:basic_data_loader*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,#forge:foils/electrum*1", "", ""});
+        m.put("assembler|automation/logistics/rail_advanced_energy_loader", new String[]{"pioneers:basic_energy_loader*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,#forge:wire_ropes/aluminium*2", "", ""});
+        m.put("assembler|automation/logistics/rail_advanced_fluid_loader", new String[]{"pioneers:basic_fluid_loader*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,#forge:rings/aluminium*2", "", ""});
+        m.put("assembler|automation/logistics/rail_advanced_item_loader", new String[]{"pioneers:basic_item_loader*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,#forge:gears/aluminium*1", "", ""});
+        m.put("assembler|automation/logistics/rail_advanced_loading_silo", new String[]{"pioneers:basic_loading_silo*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,#forge:gears/aluminium*1", "", ""});
+        m.put("assembler|automation/logistics/rail_advanced_substation", new String[]{"pioneers:basic_substation*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,#forge:wire_ropes/aluminium*2", "", ""});
+        m.put("assembler|automation/logistics/rail_advanced_unloading_pit", new String[]{"pioneers:basic_unloading_pit*1,#forge:plates/stainless_steel*4,#pioneers:circuits/advanced*1,#forge:gears/aluminium*1", "", ""});
+        m.put("assembler|automation/logistics/rail_basic_air_loader", new String[]{"#forge:plates/steel*4,pioneers:basic_logistic_cable*2,#pioneers:circuits/basic*1", "", ""});
+        m.put("assembler|automation/logistics/rail_basic_data_loader", new String[]{"#forge:plates/steel*4,pioneers:basic_logistic_cable*2,#pioneers:circuits/basic*1,#forge:wires/electrum*2", "", ""});
+        m.put("assembler|automation/logistics/rail_basic_energy_loader", new String[]{"#forge:plates/steel*4,pioneers:basic_logistic_cable*2,#pioneers:circuits/basic*1,#forge:rods/electrum*1", "", ""});
+        m.put("assembler|automation/logistics/rail_basic_fluid_loader", new String[]{"#forge:plates/steel*4,pioneers:basic_logistic_cable*2,pioneers:centrifugal_pump*1", "", ""});
+        m.put("assembler|automation/logistics/rail_basic_item_loader", new String[]{"#forge:chests/wooden*1,#forge:plates/steel*4,pioneers:piston*1,#forge:gears/steel*1", "", ""});
+        m.put("assembler|automation/logistics/rail_basic_loading_silo", new String[]{"#forge:plates/steel*6,#forge:chests/wooden*1,pioneers:piston*1", "", ""});
+        m.put("assembler|automation/logistics/rail_basic_substation", new String[]{"#forge:plates/steel*6,pioneers:basic_energy_buffer*1,#forge:wires/copper*8,pioneers:circuit_breaker*2,#forge:wire_ropes/copper*2,#forge:rods/silver*1", "", ""});
+        m.put("assembler|automation/logistics/rail_basic_unloading_pit", new String[]{"#forge:plates/steel*4,#forge:chests/wooden*1,#forge:rods/steel*4,pioneers:rubber_belt*1", "", ""});
+        m.put("assembler|automation/logistics/rail_charging_post", new String[]{"#forge:plates/steel*4,pioneers:basic_logistic_cable*4,#pioneers:circuits/advanced*1,#forge:springs/copper*2", "", ""});
+        m.put("assembler|automation/logistics/rail_coaling_tower", new String[]{"#forge:plates/steel*6,#forge:chests/wooden*1,#forge:rods/steel*4", "", ""});
+        m.put("assembler|automation/logistics/rail_elite_air_loader", new String[]{"pioneers:advanced_air_loader*1,#forge:plates/titanium*4,#pioneers:circuits/elite*1,#forge:springs/stainless_steel*2", "", ""});
+        m.put("assembler|automation/logistics/rail_elite_data_loader", new String[]{"pioneers:advanced_data_loader*1,#forge:plates/titanium*4,#pioneers:circuits/elite*1", "", ""});
+        m.put("assembler|automation/logistics/rail_elite_energy_loader", new String[]{"pioneers:advanced_energy_loader*1,#forge:plates/titanium*4,#pioneers:circuits/elite*1,#forge:plates/vanadium*2", "", ""});
+        m.put("assembler|automation/logistics/rail_elite_fluid_loader", new String[]{"pioneers:advanced_fluid_loader*1,#forge:plates/titanium*4,#pioneers:circuits/elite*1,#forge:springs/titanium*2", "", ""});
+        m.put("assembler|automation/logistics/rail_elite_item_loader", new String[]{"pioneers:advanced_item_loader*1,#forge:plates/titanium*4,#pioneers:circuits/elite*1,#forge:plates/chrome*1", "", ""});
+        m.put("assembler|automation/logistics/rail_elite_loading_silo", new String[]{"pioneers:advanced_loading_silo*1,#forge:plates/titanium*4,#pioneers:circuits/elite*1,#forge:beams/stainless_steel*2", "", ""});
+        m.put("assembler|automation/logistics/rail_elite_substation", new String[]{"pioneers:advanced_substation*1,#forge:plates/titanium*4,pioneers:solid_state_relay*2,pioneers:vanadium_flow_cell*2,#forge:rods/vanadium*2", "", ""});
+        m.put("assembler|automation/logistics/rail_elite_unloading_pit", new String[]{"pioneers:advanced_unloading_pit*1,#forge:plates/titanium*4,#pioneers:circuits/elite*1,#forge:rods/chrome*2,#forge:springs/stainless_steel*2", "", ""});
+        m.put("assembler|automation/logistics/rail_fuel_pump", new String[]{"#forge:plates/steel*4,pioneers:centrifugal_pump*1,pioneers:basic_logistic_cable*2,pioneers:gasket*1", "", ""});
+        m.put("assembler|automation/logistics/rail_nuclear_fuel_station", new String[]{"pioneers:depleted_uranium_plate*4,#forge:plates/stainless_steel*4,#pioneers:circuits/elite*1", "", ""});
+        m.put("assembler|automation/logistics/rail_passenger_platform", new String[]{"pioneers:cement*4,#forge:plates/steel*2,minecraft:glowstone_dust*1", "", ""});
+        m.put("assembler|automation/logistics/rail_platform_crane", new String[]{"#forge:rods/steel*6,#forge:plates/steel*2,#forge:gears/steel*2", "", ""});
+        m.put("assembler|automation/logistics/rail_steam_charger", new String[]{"#forge:plates/steel*4,pioneers:basic_logistic_cable*2,pioneers:gasket*1", "", ""});
+        m.put("assembler|automation/logistics/rail_ultimate_air_loader", new String[]{"pioneers:elite_air_loader*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1", "", ""});
+        m.put("assembler|automation/logistics/rail_ultimate_data_loader", new String[]{"pioneers:elite_data_loader*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1,#forge:plates/osmium*1", "", ""});
+        m.put("assembler|automation/logistics/rail_ultimate_energy_loader", new String[]{"pioneers:elite_energy_loader*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1,#forge:rods/osmium*1", "", ""});
+        m.put("assembler|automation/logistics/rail_ultimate_fluid_loader", new String[]{"pioneers:elite_fluid_loader*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1,pioneers:cobalt_60*1", "", ""});
+        m.put("assembler|automation/logistics/rail_ultimate_item_loader", new String[]{"pioneers:elite_item_loader*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1,#forge:gears/tungsten*1", "", ""});
+        m.put("assembler|automation/logistics/rail_ultimate_loading_silo", new String[]{"pioneers:elite_loading_silo*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1,pioneers:cobalt_60*1", "", ""});
+        m.put("assembler|automation/logistics/rail_ultimate_substation", new String[]{"pioneers:elite_substation*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1,#forge:rods/osmium*1", "", ""});
+        m.put("assembler|automation/logistics/rail_ultimate_unloading_pit", new String[]{"pioneers:elite_unloading_pit*1,#forge:plates/tungsten*4,#pioneers:circuits/ultimate*1", "", ""});
+        m.put("assembler|automation/logistics/spaceport_equipment_assembly_table", new String[]{"#forge:plates/steel*4,#pioneers:circuits/basic*1,minecraft:piston*2,pioneers:machine_frame_basic*1,pioneers:plastic_sheet*1", "", ""});
+        m.put("assembler|automation/logistics/spaceport_launch_pad_core", new String[]{"#forge:plates/titanium*6,pioneers:circuit_mk2*2,pioneers:advanced_fluid_buffer*2,pioneers:machine_frame_advanced*1,#forge:beams/duralumin*2,#forge:springs/duralumin*2", "", ""});
+        m.put("assembler|automation/logistics/spaceport_module_assembly_table", new String[]{"#forge:plates/titanium*4,pioneers:circuit_mk2*1,pioneers:advanced_electric_motor*1,pioneers:machine_frame_advanced*1,pioneers:aluminium_fuselage_panel*1,#forge:beams/duralumin*2", "", ""});
+        m.put("assembler|automation/logistics/spaceport_robotic_assembly_bay", new String[]{"#forge:plates/steel*2,#forge:beams/steel*2,#pioneers:circuits/basic*1,pioneers:piston*2,pioneers:machine_frame_basic*1,pioneers:electric_motor*1", "", ""});
+        m.put("assembler|automation/logistics/spaceport_rocket_integration_hall", new String[]{"#forge:plates/titanium*6,pioneers:circuit_mk2*1,pioneers:advanced_piston*2,pioneers:machine_frame_advanced*1,pioneers:advanced_electric_motor*1,#forge:wire_ropes/aluminium*2", "", ""});
+        m.put("assembler|automation/mason/kitchen_bench_bread_oven", new String[]{"minecraft:brick*8,#forge:plates/iron*1,minecraft:clay_ball*2", "", ""});
+        m.put("assembler|automation/mason/kitchen_bench_water_trough", new String[]{"minecraft:smooth_stone*5,#forge:plates/iron*1", "", ""});
         m.put("assembler|automation/metalworker/aquarium_aquarium", new String[]{"#forge:glass_panes*4,#forge:rods/iron*2,pioneers:resin_glue*1", "", ""});
         m.put("assembler|automation/metalworker/economy_market_counter", new String[]{"#minecraft:planks*4,#minecraft:wooden_slabs*2,#forge:plates/bronze*3,pioneers:canvas*2", "", ""});
+        m.put("assembler|automation/metalworker/kitchen_bench_auto_feeder", new String[]{"#forge:plates/iron*4,#forge:gears/iron*1,#forge:glass*1,pioneers:wooden_logistic_cable*1", "", ""});
+        m.put("assembler|automation/metalworker/kitchen_bench_bronze_sprinkler", new String[]{"#forge:plates/bronze*2,#forge:rods/bronze*2,pioneers:wooden_logistic_cable*1", "", ""});
+        m.put("assembler|automation/metalworker/kitchen_bench_can_sealer", new String[]{"#forge:plates/steel*2,#forge:gears/iron*1,#forge:rods/steel*2", "", ""});
+        m.put("assembler|automation/metalworker/kitchen_bench_frying_pan", new String[]{"#forge:plates/iron*2,minecraft:stick*1", "", ""});
+        m.put("assembler|automation/metalworker/kitchen_bench_honey_extractor", new String[]{"#forge:plates/copper*4,#forge:rods/iron*2,#forge:gears/iron*1", "", ""});
+        m.put("assembler|automation/metalworker/kitchen_bench_kitchen_stove", new String[]{"#forge:plates/iron*6,minecraft:brick*2,#forge:rods/iron*1", "", ""});
+        m.put("assembler|automation/metalworker/kitchen_bench_steel_sprinkler", new String[]{"pioneers:bronze_sprinkler*1,#forge:plates/steel*3,#forge:gears/steel*1", "", ""});
+        m.put("assembler|automation/metalworker/kitchen_bench_weather_station", new String[]{"#forge:plates/copper*2,#forge:rods/iron*3,#forge:glass*1,#forge:dyes/red*1", "", ""});
+        m.put("assembler|automation/metalworker/rail_water_crane", new String[]{"#forge:rods/steel*4,#forge:plates/steel*2,minecraft:bucket*1,minecraft:leather*2", "", ""});
         m.put("assembler|automation/metalworker/warehouse_warehouse_crate_port", new String[]{"pioneers:warehouse_crate_panel*1,pioneers:wooden_hopper*1,#forge:plates/steel*1", "", ""});
         m.put("assembler|automation/toolmaker/vanilla_lead", new String[]{"pioneers:fiber_rope*2,#forge:rings/iron*1", "", ""});
         m.put("assembler|automation/transporter/vanilla_diamond_horse_armor", new String[]{"#forge:gems/diamond*4,#forge:plates/steel*2,minecraft:leather*1", "", ""});
@@ -57,6 +489,9 @@ public final class GeneratedBatchRefund {
         m.put("compressor|compressing/clay", new String[]{"minecraft:clay_ball*4", "", ""});
         m.put("compressor|compressing/hay_block", new String[]{"minecraft:wheat*9", "", ""});
         m.put("compressor|compressing/packed_ice", new String[]{"minecraft:ice*9", "", ""});
+    }
+
+    private static void part3(Map<String, String[]> m) {
         m.put("compressor|compressing/red_sandstone", new String[]{"minecraft:red_sand*4", "", ""});
         m.put("compressor|compressing/sandstone", new String[]{"minecraft:sand*4", "", ""});
         m.put("compressor|compressing/slime_block", new String[]{"minecraft:slime_ball*9", "", ""});
@@ -181,9 +616,6 @@ public final class GeneratedBatchRefund {
         m.put("furnace|industry/reduction_furnace/beryllium_pebbles", new String[]{"pioneers:crushed_beryl*4,#forge:dusts/magnesium*1", "", "pioneers:argon*25"});
         m.put("furnace|industry/reduction_furnace/depleted_uranium_metal", new String[]{"pioneers:depleted_uranium_tetrafluoride*1,#forge:dusts/magnesium*1", "", "pioneers:argon*25"});
         m.put("furnace|industry/reduction_furnace/hydrogen_reduce_copper", new String[]{"pioneers:copper_calcine*2", "", "pioneers:hydrogen*500"});
-    }
-
-    private static void part1(Map<String, String[]> m) {
         m.put("furnace|industry/reduction_furnace/reduce_silver", new String[]{"pioneers:silver_dust*2,pioneers:coke*1", "", ""});
         m.put("furnace|industry/reduction_furnace/vanadium_alumino", new String[]{"pioneers:vanadium_pentoxide*2,#forge:dusts/aluminium*2", "", ""});
         m.put("furnace|industry/roaster/adu_calcination", new String[]{"pioneers:ammonium_diuranate*1", "", ""});
@@ -210,6 +642,9 @@ public final class GeneratedBatchRefund {
         m.put("furnace|industry/sintering_furnace/lithium_ceramic_pebbles", new String[]{"pioneers:lithium_6*2,pioneers:silicon*1", "", "pioneers:oxygen*100"});
         m.put("furnace|industry/sintering_furnace/messinite_ceramic", new String[]{"pioneers:messinite_dust*1,pioneers:zircon*1", "", "pioneers:argon*50"});
         m.put("furnace|industry/sintering_furnace/mox_pellet_sinter", new String[]{"pioneers:mox_pellet*4", "", "pioneers:hydrogen*100"});
+    }
+
+    private static void part4(Map<String, String[]> m) {
         m.put("furnace|industry/sintering_furnace/rc_alumina_ceramic", new String[]{"pioneers:alumina*2", "", ""});
         m.put("furnace|industry/sintering_furnace/rc_borosilicate_glass", new String[]{"#forge:glass*2", "", "pioneers:diborane*50"});
         m.put("furnace|industry/sintering_furnace/rc_ceramic_substrates", new String[]{"pioneers:alumina_ceramic*1,#forge:foils/gold*1", "", ""});
@@ -334,9 +769,6 @@ public final class GeneratedBatchRefund {
         m.put("machining_center|industry/gear_hobber/cut_gear_plate_duralumin", new String[]{"#forge:plates/duralumin*5", "", ""});
         m.put("machining_center|industry/gear_hobber/cut_gear_plate_electrum", new String[]{"#forge:plates/electrum*5", "", ""});
         m.put("machining_center|industry/gear_hobber/cut_gear_plate_invar", new String[]{"#forge:plates/invar*5", "", ""});
-    }
-
-    private static void part2(Map<String, String[]> m) {
         m.put("machining_center|industry/gear_hobber/cut_gear_plate_nichrome", new String[]{"#forge:plates/nichrome*5", "", ""});
         m.put("machining_center|industry/gear_hobber/cut_gear_plate_nickel", new String[]{"#forge:plates/nickel*5", "", ""});
         m.put("machining_center|industry/gear_hobber/cut_gear_plate_redsteel", new String[]{"#forge:plates/redsteel*5", "", ""});
@@ -363,6 +795,9 @@ public final class GeneratedBatchRefund {
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_invar", new String[]{"#forge:plates/invar*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_nichrome", new String[]{"#forge:plates/nichrome*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_nickel", new String[]{"#forge:plates/nickel*9", "pioneers:lubricant*50", ""});
+    }
+
+    private static void part5(Map<String, String[]> m) {
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_redsteel", new String[]{"#forge:plates/redsteel*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_silver", new String[]{"#forge:plates/silver*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_stainless_steel", new String[]{"#forge:plates/stainless_steel*9", "pioneers:lubricant*50", ""});
@@ -487,9 +922,6 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/mason/vanilla_nether_bricks", new String[]{"minecraft:nether_brick*4", "", ""});
         m.put("press|automation/mason/vanilla_polished_andesite_slab", new String[]{"minecraft:polished_andesite*3", "", ""});
         m.put("press|automation/mason/vanilla_polished_andesite_stairs", new String[]{"minecraft:polished_andesite*6", "", ""});
-    }
-
-    private static void part3(Map<String, String[]> m) {
         m.put("press|automation/mason/vanilla_polished_blackstone_brick_slab", new String[]{"minecraft:polished_blackstone_bricks*3", "", ""});
         m.put("press|automation/mason/vanilla_polished_blackstone_brick_stairs", new String[]{"minecraft:polished_blackstone_bricks*6", "", ""});
         m.put("press|automation/mason/vanilla_polished_blackstone_brick_wall", new String[]{"minecraft:polished_blackstone_bricks*6", "", ""});
@@ -516,6 +948,9 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/mason/vanilla_purpur_pillar", new String[]{"minecraft:purpur_slab*2", "", ""});
         m.put("press|automation/mason/vanilla_purpur_slab", new String[]{"minecraft:purpur_block*3", "", ""});
         m.put("press|automation/mason/vanilla_purpur_stairs", new String[]{"minecraft:purpur_block*6", "", ""});
+    }
+
+    private static void part6(Map<String, String[]> m) {
         m.put("press|automation/mason/vanilla_red_nether_brick_slab", new String[]{"minecraft:red_nether_bricks*3", "", ""});
         m.put("press|automation/mason/vanilla_red_nether_brick_stairs", new String[]{"minecraft:red_nether_bricks*6", "", ""});
         m.put("press|automation/mason/vanilla_red_nether_brick_wall", new String[]{"minecraft:red_nether_bricks*6", "", ""});
@@ -640,9 +1075,6 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/potter/vanilla_red_stained_glass_pane_from_glass_pane", new String[]{"minecraft:glass_pane*8,minecraft:red_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_white_stained_glass", new String[]{"minecraft:glass*8,minecraft:white_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_white_stained_glass_pane", new String[]{"minecraft:white_stained_glass*6", "", ""});
-    }
-
-    private static void part4(Map<String, String[]> m) {
         m.put("press|automation/potter/vanilla_white_stained_glass_pane_from_glass_pane", new String[]{"minecraft:glass_pane*8,minecraft:white_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_yellow_stained_glass_pane", new String[]{"minecraft:yellow_stained_glass*6", "", ""});
         m.put("press|automation/potter/vanilla_yellow_stained_glass_pane_from_glass_pane", new String[]{"minecraft:glass_pane*8,minecraft:yellow_dye*1", "", ""});
@@ -669,6 +1101,9 @@ public final class GeneratedBatchRefund {
         m.put("press|industry/press/press_rod_borealite", new String[]{"#forge:ingots/borealite*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_chrome", new String[]{"#forge:ingots/chrome*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_cobalt", new String[]{"#forge:ingots/cobalt*1,pioneers:rod_die*1", "", ""});
+    }
+
+    private static void part7(Map<String, String[]> m) {
         m.put("press|industry/press/press_rod_conamarite", new String[]{"#forge:ingots/conamarite*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_constantan", new String[]{"#forge:ingots/constantan*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_deimite", new String[]{"#forge:ingots/deimite*1,pioneers:rod_die*1", "", ""});
@@ -793,9 +1228,6 @@ public final class GeneratedBatchRefund {
         m.put("wiremill|industry/wiremill/wire_ingot_copper", new String[]{"#forge:ingots/copper*1", "", ""});
         m.put("wiremill|industry/wiremill/wire_ingot_gold", new String[]{"#forge:ingots/gold*1", "", ""});
         m.put("wiremill|industry/wiremill/wire_ingot_iron", new String[]{"#forge:ingots/iron*1", "", ""});
-    }
-
-    private static void part5(Map<String, String[]> m) {
         m.put("wiremill|industry/wiremill/wire_ingot_solder", new String[]{"#forge:ingots/solder*1", "", ""});
         m.put("wiremill|industry/wiremill/wire_red_alloy", new String[]{"#forge:rods/red_alloy*1", "", ""});
     }

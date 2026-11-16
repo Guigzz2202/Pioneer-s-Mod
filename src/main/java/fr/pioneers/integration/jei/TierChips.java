@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Locale;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
@@ -22,8 +21,7 @@ import org.jetbrains.annotations.Nullable;
  * 1.0.6 (demande de Guillaume du 16/11/2026 : « indiquer clairement quels tiers la recette permet » et « afficher le cout en energie et la
  * duree du plus bas tier, autre que mecanique et vapeur si possible ») :
  * <ul>
- *     <li>{@link #tiers} : pastille « T2 a T5 » (couleur du plus bas tier) : les tiers de machine qui font la recette ; au survol, un tier par
- *     ligne avec les machines de la famille, la regle de vitesse et, pour une recette a rendement, les rendements ;</li>
+ *     <li>{@link #yieldOf} : rendement d'une recette a rendement (la pastille « tiers permis » a ete retiree : le filigrane suffit) ;</li>
  *     <li>{@link #electric} : energie et duree au plus bas tier ELECTRIQUE (MKI) d'une recette basse (mecanique ou vapeur) de sa famille ;
  *     sans machine electrique dans la famille, la page garde sa duree mecanique ou a vapeur, sans cout.</li>
  * </ul>
@@ -39,42 +37,19 @@ public final class TierChips {
     }
 
     /**
-     * Pastille « Tn a Tm » (« Tn seulement » si min = max) : tiers de machine qui font la recette. {@code family} : famille de tiers (cle de
-     * {@link GeneratedTierFamilies#FAMILIES}) dont les machines sont listees au survol, ou null ; {@code id}, {@code inputs}, {@code main} :
-     * rendements d'une recette a rendement (null : aucun).
+     * 1.0.6 : rendement d'une recette A RENDEMENT (matiere premiere, {@link GeneratedTierFamilies#YIELD_RECIPES}) de tier minimal {@code m} :
+     * « x1 -> x3,5 » (du tier minimal au MKIV), detail au survol ; null pour les autres (la pastille « tiers permis » est retiree : demande de
+     * Guillaume du 16/11/2026, « le filigrane suffit »).
      */
-    public static JeiDraw.Chip tiers(int min, int max, @Nullable String family, @Nullable ResourceLocation id, List<Counted> inputs, ItemStack main) {
-        int lo = clamp(min), hi = Math.max(lo, clamp(max));
-        List<Component> tip = new ArrayList<>();
-        tip.add(Component.translatable("jei.pioneers.tiers.tip"));
-        GeneratedTierFamilies.Family fam = family == null ? null : TierRecipes.family(family);
-        for (int t = lo; t <= hi; t++) {
-            MutableComponent line = Component.translatable("tier.pioneers.global." + t).copy();
-            List<Component> names = fam == null ? List.of() : machines(fam, t);
-            if (!names.isEmpty()) {
-                MutableComponent list = Component.empty();
-                for (int i = 0; i < names.size(); i++) {
-                    list.append(i == 0 ? Component.empty() : Component.literal(", ")).append(names.get(i));
-                }
-                line = Component.translatable("jei.pioneers.tiers.line", line, list);
-            }
-            tip.add(line.withStyle(ChatFormatting.GRAY));
+    @Nullable
+    public static JeiDraw.Chip yieldOf(int m, @Nullable ResourceLocation id, List<Counted> inputs, ItemStack main) {
+        if (id == null || !GeneratedTierFamilies.YIELD_RECIPES.contains(id.toString())) {
+            return null;
         }
-        if (hi > lo) {
-            tip.add(Component.translatable("jei.pioneers.tiers.speed").withStyle(ChatFormatting.DARK_GRAY));
-        }
-        if (id != null && GeneratedTierFamilies.YIELD_RECIPES.contains(id.toString())) {
-            boolean capped = TierRecipes.capped(inputs, main.isEmpty() ? List.of() : List.of(new TierRecipes.Out(main, 1F)));
-            tip.add(Component.translatable("jei.pioneers.min_tier.yield_tip", factor(1, lo, capped), factor(2, lo, capped), factor(5, lo, capped)));
-        }
-        Component text = lo == hi ? Component.translatable("jei.pioneers.chip.tier_only", lo) : Component.translatable("jei.pioneers.chip.tiers", lo, hi);
-        return new JeiDraw.Chip(JeiDraw.Pic.INFO, text, 0xFF000000 | GeneratedTierFamilies.COLORS[lo], tip);
-    }
-
-    /** Ancienne pastille « Tier min. m » : remplacee par {@link #tiers} (m a T5, machines de la famille au survol). */
-    public static JeiDraw.Chip minTier(int m, ResourceLocation id, List<Counted> inputs, ItemStack main, @Nullable String family) {
-        return tiers(m, family != null && TierRecipes.family(family) != null && TierRecipes.family(family).industry() != null ? MAX : Math.max(m, 1),
-              family, id, inputs, main);
+        int lo = clamp(m);
+        boolean capped = TierRecipes.capped(inputs, main.isEmpty() ? List.of() : List.of(new TierRecipes.Out(main, 1F)));
+        return JeiDraw.Chip.of(JeiDraw.Pic.YIELD, Component.translatable("jei.pioneers.chip.tier_yield", factor(lo, lo, capped), factor(MAX, lo, capped)),
+              JeiDraw.GOOD, Component.translatable("jei.pioneers.min_tier.yield_tip", factor(1, lo, capped), factor(2, lo, capped), factor(5, lo, capped)));
     }
 
     /**
@@ -99,18 +74,6 @@ public final class TierChips {
     /** Duree sans cout (machine mecanique ou a vapeur d'une famille sans machine electrique). */
     public static JeiDraw.Chip duration(JeiDraw.Pic pic, int ticks, Component tip) {
         return JeiDraw.Chip.of(pic, Component.literal(seconds(ticks)), JeiDraw.LIGHT, tip);
-    }
-
-    /** Noms des machines de la famille au tier global {@code t} (multiblocs : tier de leurs carcasses, montres a partir du MKI). */
-    static List<Component> machines(GeneratedTierFamilies.Family fam, int t) {
-        List<Component> out = new ArrayList<>();
-        for (String block : fam.blocks()) {
-            int bt = GeneratedTierFamilies.TIER_OF.getOrDefault(block, -2);
-            if (bt == t || (bt == -1 && t == MKI)) {
-                out.add(Component.translatable("block.pioneers." + block));
-            }
-        }
-        return out;
     }
 
     static String seconds(int ticks) {

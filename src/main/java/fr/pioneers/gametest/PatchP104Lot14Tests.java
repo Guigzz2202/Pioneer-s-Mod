@@ -215,7 +215,8 @@ public final class PatchP104Lot14Tests {
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_logistics", timeoutTicks = 600)
     public static void p104_14_pieces_logistiques_a_l_assembleur(GameTestHelper h) {
-        runs(h, "logistics_assembler", "automation/logistics/naval_basic_harbor");
+        //1.0.6 : plus aucune machine a l'Assembleur (le port est une machine : etabli de montage) ; une piece logistique y reste
+        runs(h, "logistics_assembler", "automation/logistics/naval_harbor_crane");
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_welder", timeoutTicks = 400)

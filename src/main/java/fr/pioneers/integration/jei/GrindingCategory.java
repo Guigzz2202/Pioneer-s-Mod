@@ -243,15 +243,16 @@ final class GrindingCategory extends PiCategory<GrindingCategory.Grind> {
     @Override
     protected List<JeiDraw.Chip> chips(Grind recipe) {
         List<JeiDraw.Chip> out = new ArrayList<>();
-        //1.0.6 (demande de Guillaume du 16/11/2026) : plus de pastille de famille ; energie et duree au broyeur MKI, tiers permis
+        //1.0.6 (demande de Guillaume du 16/11/2026) : plus de pastille de famille ni de tiers (le filigrane suffit) ; energie et duree au broyeur MKI
         if (recipe.lowId != null) {
             JeiDraw.Chip energy = TierChips.electric(FAMILY, recipe.minTier, recipe.lowTime);
             if (energy != null) {
                 out.add(energy);
             }
-            out.add(TierChips.minTier(recipe.minTier, recipe.lowId, recipe.lowIn, recipe.lowMain, FAMILY));
-        } else {
-            out.add(TierChips.tiers(TierChips.MKI + Math.max(0, recipe.tier), TierChips.MAX, FAMILY, null, List.of(), ItemStack.EMPTY));
+            JeiDraw.Chip yield = TierChips.yieldOf(recipe.minTier, recipe.lowId, recipe.lowIn, recipe.lowMain);
+            if (yield != null) {
+                out.add(yield);
+            }
         }
         for (Source s : recipe.sources) {
             Component tip = switch (s) {

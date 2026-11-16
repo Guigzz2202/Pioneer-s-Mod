@@ -89,8 +89,11 @@ class MechanicalCategory extends PiCategory<MechanicalRecipe> {
             if (energy != null) {
                 out.add(0, energy);
             }
-            out.add(TierChips.minTier(0, recipe.getId(), List.of(new fr.pioneers.tech.bronze.bench.BenchRecipe.Counted(recipe.input(), recipe.count())), main,
-                  family));
+            JeiDraw.Chip yield = TierChips.yieldOf(0, recipe.getId(), List.of(new fr.pioneers.tech.bronze.bench.BenchRecipe.Counted(recipe.input(),
+                  recipe.count())), main);
+            if (yield != null) {
+                out.add(yield);
+            }
         }
         return out;
     }

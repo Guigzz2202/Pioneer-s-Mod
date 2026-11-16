@@ -247,7 +247,14 @@ class IndustryCategory extends PiCategory<IndustrialRecipe> {
     @Override
     protected JeiDraw.Badge badge(IndustrialRecipe recipe) {
         //1.0.4-beta (lot 32) : salle blanche : badge « Salle blanche », jamais de tier
-        return cleanroom ? JeiDraw.Badge.of(JeiDraw.Family.CLEANROOM) : JeiDraw.Badge.tier(recipe.tier());
+        if (cleanroom) {
+            return JeiDraw.Badge.of(JeiDraw.Family.CLEANROOM);
+        }
+        //1.0.6 : recette basse reunie dans la page de sa famille : filigrane de son tier minimal (mecanique ou vapeur)
+        if (recipe.converted()) {
+            return JeiDraw.Badge.of(recipe.lowTier() <= 0 ? JeiDraw.Family.MECHANICAL : JeiDraw.Family.STEAM);
+        }
+        return JeiDraw.Badge.tier(recipe.tier());
     }
 
     /**
@@ -270,7 +277,12 @@ class IndustryCategory extends PiCategory<IndustrialRecipe> {
     @Override
     protected List<JeiDraw.Chip> chips(IndustrialRecipe recipe) {
         List<JeiDraw.Chip> out = new ArrayList<>();
-        //1.0.6 (demande de Guillaume du 16/11/2026) : plus de pastille de famille de recettes (familyChip n'est plus montree)
+        //1.0.6 (demande de Guillaume du 16/11/2026) : plus de pastille de famille de recettes (familyChip n'est plus montree) ; recette basse
+        //reunie dans la page de sa famille : sa machine d'origine (tours d'arbre ou vapeur) en plus de l'energie au MKI
+        JeiDraw.Chip origin = origin(recipe);
+        if (origin != null) {
+            out.add(origin);
+        }
         if (recipe.hasTierYield() && !cleanroom) {
             //1.0.3-beta (lot 3, regle 9) : multiplicateur du tier en pastille (fonte du minerai au creuset electrique, lixiviation acide)
             List<Component> tip = new ArrayList<>(List.of(Component.translatable("jei.pioneers.industry.tier_yield.tip")));
@@ -322,15 +334,6 @@ class IndustryCategory extends PiCategory<IndustrialRecipe> {
                   (int) ControllerTile.FARM_MAX), JeiDraw.GOOD, Component.translatable("jei.pioneers.industry.climate", (int) ControllerTile.FARM_MIN,
                   (int) ControllerTile.FARM_MAX)));
         }
-        if (!cleanroom && !recipe.machine().isGenerator()) {
-            //1.0.6 : tiers de machine qui font la recette (MK minimal a MKIV ; T1 si la recette est ouverte a la machine a vapeur, lot 47)
-            String family = fr.pioneers.tech.industry.recipe.IndustryRecipes.tierFamily(recipe.machine());
-            int min = TierChips.MKI + Math.max(0, recipe.tier());
-            if (fr.pioneers.api.machine.tier.GeneratedTierFamilies.OPEN_MKI.containsKey(recipe.getId().toString())) {
-                min = 1;
-            }
-            out.add(TierChips.tiers(min, TierChips.MAX, family, null, List.of(), ItemStack.EMPTY));
-        }
         if (recipe.industrialOnly()) {
             out.add(JeiDraw.Chip.of(JeiDraw.Pic.WARN, Component.translatable("jei.pioneers.chip.multi_only"), JeiDraw.WARN,
                   Component.translatable("jei.pioneers.industry.multi_only")));
@@ -378,6 +381,27 @@ class IndustryCategory extends PiCategory<IndustrialRecipe> {
             i++;
         }
         return i;
+    }
+
+    /** 1.0.6 : pastille de la machine d'origine d'une recette basse convertie (tours d'arbre de la machine mecanique, duree et vapeur). */
+    @org.jetbrains.annotations.Nullable
+    private static JeiDraw.Chip origin(IndustrialRecipe recipe) {
+        net.minecraft.client.multiplayer.ClientLevel level = net.minecraft.client.Minecraft.getInstance().level;
+        if (!recipe.converted() || level == null) {
+            return null;
+        }
+        Object r = level.getRecipeManager().byKey(recipe.getId()).orElse(null);
+        if (r instanceof fr.pioneers.tech.kinetics.machines.MechanicalRecipe m) {
+            String turns = String.format(Locale.ROOT, "%.0f", m.turns());
+            return JeiDraw.Chip.of(JeiDraw.Pic.TURNS, Component.translatable("jei.pioneers.chip.turns", turns), JeiDraw.LIGHT,
+                  Component.translatable("jei.pioneers.chip.turns", turns));
+        }
+        if (r instanceof fr.pioneers.tech.bronze.machines.SteamRecipe st) {
+            String secs = String.format(Locale.ROOT, "%.1f s", st.time() / 20.0);
+            return JeiDraw.Chip.of(JeiDraw.Pic.STEAM, Component.translatable("jei.pioneers.chip.steam"), JeiDraw.COLD,
+                  Component.translatable("jei.pioneers.steam_machine", secs, Texts.format(Math.round(st.time() * st.machine().steamUse()))));
+        }
+        return null;
     }
 
     /** 1.11.2 : detail d'une recette de generateur : FE/t et FE au total a chaque tier, machine d'atelier et multibloc (infobulle de la pastille). */
