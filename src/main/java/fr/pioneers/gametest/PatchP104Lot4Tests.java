@@ -164,6 +164,10 @@ public final class PatchP104Lot4Tests {
             Gt.check(!SpaceGoods.is(new ItemStack(item("pioneers:barley_seeds"))), "graine d'orge dans pioneers:space_only");
             int seen = 0;
             for (String prof : Villagers.KNOWN) {
+                //1.0.6 : KNOWN compte aussi le Desoeuvre et le Niais, sans catalogue (les treize metiers seulement)
+                if (prof.equals("minecraft:none") || prof.equals("minecraft:nitwit")) {
+                    continue;
+                }
                 VillageCatalog.Profession p = VillageCatalog.profession(prof);
                 Gt.check(p != null, "metier sans catalogue : " + prof);
                 for (String ver : List.of("standard", "rural")) {

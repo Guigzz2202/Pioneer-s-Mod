@@ -88,7 +88,8 @@ public final class PatchP105Lot46Tests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_p105_46_mold", timeoutTicks = 1600)
     public static void p105_46_moule_sable_incassable(GameTestHelper h) {
         Gt.begin(h);
-        AtelierTile m = atelier(h, IndustryMachine.CASTING_MACHINE, CableTier.BASIC, new BlockPos(2, 2, 2));
+        //1.0.6 : machine MKIV : la coulee du chaudron dure 900 ticks au MKI (3 coulees ne tenaient pas dans les 1 600 ticks du test)
+        AtelierTile m = atelier(h, IndustryMachine.CASTING_MACHINE, CableTier.ULTIMATE, new BlockPos(2, 2, 2));
         Gt.check(m.setLockedRecipe(rl("industry/casting_machine/sand_cast_cauldron_iron")), "chaudron coule au sable absent");
         Item mold = item("sand_mold"), spent = item("spent_foundry_sand");
         Gt.check(Remanents.isTool(IndustryMachine.CASTING_MACHINE.key, new ItemStack(mold)), "le moule en sable est un outil de la machine de coulee");

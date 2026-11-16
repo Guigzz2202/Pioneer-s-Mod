@@ -156,13 +156,12 @@ public final class PatchP103Lot5Tests {
         Gt.equal("basic_solid_combustion_generator", PiRemaps.p103Block("compact_steam_turbine"), "turbine compacte -> generateur solide MKI");
         Gt.equal("basic_gas_buffer", PiRemaps.p103Block("compact_exhaust"), "echappement compact -> buffer de gaz MKI");
         Gt.check(PiRemaps.p103Block("basic_crusher") == null, "le broyeur n'est pas remappe");
-        List<String> targets = new ArrayList<>();
+        //1.0.6 : la cible du lot 5 peut avoir ete retiree depuis (tete de puits de gaz absorbee par le derrick, fusions du 1.0.4-beta) : c'est
+        //le bout de la CHAINE des remaps (PiRemaps.simplifiedBlock, celle du chargement d'un monde) qui doit etre un bloc enregistre
         for (String id : new String[]{"basic_pumpjack", "advanced_fluid_pump", "elite_gas_wellhead", "ultimate_brine_well", "basic_wood_chipper",
               "basic_pellet_mill", "compact_steam_turbine", "compact_exhaust"}) {
-            targets.add(PiRemaps.p103Block(id));
-        }
-        for (String t : targets) {
-            Gt.check(ForgeRegistries.BLOCKS.containsKey(rl(t)), "bloc de remap inconnu : " + t);
+            String end = PiRemaps.simplifiedBlock(id);
+            Gt.check(end != null && ForgeRegistries.BLOCKS.containsKey(rl(end)), "bloc de remap inconnu : " + id + " -> " + end);
         }
         //tile d'atelier relue sur un controleur : aucune (pas d'exception), le controleur cree la sienne
         BlockState ctrl = PiIndustry.CONTROLLERS.get(IndustryMachine.PUMPJACK).getBlock().defaultBlockState();

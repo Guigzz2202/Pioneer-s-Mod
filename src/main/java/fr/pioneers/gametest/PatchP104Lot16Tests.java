@@ -122,7 +122,9 @@ public final class PatchP104Lot16Tests {
         Gt.begin(h);
         BenchRecipe relay = find(h, BenchType.REDSTONER, "components/bench/rc_relay_bench");
         Gt.check(relay != null, "relais : pas de recette a l'etabli du redstonier");
-        Gt.check(takes(relay, "copper_foil", 1) && takes(relay, "porcelain_insulator", 1), "relais : feuille de cuivre et porcelaine");
+        //1.0.6 : la recette actuelle du relais (generateurs des composants, T:components/refonte) prend une bobine de cuivre, plus de
+        //feuille ; la porcelaine reste
+        Gt.check(takes(relay, "copper_coil", 1) && takes(relay, "porcelain_insulator", 1), "relais : bobine de cuivre et porcelaine");
         Gt.check(!takes(relay, "silver_foil", 1), "relais a l'etabli : encore de l'argent (machines MK1)");
         BenchRecipe res = find(h, BenchType.REDSTONER, "components/bench/rc_carbon_resistor_bench");
         Gt.check(res != null && takes(res, "charcoal", 1) && !takes(res, "coke", 1), "resistance au carbone : charbon de bois a l'etabli");

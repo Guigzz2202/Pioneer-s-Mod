@@ -154,7 +154,10 @@ public final class MachineNewTests {
         Item disc = item("diamond_disc");
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());
-            Gt.equal(2, count(m, disc), "disques diamantes projetes");
+            //1.0.6 : autant que la recette en rend (4 aujourd'hui ; le test d'origine en attendait 2)
+            int want = ((fr.pioneers.tech.industry.recipe.IndustrialRecipe) h.getLevel().getRecipeManager()
+                  .byKey(rl("industry/plasma_sprayer/spray_diamond_discs")).orElseThrow()).results().get(0).stack().getCount();
+            Gt.equal(want, count(m, disc), "disques diamantes projetes");
         });
     }
 
