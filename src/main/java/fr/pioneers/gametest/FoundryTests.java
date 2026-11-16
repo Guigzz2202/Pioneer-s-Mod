@@ -169,9 +169,11 @@ public final class FoundryTests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_fonderie_sable", timeoutTicks = 1200)
     public static void moule_en_sable(GameTestHelper h) {
         Gt.begin(h);
-        Item blank = item("steel_gear_blank"), spent = item("spent_foundry_sand"), mold = item("sand_mold");
-        AtelierTile m = caster(h, new BlockPos(2, 2, 2), "industry/casting_machine/sand_cast_gear_blank_steel");
-        m.fluidInputs().get(0).setFluid(new FluidStack(fluid("molten_steel"), 4_000));
+        //1.0.6 : il ne reste que la coulee au sable de l'aluminium (celle de l'acier a ete fusionnee : T:industry/fusion.py, et l'acier ne vient
+        //plus que du haut fourneau) ; variante refroidie a l'eau
+        Item blank = item("aluminium_gear_blank"), spent = item("spent_foundry_sand"), mold = item("sand_mold");
+        AtelierTile m = caster(h, new BlockPos(2, 2, 2), "industry/casting_machine/sand_cast_gear_blank_aluminium_water");
+        m.fluidInputs().get(0).setFluid(new FluidStack(fluid("molten_aluminium"), 4_000));
         m.fluidInputs().get(1).setFluid(new FluidStack(Fluids.WATER, 2_000));
         //1.0.5-beta (lot 46, retour 62 bis : « les moules doivent etre incassables dans les machines ») : UN moule dans la case Outil coule
         //plusieurs fois et reste ; plus de sable use

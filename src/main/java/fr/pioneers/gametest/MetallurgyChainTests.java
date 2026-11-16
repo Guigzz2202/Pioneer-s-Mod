@@ -177,8 +177,8 @@ public final class MetallurgyChainTests {
         Item steel = item("steel_ingot"), plate = item("steel_plate"), die = item("plate_die"), beam = item("steel_beam"), sheet = item("steel_sheet");
         Item casing = item("industrial_casing_basic");
         AtelierTile crucible = atelier(h, new BlockPos(1, 2, 1), IndustryMachine.ELECTRIC_CRUCIBLE);
-        AtelierTile melter = atelier(h, new BlockPos(5, 2, 1), IndustryMachine.ELECTRIC_CRUCIBLE);
-        AtelierTile caster = atelier(h, new BlockPos(7, 2, 1), IndustryMachine.CASTING_MACHINE);
+        //1.0.6 : plus de plaque d'acier coulee (cast_plate_steel fusionnee au lot 13 du 1.0.4-beta, T:industry/fusion.py) : la presse
+        AtelierTile press = atelier(h, new BlockPos(5, 2, 1), IndustryMachine.PRESS);
         AtelierTile welder = atelier(h, new BlockPos(1, 2, 4), IndustryMachine.ASSEMBLER);
         AtelierTile calender = atelier(h, new BlockPos(3, 2, 4), IndustryMachine.ROLLING_MILL);
         List<AtelierTile> last = new ArrayList<>();
@@ -199,32 +199,23 @@ public final class MetallurgyChainTests {
                         "acier au creuset retire (retour 64)");
                   Gt.check(scrap != null && count(crucible, pig) >= 10, "fonte gardee (creuset)");
               })
-              // 3. acier refondu au creuset (lot 4a : plus de forme en une operation depuis le lingot) : 15 lingots -> 2 160 mB
+              // 3. plaques pressees depuis les lingots du haut fourneau (1 lingot + matrice -> 1 plaque, matrice rendue : case Outil, lot 44 ;
+              // 1.0.6 : la coulee de plaques d'acier du lot 4b n'existe plus) ; 10 fois
               .thenExecute(() -> {
-                  lock(melter, "industry/electric_crucible/melt_ingot_steel");
-                  give(melter, 0, new ItemStack(steel, 15));
+                  lock(press, "industry/press/press_plate_steel");
+                  give(press, 0, new ItemStack(steel, 10));
+                  Gt.tool(press, new ItemStack(die, 1));
               })
               .thenWaitUntil(() -> {
-                  power(melter);
-                  Gt.check(fluidOut(melter) >= 2_160, "acier fondu : " + fluidOut(melter) + " / 2160 mB");
-              })
-              // 4. plaques coulees en matrice, refroidies a l'eau (lot 4b) : 216 mB + 50 mB d'eau -> 1 plaque + jets ; 10 fois
-              .thenExecute(() -> {
-                  lock(caster, "industry/casting_machine/cast_plate_steel");
-                  pour(melter, caster, 0);
-                  water(caster, 1, 1_000);
-                  Gt.tool(caster, new ItemStack(die, 10));   // 1.0.5-beta (lot 44) : case Outil
-              })
-              .thenWaitUntil(() -> {
-                  power(caster);
-                  Gt.check(count(caster, plate) >= 10, "plaques coulees : " + count(caster, plate) + " / 10");
+                  power(press);
+                  Gt.check(count(press, plate) >= 10, "plaques pressees : " + count(press, plate) + " / 10");
               })
               // 5. poutrelles soudees (3 plaques -> 2) et toles a la calandre (1 plaque -> 2)
               .thenExecute(() -> {
                   lock(welder, "industry/arc_welder/weld_beam_steel");
-                  give(welder, 0, take(caster, plate, 6));
+                  give(welder, 0, take(press, plate, 6));
                   lock(calender, "industry/calender/sheet_steel");
-                  give(calender, 0, take(caster, plate, 4));
+                  give(calender, 0, take(press, plate, 4));
               })
               .thenWaitUntil(() -> {
                   power(welder, calender);

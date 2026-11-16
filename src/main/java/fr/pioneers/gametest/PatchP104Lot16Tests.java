@@ -92,7 +92,11 @@ public final class PatchP104Lot16Tests {
             Gt.check(takes(r, "circuit_mk" + (t + 1), 1), hull + " : circuit du tier");
             Gt.check(takes(r, SECONDARY[t] + "_plate", 2), hull + " : 2 plaques de " + SECONDARY[t]);
             Gt.check(takes(r, SECONDARY[t] + "_rod", 2), hull + " : 2 tiges de " + SECONDARY[t]);
-            Gt.equal(4, r.ingredients().size(), hull + " : 4 entrees");
+            //1.0.4-beta (lot 19, difficulte lineaire) : la machine de base d'un tier contient celle du tier d'avant (une entree de plus)
+            if (t > 0) {
+                Gt.check(takes(r, "machine_hull_" + TIERS[t - 1], 1), hull + " : machine de base du tier d'avant");
+            }
+            Gt.equal(t == 0 ? 4 : 5, r.ingredients().size(), hull + " : " + (t == 0 ? 4 : 5) + " entrees");
         }
         h.succeed();
     }
