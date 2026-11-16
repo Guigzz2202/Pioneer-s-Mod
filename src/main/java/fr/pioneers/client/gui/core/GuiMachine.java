@@ -623,8 +623,9 @@ public class GuiMachine extends PiMenuScreen<MachineMenu> {
             view.draw(this, graphics, mouseX, mouseY, tile);
         }
         recipeSlot(graphics, mouseX, mouseY);
-        if (squareShown()) {
-            //Lot 3 : la fleche (clic = recettes dans JEI) est sous le carre ouvert
+        if (squareShown() || sidesOpen || infoOpen || structureOpen) {
+            //Lot 3 : la fleche (clic = recettes dans JEI) est sous le carre ouvert ; 1.0.6 (retour de Guillaume du 16/11/2026) : de meme sous
+            //le panneau des faces, la fiche et la structure (generateurs : « Voir toutes les recettes » passait par-dessus le panneau des faces)
             jeiArrow = null;
         }
     }
