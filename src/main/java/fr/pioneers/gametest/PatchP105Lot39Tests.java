@@ -199,7 +199,8 @@ public final class PatchP105Lot39Tests {
         IndustryMachine c = IndustryMachine.ELECTRIC_CRUCIBLE;
         Gt.equal(3, c.itemsIn, "creuset : 3 entrees d'objets");
         Gt.equal(1, c.gasesIn, "creuset : un gaz en entree");
-        Gt.equal(8, IndustryMachine.IO_VERSION, "IO_VERSION 8 (creuset 4 -> 3 entrees)");
+        //1.0.6 : IO_VERSION 9 (broyeur, four, centre d'usinage et scie a l'io de leurs recettes) ; l'epoque du creuset reste 8
+        Gt.check(IndustryMachine.IO_VERSION >= 8, "IO_VERSION 8 au moins (creuset 4 -> 3 entrees)");
         Gt.equal(3, CrucibleFurnaceTile.METAL_SLOTS, "fourneau a creuset : 3 cases de metal");
         CrucibleFurnaceTile f = (CrucibleFurnaceTile) place(h, new BlockPos(1, 1, 1), PiBronze.CRUCIBLE_FURNACE.getBlock());
         Gt.equal(2 + CrucibleFurnaceTile.METAL_SLOTS, f.guiSlots().size(), "fourneau a creuset : creuset, combustible, 3 metaux");
