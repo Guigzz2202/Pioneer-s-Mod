@@ -31,6 +31,9 @@ import net.minecraftforge.fml.common.Mod;
  * Remede : la table de chaque test est remplacee par {@link SafeMap}, dont le parcours se fait sur une copie (les echeances ajoutees pendant
  * le tick partent au tick suivant si elles sont dues) ; le retrait d'un rappel fait se fait dans la vraie table. Pose par {@link Gt#begin}
  * et, pour les tests qui ne l'appellent pas, au debut de chaque tick du serveur de GameTests (jamais dans un serveur de jeu).
+ * <p>
+ * Pas de GameTest de garde : chaque test a sa propre serie (batch) et les series passent l'une apres l'autre ; un test de plus decale l'heure
+ * du monde de toutes les series suivantes, et une vingtaine de tests sensibles a l'heure changeaient alors de resultat (run 43793898982).
  */
 @Mod.EventBusSubscriber(modid = "pioneers", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class GtTickMap {
