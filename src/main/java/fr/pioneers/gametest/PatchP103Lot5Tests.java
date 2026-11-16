@@ -103,7 +103,8 @@ public final class PatchP103Lot5Tests {
         Gt.equal(1, liquid.fluidInputs().size(), "generateur liquide : un reservoir");
         Gt.equal(2048, GeneratorOutput.solidPerTick(0), "solide MKI : 2 048 FE/t");
         //FE par mB : gazole au liquide (x2), gaz naturel a la turbine compacte (x1) : les chiffres de l'ancien generateur a combustion compact
-        Fluid diesel = PiIndustry.fluid("diesel");
+        //1.0.6 : le gazole est un fluide de PiFluids (pas du catalogue de PiIndustry : PiIndustry.fluid("diesel") rendait le fluide vide)
+        Fluid diesel = net.minecraftforge.registries.ForgeRegistries.FLUIDS.getValue(rl("diesel"));
         GeneratorOutput.Use d = GeneratorOutput.fluid(h.getLevel(), new FluidStack(diesel, 100));
         Gt.check(d != null && d.machine() == IndustryMachine.LIQUID_COMBUSTION_GENERATOR, "le gazole brule au generateur a combustion liquide ("
               + (d == null ? "aucun generateur, gazole " + net.minecraftforge.registries.ForgeRegistries.FLUIDS.getKey(diesel) : d.machine().key + ", " + d.recipe().getId()) + ")");

@@ -136,10 +136,11 @@ public final class PatchP105Lot14Tests {
               .thenExecute(s::done);
     }
 
+    /** Objets cuits aux sorties. 1.0.6 : le four rend le steak du mod (pioneers:steak), plus le boeuf cuit vanilla. */
     static int cooked(AtelierTile m) {
         int n = 0;
         for (var slot : m.itemOutputs()) {
-            if (slot.getStack().is(Items.COOKED_BEEF)) {
+            if (!slot.getStack().isEmpty() && !slot.getStack().is(Items.BEEF)) {
                 n += slot.getCount();
             }
         }

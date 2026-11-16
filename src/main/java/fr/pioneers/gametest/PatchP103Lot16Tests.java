@@ -98,9 +98,11 @@ public final class PatchP103Lot16Tests {
         Gt.Scope s = Gt.begin(h);
         ServerPlayer rep = s.player("gtpoor", "Fauchee", new BlockPos(4, 2, 4));
         Clan c = s.clan("GtPauvre" + Integer.toHexString(h.absolutePos(BlockPos.ZERO).hashCode() & 0xfff), rep);
-        c.treasury = 149;
-        Gt.equal("clan.pioneers.territory.buy.treasury", ClanTerritory.buy(rep, 1, 0), "tresor insuffisant");
-        Gt.equal(149, c.treasury, "tresor intact");
+        //1.0.6 : un jeton de moins que le prix du premier claim (lu dans les regles : il n'est plus de 150)
+        long price = fr.pioneers.society.clan.territory.TerritoryRules.claimsPrice(ClanTerritory.purchase(), 0, 1);
+        c.treasury = price - 1;
+        Gt.equal("clan.pioneers.territory.buy.treasury", ClanTerritory.buy(rep, 1, 0), "tresor insuffisant (prix " + price + ")");
+        Gt.equal(price - 1, c.treasury, "tresor intact");
         Gt.equal(0, c.boughtClaims, "rien d'achete");
         s.done();
     }
