@@ -45,7 +45,7 @@ public final class WaypointTeleport {
     public static final int SPIRAL = 8;
 
     /** 1.0.6 : waypoint dans un bloc : place sure cherchee jusqu'a ce nombre de blocs au-dessus (« juste au-dessus ») ; au-dela, la surface. */
-    public static final int ABOVE = 3;
+    public static final int ABOVE = 2;
 
     private WaypointTeleport() {
     }
