@@ -9,8 +9,11 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Set;
 import javax.annotation.Nullable;
 import net.minecraft.gametest.framework.GameTestHelper;
 import net.minecraft.gametest.framework.GameTestInfo;
@@ -28,12 +31,14 @@ import net.minecraftforge.fml.common.Mod;
  * inscrivent une echeance par tick restant) ajoute des entrees pendant ce parcours : la table se reorganise sous l'iterateur et le serveur
  * de tests plante (NullPointerException de fastutil, « this.wrapped is null »). Une cinquantaine de tests planifient ainsi depuis un rappel.
  * <p>
- * Remede : la table de chaque test est remplacee par {@link SafeMap}, dont le parcours se fait sur une copie (les echeances ajoutees pendant
- * le tick partent au tick suivant si elles sont dues) ; le retrait d'un rappel fait se fait dans la vraie table. Pose par {@link Gt#begin}
- * et, pour les tests qui ne l'appellent pas, au debut de chaque tick du serveur de GameTests (jamais dans un serveur de jeu).
+ * Remede : la table de chaque test est remplacee par {@link SafeMap}, dont le parcours se fait sur une copie ; le retrait d'un rappel fait se
+ * fait dans la vraie table. Les echeances AJOUTEES pendant le parcours sont parcourues dans le meme passage, apres la copie (une echeance
+ * due tourne donc dans le meme tick, comme les tests l'attendent : les repousser au tick suivant faisait echouer une vingtaine de tests,
+ * runs 43793898982 et 43798426798). Pose par {@link Gt#begin} et, pour les tests qui ne l'appellent pas, au debut de chaque tick du serveur
+ * de GameTests (jamais dans un serveur de jeu).
  * <p>
  * Pas de GameTest de garde : chaque test a sa propre serie (batch) et les series passent l'une apres l'autre ; un test de plus decale l'heure
- * du monde de toutes les series suivantes, et une vingtaine de tests sensibles a l'heure changeaient alors de resultat (run 43793898982).
+ * du monde de toutes les series suivantes, et des tests sensibles a l'heure peuvent alors changer de resultat.
  */
 @Mod.EventBusSubscriber(modid = "pioneers", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class GtTickMap {
@@ -102,26 +107,28 @@ public final class GtTickMap {
     /** Table des echeances parcourue sur une copie : on peut y ajouter pendant le parcours. */
     static final class SafeMap extends Object2LongOpenHashMap<Runnable> {
 
+        /** Passages de rattrapage au plus (rappels qui s'ajoutent sans fin dans le meme tick). */
+        private static final int MAX_PASSES = 64;
+
         @Override
         public FastEntrySet<Runnable> object2LongEntrySet() {
-            List<Object2LongMap.Entry<Runnable>> copy = new ArrayList<>(size());
+            return new Snapshot();
+        }
+
+        /** Entrees actuelles de la vraie table, celles deja vues de ce parcours exceptees. */
+        private void collect(List<Object2LongMap.Entry<Runnable>> into, Set<Runnable> seen) {
             for (Object2LongMap.Entry<Runnable> e : super.object2LongEntrySet()) {
-                copy.add(new AbstractObject2LongMap.BasicEntry<>(e.getKey(), e.getLongValue()));
+                if (seen.add(e.getKey())) {
+                    into.add(new AbstractObject2LongMap.BasicEntry<>(e.getKey(), e.getLongValue()));
+                }
             }
-            return new Snapshot(copy);
         }
 
         private final class Snapshot extends AbstractObjectSet<Object2LongMap.Entry<Runnable>> implements FastEntrySet<Runnable> {
 
-            private final List<Object2LongMap.Entry<Runnable>> items;
-
-            Snapshot(List<Object2LongMap.Entry<Runnable>> items) {
-                this.items = items;
-            }
-
             @Override
             public int size() {
-                return items.size();
+                return SafeMap.this.size();
             }
 
             @Override
@@ -131,13 +138,21 @@ public final class GtTickMap {
 
             @Override
             public ObjectIterator<Object2LongMap.Entry<Runnable>> iterator() {
+                List<Object2LongMap.Entry<Runnable>> items = new ArrayList<>(SafeMap.this.size());
+                Set<Runnable> seen = Collections.newSetFromMap(new IdentityHashMap<>());
+                collect(items, seen);
                 return new ObjectIterator<>() {
-                    private int next;
+                    private int next, passes;
                     @Nullable
                     private Object2LongMap.Entry<Runnable> last;
 
                     @Override
                     public boolean hasNext() {
+                        //copie epuisee : les echeances ajoutees pendant ce parcours passent a leur tour (meme tick)
+                        if (next >= items.size() && passes < MAX_PASSES) {
+                            passes++;
+                            collect(items, seen);
+                        }
                         return next < items.size();
                     }
 
