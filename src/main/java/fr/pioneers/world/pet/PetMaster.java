@@ -234,7 +234,10 @@ public final class PetMaster {
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void join(EntityJoinLevelEvent event) {
         Entity e = event.getEntity();
-        if (event.getLevel().isClientSide || event.isCanceled() || !concerned(e)) {
+        //1.0.6 (GameTest p105_5_migration_loup_apprivoise) : un loup apprivoise ou un chat VANILLA d'un monde d'avant n'est pas encore un Pet
+        //(PetConversion le change en bete de race au tick suivant, donnees gardees) : il recoit son maitre ici, sinon la bete convertie n'en
+        //avait aucun
+        if (event.getLevel().isClientSide || event.isCanceled() || !concerned(e) && !PetConversion.needs(e)) {
             return;
         }
         CompoundTag t = data(e);
