@@ -161,7 +161,10 @@ public final class PatchP105Lot2Tests {
                 Gt.check(!level.getBlockState(g.above()).is(Blocks.WATER_CAULDRON), "aucun chaudron d'eau sous la neige");
             }
         }
-        Gt.check(powder > 0, "vrai tick de meteo : chaudrons remplis de neige poudreuse (" + powder + ")");
+        BlockPos c0 = o.offset(0, 1, 0);
+        Gt.check(powder > 0, "vrai tick de meteo : chaudrons remplis de neige poudreuse (" + powder + " ; pluie " + level.isRaining()
+              + ", niveau " + level.getRainLevel(1.0F) + ", sommet " + level.getHeightmapPos(net.minecraft.world.level.levelgen.Heightmap.Types.MOTION_BLOCKING, c0)
+              + " pour le chaudron " + c0 + " : " + level.getBlockState(c0) + ", precipitation " + Precipitations.at(level, c0.above()) + ")");
         Gt.equal(0L, layers, "aucune couche de neige");
         Gt.equal(0L, ice, "aucune glace : la mare reste en eau");
         s.done();

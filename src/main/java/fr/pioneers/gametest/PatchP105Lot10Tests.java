@@ -84,9 +84,14 @@ public final class PatchP105Lot10Tests {
     static void grass(GameTestHelper h, int n) {
         for (int x = 1; x <= n; x++) {
             for (int z = 1; z <= n; z++) {
-                h.getLevel().setBlock(h.absolutePos(new BlockPos(x, 0, z)), Blocks.GRASS_BLOCK.defaultBlockState(), 3);
+                //1.0.6 : sur le sol du gabarit (y = 1) : en y = 0 l'herbe etait sous la pierre, et le troupeau naissait sur la pierre
+                h.getLevel().setBlock(h.absolutePos(new BlockPos(x, 1, z)), Blocks.GRASS_BLOCK.defaultBlockState(), 3);
             }
         }
+    }
+
+    static BlockPos top(ServerLevel level, BlockPos c) {
+        return level.getHeightmapPos(net.minecraft.world.level.levelgen.Heightmap.Types.MOTION_BLOCKING, c);
     }
 
     static FaunaSpawner.Limits noViewer() {
@@ -132,8 +137,17 @@ public final class PatchP105Lot10Tests {
         if (mine) {
             ClaimIndex.set(dim, chunk, null);
         }
+        //1.0.6 : la regle d'apparition des animaux lit la lumiere du ciel, calculee aux ticks suivants sur un sol tout juste pose : on l'attend
+        BlockPos top = level.getHeightmapPos(net.minecraft.world.level.levelgen.Heightmap.Types.MOTION_BLOCKING, c);
+        h.startSequence()
+              .thenWaitUntil(() -> Gt.check(level.getBrightness(net.minecraft.world.level.LightLayer.SKY, top) >= 15, "lumiere du ciel pas encore calculee"))
+              .thenExecute(() -> herdOutsideClaim(s, level, who, c, zone, before));
+    }
+
+    private static void herdOutsideClaim(Gt.Scope s, ServerLevel level, UUID who, BlockPos c, long zone, int before) {
         HerdData.Herd herd = HerdEvents.spawnAt(level, who, c.getX(), c.getZ(), "pioneers:deer", HuntSettings.DEFAULT, noViewer(), 0);
-        Gt.check(herd != null && !herd.members.isEmpty(), "hors claim : un troupeau de cerfs apparait");
+        Gt.check(herd != null && !herd.members.isEmpty(), "hors claim : un troupeau de cerfs apparait (sol " + level.getBlockState(top(level, c).below())
+              + ", lumiere " + level.getRawBrightness(top(level, c), 0) + ", heure " + level.getDayTime() % 24000 + ")");
         forget(s, herd);
         List<Entity> beasts = new ArrayList<>();
         for (UUID u : herd.members) {

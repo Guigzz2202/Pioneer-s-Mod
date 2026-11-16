@@ -85,7 +85,9 @@ public final class PatchP103Lot8Tests {
                 Gt.check(egg.getItem() instanceof ForgeSpawnEggItem se && se.getType(null) == t, b.id() + " : oeuf d'apparition");
                 Gt.check(t.getWidth() < 1F && t.getHeight() < 2F, b.id() + " : boite < 1 x 2 (portes, enclos)");
                 Gt.check(EntityType.COW.is(PiBreeds.TAGS.get(0)), "le type vanilla compte dans pioneers:cows");
-                Gt.check(!t.getDefaultLootTable().getNamespace().equals("pioneers"), b.id() + " : butin vanilla de l'espece");
+                //le butin est celui de l'entite (PiCow, PiSheep... renvoient la table vanilla), pas la table par defaut du type, toujours
+                //nommee d'apres l'identifiant pioneers:<race>
+                Gt.check(!((net.minecraft.world.entity.LivingEntity) e).getLootTable().getNamespace().equals("pioneers"), b.id() + " : butin vanilla de l'espece");
                 e.discard();
                 n++;
             }

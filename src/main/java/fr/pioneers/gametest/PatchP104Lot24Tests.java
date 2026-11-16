@@ -49,14 +49,19 @@ public final class PatchP104Lot24Tests {
     /** Premiere recette faisable au tier de la structure, sans gaz ni chaleur, pression ou air exiges, et qui tient dans les cases. */
     private static IndustrialRecipe pick(GameTestHelper h, IndustryMachine m, ControllerTile tile) {
         for (IndustrialRecipe r : IndustryRecipes.of(h.getLevel(), m)) {
-            if (r.tier() <= tile.tier() && r.gases().isEmpty() && r.temperature() <= 0 && r.pressure() <= 1 && r.air() <= 0 && !r.items().isEmpty()
-                && r.items().size() <= tile.itemInputs().size() && r.fluids().size() <= tile.fluidInTanks().size() && r.data().isEmpty()
-                && r.items().stream().allMatch(c -> c.ingredient().getItems().length > 0)
-                && r.fluids().stream().allMatch(f -> !f.displayed().isEmpty())) {
+            if (pickable(r, tile)) {
                 return r;
             }
         }
         return null;
+    }
+
+    /** Recette simple que ce multibloc peut faire avec ce que le test lui donne. */
+    private static boolean pickable(IndustrialRecipe r, ControllerTile tile) {
+        return r.tier() <= tile.tier() && r.gases().isEmpty() && r.temperature() <= 0 && r.pressure() <= 1 && r.air() <= 0 && !r.items().isEmpty()
+              && r.items().size() <= tile.itemInputs().size() && r.fluids().size() <= tile.fluidInTanks().size() && r.data().isEmpty()
+              && r.items().stream().allMatch(c -> c.ingredient().getItems().length > 0)
+              && r.fluids().stream().allMatch(f -> !f.displayed().isEmpty());
     }
 
     /** Construit le multibloc selon son plan, le remplit pour une recette et attend un produit. */
@@ -114,7 +119,12 @@ public final class PatchP104Lot24Tests {
             for (BlockPos p : fire) {
                 Gt.check(!h.getLevel().getBlockState(p).getValue(FireboxWallBlock.LIT), "foyer allume a l'arret");
             }
-            IndustrialRecipe r = pick(h, m, tile);
+            //recette sans fluide ni outil : le test ne remplit que la premiere entree d'objets (la trempe des bottes d'acier, premiere
+            //recette du four depuis la famille quench_tank, demande 1 000 mB d'eau et ne demarrait jamais)
+            IndustrialRecipe r = IndustryRecipes.of(h.getLevel(), m).stream().filter(x -> x.fluids().isEmpty() && x.items().size() == 1
+                  && x.tool() == null && x.items().get(0).ingredient().getItems().length > 0
+                  && x.items().get(0).ingredient().getItems()[0].getMaxStackSize() >= x.items().get(0).count())
+                  .filter(x -> pickable(x, tile)).findFirst().orElse(null);
             Gt.check(r != null, "four : aucune recette simple");
             ItemStack one = r.items().get(0).ingredient().getItems()[0];
             tile.itemInputs().get(0).setStack(one.copyWithCount(Math.min(one.getMaxStackSize(), r.items().get(0).count() * 8)));

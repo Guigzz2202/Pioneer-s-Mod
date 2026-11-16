@@ -143,7 +143,9 @@ public final class PatchP105Lot13Tests {
         List<BlockPos> inside = HouseNbt.positions(tile.getBlockPos(), tile.facing(), BlastLayout.SHAPE, "I");
         Gt.check(!inside.isEmpty(), "aucune case interieure au haut fourneau");
         BlockPos low = inside.stream().min(Comparator.comparingInt(BlockPos::getY)).orElseThrow();
-        Pig pig = EntityType.PIG.create(s.level);
+        //1.0.6 : le cochon de race directement : un cochon vanilla devient l'entite de sa race au tick suivant (1.0.3-beta lot 8,
+        //BreedConversion) et le cochon suivi par le test etait retire (« pas vivant » sans aucun degat)
+        Pig pig = (Pig) fr.pioneers.farm.animal.breed.PiBreeds.type(fr.pioneers.farm.animal.AnimalSpecies.PIG, 0).create(s.level);
         Gt.check(pig != null, "cochon");
         pig.moveTo(low.getX() + 0.5, low.getY(), low.getZ() + 0.5, 0, 0);
         pig.setNoAi(true);
@@ -179,7 +181,9 @@ public final class PatchP105Lot13Tests {
             Pig pig = pigInside(s, tile);
             float before = pig.getHealth();
             h.runAfterDelay(4 * FurnaceHeat.PERIOD, () -> {
-                Gt.check(pig.isAlive() && pig.getHealth() >= before, "un four eteint ne blesse pas");
+                Gt.check(pig.isAlive() && pig.getHealth() >= before, "un four eteint ne blesse pas (sante " + pig.getHealth() + " / " + before
+                      + ", degat " + (pig.getLastDamageSource() == null ? "aucun" : pig.getLastDamageSource().getMsgId()) + ", en " + pig.blockPosition()
+                      + " : " + s.level.getBlockState(pig.blockPosition()) + ")");
                 Gt.check(pig.getRemainingFireTicks() <= 0, "un four eteint n'enflamme pas");
                 s.done();
             });
