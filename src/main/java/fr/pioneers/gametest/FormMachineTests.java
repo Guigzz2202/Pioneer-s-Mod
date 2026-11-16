@@ -108,6 +108,9 @@ public final class FormMachineTests {
         //1.0.6 : la taille d'une ebauche d'engrenage est la recette hob_gear (cut_gear part de la plaque)
         AtelierTile m = atelier(h, IndustryMachine.MACHINING_CENTER, new BlockPos(2, 2, 2), "industry/gear_hobber/hob_gear_bronze");
         m.itemInputs().get(0).setStack(new ItemStack(item("bronze_gear_blank"), 1));
+        //la taille se fait au lubrifiant (50 mB)
+        m.fluidInputs().get(0).setFluid(new net.minecraftforge.fluids.FluidStack(net.minecraftforge.registries.ForgeRegistries.FLUIDS
+              .getValue(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("pioneers", "lubricant")), 1_000));
         Item gear = item("bronze_gear"), nugget = item("bronze_nugget");
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());

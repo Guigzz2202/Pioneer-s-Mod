@@ -59,6 +59,14 @@ public final class PatchP105Lot13Tests {
         return b;
     }
 
+    /** Diagnostic : position du sanglier, chemin vers la culture, but de fouille. */
+    static String diag(GameTestHelper h, Boar b, BlockPos crop) {
+        net.minecraft.world.level.pathfinder.Path path = b.getNavigation().createPath(h.absolutePos(crop), 1);
+        return " (sanglier en " + b.blockPosition() + ", culture en " + h.absolutePos(crop) + ", chemin " + (path == null ? "aucun"
+              : path.getNodeCount() + " noeuds, atteint " + path.canReach()) + ", but " + (b.rootGoal() != null && b.rootGoal().isRunning() ? "actif" : "arrete")
+              + ", vivant " + b.isAlive() + ", sante " + b.getHealth() + ")";
+    }
+
     static boolean wheat(GameTestHelper h, BlockPos crop) {
         return h.getBlockState(crop).is(Blocks.WHEAT);
     }
@@ -72,7 +80,7 @@ public final class PatchP105Lot13Tests {
         Gt.check(!Boar.enclosed(s.level, h.absolutePos(crop), h.absolutePos(crop.west(5))), "champ ouvert vu comme clos");
         Gt.check(b.rootable(h.absolutePos(crop), h.absolutePos(crop.west(5))), "un sanglier affame doit pouvoir fouiller un champ ouvert");
         h.succeedWhen(() -> {
-            Gt.check(!wheat(h, crop), "le sanglier affame n'a pas encore detruit le ble du champ ouvert");
+            Gt.check(!wheat(h, crop), "le sanglier affame n'a pas encore detruit le ble du champ ouvert" + diag(h, b, crop));
             s.done();
         });
     }

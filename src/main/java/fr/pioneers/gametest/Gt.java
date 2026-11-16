@@ -153,6 +153,15 @@ public final class Gt {
     }
 
     /**
+     * 1.0.6 : rend un joueur operateur de niveau 4. {@code PlayerList.op} prend le niveau du serveur ({@code getOperatorUserPermissionLevel}),
+     * que le serveur de GameTests met a 0 : l'operateur n'y avait aucun droit.
+     */
+    public static void op(net.minecraft.server.MinecraftServer server, net.minecraft.server.level.ServerPlayer p) {
+        server.getPlayerList().getOps().add(new net.minecraft.server.players.ServerOpListEntry(p.getGameProfile(), 4, false));
+        server.getPlayerList().sendPlayerPermissionLevel(p);
+    }
+
+    /**
      * 1.0.6 : premiere case libre (sans collision) a partir de {@code abs} en montant (8 au plus). Dans un gabarit, le sol de pierre est en
      * y = 1 relatif (y = 0 : la couche du bloc de structure) : une bete posee en y = 1 naissait DANS la pierre (etouffee, sans chemin).
      */

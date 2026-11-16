@@ -129,7 +129,8 @@ public final class PatchP105Lot14Tests {
         });
         h.startSequence()
               .thenExecuteAfter(74, () -> Gt.equal(0, cooked(f), "rien de cuit avant 80 ticks"))
-              .thenWaitUntil(() -> Gt.check(cooked(f) > 0, "pas encore de boeuf cuit"))
+              .thenWaitUntil(() -> Gt.check(cooked(f) > 0, "pas encore de boeuf cuit ; cases " + f.guiSlots().stream()
+                    .map(sl -> sl.getStack().toString()).toList() + ", energie " + f.getEnergy().getStored()))
               .thenExecute(() -> Gt.check(first[0] - start[0] <= 86, "boeuf cuit en 80 ticks : premier cuit " + (first[0] - start[0]) + " ticks apres le depart, energie "
                     + f.getEnergy().getStored() + " / " + f.getEnergy().getCapacity()))
               .thenExecute(s::done);

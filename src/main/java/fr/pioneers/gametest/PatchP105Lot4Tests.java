@@ -229,7 +229,10 @@ public final class PatchP105Lot4Tests {
         FaunaZones.Pass p = FaunaZones.pass(level, zone, settings(counted), new FaunaZones.Limits(List.of(far), area), gameStart(counted));
         p.spawned().forEach(e -> s.onCleanup(e::discard));
         Gt.check(p.planned().contains(FaunaGroup.GAME), "gibier sous 25 % : prevu");
-        Gt.equal(0L, (long) p.spawned().size(), "aire dans un claim : aucun repeuplement");
+        //1.0.6 : les especes « pres des constructions » (rats du gibier) peuvent revenir dans un claim (regle verifiee plus bas) : on ne compte
+        //que les autres
+        Gt.equal(0L, p.spawned().stream().filter(e -> FaunaRegistry.of(e) == null || !FaunaRegistry.of(e).isNearBuildings()).count(),
+              "aire dans un claim : aucun repeuplement (hors rats et pigeons)");
         BlockPos mid = h.absolutePos(new BlockPos(9, 1, 9));
         FaunaSpecies near = FaunaSpecies.of("pioneers:test_rat", FaunaGroup.GAME).nearBuildings();
         FaunaSpawner.Limits lim = new FaunaSpawner.Limits(List.of(far), FaunaRules.PLAYER_DISTANCE, FaunaRules.VILLAGE_DISTANCE, true, 256);

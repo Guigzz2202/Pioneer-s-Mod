@@ -235,7 +235,8 @@ public final class PatchP104Lot11Tests {
             String end = PiRemaps.simplifiedBlock(now);
             Gt.equal(end != null && !end.isEmpty() ? end : now, PiRemaps.simplifiedBlock(old), "chaine des remaps de " + old);
             Gt.check(!ForgeRegistries.BLOCKS.containsKey(rl(old)), old + " encore enregistre");
-            Gt.check(ForgeRegistries.BLOCKS.containsKey(rl(now)), now + " (remplacant de " + old + ") absent");
+            String last = end != null && !end.isEmpty() ? end : now;
+            Gt.check(ForgeRegistries.BLOCKS.containsKey(rl(last)), last + " (remplacant de " + old + ", via " + now + ") absent");
             for (String t : new String[]{"basic_", "advanced_", "elite_", "ultimate_"}) {
                 //1.0.4-beta (lot 12) : base multibloc seul (colonne de distillation) : son controleur (id = sa cle)
                 if (old.startsWith(t) && !now.startsWith("industrial_") && IndustryMachine.byKey(now) == null) {

@@ -343,7 +343,7 @@ public final class PatchP104Lot29Tests {
         Gt.Scope s = Gt.begin(h);
         ServerPlayer p = s.player("gtwp", "Ines", new BlockPos(1, 1, 1));
         Gt.check(!WaypointTeleport.admin(p), "joueur ordinaire : pas de teleportation (regle d'avant)");
-        s.server.getPlayerList().op(p.getGameProfile());
+        Gt.op(s.server, p);   // 1.0.6 : niveau 4 (op() donne le niveau 0 du serveur de GameTests)
         try {
             Gt.check(WaypointTeleport.admin(p), "operateur : administrateur, en survie aussi");
         } finally {

@@ -135,12 +135,16 @@ public final class MultiblockApi8aTests {
             MultiblockApi6Tests.roundTrip((BlockEntity) holder, key + " forme");
             BlockPos cut = remove == null ? null : anchor.offset(remove);
             if (cut == null) {
+                //1.0.6 : une piece inscrite au registre des hotes (cases du releve) ; certains plans (baie de drones, port) ont des blocs
+                //qui ne sont pas des cases (decor) : les retirer ne defait rien, et ils ne sont pas au registre
                 for (BlockPos p : placed.keySet()) {
-                    if (!p.equals(controller) && placed.get(p).getBlock() != plan.controller()) {
+                    if (!p.equals(controller) && placed.get(p).getBlock() != plan.controller() && (!registry
+                          || MultiblockPort.house(h.getLevel(), h.absolutePos(p), MultiblockCore.House.Holder.class) == holder)) {
                         cut = p;
                         break;
                     }
                 }
+                Gt.check(cut != null, key + " : aucune piece du plan au registre des hotes");
             }
             if (registry) {
                 Gt.check(MultiblockPort.house(h.getLevel(), h.absolutePos(cut), MultiblockCore.House.Holder.class) == holder,

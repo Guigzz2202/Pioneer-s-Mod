@@ -63,7 +63,11 @@ public final class PatchP105Lot2Tests {
         boolean raining = data.isRaining(), thundering = data.isThundering();
         int clear = data.getClearWeatherTime(), rainTime = data.getRainTime(), thunderTime = data.getThunderTime();
         level.setWeatherParameters(0, 24_000, true, false);
+        //1.0.6 : isRaining lit le niveau de pluie, qui monte de 0,01 par tick : sans lui, il ne « pleut » qu'apres 20 ticks
+        float rainLevel = level.getRainLevel(1.0F);
+        level.setRainLevel(1.0F);
         s.onCleanup(() -> {
+            level.setRainLevel(rainLevel);
             data.setClearWeatherTime(clear);
             data.setRaining(raining);
             data.setRainTime(rainTime);

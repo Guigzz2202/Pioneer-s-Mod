@@ -191,7 +191,8 @@ public final class PatchP105Lot7Tests {
         Gt.equal(3, ((Container) s.level.getBlockEntity(furnace)).getItem(0).getCount(), "le four est intact");
         r1.kill();
         Gt.check(!s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(4), e -> e.getItem().is(Items.BREAD)).isEmpty(),
-              "tue, il lache son butin");
+              "tue, il lache son butin (vivant " + r1.isAlive() + ", butin " + r1.loot() + ", en " + r1.blockPosition() + ", objets au sol "
+              + s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(8)).stream().map(e -> e.getItem().toString()).toList() + ")");
         s.done();
     }
 

@@ -105,7 +105,8 @@ public final class PatchP103Lot5Tests {
         //FE par mB : gazole au liquide (x2), gaz naturel a la turbine compacte (x1) : les chiffres de l'ancien generateur a combustion compact
         Fluid diesel = PiIndustry.fluid("diesel");
         GeneratorOutput.Use d = GeneratorOutput.fluid(h.getLevel(), new FluidStack(diesel, 100));
-        Gt.check(d != null && d.machine() == IndustryMachine.LIQUID_COMBUSTION_GENERATOR, "le gazole brule au generateur a combustion liquide");
+        Gt.check(d != null && d.machine() == IndustryMachine.LIQUID_COMBUSTION_GENERATOR, "le gazole brule au generateur a combustion liquide ("
+              + (d == null ? "aucun generateur, gazole " + net.minecraftforge.registries.ForgeRegistries.FLUIDS.getKey(diesel) : d.machine().key + ", " + d.recipe().getId()) + ")");
         Gt.equal(16_384L, Math.round(GeneratorOutput.perUnit(d.recipe(), d.amount(), false)), "gazole : 16 384 FE par mB");
         Gas gas = PioneersAPI.gas(rl("natural_gas"));
         Gt.check(gas != null, "gaz naturel");
