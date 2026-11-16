@@ -30,7 +30,8 @@ import org.jetbrains.annotations.Nullable;
  *     operateur (le serveur refuse ; l'interface grise le bouton avec l'explication) ;</li>
  *     <li>OU : une place sure ({@link #find}) dans la colonne du waypoint, sinon dans les colonnes voisines (jusqu'a {@link #SPIRAL} blocs),
  *     le chunk etant CHARGE (genere au besoin) avant toute lecture de hauteur : la hauteur du waypoint si elle est sure et pas sous le sol ;
- *     waypoint DANS un bloc : la premiere place sure juste au-dessus (1.0.6, reponse de Guillaume du 16/11/2026) ; sinon la surface (carte
+ *     waypoint DANS un bloc : la premiere place sure juste au-dessus, a {@link #ABOVE} blocs au plus (1.0.6, reponse de Guillaume du
+ *     16/11/2026) ; sinon la surface (carte
  *     des hauteurs MOTION_BLOCKING) ; dans une dimension a plafond (Nether), la place sure la plus proche de la
  *     hauteur du waypoint, toujours sous le plafond de bedrock ; jamais dans un liquide, la lave, le feu ; sur l'eau en dernier recours (on y
  *     flotte) ; aucune place : refus (« aucune place sure »), on ne part pas.</li>
@@ -42,6 +43,9 @@ public final class WaypointTeleport {
 
     /** Colonnes voisines essayees (rayon en blocs) quand celle du waypoint n'a pas de place sure (ocean, vide de l'End, lave). */
     public static final int SPIRAL = 8;
+
+    /** 1.0.6 : waypoint dans un bloc : place sure cherchee jusqu'a ce nombre de blocs au-dessus (« juste au-dessus ») ; au-dela, la surface. */
+    public static final int ABOVE = 3;
 
     private WaypointTeleport() {
     }
@@ -139,10 +143,11 @@ public final class WaypointTeleport {
             if (wanted >= c.ground() && safe(c, wanted)) {
                 return wanted;
             }
-            //1.0.6 (reponse de Guillaume du 16/11/2026) : waypoint pose dans un bloc : on arrive juste au-dessus, pas a la surface de la colonne.
-            //Une hauteur au ras du fond reste « inconnue » (waypoint pose sur la carte d'un chunk que le client n'avait pas : bug du lot 29) : surface.
+            //1.0.6 (reponse de Guillaume du 16/11/2026) : waypoint pose dans un bloc : on arrive juste au-dessus (au plus ABOVE blocs plus
+            //haut), pas a la surface de la colonne. Un waypoint enfoui plus profond dans le terrain (ou au ras du fond : waypoint pose sur la
+            //carte d'un chunk que le client n'avait pas, bug du lot 29) garde la regle du lot 30 : la surface, jamais sous le sol.
             if (wanted > c.minY() + 1 && wanted < c.ceiling() && !c.passable(wanted)) {
-                for (int y = wanted + 1; y + 1 < c.ceiling(); y++) {
+                for (int y = wanted + 1; y <= wanted + ABOVE && y + 1 < c.ceiling(); y++) {
                     if (safe(c, y)) {
                         return y;
                     }
