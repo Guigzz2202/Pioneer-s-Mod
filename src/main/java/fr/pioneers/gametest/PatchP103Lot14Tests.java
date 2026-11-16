@@ -115,10 +115,16 @@ public final class PatchP103Lot14Tests {
               "regle pure : pas de liaison entre un module surmonte et un module seul");
         BlockState floor = DishShelfBlock.VARIANTS.get("oak").getBlock().defaultBlockState().setValue(DishShelfBlock.FACING, Direction.NORTH);
         BlockPos a0 = new BlockPos(3, 1, 3), a1 = a0.above(), b0 = a0.east(), b1 = b0.above();
+        //1.0.6 : sol pose sous les etageres (le gabarit n'a pas de sol plein en y = 0 a cet endroit : l'etagere au sol tombait)
+        h.setBlock(a0.below(), Blocks.STONE.defaultBlockState());
+        h.setBlock(b0.below(), Blocks.STONE.defaultBlockState());
         h.setBlock(a0, floor);
         h.setBlock(a1, floor);
         h.setBlock(b0, floor);
         settle(h, s, a0, a1, b0);
+        Gt.check(h.getBlockState(a0).getBlock() instanceof DishShelfBlock && h.getBlockState(a1).getBlock() instanceof DishShelfBlock
+              && h.getBlockState(b0).getBlock() instanceof DishShelfBlock, "etageres posees : " + h.getBlockState(a0) + " / " + h.getBlockState(a1)
+              + " / " + h.getBlockState(b0) + " ; sol " + h.getBlockState(a0.below()));
         //facade nord : la droite du modele = est
         Gt.check(h.getBlockState(a0).getValue(DishShelfBlock.UP) && !h.getBlockState(b0).getValue(DishShelfBlock.UP), "colonne de 2 a cote d'une seule");
         Gt.check(!h.getBlockState(a0).getValue(DishShelfBlock.RIGHT) && !h.getBlockState(b0).getValue(DishShelfBlock.LEFT),

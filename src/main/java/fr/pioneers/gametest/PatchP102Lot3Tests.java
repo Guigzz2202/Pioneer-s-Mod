@@ -84,7 +84,9 @@ public final class PatchP102Lot3Tests {
         //1.0.6 : gabarit de 32 : l'explosion de la chaudiere de Guillaume (11 corps, puissance 5,25) ne doit pas toucher sa voisine
         BlockPos wet = new BlockPos(3, 1, 3), dry = new BlockPos(26, 1, 26);
         FireboxTile w = boiler(h, wet);
-        BlockPos dryAt = h.relativePos(boiler(h, dry).getBlockPos()), wetAt = h.relativePos(w.getBlockPos());
+        //positions ABSOLUES des foyers (GameTestHelper.relativePos de la 1.20.1 tourne de 180 degres : inutilisable)
+        BlockPos dryAt = boiler(h, dry).getBlockPos().immutable(), wetAt = w.getBlockPos().immutable();
+        net.minecraft.server.level.ServerLevel level = h.getLevel();
         int half = w.waterCapacity() / 2;
         Gt.equal(half, w.fillWater(half, false), "eau acceptee (la moitie de la contenance)");
         int shells = MultiblockApi6Tests.count(fr.pioneers.api.multiblock.HouseShapes.BOILER, 0,
@@ -96,15 +98,16 @@ public final class PatchP102Lot3Tests {
         //diagnostic : dernier etat vu de la chaudiere remplie (tick, formee, eau, temperature)
         String[] seen = {"jamais vue"};
         h.onEachTick(() -> {
-            if (h.getBlockEntity(wetAt) instanceof FireboxTile f) {
+            if (level.getBlockEntity(wetAt) instanceof FireboxTile f) {
                 seen[0] = "tick " + h.getTick() + ", formee " + f.formed() + ", eau " + Math.round(f.water()) + " / " + f.waterCapacity()
                       + ", " + Math.round(f.temperature()) + " C";
             }
         });
         h.runAtTickTime(330, () -> {
-            Gt.check(h.getBlockState(dryAt).is(Blocks.AIR) || !(h.getBlockEntity(dryAt) instanceof FireboxTile),
+            Gt.check(level.getBlockState(dryAt).is(Blocks.AIR) || !(level.getBlockEntity(dryAt) instanceof FireboxTile),
                   "la chaudiere chauffee sans eau n'a pas explose");
-            Gt.check(h.getBlockEntity(wetAt) instanceof FireboxTile f && f.formed(), "la chaudiere remplie d'eau a saute : " + h.getBlockState(wetAt) + " ; vue en dernier : " + seen[0]);
+            Gt.check(level.getBlockEntity(wetAt) instanceof FireboxTile f && f.formed(), "la chaudiere remplie d'eau a saute : " + level.getBlockState(wetAt)
+                  + " ; vue en dernier : " + seen[0]);
             Gt.check(w.temperature() <= SteamRules.BOIL_C + 1e-6, "avec de l'eau, jamais au-dessus de 100 C");
             s.done();
         });

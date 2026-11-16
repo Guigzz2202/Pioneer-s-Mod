@@ -120,9 +120,17 @@ public final class PatchP105Lot14Tests {
         AtelierTile f = (AtelierTile) h.getBlockEntity(rel);
         f.getEnergy().setStored(f.getEnergy().getCapacity());
         f.itemInputs().get(0).setStack(new ItemStack(Items.BEEF, 3));
+        //diagnostic : tick du premier boeuf cuit
+        long[] first = {-1}, start = {h.getTick()};
+        h.onEachTick(() -> {
+            if (first[0] < 0 && PatchP105Lot14Tests.cooked(f) > 0) {
+                first[0] = h.getTick();
+            }
+        });
         h.startSequence()
               .thenExecuteAfter(74, () -> Gt.equal(0, cooked(f), "rien de cuit avant 80 ticks"))
-              .thenExecuteAfter(12, () -> Gt.check(cooked(f) >= 1, "boeuf cuit en 80 ticks (vu a 86) ; energie "
+              .thenWaitUntil(() -> Gt.check(cooked(f) > 0, "pas encore de boeuf cuit"))
+              .thenExecute(() -> Gt.check(first[0] - start[0] <= 86, "boeuf cuit en 80 ticks : premier cuit " + (first[0] - start[0]) + " ticks apres le depart, energie "
                     + f.getEnergy().getStored() + " / " + f.getEnergy().getCapacity()))
               .thenExecute(s::done);
     }

@@ -153,6 +153,18 @@ public final class Gt {
     }
 
     /**
+     * 1.0.6 : premiere case libre (sans collision) a partir de {@code abs} en montant (8 au plus). Dans un gabarit, le sol de pierre est en
+     * y = 1 relatif (y = 0 : la couche du bloc de structure) : une bete posee en y = 1 naissait DANS la pierre (etouffee, sans chemin).
+     */
+    public static BlockPos standing(net.minecraft.world.level.Level level, BlockPos abs) {
+        BlockPos p = abs;
+        for (int i = 0; i < 8 && !level.getBlockState(p).getCollisionShape(level, p).isEmpty(); i++) {
+            p = p.above();
+        }
+        return p;
+    }
+
+    /**
      * Relit une tile comme au chargement d'un chunk : {@code BlockEntity.loadStatic} lit le type dans la cle « id », que seule
      * {@code saveWithId} ecrit ({@code saveWithoutMetadata} ne l'a pas : la relecture rendait null). A comparer ensuite par
      * {@code saveWithoutMetadata} des deux cotes.

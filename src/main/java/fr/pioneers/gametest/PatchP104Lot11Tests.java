@@ -211,8 +211,9 @@ public final class PatchP104Lot11Tests {
         });
     }
 
-    @GameTest(template = Gt.SMALL, batch = "pioneers_p104_11_vacuum", timeoutTicks = 400)
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p104_11_vacuum", timeoutTicks = 1200)
     public static void p104_11_sous_vide_au_creuset(GameTestHelper h) {
+        //1.0.6 : 1 800 ticks de recette (tier 2) : 900 ticks au MKIV, plus que les 400 du test d'origine
         runs(h, "vacuum_furnace", "industry/vacuum_furnace/vacuum_titanium");
     }
 

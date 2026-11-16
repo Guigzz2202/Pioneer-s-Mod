@@ -66,7 +66,7 @@ public final class PatchP105Lot13Tests {
     @GameTest(template = Gt.BORDER, batch = "pioneers_p105_13_boar_open", timeoutTicks = 600)
     public static void p105_13_sanglier_champ_ouvert(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
-        BlockPos crop = new BlockPos(12, 1, 10);
+        BlockPos crop = new BlockPos(12, 2, 10);   // 1.0.6 : sur le sol du gabarit (y = 1), plus dans un trou du sol
         Boar b = field(s, crop);
         Gt.check(Boar.crop(h.getBlockState(crop)), "le ble est une culture");
         Gt.check(!Boar.enclosed(s.level, h.absolutePos(crop), h.absolutePos(crop.west(5))), "champ ouvert vu comme clos");
@@ -80,7 +80,7 @@ public final class PatchP105Lot13Tests {
     @GameTest(template = Gt.BORDER, batch = "pioneers_p105_13_boar_fenced", timeoutTicks = 500)
     public static void p105_13_sanglier_champ_clos(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
-        BlockPos crop = new BlockPos(12, 1, 10);
+        BlockPos crop = new BlockPos(12, 2, 10);   // 1.0.6 : sur le sol du gabarit (y = 1), plus dans un trou du sol
         for (int dx = -2; dx <= 2; dx++) {
             for (int dz = -2; dz <= 2; dz++) {
                 if (Math.abs(dx) == 2 || Math.abs(dz) == 2) {
@@ -103,7 +103,7 @@ public final class PatchP105Lot13Tests {
         Gt.Scope s = Gt.begin(h);
         ServerPlayer p = s.player("gt13boar", "Fermiere", new BlockPos(2, 1, 2));
         Clan c = s.clan("GtSang" + ClanTests.sfx(h), p);
-        BlockPos crop = new BlockPos(12, 1, 10);
+        BlockPos crop = new BlockPos(12, 2, 10);   // 1.0.6 : sur le sol du gabarit (y = 1), plus dans un trou du sol
         s.claim(c, h.absolutePos(crop));
         Boar b = field(s, crop);
         Gt.check(!b.rootable(h.absolutePos(crop), h.absolutePos(crop.west(5))), "une culture en claim est a l'abri");
