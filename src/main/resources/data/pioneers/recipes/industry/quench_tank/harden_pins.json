@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "chemical_bath",
  "tier": 0,
  "time": 200,
  "family": "quench_tank",

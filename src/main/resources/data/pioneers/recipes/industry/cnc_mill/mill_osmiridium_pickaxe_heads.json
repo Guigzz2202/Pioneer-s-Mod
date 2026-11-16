@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "machining_center",
+ "machine": "power_hammer",
  "tier": 3,
  "time": 400,
  "family": "cnc_mill",
@@ -12,12 +12,6 @@
    "count": 1
   }
  ],
- "fluids": [
-  {
-   "fluid": "pioneers:lubricant",
-   "amount": 50
-  }
- ],
  "results": [
   {
    "item": "pioneers:osmiridium_pickaxe_head",
@@ -27,5 +21,6 @@
    "item": "pioneers:osmiridium_nugget",
    "count": 27
   }
- ]
+ ],
+ "industrial": true
 }

@@ -12,16 +12,18 @@ import java.util.Map;
 public final class GeneratedBatchRefund {
 
     /** Nombre d'entrees de la table (controle). */
-    public static final int SIZE = 515;
+    public static final int SIZE = 752;
 
     public static final Map<String, String[]> TABLE;
 
     static {
-        Map<String, String[]> m = new HashMap<>(1030);
+        Map<String, String[]> m = new HashMap<>(1504);
         part0(m);
         part1(m);
         part2(m);
         part3(m);
+        part4(m);
+        part5(m);
         TABLE = Map.copyOf(m);
     }
 
@@ -151,10 +153,245 @@ public final class GeneratedBatchRefund {
         m.put("extractor|industry/extractor/steam_red_dye_poppy", new String[]{"minecraft:poppy*1", "", ""});
         m.put("extractor|industry/extractor/steam_sugar", new String[]{"minecraft:sugar_cane*1", "", ""});
         m.put("extractor|industry/extractor/steam_yellow_dye", new String[]{"minecraft:dandelion*1", "", ""});
+        m.put("furnace|armor/hardened_steel_boots", new String[]{"pioneers:steel_boots*1", "minecraft:water*1000", ""});
+        m.put("furnace|armor/hardened_steel_chestplate", new String[]{"pioneers:steel_chestplate*1", "minecraft:water*2000", ""});
+        m.put("furnace|armor/hardened_steel_helmet", new String[]{"pioneers:steel_helmet*1", "minecraft:water*1250", ""});
+        m.put("furnace|armor/hardened_steel_leggings", new String[]{"pioneers:steel_leggings*1", "minecraft:water*1750", ""});
+        m.put("furnace|industry/diffusion_furnace/rc_wafer_dope_n", new String[]{"pioneers:silicon_wafer*1", "", "pioneers:phosphine*50"});
+        m.put("furnace|industry/diffusion_furnace/rc_wafer_dope_p", new String[]{"pioneers:silicon_wafer*1", "", "pioneers:diborane*50"});
+        m.put("furnace|industry/diffusion_furnace/rc_wafer_implant", new String[]{"pioneers:epitaxial_wafer*1,pioneers:p_doped_wafer*1", "", "pioneers:diborane*50"});
+        m.put("furnace|industry/diffusion_furnace/sherardize_plate", new String[]{"#forge:plates/steel*1,#forge:dusts/zinc*1", "", "pioneers:nitrogen*50"});
+        m.put("furnace|industry/diffusion_furnace/sherardize_ring", new String[]{"#forge:rings/steel*8,#forge:dusts/zinc*2", "", "pioneers:nitrogen*50"});
+        m.put("furnace|industry/diffusion_furnace/sherardize_rod", new String[]{"#forge:rods/steel*2,#forge:dusts/zinc*1", "", "pioneers:nitrogen*50"});
+        m.put("furnace|industry/diffusion_furnace/sherardize_wire", new String[]{"#forge:wires/steel*2,#forge:dusts/zinc*1", "", "pioneers:nitrogen*50"});
+        m.put("furnace|industry/diffusion_furnace/sulcite_hts_tape", new String[]{"pioneers:sulcite_dust*1,pioneers:rare_earth_oxide*1", "", "pioneers:oxygen*200"});
+        m.put("furnace|industry/quench_tank/carburize_gear_die", new String[]{"#forge:gears/vanadium_steel*1,pioneers:charcoal*2", "", ""});
+        m.put("furnace|industry/quench_tank/harden_drill_bits", new String[]{"#forge:rods/vanadium_steel*1", "pioneers:quench_oil*100", ""});
+        m.put("furnace|industry/quench_tank/harden_gear_die", new String[]{"#forge:gears/vanadium_steel*1", "pioneers:quench_oil*100", ""});
+        m.put("furnace|industry/quench_tank/harden_pins", new String[]{"#forge:wires/vanadium_steel*1", "pioneers:quench_oil*100", ""});
+        m.put("furnace|industry/quench_tank/harden_saw_blade", new String[]{"#forge:sheets/steel*4", "pioneers:quench_oil*100", ""});
+        m.put("furnace|industry/quench_tank/nitride_drill_bits", new String[]{"#forge:rods/vanadium_steel*1", "", "pioneers:ammonia*200"});
+        m.put("furnace|industry/quench_tank/nitride_saw_blade", new String[]{"#forge:sheets/steel*4", "", "pioneers:ammonia*200"});
+        m.put("furnace|industry/quench_tank/quench_cool", new String[]{"pioneers:hot_steel_bloom*1", "pioneers:coolant*50", ""});
+        m.put("furnace|industry/quench_tank/quench_oil", new String[]{"pioneers:hot_steel_bloom*2", "pioneers:quench_oil*100", ""});
+        m.put("furnace|industry/quench_tank/quench_water", new String[]{"pioneers:hot_steel_bloom*1", "minecraft:water*250", ""});
+        m.put("furnace|industry/quench_tank/soft_anneal_hardened_steel", new String[]{"pioneers:hardened_steel_ingot*1", "", "pioneers:argon*50"});
+        m.put("furnace|industry/quench_tank/temper_glass_panes", new String[]{"#forge:glass_panes*4", "", ""});
+        m.put("furnace|industry/reduction_furnace/beryllium_from_emerald", new String[]{"pioneers:emerald_dust*4,#forge:dusts/magnesium*1", "", "pioneers:argon*25"});
+        m.put("furnace|industry/reduction_furnace/beryllium_pebbles", new String[]{"pioneers:crushed_beryl*4,#forge:dusts/magnesium*1", "", "pioneers:argon*25"});
+        m.put("furnace|industry/reduction_furnace/depleted_uranium_metal", new String[]{"pioneers:depleted_uranium_tetrafluoride*1,#forge:dusts/magnesium*1", "", "pioneers:argon*25"});
+        m.put("furnace|industry/reduction_furnace/hydrogen_reduce_copper", new String[]{"pioneers:copper_calcine*2", "", "pioneers:hydrogen*500"});
+    }
+
+    private static void part1(Map<String, String[]> m) {
+        m.put("furnace|industry/reduction_furnace/reduce_silver", new String[]{"pioneers:silver_dust*2,pioneers:coke*1", "", ""});
+        m.put("furnace|industry/reduction_furnace/vanadium_alumino", new String[]{"pioneers:vanadium_pentoxide*2,#forge:dusts/aluminium*2", "", ""});
+        m.put("furnace|industry/roaster/adu_calcination", new String[]{"pioneers:ammonium_diuranate*1", "", ""});
+        m.put("furnace|industry/roaster/iron_chloride_roast", new String[]{"pioneers:iron_chloride*2", "", "pioneers:oxygen*150"});
+        m.put("furnace|industry/roaster/quicklime", new String[]{"minecraft:calcite*2", "", ""});
+        m.put("furnace|industry/roaster/roast_argentite", new String[]{"pioneers:argentite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|industry/roaster/roast_vanadinite", new String[]{"pioneers:vanadinite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|industry/roaster/shells_lime", new String[]{"pioneers:crushed_shells*4", "", ""});
+        m.put("furnace|industry/roaster/slime_roasting", new String[]{"pioneers:anode_slime*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|industry/roaster/sulfur", new String[]{"pioneers:sulfur*1", "", "pioneers:oxygen*200"});
+        m.put("furnace|industry/roaster/sulfur_pollen", new String[]{"pioneers:sulfur_pollen*4", "", ""});
+        m.put("furnace|industry/roaster/vanadium_pentoxide", new String[]{"pioneers:ammonium_metavanadate*2", "", ""});
+        m.put("furnace|industry/sintering_furnace/anode_from_petcoke", new String[]{"pioneers:petroleum_coke*3,pioneers:pitch*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/braze_diamond_disc_brass", new String[]{"pioneers:diamond_dust*1,pioneers:brass_dust*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/braze_diamond_disc_electrum", new String[]{"pioneers:diamond_dust*1,pioneers:electrum_dust*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/bronze_bond_diamond_discs", new String[]{"pioneers:diamond_dust*1,pioneers:bronze_dust*2", "", "pioneers:hydrogen*50"});
+        m.put("furnace|industry/sintering_furnace/carbon_anode", new String[]{"pioneers:coke*3,pioneers:pitch*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/ceramic_shell_mold", new String[]{"pioneers:wax_pattern*1,pioneers:fused_zirconia*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/coke_from_charcoal", new String[]{"pioneers:charcoal*3", "", ""});
+        m.put("furnace|industry/sintering_furnace/fuel_pellet", new String[]{"pioneers:green_fuel_pellet*4", "", "pioneers:hydrogen*100"});
+        m.put("furnace|industry/sintering_furnace/graphite", new String[]{"pioneers:coke*2,pioneers:pitch*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/graphite_electrode", new String[]{"pioneers:graphite*3,pioneers:pitch*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/graphite_from_petcoke", new String[]{"pioneers:petroleum_coke*4,pioneers:pitch*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/lithium_ceramic_pebbles", new String[]{"pioneers:lithium_6*2,pioneers:silicon*1", "", "pioneers:oxygen*100"});
+        m.put("furnace|industry/sintering_furnace/messinite_ceramic", new String[]{"pioneers:messinite_dust*1,pioneers:zircon*1", "", "pioneers:argon*50"});
+        m.put("furnace|industry/sintering_furnace/mox_pellet_sinter", new String[]{"pioneers:mox_pellet*4", "", "pioneers:hydrogen*100"});
+        m.put("furnace|industry/sintering_furnace/rc_alumina_ceramic", new String[]{"pioneers:alumina*2", "", ""});
+        m.put("furnace|industry/sintering_furnace/rc_borosilicate_glass", new String[]{"#forge:glass*2", "", "pioneers:diborane*50"});
+        m.put("furnace|industry/sintering_furnace/rc_ceramic_substrates", new String[]{"pioneers:alumina_ceramic*1,#forge:foils/gold*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/rc_tempered_glass_pane", new String[]{"#forge:glass*2,#forge:gems/amethyst*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/rc_tungsten_tiles", new String[]{"#forge:plates/tungsten*1", "", "pioneers:argon*100"});
+        m.put("furnace|industry/sintering_furnace/rc_zirconia_ceramic", new String[]{"#forge:plates/zirconium*1,pioneers:rare_earth_oxide*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/sinter_bronze_rings", new String[]{"pioneers:bronze_green_compact*1", "", "pioneers:hydrogen*100"});
+        m.put("furnace|industry/sintering_furnace/sinter_steel_gear", new String[]{"pioneers:steel_green_compact*1", "", "pioneers:hydrogen*100"});
+        m.put("furnace|industry/sintering_furnace/sinter_zirconia_powder", new String[]{"pioneers:zirconium_dust*1,pioneers:rare_earth_oxide*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/tharsium_magnet", new String[]{"#forge:dusts/tharsium*1,pioneers:rare_earth_oxide*1", "", "pioneers:argon*25"});
+        m.put("furnace|industry/sintering_furnace/tungsten_carbide_dust", new String[]{"pioneers:tungsten_dust*1,pioneers:graphite*1", "", ""});
+        m.put("furnace|industry/sintering_furnace/tungsten_carbide_ingot", new String[]{"pioneers:tungsten_carbide_dust*2,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/quench_hardened_steel_wrench", new String[]{"pioneers:wrench*1", "minecraft:water*750", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_axe", new String[]{"#forge:dusts/tungsten_carbide*3,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_excavator", new String[]{"#forge:dusts/tungsten_carbide*3,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_file", new String[]{"#forge:dusts/tungsten_carbide*1,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_hammer", new String[]{"#forge:dusts/tungsten_carbide*2,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_hoe", new String[]{"#forge:dusts/tungsten_carbide*2,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_knife", new String[]{"#forge:dusts/tungsten_carbide*1,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_mining_hammer", new String[]{"#forge:dusts/tungsten_carbide*5,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_mortar", new String[]{"#forge:dusts/tungsten_carbide*3,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_pickaxe", new String[]{"#forge:dusts/tungsten_carbide*3,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_prospector", new String[]{"#forge:dusts/tungsten_carbide*2,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_saw", new String[]{"#forge:dusts/tungsten_carbide*2,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_scythe", new String[]{"#forge:dusts/tungsten_carbide*2,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_shovel", new String[]{"#forge:dusts/tungsten_carbide*1,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|materials/industry/sinter_tungsten_carbide_sword", new String[]{"#forge:dusts/tungsten_carbide*2,#forge:dusts/cobalt*1", "", ""});
+        m.put("furnace|processes/ahunite/simple_2", new String[]{"pioneers:ahunite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/aluminium/bayer_soderberg_6", new String[]{"pioneers:aluminium_hydroxide*3", "", ""});
+        m.put("furnace|processes/aluminium/prebaked_8", new String[]{"pioneers:green_anode*2,pioneers:pitch*1", "", ""});
+        m.put("furnace|processes/borealite/oxide_2", new String[]{"pioneers:borealite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/borealite/simple_2", new String[]{"pioneers:borealite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/chrome/aluminothermy_6", new String[]{"pioneers:chromium_oxide*2,#forge:dusts/aluminium*1", "", ""});
+        m.put("furnace|processes/chrome/ferrochrome_4b", new String[]{"pioneers:chromite_concentrate*2,pioneers:coke*2,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/conamarite/simple_2", new String[]{"pioneers:conamarite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/copper/black_copper_2", new String[]{"#forge:crushed_ores/copper*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/copper/black_copper_2b", new String[]{"pioneers:crushed_chalcopyrite*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/copper/matte_electrorefining_4", new String[]{"pioneers:chalcopyrite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/deimite/oxide_2", new String[]{"pioneers:deimite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/deimite/simple_2", new String[]{"pioneers:deimite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/edenite/oxide_2", new String[]{"pioneers:edenite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/edenite/simple_2", new String[]{"pioneers:edenite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/flarium/simple_2", new String[]{"pioneers:flarium_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/hygeite/simple_2", new String[]{"pioneers:hygeite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/hygeite/sulfide_2", new String[]{"pioneers:hygeite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/iron/direct_reduction_7", new String[]{"pioneers:iron_ore_pellets*4", "", "pioneers:syngas*1000"});
+        m.put("furnace|processes/krakenite/simple_2", new String[]{"pioneers:krakenite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/lead/argentiferous_lead_2", new String[]{"#forge:crushed_ores/lead*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/lead/argentiferous_lead_3", new String[]{"#forge:dusts/lead*2,pioneers:coke*1", "", ""});
+        m.put("furnace|processes/lead/electrolytic_parkes_6", new String[]{"pioneers:zinc_concentrate*2", "", "pioneers:oxygen*250"});
+        m.put("furnace|processes/lead/electrolytic_parkes_9", new String[]{"pioneers:lead_concentrate*2,pioneers:coke*1", "", ""});
+        m.put("furnace|processes/lead/imperial_smelting_4", new String[]{"pioneers:lead_zinc_concentrate*2", "", "pioneers:oxygen*250"});
+        m.put("furnace|processes/lead/imperial_smelting_5", new String[]{"pioneers:lead_zinc_sinter*2,pioneers:coke*2", "", ""});
+        m.put("furnace|processes/lokite/simple_2", new String[]{"pioneers:lokite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/lokite/sulfide_2", new String[]{"pioneers:lokite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/lunarium/simple_2", new String[]{"pioneers:lunarium_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/magnesium/pidgeon_2", new String[]{"pioneers:magnesium_hydroxide*2", "", ""});
+        m.put("furnace|processes/marsium/simple_2", new String[]{"pioneers:marsium_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/mercurium/simple_2", new String[]{"pioneers:mercurium_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/mercurium/sulfide_2", new String[]{"pioneers:mercurium_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/messinite/simple_2", new String[]{"pioneers:messinite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/messinite/sulfide_2", new String[]{"pioneers:messinite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/meteoritite/simple_3", new String[]{"pioneers:meteoritite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/mordorite/simple_2", new String[]{"pioneers:mordorite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/mordorite/sulfide_2", new String[]{"pioneers:mordorite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/nickel/ferronickel_2", new String[]{"pioneers:crushed_pentlandite*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/nickel/pressure_leach_carbonyl_10", new String[]{"pioneers:cobalt_sulfate*2", "", "pioneers:hydrogen*1000"});
+        m.put("furnace|processes/nickel/pressure_leach_carbonyl_7", new String[]{"pioneers:nickel_sulfate*2", "", "pioneers:hydrogen*1000"});
+        m.put("furnace|processes/niobium/ferroniobium_3", new String[]{"pioneers:pyrochlore_concentrate*2,#forge:dusts/aluminium*1,pioneers:iron_scrap*1", "", ""});
+        m.put("furnace|processes/niobium/hf_attack_5", new String[]{"pioneers:niobium_hydroxide*2", "", ""});
+        m.put("furnace|processes/niobium/hf_attack_6", new String[]{"pioneers:niobium_pentoxide*2,#forge:dusts/aluminium*1", "", ""});
+        m.put("furnace|processes/osmium/tetroxide_5", new String[]{"pioneers:osmium_dust*2", "", "pioneers:hydrogen*200"});
+        m.put("furnace|processes/osmium/tetroxide_6", new String[]{"pioneers:iridium_dust*2", "", "pioneers:hydrogen*200"});
+        m.put("furnace|processes/pallasite/oxide_2", new String[]{"pioneers:pallasite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/pallasite/simple_2", new String[]{"pioneers:pallasite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/phobite/oxide_2", new String[]{"pioneers:phobite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/phobite/simple_2", new String[]{"pioneers:phobite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/platinum/chloroplatinate_4", new String[]{"pioneers:ammonium_chloroplatinate*2", "", ""});
+        m.put("furnace|processes/pyrrhite/simple_2", new String[]{"pioneers:pyrrhite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/pyrrhite/sulfide_2", new String[]{"pioneers:pyrrhite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/ruachite/simple_2", new String[]{"pioneers:ruachite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/silicon/metallurgical_1b", new String[]{"minecraft:sand*4,pioneers:coke*2", "", ""});
+        m.put("furnace|processes/sputnikite/simple_2", new String[]{"pioneers:sputnikite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/stainless_steel/arc_oxygen_3", new String[]{"pioneers:chromium_slag*2,pioneers:ferrosilicon*1", "", ""});
+        m.put("furnace|processes/sulcite/oxide_2", new String[]{"pioneers:sulcite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/sulcite/simple_2", new String[]{"pioneers:sulcite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/terminite/simple_2", new String[]{"pioneers:terminite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/terminite/sulfide_2", new String[]{"pioneers:terminite_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/thalassite/simple_2", new String[]{"pioneers:thalassite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/tharsium/simple_2", new String[]{"pioneers:tharsium_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/tharsium/sulfide_2", new String[]{"pioneers:tharsium_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/tigrite/simple_2", new String[]{"pioneers:tigrite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/tin/cassiterite_3", new String[]{"pioneers:cassiterite_concentrate*2", "", "pioneers:oxygen*100"});
+        m.put("furnace|processes/tolimanite/oxide_2", new String[]{"pioneers:tolimanite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/tolimanite/simple_2", new String[]{"pioneers:tolimanite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/tungsten/apt_sintering_10", new String[]{"pioneers:tungsten_compact*1", "", "pioneers:hydrogen*300"});
+        m.put("furnace|processes/tungsten/apt_sintering_7", new String[]{"pioneers:ammonium_paratungstate*2", "", ""});
+        m.put("furnace|processes/tungsten/apt_sintering_8", new String[]{"pioneers:tungsten_oxide*2", "", "pioneers:hydrogen*1500"});
+        m.put("furnace|processes/tungsten/hip_10", new String[]{"pioneers:tungsten_compact*1", "", "pioneers:argon*200"});
+        m.put("furnace|processes/tungsten/plasma_3", new String[]{"pioneers:wolframite_concentrate*2", "", "pioneers:hydrogen*2000"});
+        m.put("furnace|processes/tungsten/plasma_4", new String[]{"pioneers:tungsten_dust*4", "", "pioneers:hydrogen*400"});
+        m.put("furnace|processes/valhallite/oxide_2", new String[]{"pioneers:valhallite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/valhallite/simple_2", new String[]{"pioneers:valhallite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/venusium/simple_2", new String[]{"pioneers:venusium_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/venusium/sulfide_2", new String[]{"pioneers:venusium_concentrate*2", "", "pioneers:oxygen*200"});
+        m.put("furnace|processes/veronite/oxide_2", new String[]{"pioneers:veronite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/veronite/simple_2", new String[]{"pioneers:veronite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("furnace|processes/vestalite/oxide_2", new String[]{"pioneers:vestalite_concentrate*2,pioneers:coke*1,pioneers:quicklime*1", "", ""});
+        m.put("furnace|processes/vestalite/simple_2", new String[]{"pioneers:vestalite_dust*2", "", "pioneers:hydrogen*500"});
+        m.put("machining_center|industry/cnc_mill/mill_duralumin_pickaxe_heads", new String[]{"pioneers:duralumin_billet*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/cnc_mill/mill_nitinol_pickaxe_heads", new String[]{"pioneers:nitinol_billet*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/cnc_mill/mill_osmiridium_pickaxe_heads", new String[]{"pioneers:osmiridium_billet*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/cnc_mill/mill_stainless_steel_pickaxe_heads", new String[]{"pioneers:stainless_steel_billet*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/cnc_mill/mill_stellite_pickaxe_heads", new String[]{"pioneers:stellite_billet*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/cnc_mill/mill_titanium_aluminide_pickaxe_heads", new String[]{"pioneers:titanium_aluminide_billet*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/cnc_mill/mill_titanium_pickaxe_heads", new String[]{"pioneers:titanium_billet*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/cnc_mill/mill_tungsten_carbide_pickaxe_heads", new String[]{"pioneers:tungsten_carbide_billet*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_aluminium", new String[]{"pioneers:aluminium_gear_blank*1", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_duralumin", new String[]{"pioneers:duralumin_gear_blank*1", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_aluminium", new String[]{"#forge:plates/aluminium*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_constantan", new String[]{"#forge:plates/constantan*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_duralumin", new String[]{"#forge:plates/duralumin*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_electrum", new String[]{"#forge:plates/electrum*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_invar", new String[]{"#forge:plates/invar*5", "", ""});
+    }
+
+    private static void part2(Map<String, String[]> m) {
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_nichrome", new String[]{"#forge:plates/nichrome*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_nickel", new String[]{"#forge:plates/nickel*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_redsteel", new String[]{"#forge:plates/redsteel*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_silver", new String[]{"#forge:plates/silver*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_stainless_steel", new String[]{"#forge:plates/stainless_steel*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_stellite", new String[]{"#forge:plates/stellite*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_titanium", new String[]{"#forge:plates/titanium*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_tungsten", new String[]{"#forge:plates/tungsten*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_tungsten_carbide", new String[]{"#forge:plates/tungsten_carbide*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_plate_vanadium_steel", new String[]{"#forge:plates/vanadium_steel*5", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_stainless_steel", new String[]{"pioneers:stainless_steel_gear_blank*1", "", ""});
+        m.put("machining_center|industry/gear_hobber/cut_gear_titanium", new String[]{"pioneers:titanium_gear_blank*1", "", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_aluminium", new String[]{"pioneers:aluminium_gear_blank*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_brass", new String[]{"#forge:gear_blanks/brass*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_bronze", new String[]{"#forge:gear_blanks/bronze*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_copper", new String[]{"#forge:gear_blanks/copper*1", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_duralumin", new String[]{"pioneers:duralumin_gear_blank*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_gold", new String[]{"#forge:gear_blanks/gold*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_iron", new String[]{"#forge:gear_blanks/iron*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_aluminium", new String[]{"#forge:plates/aluminium*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_constantan", new String[]{"#forge:plates/constantan*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_duralumin", new String[]{"#forge:plates/duralumin*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_electrum", new String[]{"#forge:plates/electrum*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_invar", new String[]{"#forge:plates/invar*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_nichrome", new String[]{"#forge:plates/nichrome*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_nickel", new String[]{"#forge:plates/nickel*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_redsteel", new String[]{"#forge:plates/redsteel*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_silver", new String[]{"#forge:plates/silver*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_stainless_steel", new String[]{"#forge:plates/stainless_steel*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_stellite", new String[]{"#forge:plates/stellite*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_titanium", new String[]{"#forge:plates/titanium*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_tungsten", new String[]{"#forge:plates/tungsten*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_tungsten_carbide", new String[]{"#forge:plates/tungsten_carbide*9", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_plate_vanadium_steel", new String[]{"#forge:plates/vanadium_steel*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_stainless_steel", new String[]{"pioneers:stainless_steel_gear_blank*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_steel", new String[]{"#forge:gear_blanks/steel*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/gear_hobber/hob_gear_tin", new String[]{"#forge:gear_blanks/tin*1", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_titanium", new String[]{"pioneers:titanium_gear_blank*1", "pioneers:lubricant*50", ""});
+        m.put("machining_center|industry/grinder/boule_ruby", new String[]{"pioneers:ruby_boule*1", "", ""});
+        m.put("machining_center|industry/grinder/boule_sapphire", new String[]{"pioneers:sapphire_boule*1", "", ""});
+        m.put("machining_center|industry/grinder/cut_peridot", new String[]{"pioneers:rough_peridot*1", "", ""});
+        m.put("machining_center|industry/grinder/cut_ruby", new String[]{"pioneers:rough_ruby*1", "", ""});
+        m.put("machining_center|industry/grinder/cut_sapphire", new String[]{"pioneers:rough_sapphire*1", "", ""});
+        m.put("machining_center|industry/grinder/cut_tanzanite", new String[]{"pioneers:rough_tanzanite*1", "", ""});
+        m.put("machining_center|industry/grinder/cut_topaz", new String[]{"pioneers:rough_topaz*1", "", ""});
+        m.put("machining_center|industry/grinder/polish_andesite", new String[]{"minecraft:andesite*4,pioneers:ruby_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/polish_basalt", new String[]{"minecraft:basalt*4,pioneers:peridot_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/polish_blackstone", new String[]{"minecraft:blackstone*4,pioneers:tanzanite_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/polish_deepslate", new String[]{"minecraft:cobbled_deepslate*4,pioneers:topaz_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/polish_diorite", new String[]{"minecraft:diorite*4,pioneers:tanzanite_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/polish_granite", new String[]{"minecraft:granite*4,pioneers:topaz_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/polish_mars_basalt", new String[]{"pioneers:mars_basalt*4,pioneers:peridot_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/polish_mars_rock", new String[]{"pioneers:mars_rock*4,pioneers:ruby_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/polish_moon_rock", new String[]{"pioneers:moon_rock*4,pioneers:quartz_dust*1", "minecraft:water*100", ""});
+        m.put("machining_center|industry/grinder/zircon_cut", new String[]{"pioneers:zircon_sand_concentrate*4", "", ""});
         m.put("machining_center|materials/turning_steel_bolt", new String[]{"#forge:rods/steel*1", "", ""});
         m.put("machining_center|materials/turning_steel_ring", new String[]{"#forge:rods/steel*1", "", ""});
         m.put("machining_center|materials/turning_steel_rod", new String[]{"#forge:ingots/steel*1", "", ""});
@@ -179,9 +416,6 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/mason/bronze_bench_casting_channel", new String[]{"pioneers:fire_brick*3,pioneers:fire_clay*1", "", ""});
         m.put("press|automation/mason/bronze_bench_chimney", new String[]{"minecraft:brick*4,#forge:plates/iron*1", "", ""});
         m.put("press|automation/mason/bronze_bench_fire_bricks", new String[]{"pioneers:fire_brick*4,pioneers:fire_clay*1", "", ""});
-    }
-
-    private static void part1(Map<String, String[]> m) {
         m.put("press|automation/mason/bronze_bench_fire_clay", new String[]{"minecraft:clay_ball*2,pioneers:flint_dust*1", "", ""});
         m.put("press|automation/mason/bronze_bench_fire_clay_sand", new String[]{"minecraft:clay_ball*2,minecraft:sand*2", "", ""});
         m.put("press|automation/mason/kitchen_bench_water_trough", new String[]{"minecraft:smooth_stone*5,#forge:plates/iron*1", "", ""});
@@ -253,6 +487,9 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/mason/vanilla_nether_bricks", new String[]{"minecraft:nether_brick*4", "", ""});
         m.put("press|automation/mason/vanilla_polished_andesite_slab", new String[]{"minecraft:polished_andesite*3", "", ""});
         m.put("press|automation/mason/vanilla_polished_andesite_stairs", new String[]{"minecraft:polished_andesite*6", "", ""});
+    }
+
+    private static void part3(Map<String, String[]> m) {
         m.put("press|automation/mason/vanilla_polished_blackstone_brick_slab", new String[]{"minecraft:polished_blackstone_bricks*3", "", ""});
         m.put("press|automation/mason/vanilla_polished_blackstone_brick_stairs", new String[]{"minecraft:polished_blackstone_bricks*6", "", ""});
         m.put("press|automation/mason/vanilla_polished_blackstone_brick_wall", new String[]{"minecraft:polished_blackstone_bricks*6", "", ""});
@@ -332,9 +569,6 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/metalworker/armor_tungsten_carbide_helmet", new String[]{"#forge:plates/tungsten_carbide*5,#forge:screws/steel*2", "", ""});
         m.put("press|automation/metalworker/armor_tungsten_carbide_leggings", new String[]{"#forge:plates/tungsten_carbide*7,#forge:screws/steel*2", "", ""});
         m.put("press|automation/metalworker/bronze_bench_drill_base", new String[]{"#forge:plates/bronze*3,#forge:plates/iron*2", "", ""});
-    }
-
-    private static void part2(Map<String, String[]> m) {
         m.put("press|automation/metalworker/bronze_bench_drill_frame", new String[]{"#forge:rods/iron*4,pioneers:copper_rivet*4", "", ""});
         m.put("press|automation/metalworker/components_bench_rc_camshaft_bench", new String[]{"#forge:rods/steel*3", "", ""});
         m.put("press|automation/metalworker/kitchen_bench_frying_pan", new String[]{"#forge:plates/iron*2,minecraft:stick*1", "", ""});
@@ -406,6 +640,9 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/potter/vanilla_red_stained_glass_pane_from_glass_pane", new String[]{"minecraft:glass_pane*8,minecraft:red_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_white_stained_glass", new String[]{"minecraft:glass*8,minecraft:white_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_white_stained_glass_pane", new String[]{"minecraft:white_stained_glass*6", "", ""});
+    }
+
+    private static void part4(Map<String, String[]> m) {
         m.put("press|automation/potter/vanilla_white_stained_glass_pane_from_glass_pane", new String[]{"minecraft:glass_pane*8,minecraft:white_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_yellow_stained_glass_pane", new String[]{"minecraft:yellow_stained_glass*6", "", ""});
         m.put("press|automation/potter/vanilla_yellow_stained_glass_pane_from_glass_pane", new String[]{"minecraft:glass_pane*8,minecraft:yellow_dye*1", "", ""});
@@ -485,9 +722,6 @@ public final class GeneratedBatchRefund {
         m.put("press|industry/press/press_rod_vanadium_steel", new String[]{"#forge:ingots/vanadium_steel*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_venusium", new String[]{"#forge:ingots/venusium*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_veronite", new String[]{"#forge:ingots/veronite*1,pioneers:rod_die*1", "", ""});
-    }
-
-    private static void part3(Map<String, String[]> m) {
         m.put("press|industry/press/press_rod_vestalite", new String[]{"#forge:ingots/vestalite*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_zircaloy", new String[]{"#forge:ingots/zircaloy*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_zirconium", new String[]{"#forge:ingots/zirconium*1,pioneers:rod_die*1", "", ""});
@@ -548,9 +782,20 @@ public final class GeneratedBatchRefund {
         m.put("sawmill|industry/sawmill/steam_planks_spruce", new String[]{"#minecraft:spruce_logs*1", "", ""});
         m.put("sawmill|industry/sawmill/steam_planks_warped", new String[]{"#minecraft:warped_stems*1", "", ""});
         m.put("sawmill|industry/sawmill/steam_sticks", new String[]{"#minecraft:planks*1", "", ""});
+        m.put("sawmill|industry/wafer_saw/rc_silicon_wafers", new String[]{"pioneers:silicon_boule*1", "pioneers:ultrapure_water*500", ""});
+        m.put("sawmill|industry/wafer_saw/sapphire_windows", new String[]{"pioneers:sapphire*1", "minecraft:water*100", ""});
+        m.put("sawmill|industry/wafer_saw/sapphire_windows_boule", new String[]{"pioneers:sapphire_boule*1", "minecraft:water*250", ""});
+        m.put("sawmill|industry/wafer_saw/slice_amethyst", new String[]{"minecraft:amethyst_block*1", "minecraft:water*100", ""});
+        m.put("sawmill|industry/wafer_saw/slice_quartz", new String[]{"pioneers:quartz_block*1", "minecraft:water*100", ""});
+        m.put("sawmill|industry/wafer_saw/slice_reclaimed_silicon", new String[]{"pioneers:reclaimed_silicon*2", "minecraft:water*250", ""});
+        m.put("sawmill|industry/wafer_saw/slice_ruby_boule", new String[]{"pioneers:ruby_boule*1", "minecraft:water*250", ""});
+        m.put("sawmill|industry/wafer_saw/slice_sapphire_boule", new String[]{"pioneers:sapphire_boule*1", "pioneers:lubricant*50", ""});
         m.put("wiremill|industry/wiremill/wire_ingot_copper", new String[]{"#forge:ingots/copper*1", "", ""});
         m.put("wiremill|industry/wiremill/wire_ingot_gold", new String[]{"#forge:ingots/gold*1", "", ""});
         m.put("wiremill|industry/wiremill/wire_ingot_iron", new String[]{"#forge:ingots/iron*1", "", ""});
+    }
+
+    private static void part5(Map<String, String[]> m) {
         m.put("wiremill|industry/wiremill/wire_ingot_solder", new String[]{"#forge:ingots/solder*1", "", ""});
         m.put("wiremill|industry/wiremill/wire_red_alloy", new String[]{"#forge:rods/red_alloy*1", "", ""});
     }

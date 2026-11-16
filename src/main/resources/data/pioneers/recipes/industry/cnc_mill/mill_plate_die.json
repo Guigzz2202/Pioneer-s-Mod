@@ -18,12 +18,6 @@
    "count": 2
   }
  ],
- "fluids": [
-  {
-   "fluid": "pioneers:lubricant",
-   "amount": 50
-  }
- ],
  "results": [
   {
    "item": "pioneers:plate_die",

@@ -133,7 +133,7 @@ public final class MachineNewTests {
         //1.0.4-beta (lot 14) : la fraiseuse est fondue dans le Centre d'usinage
         AtelierTile m = atelier(h, IndustryMachine.MACHINING_CENTER, new BlockPos(2, 2, 2), "industry/cnc_mill/mill_ingot_die");
         m.itemInputs().get(0).setStack(new ItemStack(item("vanadium_steel_plate"), 3));
-        m.fluidInputs().get(0).setFluid(new FluidStack(fluid("lubricant"), 1_000));
+        //1.0.6 : le Centre d'usinage travaille sans lubrifiant (plus de reservoir)
         Item die = item("ingot_die"), nugget = item("vanadium_steel_nugget");
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());

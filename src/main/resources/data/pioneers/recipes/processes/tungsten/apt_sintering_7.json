@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "family": "roaster",
  "tier": 2,
  "time": 200,

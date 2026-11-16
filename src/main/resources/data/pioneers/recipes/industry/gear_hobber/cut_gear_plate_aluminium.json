@@ -1,9 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "machining_center",
+ "machine": "gear_hobber",
  "tier": 0,
  "time": 290,
- "family": "gear_hobber",
  "items": [
   {
    "ingredient": {

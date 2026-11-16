@@ -12,12 +12,6 @@
    "count": 2
   }
  ],
- "fluids": [
-  {
-   "fluid": "pioneers:lubricant",
-   "amount": 25
-  }
- ],
  "results": [
   {
    "item": "pioneers:tungsten_screw",

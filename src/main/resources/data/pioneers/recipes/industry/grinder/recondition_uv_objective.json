@@ -24,12 +24,6 @@
    "count": 1
   }
  ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 100
-  }
- ],
  "results": [
   {
    "item": "pioneers:uv_engraving_objective",

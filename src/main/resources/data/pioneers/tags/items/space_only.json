@@ -5870,6 +5870,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ultimate_gear_hobber",
+   "required": false
+  },
+  {
    "id": "pioneers:ultimate_heat_buffer",
    "required": false
   },
@@ -5951,6 +5955,10 @@
   },
   {
    "id": "pioneers:ultimate_recycler",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_reduction_furnace",
    "required": false
   },
   {

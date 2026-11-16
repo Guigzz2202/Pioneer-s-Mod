@@ -1,7 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
- "family": "reduction_furnace",
+ "machine": "reduction_furnace",
  "tier": 0,
  "time": 400,
  "items": [

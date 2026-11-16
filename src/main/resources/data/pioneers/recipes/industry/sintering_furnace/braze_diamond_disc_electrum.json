@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "tier": 1,
  "time": 240,
  "family": "sintering_furnace",

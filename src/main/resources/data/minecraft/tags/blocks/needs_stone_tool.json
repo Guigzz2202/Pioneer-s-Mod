@@ -152,6 +152,8 @@
   "pioneers:red_alloy_block",
   "pioneers:redsteel_block",
   "pioneers:basic_water_source",
-  "pioneers:basic_rock_generator"
+  "pioneers:basic_rock_generator",
+  "pioneers:basic_reduction_furnace",
+  "pioneers:basic_gear_hobber"
  ]
 }

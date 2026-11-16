@@ -179,12 +179,18 @@ public final class PatchP104Lot14Tests {
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_grinder", timeoutTicks = 400)
     public static void p104_14_rectification_au_centre_d_usinage(GameTestHelper h) {
-        runs(h, "grinder", "industry/grinder/cut_peridot");
+        //1.0.6 : la taille des gemmes passe a la Decoupeuse ; la rectification (billes, visserie) reste au Centre d'usinage
+        runs(h, "grinder", "industry/grinder/grind_steel_balls");
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_hobber", timeoutTicks = 400)
     public static void p104_14_taillage_au_centre_d_usinage(GameTestHelper h) {
-        runs(h, "gear_hobber", "industry/gear_hobber/cut_gear_aluminium");
+        //1.0.6 : la tailleuse est rendue (Decoupeuse) : la taille des engrenages se fait chez elle, sans famille
+        Gt.begin(h);
+        IndustrialRecipe r = recipe(h, "industry/gear_hobber/cut_gear_aluminium");
+        Gt.check(r.machine() == IndustryMachine.GEAR_HOBBER && r.family() == null, "taillage : Decoupeuse, sans famille");
+        Gt.check(recipe(h, "industry/grinder/cut_peridot").machine() == IndustryMachine.GEAR_HOBBER, "taille des gemmes : Decoupeuse");
+        h.succeed();
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_wafer", timeoutTicks = 400)
@@ -236,7 +242,14 @@ public final class PatchP104Lot14Tests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_multi", timeoutTicks = 20)
     public static void p104_14_recettes_au_multibloc_de_la_base(GameTestHelper h) {
         Gt.begin(h);
-        multi(h, "forge", "industry/forge/forge_brass_axe");
+        multi(h, "forge", "industry/forge/steel_bloom_cold");
+        //1.0.6 (demande de Guillaume du 16/11/2026) : les tetes d'outils des metaux de base se forgent au Marteau-pilon compact ; celles des
+        //metaux avances (fraisees jusqu'ici) au multibloc seulement
+        IndustrialRecipe axe = recipe(h, "industry/forge/forge_brass_axe");
+        Gt.check(!axe.industrialOnly() && IndustryRecipes.choices(h.getLevel(), IndustryMachine.POWER_HAMMER, false).stream()
+              .anyMatch(c -> c.id().equals(axe.getId())), "tete d'outil en laiton au Marteau-pilon compact");
+        IndustrialRecipe ti = recipe(h, "industry/cnc_mill/mill_titanium_pickaxe_heads");
+        Gt.check(ti.machine() == IndustryMachine.POWER_HAMMER && ti.industrialOnly(), "tete en titane : Marteau-pilon industriel seulement");
         multi(h, "continuous_caster", "industry/continuous_caster/cc_beam_blank_aluminium");
         //le foyer de forge garde ses deux recettes de lopin (famille « forge » du Marteau-pilon, reservees au multibloc)
         IndustrialRecipe bloom = recipe(h, "industry/forge/steel_bloom_cold");
@@ -261,8 +274,9 @@ public final class PatchP104Lot14Tests {
         Gt.equal("elite_casting_machine", PiRemaps.p104Block("elite_injection_molder"), "presse a injection MKIII -> Machine de coulee MKIII");
         Gt.equal("basic_machining_center", PiRemaps.p104Block("basic_cnc_mill"), "fraiseuse MKI -> Centre d'usinage MKI");
         Gt.equal("advanced_machining_center", PiRemaps.p104Block("advanced_grinder"), "rectifieuse MKII -> Centre d'usinage MKII");
-        Gt.equal("ultimate_machining_center", PiRemaps.p104Block("ultimate_gear_hobber"), "tailleuse MKIV -> Centre d'usinage MKIV");
-        Gt.equal("elite_sawmill", PiRemaps.p104Block("elite_wafer_saw"), "scie a galettes MKIII -> Scie industrielle MKIII");
+        //1.0.6 : la tailleuse est rendue (Decoupeuse) et reprend la scie a galettes
+        Gt.check(PiRemaps.p104Block("ultimate_gear_hobber") == null, "tailleuse MKIV : machine rendue, plus de remap");
+        Gt.equal("elite_gear_hobber", PiRemaps.p104Block("elite_wafer_saw"), "scie a galettes MKIII -> Decoupeuse MKIII");
         Gt.equal("advanced_chemical_bath", PiRemaps.p104Block("advanced_plasma_sprayer"), "projection plasma MKII -> Bain chimique MKII");
         Gt.equal("basic_chemical_bath", PiRemaps.p104Block("basic_acid_etcher"), "graveur MKI -> Bain chimique MKI");
         Gt.equal("elite_assembler", PiRemaps.p104Block("elite_component_assembler"), "assembleur de composants MKIII -> Assembleur MKIII");

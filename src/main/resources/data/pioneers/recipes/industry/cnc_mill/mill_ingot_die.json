@@ -12,12 +12,6 @@
    "count": 3
   }
  ],
- "fluids": [
-  {
-   "fluid": "pioneers:lubricant",
-   "amount": 50
-  }
- ],
  "results": [
   {
    "item": "pioneers:ingot_die",

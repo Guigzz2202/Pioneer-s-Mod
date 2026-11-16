@@ -13,7 +13,7 @@ import org.jetbrains.annotations.Nullable;
 public enum IndustryMachine {
     CRUSHER("crusher", Atelier.KIT, true, null, 1, 2, 0, 0, 0, 0, Source.CRUSHING, Kind.PROCESS, 60, 0xAA7846, new int[]{7, 3, 11, 7, 3, 11}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.POOL, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
-    FURNACE("furnace", Atelier.KIT, true, null, 3, 2, 1, 1, 1, 1, Source.SMELTING, Kind.PROCESS, 120, 0xE66E28, new int[]{7, 5, 0, 7, 5, 0}, false, false, new String[]{},
+    FURNACE("furnace", Atelier.KIT, true, null, 1, 1, 0, 0, 0, 0, Source.SMELTING, Kind.PROCESS, 120, 0xE66E28, new int[]{7, 5, 0, 7, 5, 0}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.DOME, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{"casing:top:1"}),
     COMPRESSOR("compressor", Atelier.KIT, true, null, 2, 1, 0, 0, 0, 0, Source.COMPRESSING, Kind.PROCESS, 50, 0x78AAC8, new int[]{5, 6, 3, 5, 6, 3}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.GANTRY, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
@@ -43,7 +43,7 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
     WIREMILL("wiremill", Atelier.NEW, true, null, 3, 1, 1, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 40, 0xD28C50, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
-    MACHINING_CENTER("machining_center", Atelier.NEW, true, null, 3, 2, 1, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 40, 0x5AB4DC, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
+    MACHINING_CENTER("machining_center", Atelier.NEW, true, null, 3, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 40, 0x5AB4DC, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
     EXTRUDER("extruder", Atelier.NEW, true, null, 2, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 70, 0xB4966E, new int[]{5, 0, 13, 5, 0, 13}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.DRUM, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
@@ -111,7 +111,7 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.DOME, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
     EXTRACTOR("extractor", Atelier.NEW, true, null, 2, 2, 2, 2, 1, 1, Source.INDUSTRIAL, Kind.PROCESS, 30, 0x78AA46, new int[]{5, 0, 9, 5, 0, 9}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.DRUM, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
-    SAWMILL("sawmill", Atelier.NEW, true, null, 1, 2, 1, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 40, 0xBE8C50, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
+    SAWMILL("sawmill", Atelier.NEW, true, null, 1, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 40, 0xBE8C50, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
     PYROLYSIS_OVEN("pyrolysis_oven", Atelier.NONE, true, null, 1, 2, 0, 2, 0, 1, Source.INDUSTRIAL, Kind.PROCESS, 180, 0xBE5A32, new int[]{5, 0, 13, 5, 0, 13}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.DRUM, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{"casing:top:1"}),
@@ -170,7 +170,11 @@ public enum IndustryMachine {
     WATER_SOURCE("water_source", Atelier.NEW, false, null, 0, 0, 0, 1, 0, 0, Source.WATER, Kind.WATER, 0, 0x4696E1, new int[]{3, 3, 3, 11, 11, 11}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.BOX, fr.pioneers.tech.industry.multi.IndustryStyle.NEUTRAL, new String[]{}),
     ROCK_GENERATOR("rock_generator", Atelier.NEW, false, null, 0, 1, 2, 0, 0, 0, Source.ROCKS, Kind.ROCKS, 0, 0xCD642D, new int[]{3, 3, 3, 11, 11, 11}, false, false, new String[]{},
-          fr.pioneers.tech.industry.multi.IndustryShape.BOX, fr.pioneers.tech.industry.multi.IndustryStyle.NEUTRAL, new String[]{});
+          fr.pioneers.tech.industry.multi.IndustryShape.BOX, fr.pioneers.tech.industry.multi.IndustryStyle.NEUTRAL, new String[]{}),
+    REDUCTION_FURNACE("reduction_furnace", Atelier.NEW, true, null, 3, 2, 0, 0, 1, 1, Source.INDUSTRIAL, Kind.PROCESS, 200, 0xD25A28, new int[]{7, 12, 0, 7, 12, 0}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.BELLY, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{"casing:top:1"}),
+    GEAR_HOBBER("gear_hobber", Atelier.NEW, true, null, 1, 2, 1, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 40, 0xD6A840, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{});
 
     /** Ou est la machine d'atelier : nouvelle (generee), kit existant, machine d'avant l'electricite, ou aucune (multibloc seulement). */
     public enum Atelier { NEW, KIT, BRONZE, NONE }
@@ -307,7 +311,7 @@ public enum IndustryMachine {
      */
     private static final java.util.Map<String, int[][]> LEGACY_IO = java.util.Map.ofEntries(
           java.util.Map.entry("crusher", new int[][]{{3, 1, 2, 0, 0, 0, 0}, {9, 1, 2, 1, 0, 0, 0}}),
-          java.util.Map.entry("furnace", new int[][]{{3, 1, 1, 0, 0, 0, 0}}),
+          java.util.Map.entry("furnace", new int[][]{{3, 1, 1, 0, 0, 0, 0}, {9, 3, 2, 1, 1, 1, 1}}),
           java.util.Map.entry("compressor", new int[][]{{1, 1, 1, 0, 0, 0, 0}}),
           java.util.Map.entry("ore_separator", new int[][]{{3, 1, 3, 0, 0, 0, 0}}),
           java.util.Map.entry("electric_crucible", new int[][]{{1, 1, 0, 0, 1, 0, 0}, {3, 3, 2, 0, 1, 1, 1}, {8, 4, 2, 0, 1, 1, 1}}),
@@ -318,7 +322,7 @@ public enum IndustryMachine {
           java.util.Map.entry("chemical_reactor", new int[][]{{4, 2, 2, 3, 2, 2, 1}}),
           java.util.Map.entry("rolling_mill", new int[][]{{1, 1, 1, 0, 0, 0, 0}, {6, 1, 1, 1, 0, 0, 0}}),
           java.util.Map.entry("wiremill", new int[][]{{6, 1, 1, 0, 0, 0, 0}}),
-          java.util.Map.entry("machining_center", new int[][]{{6, 1, 2, 0, 0, 0, 0}}),
+          java.util.Map.entry("machining_center", new int[][]{{6, 1, 2, 0, 0, 0, 0}, {9, 3, 2, 1, 0, 0, 0}}),
           java.util.Map.entry("bender", new int[][]{{6, 1, 1, 0, 0, 0, 0}}),
           java.util.Map.entry("assembler", new int[][]{{6, 9, 1, 1, 0, 0, 0}, {7, 9, 2, 1, 0, 1, 0}}),
           java.util.Map.entry("solid_combustion_generator", new int[][]{{2, 1, 0, 1, 0, 1, 0}}),
@@ -334,11 +338,12 @@ public enum IndustryMachine {
           java.util.Map.entry("distillation_column", new int[][]{{4, 0, 1, 1, 6, 0, 1}}),
           java.util.Map.entry("gas_turbine", new int[][]{{2, 0, 0, 1, 0, 2, 0}}),
           java.util.Map.entry("extractor", new int[][]{{1, 1, 2, 0, 0, 0, 0}, {5, 2, 2, 1, 2, 1, 1}}),
-          java.util.Map.entry("sawmill", new int[][]{{6, 1, 2, 0, 0, 0, 0}}),
+          java.util.Map.entry("sawmill", new int[][]{{6, 1, 2, 0, 0, 0, 0}, {9, 1, 2, 1, 0, 0, 0}}),
           java.util.Map.entry("hydroponic_farm", new int[][]{{5, 2, 3, 1, 0, 1, 0}}),
           java.util.Map.entry("hot_cell", new int[][]{{5, 2, 3, 1, 1, 1, 2}}),
           java.util.Map.entry("power_hammer", new int[][]{{6, 2, 2, 0, 0, 0, 0}}),
-          java.util.Map.entry("induction_furnace", new int[][]{{3, 4, 1, 0, 0, 1, 0}}));
+          java.util.Map.entry("induction_furnace", new int[][]{{3, 4, 1, 0, 0, 1, 0}}),
+          java.util.Map.entry("gear_hobber", new int[][]{{6, 2, 2, 1, 0, 0, 0}}));
 
     /** io de la machine dans un NBT de cette version des cases ; null si c'est l'io actuelle. */
     @Nullable

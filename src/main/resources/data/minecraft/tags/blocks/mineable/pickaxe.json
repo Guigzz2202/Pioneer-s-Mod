@@ -1773,6 +1773,16 @@
   "pioneers:basic_rock_generator",
   "pioneers:advanced_rock_generator",
   "pioneers:elite_rock_generator",
-  "pioneers:ultimate_rock_generator"
+  "pioneers:ultimate_rock_generator",
+  "pioneers:basic_reduction_furnace",
+  "pioneers:advanced_reduction_furnace",
+  "pioneers:elite_reduction_furnace",
+  "pioneers:ultimate_reduction_furnace",
+  "pioneers:basic_gear_hobber",
+  "pioneers:advanced_gear_hobber",
+  "pioneers:elite_gear_hobber",
+  "pioneers:ultimate_gear_hobber",
+  "pioneers:industrial_reduction_furnace",
+  "pioneers:industrial_gear_hobber"
  ]
 }

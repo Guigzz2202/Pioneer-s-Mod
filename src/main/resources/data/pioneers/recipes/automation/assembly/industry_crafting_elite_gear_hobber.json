@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 2,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_elite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:elite_electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_disc"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:drill_bit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cast_iron_machine_bed"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:elite_gear_hobber",
+   "count": 1
+  }
+ ]
+}

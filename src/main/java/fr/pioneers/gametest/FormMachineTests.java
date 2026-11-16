@@ -106,7 +106,8 @@ public final class FormMachineTests {
     public static void tailleuse_engrenage_et_copeaux(GameTestHelper h) {
         Gt.begin(h);
         //1.0.6 : la taille d'une ebauche d'engrenage est la recette hob_gear (cut_gear part de la plaque)
-        AtelierTile m = atelier(h, IndustryMachine.MACHINING_CENTER, new BlockPos(2, 2, 2), "industry/gear_hobber/hob_gear_bronze");
+        //1.0.6 : la tailleuse est rendue (Decoupeuse)
+        AtelierTile m = atelier(h, IndustryMachine.GEAR_HOBBER, new BlockPos(2, 2, 2), "industry/gear_hobber/hob_gear_bronze");
         m.itemInputs().get(0).setStack(new ItemStack(item("bronze_gear_blank"), 1));
         //la taille se fait au lubrifiant (50 mB)
         m.fluidInputs().get(0).setFluid(new net.minecraftforge.fluids.FluidStack(net.minecraftforge.registries.ForgeRegistries.FLUIDS

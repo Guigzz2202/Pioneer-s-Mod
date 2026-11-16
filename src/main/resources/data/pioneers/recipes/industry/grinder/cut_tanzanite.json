@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "machining_center",
+ "machine": "gear_hobber",
  "tier": 1,
  "time": 200,
  "family": "grinder",

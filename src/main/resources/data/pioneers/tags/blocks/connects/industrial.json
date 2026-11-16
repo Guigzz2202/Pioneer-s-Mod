@@ -88,6 +88,8 @@
   "pioneers:industrial_liquid_combustion_generator",
   "pioneers:exhaust_stack",
   "pioneers:item_silo",
+  "pioneers:industrial_reduction_furnace",
+  "pioneers:industrial_gear_hobber",
   "pioneers:robotic_assembly_bay",
   "pioneers:rocket_integration_hall"
  ]
