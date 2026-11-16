@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "machining_center",
+ "machine": "sawmill",
  "tier": 0,
  "time": 120,
  "items": [

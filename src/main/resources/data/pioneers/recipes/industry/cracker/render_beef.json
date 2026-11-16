@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "cracker",
+ "machine": "extractor",
  "tier": 0,
  "time": 100,
  "items": [

@@ -1,9 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "electric_crucible",
+ "machine": "reduction_furnace",
  "tier": 1,
  "time": 140,
- "family": "vacuum_furnace",
  "items": [
   {
    "ingredient": {

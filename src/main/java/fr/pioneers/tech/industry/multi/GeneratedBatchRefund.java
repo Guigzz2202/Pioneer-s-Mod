@@ -12,12 +12,12 @@ import java.util.Map;
 public final class GeneratedBatchRefund {
 
     /** Nombre d'entrees de la table (controle). */
-    public static final int SIZE = 1176;
+    public static final int SIZE = 1214;
 
     public static final Map<String, String[]> TABLE;
 
     static {
-        Map<String, String[]> m = new HashMap<>(2352);
+        Map<String, String[]> m = new HashMap<>(2428);
         part0(m);
         part1(m);
         part2(m);
@@ -26,6 +26,7 @@ public final class GeneratedBatchRefund {
         part5(m);
         part6(m);
         part7(m);
+        part8(m);
         TABLE = Map.copyOf(m);
     }
 
@@ -500,6 +501,13 @@ public final class GeneratedBatchRefund {
         m.put("converter|industry/converter/scrap_cooled_converter", new String[]{"pioneers:pig_iron*4,pioneers:iron_scrap_bale*1", "", "pioneers:oxygen*1000"});
         m.put("converter|processes/steel/oxygen_casting_7", new String[]{"pioneers:pig_iron*4,pioneers:quicklime*1", "", "pioneers:oxygen*1000"});
         m.put("converter|processes/steel/thomas_6", new String[]{"pioneers:pig_iron*4,pioneers:quicklime*1", "", ""});
+        m.put("cracker|industry/cracker/radon", new String[]{"pioneers:uranium_tailings*1", "", ""});
+        m.put("cracker|industry/cracker/regolith_helium_3", new String[]{"pioneers:moon_sand*16", "", ""});
+        m.put("cracker|industry/cracker/render_beef", new String[]{"minecraft:beef*4", "minecraft:water*250", ""});
+        m.put("cracker|industry/cracker/render_chicken", new String[]{"minecraft:chicken*6", "minecraft:water*250", ""});
+        m.put("cracker|industry/cracker/render_mutton", new String[]{"minecraft:mutton*4", "minecraft:water*250", ""});
+        m.put("cracker|industry/cracker/render_porkchop", new String[]{"minecraft:porkchop*4", "minecraft:water*250", ""});
+        m.put("cracker|industry/cracker/render_rotten_flesh", new String[]{"minecraft:rotten_flesh*8", "minecraft:water*250", ""});
         m.put("crusher|bronze/steam/macerator/bone_meal", new String[]{"minecraft:bone*1", "", ""});
         m.put("crusher|bronze/steam/macerator/crushed_copper", new String[]{"#forge:raw_materials/copper*1", "", ""});
         m.put("crusher|bronze/steam/macerator/crushed_gold", new String[]{"#forge:raw_materials/gold*1", "", ""});
@@ -577,6 +585,13 @@ public final class GeneratedBatchRefund {
         m.put("electric_crucible|industry/induction_furnace/rc_sacrificial_anode_1", new String[]{"pioneers:zinc_plate*2", "", ""});
         m.put("electric_crucible|industry/induction_furnace/rc_zamak_housing", new String[]{"pioneers:zinc_plate*3,pioneers:aluminium_plate*1", "", ""});
         m.put("electric_crucible|industry/induction_furnace/temper", new String[]{"pioneers:hardened_steel_ingot*2", "", ""});
+        m.put("electric_crucible|industry/tank_furnace/arc_lamp_krypton", new String[]{"pioneers:fused_silica*1,#forge:rods/tungsten*1,pioneers:titanium_dust*1", "", "pioneers:krypton*50"});
+        m.put("electric_crucible|industry/tank_furnace/arc_lamp_xenon", new String[]{"pioneers:fused_silica*1,#forge:wires/tungsten*1,pioneers:zirconium_dust*1", "", "pioneers:xenon*50"});
+        m.put("electric_crucible|industry/vacuum_furnace/rc_carbon_fiber", new String[]{"#pioneers:polymer_pellets*2", "", "pioneers:argon*100"});
+        m.put("electric_crucible|industry/vacuum_furnace/rc_co2_lasers", new String[]{"pioneers:borosilicate_glass*1,pioneers:silvered_mirror*2,#forge:foils/gold*1", "", "pioneers:carbon_dioxide*100"});
+        m.put("electric_crucible|industry/vacuum_furnace/rc_josephson_sputtered", new String[]{"#forge:wires/niobium*2,pioneers:alumina*1", "", "pioneers:argon*100"});
+        m.put("electric_crucible|industry/vacuum_furnace/rc_magnesium_housing", new String[]{"#forge:plates/magnesium*3", "", "pioneers:argon*100"});
+        m.put("electric_crucible|industry/vacuum_furnace/rc_neon_tubes", new String[]{"#forge:glass*1,#forge:foils/nickel*1", "", "pioneers:neon*50"});
         m.put("electric_crucible|processes/platinum/sponge_3", new String[]{"pioneers:platinum_sponge*2", "", ""});
         m.put("electric_crucible|processes/stainless_steel/induction_1", new String[]{"pioneers:ferrochrome*2,pioneers:ferronickel*1,pioneers:iron_scrap*4", "", ""});
         m.put("electric_crucible|processes/steel/induction_3", new String[]{"pioneers:pig_iron*2,pioneers:iron_scrap*1", "", ""});
@@ -628,6 +643,9 @@ public final class GeneratedBatchRefund {
         m.put("furnace|industry/roaster/sulfur", new String[]{"pioneers:sulfur*1", "", "pioneers:oxygen*200"});
         m.put("furnace|industry/roaster/sulfur_pollen", new String[]{"pioneers:sulfur_pollen*4", "", ""});
         m.put("furnace|industry/roaster/vanadium_pentoxide", new String[]{"pioneers:ammonium_metavanadate*2", "", ""});
+    }
+
+    private static void part4(Map<String, String[]> m) {
         m.put("furnace|industry/sintering_furnace/anode_from_petcoke", new String[]{"pioneers:petroleum_coke*3,pioneers:pitch*1", "", ""});
         m.put("furnace|industry/sintering_furnace/braze_diamond_disc_brass", new String[]{"pioneers:diamond_dust*1,pioneers:brass_dust*1", "", ""});
         m.put("furnace|industry/sintering_furnace/braze_diamond_disc_electrum", new String[]{"pioneers:diamond_dust*1,pioneers:electrum_dust*1", "", ""});
@@ -642,9 +660,6 @@ public final class GeneratedBatchRefund {
         m.put("furnace|industry/sintering_furnace/lithium_ceramic_pebbles", new String[]{"pioneers:lithium_6*2,pioneers:silicon*1", "", "pioneers:oxygen*100"});
         m.put("furnace|industry/sintering_furnace/messinite_ceramic", new String[]{"pioneers:messinite_dust*1,pioneers:zircon*1", "", "pioneers:argon*50"});
         m.put("furnace|industry/sintering_furnace/mox_pellet_sinter", new String[]{"pioneers:mox_pellet*4", "", "pioneers:hydrogen*100"});
-    }
-
-    private static void part4(Map<String, String[]> m) {
         m.put("furnace|industry/sintering_furnace/rc_alumina_ceramic", new String[]{"pioneers:alumina*2", "", ""});
         m.put("furnace|industry/sintering_furnace/rc_borosilicate_glass", new String[]{"#forge:glass*2", "", "pioneers:diborane*50"});
         m.put("furnace|industry/sintering_furnace/rc_ceramic_substrates", new String[]{"pioneers:alumina_ceramic*1,#forge:foils/gold*1", "", ""});
@@ -781,6 +796,9 @@ public final class GeneratedBatchRefund {
         m.put("machining_center|industry/gear_hobber/cut_gear_plate_vanadium_steel", new String[]{"#forge:plates/vanadium_steel*5", "", ""});
         m.put("machining_center|industry/gear_hobber/cut_gear_stainless_steel", new String[]{"pioneers:stainless_steel_gear_blank*1", "", ""});
         m.put("machining_center|industry/gear_hobber/cut_gear_titanium", new String[]{"pioneers:titanium_gear_blank*1", "", ""});
+    }
+
+    private static void part5(Map<String, String[]> m) {
         m.put("machining_center|industry/gear_hobber/hob_gear_aluminium", new String[]{"pioneers:aluminium_gear_blank*1", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_brass", new String[]{"#forge:gear_blanks/brass*1", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_bronze", new String[]{"#forge:gear_blanks/bronze*1", "pioneers:lubricant*50", ""});
@@ -795,9 +813,6 @@ public final class GeneratedBatchRefund {
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_invar", new String[]{"#forge:plates/invar*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_nichrome", new String[]{"#forge:plates/nichrome*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_nickel", new String[]{"#forge:plates/nickel*9", "pioneers:lubricant*50", ""});
-    }
-
-    private static void part5(Map<String, String[]> m) {
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_redsteel", new String[]{"#forge:plates/redsteel*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_silver", new String[]{"#forge:plates/silver*9", "pioneers:lubricant*50", ""});
         m.put("machining_center|industry/gear_hobber/hob_gear_plate_stainless_steel", new String[]{"#forge:plates/stainless_steel*9", "pioneers:lubricant*50", ""});
@@ -827,6 +842,10 @@ public final class GeneratedBatchRefund {
         m.put("machining_center|industry/grinder/polish_mars_rock", new String[]{"pioneers:mars_rock*4,pioneers:ruby_dust*1", "minecraft:water*100", ""});
         m.put("machining_center|industry/grinder/polish_moon_rock", new String[]{"pioneers:moon_rock*4,pioneers:quartz_dust*1", "minecraft:water*100", ""});
         m.put("machining_center|industry/grinder/zircon_cut", new String[]{"pioneers:zircon_sand_concentrate*4", "", ""});
+        m.put("machining_center|industry/machining_center/rc_jewel_pivot_ruby", new String[]{"#forge:gems/ruby*1", "", ""});
+        m.put("machining_center|industry/machining_center/rc_jewel_pivot_sapphire", new String[]{"#forge:gems/sapphire*1", "", ""});
+        m.put("machining_center|industry/machining_center/rc_stick_from_plank", new String[]{"#pioneers:planks*1", "", ""});
+        m.put("machining_center|industry/machining_center/rc_wood_veneer_1", new String[]{"#minecraft:logs*1", "", ""});
         m.put("machining_center|materials/turning_steel_bolt", new String[]{"#forge:rods/steel*1", "", ""});
         m.put("machining_center|materials/turning_steel_ring", new String[]{"#forge:rods/steel*1", "", ""});
         m.put("machining_center|materials/turning_steel_rod", new String[]{"#forge:ingots/steel*1", "", ""});
@@ -848,6 +867,25 @@ public final class GeneratedBatchRefund {
         m.put("mixer|industry/mixer/concrete_from_powder_red", new String[]{"minecraft:red_concrete_powder*8", "minecraft:water*500", ""});
         m.put("mixer|industry/mixer/concrete_from_powder_white", new String[]{"minecraft:white_concrete_powder*8", "minecraft:water*500", ""});
         m.put("mixer|industry/mixer/concrete_from_powder_yellow", new String[]{"minecraft:yellow_concrete_powder*8", "minecraft:water*500", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_aluminium", new String[]{"#forge:plates/aluminium*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_babbitt", new String[]{"#forge:plates/babbitt*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_constantan", new String[]{"#forge:plates/constantan*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_duralumin", new String[]{"#forge:plates/duralumin*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_electrum", new String[]{"#forge:plates/electrum*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_galvanized_steel", new String[]{"#forge:plates/galvanized_steel*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_invar", new String[]{"#forge:plates/invar*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_nichrome", new String[]{"#forge:plates/nichrome*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_nickel", new String[]{"#forge:plates/nickel*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_silver", new String[]{"#forge:plates/silver*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_stainless_steel", new String[]{"#forge:plates/stainless_steel*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_titanium", new String[]{"#forge:plates/titanium*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_tungsten", new String[]{"#forge:plates/tungsten*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/punch_ring_vanadium_steel", new String[]{"#forge:plates/vanadium_steel*1,pioneers:press_die*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/ring_roll_aluminium", new String[]{"pioneers:aluminium_billet*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/ring_roll_duralumin", new String[]{"pioneers:duralumin_billet*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/ring_roll_galvanized_steel", new String[]{"pioneers:galvanized_steel_billet*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/ring_roll_stainless_steel", new String[]{"pioneers:stainless_steel_billet*1", "", ""});
+        m.put("power_hammer|industry/power_hammer/ring_roll_titanium", new String[]{"pioneers:titanium_billet*1", "", ""});
         m.put("press|automation/mason/bronze_bench_casting_channel", new String[]{"pioneers:fire_brick*3,pioneers:fire_clay*1", "", ""});
         m.put("press|automation/mason/bronze_bench_chimney", new String[]{"minecraft:brick*4,#forge:plates/iron*1", "", ""});
         m.put("press|automation/mason/bronze_bench_fire_bricks", new String[]{"pioneers:fire_brick*4,pioneers:fire_clay*1", "", ""});
@@ -911,6 +949,9 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/mason/vanilla_mossy_stone_brick_stairs", new String[]{"minecraft:mossy_stone_bricks*6", "", ""});
         m.put("press|automation/mason/vanilla_mossy_stone_brick_wall", new String[]{"minecraft:mossy_stone_bricks*6", "", ""});
         m.put("press|automation/mason/vanilla_mossy_stone_bricks_from_moss_block", new String[]{"minecraft:stone_bricks*1,minecraft:moss_block*1", "", ""});
+    }
+
+    private static void part6(Map<String, String[]> m) {
         m.put("press|automation/mason/vanilla_mossy_stone_bricks_from_vine", new String[]{"minecraft:stone_bricks*1,minecraft:vine*1", "", ""});
         m.put("press|automation/mason/vanilla_mud_brick_slab", new String[]{"minecraft:mud_bricks*3", "", ""});
         m.put("press|automation/mason/vanilla_mud_brick_stairs", new String[]{"minecraft:mud_bricks*6", "", ""});
@@ -948,9 +989,6 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/mason/vanilla_purpur_pillar", new String[]{"minecraft:purpur_slab*2", "", ""});
         m.put("press|automation/mason/vanilla_purpur_slab", new String[]{"minecraft:purpur_block*3", "", ""});
         m.put("press|automation/mason/vanilla_purpur_stairs", new String[]{"minecraft:purpur_block*6", "", ""});
-    }
-
-    private static void part6(Map<String, String[]> m) {
         m.put("press|automation/mason/vanilla_red_nether_brick_slab", new String[]{"minecraft:red_nether_bricks*3", "", ""});
         m.put("press|automation/mason/vanilla_red_nether_brick_stairs", new String[]{"minecraft:red_nether_bricks*6", "", ""});
         m.put("press|automation/mason/vanilla_red_nether_brick_wall", new String[]{"minecraft:red_nether_bricks*6", "", ""});
@@ -1064,6 +1102,9 @@ public final class GeneratedBatchRefund {
         m.put("press|automation/potter/vanilla_magenta_stained_glass_pane_from_glass_pane", new String[]{"minecraft:glass_pane*8,minecraft:magenta_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_orange_stained_glass", new String[]{"minecraft:glass*8,minecraft:orange_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_orange_stained_glass_pane", new String[]{"minecraft:orange_stained_glass*6", "", ""});
+    }
+
+    private static void part7(Map<String, String[]> m) {
         m.put("press|automation/potter/vanilla_orange_stained_glass_pane_from_glass_pane", new String[]{"minecraft:glass_pane*8,minecraft:orange_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_pink_stained_glass", new String[]{"minecraft:glass*8,minecraft:pink_dye*1", "", ""});
         m.put("press|automation/potter/vanilla_pink_stained_glass_pane", new String[]{"minecraft:pink_stained_glass*6", "", ""});
@@ -1101,9 +1142,6 @@ public final class GeneratedBatchRefund {
         m.put("press|industry/press/press_rod_borealite", new String[]{"#forge:ingots/borealite*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_chrome", new String[]{"#forge:ingots/chrome*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_cobalt", new String[]{"#forge:ingots/cobalt*1,pioneers:rod_die*1", "", ""});
-    }
-
-    private static void part7(Map<String, String[]> m) {
         m.put("press|industry/press/press_rod_conamarite", new String[]{"#forge:ingots/conamarite*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_constantan", new String[]{"#forge:ingots/constantan*1,pioneers:rod_die*1", "", ""});
         m.put("press|industry/press/press_rod_deimite", new String[]{"#forge:ingots/deimite*1,pioneers:rod_die*1", "", ""});
@@ -1205,6 +1243,7 @@ public final class GeneratedBatchRefund {
         m.put("sawmill|bronze/steam/saw/planks_oak", new String[]{"#minecraft:oak_logs*1", "", ""});
         m.put("sawmill|bronze/steam/saw/planks_spruce", new String[]{"#minecraft:spruce_logs*1", "", ""});
         m.put("sawmill|bronze/steam/saw/planks_warped", new String[]{"#minecraft:warped_stems*1", "", ""});
+        m.put("sawmill|industry/machining_center/rc_stick_from_plank", new String[]{"#pioneers:planks*1", "", ""});
         m.put("sawmill|industry/sawmill/steam_planks_acacia", new String[]{"#minecraft:acacia_logs*1", "", ""});
         m.put("sawmill|industry/sawmill/steam_planks_bamboo", new String[]{"minecraft:bamboo_block*1", "", ""});
         m.put("sawmill|industry/sawmill/steam_planks_birch", new String[]{"#minecraft:birch_logs*1", "", ""});
@@ -1216,6 +1255,9 @@ public final class GeneratedBatchRefund {
         m.put("sawmill|industry/sawmill/steam_planks_oak", new String[]{"#minecraft:oak_logs*1", "", ""});
         m.put("sawmill|industry/sawmill/steam_planks_spruce", new String[]{"#minecraft:spruce_logs*1", "", ""});
         m.put("sawmill|industry/sawmill/steam_planks_warped", new String[]{"#minecraft:warped_stems*1", "", ""});
+    }
+
+    private static void part8(Map<String, String[]> m) {
         m.put("sawmill|industry/sawmill/steam_sticks", new String[]{"#minecraft:planks*1", "", ""});
         m.put("sawmill|industry/wafer_saw/rc_silicon_wafers", new String[]{"pioneers:silicon_boule*1", "pioneers:ultrapure_water*500", ""});
         m.put("sawmill|industry/wafer_saw/sapphire_windows", new String[]{"pioneers:sapphire*1", "minecraft:water*100", ""});

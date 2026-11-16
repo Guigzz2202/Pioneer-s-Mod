@@ -1,9 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "electric_crucible",
+ "machine": "assembler",
  "tier": 1,
  "time": 180,
- "family": "vacuum_furnace",
  "items": [
   {
    "ingredient": {
