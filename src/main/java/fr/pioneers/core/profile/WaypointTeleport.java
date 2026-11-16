@@ -30,7 +30,8 @@ import org.jetbrains.annotations.Nullable;
  *     operateur (le serveur refuse ; l'interface grise le bouton avec l'explication) ;</li>
  *     <li>OU : une place sure ({@link #find}) dans la colonne du waypoint, sinon dans les colonnes voisines (jusqu'a {@link #SPIRAL} blocs),
  *     le chunk etant CHARGE (genere au besoin) avant toute lecture de hauteur : la hauteur du waypoint si elle est sure et pas sous le sol ;
- *     sinon la surface (carte des hauteurs MOTION_BLOCKING) ; dans une dimension a plafond (Nether), la place sure la plus proche de la
+ *     waypoint DANS un bloc : la premiere place sure juste au-dessus (1.0.6, reponse de Guillaume du 16/11/2026) ; sinon la surface (carte
+ *     des hauteurs MOTION_BLOCKING) ; dans une dimension a plafond (Nether), la place sure la plus proche de la
  *     hauteur du waypoint, toujours sous le plafond de bedrock ; jamais dans un liquide, la lave, le feu ; sur l'eau en dernier recours (on y
  *     flotte) ; aucune place : refus (« aucune place sure »), on ne part pas.</li>
  * </ul>
@@ -128,14 +129,24 @@ public final class WaypointTeleport {
     }
 
     /**
-     * Hauteur des pieds dans la colonne, ou null : la hauteur du waypoint si elle est sure (et, sans plafond, pas sous le sol) ; sinon la
-     * surface si elle est sure ; dans une dimension a plafond, la place sure la plus proche du waypoint, sous le plafond.
+     * Hauteur des pieds dans la colonne, ou null : la hauteur du waypoint si elle est sure (et, sans plafond, pas sous le sol) ; un waypoint
+     * DANS un bloc : la premiere place sure au-dessus de lui (1.0.6) ; sinon la surface si elle est sure ; dans une dimension a plafond, la place
+     * sure la plus proche du waypoint, sous le plafond.
      */
     @Nullable
     public static Integer find(Column c, int wanted) {
         if (!c.hasCeiling()) {
             if (wanted >= c.ground() && safe(c, wanted)) {
                 return wanted;
+            }
+            //1.0.6 (reponse de Guillaume du 16/11/2026) : waypoint pose dans un bloc : on arrive juste au-dessus, pas a la surface de la colonne.
+            //Une hauteur au ras du fond reste « inconnue » (waypoint pose sur la carte d'un chunk que le client n'avait pas : bug du lot 29) : surface.
+            if (wanted > c.minY() + 1 && wanted < c.ceiling() && !c.passable(wanted)) {
+                for (int y = wanted + 1; y + 1 < c.ceiling(); y++) {
+                    if (safe(c, y)) {
+                        return y;
+                    }
+                }
             }
             int s = c.surface();
             return safe(c, s) ? s : null;
