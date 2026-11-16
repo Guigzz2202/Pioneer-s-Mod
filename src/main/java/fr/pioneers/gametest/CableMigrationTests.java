@@ -106,7 +106,9 @@ public final class CableMigrationTests {
         //1.0.6 : boite elargie de 3 blocs : un objet jete part avec une petite vitesse au hasard et sortait de la boite serree (diamants trouves
         //un bloc plus loin, run local du 16/11)
         AABB around = new AABB(h.absolutePos(new BlockPos(2, 1, 3)), h.absolutePos(new BlockPos(5, 4, 6))).inflate(3);
-        int dropped = level.getEntitiesOfClass(ItemEntity.class, around, e -> e.getItem().is(Items.DIAMOND)).stream()
+        //1.0.6 : un diamant vanilla jete au sol devient pioneers:diamond (vanilla_replacements.json, VanillaEvents.onJoin)
+        net.minecraft.world.item.Item diamond = fr.pioneers.core.vanilla.VanillaReplacements.convert(new net.minecraft.world.item.ItemStack(Items.DIAMOND)).getItem();
+        int dropped = level.getEntitiesOfClass(ItemEntity.class, around, e -> e.getItem().is(diamond) || e.getItem().is(Items.DIAMOND)).stream()
               .mapToInt(e -> e.getItem().getCount()).sum();
         Gt.equal(5, dropped, "diamants en transit deposes au sol (objets autour : " + level.getEntitiesOfClass(ItemEntity.class, around.inflate(6)).stream()
               .map(e -> e.getItem() + " en " + e.blockPosition()).toList() + ")");

@@ -229,7 +229,8 @@ public final class RuinTests {
             }
         }
         List<RuinPlan.Annex> placed = AnnexFeature.placeAnnexesForTest(s.level, plan, 2);
-        Gt.check(!placed.isEmpty(), "aucune annexe posee sur un terrain plat");
+        Gt.check(!placed.isEmpty(), "aucune annexe posee sur un terrain plat (site " + site.chunkX() + ", " + site.chunkZ() + " ; annexes "
+              + planned.stream().map(a -> a.x() + "," + a.z() + " sol " + tops.get(a)).toList() + ", fond du monde " + s.level.getMinBuildHeight() + ")");
         for (RuinPlan.Annex a : placed) {
             Gt.check(a.x() < plan.boxMinX || a.x() > plan.boxMaxX || a.z() < plan.boxMinZ || a.z() > plan.boxMaxZ, "annexe sur l'emprise de la ruine");
             int top = tops.get(a), chests = 0, changed = 0;
