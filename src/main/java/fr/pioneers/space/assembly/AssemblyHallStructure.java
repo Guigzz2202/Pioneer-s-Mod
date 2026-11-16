@@ -169,9 +169,9 @@ public final class AssemblyHallStructure {
             if (next.hasProperty(IndustryStyle.STYLE) && next.getValue(IndustryStyle.STYLE) != style) {
                 next = next.setValue(IndustryStyle.STYLE, style);
             }
-            if (next.getBlock() instanceof IndustrialGlassBlock glass) {
-                //0.20.28 : la vitre garde la couleur de son propre tier
-                next = Connections.connect(next.setValue(IndustryStyle.TIER, glass.tier + 1), level, p, Connections.INDUSTRIAL_GLASS);
+            if (next.getBlock() instanceof IndustrialGlassBlock) {
+                //0.20.28 : la vitre garde la couleur de son propre tier (1.0.6 : fixee par son bloc, plus dans l'etat)
+                next = Connections.connect(next, level, p, Connections.INDUSTRIAL_GLASS);
             } else if (next.hasProperty(IndustryStyle.TIER) && next.getValue(IndustryStyle.TIER) != t) {
                 next = next.setValue(IndustryStyle.TIER, t);
             }

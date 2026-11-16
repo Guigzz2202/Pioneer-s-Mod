@@ -17,8 +17,11 @@ import org.jetbrains.annotations.NotNull;
  * Verre industriel : paroi transparente d'un multibloc (on y voit les modules). Prend le metier de la machine a la formation ; les vitres
  * voisines forment une seule baie (famille {@code pioneers:connects/industrial_glass}).
  * <p>
- * 0.20.28 : une vitre par tier ({@link #tier} 0..3, fabriquee avec une carcasse du meme tier) : son cadre en porte la couleur (propriete
- * {@link IndustryStyle#TIER} = tier + 1, jamais repeinte) et, comme une carcasse, la plus faible donne son tier au multibloc.
+ * 0.20.28 : une vitre par tier ({@link #tier} 0..3, fabriquee avec une carcasse du meme tier) : son cadre en porte la couleur (modeles
+ * {@code glass_t<tier + 1>}, jamais repeints) et, comme une carcasse, la plus faible donne son tier au multibloc.
+ * <p>
+ * 1.0.6 (memoire du client) : plus de proprietes {@link IndustryStyle#TIER} (constante pour un bloc) ni {@link IndustryStyle#STYLE} (aucun
+ * modele de vitre ne la lisait) : 2 560 etats par vitre -> 64 (les six faces connectees). Le tier de la vitre est {@link #tier}.
  */
 public class IndustrialGlassBlock extends GlassBlock implements Connections.Connected {
 
@@ -27,13 +30,11 @@ public class IndustrialGlassBlock extends GlassBlock implements Connections.Conn
     public IndustrialGlassBlock(int tier, Properties properties) {
         super(properties);
         this.tier = tier;
-        registerDefaultState(Connections.unconnected(stateDefinition.any().setValue(IndustryStyle.STYLE, IndustryStyle.NEUTRAL)
-              .setValue(IndustryStyle.TIER, tier + 1)));
+        registerDefaultState(Connections.unconnected(stateDefinition.any()));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(IndustryStyle.STYLE, IndustryStyle.TIER);
         Connections.addProperties(builder);
     }
 

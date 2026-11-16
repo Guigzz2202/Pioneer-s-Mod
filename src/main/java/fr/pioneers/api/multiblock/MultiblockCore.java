@@ -405,9 +405,9 @@ public final class MultiblockCore {
         //Textures connectees : recalculees ici aussi (mondes d'avant la 0.16.4 : six cotes non connectes au chargement)
         if (next.getBlock() instanceof CasingBlock) {
             next = Connections.connect(next, level, p, Connections.INDUSTRIAL);
-        } else if (next.getBlock() instanceof IndustrialGlassBlock glass) {
-            //0.20.28 : la vitre garde la couleur de son propre tier
-            next = Connections.connect(next.setValue(IndustryStyle.TIER, glass.tier + 1), level, p, Connections.INDUSTRIAL_GLASS);
+        } else if (next.getBlock() instanceof IndustrialGlassBlock) {
+            //0.20.28 : la vitre garde la couleur de son propre tier (1.0.6 : fixee par son bloc, plus dans l'etat)
+            next = Connections.connect(next, level, p, Connections.INDUSTRIAL_GLASS);
         }
         if (next != state) {
             level.setBlock(p, next, Block.UPDATE_CLIENTS);
