@@ -64,7 +64,7 @@ public final class PatchP104Lot26Tests {
             }
             h.getLevel().setBlock(rotors.get(3), Blocks.AIR.defaultBlockState(), 3);
             tile.requestCheck();
-            Gt.later(h, 3, () -> {
+            h.runAfterDelay(3, () -> {
                 Gt.check(!tile.formed(), "turbine formee sans sa colonne de rotors");
                 Gt.equal(Structure.Error.MISSING_BLOCK, StructureMatcher.match(h.getLevel(), h.absolutePos(c), front, IndustryMachine.STEAM_TURBINE).error(),
                       "turbine sans rotor : bloc attendu");
@@ -98,19 +98,19 @@ public final class PatchP104Lot26Tests {
             h.setBlock(sheet, port);
             tile.requestCheck();
             BlockPos atSheet = sheet, atFrame = frame;
-            Gt.later(h, 3, () -> {
+            h.runAfterDelay(3, () -> {
                 Gt.check(tile.formed(), "broyeur : un port a la place d'une tole doit etre accepte (lot 30)");
                 Gt.check(h.getBlockState(atSheet).getValue(Connections.ON_SHEET), "port sur une tole : peau de tole non peinte");
                 h.setBlock(atSheet, wasSheet);
                 h.setBlock(atFrame, port);
                 tile.requestCheck();
-                Gt.later(h, 3, () -> {
+                h.runAfterDelay(3, () -> {
                     Gt.check(!tile.formed(), "broyeur forme avec un port a la place d'une charpente");
                     Gt.equal(Structure.Error.PORT_NOT_HERE, StructureMatcher.match(h.getLevel(), h.absolutePos(c), tile.getBlockState().getValue(ControllerBlock.FACING),
                           IndustryMachine.CRUSHER).error(), "port sur une charpente : « port mal place »");
                     h.setBlock(atFrame, wasFrame);
                     tile.requestCheck();
-                    Gt.later(h, 3, () -> {
+                    h.runAfterDelay(3, () -> {
                         Gt.check(tile.formed(), "broyeur : la charpente remise, la structure ne se reforme pas");
                         s.done();
                     });
@@ -181,7 +181,7 @@ public final class PatchP104Lot26Tests {
         h.setBlock(p, PiForge.HAND_BELLOWS.getBlock().defaultBlockState().setValue(HandBellowsBlock.FACING, Direction.NORTH));
         h.runAfterDelay(1, () -> {
             h.setBlock(p.east(), Blocks.CAMPFIRE.defaultBlockState().setValue(CampfireBlock.LIT, true));
-            Gt.later(h, 2, () -> {
+            h.runAfterDelay(2, () -> {
                 Gt.equal(Direction.EAST, h.getBlockState(p).getValue(HandBellowsBlock.FACING), "soufflet : tourne vers le feu de camp pose apres lui");
                 s.done();
             });

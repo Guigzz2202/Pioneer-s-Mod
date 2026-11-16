@@ -298,7 +298,7 @@ public final class RuinTests {
             GuardianEntity g = s.h.spawn(SentinelTypes.GUARDIAN.get(), new BlockPos(1, 2, 4));
             g.setup(1, 0, post, 0F);
             g.moveTo(here.getX() + 0.5, here.getY(), here.getZ() + 0.5);
-            Gt.later(h, 3, () -> {
+            h.runAfterDelay(3, () -> {
                 double dx = g.getX() - (post.getX() + 0.5), dz = g.getZ() - (post.getZ() + 0.5);
                 double d = Math.sqrt(dx * dx + dz * dz);
                 Gt.check(d <= leash + 0.05, "Sentinelle a " + d + " blocs de son poste (laisse " + leash + ")");
@@ -356,7 +356,7 @@ public final class RuinTests {
             Gt.check(g.asleep(), "endormie avant le coup");
             g.hurt(s.level.damageSources().playerAttack(p), 1.0F);
             Gt.check(!RuinApi.standby(s.level, site.id), "la Veille tient malgre le coup");
-            Gt.later(h, 15, () -> {
+            h.runAfterDelay(15, () -> {
                 Gt.check(!g.asleep(), "la Sentinelle frappee dort encore");
                 s.done();
             });

@@ -319,7 +319,7 @@ public final class EconomyVillageTests {
             int rep = ReputationApi.reputation(p, village.people);
             Gt.check(a0 < 0, "le coup n'a rien change");
             s.level.setDayTime(s.level.getDayTime() + 10L * 24_000L);
-            Gt.later(h, 250, () -> {
+            h.runAfterDelay(250, () -> {
                 Gt.equal(a0, Villagers.affinity(s.level, vs.get(0), me), "l'affinite est remontee avec le temps");
                 Gt.equal(avg, village.average(me), "la reputation du village est remontee avec le temps");
                 Gt.equal(rep, ReputationApi.reputation(p, village.people), "la reputation du peuple est remontee avec le temps");

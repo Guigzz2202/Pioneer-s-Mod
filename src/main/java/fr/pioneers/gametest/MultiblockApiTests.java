@@ -114,14 +114,14 @@ public final class MultiblockApiTests {
             BlockState was = h.getBlockState(broken);
             h.getLevel().destroyBlock(h.absolutePos(broken), false);
             tile.requestCheck();
-            Gt.later(h, 3, () -> {
+            h.runAfterDelay(3, () -> {
                 Gt.check(!tile.formed(), "toujours forme sans une carcasse");
                 if (!m.freeform) {
                     Gt.equal(h.absolutePos(broken), tile.errorAt(), "erreur commune : la case de la carcasse cassee");
                 }
                 h.setBlock(broken, was);
                 tile.requestCheck();
-                Gt.later(h, 3, () -> {
+                h.runAfterDelay(3, () -> {
                     Gt.check(tile.formed(), "ne se reforme pas apres la carcasse reposee");
                     //Reprise apres chargement : sauvegarde relue dans un controleur repose, revalidee au premier tick
                     CompoundTag saved = tile.saveWithoutMetadata();
@@ -130,7 +130,7 @@ public final class MultiblockApiTests {
                     h.setBlock(c, state);
                     ControllerTile again = controller(h, c);
                     again.load(saved);
-                    Gt.later(h, 3, () -> {
+                    h.runAfterDelay(3, () -> {
                         Gt.check(again.formed(), "ne se reforme pas apres relecture de sa sauvegarde");
                         Gt.equal(1_234, again.coolantTank().getFluidAmount(), "caloporteur apres relecture");
                         Gt.equal(Structure.Error.NONE.ordinal(), (int) again.guiValue(5), "aucune erreur apres relecture");

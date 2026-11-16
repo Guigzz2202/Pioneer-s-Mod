@@ -120,18 +120,9 @@ public final class Gt {
             current.cleanup();
         }
         current = new Scope(h);
+        //1.0.6 : table des echeances sure (un rappel peut planifier a son tour sans faire planter le serveur de tests)
+        GtTickMap.install(h);
         return current;
-    }
-
-    // ------------------------------------------------------------------ planification
-    /**
-     * 1.0.6 : planifie {@code r} dans {@code delay} ticks depuis un rappel DEJA planifie ({@code runAfterDelay} / {@code runAtTickTime}).
-     * {@code GameTestInfo.tickInternal} parcourt sa table des echeances en retirant les rappels faits : y ajouter une echeance pendant ce
-     * parcours la corrompt (plantage du serveur de tests : NullPointerException de fastutil dans {@code Object2LongOpenHashMap}). L'inscription
-     * passe donc par la file du serveur, executee juste apres le tick ; le delai compte depuis le meme tick du test.
-     */
-    public static void later(GameTestHelper h, long delay, Runnable r) {
-        h.getLevel().getServer().tell(new net.minecraft.server.TickTask(0, () -> h.runAfterDelay(delay, r)));
     }
 
     // ------------------------------------------------------------------ verifications

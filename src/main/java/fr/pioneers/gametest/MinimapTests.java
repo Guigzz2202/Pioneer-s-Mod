@@ -78,7 +78,7 @@ public final class MinimapTests {
             Gt.check(ClanMapNet.watchesMates(a.getUUID()), "la fiche Territoire a coupe les membres de la minimap");
             CompoundTag close = new CompoundTag();
             close.putString("op", "close");
-            Gt.later(h, 6, () -> {
+            h.runAfterDelay(6, () -> {
                 RpNet.dispatch(a, RpActions.CLAN_MAP_REQUEST, close);
                 Gt.check(!ClanMapNet.watchesMates(a.getUUID()), "abonnement ferme mais membres encore envoyes");
                 s.done();

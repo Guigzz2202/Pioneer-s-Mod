@@ -161,7 +161,7 @@ public final class PatchP105Lot13Tests {
             BlastFurnaceTile tile = furnace(h, c, true, false);
             Pig pig = pigInside(s, tile);
             float before = pig.getHealth();
-            Gt.later(h, 3 * FurnaceHeat.PERIOD + 5, () -> {
+            h.runAfterDelay(3 * FurnaceHeat.PERIOD + 5, () -> {
                 Gt.check(pig.getHealth() < before || !pig.isAlive(), "le cochon dans la cuve d'un four allume n'est pas blesse");
                 Gt.check(pig.getRemainingFireTicks() > 0 || !pig.isAlive(), "le cochon ne brule pas");
                 s.done();
@@ -178,7 +178,7 @@ public final class PatchP105Lot13Tests {
             BlastFurnaceTile tile = furnace(h, c, false, false);
             Pig pig = pigInside(s, tile);
             float before = pig.getHealth();
-            Gt.later(h, 4 * FurnaceHeat.PERIOD, () -> {
+            h.runAfterDelay(4 * FurnaceHeat.PERIOD, () -> {
                 Gt.check(pig.isAlive() && pig.getHealth() >= before, "un four eteint ne blesse pas");
                 Gt.check(pig.getRemainingFireTicks() <= 0, "un four eteint n'enflamme pas");
                 s.done();
@@ -194,8 +194,8 @@ public final class PatchP105Lot13Tests {
         BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, Direction.SOUTH, anchor);
         h.runAfterDelay(60, () -> {
             BlastFurnaceTile tile = furnace(h, c, true, true);
-            Gt.later(h, BlastFurnaceTile.STEEL_TICKS - 20, () -> Gt.check(tile.steelSlot().isEmpty(), "de l'acier avant 800 ticks de travail"));
-            Gt.later(h, BlastFurnaceTile.STEEL_TICKS + 30, () -> {
+            h.runAfterDelay(BlastFurnaceTile.STEEL_TICKS - 20, () -> Gt.check(tile.steelSlot().isEmpty(), "de l'acier avant 800 ticks de travail"));
+            h.runAfterDelay(BlastFurnaceTile.STEEL_TICKS + 30, () -> {
                 Gt.check(tile.steelSlot().getCount() >= 1, "pas d'acier apres 800 ticks de travail");
                 s.done();
             });

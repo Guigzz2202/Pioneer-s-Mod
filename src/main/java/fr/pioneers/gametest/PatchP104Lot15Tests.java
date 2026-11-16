@@ -175,7 +175,7 @@ public final class PatchP104Lot15Tests {
                 int casings = before;
                 oldSave(t0);
                 t0.requestCheck();
-                Gt.later(h, 5, () -> {
+                h.runAfterDelay(5, () -> {
                     int after = 0;
                     for (int cell : ShapeTemplate.of(m).get(0).cells()) {
                         if (h.getBlockState(at(h, c0, cell)).getBlock() == basic0) {
@@ -203,7 +203,7 @@ public final class PatchP104Lot15Tests {
                 }
             }
             tile.requestCheck();
-            Gt.later(h, 5, () -> {
+            h.runAfterDelay(5, () -> {
                 Gt.check(tile.formed(), "turbine MKII non formee");
                 Gt.equal(1, tile.tier(), "turbine en carcasses MKII");
                 //Monde d'avant le lot : la cheminee du sommet s'est chargee en carcasse MKI, et le controleur n'a pas le drapeau
@@ -211,14 +211,14 @@ public final class PatchP104Lot15Tests {
                 h.setBlock(top, basic);
                 oldSave(tile);
                 tile.requestCheck();
-                Gt.later(h, 5, () -> {
+                h.runAfterDelay(5, () -> {
                     Gt.equal(advanced, h.getBlockState(top).getBlock(), "ancienne cheminee remise en carcasse MKII");
                     Gt.check(tile.formed(), "turbine toujours formee apres migration");
                     Gt.equal(1, tile.tier(), "turbine toujours MKII apres migration");
                     //Une seule fois : une carcasse MKI posee ensuite fait bien baisser le tier
                     h.setBlock(top, basic);
                     tile.requestCheck();
-                    Gt.later(h, 5, () -> {
+                    h.runAfterDelay(5, () -> {
                         Gt.equal(basic, h.getBlockState(top).getBlock(), "migration une seule fois");
                         Gt.equal(0, tile.tier(), "carcasse MKI posee apres la migration : tier MKI");
                         s.done();
@@ -254,7 +254,7 @@ public final class PatchP104Lot15Tests {
                 h.setBlock(p, basic0);
                 oldSave(t0);
                 t0.requestCheck();
-                Gt.later(h, 5, () -> {
+                h.runAfterDelay(5, () -> {
                     Gt.equal(basic0, h.getBlockState(p).getBlock(), "structure NBT : la carcasse posee n'est pas changee");
                     Gt.check(!t0.formed(), "carcasse dans une case de tole : refusee");
                     s.done();
@@ -280,7 +280,7 @@ public final class PatchP104Lot15Tests {
             h.setBlock(p, basic);
             oldSave(tile);
             tile.requestCheck();
-            Gt.later(h, 5, () -> {
+            h.runAfterDelay(5, () -> {
                 Gt.check(h.getBlockState(p).getBlock() instanceof SheetMetalBlock, "carcasse d'une ancienne piece de paroi remise en tole");
                 Gt.check(tile.formed(), "cuve toujours formee apres migration");
                 s.done();

@@ -106,7 +106,7 @@ public final class PatchP104Lot9Tests {
             tile.input(1).setStack(new ItemStack(PiVanillaMaterials.CHARCOAL.get(), 8));
             tile.input(2).setStack(new ItemStack(PiBronze.QUICKLIME.get(), 4));
             h.onEachTick(() -> tile.testTemperature(1650));
-            Gt.later(h, 20, () -> {
+            h.runAfterDelay(20, () -> {
                 int[] res = tile.reserves();
                 Gt.check(res[0] == 32 && res[1] == 8 && res[2] == 4, "charge absorbee dans les reserves : " + java.util.Arrays.toString(res));
                 Gt.check(tile.input(0).isEmpty() && tile.input(1).isEmpty() && tile.input(2).isEmpty(), "les trois cases se vident dans la cuve");

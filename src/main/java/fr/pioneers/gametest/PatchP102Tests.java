@@ -99,7 +99,7 @@ public final class PatchP102Tests {
             //Avant la 1.0.2-beta : 2 points de vie perdus a chaque multiple de 30 s au-dela de 240 s de jeune
             d.starving = 299;
             cow.setHealth(cow.getMaxHealth());
-            Gt.later(h, 70, () -> {
+            h.runAfterDelay(70, () -> {
                 Gt.equal(cow.getMaxHealth(), cow.getHealth(), "vache affamee : aucun point de vie perdu");
                 Gt.check(cow.isAlive(), "vache affamee : vivante");
                 Gt.check(d.starving > 299, "vache affamee : elle deperit toujours (fiche « Deperit »)");
