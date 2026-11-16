@@ -270,10 +270,7 @@ class IndustryCategory extends PiCategory<IndustrialRecipe> {
     @Override
     protected List<JeiDraw.Chip> chips(IndustrialRecipe recipe) {
         List<JeiDraw.Chip> out = new ArrayList<>();
-        JeiDraw.Chip family = familyChip(recipe);
-        if (family != null) {
-            out.add(family);
-        }
+        //1.0.6 (demande de Guillaume du 16/11/2026) : plus de pastille de famille de recettes (familyChip n'est plus montree)
         if (recipe.hasTierYield() && !cleanroom) {
             //1.0.3-beta (lot 3, regle 9) : multiplicateur du tier en pastille (fonte du minerai au creuset electrique, lixiviation acide)
             List<Component> tip = new ArrayList<>(List.of(Component.translatable("jei.pioneers.industry.tier_yield.tip")));
@@ -324,6 +321,15 @@ class IndustryCategory extends PiCategory<IndustrialRecipe> {
             out.add(JeiDraw.Chip.of(JeiDraw.Pic.CLIMATE, Component.translatable("jei.pioneers.chip.climate", (int) ControllerTile.FARM_MIN,
                   (int) ControllerTile.FARM_MAX), JeiDraw.GOOD, Component.translatable("jei.pioneers.industry.climate", (int) ControllerTile.FARM_MIN,
                   (int) ControllerTile.FARM_MAX)));
+        }
+        if (!cleanroom && !recipe.machine().isGenerator()) {
+            //1.0.6 : tiers de machine qui font la recette (MK minimal a MKIV ; T1 si la recette est ouverte a la machine a vapeur, lot 47)
+            String family = fr.pioneers.tech.industry.recipe.IndustryRecipes.tierFamily(recipe.machine());
+            int min = TierChips.MKI + Math.max(0, recipe.tier());
+            if (fr.pioneers.api.machine.tier.GeneratedTierFamilies.OPEN_MKI.containsKey(recipe.getId().toString())) {
+                min = 1;
+            }
+            out.add(TierChips.tiers(min, TierChips.MAX, family, null, List.of(), ItemStack.EMPTY));
         }
         if (recipe.industrialOnly()) {
             out.add(JeiDraw.Chip.of(JeiDraw.Pic.WARN, Component.translatable("jei.pioneers.chip.multi_only"), JeiDraw.WARN,

@@ -22295,5 +22295,11 @@
   "gui.pioneers.api.info.farm_gesture": "Stroke",
   "gui.pioneers.api.info.farm_tank_in": "Input tank",
   "gui.pioneers.api.info.farm_tank_out": "Output tank",
-  "gui.pioneers.api.info.bag": "Bag"
+  "gui.pioneers.api.info.bag": "Bag",
+  "jei.pioneers.chip.tiers": "T%s to T%s",
+  "jei.pioneers.chip.tier_only": "T%s only",
+  "jei.pioneers.tiers.tip": "Machines that make this recipe:",
+  "jei.pioneers.tiers.line": "%s: %s",
+  "jei.pioneers.tiers.speed": "Twice as fast for each tier above the lowest.",
+  "jei.pioneers.tiers.electric": "At the lowest electric tier (%s): %s at %s/t"
 }

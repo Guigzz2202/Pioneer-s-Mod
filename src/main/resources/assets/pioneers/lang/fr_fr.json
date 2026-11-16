@@ -22295,5 +22295,11 @@
   "gui.pioneers.api.info.farm_gesture": "Geste",
   "gui.pioneers.api.info.farm_tank_in": "Cuve d’entrée",
   "gui.pioneers.api.info.farm_tank_out": "Cuve de sortie",
-  "gui.pioneers.api.info.bag": "Sac"
+  "gui.pioneers.api.info.bag": "Sac",
+  "jei.pioneers.chip.tiers": "T%s à T%s",
+  "jei.pioneers.chip.tier_only": "T%s seulement",
+  "jei.pioneers.tiers.tip": "Machines qui font cette recette :",
+  "jei.pioneers.tiers.line": "%s : %s",
+  "jei.pioneers.tiers.speed": "Deux fois plus vite par tier au-dessus du plus bas.",
+  "jei.pioneers.tiers.electric": "Au plus bas tier électrique (%s) : %s à %s/t"
 }

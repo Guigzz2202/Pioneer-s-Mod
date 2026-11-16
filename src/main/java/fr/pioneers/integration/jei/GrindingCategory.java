@@ -1,5 +1,6 @@
 package fr.pioneers.integration.jei;
 
+import fr.pioneers.api.machine.tier.GeneratedTierFamilies;
 import fr.pioneers.Pioneers;
 import fr.pioneers.tech.bronze.bench.BenchRecipe;
 import fr.pioneers.tech.bronze.machines.SteamMachine;
@@ -8,9 +9,7 @@ import fr.pioneers.tech.bronze.machines.SteamRecipe;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import fr.pioneers.tech.industry.recipe.IndustryRecipes;
-import fr.pioneers.tech.kinetics.machines.MachineType;
 import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
-import fr.pioneers.tech.kinetics.PiKinetics;
 import fr.pioneers.core.recipes.PiRecipes;
 import java.util.ArrayList;
 import java.util.EnumSet;
@@ -45,6 +44,8 @@ final class GrindingCategory extends PiCategory<GrindingCategory.Grind> {
 
     static final RecipeType<Grind> TYPE = JeiOrder.create("grinding", Grind.class);
     /** Identifiants des categories reunies ici (alias des fiches de l'API Machine). */
+    /** 1.0.6 : famille de tiers des broyeurs (T:gc/api/tier_families.py). */
+    static final String FAMILY = "broyage";
     static final List<String> MERGED = List.of("pioneers:jaw_crushing", "pioneers:steam_macerator", "pioneers:industry_crusher");
 
     /** Familles de broyeurs. */
@@ -80,13 +81,16 @@ final class GrindingCategory extends PiCategory<GrindingCategory.Grind> {
         net.minecraft.resources.ResourceLocation lowId;
         List<BenchRecipe.Counted> lowIn = List.of();
         ItemStack lowMain = ItemStack.EMPTY;
+        /** 1.0.6 : duree de base de la recette basse (ticks au tier minimal : TierRecipes) : energie et duree au broyeur MKI. */
+        int lowTime;
 
-        void low(int m, net.minecraft.resources.ResourceLocation id, List<BenchRecipe.Counted> in, ItemStack main) {
+        void low(int m, net.minecraft.resources.ResourceLocation id, List<BenchRecipe.Counted> in, ItemStack main, int time) {
             if (minTier < 0 || m < minTier) {
                 minTier = m;
                 lowId = id;
                 lowIn = in;
                 lowMain = main;
+                lowTime = time;
             }
         }
 
@@ -99,7 +103,8 @@ final class GrindingCategory extends PiCategory<GrindingCategory.Grind> {
     private static final int IN_X = 1, ARROW_X = 24, OUT_X = 52, STEP = 19, COLS = 4, WIDTH = 176;
 
     GrindingCategory(IGuiHelper helper) {
-        super(helper, TYPE, "jei.pioneers.grinding", PiKinetics.machine(MachineType.JAW_CRUSHER), WIDTH, 18);
+        //1.0.6 (demande de Guillaume du 16/11/2026) : onglet a l'image du broyeur MKI (plus le pictogramme, ni le concasseur)
+        super(helper, TYPE, "jei.pioneers.grinding", IndustryCategory.icon(IndustryMachine.CRUSHER), WIDTH, 18);
         family(JeiDraw.Family.MECHANICAL);
         footerLines(2);
     }
@@ -120,7 +125,8 @@ final class GrindingCategory extends PiCategory<GrindingCategory.Grind> {
             if (g.steamTicks <= 0) {
                 g.steamTicks = Math.max(1, Math.round(r.turns() * 1200F / 30F) >> 1);
             }
-            g.low(0, r.getId(), List.of(new BenchRecipe.Counted(r.input(), r.count())), r.results().isEmpty() ? ItemStack.EMPTY : r.results().get(0).stack());
+            g.low(0, r.getId(), List.of(new BenchRecipe.Counted(r.input(), r.count())), r.results().isEmpty() ? ItemStack.EMPTY : r.results().get(0).stack(),
+                  Math.max(1, Math.round(r.turns() * 1200F / GeneratedTierFamilies.NOMINAL_RPM.getOrDefault("jaw_crushing", 30))));
         }
         for (SteamRecipe r : SteamProcessTile.ownRecipes(level, SteamMachine.MACERATOR)) {
             if (r.inputs().size() != 1) {
@@ -135,7 +141,7 @@ final class GrindingCategory extends PiCategory<GrindingCategory.Grind> {
             g.sources.add(Source.STEAM);
             g.sources.add(Source.KIT);           // 1.0.5-beta (lot 38) : le broyeur MKI fait les recettes de sa famille
             g.steamTicks = r.time();
-            g.low(r.minTier(), r.getId(), r.inputs(), r.result());
+            g.low(r.minTier(), r.getId(), r.inputs(), r.result(), Math.max(1, r.time()));
         }
         //1.0.3-beta (lot 5) : recettes que le broyeur compact sait faire : celles du kit (pioneers:crushing, quel que soit leur dossier) et les
         //recettes industrielles a sa mesure (ex-dechiqueteuse : une entree, une ou deux sorties)
@@ -237,13 +243,15 @@ final class GrindingCategory extends PiCategory<GrindingCategory.Grind> {
     @Override
     protected List<JeiDraw.Chip> chips(Grind recipe) {
         List<JeiDraw.Chip> out = new ArrayList<>();
-        //1.0.4-beta (lot 11) : famille de la recette recue (« Broyage fin », ex-broyeur a boulets)
-        JeiDraw.Chip family = recipe.received == null ? null : IndustryCategory.familyChip(recipe.received);
-        if (family != null) {
-            out.add(family);
-        }
+        //1.0.6 (demande de Guillaume du 16/11/2026) : plus de pastille de famille ; energie et duree au broyeur MKI, tiers permis
         if (recipe.lowId != null) {
-            out.add(TierChips.minTier(recipe.minTier, recipe.lowId, recipe.lowIn, recipe.lowMain));
+            JeiDraw.Chip energy = TierChips.electric(FAMILY, recipe.minTier, recipe.lowTime);
+            if (energy != null) {
+                out.add(energy);
+            }
+            out.add(TierChips.minTier(recipe.minTier, recipe.lowId, recipe.lowIn, recipe.lowMain, FAMILY));
+        } else {
+            out.add(TierChips.tiers(TierChips.MKI + Math.max(0, recipe.tier), TierChips.MAX, FAMILY, null, List.of(), ItemStack.EMPTY));
         }
         for (Source s : recipe.sources) {
             Component tip = switch (s) {

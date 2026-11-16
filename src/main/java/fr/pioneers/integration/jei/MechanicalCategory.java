@@ -80,10 +80,17 @@ class MechanicalCategory extends PiCategory<MechanicalRecipe> {
                     String.format(Locale.ROOT, "%.0f", recipe.turns())), JeiDraw.LIGHT, full),
               JeiDraw.Chip.of(JeiDraw.Pic.INFO, Component.translatable("jei.pioneers.chip.rpm", Math.round(machine.nominalSpeed), Math.round(machine.torque)),
                     JeiDraw.DIM, full)));
-        //1.0.5-beta (lot 38) : recette de tier 0 de sa famille (les machines a vapeur et MKI de la famille la font aussi)
-        if (fr.pioneers.api.machine.tier.GeneratedTierFamilies.FAMILY_OF.containsKey(machine.id())) {
+        //1.0.5-beta (lot 38) : recette de tier 0 de sa famille (les machines a vapeur et MKI de la famille la font aussi) ; 1.0.6 (demande de
+        //Guillaume du 16/11/2026) : energie et duree a la machine MKI de la famille, tiers permis
+        String family = fr.pioneers.api.machine.tier.GeneratedTierFamilies.FAMILY_OF.get(machine.id());
+        if (family != null) {
             ItemStack main = recipe.results().isEmpty() ? ItemStack.EMPTY : recipe.results().get(0).stack();
-            out.add(TierChips.minTier(0, recipe.getId(), List.of(new fr.pioneers.tech.bronze.bench.BenchRecipe.Counted(recipe.input(), recipe.count())), main));
+            JeiDraw.Chip energy = TierChips.electric(family, 0, ticks(recipe));
+            if (energy != null) {
+                out.add(0, energy);
+            }
+            out.add(TierChips.minTier(0, recipe.getId(), List.of(new fr.pioneers.tech.bronze.bench.BenchRecipe.Counted(recipe.input(), recipe.count())), main,
+                  family));
         }
         return out;
     }
