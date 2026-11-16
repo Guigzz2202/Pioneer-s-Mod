@@ -39,7 +39,10 @@ public final class SaleBinTests {
     static Item pick(String quota, boolean refused) {
         for (Item it : BuiltInRegistries.ITEM) {
             Values.Entry e = Values.entry(it);
-            if (e != null && e.value() > 0 && quota.equals(e.quota()) && Values.peddlerBuys(it) != refused && it.getMaxStackSize() == 64) {
+            //1.0.6 : un objet dont le quart de pile vaut au moins un jeton (la pierre, premiere du registre, se vend 64 pour 0 jeton :
+            //centimes tronques par SaleBinTile.midnight)
+            if (e != null && e.value() > 0 && e.value() * 16 >= 100 && quota.equals(e.quota()) && Values.peddlerBuys(it) != refused
+                && it.getMaxStackSize() == 64) {
                 return it;
             }
         }

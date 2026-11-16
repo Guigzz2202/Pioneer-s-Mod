@@ -253,7 +253,9 @@ public final class PatchP105Lot9Tests {
               .thenExecute(() -> {
                   Gt.check(sh.getTarget() == null, "des poissons laches par un joueur : jamais chasses");
                   for (Cod c : fish) {
-                      Gt.check(c.isAlive(), "les poissons du bassin sont intacts");
+                      Gt.check(c.isAlive(), "les poissons du bassin sont intacts (" + c.getType() + " retire " + c.getRemovalReason() + ", vie "
+                            + c.getHealth() + ", degat " + (c.getLastDamageSource() == null ? "aucun" : c.getLastDamageSource().getMsgId()) + ", en "
+                            + c.blockPosition() + " : " + s.level.getBlockState(c.blockPosition()) + ")");
                       c.setFromBucket(false);
                   }
                   sh.fishHunt = 0;

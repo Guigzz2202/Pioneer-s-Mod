@@ -103,7 +103,9 @@ public final class CableMigrationTests {
         }
         Gt.check(LogisticCableBlock.link(h.getBlockState(new BlockPos(2, 2, 4)), Direction.WEST) == LogisticCableBlock.Link.PLUG, "pas de fiche vers A");
         Gt.check(LogisticCableBlock.link(h.getBlockState(new BlockPos(5, 2, 4)), Direction.EAST) == LogisticCableBlock.Link.PLUG, "pas de fiche vers B");
-        AABB around = new AABB(h.absolutePos(new BlockPos(2, 1, 3)), h.absolutePos(new BlockPos(5, 4, 6)));
+        //1.0.6 : boite elargie de 3 blocs : un objet jete part avec une petite vitesse au hasard et sortait de la boite serree (diamants trouves
+        //un bloc plus loin, run local du 16/11)
+        AABB around = new AABB(h.absolutePos(new BlockPos(2, 1, 3)), h.absolutePos(new BlockPos(5, 4, 6))).inflate(3);
         int dropped = level.getEntitiesOfClass(ItemEntity.class, around, e -> e.getItem().is(Items.DIAMOND)).stream()
               .mapToInt(e -> e.getItem().getCount()).sum();
         Gt.equal(5, dropped, "diamants en transit deposes au sol (objets autour : " + level.getEntitiesOfClass(ItemEntity.class, around.inflate(6)).stream()

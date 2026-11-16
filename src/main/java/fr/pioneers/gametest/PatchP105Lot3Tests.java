@@ -156,11 +156,17 @@ public final class PatchP105Lot3Tests {
         BlockPos reg = build(h, 3, 3, 9, 9, 1);
         BlockPos lower = h.absolutePos(new BlockPos(3, 2, 6)), upper = lower.above();
         BlockState door = Blocks.OAK_DOOR.defaultBlockState().setValue(DoorBlock.FACING, Direction.EAST).setValue(DoorBlock.OPEN, true);
+        //1.0.6 : la porte se pose dans une ouverture, comme un joueur (bas puis haut, DoorBlock.setPlacedBy) : posee a la place de la vitre
+        //du bas sous une vitre restee en place, la vitre connectee se mettait a jour (1.0.4-beta lot 23, UPDATE_ALL) et la demi-porte du bas,
+        //sans moitie haute, devenait de l'air (DoorBlock.updateShape) : la serre « fuyait » par la porte
+        level.setBlock(upper, Blocks.AIR.defaultBlockState(), 3);
+        level.setBlock(lower, Blocks.AIR.defaultBlockState(), 3);
         level.setBlock(lower, door.setValue(DoorBlock.HALF, DoubleBlockHalf.LOWER), 3);
         level.setBlock(upper, door.setValue(DoorBlock.HALF, DoubleBlockHalf.UPPER), 3);
         GreenhouseRegulatorTile t = tile(s, reg);
-        Gt.check(t.checkNow(), "porte ouverte dans le mur : la serre reste formee (" + t.status() + ", case " + t.house().at() + ", attendu "
-              + t.house().expected() + ")");
+        Gt.check(t.checkNow(), "porte ouverte dans le mur : la serre reste formee (" + t.status() + ", case " + t.house().at() + " soit "
+              + (t.house().at() == null ? "?" : t.house().at().subtract(h.absolutePos(BlockPos.ZERO))) + " en relatif : "
+              + (t.house().at() == null ? "?" : level.getBlockState(t.house().at())) + ", attendu " + t.house().expected() + ")");
         level.setBlock(lower, level.getBlockState(lower).setValue(DoorBlock.OPEN, false), 3);
         level.setBlock(upper, level.getBlockState(upper).setValue(DoorBlock.OPEN, false), 3);
         Gt.check(t.checkNow(), "porte fermee : formee");

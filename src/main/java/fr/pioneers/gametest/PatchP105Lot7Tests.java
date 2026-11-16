@@ -136,7 +136,8 @@ public final class PatchP105Lot7Tests {
         h.startSequence()
               //1.0.6 : le mouton vanilla devient l'entite de sa race au tick suivant (1.0.3-beta lot 8, BreedConversion), meme UUID
               .thenWaitUntil(() -> Gt.check(w.getTarget() != null && w.getTarget().getUUID().equals(sheep.getUUID()),
-                    "la nuit, le loup chasse le mouton (cible " + w.getTarget() + ", nuit " + s.level.isNight() + ")"))
+                    "la nuit, le loup chasse le mouton (cible " + w.getTarget() + ", nuit " + s.level.isNight() + ", loup vivant " + w.isAlive() + " "
+                    + w.getHealth() + " peur " + w.fear() + ", distance " + w.distanceTo(sheep) + ", chien vise " + dog.getTarget() + ")"))
               .thenWaitUntil(() -> Gt.check(dog.getTarget() == w, "le chien autonome defend le betail contre le loup"))
               .thenExecute(s::done);
     }
