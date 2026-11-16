@@ -4,15 +4,12 @@ import fr.pioneers.core.Directions;
 import fr.pioneers.core.block.Waterlogging;
 import fr.pioneers.logistics.transport.PiTransport;
 import fr.pioneers.logistics.transport.logistic.CableLevel;
-import java.util.EnumMap;
+import fr.pioneers.logistics.transport.logistic.LogisticCableBlock;
 import java.util.List;
-import java.util.Locale;
-import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -24,7 +21,6 @@ import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -33,31 +29,17 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * 1.11 (D2c, spec §8.1) : « cable herite ». Les 60 identifiants des anciens cables restent enregistres pendant la 1.11 (a retirer en 1.12) :
- * sans objet, hors onglets et JEI, memes proprietes d'etat qu'avant (lecture fidele des mondes), invisibles ; chaque bloc est converti en cable
- * logistique du meme niveau au chargement de son chunk par {@link LegacyMigration} (sa tile se signale a {@code onLoad} ; un tick aleatoire
- * rattrape un bloc sans tile). Casse avant d'etre converti : il rend le cable logistique qui le remplace.
+ * 1.11 (D2c, spec §8.1) : « cable herite ». Les 60 identifiants des anciens cables restent enregistres (a retirer en 1.12) : sans objet,
+ * hors onglets et JEI, invisibles ; chaque bloc est converti en cable logistique du meme niveau au chargement de son chunk par
+ * {@link LegacyMigration} (sa tile se signale a {@code onLoad} ; un tick aleatoire rattrape un bloc sans tile). Casse avant d'etre converti :
+ * il rend le cable logistique qui le remplace.
+ * <p>
+ * 1.0.6 (memoire du client) : l'etat ne garde que l'eau. Les six faces (aucune / cable / branchee) faisaient 1 458 etats par bloc, et les
+ * 60 blocs 141 352 etats (45 % de tous les etats du mod), chacun avec son modele et ses tables. Un monde ancien se relit quand meme : les
+ * proprietes inconnues d'un etat sauve sont ignorees (etat par defaut, eau relue) et les faces branchees se retrouvent sur les voisins a la
+ * conversion ({@link #plugMask}). Seules les coupures inscrites dans l'etat d'une fibre sont perdues (les cables gardaient les leurs dans la tile).
  */
 public class LegacyCableBlock extends Block implements EntityBlock, SimpleWaterloggedBlock {
-
-    /** Faces des anciens cables : memes valeurs que l'ancien {@code CableBlock.Side}. */
-    public enum Side implements StringRepresentable {
-        NONE, CABLE, PLUG;
-
-        @NotNull
-        @Override
-        public String getSerializedName() {
-            return name().toLowerCase(Locale.ROOT);
-        }
-    }
-
-    public static final Map<Direction, EnumProperty<Side>> PROPERTIES = new EnumMap<>(Direction.class);
-
-    static {
-        for (Direction direction : Directions.ALL) {
-            PROPERTIES.put(direction, EnumProperty.create(direction.getName(), Side.class));
-        }
-    }
 
     private static final VoxelShape CORE = Block.box(5, 5, 5, 11, 11, 11);
 
@@ -75,23 +57,24 @@ public class LegacyCableBlock extends Block implements EntityBlock, SimpleWaterl
     }
 
     protected BlockState defaults(BlockState state) {
-        for (EnumProperty<Side> property : PROPERTIES.values()) {
-            state = state.setValue(property, Side.NONE);
-        }
         return state.setValue(Waterlogging.WATERLOGGED, false);
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(Waterlogging.WATERLOGGED);
-        PROPERTIES.values().forEach(builder::add);
     }
 
-    /** Faces branchees sur un bloc (ancien etat PLUG), bits = Direction.ordinal. */
-    public int plugMask(BlockState state) {
+    /**
+     * Faces branchees sur un bloc (l'ancien etat PLUG), bits = Direction.ordinal : un ancien cable se branchait sur tout voisin a tile qui
+     * n'est pas un cable ; l'etat ne le garde plus (1.0.6), on le relit donc sur les voisins.
+     */
+    public int plugMask(BlockGetter level, BlockPos pos) {
         int mask = 0;
         for (Direction d : Directions.ALL) {
-            if (state.getValue(PROPERTIES.get(d)) == Side.PLUG) {
+            BlockPos at = pos.relative(d);
+            Block other = level.getBlockState(at).getBlock();
+            if (!(other instanceof LegacyCableBlock) && !(other instanceof LogisticCableBlock) && level.getBlockEntity(at) != null) {
                 mask |= 1 << d.ordinal();
             }
         }

@@ -137,7 +137,7 @@ public final class LegacyMigration {
                     return null;
                 }
                 LegacyPlan.Old old = new LegacyPlan.Old(pos, block.family, block.level, block.clear);
-                old.plugs = block.plugMask(state);
+                old.plugs = block.plugMask(level, p);
                 old.disabled = block.disabledMask(state);
                 if (level.getBlockEntity(p) instanceof LegacyCableTile tile) {
                     old.disabled |= tile.disabled();
