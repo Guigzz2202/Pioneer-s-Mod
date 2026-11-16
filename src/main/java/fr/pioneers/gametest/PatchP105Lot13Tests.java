@@ -13,7 +13,7 @@ import fr.pioneers.society.clan.territory.ClanTerritory;
 import fr.pioneers.society.clan.territory.TerritoryRules;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
 import fr.pioneers.society.economy.EconomyApi;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import fr.pioneers.world.wild.Boar;
 import fr.pioneers.world.wild.PiWild;
 import java.util.Comparator;

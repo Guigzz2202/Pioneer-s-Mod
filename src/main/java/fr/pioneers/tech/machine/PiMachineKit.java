@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.tech.machine;
 
 import fr.pioneers.core.registry.BlockEntry;
 import fr.pioneers.core.registry.PiCoreRegistries;
@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /** Kit de machines de base (broyeur, four electrique, compresseur) en quatre tiers : {@code <tier>_<machine>}. */
 public final class PiMachineKit {

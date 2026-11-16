@@ -1,6 +1,6 @@
 package fr.pioneers.logistics.rail.train;
 
-import fr.pioneers.core.registries.PiRail;
+import fr.pioneers.logistics.rail.PiRail;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 

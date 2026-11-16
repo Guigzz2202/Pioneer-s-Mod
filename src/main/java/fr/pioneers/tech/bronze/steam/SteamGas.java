@@ -7,7 +7,7 @@ import fr.pioneers.api.gas.IGasHandler;
 import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.core.Action;
 import fr.pioneers.core.gas.GasAccess;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.EnumMap;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

@@ -3,7 +3,7 @@ package fr.pioneers.space.tile;
 import fr.pioneers.api.data.DataType;
 import fr.pioneers.core.data.PiDataTypes;
 import fr.pioneers.core.registries.PiItems;
-import fr.pioneers.core.registries.PiScienceMachines;
+import fr.pioneers.space.research.PiScienceMachines;
 import fr.pioneers.space.farm.SpacePlant;
 import fr.pioneers.space.research.BodyResearch;
 import fr.pioneers.space.research.ResearchNode;

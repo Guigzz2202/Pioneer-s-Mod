@@ -2,7 +2,7 @@ package fr.pioneers.tech.forge.casting;
 
 import fr.pioneers.tech.bronze.foundry.MoldItem;
 import fr.pioneers.tech.forge.ForgeBlock;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemStack;

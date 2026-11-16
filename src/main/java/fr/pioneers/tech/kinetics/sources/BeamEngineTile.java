@@ -4,7 +4,7 @@ import fr.pioneers.api.machine.StandardLayout.Part;
 import fr.pioneers.api.machine.StandardLayout.Rect;
 import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.tech.kinetics.KineticMachineTile;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

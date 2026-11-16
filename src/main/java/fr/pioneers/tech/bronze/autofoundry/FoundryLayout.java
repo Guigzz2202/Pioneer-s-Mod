@@ -2,7 +2,7 @@ package fr.pioneers.tech.bronze.autofoundry;
 
 import fr.pioneers.tech.bronze.foundry.Metals;
 import fr.pioneers.tech.industry.multi.Structure;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

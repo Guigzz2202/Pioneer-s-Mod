@@ -1,6 +1,6 @@
 package fr.pioneers.logistics.transport.heat;
 
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;

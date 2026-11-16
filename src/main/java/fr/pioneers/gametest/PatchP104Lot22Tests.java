@@ -14,7 +14,7 @@ import fr.pioneers.tech.industry.multi.ControllerTile;
 import fr.pioneers.tech.industry.multi.SiloCore;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import fr.pioneers.tech.industry.recipe.IndustryRecipes;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

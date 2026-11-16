@@ -5,7 +5,7 @@ import fr.pioneers.space.content.spacesim.SpaceSimControllerTile;
 import fr.pioneers.space.content.universe.GalaxyType;
 import fr.pioneers.core.gas.PiGasTypes;
 import fr.pioneers.core.registries.PiItems;
-import fr.pioneers.core.registries.PiSpaceSim;
+import fr.pioneers.space.simulation.PiSpaceSim;
 import fr.pioneers.space.research.ResearchNode;
 import java.util.List;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

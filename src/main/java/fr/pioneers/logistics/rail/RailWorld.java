@@ -26,7 +26,7 @@ import fr.pioneers.logistics.rail.train.RailFuels;
 import fr.pioneers.logistics.rail.train.RailItems;
 import fr.pioneers.logistics.rail.train.Schedule;
 import fr.pioneers.logistics.rail.train.Train;
-import fr.pioneers.core.registries.PiRail;
+import fr.pioneers.logistics.rail.PiRail;
 import fr.pioneers.logistics.robotics.works.WorksData;
 import fr.pioneers.logistics.robotics.works.WorksPlan;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;

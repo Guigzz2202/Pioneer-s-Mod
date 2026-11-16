@@ -18,14 +18,14 @@ import fr.pioneers.world.geology.drill.SteamDrillTile;
 import fr.pioneers.tech.industry.multi.Structure;
 import fr.pioneers.logistics.naval.HarborBlueprint;
 import fr.pioneers.logistics.naval.HarborStructure;
-import fr.pioneers.core.registries.PiBaseMachines;
+import fr.pioneers.space.base.PiBaseMachines;
 import fr.pioneers.core.registries.PiBlocks;
-import fr.pioneers.core.registries.PiBronze;
-import fr.pioneers.core.registries.PiCosmicBlocks;
-import fr.pioneers.core.registries.PiNaval;
-import fr.pioneers.core.registries.PiRobotics;
-import fr.pioneers.core.registries.PiSpaceSim;
-import fr.pioneers.core.registries.PiStabilizer;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.space.content.PiCosmicBlocks;
+import fr.pioneers.logistics.naval.PiNaval;
+import fr.pioneers.logistics.robotics.PiRobotics;
+import fr.pioneers.space.simulation.PiSpaceSim;
+import fr.pioneers.space.content.PiStabilizer;
 import fr.pioneers.logistics.robotics.hub.RoboticHubValidator;
 import fr.pioneers.space.LaunchPadStructure;
 import fr.pioneers.space.assembly.AssemblyHall;
@@ -225,8 +225,8 @@ public final class HouseShapes {
     public static final HousePlan POTTERY_KILN = new HousePlan(1, "pottery_kiln", 1, PiBronze.POTTERY_KILN::getBlock, null,
           (plan, v) -> HouseNbt.draw(plan, fr.pioneers.tech.bronze.foundry.KilnTile.SHAPE, PiBronze.POTTERY_KILN.getBlock(), false));
     /** 1.0.4-beta (lot 24) : four a coke primitif de Guillaume ({@link HouseNbt}). */
-    public static final HousePlan COKE_OVEN = new HousePlan(1, "coke_oven", 1, fr.pioneers.core.registries.PiIndustry.COKE_OVEN::getBlock, null,
-          (plan, v) -> HouseNbt.draw(plan, fr.pioneers.tech.industry.bronze.CokeOvenTile.SHAPE, fr.pioneers.core.registries.PiIndustry.COKE_OVEN.getBlock(), false));
+    public static final HousePlan COKE_OVEN = new HousePlan(1, "coke_oven", 1, fr.pioneers.tech.industry.PiIndustry.COKE_OVEN::getBlock, null,
+          (plan, v) -> HouseNbt.draw(plan, fr.pioneers.tech.industry.bronze.CokeOvenTile.SHAPE, fr.pioneers.tech.industry.PiIndustry.COKE_OVEN.getBlock(), false));
     /**
      * 1.0.2-beta (lot 4) : fonderie automatique, une variante par taille ({@link FoundryLayout.Size} : 1 x 1 x 2, 2 x 2 x 3, 3 x 3 x 5) ; le
      * controleur (porte du foyer) sur la rangee de devant, au milieu (a gauche pour la taille 2 x 2).

@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.logistics.robotics;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.registry.BlockEntry;
@@ -52,6 +52,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import fr.pioneers.core.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiItems;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Robotique : le hub multibloc (boitier, port, porte de baie), le relais, les points logistiques (balise, coffres), la route, les unites

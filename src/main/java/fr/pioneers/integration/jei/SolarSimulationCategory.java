@@ -5,7 +5,7 @@ import fr.pioneers.space.content.spacesim.SpaceSimControllerTile;
 import fr.pioneers.core.gas.PiGasTypes;
 import fr.pioneers.core.recipes.SolarSimulationRecipe;
 import fr.pioneers.core.registries.PiItems;
-import fr.pioneers.core.registries.PiSpaceSim;
+import fr.pioneers.space.simulation.PiSpaceSim;
 import fr.pioneers.space.research.ResearchNode;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;

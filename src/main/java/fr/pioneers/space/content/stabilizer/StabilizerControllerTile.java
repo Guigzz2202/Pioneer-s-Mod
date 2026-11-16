@@ -7,7 +7,7 @@ import fr.pioneers.api.multiblock.MultiblockPort;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideConfig;
-import fr.pioneers.core.registries.PiStabilizer;
+import fr.pioneers.space.content.PiStabilizer;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

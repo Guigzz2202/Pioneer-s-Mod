@@ -6,7 +6,7 @@ import fr.pioneers.society.clan.Permission;
 import fr.pioneers.society.clan.core.ClanRoles;
 import fr.pioneers.society.clan.territory.ClanTerritory;
 import fr.pioneers.tech.industry.IndustryMachine;
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import fr.pioneers.world.ruins.RuinBlocks;
 import fr.pioneers.logistics.transport.CableTier;
 import fr.pioneers.logistics.transport.buffer.BufferType;

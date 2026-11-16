@@ -12,7 +12,7 @@ import fr.pioneers.core.Directions;
 import fr.pioneers.core.heat.HeatExchange;
 import fr.pioneers.tech.industry.IndustryEvents;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

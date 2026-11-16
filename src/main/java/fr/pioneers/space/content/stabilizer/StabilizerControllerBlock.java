@@ -1,7 +1,7 @@
 package fr.pioneers.space.content.stabilizer;
 
 import fr.pioneers.core.machine.MachineTile;
-import fr.pioneers.core.registries.PiStabilizer;
+import fr.pioneers.space.content.PiStabilizer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Containers;

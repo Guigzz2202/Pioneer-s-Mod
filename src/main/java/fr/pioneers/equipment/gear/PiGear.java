@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.equipment.gear;
 
 import com.mojang.serialization.Codec;
 import fr.pioneers.Pioneers;
@@ -34,6 +34,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * 0.20.15 : equipement modulaire : 4 tiers (Graviton, Stellaris, Neutronique, Singularite) d'armures, d'outils (quatre outils puis le

@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.tech.nuclear;
 
 import fr.pioneers.core.registry.BlockEntry;
 import fr.pioneers.core.registry.PiCoreRegistries;
@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Age nucleaire (0.17.0) : blocs et objets du code nucleaire (le combustible et les machines viennent du catalogue de l'age industriel).

@@ -3,7 +3,7 @@ package fr.pioneers.tech.bronze.foundry;
 import fr.pioneers.api.multiblock.HouseNbt;
 import fr.pioneers.tech.bronze.foundry.KilnMasonryBlock.Form;
 import fr.pioneers.tech.bronze.foundry.KilnMasonryBlock.Role;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,7 +1,7 @@
 package fr.pioneers.tech.computing;
 
 import fr.pioneers.core.menu.PiTileMenu;
-import fr.pioneers.core.registries.PiComputing;
+import fr.pioneers.tech.computing.PiComputing;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.level.block.entity.BlockEntity;

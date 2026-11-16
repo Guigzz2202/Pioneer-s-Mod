@@ -1,6 +1,6 @@
 package fr.pioneers.logistics.robotics.logistics;
 
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.Endpoint;
 import fr.pioneers.logistics.robotics.LogisticResource;
 import fr.pioneers.logistics.robotics.Resource;

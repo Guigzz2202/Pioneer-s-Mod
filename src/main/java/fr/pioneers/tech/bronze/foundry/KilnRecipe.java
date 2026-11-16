@@ -1,7 +1,7 @@
 package fr.pioneers.tech.bronze.foundry;
 
 import com.google.gson.JsonObject;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;

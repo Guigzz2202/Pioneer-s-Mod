@@ -9,7 +9,7 @@ import fr.pioneers.building.home.HomeWoods;
 import fr.pioneers.building.home.PiHome;
 import fr.pioneers.building.home.basket.BasketHeap;
 import fr.pioneers.building.home.basket.BasketTile;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.HashSet;
 import java.util.Set;
 import net.minecraft.core.BlockPos;

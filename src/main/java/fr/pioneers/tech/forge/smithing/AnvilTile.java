@@ -9,7 +9,7 @@ import fr.pioneers.tech.forge.HeatedMetal;
 import fr.pioneers.tech.forge.SmithingGrid;
 import fr.pioneers.tech.forge.SmithingRecipe;
 import fr.pioneers.core.network.PacketTileAction;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

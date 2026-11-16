@@ -12,7 +12,7 @@ import fr.pioneers.core.vanilla.PiVanillaMaterials;
 import fr.pioneers.world.geology.DepositType;
 import fr.pioneers.tech.industry.recipe.Remanents;
 import fr.pioneers.tech.materials.GeneratedMaterials;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

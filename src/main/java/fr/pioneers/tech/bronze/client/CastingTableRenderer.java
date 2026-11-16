@@ -7,7 +7,7 @@ import fr.pioneers.tech.bronze.foundry.Metals;
 import fr.pioneers.tech.bronze.foundry.MoldItem;
 import fr.pioneers.tech.kinetics.client.KDraw;
 import fr.pioneers.tech.forge.casting.PlacedMoldBlock;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;

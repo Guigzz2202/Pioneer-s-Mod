@@ -9,7 +9,7 @@ import fr.pioneers.api.multiblock.MultiblockCore;
 import fr.pioneers.api.multiblock.MultiblockPort;
 import fr.pioneers.tech.bronze.BronzeTile;
 import fr.pioneers.tech.industry.multi.Structure;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

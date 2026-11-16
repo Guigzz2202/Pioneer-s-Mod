@@ -2,7 +2,7 @@ package fr.pioneers.space;
 
 import fr.pioneers.core.common.block.ConnectedBlock;
 import fr.pioneers.core.common.block.Connections;
-import fr.pioneers.core.registries.PiBaseMachines;
+import fr.pioneers.space.base.PiBaseMachines;
 import java.util.Objects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

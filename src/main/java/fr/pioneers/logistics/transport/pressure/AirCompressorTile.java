@@ -18,7 +18,7 @@ import fr.pioneers.core.side.SideConfig;
 import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.side.SideType;
 import fr.pioneers.core.side.Sided;
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.EnumSet;

@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.building;
 
 import fr.pioneers.core.registry.BlockRegistryObject;
 import java.util.LinkedHashMap;
@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import fr.pioneers.core.registries.PiBlocks;
 
 /**
  * Variantes de construction des roches et glaces des astres (pave, poli, briques, sculpte, lisse ; glace compactee, polie, en briques).

@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.content;
 
 import fr.pioneers.space.content.stabilizer.Regime;
 import fr.pioneers.space.content.stabilizer.StabilizerControllerBlock;
@@ -25,6 +25,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Stabilisateur spatial (socle, lot E) : un seul multibloc pour le trou noir et l'etoile, le regime suit le noyau pose au centre. Remplace la

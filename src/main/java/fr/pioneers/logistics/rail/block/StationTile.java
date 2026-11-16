@@ -3,7 +3,7 @@ package fr.pioneers.logistics.rail.block;
 import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.logistics.rail.RailWorld;
 import fr.pioneers.logistics.rail.net.RailNetwork;
-import fr.pioneers.core.registries.PiRail;
+import fr.pioneers.logistics.rail.PiRail;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;

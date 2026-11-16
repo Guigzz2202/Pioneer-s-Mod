@@ -12,7 +12,7 @@ import fr.pioneers.tech.industry.construction.PiConstruction;
 import fr.pioneers.tech.industry.construction.StackedColumnBlock;
 import fr.pioneers.tech.industry.construction.TwinConnectedBlock;
 import fr.pioneers.core.registries.PiBlocks;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.HashSet;
 import java.util.Set;

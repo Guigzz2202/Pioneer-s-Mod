@@ -2,7 +2,7 @@ package fr.pioneers.tech.industry.multi;
 
 import fr.pioneers.api.multiblock.StructureMatcher;
 import fr.pioneers.tech.industry.IndustryMachine;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import net.minecraft.core.BlockPos;

@@ -6,7 +6,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.energy.EnergyBuffer;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.inventory.ItemSlots;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.ItemRobotUnit;
 import fr.pioneers.logistics.robotics.ItemRoboticUpgrade;
 import fr.pioneers.logistics.robotics.Job;

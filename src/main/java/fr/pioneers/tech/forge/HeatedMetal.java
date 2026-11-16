@@ -1,7 +1,7 @@
 package fr.pioneers.tech.forge;
 
 import fr.pioneers.tech.materials.GeneratedMaterials;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.List;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;

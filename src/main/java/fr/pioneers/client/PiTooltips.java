@@ -13,7 +13,7 @@ import fr.pioneers.tech.energy.MicrobialCellTile;
 import fr.pioneers.tech.industry.GeneratorOutput;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.core.registries.PiMachines;
 import fr.pioneers.space.tile.TileEntityDataBank;
 import fr.pioneers.logistics.transport.CableTier;

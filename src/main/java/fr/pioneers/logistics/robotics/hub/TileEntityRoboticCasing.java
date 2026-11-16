@@ -4,7 +4,7 @@ import fr.pioneers.api.multiblock.MultiblockCore;
 import fr.pioneers.api.multiblock.MultiblockPort;
 import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.core.network.PacketTileAction;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.UnitKind;
 import java.util.Objects;
 import net.minecraft.core.BlockPos;

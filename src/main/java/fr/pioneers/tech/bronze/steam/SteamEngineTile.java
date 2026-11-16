@@ -6,7 +6,7 @@ import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.unit.PowerSource;
 import fr.pioneers.tech.kinetics.KineticMachineTile;
 import fr.pioneers.tech.kinetics.KineticsConfig;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import java.util.Locale;
 import net.minecraft.core.BlockPos;

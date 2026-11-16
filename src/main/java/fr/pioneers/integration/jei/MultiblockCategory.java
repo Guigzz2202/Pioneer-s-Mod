@@ -13,7 +13,7 @@ import fr.pioneers.core.Texts;
 import fr.pioneers.tech.industry.multi.Cleanroom;
 import fr.pioneers.tech.industry.multi.IndustrialBlueprint;
 import fr.pioneers.logistics.naval.HarborBlueprint;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.space.assembly.AssemblyHallBlueprint;
 import fr.pioneers.space.base.BaseBlueprint;
 import fr.pioneers.logistics.transport.CableTier;

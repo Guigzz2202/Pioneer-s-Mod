@@ -10,7 +10,7 @@ import fr.pioneers.tech.industry.Tiers;
 import fr.pioneers.tech.industry.multi.ControllerTile;
 import fr.pioneers.tech.industry.multi.IndustryShape;
 import fr.pioneers.tech.industry.multi.Structure;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.LongPredicate;

@@ -2,7 +2,7 @@ package fr.pioneers.tech.machine;
 
 import fr.pioneers.core.machine.MachineBlock;
 import fr.pioneers.tech.industry.atelier.AtelierTile;
-import fr.pioneers.core.registries.PiMachineKit;
+import fr.pioneers.tech.machine.PiMachineKit;
 import fr.pioneers.logistics.transport.CableTier;
 
 /**

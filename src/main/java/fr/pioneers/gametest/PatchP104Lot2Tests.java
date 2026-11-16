@@ -4,7 +4,7 @@ import fr.pioneers.tech.kinetics.AxisKineticBlock;
 import fr.pioneers.tech.kinetics.parts.HandCrankBlock;
 import fr.pioneers.tech.kinetics.rope.LinkType;
 import fr.pioneers.tech.kinetics.rope.PulleyTile;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import fr.pioneers.logistics.warehouse.CounterBlock;
 import fr.pioneers.logistics.warehouse.CounterTile;
 import fr.pioneers.logistics.warehouse.CrateHatchTile;

@@ -3,7 +3,7 @@ package fr.pioneers.gametest;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.atelier.AtelierTile;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

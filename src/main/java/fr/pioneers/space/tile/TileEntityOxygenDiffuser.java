@@ -11,7 +11,7 @@ import fr.pioneers.core.gas.BasicGasTank;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.machine.TieredMachineBlock;
 import fr.pioneers.core.side.SideMode;
-import fr.pioneers.core.registries.PiSpaceMachines;
+import fr.pioneers.space.tile.PiSpaceMachines;
 import fr.pioneers.space.environment.OxygenRooms;
 import fr.pioneers.space.environment.RoomScanner.Room;
 import java.util.EnumSet;

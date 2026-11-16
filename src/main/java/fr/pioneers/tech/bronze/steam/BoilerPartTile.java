@@ -1,7 +1,7 @@
 package fr.pioneers.tech.bronze.steam;
 
 import fr.pioneers.core.block.PiBlockEntity;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.Objects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

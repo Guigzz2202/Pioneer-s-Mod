@@ -79,9 +79,9 @@ public final class Gt {
      */
     public static net.minecraft.world.level.block.Block compact(fr.pioneers.tech.industry.IndustryMachine m, fr.pioneers.logistics.transport.CableTier t) {
         if (m.atelier == fr.pioneers.tech.industry.IndustryMachine.Atelier.KIT) {
-            return fr.pioneers.core.registries.PiMachineKit.MACHINES.get(fr.pioneers.tech.machine.MachineKind.valueOf(m.name())).get(t).getBlock();
+            return fr.pioneers.tech.machine.PiMachineKit.MACHINES.get(fr.pioneers.tech.machine.MachineKind.valueOf(m.name())).get(t).getBlock();
         }
-        return fr.pioneers.core.registries.PiIndustry.ATELIERS.get(m).get(t).getBlock();
+        return fr.pioneers.tech.industry.PiIndustry.ATELIERS.get(m).get(t).getBlock();
     }
 
 

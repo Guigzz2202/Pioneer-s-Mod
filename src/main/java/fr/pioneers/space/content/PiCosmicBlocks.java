@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.content;
 
 import fr.pioneers.space.content.absorber.AbsorberControllerBlock;
 import fr.pioneers.space.content.absorber.AbsorberControllerTile;
@@ -20,6 +20,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiBlocks;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Multiblocs cosmiques de la 0.10 : le Simulateur d'univers (15x15x15) et l'absorbeur d'energie solaire (en orbite d'une etoile),

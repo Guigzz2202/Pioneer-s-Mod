@@ -4,7 +4,7 @@ import fr.pioneers.core.Action;
 import fr.pioneers.tech.kinetics.AxisKineticBlock;
 import fr.pioneers.tech.kinetics.KineticEvents;
 import fr.pioneers.tech.kinetics.KineticTile;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

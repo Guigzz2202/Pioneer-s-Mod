@@ -5,7 +5,7 @@ import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.data.DigitalNetwork;
 import fr.pioneers.core.data.NetworkPlug;
-import fr.pioneers.core.registries.PiComputing;
+import fr.pioneers.tech.computing.PiComputing;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.EnumSet;

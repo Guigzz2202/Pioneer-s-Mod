@@ -7,7 +7,7 @@ import fr.pioneers.building.home.PiHome;
 import fr.pioneers.building.home.bag.BagDeposit;
 import fr.pioneers.building.home.bag.BagKind;
 import fr.pioneers.building.home.bag.BagStore;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

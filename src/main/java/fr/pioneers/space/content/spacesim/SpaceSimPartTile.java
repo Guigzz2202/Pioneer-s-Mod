@@ -15,7 +15,7 @@ import fr.pioneers.core.Configurable;
 import fr.pioneers.core.Directions;
 import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.core.side.SideMode;
-import fr.pioneers.core.registries.PiSpaceSim;
+import fr.pioneers.space.simulation.PiSpaceSim;
 import java.util.AbstractList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

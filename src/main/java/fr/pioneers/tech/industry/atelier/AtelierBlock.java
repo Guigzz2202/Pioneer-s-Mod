@@ -2,7 +2,7 @@ package fr.pioneers.tech.industry.atelier;
 
 import fr.pioneers.core.machine.MachineBlock;
 import fr.pioneers.tech.industry.IndustryMachine;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 
 /** Bloc d'une machine d'atelier de l'age industriel : une machine et un tier (FACING + ACTIVE, interface standard). */

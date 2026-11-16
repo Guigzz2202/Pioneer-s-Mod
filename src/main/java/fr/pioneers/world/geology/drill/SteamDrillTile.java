@@ -15,7 +15,7 @@ import fr.pioneers.world.geology.DepositData;
 import fr.pioneers.world.geology.Deposits;
 import fr.pioneers.tech.industry.construction.StackedColumnBlock;
 import fr.pioneers.tech.industry.multi.Structure;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

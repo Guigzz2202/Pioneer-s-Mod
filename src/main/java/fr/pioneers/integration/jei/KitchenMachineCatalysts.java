@@ -5,7 +5,7 @@ import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import fr.pioneers.tech.kinetics.kitchen.KitchenMachineType;
 import fr.pioneers.tech.kinetics.kitchen.PiKitchenMachines;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.Comparator;

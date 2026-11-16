@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.equipment.gear;
 
 import fr.pioneers.core.registry.PiCoreRegistries;
 import fr.pioneers.equipment.gear.electric.FlamethrowerItem;

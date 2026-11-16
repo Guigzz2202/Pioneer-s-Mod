@@ -4,7 +4,7 @@ import fr.pioneers.tech.kinetics.KineticBlock;
 import fr.pioneers.tech.kinetics.KineticEvents;
 import fr.pioneers.tech.kinetics.KineticTile;
 import fr.pioneers.tech.kinetics.KineticsConfig;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.EnumMap;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

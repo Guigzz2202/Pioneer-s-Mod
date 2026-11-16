@@ -212,7 +212,7 @@ public final class BatchRefund {
     /** Garde-fou : recette du meme identifiant partie a une AUTRE machine (entrees d'apres) ; null sinon. */
     @Nullable
     private static Inputs moved(Level level, IndustryMachine machine, ResourceLocation id) {
-        for (IndustrialRecipe r : fr.pioneers.core.recipes.PiRecipes.sorted(level, fr.pioneers.core.registries.PiIndustry.INDUSTRIAL.get())) {
+        for (IndustrialRecipe r : fr.pioneers.core.recipes.PiRecipes.sorted(level, fr.pioneers.tech.industry.PiIndustry.INDUSTRIAL.get())) {
             if (r.getId().equals(id)) {
                 return r.machine() == machine ? null : of(r);
             }

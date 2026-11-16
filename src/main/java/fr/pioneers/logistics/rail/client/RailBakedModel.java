@@ -18,7 +18,7 @@ import fr.pioneers.logistics.rail.net.Electrification;
 import fr.pioneers.logistics.rail.net.RailNetwork;
 import fr.pioneers.logistics.rail.track.TrackBlock;
 import fr.pioneers.logistics.rail.track.TrackShape;
-import fr.pioneers.core.registries.PiRail;
+import fr.pioneers.logistics.rail.PiRail;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

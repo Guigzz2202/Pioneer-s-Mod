@@ -17,7 +17,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
 import fr.pioneers.tech.industry.multi.Structure;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -540,7 +540,7 @@ public class BlastFurnaceTile extends BronzeTile implements MultiblockCore.House
             return;
         }
         float pitch = 0.92F + level.random.nextFloat() * 0.16F + (float) Math.min(0.15, Math.max(0, temperature - 1000) / 4000);
-        level.playSound(null, at.above(), fr.pioneers.core.registries.PiBronze.SOUND_BLAST_CRACKLE.get(), SoundSource.BLOCKS,
+        level.playSound(null, at.above(), fr.pioneers.tech.bronze.PiBronze.SOUND_BLAST_CRACKLE.get(), SoundSource.BLOCKS,
               BLAST_CRACKLE_VOLUME + level.random.nextFloat() * 0.1F, pitch);
     }
 
@@ -548,7 +548,7 @@ public class BlastFurnaceTile extends BronzeTile implements MultiblockCore.House
         if (level.getGameTime() % COKE_CRACKLE_PERIOD != Math.floorMod(at.asLong(), COKE_CRACKLE_PERIOD)) {
             return;
         }
-        level.playSound(null, at.above(), fr.pioneers.core.registries.PiBronze.SOUND_COKE_CRACKLE.get(), SoundSource.BLOCKS,
+        level.playSound(null, at.above(), fr.pioneers.tech.bronze.PiBronze.SOUND_COKE_CRACKLE.get(), SoundSource.BLOCKS,
               COKE_CRACKLE_VOLUME + level.random.nextFloat() * 0.1F, 0.9F + level.random.nextFloat() * 0.2F);
     }
 

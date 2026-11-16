@@ -7,7 +7,7 @@ import fr.pioneers.tech.industry.multi.BatchRefund;
 import fr.pioneers.tech.industry.multi.ControllerTile;
 import fr.pioneers.tech.industry.multi.GeneratedBatchRefund;
 import fr.pioneers.tech.industry.recipe.IndustryRecipes;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

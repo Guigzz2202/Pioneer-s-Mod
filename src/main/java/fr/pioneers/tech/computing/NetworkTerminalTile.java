@@ -10,7 +10,7 @@ import fr.pioneers.core.data.DigitalNetwork;
 import fr.pioneers.core.data.NetworkPlug;
 import fr.pioneers.core.data.PiDataTypes;
 import fr.pioneers.tech.industry.multi.ControllerTile;
-import fr.pioneers.core.registries.PiComputing;
+import fr.pioneers.tech.computing.PiComputing;
 import fr.pioneers.space.research.ProbeDestination;
 import fr.pioneers.space.research.ResearchNode;
 import fr.pioneers.space.research.ResearchState;

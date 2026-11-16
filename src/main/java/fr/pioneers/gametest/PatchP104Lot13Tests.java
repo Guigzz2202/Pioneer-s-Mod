@@ -13,7 +13,7 @@ import fr.pioneers.tech.industry.atelier.AtelierTile;
 import fr.pioneers.tech.industry.atelier.OrphanAteliers;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import fr.pioneers.tech.industry.recipe.IndustryRecipes;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.space.environment.Environments;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;

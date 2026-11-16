@@ -4,7 +4,7 @@ import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.inventory.ItemSlots;
 import fr.pioneers.tech.forge.ForgeBlock;
 import fr.pioneers.tech.forge.ForgeTile;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

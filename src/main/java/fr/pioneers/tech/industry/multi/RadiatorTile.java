@@ -7,7 +7,7 @@ import fr.pioneers.core.Directions;
 import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.core.heat.HeatCapacitor;
 import fr.pioneers.core.heat.HeatExchange;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

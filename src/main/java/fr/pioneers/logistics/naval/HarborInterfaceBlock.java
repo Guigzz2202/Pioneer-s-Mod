@@ -1,6 +1,6 @@
 package fr.pioneers.logistics.naval;
 
-import fr.pioneers.core.registries.PiNaval;
+import fr.pioneers.logistics.naval.PiNaval;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;

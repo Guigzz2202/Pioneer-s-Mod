@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.building;
 
 import fr.pioneers.core.registry.BlockRegistryObject;
 import java.util.LinkedHashMap;
@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import fr.pioneers.core.registries.PiBlocks;
 
 /**
  * Blocs de construction des astres (genere par buildings.py) : pour la roche, pave, roche polie, briques (craquelees, sculptees)

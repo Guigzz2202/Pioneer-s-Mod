@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.simulation;
 
 import fr.pioneers.space.content.spacesim.SpaceSimControllerBlock;
 import fr.pioneers.space.content.spacesim.SpaceSimControllerTile;
@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Simulateur spatial (socle, lot E) : un seul multibloc pour le systeme solaire et la galaxie, ce qui est simule suit l'objet du coeur.

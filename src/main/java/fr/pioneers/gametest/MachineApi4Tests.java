@@ -11,7 +11,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.data.PiDataTypes;
 import fr.pioneers.core.registries.PiMachines;
-import fr.pioneers.core.registries.PiSpaceMachines;
+import fr.pioneers.space.tile.PiSpaceMachines;
 import fr.pioneers.space.tile.TileEntityChunkLoader;
 import fr.pioneers.space.tile.TileEntityDataBank;
 import net.minecraft.core.BlockPos;

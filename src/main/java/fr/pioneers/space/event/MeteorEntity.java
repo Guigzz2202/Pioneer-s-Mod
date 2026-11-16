@@ -2,7 +2,7 @@ package fr.pioneers.space.event;
 
 import fr.pioneers.core.common.PiCommonConfig;
 import fr.pioneers.core.registries.PiSounds;
-import fr.pioneers.core.registries.PiWorldBlocks;
+import fr.pioneers.space.environment.PiWorldBlocks;
 import fr.pioneers.space.tile.TileEntityForceField;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.BlockParticleOption;

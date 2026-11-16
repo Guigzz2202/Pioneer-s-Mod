@@ -5,7 +5,7 @@ import fr.pioneers.tech.bronze.BronzeEvents;
 import fr.pioneers.tech.forge.ForgeBlock;
 import fr.pioneers.tech.forge.ForgeHeat;
 import fr.pioneers.tech.forge.ForgeTile;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;

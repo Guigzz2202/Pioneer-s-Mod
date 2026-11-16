@@ -10,7 +10,7 @@ import fr.pioneers.tech.industry.multi.PartMigration;
 import fr.pioneers.tech.industry.multi.ShapeTemplate;
 import fr.pioneers.tech.industry.multi.SheetMetalBlock;
 import fr.pioneers.tech.industry.multi.Signature;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

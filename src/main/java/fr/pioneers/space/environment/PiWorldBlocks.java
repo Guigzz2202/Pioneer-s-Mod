@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.environment;
 
 import fr.pioneers.core.registry.BlockRegistryObject;
 import fr.pioneers.space.MeteoriteBlock;
@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import fr.pioneers.core.registries.PiBlocks;
 
 /**
  * Blocs generes (worldjava.py) : nouveaux blocs naturels des astres (planets3.py), petits asteroides poses au sol (meteorites.py)

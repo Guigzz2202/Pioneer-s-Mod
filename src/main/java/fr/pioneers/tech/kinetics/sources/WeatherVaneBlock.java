@@ -4,7 +4,7 @@ import fr.pioneers.core.RenderClock;
 import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.tech.kinetics.KineticAngle;
 import fr.pioneers.tech.kinetics.KineticTile;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.Locale;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

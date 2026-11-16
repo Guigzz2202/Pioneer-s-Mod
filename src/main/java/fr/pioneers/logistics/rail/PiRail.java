@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.logistics.rail;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.machine.TieredMachineBlock;
@@ -45,6 +45,8 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
+import fr.pioneers.core.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * 0.20.0 : le chemin de fer miniature : voies (cinq qualites), grands virages, butoir, rails fonctionnels, signaux, panneau de gare, postes de

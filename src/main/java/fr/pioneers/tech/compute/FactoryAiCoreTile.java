@@ -17,7 +17,7 @@ import fr.pioneers.tech.industry.IndustryEvents;
 import fr.pioneers.tech.industry.multi.ControllerTile;
 import fr.pioneers.tech.nuclear.ReactorControl;
 import fr.pioneers.tech.nuclear.ReactorView;
-import fr.pioneers.core.registries.PiCompute;
+import fr.pioneers.tech.compute.PiCompute;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;

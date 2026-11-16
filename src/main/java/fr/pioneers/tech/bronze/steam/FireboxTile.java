@@ -15,7 +15,7 @@ import fr.pioneers.core.Directions;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.tech.kinetics.KineticsConfig;
 import fr.pioneers.tech.mechanics.PiMechanics;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

@@ -9,7 +9,7 @@ import fr.pioneers.core.side.SideMode;
 import fr.pioneers.logistics.rail.logistics.Cargo;
 import fr.pioneers.logistics.rail.logistics.PostPoint;
 import fr.pioneers.logistics.rail.logistics.StationPost;
-import fr.pioneers.core.registries.PiRail;
+import fr.pioneers.logistics.rail.PiRail;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.Map;

@@ -1,7 +1,7 @@
 package fr.pioneers.tech.industry.multi;
 
 import fr.pioneers.api.multiblock.MultiblockLogic;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.robotics.Endpoint;
 import fr.pioneers.logistics.robotics.LogisticResource;
 import fr.pioneers.logistics.robotics.logistics.LogisticPoint;

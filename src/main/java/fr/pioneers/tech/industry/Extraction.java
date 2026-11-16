@@ -7,7 +7,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.Directions;
 import fr.pioneers.core.gas.BasicGasTank;
 import fr.pioneers.world.geology.fluid.FluidDeposits;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayDeque;
 import java.util.HashSet;
 import java.util.Set;

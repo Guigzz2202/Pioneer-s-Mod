@@ -2,7 +2,7 @@ package fr.pioneers.tech.bronze.foundry;
 
 import fr.pioneers.tech.forge.ForgeMetals;
 import fr.pioneers.tech.materials.GeneratedMaterials;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;

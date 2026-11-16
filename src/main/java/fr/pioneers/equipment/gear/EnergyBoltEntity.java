@@ -1,6 +1,6 @@
 package fr.pioneers.equipment.gear;
 
-import fr.pioneers.core.registries.PiGear;
+import fr.pioneers.equipment.gear.PiGear;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;

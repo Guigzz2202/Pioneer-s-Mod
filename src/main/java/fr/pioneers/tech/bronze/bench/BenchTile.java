@@ -9,7 +9,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.tech.forge.smithing.HandForged;
 import fr.pioneers.core.recipes.PiRecipes;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

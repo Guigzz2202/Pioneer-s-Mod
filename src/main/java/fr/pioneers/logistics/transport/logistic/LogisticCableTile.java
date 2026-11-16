@@ -9,7 +9,7 @@ import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.core.Action;
 import fr.pioneers.core.block.Covers;
 import fr.pioneers.core.block.PiBlockEntity;
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import net.minecraft.core.BlockPos;

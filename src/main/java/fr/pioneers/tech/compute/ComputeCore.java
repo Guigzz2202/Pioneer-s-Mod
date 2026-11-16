@@ -21,7 +21,7 @@ import fr.pioneers.tech.industry.multi.ControllerTile;
 import fr.pioneers.tech.industry.multi.PartBlock;
 import fr.pioneers.tech.industry.multi.Structure;
 import fr.pioneers.core.registries.PiFluids;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.logistic.LogisticCableBlock;
 import fr.pioneers.logistics.transport.logistic.LogisticNetworks;
 import java.util.ArrayList;

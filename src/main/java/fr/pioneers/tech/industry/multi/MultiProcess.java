@@ -20,7 +20,7 @@ import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import fr.pioneers.tech.industry.recipe.IndustryRecipes;
 import fr.pioneers.tech.industry.recipe.RecipeMatch;
 import fr.pioneers.tech.nuclear.FissionCore;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import fr.pioneers.space.research.ResearchEffects;
 import fr.pioneers.space.research.ResearchNode;
 import java.util.ArrayList;

@@ -15,7 +15,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import fr.pioneers.tech.industry.recipe.IndustryRecipes;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

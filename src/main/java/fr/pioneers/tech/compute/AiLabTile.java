@@ -15,7 +15,7 @@ import fr.pioneers.core.data.BasicDataTank;
 import fr.pioneers.core.data.DigitalNetwork;
 import fr.pioneers.core.data.PiDataTypes;
 import fr.pioneers.tech.industry.IndustryEvents;
-import fr.pioneers.core.registries.PiCompute;
+import fr.pioneers.tech.compute.PiCompute;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

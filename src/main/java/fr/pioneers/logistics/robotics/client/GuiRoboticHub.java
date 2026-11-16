@@ -4,7 +4,7 @@ import fr.pioneers.client.gui.GuiDraw;
 import fr.pioneers.client.gui.core.PiMenuScreen;
 import fr.pioneers.core.network.PacketTileAction;
 import fr.pioneers.core.network.PiNetwork;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.RoboticUpgrade;
 import fr.pioneers.logistics.robotics.UnitKind;
 import fr.pioneers.logistics.robotics.UnitTier;

@@ -5,7 +5,7 @@ import fr.pioneers.tech.industry.multi.NbtRoles;
 import fr.pioneers.tech.industry.multi.PartBlock;
 import fr.pioneers.tech.industry.multi.Signature;
 import fr.pioneers.tech.industry.multi.Structure;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.Locale;
 import net.minecraft.core.BlockPos;

@@ -1,6 +1,6 @@
 package fr.pioneers.tech.nuclear;
 
-import fr.pioneers.core.registries.PiNuclear;
+import fr.pioneers.tech.nuclear.PiNuclear;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;

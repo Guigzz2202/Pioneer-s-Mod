@@ -5,7 +5,7 @@ import fr.pioneers.tech.bronze.bench.BenchRecipe;
 import fr.pioneers.tech.bronze.bench.BenchType;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashSet;

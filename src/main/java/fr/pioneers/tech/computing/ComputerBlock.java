@@ -1,7 +1,7 @@
 package fr.pioneers.tech.computing;
 
 import fr.pioneers.core.machine.MachineBlock;
-import fr.pioneers.core.registries.PiComputing;
+import fr.pioneers.tech.computing.PiComputing;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;

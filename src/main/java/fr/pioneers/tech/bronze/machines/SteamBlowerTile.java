@@ -8,7 +8,7 @@ import fr.pioneers.tech.bronze.steam.Steam;
 import fr.pioneers.tech.bronze.steam.SteamNode;
 import fr.pioneers.tech.bronze.steam.SteamRules;
 import fr.pioneers.tech.bronze.steam.SteamVolume;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

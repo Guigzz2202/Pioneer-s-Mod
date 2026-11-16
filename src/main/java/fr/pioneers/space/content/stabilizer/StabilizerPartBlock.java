@@ -1,6 +1,6 @@
 package fr.pioneers.space.content.stabilizer;
 
-import fr.pioneers.core.registries.PiStabilizer;
+import fr.pioneers.space.content.PiStabilizer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

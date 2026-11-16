@@ -1,7 +1,7 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import fr.pioneers.logistics.transport.CableTier;
 import fr.pioneers.logistics.transport.buffer.BufferTile;
 import fr.pioneers.logistics.transport.buffer.BufferType;

@@ -2,7 +2,7 @@ package fr.pioneers.logistics.transport.legacy;
 
 import fr.pioneers.core.Directions;
 import fr.pioneers.core.block.Waterlogging;
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import fr.pioneers.logistics.transport.logistic.CableLevel;
 import java.util.EnumMap;
 import java.util.Locale;

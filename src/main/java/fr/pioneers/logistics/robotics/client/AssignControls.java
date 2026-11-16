@@ -1,7 +1,7 @@
 package fr.pioneers.logistics.robotics.client;
 
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.RoboticOrder;
 import fr.pioneers.logistics.robotics.UnitKind;
 import fr.pioneers.logistics.robotics.UnitTier;

@@ -2,7 +2,7 @@ package fr.pioneers.integration.jei;
 
 import fr.pioneers.tech.kinetics.machines.MachineType;
 import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

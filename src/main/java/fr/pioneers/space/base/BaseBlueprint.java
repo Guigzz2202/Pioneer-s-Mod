@@ -4,7 +4,7 @@ import fr.pioneers.core.common.projector.Blueprint;
 import fr.pioneers.core.common.projector.ProjectedStructure;
 import fr.pioneers.core.common.projector.Projections;
 import fr.pioneers.core.registries.PiBlocks;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;

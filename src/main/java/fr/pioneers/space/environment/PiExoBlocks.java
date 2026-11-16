@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.environment;
 
 import fr.pioneers.core.registry.BlockRegistryObject;
 import fr.pioneers.space.giant.GasCloudBlock;
@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.SandBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import fr.pioneers.core.registries.PiBlocks;
 
 /**
  * Blocs generes (gc/prog40/exojava40.py) : blocs naturels des exoplanetes (Alpha du Centaure, TRAPPIST-1) et nuages

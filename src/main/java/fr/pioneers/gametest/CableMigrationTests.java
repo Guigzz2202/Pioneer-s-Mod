@@ -1,6 +1,6 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import fr.pioneers.logistics.transport.legacy.LegacyCableBlock;
 import fr.pioneers.logistics.transport.legacy.LegacyCableTile;
 import fr.pioneers.logistics.transport.legacy.LegacyMigration;

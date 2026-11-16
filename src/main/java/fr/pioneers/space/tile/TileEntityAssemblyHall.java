@@ -16,7 +16,7 @@ import fr.pioneers.tech.industry.multi.PortBlock;
 import fr.pioneers.tech.industry.multi.PortHost;
 import fr.pioneers.tech.industry.multi.PortTile;
 import fr.pioneers.core.recipes.AssemblyStation;
-import fr.pioneers.core.registries.PiWorksMachines;
+import fr.pioneers.space.assembly.PiWorksMachines;
 import fr.pioneers.space.assembly.AssemblyHall;
 import fr.pioneers.space.assembly.AssemblyHallStructure;
 import fr.pioneers.space.tile.base.TileEntityAssemblyBase;

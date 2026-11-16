@@ -1,7 +1,7 @@
 package fr.pioneers.space.content.stabilizer;
 
 import fr.pioneers.core.machine.MachineBlock;
-import fr.pioneers.core.registries.PiStabilizer;
+import fr.pioneers.space.content.PiStabilizer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.BlockGetter;

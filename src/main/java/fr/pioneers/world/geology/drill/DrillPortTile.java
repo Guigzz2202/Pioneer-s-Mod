@@ -4,7 +4,7 @@ import fr.pioneers.tech.bronze.BronzeTile;
 import fr.pioneers.tech.bronze.steam.Steam;
 import fr.pioneers.tech.bronze.steam.SteamNode;
 import fr.pioneers.tech.bronze.steam.SteamVolume;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

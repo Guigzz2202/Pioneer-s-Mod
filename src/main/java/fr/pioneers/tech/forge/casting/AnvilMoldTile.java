@@ -1,6 +1,6 @@
 package fr.pioneers.tech.forge.casting;
 
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
 

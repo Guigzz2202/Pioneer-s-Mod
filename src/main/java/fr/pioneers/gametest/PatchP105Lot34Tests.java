@@ -4,7 +4,7 @@ import fr.pioneers.tech.bronze.bench.BenchRecipe;
 import fr.pioneers.tech.bronze.bench.BenchTile;
 import fr.pioneers.tech.bronze.bench.BenchType;
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;

@@ -1,7 +1,7 @@
 package fr.pioneers.logistics.transport.buffer;
 
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;

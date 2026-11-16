@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.base;
 
 import fr.pioneers.core.common.projector.Projections;
 import fr.pioneers.core.machine.MachineBlock;
@@ -28,6 +28,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
+import fr.pioneers.space.research.PiScienceMachines;
 
 /**
  * Bases planetaires passees au socle (lot D) : controleur de serre (puis avant-poste, drone bay, pas de tir). Les blocs de structure

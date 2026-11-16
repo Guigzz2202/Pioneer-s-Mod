@@ -20,7 +20,7 @@ import fr.pioneers.tech.nuclear.FissionCore;
 import fr.pioneers.tech.nuclear.Meltdown;
 import fr.pioneers.tech.nuclear.ReactorBlock;
 import fr.pioneers.tech.nuclear.ReactorView;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.LongPredicate;

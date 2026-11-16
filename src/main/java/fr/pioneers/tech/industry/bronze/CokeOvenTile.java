@@ -16,7 +16,7 @@ import fr.pioneers.core.recipe.RecipeLock;
 import fr.pioneers.core.recipe.RecipeLockable;
 import fr.pioneers.tech.industry.IoTank;
 import fr.pioneers.tech.industry.recipe.RecipeMatch;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.List;
 import java.util.function.Consumer;
 import net.minecraft.core.BlockPos;

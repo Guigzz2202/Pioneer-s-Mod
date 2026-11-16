@@ -10,7 +10,7 @@ import fr.pioneers.api.gas.Gas;
 import fr.pioneers.api.gas.GasStack;
 import fr.pioneers.tech.bronze.bench.BenchRecipe.Counted;
 import fr.pioneers.tech.industry.IndustryMachine;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.NonNullList;

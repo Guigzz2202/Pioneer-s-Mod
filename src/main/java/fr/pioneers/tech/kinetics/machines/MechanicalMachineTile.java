@@ -5,7 +5,7 @@ import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.recipe.RecipeLock;
 import fr.pioneers.core.recipe.RecipeLockable;
 import fr.pioneers.tech.kinetics.KineticMachineTile;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.List;
 import java.util.function.Consumer;
 import net.minecraft.core.BlockPos;

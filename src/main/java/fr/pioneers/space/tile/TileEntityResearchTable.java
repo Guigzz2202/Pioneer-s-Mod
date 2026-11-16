@@ -7,7 +7,7 @@ import fr.pioneers.core.machine.DataMachineTile;
 import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.side.SideType;
 import fr.pioneers.core.data.BasicDataTank;
-import fr.pioneers.core.registries.PiScienceMachines;
+import fr.pioneers.space.research.PiScienceMachines;
 import fr.pioneers.space.research.ProbeDestination;
 import fr.pioneers.space.research.ResearchNode;
 import java.util.ArrayList;

@@ -28,7 +28,7 @@ import fr.pioneers.tech.machine.AcceptCache;
 import fr.pioneers.tech.machine.MachineKind;
 import fr.pioneers.tech.machine.ProcessingRecipe;
 import fr.pioneers.core.recipes.PiRecipes;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import fr.pioneers.logistics.transport.Transfer;
 import java.util.ArrayList;

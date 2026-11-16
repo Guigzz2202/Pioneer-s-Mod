@@ -2,7 +2,7 @@ package fr.pioneers.space.assembly;
 
 import fr.pioneers.core.common.projector.Blueprint;
 import fr.pioneers.core.common.projector.ProjectedStructure;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.EnumMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;

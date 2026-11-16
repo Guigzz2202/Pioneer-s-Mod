@@ -4,7 +4,7 @@ import fr.pioneers.Pioneers;
 import fr.pioneers.tech.forge.casting.ClayBucketItem;
 import fr.pioneers.tech.forge.casting.CrucibleTongsItem;
 import fr.pioneers.core.registries.PiFluids;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraftforge.api.distmarker.Dist;

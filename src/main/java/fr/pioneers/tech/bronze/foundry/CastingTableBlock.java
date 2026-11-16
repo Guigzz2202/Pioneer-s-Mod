@@ -1,7 +1,7 @@
 package fr.pioneers.tech.bronze.foundry;
 
 import fr.pioneers.tech.bronze.BronzeBlock;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;

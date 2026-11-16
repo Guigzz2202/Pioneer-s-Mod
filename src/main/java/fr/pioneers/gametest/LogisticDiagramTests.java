@@ -3,7 +3,7 @@ package fr.pioneers.gametest;
 import fr.pioneers.core.RelativeSide;
 import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.side.SideType;
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import fr.pioneers.logistics.transport.CableTier;
 import fr.pioneers.logistics.transport.buffer.BufferTile;
 import fr.pioneers.logistics.transport.buffer.BufferType;

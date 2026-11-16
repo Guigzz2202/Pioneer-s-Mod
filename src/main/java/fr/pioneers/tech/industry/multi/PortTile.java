@@ -9,7 +9,7 @@ import fr.pioneers.tech.compute.ComputeCore;
 import fr.pioneers.core.Action;
 import fr.pioneers.core.Directions;
 import fr.pioneers.core.block.PiBlockEntity;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.Transfer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -11,7 +11,7 @@ import fr.pioneers.core.recipe.RecipeLock;
 import fr.pioneers.core.recipe.RecipeLockable;
 import fr.pioneers.tech.forge.ForgeMetals;
 import fr.pioneers.tech.materials.GeneratedMaterials;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

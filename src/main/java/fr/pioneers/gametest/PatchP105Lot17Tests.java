@@ -5,7 +5,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.tech.kinetics.parts.HandCrankBlock;
 import fr.pioneers.tech.kinetics.rope.LinkType;
 import fr.pioneers.core.network.PacketWarehouse;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import fr.pioneers.logistics.warehouse.CounterBlock;
 import fr.pioneers.logistics.warehouse.CounterCart;
 import fr.pioneers.logistics.warehouse.CounterTile;

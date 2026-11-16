@@ -1,7 +1,7 @@
 package fr.pioneers.space.content.spacesim;
 
 import fr.pioneers.core.machine.MachineBlock;
-import fr.pioneers.core.registries.PiSpaceSim;
+import fr.pioneers.space.simulation.PiSpaceSim;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;

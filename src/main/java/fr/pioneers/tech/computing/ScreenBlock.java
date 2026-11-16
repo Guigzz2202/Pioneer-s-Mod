@@ -1,6 +1,6 @@
 package fr.pioneers.tech.computing;
 
-import fr.pioneers.core.registries.PiComputing;
+import fr.pioneers.tech.computing.PiComputing;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

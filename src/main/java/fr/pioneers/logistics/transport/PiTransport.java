@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.logistics.transport;
 
 import fr.pioneers.core.item.WrenchItem;
 import fr.pioneers.core.machine.MachineMenu;
@@ -37,6 +37,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Transport du socle Pioneer's : cable logistique (1.11 : 6 niveaux opaques et transparents, supraconducteur), buffers en quatre tiers

@@ -27,7 +27,7 @@ import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import fr.pioneers.tech.industry.recipe.IndustryRecipes;
 import fr.pioneers.tech.industry.recipe.RecipeMatch;
 import fr.pioneers.tech.industry.recipe.Remanents;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import fr.pioneers.logistics.transport.Transfer;
 import java.util.ArrayList;

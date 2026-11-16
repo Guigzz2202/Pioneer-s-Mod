@@ -5,7 +5,7 @@ import fr.pioneers.tech.kinetics.KineticNetwork;
 import fr.pioneers.tech.kinetics.KineticNetworks;
 import fr.pioneers.tech.kinetics.KineticTile;
 import fr.pioneers.tech.kinetics.parts.HandCrankBlock;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;

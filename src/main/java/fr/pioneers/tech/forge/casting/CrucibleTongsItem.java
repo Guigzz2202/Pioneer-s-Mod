@@ -8,7 +8,7 @@ import fr.pioneers.core.tooltip.GearTips;
 import fr.pioneers.core.tooltip.Tooltips;
 import fr.pioneers.tech.forge.ForgeMetals;
 import fr.pioneers.tech.forge.MoltenLoad;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

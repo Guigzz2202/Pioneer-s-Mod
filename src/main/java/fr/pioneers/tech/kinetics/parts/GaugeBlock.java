@@ -3,7 +3,7 @@ package fr.pioneers.tech.kinetics.parts;
 import fr.pioneers.tech.kinetics.AxisKineticBlock;
 import fr.pioneers.tech.kinetics.KineticNetwork;
 import fr.pioneers.tech.kinetics.KineticTile;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

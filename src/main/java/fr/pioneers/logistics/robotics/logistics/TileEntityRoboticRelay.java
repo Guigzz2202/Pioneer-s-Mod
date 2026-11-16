@@ -5,7 +5,7 @@ import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.core.energy.EnergyBuffer;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.inventory.ItemSlots;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.ItemRoboticUpgrade;
 import fr.pioneers.logistics.robotics.RobotUnitEntity;
 import fr.pioneers.logistics.robotics.RoboticUpgrade;

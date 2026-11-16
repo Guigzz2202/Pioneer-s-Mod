@@ -31,18 +31,18 @@ import fr.pioneers.core.recipes.AssemblyRecipe;
 import fr.pioneers.core.recipes.AssemblyStation;
 import fr.pioneers.core.recipes.PiRecipes;
 import fr.pioneers.core.recipes.SolarSimulationRecipe;
-import fr.pioneers.core.registries.PiBaseMachines;
-import fr.pioneers.core.registries.PiBronze;
-import fr.pioneers.core.registries.PiCosmicBlocks;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.space.base.PiBaseMachines;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.space.content.PiCosmicBlocks;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.core.registries.PiItems;
-import fr.pioneers.core.registries.PiKinetics;
-import fr.pioneers.core.registries.PiRobotics;
-import fr.pioneers.core.registries.PiScienceMachines;
-import fr.pioneers.core.registries.PiSpaceSim;
-import fr.pioneers.core.registries.PiStabilizer;
-import fr.pioneers.core.registries.PiTransport;
-import fr.pioneers.core.registries.PiWorksMachines;
+import fr.pioneers.tech.kinetics.PiKinetics;
+import fr.pioneers.logistics.robotics.PiRobotics;
+import fr.pioneers.space.research.PiScienceMachines;
+import fr.pioneers.space.simulation.PiSpaceSim;
+import fr.pioneers.space.content.PiStabilizer;
+import fr.pioneers.logistics.transport.PiTransport;
+import fr.pioneers.space.assembly.PiWorksMachines;
 import fr.pioneers.logistics.robotics.UnitKind;
 import fr.pioneers.logistics.robotics.UnitTier;
 import fr.pioneers.space.SolarSystem.Body;
@@ -474,8 +474,8 @@ public class PiJeiPlugin implements IModPlugin {
         registration.addRecipeCatalysts(DRONE_HARVEST, PiBaseMachines.DRONE_BAY, PiRobotics.UNITS.get(UnitKind.DRONE).get(UnitTier.T1).get(), PiItems.GAS_SCANNER.get());
         registration.addRecipeCatalysts(SOLAR_ABSORBER, PiCosmicBlocks.ABSORBER_COLLECTOR, PiCosmicBlocks.ABSORBER_CASING, PiCosmicBlocks.ABSORBER_PORT);
         KitchenCategory.catalysts(registration);
-        registration.addRecipeCatalysts(DryingLineCategory.TYPE, fr.pioneers.building.home.PiHome.ROPE_HOOK.getBlock(), fr.pioneers.core.registries.PiKinetics.FIBER_ROPE.get(),
-              fr.pioneers.core.registries.PiKinetics.TARRED_ROPE.get(), fr.pioneers.core.registries.PiKinetics.LEATHER_BELT.get());
+        registration.addRecipeCatalysts(DryingLineCategory.TYPE, fr.pioneers.building.home.PiHome.ROPE_HOOK.getBlock(), fr.pioneers.tech.kinetics.PiKinetics.FIBER_ROPE.get(),
+              fr.pioneers.tech.kinetics.PiKinetics.TARRED_ROPE.get(), fr.pioneers.tech.kinetics.PiKinetics.LEATHER_BELT.get());
         KitchenMachineCatalysts.register(registration);   //1.6 : postes mecaniques et machines electriques de la cuisine
         registration.addRecipeCatalysts(MECHANICAL.get(MachineType.SIFTER), PiMechanics.HAND_SIEVE);
         BENCH.forEach((type, recipeType) -> registration.addRecipeCatalyst(PiBronze.BENCHES.get(type).getBlock(), recipeType));

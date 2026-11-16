@@ -5,7 +5,7 @@ import fr.pioneers.tech.bronze.steam.SteamAccessory;
 import fr.pioneers.core.common.projector.ProjectedStructure.Plan;
 import fr.pioneers.tech.industry.construction.PiConstruction;
 import fr.pioneers.tech.industry.multi.Structure;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

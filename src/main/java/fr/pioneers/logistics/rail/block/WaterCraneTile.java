@@ -4,7 +4,7 @@ import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideMode;
-import fr.pioneers.core.registries.PiRail;
+import fr.pioneers.logistics.rail.PiRail;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;

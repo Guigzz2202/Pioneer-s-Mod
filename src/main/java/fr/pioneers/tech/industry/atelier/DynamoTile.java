@@ -5,7 +5,7 @@ import fr.pioneers.core.tooltip.Tooltips;
 import fr.pioneers.tech.kinetics.AxisKineticBlock;
 import fr.pioneers.tech.kinetics.KineticMachineTile;
 import fr.pioneers.tech.kinetics.KineticNode;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import net.minecraft.core.BlockPos;

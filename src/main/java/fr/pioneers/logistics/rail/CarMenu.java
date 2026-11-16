@@ -8,7 +8,7 @@ import fr.pioneers.logistics.rail.train.CarType;
 import fr.pioneers.logistics.rail.train.RailCarEntity;
 import fr.pioneers.logistics.rail.train.RailItems;
 import fr.pioneers.logistics.rail.train.Train;
-import fr.pioneers.core.registries.PiRail;
+import fr.pioneers.logistics.rail.PiRail;
 import java.util.UUID;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;

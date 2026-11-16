@@ -9,7 +9,7 @@ import fr.pioneers.tech.forge.ForgeMetals;
 import fr.pioneers.tech.forge.ForgeTile;
 import fr.pioneers.tech.forge.MoltenLoad;
 import fr.pioneers.tech.materials.GeneratedMaterials;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

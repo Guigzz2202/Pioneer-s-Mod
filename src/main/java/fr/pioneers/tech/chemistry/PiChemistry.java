@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.tech.chemistry;
 
 import fr.pioneers.tech.chemistry.OilFeature;
 import fr.pioneers.tech.chemistry.OilSeepBlock;
@@ -14,6 +14,7 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.tech.industry.PiIndustry;
 
 /**
  * Age de la chimie (0.15) : ce qui n'est pas genere par le catalogue de l'age industriel (machines, fluides, gaz et objets y sont) :

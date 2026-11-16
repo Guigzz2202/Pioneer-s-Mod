@@ -3,7 +3,7 @@ package fr.pioneers.logistics.naval;
 import fr.pioneers.core.common.projector.Blueprint;
 import fr.pioneers.core.common.projector.ProjectedStructure;
 import fr.pioneers.core.machine.MachineBlock;
-import fr.pioneers.core.registries.PiNaval;
+import fr.pioneers.logistics.naval.PiNaval;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;

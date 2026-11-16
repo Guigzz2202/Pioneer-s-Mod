@@ -39,6 +39,7 @@ import net.minecraft.world.item.RecordItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.space.content.PiStabilizer;
 
 /**
  * Objets du mod (hors blocs).

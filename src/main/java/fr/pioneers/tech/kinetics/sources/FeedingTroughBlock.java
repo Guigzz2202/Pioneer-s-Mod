@@ -1,7 +1,7 @@
 package fr.pioneers.tech.kinetics.sources;
 
 import fr.pioneers.core.block.PiBlockEntity;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

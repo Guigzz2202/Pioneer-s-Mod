@@ -101,7 +101,22 @@ Chaque ancien paquet devient **exactement un** nouveau paquet, sans fusion. Les 
 - Le code client n'est appelé depuis le code commun que derrière `DistExecutor` ou un test `FMLEnvironment.dist`, comme avant.
 - Une classe produite par un générateur reste à la place où le générateur l'écrit : on change le générateur, jamais la classe.
 
-### 4.4 Étapes suivantes (après validation en jeu du découpage)
-- **Registres** (`core.registries`) : rapprocher chaque registre de son domaine (`PiBronze` vers `tech.bronze`, `PiRail` vers `logistics.rail`…). Le paquet de registres partagé ne garderait que l'infrastructure et les onglets créatifs.
+### 4.4 Registres par domaine (fait le 16/11/2026, branche `refactor/registres-domaines`)
+Chaque registre propre à un domaine est dans le paquet de ce domaine. Le script `tools/refactor/registries.py` (table `MOVES`) a fait le rangement et peut être rejoué sur un arbre à jour.
+
+| Registre | Paquet |
+|---|---|
+| `PiBronze`, `PiChemistry`, `PiCompute`, `PiComputing`, `PiForge`, `PiIndustry`, `PiKinetics`, `PiNuclear` | `tech.<domaine>` (`tech.bronze`, `tech.chemistry`…) |
+| `PiMachineKit` | `tech.machine` |
+| `PiGear`, `PiElectricGear` | `equipment.gear` |
+| `PiNaval`, `PiRail`, `PiRobotics`, `PiTransport` | `logistics.naval`, `logistics.rail`, `logistics.robotics`, `logistics.transport` |
+| `PiBaseMachines`, `PiScienceMachines`, `PiSpaceMachines`, `PiSpaceSim`, `PiGiantBlocks`, `PiWorksMachines` | `space.base`, `space.research`, `space.tile`, `space.simulation`, `space.giant`, `space.assembly` |
+| `PiStabilizer`, `PiCosmicBlocks` | `space.content` |
+| `PiExoBlocks`, `PiWorldBlocks` | `space.environment` |
+| `PiBuildingBlocks`, `PiStoneVariants` | `building` |
+
+`core.registries` ne garde que l'infrastructure partagée : `PiBlocks`, `PiItems`, `PiBasicItems`, `PiFluids`, `PiEntityTypes`, `PiTileEntityTypes`, `PiMenus`, `PiParticles`, `PiSounds`, `PiTriggers`, `PiMachines` (machines communes à plusieurs domaines), `PiBlockShapes`, `PiStackVisuals`, `PiCreativeTabs`, ainsi que les classes générées `CreativeSort` et `GeneratedComponents`. Un registre nouveau va dans le paquet de son domaine.
+
+### 4.5 Étapes suivantes
 - **Rendus communs** (`client.render`) : ranger les rendus propres à un domaine dans ce domaine (champ de force, stabilisateur, simulateur et absorbeur vers `space`).
 - **GameTests** : les ranger par domaine.

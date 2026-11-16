@@ -8,7 +8,7 @@ import fr.pioneers.equipment.cosmetic.CosmeticCap;
 import fr.pioneers.equipment.cosmetic.CosmeticPiece;
 import fr.pioneers.equipment.cosmetic.PiCosmetics;
 import fr.pioneers.equipment.cosmetic.Wardrobe;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import java.util.UUID;
 import net.minecraft.core.BlockPos;

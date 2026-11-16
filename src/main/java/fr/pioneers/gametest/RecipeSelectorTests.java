@@ -15,7 +15,7 @@ import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.side.SideType;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.atelier.AtelierTile;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.List;

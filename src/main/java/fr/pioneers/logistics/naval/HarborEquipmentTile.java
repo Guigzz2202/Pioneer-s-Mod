@@ -2,7 +2,7 @@ package fr.pioneers.logistics.naval;
 
 import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.core.block.PiBlockEntity;
-import fr.pioneers.core.registries.PiNaval;
+import fr.pioneers.logistics.naval.PiNaval;
 import java.util.Objects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

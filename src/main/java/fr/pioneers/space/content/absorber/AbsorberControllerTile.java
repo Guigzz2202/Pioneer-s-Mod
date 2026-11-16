@@ -15,7 +15,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.gas.BasicGasTank;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideConfig;
-import fr.pioneers.core.registries.PiCosmicBlocks;
+import fr.pioneers.space.content.PiCosmicBlocks;
 import fr.pioneers.core.registries.PiSounds;
 import fr.pioneers.space.PiDimensions;
 import fr.pioneers.space.SolarSystem.Body;

@@ -2,7 +2,7 @@ package fr.pioneers.tech.bronze.blast;
 
 import fr.pioneers.tech.bronze.AirBlastReceiver;
 import fr.pioneers.core.block.PiBlockEntity;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
 

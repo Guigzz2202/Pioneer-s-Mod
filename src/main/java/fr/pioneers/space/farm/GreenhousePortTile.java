@@ -12,7 +12,7 @@ import fr.pioneers.tech.industry.multi.CasingBlock;
 import fr.pioneers.tech.industry.multi.IndustrialGlassBlock;
 import fr.pioneers.tech.industry.multi.SheetMetalBlock;
 import fr.pioneers.tech.industry.multi.StructureFrameBlock;
-import fr.pioneers.core.registries.PiBaseMachines;
+import fr.pioneers.space.base.PiBaseMachines;
 import fr.pioneers.core.registries.PiBlocks;
 import fr.pioneers.core.registries.PiTileEntityTypes;
 import fr.pioneers.space.tile.TileEntityGreenhouse;

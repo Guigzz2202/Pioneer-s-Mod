@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.research;
 
 import fr.pioneers.core.machine.MachineBlock;
 import fr.pioneers.core.machine.MachineTile;
@@ -23,6 +23,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiBlockShapes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Machines scientifiques passees au socle (lot B) : broyeur d'asteroides, spectrometre geologique, sequenceur biologique, analyseur de
@@ -65,13 +67,13 @@ public final class PiScienceMachines {
     public static final RegistryObject<BlockEntityType<TileEntityBioSequencer>> BIO_SEQUENCER_TILE = tile("bio_sequencer", TileEntityBioSequencer::new,
           BIO_SEQUENCER);
 
-    static BlockEntry<MachineBlock> machine(String name, MapColor color, VoxelShape[] shapes, Supplier<? extends BlockEntityType<?>> type,
+    public static BlockEntry<MachineBlock> machine(String name, MapColor color, VoxelShape[] shapes, Supplier<? extends BlockEntityType<?>> type,
           BiFunction<BlockPos, BlockState, BlockEntity> factory) {
         return machine(name, color, shapes, List.of(), type, factory);
     }
 
     /** Machine du socle a modele 3D ; {@code bounds} : blocs fantomes d'une grande machine. */
-    static BlockEntry<MachineBlock> machine(String name, MapColor color, VoxelShape[] shapes, List<Vec3i> bounds,
+    public static BlockEntry<MachineBlock> machine(String name, MapColor color, VoxelShape[] shapes, List<Vec3i> bounds,
           Supplier<? extends BlockEntityType<?>> type, BiFunction<BlockPos, BlockState, BlockEntity> factory) {
         return PiCoreRegistries.block(name, () -> new MachineBlock(BlockBehaviour.Properties.of().mapColor(color).strength(3.5F, 9.0F).sound(SoundType.METAL)
               .requiresCorrectToolForDrops().noOcclusion().lightLevel(state -> state.getValue(MachineBlock.ACTIVE) ? 8 : 0), type, factory)
@@ -79,7 +81,7 @@ public final class PiScienceMachines {
     }
 
     @SuppressWarnings("ConstantConditions")
-    static <T extends BlockEntity> RegistryObject<BlockEntityType<T>> tile(String name, BlockEntityType.BlockEntitySupplier<T> factory,
+    public static <T extends BlockEntity> RegistryObject<BlockEntityType<T>> tile(String name, BlockEntityType.BlockEntitySupplier<T> factory,
           BlockEntry<MachineBlock> block) {
         return PiTileEntityTypes.VANILLA_TILES.register(name, () -> BlockEntityType.Builder.of(factory, block.getBlock()).build(null));
     }

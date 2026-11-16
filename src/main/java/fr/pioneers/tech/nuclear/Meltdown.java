@@ -2,7 +2,7 @@ package fr.pioneers.tech.nuclear;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.tech.industry.IndustryEvents;
-import fr.pioneers.core.registries.PiNuclear;
+import fr.pioneers.tech.nuclear.PiNuclear;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

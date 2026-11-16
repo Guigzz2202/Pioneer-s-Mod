@@ -13,7 +13,7 @@ import fr.pioneers.core.recipe.RecipeLockable;
 import fr.pioneers.core.data.DigitalNetwork;
 import fr.pioneers.tech.industry.multi.PortTile;
 import fr.pioneers.tech.industry.multi.Structures;
-import fr.pioneers.core.registries.PiComputing;
+import fr.pioneers.tech.computing.PiComputing;
 import java.util.List;
 import java.util.Locale;
 import java.util.function.Supplier;

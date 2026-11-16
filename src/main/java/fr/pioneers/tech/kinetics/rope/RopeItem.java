@@ -4,7 +4,7 @@ import fr.pioneers.core.tooltip.Tooltips;
 import fr.pioneers.tech.kinetics.KineticNetwork;
 import fr.pioneers.tech.kinetics.KineticNetworks;
 import fr.pioneers.tech.kinetics.KineticsConfig;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import fr.pioneers.logistics.warehouse.WarehouseLines;
 import fr.pioneers.logistics.warehouse.WarehouseRopes;
 import java.util.List;

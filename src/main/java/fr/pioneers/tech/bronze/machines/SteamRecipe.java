@@ -3,7 +3,7 @@ package fr.pioneers.tech.bronze.machines;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import fr.pioneers.tech.bronze.bench.BenchRecipe.Counted;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.NonNullList;

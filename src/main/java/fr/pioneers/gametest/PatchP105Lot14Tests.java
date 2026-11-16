@@ -10,7 +10,7 @@ import fr.pioneers.farm.crop.Climate;
 import fr.pioneers.farm.fish.GeneratedFish;
 import fr.pioneers.tech.industry.atelier.AtelierTile;
 import fr.pioneers.tech.machine.MachineKind;
-import fr.pioneers.core.registries.PiMachineKit;
+import fr.pioneers.tech.machine.PiMachineKit;
 import fr.pioneers.space.environment.EnvironmentSync;
 import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;

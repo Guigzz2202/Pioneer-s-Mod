@@ -3,7 +3,7 @@ package fr.pioneers.tech.kinetics.rope;
 import fr.pioneers.tech.kinetics.AxisKineticBlock;
 import fr.pioneers.tech.kinetics.KineticEvents;
 import fr.pioneers.tech.kinetics.KineticTile;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import fr.pioneers.logistics.warehouse.LineNode;
 import fr.pioneers.logistics.warehouse.WarehouseLines;
 import fr.pioneers.logistics.warehouse.WarehouseNetwork;

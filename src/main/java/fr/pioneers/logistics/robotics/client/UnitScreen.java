@@ -3,7 +3,7 @@ package fr.pioneers.logistics.robotics.client;
 import fr.pioneers.client.gui.GuiDraw;
 import fr.pioneers.core.network.PacketRobotUnit;
 import fr.pioneers.core.network.PiNetwork;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.RobotTask;
 import fr.pioneers.logistics.robotics.RobotUnitEntity;
 import fr.pioneers.logistics.robotics.RoboticOrder;

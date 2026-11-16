@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.tech.industry;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.gas.Gas;
@@ -58,6 +58,8 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiFluids;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Age industriel (0.14) : machines d'atelier (4 tiers), multiblocs industriels (controleurs, carcasses, verre, ports, modules), radiateurs,

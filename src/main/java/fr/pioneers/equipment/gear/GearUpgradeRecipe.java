@@ -3,7 +3,7 @@ package fr.pioneers.equipment.gear;
 import com.google.gson.JsonObject;
 import fr.pioneers.equipment.gear.electric.ElectricCharge;
 import fr.pioneers.equipment.gear.electric.PoweredItem;
-import fr.pioneers.core.registries.PiGear;
+import fr.pioneers.equipment.gear.PiGear;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;

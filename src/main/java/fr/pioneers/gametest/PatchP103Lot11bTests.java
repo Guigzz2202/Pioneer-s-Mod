@@ -8,7 +8,7 @@ import fr.pioneers.society.economy.PriceService;
 import fr.pioneers.building.home.PiHome;
 import fr.pioneers.building.home.basket.BasketHeap;
 import fr.pioneers.building.home.basket.BasketTile;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import fr.pioneers.society.village.FoundingRules;
 import fr.pioneers.society.village.VillageData;
 import fr.pioneers.society.village.VillageFounding;

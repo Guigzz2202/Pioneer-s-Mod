@@ -1,7 +1,7 @@
 package fr.pioneers.logistics.naval;
 
 import fr.pioneers.core.machine.TieredMachineBlock;
-import fr.pioneers.core.registries.PiNaval;
+import fr.pioneers.logistics.naval.PiNaval;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;

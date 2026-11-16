@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.tech.forge;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.tech.bronze.BronzeBlockItem;
@@ -43,6 +43,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Registre de la forge primaire (0.21, spec {@code docs/specification-forge-primaire.md}) : allume-feu, creuset d'argile, pince, soufflet a

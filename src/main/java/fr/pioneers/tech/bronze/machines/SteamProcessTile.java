@@ -19,7 +19,7 @@ import fr.pioneers.core.side.SideConfig;
 import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.side.SideType;
 import fr.pioneers.core.side.Sided;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import fr.pioneers.logistics.transport.Transfer;
 import java.util.ArrayList;
 import java.util.EnumMap;

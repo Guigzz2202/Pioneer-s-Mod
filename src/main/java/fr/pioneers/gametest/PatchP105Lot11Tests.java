@@ -13,7 +13,7 @@ import fr.pioneers.farm.kitchen.Station;
 import fr.pioneers.building.home.line.Clothesline;
 import fr.pioneers.building.lighting.LightFixtureBlock;
 import fr.pioneers.building.lighting.PiLighting;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import fr.pioneers.society.reputation.ReputationApi;
 import fr.pioneers.society.village.VillagerTrade;
 import fr.pioneers.society.village.Villagers;

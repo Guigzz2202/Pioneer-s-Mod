@@ -1,7 +1,7 @@
 package fr.pioneers.tech.kinetics.kitchen;
 
 import fr.pioneers.core.registry.BlockEntry;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.EnumMap;
 import java.util.Map;
 import net.minecraft.world.level.block.Block;

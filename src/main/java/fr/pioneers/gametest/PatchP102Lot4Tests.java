@@ -11,7 +11,7 @@ import fr.pioneers.tech.bronze.autofoundry.FoundryPartBlock;
 import fr.pioneers.tech.bronze.autofoundry.FoundryUnit;
 import fr.pioneers.tech.bronze.foundry.CastingRecipe;
 import fr.pioneers.tech.forge.ForgeMetals;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

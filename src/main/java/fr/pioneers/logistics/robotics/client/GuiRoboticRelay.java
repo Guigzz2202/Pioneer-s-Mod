@@ -2,7 +2,7 @@ package fr.pioneers.logistics.robotics.client;
 
 import fr.pioneers.client.gui.GuiDraw;
 import fr.pioneers.client.gui.core.PiMenuScreen;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.RoboticUpgrade;
 import fr.pioneers.logistics.robotics.logistics.RoboticRelayMenu;
 import fr.pioneers.logistics.robotics.logistics.TileEntityRoboticRelay;

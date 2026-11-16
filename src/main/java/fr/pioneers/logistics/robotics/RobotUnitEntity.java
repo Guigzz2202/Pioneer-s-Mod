@@ -17,7 +17,7 @@ import fr.pioneers.core.network.PacketRobotUnit;
 import fr.pioneers.logistics.rail.RailWorld;
 import fr.pioneers.logistics.rail.track.TrackBlock;
 import fr.pioneers.logistics.rail.track.TrackPlacement;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.hub.RoboticHubData;
 import fr.pioneers.logistics.robotics.hub.TileEntityRoboticBay;
 import fr.pioneers.logistics.robotics.logistics.LogisticNetwork;

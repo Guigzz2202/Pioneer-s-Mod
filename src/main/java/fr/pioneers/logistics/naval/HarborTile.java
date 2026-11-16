@@ -23,7 +23,7 @@ import fr.pioneers.core.data.BasicDataTank;
 import fr.pioneers.logistics.rail.logistics.Cargo;
 import fr.pioneers.logistics.rail.train.Car;
 import fr.pioneers.logistics.rail.train.RailFuels;
-import fr.pioneers.core.registries.PiNaval;
+import fr.pioneers.logistics.naval.PiNaval;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.HashMap;

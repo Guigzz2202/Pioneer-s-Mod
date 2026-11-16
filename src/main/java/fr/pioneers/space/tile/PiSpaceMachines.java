@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.tile;
 
 import fr.pioneers.core.machine.MachineBlock;
 import fr.pioneers.core.machine.MachineTile;
@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Machines spatiales passees au socle (lot A) : chunkloader, champ de force, collecteur de foudre, diffuseur d'oxygene, collecteur de gaz,

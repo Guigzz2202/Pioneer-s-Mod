@@ -17,7 +17,7 @@ import fr.pioneers.tech.kinetics.rope.LinkType;
 import fr.pioneers.tech.kinetics.rope.PulleyTile;
 import fr.pioneers.tech.kinetics.rope.RopeItem;
 import fr.pioneers.tech.kinetics.rope.RopeRules;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;

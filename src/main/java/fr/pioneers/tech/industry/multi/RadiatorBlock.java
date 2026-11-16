@@ -3,7 +3,7 @@ package fr.pioneers.tech.industry.multi;
 import fr.pioneers.core.Texts;
 import fr.pioneers.core.tooltip.Tooltips;
 import fr.pioneers.tech.industry.Tiers;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import net.minecraft.core.BlockPos;

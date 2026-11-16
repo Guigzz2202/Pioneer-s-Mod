@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.assembly;
 
 import fr.pioneers.core.common.projector.Projections;
 import fr.pioneers.core.machine.MachineBlock;
@@ -18,6 +18,9 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiBlockShapes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
+import fr.pioneers.space.research.PiScienceMachines;
 
 /**
  * Ateliers passes au socle (lot C) : tables d'assemblage de modules et d'equipement (un bloc).

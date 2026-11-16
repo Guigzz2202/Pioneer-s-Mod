@@ -3,7 +3,7 @@ package fr.pioneers.tech.forge.client;
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.tooltip.Tooltips;
 import fr.pioneers.tech.forge.smithing.HandForged;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraftforge.api.distmarker.Dist;

@@ -3,7 +3,7 @@ package fr.pioneers.tech.bronze.foundry;
 import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.tech.bronze.BronzeTile;
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

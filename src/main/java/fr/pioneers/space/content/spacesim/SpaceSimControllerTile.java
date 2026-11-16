@@ -20,7 +20,7 @@ import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideConfig;
 import fr.pioneers.core.recipes.PiRecipes;
 import fr.pioneers.core.recipes.SolarSimulationRecipe;
-import fr.pioneers.core.registries.PiSpaceSim;
+import fr.pioneers.space.simulation.PiSpaceSim;
 import fr.pioneers.space.simulation.ItemSimulatedPlanet;
 import fr.pioneers.space.simulation.SimulatedPlanet;
 import fr.pioneers.space.research.ResearchEffects;

@@ -8,7 +8,7 @@ import fr.pioneers.tech.bronze.steam.FireboxTile;
 import fr.pioneers.tech.bronze.steam.SteamEngineTile;
 import fr.pioneers.tech.bronze.steam.SteamRules;
 import fr.pioneers.tech.bronze.steam.SteamVolume;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;

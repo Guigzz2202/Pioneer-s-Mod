@@ -1,7 +1,7 @@
 package fr.pioneers.tech.kinetics.sources;
 
 import fr.pioneers.core.tooltip.Tooltips;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.List;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;

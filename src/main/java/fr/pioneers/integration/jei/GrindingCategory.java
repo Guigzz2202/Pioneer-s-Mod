@@ -10,7 +10,7 @@ import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
 import fr.pioneers.tech.industry.recipe.IndustryRecipes;
 import fr.pioneers.tech.kinetics.machines.MachineType;
 import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import fr.pioneers.core.recipes.PiRecipes;
 import java.util.ArrayList;
 import java.util.EnumSet;

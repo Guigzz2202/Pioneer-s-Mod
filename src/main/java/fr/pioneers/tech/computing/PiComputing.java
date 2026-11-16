@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.tech.computing;
 
 import fr.pioneers.tech.computing.ComputerBlock;
 import fr.pioneers.tech.computing.ComputerMenu;
@@ -27,6 +27,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Informatique industrielle (0.17.0) : configurateur de liaison, armoire a relais, automate programmable, ecran de supervision ;

@@ -12,7 +12,7 @@ import fr.pioneers.tech.forge.ForgeMetals;
 import fr.pioneers.tech.forge.ForgeTile;
 import fr.pioneers.tech.forge.HeatedMetal;
 import fr.pioneers.tech.forge.casting.Ignitable;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

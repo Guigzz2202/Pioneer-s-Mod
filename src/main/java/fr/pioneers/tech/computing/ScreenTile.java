@@ -3,7 +3,7 @@ package fr.pioneers.tech.computing;
 import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.core.data.NetworkPlug;
 import fr.pioneers.core.network.PacketTileAction;
-import fr.pioneers.core.registries.PiComputing;
+import fr.pioneers.tech.computing.PiComputing;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

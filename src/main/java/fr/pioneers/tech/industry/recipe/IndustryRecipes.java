@@ -14,7 +14,7 @@ import fr.pioneers.tech.industry.Tiers;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe.Result;
 import fr.pioneers.tech.machine.ProcessingRecipe;
 import fr.pioneers.core.recipes.PiRecipes;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.space.environment.Environments;
 import java.util.ArrayList;
 import java.util.Comparator;

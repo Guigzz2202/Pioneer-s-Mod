@@ -16,7 +16,7 @@ import fr.pioneers.core.gas.BasicGasTank;
 import fr.pioneers.core.gas.PiGasTypes;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideConfig;
-import fr.pioneers.core.registries.PiStabilizer;
+import fr.pioneers.space.content.PiStabilizer;
 import fr.pioneers.space.research.ResearchEffects;
 import java.util.ArrayList;
 import java.util.List;

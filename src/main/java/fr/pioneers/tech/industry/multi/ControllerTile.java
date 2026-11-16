@@ -51,7 +51,7 @@ import fr.pioneers.tech.nuclear.FissionCore;
 import fr.pioneers.tech.nuclear.ReactorControl;
 import fr.pioneers.tech.nuclear.ReactorView;
 import fr.pioneers.core.registries.PiFluids;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

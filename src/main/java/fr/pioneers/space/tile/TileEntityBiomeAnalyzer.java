@@ -9,7 +9,7 @@ import fr.pioneers.core.side.SideType;
 import fr.pioneers.core.data.BasicDataTank;
 import fr.pioneers.core.data.ItemBiomeDataCell;
 import fr.pioneers.core.data.PiDataTypes;
-import fr.pioneers.core.registries.PiScienceMachines;
+import fr.pioneers.space.research.PiScienceMachines;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

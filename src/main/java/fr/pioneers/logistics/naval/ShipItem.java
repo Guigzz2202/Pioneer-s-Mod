@@ -3,7 +3,7 @@ package fr.pioneers.logistics.naval;
 import fr.pioneers.logistics.naval.client.ShipItemRenderer;
 import fr.pioneers.core.Texts;
 import fr.pioneers.core.tooltip.Tooltips;
-import fr.pioneers.core.registries.PiNaval;
+import fr.pioneers.logistics.naval.PiNaval;
 import java.util.List;
 import java.util.function.Consumer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;

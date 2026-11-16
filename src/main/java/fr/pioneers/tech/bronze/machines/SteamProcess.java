@@ -16,7 +16,7 @@ import fr.pioneers.core.inventory.ItemSlots;
 import fr.pioneers.tech.forge.MoltenLoad;
 import fr.pioneers.tech.industry.recipe.Remanents;
 import fr.pioneers.tech.machine.AcceptCache;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.List;

@@ -7,7 +7,7 @@ import fr.pioneers.core.machine.MachineBlock;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.machine.TieredMachineBlock;
 import fr.pioneers.core.side.SideMode;
-import fr.pioneers.core.registries.PiSpaceMachines;
+import fr.pioneers.space.tile.PiSpaceMachines;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.List;

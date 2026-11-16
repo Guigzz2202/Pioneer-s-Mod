@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.logistics.naval;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.common.projector.Projections;
@@ -35,6 +35,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * 0.20.11 : la marine marchande : 28 navires (7 sortes x 4 tiers, objets {@code <tier>_<sorte>}), le port MKI a MKIV, l'entite des navires

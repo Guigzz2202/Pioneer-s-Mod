@@ -9,7 +9,7 @@ import fr.pioneers.guide.JourneyTracker;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.atelier.AtelierTile;
 import fr.pioneers.core.network.PacketDeposits;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
 import io.netty.buffer.Unpooled;
 import java.util.HashSet;

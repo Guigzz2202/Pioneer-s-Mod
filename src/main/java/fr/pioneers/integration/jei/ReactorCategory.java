@@ -10,7 +10,7 @@ import fr.pioneers.tech.industry.multi.IndustryShape;
 import fr.pioneers.tech.industry.multi.ShapeTemplate;
 import fr.pioneers.tech.nuclear.FissionCore;
 import fr.pioneers.tech.nuclear.ReactorType;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

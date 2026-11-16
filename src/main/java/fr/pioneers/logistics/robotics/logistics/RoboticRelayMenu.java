@@ -1,7 +1,7 @@
 package fr.pioneers.logistics.robotics.logistics;
 
 import fr.pioneers.core.menu.PiTileMenu;
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.logistics.robotics.RoboticUpgrade;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;

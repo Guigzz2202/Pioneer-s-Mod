@@ -17,7 +17,7 @@ import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.core.energy.EnergyBuffer;
 import fr.pioneers.core.gas.GasAccess;
 import fr.pioneers.core.side.SideMode;
-import fr.pioneers.core.registries.PiStabilizer;
+import fr.pioneers.space.content.PiStabilizer;
 import java.util.AbstractList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

@@ -9,7 +9,7 @@ import fr.pioneers.core.common.projector.ProjectedStructure;
 import fr.pioneers.tech.industry.multi.Structure;
 import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
 import fr.pioneers.core.recipes.PiRecipes;
-import fr.pioneers.core.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import fr.pioneers.logistics.transport.CableTier;
 import fr.pioneers.logistics.transport.buffer.BufferType;
 import fr.pioneers.logistics.transport.trash.PiTrash;

@@ -1,6 +1,6 @@
 package fr.pioneers.space.content.absorber;
 
-import fr.pioneers.core.registries.PiCosmicBlocks;
+import fr.pioneers.space.content.PiCosmicBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;

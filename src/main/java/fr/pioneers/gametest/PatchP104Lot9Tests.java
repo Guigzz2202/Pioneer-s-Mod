@@ -13,7 +13,7 @@ import fr.pioneers.farm.herd.GeneratedHerd;
 import fr.pioneers.farm.herd.HerdData;
 import fr.pioneers.farm.herd.HerdRules;
 import fr.pioneers.farm.herd.PiHerd;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.Random;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

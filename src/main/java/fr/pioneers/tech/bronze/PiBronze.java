@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.tech.bronze;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.tech.bronze.BronzeBlock;
@@ -72,6 +72,9 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiSounds;
+import fr.pioneers.core.registries.PiTileEntityTypes;
+import fr.pioneers.tech.kinetics.PiKinetics;
 
 /**
  * Registre de l'age du bronze : ateliers specialises, fonderie, vapeur, geologie, haut fourneau. Ordre de l'onglet creatif : {@link #ALL}.

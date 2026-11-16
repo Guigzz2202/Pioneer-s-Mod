@@ -1,7 +1,7 @@
 package fr.pioneers.space;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.core.registries.PiSpaceMachines;
+import fr.pioneers.space.tile.PiSpaceMachines;
 import java.util.ArrayList;
 import net.minecraft.core.BlockPos;
 import net.minecraftforge.common.world.ForgeChunkManager;

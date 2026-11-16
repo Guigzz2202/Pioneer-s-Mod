@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.tech.compute;
 
 import fr.pioneers.tech.compute.AiLabTile;
 import fr.pioneers.tech.compute.ComputeCore;
@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 
 /**
  * Calcul et IA (0.17.2) : laboratoire d'IA (entrainement des modeles), noyau d'usine (IA qui supervise, regule et parle). La carte

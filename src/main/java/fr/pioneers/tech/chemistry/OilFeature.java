@@ -2,7 +2,7 @@ package fr.pioneers.tech.chemistry;
 
 import com.mojang.serialization.Codec;
 import fr.pioneers.world.geology.fluid.FluidDeposits;
-import fr.pioneers.core.registries.PiChemistry;
+import fr.pioneers.tech.chemistry.PiChemistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;

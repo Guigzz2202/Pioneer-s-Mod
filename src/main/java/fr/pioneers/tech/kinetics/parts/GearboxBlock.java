@@ -2,7 +2,7 @@ package fr.pioneers.tech.kinetics.parts;
 
 import fr.pioneers.tech.kinetics.KineticBlock;
 import fr.pioneers.tech.kinetics.KineticTile;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.entity.BlockEntity;

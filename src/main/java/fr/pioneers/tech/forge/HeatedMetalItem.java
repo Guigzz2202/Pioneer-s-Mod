@@ -3,7 +3,7 @@ package fr.pioneers.tech.forge;
 import fr.pioneers.tech.bronze.foundry.Metals;
 import fr.pioneers.tech.forge.client.HeatedMetalItemRenderer;
 import fr.pioneers.core.tooltip.Tooltips;
-import fr.pioneers.core.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.List;
 import java.util.function.Consumer;
 import net.minecraft.ChatFormatting;

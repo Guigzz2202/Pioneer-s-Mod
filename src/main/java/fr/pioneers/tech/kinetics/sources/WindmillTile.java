@@ -3,7 +3,7 @@ package fr.pioneers.tech.kinetics.sources;
 import fr.pioneers.tech.kinetics.KineticEvents;
 import fr.pioneers.tech.kinetics.KineticTile;
 import fr.pioneers.tech.kinetics.KineticsConfig;
-import fr.pioneers.core.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

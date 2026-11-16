@@ -6,7 +6,7 @@ import fr.pioneers.api.machine.unit.PowerSource;
 import fr.pioneers.api.machine.unit.UnitHost;
 import fr.pioneers.tech.bronze.BronzeEvents;
 import fr.pioneers.tech.kinetics.KineticTile;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;

@@ -8,7 +8,7 @@ import fr.pioneers.logistics.rail.train.CarType;
 import fr.pioneers.logistics.rail.train.RailFuels;
 import fr.pioneers.logistics.rail.train.Schedule;
 import fr.pioneers.logistics.rail.train.Train;
-import fr.pioneers.core.registries.PiNaval;
+import fr.pioneers.logistics.naval.PiNaval;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;

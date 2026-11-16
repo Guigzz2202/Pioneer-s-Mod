@@ -3,7 +3,7 @@ package fr.pioneers.tech.bronze.autofoundry;
 import fr.pioneers.api.multiblock.MultiblockPort;
 import fr.pioneers.tech.bronze.AirBlastReceiver;
 import fr.pioneers.core.block.PiBlockEntity;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.state.BlockState;

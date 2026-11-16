@@ -14,7 +14,7 @@ import fr.pioneers.tech.bronze.LitBronzeBlock;
 import fr.pioneers.core.recipe.RecipeLock;
 import fr.pioneers.core.recipe.RecipeLockable;
 import fr.pioneers.tech.industry.multi.Structure;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

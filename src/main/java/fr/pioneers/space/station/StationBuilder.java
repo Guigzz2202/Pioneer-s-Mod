@@ -1,10 +1,10 @@
 package fr.pioneers.space.station;
 
 import fr.pioneers.core.PiTags;
-import fr.pioneers.core.registries.PiBaseMachines;
+import fr.pioneers.space.base.PiBaseMachines;
 import fr.pioneers.core.registries.PiBlocks;
 import fr.pioneers.core.registries.PiMachines;
-import fr.pioneers.core.registries.PiSpaceMachines;
+import fr.pioneers.space.tile.PiSpaceMachines;
 import fr.pioneers.space.LaunchPadStructure;
 import fr.pioneers.space.tile.TileEntityLaunchPad;
 import net.minecraft.core.BlockPos;

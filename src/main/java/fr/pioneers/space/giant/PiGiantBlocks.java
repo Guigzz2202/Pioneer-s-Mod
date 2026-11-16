@@ -1,4 +1,4 @@
-package fr.pioneers.core.registries;
+package fr.pioneers.space.giant;
 
 import fr.pioneers.core.registry.BlockRegistryObject;
 import net.minecraft.world.item.BlockItem;
@@ -6,6 +6,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import fr.pioneers.core.registries.PiBlocks;
 
 /**
  * Blocs des geantes gazeuses : aerostats (pont, aire d'atterrissage, coque, ballasts) et baie de drones.

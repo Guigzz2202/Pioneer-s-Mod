@@ -2,7 +2,7 @@ package fr.pioneers.tech.nuclear;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.tech.materials.MetalArmor;
-import fr.pioneers.core.registries.PiNuclear;
+import fr.pioneers.tech.nuclear.PiNuclear;
 import java.util.Locale;
 import fr.pioneers.core.profile.PioneerApi;
 import net.minecraft.ChatFormatting;

@@ -4,7 +4,7 @@ import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.core.side.SideMode;
-import fr.pioneers.core.registries.PiGear;
+import fr.pioneers.equipment.gear.PiGear;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;

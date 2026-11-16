@@ -12,7 +12,7 @@ import fr.pioneers.core.profile.RpNet;
 import fr.pioneers.core.profile.RpSounds;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.multi.IndustrialBlueprint;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -7,7 +7,7 @@ import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.vanilla.VanillaRecipeFilter;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

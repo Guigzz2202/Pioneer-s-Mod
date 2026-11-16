@@ -2,7 +2,7 @@ package fr.pioneers.tech.industry.multi;
 
 import fr.pioneers.core.machine.MachineBlock;
 import fr.pioneers.tech.industry.IndustryMachine;
-import fr.pioneers.core.registries.PiIndustry;
+import fr.pioneers.tech.industry.PiIndustry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.Containers;
 import net.minecraft.world.level.Level;

@@ -1,13 +1,13 @@
 package fr.pioneers.space.research;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.core.registries.PiBaseMachines;
+import fr.pioneers.space.base.PiBaseMachines;
 import fr.pioneers.core.registries.PiBlocks;
 import fr.pioneers.core.registries.PiItems;
-import fr.pioneers.core.registries.PiRobotics;
-import fr.pioneers.core.registries.PiScienceMachines;
-import fr.pioneers.core.registries.PiTransport;
-import fr.pioneers.core.registries.PiWorldBlocks;
+import fr.pioneers.logistics.robotics.PiRobotics;
+import fr.pioneers.space.research.PiScienceMachines;
+import fr.pioneers.logistics.transport.PiTransport;
+import fr.pioneers.space.environment.PiWorldBlocks;
 import fr.pioneers.logistics.robotics.UnitKind;
 import fr.pioneers.logistics.robotics.UnitTier;
 import fr.pioneers.space.RocketTier;

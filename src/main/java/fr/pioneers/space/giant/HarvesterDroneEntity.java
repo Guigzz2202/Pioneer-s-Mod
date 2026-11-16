@@ -1,6 +1,6 @@
 package fr.pioneers.space.giant;
 
-import fr.pioneers.core.registries.PiRobotics;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import fr.pioneers.core.registries.PiSounds;
 import fr.pioneers.logistics.robotics.UnitKind;
 import fr.pioneers.logistics.robotics.UnitTier;

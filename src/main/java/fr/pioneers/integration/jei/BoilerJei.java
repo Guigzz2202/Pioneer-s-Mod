@@ -5,7 +5,7 @@ import fr.pioneers.tech.bronze.steam.BoilerPages;
 import fr.pioneers.tech.bronze.steam.BoilerPart;
 import fr.pioneers.tech.bronze.steam.SteamAccessory;
 import fr.pioneers.tech.bronze.steam.SteamRules;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedHashMap;

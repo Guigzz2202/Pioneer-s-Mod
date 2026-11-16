@@ -16,7 +16,7 @@ import fr.pioneers.core.Directions;
 import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.core.gas.GasAccess;
 import fr.pioneers.core.side.SideMode;
-import fr.pioneers.core.registries.PiCosmicBlocks;
+import fr.pioneers.space.content.PiCosmicBlocks;
 import java.util.AbstractList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

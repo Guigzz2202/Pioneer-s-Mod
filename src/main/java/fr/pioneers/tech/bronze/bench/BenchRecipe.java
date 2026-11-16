@@ -2,7 +2,7 @@ package fr.pioneers.tech.bronze.bench;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

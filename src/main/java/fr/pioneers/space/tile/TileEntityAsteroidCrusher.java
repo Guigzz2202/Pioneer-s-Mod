@@ -2,8 +2,8 @@ package fr.pioneers.space.tile;
 
 import fr.pioneers.api.data.DataType;
 import fr.pioneers.core.data.PiDataTypes;
-import fr.pioneers.core.registries.PiScienceMachines;
-import fr.pioneers.core.registries.PiWorldBlocks;
+import fr.pioneers.space.research.PiScienceMachines;
+import fr.pioneers.space.environment.PiWorldBlocks;
 import fr.pioneers.space.research.ResearchEffects;
 import fr.pioneers.space.research.ResearchNode;
 import net.minecraft.core.BlockPos;

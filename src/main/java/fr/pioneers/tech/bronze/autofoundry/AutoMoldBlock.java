@@ -3,7 +3,7 @@ package fr.pioneers.tech.bronze.autofoundry;
 import fr.pioneers.tech.bronze.BronzeBlock;
 import fr.pioneers.tech.forge.casting.AnvilMoldBlock;
 import fr.pioneers.tech.forge.casting.PlacedMoldBlock;
-import fr.pioneers.core.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.Locale;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.StringRepresentable;
