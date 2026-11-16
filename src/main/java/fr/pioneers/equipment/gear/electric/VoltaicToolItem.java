@@ -66,7 +66,8 @@ public class VoltaicToolItem extends DiggerItem implements PoweredItem {
     /** Materiau des outils Voltaiques : niveau du diamant, apres lui et avant la netherite (enregistre au premier appel). */
     public static synchronized Tier tier() {
         if (tier == null) {
-            tier = new ForgeTier(3, 0, SPEED, 2.0F, 0, BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.EMPTY);
+            //1.0.6 : balise propre (vide) : la balise vanilla needs_diamond_tool privait les tiers de meme niveau classes dessous (voir PiTiers)
+            tier = new ForgeTier(3, 0, SPEED, 2.0F, 0, BlockTags.create(Pioneers.rl("needs_voltaic_tool")), () -> Ingredient.EMPTY);
             TierSortingRegistry.registerTier(tier, Pioneers.rl("voltaic"), List.of(Tiers.DIAMOND), List.of(Tiers.NETHERITE));
         }
         return tier;
