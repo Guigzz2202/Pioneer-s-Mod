@@ -18,10 +18,11 @@ Ainsi, tous les chemins `/home/claude/work/MS/src/...` et `/home/claude/work/MS/
 L'ancien dossier `MekanizedStar` du PC est une archive : on n'y touche plus.
 
 ## 2. Git
-- **`main`** est toujours stable et jouable. Chaque version publiée y reçoit l'étiquette `v<mod_version>` ; `v1.0.5-beta` est le point de départ.
-- **Une branche par lot ou par MAJ :** `maj/<version>-<sujet>`, `refactor/<sujet>`, `fix/<sujet>`. Les deux dépôts utilisent le même nom de branche quand un lot touche aussi les outils.
-- **Commits** par étape logique, en français, avec les lignes d'attribution de Claude.
-- **Merge dans `main`** seulement après validation en jeu par Guillaume. C'est le seul événement git dont Claude lui rend compte.
+- **`main`** est l'état publié du mod, stable et jouable. Chaque version publiée y reçoit l'étiquette `v<mod_version>` ; `v1.0.5-beta` est le point de départ.
+- **Branche de version** (demande de Guillaume du 16/11/2026) : la branche nommée d'après la prochaine version (aujourd'hui **`1.0.6`**) sert au développement de la prochaine MAJ. Elle existe dans les deux dépôts. Elle part de `main` et y revient à la sortie de la version, après validation en jeu par Guillaume ; la branche de la version suivante part alors de `main`.
+- **Une branche par lot**, créée depuis la branche de version : `maj/<version>-<sujet>`, `refactor/<sujet>`, `fix/<sujet>`. Les deux dépôts utilisent le même nom de branche quand un lot touche aussi les outils. Un lot revient dans la branche de version après le test en jeu de Guillaume.
+- **Commits** par étape logique au format Conventional Commits (`type(portée): description`), en français, avec les lignes d'attribution de Claude.
+- **Fusions** : on rend compte à Guillaume des fusions dans la branche de version et dans `main`, et de rien d'autre côté git.
 - **Clone de Guillaume :** Claude y récupère lui-même la branche à tester avant chaque test en jeu.
 
 ## 3. Build et tests
