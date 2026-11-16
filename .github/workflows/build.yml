@@ -42,6 +42,21 @@ jobs:
             grep -A 12 "Minecraft Crash Report" gametest.log | head -n 14
             exit 1
           fi
+      - name: GameTests sans nouvel échec
+        # Un échec absent de .github/gametests-connus.txt est une régression (ou un test instable à noter dans la liste).
+        run: |
+          grep -oE 'LogTestReporter\]: [A-Za-z0-9_.]+ failed!' gametest.log | sed -E 's/.*\]: ([^ ]+) failed!/\1/' | sort -u > echecs.txt
+          grep -v '^#' .github/gametests-connus.txt | sed '/^$/d' | sort -u > connus.txt
+          nouveaux=$(comm -23 echecs.txt connus.txt)
+          echo "Échecs : $(wc -l < echecs.txt) (connus : $(wc -l < connus.txt))"
+          if [ -n "$nouveaux" ]; then
+            echo "::error::GameTests en échec absents de la liste des échecs connus :"
+            echo "$nouveaux"
+            exit 1
+          fi
+          repares=$(comm -13 echecs.txt connus.txt)
+          [ -n "$repares" ] && echo "::notice::Passent maintenant (à retirer de .github/gametests-connus.txt) : $(echo $repares)"
+          true
       - name: Résumé des GameTests
         if: always()
         run: |

@@ -1,0 +1,17 @@
+# GameTests qui echouent encore (1.0.6) : un nom par ligne. Tri et causes : tools/docs/gametests-tri-1.0.6.md (depot d'outils).
+# La CI echoue si un test absent de cette liste echoue. Retirer un nom des qu'il passe.
+conduite_refractaire
+p103_11_cordes
+p103_14_porte_outils_mural
+p103_poissons_plafonds
+p104_24_four_industriel_forme_cuit_et_allume_ses_foyers
+p104_29_caravane_marche_au_pas
+p104_29_waypoint_administrateur
+p105_10_chien_grogne_chasse_en_avant
+p105_28_chat_va_pecher
+p105_2_tick_meteo
+p105_41_enclos
+p105_7_loup_chasse_mouton_chien_defend
+p105_7_rat_vole_coffre_pas_caisse
+p105_7_vol_coupe_par_reglage
+p105_8_lion_couche_attaque_sous_6
