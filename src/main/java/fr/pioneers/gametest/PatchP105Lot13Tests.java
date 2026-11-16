@@ -148,7 +148,7 @@ public final class PatchP105Lot13Tests {
     public static void p105_13_four_allume_brule(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, Direction.SOUTH);
-        BlockPos c = anchor.relative(Direction.SOUTH);
+        BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, Direction.SOUTH, anchor);
         h.runAfterDelay(40, () -> {
             BlastFurnaceTile tile = furnace(h, c, true, false);
             Pig pig = pigInside(s, tile);
@@ -165,7 +165,7 @@ public final class PatchP105Lot13Tests {
     public static void p105_13_four_eteint_inoffensif(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, Direction.SOUTH);
-        BlockPos c = anchor.relative(Direction.SOUTH);
+        BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, Direction.SOUTH, anchor);
         h.runAfterDelay(40, () -> {
             BlastFurnaceTile tile = furnace(h, c, false, false);
             Pig pig = pigInside(s, tile);
@@ -183,7 +183,7 @@ public final class PatchP105Lot13Tests {
         Gt.Scope s = Gt.begin(h);
         Gt.equal(800, BlastFurnaceTile.STEEL_TICKS, "acier en 800 ticks (40 s)");
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, Direction.SOUTH);
-        BlockPos c = anchor.relative(Direction.SOUTH);
+        BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, Direction.SOUTH, anchor);
         h.runAfterDelay(60, () -> {
             BlastFurnaceTile tile = furnace(h, c, true, true);
             h.runAfterDelay(BlastFurnaceTile.STEEL_TICKS - 20, () -> Gt.check(tile.steelSlot().isEmpty(), "de l'acier avant 800 ticks de travail"));

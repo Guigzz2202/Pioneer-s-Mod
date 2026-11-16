@@ -40,45 +40,38 @@ public final class PatchP103Lot14Tests {
 
     /** Foyer + corps de cuivre + dome, cheminee de 8 (tirage x1,6), 16 charbons ; surete sur le flanc est du corps si demandee. */
     private static FireboxTile boiler(GameTestHelper h, BlockPos at, boolean safety) {
-        h.setBlock(at, PiBronze.FIREBOX.getBlock().defaultBlockState());
-        h.setBlock(at.above(), PiBronze.BOILER_PARTS.get(BoilerPart.COPPER_SHELL).getBlock());
-        h.setBlock(at.above(2), PiBronze.BOILER_PARTS.get(BoilerPart.STEAM_DOME).getBlock());
-        for (int i = 0; i < BoilerPart.MAX_CHIMNEY; i++) {
-            h.setBlock(at.above(3 + i), PiBronze.BOILER_PARTS.get(BoilerPart.CHIMNEY).getBlock());
-        }
-        if (safety) {
-            h.setBlock(at.above().east(), PiBronze.ACCESSORIES.get(SteamAccessory.SAFETY_VALVE).getBlock().defaultBlockState()
-                  .setValue(AccessoryBlock.FACING, Direction.EAST));
-        }
-        FireboxTile f = (FireboxTile) h.getBlockEntity(at);
-        f.house().checkNow();
-        Gt.check(f.formed(), "chaudiere non formee");
+        //1.0.6 : forme de Guillaume du lot 24 (l'ancienne colonne n'est plus formee) ; at = coin de la forme
+        FireboxTile f = MultiblockApi6Tests.boiler(h, at, BoilerPart.MAX_CHIMNEY, safety ? PiBronze.ACCESSORIES.get(SteamAccessory.SAFETY_VALVE)
+              .getBlock().defaultBlockState().setValue(AccessoryBlock.FACING, Direction.EAST) : null);
         Gt.equal(BoilerPart.MAX_CHIMNEY, f.guiValue(11), "cheminee de 8 comptee");
         f.guiSlots().get(0).setStack(new ItemStack(Items.COAL, 16));
         return f;
     }
 
-    @GameTest(template = Gt.BORDER, batch = "pioneers_p103_14_boiler_start", timeoutTicks = 900)
+    @GameTest(template = Gt.BORDER, batch = "pioneers_p103_14_boiler_start", timeoutTicks = 1600)
     public static void p103_14_chaudiere_demarre(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         Gt.check(!SteamRules.cutActive(h.getLevel().getGameTime(), Long.MIN_VALUE), "jamais coupee : le foyer n'est pas coupe");
         FireboxTile free = boiler(h, new BlockPos(3, 1, 3), false), safe = boiler(h, new BlockPos(14, 1, 14), true);
-        free.fillWater(1_000, false);                                // 25 % de 4 000 mB
-        safe.fillWater(1_000, false);                                // au-dessus du seuil de 20 %
+        //1.0.6 : quantites en part de la contenance et temps de chauffe de la chaudiere de Guillaume (11 corps : 11 fois la masse de
+        //l'ancienne colonne, ebullition vers 1 250 ticks au lieu de 800 avec une cheminee de 8)
+        int cap = free.waterCapacity();
+        free.fillWater(cap / 4, false);                              // 25 %
+        safe.fillWater(cap / 4, false);                              // au-dessus du seuil de 20 %
         h.runAtTickTime(40, () -> {
             for (FireboxTile f : new FireboxTile[]{free, safe}) {
                 Gt.check(!f.cut(), "eau a 25 % : le foyer n'est pas coupe");
                 Gt.check(f.guiValue(13) == 1, "etat d'interface : en marche (pas « coupee »)");
                 Gt.check(f.guiSlots().get(0).getStack().getCount() < 16, "le feu a pris : un charbon est entame");
                 Gt.check(f.guiValue(5) > 0, "foyer allume");
-                Gt.check(f.temperature() > 25, "l'eau chauffe");
+                Gt.check(f.temperature() > 20.5, "l'eau chauffe");
             }
         });
-        h.runAtTickTime(800, () -> {
+        h.runAtTickTime(1_500, () -> {
             for (FireboxTile f : new FireboxTile[]{free, safe}) {
                 Gt.check(f.temperature() >= SteamRules.BOIL_C - 0.01, "ebullition atteinte");
                 Gt.check(f.steamVolume().steam() > 100, "la vapeur monte dans la reserve");
-                Gt.check(f.water() < 1_000, "l'eau se vaporise");
+                Gt.check(f.water() < cap / 4, "l'eau se vaporise");
             }
             s.done();
         });
@@ -92,7 +85,7 @@ public final class PatchP103Lot14Tests {
             Gt.check(f.cut(), "chaudiere vide + surete : foyer coupe (pas de chauffe a sec)");
             Gt.check(f.guiValue(13) == 2, "etat d'interface : coupee par la surete");
             Gt.equal(16, f.guiSlots().get(0).getStack().getCount(), "foyer coupe : aucun charbon brule");
-            f.fillWater(2_000, false);                               // l'eau monte a 50 %
+            f.fillWater(f.waterCapacity() / 2, false);               // l'eau monte a 50 %
         });
         h.runAtTickTime(90, () -> {
             Gt.check(!f.cut(), "eau a 50 % : la chaudiere repart seule");
