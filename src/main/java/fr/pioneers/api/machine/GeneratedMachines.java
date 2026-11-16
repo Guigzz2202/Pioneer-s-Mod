@@ -79,11 +79,11 @@ public final class GeneratedMachines {
     private static void part0(List<MachineSpec> l) {
         l.add(new MachineSpec("crusher", "industry", Kind.PROCESS, Form.COMPACT, TierMode.MK, null, Power.FE_IN,
               List.of("basic_crusher", "advanced_crusher", "elite_crusher", "ultimate_crusher"),
-              List.of("kit_machine"), List.of(port(SideType.ITEMS, Role.IN, 1), port(SideType.ITEMS, Role.OUT, 2), port(SideType.FLUIDS, Role.IN, 1), port(SideType.ENERGY, Role.IN, 1)), true, true, "industrial:crusher", true, List.of("pioneers:grinding", "pioneers:milling"),
+              List.of("kit_machine"), List.of(port(SideType.ITEMS, Role.IN, 1), port(SideType.ITEMS, Role.OUT, 2), port(SideType.ENERGY, Role.IN, 1)), true, true, "industrial:crusher", true, List.of("pioneers:grinding", "pioneers:milling"),
               "industrial_crusher", null, "standard", false, "kit", "api.machine.unit.KitProcess", true, 2, -1));
         l.add(new MachineSpec("industrial_crusher", "industry", Kind.PROCESS, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
               List.of("industrial_crusher"),
-              List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 1), port(SideType.ITEMS, Role.OUT, 2), port(SideType.FLUIDS, Role.IN, 2), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:crusher", true, List.of("pioneers:grinding", "pioneers:milling"),
+              List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 1), port(SideType.ITEMS, Role.OUT, 2), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:crusher", true, List.of("pioneers:grinding", "pioneers:milling"),
               null, "crusher", "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
         l.add(new MachineSpec("furnace", "industry", Kind.PROCESS, Form.COMPACT, TierMode.MK, null, Power.FE_IN,
               List.of("basic_furnace", "advanced_furnace", "elite_furnace", "ultimate_furnace"),

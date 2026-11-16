@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
  * hauteur, profondeur).
  */
 public enum IndustryMachine {
-    CRUSHER("crusher", Atelier.KIT, true, null, 1, 2, 1, 0, 0, 0, Source.CRUSHING, Kind.PROCESS, 60, 0xAA7846, new int[]{7, 3, 11, 7, 3, 11}, false, false, new String[]{},
+    CRUSHER("crusher", Atelier.KIT, true, null, 1, 2, 0, 0, 0, 0, Source.CRUSHING, Kind.PROCESS, 60, 0xAA7846, new int[]{7, 3, 11, 7, 3, 11}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.POOL, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
     FURNACE("furnace", Atelier.KIT, true, null, 3, 2, 1, 1, 1, 1, Source.SMELTING, Kind.PROCESS, 120, 0xE66E28, new int[]{7, 5, 0, 7, 5, 0}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.DOME, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{"casing:top:1"}),
@@ -298,7 +298,7 @@ public enum IndustryMachine {
      * MAJ Recettes (lot 9a) : version des cases et reservoirs ecrite dans le NBT des machines ({@code ioVersion}) ; une machine sauvee sans
      * cette marque vient d'un monde d'avant la MAJ et ses cases sont remises en place par {@link IoMigration}.
      */
-    public static final int IO_VERSION = 8;
+    public static final int IO_VERSION = 9;
 
     /**
      * Anciennes io (objets, fluides, gaz : entree puis sortie) des machines dont l'io a change, la plus ancienne d'abord : {version des cases
@@ -306,7 +306,7 @@ public enum IndustryMachine {
      * generateurs separes de la 1.0.3-beta lot 5, 3 = d'avant la fusion des machines de la 1.0.4-beta lot 11).
      */
     private static final java.util.Map<String, int[][]> LEGACY_IO = java.util.Map.ofEntries(
-          java.util.Map.entry("crusher", new int[][]{{3, 1, 2, 0, 0, 0, 0}}),
+          java.util.Map.entry("crusher", new int[][]{{3, 1, 2, 0, 0, 0, 0}, {9, 1, 2, 1, 0, 0, 0}}),
           java.util.Map.entry("furnace", new int[][]{{3, 1, 1, 0, 0, 0, 0}}),
           java.util.Map.entry("compressor", new int[][]{{1, 1, 1, 0, 0, 0, 0}}),
           java.util.Map.entry("ore_separator", new int[][]{{3, 1, 3, 0, 0, 0, 0}}),

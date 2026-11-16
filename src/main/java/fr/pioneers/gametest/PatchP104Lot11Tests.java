@@ -316,7 +316,8 @@ public final class PatchP104Lot11Tests {
         Gt.equal(4, t.itemInputs().get(0).getCount(), "entree du kit");
         Gt.equal(2, t.itemOutputs().get(0).getCount(), "sortie du kit");
         Gt.equal(1, t.itemOutputs().get(1).getCount(), "2e sortie du kit");
-        Gt.equal(500, t.fluidInputs().get(0).getFluidAmount(), "eau dans le reservoir du kit");
+        //1.0.6 : le broyeur n'a plus de reservoir (broyage fin sans eau) : l'eau d'un broyeur a boulets relu est perdue, les objets restent
+        Gt.check(t.fluidInputs().isEmpty(), "broyeur sans reservoir d'eau (1.0.6)");
         h.succeed();
     }
 
