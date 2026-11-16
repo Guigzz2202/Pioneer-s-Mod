@@ -125,6 +125,21 @@ public final class Gt {
         return current;
     }
 
+    // ------------------------------------------------------------------ buffers
+    /**
+     * Ouvre en entree-sortie les six faces d'un buffer pose par le test. Un buffer neuf a toutes ses faces fermees (le joueur les regle) :
+     * sans face ouverte, un cable ne s'y branche pas et le reseau sans fiche n'existe pas.
+     */
+    public static fr.pioneers.logistics.transport.buffer.BufferTile openFaces(GameTestHelper h, BlockPos abs) {
+        net.minecraft.world.level.block.entity.BlockEntity be = h.getLevel().getBlockEntity(abs);
+        check(be instanceof fr.pioneers.logistics.transport.buffer.BufferTile, "pas de buffer en " + abs);
+        fr.pioneers.logistics.transport.buffer.BufferTile b = (fr.pioneers.logistics.transport.buffer.BufferTile) be;
+        for (fr.pioneers.core.RelativeSide r : fr.pioneers.core.RelativeSide.values()) {
+            b.unit().sides().set(r, fr.pioneers.core.side.SideMode.IO);
+        }
+        return b;
+    }
+
     // ------------------------------------------------------------------ verifications
     public static void check(boolean ok, String what) {
         if (!ok) {

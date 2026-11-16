@@ -78,6 +78,8 @@ public final class PatchP104Lot27Tests {
         h.getLevel().setBlock(b, PiTransport.LOGISTIC_CABLES.get(CableLevel.BASIC).getBlock().defaultBlockState(), 3);
         //Un reseau sans fiche n'existe pas : un buffer d'objets au bout de la ligne
         h.getLevel().setBlock(b.east(), PiTransport.BUFFERS.get(BufferType.ITEM).get(CableTier.BASIC).getBlock().defaultBlockState(), 3);
+        //un buffer neuf a ses faces fermees : on les ouvre pour que le cable s'y branche
+        Gt.openFaces(h, b.east());
         Player p = h.makeMockPlayer();
         //1.0.4-beta (lot 30) : sur un cable nu, un bloc plein ne cache plus rien ; le cadre de cache d'abord
         rightClick(h, p, a, new ItemStack(Items.STONE_BRICKS, 3));
