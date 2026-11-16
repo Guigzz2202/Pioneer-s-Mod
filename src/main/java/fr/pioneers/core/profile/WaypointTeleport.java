@@ -148,7 +148,8 @@ public final class WaypointTeleport {
             //carte d'un chunk que le client n'avait pas, bug du lot 29) garde la regle du lot 30 : la surface, jamais sous le sol.
             if (wanted > c.minY() + 1 && wanted < c.ceiling() && !c.passable(wanted)) {
                 for (int y = wanted + 1; y <= wanted + ABOVE && y + 1 < c.ceiling(); y++) {
-                    if (safe(c, y)) {
+                    //jamais sous le sol (regle du lot 30) : une grotte juste au-dessus d'un waypoint enfoui ne compte pas
+                    if (y >= c.ground() && safe(c, y)) {
                         return y;
                     }
                 }

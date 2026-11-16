@@ -353,6 +353,10 @@ public final class PatchP104Lot29Tests {
         //place sure : pieds et tete libres au-dessus d'un sol, au plus pres de la hauteur du waypoint
         BlockPos floor = h.absolutePos(new BlockPos(4, 0, 4));
         h.setBlock(new BlockPos(4, 1, 4), Blocks.STONE.defaultBlockState());
+        //1.0.6 : en CI, le gabarit est sous le relief : on ouvre la colonne jusqu'au ciel (la pierre devient le sol, comme en jeu)
+        for (int y = floor.getY() + 2; y < h.getLevel().getMaxBuildHeight(); y++) {
+            h.getLevel().setBlock(new BlockPos(floor.getX(), y, floor.getZ()), Blocks.AIR.defaultBlockState(), 2);
+        }
         BlockPos spot = WaypointTeleport.safeSpot(h.getLevel(), floor.getX(), floor.getY() + 1, floor.getZ());
         Gt.equal(floor.getY() + 2, spot.getY(), "waypoint dans un bloc : place juste au-dessus");
         s.done();
