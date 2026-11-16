@@ -93,10 +93,18 @@ public final class PatchP102Lot3Tests {
               PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.STEAM_DOME).getBlock());
         Gt.equal((long) (shells * SteamRules.COPPER_SHELL_STEAM + domes * SteamRules.DOME_STEAM + 1), (long) w.steamCapacity(),
               "reserve de vapeur = corps + domes");
+        //diagnostic : dernier etat vu de la chaudiere remplie (tick, formee, eau, temperature)
+        String[] seen = {"jamais vue"};
+        h.onEachTick(() -> {
+            if (h.getBlockEntity(wetAt) instanceof FireboxTile f) {
+                seen[0] = "tick " + h.getTick() + ", formee " + f.formed() + ", eau " + Math.round(f.water()) + " / " + f.waterCapacity()
+                      + ", " + Math.round(f.temperature()) + " C";
+            }
+        });
         h.runAtTickTime(330, () -> {
             Gt.check(h.getBlockState(dryAt).is(Blocks.AIR) || !(h.getBlockEntity(dryAt) instanceof FireboxTile),
                   "la chaudiere chauffee sans eau n'a pas explose");
-            Gt.check(h.getBlockEntity(wetAt) instanceof FireboxTile f && f.formed(), "la chaudiere remplie d'eau a saute : " + h.getBlockState(wetAt));
+            Gt.check(h.getBlockEntity(wetAt) instanceof FireboxTile f && f.formed(), "la chaudiere remplie d'eau a saute : " + h.getBlockState(wetAt) + " ; vue en dernier : " + seen[0]);
             Gt.check(w.temperature() <= SteamRules.BOIL_C + 1e-6, "avec de l'eau, jamais au-dessus de 100 C");
             s.done();
         });

@@ -122,7 +122,8 @@ public final class PatchP105Lot14Tests {
         f.itemInputs().get(0).setStack(new ItemStack(Items.BEEF, 3));
         h.startSequence()
               .thenExecuteAfter(74, () -> Gt.equal(0, cooked(f), "rien de cuit avant 80 ticks"))
-              .thenExecuteAfter(12, () -> Gt.check(cooked(f) >= 1, "boeuf cuit en 80 ticks (vu a 86)"))
+              .thenExecuteAfter(12, () -> Gt.check(cooked(f) >= 1, "boeuf cuit en 80 ticks (vu a 86) ; energie "
+                    + f.getEnergy().getStored() + " / " + f.getEnergy().getCapacity()))
               .thenExecute(s::done);
     }
 

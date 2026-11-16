@@ -57,7 +57,9 @@ public final class PatchP103Lot7Tests {
         //1.0.6 : forme de Guillaume du lot 24 (l'ancienne colonne n'est plus formee) ; at = coin de la forme
         FireboxTile f = MultiblockApi6Tests.boiler(h, at, 0, cutoff ? PiBronze.ACCESSORIES.get(SteamAccessory.SAFETY_VALVE).getBlock()
               .defaultBlockState().setValue(AccessoryBlock.FACING, Direction.EAST) : null);
-        f.guiSlots().get(0).setStack(new ItemStack(Items.COAL, 16));
+        //1.0.6 : charbon mis APRES le premier tick de la surete (comme en jeu : l'accessoire est deja la quand on charge le foyer) ; avant,
+        //le foyer pose avant la surete brulait un charbon a son premier tick
+        h.runAfterDelay(2, () -> f.guiSlots().get(0).setStack(new ItemStack(Items.COAL, 16)));
         return f;
     }
 

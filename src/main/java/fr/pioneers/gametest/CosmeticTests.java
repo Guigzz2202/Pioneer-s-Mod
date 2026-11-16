@@ -78,6 +78,9 @@ public final class CosmeticTests {
         Gt.Scope s = Gt.begin(h);
         ServerPlayer p = s.player("gtcot", "Tancrede", AT);
         p.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.IRON_CHESTPLATE));
+        //1.0.6 : les attributs de l'equipement ne passent qu'au tick du joueur (detectEquipmentUpdates), que le joueur factice n'a pas :
+        //on les applique comme lui
+        p.getAttributes().addTransientAttributeModifiers(p.getItemBySlot(EquipmentSlot.CHEST).getAttributeModifiers(EquipmentSlot.CHEST));
         int top = CosmeticPiece.TOP.ordinal();
         //Geste du panneau : l'objet tenu par la souris va dans sa case, une piece d'un autre emplacement est refusee
         p.inventoryMenu.setCarried(piece("explorer", CosmeticPiece.HAT));
