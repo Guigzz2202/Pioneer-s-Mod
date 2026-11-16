@@ -190,7 +190,9 @@ public final class PatchP105Lot7Tests {
         Gt.check(r2.steal(crate).isEmpty() && r3.steal(furnace).isEmpty(), "rien dans la caisse d'entrepot ni dans le four");
         Gt.equal(3, ((Container) s.level.getBlockEntity(furnace)).getItem(0).getCount(), "le four est intact");
         r1.kill();
-        Gt.check(!s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(4), e -> e.getItem().is(Items.BREAD)).isEmpty(),
+        //le pain vanilla qui tombe au sol devient le pain du mod (fr.pioneers.core.vanilla.VanillaEvents.onJoin, vanilla_replacements.json)
+        net.minecraft.world.item.Item bread = fr.pioneers.core.vanilla.VanillaReplacements.convert(new ItemStack(Items.BREAD)).getItem();
+        Gt.check(!s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(4), e -> e.getItem().is(bread)).isEmpty(),
               "tue, il lache son butin (vivant " + r1.isAlive() + ", butin " + r1.loot() + ", en " + r1.blockPosition() + ", objets au sol "
               + s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(8)).stream().map(e -> e.getItem().toString()).toList() + ")");
         s.done();

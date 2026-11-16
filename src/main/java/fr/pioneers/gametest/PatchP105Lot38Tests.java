@@ -208,7 +208,9 @@ public final class PatchP105Lot38Tests {
         //sauvegarde AVANT le premier tick : les objets sont gardes (cle pending) puis relus par une tile neuve qui les pose au sol
         CompoundTag saved = saw.saveWithFullMetadata();
         Gt.check(saved.getList("pending", 10).size() == 2, "sauvegarde avant le premier tick : objets gardes");
-        BlockPos at2 = new BlockPos(5, 1, 5);
+        //assez loin de la tile d'origine : ground() compte les objets a 3 blocs autour (en (5, 1, 5), les 12 pierres des deux tiles
+        //etaient comptees ensemble : 24 au lieu de 12)
+        BlockPos at2 = new BlockPos(8, 1, 8);
         SteamProcessTile again = place(h, at2, SteamMachine.SAW);
         again.load(saved);
         again.serverTick(s.level);

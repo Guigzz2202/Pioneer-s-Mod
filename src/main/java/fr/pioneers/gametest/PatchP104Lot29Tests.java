@@ -318,7 +318,8 @@ public final class PatchP104Lot29Tests {
         ItemStack sheet = new ItemStack(PiCaravan.ROUTE_SHEET.get());
         RouteSheetItem.addStop(owner, sheet, (RelayTile) h.getBlockEntity(pa));
         RouteSheetItem.addStop(owner, sheet, (RelayTile) h.getBlockEntity(pb));
-        Horse horse = h.spawn(EntityType.HORSE, new BlockPos(16, 1, 8));
+        //1.0.6 : le sol du gabarit est en y = 1 : le cheval nait au-dessus (en y = 1 il etait dans la pierre)
+        Horse horse = h.spawn(EntityType.HORSE, new BlockPos(16, 2, 8));
         horse.setTamed(true);
         CaravanData d = PiCaravan.get(horse);
         Gt.check(Caravans.equip(null, horse, d, new ItemStack(PiCaravan.PACK_SADDLE.get())), "bat pose");

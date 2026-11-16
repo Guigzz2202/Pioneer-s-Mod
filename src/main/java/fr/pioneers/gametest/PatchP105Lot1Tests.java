@@ -62,17 +62,23 @@ public final class PatchP105Lot1Tests {
         Gt.equal(Season.SUMMER, next.season(), "un jour plus tard : l'ete");
         Gt.equal(1L, (long) next.dayOfSeason(), "premier jour de l'ete");
         //climat : continu au changement de saison, et l'ete plus chaud que l'hiver (lieu a ciel ouvert)
+        //1.0.6 : « ciel ouvert » se lit a la lumiere du ciel (canSeeSky), que le moteur de lumiere calcule apres la pose du gabarit : on
+        //attend qu'elle soit la (en CI, le premier tick la trouvait encore a 0 : « sous terre »)
         BlockPos open = h.absolutePos(new BlockPos(4, 2, 4));
-        SeasonClimate.Place place = Climate.place(level, open);
-        Gt.check(place.seasonal(), "lieu a ciel ouvert : climat saisonnier");
-        Seasons.Date edge = Seasons.date(0, 0, length).plusDays(length);
-        float before = place.temperature(edge.plusDays(-1e-4)), after = place.temperature(edge);
-        Gt.check(Math.abs(before - after) < 1e-3F, "temperature continue au passage printemps -> ete");
-        float summer = place.temperature(Seasons.date(0, 0, length).plusDays(1.5 * length));
-        float winter = place.temperature(Seasons.date(0, 0, length).plusDays(3.5 * length));
-        Gt.check(summer > winter, "l'ete est plus chaud que l'hiver");
-        Gt.check(Math.abs(Climate.temperature(level, open) - place.temperature(next)) < 1e-4F, "Climate.temperature suit la date du serveur");
-        s.done();
+        h.startSequence()
+              .thenWaitUntil(() -> Gt.check(level.canSeeSky(open), "lumiere du ciel pas encore calculee en " + open))
+              .thenExecute(() -> {
+                  SeasonClimate.Place place = Climate.place(level, open);
+                  Gt.check(place.seasonal(), "lieu a ciel ouvert : climat saisonnier");
+                  Seasons.Date edge = Seasons.date(0, 0, length).plusDays(length);
+                  float before = place.temperature(edge.plusDays(-1e-4)), after = place.temperature(edge);
+                  Gt.check(Math.abs(before - after) < 1e-3F, "temperature continue au passage printemps -> ete");
+                  float summer = place.temperature(Seasons.date(0, 0, length).plusDays(1.5 * length));
+                  float winter = place.temperature(Seasons.date(0, 0, length).plusDays(3.5 * length));
+                  Gt.check(summer > winter, "l'ete est plus chaud que l'hiver");
+                  Gt.check(Math.abs(Climate.temperature(level, open) - place.temperature(next)) < 1e-4F, "Climate.temperature suit la date du serveur");
+                  s.done();
+              });
     }
 
     /** Premiere culture hors climat ici (saison changee au besoin). */
