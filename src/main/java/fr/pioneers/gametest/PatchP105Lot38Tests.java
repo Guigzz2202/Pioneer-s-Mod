@@ -158,7 +158,7 @@ public final class PatchP105Lot38Tests {
         }
         Gt.check(conv != null && conv.tier() == 0 && Math.abs(conv.tierYield(0) - 1.75) < 1e-9 && conv.yieldAll(), "scierie MKI : buche x 1,75");
         Gt.equal(Math.max(1, log.time() >> 2), conv.time(), "scierie MKI : duree / 4 (m 0)");
-        Gt.check(IndustryRecipes.dominated(s.level, IndustryMachine.CRUSHER).contains(rl("crushing/raw_iron")), "broyeur MKI : recette du kit dominee");
+        //1.0.6 : la recette du kit dominee est desactivee (doublon du concasseur) : le broyeur MKI ne la voit plus du tout
         Gt.check(IndustryRecipes.of(s.level, IndustryMachine.CRUSHER).stream().noneMatch(r -> r.getId().equals(rl("crushing/raw_iron"))),
               "broyeur MKI : la recette dominee n'est plus essayee");
         Gt.check(IndustryRecipes.withoutLow(IndustryRecipes.of(s.level, IndustryMachine.SAWMILL)).stream().noneMatch(IndustrialRecipe::converted),

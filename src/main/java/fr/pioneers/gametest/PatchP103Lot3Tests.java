@@ -199,11 +199,10 @@ public final class PatchP103Lot3Tests {
         Recipe<?> jaw = server.getRecipeManager().byKey(rl("materials/jaw_crushing_crushed_iron")).orElse(null);
         Gt.check(jaw instanceof MechanicalRecipe m && m.results().size() == 1 && m.results().get(0).stack().getCount() == 2
                  && m.results().get(0).chance() >= 1, "concasseur a machoires : 2 concasses");
-        Recipe<?> kit = server.getRecipeManager().byKey(rl("crushing/raw_iron")).orElse(null);
-        Gt.check(kit instanceof ProcessingRecipe p && p.getResult().getCount() == 2, "recette du kit : 2 concasses (gardee en JSON)");
-        //1.0.5-beta (lot 38) : la recette du kit est DOMINEE par celle du concasseur (famille broyage, 3 au MKI) : le broyeur MKI ne la fait plus
-        Gt.check(fr.pioneers.tech.industry.recipe.IndustryRecipes.dominated(h.getLevel(), fr.pioneers.tech.industry.IndustryMachine.CRUSHER).contains(rl("crushing/raw_iron")),
-              "broyeur MKN : crushing/raw_iron dominee");
+        //1.0.5-beta (lot 38) : la recette du kit etait DOMINEE par celle du concasseur (famille broyage, 3 au MKI) ; 1.0.6 : elle est desactivee
+        //(doublon), son verrou suit la recette du concasseur
+        Gt.check(server.getRecipeManager().byKey(rl("crushing/raw_iron")).isEmpty(), "recette du kit desactivee (doublon)");
+        Gt.equal(rl("materials/jaw_crushing_crushed_iron"), fr.pioneers.core.common.PiRemaps.recipeId(rl("crushing/raw_iron")), "verrou suivi");
         fr.pioneers.tech.industry.recipe.IndustrialRecipe crush = OreYields.crushOf(h.getLevel(), "iron", new ItemStack(item("crushed_iron")));
         Gt.check(crush != null && crush.converted() && crush.results().get(0).stack().getCount() * crush.tierYield(0) == 3
                  && crush.results().get(0).stack().getCount() * crush.tierYield(3) == 3, "broyeur MKN : 3 concasses (recette du concasseur, plafond T1)");

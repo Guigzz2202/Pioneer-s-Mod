@@ -379,6 +379,11 @@ public final class PiRemaps {
         if (lot39 != null) {
             return Pioneers.rl(lot39);
         }
+        //1.0.6 : recette de machine desactivee (doublon d'une autre recette de la meme machine) -> la recette gardee
+        String kept = GeneratedRecipeRemaps.DUPLICATES.get(path);
+        if (kept != null) {
+            return Pioneers.rl(kept);
+        }
         String next = path;
         for (Map.Entry<String, String> e : P104_LOT23_IDS.entrySet()) {
             //id entier, aussi en fin d'un nom compose (copie d'atelier « bronze_bench_<id> »)

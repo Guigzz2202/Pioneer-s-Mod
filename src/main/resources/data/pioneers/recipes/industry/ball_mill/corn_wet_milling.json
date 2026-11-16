@@ -12,12 +12,6 @@
    "count": 4
   }
  ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 250
-  }
- ],
  "results": [
   {
    "item": "pioneers:corn_starch",

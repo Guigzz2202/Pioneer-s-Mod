@@ -86,9 +86,10 @@ public final class PatchP103Lot4Tests {
         Gt.check(gear instanceof BenchRecipe b && b.tools().size() == 2 && b.ingredients().size() == 2, "etabli : ebauche + 3 plaques, marteau et lime");
         Gt.check(server.getRecipeManager().byKey(rl("components_bench/aluminium_plate_from_ingots")).isEmpty(),
               "l'aluminium ne se travaille plus a l'etabli");
-        IndustrialRecipe wire = industrial(server, "industry/wiremill/wire_ingot_copper");
-        //1.0.5-beta (lot 43, regle permanente du cout matiere) : 1 lingot = 144 mB = 2 fils de 72 mB, jamais plus
-        Gt.equal(2, wire.results().get(0).stack().getCount(), "trefileuse : 1 lingot de cuivre -> 2 fils");
+        //1.0.5-beta (lot 43, regle permanente du cout matiere) : 1 lingot = 144 mB = 2 fils de 72 mB, jamais plus ; 1.0.6 : la copie MKI est
+        //desactivee (doublon), la trefileuse MKI fait la recette a vapeur
+        Gt.check(server.getRecipeManager().byKey(rl("bronze/steam/wiremill/wire_copper")).orElse(null) instanceof fr.pioneers.tech.bronze.machines.SteamRecipe w
+              && w.result().getCount() == 2, "trefileuse : 1 lingot de cuivre -> 2 fils");
         IndustrialRecipe rodWire = industrial(server, "industry/wiremill/wire_copper");
         Gt.equal(1, rodWire.tier(), "trefileuse : tige -> 2 fils au MKII");
         IndustrialRecipe ring = industrial(server, "industry/extruder/extrude_ring_steel");

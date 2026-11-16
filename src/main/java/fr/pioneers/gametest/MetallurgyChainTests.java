@@ -202,7 +202,7 @@ public final class MetallurgyChainTests {
               // 3. plaques pressees depuis les lingots du haut fourneau (1 lingot + matrice -> 1 plaque, matrice rendue : case Outil, lot 44 ;
               // 1.0.6 : la coulee de plaques d'acier du lot 4b n'existe plus) ; 10 fois
               .thenExecute(() -> {
-                  lock(press, "industry/press/press_plate_steel");
+                  lock(press, "bronze/steam/press/plate_steel");   // 1.0.6 : la copie MKI est desactivee (doublon)
                   give(press, 0, new ItemStack(steel, 10));
                   Gt.tool(press, new ItemStack(die, 1));
               })
@@ -214,7 +214,7 @@ public final class MetallurgyChainTests {
               .thenExecute(() -> {
                   lock(welder, "industry/arc_welder/weld_beam_steel");
                   give(welder, 0, take(press, plate, 6));
-                  lock(calender, "industry/calender/sheet_steel");
+                  lock(calender, "bronze/steam/rolling_mill/sheet_steel");
                   give(calender, 0, take(press, plate, 4));
               })
               .thenWaitUntil(() -> {
