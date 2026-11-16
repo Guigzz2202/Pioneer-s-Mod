@@ -99,8 +99,10 @@ public final class PatchP105Lot4Tests {
     static FaunaSettings settings(int counted) {
         int[] caps = FaunaSettings.DEFAULT.caps().clone();
         caps[FaunaGroup.GAME.ordinal()] = Math.max(caps[FaunaGroup.GAME.ordinal()], 4 * counted + 64);
+        //1.0.6 : reproduction sauvage (lot 6) coupee : ses naissances (d'autres betes de la zone, voisines des autres tests) comptaient
+        //dans les apparitions du passage ; ces tests ne regardent que le repeuplement du lot 4
         return new FaunaSettings(true, FaunaRules.PERIOD, FaunaRules.THRESHOLD, FaunaRules.PLAYER_DISTANCE, FaunaRules.VILLAGE_DISTANCE, true,
-              FaunaRules.AI_DISTANCE, caps);
+              FaunaRules.AI_DISTANCE, caps).withWildBreeding(false, 0, FaunaRules.WILD_BREED_DISTANCE);
     }
 
     static int[] gameStart(int counted) {
@@ -147,7 +149,12 @@ public final class PatchP105Lot4Tests {
               "regles du jeu : la vache ne nait plus au hasard (evenement refuse)");
         long zone = FaunaRules.zoneKey(crow.getBlockX(), crow.getBlockZ());
         Gt.check(FaunaCounter.of(level).species(zone, FaunaRegistry.byId("pioneers:crow")) >= 1, "le corbeau est compte dans sa zone");
-        Gt.check(FaunaCounter.of(level).groups(zone)[FaunaGroup.GAME.ordinal()] >= 2, "vache et mouton comptes (gibier)");
+        //1.0.6 : la vache et le mouton peuvent tomber dans une autre zone que le corbeau (gabarit a cheval sur une limite de zone) :
+        //chacun est compte dans SA zone
+        long zc = FaunaRules.zoneKey(cow.getBlockX(), cow.getBlockZ()), zs = FaunaRules.zoneKey(sheep.getBlockX(), sheep.getBlockZ());
+        int g = FaunaGroup.GAME.ordinal();
+        Gt.check(zc == zs ? FaunaCounter.of(level).groups(zc)[g] >= 2 : FaunaCounter.of(level).groups(zc)[g] >= 1 && FaunaCounter.of(level).groups(zs)[g] >= 1,
+              "vache et mouton comptes (gibier)");
         s.done();
     }
 
