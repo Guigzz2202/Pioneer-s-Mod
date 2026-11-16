@@ -169,7 +169,7 @@ public final class PatchP104Lot30Tests {
         ServerPlayer p = s.player("gttp30", "Ines", new BlockPos(1, 1, 1));
         p.setGameMode(GameType.CREATIVE);
         Gt.check(!WaypointTeleport.allowed(p), "joueur ordinaire en creatif : pas de teleportation");
-        s.server.getPlayerList().op(p.getGameProfile());
+        Gt.op(s.server, p);   // 1.0.6 : niveau 4 (op() donne le niveau 0 du serveur de GameTests)
         try {
             p.setGameMode(GameType.SURVIVAL);
             Gt.check(!WaypointTeleport.allowed(p), "operateur en survie : refuse");

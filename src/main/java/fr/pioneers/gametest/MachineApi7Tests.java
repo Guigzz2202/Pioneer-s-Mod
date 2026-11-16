@@ -68,8 +68,9 @@ public final class MachineApi7Tests {
         roundTrip(a, b, "slots", "progress", "water", "placedWater");
         Gt.equal(12, b.inputs().get(0).getStack().getCount(), "entree relue");
         Gt.check(b.guiSlots().get(b.guiSlots().size() - 1).getStack().is(Items.FLINT), "derniere sortie relue (ordre des cases)");
-        //Ordre des cases : entree, maille, sorties ; valeurs nommees aux indices d'avant (8)
-        Gt.equal(1 + 1 + MachineType.SIFTER.outputs, b.guiSlots().size(), "cases du tamis");
+        //Ordre des cases : entree, sorties (1.0.2-beta lot 2 : plus de case de maille, MechanicalProcess.MESHLESS) ; valeurs nommees aux
+        //indices d'avant (8)
+        Gt.equal(1 + MachineType.SIFTER.outputs, b.guiSlots().size(), "cases du tamis");
         UiValues ui = b.uiValues();
         Gt.equal(8, ui.size(), "valeurs d'interface");
         Gt.equal(0, ui.index(UiValues.SPEED), "vitesse a l'indice 0");
@@ -110,7 +111,7 @@ public final class MachineApi7Tests {
         SteamBlowerTile w2 = place(h, new BlockPos(5, 2, 5), PiBronze.STEAM_BLOWER.getBlock(), SteamBlowerTile.class);
         w.steam(Direction.DOWN).add(150, 0);
         roundTrip(w, w2, "steam");
-        Gt.equal(3, w2.uiValues().size(), "valeurs de la soufflerie");
+        Gt.equal(4, w2.uiValues().size(), "valeurs de la soufflerie (1.0.2-beta lot 3 : + contenance)");
         Gt.equal(StandardLayout.ZONE, w2.guiHeight(), "interface v2 de la soufflerie");
         s.done();
     }

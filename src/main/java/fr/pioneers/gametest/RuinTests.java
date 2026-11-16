@@ -67,8 +67,12 @@ import net.minecraftforge.gametest.PrefixGameTestTemplate;
 @PrefixGameTestTemplate(false)
 public final class RuinTests {
 
-    /** Cle d'une nomenclature de restauration MKI ({@code data/pioneers/ruins/restoration/acid_etcher.json}). */
-    static final String MACHINE = "acid_etcher";
+    /**
+     * Cle d'une nomenclature de restauration MKI ({@code data/pioneers/ruins/restoration/chemical_reactor.json}). 1.0.6 : la graveuse a
+     * l'acide ({@code acid_etcher}) est absorbee depuis les fusions du 1.0.4-beta et n'a plus de nomenclature (« restore.unknown » : aucun
+     * chantier ne s'ouvrait).
+     */
+    static final String MACHINE = "chemical_reactor";
 
     private RuinTests() {
     }

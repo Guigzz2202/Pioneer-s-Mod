@@ -83,12 +83,15 @@ final class MultiProcess extends MachineUnit {
     @Override
     public void save(CompoundTag tag) {
         tag.putDouble("batchPressure", batchPressure);
-        if (batch != null) {
-            tag.putString("batch", batch.getId().toString());
+        //1.0.6 (GameTest mb_procede) : un lot relu mais pas encore resolu (savedBatch : la recette se retrouve au premier tick) est resauve
+        //tel quel ; avant, un chunk sauve sans avoir tourne (bord de zone chargee) perdait le lot en cours et ses entrees deja prises
+        ResourceLocation id = batch != null ? batch.getId() : savedBatch;
+        if (id != null) {
+            tag.putString("batch", id.toString());
             tag.putInt("batchImpurity", batchImpurity);
             tag.putDouble("batchBonus", batchBonus);
         }
-        if (batch != null || batchCount > 0) {
+        if (id != null || batchCount > 0) {
             //Lot en cours (la foreuse n'a pas de recette : compte et avancement seulement)
             tag.putInt("batchCount", batchCount);
             tag.putDouble("progress", progress);

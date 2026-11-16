@@ -152,6 +152,37 @@ public final class Gt {
         return (T) load(data.getClass(), data.save(new CompoundTag()));
     }
 
+    /**
+     * 1.0.6 : rend un joueur operateur de niveau 4. {@code PlayerList.op} prend le niveau du serveur ({@code getOperatorUserPermissionLevel}),
+     * que le serveur de GameTests met a 0 : l'operateur n'y avait aucun droit.
+     */
+    public static void op(net.minecraft.server.MinecraftServer server, net.minecraft.server.level.ServerPlayer p) {
+        server.getPlayerList().getOps().add(new net.minecraft.server.players.ServerOpListEntry(p.getGameProfile(), 4, false));
+        server.getPlayerList().sendPlayerPermissionLevel(p);
+    }
+
+    /**
+     * 1.0.6 : premiere case libre (sans collision) a partir de {@code abs} en montant (8 au plus). Dans un gabarit, le sol de pierre est en
+     * y = 1 relatif (y = 0 : la couche du bloc de structure) : une bete posee en y = 1 naissait DANS la pierre (etouffee, sans chemin).
+     */
+    public static BlockPos standing(net.minecraft.world.level.Level level, BlockPos abs) {
+        BlockPos p = abs;
+        for (int i = 0; i < 8 && !level.getBlockState(p).getCollisionShape(level, p).isEmpty(); i++) {
+            p = p.above();
+        }
+        return p;
+    }
+
+    /**
+     * Relit une tile comme au chargement d'un chunk : {@code BlockEntity.loadStatic} lit le type dans la cle « id », que seule
+     * {@code saveWithId} ecrit ({@code saveWithoutMetadata} ne l'a pas : la relecture rendait null). A comparer ensuite par
+     * {@code saveWithoutMetadata} des deux cotes.
+     */
+    @javax.annotation.Nullable
+    public static net.minecraft.world.level.block.entity.BlockEntity reloadTile(net.minecraft.world.level.block.entity.BlockEntity tile) {
+        return net.minecraft.world.level.block.entity.BlockEntity.loadStatic(tile.getBlockPos(), tile.getBlockState(), tile.saveWithId());
+    }
+
     /** Relit un NBT avec la fonction {@code static load(CompoundTag)} (souvent privee) d'une classe de donnee de monde du mod. */
     public static SavedData load(Class<?> type, CompoundTag tag) {
         try {

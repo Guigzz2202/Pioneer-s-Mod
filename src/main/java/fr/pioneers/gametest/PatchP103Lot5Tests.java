@@ -103,9 +103,11 @@ public final class PatchP103Lot5Tests {
         Gt.equal(1, liquid.fluidInputs().size(), "generateur liquide : un reservoir");
         Gt.equal(2048, GeneratorOutput.solidPerTick(0), "solide MKI : 2 048 FE/t");
         //FE par mB : gazole au liquide (x2), gaz naturel a la turbine compacte (x1) : les chiffres de l'ancien generateur a combustion compact
-        Fluid diesel = PiIndustry.fluid("diesel");
+        //1.0.6 : le gazole est un fluide de PiFluids (pas du catalogue de PiIndustry : PiIndustry.fluid("diesel") rendait le fluide vide)
+        Fluid diesel = net.minecraftforge.registries.ForgeRegistries.FLUIDS.getValue(rl("diesel"));
         GeneratorOutput.Use d = GeneratorOutput.fluid(h.getLevel(), new FluidStack(diesel, 100));
-        Gt.check(d != null && d.machine() == IndustryMachine.LIQUID_COMBUSTION_GENERATOR, "le gazole brule au generateur a combustion liquide");
+        Gt.check(d != null && d.machine() == IndustryMachine.LIQUID_COMBUSTION_GENERATOR, "le gazole brule au generateur a combustion liquide ("
+              + (d == null ? "aucun generateur, gazole " + net.minecraftforge.registries.ForgeRegistries.FLUIDS.getKey(diesel) : d.machine().key + ", " + d.recipe().getId()) + ")");
         Gt.equal(16_384L, Math.round(GeneratorOutput.perUnit(d.recipe(), d.amount(), false)), "gazole : 16 384 FE par mB");
         Gas gas = PioneersAPI.gas(rl("natural_gas"));
         Gt.check(gas != null, "gaz naturel");
@@ -140,7 +142,8 @@ public final class PatchP103Lot5Tests {
         AtelierTile b = atelier(h, new BlockPos(5, 2, 2), IndustryMachine.SOLID_COMBUSTION_GENERATOR, CableTier.BASIC);
         b.load(tag.copy());
         Gt.check(b.itemInputs().get(0).getStack().is(Items.COAL) && b.itemInputs().get(0).getCount() == 5, "le charbon reste dans sa case");
-        Gt.equal(2, b.saveWithoutMetadata().getInt(IoMigration.NBT), "la machine resauvee porte la version 2");
+        //1.0.6 : la machine relue est resauvee a la version courante des cases (8 depuis le lot 39 du 1.0.5-beta), plus a la 2
+        Gt.equal(IndustryMachine.IO_VERSION, b.saveWithoutMetadata().getInt(IoMigration.NBT), "la machine resauvee porte la version courante");
         s.done();
     }
 
@@ -155,13 +158,12 @@ public final class PatchP103Lot5Tests {
         Gt.equal("basic_solid_combustion_generator", PiRemaps.p103Block("compact_steam_turbine"), "turbine compacte -> generateur solide MKI");
         Gt.equal("basic_gas_buffer", PiRemaps.p103Block("compact_exhaust"), "echappement compact -> buffer de gaz MKI");
         Gt.check(PiRemaps.p103Block("basic_crusher") == null, "le broyeur n'est pas remappe");
-        List<String> targets = new ArrayList<>();
+        //1.0.6 : la cible du lot 5 peut avoir ete retiree depuis (tete de puits de gaz absorbee par le derrick, fusions du 1.0.4-beta) : c'est
+        //le bout de la CHAINE des remaps (PiRemaps.simplifiedBlock, celle du chargement d'un monde) qui doit etre un bloc enregistre
         for (String id : new String[]{"basic_pumpjack", "advanced_fluid_pump", "elite_gas_wellhead", "ultimate_brine_well", "basic_wood_chipper",
               "basic_pellet_mill", "compact_steam_turbine", "compact_exhaust"}) {
-            targets.add(PiRemaps.p103Block(id));
-        }
-        for (String t : targets) {
-            Gt.check(ForgeRegistries.BLOCKS.containsKey(rl(t)), "bloc de remap inconnu : " + t);
+            String end = PiRemaps.simplifiedBlock(id);
+            Gt.check(end != null && ForgeRegistries.BLOCKS.containsKey(rl(end)), "bloc de remap inconnu : " + id + " -> " + end);
         }
         //tile d'atelier relue sur un controleur : aucune (pas d'exception), le controleur cree la sienne
         BlockState ctrl = PiIndustry.CONTROLLERS.get(IndustryMachine.PUMPJACK).getBlock().defaultBlockState();

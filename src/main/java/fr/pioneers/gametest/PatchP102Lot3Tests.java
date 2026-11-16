@@ -72,27 +72,42 @@ public final class PatchP102Lot3Tests {
 
     // ================================================================== chaudiere : le seul danger est de chauffer sans eau
     private static FireboxTile boiler(GameTestHelper h, BlockPos at) {
-        FireboxTile f = place(h, at, PiBronze.FIREBOX.getBlock(), FireboxTile.class);
-        h.setBlock(at.above(), PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.COPPER_SHELL).getBlock());
-        h.setBlock(at.above(2), PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.STEAM_DOME).getBlock());
-        f.house().checkNow();
-        Gt.check(f.formed(), "chaudiere non formee");
+        //1.0.6 : forme de Guillaume du lot 24 (l'ancienne colonne foyer / corps / dome n'est plus formee) ; at = coin de la forme
+        FireboxTile f = MultiblockApi6Tests.boiler(h, at, 0, null);
         f.guiSlots().get(0).setStack(new ItemStack(Items.COAL, 16));
         return f;
     }
 
-    @GameTest(template = Gt.BORDER, batch = "pioneers_p102_boiler_dry", timeoutTicks = 400)
+    @GameTest(template = Gt.LARGE, batch = "pioneers_p102_boiler_dry", timeoutTicks = 400)
     public static void p102_chaudiere_a_sec(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
-        BlockPos wet = new BlockPos(3, 1, 3), dry = new BlockPos(15, 1, 15);
+        //1.0.6 : gabarit de 32 : l'explosion de la chaudiere de Guillaume (11 corps, puissance 5,25) ne doit pas toucher sa voisine
+        BlockPos wet = new BlockPos(3, 1, 3), dry = new BlockPos(26, 1, 26);
         FireboxTile w = boiler(h, wet);
-        boiler(h, dry);
-        Gt.equal(2_000, w.fillWater(2_000, false), "eau acceptee");
-        Gt.equal((long) (SteamRules.COPPER_SHELL_STEAM + SteamRules.DOME_STEAM + 1), (long) w.steamCapacity(), "reserve de vapeur = corps + dome");
+        //positions ABSOLUES des foyers (GameTestHelper.relativePos de la 1.20.1 tourne de 180 degres : inutilisable)
+        BlockPos dryAt = boiler(h, dry).getBlockPos().immutable(), wetAt = w.getBlockPos().immutable();
+        net.minecraft.server.level.ServerLevel level = h.getLevel();
+        int half = w.waterCapacity() / 2;
+        Gt.equal(half, w.fillWater(half, false), "eau acceptee (la moitie de la contenance)");
+        int shells = MultiblockApi6Tests.count(fr.pioneers.api.multiblock.HouseShapes.BOILER, 0,
+              PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.COPPER_SHELL).getBlock());
+        int domes = MultiblockApi6Tests.count(fr.pioneers.api.multiblock.HouseShapes.BOILER, 0,
+              PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.STEAM_DOME).getBlock());
+        Gt.equal((long) (shells * SteamRules.COPPER_SHELL_STEAM + domes * SteamRules.DOME_STEAM + 1), (long) w.steamCapacity(),
+              "reserve de vapeur = corps + domes");
+        //diagnostic : dernier etat vu de la chaudiere remplie (tick, formee, eau, temperature)
+        String[] seen = {"jamais vue"};
+        h.onEachTick(() -> {
+            if (level.getBlockEntity(wetAt) instanceof FireboxTile f) {
+                seen[0] = "tick " + h.getTick() + ", formee " + f.formed() + ", eau " + Math.round(f.water()) + " / " + f.waterCapacity()
+                      + ", " + Math.round(f.temperature()) + " C";
+            }
+        });
         h.runAtTickTime(330, () -> {
-            Gt.check(h.getBlockState(dry).is(Blocks.AIR) || !(h.getBlockEntity(dry) instanceof FireboxTile),
+            Gt.check(level.getBlockState(dryAt).is(Blocks.AIR) || !(level.getBlockEntity(dryAt) instanceof FireboxTile),
                   "la chaudiere chauffee sans eau n'a pas explose");
-            Gt.check(h.getBlockEntity(wet) instanceof FireboxTile f && f.formed(), "la chaudiere remplie d'eau a saute");
+            Gt.check(level.getBlockEntity(wetAt) instanceof FireboxTile f && f.formed(), "la chaudiere remplie d'eau a saute : " + level.getBlockState(wetAt)
+                  + " ; vue en dernier : " + seen[0]);
             Gt.check(w.temperature() <= SteamRules.BOIL_C + 1e-6, "avec de l'eau, jamais au-dessus de 100 C");
             s.done();
         });

@@ -92,7 +92,11 @@ public final class PatchP104Lot16Tests {
             Gt.check(takes(r, "circuit_mk" + (t + 1), 1), hull + " : circuit du tier");
             Gt.check(takes(r, SECONDARY[t] + "_plate", 2), hull + " : 2 plaques de " + SECONDARY[t]);
             Gt.check(takes(r, SECONDARY[t] + "_rod", 2), hull + " : 2 tiges de " + SECONDARY[t]);
-            Gt.equal(4, r.ingredients().size(), hull + " : 4 entrees");
+            //1.0.4-beta (lot 19, difficulte lineaire) : la machine de base d'un tier contient celle du tier d'avant (une entree de plus)
+            if (t > 0) {
+                Gt.check(takes(r, "machine_hull_" + TIERS[t - 1], 1), hull + " : machine de base du tier d'avant");
+            }
+            Gt.equal(t == 0 ? 4 : 5, r.ingredients().size(), hull + " : " + (t == 0 ? 4 : 5) + " entrees");
         }
         h.succeed();
     }
@@ -118,7 +122,9 @@ public final class PatchP104Lot16Tests {
         Gt.begin(h);
         BenchRecipe relay = find(h, BenchType.REDSTONER, "components/bench/rc_relay_bench");
         Gt.check(relay != null, "relais : pas de recette a l'etabli du redstonier");
-        Gt.check(takes(relay, "copper_foil", 1) && takes(relay, "porcelain_insulator", 1), "relais : feuille de cuivre et porcelaine");
+        //1.0.6 : la recette actuelle du relais (generateurs des composants, T:components/refonte) prend une bobine de cuivre, plus de
+        //feuille ; la porcelaine reste
+        Gt.check(takes(relay, "copper_coil", 1) && takes(relay, "porcelain_insulator", 1), "relais : bobine de cuivre et porcelaine");
         Gt.check(!takes(relay, "silver_foil", 1), "relais a l'etabli : encore de l'argent (machines MK1)");
         BenchRecipe res = find(h, BenchType.REDSTONER, "components/bench/rc_carbon_resistor_bench");
         Gt.check(res != null && takes(res, "charcoal", 1) && !takes(res, "coke", 1), "resistance au carbone : charbon de bois a l'etabli");

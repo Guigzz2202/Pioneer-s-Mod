@@ -123,7 +123,7 @@ public final class SaleBinTests {
             long before = EconomyApi.balance(p);
             Gt.disconnect(s.server, id);
             SaleBinTile.Night n = tile.midnight(s.level);
-            Gt.check(n.refusal() == null && n.tokens() > 0, "rien vendu en l'absence du proprietaire");
+            Gt.check(n.refusal() == null && n.tokens() > 0, "rien vendu en l'absence du proprietaire (refus " + n.refusal() + ", jetons " + n.tokens() + ")");
             ServerPlayer q = s.reconnect(id, account, at);
             Gt.equal(before + n.tokens(), EconomyApi.balance(q), "credit du bac applique a la connexion");
             Gt.equal(SaleBinRules.night(s.level.getDayTime() + 24_000L), SaleBinRules.night(s.level.getDayTime()) + 1, "nuit suivante");

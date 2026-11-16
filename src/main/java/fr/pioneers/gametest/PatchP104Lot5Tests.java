@@ -170,15 +170,8 @@ public final class PatchP104Lot5Tests {
     public static void p104_5_chaudiere_pleine_continue(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         BlockPos at = new BlockPos(3, 1, 3);
-        h.setBlock(at, PiBronze.FIREBOX.getBlock().defaultBlockState());
-        h.setBlock(at.above(), PiBronze.BOILER_PARTS.get(BoilerPart.COPPER_SHELL).getBlock());
-        h.setBlock(at.above(2), PiBronze.BOILER_PARTS.get(BoilerPart.STEAM_DOME).getBlock());
-        for (int i = 0; i < BoilerPart.MAX_CHIMNEY; i++) {
-            h.setBlock(at.above(3 + i), PiBronze.BOILER_PARTS.get(BoilerPart.CHIMNEY).getBlock());
-        }
-        FireboxTile f = (FireboxTile) h.getBlockEntity(at);
-        f.house().checkNow();
-        Gt.check(f.formed(), "chaudiere non formee");
+        //1.0.6 : forme de Guillaume du lot 24 (l'ancienne colonne n'est plus formee) ; at = coin de la forme
+        FireboxTile f = MultiblockApi6Tests.boiler(h, at, BoilerPart.MAX_CHIMNEY, null);
         f.guiSlots().get(0).setStack(new ItemStack(PiVanillaMaterials.COAL.get(), 32));
         f.fillWater(3_000, false);
         int[] coal = new int[1];

@@ -69,8 +69,11 @@ public final class Connections {
 
     /**
      * 1.0.4-beta (lot 23) : a la pose (n'importe laquelle : {@code setBlock} d'un code, d'une structure, du plan creatif), recalcule les six
-     * cotes d'apres les voisins reels ; sans prevenir les voisins (ils se sont deja mis a jour vers ce bloc). A appeler depuis
-     * {@code onPlace} d'un bloc {@link Connected}.
+     * cotes d'apres les voisins reels. A appeler depuis {@code onPlace} d'un bloc {@link Connected}.
+     * <p>1.0.6 (GameTests p104_21, p104_23, p104_26) : la remise a jour PREVIENT les voisins. {@code Level.setBlock} ne fait sa propre mise a
+     * jour des voisins ({@code markAndNotifyBlock}) que si l'etat est encore celui qu'il a pose ; or on vient de le changer : avec
+     * {@code UPDATE_KNOWN_SHAPE}, les voisins poses AVANT ce bloc gardaient leur cote non connecte vers lui (etat du serveur faux ; le rendu,
+     * lui, lit les voisins reels). La pose relancee ne repasse pas ici (meme bloc).
      */
     public static void heal(BlockState state, Level level, BlockPos pos, BlockState old) {
         if (level.isClientSide || !(state.getBlock() instanceof Connected c) || old.is(state.getBlock()) || !state.hasProperty(property(Direction.UP))) {
@@ -78,7 +81,7 @@ public final class Connections {
         }
         BlockState next = c.connectAll(state, level, pos);
         if (next != state) {
-            level.setBlock(pos, next, Block.UPDATE_CLIENTS | Block.UPDATE_KNOWN_SHAPE);
+            level.setBlock(pos, next, Block.UPDATE_ALL);
         }
     }
 

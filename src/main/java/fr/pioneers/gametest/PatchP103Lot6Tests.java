@@ -44,7 +44,7 @@ public final class PatchP103Lot6Tests {
     }
 
     private static AtelierTile atelier(GameTestHelper h, BlockPos rel, IndustryMachine machine, CableTier tier) {
-        BlockState st = PiIndustry.ATELIERS.get(machine).get(tier).getBlock().defaultBlockState();
+        BlockState st = Gt.compact(machine, tier).defaultBlockState();   // 1.0.6 : le four est une machine du kit (1.0.4-beta lot 11)
         if (st.hasProperty(BlockStateProperties.HORIZONTAL_FACING)) {
             st = st.setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH);
         }

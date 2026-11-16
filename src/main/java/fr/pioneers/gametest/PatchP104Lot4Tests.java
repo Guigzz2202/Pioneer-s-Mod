@@ -97,7 +97,8 @@ public final class PatchP104Lot4Tests {
             fed++;
         }
         Gt.check(cat.isTame(), "chat non apprivoise apres 60 poissons du mod");
-        Gt.check(cat.isOwnedBy(p), "le chat n'appartient pas au joueur");
+        //1.0.6 : le joueur factice n'est pas dans le monde : isOwnedBy (qui cherche le maitre dans le monde) rend faux ; on compare l'UUID
+        Gt.check(p.getUUID().equals(cat.getOwnerUUID()), "le chat n'appartient pas au joueur");
         ItemStack left = p.getItemInHand(InteractionHand.MAIN_HAND);
         Gt.check(left.is(pike), "le joueur ne tient plus le brochet (" + left + ")");
         Gt.equal(64 - fed, left.getCount(), "brochets consommes (un par essai)");
@@ -164,6 +165,10 @@ public final class PatchP104Lot4Tests {
             Gt.check(!SpaceGoods.is(new ItemStack(item("pioneers:barley_seeds"))), "graine d'orge dans pioneers:space_only");
             int seen = 0;
             for (String prof : Villagers.KNOWN) {
+                //1.0.6 : KNOWN compte aussi le Desoeuvre et le Niais, sans catalogue (les treize metiers seulement)
+                if (prof.equals("minecraft:none") || prof.equals("minecraft:nitwit")) {
+                    continue;
+                }
                 VillageCatalog.Profession p = VillageCatalog.profession(prof);
                 Gt.check(p != null, "metier sans catalogue : " + prof);
                 for (String ver : List.of("standard", "rural")) {

@@ -59,6 +59,14 @@ public final class PatchP105Lot13Tests {
         return b;
     }
 
+    /** Diagnostic : position du sanglier, chemin vers la culture, but de fouille. */
+    static String diag(GameTestHelper h, Boar b, BlockPos crop) {
+        net.minecraft.world.level.pathfinder.Path path = b.getNavigation().createPath(h.absolutePos(crop), 1);
+        return " (sanglier en " + b.blockPosition() + ", culture en " + h.absolutePos(crop) + ", chemin " + (path == null ? "aucun"
+              : path.getNodeCount() + " noeuds, atteint " + path.canReach()) + ", but " + (b.rootGoal() != null && b.rootGoal().isRunning() ? "actif" : "arrete")
+              + ", vivant " + b.isAlive() + ", sante " + b.getHealth() + ")";
+    }
+
     static boolean wheat(GameTestHelper h, BlockPos crop) {
         return h.getBlockState(crop).is(Blocks.WHEAT);
     }
@@ -66,13 +74,13 @@ public final class PatchP105Lot13Tests {
     @GameTest(template = Gt.BORDER, batch = "pioneers_p105_13_boar_open", timeoutTicks = 600)
     public static void p105_13_sanglier_champ_ouvert(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
-        BlockPos crop = new BlockPos(12, 1, 10);
+        BlockPos crop = new BlockPos(12, 2, 10);   // 1.0.6 : sur le sol du gabarit (y = 1), plus dans un trou du sol
         Boar b = field(s, crop);
         Gt.check(Boar.crop(h.getBlockState(crop)), "le ble est une culture");
         Gt.check(!Boar.enclosed(s.level, h.absolutePos(crop), h.absolutePos(crop.west(5))), "champ ouvert vu comme clos");
         Gt.check(b.rootable(h.absolutePos(crop), h.absolutePos(crop.west(5))), "un sanglier affame doit pouvoir fouiller un champ ouvert");
         h.succeedWhen(() -> {
-            Gt.check(!wheat(h, crop), "le sanglier affame n'a pas encore detruit le ble du champ ouvert");
+            Gt.check(!wheat(h, crop), "le sanglier affame n'a pas encore detruit le ble du champ ouvert" + diag(h, b, crop));
             s.done();
         });
     }
@@ -80,7 +88,7 @@ public final class PatchP105Lot13Tests {
     @GameTest(template = Gt.BORDER, batch = "pioneers_p105_13_boar_fenced", timeoutTicks = 500)
     public static void p105_13_sanglier_champ_clos(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
-        BlockPos crop = new BlockPos(12, 1, 10);
+        BlockPos crop = new BlockPos(12, 2, 10);   // 1.0.6 : sur le sol du gabarit (y = 1), plus dans un trou du sol
         for (int dx = -2; dx <= 2; dx++) {
             for (int dz = -2; dz <= 2; dz++) {
                 if (Math.abs(dx) == 2 || Math.abs(dz) == 2) {
@@ -103,7 +111,7 @@ public final class PatchP105Lot13Tests {
         Gt.Scope s = Gt.begin(h);
         ServerPlayer p = s.player("gt13boar", "Fermiere", new BlockPos(2, 1, 2));
         Clan c = s.clan("GtSang" + ClanTests.sfx(h), p);
-        BlockPos crop = new BlockPos(12, 1, 10);
+        BlockPos crop = new BlockPos(12, 2, 10);   // 1.0.6 : sur le sol du gabarit (y = 1), plus dans un trou du sol
         s.claim(c, h.absolutePos(crop));
         Boar b = field(s, crop);
         Gt.check(!b.rootable(h.absolutePos(crop), h.absolutePos(crop.west(5))), "une culture en claim est a l'abri");
@@ -148,7 +156,7 @@ public final class PatchP105Lot13Tests {
     public static void p105_13_four_allume_brule(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, Direction.SOUTH);
-        BlockPos c = anchor.relative(Direction.SOUTH);
+        BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, Direction.SOUTH, anchor);
         h.runAfterDelay(40, () -> {
             BlastFurnaceTile tile = furnace(h, c, true, false);
             Pig pig = pigInside(s, tile);
@@ -165,7 +173,7 @@ public final class PatchP105Lot13Tests {
     public static void p105_13_four_eteint_inoffensif(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, Direction.SOUTH);
-        BlockPos c = anchor.relative(Direction.SOUTH);
+        BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, Direction.SOUTH, anchor);
         h.runAfterDelay(40, () -> {
             BlastFurnaceTile tile = furnace(h, c, false, false);
             Pig pig = pigInside(s, tile);
@@ -183,7 +191,7 @@ public final class PatchP105Lot13Tests {
         Gt.Scope s = Gt.begin(h);
         Gt.equal(800, BlastFurnaceTile.STEEL_TICKS, "acier en 800 ticks (40 s)");
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, Direction.SOUTH);
-        BlockPos c = anchor.relative(Direction.SOUTH);
+        BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, Direction.SOUTH, anchor);
         h.runAfterDelay(60, () -> {
             BlastFurnaceTile tile = furnace(h, c, true, true);
             h.runAfterDelay(BlastFurnaceTile.STEEL_TICKS - 20, () -> Gt.check(tile.steelSlot().isEmpty(), "de l'acier avant 800 ticks de travail"));

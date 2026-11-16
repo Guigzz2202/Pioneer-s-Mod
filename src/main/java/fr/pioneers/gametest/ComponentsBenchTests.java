@@ -107,7 +107,9 @@ public final class ComponentsBenchTests {
                     n += slot.getCount();
                 }
             }
-            Gt.equal(2, n, "deux toles pour une plaque");
+            //1.0.6 : depuis le lot 4 du 1.0.3-beta (T:industry/parts_p103.py), le coup de presse rend UNE tole par plaque (voie rapide et peu
+            //couteuse en energie) ; les deux toles par plaque sont celles de la calandre (sheet_<metal>)
+            Gt.equal(1, n, "une tole pour une plaque a la presse");
             Gt.check(m.itemInputs().get(0).isEmpty(), "plaque consommee");
         });
     }

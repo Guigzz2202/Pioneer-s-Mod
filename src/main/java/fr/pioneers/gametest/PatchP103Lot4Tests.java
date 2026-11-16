@@ -87,7 +87,8 @@ public final class PatchP103Lot4Tests {
         Gt.check(server.getRecipeManager().byKey(rl("components_bench/aluminium_plate_from_ingots")).isEmpty(),
               "l'aluminium ne se travaille plus a l'etabli");
         IndustrialRecipe wire = industrial(server, "industry/wiremill/wire_ingot_copper");
-        Gt.equal(3, wire.results().get(0).stack().getCount(), "trefileuse : 1 lingot de cuivre -> 3 fils");
+        //1.0.5-beta (lot 43, regle permanente du cout matiere) : 1 lingot = 144 mB = 2 fils de 72 mB, jamais plus
+        Gt.equal(2, wire.results().get(0).stack().getCount(), "trefileuse : 1 lingot de cuivre -> 2 fils");
         IndustrialRecipe rodWire = industrial(server, "industry/wiremill/wire_copper");
         Gt.equal(1, rodWire.tier(), "trefileuse : tige -> 2 fils au MKII");
         IndustrialRecipe ring = industrial(server, "industry/extruder/extrude_ring_steel");
@@ -127,7 +128,8 @@ public final class PatchP103Lot4Tests {
               })
               .thenExecute(() -> {
                   Gt.equal(2, count(mk1, item("iron_rod")), "MKI : 1 lingot + forme tige = 2 tiges");
-                  Gt.equal(3, count(mk2, item("iron_rod")), "MKII : 1 lingot + forme tige = 3 tiges");
+                  //1.0.5-beta (lot 43) : aucun rendement de tier sur une forme du metal (144 mB = 2 tiges de 72 mB a tout tier)
+                  Gt.equal(2, count(mk2, item("iron_rod")), "MKII : 1 lingot + forme tige = 2 tiges (pas de rendement de tier)");
                   Gt.check(mk1.itemInputs().get(0).getStack().isEmpty(), "le lingot est consomme");
               })
               .thenExecute(s::done);

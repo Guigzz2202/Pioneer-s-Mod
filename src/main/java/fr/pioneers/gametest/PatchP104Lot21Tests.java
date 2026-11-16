@@ -53,7 +53,8 @@ public final class PatchP104Lot21Tests {
         Gt.Scope s = Gt.begin(h);
         ServerLevel level = h.getLevel();
         List<BlockEntry<? extends Block>> all = PiConstruction.all();
-        Gt.equal(12, all.size(), "12 blocs de construction");
+        //1.0.4-beta (lot 23) : la porte de salle blanche est retiree : 11 blocs (4 parois de foyer, 4 bobines, paroi, vitre, filtre)
+        Gt.equal(11, all.size(), "11 blocs de construction");
         int k = 0;
         for (BlockEntry<? extends Block> e : all) {
             Block block = e.getBlock();
