@@ -34,6 +34,14 @@ jobs:
         run: |
           set -o pipefail
           ./gradlew runGameTestServer --console=plain 2>&1 | tee gametest.log
+      - name: GameTests allés jusqu'au bout
+        # Bloquant même tant que des GameTests échouent : un serveur qui plante n'a lancé qu'une partie des tests (1.0.6).
+        run: |
+          if grep -q "Game test server crashed" gametest.log; then
+            echo "::error::Le serveur des GameTests a planté (voir le rapport de plantage dans gametest.log)"
+            grep -A 12 "Minecraft Crash Report" gametest.log | head -n 14
+            exit 1
+          fi
       - name: Résumé des GameTests
         if: always()
         run: |
