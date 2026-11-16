@@ -11,6 +11,7 @@ p104_22_silo_stocke_et_rend
 p104_29_caravane_marche_au_pas
 p105_10_chien_grogne_chasse_en_avant
 p105_10_mousquet_balle_poudre_tir
+p105_10_troupeau_hors_claim_et_dispersion
 p105_1_saison_suivante
 p105_28_chat_va_pecher
 p105_2_tick_meteo
@@ -21,3 +22,4 @@ p105_4_repeuplement_hors_vue
 p105_5_rappel_autre_dimension
 p105_7_vol_coupe_par_reglage
 p105_8_lion_couche_attaque_sous_6
+ruine_mk1_generee_dans_son_chunk
