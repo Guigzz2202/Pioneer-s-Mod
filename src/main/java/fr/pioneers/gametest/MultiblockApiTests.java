@@ -93,7 +93,7 @@ public final class MultiblockApiTests {
             //Sauvegarde FORMEE : reservoir de caloporteur rempli, aller-retour identique
             tile.coolantTank().setFluid(new FluidStack(Fluids.WATER, 1_234));
             CompoundTag tag = tile.saveWithoutMetadata();
-            BlockEntity copy = BlockEntity.loadStatic(tile.getBlockPos(), tile.getBlockState(), tag.copy());
+            BlockEntity copy = Gt.reloadTile(tile);
             Gt.check(copy instanceof ControllerTile, "relecture : pas un controleur");
             Gt.equal(tag, copy.saveWithoutMetadata(), "sauvegarde d'un controleur forme : aller-retour");
             Gt.equal(1_234, ((ControllerTile) copy).coolantTank().getFluidAmount(), "caloporteur relu");

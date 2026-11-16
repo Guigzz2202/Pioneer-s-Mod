@@ -51,7 +51,7 @@ public final class MultiblockApi6Tests {
             Gt.equal(1L, values.get(values.index(MultiblockValues.R_MARK)), "generation du reacteur (valeur nommee)");
             CompoundTag tag = tile.saveWithoutMetadata();
             Gt.check(tag.contains("reactor"), "cle de sauvegarde du coeur (reactor) gardee");
-            BlockEntity copy = BlockEntity.loadStatic(tile.getBlockPos(), tile.getBlockState(), tag.copy());
+            BlockEntity copy = Gt.reloadTile(tile);
             Gt.check(copy instanceof ControllerTile, "relecture : pas un controleur");
             Gt.equal(tag, copy.saveWithoutMetadata(), "sauvegarde d'un reacteur forme : aller-retour");
             s.done();
@@ -60,14 +60,22 @@ public final class MultiblockApi6Tests {
 
     /** Construit un plan maison (variante 0) avance vers {@code forward}, dans le gabarit ; rend la case relative de l'ancre. */
     static BlockPos buildHouse(GameTestHelper h, Blueprint plan, Direction forward) {
-        Map<BlockPos, ProjectedStructure.Ghost> layout = plan.layout(0, BlockPos.ZERO, forward);
+        return buildHouse(h, plan, 0, new BlockPos(2, 1, 2), forward);
+    }
+
+    /**
+     * 1.0.6 : construit la variante {@code variant} d'un plan maison avance vers {@code forward}, son coin le plus bas au plus pres de
+     * {@code min} (jamais en dessous) ; rend la case relative de l'ancre du plan.
+     */
+    static BlockPos buildHouse(GameTestHelper h, Blueprint plan, int variant, BlockPos min, Direction forward) {
+        Map<BlockPos, ProjectedStructure.Ghost> layout = plan.layout(variant, BlockPos.ZERO, forward);
         int minX = 0, minY = 0, minZ = 0;
         for (BlockPos p : layout.keySet()) {
             minX = Math.min(minX, p.getX());
             minY = Math.min(minY, p.getY());
             minZ = Math.min(minZ, p.getZ());
         }
-        BlockPos anchor = new BlockPos(2 - minX, 1 - minY, 2 - minZ);
+        BlockPos anchor = new BlockPos(min.getX() - minX, min.getY() - minY, min.getZ() - minZ);
         for (Map.Entry<BlockPos, ProjectedStructure.Ghost> e : layout.entrySet()) {
             BlockState st = e.getValue().state();
             if (st == null) {
@@ -85,10 +93,85 @@ public final class MultiblockApi6Tests {
         return anchor;
     }
 
+    /**
+     * 1.0.6 : case relative du CONTROLEUR d'un plan construit par {@link #buildHouse} a l'ancre {@code anchor} (les formes NBT de
+     * Guillaume du lot 24 du 1.0.4-beta n'ont plus le controleur devant l'ancre : on le cherche dans le plan).
+     */
+    static BlockPos controllerOf(Blueprint plan, int variant, Direction forward, BlockPos anchor) {
+        for (Map.Entry<BlockPos, ProjectedStructure.Ghost> e : plan.layout(variant, BlockPos.ZERO, forward).entrySet()) {
+            BlockState st = e.getValue().state();
+            if (st != null && st.getBlock() == plan.controller()) {
+                return anchor.offset(e.getKey());
+            }
+        }
+        throw new net.minecraft.gametest.framework.GameTestAssertException("plan sans controleur : " + plan);
+    }
+
+    /** Nombre de cases du plan qui portent le bloc {@code block}. */
+    static int count(Blueprint plan, int variant, net.minecraft.world.level.block.Block block) {
+        int n = 0;
+        for (ProjectedStructure.Ghost g : plan.layout(variant, BlockPos.ZERO, Direction.SOUTH).values()) {
+            if (g.state() != null && g.state().getBlock() == block) {
+                n++;
+            }
+        }
+        return n;
+    }
+
+    /**
+     * 1.0.6 : chaudiere de Guillaume (forme NBT du lot 24 du 1.0.4-beta, corps en cuivre) construite au coin {@code min}, foyer vers le
+     * nord, cheminee montee jusqu'a {@code chimney} blocs (la forme en a deux ; jamais moins), accessoire {@code flank} (ou null) colle au
+     * flanc est du premier corps libre de ce cote ; relevee et formee ; rend le foyer. Les tests d'avant posaient l'ancienne colonne
+     * foyer / corps / dome, qui n'est plus formee depuis le lot 24.
+     */
+    static fr.pioneers.tech.bronze.steam.FireboxTile boiler(GameTestHelper h, BlockPos min, int chimney, @javax.annotation.Nullable BlockState flank) {
+        Direction fwd = Direction.NORTH;
+        BlockPos anchor = buildHouse(h, HouseShapes.BOILER, 0, min, fwd);
+        Map<BlockPos, ProjectedStructure.Ghost> layout = HouseShapes.BOILER.layout(0, BlockPos.ZERO, fwd);
+        java.util.List<BlockPos> keys = new java.util.ArrayList<>(layout.keySet());
+        keys.sort(java.util.Comparator.<BlockPos>comparingInt(p -> p.getY()).thenComparingInt(p -> p.getX()).thenComparingInt(p -> p.getZ()));
+        net.minecraft.world.level.block.Block chim = fr.pioneers.core.registries.PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.CHIMNEY).getBlock();
+        net.minecraft.world.level.block.Block shell = fr.pioneers.core.registries.PiBronze.BOILER_PARTS.get(fr.pioneers.tech.bronze.steam.BoilerPart.COPPER_SHELL).getBlock();
+        BlockPos top = null;
+        int n = 0;
+        for (BlockPos k : keys) {
+            BlockState st = layout.get(k).state();
+            if (st != null && st.getBlock() == chim) {
+                n++;
+                top = anchor.offset(k);
+            }
+        }
+        Gt.check(top != null, "forme de chaudiere sans cheminee");
+        for (int i = n; i < chimney; i++) {
+            top = top.above();
+            h.setBlock(top, chim);
+        }
+        if (flank != null) {
+            boolean put = false;
+            for (BlockPos k : keys) {
+                BlockState st = layout.get(k).state();
+                BlockPos q = anchor.offset(k).east();
+                if (st != null && st.getBlock() == shell && !layout.containsKey(k.east()) && h.getBlockState(q).isAir()) {
+                    h.setBlock(q, flank);
+                    put = true;
+                    break;
+                }
+            }
+            Gt.check(put, "aucun corps libre a l'est pour l'accessoire");
+        }
+        BlockPos c = controllerOf(HouseShapes.BOILER, 0, fwd, anchor);
+        BlockEntity be = h.getBlockEntity(c);
+        Gt.check(be instanceof fr.pioneers.tech.bronze.steam.FireboxTile, "pas de foyer en " + c);
+        fr.pioneers.tech.bronze.steam.FireboxTile f = (fr.pioneers.tech.bronze.steam.FireboxTile) be;
+        f.house().checkNow();
+        Gt.check(f.formed(), "chaudiere non formee");
+        return f;
+    }
+
     /** Aller-retour de la sauvegarde d'une tile (identique). */
     static void roundTrip(BlockEntity tile, String what) {
         CompoundTag tag = tile.saveWithoutMetadata();
-        BlockEntity copy = BlockEntity.loadStatic(tile.getBlockPos(), tile.getBlockState(), tag.copy());
+        BlockEntity copy = Gt.reloadTile(tile);
         Gt.check(copy != null, what + " : relecture impossible");
         Gt.equal(tag, copy.saveWithoutMetadata(), what + " : sauvegarde, aller-retour");
     }
@@ -98,7 +181,7 @@ public final class MultiblockApi6Tests {
         Gt.Scope s = Gt.begin(h);
         Direction forward = Direction.SOUTH;
         BlockPos anchor = buildHouse(h, HouseShapes.BLAST_FURNACE, forward);
-        BlockPos c = anchor.relative(forward);
+        BlockPos c = controllerOf(HouseShapes.BLAST_FURNACE, 0, forward, anchor);
         h.runAfterDelay(60, () -> {
             BlockEntity be = h.getBlockEntity(c);
             Gt.check(be instanceof BlastFurnaceTile, "pas de haut fourneau en " + c);

@@ -152,6 +152,16 @@ public final class Gt {
         return (T) load(data.getClass(), data.save(new CompoundTag()));
     }
 
+    /**
+     * Relit une tile comme au chargement d'un chunk : {@code BlockEntity.loadStatic} lit le type dans la cle « id », que seule
+     * {@code saveWithId} ecrit ({@code saveWithoutMetadata} ne l'a pas : la relecture rendait null). A comparer ensuite par
+     * {@code saveWithoutMetadata} des deux cotes.
+     */
+    @javax.annotation.Nullable
+    public static net.minecraft.world.level.block.entity.BlockEntity reloadTile(net.minecraft.world.level.block.entity.BlockEntity tile) {
+        return net.minecraft.world.level.block.entity.BlockEntity.loadStatic(tile.getBlockPos(), tile.getBlockState(), tile.saveWithId());
+    }
+
     /** Relit un NBT avec la fonction {@code static load(CompoundTag)} (souvent privee) d'une classe de donnee de monde du mod. */
     public static SavedData load(Class<?> type, CompoundTag tag) {
         try {

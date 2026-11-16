@@ -193,7 +193,7 @@ public final class PatchP104Lot22Tests {
                     CompoundTag tag = tile.saveWithoutMetadata();
                     Gt.check(tag.contains("silo"), "pas de cle silo");
                     Gt.equal(40L, tag.getCompound("silo").getLong("stored"), "stock sauve (hors case de sortie)");
-                    BlockEntity copy = BlockEntity.loadStatic(tile.getBlockPos(), tile.getBlockState(), tag.copy());
+                    BlockEntity copy = Gt.reloadTile(tile);
                     Gt.check(copy instanceof ControllerTile, "relecture");
                     Gt.equal(tag, copy.saveWithoutMetadata(), "sauvegarde du silo : aller-retour");
                     s.done();
