@@ -126,7 +126,7 @@ public final class MachineApi3Tests {
         GeneratorTile g2 = (GeneratorTile) h.getBlockEntity(new BlockPos(5, 2, 5));
         g2.load(st.copy());
         Gt.equal(0.5, g2.saveWithoutMetadata().getDouble("factor"), "panneau solaire : facteur relu");
-        Gt.equal(12, g2.guiValueCount(), "panneau solaire : 12 valeurs d'interface");
+        Gt.equal(13, g2.guiValueCount(), "panneau solaire : 13 valeurs d'interface (1.0.4-beta lot 5 : + surplus, en fin de liste)");
         Gt.equal(g2.peak(), g2.guiValue(6), "panneau solaire : production maximale a l'indice 6");
         s.done();
     }

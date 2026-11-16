@@ -79,7 +79,9 @@ public final class MachineApi8bTests {
         roundTrip(a, b, "slots", "progress", "in");
         Gt.equal(5, b.inputs().get(0).getStack().getCount(), "ingredient relu");
         Gt.equal(750, b.tankIn().getFluidAmount(), "liquide d'entree relu");
-        Gt.equal(KitchenMachineType.KNEADER.inputs() + KitchenMachineType.KNEADER.outputs(), b.guiSlots().size(), "cases : entrees puis sorties");
+        //1.0.5-beta (lots 32 et 41) : la paire « Remplir » du reservoir d'entree (case pleine, case vide) suit les entrees et les sorties
+        Gt.equal(KitchenMachineType.KNEADER.inputs() + KitchenMachineType.KNEADER.outputs() + 2, b.guiSlots().size(),
+              "cases : entrees, sorties, puis la paire Remplir");
         UiValues ui = b.uiValues();
         Gt.equal(10, ui.size(), "valeurs d'interface");
         Gt.equal(0, ui.index(UiValues.SPEED), "vitesse a l'indice 0");
@@ -111,7 +113,7 @@ public final class MachineApi8bTests {
         roundTrip(a, b, "slots", "water", "temperature", "burn", "burnTotal");
         Gt.equal(6, b.guiSlots().get(0).getStack().getCount(), "combustible relu (premiere case)");
         Gt.equal(2000, b.engine().water().getFluidAmount(), "eau relue");
-        Gt.equal(8, b.uiValues().size(), "valeurs de la machine a balancier");
+        Gt.equal(9, b.uiValues().size(), "valeurs de la machine a balancier (1.0.4-beta lot 5 : + surplus, en fin de liste)");
         Gt.equal(3000L, b.guiValue(2), "chaudiere 300 K x10 a l'indice 2");
         Gt.equal(5, b.uiValues().index(UiValues.WATER_MAX), "contenance de l'eau a l'indice 5");
         v2(b, "machine a balancier");

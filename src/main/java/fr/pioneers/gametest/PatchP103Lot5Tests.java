@@ -140,7 +140,8 @@ public final class PatchP103Lot5Tests {
         AtelierTile b = atelier(h, new BlockPos(5, 2, 2), IndustryMachine.SOLID_COMBUSTION_GENERATOR, CableTier.BASIC);
         b.load(tag.copy());
         Gt.check(b.itemInputs().get(0).getStack().is(Items.COAL) && b.itemInputs().get(0).getCount() == 5, "le charbon reste dans sa case");
-        Gt.equal(2, b.saveWithoutMetadata().getInt(IoMigration.NBT), "la machine resauvee porte la version 2");
+        //1.0.6 : la machine relue est resauvee a la version courante des cases (8 depuis le lot 39 du 1.0.5-beta), plus a la 2
+        Gt.equal(IndustryMachine.IO_VERSION, b.saveWithoutMetadata().getInt(IoMigration.NBT), "la machine resauvee porte la version courante");
         s.done();
     }
 

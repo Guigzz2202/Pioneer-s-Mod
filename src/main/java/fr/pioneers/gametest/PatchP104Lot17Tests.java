@@ -206,7 +206,8 @@ public final class PatchP104Lot17Tests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_17_io", timeoutTicks = 20)
     public static void p104_17_assembleur_d_avant_relu(GameTestHelper h) {
         Gt.begin(h);
-        Gt.equal(7, IndustryMachine.IO_VERSION, "version des cases 7 (io elargies du lot 17)");
+        //1.0.6 : version 7 au lot 17, 8 depuis le lot 39 du 1.0.5-beta (creuset) : au moins 7
+        Gt.check(IndustryMachine.IO_VERSION >= 7, "version des cases au moins 7 (io elargies du lot 17) : " + IndustryMachine.IO_VERSION);
         int[] old = IndustryMachine.ASSEMBLER.legacyIo(6);
         Gt.check(old != null && old[2] == 1 && old[4] == 1, "Assembleur : io d'avant (1 fluide, 1 gaz) relue jusqu'a la version 7");
         BlockPos rel = new BlockPos(2, 2, 2);
