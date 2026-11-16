@@ -85,7 +85,9 @@ public final class PatchP105Lot3Tests {
             SeasonEvents.set(s.server, season, Seasons.serverLength() / 2 + 1);
             for (var e : PiFarm.CROPS.entrySet()) {
                 CropDef def = e.getValue().get().def();
-                if (!(e.getValue().get() instanceof fr.pioneers.farm.crop.MushroomCropBlock) && Climate.status(place, Seasons.now(s.level), def.tMin(),
+                //1.0.6 : pas de riziere (elle demande un sol inonde, la terre labouree du test ne l'est pas) : le lieu du test change a chaque
+                //run de la CI (climat de la latitude), et la culture choisie avec lui
+                if (!(e.getValue().get() instanceof fr.pioneers.farm.crop.MushroomCropBlock) && !def.paddy() && Climate.status(place, Seasons.now(s.level), def.tMin(),
                       def.tMax(), def.hMin(), def.hMax(), Genes.BASE.tolerance(), true) == Climate.Status.HOSTILE) {
                     return def;
                 }
@@ -119,7 +121,8 @@ public final class PatchP105Lot3Tests {
         for (int i = 0; i < 6000 && block.getAge(level.getBlockState(pos)) == age; i++) {
             block.randomTick(level.getBlockState(pos), level, pos, level.random);
         }
-        Gt.check(level.getBlockState(pos).is(block) && block.getAge(level.getBlockState(pos)) > age, "la culture hors saison pousse dans la serre");
+        Gt.check(level.getBlockState(pos).is(block) && block.getAge(level.getBlockState(pos)) > age, "la culture hors saison pousse dans la serre ("
+              + def.id() + ", " + level.getBlockState(pos) + ")");
         s.done();
     }
 
@@ -156,7 +159,8 @@ public final class PatchP105Lot3Tests {
         level.setBlock(lower, door.setValue(DoorBlock.HALF, DoubleBlockHalf.LOWER), 3);
         level.setBlock(upper, door.setValue(DoorBlock.HALF, DoubleBlockHalf.UPPER), 3);
         GreenhouseRegulatorTile t = tile(s, reg);
-        Gt.check(t.checkNow(), "porte ouverte dans le mur : la serre reste formee");
+        Gt.check(t.checkNow(), "porte ouverte dans le mur : la serre reste formee (" + t.status() + ", case " + t.house().at() + ", attendu "
+              + t.house().expected() + ")");
         level.setBlock(lower, level.getBlockState(lower).setValue(DoorBlock.OPEN, false), 3);
         level.setBlock(upper, level.getBlockState(upper).setValue(DoorBlock.OPEN, false), 3);
         Gt.check(t.checkNow(), "porte fermee : formee");

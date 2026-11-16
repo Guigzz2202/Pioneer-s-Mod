@@ -96,7 +96,8 @@ public final class PatchP105Lot28Tests {
         ServerPlayer p = s.player("p28c", "Lise", new BlockPos(2, 1, 2));
         BlockPos basket = h.absolutePos(new BlockPos(4, 1, 10));
         s.level.setBlock(basket, PiPets.BASKETS.get(2).getBlock().defaultBlockState(), 3);
-        BlockPos water = h.absolutePos(new BlockPos(12, 0, 10));
+        //1.0.6 : la mare au niveau du sol du gabarit (y = 1) ; en y = 0 elle etait sous la pierre, hors de portee du chat
+        BlockPos water = h.absolutePos(new BlockPos(12, 1, 10));
         for (int dx = -1; dx <= 1; dx++) {
             for (int dz = -1; dz <= 1; dz++) {
                 s.level.setBlock(water.offset(dx, 0, dz), Blocks.WATER.defaultBlockState(), 3);

@@ -235,8 +235,9 @@ public final class PatchP105Lot9Tests {
         Gt.Scope s = Gt.begin(h);
         s.notPeaceful();
         water(h, 1, 30, 1, 8, 1, 30);
-        Gt.check(PiFish.ZONE == 16 && PiFish.SPAWN_CAP == 6 && PiFish.BREED_CAP == 4 && PiFish.WATER_PER_FISH == 32 && PiFish.BODY_SCAN == 256,
-              "plafonds de la pisciculture inchanges");
+        //plafond d'apparition des poissons du mod : 10 par zone (reponse de Guillaume du 16/11/2026 : « Garder 10 ») ; le reste inchange
+        Gt.check(PiFish.ZONE == 16 && PiFish.SPAWN_CAP == 10 && PiFish.BREED_CAP == 4 && PiFish.WATER_PER_FISH == 32 && PiFish.BODY_SCAN == 256,
+              "plafonds de la pisciculture inchanges (apparition " + PiFish.SPAWN_CAP + ")");
         Gt.check(Wild9Rules.SEA_ZONE == 2 * PiFish.ZONE, "zone des geants marins = 2 x celle des poissons du mod");
         Gt.check(!Wild9Rules.huntsFish(Wild9Rules.GREAT_WHITE, true, 10, 0) && !Wild9Rules.huntsFish(Wild9Rules.GREAT_WHITE, false, 2, 0)
                  && Wild9Rules.huntsFish(Wild9Rules.GREAT_WHITE, false, 3, 0), "regles : jamais dans un claim, jamais les derniers");

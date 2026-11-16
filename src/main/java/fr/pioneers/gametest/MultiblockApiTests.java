@@ -115,7 +115,8 @@ public final class MultiblockApiTests {
             h.getLevel().destroyBlock(h.absolutePos(broken), false);
             tile.requestCheck();
             h.runAfterDelay(3, () -> {
-                Gt.check(!tile.formed(), "toujours forme sans une carcasse");
+                Gt.check(!tile.formed(), "toujours forme sans une carcasse (" + was + " casse en " + h.absolutePos(broken) + ", maintenant "
+                      + h.getBlockState(broken) + ", libre " + m.freeform + ")");
                 if (!m.freeform) {
                     Gt.equal(h.absolutePos(broken), tile.errorAt(), "erreur commune : la case de la carcasse cassee");
                 }

@@ -179,7 +179,9 @@ public final class PatchP105Lot13Tests {
             Pig pig = pigInside(s, tile);
             float before = pig.getHealth();
             h.runAfterDelay(4 * FurnaceHeat.PERIOD, () -> {
-                Gt.check(pig.isAlive() && pig.getHealth() >= before, "un four eteint ne blesse pas");
+                Gt.check(pig.isAlive() && pig.getHealth() >= before, "un four eteint ne blesse pas (sante " + pig.getHealth() + " / " + before
+                      + ", degat " + (pig.getLastDamageSource() == null ? "aucun" : pig.getLastDamageSource().getMsgId()) + ", en " + pig.blockPosition()
+                      + " : " + s.level.getBlockState(pig.blockPosition()) + ")");
                 Gt.check(pig.getRemainingFireTicks() <= 0, "un four eteint n'enflamme pas");
                 s.done();
             });

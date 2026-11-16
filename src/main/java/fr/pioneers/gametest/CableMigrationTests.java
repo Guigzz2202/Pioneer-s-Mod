@@ -106,7 +106,8 @@ public final class CableMigrationTests {
         AABB around = new AABB(h.absolutePos(new BlockPos(2, 1, 3)), h.absolutePos(new BlockPos(5, 4, 6)));
         int dropped = level.getEntitiesOfClass(ItemEntity.class, around, e -> e.getItem().is(Items.DIAMOND)).stream()
               .mapToInt(e -> e.getItem().getCount()).sum();
-        Gt.equal(5, dropped, "diamants en transit deposes au sol");
+        Gt.equal(5, dropped, "diamants en transit deposes au sol (objets autour : " + level.getEntitiesOfClass(ItemEntity.class, around.inflate(6)).stream()
+              .map(e -> e.getItem() + " en " + e.blockPosition()).toList() + ")");
         long keyA = h.absolutePos(A).asLong(), keyB = h.absolutePos(B).asLong();
         BlockPos cable = h.absolutePos(new BlockPos(3, 2, 4));
         h.succeedWhen(() -> {

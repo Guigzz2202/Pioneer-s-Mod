@@ -142,7 +142,9 @@ public final class PatchP104Lot12Tests {
         AtelierTile t = base(h, base, new BlockPos(2, 2, 2), r);
         h.succeedWhen(() -> {
             t.getEnergy().setStored(t.getEnergy().getCapacity());
-            Gt.check(produced(t, r), absorbed + " -> " + base.key + " : " + path + " n'a encore rien produit");
+            Gt.check(produced(t, r), absorbed + " -> " + base.key + " : " + path + " n'a encore rien produit (entrees " + t.presentItems() + ", outil "
+                  + t.toolSlot().getStack() + ", gaz entree " + t.presentGases() + ", sorties de gaz " + t.gasOutputs().size() + ", sorties "
+                  + t.itemOutputs().stream().map(x -> x.getStack().toString()).toList() + ", energie " + t.getEnergy().getStored() + ")");
         });
     }
 
