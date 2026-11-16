@@ -335,7 +335,7 @@ public final class PatchP103Lot7bTests {
             }
         }
         //decomposition : bronze 160 (120 + 40) = 1 lingot + 1 pepite, cuivre 80 = 5 pepites, zinc 3 : reste -> une scorie
-        Gt.equal(240, mb, "lingots et pepites rendus");
+        Gt.equal(240, mb, "lingots et pepites rendus " + out);
         Gt.check(out.stream().anyMatch(st -> st.is(ForgeMetals.ingot("bronze", 1).getItem())), "le bronze revient en lingot de bronze " + out);
         Gt.equal(1, slag, "les restes de moins d'une pepite : une scorie");
         //Casse : le bain est rendu (il etait perdu)
