@@ -8,15 +8,18 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Reseau de force rotative : ensemble de noeuds relies par des arbres, des engrenages et des cordes. Chaque noeud i tourne a r_i x Omega
- * (Omega = vitesse de reference, celle du premier noeud). Equilibre et regime transitoire en forme exacte (Euler implicite) :
- * <pre>
- * D = somme r_i tau0_i                        (pousse des sources a l'arret)
- * S = somme r_i^2 |tau0_i| / omegaLibre_i     (baisse de couple des sources avec la vitesse)
- * L = somme |r_j| tauC_j / rendement           (couple demande par les machines)
- * F = somme r_k^2 f_k ,  J = somme r_k^2 J_k   (frottements, inertie)
- * J dOmega/dt = D - S Omega - sgn(Omega) L - F Omega
- * </pre>
- * Le reseau cale si |D| <= L. Tout est rapporte a l'arbre de reference : la puissance se conserve d'un rapport a l'autre (aux rendements pres).
+ * (Omega = vitesse de reference, celle du premier noeud). 1.0.6 (revision de la mecanique, demande de Guillaume du 17/11/2026 : « rendre plus
+ * simple et comprehensible le fonctionnement ») : SOURCES REGULEES.
+ * <ul>
+ *     <li>chaque source a un couple de demarrage tau0 et un REGIME (vitesse de regime, {@link KineticNode#sourceFreeSpeed}) ; sa puissance
+ *     nominale vaut tau0 x regime / 4 ; le reseau tourne au regime de sa source la plus lente (repere de reference) ;</li>
+ *     <li>CHARGE = couple demande (machines, frottements) / couple nominal des sources : jusqu'a 100 % la vitesse reste au regime ; au-dela la
+ *     puissance reste constante et la vitesse baisse d'autant (regime / charge) ; le reseau cale quand la demande depasse le couple de
+ *     demarrage (vers 400 %) ;</li>
+ *     <li>les dynamos ne prennent que le SURPLUS au regime (jamais de ralentissement), rien si leur reserve est pleine.</li>
+ * </ul>
+ * Regime transitoire : J dOmega/dt = sources(Omega) - sgn(Omega) L - F Omega - freins(Omega), Euler implicite resolu exactement (dichotomie).
+ * Tout est rapporte a l'arbre de reference : la puissance se conserve d'un rapport a l'autre (aux rendements pres).
  */
 public final class KineticNetwork {
 
@@ -43,8 +46,22 @@ public final class KineticNetwork {
     /** Vitesse de reference (tr/min). */
     private double speed;
     // Dernier bilan (affichage : tachymetre, dynamometre, fiche du reseau)
-    private double drive, load, referenceTorque, power, capacity, generated;
+    private double referenceTorque, power, capacity, generated, nominal, demand, capacityTorque;
     private int sources, machines;
+    /**
+     * 1.0.6 (revision de la mecanique, Guillaume du 17/11/2026 : « rendre plus simple et comprehensible le fonctionnement ») : part de la
+     * puissance nominale d'une source : P = couple de demarrage x regime x {@value #NOMINAL_SHARE} (le meme maximum que l'ancienne droite
+     * couple / vitesse a mi-vitesse) ; son couple nominal au regime vaut donc le quart de son couple de demarrage.
+     */
+    public static final double NOMINAL_SHARE = 0.25;
+    /** Bande du regulateur des sources : leur couple tombe a zero entre le regime x (1 - {@value #BAND}) et le regime (a vide : le regime). */
+    public static final double BAND = 0.02;
+    // Sources et regulateurs du tick (tableaux gardes d'un tick a l'autre : aucune allocation dans le tick)
+    private int[] srcNode = new int[0];
+    private double[] srcDir = new double[0], srcStall = new double[0], srcV = new double[0], srcP = new double[0];
+    private double[] govK = new double[0], govT = new double[0];
+    private int nSrc, nGov;
+    private double sigma;
     /**
      * 0.20.42 : phase de chaque noeud (degres, son repere), avancee a chaque tick de r_i x vitesse ; recalee a la construction sur r_i x Theta
      * (Theta tire d'un noeud qui connait sa phase). Synchronisation des clients decidee pour tout le reseau a la fois.
@@ -267,14 +284,109 @@ public final class KineticNetwork {
         return power;
     }
 
-    /** Puissance maximale que les sources peuvent fournir (W, a mi-vitesse). */
+    /** Puissance nominale des sources (W, au regime du reseau). */
     public double capacity() {
         return capacity;
     }
 
-    /** Charge : couple demande / couple disponible a l'arret (0..1+). */
+    /** 1.0.6 : regime du reseau (tr/min, repere de reference) : celui de sa source la plus lente ; 0 sans source. */
+    public double nominalSpeed() {
+        return nominal;
+    }
+
+    /**
+     * 1.0.6 (Guillaume : « des fois j'atteins 100 % de charge alors que rien n'est connecte ») : CHARGE = couple demande par les machines (et
+     * les frottements) / couple nominal des sources au regime. Jusqu'a 100 % le reseau tourne au regime ; au-dela il ralentit d'autant
+     * (vitesse = regime / charge) ; il cale vers 400 %. Les dynamos n'y comptent pas (elles ne prennent que le surplus). NaN : aucune source
+     * ne pousse (rien a rapporter : la fiche dit « aucune source »).
+     */
     public double loadRatio() {
-        return Math.abs(drive) < 1e-6 ? (load > 0 ? 1 : 0) : load / Math.abs(drive);
+        return capacityTorque > 1e-9 ? demand / capacityTorque : Double.NaN;
+    }
+
+    /** Couple rendu par la source q a la vitesse u (repere de reference, dans son sens) : courbe des sources regulees. */
+    private double curve(int q, double u) {
+        double stall = srcStall[q];
+        if (u <= 0) {
+            return stall;
+        }
+        double v = srcDir[q] == sigma && nominal > 0 ? nominal : srcV[q];
+        return band(stall, srcP[q], v, u);
+    }
+
+    /** Courbe d'une source : couple de demarrage, puissance constante, puis bande du regulateur juste SOUS le regime (a vide : le regime). */
+    private static double band(double stall, double p, double v, double u) {
+        double knee = v * (1 - BAND);
+        if (u <= knee) {
+            return Math.min(stall, p / u);
+        }
+        return u >= v ? 0 : Math.min(stall, p / knee) * (v - u) / (v - knee);
+    }
+
+    /**
+     * 1.0.6 : couple d'une source REGULEE (son repere) : {@code stall} a l'arret, puissance constante {@code stall x regime x NOMINAL_SHARE}
+     * jusqu'a la bande du regulateur ({@link #BAND}), puis plus rien au regime. Pour les sources qui comptent elles-memes leur puissance.
+     */
+    public static double sourceCurve(double stall, double regime, double u) {
+        stall = Math.abs(stall);
+        regime = Math.max(0.01, regime);
+        if (u <= 0) {
+            return stall;
+        }
+        return band(stall, stall * regime * NOMINAL_SHARE, regime, u);
+    }
+
+    /** Somme signee des couples des sources a la vitesse de reference w. */
+    private double sourcesAt(double w) {
+        double t = 0;
+        for (int q = 0; q < nSrc; q++) {
+            t += srcDir[q] * curve(q, srcDir[q] * w);
+        }
+        return t;
+    }
+
+    /** Freinage des regulateurs a boules a la vitesse |w| (repere de reference). */
+    private double brake(double w) {
+        double t = 0;
+        for (int g = 0; g < nGov; g++) {
+            t += govK[g] * Math.max(0, w - govT[g]);
+        }
+        return t;
+    }
+
+    /** Residu de l'equation implicite du tick (croissant en w). */
+    private double residual(double w, double jc, double m, double lt, double f) {
+        return jc * (w - speed) - sourcesAt(w) + m * lt + f * w + Math.signum(w) * brake(Math.abs(w));
+    }
+
+    /**
+     * Vitesse du tick suivant (Euler implicite, exact sur la courbe des sources) : J (w - w0) / dt = sources(w) - m x charge - F w - freins(w),
+     * resolue par dichotomie (le residu croit avec w) : stable quelle que soit la raideur du regulateur des sources.
+     */
+    private double solve(double jc, double m, double lt, double f) {
+        double span = 1;
+        for (int q = 0; q < nSrc; q++) {
+            span += srcStall[q];
+        }
+        span = (span + lt) / jc + 1;
+        double lo = speed - span, hi = speed + span;
+        for (int it = 0; it < 40 && residual(hi, jc, m, lt, f) < 0; it++) {
+            hi += span;
+            span *= 2;
+        }
+        for (int it = 0; it < 40 && residual(lo, jc, m, lt, f) > 0; it++) {
+            lo -= span;
+            span *= 2;
+        }
+        for (int it = 0; it < 60; it++) {
+            double mid = 0.5 * (lo + hi);
+            if (residual(mid, jc, m, lt, f) > 0) {
+                hi = mid;
+            } else {
+                lo = mid;
+            }
+        }
+        return 0.5 * (lo + hi);
     }
 
     /** Couple transmis rapporte a la reference (N.m). */
@@ -297,18 +409,33 @@ public final class KineticNetwork {
 
     void tick(@Nullable ServerLevel level) {
         effective();
-        double d = 0, s = 0, l = 0, f = 0, j = 0, eta = 1, cap = 0, gl = 0, gw = 0;
-        int src = 0, mac = 0, gens = 0;
-        for (int i = 0; i < nodes.size(); i++) {
+        int n = nodes.size();
+        if (srcNode.length < n) {
+            srcNode = new int[n];
+            srcDir = new double[n];
+            srcStall = new double[n];
+            srcV = new double[n];
+            srcP = new double[n];
+            govK = new double[n];
+            govT = new double[n];
+        }
+        double push = 0, l = 0, f = 0, j = 0, eta = 1, gw = 0;
+        int ns = 0, ng = 0, mac = 0, gens = 0;
+        for (int i = 0; i < n; i++) {
             KineticNode node = nodes.get(i);
-            double r = eff[i], r2 = r * r;
+            double r = eff[i], r2 = r * r, ar = Math.abs(r);
             double tau0 = node.sourceTorque();
-            if (tau0 != 0) {
+            if (tau0 != 0 && ar > 1e-9) {
                 double free = Math.max(0.01, node.sourceFreeSpeed());
-                d += r * tau0;
-                s += r2 * Math.abs(tau0) / free;
-                cap += Math.abs(tau0) * 0.25 * free * 2 * Math.PI / 60.0;
-                src++;
+                srcNode[ns] = i;
+                srcDir[ns] = Math.signum(r * tau0);
+                srcStall[ns] = ar * Math.abs(tau0);
+                srcV[ns] = free / ar;
+                srcP[ns] = Math.abs(tau0) * free * NOMINAL_SHARE;
+                push += r * tau0;
+                ns++;
+            } else {
+                node.sourceDelivered(0);
             }
             double tauC = node.loadTorque();
             if (tauC > 0) {
@@ -316,73 +443,94 @@ public final class KineticNetwork {
                 mac++;
             }
             f += r2 * node.friction();
-            double k = node.governorStiffness();
-            if (k > 0 && Math.abs(r * speed) > node.governorTarget()) {
-                f += r2 * k;                                 //Regulateur : freinage proportionnel a l'exces de vitesse (traite implicitement)
-                gl += Math.abs(r) * k * node.governorTarget();
+            double gk = node.governorStiffness();
+            if (gk > 0 && ar > 1e-9) {
+                govK[ng] = r2 * gk;
+                govT[ng] = node.governorTarget() / ar;
+                ng++;
             }
-            double rating = node.generatorRating();
-            if (rating > 0) {
-                gw += rating;
+            if (node.generatorRating() > 0) {
+                gw += node.generatorRating();
                 gens++;
             }
             j += r2 * node.inertia();
             eta *= node.efficiency();
         }
-        //1.12.4 (lot F4) : generateurs a excitation adaptee (dynamos) : amortissement total = pente des sources + frottements (puissance maximale
-        //transferee : pour D - S w - L = (F + c) w, la puissance c w^2 est maximale a c = S + F), partage au prorata des puissances, borne par
-        //la puissance et le couple nominaux de chaque generateur ; rien si les sources ne poussent pas
-        double cg = 0;
+        nSrc = ns;
+        nGov = ng;
+        eta = Math.max(0.3, eta);
+        l /= eta;
+        //1.0.6 (revision de la mecanique) : sources REGULEES : le reseau tourne a la vitesse de regime de sa source la plus lente (repere de
+        //reference) ; chaque source y donne sa puissance nominale ; surcharge : puissance constante (vitesse = regime / charge), calage au-dela
+        //du couple de demarrage (4 fois le couple nominal d'une source a son regime)
+        sigma = push != 0 ? Math.signum(push) : Math.signum(speed);
+        double vNet = 0;
+        for (int q = 0; q < ns; q++) {
+            if (srcDir[q] == sigma) {
+                vNet = vNet <= 0 ? srcV[q] : Math.min(vNet, srcV[q]);
+            }
+        }
+        nominal = vNet;
+        double capTorque = 0;
+        if (vNet > 0) {
+            for (int q = 0; q < ns; q++) {
+                if (srcDir[q] == sigma) {
+                    capTorque += Math.min(srcStall[q], srcP[q] / vNet);
+                }
+            }
+        }
+        //Dynamos : elles ne prennent que le SURPLUS des sources au regime (les machines passent d'abord, la vitesse ne baisse pas), au
+        //prorata de leur puissance, bornees par leur puissance et leur couple ; rien si leur reserve est pleine (puissance 0)
+        double omega = Math.abs(speed), tg = 0;
         if (gens > 0) {
-            double match = s + f, omega = Math.abs(speed);
-            for (int i = 0; i < nodes.size(); i++) {
+            double surplus = Math.max(0, capTorque - l - f * vNet - brake(vNet));
+            for (int i = 0; i < n; i++) {
                 KineticNode node = nodes.get(i);
                 double rating = node.generatorRating();
                 if (rating <= 0) {
                     continue;
                 }
-                double r = eff[i], r2 = Math.max(1e-12, r * r);
-                double c = match * rating / gw * Math.max(0, Math.min(1, node.generatorExcitation()));
-                if (omega > 1e-3) {
-                    c = Math.min(c, rating / (omega * omega * RAD));
-                    c = Math.min(c, node.generatorTorque() * Math.abs(r) / omega);
-                }
-                c = Math.max(0, c);
-                cg += c;
-                node.generatorDamping(c / r2);
+                double ar = Math.max(1e-9, Math.abs(eff[i]));
+                double t = surplus * rating / gw * Math.max(0, Math.min(1, node.generatorExcitation()));
+                t = Math.min(t, rating / (Math.max(omega, 1) * RAD));
+                t = Math.min(t, node.generatorTorque() * ar);
+                t = Math.max(0, t);
+                tg += t;
+                node.generatorDamping(omega > REST ? t / (ar * ar * omega) : 0);
             }
-            f += cg;
         }
-        eta = Math.max(0.3, eta);
-        l /= eta;
-        drive = d;
-        double lt = l - gl;
-        load = l;
-        sources = src;
+        double lt = l + tg;
         machines = mac + gens;
-        capacity = cap;
+        sources = ns;
+        capacity = capTorque * vNet * RAD;
+        demand = l + f * vNet;
+        capacityTorque = capTorque;
         if (jammed) {
             speed = 0;
-            referenceTorque = Math.min(Math.abs(d), Math.max(l, Math.abs(d)));
+            referenceTorque = Math.min(Math.abs(push), Math.max(lt, Math.abs(push)));
         } else {
             double moving = Math.abs(speed) > REST ? Math.signum(speed) : 0;
-            if (moving == 0 && Math.abs(d) <= lt) {
+            double start = sourcesAt(0);
+            if (moving == 0 && Math.abs(start) <= lt) {
                 speed = 0;                                   //Calage : les sources ne vainquent pas la charge
             } else {
-                double sign = moving != 0 ? moving : Math.signum(d);
-                double jc = Math.max(1e-3, j) * C;
-                double next = (jc * speed + d - sign * lt) / (jc + s + f);
+                double m = moving != 0 ? moving : Math.signum(start);
+                double next = solve(Math.max(1e-3, j) * C, m, lt, f);
                 if (moving != 0 && Math.signum(next) != moving) {
                     next = 0;                                //On s'arrete a zero : le prochain tick decide du redemarrage
                 }
                 speed = Math.abs(next) < REST ? 0 : next;
             }
-            referenceTorque = Math.abs(speed) > REST ? l + f * Math.abs(speed) : Math.min(Math.abs(d), l);
+            referenceTorque = Math.abs(speed) > REST ? lt + f * Math.abs(speed) + brake(Math.abs(speed)) : Math.min(Math.abs(start), lt);
         }
-        generated = cg * speed * speed * RAD;
-        power = load * eta * Math.abs(speed) * RAD + generated;
-        //Charge affichee (dynamometre) : la charge electrique compte comme un couple demande
-        load += cg * Math.abs(speed);
+        //Couple rendu par chaque source (son repere, dans son sens) : lu par les sources qui paient leur energie (vapeur, electricite, chaleur)
+        for (int q = 0; q < ns; q++) {
+            int i = srcNode[q];
+            double u = srcDir[q] * speed;
+            nodes.get(i).sourceDelivered(curve(q, u) / Math.abs(eff[i]));
+        }
+        generated = tg * Math.abs(speed) * RAD;
+        power = l * eta * Math.abs(speed) * RAD + generated;
         boolean ratioMoved = !variators.isEmpty() && regulate();
         if (Double.isFinite(sentSpeed)) {
             drift += (speed - sentSpeed) * KineticTile.DEG_PER_TICK;

@@ -74,9 +74,13 @@ public class DynamoUnit extends GeneratorUnit {
     // ------------------------------------------------------------------
 
     public double rating() {
-        //1.0.4-beta (lot 5) : reserve pleine, la dynamo GARDE sa charge (la source ne part plus a vide) : le surplus est perdu (Surplus)
         //1.0.6 : commande redstone (onglet Redstone) : arretee, plus d'excitation
-        return DynamoTile.EXCITATION[excitation] > 0 && tile.redstoneAllows() ? ratedFe() * 20.0 / DynamoTile.FE_PER_JOULE : 0;
+        //1.0.6 (revision de la mecanique, Guillaume : « des fois j'atteins 100 % de charge alors que rien n'est connecte ») : elle ne prend
+        //que l'energie que sa reserve peut garder (reserve pleine : aucune charge sur l'arbre) ; les sources regulees gardent leur vitesse
+        if (DynamoTile.EXCITATION[excitation] <= 0 || !tile.redstoneAllows()) {
+            return 0;
+        }
+        return Math.min(ratedFe(), energy.getNeeded()) * 20.0 / DynamoTile.FE_PER_JOULE;
     }
 
     public double excitationShare() {

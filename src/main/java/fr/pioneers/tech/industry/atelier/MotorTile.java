@@ -86,6 +86,11 @@ public class MotorTile extends KineticMachineTile {
     }
 
     @Override
+    public void sourceDelivered(double torque) {
+        unit.delivered(torque);
+    }
+
+    @Override
     public double maxTorque() {
         return RATED_TORQUE[tier.ordinal()] * 1.5;
     }

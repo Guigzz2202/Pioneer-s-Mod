@@ -19,8 +19,9 @@ import net.minecraftforge.energy.IEnergyStorage;
  * 1.0.6 (Guillaume, 17/11/2026 : « un moteur electrique qui genere de la rotation via de l'electricite, MKI a IV, de plus en plus de force
  * selon les tiers ; la vitesse de rotation est ajustable ») : UNITE DU MOTEUR ELECTRIQUE. Source du reseau de rotation :
  * <ul>
- *     <li>couple de demarrage {@link MotorTile#RATED_TORQUE} (x4 par tier), vitesse a vide = vitesse REGLEE (1 a {@link MotorTile#MAX_SPEED}
- *     tr/min) : comme les autres sources, le couple baisse quand la vitesse monte vers celle reglee, et le moteur n'entraine plus au-dessus ;</li>
+ *     <li>couple de demarrage {@link MotorTile#RATED_TORQUE} (x4 par tier), regime = vitesse REGLEE (1 a {@link MotorTile#MAX_SPEED}
+ *     tr/min) : source regulee comme les autres (1.0.6, {@link fr.pioneers.tech.kinetics.KineticNetwork}) : il tient la vitesse reglee tant
+ *     que la charge ne depasse pas son couple nominal, et n'entraine plus au-dessus ;</li>
  *     <li>il paie en energie la puissance mecanique qu'il donne : couple x vitesse / rendement ({@link MotorTile#EFFICIENCY}) ; une reserve
  *     qui ne suit pas (ou au-dela de {@link MotorTile#RATED_FE} FE/t) baisse son couple d'autant au tick suivant (sous-alimentation) ;</li>
  *     <li>sens de rotation inversable ; commande redstone (arrete) ; case de batterie (videe dans la reserve) ; faces d'entree reglables.</li>
@@ -41,7 +42,7 @@ public class MotorUnit extends MachineUnit {
     private int target = 60, direction = 1;
     /** Part du couple que la reserve a pu payer au dernier tick (0..1 ; 0 a la pose : demarrage progressif) ; puissance mecanique et energie
      * du dernier tick. */
-    private double supply, mechanical, drawn, fraction;
+    private double supply, mechanical, drawn, fraction, delivered;
     private int state;
 
     public MotorUnit(UnitHost machine, MotorTile tile, CableTier tier) {
@@ -95,11 +96,14 @@ public class MotorUnit extends MachineUnit {
         return Math.max(1, target);
     }
 
-    /** Couple donne a la vitesse {@code rpm} (courbe des sources : baisse lineaire jusqu'a la vitesse reglee). */
+    /** 1.0.6 : couple rendu au reseau au dernier tick (N.m, donne par le reseau : source regulee a la vitesse reglee). */
     public double torqueAt(double rpm) {
-        double t0 = Math.abs(sourceTorque());
-        double v = rpm * direction;
-        return v >= target ? 0 : t0 * Math.max(0, 1 - Math.max(0, v) / Math.max(1, target));
+        return delivered;
+    }
+
+    /** 1.0.6 : couple rendu, donne par le reseau a chaque tick. */
+    public void delivered(double torque) {
+        delivered = Math.max(0, torque);
     }
 
     // ------------------------------------------------------------------ marche
@@ -131,7 +135,7 @@ public class MotorUnit extends MachineUnit {
         supply = want < supply ? want : Math.min(1, supply + 0.1);
         state = tile.jammed() ? STALLED : target <= 0 ? STOPPED : !tile.redstoneAllows() ? OFF
               : energy.getStored() <= 0 && supply <= 0.05 ? NO_POWER : supply < 0.98 ? WEAK
-              : rpm * direction > target + 0.5 ? DRIVEN : torque >= ratedTorque() * 0.95 ? TORQUE_LIMIT : RUNNING;
+              : rpm * direction > target + 0.5 ? DRIVEN : torque > 0 && rpm * direction < target * 0.97 ? TORQUE_LIMIT : RUNNING;
     }
 
     /** Vitesse reglee : +-1 tr/min (x10 avec Maj), bornee de 0 a la vitesse du tier ; sens inverse. */

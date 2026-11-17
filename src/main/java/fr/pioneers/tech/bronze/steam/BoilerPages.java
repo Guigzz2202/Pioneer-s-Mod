@@ -91,7 +91,7 @@ public final class BoilerPages {
         double wood = SteamRules.boilerNet(best(), 0, SHELLS), coal = SteamRules.boilerNet(best(), 60, SHELLS);
         List<Line> use = new ArrayList<>();
         use.add(l("use.head", f1(wood), f1(coal)));
-        Object[][] rows = {{"use.engine", SteamRules.ENGINE_USE * 60}, {"use.process", SteamRules.PROCESS_USE}, {"use.blower", SteamRules.BLOWER_USE},
+        Object[][] rows = {{"use.engine", SteamRules.ENGINE_FULL_USE}, {"use.process", SteamRules.PROCESS_USE}, {"use.blower", SteamRules.BLOWER_USE},
               {"use.drill", SteamRules.DRILL_USE}};
         for (Object[] r : rows) {
             double mbt = (double) r[1];

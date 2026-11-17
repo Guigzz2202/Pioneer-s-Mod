@@ -105,6 +105,18 @@ public final class PatchP105Lot40Tests {
         return String.valueOf(ForgeRegistries.ITEMS.getKey(st.getItem()));
     }
 
+    /** Objets {@code item} tombes au sol pres de {@code pos} (lot rendu sans place). */
+    static int dropped(net.minecraft.server.level.ServerLevel level, BlockPos pos, Item item) {
+        int n = 0;
+        for (net.minecraft.world.entity.item.ItemEntity e : level.getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,
+              new net.minecraft.world.phys.AABB(pos).inflate(3))) {
+            if (e.getItem().is(item)) {
+                n += e.getItem().getCount();
+            }
+        }
+        return n;
+    }
+
     static int count(List<ItemSlot> slots, Item item) {
         int n = 0;
         for (ItemSlot s : slots) {
@@ -257,11 +269,14 @@ public final class PatchP105Lot40Tests {
         //monde existant : lot de 2 operations de tiges a la matrice (entrees deja prises) : rendues dans les sorties
         Gt.check(fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("industry/press/press_rod_nickel"), 2), "lot de tiges rendu");
         Gt.equal(2, count(ctrl.itemOutputs(), item("nickel_ingot")), "2 operations : 2 lingots de nickel rendus");
-        Gt.equal(2, count(ctrl.itemOutputs(), item("rod_die")), "2 operations : 2 matrices a tige rendues");
+        //1.0.6 : matrices non empilables et cases de sortie au plus juste : la matrice qui n'a pas de case tombe devant le controleur
+        Gt.equal(2, count(ctrl.itemOutputs(), item("rod_die")) + dropped(s.level, ctrl.getBlockPos(), item("rod_die")),
+              "2 operations : 2 matrices a tige rendues (cases ou sol)");
         Gt.check(!fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("industry/press/press_plate_nickel"), 1), "plaque a la presse : rien a rendre");
         Gt.check(fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("automation/potter/bronze_bench_unfired_fire_brick"), 3),
               "copie retiree de la brique crue : lot rendu");
-        Gt.equal(6, count(ctrl.itemOutputs(), item("fire_clay")), "3 operations : 6 argiles refractaires rendues");
+        Gt.equal(6, count(ctrl.itemOutputs(), item("fire_clay")) + dropped(s.level, ctrl.getBlockPos(), item("fire_clay")),
+              "3 operations : 6 argiles refractaires rendues (cases ou sol)");
         s.done();
     }
 

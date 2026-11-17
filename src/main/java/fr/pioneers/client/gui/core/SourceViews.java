@@ -320,7 +320,7 @@ final class SourceViews {
             double speed = gui.value(UiValues.SPEED) / 100.0, torque = gui.value(UiValues.TORQUE) / 10.0, stored = gui.value(UiValues.STEAM);
             double capacity = gui.value(UiValues.STEAM_MAX);
             double eff = gui.value(UiValues.USEFUL) / 1000.0, used = gui.value(UiValues.STEAM_USE) / 100.0, wet = gui.value(UiValues.WET) / 1000.0;
-            AgeViews.steamGauge(gui, g, mouseX, mouseY, StandardLayout.POWER, stored, capacity, SteamRules.engineNeed(speed));
+            AgeViews.steamGauge(gui, g, mouseX, mouseY, StandardLayout.POWER, stored, capacity, Math.max(used, SteamRules.engineNeed(speed, 0)));
             ratioGauge(gui, g, mouseX, mouseY, SteamEngineTile.SPEED, Math.abs(speed) / SteamEngineTile.FREE, 0x3A6A5A, 0x3FD0A0,
                   List.of(Component.translatable("gui.pioneers.api.source.output_speed", AgeViews.rpm(speed), KineticTile.fmt(SteamEngineTile.FREE))));
             Rect c = SteamEngineTile.CARD;
@@ -347,8 +347,8 @@ final class SourceViews {
         void info(GuiMachine gui, BlockEntity be, List<StandardView.InfoRow> rows) {
             rows.add(new StandardView.InfoRow("start_torque", GuiMachine.literal(KineticTile.fmt(SteamEngineTile.TORQUE) + " N·m"), 0xFFE0B040));
             rows.add(new StandardView.InfoRow("free_speed", GuiMachine.literal(KineticTile.fmt(SteamEngineTile.FREE) + " tr/min"), PiMenuScreen.TEXT));
-            rows.add(new StandardView.InfoRow("steam_use", Component.translatable("gui.pioneers.api.info.per_rpm", String.format(Locale.ROOT, "%.2f",
-                  SteamEngineTile.USE)), PiMenuScreen.TEXT));
+            rows.add(new StandardView.InfoRow("steam_use", Component.translatable("gui.pioneers.api.info.full_power_use", String.format(Locale.ROOT, "%.1f",
+                  SteamRules.ENGINE_FULL_USE)), PiMenuScreen.TEXT));
         }
 
         @Override

@@ -7,9 +7,10 @@ import net.minecraft.core.Direction;
  * Noeud du reseau de force rotative : arbre, engrenage, poulie, source ou machine. Chaque noeud tourne dans son propre repere (sens positif
  * de son axe, ou repere interne pour une boite a plusieurs axes) ; ses liens donnent le rapport des vitesses avec ses voisins.
  * <p>
- * Physique (unites SI, vitesses en tr/min) : une source pousse avec un couple {@link #sourceTorque()} qui decroit lineairement jusqu'a
- * s'annuler a {@link #sourceFreeSpeed()} ; une machine au travail demande un couple constant {@link #loadTorque()} ; frottement visqueux et
- * inertie ralentissent. Le reseau trouve seul sa vitesse (voir {@link KineticNetwork}).
+ * Physique (unites SI, vitesses en tr/min) : une source REGULEE (1.0.6) pousse avec son couple de demarrage {@link #sourceTorque()} a
+ * l'arret, puis a puissance constante (couple de demarrage x regime / 4) jusqu'a son regime {@link #sourceFreeSpeed()}, et plus au-dessus ;
+ * une machine au travail demande un couple constant {@link #loadTorque()} ; frottement visqueux et inertie ralentissent. Le reseau trouve
+ * seul sa vitesse (voir {@link KineticNetwork}).
  */
 public interface KineticNode {
 
@@ -36,9 +37,16 @@ public interface KineticNode {
         return 0;
     }
 
-    /** Vitesse a vide de la source (tr/min, > 0). */
+    /** Regime de la source (tr/min, > 0) : vitesse a laquelle elle donne sa puissance nominale ; elle n'entraine plus au-dessus. */
     default double sourceFreeSpeed() {
         return 1;
+    }
+
+    /**
+     * 1.0.6 : couple que la source a rendu a ce tick (N.m, son repere, dans son sens ; 0 si elle n'entraine pas), donne par le reseau : une
+     * source qui paie son energie (vapeur, electricite, chaleur) la compte sur ce couple x sa vitesse.
+     */
+    default void sourceDelivered(double torque) {
     }
 
     /** Couple demande par la machine (N.m, >= 0 ; s'oppose toujours au mouvement). */
