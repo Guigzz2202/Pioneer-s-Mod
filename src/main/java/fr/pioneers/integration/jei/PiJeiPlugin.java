@@ -551,6 +551,21 @@ public class PiJeiPlugin implements IModPlugin {
               .forEach(holder -> hidden.add(new ItemStack(holder.value())));
         //1.0 : materiaux et outils vanilla remplaces par ceux du mod
         VanillaReplacements.replaced().forEach(item -> hidden.add(new ItemStack(item)));
+        //DIAGNOSTIC TEMPORAIRE (17/11/2026, formes d'extrusion absentes de la liste de JEI chez Guillaume) : a retirer apres analyse
+        net.minecraftforge.registries.ForgeRegistries.ITEMS.getEntries().stream()
+              .filter(e -> e.getKey().location().getNamespace().equals(Pioneers.MODID) && e.getKey().location().getPath().startsWith("extrusion_shape_"))
+              .forEach(e -> {
+                  ItemStack st = new ItemStack(e.getValue());
+                  boolean inList = runtime.getIngredientManager().getAllItemStacks().stream().anyMatch(x -> x.is(e.getValue()));
+                  boolean visible = runtime.getJeiHelpers().getIngredientVisibility().isIngredientVisible(
+                        mezz.jei.api.constants.VanillaTypes.ITEM_STACK, st);
+                  boolean hiddenHere = hidden.stream().anyMatch(x -> x.is(e.getValue()));
+                  String tabs = fr.pioneers.core.registries.PiCreativeTabs.BY_TAB.entrySet().stream()
+                        .filter(t -> t.getValue().get().getDisplayItems().stream().anyMatch(x -> x.is(e.getValue())))
+                        .map(t -> t.getKey().name()).collect(java.util.stream.Collectors.joining(","));
+                  Pioneers.LOGGER.info("[diag-formes] {} nom='{}' liste={} visible={} cache_par_pioneers={} empilable={} onglets=[{}]",
+                        e.getKey().location(), st.getHoverName().getString(), inList, visible, hiddenHere, st.getMaxStackSize(), tabs);
+              });
         if (!hidden.isEmpty()) {
             runtime.getIngredientManager().removeIngredientsAtRuntime(mezz.jei.api.constants.VanillaTypes.ITEM_STACK, hidden);
         }
