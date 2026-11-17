@@ -433,12 +433,15 @@ final class AgeViews {
             int excitation = (int) Math.max(0, Math.min(DynamoTile.EXCITATION.length - 1, gui.value(UiValues.EXCITATION)));
             int status = (int) Math.max(0, Math.min(7, gui.value(UiValues.STATUS)));
             boolean output = gui.value(UiValues.OUTPUT_OK) != 0;
-            speedGauge(gui, g, mouseX, mouseY, StandardLayout.POWER, speed, 0, vmax / 1.5, vmax);
-            Rect e = DynamoUnit.RESERVE;
+            //1.0.6 (Guillaume : « au norme des machines compactes ») : reserve et case de recharge a gauche, rotation en entree, fleche,
+            //carte des mesures, bouton d'excitation, ecran standard
+            Rect e = DynamoUnit.ENERGY;
             gui.energy(g, mouseX, mouseY, e.x(), e.y(), e.w(), e.h());
-            //Carte : couple electrique, puissance mecanique, adaptation, sortie
+            speedGauge(gui, g, mouseX, mouseY, DynamoUnit.SPEED, speed, 0, vmax / 1.5, vmax);
+            StandardView.arrow(g, DynamoUnit.ARROW, status == DynamoTile.PRODUCING || status == DynamoTile.SATURATED
+                  || status == DynamoTile.TORQUE_LIMIT ? Math.min(1, fe / rated) : 0, 0xE0B040);
             List<GuiMachine.Row> crow = new ArrayList<>();
-            crow.add(GuiMachine.Row.of("gui.pioneers.kinetics.torque", GuiMachine.literal(KineticTile.fmt(torque) + " / " + KineticTile.fmt(tmax) + " N·m")));
+            crow.add(GuiMachine.Row.of("gui.pioneers.kinetics.torque", GuiMachine.literal(KineticTile.fmt(torque) + " N·m")));
             crow.add(GuiMachine.Row.of("gui.pioneers.dynamo.mechanical", GuiMachine.literal(watts >= 1000 ? String.format(Locale.ROOT, "%.1f kW", watts / 1000)
                   : Math.round(watts) + " W")));
             crow.add(new GuiMachine.Row(Component.translatable("gui.pioneers.dynamo.match"), GuiMachine.percent(match), match >= 0.9 ? GuiMachine.FLOW_UP_COLOR
@@ -450,6 +453,12 @@ final class AgeViews {
             if (gui.over(mouseX, mouseY, c.x(), c.y(), c.w(), 16)) {
                 gui.tooltip(List.of(Component.translatable(output ? "gui.pioneers.dynamo.output_ok_tip" : "gui.pioneers.dynamo.output_none_tip")));
             }
+            Rect r = DynamoUnit.BUTTON;
+            Component label = Component.translatable("gui.pioneers.dynamo.excitation", Component.translatable("gui.pioneers.dynamo.excitation." + excitation));
+            gui.steelButton(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), label, true, () -> gui.send(Screen.hasShiftDown() ? DynamoTile.PREVIOUS : DynamoTile.NEXT));
+            if (gui.over(mouseX, mouseY, r.x(), r.y(), r.w(), r.h())) {
+                gui.tooltip(List.of(label, Component.translatable("gui.pioneers.dynamo.excitation_tip").withStyle(ChatFormatting.GRAY)));
+            }
             int chip = switch (status) {
                 case DynamoTile.PRODUCING -> GREEN;
                 case DynamoTile.SATURATED, DynamoTile.TORQUE_LIMIT -> AMBER;
@@ -457,21 +466,16 @@ final class AgeViews {
                 case DynamoTile.NO_OUTPUT -> 0xE08A3A;
                 default -> GREY;
             };
-            Rect s = StandardLayout.shortScreen(StandardLayout.WIDTH);
+            Rect s = StandardLayout.screen(StandardLayout.WIDTH);
             List<GuiMachine.Row> rows = new ArrayList<>();
             rows.add(GuiMachine.Row.of("gui.pioneers.api.info.peak", GuiMachine.literal(Texts.grouped(rated) + " FE/t")));
+            rows.add(GuiMachine.Row.of("gui.pioneers.kinetics.torque", GuiMachine.literal(KineticTile.fmt(tmax) + " N·m max")));
             gui.info(g, s.x(), s.y(), s.w(), s.h(), chip, Component.translatable("gui.pioneers.dynamo.status." + status), GuiMachine.literal(GuiMachine.compact(fe) + " FE/t"),
                   fe / rated, 0xE8C060, rows, false);
             if (gui.over(mouseX, mouseY, s.x(), s.y(), s.w(), 16)) {
                 gui.tooltip(List.of(Component.translatable("gui.pioneers.dynamo.status." + status), Component.translatable("gui.pioneers.dynamo.help." + status)
                       .withStyle(ChatFormatting.GRAY), Component.translatable("gui.pioneers.dynamo.rated", Texts.grouped(rated), KineticTile.fmt(tmax),
                       KineticTile.fmt(vmax)).withStyle(ChatFormatting.DARK_GRAY)));
-            }
-            Rect r = StandardLayout.settingRow(StandardLayout.WIDTH);
-            Component label = Component.translatable("gui.pioneers.dynamo.excitation", Component.translatable("gui.pioneers.dynamo.excitation." + excitation));
-            gui.steelButton(g, mouseX, mouseY, r.x(), r.y() + 1, r.w(), 12, label, true, () -> gui.send(Screen.hasShiftDown() ? DynamoTile.PREVIOUS : DynamoTile.NEXT));
-            if (gui.over(mouseX, mouseY, r.x(), r.y(), r.w(), r.h())) {
-                gui.tooltip(List.of(label, Component.translatable("gui.pioneers.dynamo.excitation_tip").withStyle(ChatFormatting.GRAY)));
             }
         }
 

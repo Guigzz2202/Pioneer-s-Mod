@@ -80,6 +80,11 @@ public interface MachineGui extends PacketTileAction.Handler {
         return 8;
     }
 
+    /** 1.0.6 : la machine propose l'onglet Redstone (machines compactes ; dynamo et moteur electrique). */
+    default boolean redstoneTab() {
+        return false;
+    }
+
     /** Action propre a la machine (>= {@link #CUSTOM}). */
     default void handleCustom(ServerPlayer player, int action) {
     }

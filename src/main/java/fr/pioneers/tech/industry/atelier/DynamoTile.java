@@ -7,6 +7,8 @@ import fr.pioneers.tech.kinetics.KineticMachineTile;
 import fr.pioneers.tech.kinetics.KineticNode;
 import fr.pioneers.tech.industry.PiIndustry;
 import fr.pioneers.logistics.transport.CableTier;
+import fr.pioneers.core.side.SideMode;
+import fr.pioneers.core.side.SideType;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -63,6 +65,9 @@ public class DynamoTile extends KineticMachineTile {
     public DynamoTile(BlockPos pos, BlockState state) {
         super(PiIndustry.DYNAMO_TILE.get(), pos, state);
         tier = state.getBlock() instanceof DynamoBlock d ? d.tier : CableTier.BASIC;
+        //1.0.6 (Guillaume : « au norme des machines compactes ») : faces de sortie reglables, commande redstone, case de recharge
+        enableSides(SideType.ENERGY, SideMode.OUTPUT, SideMode.OUTPUT);
+        enableRedstone();
         unit = carry(new DynamoUnit(host, this, tier));
         cap = LazyOptional.of(() -> unit.energy);
     }
@@ -189,7 +194,7 @@ public class DynamoTile extends KineticMachineTile {
     @NotNull
     @Override
     public <T> LazyOptional<T> getCapability(@NotNull Capability<T> wanted, @Nullable Direction side) {
-        if (wanted == ForgeCapabilities.ENERGY && (side == null || side.getAxis() != axis())) {
+        if (wanted == ForgeCapabilities.ENERGY && (side == null || side.getAxis() != axis() && sideOpen(SideType.ENERGY, side))) {
             return cap.cast();
         }
         return super.getCapability(wanted, side);
