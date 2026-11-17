@@ -188,7 +188,9 @@ public enum IndustryMachine {
     ELECTROMECHANICAL_BENCH("electromechanical_bench", Atelier.NEW, true, null, 4, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 30, 0xD64238, new int[]{5, 4, 13, 5, 4, 13}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
     STONEWORKS("stoneworks", Atelier.NEW, true, null, 3, 1, 0, 0, 0, 0, Source.STONECUTTING, Kind.PROCESS, 60, 0x9C9892, new int[]{7, 7, 5, 7, 7, 5}, false, false, new String[]{},
-          fr.pioneers.tech.industry.multi.IndustryShape.GANTRY, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{});
+          fr.pioneers.tech.industry.multi.IndustryShape.GANTRY, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    DRIVE_MOTOR("drive_motor", Atelier.NEW, false, null, 0, 0, 0, 0, 0, 0, Source.KINETIC, Kind.GENERATOR, 0, 0x468CD7, new int[]{3, 3, 3, 11, 11, 11}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.BOX, fr.pioneers.tech.industry.multi.IndustryStyle.NEUTRAL, new String[]{});
 
     /** Ou est la machine d'atelier : nouvelle (generee), kit existant, machine d'avant l'electricite, ou aucune (multibloc seulement). */
     public enum Atelier { NEW, KIT, BRONZE, NONE }

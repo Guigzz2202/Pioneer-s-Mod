@@ -208,4 +208,37 @@ public final class PatchP106InterfacesTests {
         Gt.check(d.generator().rating() == 0, "redstone : sans signal, la dynamo ne doit plus etre excitee");
         h.succeed();
     }
+
+    /**
+     * Moteur electrique (Guillaume, 17/11/2026) : MKI a MKIV, couple croissant par tier, vitesse reglable, sens inversable ; il prend
+     * l'energie par ses faces (pas par celles de l'arbre) et tourne jusqu'a la vitesse visee ; sans energie, plus de couple.
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p106_moteur", timeoutTicks = 200)
+    public static void p106_moteur_electrique(GameTestHelper h) {
+        Gt.begin(h);
+        for (int t = 1; t < 4; t++) {
+            Gt.check(fr.pioneers.tech.industry.atelier.MotorTile.RATED_TORQUE[t] > fr.pioneers.tech.industry.atelier.MotorTile.RATED_TORQUE[t - 1],
+                  "couple croissant par tier");
+        }
+        net.minecraft.core.BlockPos pos = new net.minecraft.core.BlockPos(2, 2, 2);
+        h.setBlock(pos, fr.pioneers.tech.industry.PiIndustry.MOTORS.get(fr.pioneers.logistics.transport.CableTier.BASIC).getBlock().defaultBlockState());
+        fr.pioneers.tech.industry.atelier.MotorTile m = (fr.pioneers.tech.industry.atelier.MotorTile) h.getBlockEntity(pos);
+        Gt.check(m.getSideConfig() != null && m.hasRedstoneTab() && m.guiSlots().size() == 1, "moteur : faces, redstone, batterie");
+        Gt.check(m.getCapability(net.minecraftforge.common.capabilities.ForgeCapabilities.ENERGY, net.minecraft.core.Direction.UP).isPresent(),
+              "energie par une face");
+        Gt.check(!m.getCapability(net.minecraftforge.common.capabilities.ForgeCapabilities.ENERGY, net.minecraft.core.Direction.NORTH).isPresent(),
+              "pas d'energie par le bout de l'arbre");
+        Gt.check(m.sourceTorque() == 0, "sans energie : pas de couple");
+        m.motor().energy.insert(200_000, false);
+        m.motor().setting(0, 120);
+        Gt.equal(120, m.motor().target(), "vitesse visee reglee");
+        m.handleCustom(null, fr.pioneers.tech.industry.atelier.MotorTile.FASTER_10);
+        Gt.equal(130, m.motor().target(), "+10 tr/min");
+        long before = m.motor().energy.getStored();
+        h.succeedWhen(() -> {
+            Gt.check(Math.abs(m.getSpeed()) > 60, "l'arbre ne tourne pas encore (" + m.getSpeed() + " tr/min)");
+            Gt.check(Math.abs(m.getSpeed()) <= 131, "plus vite que la vitesse visee");
+            Gt.check(m.motor().energy.getStored() < before, "le moteur ne prend pas d'energie");
+        });
+    }
 }

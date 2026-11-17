@@ -112,6 +112,8 @@ public final class PiIndustry {
 
     public static final Map<IndustryMachine, Map<CableTier, BlockEntry<AtelierBlock>>> ATELIERS = new EnumMap<>(IndustryMachine.class);
     public static final Map<CableTier, BlockEntry<DynamoBlock>> DYNAMOS = new EnumMap<>(CableTier.class);
+    /** 1.0.6 : moteurs electriques MKI a MKIV (meme bloc que la dynamo : J:tech/industry/atelier/MotorTile). */
+    public static final Map<CableTier, BlockEntry<DynamoBlock>> MOTORS = new EnumMap<>(CableTier.class);
 
     static {
         for (IndustryMachine m : IndustryMachine.values()) {
@@ -121,6 +123,12 @@ public final class PiIndustry {
             if (m == IndustryMachine.DYNAMO) {
                 for (CableTier tier : CableTier.values()) {
                     DYNAMOS.put(tier, block(m.atelierId(tier), () -> new DynamoBlock(tier, metal().noOcclusion())));
+                }
+                continue;
+            }
+            if (m == IndustryMachine.DRIVE_MOTOR) {
+                for (CableTier tier : CableTier.values()) {
+                    MOTORS.put(tier, block(m.atelierId(tier), () -> new DynamoBlock(tier, true, metal().noOcclusion())));
                 }
                 continue;
             }
@@ -250,6 +258,8 @@ public final class PiIndustry {
           () -> RADIATORS.values().stream().map(BlockEntry::getBlock).toArray(Block[]::new));
     public static final RegistryObject<BlockEntityType<DynamoTile>> DYNAMO_TILE = tile("industry_dynamo", DynamoTile::new,
           () -> DYNAMOS.values().stream().map(BlockEntry::getBlock).toArray(Block[]::new));
+    public static final RegistryObject<BlockEntityType<fr.pioneers.tech.industry.atelier.MotorTile>> MOTOR_TILE = tile("industry_motor",
+          fr.pioneers.tech.industry.atelier.MotorTile::new, () -> MOTORS.values().stream().map(BlockEntry::getBlock).toArray(Block[]::new));
     public static final RegistryObject<BlockEntityType<CokeOvenTile>> COKE_OVEN_TILE = tile("coke_oven", CokeOvenTile::new,
           () -> new Block[]{COKE_OVEN.getBlock()});
 

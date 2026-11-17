@@ -409,6 +409,18 @@ final class Productions {
                   List.of(ProductionCategory.Slot.items(dynamos)), List.of(),
                   List.of(Component.translatable(k + "dynamo", fmt((float) (1 / DynamoTile.FE_PER_JOULE)), Texts.grouped(DynamoTile.RATED_FE[0])))));
         }
+        //1.0.6 : moteur electrique : energie -> rotation (J:tech/industry/atelier/MotorTile : couple et vitesse du tier, vitesse reglable)
+        List<ItemStack> motors = machines(IndustryMachine.DRIVE_MOTOR);
+        if (!motors.isEmpty()) {
+            long[] eff = {Math.round(fr.pioneers.tech.industry.atelier.MotorTile.EFFICIENCY[0] * 100),
+                          Math.round(fr.pioneers.tech.industry.atelier.MotorTile.EFFICIENCY[3] * 100)};
+            out.add(new ProductionCategory.Entry(Component.translatable("industry.pioneers.machine." + IndustryMachine.DRIVE_MOTOR.key),
+                  List.of(ProductionCategory.Slot.items(motors)), List.of(),
+                  List.of(Component.translatable(k + "motor", Texts.grouped(fr.pioneers.tech.industry.atelier.MotorTile.MAX_SPEED[0]),
+                        Texts.grouped(fr.pioneers.tech.industry.atelier.MotorTile.MAX_SPEED[3]),
+                        Texts.grouped(Math.round(fr.pioneers.tech.industry.atelier.MotorTile.RATED_TORQUE[0])), Component.translatable("card.pioneers.percent", eff[0]),
+                        Component.translatable("card.pioneers.percent", eff[1])))));
+        }
         //Noria : monte l'eau du dessous
         ItemStack noria = new ItemStack(PiKinetics.machine(MachineType.NORIA));
         out.add(new ProductionCategory.Entry(Component.translatable("block.pioneers.noria"), List.of(ProductionCategory.Slot.item(noria)),
@@ -421,6 +433,10 @@ final class Productions {
         List<ItemStack> out = new ArrayList<>();
         if (PiIndustry.ATELIERS.containsKey(m)) {
             PiIndustry.ATELIERS.get(m).values().forEach(e -> out.add(new ItemStack(e.getBlock())));
+        }
+        //dynamo et moteur electrique : blocs a part (DynamoBlock), hors de ATELIERS
+        if (m == IndustryMachine.DYNAMO || m == IndustryMachine.DRIVE_MOTOR) {
+            (m == IndustryMachine.DYNAMO ? PiIndustry.DYNAMOS : PiIndustry.MOTORS).values().forEach(e -> out.add(new ItemStack(e.getBlock())));
         }
         if (m.industrial && PiIndustry.controller(m) != null) {
             out.add(new ItemStack(PiIndustry.controller(m).getBlock()));

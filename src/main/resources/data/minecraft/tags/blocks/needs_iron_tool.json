@@ -344,6 +344,9 @@
   "pioneers:industrial_sheet_metal_shop",
   "pioneers:industrial_glassworks",
   "pioneers:industrial_electromechanical_bench",
-  "pioneers:industrial_stoneworks"
+  "pioneers:industrial_stoneworks",
+  "pioneers:advanced_drive_motor",
+  "pioneers:elite_drive_motor",
+  "pioneers:ultimate_drive_motor"
  ]
 }

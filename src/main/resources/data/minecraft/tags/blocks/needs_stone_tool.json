@@ -160,6 +160,7 @@
   "pioneers:basic_sheet_metal_shop",
   "pioneers:basic_glassworks",
   "pioneers:basic_electromechanical_bench",
-  "pioneers:basic_stoneworks"
+  "pioneers:basic_stoneworks",
+  "pioneers:basic_drive_motor"
  ]
 }

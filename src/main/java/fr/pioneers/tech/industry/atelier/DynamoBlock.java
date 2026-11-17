@@ -3,6 +3,7 @@ package fr.pioneers.tech.industry.atelier;
 import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.core.Directions;
 import fr.pioneers.tech.kinetics.AxisKineticBlock;
+import fr.pioneers.tech.kinetics.KineticMachineTile;
 import fr.pioneers.tech.kinetics.KineticNode;
 import fr.pioneers.tech.kinetics.KineticPlacement;
 import fr.pioneers.logistics.transport.CableTier;
@@ -46,10 +47,17 @@ public class DynamoBlock extends AxisKineticBlock {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     public final CableTier tier;
+    /** 1.0.6 : moteur electrique (meme bloc, l'inverse de la dynamo : {@link MotorTile}) ; sa facade se tourne vers une source d'energie. */
+    public final boolean motor;
 
     public DynamoBlock(CableTier tier, Properties properties) {
+        this(tier, false, properties);
+    }
+
+    public DynamoBlock(CableTier tier, boolean motor, Properties properties) {
         super(properties);
         this.tier = tier;
+        this.motor = motor;
         registerDefaultState(defaultBlockState().setValue(AXIS, Direction.Axis.Z).setValue(FACING, Direction.UP));
     }
 
@@ -88,11 +96,14 @@ public class DynamoBlock extends AxisKineticBlock {
                 axis = clicked.getAxis() == Direction.Axis.Y ? context.getHorizontalDirection().getClockWise().getAxis() : clicked.getClockWise().getAxis();
             }
         }
-        return block.defaultBlockState().setValue(AXIS, axis).setValue(FACING, facade(level, pos, axis, clicked, player));
+        return block.defaultBlockState().setValue(AXIS, axis).setValue(FACING, facade(level, pos, axis, clicked, player, block.motor));
     }
 
-    /** Facade : vers un recepteur d'energie, sinon dos au support clique, sinon vers le joueur (toujours perpendiculaire a l'axe). */
-    static Direction facade(Level level, BlockPos pos, Direction.Axis axis, Direction clicked, @Nullable Player player) {
+    /**
+     * Facade : vers un recepteur d'energie (moteur : vers une source d'energie), sinon dos au support clique, sinon vers le joueur (toujours
+     * perpendiculaire a l'axe).
+     */
+    static Direction facade(Level level, BlockPos pos, Direction.Axis axis, Direction clicked, @Nullable Player player, boolean motor) {
         for (Direction d : Directions.ALL) {
             if (d.getAxis() == axis) {
                 continue;
@@ -100,7 +111,7 @@ public class DynamoBlock extends AxisKineticBlock {
             //(une machine de l'autre cote d'une frontiere de claim refusee ne recevra rien : elle n'oriente pas la facade)
             BlockEntity other = ClanApi.canTransfer(level, pos, pos.relative(d)) ? level.getBlockEntity(pos.relative(d)) : null;
             if (other != null && !(other instanceof KineticNode)
-                && other.getCapability(ForgeCapabilities.ENERGY, d.getOpposite()).map(e -> e.canReceive()).orElse(false)) {
+                && other.getCapability(ForgeCapabilities.ENERGY, d.getOpposite()).map(e -> motor ? e.canExtract() : e.canReceive()).orElse(false)) {
                 return d;
             }
         }
@@ -138,7 +149,7 @@ public class DynamoBlock extends AxisKineticBlock {
 
     @Override
     protected InteractionResult interact(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!level.isClientSide && player instanceof ServerPlayer serverPlayer && level.getBlockEntity(pos) instanceof DynamoTile tile) {
+        if (!level.isClientSide && player instanceof ServerPlayer serverPlayer && level.getBlockEntity(pos) instanceof KineticMachineTile tile) {
             NetworkHooks.openScreen(serverPlayer, tile, pos);
         }
         return InteractionResult.sidedSuccess(level.isClientSide);
@@ -148,6 +159,6 @@ public class DynamoBlock extends AxisKineticBlock {
 
     @Override
     public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
-        return new DynamoTile(pos, state);
+        return motor ? new MotorTile(pos, state) : new DynamoTile(pos, state);
     }
 }

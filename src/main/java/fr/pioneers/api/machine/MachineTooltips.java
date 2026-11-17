@@ -237,7 +237,9 @@ public final class MachineTooltips {
                 }
             }
             case "dynamo" -> {
-                if (block instanceof DynamoBlock dynamo) {
+                if (block instanceof DynamoBlock dynamo && dynamo.motor) {
+                    fr.pioneers.tech.industry.atelier.MotorTile.specs(dynamo.tier, tips);   // 1.0.6 : moteur electrique
+                } else if (block instanceof DynamoBlock dynamo) {
                     DynamoTile.specs(dynamo.tier, tips);
                 }
             }
