@@ -70,7 +70,7 @@ public final class PatchP105Lot40Tests {
           Map.entry("machine_frame_basic", new String[]{"steel_screw", "steel_bolt"}),
           Map.entry("machine_hull_basic", new String[]{"machine_frame_basic"}),
           Map.entry("industrial_casing_basic", new String[]{"steel_sheet"}),
-          Map.entry("basic_logistic_cable", new String[]{"natural_rubber"}),
+          Map.entry("basic_logistic_cable", new String[]{"bronze_logistic_cable"}),   //1.0.6 : recette de Guillaume du 17/11
           Map.entry("bearing", new String[]{"steel_balls"}),
           Map.entry("power_supply_unit", new String[]{"copper_coil"}),
           Map.entry("centrifugal_pump", new String[]{"electric_motor", "pump_housing"}),
