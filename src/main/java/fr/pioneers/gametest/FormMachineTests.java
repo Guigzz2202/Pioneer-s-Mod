@@ -116,10 +116,11 @@ public final class FormMachineTests {
         m.fluidInputs().get(0).setFluid(new net.minecraftforge.fluids.FluidStack(net.minecraftforge.registries.ForgeRegistries.FLUIDS
               .getValue(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("pioneers", "lubricant")), 1_000));
         Item gear = item("bronze_gear"), nugget = item("bronze_nugget");
+        //1.0.6 (Guillaume, 17/11 : « la decoupeuse ne rend plus de pepite quand elle fait un engrenage ») : aucun copeau
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());
             Gt.equal(1, count(m, gear), "engrenage taille");
-            Gt.equal(4, count(m, nugget), "copeaux en pepites");
+            Gt.equal(0, count(m, nugget), "aucun copeau en pepites");
         });
     }
 
