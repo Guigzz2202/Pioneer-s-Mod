@@ -129,6 +129,17 @@ public final class PatchP106MetiersTests {
               .filter(e -> e.getKey().location().getPath().startsWith("extrusion_shape_")).map(e -> new ItemStack(e.getValue())).toList();
         Gt.equal(5, shapes.size(), "5 formes d'extrusion : tige, tube, plaque, fil, ebauche d'engrenage");
         Gt.check(shapes.stream().allMatch(st -> st.getMaxStackSize() == 1), "formes d'extrusion non empilables");
+        // les 5 formes sont dans l'inventaire creatif (JEI liste les objets des onglets)
+        net.minecraft.world.item.CreativeModeTab.ItemDisplayParameters params = new net.minecraft.world.item.CreativeModeTab.ItemDisplayParameters(
+              h.getLevel().enabledFeatures(), false, h.getLevel().registryAccess());
+        java.util.Set<Item> shown = new java.util.HashSet<>();
+        fr.pioneers.core.registries.PiCreativeTabs.BY_TAB.values().forEach(t -> {
+            t.get().buildContents(params);
+            t.get().getDisplayItems().forEach(st -> shown.add(st.getItem()));
+        });
+        for (ItemStack st : shapes) {
+            Gt.check(shown.contains(st.getItem()), "forme absente de l'inventaire creatif : " + ForgeRegistries.ITEMS.getKey(st.getItem()));
+        }
         // l'extrusion s'applique a tous les metaux (pas seulement ceux des etablis)
         for (String id : List.of("extrude_plate_titanium", "extrude_wire_nickel", "extrude_gear_blank_titanium", "extrude_rod_aluminium")) {
             Gt.equal(IndustryMachine.EXTRUDER, machineOf(h, "industry/extruder/" + id), "extrusion : " + id);
