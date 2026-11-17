@@ -167,7 +167,9 @@ public final class BigInterior {
          * assembles et ressortent, pont roulant, portail a rideau. Cages : hauteur de l'egout du toit et du faite (px au-dessus du bas
          * des modules), 1 si la porte est au bout de l'axe (sinon au debut).
          */
-        DEPOT(40, 60);
+        DEPOT(40, 60),
+        /** 1.0.6 : portique de decoupe de la Decoupeuse (« bras d'imprimante 3D ») : poutre et chariot, torche, saignee, etincelles. */
+        GANTRY(40, 60);
 
         /** Duree de la montee en regime et de l'arret (ticks). */
         public final int up, down;
