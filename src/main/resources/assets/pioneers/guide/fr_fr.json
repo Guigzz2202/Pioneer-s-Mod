@@ -3459,7 +3459,7 @@
       "pioneers:steam_wiremill",
       "pioneers:basic_rolling_mill"
      ],
-     "text": "Chaque machine à vapeur fait aussi une partie des §6recettes MKI§r de sa famille : §l134 recettes§r (compactage 44, cuisson 18, laminage 17, broyage 14, sciage 12, tréfilage 11, tamisage 8, mélange 7, tournage 3). Mêmes entrées, mêmes sorties, même vapeur par tick, mais §ldeux fois plus lentes§r qu'à la machine MKI, qui reste plus rapide et garde ses rendements du minerai.\n• Restent au MKI : ce qui touche un matériau du MKI ou plus (acier, laiton, nickel, aluminium…, minerais des gisements profonds), les composants clés et les jalons du MKI, les recettes à fluide, à gaz ou à chaleur, les rendements du minerai, les copies d'établi (à l'âge du bronze les établis restent à la main) et tout ce qui avancerait le MKI.\n• Sans verrou, la machine fait d'abord ses propres recettes ; le §lsélecteur§r propose ensuite les recettes MKI ouvertes (écran : « Recette : MKI · vitesse ×½ »).\nJEI les montre sur la page de la §lmachine MKI§r de la famille, avec la durée du MKI (deux fois plus longue à la vapeur)."
+     "text": "Chaque machine à vapeur fait aussi une partie des §6recettes MKI§r de sa famille : §l119 recettes§r (compactage 44, laminage 18, cuisson 18, broyage 14, tamisage 8, tréfilage 7, mélange 7, tournage 3). Mêmes entrées, mêmes sorties, même vapeur par tick, mais §ldeux fois plus lentes§r qu'à la machine MKI, qui reste plus rapide et garde ses rendements du minerai.\n• Restent au MKI : ce qui touche un matériau du MKI ou plus (acier, laiton, nickel, aluminium…, minerais des gisements profonds), les composants clés et les jalons du MKI, les recettes à fluide, à gaz ou à chaleur, les rendements du minerai, les copies d'établi (à l'âge du bronze les établis restent à la main) et tout ce qui avancerait le MKI.\n• Sans verrou, la machine fait d'abord ses propres recettes ; le §lsélecteur§r propose ensuite les recettes MKI ouvertes (écran : « Recette : MKI · vitesse ×½ »).\nJEI les montre sur la page de la §lmachine MKI§r de la famille, avec la durée du MKI (deux fois plus longue à la vapeur)."
     },
     {
      "title": "Le béton et le mélangeur à vapeur",
@@ -4861,14 +4861,9 @@
      "items": [
       "pioneers:basic_extruder",
       "pioneers:extrusion_shape_rod",
-      "pioneers:extrusion_shape_wire",
-      "pioneers:extrusion_shape_ring",
-      "pioneers:extrusion_shape_pipe",
-      "pioneers:extrusion_shape_plate",
-      "pioneers:extrusion_shape_gear",
-      "pioneers:extrusion_shape_gear_blank"
+      "pioneers:extrusion_shape_pipe"
      ],
-     "text": "L'§6extrudeuse§r donne au métal §llittéralement la forme voulue§r : on pose le métal ET une §lforme d'extrusion§r (une matrice d'acier dont l'œil a le profil de la pièce). Elle va dans la §lcase Outil§r et ressort toujours : en machine, l'outillage de mise en forme est incassable. Pour les métaux des établis :\n• §lforme tige§r : 1 lingot → 2 tiges, §l3 au MKII§r et plus ; 1 billette → 18 tiges ;\n• §lforme fil§r : 1 lingot → 4 fils ;\n• §lforme anneau§r (MKII) : 1 lingot → 3 anneaux ;\n• §lforme tube§r : 1 tige → 1 tube ;\n• §lforme plaque§r : 1 lingot → 1 plaque ;\n• §lforme engrenage§r (MKIII) : 5 lingots → 1 engrenage ;\n• §lforme ébauche d'engrenage§r : 1 billette → 2 ébauches.\nLes formes se font à l'§6établi de composants de base§r (ou à la presse (façonnage)) : 2 plaques d'acier + la pièce d'acier qui donne le profil (tige, fil, anneau, engrenage ; un anneau pour le tube, un engrenage pour l'ébauche ; 3 plaques pour la forme plaque), marteau et lime. JEI montre la forme dans les entrées de chaque recette.",
+     "text": "L'§6extrudeuse§r file le métal à travers une §lforme d'extrusion§r (une matrice d'acier dont l'œil a le profil de la pièce) : on pose le métal ET la forme. Elle va dans la §lcase Outil§r et ressort toujours : en machine, l'outillage de mise en forme est incassable.\n• §lforme tige§r : 1 lingot → 2 tiges, §l3 au MKII§r et plus ; 1 billette → 18 tiges ;\n• §lforme tube§r : 1 tige → 1 tube.\n§61.0.6§r : une machine par forme. Le fil se tréfile (§lTréfileuse§r), l'anneau se cintre (§lCintreuse§r), la plaque se presse (§lPresse§r), l'engrenage se taille (§lDécoupeuse§r), l'ébauche d'engrenage se forge ou se coule : leurs formes d'extrusion sont retirées (une forme déjà fabriquée devient la filière d'extrusion vierge). Au MKI, les tiges des tours (mécanique et à vapeur) se font à l'extrudeuse.\nLes formes se font à l'§6établi de composants de base§r : 2 plaques d'acier + la pièce d'acier qui donne le profil (une tige ; un anneau pour le tube), marteau et lime. JEI montre la forme dans les entrées de chaque recette.",
      "flow": [
       [
        {
@@ -4901,42 +4896,6 @@
         "label": "2 tiges (3 au MKII)",
         "item": "pioneers:copper_rod",
         "done": true
-       }
-      ],
-      [
-       {
-        "label": "1 lingot",
-        "item": "pioneers:copper_ingot"
-       },
-       {
-        "label": "+ forme fil",
-        "item": "pioneers:extrusion_shape_wire"
-       },
-       {
-        "label": "Extrudeuse",
-        "item": "pioneers:basic_extruder"
-       },
-       {
-        "label": "4 fils",
-        "item": "pioneers:copper_wire"
-       }
-      ],
-      [
-       {
-        "label": "5 lingots",
-        "item": "pioneers:steel_ingot"
-       },
-       {
-        "label": "+ forme engrenage",
-        "item": "pioneers:extrusion_shape_gear"
-       },
-       {
-        "label": "Extrudeuse MKIII",
-        "item": "pioneers:elite_extruder"
-       },
-       {
-        "label": "Engrenage",
-        "item": "pioneers:steel_gear"
        }
       ]
      ]
@@ -7497,10 +7456,10 @@
       "pioneers:advanced_electrolyzer",
       "pioneers:advanced_extractor",
       "pioneers:basic_casting_machine",
-      "pioneers:basic_cracker",
-      "pioneers:basic_crusher"
+      "pioneers:basic_crusher",
+      "pioneers:basic_electric_crucible"
      ],
-     "text": "§lOr§r : 5 voies (ici les voies 1 à 4). JEI : page « Procédé », §lR§r sur le produit. Chaque voie, de la matière de départ au produit :\n• §lVoie simple§r (MKI, 5 étapes) — Broyeur, creuset industriel et coulée : broyage → fusion → coulée. §6+§r 3 lingots par minerai au MKI (creuset ×1,5) puis 4 / 5 / 6 au MKII / MKIII / MKIV, trois machines MKI dès le premier courant ; §6−§r aucun sous-produit, métal ordinaire. À côté : fusion (Or en fusion), cuisson (Lingot d'or).\n• §lVoie simple§r (MKII, 4 étapes) — Lixiviation acide et électrolyse (MKII) : broyage → lixiviation → électrolyse en solution → cuisson. §6+§r un lingot de plus que le creuset du même tier : 5 / 6 / 7 lingots par minerai au MKII / MKIII / MKIV ; §6−§r acide sulfurique (250 mB par concassé), électricité ; aucun sous-produit.\n• §lVoie simple§r (MKI, 4 étapes) — Gravimétrie au séparateur de minerai : broyage → séparateur de minerai (table à secousses) → fusion → coulée. §6+§r immédiat ; §6−§r 40 % de l'or seulement.\n• §lVoie complexe§r (MKI, 7 étapes) — Amalgamation au mercure et distillation : broyage → broyage fin → lixiviation → chauffe au craqueur → fusion → coulée. §6+§r 80 % de l'or ; §6−§r 10 % du mercure perdu à chaque cycle (mercure tiré des gaz de grillage). À côté : réaction chimique (Mercure).",
+     "text": "§lOr§r : 5 voies (ici les voies 1 à 4). JEI : page « Procédé », §lR§r sur le produit. Chaque voie, de la matière de départ au produit :\n• §lVoie simple§r (MKI, 5 étapes) — Broyeur, creuset industriel et coulée : broyage → fusion → coulée. §6+§r 3 lingots par minerai au MKI (creuset ×1,5) puis 4 / 5 / 6 au MKII / MKIII / MKIV, trois machines MKI dès le premier courant ; §6−§r aucun sous-produit, métal ordinaire. À côté : fusion (Or en fusion), cuisson (Lingot d'or).\n• §lVoie simple§r (MKII, 4 étapes) — Lixiviation acide et électrolyse (MKII) : broyage → lixiviation → électrolyse en solution → cuisson. §6+§r un lingot de plus que le creuset du même tier : 5 / 6 / 7 lingots par minerai au MKII / MKIII / MKIV ; §6−§r acide sulfurique (250 mB par concassé), électricité ; aucun sous-produit.\n• §lVoie simple§r (MKI, 4 étapes) — Gravimétrie au séparateur de minerai : broyage → séparateur de minerai (table à secousses) → fusion → coulée. §6+§r immédiat ; §6−§r 40 % de l'or seulement.\n• §lVoie complexe§r (MKI, 7 étapes) — Amalgamation au mercure et distillation : broyage → broyage fin → lixiviation → réduction → fusion → coulée. §6+§r 80 % de l'or ; §6−§r 10 % du mercure perdu à chaque cycle (mercure tiré des gaz de grillage). À côté : réaction chimique (Mercure).",
      "flow": [
       [
        {
@@ -7597,7 +7556,7 @@
         "item": "pioneers:gold_amalgam"
        },
        {
-        "label": "craqueur",
+        "label": "réduction",
         "item": "pioneers:gold_dust"
        },
        {
@@ -8237,7 +8196,7 @@
       "pioneers:borealite_ingot",
       "pioneers:hygeite_ingot"
      ],
-     "text": "Les §l30 métaux des astres§r suivent un même patron : une §lvoie simple§r (broyage, réduction sous hydrogène) et la voie de leur §larchétype§r (oxyde, sulfure, exotique), au tier de l’astre. Le schéma montre un astre par archétype ; JEI a une page par métal.\n• §lVoie simple§r (MKIV, 2 étapes) — Broyage et réduction sous hydrogène (patron des astres, voie simple) : broyage fin → réduction. §6+§r réactifs courants, deux machines ; §6−§r rend peu (deux poudres pour un lingot), scories sans valeur, réduction gourmande. Tous les astres à minerai.\n• §lVoie complexe§r (MKIV, 5 étapes) — Archétype oxyde : tri optique, réduction au coke et affinage au four à arc : tri optique → réduction → four à arc. §6+§r deux lingots par minerai ; sous-produit de l’astre au tri ; §6−§r coke, électrodes et argon ; réduction gourmande. À côté : frittage (Électrode de graphite), séparation de l’air (Azote). Astres : Boréalite, Déimite, Édénite, Pallasite, Phobite, Sulcite, Tolimanite, Valhallite, Véronite, Vestalite.\n• §lVoie complexe§r (MKIV, 5 étapes) — Archétype sulfure : flottation, grillage sulfatant, électrolyse et refusion : flottation → grillage → électrolyse → refusion sous vide. §6+§r deux lingots par minerai, soufre et acide, métal précieux à la cellule ; §6−§r électricité, acide sulfurique. À côté : réaction chimique (Acide sulfurique). Astres : Hygéite, Lokite, Mercurium, Messinite, Mordorite, Pyrrhite, Terminite, Tharsium, Vénusium.\n• §lVoie très complexe§r (MKIV, 8 étapes) — Archétype exotique : étape signature de l'astre : tri optique → étape signature de l’astre → autoclave → refusion sous vide. §6+§r deux lingots et demi par minerai ; matière propre à l’astre ; §6−§r bloc de l'astre à rapporter, cellule et craqueur pour les résidus actifs. À côté : chauffe au craqueur (sand), réaction chimique (Acide chlorhydrique), électrolyse (Hydrogène), séparation de l’air (Azote). Astres : Ahunite, Conamarite, Flarium, Krakénite, Lunarium, Marsium, Ruachite, Spoutnikite, Thalassite, Tigrite.",
+     "text": "Les §l30 métaux des astres§r suivent un même patron : une §lvoie simple§r (broyage, réduction sous hydrogène) et la voie de leur §larchétype§r (oxyde, sulfure, exotique), au tier de l’astre. Le schéma montre un astre par archétype ; JEI a une page par métal.\n• §lVoie simple§r (MKIV, 2 étapes) — Broyage et réduction sous hydrogène (patron des astres, voie simple) : broyage fin → réduction. §6+§r réactifs courants, deux machines ; §6−§r rend peu (deux poudres pour un lingot), scories sans valeur, réduction gourmande. Tous les astres à minerai.\n• §lVoie complexe§r (MKIV, 5 étapes) — Archétype oxyde : tri optique, réduction au coke et affinage au four à arc : tri optique → réduction → four à arc. §6+§r deux lingots par minerai ; sous-produit de l’astre au tri ; §6−§r coke, électrodes et argon ; réduction gourmande. À côté : frittage (Électrode de graphite), séparation de l’air (Azote). Astres : Boréalite, Déimite, Édénite, Pallasite, Phobite, Sulcite, Tolimanite, Valhallite, Véronite, Vestalite.\n• §lVoie complexe§r (MKIV, 5 étapes) — Archétype sulfure : flottation, grillage sulfatant, électrolyse et refusion : flottation → grillage → électrolyse → refusion sous vide. §6+§r deux lingots par minerai, soufre et acide, métal précieux à la cellule ; §6−§r électricité, acide sulfurique. À côté : réaction chimique (Acide sulfurique). Astres : Hygéite, Lokite, Mercurium, Messinite, Mordorite, Pyrrhite, Terminite, Tharsium, Vénusium.\n• §lVoie très complexe§r (MKIV, 8 étapes) — Archétype exotique : étape signature de l'astre : tri optique → étape signature de l’astre → autoclave → refusion sous vide. §6+§r deux lingots et demi par minerai ; matière propre à l’astre ; §6−§r bloc de l'astre à rapporter, cellule et craqueur pour les résidus actifs. À côté : réduction (sand), réaction chimique (Acide chlorhydrique), électrolyse (Hydrogène), séparation de l’air (Azote). Astres : Ahunite, Conamarite, Flarium, Krakénite, Lunarium, Marsium, Ruachite, Spoutnikite, Thalassite, Tigrite.",
      "flow": [
       [
        {
@@ -8738,7 +8697,7 @@
       "pioneers:mox_assembly",
       "pioneers:fragment_fuel_cartridge"
      ],
-     "text": "Une rangée par matériau (sa première voie) ; toutes les voies sont dans JEI (page « Procédé », §lR§r sur le produit).\n§lCouverture d’uranium appauvri§r (1 voie) :\n• §lVoie§r (MKIII, 12 étapes) — par Assembleur compact MKIII, depuis Pechblende broyée : flottation → lixiviation → extraction par solvant → extraction par solvant → grillage → lit fluidisé → lit fluidisé → enrichissement → lit fluidisé → procédé Kroll → laminage → assemblage.\n§lAssemblage de MOX§r (1 voie) :\n• §lVoie§r (MKIII, 5 étapes) — par Assembleur compact MKIII, depuis Couverture de thorium irradiée : cellule blindée → mélange → compactage → soudage → assemblage.\n§lCartouche de combustible à fragments§r (1 voie) :\n• §lVoie§r (MKIV, 12 étapes) — par Assembleur compact MKIV, depuis Concentré de pechblende : lixiviation → extraction par solvant → extraction par solvant → grillage → lit fluidisé → lit fluidisé → enrichissement → enrichissement → enrichissement → lit fluidisé → cellule blindée → assemblage.",
+     "text": "Une rangée par matériau (sa première voie) ; toutes les voies sont dans JEI (page « Procédé », §lR§r sur le produit).\n§lCouverture d’uranium appauvri§r (1 voie) :\n• §lVoie§r (MKIII, 12 étapes) — par Assembleur compact MKIII, depuis Pechblende broyée : flottation → lixiviation → extraction par solvant → extraction par solvant → grillage → lit fluidisé → lit fluidisé → enrichissement → lit fluidisé → procédé Kroll → pressage → assemblage.\n§lAssemblage de MOX§r (1 voie) :\n• §lVoie§r (MKIII, 5 étapes) — par Assembleur compact MKIII, depuis Couverture de thorium irradiée : cellule blindée → mélange → compactage → soudage → assemblage.\n§lCartouche de combustible à fragments§r (1 voie) :\n• §lVoie§r (MKIV, 12 étapes) — par Assembleur compact MKIV, depuis Concentré de pechblende : lixiviation → extraction par solvant → extraction par solvant → grillage → lit fluidisé → lit fluidisé → enrichissement → enrichissement → enrichissement → lit fluidisé → cellule blindée → assemblage.",
      "flow": [
       [
        {
@@ -8855,7 +8814,7 @@
       "pioneers:creosote_bucket",
       "pioneers:diesel_bucket"
      ],
-     "text": "Une rangée par matériau (sa première voie) ; toutes les voies sont dans JEI (page « Procédé », §lR§r sur le produit).\n§lBenzol§r (3 voies) :\n• §lVoie§r (MKI, 2 étapes) — par Distillerie compacte MKI, depuis Charbon : pyrolyse → distillation sélective.\n• §lVoie§r (MKII, 2 étapes) — par Séparateur de gaz industriel, depuis Pétrole brut : distillation sélective → traitement du gaz.\n§lBiodiesel§r (1 voie) :\n• §lVoie§r (MKI, 3 étapes) — par Réacteur chimique compact MKI, depuis Saumure : électrolyse à membrane → séchage → réaction chimique.\n§lCréosote§r (5 voies ; 1 autres voies dans JEI) :\n• §lVoie§r (MKI, 2 étapes) — par Distillerie compacte MKI, depuis Charbon : pyrolyse → distillation sélective.\n• §lVoie§r (MKI, 1 étape) — par Batterie de fours à coke, depuis  : cokéfaction.\n§lDiesel§r (8 voies ; 4 autres voies dans JEI) :\n• §lVoie§r (MKI, 1 étape) — par Distillerie compacte MKI, depuis Pétrole brut lourd : distillation sélective.\n• §lVoie§r (MKII, 3 étapes) — par Mélangeur compact MKI, depuis beef : chauffe au craqueur → hydrocraquage → mélange.",
+     "text": "Une rangée par matériau (sa première voie) ; toutes les voies sont dans JEI (page « Procédé », §lR§r sur le produit).\n§lBenzol§r (3 voies) :\n• §lVoie§r (MKI, 2 étapes) — par Distillerie compacte MKI, depuis Charbon : pyrolyse → distillation sélective.\n• §lVoie§r (MKII, 2 étapes) — par Séparateur de gaz industriel, depuis Pétrole brut : distillation sélective → traitement du gaz.\n§lBiodiesel§r (1 voie) :\n• §lVoie§r (MKI, 3 étapes) — par Réacteur chimique compact MKI, depuis Saumure : électrolyse à membrane → séchage → réaction chimique.\n§lCréosote§r (5 voies ; 1 autres voies dans JEI) :\n• §lVoie§r (MKI, 2 étapes) — par Distillerie compacte MKI, depuis Charbon : pyrolyse → distillation sélective.\n• §lVoie§r (MKI, 1 étape) — par Batterie de fours à coke, depuis  : cokéfaction.\n§lDiesel§r (8 voies ; 4 autres voies dans JEI) :\n• §lVoie§r (MKI, 1 étape) — par Distillerie compacte MKI, depuis Pétrole brut lourd : distillation sélective.\n• §lVoie§r (MKII, 3 étapes) — par Mélangeur compact MKI, depuis beef : extraction → hydrocraquage → mélange.",
      "flow": [
       [
        {
@@ -9476,7 +9435,7 @@
       "pioneers:basic_crusher",
       "pioneers:industrial_crusher"
      ],
-     "text": "Le §lbroyeur§r reste la machine du kit (même mécanisme : broyage du minerai brut en 2 concassés, sa durée fixe) et fait en plus le §6broyage fin§r de l’ancien broyeur à boulets : concassé → poudre, lingot → poudre. 1.0.6 : plus d’eau, une seule entrée d’objet.\n§6Procédés§r\n• §lBroyage§r (recettes propres) : 8 recettes\n• §lBroyage fin§r (ex-broyeur à boulets) : 92 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lbroyeur§r reste la machine du kit (même mécanisme : broyage du minerai brut en 2 concassés, sa durée fixe) et fait en plus le §6broyage fin§r de l’ancien broyeur à boulets : concassé → poudre, lingot → poudre. 1.0.6 : plus d’eau, une seule entrée d’objet.\n§6Procédés§r\n• §lBroyage§r (recettes propres) : 8 recettes\n• §lBroyage fin§r (ex-broyeur à boulets) : 92 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -9521,7 +9480,7 @@
       "pioneers:basic_ore_separator",
       "pioneers:industrial_ore_separator"
      ],
-     "text": "Le §lséparateur de minerai§r (ex-crible vibrant) §6enrichit§r le minerai par toutes les voies physiques : criblage, flottation (eau et réactif : 2 entrées, réservoir d’eau), séparation magnétique, gravimétrie sur table, tri optique (jusqu’à 4 sorties).\n§6Procédés§r\n• §lCriblage§r (recettes propres) : 17 recettes\n• §lFlottation§r (ex-cellule de flottation) : 25 recettes\n• §lSéparation magnétique§r (ex-séparateur magnétique) : 15 recettes\n• §lGravimétrie (table)§r (ex-table à secousses) : 9 recettes\n• §lTri optique§r (ex-trieur optique) : 28 recettes\n§6Mêmes entrées§r : ilménite concassée, minerai de redstone concassé, résidus. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lséparateur de minerai§r (ex-crible vibrant) §6enrichit§r le minerai par toutes les voies physiques : criblage, flottation (eau et réactif : 2 entrées, réservoir d’eau), séparation magnétique, gravimétrie sur table, tri optique (jusqu’à 4 sorties).\n§6Procédés§r\n• §lCriblage§r (recettes propres) : 17 recettes\n• §lFlottation§r (ex-cellule de flottation) : 25 recettes\n• §lSéparation magnétique§r (ex-séparateur magnétique) : 15 recettes\n• §lGravimétrie (table)§r (ex-table à secousses) : 9 recettes\n• §lTri optique§r (ex-trieur optique) : 28 recettes\n§6Mêmes entrées§r : ilménite concassée, minerai de redstone concassé, résidus. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -9600,7 +9559,7 @@
       "pioneers:basic_furnace",
       "pioneers:industrial_furnace"
      ],
-     "text": "Le §lfour industriel§r (ex-four électrique, la machine du kit pour la cuisson) §6cuit§r : minerais, poudres, nourriture ; une entrée, une sortie. 1.0.6 : ce qui transformait la matière sous un gaz (grillage, réduction, frittage, dopage) passe au §lCalcinateur§r, la trempe au §lBain chimique§r.\n§6Procédés§r\n• §lCuisson§r (gisements de l’ancien chevalet)\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette."
+     "text": "Le §lfour industriel§r (ex-four électrique, la machine du kit pour la cuisson) §6cuit§r : minerais, poudres, nourriture ; une entrée, une sortie. 1.0.6 : ce qui transformait la matière sous un gaz (grillage, réduction, frittage, dopage) passe au §lCalcinateur§r, la trempe au §lBain chimique§r.\n§6Procédés§r\n• §lCuisson§r (gisements de l’ancien chevalet)\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -9609,12 +9568,12 @@
       "pioneers:basic_reduction_furnace",
       "pioneers:industrial_reduction_furnace"
      ],
-     "text": "Le §lCalcinateur§r §6transforme la matière à chaud sous un gaz§r : §lréduction§r (oxyde + réducteur → métal, sous argon ou hydrogène), §lgrillage§r (sulfure + oxygène → oxyde et dioxyde de soufre ; calcaire → chaux), §lfrittage§r (poudres soudées sans fondre : anodes, carbures, disques diamantés) et §ldopage§r des galettes (phosphine, diborane). Trois entrées d’objets, un gaz en entrée et un en sortie.\n§6Procédés§r\n• §lRéduction§r (recettes propres) : 60 recettes\n• §lOxyder (grillage)§r (ex-calcinateur (grillage)) : 32 recettes\n• §lFritter§r (ex-calcinateur (frittage)) : 46 recettes\n• §lDoper (diffusion)§r (ex-calcinateur (diffusion)) : 8 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lCalcinateur§r §6transforme la matière à chaud, sous un gaz ou à l’air§r : §lréduction§r (oxyde + réducteur → métal, sous argon ou hydrogène), §lgrillage§r (sulfure + oxygène → oxyde et dioxyde de soufre ; calcaire → chaux), §lcalcination§r et dégazage (sel décomposé, roche dégazée, mercure distillé d’un amalgame), §lactivation§r du charbon sous vapeur, §lrégénération§r des catalyseurs à l’air, §lfrittage§r (poudres soudées sans fondre : anodes, carbures, disques diamantés) et §ldopage§r des galettes (phosphine, diborane). Trois entrées d’objets, un gaz en entrée, un gaz et un fluide en sortie.\n§6Procédés§r\n• §lRéduction§r (recettes propres) : 74 recettes\n• §lOxyder (grillage)§r (ex-calcinateur (grillage)) : 32 recettes\n• §lFritter§r (ex-calcinateur (frittage)) : 46 recettes\n• §lDoper (diffusion)§r (ex-calcinateur (diffusion)) : 8 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
         "label": "Réduction",
-        "item": "pioneers:emerald_dust",
+        "item": "pioneers:charcoal",
         "done": true
        },
        {
@@ -9624,7 +9583,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:beryllium_pebbles",
+        "item": "pioneers:activated_carbon",
         "next": true
        }
       ],
@@ -9688,7 +9647,7 @@
       "pioneers:basic_electric_crucible",
       "pioneers:industrial_electric_crucible"
      ],
-     "text": "Le §lcreuset industriel§r (ex-creuset électrique) fond les métaux et le minerai, et reprend le §6sous vide§r (métaux réactifs sous argon, silicium de zone fondue, jonction Josephson…) et le §6verre§r de l’ancien four de verrerie (verre à la soude, verre plat, fritte borosilicatée, silice fondue, lampe à arc…). Trois entrées solides (+ un gaz) → un métal fondu et un sous-produit (laitier). Depuis la 1.0.5-beta, les alliages §6directs§r (solide → solide) sont au §lfour à induction§r, redevenu une machine à part, et le creuset ne fait plus d’acier ordinaire : l’acier sort du §lhaut fourneau§r.\n§6Procédés§r\n• §lFondre§r (recettes propres) : 356 recettes\n• §lSous vide§r (ex-four sous vide) : 51 recettes\n• §lVerre§r (ex-four de verrerie) : 13 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lcreuset industriel§r (ex-creuset électrique) fond les métaux et le minerai, et reprend le §6sous vide§r (métaux réactifs sous argon, silicium de zone fondue, jonction Josephson…) et le §6verre§r de l’ancien four de verrerie (verre à la soude, verre plat, fritte borosilicatée, silice fondue, lampe à arc…). Trois entrées solides (+ un gaz) → un métal fondu et un sous-produit (laitier). Depuis la 1.0.5-beta, les alliages §6directs§r (solide → solide) sont au §lfour à induction§r, redevenu une machine à part, et le creuset ne fait plus d’acier ordinaire : l’acier sort du §lhaut fourneau§r.\n§6Procédés§r\n• §lFondre§r (recettes propres) : 356 recettes\n• §lSous vide§r (ex-four sous vide) : 46 recettes\n• §lVerre§r (ex-four de verrerie) : 11 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -9727,7 +9686,7 @@
       [
        {
         "label": "Verre",
-        "item": "pioneers:fused_silica",
+        "item": "minecraft:sand",
         "done": true
        },
        {
@@ -9737,7 +9696,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:arc_lamp",
+        "item": "pioneers:borosilicate_frit",
         "next": true
        }
       ]
@@ -9747,29 +9706,9 @@
      "section": "Machines génériques",
      "title": "Le Craqueur",
      "items": [
-      "pioneers:basic_cracker",
       "pioneers:industrial_cracker"
      ],
-     "text": "Le §lCraqueur§r (ex-four tubulaire) §6craque§r les hydrocarbures. Son multibloc, le §lcraqueur industriel§r, reprend le §lvapocraquage§r (éthane, naphta → éthylène, propylène), la §lcokéfaction différée§r (résidus → coke de pétrole), le §lcraquage catalytique§r (gazole sous vide → essence) et l’§lhydrocraquage§r (sous hydrogène et sous pression) : recettes §lréservées au multibloc§r. Le compact garde les recettes du four tubulaire : viscoréduction, pyrolyse des plastiques et des boues, charbon actif, noir de carbone, acétylène, chlorure de vinyle, radon, régénération des catalyseurs, fonte des graisses.\n§6Procédés§r\n• §lChauffe§r (recettes propres) : 28 recettes\n• §lVapocraquage§r (ex-vapocraqueur ; multibloc seul) : 9 recettes\n• §lCokéfaction différée§r (ex-cokeur ; multibloc seul) : 8 recettes\n• §lCraquage catalytique§r (ex-craqueur catalytique ; multibloc seul) : 8 recettes\n• §lHydrocraquage§r (ex-hydrocraqueur ; multibloc seul) : 11 recettes\n§6Mêmes entrées§r : fioul, résidu atmosphérique. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
-     "flow": [
-      [
-       {
-        "label": "Chauffe",
-        "item": "pioneers:charcoal",
-        "done": true
-       },
-       {
-        "label": "Craqueur",
-        "item": "pioneers:basic_cracker",
-        "next": true
-       },
-       {
-        "label": "",
-        "item": "pioneers:activated_carbon",
-        "next": true
-       }
-      ]
-     ]
+     "text": "Le §lCraqueur§r (ex-four tubulaire) §6craque§r les hydrocarbures et les gaz, en §lmultibloc seulement§r (1.0.6 : ses compactes deviennent son contrôleur) : §lvapocraquage§r (éthane, naphta → éthylène, propylène), §lcokéfaction différée§r (résidus → coke de pétrole), §lcraquage catalytique§r (gazole sous vide → essence), §lhydrocraquage§r (sous hydrogène et sous pression), viscoréduction, noir de carbone, acétylène, chlorure de vinyle, tétrafluoroéthylène. La pyrolyse des solides va au §lfour à pyrolyse§r ; la calcination, le charbon actif et la régénération des catalyseurs au §lCalcinateur§r.\n§6Procédés§r\n• §lChauffe§r (recettes propres) : 5 recettes\n• §lVapocraquage§r (ex-vapocraqueur ; multibloc seul) : 9 recettes\n• §lCokéfaction différée§r (ex-cokeur ; multibloc seul) : 8 recettes\n• §lCraquage catalytique§r (ex-craqueur catalytique ; multibloc seul) : 8 recettes\n• §lHydrocraquage§r (ex-hydrocraqueur ; multibloc seul) : 11 recettes\n§6Mêmes entrées§r : fioul, résidu atmosphérique. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -9778,7 +9717,7 @@
       "pioneers:basic_chemical_reactor",
       "pioneers:industrial_chemical_reactor"
      ],
-     "text": "Le §lréacteur chimique§r réunit toute la synthèse. En compact et en multibloc : la §6catalyse§r (le catalyseur se pose dans une case d’entrée ; il revient à 95 %, s’use à 5 % et se régénère au Craqueur), le §llit fluidisé§r (conversion de l’uranium) et la §lpolymérisation§r (granulés, PTFE, caoutchouc butyle). Au multibloc seulement : le §lreformage catalytique§r, §lFischer-Tropsch§r, l’§lammoniac§r (Haber-Bosch, sous pression), l’§lacide nitrique§r (Ostwald), le §lvaporeformage§r et la §lgazéification§r. Deux entrées et trois sorties d’objets, trois réservoirs de fluide de chaque sens, trois de gaz en entrée et deux en sortie.\n§6Procédés§r\n• §lSynthèse§r (recettes propres) : 87 recettes\n• §lCatalyse§r (ex-réacteur catalytique) : 26 recettes\n• §lLit fluidisé§r (ex-réacteur à lit fluidisé) : 14 recettes\n• §lPolymérisation§r (ex-polymériseur) : 8 recettes\n• §lReformage catalytique§r (ex-reformeur catalytique ; multibloc seul) : 8 recettes\n• §lFischer-Tropsch§r (ex-réacteur fischer-tropsch ; multibloc seul) : 8 recettes\n• §lAmmoniac (Haber-Bosch)§r (ex-synthèse d’ammoniac ; multibloc seul) : 8 recettes\n• §lAcide nitrique (Ostwald)§r (ex-unité d’acide nitrique ; multibloc seul) : 8 recettes\n• §lVaporeformage§r (ex-reformeur à vapeur ; multibloc seul) : 8 recettes\n• §lGazéification§r (ex-gazéifieur ; multibloc seul) : 11 recettes\n§6Mêmes entrées§r : hydrogène et azote (catalyseur au fer), gaz naturel et vapeur, méthane et vapeur, ammoniac et oxygène, dioxyde d’azote et eau. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lréacteur chimique§r réunit toute la synthèse. En compact et en multibloc : la §6catalyse§r (le catalyseur se pose dans une case d’entrée ; il revient à 95 %, s’use à 5 % et se régénère au Craqueur), le §llit fluidisé§r (conversion de l’uranium) et la §lpolymérisation§r (granulés, PTFE, caoutchouc butyle). Au multibloc seulement : le §lreformage catalytique§r, §lFischer-Tropsch§r, l’§lammoniac§r (Haber-Bosch, sous pression), l’§lacide nitrique§r (Ostwald), le §lvaporeformage§r et la §lgazéification§r. Deux entrées et trois sorties d’objets, trois réservoirs de fluide de chaque sens, trois de gaz en entrée et deux en sortie.\n§6Procédés§r\n• §lSynthèse§r (recettes propres) : 87 recettes\n• §lCatalyse§r (ex-réacteur catalytique) : 26 recettes\n• §lLit fluidisé§r (ex-réacteur à lit fluidisé) : 14 recettes\n• §lPolymérisation§r (ex-polymériseur) : 8 recettes\n• §lReformage catalytique§r (ex-reformeur catalytique ; multibloc seul) : 8 recettes\n• §lFischer-Tropsch§r (ex-réacteur fischer-tropsch ; multibloc seul) : 8 recettes\n• §lAmmoniac (Haber-Bosch)§r (ex-synthèse d’ammoniac ; multibloc seul) : 8 recettes\n• §lAcide nitrique (Ostwald)§r (ex-unité d’acide nitrique ; multibloc seul) : 8 recettes\n• §lVaporeformage§r (ex-reformeur à vapeur ; multibloc seul) : 8 recettes\n• §lGazéification§r (ex-gazéifieur ; multibloc seul) : 11 recettes\n§6Mêmes entrées§r : hydrogène et azote (catalyseur au fer), gaz naturel et vapeur, méthane et vapeur, ammoniac et oxygène, dioxyde d’azote et eau. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -9857,7 +9796,7 @@
       "pioneers:basic_autoclave",
       "pioneers:industrial_autoclave"
      ],
-     "text": "L’§lautoclave§r fait les réactions sous pression (lixiviation, composites, urée, soude, zéolithe) et reprend la §6vulcanisation§r de l’ancien vulcanisateur : caoutchouc vulcanisé, feuilles de caoutchouc, semelles, toile enduite, pneus, bandes transporteuses. Son modèle MKI se monte avec un §ljoint en cuir§r : c’est lui qui fait le caoutchouc des joints en caoutchouc.\n§6Procédés§r\n• §lAutoclavage§r (recettes propres) : 32 recettes\n• §lVulcanisation§r (ex-vulcanisateur) : 9 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "L’§lautoclave§r fait les réactions sous pression (lixiviation, composites, urée, soude, zéolithe) et reprend la §6vulcanisation§r de l’ancien vulcanisateur : caoutchouc vulcanisé, feuilles de caoutchouc, semelles, toile enduite, pneus, bandes transporteuses. Son modèle MKI se monte avec un §ljoint en cuir§r : c’est lui qui fait le caoutchouc des joints en caoutchouc.\n§6Procédés§r\n• §lAutoclavage§r (recettes propres) : 32 recettes\n• §lVulcanisation§r (ex-vulcanisateur) : 9 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -9902,7 +9841,7 @@
       "pioneers:basic_electrolyzer",
       "pioneers:industrial_electrolyzer"
      ],
-     "text": "La §lcellule d’électrolyse§r décompose l’eau, la saumure et les sels fondus, et reprend l’§6électrolyse à membrane§r (soude caustique, hypochlorite, deutérium, tritium, lithium) et l’§lélectroraffinage§r (métaux purs). Au multibloc seulement : le §lfluor§r et l’§laluminium Hall-Héroult§r (alumine des digesteurs Bayer, cryolithe, anodes). Le contrôleur de la cellule industrielle se monte avec deux §lanodes en carbone§r, comme l’ancienne halle.\n§6Procédés§r\n• §lÉlectrolyse§r (recettes propres) : 26 recettes\n• §lÉlectrolyse à membrane§r (ex-électrolyseur à membrane) : 8 recettes\n• §lÉlectroraffinage§r (ex-cuve d'électroraffinage) : 16 recettes\n• §lFluor§r (ex-unité de fluor ; multibloc seul) : 8 recettes\n• §lAluminium (Hall-Héroult)§r (ex-halle d'électrolyse hall-héroult ; multibloc seul) : 8 recettes\n§6Mêmes entrées§r : saumure. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lcellule d’électrolyse§r décompose l’eau, la saumure et les sels fondus, et reprend l’§6électrolyse à membrane§r (soude caustique, hypochlorite, deutérium, tritium, lithium) et l’§lélectroraffinage§r (métaux purs). Au multibloc seulement : le §lfluor§r et l’§laluminium Hall-Héroult§r (alumine des digesteurs Bayer, cryolithe, anodes). Le contrôleur de la cellule industrielle se monte avec deux §lanodes en carbone§r, comme l’ancienne halle.\n§6Procédés§r\n• §lÉlectrolyse§r (recettes propres) : 26 recettes\n• §lÉlectrolyse à membrane§r (ex-électrolyseur à membrane) : 8 recettes\n• §lÉlectroraffinage§r (ex-cuve d'électroraffinage) : 16 recettes\n• §lFluor§r (ex-unité de fluor ; multibloc seul) : 8 recettes\n• §lAluminium (Hall-Héroult)§r (ex-halle d'électrolyse hall-héroult ; multibloc seul) : 8 recettes\n§6Mêmes entrées§r : saumure. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -9981,7 +9920,7 @@
       "pioneers:basic_fermenter",
       "pioneers:industrial_fermenter"
      ],
-     "text": "Le §lfermenteur§r fait l’éthanol, les boissons et la cuisine fermentée, et reprend la §6méthanisation§r de l’ancien digesteur anaérobie : biomasse + eau → §lbiogaz§r, digestat et un peu d’engrais.\n§6Procédés§r\n• §lFermentation§r (recettes propres) : 39 recettes\n• §lMéthanisation§r (ex-digesteur anaérobie) : 16 recettes\n§6Mêmes entrées§r : légumes, fruits, blé. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lfermenteur§r fait l’éthanol, les boissons et la cuisine fermentée, et reprend la §6méthanisation§r de l’ancien digesteur anaérobie : biomasse + eau → §lbiogaz§r, digestat et un peu d’engrais.\n§6Procédés§r\n• §lFermentation§r (recettes propres) : 39 recettes\n• §lMéthanisation§r (ex-digesteur anaérobie) : 16 recettes\n§6Mêmes entrées§r : légumes, fruits, blé. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10025,7 +9964,7 @@
      "items": [
       "pioneers:distillation_column"
      ],
-     "text": "La §lcolonne de distillation§r (multibloc seul, ex-colonne atmosphérique : chaque fraction sort par l’étage de ports de sa hauteur) distille les bruts et reprend la §6rectification§r de l’ancienne tour (alcools, benzol, goudron, air liquide), la §ldistillation sous vide§r (résidus → gazole sous vide, huiles de base, paraffine) et le §lstripping§r de l’ancienne colonne de stripping (gaz et eaux acides, eau lourde Girdler, eaux-de-vie de l’alambic). Une colonne de stripping compacte déjà posée devient le contrôleur de la colonne (son contenu ne suit pas).\n§6Procédés§r\n• §lDistillation atmosphérique§r (recettes propres) : 8 recettes\n• §lRectification§r (ex-tour de distillation ; multibloc seul) : 8 recettes\n• §lDistillation sous vide§r (ex-colonne sous vide ; multibloc seul) : 8 recettes\n• §lStripping§r (ex-colonne de stripping) : 12 recettes\n§6Mêmes entrées§r : bitume, pétrole brut lourd, pétrole brut, brut synthétique, goudron de houille, tétrachlorure de titane brut. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette."
+     "text": "La §lcolonne de distillation§r (multibloc seul, ex-colonne atmosphérique : chaque fraction sort par l’étage de ports de sa hauteur) distille les bruts et reprend la §6rectification§r de l’ancienne tour (alcools, benzol, goudron, air liquide), la §ldistillation sous vide§r (résidus → gazole sous vide, huiles de base, paraffine) et le §lstripping§r de l’ancienne colonne de stripping (gaz et eaux acides, eau lourde Girdler, eaux-de-vie de l’alambic). Une colonne de stripping compacte déjà posée devient le contrôleur de la colonne (son contenu ne suit pas).\n§6Procédés§r\n• §lDistillation atmosphérique§r (recettes propres) : 8 recettes\n• §lRectification§r (ex-tour de distillation ; multibloc seul) : 8 recettes\n• §lDistillation sous vide§r (ex-colonne sous vide ; multibloc seul) : 8 recettes\n• §lStripping§r (ex-colonne de stripping) : 12 recettes\n§6Mêmes entrées§r : bitume, pétrole brut lourd, pétrole brut, brut synthétique, goudron de houille, tétrachlorure de titane brut. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -10034,12 +9973,12 @@
       "pioneers:basic_extractor",
       "pioneers:industrial_extractor"
      ],
-     "text": "L’§lextracteur§r sépare une matière de son support par l’eau chaude, la vapeur, un solvant ou le CO₂ supercritique, et reprend la §6lixiviation§r de l’ancienne cuve (acides et cyanure sur les minerais concassés : solutions de métaux pour la cellule d’électrolyse), l’§lextraction par solvant§r de l’ancien extracteur à solvant (uranium, nickel, cobalt, terres rares, platinoïdes) et le §lpressage d’huile§r de l’ancienne presse (graines, poissons, algues → huile et tourteau ; jus de la cuisine). Deux entrées et deux sorties d’objets, deux réservoirs de fluide de chaque sens, un de gaz.\n§6Procédés§r\n• §lExtraction§r (recettes propres) : 42 recettes\n• §lLixiviation§r (ex-cuve de lixiviation) : 30 recettes\n• §lExtraction par solvant§r (ex-extracteur à solvant) : 9 recettes\n• §lPressage d’huile§r (ex-presse à huile) : 25 recettes\n§6Mêmes entrées§r : tourteau et naphta. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "L’§lextracteur§r sépare une matière de son support par l’eau chaude, la vapeur, un solvant ou le CO₂ supercritique, et reprend la §6lixiviation§r de l’ancienne cuve (acides et cyanure sur les minerais concassés : solutions de métaux pour la cellule d’électrolyse), l’§lextraction par solvant§r de l’ancien extracteur à solvant (uranium, nickel, cobalt, terres rares, platinoïdes) et le §lpressage d’huile§r de l’ancienne presse (graines, poissons, algues → huile et tourteau ; jus de la cuisine). Deux entrées et deux sorties d’objets, deux réservoirs de fluide de chaque sens, un de gaz.\n§6Procédés§r\n• §lExtraction§r (recettes propres) : 47 recettes\n• §lLixiviation§r (ex-cuve de lixiviation) : 30 recettes\n• §lExtraction par solvant§r (ex-extracteur à solvant) : 9 recettes\n• §lPressage d’huile§r (ex-presse à huile) : 25 recettes\n§6Mêmes entrées§r : tourteau et naphta. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
         "label": "Extraction",
-        "item": "pioneers:honey_frame",
+        "item": "minecraft:beef",
         "done": true
        },
        {
@@ -10049,7 +9988,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:beeswax",
+        "item": "minecraft:bone_meal",
         "next": true
        }
       ],
@@ -10096,7 +10035,7 @@
       "pioneers:basic_centrifuge",
       "pioneers:industrial_centrifuge"
      ],
-     "text": "La §lcentrifugeuse§r sépare les phases par densité (sucre, crème, miel, boues rouges ; les isotopes légers — lithium 6, carbone 13, azote 15 — restent ici) et reprend la §6décantation§r de l’ancien décanteur (eau, huile, boues), le §ldessalage§r du brut (brut dessalé, saumure) et le §ldépoussiérage§r des gaz de l’ancien séparateur cyclonique. Son modèle MKI a un bol entraîné par une §lcourroie de cuir§r.\n§6Procédés§r\n• §lCentrifugation§r (recettes propres) : 16 recettes\n• §lDécantation§r (ex-décanteur) : 9 recettes\n• §lDessalage§r (ex-dessaleur) : 8 recettes\n• §lDépoussiérage (cyclone)§r (ex-séparateur cyclonique) : 8 recettes\n§6Mêmes entrées§r : boue rouge, eau de production. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lcentrifugeuse§r sépare les phases par densité (sucre, crème, miel, boues rouges ; les isotopes légers — lithium 6, carbone 13, azote 15 — restent ici) et reprend la §6décantation§r de l’ancien décanteur (eau, huile, boues), le §ldessalage§r du brut (brut dessalé, saumure) et le §ldépoussiérage§r des gaz de l’ancien séparateur cyclonique. Son modèle MKI a un bol entraîné par une §lcourroie de cuir§r.\n§6Procédés§r\n• §lCentrifugation§r (recettes propres) : 16 recettes\n• §lDécantation§r (ex-décanteur) : 9 recettes\n• §lDessalage§r (ex-dessaleur) : 8 recettes\n• §lDépoussiérage (cyclone)§r (ex-séparateur cyclonique) : 8 recettes\n§6Mêmes entrées§r : boue rouge, eau de production. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10141,7 +10080,7 @@
       "pioneers:basic_crystallizer",
       "pioneers:industrial_crystallizer"
      ],
-     "text": "Le §lcristalliseur§r fait croître cristaux et gemmes (sels, sulfates, gemmes de Verneuil) et reprend le §6tirage§r Czochralski de l’ancien tireur de cristal : lingots de silicium monocristallin et boules de gemmes, à scier en galettes.\n§6Procédés§r\n• §lCristallisation§r (recettes propres) : 11 recettes\n• §lTirage (Czochralski)§r (ex-tireur de cristal) : 8 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lcristalliseur§r fait croître cristaux et gemmes (sels, sulfates, gemmes de Verneuil) et reprend le §6tirage§r Czochralski de l’ancien tireur de cristal : lingots de silicium monocristallin et boules de gemmes, à scier en galettes.\n§6Procédés§r\n• §lCristallisation§r (recettes propres) : 11 recettes\n• §lTirage (Czochralski)§r (ex-tireur de cristal) : 8 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10186,7 +10125,7 @@
       "pioneers:basic_gas_separator",
       "pioneers:industrial_gas_separator"
      ],
-     "text": "Le §lSéparateur de gaz§r (ex-séparateur à membranes) sépare les mélanges gazeux : §6membranes§r (hélium, hydrogène, azote) et §ladsorption PSA§r (hydrogène, oxygène, azote purs), en compact et en multibloc. Au multibloc seulement : la §lséparation de l’air§r de l’ancienne unité (azote, oxygène, argon, néon, krypton, xénon ; seulement dans une atmosphère, comme avant) et le §ltraitement du gaz§r de l’ancienne usine (gaz brut → méthane, éthane, GPL, condensat ; soufre et hélium). Le contrôleur du séparateur industriel se monte comme l’ancienne usine de traitement du gaz (échangeurs, grillage, pompe).\n§6Procédés§r\n• §lMembranes§r (recettes propres) : 8 recettes\n• §lAdsorption (PSA)§r (ex-unité d’adsorption psa) : 8 recettes\n• §lSéparation de l’air§r (ex-unité de séparation d’air ; multibloc seul) : 8 recettes\n• §lTraitement du gaz§r (ex-usine de traitement du gaz ; multibloc seul) : 8 recettes\n§6Mêmes entrées§r : gaz de raffinerie. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette."
+     "text": "Le §lSéparateur de gaz§r (ex-séparateur à membranes) sépare les mélanges gazeux : §6membranes§r (hélium, hydrogène, azote) et §ladsorption PSA§r (hydrogène, oxygène, azote purs), en compact et en multibloc. Au multibloc seulement : la §lséparation de l’air§r de l’ancienne unité (azote, oxygène, argon, néon, krypton, xénon ; seulement dans une atmosphère, comme avant) et le §ltraitement du gaz§r de l’ancienne usine (gaz brut → méthane, éthane, GPL, condensat ; soufre et hélium). Le contrôleur du séparateur industriel se monte comme l’ancienne usine de traitement du gaz (échangeurs, grillage, pompe).\n§6Procédés§r\n• §lMembranes§r (recettes propres) : 8 recettes\n• §lAdsorption (PSA)§r (ex-unité d’adsorption psa) : 8 recettes\n• §lSéparation de l’air§r (ex-unité de séparation d’air ; multibloc seul) : 8 recettes\n• §lTraitement du gaz§r (ex-usine de traitement du gaz ; multibloc seul) : 8 recettes\n§6Mêmes entrées§r : gaz de raffinerie. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -10194,7 +10133,7 @@
      "items": [
       "pioneers:centrifuge_cascade"
      ],
-     "text": "La §lcascade de centrifugeuses§r (multibloc seul) enrichit l’hexafluorure d’uranium étage par étage et reprend la §6séparation laser§r de l’ancien séparateur isotopique laser : mêmes isotopes, plus vite au MKIV (à verrouiller dans l’onglet §lRecettes§r). Un séparateur laser compact déjà posé devient le contrôleur de la cascade : ses objets sont rendus au sol.\n§6Procédés§r\n• §lCentrifugation gazeuse§r (recettes propres) : 6 recettes\n• §lSéparation laser§r (ex-séparateur isotopique laser) : 6 recettes\n§6Mêmes entrées§r : dioxyde de carbone, hexafluorure d’uranium, hexafluorure d’uranium enrichi, hexafluorure d’uranium HALEU, azote, hexafluorure d’uranium appauvri. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette."
+     "text": "La §lcascade de centrifugeuses§r (multibloc seul) enrichit l’hexafluorure d’uranium étage par étage et reprend la §6séparation laser§r de l’ancien séparateur isotopique laser : mêmes isotopes, plus vite au MKIV (à verrouiller dans l’onglet §lRecettes§r). Un séparateur laser compact déjà posé devient le contrôleur de la cascade : ses objets sont rendus au sol.\n§6Procédés§r\n• §lCentrifugation gazeuse§r (recettes propres) : 6 recettes\n• §lSéparation laser§r (ex-séparateur isotopique laser) : 6 recettes\n§6Mêmes entrées§r : dioxyde de carbone, hexafluorure d’uranium, hexafluorure d’uranium enrichi, hexafluorure d’uranium HALEU, azote, hexafluorure d’uranium appauvri. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -10203,7 +10142,7 @@
       "pioneers:basic_cryogenic_unit",
       "pioneers:industrial_cryogenic_unit"
      ],
-     "text": "L’§lUnité cryogénique§r (ex-compresseur de gaz) comprime et §6liquéfie§r les gaz (GPL, GNL, hydrogène liquide), reprend la §lréfrigération§r de l’ancien groupe frigorifique (sous 250 K : chlore liquide, butane, cristallisation au froid) et l’§léchange de chaleur§r de l’ancien échangeur à plaques (récupération de chaleur, revaporisation des gaz liquéfiés).\n§6Procédés§r\n• §lCompression, liquéfaction§r (recettes propres) : 9 recettes\n• §lRéfrigération§r (ex-groupe frigorifique) : 8 recettes\n• §lÉchange de chaleur§r (ex-échangeur à plaques) : 12 recettes\n§6Mêmes entrées§r : ammoniac, gaz naturel, hydrogène, butane. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette."
+     "text": "L’§lUnité cryogénique§r (ex-compresseur de gaz) comprime et §6liquéfie§r les gaz (GPL, GNL, hydrogène liquide), reprend la §lréfrigération§r de l’ancien groupe frigorifique (sous 250 K : chlore liquide, butane, cristallisation au froid) et l’§léchange de chaleur§r de l’ancien échangeur à plaques (récupération de chaleur, revaporisation des gaz liquéfiés).\n§6Procédés§r\n• §lCompression, liquéfaction§r (recettes propres) : 9 recettes\n• §lRéfrigération§r (ex-groupe frigorifique) : 8 recettes\n• §lÉchange de chaleur§r (ex-échangeur à plaques) : 12 recettes\n§6Mêmes entrées§r : ammoniac, gaz naturel, hydrogène, butane. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -10211,7 +10150,7 @@
      "items": [
       "pioneers:industrial_hot_cell"
      ],
-     "text": "La §lCellule blindée§r est désormais un §6multibloc seul§r : elle ouvre les cibles irradiées, sépare les isotopes, fabrique les sources et reprend le §lretraitement§r PUREX et THOREX de l’ancienne usine (uranium, plutonium, neptunium, déchets) et la §lvitrification§r des déchets de haute activité de l’ancien four. Son contrôleur se monte au plomb et aux moteurs pas à pas ; son bloc métier, le poste de manipulation, au verre trempé du hublot. Une cellule compacte déjà posée devient le contrôleur : ses objets sont rendus au sol.\n§6Procédés§r\n• §lManipulation§r (recettes propres) : 11 recettes\n• §lRetraitement (PUREX)§r (ex-usine de retraitement ; multibloc seul) : 8 recettes\n• §lVitrification§r (ex-four de vitrification) : 8 recettes\n§6Mêmes entrées§r : déchets de haute activité, couverture de thorium irradiée et acide nitrique. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lCellule blindée§r est désormais un §6multibloc seul§r : elle ouvre les cibles irradiées, sépare les isotopes, fabrique les sources et reprend le §lretraitement§r PUREX et THOREX de l’ancienne usine (uranium, plutonium, neptunium, déchets) et la §lvitrification§r des déchets de haute activité de l’ancien four. Son contrôleur se monte au plomb et aux moteurs pas à pas ; son bloc métier, le poste de manipulation, au verre trempé du hublot. Une cellule compacte déjà posée devient le contrôleur : ses objets sont rendus au sol.\n§6Procédés§r\n• §lManipulation§r (recettes propres) : 11 recettes\n• §lRetraitement (PUREX)§r (ex-usine de retraitement ; multibloc seul) : 8 recettes\n• §lVitrification§r (ex-four de vitrification) : 8 recettes\n§6Mêmes entrées§r : déchets de haute activité, couverture de thorium irradiée et acide nitrique. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10272,7 +10211,7 @@
      "items": [
       "pioneers:hydroponic_farm"
      ],
-     "text": "La §lferme hydroponique§r (multibloc seul) fait pousser les cultures en masse et reprend les §6microalgues§r de l’ancien photobioréacteur (eau + CO₂ + lumière → microalgues, huile d’algue, oxygène). Un photobioréacteur compact déjà posé devient le contrôleur de la ferme : ses objets sont rendus au sol. Les arbres ont à nouveau leur machine, la §lplantation forestière§r.\n§6Procédés§r\n• §lCultures§r (recettes propres) : 174 recettes\n• §lMicroalgues§r (ex-photobioréacteur) : 8 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lferme hydroponique§r (multibloc seul) fait pousser les cultures en masse et reprend les §6microalgues§r de l’ancien photobioréacteur (eau + CO₂ + lumière → microalgues, huile d’algue, oxygène). Un photobioréacteur compact déjà posé devient le contrôleur de la ferme : ses objets sont rendus au sol. Les arbres ont à nouveau leur machine, la §lplantation forestière§r.\n§6Procédés§r\n• §lCultures§r (recettes propres) : 174 recettes\n• §lMicroalgues§r (ex-photobioréacteur) : 8 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10316,7 +10255,7 @@
      "items": [
       "pioneers:industrial_pumpjack"
      ],
-     "text": "Le §lchevalet de pompage§r (multibloc seul) pompe §6tous les gisements fluides§r sous lui : pétrole, saumure (ex-puits de saumure) et gaz naturel (ex-tête de puits de gaz), gaz associé et hélium par sa deuxième sortie de gaz. L’eau ou la boue injectée relance la pression. Le derrick lui est fondu aussi : son progrès se gagne à quatre opérations à la fois. Un puits multibloc déjà bâti n’a pas la forme du chevalet : « Non formé », plan du chevalet au Maj + clic droit.\n§6Procédés§r\n• §lPétrole§r (gisements de l’ancien chevalet)\n• §lSaumure§r (gisements, ex-puits de saumure)\n• §lPétrole profond§r (gisements, ex-derrick)\n• §lGaz§r (gisements, ex-tête de puits de gaz)\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette."
+     "text": "Le §lchevalet de pompage§r (multibloc seul) pompe §6tous les gisements fluides§r sous lui : pétrole, saumure (ex-puits de saumure) et gaz naturel (ex-tête de puits de gaz), gaz associé et hélium par sa deuxième sortie de gaz. L’eau ou la boue injectée relance la pression. Le derrick lui est fondu aussi : son progrès se gagne à quatre opérations à la fois. Un puits multibloc déjà bâti n’a pas la forme du chevalet : « Non formé », plan du chevalet au Maj + clic droit.\n§6Procédés§r\n• §lPétrole§r (gisements de l’ancien chevalet)\n• §lSaumure§r (gisements, ex-puits de saumure)\n• §lPétrole profond§r (gisements, ex-derrick)\n• §lGaz§r (gisements, ex-tête de puits de gaz)\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -10325,7 +10264,7 @@
       "pioneers:basic_press",
       "pioneers:industrial_press"
      ],
-     "text": "La §lPresse§r (ex-presse électrique) §6aplatit§r seulement : lingot + matrice → plaque, plaque → tôle ou feuille, stratifiés pressés à plat (contreplaqué, plaque époxy, cartes perforées et gravées). Ce qui n’aplatit pas se fait à la machine de son geste : tiges et tubes à l’extrudeuse ou au centre d’usinage, rivets et clous au marteau-pilon (frappe à froid), compacts et pastilles au compresseur, dalles et vitres à la scie industrielle, mélanges au mélangeur, assemblages à l’assembleur. Le poste de façonnage lui est fondu ; un poste déjà posé devient une Presse au même tier. La presse à vapeur compacte est son tier 1.\n§6Procédés§r\n• §lPressage§r (recettes propres) : 75 recettes\n• §lFaçonnage§r (ex-poste de façonnage) : aucune recette (ses copies doublaient d’autres machines)\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lPresse§r (ex-presse électrique) §6aplatit§r seulement : lingot + matrice → plaque, plaque → 2 tôles, stratifiés pressés à plat (contreplaqué, plaque époxy, cartes perforées et gravées). 1.0.6 : c’est la seule machine des plaques tirées d’un lingot et des tôles tirées d’une plaque (presse à vapeur comprise). Ce qui n’aplatit pas se fait à la machine de son geste : tiges au centre d’usinage, tubes à l’extrudeuse, feuilles au laminoir, rivets et clous au marteau-pilon (frappe à froid), compacts et pastilles au compresseur, mélanges au mélangeur, assemblages à l’assembleur. Le poste de façonnage lui est fondu ; un poste déjà posé devient une Presse au même tier. La presse à vapeur compacte est son tier 1.\n§6Procédés§r\n• §lPressage§r (recettes propres) : 77 recettes\n• §lFaçonnage§r (ex-poste de façonnage) : aucune recette (ses copies doublaient d’autres machines)\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10353,7 +10292,7 @@
       "pioneers:basic_power_hammer",
       "pioneers:industrial_power_hammer"
      ],
-     "text": "Le §lMarteau-pilon§r (ex-marteau d’estampage) forge par chocs : billettes des métaux non coulables, ébauches d’engrenage estampées, anneaux poinçonnés et laminés sans soudure. Il reprend la §6frappe à froid§r de l’ancienne frappeuse (vis, boulons, rivets, clous et billes, dans le fil machine ou le fil) et, à son multibloc seulement, le §lMarteau-pilon industriel§r, la §lforge à chaud§r des têtes d’outils et des lames de l’ancien marteau-pilon industriel. Le foyer de forge garde ses deux recettes de lopin. Il n’a plus d’âge vapeur : le marteau-pilon à vapeur est retiré (1.0.5).\n§6Procédés§r\n• §lEstampage§r (recettes propres) : 69 recettes\n• §lForge à chaud (têtes d’outils)§r (ex-marteau-pilon industriel ; multibloc seul) : 100 recettes\n• §lFrappe à froid (visserie)§r (ex-frappeuse à froid) : 15 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lMarteau-pilon§r (ex-marteau d’estampage) forge par chocs : billettes des métaux non coulables, ébauches d’engrenage estampées, et toutes les §ltêtes d’outils§r : celles des métaux de base dès le compact MKI, celles des métaux avancés aux tiers supérieurs (MKII à MKIV, compacte ou multibloc). Il reprend la §6frappe à froid§r de l’ancienne frappeuse (vis, boulons, rivets, clous et billes, dans le fil machine ou le fil). Le foyer de forge garde ses deux recettes de lopin. Il n’a plus d’âge vapeur : le marteau-pilon à vapeur est retiré (1.0.5). 1.0.6 : les anneaux passent à la §lCintreuse§r.\n§6Procédés§r\n• §lEstampage§r (recettes propres) : 169 recettes\n• §lForge à chaud (têtes d’outils)§r (ex-marteau-pilon industriel ; multibloc seul) : 100 recettes\n• §lFrappe à froid (visserie)§r (ex-frappeuse à froid) : 15 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10415,12 +10354,12 @@
       "pioneers:basic_rolling_mill",
       "pioneers:industrial_rolling_mill"
      ],
-     "text": "Le §lLaminoir§r (ex-laminoir électrique) §6lamine§r entre cylindres : lingot → plaque, plaque → feuille, brame → plaques, billette → fil machine, et désormais §lbloc → 9 plaques§r (MKII, l’ancienne voie de la découpeuse). Il reprend le §lcalandrage§r de l’ancienne calandre : feuilles de caoutchouc et de plastique, joints, tôles, grillages tissés.\n§6Procédés§r\n• §lLaminage§r (recettes propres) : 165 recettes\n• §lCalandrage§r (ex-calandre) : 30 recettes\n§6Mêmes entrées§r : plaque (feuilles ou tôles), brame (plaques ou tôles). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lLaminoir§r (ex-laminoir électrique) §6lamine§r le demi-produit entre cylindres : bloc → 9 plaques, brame → plaques et tôles, billette → plaques ou fil machine, ébauche → poutrelles, plaque → feuilles. 1.0.6 : les plaques tirées d’un lingot et les tôles tirées d’une plaque se font à la §lPresse§r ; le laminoir à vapeur lamine les blocs en 9 plaques. Il reprend le §lcalandrage§r de l’ancienne calandre : feuilles de caoutchouc et de plastique, courroies, joints, grillages tissés.\n§6Procédés§r\n• §lLaminage§r (recettes propres) : 151 recettes\n• §lCalandrage§r (ex-calandre) : 20 recettes\n§6Mêmes entrées§r : plaque (feuilles ou tôles), brame (plaques ou tôles). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
         "label": "Laminage",
-        "item": "pioneers:depleted_uranium_ingot",
+        "item": "pioneers:aluminium_beam_blank",
         "done": true
        },
        {
@@ -10430,7 +10369,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:depleted_uranium_plate",
+        "item": "pioneers:aluminium_beam",
         "next": true
        }
       ],
@@ -10460,12 +10399,12 @@
       "pioneers:basic_wiremill",
       "pioneers:industrial_wiremill"
      ],
-     "text": "La §lTréfileuse§r (ex-tréfileuse électrique) §6étire§r le métal en fil : lingot, fil machine ou tige → fil, câbles tressés. Elle reprend le §lfibrage§r de l’ancienne tour de fibrage (fibres de verre, optiques et de verre fluoré, fibres de carbone et d’aramide : le verre fondu ou le précurseur entre par son réservoir) et le §ltoronnage§r de l’ancienne toronneuse (câbles tressés sans perte, faisceaux de câbles, câbles des réseaux, cordes de chanvre).\n§6Procédés§r\n• §lTréfilage§r (recettes propres) : 47 recettes\n• §lFibrage§r (ex-tour de fibrage) : 8 recettes\n• §lToronnage§r (ex-toronneuse) : 8 recettes\n§6Mêmes entrées§r : fibre de chanvre, fil (câble tressé). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lTréfileuse§r (ex-tréfileuse électrique) §6étire§r le métal en fil : lingot, fil machine ou tige → fil. Elle reprend le §lfibrage§r de l’ancienne tour de fibrage (fibres de verre, optiques et de verre fluoré, fibres de carbone et d’aramide : le verre fondu ou le précurseur entre par son réservoir) et le §ltoronnage§r de l’ancienne toronneuse (câbles tressés sans perte, faisceaux de câbles, câbles des réseaux). 1.0.6 : le filage des fibres (fil de coton, ficelle, cordes) passe à l’§lAtelier de confection§r.\n§6Procédés§r\n• §lTréfilage§r (recettes propres) : 43 recettes\n• §lFibrage§r (ex-tour de fibrage) : 8 recettes\n• §lToronnage§r (ex-toronneuse) : 6 recettes\n§6Mêmes entrées§r : fibre de chanvre, fil (câble tressé). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
         "label": "Tréfilage",
-        "item": "pioneers:cotton",
+        "item": "pioneers:aluminium_wire_rod",
         "done": true
        },
        {
@@ -10475,7 +10414,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:cotton_thread",
+        "item": "pioneers:aluminium_wire",
         "next": true
        }
       ],
@@ -10499,7 +10438,7 @@
       [
        {
         "label": "Toronnage",
-        "item": "pioneers:plant_fiber",
+        "item": "pioneers:vulcanized_rubber",
         "done": true
        },
        {
@@ -10509,7 +10448,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:fiber_rope",
+        "item": "pioneers:wiring_harness",
         "next": true
        }
       ]
@@ -10522,7 +10461,7 @@
       "pioneers:basic_bender",
       "pioneers:industrial_bender"
      ],
-     "text": "La §lCintreuse§r plie et roule : anneaux, tubes agrafés, plaques et tubes cintrés. Elle reprend l’§6enroulage§r de l’ancienne enrouleuse à ressorts : ressorts du fil, de la tige ou du fil machine, ressorts de précision trempés à l’huile au MKIII (un réservoir de fluide en plus).\n§6Procédés§r\n• §lCintrage§r (recettes propres) : 29 recettes\n• §lEnroulage (ressorts)§r (ex-enrouleuse à ressorts) : 37 recettes\n§6Mêmes entrées§r : tiges de cuivre (paratonnerre ou ressort), tiges de fer (barreaux ou ressort), tige de métal (anneaux ou ressort). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lCintreuse§r plie, roule et enroule : anneaux (d’une tige ou d’un lingot), tubes roulés dans une tôle ou une plaque, plaques et tubes cintrés, ressorts du fil, de la tige ou du fil machine, ressorts de précision trempés à l’huile au MKIII (un réservoir de fluide en plus). 1.0.6 : à partir du MKI, c’est la seule machine des anneaux et des ressorts ; les tours (mécanique et à vapeur) gardent les leurs.\n§6Procédés§r\n• §lCintrage§r (recettes propres) : 34 recettes\n• §lEnroulage (ressorts)§r (ex-enrouleuse à ressorts) : 30 recettes\n§6Mêmes entrées§r : tiges de cuivre (paratonnerre ou ressort), tiges de fer (barreaux ou ressort), tige de métal (anneaux ou ressort). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10550,7 +10489,7 @@
       "pioneers:basic_casting_machine",
       "pioneers:industrial_casting_machine"
      ],
-     "text": "La §lMachine de coulée§r coule le métal liquide en moule (matrice ou moule de fonderie, fluide de refroidissement) et reprend l’§6injection§r des plastiques de l’ancienne presse à injection (granulés + moule → pièces). À son multibloc seulement, la §lcoulée continue§r de l’ancienne machine : lingots en série, brames, billettes, ébauches de poutrelle, sous eau ou sous huile au MKIII.\n§6Procédés§r\n• §lCoulée en moule§r (recettes propres) : 412 recettes\n• §lCoulée continue§r (ex-coulée continue ; multibloc seul) : 81 recettes\n• §lInjection§r (ex-presse à injection) : 9 recettes\n§6Mêmes entrées§r : métal liquide et matrice (pièce ou coulée continue). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lMachine de coulée§r coule le métal liquide en moule (matrice ou moule de fonderie, fluide de refroidissement) et reprend l’§6injection§r des plastiques de l’ancienne presse à injection (granulés + moule → pièces). À son multibloc seulement, la §lcoulée continue§r de l’ancienne machine : lingots en série, brames, billettes, ébauches de poutrelle, sous eau ou sous huile au MKIII.\n§6Procédés§r\n• §lCoulée en moule§r (recettes propres) : 412 recettes\n• §lCoulée continue§r (ex-coulée continue ; multibloc seul) : 81 recettes\n• §lInjection§r (ex-presse à injection) : 9 recettes\n§6Mêmes entrées§r : métal liquide et matrice (pièce ou coulée continue). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10612,12 +10551,12 @@
       "pioneers:basic_machining_center",
       "pioneers:industrial_machining_center"
      ],
-     "text": "Le §lCentre d’usinage§r (ex-tour à commande numérique) §6usine dans la masse§r : axes, vis, lames et pièces de précision ; §lfraisage§r (matrices, modèles et moules de fonderie) et §lrectification§r (visserie de tungstène, billes, objectifs reconditionnés), sans lubrifiant. 1.0.6 : la taille des engrenages et des gemmes passe à la §lDécoupeuse§r, les têtes d’outils au §lMarteau-pilon§r.\n§6Procédés§r\n• §lTournage§r (recettes propres) : 175 recettes\n• §lFraisage§r (ex-fraiseuse à commande numérique) : 7 recettes\n• §lRectification§r (ex-rectifieuse) : 6 recettes\n§6Mêmes entrées§r : plaques d’acier au vanadium et lubrifiant, plaques de duralumin. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lCentre d’usinage§r (ex-tour à commande numérique) §6usine dans la masse§r : tiges (d’un lingot ou d’une billette), axes, vis, boulons, billes et pièces de précision ; §lfraisage§r (matrices, modèles et moules de fonderie) et §lrectification§r (visserie de tungstène, objectifs reconditionnés), sans lubrifiant. 1.0.6 : les engrenages et les gemmes passent à la §lDécoupeuse§r, les têtes d’outils au §lMarteau-pilon§r, les anneaux et les ressorts à la §lCintreuse§r ; les tiges de l’extrudeuse viennent ici.\n§6Procédés§r\n• §lTournage§r (recettes propres) : 14 recettes\n• §lFraisage§r (ex-fraiseuse à commande numérique) : 7 recettes\n• §lRectification§r (ex-rectifieuse) : 6 recettes\n§6Mêmes entrées§r : plaques d’acier au vanadium et lubrifiant, plaques de duralumin. La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
         "label": "Tournage",
-        "item": "pioneers:ahunite_billet",
+        "item": "pioneers:pig_iron",
         "done": true
        },
        {
@@ -10627,7 +10566,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:ahunite_rod",
+        "item": "pioneers:piston_ring",
         "next": true
        }
       ],
@@ -10674,7 +10613,7 @@
       "pioneers:basic_gear_hobber",
       "pioneers:industrial_gear_hobber"
      ],
-     "text": "La §lDécoupeuse§r §6découpe une plaque, un cristal ou une galette en pièces§r : engrenages taillés dans les plaques ou les ébauches, gemmes taillées, boules de saphir et de rubis, galettes de silicium. Un §lliquide de coupe§r : l’eau pour les cristaux et les galettes, le lubrifiant pour tailler les métaux durs. Les chutes reviennent en pépites.\n§6Procédés§r\n• §lDécoupe§r (recettes propres) : 41 recettes\n• §lDécoupe des galettes§r (ex-découpeuse (galettes)) : 8 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "La §lDécoupeuse§r §6découpe une plaque, un cristal ou une galette en pièces§r : engrenages taillés dans les plaques ou les ébauches, gemmes taillées, boules de saphir et de rubis, galettes de silicium. Un §lliquide de coupe§r : l’eau pour les cristaux et les galettes, le lubrifiant pour tailler les métaux durs. Les chutes reviennent en pépites.\n§6Procédés§r\n• §lDécoupe§r (recettes propres) : 43 recettes\n• §lDécoupe des galettes§r (ex-découpeuse (galettes)) : 8 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10719,7 +10658,7 @@
       "pioneers:basic_sawmill",
       "pioneers:industrial_sawmill"
      ],
-     "text": "La §lScie industrielle§r (ex-scierie) §6scie le bois§r : bûches → planches, bâtons et sciure. 1.0.6 : la découpe des galettes passe à la §lDécoupeuse§r.\n§6Procédés§r\n• §lSciage§r (gisements de l’ancien chevalet)\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette."
+     "text": "La §lScie industrielle§r (ex-scierie) §6scie le bois§r : bûches → planches, bâtons et sciure, placages. 1.0.6 : la découpe des galettes passe à la §lDécoupeuse§r ; la scie à vapeur, qui taillait la pierre, devient le tier 1 de la §lTaillerie de pierre§r.\n§6Procédés§r\n• §lSciage§r (gisements de l’ancien chevalet)\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -10728,7 +10667,7 @@
       "pioneers:basic_chemical_bath",
       "pioneers:industrial_chemical_bath"
      ],
-     "text": "Le §lBain chimique§r (ex-cuve de traitement de surface) §6plonge les pièces dans un liquide§r : galvanisation, zingage, étamage, nickelage, cuivrage, chromage dur, électroformage, argenture, et §ltrempe§r à l’huile ou à l’eau (forets, matrices, broches). Il fait aussi la §lprojection plasma§r (disques diamantés, revêtements) et la §lgravure à l’acide§r des galettes.\n§6Procédés§r\n• §lBains de surface§r (recettes propres) : 16 recettes\n• §lTraiter (trempe, recuit)§r (ex-four de traitement thermique) : 17 recettes\n• §lProjection plasma§r (ex-projection plasma) : 10 recettes\n• §lGravure à l’acide§r (ex-graveur à l’acide) : 8 recettes\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "Le §lBain chimique§r (ex-cuve de traitement de surface) §6plonge les pièces dans un liquide§r : galvanisation, zingage, étamage, nickelage, cuivrage, chromage dur, électroformage, argenture, et §ltrempe§r à l’huile ou à l’eau (forets, matrices, broches). Il fait aussi la §lprojection plasma§r (disques diamantés, revêtements) et la §lgravure à l’acide§r des galettes.\n§6Procédés§r\n• §lBains de surface§r (recettes propres) : 16 recettes\n• §lTraiter (trempe, recuit)§r (ex-four de traitement thermique) : 17 recettes\n• §lProjection plasma§r (ex-projection plasma) : 10 recettes\n• §lGravure à l’acide§r (ex-graveur à l’acide) : 8 recettes\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10807,7 +10746,7 @@
       "pioneers:basic_assembler",
       "pioneers:industrial_assembler"
      ],
-     "text": "L’§lAssembleur§r monte pièces et composants. Il reprend §6toutes§r les recettes de l’ancien assembleur de composants (châssis, moteurs, roulements, pompes, circuits, calculateurs, aux mêmes tiers), les copies de l’établi de pièces logistiques de l’ancien assembleur logistique (fusées, spatioport, rail, ports, robotique) et le §lsoudage à l’arc§r de l’ancienne soudeuse (cuves, coques, tubes soudés, caissons, sous argon dès le MKII). Neuf entrées, deux sorties, un réservoir de fluide et un de gaz.\n§6Procédés§r\n• §lAssemblage§r (recettes propres) : 10 recettes\n• §lComposants§r (ex-assembleur de composants) : 196 recettes\n• §lPièces logistiques§r (ex-assembleur logistique) : aucune recette (ses copies doublaient d’autres machines)\n• §lSoudage à l’arc§r (ex-soudeuse à l'arc) : 20 recettes\n§6Mêmes entrées§r : plaques d’acier (armure ou poutrelle soudée), plaques, tiges et vis d’acier (clé à molette ou châssis soudé). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une seule catégorie par machine ; la pastille « T2 à T5 » donne les tiers qui font la recette.",
+     "text": "L’§lAssembleur§r monte pièces et composants. Il reprend §6toutes§r les recettes de l’ancien assembleur de composants (châssis, moteurs, roulements, pompes, circuits, calculateurs, aux mêmes tiers), les copies de l’établi de pièces logistiques de l’ancien assembleur logistique (fusées, spatioport, rail, ports, robotique) et le §lsoudage à l’arc§r de l’ancienne soudeuse (cuves, coques, tubes soudés, caissons, sous argon dès le MKII). Neuf entrées, deux sorties, un réservoir de fluide et un de gaz.\n§6Procédés§r\n• §lAssemblage§r (recettes propres) : 16 recettes\n• §lComposants§r (ex-assembleur de composants) : 196 recettes\n• §lPièces logistiques§r (ex-assembleur logistique) : aucune recette (ses copies doublaient d’autres machines)\n• §lSoudage à l’arc§r (ex-soudeuse à l'arc) : 15 recettes\n§6Mêmes entrées§r : plaques d’acier (armure ou poutrelle soudée), plaques, tiges et vis d’acier (clé à molette ou châssis soudé). La recette propre de la machine (sinon la plus complète) passe d’abord ; pour l’autre, verrouillez-la dans l’onglet §lRecettes§r.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge.",
      "flow": [
       [
        {
@@ -10861,6 +10800,69 @@
        }
       ]
      ]
+    },
+    {
+     "section": "Machines génériques",
+     "title": "La Menuiserie",
+     "items": [
+      "pioneers:basic_joinery",
+      "pioneers:industrial_joinery"
+     ],
+     "text": "La §lMenuiserie§r §6travaille le bois et le papier§r : elle fait les copies automatisées de l’§létabli du charpentier§r et de l’§létabli du luthier§r (meubles, portes, clôtures, charpente, coffres, instruments de musique) et le bois des postes de la ferme (nichoirs, paniers, niches, ruches). Six entrées d’objets.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
+    },
+    {
+     "section": "Machines génériques",
+     "title": "L’Atelier de confection",
+     "items": [
+      "pioneers:basic_tailoring_workshop",
+      "pioneers:industrial_tailoring_workshop"
+     ],
+     "text": "L’§lAtelier de confection§r §6travaille le cuir, les textiles et le caoutchouc§r : copies de l’§létabli du tanneur§r (vêtements, cosmétiques, sacs, selles, bannières) et le §lfilage§r des fibres (coton → fil, chanvre → ficelle, fibres végétales → cordes, peluche lunaire et lierre → ficelle), repris à la tréfileuse et au laminoir.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
+    },
+    {
+     "section": "Machines génériques",
+     "title": "La Conditionneuse",
+     "items": [
+      "pioneers:basic_packaging_machine",
+      "pioneers:industrial_packaging_machine"
+     ],
+     "text": "La §lConditionneuse§r §6conditionne les récoltes§r : 9 récoltes → une caisse, un sac ou une cagette, et le tabac roulé (cigares). Elle fait les copies de l’§létabli agricole§r dont la matière est la récolte ; les autres copies de cet établi vont à la machine de leur matière (bois → Menuiserie, textile → Atelier de confection, verre → Atelier de verrerie, métal → Assembleur, substrats → Mélangeur).\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
+    },
+    {
+     "section": "Machines génériques",
+     "title": "La Chaudronnerie",
+     "items": [
+      "pioneers:basic_sheet_metal_shop",
+      "pioneers:industrial_sheet_metal_shop"
+     ],
+     "text": "La §lChaudronnerie§r §6travaille la tôle et le cuivre§r : copies de l’§létabli du chaudronnier§r (récipients, chaudières, robinetterie, jauges, paratonnerre, blocs de cuivre taillés et cirés). Le cuivre se taille ici, pas à la Taillerie de pierre.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
+    },
+    {
+     "section": "Machines génériques",
+     "title": "L’Atelier de verrerie",
+     "items": [
+      "pioneers:basic_glassworks",
+      "pioneers:industrial_glassworks"
+     ],
+     "text": "L’§lAtelier de verrerie§r §6façonne le verre et l’argile§r : copies de l’§létabli du potier§r (verre teinté, vitres, bouteilles, poteries, aquarium) et pièces d’argile crue (creusets, moules, tuyaux), reprises au mélangeur, à la scie et au compresseur.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
+    },
+    {
+     "section": "Machines génériques",
+     "title": "Le Banc électromécanique",
+     "items": [
+      "pioneers:basic_electromechanical_bench",
+      "pioneers:industrial_electromechanical_bench"
+     ],
+     "text": "Le §lBanc électromécanique§r §6monte les mécanismes§r : copies de l’§létabli du redstoneur§r (boutons, plaques de pression, répéteurs, comparateurs, pistons, lampes, interrupteurs, câblages).\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
+    },
+    {
+     "section": "Machines génériques",
+     "title": "La Taillerie de pierre",
+     "items": [
+      "pioneers:basic_stoneworks",
+      "pioneers:industrial_stoneworks"
+     ],
+     "text": "La §lTaillerie de pierre§r §6taille la pierre§r : §ltoutes§r les découpes du tailleur de pierre (vanilla et mod : dalles, escaliers, murets, pierres polies, taillées et ciselées), avec un rendement meilleur qu’à la main (×1,75 au MKI, ×2,19 au MKII, ×2,63 au MKIII, ×3,5 au MKIV ; la fraction est tirée au sort), et les ouvrages du §lmaçon§r (briques réfractaires, cheminées, fontaines, piliers). La §lscie à vapeur§r est son tier 1. Le cuivre se taille à la Chaudronnerie.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Eau et roches",
@@ -15365,7 +15367,7 @@
        },
        {
         "label": "He-3",
-        "item": "pioneers:basic_cracker"
+        "item": "pioneers:industrial_cracker"
        },
        {
         "label": "Gen. II",

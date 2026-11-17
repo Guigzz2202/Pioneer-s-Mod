@@ -83,7 +83,7 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.RIG, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
     GAS_SEPARATOR("gas_separator", Atelier.NEW, true, null, 1, 1, 1, 3, 1, 3, Source.INDUSTRIAL, Kind.PROCESS, 30, 0x5AB4AA, new int[]{5, 0, 13, 5, 0, 13}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.DRUM, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
-    CRACKER("cracker", Atelier.NEW, true, null, 1, 3, 1, 3, 2, 4, Source.INDUSTRIAL, Kind.PROCESS, 220, 0xC85A32, new int[]{7, 8, 7, 7, 8, 7}, false, false, new String[]{},
+    CRACKER("cracker", Atelier.NONE, true, null, 1, 3, 1, 3, 2, 4, Source.INDUSTRIAL, Kind.PROCESS, 220, 0xC85A32, new int[]{7, 8, 7, 7, 8, 7}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.BOX, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{"casing:top:1"}),
     AUTOCLAVE("autoclave", Atelier.NEW, true, null, 2, 1, 1, 1, 1, 1, Source.INDUSTRIAL, Kind.PROCESS, 160, 0x78788C, new int[]{5, 0, 13, 5, 0, 13}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.DRUM, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
@@ -171,16 +171,31 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.BOX, fr.pioneers.tech.industry.multi.IndustryStyle.NEUTRAL, new String[]{}),
     ROCK_GENERATOR("rock_generator", Atelier.NEW, false, null, 0, 1, 2, 0, 0, 0, Source.ROCKS, Kind.ROCKS, 0, 0xCD642D, new int[]{3, 3, 3, 11, 11, 11}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.BOX, fr.pioneers.tech.industry.multi.IndustryStyle.NEUTRAL, new String[]{}),
-    REDUCTION_FURNACE("reduction_furnace", Atelier.NEW, true, null, 3, 2, 0, 0, 1, 1, Source.INDUSTRIAL, Kind.PROCESS, 200, 0xD25A28, new int[]{7, 12, 0, 7, 12, 0}, false, false, new String[]{},
+    REDUCTION_FURNACE("reduction_furnace", Atelier.NEW, true, null, 3, 2, 0, 1, 1, 1, Source.INDUSTRIAL, Kind.PROCESS, 200, 0xD25A28, new int[]{7, 12, 0, 7, 12, 0}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.BELLY, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{"casing:top:1"}),
     GEAR_HOBBER("gear_hobber", Atelier.NEW, true, null, 1, 2, 1, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 40, 0xD6A840, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
-          fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{});
+          fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    JOINERY("joinery", Atelier.NEW, true, null, 6, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 40, 0xB27A42, new int[]{5, 4, 13, 5, 4, 13}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    TAILORING_WORKSHOP("tailoring_workshop", Atelier.NEW, true, null, 6, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 30, 0xBE5484, new int[]{5, 4, 13, 5, 4, 13}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    PACKAGING_MACHINE("packaging_machine", Atelier.NEW, true, null, 2, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 30, 0x76AC46, new int[]{5, 4, 13, 5, 4, 13}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.LIVING, new String[]{}),
+    SHEET_METAL_SHOP("sheet_metal_shop", Atelier.NEW, true, null, 6, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xCE7646, new int[]{7, 7, 5, 7, 7, 5}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.GANTRY, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    GLASSWORKS("glassworks", Atelier.NEW, true, null, 4, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 120, 0x68B8CC, new int[]{3, 2, 0, 9, 10, 0}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.DOME, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{"casing:top:1"}),
+    ELECTROMECHANICAL_BENCH("electromechanical_bench", Atelier.NEW, true, null, 6, 2, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 30, 0xD64238, new int[]{5, 4, 13, 5, 4, 13}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
+    STONEWORKS("stoneworks", Atelier.NEW, true, null, 4, 2, 0, 0, 0, 0, Source.STONECUTTING, Kind.PROCESS, 60, 0x9C9892, new int[]{7, 7, 5, 7, 7, 5}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.GANTRY, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{});
 
     /** Ou est la machine d'atelier : nouvelle (generee), kit existant, machine d'avant l'electricite, ou aucune (multibloc seulement). */
     public enum Atelier { NEW, KIT, BRONZE, NONE }
 
-    /** Recettes lues par la machine (1.0.5-beta lot 46 : WATER, ROCKS = aucune recette, production calculee : GeneratedLot46). */
-    public enum Source { INDUSTRIAL, CRUSHING, COMPRESSING, SMELTING, FUEL, KINETIC, DRILL, WELL, PUMP, TANK, WATER, ROCKS }
+    /** Recettes lues par la machine (1.0.5-beta lot 46 : WATER, ROCKS = aucune recette, production calculee : GeneratedLot46 ; 1.0.6 :
+     *  STONECUTTING = recettes du tailleur de pierre converties, Taillerie de pierre). */
+    public enum Source { INDUSTRIAL, CRUSHING, COMPRESSING, SMELTING, FUEL, KINETIC, DRILL, WELL, PUMP, TANK, WATER, ROCKS, STONECUTTING }
 
     /**
      * Genre : process (recettes), generateur, foreuse (gisements solides), puits (gisements fluides), pompe (fluides du monde), reservoir ;
@@ -255,6 +270,7 @@ public enum IndustryMachine {
     private static final java.util.Map<String, String> MULTI_IDS = java.util.Map.ofEntries(
           java.util.Map.entry("pumpjack", "industrial_pumpjack"),
           java.util.Map.entry("fluid_pump", "industrial_fluid_pump"),
+          java.util.Map.entry("cracker", "industrial_cracker"),
           java.util.Map.entry("gas_turbine", "gas_turbine"),
           java.util.Map.entry("pyrolysis_oven", "industrial_pyrolysis_oven"),
           java.util.Map.entry("hot_cell", "industrial_hot_cell"));
@@ -343,6 +359,7 @@ public enum IndustryMachine {
           java.util.Map.entry("hot_cell", new int[][]{{5, 2, 3, 1, 1, 1, 2}}),
           java.util.Map.entry("power_hammer", new int[][]{{6, 2, 2, 0, 0, 0, 0}}),
           java.util.Map.entry("induction_furnace", new int[][]{{3, 4, 1, 0, 0, 1, 0}}),
+          java.util.Map.entry("reduction_furnace", new int[][]{{3, 3, 2, 0, 0, 1, 1}}),
           java.util.Map.entry("gear_hobber", new int[][]{{6, 2, 2, 1, 0, 0, 0}}));
 
     /** io de la machine dans un NBT de cette version des cases ; null si c'est l'io actuelle. */

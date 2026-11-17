@@ -92,8 +92,11 @@ public final class FormMachineTests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_lot4a_enrouleuse", timeoutTicks = 600)
     public static void enrouleuse_ressorts(GameTestHelper h) {
         Gt.begin(h);
-        //1.0.6 : la recette actuelle enroule 2 tiges (2 x 72 mB = 144 mB, le ressort) ; plus de recette depuis le fil
-        AtelierTile m = atelier(h, IndustryMachine.BENDER, new BlockPos(2, 2, 2), "industry/spring_coiler/coil_rod_spring_brass");
+        //1.0.6 : on enroule 2 tiges (2 x 72 mB = 144 mB, le ressort) ; plus de recette depuis le fil. La recette MKI de l'enrouleuse etait le
+        //doublon de celle du tour (desactivee, verrou suivi) : la Cintreuse fait celle du tour, convertie au MKI (LOW_MOVED)
+        Gt.equal(rl("materials/turning_brass_spring"), fr.pioneers.core.common.PiRemaps.recipeId(rl("industry/spring_coiler/coil_rod_spring_brass")),
+              "verrou de l'enrouleuse suivi");
+        AtelierTile m = atelier(h, IndustryMachine.BENDER, new BlockPos(2, 2, 2), "materials/turning_brass_spring");
         m.itemInputs().get(0).setStack(new ItemStack(item("brass_rod"), 4));
         Item spring = item("brass_spring");
         h.succeedWhen(() -> {

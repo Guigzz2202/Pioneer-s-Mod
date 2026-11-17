@@ -130,7 +130,8 @@ public class PiJeiPlugin implements IModPlugin {
         for (IndustryMachine m : IndustryMachine.values()) {
             switch (m.source) {
                 //MAJ Recettes (lot 1) : le four electrique a sa categorie (cuissons filtrees par IndustryRecipes : nourriture et age du bronze)
-                case INDUSTRIAL, CRUSHING, COMPRESSING, SMELTING -> INDUSTRY.put(m, JeiOrder.create("industry_" + m.key,
+                //1.0.6 : la Taillerie de pierre (recettes du tailleur de pierre converties) a sa page
+                case INDUSTRIAL, CRUSHING, COMPRESSING, SMELTING, STONECUTTING -> INDUSTRY.put(m, JeiOrder.create("industry_" + m.key,
                       IndustrialRecipe.class));
                 default -> {
                 }
@@ -301,7 +302,8 @@ public class PiJeiPlugin implements IModPlugin {
         all.addAll(STEAM.values());
         all.addAll(BENCH.values());
         all.addAll(List.of(ASTEROID_ANALYSIS, GEOLOGY_ANALYSIS, BIOLOGY_ANALYSIS, BIOME_ANALYSIS, REACTORS, FUELS, BoilerJei.TYPE, KILN, CASTING, BLAST, DEPOSIT,
-              FLUID_DEPOSIT, mezz.jei.api.constants.RecipeTypes.SMELTING, mezz.jei.api.constants.RecipeTypes.FUELING));
+              FLUID_DEPOSIT, mezz.jei.api.constants.RecipeTypes.SMELTING, mezz.jei.api.constants.RecipeTypes.FUELING,
+              mezz.jei.api.constants.RecipeTypes.STONECUTTING));   //1.0.6 : la Taillerie de pierre, catalyseur du tailleur de pierre
         //1.0.5-beta (lot 13, journal de Guillaume : « type de recette inconnu pioneers:forge_hearth ») : pages de la forge primaire citees par
         //les fiches (foyer de forge) ; le catalyseur du foyer vient donc de sa fiche (plus de ligne a la main dans ForgeCategories)
         all.addAll(List.of(ForgeCategories.HEARTH, ForgeCategories.ANVIL, ForgeCategories.QUENCH));

@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "wiremill",
+ "machine": "tailoring_workshop",
  "tier": 0,
  "time": 20,
  "items": [

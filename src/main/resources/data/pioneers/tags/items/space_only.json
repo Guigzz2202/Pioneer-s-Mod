@@ -5782,10 +5782,6 @@
    "required": false
   },
   {
-   "id": "pioneers:ultimate_cracker",
-   "required": false
-  },
-  {
    "id": "pioneers:ultimate_crusher",
    "required": false
   },
@@ -5874,6 +5870,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ultimate_glassworks",
+   "required": false
+  },
+  {
    "id": "pioneers:ultimate_heat_buffer",
    "required": false
   },
@@ -5895,6 +5895,10 @@
   },
   {
    "id": "pioneers:ultimate_item_buffer",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_joinery",
    "required": false
   },
   {
@@ -5974,6 +5978,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ultimate_sheet_metal_shop",
+   "required": false
+  },
+  {
    "id": "pioneers:ultimate_solar_panel",
    "required": false
   },
@@ -5982,7 +5990,15 @@
    "required": false
   },
   {
+   "id": "pioneers:ultimate_stoneworks",
+   "required": false
+  },
+  {
    "id": "pioneers:ultimate_substation",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_tailoring_workshop",
    "required": false
   },
   {

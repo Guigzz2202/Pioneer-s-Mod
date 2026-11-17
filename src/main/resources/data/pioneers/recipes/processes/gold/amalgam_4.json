@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "cracker",
+ "machine": "reduction_furnace",
  "tier": 0,
  "time": 200,
  "items": [

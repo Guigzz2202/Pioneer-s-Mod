@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "assembler",
+ "machine": "tailoring_workshop",
  "tier": 0,
  "time": 60,
  "items": [

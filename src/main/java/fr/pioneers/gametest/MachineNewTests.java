@@ -118,7 +118,8 @@ public final class MachineNewTests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_lot8b_decoupeuse", timeoutTicks = 800)
     public static void laminoir_bloc_neuf_plaques(GameTestHelper h) {
         Gt.begin(h);
-        AtelierTile m = atelier(h, IndustryMachine.ROLLING_MILL, new BlockPos(2, 2, 2), "industry/rolling_mill/roll_block_plate_iron");
+        //1.0.6 : la recette MKII etait le doublon de celle du laminoir a vapeur (desactivee) : le Laminoir fait celle-ci, convertie des le MKI
+        AtelierTile m = atelier(h, IndustryMachine.ROLLING_MILL, new BlockPos(2, 2, 2), "bronze/steam/rolling_mill/block_plate_iron");
         m.itemInputs().get(0).setStack(new ItemStack(Items.IRON_BLOCK, 1));
         Item plate = item("iron_plate");
         h.succeedWhen(() -> {

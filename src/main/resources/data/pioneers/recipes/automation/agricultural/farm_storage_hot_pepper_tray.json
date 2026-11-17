@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "assembler",
+ "machine": "packaging_machine",
  "tier": 0,
  "time": 130,
  "items": [

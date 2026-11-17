@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "cracker",
+ "machine": "pyrolysis_oven",
  "tier": 2,
  "time": 80,
  "items": [

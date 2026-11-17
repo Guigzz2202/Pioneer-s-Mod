@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "assembler",
+ "machine": "electromechanical_bench",
  "tier": 0,
  "time": 80,
  "items": [

@@ -3459,7 +3459,7 @@
       "pioneers:steam_wiremill",
       "pioneers:basic_rolling_mill"
      ],
-     "text": "Each steam machine also makes part of the §6MKI recipes§r of its family: §l134 recipes§r (compacting 44, smelting 18, rolling 17, grinding 14, sawing 12, wire drawing 11, sifting 8, mixing 7, turning 3). Same inputs, same outputs, same steam per tick, but §ltwice as slow§r as on the MKI machine, which stays faster and keeps its ore yields.\n• Kept for MKI: anything that uses an MKI-age material or later (steel, brass, nickel, aluminum…, ores from deep deposits), the key MKI components and milestones, recipes with fluids, gases or heat, ore yields, bench copies (in the Bronze Age benches stay manual) and anything that would bring MKI earlier.\n• With no lock, the machine makes its own recipes first; the §lselector§r then offers the opened MKI recipes (screen: “Recipe: MKI · speed ×½”).\nJEI shows them on the page of the family's §lMKI machine§r, with the MKI duration (twice as long by steam)."
+     "text": "Each steam machine also makes part of the §6MKI recipes§r of its family: §l119 recipes§r (compacting 44, rolling 18, smelting 18, grinding 14, sifting 8, wire drawing 7, mixing 7, turning 3). Same inputs, same outputs, same steam per tick, but §ltwice as slow§r as on the MKI machine, which stays faster and keeps its ore yields.\n• Kept for MKI: anything that uses an MKI-age material or later (steel, brass, nickel, aluminum…, ores from deep deposits), the key MKI components and milestones, recipes with fluids, gases or heat, ore yields, bench copies (in the Bronze Age benches stay manual) and anything that would bring MKI earlier.\n• With no lock, the machine makes its own recipes first; the §lselector§r then offers the opened MKI recipes (screen: “Recipe: MKI · speed ×½”).\nJEI shows them on the page of the family's §lMKI machine§r, with the MKI duration (twice as long by steam)."
     },
     {
      "title": "Concrete and the steam mixer",
@@ -4861,14 +4861,9 @@
      "items": [
       "pioneers:basic_extruder",
       "pioneers:extrusion_shape_rod",
-      "pioneers:extrusion_shape_wire",
-      "pioneers:extrusion_shape_ring",
-      "pioneers:extrusion_shape_pipe",
-      "pioneers:extrusion_shape_plate",
-      "pioneers:extrusion_shape_gear",
-      "pioneers:extrusion_shape_gear_blank"
+      "pioneers:extrusion_shape_pipe"
      ],
-     "text": "The §6extruder§r gives the metal §lliterally the wanted shape§r: put in the metal AND an §lextrusion shape§r (a steel die whose eye has the part's profile). It goes into the §lTool slot§r and always comes back: in a machine, shaping tooling is unbreakable. For the bench metals:\n• §lrod shape§r: 1 ingot → 2 rods, §l3 at MKII§r and above; 1 billet → 18 rods;\n• §lwire shape§r: 1 ingot → 4 wires;\n• §lring shape§r (MKII): 1 ingot → 3 rings;\n• §ltube shape§r: 1 rod → 1 tube;\n• §lplate shape§r: 1 ingot → 1 plate;\n• §lgear shape§r (MKIII): 5 ingots → 1 gear;\n• §lgear blank shape§r: 1 billet → 2 blanks.\nShapes are made at the §6basic components bench§r (or the press (forming)): 2 steel plates + the steel part that gives the profile (rod, wire, ring, gear; a ring for the tube, a gear for the blank; 3 plates for the plate shape), hammer and file. JEI shows the shape among the inputs of each recipe.",
+     "text": "The §6extruder§r pushes metal through an §lextrusion shape§r (a steel die whose eye has the part's profile): put in the metal AND the shape. It goes into the §lTool slot§r and always comes back: in a machine, shaping tooling is unbreakable.\n• §lrod shape§r: 1 ingot → 2 rods, §l3 at MKII§r and above; 1 billet → 18 rods;\n• §ltube shape§r: 1 rod → 1 tube.\n§61.0.6§r: one machine per shape. Wire is drawn (§lWiremill§r), rings are bent (§lBender§r), plates are pressed (§lPress§r), gears are cut (§lCutting Machine§r), gear blanks are forged or cast: their extrusion shapes are retired (a shape already made becomes the blank extrusion die). At MKI, the lathes' rods (mechanical and steam) are made at the extruder.\nShapes are made at the §6basic components bench§r: 2 steel plates + the steel part that gives the profile (a rod; a ring for the tube), hammer and file. JEI shows the shape among the inputs of each recipe.",
      "flow": [
       [
        {
@@ -4901,42 +4896,6 @@
         "label": "2 rods (3 at MKII)",
         "item": "pioneers:copper_rod",
         "done": true
-       }
-      ],
-      [
-       {
-        "label": "1 ingot",
-        "item": "pioneers:copper_ingot"
-       },
-       {
-        "label": "+ wire shape",
-        "item": "pioneers:extrusion_shape_wire"
-       },
-       {
-        "label": "Extruder",
-        "item": "pioneers:basic_extruder"
-       },
-       {
-        "label": "4 wires",
-        "item": "pioneers:copper_wire"
-       }
-      ],
-      [
-       {
-        "label": "5 ingots",
-        "item": "pioneers:steel_ingot"
-       },
-       {
-        "label": "+ gear shape",
-        "item": "pioneers:extrusion_shape_gear"
-       },
-       {
-        "label": "MKIII extruder",
-        "item": "pioneers:elite_extruder"
-       },
-       {
-        "label": "Gear",
-        "item": "pioneers:steel_gear"
        }
       ]
      ]
@@ -7497,10 +7456,10 @@
       "pioneers:advanced_electrolyzer",
       "pioneers:advanced_extractor",
       "pioneers:basic_casting_machine",
-      "pioneers:basic_cracker",
-      "pioneers:basic_crusher"
+      "pioneers:basic_crusher",
+      "pioneers:basic_electric_crucible"
      ],
-     "text": "§lGold§r: 5 routes (routes 1 to 4 here). JEI: “Process” page, §lR§r on the product. Each route, from the starting material to the product:\n• §lSimple route§r (MKI, 5 steps) — Crusher, industrial crucible and casting: crushing → melting → casting. §6+§r 3 ingots per ore at MKI (crucible ×1.5), then 4 / 5 / 6 at MKII / MKIII / MKIV, three MKI machines from the very first power; §6−§r no byproduct, plain metal. Alongside: melting (Molten Gold), smelting (Gold Ingot).\n• §lSimple route§r (MKII, 4 steps) — Acid leaching and electrolysis (MKII): crushing → leaching → aqueous electrolysis → smelting. §6+§r one ingot more than the crucible at the same tier: 5 / 6 / 7 ingots per ore at MKII / MKIII / MKIV; §6−§r sulfuric acid (250 mB per crushed ore), electricity; no byproduct.\n• §lSimple route§r (MKI, 4 steps) — Gravity separation on the ore separator: crushing → gravity tabling → melting → casting. §6+§r immediate; §6−§r only 40% of the gold.\n• §lComplex route§r (MKI, 7 steps) — Mercury amalgamation and distillation: crushing → fine grinding → leaching → fired heating → melting → casting. §6+§r 80% of the gold; §6−§r 10% of the mercury lost each cycle (mercury drawn from roasting gases). Alongside: chemical reaction (Mercury).",
+     "text": "§lGold§r: 5 routes (routes 1 to 4 here). JEI: “Process” page, §lR§r on the product. Each route, from the starting material to the product:\n• §lSimple route§r (MKI, 5 steps) — Crusher, industrial crucible and casting: crushing → melting → casting. §6+§r 3 ingots per ore at MKI (crucible ×1.5), then 4 / 5 / 6 at MKII / MKIII / MKIV, three MKI machines from the very first power; §6−§r no byproduct, plain metal. Alongside: melting (Molten Gold), smelting (Gold Ingot).\n• §lSimple route§r (MKII, 4 steps) — Acid leaching and electrolysis (MKII): crushing → leaching → aqueous electrolysis → smelting. §6+§r one ingot more than the crucible at the same tier: 5 / 6 / 7 ingots per ore at MKII / MKIII / MKIV; §6−§r sulfuric acid (250 mB per crushed ore), electricity; no byproduct.\n• §lSimple route§r (MKI, 4 steps) — Gravity separation on the ore separator: crushing → gravity tabling → melting → casting. §6+§r immediate; §6−§r only 40% of the gold.\n• §lComplex route§r (MKI, 7 steps) — Mercury amalgamation and distillation: crushing → fine grinding → leaching → reduction → melting → casting. §6+§r 80% of the gold; §6−§r 10% of the mercury lost each cycle (mercury drawn from roasting gases). Alongside: chemical reaction (Mercury).",
      "flow": [
       [
        {
@@ -7597,7 +7556,7 @@
         "item": "pioneers:gold_amalgam"
        },
        {
-        "label": "fired heating",
+        "label": "reduction",
         "item": "pioneers:gold_dust"
        },
        {
@@ -8237,7 +8196,7 @@
       "pioneers:borealite_ingot",
       "pioneers:hygeite_ingot"
      ],
-     "text": "The §l30 metals of the worlds§r follow one pattern: a §lsimple route§r (grinding, hydrogen reduction) and the route of their §larchetype§r (oxide, sulfide, exotic), at the world’s tier. The diagram shows one world per archetype; JEI has one page per metal.\n• §lSimple route§r (MKIV, 2 steps) — Grinding and hydrogen reduction (world pattern, simple route): fine grinding → reduction. §6+§r common reagents, two machines; §6−§r yields little (two dusts per ingot), worthless slag, hungry reduction. Every world with ore.\n• §lComplex route§r (MKIV, 5 steps) — Oxide archetype: optical sorting, coke reduction and arc furnace refining: optical sorting → reduction → arc furnace. §6+§r two ingots per ore; the world’s byproduct at sorting; §6−§r coke, electrodes and argon; hungry reduction. Alongside: sintering (Graphite Electrode), air separation (Nitrogen). Worlds: Borealite, Deimite, Edenite, Pallasite, Phobite, Sulcite, Tolimanite, Valhallite, Veronite, Vestalite.\n• §lComplex route§r (MKIV, 5 steps) — Sulfide archetype: flotation, sulfating roast, electrolysis and remelting: flotation → roasting → electrolysis → vacuum remelting. §6+§r two ingots per ore, sulfur and acid, precious metal at the cell; §6−§r electricity, sulfuric acid. Alongside: chemical reaction (Sulfuric Acid). Worlds: Hygeite, Lokite, Mercurium, Messinite, Mordorite, Pyrrhite, Terminite, Tharsium, Venusium.\n• §lVery complex route§r (MKIV, 8 steps) — Exotic archetype: the world’s signature step: optical sorting → world signature step → autoclaving → vacuum remelting. §6+§r two and a half ingots per ore; a material of its own; §6−§r a block of the world to bring back, hot cell and cracker for the active residues. Alongside: fired heating (sand), chemical reaction (Hydrochloric Acid), electrolysis (Hydrogen), air separation (Nitrogen). Worlds: Ahunite, Conamarite, Flarium, Krakenite, Lunarium, Marsium, Ruachite, Sputnikite, Thalassite, Tigrite.",
+     "text": "The §l30 metals of the worlds§r follow one pattern: a §lsimple route§r (grinding, hydrogen reduction) and the route of their §larchetype§r (oxide, sulfide, exotic), at the world’s tier. The diagram shows one world per archetype; JEI has one page per metal.\n• §lSimple route§r (MKIV, 2 steps) — Grinding and hydrogen reduction (world pattern, simple route): fine grinding → reduction. §6+§r common reagents, two machines; §6−§r yields little (two dusts per ingot), worthless slag, hungry reduction. Every world with ore.\n• §lComplex route§r (MKIV, 5 steps) — Oxide archetype: optical sorting, coke reduction and arc furnace refining: optical sorting → reduction → arc furnace. §6+§r two ingots per ore; the world’s byproduct at sorting; §6−§r coke, electrodes and argon; hungry reduction. Alongside: sintering (Graphite Electrode), air separation (Nitrogen). Worlds: Borealite, Deimite, Edenite, Pallasite, Phobite, Sulcite, Tolimanite, Valhallite, Veronite, Vestalite.\n• §lComplex route§r (MKIV, 5 steps) — Sulfide archetype: flotation, sulfating roast, electrolysis and remelting: flotation → roasting → electrolysis → vacuum remelting. §6+§r two ingots per ore, sulfur and acid, precious metal at the cell; §6−§r electricity, sulfuric acid. Alongside: chemical reaction (Sulfuric Acid). Worlds: Hygeite, Lokite, Mercurium, Messinite, Mordorite, Pyrrhite, Terminite, Tharsium, Venusium.\n• §lVery complex route§r (MKIV, 8 steps) — Exotic archetype: the world’s signature step: optical sorting → world signature step → autoclaving → vacuum remelting. §6+§r two and a half ingots per ore; a material of its own; §6−§r a block of the world to bring back, hot cell and cracker for the active residues. Alongside: reduction (sand), chemical reaction (Hydrochloric Acid), electrolysis (Hydrogen), air separation (Nitrogen). Worlds: Ahunite, Conamarite, Flarium, Krakenite, Lunarium, Marsium, Ruachite, Sputnikite, Thalassite, Tigrite.",
      "flow": [
       [
        {
@@ -8738,7 +8697,7 @@
       "pioneers:mox_assembly",
       "pioneers:fragment_fuel_cartridge"
      ],
-     "text": "One row per material (its first route); every route is in JEI (“Process” page, §lR§r on the product).\n§lDepleted Uranium Blanket§r (1 route):\n• §lRoute§r (MKIII, 12 steps) — via Compact Assembler MKIII, from Ground Pitchblende: flotation → leaching → solvent extraction → solvent extraction → roasting → fluidized bed → fluidized bed → enrichment → fluidized bed → Kroll process → rolling → assembly.\n§lMOX Assembly§r (1 route):\n• §lRoute§r (MKIII, 5 steps) — via Compact Assembler MKIII, from Irradiated Thorium Blanket: hot cell work → mixing → compacting → welding → assembly.\n§lFragment Fuel Cartridge§r (1 route):\n• §lRoute§r (MKIV, 12 steps) — via Compact Assembler MKIV, from Pitchblende Concentrate: leaching → solvent extraction → solvent extraction → roasting → fluidized bed → fluidized bed → enrichment → enrichment → enrichment → fluidized bed → hot cell work → assembly.",
+     "text": "One row per material (its first route); every route is in JEI (“Process” page, §lR§r on the product).\n§lDepleted Uranium Blanket§r (1 route):\n• §lRoute§r (MKIII, 12 steps) — via Compact Assembler MKIII, from Ground Pitchblende: flotation → leaching → solvent extraction → solvent extraction → roasting → fluidized bed → fluidized bed → enrichment → fluidized bed → Kroll process → pressing → assembly.\n§lMOX Assembly§r (1 route):\n• §lRoute§r (MKIII, 5 steps) — via Compact Assembler MKIII, from Irradiated Thorium Blanket: hot cell work → mixing → compacting → welding → assembly.\n§lFragment Fuel Cartridge§r (1 route):\n• §lRoute§r (MKIV, 12 steps) — via Compact Assembler MKIV, from Pitchblende Concentrate: leaching → solvent extraction → solvent extraction → roasting → fluidized bed → fluidized bed → enrichment → enrichment → enrichment → fluidized bed → hot cell work → assembly.",
      "flow": [
       [
        {
@@ -8855,7 +8814,7 @@
       "pioneers:creosote_bucket",
       "pioneers:diesel_bucket"
      ],
-     "text": "One row per material (its first route); every route is in JEI (“Process” page, §lR§r on the product).\n§lBenzol§r (3 routes):\n• §lRoute§r (MKI, 2 steps) — via Compact Distillery MKI, from Coal: pyrolysis → selective distillation.\n• §lRoute§r (MKII, 2 steps) — via Industrial Gas Separator, from Raw Oil: selective distillation → gas processing.\n§lBiodiesel§r (1 route):\n• §lRoute§r (MKI, 3 steps) — via Compact Chemical Reactor MKI, from Brine: membrane electrolysis → drying → chemical reaction.\n§lCreosote§r (5 routes; 1 more routes in JEI):\n• §lRoute§r (MKI, 2 steps) — via Compact Distillery MKI, from Coal: pyrolysis → selective distillation.\n• §lRoute§r (MKI, 1 step) — via Coke Oven Battery, from : coking.\n§lDiesel§r (8 routes; 4 more routes in JEI):\n• §lRoute§r (MKI, 1 step) — via Compact Distillery MKI, from Heavy Crude Oil: selective distillation.\n• §lRoute§r (MKII, 3 steps) — via Compact Mixer MKI, from beef: fired heating → hydrocracking → mixing.",
+     "text": "One row per material (its first route); every route is in JEI (“Process” page, §lR§r on the product).\n§lBenzol§r (3 routes):\n• §lRoute§r (MKI, 2 steps) — via Compact Distillery MKI, from Coal: pyrolysis → selective distillation.\n• §lRoute§r (MKII, 2 steps) — via Industrial Gas Separator, from Raw Oil: selective distillation → gas processing.\n§lBiodiesel§r (1 route):\n• §lRoute§r (MKI, 3 steps) — via Compact Chemical Reactor MKI, from Brine: membrane electrolysis → drying → chemical reaction.\n§lCreosote§r (5 routes; 1 more routes in JEI):\n• §lRoute§r (MKI, 2 steps) — via Compact Distillery MKI, from Coal: pyrolysis → selective distillation.\n• §lRoute§r (MKI, 1 step) — via Coke Oven Battery, from : coking.\n§lDiesel§r (8 routes; 4 more routes in JEI):\n• §lRoute§r (MKI, 1 step) — via Compact Distillery MKI, from Heavy Crude Oil: selective distillation.\n• §lRoute§r (MKII, 3 steps) — via Compact Mixer MKI, from beef: extraction → hydrocracking → mixing.",
      "flow": [
       [
        {
@@ -9476,7 +9435,7 @@
       "pioneers:basic_crusher",
       "pioneers:industrial_crusher"
      ],
-     "text": "The §lcrusher§r stays the kit machine (same mechanism: raw ore into 2 crushed ores, its fixed duration) and also does the §6fine grinding§r of the former ball mill: crushed ore → dust, ingot → dust. 1.0.6: no more water, a single item input.\n§6Processes§r\n• §lCrushing§r (own recipes): 8 recipes\n• §lFine grinding§r (former ball mill): 92 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lcrusher§r stays the kit machine (same mechanism: raw ore into 2 crushed ores, its fixed duration) and also does the §6fine grinding§r of the former ball mill: crushed ore → dust, ingot → dust. 1.0.6: no more water, a single item input.\n§6Processes§r\n• §lCrushing§r (own recipes): 8 recipes\n• §lFine grinding§r (former ball mill): 92 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -9521,7 +9480,7 @@
       "pioneers:basic_ore_separator",
       "pioneers:industrial_ore_separator"
      ],
-     "text": "The §lore separator§r (formerly the vibrating screen) §6concentrates§r ore by every physical route: screening, flotation (water and reagent: 2 inputs, water tank), magnetic separation, gravity tabling, optical sorting (up to 4 outputs).\n§6Processes§r\n• §lScreening§r (own recipes): 17 recipes\n• §lFlotation§r (former flotation cell): 25 recipes\n• §lMagnetic separation§r (former magnetic separator): 15 recipes\n• §lGravity (table)§r (former shaking table): 9 recipes\n• §lOptical sorting§r (former optical sorter): 28 recipes\n§6Same inputs§r: crushed ilmenite, crushed redstone ore, tailings. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lore separator§r (formerly the vibrating screen) §6concentrates§r ore by every physical route: screening, flotation (water and reagent: 2 inputs, water tank), magnetic separation, gravity tabling, optical sorting (up to 4 outputs).\n§6Processes§r\n• §lScreening§r (own recipes): 17 recipes\n• §lFlotation§r (former flotation cell): 25 recipes\n• §lMagnetic separation§r (former magnetic separator): 15 recipes\n• §lGravity (table)§r (former shaking table): 9 recipes\n• §lOptical sorting§r (former optical sorter): 28 recipes\n§6Same inputs§r: crushed ilmenite, crushed redstone ore, tailings. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -9600,7 +9559,7 @@
       "pioneers:basic_furnace",
       "pioneers:industrial_furnace"
      ],
-     "text": "The §lindustrial furnace§r (formerly the electric furnace, the kit machine for smelting) §6smelts§r: ores, dusts, food; one input, one output. 1.0.6: what transformed matter under a gas (roasting, reduction, sintering, doping) moves to the §lCalciner§r, quenching to the §lChemical Bath§r.\n§6Processes§r\n• §lSmelting§r (deposits of the former pumpjack)\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe."
+     "text": "The §lindustrial furnace§r (formerly the electric furnace, the kit machine for smelting) §6smelts§r: ores, dusts, food; one input, one output. 1.0.6: what transformed matter under a gas (roasting, reduction, sintering, doping) moves to the §lCalciner§r, quenching to the §lChemical Bath§r.\n§6Processes§r\n• §lSmelting§r (deposits of the former pumpjack)\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Generic machines",
@@ -9609,12 +9568,12 @@
       "pioneers:basic_reduction_furnace",
       "pioneers:industrial_reduction_furnace"
      ],
-     "text": "The §lCalciner§r §6transforms matter with heat under a gas§r: §lreduction§r (oxide + reductant → metal, under argon or hydrogen), §lroasting§r (sulfide + oxygen → oxide and sulfur dioxide; limestone → lime), §lsintering§r (powders bonded without melting: anodes, carbides, diamond discs) and wafer §ldoping§r (phosphine, diborane). Three item inputs, one gas in and one out.\n§6Processes§r\n• §lReduction§r (own recipes): 60 recipes\n• §lOxidize (roasting)§r (former calciner (roasting)): 32 recipes\n• §lSinter§r (former calciner (sintering)): 46 recipes\n• §lDope (diffusion)§r (former calciner (diffusion)): 8 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lCalciner§r §6transforms matter with heat, under a gas or in air§r: §lreduction§r (oxide + reductant → metal, under argon or hydrogen), §lroasting§r (sulfide + oxygen → oxide and sulfur dioxide; limestone → lime), §lcalcining§r and degassing (decomposed salt, degassed rock, mercury distilled from an amalgam), carbon §lactivation§r under steam, catalyst §lregeneration§r in air, §lsintering§r (powders bonded without melting: anodes, carbides, diamond discs) and wafer §ldoping§r (phosphine, diborane). Three item inputs, one gas in, one gas and one fluid out.\n§6Processes§r\n• §lReduction§r (own recipes): 74 recipes\n• §lOxidize (roasting)§r (former calciner (roasting)): 32 recipes\n• §lSinter§r (former calciner (sintering)): 46 recipes\n• §lDope (diffusion)§r (former calciner (diffusion)): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
         "label": "Reduction",
-        "item": "pioneers:emerald_dust",
+        "item": "pioneers:charcoal",
         "done": true
        },
        {
@@ -9624,7 +9583,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:beryllium_pebbles",
+        "item": "pioneers:activated_carbon",
         "next": true
        }
       ],
@@ -9688,7 +9647,7 @@
       "pioneers:basic_electric_crucible",
       "pioneers:industrial_electric_crucible"
      ],
-     "text": "The §lindustrial crucible§r (formerly the electric crucible) melts metals and ore, and takes over §6vacuum§r work (reactive metals under argon, float-zone silicon, Josephson junction…) and the §6glass§r of the former glass furnace (soda glass, float glass, borosilicate frit, fused silica, arc lamp…). Three solid inputs (+ one gas) → one molten metal and a byproduct (slag). Since 1.0.5-beta, §6direct§r alloys (solid → solid) are made in the §linduction furnace§r, a machine of its own again, and the crucible no longer makes plain steel: steel comes from the §lblast furnace§r.\n§6Processes§r\n• §lMelt§r (own recipes): 356 recipes\n• §lVacuum§r (former vacuum furnace): 51 recipes\n• §lGlass§r (former glass furnace): 13 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lindustrial crucible§r (formerly the electric crucible) melts metals and ore, and takes over §6vacuum§r work (reactive metals under argon, float-zone silicon, Josephson junction…) and the §6glass§r of the former glass furnace (soda glass, float glass, borosilicate frit, fused silica, arc lamp…). Three solid inputs (+ one gas) → one molten metal and a byproduct (slag). Since 1.0.5-beta, §6direct§r alloys (solid → solid) are made in the §linduction furnace§r, a machine of its own again, and the crucible no longer makes plain steel: steel comes from the §lblast furnace§r.\n§6Processes§r\n• §lMelt§r (own recipes): 356 recipes\n• §lVacuum§r (former vacuum furnace): 46 recipes\n• §lGlass§r (former glass furnace): 11 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -9727,7 +9686,7 @@
       [
        {
         "label": "Glass",
-        "item": "pioneers:fused_silica",
+        "item": "minecraft:sand",
         "done": true
        },
        {
@@ -9737,7 +9696,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:arc_lamp",
+        "item": "pioneers:borosilicate_frit",
         "next": true
        }
       ]
@@ -9747,29 +9706,9 @@
      "section": "Generic machines",
      "title": "The Cracker",
      "items": [
-      "pioneers:basic_cracker",
       "pioneers:industrial_cracker"
      ],
-     "text": "The §lCracker§r (formerly the fired heater) §6cracks§r hydrocarbons. Its multiblock, the §lindustrial cracker§r, takes over §lsteam cracking§r (ethane, naphtha → ethylene, propylene), §ldelayed coking§r (residues → petroleum coke), §lcatalytic cracking§r (vacuum gas oil → gasoline) and §lhydrocracking§r (under hydrogen and pressure): §lmultiblock-only§r recipes. The compact keeps the fired heater's recipes: visbreaking, pyrolysis of plastics and sludge, activated carbon, carbon black, acetylene, vinyl chloride, radon, catalyst regeneration, fat rendering.\n§6Processes§r\n• §lHeating§r (own recipes): 28 recipes\n• §lSteam cracking§r (former steam cracker; multiblock only): 9 recipes\n• §lDelayed coking§r (former delayed coker; multiblock only): 8 recipes\n• §lCatalytic cracking§r (former fluid catalytic cracker; multiblock only): 8 recipes\n• §lHydrocracking§r (former hydrocracker; multiblock only): 11 recipes\n§6Same inputs§r: fuel oil, atmospheric residue. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
-     "flow": [
-      [
-       {
-        "label": "Heating",
-        "item": "pioneers:charcoal",
-        "done": true
-       },
-       {
-        "label": "Cracker",
-        "item": "pioneers:basic_cracker",
-        "next": true
-       },
-       {
-        "label": "",
-        "item": "pioneers:activated_carbon",
-        "next": true
-       }
-      ]
-     ]
+     "text": "The §lCracker§r (formerly the fired heater) §6cracks§r hydrocarbons and gases, §lmultiblock only§r (1.0.6: its compacts become its controller): §lsteam cracking§r (ethane, naphtha → ethylene, propylene), §ldelayed coking§r (residues → petroleum coke), §lcatalytic cracking§r (vacuum gas oil → gasoline), §lhydrocracking§r (under hydrogen and pressure), visbreaking, carbon black, acetylene, vinyl chloride, tetrafluoroethylene. Solid pyrolysis goes to the §lpyrolysis oven§r; calcining, activated carbon and catalyst regeneration to the §lCalciner§r.\n§6Processes§r\n• §lHeating§r (own recipes): 5 recipes\n• §lSteam cracking§r (former steam cracker; multiblock only): 9 recipes\n• §lDelayed coking§r (former delayed coker; multiblock only): 8 recipes\n• §lCatalytic cracking§r (former fluid catalytic cracker; multiblock only): 8 recipes\n• §lHydrocracking§r (former hydrocracker; multiblock only): 11 recipes\n§6Same inputs§r: fuel oil, atmospheric residue. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Generic machines",
@@ -9778,7 +9717,7 @@
       "pioneers:basic_chemical_reactor",
       "pioneers:industrial_chemical_reactor"
      ],
-     "text": "The §lchemical reactor§r gathers all synthesis. Compact and multiblock: §6catalysis§r (the catalyst goes in an input slot; it comes back 95% of the time, wears out 5% of the time and is regenerated at the Cracker), the §lfluidized bed§r (uranium conversion) and §lpolymerization§r (pellets, PTFE, butyl rubber). Multiblock only: §lcatalytic reforming§r, §lFischer-Tropsch§r, §lammonia§r (Haber-Bosch, under pressure), §lnitric acid§r (Ostwald), §lsteam reforming§r and §lgasification§r. Two item inputs and three outputs, three fluid tanks each way, three gas inputs and two outputs.\n§6Processes§r\n• §lSynthesis§r (own recipes): 87 recipes\n• §lCatalysis§r (former catalytic reactor): 26 recipes\n• §lFluidized bed§r (former fluidized bed reactor): 14 recipes\n• §lPolymerization§r (former polymerizer): 8 recipes\n• §lCatalytic reforming§r (former catalytic reformer; multiblock only): 8 recipes\n• §lFischer-Tropsch§r (former fischer-tropsch reactor; multiblock only): 8 recipes\n• §lAmmonia (Haber-Bosch)§r (former ammonia plant; multiblock only): 8 recipes\n• §lNitric acid (Ostwald)§r (former nitric acid plant; multiblock only): 8 recipes\n• §lSteam reforming§r (former steam methane reformer; multiblock only): 8 recipes\n• §lGasification§r (former gasifier; multiblock only): 11 recipes\n§6Same inputs§r: hydrogen and nitrogen (iron catalyst), natural gas and steam, methane and steam, ammonia and oxygen, nitrogen dioxide and water. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lchemical reactor§r gathers all synthesis. Compact and multiblock: §6catalysis§r (the catalyst goes in an input slot; it comes back 95% of the time, wears out 5% of the time and is regenerated at the Cracker), the §lfluidized bed§r (uranium conversion) and §lpolymerization§r (pellets, PTFE, butyl rubber). Multiblock only: §lcatalytic reforming§r, §lFischer-Tropsch§r, §lammonia§r (Haber-Bosch, under pressure), §lnitric acid§r (Ostwald), §lsteam reforming§r and §lgasification§r. Two item inputs and three outputs, three fluid tanks each way, three gas inputs and two outputs.\n§6Processes§r\n• §lSynthesis§r (own recipes): 87 recipes\n• §lCatalysis§r (former catalytic reactor): 26 recipes\n• §lFluidized bed§r (former fluidized bed reactor): 14 recipes\n• §lPolymerization§r (former polymerizer): 8 recipes\n• §lCatalytic reforming§r (former catalytic reformer; multiblock only): 8 recipes\n• §lFischer-Tropsch§r (former fischer-tropsch reactor; multiblock only): 8 recipes\n• §lAmmonia (Haber-Bosch)§r (former ammonia plant; multiblock only): 8 recipes\n• §lNitric acid (Ostwald)§r (former nitric acid plant; multiblock only): 8 recipes\n• §lSteam reforming§r (former steam methane reformer; multiblock only): 8 recipes\n• §lGasification§r (former gasifier; multiblock only): 11 recipes\n§6Same inputs§r: hydrogen and nitrogen (iron catalyst), natural gas and steam, methane and steam, ammonia and oxygen, nitrogen dioxide and water. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -9857,7 +9796,7 @@
       "pioneers:basic_autoclave",
       "pioneers:industrial_autoclave"
      ],
-     "text": "The §lautoclave§r runs reactions under pressure (leaching, composites, urea, soda ash, zeolite) and takes over the §6vulcanization§r of the former vulcanizer: vulcanized rubber, rubber sheets, soles, coated canvas, tires, conveyor belts. Its MKI model is built with a §lleather gasket§r: it is the machine that makes the rubber for rubber gaskets.\n§6Processes§r\n• §lAutoclaving§r (own recipes): 32 recipes\n• §lVulcanization§r (former vulcanizer): 9 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lautoclave§r runs reactions under pressure (leaching, composites, urea, soda ash, zeolite) and takes over the §6vulcanization§r of the former vulcanizer: vulcanized rubber, rubber sheets, soles, coated canvas, tires, conveyor belts. Its MKI model is built with a §lleather gasket§r: it is the machine that makes the rubber for rubber gaskets.\n§6Processes§r\n• §lAutoclaving§r (own recipes): 32 recipes\n• §lVulcanization§r (former vulcanizer): 9 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -9902,7 +9841,7 @@
       "pioneers:basic_electrolyzer",
       "pioneers:industrial_electrolyzer"
      ],
-     "text": "The §lelectrolyzer§r splits water, brine and molten salts, and takes over §6membrane electrolysis§r (caustic soda, hypochlorite, deuterium, tritium, lithium) and §lelectrorefining§r (pure metals). Multiblock only: §lfluorine§r and §lHall-Héroult aluminum§r (alumina from the Bayer digesters, cryolite, anodes). The industrial electrolyzer's controller is built with two §lcarbon anodes§r, like the former potline.\n§6Processes§r\n• §lElectrolysis§r (own recipes): 26 recipes\n• §lMembrane electrolysis§r (former membrane cell): 8 recipes\n• §lElectrorefining§r (former electrorefiner): 16 recipes\n• §lFluorine§r (former fluorine plant; multiblock only): 8 recipes\n• §lAluminum (Hall-Héroult)§r (former hall-héroult potline; multiblock only): 8 recipes\n§6Same inputs§r: brine. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lelectrolyzer§r splits water, brine and molten salts, and takes over §6membrane electrolysis§r (caustic soda, hypochlorite, deuterium, tritium, lithium) and §lelectrorefining§r (pure metals). Multiblock only: §lfluorine§r and §lHall-Héroult aluminum§r (alumina from the Bayer digesters, cryolite, anodes). The industrial electrolyzer's controller is built with two §lcarbon anodes§r, like the former potline.\n§6Processes§r\n• §lElectrolysis§r (own recipes): 26 recipes\n• §lMembrane electrolysis§r (former membrane cell): 8 recipes\n• §lElectrorefining§r (former electrorefiner): 16 recipes\n• §lFluorine§r (former fluorine plant; multiblock only): 8 recipes\n• §lAluminum (Hall-Héroult)§r (former hall-héroult potline; multiblock only): 8 recipes\n§6Same inputs§r: brine. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -9981,7 +9920,7 @@
       "pioneers:basic_fermenter",
       "pioneers:industrial_fermenter"
      ],
-     "text": "The §lfermenter§r makes ethanol, drinks and fermented food, and takes over the §6anaerobic digestion§r of the former anaerobic digester: biomass + water → §lbiogas§r, digestate and a little fertilizer.\n§6Processes§r\n• §lFermentation§r (own recipes): 39 recipes\n• §lAnaerobic digestion§r (former anaerobic digester): 16 recipes\n§6Same inputs§r: vegetables, fruit, wheat. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lfermenter§r makes ethanol, drinks and fermented food, and takes over the §6anaerobic digestion§r of the former anaerobic digester: biomass + water → §lbiogas§r, digestate and a little fertilizer.\n§6Processes§r\n• §lFermentation§r (own recipes): 39 recipes\n• §lAnaerobic digestion§r (former anaerobic digester): 16 recipes\n§6Same inputs§r: vegetables, fruit, wheat. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10025,7 +9964,7 @@
      "items": [
       "pioneers:distillation_column"
      ],
-     "text": "The §ldistillation column§r (multiblock only, formerly the atmospheric column: each fraction leaves through the port tier at its height) distills crude oils and takes over the §6rectification§r of the former tower (alcohols, benzol, tar, liquid air), §lvacuum distillation§r (residues → vacuum gas oil, base oils, paraffin) and the §lstripping§r of the former stripping column (sour gas and water, Girdler heavy water, spirits from the still). A compact stripping column already placed becomes the column's controller (its contents do not follow).\n§6Processes§r\n• §lAtmospheric distillation§r (own recipes): 8 recipes\n• §lRectification§r (former distillation tower; multiblock only): 8 recipes\n• §lVacuum distillation§r (former vacuum column; multiblock only): 8 recipes\n• §lStripping§r (former stripping column): 12 recipes\n§6Same inputs§r: bitumen, heavy crude oil, raw oil, synthetic crude, coal tar, crude titanium tetrachloride. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe."
+     "text": "The §ldistillation column§r (multiblock only, formerly the atmospheric column: each fraction leaves through the port tier at its height) distills crude oils and takes over the §6rectification§r of the former tower (alcohols, benzol, tar, liquid air), §lvacuum distillation§r (residues → vacuum gas oil, base oils, paraffin) and the §lstripping§r of the former stripping column (sour gas and water, Girdler heavy water, spirits from the still). A compact stripping column already placed becomes the column's controller (its contents do not follow).\n§6Processes§r\n• §lAtmospheric distillation§r (own recipes): 8 recipes\n• §lRectification§r (former distillation tower; multiblock only): 8 recipes\n• §lVacuum distillation§r (former vacuum column; multiblock only): 8 recipes\n• §lStripping§r (former stripping column): 12 recipes\n§6Same inputs§r: bitumen, heavy crude oil, raw oil, synthetic crude, coal tar, crude titanium tetrachloride. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Generic machines",
@@ -10034,12 +9973,12 @@
       "pioneers:basic_extractor",
       "pioneers:industrial_extractor"
      ],
-     "text": "The §lextractor§r pulls a substance out of its carrier with hot water, steam, a solvent or supercritical CO₂, and takes over the §6leaching§r of the former tank (acids and cyanide on crushed ores: metal solutions for the electrolyzer), the §lsolvent extraction§r of the former solvent extractor (uranium, nickel, cobalt, rare earths, platinum group) and the §loil pressing§r of the former press (seeds, fish, algae → oil and press cake; kitchen juices). Two item inputs and two outputs, two fluid tanks each way, one gas tank.\n§6Processes§r\n• §lExtraction§r (own recipes): 42 recipes\n• §lLeaching§r (former leaching tank): 30 recipes\n• §lSolvent extraction§r (former solvent extractor): 9 recipes\n• §lOil pressing§r (former oil press): 25 recipes\n§6Same inputs§r: press cake and naphtha. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lextractor§r pulls a substance out of its carrier with hot water, steam, a solvent or supercritical CO₂, and takes over the §6leaching§r of the former tank (acids and cyanide on crushed ores: metal solutions for the electrolyzer), the §lsolvent extraction§r of the former solvent extractor (uranium, nickel, cobalt, rare earths, platinum group) and the §loil pressing§r of the former press (seeds, fish, algae → oil and press cake; kitchen juices). Two item inputs and two outputs, two fluid tanks each way, one gas tank.\n§6Processes§r\n• §lExtraction§r (own recipes): 47 recipes\n• §lLeaching§r (former leaching tank): 30 recipes\n• §lSolvent extraction§r (former solvent extractor): 9 recipes\n• §lOil pressing§r (former oil press): 25 recipes\n§6Same inputs§r: press cake and naphtha. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
         "label": "Extraction",
-        "item": "pioneers:honey_frame",
+        "item": "minecraft:beef",
         "done": true
        },
        {
@@ -10049,7 +9988,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:beeswax",
+        "item": "minecraft:bone_meal",
         "next": true
        }
       ],
@@ -10096,7 +10035,7 @@
       "pioneers:basic_centrifuge",
       "pioneers:industrial_centrifuge"
      ],
-     "text": "The §lcentrifuge§r separates phases by density (sugar, cream, honey, red mud; the light isotopes — lithium-6, carbon-13, nitrogen-15 — stay here) and takes over the §6decanting§r of the former decanter (water, oil, sludge), crude §ldesalting§r (desalted crude, brine) and the gas §ldust removal§r of the former cyclone separator. Its MKI model has a bowl driven by a §lleather belt§r.\n§6Processes§r\n• §lCentrifuging§r (own recipes): 16 recipes\n• §lDecanting§r (former decanter): 9 recipes\n• §lDesalting§r (former desalter): 8 recipes\n• §lDust removal (cyclone)§r (former cyclone separator): 8 recipes\n§6Same inputs§r: red mud, produced water. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lcentrifuge§r separates phases by density (sugar, cream, honey, red mud; the light isotopes — lithium-6, carbon-13, nitrogen-15 — stay here) and takes over the §6decanting§r of the former decanter (water, oil, sludge), crude §ldesalting§r (desalted crude, brine) and the gas §ldust removal§r of the former cyclone separator. Its MKI model has a bowl driven by a §lleather belt§r.\n§6Processes§r\n• §lCentrifuging§r (own recipes): 16 recipes\n• §lDecanting§r (former decanter): 9 recipes\n• §lDesalting§r (former desalter): 8 recipes\n• §lDust removal (cyclone)§r (former cyclone separator): 8 recipes\n§6Same inputs§r: red mud, produced water. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10141,7 +10080,7 @@
       "pioneers:basic_crystallizer",
       "pioneers:industrial_crystallizer"
      ],
-     "text": "The §lcrystallizer§r grows crystals and gems (salts, sulfates, Verneuil gems) and takes over the Czochralski §6crystal pulling§r of the former crystal puller: single-crystal silicon ingots and gem boules, to be sawn into wafers.\n§6Processes§r\n• §lCrystallization§r (own recipes): 11 recipes\n• §lCrystal pulling (Czochralski)§r (former crystal puller): 8 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lcrystallizer§r grows crystals and gems (salts, sulfates, Verneuil gems) and takes over the Czochralski §6crystal pulling§r of the former crystal puller: single-crystal silicon ingots and gem boules, to be sawn into wafers.\n§6Processes§r\n• §lCrystallization§r (own recipes): 11 recipes\n• §lCrystal pulling (Czochralski)§r (former crystal puller): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10186,7 +10125,7 @@
       "pioneers:basic_gas_separator",
       "pioneers:industrial_gas_separator"
      ],
-     "text": "The §lGas Separator§r (formerly the membrane separator) splits gas mixtures: §6membranes§r (helium, hydrogen, nitrogen) and §lPSA adsorption§r (pure hydrogen, oxygen, nitrogen), compact and multiblock. Multiblock only: the §lair separation§r of the former unit (nitrogen, oxygen, argon, neon, krypton, xenon; only in an atmosphere, as before) and the §lgas processing§r of the former plant (raw gas → methane, ethane, LPG, condensate; sulfur and helium). The industrial separator's controller is built like the former gas processing plant (heat exchangers, mesh, pump).\n§6Processes§r\n• §lMembranes§r (own recipes): 8 recipes\n• §lAdsorption (PSA)§r (former psa unit): 8 recipes\n• §lAir separation§r (former air separation unit; multiblock only): 8 recipes\n• §lGas processing§r (former gas processing plant; multiblock only): 8 recipes\n§6Same inputs§r: refinery gas. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe."
+     "text": "The §lGas Separator§r (formerly the membrane separator) splits gas mixtures: §6membranes§r (helium, hydrogen, nitrogen) and §lPSA adsorption§r (pure hydrogen, oxygen, nitrogen), compact and multiblock. Multiblock only: the §lair separation§r of the former unit (nitrogen, oxygen, argon, neon, krypton, xenon; only in an atmosphere, as before) and the §lgas processing§r of the former plant (raw gas → methane, ethane, LPG, condensate; sulfur and helium). The industrial separator's controller is built like the former gas processing plant (heat exchangers, mesh, pump).\n§6Processes§r\n• §lMembranes§r (own recipes): 8 recipes\n• §lAdsorption (PSA)§r (former psa unit): 8 recipes\n• §lAir separation§r (former air separation unit; multiblock only): 8 recipes\n• §lGas processing§r (former gas processing plant; multiblock only): 8 recipes\n§6Same inputs§r: refinery gas. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Generic machines",
@@ -10194,7 +10133,7 @@
      "items": [
       "pioneers:centrifuge_cascade"
      ],
-     "text": "The §lcentrifuge cascade§r (multiblock only) enriches uranium hexafluoride stage by stage and takes over the §6laser separation§r of the former laser isotope separator: the same isotopes, faster at MKIV (lock it in the §lRecipes§r tab). A compact laser separator already placed becomes the cascade's controller: its items drop on the ground.\n§6Processes§r\n• §lGas centrifuging§r (own recipes): 6 recipes\n• §lLaser separation§r (former laser isotope separator): 6 recipes\n§6Same inputs§r: carbon dioxide, uranium hexafluoride, enriched uranium hexafluoride, HALEU hexafluoride, nitrogen, depleted uranium hexafluoride. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe."
+     "text": "The §lcentrifuge cascade§r (multiblock only) enriches uranium hexafluoride stage by stage and takes over the §6laser separation§r of the former laser isotope separator: the same isotopes, faster at MKIV (lock it in the §lRecipes§r tab). A compact laser separator already placed becomes the cascade's controller: its items drop on the ground.\n§6Processes§r\n• §lGas centrifuging§r (own recipes): 6 recipes\n• §lLaser separation§r (former laser isotope separator): 6 recipes\n§6Same inputs§r: carbon dioxide, uranium hexafluoride, enriched uranium hexafluoride, HALEU hexafluoride, nitrogen, depleted uranium hexafluoride. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Generic machines",
@@ -10203,7 +10142,7 @@
       "pioneers:basic_cryogenic_unit",
       "pioneers:industrial_cryogenic_unit"
      ],
-     "text": "The §lCryogenic Unit§r (formerly the gas compressor) compresses and §6liquefies§r gases (LPG, LNG, liquid hydrogen), takes over the §lrefrigeration§r of the former chiller (below 250 K: liquid chlorine, butane, cold crystallization) and the §lheat exchange§r of the former plate heat exchanger (heat recovery, vaporization of liquefied gases).\n§6Processes§r\n• §lCompression, liquefaction§r (own recipes): 9 recipes\n• §lRefrigeration§r (former chiller): 8 recipes\n• §lHeat exchange§r (former plate heat exchanger): 12 recipes\n§6Same inputs§r: ammonia, natural gas, hydrogen, butane. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe."
+     "text": "The §lCryogenic Unit§r (formerly the gas compressor) compresses and §6liquefies§r gases (LPG, LNG, liquid hydrogen), takes over the §lrefrigeration§r of the former chiller (below 250 K: liquid chlorine, butane, cold crystallization) and the §lheat exchange§r of the former plate heat exchanger (heat recovery, vaporization of liquefied gases).\n§6Processes§r\n• §lCompression, liquefaction§r (own recipes): 9 recipes\n• §lRefrigeration§r (former chiller): 8 recipes\n• §lHeat exchange§r (former plate heat exchanger): 12 recipes\n§6Same inputs§r: ammonia, natural gas, hydrogen, butane. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Generic machines",
@@ -10211,7 +10150,7 @@
      "items": [
       "pioneers:industrial_hot_cell"
      ],
-     "text": "The §lHot Cell§r is now a §6multiblock only§r: it opens irradiated targets, separates isotopes, makes sources and takes over the PUREX and THOREX §lreprocessing§r of the former plant (uranium, plutonium, neptunium, waste) and the §lvitrification§r of high-level waste of the former furnace. Its controller is built with lead and stepper motors; its trade block, the manipulator station, with the tempered glass of the window. A compact hot cell already placed becomes the controller: its items drop on the ground.\n§6Processes§r\n• §lHandling§r (own recipes): 11 recipes\n• §lReprocessing (PUREX)§r (former reprocessing plant; multiblock only): 8 recipes\n• §lVitrification§r (former vitrification furnace): 8 recipes\n§6Same inputs§r: high-level waste, irradiated thorium blanket and nitric acid. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lHot Cell§r is now a §6multiblock only§r: it opens irradiated targets, separates isotopes, makes sources and takes over the PUREX and THOREX §lreprocessing§r of the former plant (uranium, plutonium, neptunium, waste) and the §lvitrification§r of high-level waste of the former furnace. Its controller is built with lead and stepper motors; its trade block, the manipulator station, with the tempered glass of the window. A compact hot cell already placed becomes the controller: its items drop on the ground.\n§6Processes§r\n• §lHandling§r (own recipes): 11 recipes\n• §lReprocessing (PUREX)§r (former reprocessing plant; multiblock only): 8 recipes\n• §lVitrification§r (former vitrification furnace): 8 recipes\n§6Same inputs§r: high-level waste, irradiated thorium blanket and nitric acid. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10272,7 +10211,7 @@
      "items": [
       "pioneers:hydroponic_farm"
      ],
-     "text": "The §lhydroponic farm§r (multiblock only) grows crops at scale and takes over the §6microalgae§r of the former photobioreactor (water + CO₂ + light → microalgae, algae oil, oxygen). A compact photobioreactor already placed becomes the farm's controller: its items drop on the ground. Trees have their own machine again, the §ltree plantation§r.\n§6Processes§r\n• §lCrops§r (own recipes): 174 recipes\n• §lMicroalgae§r (former photobioreactor): 8 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lhydroponic farm§r (multiblock only) grows crops at scale and takes over the §6microalgae§r of the former photobioreactor (water + CO₂ + light → microalgae, algae oil, oxygen). A compact photobioreactor already placed becomes the farm's controller: its items drop on the ground. Trees have their own machine again, the §ltree plantation§r.\n§6Processes§r\n• §lCrops§r (own recipes): 174 recipes\n• §lMicroalgae§r (former photobioreactor): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10316,7 +10255,7 @@
      "items": [
       "pioneers:industrial_pumpjack"
      ],
-     "text": "The §lpumpjack§r (multiblock only) pumps §6every fluid deposit§r below it: oil, brine (formerly the brine well) and natural gas (formerly the gas wellhead), with associated gas and helium through its second gas output. Injected water or mud restores pressure. The oil derrick is merged into it too: its advancement is earned at four operations at once. A well multiblock already built does not have the pumpjack's shape: “Not formed”, pumpjack blueprint with Shift + right-click.\n§6Processes§r\n• §lOil§r (deposits of the former pumpjack)\n• §lBrine§r (deposits, former brine well)\n• §lDeep oil§r (deposits, former oil derrick)\n• §lGas§r (deposits, former gas wellhead)\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe."
+     "text": "The §lpumpjack§r (multiblock only) pumps §6every fluid deposit§r below it: oil, brine (formerly the brine well) and natural gas (formerly the gas wellhead), with associated gas and helium through its second gas output. Injected water or mud restores pressure. The oil derrick is merged into it too: its advancement is earned at four operations at once. A well multiblock already built does not have the pumpjack's shape: “Not formed”, pumpjack blueprint with Shift + right-click.\n§6Processes§r\n• §lOil§r (deposits of the former pumpjack)\n• §lBrine§r (deposits, former brine well)\n• §lDeep oil§r (deposits, former oil derrick)\n• §lGas§r (deposits, former gas wellhead)\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Generic machines",
@@ -10325,7 +10264,7 @@
       "pioneers:basic_press",
       "pioneers:industrial_press"
      ],
-     "text": "The §lPress§r (formerly the electric press) only §6flattens§r: ingot + die → plate, plate → sheet or foil, laminates pressed flat (plywood, epoxy board, perforated and etched boards). Anything that does not flatten is made at the machine of its action: rods and tubes at the extruder or the machining center, rivets and nails at the power hammer (cold heading), compacts and pellets at the compressor, slabs and panes at the industrial saw, mixes at the mixer, assemblies at the assembler. The forming station is merged into it; a station already placed becomes a Press of the same tier. The compact steam press is its tier 1.\n§6Processes§r\n• §lPressing§r (own recipes): 75 recipes\n• §lForming§r (former forming station): no recipe (its copies duplicated other machines)\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lPress§r (formerly the electric press) only §6flattens§r: ingot + die → plate, plate → 2 sheets, laminates pressed flat (plywood, epoxy board, perforated and etched boards). 1.0.6: it is the only machine for plates made from an ingot and sheets made from a plate (steam press included). Anything that does not flatten is made at the machine of its action: rods at the machining center, tubes at the extruder, foils at the rolling mill, rivets and nails at the power hammer (cold heading), compacts and pellets at the compressor, mixes at the mixer, assemblies at the assembler. The forming station is merged into it; a station already placed becomes a Press of the same tier. The compact steam press is its tier 1.\n§6Processes§r\n• §lPressing§r (own recipes): 77 recipes\n• §lForming§r (former forming station): no recipe (its copies duplicated other machines)\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10353,7 +10292,7 @@
       "pioneers:basic_power_hammer",
       "pioneers:industrial_power_hammer"
      ],
-     "text": "The §lPower Hammer§r forges by impact: billets of non-castable metals, die-forged gear blanks, punched and seamless rolled rings. It takes over the §6cold heading§r of the former cold header (screws, bolts, rivets, nails and balls, from wire rod or wire) and, in its multiblock only, the §lIndustrial Power Hammer§r, the §lhot forging§r of tool heads and blades of the former industrial forging press. The forge hearth keeps its two bloom recipes. It no longer has a steam age: the steam hammer is gone (1.0.5).\n§6Processes§r\n• §lDrop forging§r (own recipes): 69 recipes\n• §lHot forging (tool heads)§r (former industrial forging press; multiblock only): 100 recipes\n• §lCold heading (fasteners)§r (former cold header): 15 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lPower Hammer§r forges by impact: billets of non-castable metals, die-forged gear blanks, and every §ltool head§r: base metals from the MKI compact, advanced metals at the higher tiers (MKII to MKIV, compact or multiblock). It takes over the §6cold heading§r of the former cold header (screws, bolts, rivets, nails and balls, from wire rod or wire). The forge hearth keeps its two bloom recipes. It no longer has a steam age: the steam hammer is gone (1.0.5). 1.0.6: rings move to the §lBender§r.\n§6Processes§r\n• §lDrop forging§r (own recipes): 169 recipes\n• §lHot forging (tool heads)§r (former industrial forging press; multiblock only): 100 recipes\n• §lCold heading (fasteners)§r (former cold header): 15 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10415,12 +10354,12 @@
       "pioneers:basic_rolling_mill",
       "pioneers:industrial_rolling_mill"
      ],
-     "text": "The §lRolling Mill§r (formerly the electric rolling mill) §6rolls§r between cylinders: ingot → plate, plate → foil, slab → plates, billet → wire rod, and now §lblock → 9 plates§r (MKII, the former cutting table route). It takes over the §lcalendering§r of the former calender: rubber and plastic sheets, gaskets, sheets, woven meshes.\n§6Processes§r\n• §lRolling§r (own recipes): 165 recipes\n• §lCalendering§r (former calender): 30 recipes\n§6Same inputs§r: plate (foil or sheets), slab (plates or sheets). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lRolling Mill§r (formerly the electric rolling mill) §6rolls§r semi-finished stock between cylinders: block → 9 plates, slab → plates and sheets, billet → plates or wire rod, beam blank → beams, plate → foils. 1.0.6: plates made from an ingot and sheets made from a plate come from the §lPress§r; the steam rolling mill rolls blocks into 9 plates. It takes over the §lcalendering§r of the former calender: rubber and plastic sheets, belts, gaskets, woven meshes.\n§6Processes§r\n• §lRolling§r (own recipes): 151 recipes\n• §lCalendering§r (former calender): 20 recipes\n§6Same inputs§r: plate (foil or sheets), slab (plates or sheets). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
         "label": "Rolling",
-        "item": "pioneers:depleted_uranium_ingot",
+        "item": "pioneers:aluminium_beam_blank",
         "done": true
        },
        {
@@ -10430,7 +10369,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:depleted_uranium_plate",
+        "item": "pioneers:aluminium_beam",
         "next": true
        }
       ],
@@ -10460,12 +10399,12 @@
       "pioneers:basic_wiremill",
       "pioneers:industrial_wiremill"
      ],
-     "text": "The §lWiremill§r (formerly the electric wiremill) §6draws§r metal into wire: ingot, wire rod or rod → wire, wire ropes. It takes over the §lfiber drawing§r of the former fiber draw tower (glass, optical and fluoride glass fibers, carbon and aramid fibers: the molten glass or the precursor enters through its tank) and the §lstranding§r of the former wire strander (lossless wire ropes, wiring harnesses, network cables, hemp ropes).\n§6Processes§r\n• §lWire drawing§r (own recipes): 47 recipes\n• §lFiber drawing§r (former fiber draw tower): 8 recipes\n• §lStranding§r (former wire strander): 8 recipes\n§6Same inputs§r: hemp fiber, wire (wire rope). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lWiremill§r (formerly the electric wiremill) §6draws§r metal into wire: ingot, wire rod or rod → wire. It takes over the §lfiber drawing§r of the former fiber draw tower (glass, optical and fluoride glass fibers, carbon and aramid fibers: the molten glass or the precursor enters through its tank) and the §lstranding§r of the former wire strander (lossless wire ropes, wiring harnesses, network cables). 1.0.6: fiber spinning (cotton thread, string, ropes) moves to the §lTailoring Workshop§r.\n§6Processes§r\n• §lWire drawing§r (own recipes): 43 recipes\n• §lFiber drawing§r (former fiber draw tower): 8 recipes\n• §lStranding§r (former wire strander): 6 recipes\n§6Same inputs§r: hemp fiber, wire (wire rope). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
         "label": "Wire drawing",
-        "item": "pioneers:cotton",
+        "item": "pioneers:aluminium_wire_rod",
         "done": true
        },
        {
@@ -10475,7 +10414,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:cotton_thread",
+        "item": "pioneers:aluminium_wire",
         "next": true
        }
       ],
@@ -10499,7 +10438,7 @@
       [
        {
         "label": "Stranding",
-        "item": "pioneers:plant_fiber",
+        "item": "pioneers:vulcanized_rubber",
         "done": true
        },
        {
@@ -10509,7 +10448,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:fiber_rope",
+        "item": "pioneers:wiring_harness",
         "next": true
        }
       ]
@@ -10522,7 +10461,7 @@
       "pioneers:basic_bender",
       "pioneers:industrial_bender"
      ],
-     "text": "The §lBender§r bends and rolls: rings, seamed tubes, bent plates and tubes. It takes over the §6coiling§r of the former spring coiler: springs from wire, rod or wire rod, oil-tempered precision springs at MKIII (an extra fluid tank).\n§6Processes§r\n• §lBending§r (own recipes): 29 recipes\n• §lCoiling (springs)§r (former spring coiler): 37 recipes\n§6Same inputs§r: copper rods (lightning rod or spring), iron rods (iron bars or spring), metal rod (rings or spring). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lBender§r bends, rolls and coils: rings (from a rod or an ingot), tubes rolled from a sheet or a plate, bent plates and tubes, springs from wire, rod or wire rod, oil-tempered precision springs at MKIII (an extra fluid tank). 1.0.6: from MKI on, it is the only machine for rings and springs; the lathes (mechanical and steam) keep theirs.\n§6Processes§r\n• §lBending§r (own recipes): 34 recipes\n• §lCoiling (springs)§r (former spring coiler): 30 recipes\n§6Same inputs§r: copper rods (lightning rod or spring), iron rods (iron bars or spring), metal rod (rings or spring). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10550,7 +10489,7 @@
       "pioneers:basic_casting_machine",
       "pioneers:industrial_casting_machine"
      ],
-     "text": "The §lCasting Machine§r casts liquid metal in a mold (die or foundry mold, coolant) and takes over the plastic §6injection molding§r of the former injection molder (pellets + mold → parts). In its multiblock only, the §lcontinuous casting§r of the former caster: ingots in series, slabs, billets, beam blanks, under water or oil at MKIII.\n§6Processes§r\n• §lMold casting§r (own recipes): 412 recipes\n• §lContinuous casting§r (former continuous caster; multiblock only): 81 recipes\n• §lInjection molding§r (former injection molder): 9 recipes\n§6Same inputs§r: liquid metal and die (part or continuous casting). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lCasting Machine§r casts liquid metal in a mold (die or foundry mold, coolant) and takes over the plastic §6injection molding§r of the former injection molder (pellets + mold → parts). In its multiblock only, the §lcontinuous casting§r of the former caster: ingots in series, slabs, billets, beam blanks, under water or oil at MKIII.\n§6Processes§r\n• §lMold casting§r (own recipes): 412 recipes\n• §lContinuous casting§r (former continuous caster; multiblock only): 81 recipes\n• §lInjection molding§r (former injection molder): 9 recipes\n§6Same inputs§r: liquid metal and die (part or continuous casting). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10612,12 +10551,12 @@
       "pioneers:basic_machining_center",
       "pioneers:industrial_machining_center"
      ],
-     "text": "The §lMachining Center§r (formerly the CNC lathe) §6machines from stock§r: shafts, screws, blades and precision parts; §lmilling§r (dies, foundry patterns and molds) and §lgrinding§r (tungsten fasteners, balls, reconditioned objectives), with no lubricant. 1.0.6: gear and gem cutting move to the §lCutting Machine§r, tool heads to the §lPower Hammer§r.\n§6Processes§r\n• §lTurning§r (own recipes): 175 recipes\n• §lMilling§r (former cnc mill): 7 recipes\n• §lGrinding§r (former precision grinder): 6 recipes\n§6Same inputs§r: vanadium steel plates and lubricant, duralumin plates. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lMachining Center§r (formerly the CNC lathe) §6machines from stock§r: rods (from an ingot or a billet), shafts, screws, bolts, balls and precision parts; §lmilling§r (dies, foundry patterns and molds) and §lgrinding§r (tungsten fasteners, reconditioned objectives), with no lubricant. 1.0.6: gears and gems move to the §lCutting Machine§r, tool heads to the §lPower Hammer§r, rings and springs to the §lBender§r; the extruder's rods come here.\n§6Processes§r\n• §lTurning§r (own recipes): 14 recipes\n• §lMilling§r (former cnc mill): 7 recipes\n• §lGrinding§r (former precision grinder): 6 recipes\n§6Same inputs§r: vanadium steel plates and lubricant, duralumin plates. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
         "label": "Turning",
-        "item": "pioneers:ahunite_billet",
+        "item": "pioneers:pig_iron",
         "done": true
        },
        {
@@ -10627,7 +10566,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:ahunite_rod",
+        "item": "pioneers:piston_ring",
         "next": true
        }
       ],
@@ -10674,7 +10613,7 @@
       "pioneers:basic_gear_hobber",
       "pioneers:industrial_gear_hobber"
      ],
-     "text": "The §lCutting Machine§r §6cuts a plate, a crystal or a boule into parts§r: gears cut from plates or blanks, cut gems, sapphire and ruby boules, silicon wafers. One §lcutting fluid§r: water for crystals and wafers, lubricant to cut hard metals. Offcuts come back as nuggets.\n§6Processes§r\n• §lCutting§r (own recipes): 41 recipes\n• §lWafer slicing§r (former cutting machine (wafer slicing)): 8 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lCutting Machine§r §6cuts a plate, a crystal or a boule into parts§r: gears cut from plates or blanks, cut gems, sapphire and ruby boules, silicon wafers. One §lcutting fluid§r: water for crystals and wafers, lubricant to cut hard metals. Offcuts come back as nuggets.\n§6Processes§r\n• §lCutting§r (own recipes): 43 recipes\n• §lWafer slicing§r (former cutting machine (wafer slicing)): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10719,7 +10658,7 @@
       "pioneers:basic_sawmill",
       "pioneers:industrial_sawmill"
      ],
-     "text": "The §lIndustrial Saw§r (formerly the sawmill) §6saws wood§r: logs → planks, sticks and sawdust. 1.0.6: wafer slicing moves to the §lCutting Machine§r.\n§6Processes§r\n• §lSawing§r (deposits of the former pumpjack)\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe."
+     "text": "The §lIndustrial Saw§r (formerly the sawmill) §6saws wood§r: logs → planks, sticks and sawdust, veneers. 1.0.6: wafer slicing moves to the §lCutting Machine§r; the steam saw, which cut stone, becomes tier 1 of the §lStoneworks§r.\n§6Processes§r\n• §lSawing§r (deposits of the former pumpjack)\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Generic machines",
@@ -10728,7 +10667,7 @@
       "pioneers:basic_chemical_bath",
       "pioneers:industrial_chemical_bath"
      ],
-     "text": "The §lChemical Bath§r (formerly the surface treatment tank) §6dips parts in a liquid§r: galvanizing, zinc, tin, nickel and copper plating, hard chrome, electroforming, silvering, and oil or water §lquenching§r (drill bits, dies, pins). It also does §lplasma spraying§r (diamond discs, coatings) and the §lacid etching§r of wafers.\n§6Processes§r\n• §lSurface baths§r (own recipes): 16 recipes\n• §lHeat-treat (quench, anneal)§r (former heat treatment furnace): 17 recipes\n• §lPlasma spraying§r (former plasma sprayer): 10 recipes\n• §lAcid etching§r (former acid etcher): 8 recipes\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lChemical Bath§r (formerly the surface treatment tank) §6dips parts in a liquid§r: galvanizing, zinc, tin, nickel and copper plating, hard chrome, electroforming, silvering, and oil or water §lquenching§r (drill bits, dies, pins). It also does §lplasma spraying§r (diamond discs, coatings) and the §lacid etching§r of wafers.\n§6Processes§r\n• §lSurface baths§r (own recipes): 16 recipes\n• §lHeat-treat (quench, anneal)§r (former heat treatment furnace): 17 recipes\n• §lPlasma spraying§r (former plasma sprayer): 10 recipes\n• §lAcid etching§r (former acid etcher): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10807,7 +10746,7 @@
       "pioneers:basic_assembler",
       "pioneers:industrial_assembler"
      ],
-     "text": "The §lAssembler§r builds parts and components. It takes over §6all§r the recipes of the former component assembler (frames, motors, bearings, pumps, circuits, computers, at the same tiers), the logistics parts bench copies of the former logistics assembler (rockets, spaceport, rail, harbors, robotics) and the §larc welding§r of the former welder (tanks, hulls, welded tubes, casings, under argon from MKII). Nine inputs, two outputs, one fluid and one gas tank.\n§6Processes§r\n• §lAssembly§r (own recipes): 10 recipes\n• §lComponents§r (former component assembler): 196 recipes\n• §lLogistics parts§r (former logistics assembler): no recipe (its copies duplicated other machines)\n• §lArc welding§r (former arc welder): 20 recipes\n§6Same inputs§r: steel plates (armor or welded beam), steel plates, rods and screws (wrench or welded frame). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: a single category per machine; the “T2 to T5” chip gives the tiers that make the recipe.",
+     "text": "The §lAssembler§r builds parts and components. It takes over §6all§r the recipes of the former component assembler (frames, motors, bearings, pumps, circuits, computers, at the same tiers), the logistics parts bench copies of the former logistics assembler (rockets, spaceport, rail, harbors, robotics) and the §larc welding§r of the former welder (tanks, hulls, welded tubes, casings, under argon from MKII). Nine inputs, two outputs, one fluid and one gas tank.\n§6Processes§r\n• §lAssembly§r (own recipes): 16 recipes\n• §lComponents§r (former component assembler): 196 recipes\n• §lLogistics parts§r (former logistics assembler): no recipe (its copies duplicated other machines)\n• §lArc welding§r (former arc welder): 15 recipes\n§6Same inputs§r: steel plates (armor or welded beam), steel plates, rods and screws (wrench or welded frame). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10861,6 +10800,69 @@
        }
       ]
      ]
+    },
+    {
+     "section": "Generic machines",
+     "title": "The Joinery",
+     "items": [
+      "pioneers:basic_joinery",
+      "pioneers:industrial_joinery"
+     ],
+     "text": "The §lJoinery§r §6works wood and paper§r: it makes the automated copies of the §lcarpenter's bench§r and the §lluthier's bench§r (furniture, doors, fences, framing, chests, musical instruments) and the farm's woodwork (bird houses, baskets, kennels, hives). Six item inputs.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
+    },
+    {
+     "section": "Generic machines",
+     "title": "The Tailoring Workshop",
+     "items": [
+      "pioneers:basic_tailoring_workshop",
+      "pioneers:industrial_tailoring_workshop"
+     ],
+     "text": "The §lTailoring Workshop§r §6works leather, textiles and rubber§r: copies of the §ltanner's bench§r (clothing, cosmetics, bags, saddles, banners) and fiber §lspinning§r (cotton → thread, hemp → string, plant fibers → ropes, crater lint and ivy → string), taken over from the wiremill and the rolling mill.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
+    },
+    {
+     "section": "Generic machines",
+     "title": "The Packaging Machine",
+     "items": [
+      "pioneers:basic_packaging_machine",
+      "pioneers:industrial_packaging_machine"
+     ],
+     "text": "The §lPackaging Machine§r §6packs crops§r: 9 crops → a crate, a sack or a tray, and rolled tobacco (cigars). It makes the copies of the §lfarming bench§r whose material is the crop; that bench's other copies go to the machine of their material (wood → Joinery, textile → Tailoring Workshop, glass → Glassworks, metal → Assembler, substrates → Mixer).\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
+    },
+    {
+     "section": "Generic machines",
+     "title": "The Sheet Metal Shop",
+     "items": [
+      "pioneers:basic_sheet_metal_shop",
+      "pioneers:industrial_sheet_metal_shop"
+     ],
+     "text": "The §lSheet Metal Shop§r §6works sheet metal and copper§r: copies of the §lcoppersmith's bench§r (vessels, boilers, valves, gauges, lightning rod, cut and waxed copper blocks). Copper is cut here, not at the Stoneworks.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
+    },
+    {
+     "section": "Generic machines",
+     "title": "The Glassworks",
+     "items": [
+      "pioneers:basic_glassworks",
+      "pioneers:industrial_glassworks"
+     ],
+     "text": "The §lGlassworks§r §6shapes glass and clay§r: copies of the §lpotter's bench§r (stained glass, panes, bottles, pottery, aquarium) and unfired clay parts (crucibles, molds, pipes), taken over from the mixer, the saw and the compressor.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
+    },
+    {
+     "section": "Generic machines",
+     "title": "The Electromechanical Bench",
+     "items": [
+      "pioneers:basic_electromechanical_bench",
+      "pioneers:industrial_electromechanical_bench"
+     ],
+     "text": "The §lElectromechanical Bench§r §6builds mechanisms§r: copies of the §lredstoner's bench§r (buttons, pressure plates, repeaters, comparators, pistons, lamps, switches, wiring).\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
+    },
+    {
+     "section": "Generic machines",
+     "title": "The Stoneworks",
+     "items": [
+      "pioneers:basic_stoneworks",
+      "pioneers:industrial_stoneworks"
+     ],
+     "text": "The §lStoneworks§r §6cuts stone§r: §levery§r stonecutter cut (vanilla and mod: slabs, stairs, walls, polished, cut and chiseled stone), with a better yield than by hand (×1.75 at MKI, ×2.19 at MKII, ×2.63 at MKIII, ×3.5 at MKIV; the fraction is rolled at random), and the §lmason's§r works (fire bricks, chimneys, fountains, pillars). The §lsteam saw§r is its tier 1. Copper is cut at the Sheet Metal Shop.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age."
     },
     {
      "section": "Water and rocks",
@@ -15365,7 +15367,7 @@
        },
        {
         "label": "He-3",
-        "item": "pioneers:basic_cracker"
+        "item": "pioneers:industrial_cracker"
        },
        {
         "label": "Gen. II",

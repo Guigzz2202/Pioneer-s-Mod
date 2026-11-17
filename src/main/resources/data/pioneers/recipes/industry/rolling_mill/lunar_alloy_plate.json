@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "rolling_mill",
+ "machine": "press",
  "tier": 2,
  "time": 160,
  "items": [

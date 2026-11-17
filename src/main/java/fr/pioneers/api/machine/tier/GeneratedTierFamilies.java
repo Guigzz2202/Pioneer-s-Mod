@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * GENERE par tools/gc/api/gen_api.py d'apres la source unique tools/gc/api/tier_families.py (1.0.5-beta, lot 38 ; specification
  * docs/specification-age-bronze-1.0.5.md §2) : NE PAS MODIFIER A LA MAIN. Tiers globaux T0 mecanique, T1 bronze, T2 MKI .. T5 MKIV,
- * T6 hors echelle ; 17 familles ; 100 blocs a tier ; 61 recettes basses a rendement.
+ * T6 hors echelle ; 18 familles ; 105 blocs a tier ; 61 recettes basses a rendement.
  */
 public final class GeneratedTierFamilies {
 
@@ -34,7 +34,7 @@ public final class GeneratedTierFamilies {
     public static final List<Family> FAMILIES = List.of(
         new Family("broyage", List.of("mechanical:milling", "mechanical:jaw_crushing", "steam:macerator"), "crusher", true, List.of("millstone", "jaw_crusher", "steam_macerator", "basic_crusher", "advanced_crusher", "elite_crusher", "ultimate_crusher", "industrial_crusher")),
         new Family("tamisage", List.of("mechanical:sifting", "steam:sifter"), "ore_separator", true, List.of("mechanical_sifter", "steam_sifter", "basic_ore_separator", "advanced_ore_separator", "elite_ore_separator", "ultimate_ore_separator", "industrial_ore_separator")),
-        new Family("sciage", List.of("mechanical:sawing", "steam:saw"), "sawmill", true, List.of("mechanical_saw", "steam_saw", "basic_sawmill", "advanced_sawmill", "elite_sawmill", "ultimate_sawmill", "industrial_sawmill")),
+        new Family("sciage", List.of("mechanical:sawing"), "sawmill", true, List.of("mechanical_saw", "basic_sawmill", "advanced_sawmill", "elite_sawmill", "ultimate_sawmill", "industrial_sawmill")),
         new Family("tournage", List.of("mechanical:turning", "steam:lathe"), "machining_center", true, List.of("wood_lathe", "steam_lathe", "basic_machining_center", "advanced_machining_center", "elite_machining_center", "ultimate_machining_center", "industrial_machining_center")),
         new Family("compression", List.of("steam:compressor"), "compressor", true, List.of("steam_compressor", "basic_compressor", "advanced_compressor", "elite_compressor", "ultimate_compressor", "industrial_compressor")),
         new Family("extraction", List.of("steam:extractor"), "extractor", true, List.of("steam_extractor", "basic_extractor", "advanced_extractor", "elite_extractor", "ultimate_extractor", "industrial_extractor")),
@@ -44,6 +44,7 @@ public final class GeneratedTierFamilies {
         new Family("melange", List.of("steam:mixer"), "mixer", true, List.of("steam_mixer", "basic_mixer", "advanced_mixer", "elite_mixer", "ultimate_mixer", "industrial_mixer")),
         new Family("presse", List.of("steam:press"), "press", true, List.of("steam_press", "basic_press", "advanced_press", "elite_press", "ultimate_press", "industrial_press")),
         new Family("frappe", List.of(), "power_hammer", true, List.of("basic_power_hammer", "advanced_power_hammer", "elite_power_hammer", "ultimate_power_hammer", "industrial_power_hammer")),
+        new Family("taille", List.of("steam:saw"), "stoneworks", true, List.of("steam_saw", "basic_stoneworks", "advanced_stoneworks", "elite_stoneworks", "ultimate_stoneworks", "industrial_stoneworks")),
         new Family("induction", List.of("steam:induction_furnace"), "induction_furnace", true, List.of("steam_induction_furnace", "basic_induction_furnace", "advanced_induction_furnace", "elite_induction_furnace", "ultimate_induction_furnace")),
         new Family("creuset", List.of(), null, false, List.of("clay_crucible", "crucible_furnace", "auto_foundry", "basic_electric_crucible", "advanced_electric_crucible", "elite_electric_crucible", "ultimate_electric_crucible", "industrial_electric_crucible")),
         new Family("forage", List.of(), null, false, List.of("mechanical_drill", "steam_drill", "drill")),
@@ -65,6 +66,7 @@ public final class GeneratedTierFamilies {
           Map.entry("advanced_press", "presse"),
           Map.entry("advanced_rolling_mill", "laminage"),
           Map.entry("advanced_sawmill", "sciage"),
+          Map.entry("advanced_stoneworks", "taille"),
           Map.entry("advanced_wiremill", "trefilage"),
           Map.entry("auto_foundry", "creuset"),
           Map.entry("basic_compressor", "compression"),
@@ -80,6 +82,7 @@ public final class GeneratedTierFamilies {
           Map.entry("basic_press", "presse"),
           Map.entry("basic_rolling_mill", "laminage"),
           Map.entry("basic_sawmill", "sciage"),
+          Map.entry("basic_stoneworks", "taille"),
           Map.entry("basic_wiremill", "trefilage"),
           Map.entry("beam_engine", "rotation"),
           Map.entry("bellows", "soufflage"),
@@ -99,6 +102,7 @@ public final class GeneratedTierFamilies {
           Map.entry("elite_press", "presse"),
           Map.entry("elite_rolling_mill", "laminage"),
           Map.entry("elite_sawmill", "sciage"),
+          Map.entry("elite_stoneworks", "taille"),
           Map.entry("elite_wiremill", "trefilage"),
           Map.entry("horse_mill", "rotation"),
           Map.entry("industrial_compressor", "compression"),
@@ -113,6 +117,7 @@ public final class GeneratedTierFamilies {
           Map.entry("industrial_press", "presse"),
           Map.entry("industrial_rolling_mill", "laminage"),
           Map.entry("industrial_sawmill", "sciage"),
+          Map.entry("industrial_stoneworks", "taille"),
           Map.entry("industrial_wiremill", "trefilage"),
           Map.entry("jaw_crusher", "broyage"),
           Map.entry("mechanical_drill", "forage"),
@@ -131,7 +136,7 @@ public final class GeneratedTierFamilies {
           Map.entry("steam_mixer", "melange"),
           Map.entry("steam_press", "presse"),
           Map.entry("steam_rolling_mill", "laminage"),
-          Map.entry("steam_saw", "sciage"),
+          Map.entry("steam_saw", "taille"),
           Map.entry("steam_sifter", "tamisage"),
           Map.entry("steam_wiremill", "trefilage"),
           Map.entry("ultimate_compressor", "compression"),
@@ -147,6 +152,7 @@ public final class GeneratedTierFamilies {
           Map.entry("ultimate_press", "presse"),
           Map.entry("ultimate_rolling_mill", "laminage"),
           Map.entry("ultimate_sawmill", "sciage"),
+          Map.entry("ultimate_stoneworks", "taille"),
           Map.entry("ultimate_wiremill", "trefilage"),
           Map.entry("water_wheel", "rotation"),
           Map.entry("windmill_hub", "rotation"),
@@ -167,6 +173,7 @@ public final class GeneratedTierFamilies {
           Map.entry("advanced_press", 3),
           Map.entry("advanced_rolling_mill", 3),
           Map.entry("advanced_sawmill", 3),
+          Map.entry("advanced_stoneworks", 3),
           Map.entry("advanced_wiremill", 3),
           Map.entry("auto_foundry", 1),
           Map.entry("basic_compressor", 2),
@@ -182,6 +189,7 @@ public final class GeneratedTierFamilies {
           Map.entry("basic_press", 2),
           Map.entry("basic_rolling_mill", 2),
           Map.entry("basic_sawmill", 2),
+          Map.entry("basic_stoneworks", 2),
           Map.entry("basic_wiremill", 2),
           Map.entry("beam_engine", 0),
           Map.entry("bellows", 0),
@@ -201,6 +209,7 @@ public final class GeneratedTierFamilies {
           Map.entry("elite_press", 4),
           Map.entry("elite_rolling_mill", 4),
           Map.entry("elite_sawmill", 4),
+          Map.entry("elite_stoneworks", 4),
           Map.entry("elite_wiremill", 4),
           Map.entry("firebox", 1),
           Map.entry("horse_mill", 0),
@@ -216,6 +225,7 @@ public final class GeneratedTierFamilies {
           Map.entry("industrial_press", -1),
           Map.entry("industrial_rolling_mill", -1),
           Map.entry("industrial_sawmill", -1),
+          Map.entry("industrial_stoneworks", -1),
           Map.entry("industrial_wiremill", -1),
           Map.entry("jaw_crusher", 0),
           Map.entry("mechanical_drill", 0),
@@ -250,6 +260,7 @@ public final class GeneratedTierFamilies {
           Map.entry("ultimate_press", 5),
           Map.entry("ultimate_rolling_mill", 5),
           Map.entry("ultimate_sawmill", 5),
+          Map.entry("ultimate_stoneworks", 5),
           Map.entry("ultimate_wiremill", 5),
           Map.entry("water_wheel", 0),
           Map.entry("windmill_hub", 0),
@@ -266,7 +277,7 @@ public final class GeneratedTierFamilies {
           Map.entry("steam:mixer", "melange"),
           Map.entry("steam:press", "presse"),
           Map.entry("steam:rolling_mill", "laminage"),
-          Map.entry("steam:saw", "sciage"),
+          Map.entry("steam:saw", "taille"),
           Map.entry("steam:sifter", "tamisage"),
           Map.entry("steam:wiremill", "trefilage"));
 
@@ -336,6 +347,8 @@ public final class GeneratedTierFamilies {
           Map.entry("pioneers:industry/ball_mill/phosphate_rock", "broyage"),
           Map.entry("pioneers:industry/calender/foil_rod_copper", "laminage"),
           Map.entry("pioneers:industry/calender/foil_rod_gold", "laminage"),
+          Map.entry("pioneers:industry/calender/sheet_copper", "laminage"),
+          Map.entry("pioneers:industry/calender/sheet_tin", "laminage"),
           Map.entry("pioneers:industry/calender/wire_mesh_copper", "laminage"),
           Map.entry("pioneers:industry/calender/wire_mesh_iron", "laminage"),
           Map.entry("pioneers:industry/cnc_mill/mill_wax_pattern_beeswax", "tournage"),
@@ -376,7 +389,6 @@ public final class GeneratedTierFamilies {
           Map.entry("pioneers:industry/ore_separator/shakeout_sand_mold", "tamisage"),
           Map.entry("pioneers:industry/press/rc_lodestone_1", "compression"),
           Map.entry("pioneers:industry/press/sand_mold", "compression"),
-          Map.entry("pioneers:industry/rolling_mill/foil_copper", "laminage"),
           Map.entry("pioneers:industry/rolling_mill/foil_gold", "laminage"),
           Map.entry("pioneers:industry/rolling_mill/hot_roll_plate_bronze", "laminage"),
           Map.entry("pioneers:industry/rolling_mill/hot_roll_plate_copper", "laminage"),
@@ -389,31 +401,51 @@ public final class GeneratedTierFamilies {
           Map.entry("pioneers:industry/rolling_mill/hot_roll_wire_rod_copper", "laminage"),
           Map.entry("pioneers:industry/rolling_mill/hot_roll_wire_rod_gold", "laminage"),
           Map.entry("pioneers:industry/rolling_mill/hot_roll_wire_rod_iron", "laminage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_acacia", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_bamboo", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_birch", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_cherry", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_crimson", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_dark_oak", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_jungle", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_mangrove", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_oak", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_spruce", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_plank_warped", "sciage"),
-          Map.entry("pioneers:industry/sawmill/rc_wooden_lath_1", "sciage"),
-          Map.entry("pioneers:industry/wire_strander/strand_fiber_rope", "trefilage"),
-          Map.entry("pioneers:industry/wire_strander/strand_hemp_rope", "trefilage"),
           Map.entry("pioneers:industry/wire_strander/strand_rope_copper", "trefilage"),
-          Map.entry("pioneers:industry/wiremill/cotton_thread", "trefilage"),
           Map.entry("pioneers:industry/wiremill/draw_wire_rod_bronze", "trefilage"),
           Map.entry("pioneers:industry/wiremill/draw_wire_rod_copper", "trefilage"),
           Map.entry("pioneers:industry/wiremill/draw_wire_rod_gold", "trefilage"),
           Map.entry("pioneers:industry/wiremill/draw_wire_rod_iron", "trefilage"),
-          Map.entry("pioneers:industry/wiremill/hemp_string", "trefilage"),
           Map.entry("pioneers:industry/wiremill/wire_ingot_bronze", "trefilage"),
           Map.entry("pioneers:industry/wiremill/wire_rope_copper", "trefilage"));
     /** 1.0.5-beta (lot 47) : duree d'une recette MKI ouverte a la vapeur = duree au MKI x 2^(2 - 1). */
     public static final int OPEN_SLOWDOWN = 2;
+
+    /**
+     * 1.0.6 (un role par machine) : recettes basses faites au MKI par une autre machine que la machine MK de leur famille (id -> cle
+     * IndustryMachine ; tools/gc/api/tier_families.py LOW_MOVED_RULES).
+     */
+    public static final Map<String, String> LOW_MOVED = Map.ofEntries(
+          Map.entry("pioneers:bronze/steam/lathe/red_alloy_rod", "extruder"),
+          Map.entry("pioneers:bronze/steam/lathe/redsteel_gear", "gear_hobber"),
+          Map.entry("pioneers:bronze/steam/lathe/redsteel_rod", "extruder"),
+          Map.entry("pioneers:bronze/steam/lathe/steel_ring", "bender"),
+          Map.entry("pioneers:bronze/steam/lathe/steel_rod", "extruder"),
+          Map.entry("pioneers:bronze/steam/lathe/steel_spring", "bender"),
+          Map.entry("pioneers:bronze/steam/saw/sticks", "sawmill"),
+          Map.entry("pioneers:materials/turning_babbitt_ring", "bender"),
+          Map.entry("pioneers:materials/turning_babbitt_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_brass_ring", "bender"),
+          Map.entry("pioneers:materials/turning_brass_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_brass_spring", "bender"),
+          Map.entry("pioneers:materials/turning_bronze_ring", "bender"),
+          Map.entry("pioneers:materials/turning_bronze_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_bronze_spring", "bender"),
+          Map.entry("pioneers:materials/turning_copper_ring", "bender"),
+          Map.entry("pioneers:materials/turning_copper_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_copper_spring", "bender"),
+          Map.entry("pioneers:materials/turning_galvanized_steel_ring", "bender"),
+          Map.entry("pioneers:materials/turning_galvanized_steel_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_gold_ring", "bender"),
+          Map.entry("pioneers:materials/turning_gold_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_gold_spring", "bender"),
+          Map.entry("pioneers:materials/turning_iron_ring", "bender"),
+          Map.entry("pioneers:materials/turning_iron_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_iron_spring", "bender"),
+          Map.entry("pioneers:materials/turning_lead_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_tin_ring", "bender"),
+          Map.entry("pioneers:materials/turning_tin_rod", "extruder"),
+          Map.entry("pioneers:materials/turning_tin_spring", "bender"));
 
     /** Recettes basses A RENDEMENT (regles YIELD de la source : matieres premieres ; jamais les formes du metal). */
     public static final Set<String> YIELD_RECIPES = Set.of(

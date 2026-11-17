@@ -74,7 +74,6 @@
   "pioneers:basic_radiator",
   "pioneers:coke_oven",
   "pioneers:basic_gas_separator",
-  "pioneers:basic_cracker",
   "pioneers:basic_autoclave",
   "pioneers:basic_fermenter",
   "pioneers:basic_photolithograph",
@@ -154,6 +153,13 @@
   "pioneers:basic_water_source",
   "pioneers:basic_rock_generator",
   "pioneers:basic_reduction_furnace",
-  "pioneers:basic_gear_hobber"
+  "pioneers:basic_gear_hobber",
+  "pioneers:basic_joinery",
+  "pioneers:basic_tailoring_workshop",
+  "pioneers:basic_packaging_machine",
+  "pioneers:basic_sheet_metal_shop",
+  "pioneers:basic_glassworks",
+  "pioneers:basic_electromechanical_bench",
+  "pioneers:basic_stoneworks"
  ]
 }

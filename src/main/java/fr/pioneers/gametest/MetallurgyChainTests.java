@@ -180,7 +180,8 @@ public final class MetallurgyChainTests {
         //1.0.6 : plus de plaque d'acier coulee (cast_plate_steel fusionnee au lot 13 du 1.0.4-beta, T:industry/fusion.py) : la presse
         AtelierTile press = atelier(h, new BlockPos(5, 2, 1), IndustryMachine.PRESS);
         AtelierTile welder = atelier(h, new BlockPos(1, 2, 4), IndustryMachine.ASSEMBLER);
-        AtelierTile calender = atelier(h, new BlockPos(3, 2, 4), IndustryMachine.ROLLING_MILL);
+        //1.0.6 (une machine par transformation de forme) : plaque -> 2 toles a la presse (la recette a vapeur des toles y est passee)
+        AtelierTile calender = atelier(h, new BlockPos(3, 2, 4), IndustryMachine.PRESS);
         List<AtelierTile> last = new ArrayList<>();
         // 1. fonte au creuset : 2 minerais concasses + 2 coke + 1 chaux -> 1 fonte (+ laitier) ; 10 fois
         lock(crucible, "processes/steel/induction_2");
@@ -243,7 +244,8 @@ public final class MetallurgyChainTests {
         AtelierTile cell = atelier(h, new BlockPos(5, 2, 1), IndustryMachine.ELECTROLYZER);
         AtelierTile melter = atelier(h, new BlockPos(7, 2, 1), IndustryMachine.ELECTRIC_CRUCIBLE);
         AtelierTile caster = atelier(h, new BlockPos(1, 2, 4), IndustryMachine.CASTING_MACHINE);
-        AtelierTile calender = atelier(h, new BlockPos(3, 2, 4), IndustryMachine.ROLLING_MILL);
+        // 1.0.6 : une machine par transformation de forme, la plaque -> 2 toles se fait a la presse (matrice d'estampage en case Outil)
+        AtelierTile calender = atelier(h, new BlockPos(3, 2, 4), IndustryMachine.PRESS);
         List<AtelierTile> last = new ArrayList<>();
         // 1. separation magnetique grossiere du concasse : 2 concasses -> 1 concentre (rendement du minerai en plus)
         lock(magnet, "processes/titanium/oxide_electrolysis_2");
@@ -293,8 +295,9 @@ public final class MetallurgyChainTests {
               })
               // 5. toles a la calandre (1 plaque -> 2)
               .thenExecute(() -> {
-                  lock(calender, "industry/calender/sheet_titanium");
+                  lock(calender, "industry/press/press_sheet_titanium");
                   give(calender, 0, take(caster, plate, 4));
+                  Gt.tool(calender, new ItemStack(item("press_die"), 1));
               })
               .thenWaitUntil(() -> {
                   power(calender);
@@ -316,11 +319,13 @@ public final class MetallurgyChainTests {
         Item billet = item("tungsten_billet"), plate = item("tungsten_plate"), sheet = item("tungsten_sheet");
         Item casing = item("industrial_casing_ultimate");
         AtelierTile table = atelier(h, new BlockPos(1, 2, 1), IndustryMachine.ORE_SEPARATOR);
-        AtelierTile plasma = atelier(h, new BlockPos(3, 2, 1), IndustryMachine.FURNACE);
-        AtelierTile sinter = atelier(h, new BlockPos(5, 2, 1), IndustryMachine.FURNACE);
+        //1.0.6 : reduction au plasma et frittage au Calcinateur (le four ne fait plus que cuire)
+        AtelierTile plasma = atelier(h, new BlockPos(3, 2, 1), IndustryMachine.REDUCTION_FURNACE);
+        AtelierTile sinter = atelier(h, new BlockPos(5, 2, 1), IndustryMachine.REDUCTION_FURNACE);
         AtelierTile hammer = atelier(h, new BlockPos(7, 2, 1), IndustryMachine.POWER_HAMMER);
         AtelierTile mill = atelier(h, new BlockPos(1, 2, 4), IndustryMachine.ROLLING_MILL);
-        AtelierTile calender = atelier(h, new BlockPos(3, 2, 4), IndustryMachine.ROLLING_MILL);
+        // 1.0.6 : une machine par transformation de forme, la plaque -> 2 toles se fait a la presse (matrice d'estampage en case Outil)
+        AtelierTile calender = atelier(h, new BlockPos(3, 2, 4), IndustryMachine.PRESS);
         List<AtelierTile> last = new ArrayList<>();
         // 1. table a secousses sur le concasse : 4 concasses + eau -> 2 concentres (rendement du minerai en plus)
         lock(table, "processes/tungsten/plasma_2");
@@ -368,10 +373,11 @@ public final class MetallurgyChainTests {
                   power(mill);
                   Gt.check(count(mill, plate) >= 4, "plaques de tungstene : " + count(mill, plate) + " / 4");
               })
-              // 5. toles a la calandre (1 plaque -> 2)
+              // 5. toles a la presse (1 plaque -> 2)
               .thenExecute(() -> {
-                  lock(calender, "industry/calender/sheet_tungsten");
+                  lock(calender, "industry/press/press_sheet_tungsten");
                   give(calender, 0, take(mill, plate, 4));
+                  Gt.tool(calender, new ItemStack(item("press_die"), 1));
               })
               .thenWaitUntil(() -> {
                   power(calender);

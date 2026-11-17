@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "bender",
+ "machine": "sheet_metal_shop",
  "tier": 0,
  "time": 100,
  "items": [

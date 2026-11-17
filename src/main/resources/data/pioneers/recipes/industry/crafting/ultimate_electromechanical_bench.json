@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_ultimate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:piezo_actuator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superconducting_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gripper"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:ultimate_electromechanical_bench",
+  "count": 1
+ }
+}

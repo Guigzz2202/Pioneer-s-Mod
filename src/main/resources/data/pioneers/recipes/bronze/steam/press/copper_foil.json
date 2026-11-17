@@ -1,6 +1,6 @@
 {
  "type": "pioneers:steam_processing",
- "machine": "press",
+ "machine": "rolling_mill",
  "inputs": [
   {
    "ingredient": {

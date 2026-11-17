@@ -92,10 +92,12 @@ public final class PatchP103Lot4Tests {
               && w.result().getCount() == 2, "trefileuse : 1 lingot de cuivre -> 2 fils");
         IndustrialRecipe rodWire = industrial(server, "industry/wiremill/wire_copper");
         Gt.equal(1, rodWire.tier(), "trefileuse : tige -> 2 fils au MKII");
-        IndustrialRecipe ring = industrial(server, "industry/extruder/extrude_ring_steel");
-        Gt.equal(1, ring.tier(), "extrudeuse : forme anneau au MKII");
-        Gt.check(ring.items().stream().anyMatch(c -> c.ingredient().test(new ItemStack(item("extrusion_shape_ring")))), "forme anneau en entree");
-        Gt.equal(2, industrial(server, "industry/extruder/extrude_gear_iron").tier(), "extrudeuse : engrenage au MKIII");
+        //1.0.6 (une machine par transformation de forme) : les formes de l'anneau et de l'engrenage sont retirees (Cintreuse, Decoupeuse) ;
+        //un objet deja fabrique devient la filiere d'extrusion vierge
+        Gt.check(server.getRecipeManager().byKey(rl("industry/extruder/extrude_ring_steel")).isEmpty()
+              && server.getRecipeManager().byKey(rl("industry/extruder/extrude_gear_iron")).isEmpty(), "plus d'anneau ni d'engrenage extrude");
+        Gt.check(!ForgeRegistries.ITEMS.containsKey(rl("extrusion_shape_ring")), "forme anneau retiree du registre");
+        Gt.equal("extrusion_die", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_shape_ring"), "forme anneau -> filiere vierge");
         IndustrialRecipe press = industrial(server, "industry/press/press_sheet_steel");
         //1.0.6 (reponse de Guillaume du 16/11/2026) : 2 toles par plaque, comme la calandre (tableau du lot 4 : 1 avant)
         Gt.equal(2, press.results().get(0).stack().getCount(), "presse electrique : 1 plaque -> 2 toles");

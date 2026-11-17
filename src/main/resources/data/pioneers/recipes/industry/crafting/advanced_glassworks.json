@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_hull_advanced"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_heating_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alumina_ceramic"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:thermocouple"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borosilicate_glass"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:advanced_glassworks",
+  "count": 1
+ }
+}

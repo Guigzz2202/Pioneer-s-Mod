@@ -159,7 +159,8 @@ public final class PatchP104Lot14Tests {
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_strander", timeoutTicks = 400)
     public static void p104_14_toronnage_a_la_trefileuse(GameTestHelper h) {
-        runs(h, "wire_strander", "industry/wire_strander/strand_fiber_rope");
+        //1.0.6 : les cordes de fibres se filent a l'Atelier de confection ; le toronnage des fils de metal reste a la trefileuse
+        runs(h, "wire_strander", "industry/wire_strander/strand_rope_copper");
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_coiler", timeoutTicks = 400)
@@ -249,8 +250,9 @@ public final class PatchP104Lot14Tests {
         IndustrialRecipe axe = recipe(h, "industry/forge/forge_brass_axe");
         Gt.check(!axe.industrialOnly() && IndustryRecipes.choices(h.getLevel(), IndustryMachine.POWER_HAMMER, false).stream()
               .anyMatch(c -> c.id().equals(axe.getId())), "tete d'outil en laiton au Marteau-pilon compact");
+        //1.0.6 : metaux avances aux tiers superieurs (MKII a MKIV, compacte ou multibloc des carcasses de ce tier)
         IndustrialRecipe ti = recipe(h, "industry/cnc_mill/mill_titanium_pickaxe_heads");
-        Gt.check(ti.machine() == IndustryMachine.POWER_HAMMER && ti.industrialOnly(), "tete en titane : Marteau-pilon industriel seulement");
+        Gt.check(ti.machine() == IndustryMachine.POWER_HAMMER && !ti.industrialOnly() && ti.tier() >= 1, "tete en titane : Marteau-pilon, MKII et plus");
         multi(h, "continuous_caster", "industry/continuous_caster/cc_beam_blank_aluminium");
         //le foyer de forge garde ses deux recettes de lopin (famille « forge » du Marteau-pilon, reservees au multibloc)
         IndustrialRecipe bloom = recipe(h, "industry/forge/steel_bloom_cold");
@@ -399,7 +401,8 @@ public final class PatchP104Lot14Tests {
         Gt.equal(1, IndustryMachine.ASSEMBLER.gasesIn, "Assembleur : argon (soudeuse)");
         Gt.equal(6, IndustryMachine.CHEMICAL_BATH.itemsIn, "Bain chimique : 6 entrees (projection plasma)");
         Gt.equal(3, IndustryMachine.MACHINING_CENTER.itemsIn, "Centre d'usinage : 3 entrees (fraiseuse, rectifieuse)");
-        Gt.equal(1, IndustryMachine.MACHINING_CENTER.fluidsIn, "Centre d'usinage : lubrifiant ou eau");
+        //1.0.6 (un role par machine) : le centre d'usinage travaille a sec (plus de lubrifiant ni d'eau)
+        Gt.equal(0, IndustryMachine.MACHINING_CENTER.fluidsIn, "Centre d'usinage : a sec");
         Gt.equal(3, IndustryMachine.WIREMILL.itemsIn, "Trefileuse : 3 entrees (tour de fibrage)");
         Gt.equal(2, IndustryMachine.CASTING_MACHINE.itemsIn, "Machine de coulee : 2 entrees (presse a injection)");
         Gt.equal(1, IndustryMachine.BENDER.fluidsIn, "Cintreuse : huile de trempe (enrouleuse)");
@@ -422,9 +425,13 @@ public final class PatchP104Lot14Tests {
         //l'outil de coupe en carbure se fritte a la poudre de carbure (la voie a la poudre de l'imprimante est partie)
         IndustrialRecipe tool = recipe(h, "industry/induction_furnace/rc_carbide_cutting_tools");
         Gt.check(uses(tool, item("tungsten_carbide_dust")) && !uses(tool, item("tungsten_carbide_plate")), "outil de coupe en carbure : poudre, sans plaque");
-        //« 1 bloc -> 9 plaques » (exemple impose de Guillaume) au Laminoir, MKII
-        IndustrialRecipe block = recipe(h, "industry/rolling_mill/roll_block_plate_iron");
-        Gt.check(block.machine() == IndustryMachine.ROLLING_MILL && block.tier() == 1, "bloc -> 9 plaques : Laminoir MKII");
+        //« 1 bloc -> 9 plaques » (exemple impose de Guillaume) au Laminoir ; 1.0.6 : la recette MKII etait le doublon de celle du laminoir a
+        //vapeur (desactivee, verrou suivi) : le Laminoir fait celle-ci des le MKI (recette basse convertie)
+        ResourceLocation steamBlock = rl("bronze/steam/rolling_mill/block_plate_iron");
+        Gt.equal(steamBlock, PiRemaps.recipeId(rl("industry/rolling_mill/roll_block_plate_iron")), "bloc -> 9 plaques : verrou suivi");
+        IndustrialRecipe block = IndustryRecipes.of(h.getLevel(), IndustryMachine.ROLLING_MILL).stream().filter(r -> r.getId().equals(steamBlock))
+              .findFirst().orElse(null);
+        Gt.check(block != null && block.converted() && block.tier() == 0, "bloc -> 9 plaques : Laminoir des le MKI");
         Gt.equal(9, block.results().get(0).stack().getCount(), "bloc -> 9 plaques");
         h.succeed();
     }
