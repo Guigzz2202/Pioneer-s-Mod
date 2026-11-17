@@ -37,7 +37,10 @@ public class Pigeon extends WildBird {
 
     @Override
     protected void playOwnQuiet() {
-        playOwn("flap");
+        //1.0.6 (Guillaume, 17/11 : bruit des ailes trop fort) : en vol, un battement sur deux, a volume bas ; le decollage garde le sien
+        if (getRandom().nextBoolean()) {
+            playOwn("flap", 0.22F);
+        }
     }
 
     @Override

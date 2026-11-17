@@ -424,9 +424,14 @@ public abstract class WildAnimal extends Animal {
 
     /** Joue le son propre de l'espece (charge, brame, roue, saut, colere). */
     public void playOwn(String name) {
+        playOwn(name, getSoundVolume());
+    }
+
+    /** 1.0.6 : son propre a un volume choisi (battements d'ailes discrets en vol). */
+    public void playOwn(String name, float volume) {
         SoundEvent s = PiWild.sound(kind, name);
         if (s != null) {
-            playSound(s, getSoundVolume(), getVoicePitch());
+            playSound(s, volume, getVoicePitch());
         }
     }
 }

@@ -1219,9 +1219,16 @@
     "subtitle": "subtitles.pioneers.wild.pigeon.flap",
     "sounds": [
       {
-        "name": "minecraft:entity.bat.takeoff",
+        "name": "minecraft:entity.parrot.fly",
         "type": "event",
-        "pitch": 1.25
+        "pitch": 1.1,
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:entity.parrot.fly",
+        "type": "event",
+        "pitch": 1.25,
+        "volume": 0.45
       }
     ]
   },
@@ -1415,16 +1422,16 @@
     "subtitle": "subtitles.pioneers.wild.elephant.hurt",
     "sounds": [
       {
-        "name": "pioneers:wild/elephant_trumpet_3",
+        "name": "pioneers:wild/elephant_trumpet_6",
         "pitch": 1.15
       },
       {
-        "name": "pioneers:wild/elephant_trumpet_6",
-        "pitch": 1.2
+        "name": "pioneers:wild/elephant_trumpet_3",
+        "pitch": 1.1
       },
       {
-        "name": "pioneers:wild/elephant_trumpet_3",
-        "pitch": 1.3
+        "name": "pioneers:wild/elephant_trumpet_4",
+        "pitch": 1.2
       }
     ]
   },
