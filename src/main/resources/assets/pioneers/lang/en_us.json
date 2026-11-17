@@ -22504,7 +22504,7 @@
   "clan.pioneers.ui.buy.buy_n": "Buy %s (%s)",
   "clan.pioneers.ui.buy.cl_note": "Loaded chunks stay loaded forever, with no daily cost.",
   "clan.pioneers.ui.territory.stock_tip": "Free slots: %s; bought: %s (Settings). No daily cost.",
-  "clan.pioneers.ui.territory.global_tip": "Server: %s / %s chunks loaded.",
+  "clan.pioneers.ui.territory.global_tip": "Server: %s chunks loaded (no cap).",
   "clan.pioneers.chunkload.no_stock": "No free slot left (%s bought): buy more in Territory, Settings.",
   "clan.pioneers.chunkload.loaded_stock": "Chunk kept loaded (%s / %s slots), with no daily cost.",
   "clan.pioneers.chunkload.buy.cap": "Bought slot cap reached.",

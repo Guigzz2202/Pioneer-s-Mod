@@ -22504,7 +22504,7 @@
   "clan.pioneers.ui.buy.buy_n": "Acheter %s (%s)",
   "clan.pioneers.ui.buy.cl_note": "Les chunks chargés le restent sans fin, sans coût par jour.",
   "clan.pioneers.ui.territory.stock_tip": "Emplacements libres : %s ; achetés : %s (Réglages). Aucun coût par jour.",
-  "clan.pioneers.ui.territory.global_tip": "Serveur : %s / %s chunks chargés.",
+  "clan.pioneers.ui.territory.global_tip": "Serveur : %s chunks chargés (sans plafond).",
   "clan.pioneers.chunkload.no_stock": "Plus d’emplacement libre (%s achetés) : achetez-en dans Territoire, Réglages.",
   "clan.pioneers.chunkload.loaded_stock": "Chunk chargé en permanence (%s / %s emplacements), sans coût par jour.",
   "clan.pioneers.chunkload.buy.cap": "Plafond d’emplacements achetés atteint.",

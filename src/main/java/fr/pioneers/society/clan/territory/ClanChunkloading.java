@@ -62,9 +62,9 @@ public final class ClanChunkloading {
         return Math.max(0, slots(c) - c.chunkload.size() - queued(server, c));
     }
 
-    /** 1.0.6 : emplacements achetes au plus (reglages du serveur ; Solitaire a part). */
+    /** 1.0.6 (Guillaume, 17/11/2026 : « retire le plafond de chunk max ») : aucun plafond d'emplacements achetes. */
     public static int buyCap(Clan c) {
-        return c.solo ? PiCommonConfig.get(RpConfig.CHUNKLOAD_BUY_SOLO_MAX, 16) : PiCommonConfig.get(RpConfig.CHUNKLOAD_BUY_MAX, 64);
+        return Integer.MAX_VALUE;
     }
 
     public static boolean suspended(Clan c) {
@@ -110,8 +110,9 @@ public final class ClanChunkloading {
         return n;
     }
 
+    /** 1.0.6 (Guillaume, 17/11/2026 : « retire le plafond de chunk max ») : aucun plafond du serveur (la file d'attente ne sert plus). */
     public static int globalMax() {
-        return PiCommonConfig.get(RpConfig.CHUNKLOAD_GLOBAL_MAX, 200);
+        return Integer.MAX_VALUE;
     }
 
     public static boolean dimensionAllowed(String dim) {
@@ -169,7 +170,7 @@ public final class ClanChunkloading {
         if (n <= 0 || n > 1000) {
             return "clan.pioneers.error.amount";
         }
-        if (c.boughtChunkloads + n > buyCap(c)) {
+        if ((long) c.boughtChunkloads + n > buyCap(c)) {
             return "clan.pioneers.chunkload.buy.cap";
         }
         long cost = priceOf(c, n);

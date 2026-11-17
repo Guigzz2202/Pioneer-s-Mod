@@ -29,7 +29,7 @@ public final class RpConfig {
     // ------------------------------------------------------------------ clans (bloc 4)
     public static ForgeConfigSpec.BooleanValue CLANS, WAR;
     public static ForgeConfigSpec.IntValue MAX_CLANS, MAX_MEMBERS, CLAIM_BASE, CLAIM_PER_MEMBER, CLAIM_PER_LEVEL, CLAIM_MAX, CLAIM_SOLO_MAX,
-          CHUNKLOAD_GLOBAL_MAX, MAX_PLAYER_PEOPLES;
+          MAX_PLAYER_PEOPLES;
     public static ForgeConfigSpec.ConfigValue<List<? extends String>> CHUNKLOAD_DIMENSIONS;
     /**
      * 1.0.3-beta (lot 16) : achat de claims au tresor du clan (plafonds d'achat). 1.0.5-beta (lot 13, Guillaume : « prix fixe 100 Shining ») :
@@ -43,8 +43,8 @@ public final class RpConfig {
      * (Les claims charges d'office du lot 8 de la 1.0.4 sont retires : cles claimsLoaded* supprimees.)
      */
     public static ForgeConfigSpec.LongValue CHUNKLOAD_PRICE_BASE, CHUNKLOAD_PRICE_MAX;
-    /** 1.0.6 (Guillaume, 17/11/2026) : emplacements de chunkloading achetes au plus (stock du clan, du Solitaire). */
-    public static ForgeConfigSpec.IntValue CHUNKLOAD_BUY_MAX, CHUNKLOAD_BUY_SOLO_MAX;
+    // 1.0.6 (Guillaume, 17/11/2026, 21 h 03 : « retire le plafond de chunk max ») : plus de plafond de chunkloading (ni par clan, ni pour le
+    // serveur) : cles chunkloadGlobalMax, chunkloadBuyMax et chunkloadBuySoloMax retirees
     public static ForgeConfigSpec.DoubleValue CHUNKLOAD_PRICE_COEF;
 
     /** Appele par le bloc statique de {@code PiCommonConfig}, avant {@code builder.build()}. */
@@ -107,7 +107,6 @@ public final class RpConfig {
               + " ne bornent que la part gratuite du budget.").defineInRange("claimPrice", 100L, 0L, 1_000_000_000L);
         CLAIM_BUY_MAX = b.comment("Claims achetes au plus par un clan (0 : achat ferme).").defineInRange("claimBuyMax", 200, 0, 100_000);
         CLAIM_BUY_SOLO_MAX = b.comment("Claims achetes au plus par un Solitaire (clan solo).").defineInRange("claimBuySoloMax", 50, 0, 100_000);
-        CHUNKLOAD_GLOBAL_MAX = b.comment("Chunks charges au plus pour tous les clans.").defineInRange("chunkloadGlobalMax", 200, 0, 100_000);
         CHUNKLOAD_DIMENSIONS = b.comment("Dimensions ou le chunkloading de clan est permis.")
               .defineListAllowEmpty(List.of("chunkloadDimensions"), () -> List.of("minecraft:overworld"), o -> o instanceof String);
         CHUNKLOAD_PRICE_BASE = b.comment("Prix du n-ieme emplacement de chunkloading achete par un clan (tresor) :",
@@ -115,10 +114,6 @@ public final class RpConfig {
               .defineInRange("chunkloadPriceBase", 50L, 0L, 1_000_000_000L);
         CHUNKLOAD_PRICE_COEF = b.comment("Coefficient du logarithme neperien du prix des emplacements.").defineInRange("chunkloadPriceCoef", 108.0, 0.0, 1_000_000.0);
         CHUNKLOAD_PRICE_MAX = b.comment("Prix maximal d'un emplacement de chunkloading.").defineInRange("chunkloadPriceMax", 500L, 0L, 1_000_000_000L);
-        CHUNKLOAD_BUY_MAX = b.comment("Emplacements de chunkloading achetes au plus par un clan (stock ; 0 : achat ferme). Les chunks charges ne",
-              "coutent rien chaque jour ; chunkloadGlobalMax borne le serveur.").defineInRange("chunkloadBuyMax", 64, 0, 100_000);
-        CHUNKLOAD_BUY_SOLO_MAX = b.comment("Emplacements de chunkloading achetes au plus par un Solitaire.").defineInRange("chunkloadBuySoloMax", 16, 0,
-              100_000);
         WAR = b.comment("Guerres entre clans.").define("war", true);
         MAX_PLAYER_PEOPLES = b.comment("Peuples de joueurs au plus.").defineInRange("maxPlayerPeoples", 4, 0, 100);
         b.pop();

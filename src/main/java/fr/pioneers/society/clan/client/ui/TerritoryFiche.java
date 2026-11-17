@@ -364,7 +364,9 @@ final class TerritoryFiche extends ClanTab.Fiche {
         u.tip(x, y, w, 8, Component.translatable("clan.pioneers.ui.buy." + kind + "_stock.tip"));
         y += 9;
         boolean capped = bought >= cap;
-        u.row(Component.translatable("clan.pioneers.ui.buy.bought"), Component.literal(bought + " / " + cap), x, y, w, capped ? Ui.MINUS : Ui.TEXT);
+        //1.0.6 : chunkloads sans plafond : le nombre achete seul
+        u.row(Component.translatable("clan.pioneers.ui.buy.bought"), Component.literal(cap >= Integer.MAX_VALUE / 2 ? Integer.toString(bought) : bought + " / " + cap),
+              x, y, w, capped ? Ui.MINUS : Ui.TEXT);
         y += 9;
         u.row(Component.translatable("clan.pioneers.ui.buy." + kind + "_price"), price, x, y, w, Ui.TEXT);
         y += 10;
@@ -958,7 +960,7 @@ final class TerritoryFiche extends ClanTab.Fiche {
             Component loaded = Component.literal(t.getInt("loaded") + " / " + t.getInt("slots"));
             cell(u, "perm_chunkload", loaded, x, y + Ui.FACT, cw, Ui.TEXT, Component.translatable("clan.pioneers.ui.territory.loaded"),
                   Component.translatable("clan.pioneers.ui.territory.stock_tip", t.getInt("clFree"), t.getInt("clBought")),
-                  Component.translatable("clan.pioneers.ui.territory.global_tip", t.getInt("global"), t.getInt("globalMax")),
+                  Component.translatable("clan.pioneers.ui.territory.global_tip", t.getInt("global")),
                   Component.translatable("clan.pioneers.ui.territory.queued_tip", t.getInt("queued")));
             ListTag fns = t.getList("functions", Tag.TAG_COMPOUND);
             List<Component> tip = new ArrayList<>();
