@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/steel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:extrusion_shape_wire",
+  "count": 1
+ }
+}

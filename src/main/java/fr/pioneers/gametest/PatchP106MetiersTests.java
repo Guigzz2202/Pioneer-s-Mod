@@ -124,14 +124,17 @@ public final class PatchP106MetiersTests {
               && r.results().get(0).stack().is(rod)), "tiges de fer : plus au centre d'usinage");
         // l'extrudeuse ne file que dans ses formes d'extrusion (tige, tube), rien d'autre (demande de Guillaume du 17/11/2026) ; ce qui n'est
         // ni une tige ni un tube passe au Reacteur chimique
-        Item shapeRod = ForgeRegistries.ITEMS.getValue(Pioneers.rl("extrusion_shape_rod"));
-        Item shapePipe = ForgeRegistries.ITEMS.getValue(Pioneers.rl("extrusion_shape_pipe"));
+        // (17/11 : formes plaque, fil, engrenage remises pour la voie generique de l'extrudeuse)
+        List<ItemStack> shapes = ForgeRegistries.ITEMS.getEntries().stream()
+              .filter(e -> e.getKey().location().getPath().startsWith("extrusion_shape_")).map(e -> new ItemStack(e.getValue())).toList();
+        Gt.equal(5, shapes.size(), "5 formes d'extrusion : tige, tube, plaque, fil, engrenage");
         for (IndustrialRecipe r : IndustryRecipes.of(h.getLevel(), IndustryMachine.EXTRUDER)) {
             if (!r.converted()) {
-                Gt.check(r.items().stream().anyMatch(c -> c.ingredient().test(new ItemStack(shapeRod)) || c.ingredient().test(new ItemStack(shapePipe))),
+                Gt.check(r.items().stream().anyMatch(c -> shapes.stream().anyMatch(st -> c.ingredient().test(st))),
                       "extrudeuse sans forme d'extrusion : " + r.getId());
             }
         }
+        Gt.equal(IndustryMachine.MACHINING_CENTER, machineOf(h, "industry/extruder/rc_aluminium_heatsinks"), "dissipateurs : centre d'usinage");
         Gt.equal(IndustryMachine.CHEMICAL_REACTOR, machineOf(h, "industry/extruder/extrude_ptfe_sheet"), "feuille de PTFE : Reacteur chimique");
         h.succeed();
     }

@@ -92,10 +92,14 @@ public final class PatchP103Lot4Tests {
               && w.result().getCount() == 2, "trefileuse : 1 lingot de cuivre -> 2 fils");
         IndustrialRecipe rodWire = industrial(server, "industry/wiremill/wire_copper");
         Gt.equal(1, rodWire.tier(), "trefileuse : tige -> 2 fils au MKII");
-        //1.0.6 (une machine par transformation de forme) : les formes de l'anneau et de l'engrenage sont retirees (Cintreuse, Decoupeuse) ;
-        //un objet deja fabrique devient la filiere d'extrusion vierge
-        Gt.check(server.getRecipeManager().byKey(rl("industry/extruder/extrude_ring_steel")).isEmpty()
-              && server.getRecipeManager().byKey(rl("industry/extruder/extrude_gear_iron")).isEmpty(), "plus d'anneau ni d'engrenage extrude");
+        //1.0.6 (une machine par transformation de forme) : la forme de l'anneau est retiree (Cintreuse) ; un objet deja fabrique devient la
+        //filiere d'extrusion vierge. Demande de Guillaume du 17/11/2026 : l'extrudeuse garde une voie generique, un peu moins rentable, pour
+        //la plaque (1 lingot), le fil (1 lingot -> 2) et l'engrenage (5 lingots)
+        Gt.check(server.getRecipeManager().byKey(rl("industry/extruder/extrude_ring_steel")).isEmpty(), "plus d'anneau extrude");
+        IndustrialRecipe extrGear = industrial(server, "industry/extruder/extrude_gear_iron");
+        Gt.equal(5, extrGear.items().get(0).count(), "engrenage extrude : 5 lingots");
+        Gt.equal(2, industrial(server, "industry/extruder/extrude_wire_copper").results().get(0).stack().getCount(), "fil extrude : 1 lingot -> 2");
+        Gt.equal(1, industrial(server, "industry/extruder/extrude_plate_iron").results().get(0).stack().getCount(), "plaque extrudee : 1 lingot -> 1");
         Gt.check(!ForgeRegistries.ITEMS.containsKey(rl("extrusion_shape_ring")), "forme anneau retiree du registre");
         Gt.equal("extrusion_die", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_shape_ring"), "forme anneau -> filiere vierge");
         IndustrialRecipe press = industrial(server, "industry/press/press_sheet_steel");

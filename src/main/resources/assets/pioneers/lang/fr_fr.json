@@ -22383,5 +22383,8 @@
   "description.pioneers.advanced_stoneworks": "Taille la pierre : toutes les découpes du tailleur de pierre (dalles, escaliers, murets, pierres polies et taillées), avec un meilleur rendement qu'à la main, et les ouvrages du maçon.",
   "description.pioneers.elite_stoneworks": "Taille la pierre : toutes les découpes du tailleur de pierre (dalles, escaliers, murets, pierres polies et taillées), avec un meilleur rendement qu'à la main, et les ouvrages du maçon.",
   "description.pioneers.ultimate_stoneworks": "Taille la pierre : toutes les découpes du tailleur de pierre (dalles, escaliers, murets, pierres polies et taillées), avec un meilleur rendement qu'à la main, et les ouvrages du maçon.",
-  "description.pioneers.industrial_stoneworks": "Taille la pierre : toutes les découpes du tailleur de pierre (dalles, escaliers, murets, pierres polies et taillées), avec un meilleur rendement qu'à la main, et les ouvrages du maçon. Presse à portique. Habillage mécanique. Maj + clic droit pour le plan."
+  "description.pioneers.industrial_stoneworks": "Taille la pierre : toutes les découpes du tailleur de pierre (dalles, escaliers, murets, pierres polies et taillées), avec un meilleur rendement qu'à la main, et les ouvrages du maçon. Presse à portique. Habillage mécanique. Maj + clic droit pour le plan.",
+  "item.pioneers.extrusion_shape_plate.desc": "Extrudeuse : lingot → plaque. Dans la case Outil : incassable, jamais consommée.",
+  "item.pioneers.extrusion_shape_wire.desc": "Extrudeuse : lingot → 2 fils. Dans la case Outil : incassable, jamais consommée.",
+  "item.pioneers.extrusion_shape_gear.desc": "Extrudeuse : 5 lingots → engrenage. Dans la case Outil : incassable, jamais consommée."
 }

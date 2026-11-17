@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "chemical_reactor",
+ "machine": "machining_center",
  "tier": 0,
  "time": 140,
  "items": [

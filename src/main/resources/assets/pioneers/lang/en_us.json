@@ -22383,5 +22383,8 @@
   "description.pioneers.advanced_stoneworks": "Cuts stone: every stonecutter cut (slabs, stairs, walls, polished and chiseled stone) with a better yield than by hand, and the mason's works.",
   "description.pioneers.elite_stoneworks": "Cuts stone: every stonecutter cut (slabs, stairs, walls, polished and chiseled stone) with a better yield than by hand, and the mason's works.",
   "description.pioneers.ultimate_stoneworks": "Cuts stone: every stonecutter cut (slabs, stairs, walls, polished and chiseled stone) with a better yield than by hand, and the mason's works.",
-  "description.pioneers.industrial_stoneworks": "Cuts stone: every stonecutter cut (slabs, stairs, walls, polished and chiseled stone) with a better yield than by hand, and the mason's works. Gantry press. Mechanical cladding. Shift + right-click for the blueprint."
+  "description.pioneers.industrial_stoneworks": "Cuts stone: every stonecutter cut (slabs, stairs, walls, polished and chiseled stone) with a better yield than by hand, and the mason's works. Gantry press. Mechanical cladding. Shift + right-click for the blueprint.",
+  "item.pioneers.extrusion_shape_plate.desc": "Extruder: ingot → plate. In the Tool slot: unbreakable, never consumed.",
+  "item.pioneers.extrusion_shape_wire.desc": "Extruder: ingot → 2 wires. In the Tool slot: unbreakable, never consumed.",
+  "item.pioneers.extrusion_shape_gear.desc": "Extruder: 5 ingots → gear. In the Tool slot: unbreakable, never consumed."
 }

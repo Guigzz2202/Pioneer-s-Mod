@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 0,
+ "time": 240,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/brass"
+   },
+   "count": 5
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_gear"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:brass_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:extrusion_shape_gear",
+   "count": 1
+  }
+ ]
+}
