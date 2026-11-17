@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 2,
+ "time": 420,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/nichrome"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_plate"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nichrome_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:extrusion_shape_plate",
+   "count": 1
+  }
+ ]
+}

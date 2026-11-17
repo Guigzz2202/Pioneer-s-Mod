@@ -370,6 +370,9 @@ public final class PiIndustry {
                 int uses = OBJECTIVE_USES.getOrDefault(id, 64);
                 String worn = "worn_" + id;
                 ITEMS.put(id, item(id, () -> new EngravingObjectiveItem(uses, () -> item(worn), new Item.Properties()), MATERIALS));
+            } else if (id.startsWith("extrusion_shape_")) {
+                //1.0.6 (demande de Guillaume du 17/11/2026) : formes d'extrusion non empilables (un outil, une case Outil)
+                ITEMS.put(id, item(id, () -> new ItemWithDescription(new Item.Properties().stacksTo(1)), MATERIALS));
             } else if (IndustryContent.DESCRIBED.contains(id)) {
                 //MAJ Recettes (lot 4b) : moules et sables de la fonderie : une ligne d'infobulle (a quoi ils servent)
                 ITEMS.put(id, item(id, () -> new ItemWithDescription(new Item.Properties()), MATERIALS));

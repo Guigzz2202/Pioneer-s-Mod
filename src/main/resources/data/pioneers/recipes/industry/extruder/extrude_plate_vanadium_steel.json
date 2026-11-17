@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 0,
+ "time": 420,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/vanadium_steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_plate"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:extrusion_shape_plate",
+   "count": 1
+  }
+ ]
+}

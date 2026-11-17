@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 1,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/stainless_steel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_pipe"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stainless_steel_pipe",
+   "count": 1
+  },
+  {
+   "item": "pioneers:extrusion_shape_pipe",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/terminite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_rod"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:terminite_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:extrusion_shape_rod",
+   "count": 1
+  }
+ ]
+}

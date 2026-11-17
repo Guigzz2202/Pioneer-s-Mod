@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 2,
+ "time": 540,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/niobium_titanium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_plate"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:niobium_titanium_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:extrusion_shape_plate",
+   "count": 1
+  }
+ ]
+}

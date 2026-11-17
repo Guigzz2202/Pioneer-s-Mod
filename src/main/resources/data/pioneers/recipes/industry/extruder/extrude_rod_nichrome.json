@@ -1,0 +1,35 @@
+{
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 2,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/nichrome"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_rod"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nichrome_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:extrusion_shape_rod",
+   "count": 1
+  }
+ ]
+}

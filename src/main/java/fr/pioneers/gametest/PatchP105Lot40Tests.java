@@ -238,9 +238,11 @@ public final class PatchP105Lot40Tests {
                 Gt.check(FLAT.matcher(out).find() || FLAT_EXCEPTIONS.contains(out), "presse a vapeur : " + r.getId() + " -> " + out);
             }
         }
-        //une recette partie de la presse garde son identifiant chez sa machine (tiges a la matrice : extrudeuse)
+        //une recette partie de la presse est suivie chez sa machine (tiges : extrudeuse) ; 1.0.6 (17/11/2026) : la voie de l'extrudeuse a
+        //forme vaut pour tous les metaux, la recette partie de la presse en est le doublon (desactivee, verrou suivi)
         ResourceLocation rod = rl("industry/press/press_rod_nickel");
-        Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.EXTRUDER, rod) != null, "tige de nickel a la matrice : a l'extrudeuse");
+        Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.EXTRUDER, fr.pioneers.core.common.PiRemaps.recipeId(rod)) != null,
+              "tige de nickel : a l'extrudeuse");
         Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.PRESS, rod) == null, "tige de nickel a la matrice : plus a la presse");
         s.done();
     }

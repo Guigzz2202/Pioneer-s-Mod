@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 0,
+ "time": 330,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/invar"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_plate"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:invar_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:extrusion_shape_plate",
+   "count": 1
+  }
+ ]
+}

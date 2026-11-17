@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 3,
+ "time": 600,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/ruachite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_plate"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ruachite_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:extrusion_shape_plate",
+   "count": 1
+  }
+ ]
+}
