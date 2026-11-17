@@ -82,7 +82,18 @@ final class TerritoryFiche extends ClanTab.Fiche {
     private static long watched;
     private static int panX, panZ;
     /** 1.9.2 : zone tracee (coins absolus), mode « rendre » (bouton ; Maj l'inverse au debut du geste), attente et recapitulatif recu. */
-    private static boolean dragging, unclaimMode, dragUnclaim, waiting;
+    private static boolean dragging, waiting;
+    /**
+     * 1.0.6 (Guillaume : « drag and drop pour chunkloader comme on le fait pour claim ») : mode du trace : 0 reclamer, 1 rendre, 2 charger,
+     * 3 liberer ; Maj pendant le geste prend le mode inverse (reclamer / rendre, charger / liberer).
+     */
+    private static int areaMode, dragMode;
+    private static final String[] AREA_MODES = {"claim", "unclaim", "load", "unload"};
+
+    /** Le mode retire-t-il (rendre, liberer) ? Rouge sur la carte. */
+    private static boolean removing(int mode) {
+        return mode == 1 || mode == 3;
+    }
     private static int dragX0, dragZ0, dragX1, dragZ1, areaSeen;
     @Nullable
     private static CompoundTag recap;
@@ -310,99 +321,119 @@ final class TerritoryFiche extends ClanTab.Fiche {
         u.wrap(Component.translatable("clan.pioneers.ui.zperm.note"), X, by + 17, MAP, Ui.DIM, Ui.SMALL, 4);
     }
 
-    /** Achat de claims au tresor (colonne de droite de la vue Reglages). */
+    /**
+     * Achats au tresor (colonne de droite de la vue Reglages). 1.0.6 (Guillaume, 17/11/2026 : « on doit pouvoir acheter comme on le souhaite
+     * (en dehors de la map) des claims et des chunkloads pour preparer le stock dispo ») : deux cartes, claims et emplacements de chunkloading,
+     * chacune avec sa quantite (- et + ; Maj : par 10) et son bouton « Acheter », a confirmer d'un second clic (le serveur recalcule le prix).
+     */
     private static void purchase(Ui u, CompoundTag t) {
         int x = PX, w = X + W - PX, y = Y + VIEW_H + 3;
-        u.fit(Component.translatable("clan.pioneers.ui.buy.title"), x, y, w, Ui.INK, Ui.SMALL);
+        boolean known = t.contains("treasury");
+        long treasury = t.getLong("treasury");
+        u.row(Component.translatable("clan.pioneers.ui.buy.treasury"), known ? Component.literal(Ui.group(treasury))
+              : Component.translatable("clan.pioneers.ui.buy.hidden"), x, y, w, Ui.TEXT);
+        y += 11;
+        //claims : prix fixe
+        int bought = t.getInt("bought"), cap = t.getInt("buyMax");
+        long unit = t.getLong("price");
+        claimQty = Math.max(1, Math.min(claimQty, Math.max(1, cap - bought)));
+        long[] claimCost = new long[claimQty];
+        java.util.Arrays.fill(claimCost, unit);
+        y = card(u, t, x, y, w, "claims", Component.literal(t.getInt("claims") + " / " + t.getInt("budget")), bought, cap,
+              Component.translatable("clan.pioneers.ui.buy.unit_price", Ui.group(unit)), claimCost, claimQty, true);
+        u.separator(x, y + 1, w);
+        y += 5;
+        //chunkloads : prix du rang de chaque emplacement (courbe en logarithme)
+        int clBought = t.getInt("clBought"), clCap = t.getInt("clBuyMax");
+        long[] clPrices = t.getLongArray("clPrices");
+        clQty = Math.max(1, Math.min(clQty, Math.max(1, Math.min(clPrices.length, clCap - clBought))));
+        long[] clCost = java.util.Arrays.copyOf(clPrices, Math.min(clQty, clPrices.length));
+        y = card(u, t, x, y, w, "chunkloads", Component.literal(t.getInt("clFree") + " / " + t.getInt("slots")), clBought, clCap,
+              Component.literal(clPrices.length > 0 ? Ui.group(clPrices[0]) : "—"), clCost, clQty, false);
+        u.wrap(Component.translatable("clan.pioneers.ui.buy.cl_note"), x, y, w, Ui.DIM, Ui.SMALL, 3);
+    }
+
+    private static int claimQty = 1, clQty = 1;
+
+    /** Une carte d'achat ; {@code cost} : prix de chaque unite de la quantite choisie. Rend le y suivant. */
+    private static int card(Ui u, CompoundTag t, int x, int y, int w, String kind, Component stock, int bought, int cap, Component price, long[] cost,
+                            int qty, boolean claims) {
+        u.fit(Component.translatable("clan.pioneers.ui.buy." + kind), x, y, w, Ui.INK, Ui.SMALL);
         y += 9;
-        y += u.wrap(Component.translatable("clan.pioneers.ui.buy.unit"), x, y, w, Ui.DIM, Ui.SMALL, 2) + 2;
-        int bought = t.getInt("bought"), cap = t.getInt("buyMax"), free = t.getInt("free");
-        long[] prices = t.getLongArray("prices");
+        u.row(Component.translatable("clan.pioneers.ui.buy." + kind + "_stock"), stock, x, y, w, Ui.TEXT);
+        u.tip(x, y, w, 8, Component.translatable("clan.pioneers.ui.buy." + kind + "_stock.tip"));
+        y += 9;
         boolean capped = bought >= cap;
-        int n5 = Math.max(0, Math.min(5, cap - bought));
-        long next = prices.length > 0 ? prices[0] : 0, five = 0;
-        for (int i = 0; i < n5 && i < prices.length; i++) {
-            five += prices[i];
+        u.row(Component.translatable("clan.pioneers.ui.buy.bought"), Component.literal(bought + " / " + cap), x, y, w, capped ? Ui.MINUS : Ui.TEXT);
+        y += 9;
+        u.row(Component.translatable("clan.pioneers.ui.buy." + kind + "_price"), price, x, y, w, Ui.TEXT);
+        y += 10;
+        long total = 0;
+        for (long c : cost) {
+            total += c;
         }
         boolean known = t.contains("treasury");
         long treasury = t.getLong("treasury");
-        List<Component> tip = new ArrayList<>();
-        tip.add(Component.translatable("clan.pioneers.ui.buy.prices"));
-        for (int i = 0; i < prices.length && i < n5; i++) {
-            tip.add(Component.translatable("clan.pioneers.ui.buy.price_line", bought + 1 + i, Ui.group(prices[i])));
-        }
-        u.row(Component.translatable("clan.pioneers.ui.buy.budget"), Component.literal(t.getInt("claims") + " / " + t.getInt("budget")), x, y, w,
-              t.getInt("claims") > t.getInt("budget") ? Ui.MINUS : Ui.TEXT);
-        y += 9;
-        u.row(Component.translatable("clan.pioneers.ui.buy.free"), Component.literal(Integer.toString(free)), x, y, w, Ui.TEXT);
-        y += 9;
-        u.row(Component.translatable("clan.pioneers.ui.buy.bought"), Component.literal(bought + " / " + cap), x, y, w, capped ? Ui.MINUS : Ui.TEXT);
-        y += 9;
-        u.row(Component.translatable("clan.pioneers.ui.buy.next"), Component.literal(capped ? "—" : Ui.group(next)), x, y, w, Ui.TEXT);
-        if (!capped) {
-            u.tip(x, y, w, 8, tip);
-        }
-        y += 9;
-        u.row(Component.translatable("clan.pioneers.ui.buy.five"), Component.literal(capped ? "—" : Ui.group(five)), x, y, w, Ui.TEXT);
-        if (!capped) {
-            u.tip(x, y, w, 8, tip);
-        }
-        y += 9;
-        boolean shortOne = known && treasury < next;
-        u.row(Component.translatable("clan.pioneers.ui.buy.treasury"), known ? Component.literal(Ui.group(treasury))
-              : Component.translatable("clan.pioneers.ui.buy.hidden"), x, y, w, shortOne ? Ui.MINUS : Ui.TEXT);
-        y += 9;
-        //raison du refus (dans l'ordre des controles du serveur) ; le serveur revoit tout
         Component why = null;
         if (!t.getBoolean("economy")) {
             why = Component.translatable("clan.pioneers.ui.buy.no_economy");
         } else if (t.getBoolean("frozen")) {
             why = Component.translatable("clan.pioneers.ui.buy.frozen");
         } else if (!t.getBoolean("p_buy")) {
-            why = Component.translatable("clan.pioneers.ui.buy.no_right", Component.translatable("clan.pioneers.perm.claim"),
-                  Component.translatable("clan.pioneers.perm.withdraw"));
+            why = Component.translatable("clan.pioneers.ui.buy.no_right_short");
         } else if (capped) {
             why = Component.translatable("clan.pioneers.ui.buy.cap", cap);
-        } else if (shortOne) {
-            why = Component.translatable("clan.pioneers.ui.buy.short", Ui.group(next - treasury));
+        } else if (known && treasury < total) {
+            why = Component.translatable("clan.pioneers.ui.buy.short", Ui.group(total - treasury));
         }
+        //quantite : - n + (Maj : par 10)
+        int max = Math.max(1, Math.min(cap - bought, claims ? Integer.MAX_VALUE : t.getLongArray("clPrices").length));
+        int sb = 13;
+        u.button(x, y, sb, 13, Component.literal("−"), !capped && qty > 1, () -> setQty(claims, qty - (net.minecraft.client.gui.screens.Screen
+              .hasShiftDown() ? 10 : 1), max));
+        u.center(Component.literal(Integer.toString(qty)), x + sb + (w - 2 * sb) / 2, y + 3, w - 2 * sb - 4, Ui.TEXT, 1F);
+        u.button(x + w - sb, y, sb, 13, Component.literal("+"), !capped && qty < max, () -> setQty(claims, qty + (net.minecraft.client.gui.screens.Screen
+              .hasShiftDown() ? 10 : 1), max));
+        u.tip(x, y, w, 13, Component.translatable("clan.pioneers.ui.buy.qty_tip"));
+        y += 15;
         long now = System.currentTimeMillis();
         if (confirmN > 0 && now > confirmUntil) {
             confirmN = 0;
         }
-        boolean can1 = why == null, can5 = can1 && n5 > 1 && (!known || treasury >= five);
-        int bw = w - 30, seen = bought;
-        Component one = confirmN == 1 ? Component.translatable("clan.pioneers.ui.buy.confirm", Ui.group(next)) : Component.translatable("clan.pioneers.ui.buy.one");
-        u.button(x, y + 1, bw, 13, one, can1 && confirmN != 5, () -> buy(1, seen));
-        Component many = confirmN == 5 ? Component.translatable("clan.pioneers.ui.buy.confirm", Ui.group(five)) : Component.translatable("clan.pioneers.ui.buy.many");
-        int n = n5;
-        u.button(x + bw + 2, y + 1, w - bw - 2, 13, many, can5 && confirmN != 1, () -> buy(n, seen));
-        if (can5 && confirmN != 1) {
-            u.tip(x + bw + 2, y + 1, w - bw - 2, 13, tip);
-        }
-        y += 18;
-        if (confirmN > 0) {
-            y += u.wrap(Component.translatable("clan.pioneers.ui.buy.confirm_tip"), x, y, w, Ui.INK, Ui.SMALL, 3) + 3;
+        int key = claims ? 1 : 2;
+        boolean confirming = confirmN == key;
+        Component label = confirming ? Component.translatable("clan.pioneers.ui.buy.confirm", Ui.group(total))
+              : Component.translatable("clan.pioneers.ui.buy.buy_n", qty, Ui.group(total));
+        int seen = bought, n = qty;
+        u.button(x, y, w, 13, label, why == null && (confirmN == 0 || confirming), () -> {
+            if (confirmN != key) {
+                confirmN = key;
+                confirmUntil = System.currentTimeMillis() + CONFIRM_MS;
+                return;
+            }
+            confirmN = 0;
+            CompoundTag a = new CompoundTag();
+            a.putInt("n", n);
+            a.putInt("seen", seen);
+            ClanUiClient.act(claims ? "claim_buy" : "cl_buy", "territory", a);
+        });
+        y += 15;
+        if (confirming) {
+            y += u.wrap(Component.translatable("clan.pioneers.ui.buy.confirm_tip"), x, y, w, Ui.INK, Ui.SMALL, 2) + 1;
         } else if (why != null) {
-            y += u.wrap(Component.literal("− ").append(why), x, y, w, Ui.MINUS, Ui.SMALL, 3) + 3;
+            y += u.wrap(Component.literal("− ").append(why), x, y, w, Ui.MINUS, Ui.SMALL, 2) + 1;
         }
-        //1.0.5-beta (lot 13) : prix fixe d'un claim achete
-        u.wrap(Component.translatable("clan.pioneers.ui.buy.fixed", Ui.group(t.getLong("price"))), x, y, w, Ui.DIM, Ui.SMALL, 11);
+        return y;
     }
 
-    /** Premier clic : a confirmer (4 s) ; second clic sur le meme bouton : la demande part (le serveur recalcule le prix). */
-    private static void buy(int n, int seen) {
-        int key = n == 1 ? 1 : 5;
-        if (confirmN != key) {
-            confirmN = key;
-            confirmUntil = System.currentTimeMillis() + CONFIRM_MS;
-            return;
+    private static void setQty(boolean claims, int q, int max) {
+        q = Math.max(1, Math.min(max, q));
+        if (claims) {
+            claimQty = q;
+        } else {
+            clQty = q;
         }
         confirmN = 0;
-        CompoundTag a = new CompoundTag();
-        a.putInt("n", n);
-        a.putInt("seen", seen);
-        ClanUiClient.act("claim_buy", "territory", a);
     }
 
     // ------------------------------------------------------------------ carte
@@ -598,7 +629,7 @@ final class TerritoryFiche extends ClanTab.Fiche {
                 //1.9.2 : l'appui commence un trace ; un relachement sur la meme case reste un simple choix de case
                 u.click(X + vx * cell, Y + vz * cell, cw, ch, () -> {
                     dragging = true;
-                    dragUnclaim = unclaimMode != net.minecraft.client.gui.screens.Screen.hasShiftDown();
+                    dragMode = net.minecraft.client.gui.screens.Screen.hasShiftDown() ? areaMode ^ 1 : areaMode;
                     dragX0 = dragX1 = ax;
                     dragZ0 = dragZ1 = az;
                 });
@@ -661,7 +692,7 @@ final class TerritoryFiche extends ClanTab.Fiche {
         dragZ1 = ClanMapModel.cz - ClanMapModel.r + gridZ(vz);
         int w = Math.abs(dragX1 - dragX0) + 1, h = Math.abs(dragZ1 - dragZ0) + 1;
         boolean big = w * h > fr.pioneers.society.clan.territory.TerritoryRules.AREA_MAX;
-        int color = big ? Ui.MINUS : dragUnclaim ? Ui.MINUS : Ui.GOLD;
+        int color = big || removing(dragMode) ? Ui.MINUS : dragMode == 2 ? Ui.PLUS : Ui.GOLD;
         rect(u, dragX0, dragZ0, dragX1, dragZ1, color, (color & 0xFFFFFF) | 0x38000000);
         //etiquette : largeur x hauteur = chunks (ou « trop grand »)
         Component label = big ? Component.translatable("clan.pioneers.ui.area.too_big", fr.pioneers.society.clan.territory.TerritoryRules.AREA_MAX)
@@ -683,7 +714,7 @@ final class TerritoryFiche extends ClanTab.Fiche {
         }
         selX = Integer.MIN_VALUE;
         if (!big) {
-            ClanUiClient.mapArea(dragX0, dragZ0, dragX1, dragZ1, dragUnclaim, false);
+            ClanUiClient.mapArea(dragX0, dragZ0, dragX1, dragZ1, dragMode, false);
             waiting = true;
             recap = null;
         }
@@ -728,7 +759,7 @@ final class TerritoryFiche extends ClanTab.Fiche {
         u.click(X, Y, MAP, MAP, () -> {
         });
         if (waiting) {
-            rect(u, dragX0, dragZ0, dragX1, dragZ1, dragUnclaim ? Ui.MINUS : Ui.GOLD, 0x30A87C2A);
+            rect(u, dragX0, dragZ0, dragX1, dragZ1, removing(dragMode) ? Ui.MINUS : Ui.GOLD, 0x30A87C2A);
             Component c = Component.translatable("clan.pioneers.ui.area.waiting");
             int pw = Math.min(MAP - 8, u.width(c, Ui.SMALL) + 12), px = X + (MAP - pw) / 2, py = Y + MAP / 2 - 7;
             u.fill(px, py, px + pw, py + 14, 0xF4EFE3C8);
@@ -737,7 +768,11 @@ final class TerritoryFiche extends ClanTab.Fiche {
             return;
         }
         CompoundTag a = recap;
-        boolean claim = a.getBoolean("claim");
+        //1.0.6 : mode du recapitulatif (claims ou chunkloads) ; les textes ont un suffixe par mode
+        int mode = a.contains("mode") ? a.getInt("mode") : a.getBoolean("claim") ? 0 : 1;
+        boolean claim = mode == 0 || mode == 2;
+        String m = AREA_MODES[Math.max(0, Math.min(3, mode))];
+        boolean chunks = mode >= 2;
         int x0 = a.getInt("x0"), z0 = a.getInt("z0"), x1 = a.getInt("x1"), z1 = a.getInt("z1");
         byte[] cells = a.getByteArray("cells");
         int w = x1 - x0 + 1;
@@ -766,14 +801,14 @@ final class TerritoryFiche extends ClanTab.Fiche {
         String error = a.getString("error");
         int ok = a.getInt("ok");
         if (error.isEmpty()) {
-            rows.add(new Component[]{Component.translatable(claim ? "clan.pioneers.ui.area.ok_claim" : "clan.pioneers.ui.area.ok_unclaim"),
-                  Component.literal(Integer.toString(ok))});
-            rows.add(new Component[]{Component.translatable(claim ? "clan.pioneers.ui.area.cost" : "clan.pioneers.ui.area.refund"),
-                  Component.translatable("clan.pioneers.ui.area.cost_value", a.getInt("cost"))});
-            rows.add(new Component[]{Component.translatable("clan.pioneers.ui.area.left"),
+            rows.add(new Component[]{Component.translatable("clan.pioneers.ui.area.ok_" + m), Component.literal(Integer.toString(ok))});
+            rows.add(new Component[]{Component.translatable(chunks ? claim ? "clan.pioneers.ui.area.slots_take" : "clan.pioneers.ui.area.slots_back"
+                  : claim ? "clan.pioneers.ui.area.cost" : "clan.pioneers.ui.area.refund"),
+                  Component.translatable(chunks ? "clan.pioneers.ui.area.slots_value" : "clan.pioneers.ui.area.cost_value", a.getInt("cost"))});
+            rows.add(new Component[]{Component.translatable(chunks ? "clan.pioneers.ui.area.slots_left" : "clan.pioneers.ui.area.left"),
                   Component.translatable("clan.pioneers.ui.area.left_value", a.getInt("left"), a.getInt("budget"))});
             if (a.getInt("skipped") > 0) {
-                rows.add(new Component[]{Component.translatable(claim ? "clan.pioneers.ui.area.skipped_claim" : "clan.pioneers.ui.area.skipped_unclaim"),
+                rows.add(new Component[]{Component.translatable("clan.pioneers.ui.area.skipped_" + m),
                       Component.literal(Integer.toString(a.getInt("skipped")))});
             }
             ListTag r = a.getList("refused", Tag.TAG_COMPOUND);
@@ -790,7 +825,7 @@ final class TerritoryFiche extends ClanTab.Fiche {
         u.fill(px, py, px + pw, py + ph, 0xF6EFE3C8);
         u.frame(px, py, pw, ph, Ui.INK);
         int y = py + 4;
-        u.fit(Component.translatable(claim ? "clan.pioneers.ui.area.title_claim" : "clan.pioneers.ui.area.title_unclaim"), px + 5, y, pw - 10, Ui.INK, 1F);
+        u.fit(Component.translatable("clan.pioneers.ui.area.title_" + m), px + 5, y, pw - 10, Ui.INK, 1F);
         y += 10;
         if (!error.isEmpty()) {
             u.wrap(Component.translatable(error, fr.pioneers.society.clan.territory.TerritoryRules.AREA_MAX), px + 5, y, pw - 10, Ui.MINUS, Ui.SMALL, 2);
@@ -816,15 +851,15 @@ final class TerritoryFiche extends ClanTab.Fiche {
             }
         }
         int by = py + ph - 17, bw = (pw - 14) / 2;
-        int fx0 = x0, fz0 = z0, fx1 = x1, fz1 = z1;
+        int fx0 = x0, fz0 = z0, fx1 = x1, fz1 = z1, fmode = mode;
         if (error.isEmpty() && ok > 0) {
             u.button(px + 5, by, bw, 13, Component.translatable("clan.pioneers.ui.area.confirm", ok), true, () -> {
-                ClanUiClient.mapArea(fx0, fz0, fx1, fz1, !claim, true);
+                ClanUiClient.mapArea(fx0, fz0, fx1, fz1, fmode, true);
                 dragX0 = fx0;
                 dragZ0 = fz0;
                 dragX1 = fx1;
                 dragZ1 = fz1;
-                dragUnclaim = !claim;
+                dragMode = fmode;
                 waiting = true;
                 recap = null;
             });
@@ -922,9 +957,9 @@ final class TerritoryFiche extends ClanTab.Fiche {
             //1.0.5-beta (lot 20) : les chunks en attente passent dans l'infobulle
             Component loaded = Component.literal(t.getInt("loaded") + " / " + t.getInt("slots"));
             cell(u, "perm_chunkload", loaded, x, y + Ui.FACT, cw, Ui.TEXT, Component.translatable("clan.pioneers.ui.territory.loaded"),
-                  Component.translatable("clan.pioneers.ui.territory.slot_price_tip", Ui.group(t.getLong("nextPrice"))),
-                  Component.translatable("clan.pioneers.ui.territory.loaded_tip", t.getLong("cost"), Ui.group(t.getLong("daily")), t.getInt("global"),
-                        t.getInt("globalMax")), Component.translatable("clan.pioneers.ui.territory.queued_tip", t.getInt("queued")));
+                  Component.translatable("clan.pioneers.ui.territory.stock_tip", t.getInt("clFree"), t.getInt("clBought")),
+                  Component.translatable("clan.pioneers.ui.territory.global_tip", t.getInt("global"), t.getInt("globalMax")),
+                  Component.translatable("clan.pioneers.ui.territory.queued_tip", t.getInt("queued")));
             ListTag fns = t.getList("functions", Tag.TAG_COMPOUND);
             List<Component> tip = new ArrayList<>();
             tip.add(Component.translatable("clan.pioneers.ui.territory.functions"));
@@ -988,10 +1023,13 @@ final class TerritoryFiche extends ClanTab.Fiche {
             //1.9.2 : un clic choisit une case, un glisse trace une zone ; mode du trace (Maj inverse le mode pendant le geste)
             u.fit(Component.translatable("clan.pioneers.ui.area.hint"), X, y, MAP, Ui.DIM, Ui.SMALL);
             if (warn == null && ClanMapModel.ready()) {
-                int cw = (MAP - 2) / 2;
-                u.chip(X, y + 8, cw, 13, Component.translatable("clan.pioneers.ui.area.mode_claim"), !unclaimMode, true, () -> unclaimMode = false);
-                u.chip(X + cw + 2, y + 8, MAP - cw - 2, 13, Component.translatable("clan.pioneers.ui.area.mode_unclaim"), unclaimMode, true,
-                      () -> unclaimMode = true);
+                //1.0.6 : quatre modes (reclamer, rendre, charger, liberer)
+                int cw = (MAP - 6) / 4;
+                for (int i = 0; i < 4; i++) {
+                    int mi = i, cx = X + i * (cw + 2);
+                    u.chip(cx, y + 8, i == 3 ? MAP - 3 * (cw + 2) : cw, 13, Component.translatable("clan.pioneers.ui.area.mode_" + AREA_MODES[i]),
+                          areaMode == i, true, () -> areaMode = mi);
+                }
             }
             return;
         }

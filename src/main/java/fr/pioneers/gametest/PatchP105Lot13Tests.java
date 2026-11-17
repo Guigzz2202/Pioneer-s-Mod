@@ -236,13 +236,17 @@ public final class PatchP105Lot13Tests {
         s.claim(c, f.getWorldPosition());
         Gt.equal(0, PatchP104Lot8Tests.owners(s.level, f.toLong()), "un claim charge encore le chunk");
         Gt.check(!ClanChunkloading.isLoaded(c, dim, f.toLong()), "claim dit charge sans emplacement");
-        //1er emplacement : 50 a la pose
+        //1.0.6 : 1er emplacement ACHETE d'avance (50), puis pose sans rien payer
         long before = c.treasury;
         Gt.equal(50L, ClanChunkloading.nextPrice(s.server, c), "prix affiche du 1er emplacement");
         ClanChunkloading.load(rep, s.level, f.toLong());
-        Gt.check(c.chunkload.contains(ClanTerritory.key(dim, f.toLong())), "emplacement non pris");
-        Gt.equal(before - 50L, c.treasury, "1er emplacement paye 50 a la pose");
+        Gt.check(!c.chunkload.contains(ClanTerritory.key(dim, f.toLong())), "pose sans emplacement achete");
+        Gt.check(ClanChunkloading.buySlots(rep, 1, -1) == null, "achat d'un emplacement refuse");
+        Gt.equal(before - 50L, c.treasury, "1er emplacement paye 50 a l'achat");
         Gt.equal(125L, ClanChunkloading.nextPrice(s.server, c), "prix affiche du 2e emplacement");
+        ClanChunkloading.load(rep, s.level, f.toLong());
+        Gt.check(c.chunkload.contains(ClanTerritory.key(dim, f.toLong())), "emplacement non pris");
+        Gt.equal(before - 50L, c.treasury, "rien a payer a la pose");
         ClanChunkloading.unload(s.server, c, ClanTerritory.key(dim, f.toLong()), false);
         s.done();
     }

@@ -1,9 +1,4 @@
 {
- "conditions": [
-  {
-   "type": "forge:false"
-  }
- ],
  "type": "pioneers:industrial",
  "machine": "bender",
  "tier": 0,

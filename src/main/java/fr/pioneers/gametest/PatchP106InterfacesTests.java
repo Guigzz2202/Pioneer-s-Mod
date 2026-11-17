@@ -241,4 +241,108 @@ public final class PatchP106InterfacesTests {
             Gt.check(m.motor().energy.getStored() < before, "le moteur ne prend pas d'energie");
         });
     }
+
+    /**
+     * Ressorts a la Cintreuse (Guillaume, 17/11/2026 : « les ressorts doivent etre faisables dans la cintreuse ») : chaque metal qui a un
+     * ressort a au moins une recette de la Cintreuse MKI qui le fait.
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p106_ressorts", timeoutTicks = 20)
+    public static void p106_ressorts_cintreuse(GameTestHelper h) {
+        Gt.begin(h);
+        java.util.Set<net.minecraft.world.item.Item> made = new java.util.HashSet<>();
+        for (fr.pioneers.tech.industry.recipe.IndustrialRecipe r : fr.pioneers.tech.industry.recipe.IndustryRecipes.of(h.getLevel(),
+              fr.pioneers.tech.industry.IndustryMachine.BENDER)) {
+            r.results().forEach(x -> made.add(x.stack().getItem()));
+        }
+        java.util.List<String> missing = new java.util.ArrayList<>();
+        for (net.minecraft.world.item.Item item : net.minecraftforge.registries.ForgeRegistries.ITEMS) {
+            net.minecraft.resources.ResourceLocation id = net.minecraftforge.registries.ForgeRegistries.ITEMS.getKey(item);
+            if (id != null && id.getNamespace().equals("pioneers") && id.getPath().endsWith("_spring") && !id.getPath().contains("precision")
+                && item.builtInRegistryHolder().is(net.minecraft.tags.ItemTags.create(new net.minecraft.resources.ResourceLocation("forge", "springs")))
+                && !made.contains(item)) {
+                missing.add(id.getPath());
+            }
+        }
+        Gt.check(missing.isEmpty(), "ressorts sans recette a la Cintreuse : " + missing);
+        h.succeed();
+    }
+
+    /**
+     * Cases tampon des multiblocs au plus juste (Guillaume, 17/11/2026 : « pourquoi autant de slots ? ») : 2 piles par sorte d'objet (Decoupeuse
+     * 2 entrees / 4 sorties, Calcinateur 6 / 4, Craqueur 0 / 4) ; un controleur sauve avant (version des cases 10) retrouve ses objets : entree
+     * en entree, sortie en sortie, le reste rendu.
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p106_tampons", timeoutTicks = 20)
+    public static void p106_tampons_multiblocs(GameTestHelper h) {
+        Gt.begin(h);
+        fr.pioneers.tech.industry.IndustryMachine hob = fr.pioneers.tech.industry.IndustryMachine.GEAR_HOBBER;
+        fr.pioneers.api.multiblock.MultiblockLayout l = fr.pioneers.api.multiblock.MultiblockLayout.of(hob);
+        Gt.equal(2, l.inputs, "Decoupeuse : 2 cases d'entree");
+        Gt.equal(4, l.outputs, "Decoupeuse : 4 cases de sortie");
+        Gt.equal(6, fr.pioneers.api.multiblock.MultiblockLayout.of(fr.pioneers.tech.industry.IndustryMachine.REDUCTION_FURNACE).inputs, "Calcinateur : 6 entrees");
+        Gt.equal(4, fr.pioneers.api.multiblock.MultiblockLayout.of(fr.pioneers.tech.industry.IndustryMachine.CRACKER).outputs, "Craqueur : 4 sorties");
+        //controleur de la Decoupeuse sauve en version 10 : 6 entrees (rangs 0 a 5), 6 sorties (6 a 11)
+        net.minecraft.nbt.CompoundTag tag = new net.minecraft.nbt.CompoundTag();
+        tag.putBoolean("pioneers", true);
+        tag.putInt(fr.pioneers.tech.industry.IoMigration.NBT, 10);
+        net.minecraft.nbt.ListTag items = new net.minecraft.nbt.ListTag();
+        int[][] put = {{0, 10}, {5, 11}, {6, 12}, {11, 13}};
+        for (int[] e : put) {
+            net.minecraft.nbt.CompoundTag c = new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.IRON_INGOT, e[1]).save(
+                  new net.minecraft.nbt.CompoundTag());
+            c.putShort("Slot", (short) e[0]);
+            items.add(c);
+        }
+        tag.put("items", items);
+        java.util.List<net.minecraft.world.item.ItemStack> over = new java.util.ArrayList<>();
+        net.minecraft.nbt.CompoundTag now = fr.pioneers.tech.industry.IoMigration.reload(hob, tag, over, true);
+        java.util.Map<Integer, Integer> at = new java.util.HashMap<>();
+        net.minecraft.nbt.ListTag back = now.getList("items", net.minecraft.nbt.Tag.TAG_COMPOUND);
+        for (int i = 0; i < back.size(); i++) {
+            at.put((int) back.getCompound(i).getShort("Slot"), (int) back.getCompound(i).getByte("Count"));
+        }
+        Gt.equal(10, (int) at.getOrDefault(0, 0), "entree 0 gardee");
+        Gt.equal(11, (int) at.getOrDefault(1, 0), "entree 5 -> case d'entree libre");
+        Gt.equal(12, (int) at.getOrDefault(2, 0), "sortie 0 -> premiere sortie");
+        Gt.equal(13, (int) at.getOrDefault(3, 0), "sortie 5 -> case de sortie libre");
+        Gt.check(over.isEmpty(), "rien de perdu");
+        h.succeed();
+    }
+
+    /**
+     * Chunkloads des clans (Guillaume, 17/11/2026) : stock achete hors de la carte, zone tracee chargee dans la limite du stock (le reste refuse),
+     * aucun prelevement au passage du jour, zone liberee : stock rendu.
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p106_chunkloads", timeoutTicks = 40)
+    public static void p106_chunkloads_stock_et_zone(GameTestHelper h) {
+        Gt.Scope s = Gt.begin(h);
+        net.minecraft.server.level.ServerPlayer rep = s.player("gt106cl", "Intendante", new net.minecraft.core.BlockPos(2, 1, 2));
+        fr.pioneers.society.clan.Clan c = s.clan("GtStock" + ClanTests.sfx(h), rep);
+        c.treasury = 10_000;
+        net.minecraft.core.BlockPos origin = h.absolutePos(net.minecraft.core.BlockPos.ZERO);
+        int fx = (origin.getX() >> 4) + 3, fz = origin.getZ() >> 4;
+        for (int i = 0; i < 3; i++) {
+            int cx = fx + i;
+            s.claim(c, new net.minecraft.core.BlockPos((cx << 4) + 8, 64, (fz << 4) + 8));
+            s.onCleanup(() -> net.minecraftforge.common.world.ForgeChunkManager.forceChunk(s.level, fr.pioneers.Pioneers.MODID, c.id, cx, fz, false, true));
+        }
+        Gt.check(fr.pioneers.society.clan.territory.ClanChunkloading.buySlots(rep, 2, -1) == null, "achat de 2 emplacements refuse");
+        Gt.equal(10_000L - 50L - 125L, c.treasury, "2 emplacements : 50 + 125");
+        Gt.equal(2, fr.pioneers.society.clan.territory.ClanChunkloading.free(s.server, c), "2 emplacements libres");
+        net.minecraft.nbt.CompoundTag plan = fr.pioneers.society.clan.territory.ClanChunkloading.area(rep, s.level, fx, fz, fx + 2, fz, true, false);
+        Gt.equal(2, plan.getInt("ok"), "apercu : 2 chunks chargeables");
+        Gt.check(c.chunkload.isEmpty(), "l'apercu ne charge rien");
+        net.minecraft.nbt.CompoundTag done = fr.pioneers.society.clan.territory.ClanChunkloading.area(rep, s.level, fx, fz, fx + 2, fz, true, true);
+        Gt.check(done.getBoolean("done"), "zone non appliquee");
+        Gt.equal(2, c.chunkload.size(), "2 chunks charges (stock)");
+        Gt.equal(0, fr.pioneers.society.clan.territory.ClanChunkloading.free(s.server, c), "stock epuise");
+        long before = c.treasury;
+        fr.pioneers.society.clan.territory.ClanChunkloading.dayChange(s.server, fr.pioneers.society.clan.core.ClanClock.now());
+        Gt.equal(before, c.treasury, "aucun prelevement journalier");
+        Gt.check(!fr.pioneers.society.clan.territory.ClanChunkloading.suspended(c), "jamais suspendu");
+        fr.pioneers.society.clan.territory.ClanChunkloading.area(rep, s.level, fx, fz, fx + 2, fz, false, true);
+        Gt.check(c.chunkload.isEmpty(), "zone liberee");
+        Gt.equal(2, fr.pioneers.society.clan.territory.ClanChunkloading.free(s.server, c), "stock rendu");
+        s.done();
+    }
 }

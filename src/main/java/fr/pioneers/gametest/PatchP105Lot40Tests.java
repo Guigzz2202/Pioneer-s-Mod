@@ -279,7 +279,8 @@ public final class PatchP105Lot40Tests {
         var c = s.level.getRecipeManager().byKey(rl("bronze/steam/compressor/unfired_fire_brick"));
         Gt.check(c.isPresent() && c.get() instanceof SteamRecipe, "compacteur a vapeur : brique refractaire crue");
         SteamRecipe rc = (SteamRecipe) c.get();
-        Gt.check(rc.machine() == SteamMachine.COMPRESSOR && rc.inputs().get(0).count() == 3 && rc.result().getCount() == 4, "3 argiles refractaires -> 4");
+        Gt.check(rc.machine() == SteamMachine.COMPRESSOR && rc.inputs().get(0).count() == 2 && rc.result().getCount() == 1,
+              "2 argiles refractaires -> 1 (1.0.6, Guillaume 17/11)");
         //la main reste : 2 argiles refractaires -> 1 brique crue au potier
         Gt.check(s.level.getRecipeManager().byKey(rl("bronze/bench/unfired_fire_brick")).isPresent(), "potier : brique crue a la main gardee");
         s.done();

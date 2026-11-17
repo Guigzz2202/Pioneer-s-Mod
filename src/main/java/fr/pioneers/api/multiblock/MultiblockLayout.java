@@ -62,9 +62,13 @@ public final class MultiblockLayout {
         }
     }
 
-    /** Cases tampon d'objets : 6 (ou 9 des 3 sortes d'objets) ; aucune si la machine n'en prend pas (meme regle que l'ecran d'avant). */
-    static int buffer(int kinds) {
-        return kinds == 0 ? 0 : kinds <= 2 ? 6 : 9;
+    /**
+     * Cases tampon d'objets : 2 piles par sorte d'objet de la machine (1.0.6, Guillaume, 17/11/2026 : « pourquoi autant de slots ? » ; avant :
+     * 6, ou 9 pour trois sortes ; au plus 9) ; aucune si la machine n'en prend pas. Le lot en parallele s'ajuste a la place (RecipeMatch.possible).
+     * Mondes d'avant : {@link fr.pioneers.tech.industry.IoMigration#BUFFER_ERA}.
+     */
+    public static int buffer(int kinds) {
+        return kinds <= 0 ? 0 : Math.min(9, kinds * 2);
     }
 
     private MultiblockLayout(IndustryMachine m) {

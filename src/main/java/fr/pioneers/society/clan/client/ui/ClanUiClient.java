@@ -204,14 +204,15 @@ public final class ClanUiClient {
      * 1.9.2 (retours de Guillaume) : zone tracee sur la carte, coins absolus (x0, z0) et (x1, z1) ; {@code apply} faux = apercu seul. Un
      * paquet par geste (jamais une rafale de claims).
      */
-    static void mapArea(int x0, int z0, int x1, int z1, boolean unclaim, boolean apply) {
+    static void mapArea(int x0, int z0, int x1, int z1, int mode, boolean apply) {
         CompoundTag t = new CompoundTag();
         t.putString("op", apply ? "area_apply" : "area");
         t.putInt("x", x0);
         t.putInt("z", z0);
         t.putInt("x1", x1);
         t.putInt("z1", z1);
-        t.putBoolean("unclaim", unclaim);
+        t.putBoolean("unclaim", mode == 1);
+        t.putInt("mode", mode);   //1.0.6 : 0 reclamer, 1 rendre, 2 charger, 3 liberer
         lastIntent = System.currentTimeMillis();
         RpNet.toServer(RpActions.CLAN_MAP_REQUEST, t);
     }

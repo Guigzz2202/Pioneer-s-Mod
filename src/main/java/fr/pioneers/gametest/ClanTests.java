@@ -105,6 +105,7 @@ public final class ClanTests {
             ForgeChunkManager.forceChunk(s.level, Pioneers.MODID, ghost, k.x, k.z, false, true);
         });
         String dim = ClanApi.dim(s.level);
+        c.boughtChunkloads = 1;   //1.0.6 : un emplacement du stock achete
         ClanChunkloading.load(p, s.level, f.toLong());
         Gt.check(c.chunkload.contains(ClanTerritory.key(dim, f.toLong())), "emplacement de chunkloading non pris");
         Gt.check(ticketed(forced(s.level), f.toLong()), "aucun ticket apres le chargement du chunk");

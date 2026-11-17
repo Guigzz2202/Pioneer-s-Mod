@@ -543,6 +543,7 @@ public class PiJeiPlugin implements IModPlugin {
 
     @Override
     public void onRuntimeAvailable(@NotNull mezz.jei.api.runtime.IJeiRuntime runtime) {
+        JeiResourceKind.start(runtime);   //1.0.6 : « Azote liquide (Fluide) » dans l'infobulle des fluides
         //Refonte du guide (1.0.1-beta) : un clic sur une icone du guide ouvre ses recettes, un clic droit ses usages
         GuideLinks.setJei((stack, uses) -> runtime.getRecipesGui().show(runtime.getJeiHelpers().getFocusFactory()
               .createFocus(uses ? RecipeIngredientRole.INPUT : RecipeIngredientRole.OUTPUT, mezz.jei.api.constants.VanillaTypes.ITEM_STACK, stack)));
@@ -558,6 +559,7 @@ public class PiJeiPlugin implements IModPlugin {
 
     @Override
     public void onRuntimeUnavailable() {
+        JeiResourceKind.stop();
         GuideLinks.setJei(null);
     }
 }

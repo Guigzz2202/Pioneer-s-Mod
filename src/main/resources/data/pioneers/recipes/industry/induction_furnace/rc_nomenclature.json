@@ -2,19 +2,13 @@
  "type": "pioneers:industrial",
  "machine": "induction_furnace",
  "tier": 0,
- "time": 160,
+ "time": 140,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:fire_clay"
    },
    "count": 4
-  },
-  {
-   "ingredient": {
-    "tag": "forge:gems/peridot"
-   },
-   "count": 1
   },
   {
    "ingredient": {

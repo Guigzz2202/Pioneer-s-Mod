@@ -163,7 +163,7 @@ public final class GasIngredient {
         @Override
         public List<Component> getTooltip(@NotNull GasStack stack, @NotNull TooltipFlag flag) {
             List<Component> lines = new ArrayList<>();
-            lines.add(stack.getGas().getName());
+            lines.add(Component.translatable("jei.pioneers.res.gas_name", stack.getGas().getName()));   //1.0.6 : « Azote (Gaz) »
             lines.add(Component.translatable("jei.pioneers.mb", Texts.grouped(stack.getAmount()))
                   .withStyle(ChatFormatting.GRAY));
             return lines;

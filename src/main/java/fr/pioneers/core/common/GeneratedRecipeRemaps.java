@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * GENERE par tools/gc/balance/machine_cleanup.py (1.0.6, demande de Guillaume du 16/11/2026) : NE PAS MODIFIER A LA MAIN. Recettes de
  * machine desactivees (doublon d'une autre recette de la meme machine) -> recette gardee ({@link PiRemaps#recipeId} : verrous suivis, lot
- * en cours d'un multibloc repris). 234 entree(s).
+ * en cours d'un multibloc repris). 227 entree(s).
  */
 public final class GeneratedRecipeRemaps {
 
@@ -227,13 +227,6 @@ public final class GeneratedRecipeRemaps {
           Map.entry("industry/rolling_mill/roll_block_plate_steel", "bronze/steam/rolling_mill/block_plate_steel"),
           Map.entry("industry/rolling_mill/roll_block_plate_tin", "bronze/steam/rolling_mill/block_plate_tin"),
           Map.entry("industry/rolling_mill/roll_block_plate_zinc", "bronze/steam/rolling_mill/block_plate_zinc"),
-          Map.entry("industry/spring_coiler/coil_rod_spring_brass", "materials/turning_brass_spring"),
-          Map.entry("industry/spring_coiler/coil_rod_spring_bronze", "materials/turning_bronze_spring"),
-          Map.entry("industry/spring_coiler/coil_rod_spring_copper", "materials/turning_copper_spring"),
-          Map.entry("industry/spring_coiler/coil_rod_spring_gold", "materials/turning_gold_spring"),
-          Map.entry("industry/spring_coiler/coil_rod_spring_iron", "materials/turning_iron_spring"),
-          Map.entry("industry/spring_coiler/coil_rod_spring_steel", "bronze/steam/lathe/steel_spring"),
-          Map.entry("industry/spring_coiler/coil_rod_spring_tin", "materials/turning_tin_spring"),
           Map.entry("industry/spring_coiler/precision_spring_nitinol", "industry/spring_coiler/coil_spring_nitinol"),
           Map.entry("industry/spring_coiler/precision_spring_stainless_steel", "industry/spring_coiler/coil_spring_stainless_steel"),
           Map.entry("industry/spring_coiler/precision_spring_vanadium_steel", "industry/spring_coiler/coil_spring_vanadium_steel"),

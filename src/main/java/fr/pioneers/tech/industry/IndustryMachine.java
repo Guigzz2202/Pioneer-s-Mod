@@ -320,7 +320,7 @@ public enum IndustryMachine {
      * MAJ Recettes (lot 9a) : version des cases et reservoirs ecrite dans le NBT des machines ({@code ioVersion}) ; une machine sauvee sans
      * cette marque vient d'un monde d'avant la MAJ et ses cases sont remises en place par {@link IoMigration}.
      */
-    public static final int IO_VERSION = 10;
+    public static final int IO_VERSION = 11;
 
     /**
      * Anciennes io (objets, fluides, gaz : entree puis sortie) des machines dont l'io a change, la plus ancienne d'abord : {version des cases

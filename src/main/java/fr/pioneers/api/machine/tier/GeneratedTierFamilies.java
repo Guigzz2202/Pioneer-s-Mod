@@ -370,6 +370,7 @@ public final class GeneratedTierFamilies {
           Map.entry("pioneers:industry/furnace/smelt_raw_lead", "cuisson"),
           Map.entry("pioneers:industry/furnace/smelt_raw_tin", "cuisson"),
           Map.entry("pioneers:industry/furnace/smelt_raw_zinc", "cuisson"),
+          Map.entry("pioneers:industry/induction_furnace/rc_nomenclature", "induction"),
           Map.entry("pioneers:industry/machining_center/rc_bronze_bushings", "tournage"),
           Map.entry("pioneers:industry/machining_center/rc_stick_from_plank", "tournage"),
           Map.entry("pioneers:industry/magnetic_separator/magnet_scrap", "tamisage"),
