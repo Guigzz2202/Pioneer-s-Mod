@@ -6,6 +6,7 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.PiTags;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.inventory.ItemSlots;
+import fr.pioneers.api.machine.resource.ResourceRows;
 import fr.pioneers.core.gas.BasicGasTank;
 import fr.pioneers.core.gas.GasTankHandler;
 import fr.pioneers.core.machine.Ejector;
@@ -149,15 +150,22 @@ public class KitProcess extends ProcessUnit implements RecipeMatch.Buffers {
             extraOut.add(slot);
         }
         int tank = 16_000 * (tier.ordinal() + 1);
+        //1.0.6 : liquides et gaz partages (une jauge = un liquide ou un gaz) quand les recettes prennent des deux (ResourceRows)
+        pairedIn = ResourceRows.pairedIn(catalog);
+        pairedOut = ResourceRows.pairedOut(catalog);
         for (int i = 0; i < catalog.fluidsIn; i++) {
-            fluidIn.add(machine.fluidTank(new IoTank(tank, false, this::acceptsFluid, this::receivedChanged)));
+            int index = i;
+            fluidIn.add(machine.fluidTank(new IoTank(tank, false, f -> acceptsFluid(f)
+                  && (!pairedIn || ResourceRows.fluidFits(fluidIn, gasIn, index, f, lockedOrNull())), this::receivedChanged)));
         }
         for (int i = 0; i < catalog.fluidsOut; i++) {
             fluidOut.add(machine.fluidTank(new IoTank(tank, true, f -> true, this::outputsChanged)));
         }
         for (int i = 0; i < catalog.gasesIn; i++) {
+            int index = i;
             gasIn.add(machine.gasTank(BasicGasTank.input(tank * 2L, g -> level() == null
-                  || lockAllowsGas(g, () -> IndustryRecipes.acceptsGas(level(), catalog, g)), this::receivedChanged)));
+                  || lockAllowsGas(g, () -> IndustryRecipes.acceptsGas(level(), catalog, g))
+                     && (!pairedIn || ResourceRows.gasFits(fluidIn, gasIn, index, g, lockedOrNull())), this::receivedChanged)));
         }
         for (int i = 0; i < catalog.gasesOut; i++) {
             gasOut.add(machine.gasTank(BasicGasTank.output(tank * 2L, this::outputsChanged)));
@@ -189,7 +197,7 @@ public class KitProcess extends ProcessUnit implements RecipeMatch.Buffers {
     public static StandardLayout.Counts counts(MachineKind kind) {
         IndustryMachine m = IndustryMachine.byKey(kind.name);
         return new StandardLayout.Counts(Math.max(kitIn(kind), m.itemsIn), Math.max(kitOut(kind), m.itemsOut), m.fluidsIn, m.gasesIn, m.fluidsOut,
-              m.gasesOut);
+              m.gasesOut, ResourceRows.pairedIn(m), ResourceRows.pairedOut(m));
     }
 
     /**
@@ -287,6 +295,19 @@ public class KitProcess extends ProcessUnit implements RecipeMatch.Buffers {
             }
         }
         return false;
+    }
+
+    /** 1.0.6 : jauges de liquide et de gaz partagees (entrees, sorties) : {@link ResourceRows}. */
+    private final boolean pairedIn, pairedOut;
+
+    @Override
+    public boolean pairedOutputs() {
+        return pairedOut;
+    }
+
+    @Nullable
+    private RecipeChoice lockedOrNull() {
+        return level() != null && lock.isSet() ? lockedChoice() : null;
     }
 
     private boolean acceptsFluid(FluidStack stack) {

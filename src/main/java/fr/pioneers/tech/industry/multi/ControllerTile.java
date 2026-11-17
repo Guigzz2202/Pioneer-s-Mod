@@ -3,6 +3,7 @@ package fr.pioneers.tech.industry.multi;
 import fr.pioneers.api.data.DataStack;
 import fr.pioneers.api.gas.GasStack;
 import fr.pioneers.api.gas.IGasHandler;
+import fr.pioneers.api.machine.resource.ResourceRows;
 import fr.pioneers.api.heat.IHeatHandler;
 import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.UiValues;
@@ -308,7 +309,9 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
             }
         } else {
             for (int i = 0; i < machine.fluidsIn; i++) {
-                fluidIn.add(fluidTank(new IoTank(32_000, false, this::acceptsFluid, this::tanksChanged)));
+                int k = i;   //1.0.6 : jauges partagees liquide ou gaz (ResourceRows)
+                fluidIn.add(fluidTank(new IoTank(32_000, false, f -> acceptsFluid(f) && ResourceRows.fluidOk(machine, fluidIn, gasIn, k, f, lockedIfSet()),
+                      this::tanksChanged)));
             }
         }
         coolant = (IoTank) fluidTank(new IoTank(32_000, false, ControllerTile::isCoolant, this::tanksChanged));
@@ -320,7 +323,8 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
             //0.17.2 : fusion : un gaz par reservoir (deuterium ; tritium ou helium 3)
             int gasSlot = i;
             gasIn.add(gasTank(BasicGasTank.input(4_096_000L, g -> unit != null && unit.ownsGases() ? unit.acceptsGas(gasSlot, g, level)
-                  : level == null || lockAllowsGas(g, () -> IndustryRecipes.acceptsGas(level, machine, g)), this::tanksChanged)));
+                  : level == null || lockAllowsGas(g, () -> IndustryRecipes.acceptsGas(level, machine, g))
+                    && ResourceRows.gasOk(machine, fluidIn, gasIn, gasSlot, g, lockedIfSet()), this::tanksChanged)));
         }
         for (int i = 0; i < (tank ? 0 : machine.gasesOut); i++) {
             gasOut.add(gasTank(BasicGasTank.output(4_096_000L, this::tanksChanged)));
@@ -934,6 +938,11 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
         return machine.fractions;
     }
 
+    @Override
+    public boolean pairedOutputs() {
+        return ResourceRows.pairedOut(machine);
+    }
+
     /**
      * Colonne : reservoir de sortie servi par ce port de fluides selon sa hauteur (les ports de sortie de fluides sont classes par etage, du
      * haut vers le bas ; le i-eme etage sert le i-eme fluide produit, le dernier etage sert aussi les suivants et la vapeur du caloporteur).
@@ -1182,22 +1191,6 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
     private long drillLeft() {
         Deposits.Deposit deposit = Deposits.at((ServerLevel) level, worldPosition.getX() >> 4, worldPosition.getZ() >> 4);
         return deposit == null ? 0 : deposit.left((ServerLevel) level);
-    }
-
-    public List<FluidTank> fluidInTanks() {
-        return fluidIn;
-    }
-
-    public List<FluidTank> fluidOutTanks() {
-        return fluidOut;
-    }
-
-    public List<BasicGasTank> gasInTanks() {
-        return gasIn;
-    }
-
-    public List<BasicGasTank> gasOutTanks() {
-        return gasOut;
     }
 
     /** 0.17.0 : commande du reacteur (null si ce multibloc n'est pas un reacteur ou s'il n'est pas forme). */

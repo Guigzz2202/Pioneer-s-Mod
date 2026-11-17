@@ -93,7 +93,9 @@ public final class PatchP106MetiersTests {
         Gt.equal(IndustryMachine.PYROLYSIS_OVEN, machineOf(h, "industry/cracker/tholin_fiber"), "fibre de tholins : four a pyrolyse");
         Gt.equal(IndustryMachine.REDUCTION_FURNACE, machineOf(h, "industry/cracker/activated_carbon"), "charbon actif : Calcinateur");
         Gt.equal(IndustryMachine.REDUCTION_FURNACE, machineOf(h, "processes/gold/amalgam_4"), "amalgame distille : Calcinateur");
-        Gt.equal(1, IndustryMachine.REDUCTION_FURNACE.fluidsOut, "Calcinateur : une sortie de fluide (eau, mercure)");
+        //1.0.6 (audit des cases) : 2 jauges de sortie partagees (eau, mercure, ou gaz de la reduction)
+        Gt.equal(2, IndustryMachine.REDUCTION_FURNACE.fluidsOut, "Calcinateur : 2 jauges de sortie (eau, mercure, gaz)");
+        Gt.check(fr.pioneers.api.machine.resource.ResourceRows.pairedOut(IndustryMachine.REDUCTION_FURNACE), "Calcinateur : sorties partagees");
         Gt.check(byKey(h, "industry/cracker/plastic_pyrolysis").isEmpty(), "pyrolyse du polyethylene au craqueur retiree");
         Gt.equal(Pioneers.rl("industry/pyrolysis_oven/recycle_polyethylene_pellets"),
               PiRemaps.recipeId(Pioneers.rl("industry/cracker/plastic_pyrolysis")), "verrou suivi vers le four a pyrolyse");

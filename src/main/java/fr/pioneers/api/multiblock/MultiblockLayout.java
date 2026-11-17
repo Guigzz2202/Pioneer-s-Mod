@@ -83,10 +83,15 @@ public final class MultiblockLayout {
         x += gw + 8;
         List<Rect> fi = new ArrayList<>(), gi = new ArrayList<>(), di = new ArrayList<>(), fo = new ArrayList<>(), go = new ArrayList<>();
         List<int[]> ii = new ArrayList<>(), io = new ArrayList<>();
+        //1.0.6 : jauges partagees (liquide ou gaz) : le reservoir de liquide i et celui de gaz i ont la meme jauge (ResourceRows)
+        boolean pin = fr.pioneers.api.machine.resource.ResourceRows.pairedIn(m), pout = fr.pioneers.api.machine.resource.ResourceRows.pairedOut(m);
         for (int i = 0; i < m.fluidsIn; i++, x += gw + 3) {
             fi.add(new Rect(x, top, gw, gh));
+            if (pin) {
+                gi.add(fi.get(i));
+            }
         }
-        for (int i = 0; i < m.gasesIn; i++, x += gw + 3) {
+        for (int i = 0; i < (pin ? 0 : m.gasesIn); i++, x += gw + 3) {
             gi.add(new Rect(x, top, gw, gh));
         }
         for (int i = 0; i < ("synthesizer".equals(m.key) ? 3 : 0); i++, x += gw + 3) {
@@ -118,8 +123,11 @@ public final class MultiblockLayout {
         }
         for (int i = 0; i < (m.kind == IndustryMachine.Kind.TANK ? 0 : m.fluidsOut); i++, x += gw + 3) {
             fo.add(new Rect(x, top, gw, gh));
+            if (pout) {
+                go.add(fo.get(i));
+            }
         }
-        for (int i = 0; i < (m.kind == IndustryMachine.Kind.TANK ? 0 : m.gasesOut); i++, x += gw + 3) {
+        for (int i = 0; i < (m.kind == IndustryMachine.Kind.TANK || pout ? 0 : m.gasesOut); i++, x += gw + 3) {
             go.add(new Rect(x, top, gw, gh));
         }
         Rect coolOut = new Rect(x, top, gw, gh);
@@ -143,7 +151,8 @@ public final class MultiblockLayout {
         arrow = new Rect(arrowX + dx, top + gh / 2 - 4, 28, 8);
         recipeX = arrow.x() + (arrow.w() - 16) / 2;
         recipeY = top + 4;
-        tool = recipe && inputs > 0 && Remanents.hasToolSlot(m.key);
+        //1.0.6 (audit des cases) : une machine dont l'outil est la seule entree d'objet (catalyseur du craqueur) garde sa case Outil
+        tool = recipe && Remanents.hasToolSlot(m.key);
         toolX = recipeX;
         toolY = top + gh - 20;
         screen = StandardLayout.screen(width);
@@ -162,9 +171,12 @@ public final class MultiblockLayout {
         for (Rect r : List.of(energy, thermometer, coolant)) {
             out.add(new Part(r == energy ? "energy" : r == thermometer ? "thermometer" : "coolant", new Rect(r.x() - 1, r.y() - 1, r.w() + 2, r.h() + 2)));
         }
+        java.util.Set<Rect> seen = new java.util.HashSet<>();   //1.0.6 : une jauge partagee (liquide ou gaz) n'est qu'un element
         for (List<Rect> list : List.of(fluidIn, gasIn, dataIn, fluidOut, gasOut)) {
             for (Rect r : list) {
-                out.add(new Part("gauge", new Rect(r.x() - 1, r.y() - 1, r.w() + 2, r.h() + 2)));
+                if (seen.add(r)) {
+                    out.add(new Part("gauge", new Rect(r.x() - 1, r.y() - 1, r.w() + 2, r.h() + 2)));
+                }
             }
         }
         out.add(new Part("coolant_out", new Rect(coolantOut.x() - 1, coolantOut.y() - 1, coolantOut.w() + 2, coolantOut.h() + 2)));

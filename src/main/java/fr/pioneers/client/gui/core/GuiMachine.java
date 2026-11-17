@@ -160,7 +160,7 @@ public class GuiMachine extends PiMenuScreen<MachineMenu> {
         inventoryLabelY = -1;
         view = MachineScreens.of(menu.getTile());
         standard = view.standard();
-        redstone = StorageViews.as(MachineTile.class, menu.getTile()) != null;
+        redstone = StorageViews.as(MachineTile.class, menu.getTile()) != null || menu.machine() != null && menu.machine().redstoneTab();   // 1.0.6
     }
 
     @Override
@@ -1378,6 +1378,23 @@ public class GuiMachine extends PiMenuScreen<MachineMenu> {
             }
         }
         graphics.setColor(1, 1, 1, 1);
+    }
+
+    /** 1.0.6 : fantome d'une ressource attendue dans une jauge vide (texture a 30 %, sur toute la hauteur). */
+    static void ghost(GuiGraphics graphics, TextureAtlasSprite sprite, int tint, int x, int y, int w, int h) {
+        com.mojang.blaze3d.systems.RenderSystem.enableBlend();
+        com.mojang.blaze3d.systems.RenderSystem.defaultBlendFunc();
+        graphics.setColor((tint >> 16 & 255) / 255F, (tint >> 8 & 255) / 255F, (tint & 255) / 255F, 0.3F);
+        for (int ty = 0; ty < h; ty += 16) {
+            for (int tx = 0; tx < w; tx += 16) {
+                int pw = Math.min(16, w - tx), ph = Math.min(16, h - ty);
+                graphics.enableScissor(leftPosStatic + x + tx, topPosStatic + y + h - ty - ph, leftPosStatic + x + tx + pw, topPosStatic + y + h - ty);
+                graphics.blit(x + tx, y + h - ty - 16, 0, 16, 16, sprite);
+                graphics.disableScissor();
+            }
+        }
+        graphics.setColor(1, 1, 1, 1);
+        com.mojang.blaze3d.systems.RenderSystem.disableBlend();
     }
 
     private static int leftPosStatic, topPosStatic;

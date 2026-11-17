@@ -303,8 +303,17 @@ public final class MachineTooltips {
     @Nullable
     private static Component summary(MachineSpec spec, Role role) {
         List<Component> parts = new ArrayList<>();
+        //1.0.6 : jauges partagees (autant de liquides que de gaz) : « 2 liquides ou gaz »
+        int nf = spec.count(SideType.FLUIDS, role), ng = spec.count(SideType.GASES, role);
+        boolean mixed = nf > 0 && nf == ng;
         for (SideType res : new SideType[]{SideType.ITEMS, SideType.FLUIDS, SideType.GASES}) {
             int n = spec.count(res, role);
+            if (mixed && res != SideType.ITEMS) {
+                if (res == SideType.FLUIDS) {
+                    parts.add(n == 1 ? Component.translatable(K + "res.mixed.one") : Component.translatable(K + "res.mixed.many", n));
+                }
+                continue;
+            }
             if (n > 0) {
                 String base = K + "res." + res.name().toLowerCase(Locale.ROOT);
                 parts.add(n == 1 ? Component.translatable(base + ".one") : Component.translatable(base + ".many", n));

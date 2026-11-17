@@ -129,26 +129,15 @@ final class MultiblockViews {
                 gui.tooltip(List.of(Component.translatable("industry.pioneers.gui.coolant"), Component.translatable("industry.pioneers.gui.coolant_help")
                       .withStyle(ChatFormatting.GRAY)));
             }
-            for (int i = 0; i < l.fluidIn.size() && i < tile.fluidInTanks().size(); i++) {
-                Rect r = l.fluidIn.get(i);
-                views.fluidGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.fluidInTanks().get(i));
-            }
-            for (int i = 0; i < l.gasIn.size() && i < tile.gasInTanks().size(); i++) {
-                Rect r = l.gasIn.get(i);
-                views.gasGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.gasInTanks().get(i), Component.translatable("gui.pioneers.machine.in"));
-            }
+            //1.0.6 : jauges de ressources (liquide ou gaz, infobulle de la sorte, fantome de ce qu'attend la recette verrouillee)
+            fr.pioneers.core.recipe.RecipeChoice locked = l.recipe && tile.recipeLock().isSet() ? tile.lockedChoice() : null;
+            views.resourceRow(g, mouseX, mouseY, l.fluidIn, l.gasIn, tile.fluidInTanks(), tile.gasInTanks(),
+                  fr.pioneers.api.machine.resource.ResourceRows.pairedIn(m), false, locked);
             for (int i = 0; i < l.dataIn.size() && i < tile.dataInputs().size(); i++) {
                 Rect r = l.dataIn.get(i);
                 views.dataGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.dataInputs().get(i));
             }
-            for (int i = 0; i < l.fluidOut.size() && i < tile.fluidOutTanks().size(); i++) {
-                Rect r = l.fluidOut.get(i);
-                views.fluidGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.fluidOutTanks().get(i));
-            }
-            for (int i = 0; i < l.gasOut.size() && i < tile.gasOutTanks().size(); i++) {
-                Rect r = l.gasOut.get(i);
-                views.gasGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.gasOutTanks().get(i), Component.translatable("gui.pioneers.machine.out"));
-            }
+            views.resourceRow(g, mouseX, mouseY, l.fluidOut, l.gasOut, tile.fluidOutTanks(), tile.gasOutTanks(), tile.pairedOutputs(), true, locked);
             Rect co = l.coolantOut;
             views.coolantOutGauge(g, mouseX, mouseY, co.x(), co.y(), co.w(), co.h(), tile.coolantOutTank(), tile.steamOutTank());
             int status = (int) gui.value(MultiblockValues.STATUS);

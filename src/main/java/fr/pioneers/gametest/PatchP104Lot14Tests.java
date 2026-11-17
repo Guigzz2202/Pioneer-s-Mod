@@ -398,14 +398,18 @@ public final class PatchP104Lot14Tests {
         Gt.check(IndustryMachine.IO_VERSION >= 6, "version des cases 6 au moins (fusion 4/4)");
         Gt.equal(9, IndustryMachine.ASSEMBLER.itemsIn, "Assembleur : 9 entrees");
         Gt.equal(2, IndustryMachine.ASSEMBLER.itemsOut, "Assembleur : 2 sorties (soudeuse)");
-        Gt.equal(1, IndustryMachine.ASSEMBLER.gasesIn, "Assembleur : argon (soudeuse)");
+        //1.0.6 (audit des cases) : liquides et gaz partages : 2 jauges qui prennent liquide ou gaz (resine, helium liquide, argon)
+        Gt.equal(2, IndustryMachine.ASSEMBLER.gasesIn, "Assembleur : 2 jauges partagees (argon de la soudeuse)");
         Gt.equal(6, IndustryMachine.CHEMICAL_BATH.itemsIn, "Bain chimique : 6 entrees (projection plasma)");
         Gt.equal(3, IndustryMachine.MACHINING_CENTER.itemsIn, "Centre d'usinage : 3 entrees (fraiseuse, rectifieuse)");
         //1.0.6 (un role par machine) : le centre d'usinage travaille a sec (plus de lubrifiant ni d'eau)
         Gt.equal(0, IndustryMachine.MACHINING_CENTER.fluidsIn, "Centre d'usinage : a sec");
         Gt.equal(3, IndustryMachine.WIREMILL.itemsIn, "Trefileuse : 3 entrees (tour de fibrage)");
         Gt.equal(2, IndustryMachine.CASTING_MACHINE.itemsIn, "Machine de coulee : 2 entrees (presse a injection)");
-        Gt.equal(1, IndustryMachine.BENDER.fluidsIn, "Cintreuse : huile de trempe (enrouleuse)");
+        //1.0.6 (audit des cases) : plus de recette a l'huile ; les tubes soudes (ex-soudeuse) demandent l'argon et rendent 2 sorties
+        Gt.equal(0, IndustryMachine.BENDER.fluidsIn, "Cintreuse : plus d'huile");
+        Gt.equal(1, IndustryMachine.BENDER.gasesIn, "Cintreuse : argon (tubes soudes)");
+        Gt.equal(2, IndustryMachine.BENDER.itemsOut, "Cintreuse : 2 sorties (tubes soudes)");
         Gt.check(IndustryMachine.byKey("forming_station") == null && IndustryMachine.byKey("arc_welder") == null, "absorbees hors du catalogue");
         h.succeed();
     }
