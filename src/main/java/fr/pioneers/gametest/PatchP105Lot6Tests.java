@@ -72,6 +72,15 @@ public final class PatchP105Lot6Tests {
         });
     }
 
+    /** 1.0.6 : le plus grand morceau de [lo, hi] qui tient dans une seule zone de faune (cle = coordonnee >> FaunaRules.ZONE_SHIFT). */
+    static int[] oneZone(int lo, int hi) {
+        int cut = ((lo >> FaunaRules.ZONE_SHIFT) + 1) << FaunaRules.ZONE_SHIFT;   // premiere limite de zone apres lo
+        if (cut > hi) {
+            return new int[]{lo, hi};
+        }
+        return cut - lo >= hi - cut + 1 ? new int[]{lo, cut - 1} : new int[]{cut, hi};
+    }
+
     static void grass(GameTestHelper h) {
         for (int x = 1; x <= 18; x++) {
             for (int z = 1; z <= 18; z++) {
@@ -204,8 +213,11 @@ public final class PatchP105Lot6Tests {
         ServerLevel level = s.level;
         grass(h);
         BlockPos a = h.absolutePos(new BlockPos(2, 1, 2)), b = h.absolutePos(new BlockPos(17, 1, 17));
-        FaunaSpawner.Area area = new FaunaSpawner.Area(Math.min(a.getX(), b.getX()), Math.min(a.getZ(), b.getZ()), Math.max(a.getX(), b.getX()),
-              Math.max(a.getZ(), b.getZ()));
+        //1.0.6 : l'aire tient dans UNE zone de faune (FaunaRules.ZONE_SIZE) : la place du gabarit change avec la liste des tests, et une aire
+        //coupee par une limite de zone ne comptait pas toutes les vaches (aucune naissance)
+        int[] xs = oneZone(Math.min(a.getX(), b.getX()), Math.max(a.getX(), b.getX()));
+        int[] zs = oneZone(Math.min(a.getZ(), b.getZ()), Math.max(a.getZ(), b.getZ()));
+        FaunaSpawner.Area area = new FaunaSpawner.Area(xs[0], zs[0], xs[1], zs[1]);
         long zone = FaunaRules.zoneKey(area.x0(), area.z0());
         FaunaData data = FaunaData.get(level);
         int[] before = data.starts(zone);
@@ -217,8 +229,9 @@ public final class PatchP105Lot6Tests {
                 data.put(zone, before, legacy);
             }
         });
+        int step = xs[1] - xs[0] >= 12 ? 2 : 1, row = (zs[0] + zs[1]) / 2;
         for (int i = 0; i < 6; i++) {
-            Animal cow = add(s, EntityType.COW, h.absolutePos(new BlockPos(4 + i * 2, 1, 9)));
+            Animal cow = add(s, EntityType.COW, new BlockPos(xs[0] + 2 + i * step, a.getY(), row));
             Gt.check(FaunaRegistry.of(cow) != null, "vache : gibier du socle");
         }
         FaunaCounter counter = FaunaCounter.of(level);
