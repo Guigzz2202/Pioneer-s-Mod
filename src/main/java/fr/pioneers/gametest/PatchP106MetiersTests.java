@@ -140,6 +140,16 @@ public final class PatchP106MetiersTests {
         for (ItemStack st : shapes) {
             Gt.check(shown.contains(st.getItem()), "forme absente de l'inventaire creatif : " + ForgeRegistries.ITEMS.getKey(st.getItem()));
         }
+        // un alias perime d'un monde existant (objet retire puis remis) ne cache plus l'objet (fr.pioneers.mixin.ForgeRegistryMixin) : sans le
+        // mixin, le registre actif (verrouille) refuserait l'alias « trop tard »
+        try {
+            ((net.minecraftforge.registries.ForgeRegistry<Item>) ForgeRegistries.ITEMS).addAlias(Pioneers.rl("extrusion_shape_plate"),
+                  Pioneers.rl("extrusion_shape_rod"));
+        } catch (IllegalStateException e) {
+            Gt.check(false, "alias perime d'un objet enregistre non refuse : " + e.getMessage());
+        }
+        Gt.check(ForgeRegistries.ITEMS.getValue(Pioneers.rl("extrusion_shape_plate")) != ForgeRegistries.ITEMS.getValue(Pioneers.rl("extrusion_shape_rod")),
+              "la forme plaque reste la forme plaque");
         // l'extrusion s'applique a tous les metaux (pas seulement ceux des etablis)
         for (String id : List.of("extrude_plate_titanium", "extrude_wire_nickel", "extrude_gear_blank_titanium", "extrude_rod_aluminium")) {
             Gt.equal(IndustryMachine.EXTRUDER, machineOf(h, "industry/extruder/" + id), "extrusion : " + id);

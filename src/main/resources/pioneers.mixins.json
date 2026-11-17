@@ -6,6 +6,7 @@
   "refmap": "pioneers.refmap.json",
   "mixins": [
     "BiomeMixin",
+    "ForgeRegistryMixin",
     "LevelMixin",
     "MobMixin",
     "ServerLevelMixin"
