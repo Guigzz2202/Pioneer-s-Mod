@@ -976,7 +976,7 @@ public final class GeneratedMachines {
               null, null, "standard", false, "none", "bronze.machines.SteamProcess", true, 7, 1));
         l.add(new MachineSpec("steam_saw", "bronze", Kind.PROCESS, Form.COMPACT, TierMode.TIER, "bronze", Power.STEAM_IN,
               List.of("steam_saw"),
-              List.of("steam_process"), List.of(port(SideType.GASES, Role.IN, 1), port(SideType.ITEMS, Role.IN, 1), port(SideType.ITEMS, Role.OUT, 2)), false, true, "family:taille", true, List.of("pioneers:industry_stoneworks", "pioneers:industry_sawmill"),
+              List.of("steam_process"), List.of(port(SideType.GASES, Role.IN, 1), port(SideType.ITEMS, Role.IN, 1), port(SideType.ITEMS, Role.OUT, 2)), false, true, "family:sciage", true, List.of("pioneers:industry_sawmill", "pioneers:industry_stoneworks"),
               null, null, "standard", false, "none", "bronze.machines.SteamProcess", true, 7, 1));
         l.add(new MachineSpec("steam_mixer", "bronze", Kind.PROCESS, Form.COMPACT, TierMode.TIER, "bronze", Power.STEAM_IN,
               List.of("steam_mixer"),

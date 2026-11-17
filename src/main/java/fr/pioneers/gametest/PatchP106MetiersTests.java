@@ -24,7 +24,8 @@ import net.minecraftforge.registries.ForgeRegistries;
  * <ul>
  *     <li>les sept MACHINES DE METIER (Menuiserie, Atelier de confection, Conditionneuse, Chaudronnerie, Atelier de verrerie, Banc
  *     electromecanique, Taillerie de pierre) : compactes MKI a MKIV et multibloc ; les copies d'etabli vont a la machine de leur metier ;</li>
- *     <li>la TAILLERIE fait toutes les recettes du tailleur de pierre, avec le rendement de tier compte depuis la main (x1,75 au MKI) ;</li>
+ *     <li>la TAILLERIE fait toutes les recettes du tailleur de pierre, avec le rendement de tier compte depuis la main (x1,75 au MKI), et au
+ *     MKI la taille de la scie a vapeur (qui reste le T1 du sciage) ;</li>
  *     <li>le CRAQUEUR est multibloc seulement ; la pyrolyse des solides passe au four a pyrolyse, la calcination au Calcinateur ;</li>
  *     <li>le FILAGE passe a l'Atelier de confection ; les anneaux et ressorts du tour se font au MKI a la Cintreuse ; une machine par
  *     transformation de forme (tiges a l'extrudeuse, plaques et toles a la presse).</li>
@@ -75,7 +76,11 @@ public final class PatchP106MetiersTests {
               r.results().get(0).stack().getItem())).contains("copper")), "le cuivre ne se taille pas a la Taillerie (Chaudronnerie)");
         Gt.check(IndustryRecipes.of(h.getLevel(), IndustryMachine.SAWMILL).stream().noneMatch(r -> !r.results().isEmpty() && r.results().get(0).stack().is(Items.STONE_SLAB)
               || r.getId().getPath().startsWith("bronze/steam/saw/") && !r.getId().getPath().endsWith("sticks")),
-              "la scie industrielle ne taille plus la pierre (la scie a vapeur est le tier 1 de la Taillerie)");
+              "la scie industrielle ne taille plus la pierre");
+        // la scie a vapeur reste le T1 du sciage (buche -> 9 planches) ; sa taille de la pierre se fait au MKI a la Taillerie
+        Gt.equal("sciage", GeneratedTierFamilies.STEAM_FAMILY.get("steam:saw"), "scie a vapeur : T1 du sciage");
+        Gt.equal("stoneworks", GeneratedTierFamilies.LOW_MOVED.get("pioneers:bronze/steam/saw/mason_andesite_slab"),
+              "dalle d'andesite de la scie a vapeur : Taillerie au MKI");
         h.succeed();
     }
 

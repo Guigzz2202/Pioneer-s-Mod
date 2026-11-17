@@ -3459,7 +3459,7 @@
       "pioneers:steam_wiremill",
       "pioneers:basic_rolling_mill"
      ],
-     "text": "Chaque machine à vapeur fait aussi une partie des §6recettes MKI§r de sa famille : §l119 recettes§r (compactage 44, laminage 18, cuisson 18, broyage 14, tamisage 8, tréfilage 7, mélange 7, tournage 3). Mêmes entrées, mêmes sorties, même vapeur par tick, mais §ldeux fois plus lentes§r qu'à la machine MKI, qui reste plus rapide et garde ses rendements du minerai.\n• Restent au MKI : ce qui touche un matériau du MKI ou plus (acier, laiton, nickel, aluminium…, minerais des gisements profonds), les composants clés et les jalons du MKI, les recettes à fluide, à gaz ou à chaleur, les rendements du minerai, les copies d'établi (à l'âge du bronze les établis restent à la main) et tout ce qui avancerait le MKI.\n• Sans verrou, la machine fait d'abord ses propres recettes ; le §lsélecteur§r propose ensuite les recettes MKI ouvertes (écran : « Recette : MKI · vitesse ×½ »).\nJEI les montre sur la page de la §lmachine MKI§r de la famille, avec la durée du MKI (deux fois plus longue à la vapeur)."
+     "text": "Chaque machine à vapeur fait aussi une partie des §6recettes MKI§r de sa famille : §l131 recettes§r (compactage 44, laminage 18, cuisson 18, broyage 14, sciage 12, tamisage 8, tréfilage 7, mélange 7, tournage 3). Mêmes entrées, mêmes sorties, même vapeur par tick, mais §ldeux fois plus lentes§r qu'à la machine MKI, qui reste plus rapide et garde ses rendements du minerai.\n• Restent au MKI : ce qui touche un matériau du MKI ou plus (acier, laiton, nickel, aluminium…, minerais des gisements profonds), les composants clés et les jalons du MKI, les recettes à fluide, à gaz ou à chaleur, les rendements du minerai, les copies d'établi (à l'âge du bronze les établis restent à la main) et tout ce qui avancerait le MKI.\n• Sans verrou, la machine fait d'abord ses propres recettes ; le §lsélecteur§r propose ensuite les recettes MKI ouvertes (écran : « Recette : MKI · vitesse ×½ »).\nJEI les montre sur la page de la §lmachine MKI§r de la famille, avec la durée du MKI (deux fois plus longue à la vapeur)."
     },
     {
      "title": "Le béton et le mélangeur à vapeur",
@@ -10658,7 +10658,7 @@
       "pioneers:basic_sawmill",
       "pioneers:industrial_sawmill"
      ],
-     "text": "La §lScie industrielle§r (ex-scierie) §6scie le bois§r : bûches → planches, bâtons et sciure, placages. 1.0.6 : la découpe des galettes passe à la §lDécoupeuse§r ; la scie à vapeur, qui taillait la pierre, devient le tier 1 de la §lTaillerie de pierre§r.\n§6Procédés§r\n• §lSciage§r (gisements de l’ancien chevalet)\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
+     "text": "La §lScie industrielle§r (ex-scierie) §6scie le bois§r : bûches → planches, bâtons et sciure, placages. 1.0.6 : la découpe des galettes passe à la §lDécoupeuse§r ; la taille de la pierre de la scie à vapeur se fait au MKI à la §lTaillerie de pierre§r.\n§6Procédés§r\n• §lSciage§r (gisements de l’ancien chevalet)\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Machines génériques",
@@ -10862,7 +10862,7 @@
       "pioneers:basic_stoneworks",
       "pioneers:industrial_stoneworks"
      ],
-     "text": "La §lTaillerie de pierre§r §6taille la pierre§r : §ltoutes§r les découpes du tailleur de pierre (vanilla et mod : dalles, escaliers, murets, pierres polies, taillées et ciselées), avec un rendement meilleur qu’à la main (×1,75 au MKI, ×2,19 au MKII, ×2,63 au MKIII, ×3,5 au MKIV ; la fraction est tirée au sort), et les ouvrages du §lmaçon§r (briques réfractaires, cheminées, fontaines, piliers). La §lscie à vapeur§r est son tier 1. Le cuivre se taille à la Chaudronnerie.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
+     "text": "La §lTaillerie de pierre§r §6taille la pierre§r : §ltoutes§r les découpes du tailleur de pierre (vanilla et mod : dalles, escaliers, murets, pierres polies, taillées et ciselées), avec un rendement meilleur qu’à la main (×1,75 au MKI, ×2,19 au MKII, ×2,63 au MKIII, ×3,5 au MKIV ; la fraction est tirée au sort), et les ouvrages du §lmaçon§r (briques réfractaires, cheminées, fontaines, piliers). La §lscie à vapeur§r taille la pierre avant le MKI ; dès le MKI, ses découpes se font ici. Le cuivre se taille à la Chaudronnerie.\nJEI : une page par machine, recettes à vapeur et mécaniques comprises ; le filigrane de chaque recette en donne l’âge."
     },
     {
      "section": "Eau et roches",
