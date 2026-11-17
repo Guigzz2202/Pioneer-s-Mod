@@ -4787,7 +4787,7 @@
       "pioneers:basic_rolling_mill",
       "pioneers:basic_wiremill"
      ],
-     "text": "Every part of the §lbench metals§r (iron, copper, bronze, tin, brass, zinc, lead, gold, solder, steel) has its routes, one per station; the machine works at the §lmetal's tier§r (MKI for these metals), except the routes that carry their own tier. Bench = §6basic components bench§r:\n• §lslab§r: block in the §6compactor§r; §lbillet§r: slab in the compactor; §lwire rod§r: billet in the §6rolling mill§r (→ 9); §lblock§r: 9 ingots (grid or compactor);\n• §lplate§r: bench 2 ingots → 1; §6press§r (plate die); §6rolling mill§r block → 9; extruder (plate shape) 1 ingot → 1;\n• §lsheet§r: bench 1 plate → 1; press 1 plate → 2 (press die); §lfoil§r: bench 1 plate → 2; rolling mill;\n• §lrod§r: bench 1 ingot → 1; §6wood lathe§r 1 → 2; §6extruder§r (rod shape) ingot → 2, billet → 18;\n• §lwire§r: bench 1 rod → 2; §6wiremill§r ingot or wire rod; extruder (wire shape) 1 ingot → 2;\n• §lring§r: bench 2 rods → 1; wood lathe 1 → 1; §6bender§r 1 rod → 2; §lspring§r: bench 3 wires → 1; wood lathe 2 rods → 1; bender;\n• §lgear§r: bench blank + 3 plates; §6cutting machine§r; extruder (gear shape) 5 ingots → 1; §lgear blank§r: bench 5 ingots; §6power hammer§r billet → 2;\n• §ltube§r: bench 1 plate → 1; bender (sheets); extruder (pipe shape);\n• §lmesh§r and §lwire rope§r: bench; wire rope also at the §6wiremill (stranding)§r.\nThe extruder only works with its §lextrusion shapes§r: rod and pipe, plus a slightly less profitable (slower) generic route for plate, wire and gear.\n§lOther metals§r are worked in machines only (die casting, continuous casting, forging). The primitive forge, clay molds and steam machines of the bronze age stay. JEI: page “Metal parts” (one page per part, all its routes).",
+     "text": "Every part of the §lbench metals§r (iron, copper, bronze, tin, brass, zinc, lead, gold, solder, steel) has its routes, one per station; the machine works at the §lmetal's tier§r (MKI for these metals), except the routes that carry their own tier. Bench = §6basic components bench§r:\n• §lslab§r: block in the §6compactor§r; §lbillet§r: slab in the compactor; §lwire rod§r: billet in the §6rolling mill§r (→ 9); §lblock§r: 9 ingots (grid or compactor);\n• §lplate§r: bench 2 ingots → 1; §6press§r (plate die); §6rolling mill§r block → 9; extruder (plate shape) 1 ingot → 1;\n• §lsheet§r: bench 1 plate → 1; press 1 plate → 2 (press die); §lfoil§r: bench 1 plate → 2; rolling mill;\n• §lrod§r: bench 1 ingot → 1; §6wood lathe§r 1 → 2; §6extruder§r (rod shape) ingot → 2, billet → 18;\n• §lwire§r: bench 1 rod → 2; §6wiremill§r ingot or wire rod; extruder (wire shape) 1 ingot → 2;\n• §lring§r: bench 2 rods → 1; wood lathe 1 → 1; §6bender§r 1 rod → 2; §lspring§r: bench 3 wires → 1; wood lathe 2 rods → 1; bender;\n• §lgear§r: bench blank + 3 plates; §6cutting machine§r; §lgear blank§r: bench 5 ingots; extruder (gear blank shape) 5 ingots → 1; casting;\n• §ltube§r: bench 1 plate → 1; bender (sheets); extruder (pipe shape);\n• §lmesh§r and §lwire rope§r: bench; wire rope also at the §6wiremill (stranding)§r.\nThe extruder only works with its §lextrusion shapes§r: rod and pipe, plus a slightly less profitable (slower) generic route for plate, wire and gear blank.\n§lOther metals§r are worked in machines only (die casting, continuous casting, forging). The primitive forge, clay molds and steam machines of the bronze age stay. JEI: page “Metal parts” (one page per part, all its routes).",
      "flow": [
       [
        {
@@ -10292,12 +10292,12 @@
       "pioneers:basic_power_hammer",
       "pioneers:industrial_power_hammer"
      ],
-     "text": "The §lPower Hammer§r forges by impact: billets of non-castable metals, die-forged gear blanks, and every §ltool head§r: base metals from the MKI compact, advanced metals at the higher tiers (MKII to MKIV, compact or multiblock). It takes over the §6cold heading§r of the former cold header (screws, bolts, rivets, nails and balls, from wire rod or wire). The forge hearth keeps its two bloom recipes. It no longer has a steam age: the steam hammer is gone (1.0.5). 1.0.6: rings move to the §lBender§r.\n§6Processes§r\n• §lDrop forging§r (own recipes): 169 recipes\n• §lHot forging (tool heads)§r (former industrial forging press; multiblock only): 100 recipes\n• §lCold heading (fasteners)§r (former cold header): 15 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lPower Hammer§r forges by impact: billets of non-castable metals, die-forged gear blanks, and every §ltool head§r: base metals from the MKI compact, advanced metals at the higher tiers (MKII to MKIV, compact or multiblock). It takes over the §6cold heading§r of the former cold header (screws, bolts, rivets, nails and balls, from wire rod or wire). The forge hearth keeps its two bloom recipes. It no longer has a steam age: the steam hammer is gone (1.0.5). 1.0.6: rings move to the §lBender§r.\n§6Processes§r\n• §lDrop forging§r (own recipes): 158 recipes\n• §lHot forging (tool heads)§r (former industrial forging press; multiblock only): 100 recipes\n• §lCold heading (fasteners)§r (former cold header): 15 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
         "label": "Drop forging",
-        "item": "pioneers:aluminium_billet",
+        "item": "pioneers:neutronium_ingot",
         "done": true
        },
        {
@@ -10307,7 +10307,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:aluminium_gear_blank",
+        "item": "pioneers:neutronium_billet",
         "next": true
        }
       ],
@@ -10746,7 +10746,7 @@
       "pioneers:basic_assembler",
       "pioneers:industrial_assembler"
      ],
-     "text": "The §lAssembler§r builds parts and components. It takes over §6all§r the recipes of the former component assembler (frames, motors, bearings, pumps, circuits, computers, at the same tiers), the logistics parts bench copies of the former logistics assembler (rockets, spaceport, rail, harbors, robotics) and the §larc welding§r of the former welder (tanks, hulls, welded tubes, casings, under argon from MKII). Nine inputs, two outputs, one fluid and one gas tank.\n§6Processes§r\n• §lAssembly§r (own recipes): 16 recipes\n• §lComponents§r (former component assembler): 196 recipes\n• §lLogistics parts§r (former logistics assembler): no recipe (its copies duplicated other machines)\n• §lArc welding§r (former arc welder): 15 recipes\n§6Same inputs§r: steel plates (armor or welded beam), steel plates, rods and screws (wrench or welded frame). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lAssembler§r builds parts and components. It takes over §6all§r the recipes of the former component assembler (frames, motors, bearings, pumps, circuits, computers, at the same tiers), the logistics parts bench copies of the former logistics assembler (rockets, spaceport, rail, harbors, robotics) and the §larc welding§r of the former welder (tanks, hulls, welded tubes, casings, under argon from MKII). Nine inputs, two outputs, one fluid and one gas tank.\n§6Processes§r\n• §lAssembly§r (own recipes): 16 recipes\n• §lComponents§r (former component assembler): 195 recipes\n• §lLogistics parts§r (former logistics assembler): no recipe (its copies duplicated other machines)\n• §lArc welding§r (former arc welder): 15 recipes\n§6Same inputs§r: steel plates (armor or welded beam), steel plates, rods and screws (wrench or welded frame). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {

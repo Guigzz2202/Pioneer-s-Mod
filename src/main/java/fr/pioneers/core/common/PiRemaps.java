@@ -598,11 +598,12 @@ public final class PiRemaps {
     public static final Map<String, String> P105_LOT28_ITEMS = Map.of("fish_gray_reef_shark_spawn_egg", "gray_reef_shark_spawn_egg");
 
     /**
-     * 1.0.6 (une machine par transformation de forme) : formes d'extrusion retirees (anneau, ebauche : leur piece se fait a la Cintreuse, au
-     * Marteau-pilon) -> la filiere d'extrusion vierge. Les formes de la plaque, du fil et de l'engrenage sont remises le 17/11/2026 (voie
-     * generique de l'extrudeuse, demande de Guillaume).
+     * 1.0.6 : objets d'extrusion retires (demandes de Guillaume des 16 et 17/11/2026). La forme de l'anneau (Cintreuse) et la filiere
+     * d'extrusion vierge (plus aucun usage) deviennent la forme tige ; la forme de l'engrenage devient celle de l'ebauche d'engrenage (5
+     * lingots). Les formes de la plaque, du fil et de l'ebauche sont celles de la voie generique de l'extrudeuse.
      */
-    public static final Map<String, String> P106_ITEMS = Map.of("extrusion_shape_ring", "extrusion_die", "extrusion_shape_gear_blank", "extrusion_die");
+    public static final Map<String, String> P106_ITEMS = Map.of("extrusion_shape_ring", "extrusion_shape_rod", "extrusion_die", "extrusion_shape_rod",
+          "extrusion_shape_gear", "extrusion_shape_gear_blank");
 
     /** MAJ simplification : objet retire -> objet qui le remplace (machines de chaleur et cables : le bloc pose ; les autres : leur remplacant). */
     @Nullable

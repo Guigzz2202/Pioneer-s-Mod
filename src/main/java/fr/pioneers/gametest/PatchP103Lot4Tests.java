@@ -94,14 +94,20 @@ public final class PatchP103Lot4Tests {
         Gt.equal(1, rodWire.tier(), "trefileuse : tige -> 2 fils au MKII");
         //1.0.6 (une machine par transformation de forme) : la forme de l'anneau est retiree (Cintreuse) ; un objet deja fabrique devient la
         //filiere d'extrusion vierge. Demande de Guillaume du 17/11/2026 : l'extrudeuse garde une voie generique, un peu moins rentable, pour
-        //la plaque (1 lingot), le fil (1 lingot -> 2) et l'engrenage (5 lingots)
+        //la plaque (1 lingot), le fil (1 lingot -> 2) et l'ebauche d'engrenage (5 lingots)
         Gt.check(server.getRecipeManager().byKey(rl("industry/extruder/extrude_ring_steel")).isEmpty(), "plus d'anneau extrude");
-        IndustrialRecipe extrGear = industrial(server, "industry/extruder/extrude_gear_iron");
-        Gt.equal(5, extrGear.items().get(0).count(), "engrenage extrude : 5 lingots");
+        IndustrialRecipe extrGear = industrial(server, "industry/extruder/extrude_gear_blank_iron");
+        Gt.equal(5, extrGear.items().get(0).count(), "ebauche d'engrenage extrudee : 5 lingots");
+        Gt.check(server.getRecipeManager().byKey(rl("industry/power_hammer/forge_billet_gear_blank_iron")).isEmpty(), "plus de billette -> 2 ebauches");
+        Gt.equal(1, industrial(server, "industry/gear_hobber/hob_gear_iron").results().size(), "decoupeuse : l'engrenage sans pepites");
         Gt.equal(2, industrial(server, "industry/extruder/extrude_wire_copper").results().get(0).stack().getCount(), "fil extrude : 1 lingot -> 2");
         Gt.equal(1, industrial(server, "industry/extruder/extrude_plate_iron").results().get(0).stack().getCount(), "plaque extrudee : 1 lingot -> 1");
         Gt.check(!ForgeRegistries.ITEMS.containsKey(rl("extrusion_shape_ring")), "forme anneau retiree du registre");
-        Gt.equal("extrusion_die", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_shape_ring"), "forme anneau -> filiere vierge");
+        Gt.equal("extrusion_shape_rod", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_shape_ring"), "forme anneau -> forme tige");
+        //17/11/2026 (Guillaume) : filiere vierge supprimee (-> forme tige), forme engrenage -> forme ebauche d'engrenage
+        Gt.check(!ForgeRegistries.ITEMS.containsKey(rl("extrusion_die")), "filiere vierge retiree du registre");
+        Gt.equal("extrusion_shape_rod", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_die"), "filiere vierge -> forme tige");
+        Gt.equal("extrusion_shape_gear_blank", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_shape_gear"), "forme engrenage -> forme ebauche");
         IndustrialRecipe press = industrial(server, "industry/press/press_sheet_steel");
         //1.0.6 (reponse de Guillaume du 16/11/2026) : 2 toles par plaque, comme la calandre (tableau du lot 4 : 1 avant)
         Gt.equal(2, press.results().get(0).stack().getCount(), "presse electrique : 1 plaque -> 2 toles");

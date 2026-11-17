@@ -5997,7 +5997,6 @@
   "item.pioneers.electric_motor": "Moteur à courant continu",
   "item.pioneers.piston": "Vérin pneumatique",
   "item.pioneers.heat_exchanger": "Échangeur à tubes de cuivre",
-  "item.pioneers.extrusion_die": "Filière d'extrusion",
   "item.pioneers.press_die": "Matrice de presse",
   "item.pioneers.tube_die": "Mandrin à tubes",
   "item.pioneers.rough_ruby": "Rubis brut",
@@ -22386,5 +22385,8 @@
   "description.pioneers.industrial_stoneworks": "Taille la pierre : toutes les découpes du tailleur de pierre (dalles, escaliers, murets, pierres polies et taillées), avec un meilleur rendement qu'à la main, et les ouvrages du maçon. Presse à portique. Habillage mécanique. Maj + clic droit pour le plan.",
   "item.pioneers.extrusion_shape_plate.desc": "Extrudeuse : lingot → plaque. Dans la case Outil : incassable, jamais consommée.",
   "item.pioneers.extrusion_shape_wire.desc": "Extrudeuse : lingot → 2 fils. Dans la case Outil : incassable, jamais consommée.",
-  "item.pioneers.extrusion_shape_gear.desc": "Extrudeuse : 5 lingots → engrenage. Dans la case Outil : incassable, jamais consommée."
+  "item.pioneers.extrusion_shape_gear_blank.desc": "Extrudeuse : 5 lingots → ébauche d’engrenage. Dans la case Outil : incassable, jamais consommée.",
+  "item.pioneers.extrusion_shape_plate": "Forme d’extrusion : plaque",
+  "item.pioneers.extrusion_shape_wire": "Forme d’extrusion : fil",
+  "item.pioneers.extrusion_shape_gear_blank": "Forme d’extrusion : ébauche d’engrenage"
 }

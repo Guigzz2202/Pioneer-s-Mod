@@ -41,14 +41,6 @@
     ]
    },
    {
-    "item": "pioneers:extrusion_die",
-    "weight": 12,
-    "count": [
-     1,
-     3
-    ]
-   },
-   {
     "item": "pioneers:tube_die",
     "weight": 12,
     "count": [

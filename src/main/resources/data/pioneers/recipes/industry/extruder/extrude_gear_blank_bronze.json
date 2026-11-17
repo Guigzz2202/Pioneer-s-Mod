@@ -1,18 +1,18 @@
 {
  "type": "pioneers:industrial",
- "machine": "power_hammer",
+ "machine": "extruder",
  "tier": 0,
- "time": 200,
+ "time": 240,
  "items": [
   {
    "ingredient": {
-    "tag": "forge:billets/bronze"
+    "tag": "forge:ingots/bronze"
    },
-   "count": 1
+   "count": 5
   },
   {
    "ingredient": {
-    "item": "pioneers:press_die"
+    "item": "pioneers:extrusion_shape_gear_blank"
    },
    "count": 1
   }
@@ -20,10 +20,10 @@
  "results": [
   {
    "item": "pioneers:bronze_gear_blank",
-   "count": 2
+   "count": 1
   },
   {
-   "item": "pioneers:press_die",
+   "item": "pioneers:extrusion_shape_gear_blank",
    "count": 1
   }
  ]

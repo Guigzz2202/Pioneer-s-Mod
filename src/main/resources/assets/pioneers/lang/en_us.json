@@ -5997,7 +5997,6 @@
   "item.pioneers.electric_motor": "DC Motor",
   "item.pioneers.piston": "Pneumatic Cylinder",
   "item.pioneers.heat_exchanger": "Copper Tube Heat Exchanger",
-  "item.pioneers.extrusion_die": "Extrusion Die",
   "item.pioneers.press_die": "Press Die",
   "item.pioneers.tube_die": "Tube Mandrel",
   "item.pioneers.rough_ruby": "Rough Ruby",
@@ -22386,5 +22385,8 @@
   "description.pioneers.industrial_stoneworks": "Cuts stone: every stonecutter cut (slabs, stairs, walls, polished and chiseled stone) with a better yield than by hand, and the mason's works. Gantry press. Mechanical cladding. Shift + right-click for the blueprint.",
   "item.pioneers.extrusion_shape_plate.desc": "Extruder: ingot → plate. In the Tool slot: unbreakable, never consumed.",
   "item.pioneers.extrusion_shape_wire.desc": "Extruder: ingot → 2 wires. In the Tool slot: unbreakable, never consumed.",
-  "item.pioneers.extrusion_shape_gear.desc": "Extruder: 5 ingots → gear. In the Tool slot: unbreakable, never consumed."
+  "item.pioneers.extrusion_shape_gear_blank.desc": "Extruder: 5 ingots → gear blank. In the Tool slot: unbreakable, never consumed.",
+  "item.pioneers.extrusion_shape_plate": "Extrusion Shape: Plate",
+  "item.pioneers.extrusion_shape_wire": "Extrusion Shape: Wire",
+  "item.pioneers.extrusion_shape_gear_blank": "Extrusion Shape: Gear Blank"
 }
