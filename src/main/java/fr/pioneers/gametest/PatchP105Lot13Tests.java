@@ -116,7 +116,9 @@ public final class PatchP105Lot13Tests {
         Boar b = field(s, crop);
         Gt.check(!b.rootable(h.absolutePos(crop), h.absolutePos(crop.west(5))), "une culture en claim est a l'abri");
         h.runAfterDelay(400, () -> {
-            Gt.check(wheat(h, crop), "le sanglier a detruit le ble d'un claim");
+            //1.0.6 : diagnostic (echec de la CI du 17/11, run 44130056403, introuvable en local) : bloc, sol, claim, sanglier
+            Gt.check(wheat(h, crop), "le sanglier a detruit le ble d'un claim (bloc " + h.getBlockState(crop) + ", sol " + h.getBlockState(crop.below())
+                  + ", claim " + fr.pioneers.world.wild.PiWild7.claimed(s.level, h.absolutePos(crop)) + ")" + diag(h, b, crop));
             s.done();
         });
     }
