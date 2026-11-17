@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "semiconductor_fab",
+ "tier": 1,
+ "time": 520,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ceramic_substrate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_integrated_circuit"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gold_plated_connector"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk2"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 250
+  },
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:circuit_mk3",
+   "count": 4
+  }
+ ]
+}

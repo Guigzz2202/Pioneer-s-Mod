@@ -89,7 +89,7 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.DRUM, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
     FERMENTER("fermenter", Atelier.NEW, true, null, 2, 1, 1, 3, 0, 3, Source.INDUSTRIAL, Kind.PROCESS, 10, 0xAA965A, new int[]{5, 12, 0, 5, 12, 0}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.TOWER, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
-    PHOTOLITHOGRAPH("photolithograph", Atelier.NEW, true, null, 3, 2, 2, 0, 2, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xC8B4FF, new int[]{9, 4, 13, 9, 4, 13}, false, false, new String[]{},
+    PHOTOLITHOGRAPH("photolithograph", Atelier.NEW, true, null, 3, 2, 1, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xC8B4FF, new int[]{9, 4, 13, 9, 4, 13}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
     PICK_AND_PLACE("pick_and_place", Atelier.NEW, true, null, 10, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 30, 0x50C878, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),

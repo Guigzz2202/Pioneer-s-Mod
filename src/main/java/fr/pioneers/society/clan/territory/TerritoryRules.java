@@ -60,7 +60,8 @@ public final class TerritoryRules {
         if (cooperative && !solo) {
             raw = (long) Math.floor(raw * (1 + b.cooperativeBonus()) + 1e-9);
         }
-        return (int) Math.min(raw, solo ? b.soloCap() : b.cap());
+        int cap = solo ? b.soloCap() : b.cap();
+        return (int) Math.min(raw, cap <= 0 ? Integer.MAX_VALUE : cap);   //1.0.6 : 0 = sans plafond
     }
 
     /**
@@ -102,10 +103,14 @@ public final class TerritoryRules {
         return sum;
     }
 
-    /** Plafond d'achat (clan solo ou non). */
+    /** Plafond d'achat (clan solo ou non) ; 1.0.6 : 0 = sans plafond. */
     public static int buyCap(Purchase p, boolean solo) {
-        return Math.max(0, solo ? p.soloMax() : p.max());
+        int cap = solo ? p.soloMax() : p.max();
+        return cap <= 0 ? Integer.MAX_VALUE : cap;
     }
+
+    /** 1.0.6 : quantite au plus d'un seul achat (claims, emplacements de chunkloading). */
+    public static final int BUY_STEP_MAX = 1000;
 
     /** Verdict d'un achat (ordre des controles : le premier refus l'emporte). */
     public enum BuyVerdict {
@@ -114,10 +119,10 @@ public final class TerritoryRules {
 
     /** Peut-on acheter {@code n} claims (1 a 64) apres {@code bought}, avec ce tresor ? */
     public static BuyVerdict canBuy(Purchase p, int bought, int n, boolean solo, long treasury) {
-        if (n < 1 || n > 64) {
+        if (n < 1 || n > BUY_STEP_MAX) {
             return BuyVerdict.AMOUNT;
         }
-        if (bought + n > buyCap(p, solo)) {
+        if ((long) bought + n > buyCap(p, solo)) {
             return BuyVerdict.CAP;
         }
         return claimsPrice(p, bought, n) > treasury ? BuyVerdict.TREASURY : BuyVerdict.OK;

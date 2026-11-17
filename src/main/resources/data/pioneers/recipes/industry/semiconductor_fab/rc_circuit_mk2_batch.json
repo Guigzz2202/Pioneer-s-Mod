@@ -1,0 +1,48 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "semiconductor_fab",
+ "tier": 0,
+ "time": 480,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:multilayer_pcb"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:transistor"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_resistor"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk1"
+   },
+   "count": 6
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 250
+  },
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:circuit_mk2",
+   "count": 6
+  }
+ ]
+}

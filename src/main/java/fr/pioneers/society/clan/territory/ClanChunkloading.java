@@ -62,9 +62,10 @@ public final class ClanChunkloading {
         return Math.max(0, slots(c) - c.chunkload.size() - queued(server, c));
     }
 
-    /** 1.0.6 (Guillaume, 17/11/2026 : « retire le plafond de chunk max ») : aucun plafond d'emplacements achetes. */
+    /** 1.0.6 : emplacements achetes au plus : sans plafond par defaut (reglages chunkloadBuyLimit, chunkloadBuySoloLimit). */
     public static int buyCap(Clan c) {
-        return Integer.MAX_VALUE;
+        int cap = c.solo ? PiCommonConfig.get(RpConfig.CHUNKLOAD_BUY_SOLO_MAX, 0) : PiCommonConfig.get(RpConfig.CHUNKLOAD_BUY_MAX, 0);
+        return cap <= 0 ? Integer.MAX_VALUE : cap;
     }
 
     public static boolean suspended(Clan c) {
@@ -110,9 +111,10 @@ public final class ClanChunkloading {
         return n;
     }
 
-    /** 1.0.6 (Guillaume, 17/11/2026 : « retire le plafond de chunk max ») : aucun plafond du serveur (la file d'attente ne sert plus). */
+    /** 1.0.6 (Guillaume, 17/11/2026 : « retire tous les plafonds, au pire on change dans les configs ») : sans plafond par defaut. */
     public static int globalMax() {
-        return Integer.MAX_VALUE;
+        int cap = PiCommonConfig.get(RpConfig.CHUNKLOAD_SERVER_MAX, 0);
+        return cap <= 0 ? Integer.MAX_VALUE : cap;
     }
 
     public static boolean dimensionAllowed(String dim) {
@@ -167,7 +169,7 @@ public final class ClanChunkloading {
         if (seen >= 0 && seen != c.boughtChunkloads) {
             return "clan.pioneers.territory.buy.stale";
         }
-        if (n <= 0 || n > 1000) {
+        if (n <= 0 || n > TerritoryRules.BUY_STEP_MAX) {
             return "clan.pioneers.error.amount";
         }
         if ((long) c.boughtChunkloads + n > buyCap(c)) {

@@ -389,7 +389,8 @@ final class TerritoryFiche extends ClanTab.Fiche {
             why = Component.translatable("clan.pioneers.ui.buy.short", Ui.group(total - treasury));
         }
         //quantite : - n + (Maj : par 10)
-        int max = Math.max(1, Math.min(cap - bought, claims ? Integer.MAX_VALUE : t.getLongArray("clPrices").length));
+        int max = Math.max(1, Math.min(cap - bought, claims ? fr.pioneers.society.clan.territory.TerritoryRules.BUY_STEP_MAX
+              : t.getLongArray("clPrices").length));
         int sb = 13;
         u.button(x, y, sb, 13, Component.literal("−"), !capped && qty > 1, () -> setQty(claims, qty - (net.minecraft.client.gui.screens.Screen
               .hasShiftDown() ? 10 : 1), max));
@@ -960,7 +961,8 @@ final class TerritoryFiche extends ClanTab.Fiche {
             Component loaded = Component.literal(t.getInt("loaded") + " / " + t.getInt("slots"));
             cell(u, "perm_chunkload", loaded, x, y + Ui.FACT, cw, Ui.TEXT, Component.translatable("clan.pioneers.ui.territory.loaded"),
                   Component.translatable("clan.pioneers.ui.territory.stock_tip", t.getInt("clFree"), t.getInt("clBought")),
-                  Component.translatable("clan.pioneers.ui.territory.global_tip", t.getInt("global")),
+                  t.getInt("globalMax") >= Integer.MAX_VALUE / 2 ? Component.translatable("clan.pioneers.ui.territory.global_tip", t.getInt("global"))
+                        : Component.translatable("clan.pioneers.ui.territory.global_tip_cap", t.getInt("global"), t.getInt("globalMax")),
                   Component.translatable("clan.pioneers.ui.territory.queued_tip", t.getInt("queued")));
             ListTag fns = t.getList("functions", Tag.TAG_COMPOUND);
             List<Component> tip = new ArrayList<>();
