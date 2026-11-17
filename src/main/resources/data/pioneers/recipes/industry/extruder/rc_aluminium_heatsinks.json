@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "extruder",
+ "machine": "chemical_reactor",
  "tier": 0,
  "time": 140,
  "items": [
@@ -9,22 +9,12 @@
     "tag": "forge:plates/aluminium"
    },
    "count": 1
-  },
-  {
-   "ingredient": {
-    "item": "pioneers:extrusion_die"
-   },
-   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:aluminium_heatsink",
    "count": 4
-  },
-  {
-   "item": "pioneers:extrusion_die",
-   "count": 1
   }
  ]
 }

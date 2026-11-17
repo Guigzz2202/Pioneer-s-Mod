@@ -12,7 +12,7 @@
   },
   {
    "ingredient": {
-    "item": "pioneers:tube_die"
+    "item": "pioneers:extrusion_shape_pipe"
    },
    "count": 1
   }
@@ -23,7 +23,7 @@
    "count": 2
   },
   {
-   "item": "pioneers:tube_die",
+   "item": "pioneers:extrusion_shape_pipe",
    "count": 1
   }
  ]

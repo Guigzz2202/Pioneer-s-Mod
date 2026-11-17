@@ -18,10 +18,6 @@
    "required": false
   },
   {
-   "id": "pioneers:advanced_force_field_generator",
-   "required": false
-  },
-  {
    "id": "pioneers:advanced_maglev_locomotive",
    "required": false
   },
@@ -86,10 +82,6 @@
    "required": false
   },
   {
-   "id": "pioneers:ai_upgrade",
-   "required": false
-  },
-  {
    "id": "pioneers:alabaster_orchid",
    "required": false
   },
@@ -131,10 +123,6 @@
   },
   {
    "id": "pioneers:atmospheric_suit_boots",
-   "required": false
-  },
-  {
-   "id": "pioneers:atmospheric_suit_chestplate",
    "required": false
   },
   {
@@ -271,10 +259,6 @@
   },
   {
    "id": "pioneers:carbide_cutting_tool",
-   "required": false
-  },
-  {
-   "id": "pioneers:carbide_scrap",
    "required": false
   },
   {
@@ -650,10 +634,6 @@
    "required": false
   },
   {
-   "id": "pioneers:column_pump_ultimate",
-   "required": false
-  },
-  {
    "id": "pioneers:conamarite_billet",
    "required": false
   },
@@ -691,10 +671,6 @@
   },
   {
    "id": "pioneers:conamarite_salts",
-   "required": false
-  },
-  {
-   "id": "pioneers:confinement_coil",
    "required": false
   },
   {
@@ -1070,10 +1046,6 @@
    "required": false
   },
   {
-   "id": "pioneers:drill_string_ultimate",
-   "required": false
-  },
-  {
    "id": "pioneers:drone_armor_plating",
    "required": false
   },
@@ -1087,14 +1059,6 @@
   },
   {
    "id": "pioneers:drone_mk2",
-   "required": false
-  },
-  {
-   "id": "pioneers:drone_mk3",
-   "required": false
-  },
-  {
-   "id": "pioneers:drone_mk4",
    "required": false
   },
   {
@@ -1159,14 +1123,6 @@
   },
   {
    "id": "pioneers:edenite_rod",
-   "required": false
-  },
-  {
-   "id": "pioneers:elite_force_field_generator",
-   "required": false
-  },
-  {
-   "id": "pioneers:elite_maglev_locomotive",
    "required": false
   },
   {
@@ -1310,10 +1266,6 @@
    "required": false
   },
   {
-   "id": "pioneers:factory_ai_core",
-   "required": false
-  },
-  {
    "id": "pioneers:fearcap",
    "required": false
   },
@@ -1335,10 +1287,6 @@
   },
   {
    "id": "pioneers:fiber_laser",
-   "required": false
-  },
-  {
-   "id": "pioneers:firebox_ultimate",
    "required": false
   },
   {
@@ -1407,14 +1355,6 @@
   },
   {
    "id": "pioneers:fragment_fuel_cartridge",
-   "required": false
-  },
-  {
-   "id": "pioneers:fragment_reactor",
-   "required": false
-  },
-  {
-   "id": "pioneers:friable_carbide",
    "required": false
   },
   {
@@ -1534,10 +1474,6 @@
    "required": false
   },
   {
-   "id": "pioneers:heating_coil_ultimate",
-   "required": false
-  },
-  {
    "id": "pioneers:hematite_ore",
    "required": false
   },
@@ -1619,14 +1555,6 @@
   },
   {
    "id": "pioneers:ice_meteorite",
-   "required": false
-  },
-  {
-   "id": "pioneers:industrial_casing_ultimate",
-   "required": false
-  },
-  {
-   "id": "pioneers:industrial_glass_ultimate",
    "required": false
   },
   {
@@ -1895,10 +1823,6 @@
   },
   {
    "id": "pioneers:machine_frame_ultimate",
-   "required": false
-  },
-  {
-   "id": "pioneers:machine_hull_ultimate",
    "required": false
   },
   {
@@ -2470,39 +2394,7 @@
    "required": false
   },
   {
-   "id": "pioneers:neutronic_blade",
-   "required": false
-  },
-  {
-   "id": "pioneers:neutronic_boots",
-   "required": false
-  },
-  {
-   "id": "pioneers:neutronic_cell",
-   "required": false
-  },
-  {
-   "id": "pioneers:neutronic_chestplate",
-   "required": false
-  },
-  {
-   "id": "pioneers:neutronic_helmet",
-   "required": false
-  },
-  {
-   "id": "pioneers:neutronic_leggings",
-   "required": false
-  },
-  {
-   "id": "pioneers:neutronic_multitool",
-   "required": false
-  },
-  {
    "id": "pioneers:neutronic_plating",
-   "required": false
-  },
-  {
-   "id": "pioneers:neutronic_rifle",
    "required": false
   },
   {
@@ -2671,10 +2563,6 @@
   },
   {
    "id": "pioneers:olivine_sprout_seeds",
-   "required": false
-  },
-  {
-   "id": "pioneers:orbital_station_kit",
    "required": false
   },
   {
@@ -3574,10 +3462,6 @@
    "required": false
   },
   {
-   "id": "pioneers:quantum_computer",
-   "required": false
-  },
-  {
    "id": "pioneers:quasar_crystal",
    "required": false
   },
@@ -3878,171 +3762,7 @@
    "required": false
   },
   {
-   "id": "pioneers:rocket_aux_booster_tier_10",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_11",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_12",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_13",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_2",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_3",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_4",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_5",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_6",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_7",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_8",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_aux_booster_tier_9",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_10",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_11",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_12",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_13",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_2",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_3",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_4",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_5",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_6",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_7",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_8",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_booster_tier_9",
-   "required": false
-  },
-  {
    "id": "pioneers:rocket_module_efficiency",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_module_speed",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_10",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_11",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_12",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_13",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_2",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_3",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_4",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_5",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_6",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_7",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_8",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_nose_cone_tier_9",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tank_tier_10",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tank_tier_11",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tank_tier_12",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tank_tier_13",
    "required": false
   },
   {
@@ -4067,62 +3787,6 @@
   },
   {
    "id": "pioneers:rocket_tank_tier_7",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tank_tier_8",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tank_tier_9",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_10",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_11",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_12",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_13",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_2",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_3",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_4",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_5",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_6",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_7",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_8",
-   "required": false
-  },
-  {
-   "id": "pioneers:rocket_tier_9",
    "required": false
   },
   {
@@ -4187,22 +3851,6 @@
   },
   {
    "id": "pioneers:rover_drill_arm",
-   "required": false
-  },
-  {
-   "id": "pioneers:rover_mk1",
-   "required": false
-  },
-  {
-   "id": "pioneers:rover_mk2",
-   "required": false
-  },
-  {
-   "id": "pioneers:rover_mk3",
-   "required": false
-  },
-  {
-   "id": "pioneers:rover_mk4",
    "required": false
   },
   {
@@ -4334,43 +3982,11 @@
    "required": false
   },
   {
-   "id": "pioneers:singularity_blade",
-   "required": false
-  },
-  {
-   "id": "pioneers:singularity_boots",
-   "required": false
-  },
-  {
-   "id": "pioneers:singularity_cell",
-   "required": false
-  },
-  {
-   "id": "pioneers:singularity_chestplate",
-   "required": false
-  },
-  {
    "id": "pioneers:singularity_core",
    "required": false
   },
   {
-   "id": "pioneers:singularity_helmet",
-   "required": false
-  },
-  {
-   "id": "pioneers:singularity_leggings",
-   "required": false
-  },
-  {
-   "id": "pioneers:singularity_multitool",
-   "required": false
-  },
-  {
    "id": "pioneers:singularity_plating",
-   "required": false
-  },
-  {
-   "id": "pioneers:singularity_rifle",
    "required": false
   },
   {
@@ -4518,22 +4134,6 @@
    "required": false
   },
   {
-   "id": "pioneers:solar_absorber_casing",
-   "required": false
-  },
-  {
-   "id": "pioneers:solar_absorber_collector",
-   "required": false
-  },
-  {
-   "id": "pioneers:solar_absorber_controller",
-   "required": false
-  },
-  {
-   "id": "pioneers:solar_absorber_port",
-   "required": false
-  },
-  {
    "id": "pioneers:solar_heliotrope",
    "required": false
   },
@@ -4558,55 +4158,11 @@
    "required": false
   },
   {
-   "id": "pioneers:space_rift_projector",
-   "required": false
-  },
-  {
-   "id": "pioneers:space_simulator_casing",
-   "required": false
-  },
-  {
-   "id": "pioneers:space_simulator_controller",
-   "required": false
-  },
-  {
-   "id": "pioneers:space_simulator_glass",
-   "required": false
-  },
-  {
-   "id": "pioneers:space_simulator_port",
-   "required": false
-  },
-  {
    "id": "pioneers:space_solar_panel",
    "required": false
   },
   {
-   "id": "pioneers:space_stabilizer_casing",
-   "required": false
-  },
-  {
-   "id": "pioneers:space_stabilizer_controller",
-   "required": false
-  },
-  {
    "id": "pioneers:space_stabilizer_emitter",
-   "required": false
-  },
-  {
-   "id": "pioneers:space_stabilizer_glass",
-   "required": false
-  },
-  {
-   "id": "pioneers:space_stabilizer_port",
-   "required": false
-  },
-  {
-   "id": "pioneers:space_stabilizer_power_port",
-   "required": false
-  },
-  {
-   "id": "pioneers:spent_fragment_cartridge",
    "required": false
   },
   {
@@ -4654,14 +4210,6 @@
    "required": false
   },
   {
-   "id": "pioneers:stardust",
-   "required": false
-  },
-  {
-   "id": "pioneers:stardust_block",
-   "required": false
-  },
-  {
    "id": "pioneers:stellar_core",
    "required": false
   },
@@ -4670,55 +4218,7 @@
    "required": false
   },
   {
-   "id": "pioneers:stellarator",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellarator_coil",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_axe",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_blade",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_boots",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_chestplate",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_helmet",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_hoe",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_leggings",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_pickaxe",
-   "required": false
-  },
-  {
    "id": "pioneers:stellaris_plating",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_rifle",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellaris_shovel",
    "required": false
   },
   {
@@ -4818,10 +4318,6 @@
    "required": false
   },
   {
-   "id": "pioneers:stellite_rod",
-   "required": false
-  },
-  {
    "id": "pioneers:stellite_saw",
    "required": false
   },
@@ -4851,10 +4347,6 @@
   },
   {
    "id": "pioneers:stellite_sword_blade",
-   "required": false
-  },
-  {
-   "id": "pioneers:stellite_wrench",
    "required": false
   },
   {
@@ -4963,10 +4455,6 @@
   },
   {
    "id": "pioneers:superconducting_transformer",
-   "required": false
-  },
-  {
-   "id": "pioneers:synthesizer",
    "required": false
   },
   {
@@ -5358,10 +4846,6 @@
    "required": false
   },
   {
-   "id": "pioneers:tokamak",
-   "required": false
-  },
-  {
    "id": "pioneers:toliman_moss",
    "required": false
   },
@@ -5682,10 +5166,6 @@
    "required": false
   },
   {
-   "id": "pioneers:tungsten_carbide_wrench",
-   "required": false
-  },
-  {
    "id": "pioneers:tungsten_heating_element",
    "required": false
   },
@@ -5698,23 +5178,7 @@
    "required": false
   },
   {
-   "id": "pioneers:turbine_rotor_ultimate",
-   "required": false
-  },
-  {
-   "id": "pioneers:turtle_mk1",
-   "required": false
-  },
-  {
    "id": "pioneers:turtle_mk2",
-   "required": false
-  },
-  {
-   "id": "pioneers:turtle_mk3",
-   "required": false
-  },
-  {
-   "id": "pioneers:turtle_mk4",
    "required": false
   },
   {
@@ -5738,18 +5202,6 @@
    "required": false
   },
   {
-   "id": "pioneers:ultimate_air_car",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_autoclave",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_battery_car",
-   "required": false
-  },
-  {
    "id": "pioneers:ultimate_bearing",
    "required": false
   },
@@ -5758,59 +5210,7 @@
    "required": false
   },
   {
-   "id": "pioneers:ultimate_boxcar",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_casting_machine",
-   "required": false
-  },
-  {
    "id": "pioneers:ultimate_centrifugal_pump",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_chemical_bath",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_chemical_reactor",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_chunk_loader",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_crusher",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_cryogenic_unit",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_crystallizer",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_diesel_locomotive",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_dryer",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_dynamo",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_electric_crucible",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_electric_locomotive",
    "required": false
   },
   {
@@ -5818,127 +5218,11 @@
    "required": false
   },
   {
-   "id": "pioneers:ultimate_electrolyzer",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_energy_buffer",
-   "required": false
-  },
-  {
    "id": "pioneers:ultimate_engine_block",
    "required": false
   },
   {
-   "id": "pioneers:ultimate_extruder",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_flat_car",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_fluid_buffer",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_force_field_generator",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_furnace",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_gas_buffer",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_gas_locomotive",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_gas_tank_car",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_gas_turbine",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_gear_hobber",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_glassworks",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_heat_buffer",
-   "required": false
-  },
-  {
    "id": "pioneers:ultimate_heat_exchanger",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_hopper_car",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_hydro_turbine",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_induction_furnace",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_item_buffer",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_joinery",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_lightning_collector",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_liquid_combustion_generator",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_machining_center",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_maglev_locomotive",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_microbial_fuel_cell",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_mixer",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_ore_separator",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_passenger_car",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_photolithograph",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_pick_and_place",
    "required": false
   },
   {
@@ -5950,83 +5234,11 @@
    "required": false
   },
   {
-   "id": "pioneers:ultimate_pressure_buffer",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_radiator",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_recycler",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_reduction_furnace",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_robot_van",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_rolling_mill",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_sawmill",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_sheet_metal_shop",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_solar_panel",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_solid_combustion_generator",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_stoneworks",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_substation",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_tailoring_workshop",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_tank_car",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_tender",
-   "required": false
-  },
-  {
    "id": "pioneers:ultimate_track",
    "required": false
   },
   {
    "id": "pioneers:ultimate_unloading_pit",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_wind_rotor",
-   "required": false
-  },
-  {
-   "id": "pioneers:ultimate_wiremill",
-   "required": false
-  },
-  {
-   "id": "pioneers:upgrade_kit_ultimate",
    "required": false
   },
   {

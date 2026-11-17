@@ -12,6 +12,7 @@ import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraftforge.gametest.GameTestHolder;
@@ -121,6 +122,17 @@ public final class PatchP106MetiersTests {
               && r.results().get(0).stack().is(rod)), "l'Extrudeuse fait les tiges de fer");
         Gt.check(IndustryRecipes.of(h.getLevel(), IndustryMachine.MACHINING_CENTER).stream().noneMatch(r -> !r.results().isEmpty()
               && r.results().get(0).stack().is(rod)), "tiges de fer : plus au centre d'usinage");
+        // l'extrudeuse ne file que dans ses formes d'extrusion (tige, tube), rien d'autre (demande de Guillaume du 17/11/2026) ; ce qui n'est
+        // ni une tige ni un tube passe au Reacteur chimique
+        Item shapeRod = ForgeRegistries.ITEMS.getValue(Pioneers.rl("extrusion_shape_rod"));
+        Item shapePipe = ForgeRegistries.ITEMS.getValue(Pioneers.rl("extrusion_shape_pipe"));
+        for (IndustrialRecipe r : IndustryRecipes.of(h.getLevel(), IndustryMachine.EXTRUDER)) {
+            if (!r.converted()) {
+                Gt.check(r.items().stream().anyMatch(c -> c.ingredient().test(new ItemStack(shapeRod)) || c.ingredient().test(new ItemStack(shapePipe))),
+                      "extrudeuse sans forme d'extrusion : " + r.getId());
+            }
+        }
+        Gt.equal(IndustryMachine.CHEMICAL_REACTOR, machineOf(h, "industry/extruder/extrude_ptfe_sheet"), "feuille de PTFE : Reacteur chimique");
         h.succeed();
     }
 }

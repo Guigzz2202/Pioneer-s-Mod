@@ -12,7 +12,7 @@
   },
   {
    "ingredient": {
-    "item": "pioneers:rod_die"
+    "item": "pioneers:extrusion_shape_rod"
    },
    "count": 1
   }
@@ -23,7 +23,7 @@
    "count": 2
   },
   {
-   "item": "pioneers:rod_die",
+   "item": "pioneers:extrusion_shape_rod",
    "count": 1
   }
  ]
