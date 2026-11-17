@@ -193,8 +193,10 @@ public final class PatchP103Lot3Tests {
         Gt.equal(72, plate, "plaque de fer fondue : 50 %");
         Gt.equal(144, ingot, "lingot de fer fondu : 100 %");
         Recipe<?> rec = server.getRecipeManager().byKey(rl("industry/electric_crucible/recycle_iron_plate")).orElse(null);
-        Gt.check(rec instanceof fr.pioneers.tech.industry.recipe.IndustrialRecipe r && r.fluidResults().get(0).getAmount() == 72,
-              "creuset electrique : plaque de fer -> 72 mB");
+        // 1.0.6 (Guillaume, 17/11/2026 : « 100 % pour tout », machines MK seulement) : le creuset industriel refond a 100 % ; la table de
+        // l'age du bronze (ci-dessus) garde 50 %
+        Gt.check(rec instanceof fr.pioneers.tech.industry.recipe.IndustrialRecipe r && r.fluidResults().get(0).getAmount() == 144,
+              "creuset industriel : plaque de fer -> 144 mB");
         //les trois broyeurs : 1 minerai brut -> 2 concasses, sans tirage en plus
         Recipe<?> jaw = server.getRecipeManager().byKey(rl("materials/jaw_crushing_crushed_iron")).orElse(null);
         Gt.check(jaw instanceof MechanicalRecipe m && m.results().size() == 1 && m.results().get(0).stack().getCount() == 2

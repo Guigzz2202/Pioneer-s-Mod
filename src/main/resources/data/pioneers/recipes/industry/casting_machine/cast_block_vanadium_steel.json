@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:block_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_vanadium_steel",
+   "amount": 1524
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 450
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vanadium_steel_block",
+   "count": 1
+  },
+  {
+   "item": "pioneers:block_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:vanadium_steel_nugget",
+   "count": 14
+  },
+  {
+   "item": "pioneers:vanadium_steel_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:exhaust_steam",
+   "amount": 3420
+  }
+ ]
+}

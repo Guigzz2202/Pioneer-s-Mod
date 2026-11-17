@@ -111,7 +111,10 @@ public final class PatchP103Lot4Tests {
         IndustrialRecipe press = industrial(server, "industry/press/press_sheet_steel");
         //1.0.6 (reponse de Guillaume du 16/11/2026) : 2 toles par plaque, comme la calandre (tableau du lot 4 : 1 avant)
         Gt.equal(2, press.results().get(0).stack().getCount(), "presse electrique : 1 plaque -> 2 toles");
-        Gt.check(server.getRecipeManager().byKey(rl("industry/casting_machine/cast_plate_iron")).isEmpty(), "plus de plaque de fer coulee en machine");
+        //1.0.6 (Guillaume, 17/11/2026 : « homogeneise [la coulee] a tous les metaux et leurs composants ») : la plaque de fer se coule de
+        //nouveau (voie « casting » du tableau, parts_p103.ROUTES), matrice rendue
+        Gt.check(industrial(server, "industry/casting_machine/cast_plate_iron").results().get(0).stack().is(item("iron_plate")),
+              "plaque de fer coulee en machine (voie de coulee du tableau)");
         Recipe<?> slab = server.getRecipeManager().byKey(rl("compressing/slab_iron")).orElse(null);
         Gt.check(slab instanceof ProcessingRecipe p && p.getResult().is(item("iron_slab")), "compacteur : bloc de fer -> brame");
         Recipe<?> billet = server.getRecipeManager().byKey(rl("compressing/billet_iron")).orElse(null);

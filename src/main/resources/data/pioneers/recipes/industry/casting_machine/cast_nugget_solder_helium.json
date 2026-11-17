@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 3,
+ "time": 10,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nugget_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_solder",
+   "amount": 152
+  },
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 10
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:solder_nugget",
+   "count": 9
+  },
+  {
+   "item": "pioneers:nugget_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:solder_nugget",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 76
+  }
+ ]
+}

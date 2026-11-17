@@ -2242,6 +2242,10 @@
    "required": false
   },
   {
+   "id": "pioneers:module_excavation",
+   "required": false
+  },
+  {
    "id": "pioneers:module_flight",
    "required": false
   },
@@ -3718,6 +3722,10 @@
    "required": false
   },
   {
+   "id": "pioneers:robotic_bay",
+   "required": false
+  },
+  {
    "id": "pioneers:robotic_casing",
    "required": false
   },
@@ -3751,6 +3759,10 @@
   },
   {
    "id": "pioneers:robotic_upgrade_range",
+   "required": false
+  },
+  {
+   "id": "pioneers:robotic_upgrade_silk_touch",
    "required": false
   },
   {
@@ -5202,6 +5214,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ultimate_air_loader",
+   "required": false
+  },
+  {
    "id": "pioneers:ultimate_bearing",
    "required": false
   },
@@ -5214,6 +5230,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ultimate_data_loader",
+   "required": false
+  },
+  {
    "id": "pioneers:ultimate_electric_motor",
    "required": false
   },
@@ -5222,7 +5242,23 @@
    "required": false
   },
   {
+   "id": "pioneers:ultimate_fluid_loader",
+   "required": false
+  },
+  {
    "id": "pioneers:ultimate_heat_exchanger",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_item_loader",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_loading_silo",
+   "required": false
+  },
+  {
+   "id": "pioneers:ultimate_logistic_cable",
    "required": false
   },
   {

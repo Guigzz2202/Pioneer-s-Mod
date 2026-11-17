@@ -13,7 +13,7 @@ public final class GeneratedRemanents {
     /** Machine -> ses remanents (identifiants), dans l'ordre alphabetique ; une machine absente n'a pas de case Outil. */
     public static final Map<String, List<String>> BY_MACHINE = Map.ofEntries(
           Map.entry("assembler", List.of("pioneers:diamond_disc")),
-          Map.entry("casting_machine", List.of("pioneers:ceramic_shell_mold", "pioneers:gear_die", "pioneers:ingot_die", "pioneers:plate_die", "pioneers:press_die", "pioneers:rod_die", "pioneers:sand_mold", "pioneers:tube_die", "pioneers:vacuum_casting_mold")),
+          Map.entry("casting_machine", List.of("pioneers:block_die", "pioneers:ceramic_shell_mold", "pioneers:gear_die", "pioneers:ingot_die", "pioneers:nugget_die", "pioneers:plate_die", "pioneers:press_die", "pioneers:rod_die", "pioneers:sand_mold", "pioneers:tube_die", "pioneers:vacuum_casting_mold")),
           Map.entry("chemical_reactor", List.of("pioneers:cobalt_catalyst", "pioneers:iodine", "pioneers:iron_catalyst", "pioneers:nickel_catalyst", "pioneers:platinum_catalyst", "pioneers:vanadium_catalyst", "pioneers:zeolite_catalyst")),
           Map.entry("cracker", List.of("pioneers:nickel_catalyst", "pioneers:zeolite_catalyst")),
           Map.entry("electric_crucible", List.of("pioneers:fiber_laser", "pioneers:iridium_crucible")),
@@ -30,6 +30,7 @@ public final class GeneratedRemanents {
     /** Remanent -> sorte (die, extrusion, tool, catalyst ; {@code objective} : s'use, WearTool). */
     public static final Map<String, String> KIND = Map.ofEntries(
           Map.entry("pioneers:adsorbent", "catalyst"),
+          Map.entry("pioneers:block_die", "die"),
           Map.entry("pioneers:ceramic_shell_mold", "mold"),
           Map.entry("pioneers:cobalt_catalyst", "catalyst"),
           Map.entry("pioneers:diamond_disc", "tool"),
@@ -48,6 +49,7 @@ public final class GeneratedRemanents {
           Map.entry("pioneers:iron_catalyst", "catalyst"),
           Map.entry("pioneers:neutron_source", "tool"),
           Map.entry("pioneers:nickel_catalyst", "catalyst"),
+          Map.entry("pioneers:nugget_die", "die"),
           Map.entry("pioneers:photomask", "tool"),
           Map.entry("pioneers:plate_die", "die"),
           Map.entry("pioneers:platinum_catalyst", "catalyst"),

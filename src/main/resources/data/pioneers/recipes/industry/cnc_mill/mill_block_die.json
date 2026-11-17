@@ -1,0 +1,31 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 0,
+ "time": 300,
+ "family": "cnc_mill",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/vanadium_steel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/steel"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:block_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:vanadium_steel_nugget",
+   "count": 9
+  }
+ ]
+}

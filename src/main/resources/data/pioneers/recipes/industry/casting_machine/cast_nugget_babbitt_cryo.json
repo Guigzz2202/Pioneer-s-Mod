@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 2,
+ "time": 20,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nugget_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_babbitt",
+   "amount": 152
+  },
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 25
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:babbitt_nugget",
+   "count": 9
+  },
+  {
+   "item": "pioneers:nugget_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:babbitt_nugget",
+   "count": 1,
+   "chance": 0.5
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 190
+  }
+ ]
+}

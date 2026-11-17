@@ -118,8 +118,11 @@ public final class PiForge {
     public static final RegistryObject<Item> HEATED_METAL = item("heated_metal",
           () -> new HeatedMetalItem(new Item.Properties().stacksTo(1).fireResistant()));
 
-    /** Matrices en acier, par forme de moule (ingot, plate, rod, gear). */
-    public static final List<String> DIE_SHAPES = List.of("ingot", "plate", "rod", "gear");
+    /**
+     * Matrices en acier de la machine de coulee, par forme (ingot, plate, rod, gear = ebauche d'engrenage ; 1.0.6 : nugget, block). Non
+     * empilables (un outil, une case Outil).
+     */
+    public static final List<String> DIE_SHAPES = List.of("ingot", "plate", "rod", "gear", "nugget", "block");
     public static final Map<String, RegistryObject<Item>> DIES = new LinkedHashMap<>();
 
     static {

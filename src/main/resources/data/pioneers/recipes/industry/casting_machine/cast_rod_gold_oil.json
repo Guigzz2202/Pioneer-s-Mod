@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 1,
+ "time": 35,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rod_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_gold",
+   "amount": 208
+  },
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 20
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:rod_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:gold_nugget",
+   "count": 4
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 18
+  }
+ ]
+}

@@ -4787,7 +4787,7 @@
       "pioneers:basic_rolling_mill",
       "pioneers:basic_wiremill"
      ],
-     "text": "Every part of the §lbench metals§r (iron, copper, bronze, tin, brass, zinc, lead, gold, solder, steel) has its routes, one per station; the machine works at the §lmetal's tier§r (MKI for these metals), except the routes that carry their own tier. Bench = §6basic components bench§r:\n• §lslab§r: block in the §6compactor§r; §lbillet§r: slab in the compactor; §lwire rod§r: billet in the §6rolling mill§r (→ 9); §lblock§r: 9 ingots (grid or compactor);\n• §lplate§r: bench 2 ingots → 1; §6press§r (plate die); §6rolling mill§r block → 9; extruder (plate shape) 1 ingot → 1;\n• §lsheet§r: bench 1 plate → 1; press 1 plate → 2 (press die); §lfoil§r: bench 1 plate → 2; rolling mill;\n• §lrod§r: bench 1 ingot → 1; §6wood lathe§r 1 → 2; §6extruder§r (rod shape) ingot → 2, billet → 18;\n• §lwire§r: bench 1 rod → 2; §6wiremill§r ingot or wire rod; extruder (wire shape) 1 ingot → 2;\n• §lring§r: bench 2 rods → 1; wood lathe 1 → 1; §6bender§r 1 rod → 2; §lspring§r: bench 3 wires → 1; wood lathe 2 rods → 1; bender;\n• §lgear§r: bench blank + 3 plates; §6cutting machine§r; §lgear blank§r: bench 5 ingots; extruder (gear blank shape) 5 ingots → 1; casting;\n• §ltube§r: bench 1 plate → 1; bender (sheets); extruder (pipe shape);\n• §lmesh§r and §lwire rope§r: bench; wire rope also at the §6wiremill (stranding)§r.\nThe extruder only works with its §lextrusion shapes§r: rod and pipe, plus a slightly less profitable (slower) generic route for plate, wire and gear blank.\n§lOther metals§r are worked in machines only (die casting, continuous casting, forging). The primitive forge, clay molds and steam machines of the bronze age stay. JEI: page “Metal parts” (one page per part, all its routes).",
+     "text": "Every part of the §lbench metals§r (iron, copper, bronze, tin, brass, zinc, lead, gold, solder, steel) has its routes, one per station; the machine works at the §lmetal's tier§r (MKI for these metals), except the routes that carry their own tier. Bench = §6basic components bench§r:\n• §lslab§r: block in the §6compactor§r; §lbillet§r: slab in the compactor; §lwire rod§r: billet in the §6rolling mill§r (→ 9); §lblock§r: 9 ingots (grid or compactor);\n• §lplate§r: bench 2 ingots → 1; §6press§r (plate die); §6rolling mill§r block → 9; extruder (plate shape) 1 ingot → 1;\n• §lsheet§r: bench 1 plate → 1; press 1 plate → 2 (press die); §lfoil§r: bench 1 plate → 2; rolling mill;\n• §lrod§r: bench 1 ingot → 1; §6wood lathe§r 1 → 2; §6extruder§r (rod shape) ingot → 2, billet → 18;\n• §lwire§r: bench 1 rod → 2; §6wiremill§r ingot or wire rod; extruder (wire shape) 1 ingot → 2;\n• §lring§r: bench 2 rods → 1; wood lathe 1 → 1; §6bender§r 1 rod → 2; §lspring§r: bench 3 wires → 1; wood lathe 2 rods → 1; bender;\n• §lgear§r: bench blank + 3 plates; §6cutting machine§r; §lgear blank§r: bench 5 ingots; extruder (gear blank shape) 5 ingots → 1; casting;\n• §ltube§r: bench 1 plate → 1; bender (sheets); extruder (pipe shape);\n• §lmesh§r and §lwire rope§r: bench; wire rope also at the §6wiremill (stranding)§r;\n• §lcasting§r (§6casting machine§r, molten metal from the crucible): block, plate, rod (→ 2), tube (→ 2) and gear blank, as for every metal.\nThe extruder only works with its §lextrusion shapes§r: rod and pipe, plus a slightly less profitable (slower) generic route for plate, wire and gear blank.\n§lOther metals§r are worked in machines only (die casting, continuous casting, forging). The primitive forge, clay molds and steam machines of the bronze age stay. JEI: page “Metal parts” (one page per part, all its routes).",
      "flow": [
       [
        {
@@ -4863,7 +4863,7 @@
       "pioneers:extrusion_shape_rod",
       "pioneers:extrusion_shape_pipe"
      ],
-     "text": "The §6extruder§r pushes metal through an §lextrusion shape§r (a steel die whose eye has the part's profile): put in the metal AND the shape. It goes into the §lTool slot§r and always comes back: in a machine, shaping tooling is unbreakable.\n• §lrod shape§r: 1 ingot → 2 rods, §l3 at MKII§r and above; 1 billet → 18 rods;\n• §ltube shape§r: 1 rod → 1 tube.\n§61.0.6§r: one machine per shape. Wire is drawn (§lWiremill§r), rings are bent (§lBender§r), plates are pressed (§lPress§r), gears are cut (§lCutting Machine§r), gear blanks are forged or cast: their extrusion shapes are retired (a shape already made becomes the blank extrusion die). At MKI, the lathes' rods (mechanical and steam) are made at the extruder.\nShapes are made at the §6basic components bench§r: 2 steel plates + the steel part that gives the profile (a rod; a ring for the tube), hammer and file. JEI shows the shape among the inputs of each recipe.",
+     "text": "The §6extruder§r pushes metal through an §lextrusion shape§r (a steel die whose eye has the part's profile): put in the metal AND the shape. It goes into the §lTool slot§r and always comes back: in a machine, shaping tooling is unbreakable.\n• §lrod shape§r: 1 ingot → 2 rods; 1 billet → 18 rods;\n• §ltube shape§r: 1 rod → 1 tube;\n• §lgeneric§r route, slightly less profitable than the specialized machine (slower): §lplate shape§r 1 ingot → 1 plate, §lwire shape§r 1 ingot → 2 wires, §lgear blank shape§r 5 ingots → 1 blank.\nEach shape works for §levery metal§r that has the part; it does not stack. The extruder only works with its shapes: the rest goes to the trade machines (rings at the §lBender§r, gears at the §lCutting Machine§r…). At MKI, the lathes' rods (mechanical and steam) are made at the extruder.\nShapes are made at the §6basic components bench§r: 2 steel plates + the steel part that gives the profile (a rod, a wire; a ring for the tube, a gear for the blank; 3 plates for the plate shape), hammer and file. JEI shows the shape among the inputs of each recipe.",
      "flow": [
       [
        {
@@ -4893,7 +4893,7 @@
         "item": "pioneers:basic_extruder"
        },
        {
-        "label": "2 rods (3 at MKII)",
+        "label": "2 rods",
         "item": "pioneers:copper_rod",
         "done": true
        }
@@ -4979,7 +4979,7 @@
       "pioneers:molder_bench",
       "pioneers:basic_logistic_cable"
      ],
-     "text": "The §6casting machine§r takes §lmolten metal§r (from the industrial crucible: remelted ingots, offcuts and sprues, or smelting reduction of ore), a §lmold§r (in the §lTool slot§r: unbreakable in a machine, it is never consumed) and a §lcooling fluid§r; it returns the part, §lsprues§r as nuggets of the same metal (to remelt: nothing is lost, the material is tied up) and the hot fluid. Molds, by tier:\n• permanent §ldies§r (ingot, plate, rod, gear blank); plates and rods keep a §lriser§r of one third;\n• §lsand mold§r (MKI): rough blanks of steel, copper, brass, bronze and aluminum; a mold you no longer want is shaken out in the screen (spent sand, recycled into foundry sand);\n• ceramic §lshell mold§r (MKII: a wax pattern dipped in fused zirconia and fired in the calciner (sintering); oil at least): bell, stainless steel and duralumin blanks;\n• §lvacuum casting mold§r (MKIII, made in the industrial crucible (vacuum); liquid nitrogen at least): titanium, nichrome and stainless steel billets.\nThe §6molder's bench§r makes foundry sand (zircon, sand, clay), sand molds and wax patterns (beeswax from the extractor, or paraffin). Above §l1,200 °C§r, molten metal only flows through the §6logistic cable MKI§r or better (lined with fire bricks): a network that contains a wooden or bronze cable refuses it.",
+     "text": "The §6casting machine§r takes §lmolten metal§r (from the §6industrial crucible§r: any form of the metal remelted at §l100%§r — ingot, nugget, block, part, offcut, sprue —, or smelting reduction of ore), a §lmold§r (in the §lTool slot§r: unbreakable in a machine, it is never consumed) and a §lcooling fluid§r; it returns the part, §lsprues§r as nuggets of the same metal (to remelt: nothing is lost, the material is tied up) and the hot fluid. Molds, by tier:\n• permanent §ldies§r, for §levery metal§r that has the part (like the extruder, but cheaper): ingot, nuggets (9 per ingot), block, plate, rod (2 per ingot), tube (2 per ingot) and gear blank; a die does not stack; plates and rods keep a §lriser§r of one third;\n• §lsand mold§r (MKI): rough castings (aluminum blank, bronze pump impeller, cauldron, lead balls); a mold you no longer want is shaken out in the screen (spent sand, recycled into foundry sand);\n• ceramic §lshell mold§r (MKII: a wax pattern dipped in fused zirconia and fired in the calciner (sintering); oil at least): bell, stainless steel and duralumin blanks;\n• §lvacuum casting mold§r (MKIII, made in the industrial crucible (vacuum); liquid nitrogen at least): titanium, nichrome and stainless steel billets.\nThe §6molder's bench§r makes foundry sand (zircon, sand, clay), sand molds and wax patterns (beeswax from the extractor, or paraffin). Above §l1,200 °C§r, molten metal only flows through the §6logistic cable MKI§r or better (lined with fire bricks): a network that contains a wooden or bronze cable refuses it.",
      "flow": [
       [
        {
@@ -9647,7 +9647,7 @@
       "pioneers:basic_electric_crucible",
       "pioneers:industrial_electric_crucible"
      ],
-     "text": "The §lindustrial crucible§r (formerly the electric crucible) melts metals and ore, and takes over §6vacuum§r work (reactive metals under argon, float-zone silicon, Josephson junction…) and the §6glass§r of the former glass furnace (soda glass, float glass, borosilicate frit, fused silica, arc lamp…). Three solid inputs (+ one gas) → one molten metal and a byproduct (slag). Since 1.0.5-beta, §6direct§r alloys (solid → solid) are made in the §linduction furnace§r, a machine of its own again, and the crucible no longer makes plain steel: steel comes from the §lblast furnace§r.\n§6Processes§r\n• §lMelt§r (own recipes): 356 recipes\n• §lVacuum§r (former vacuum furnace): 46 recipes\n• §lGlass§r (former glass furnace): 11 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lindustrial crucible§r (formerly the electric crucible) melts metals and ore, and takes over §6vacuum§r work (reactive metals under argon, float-zone silicon, Josephson junction…) and the §6glass§r of the former glass furnace (soda glass, float glass, borosilicate frit, fused silica, arc lamp…). Three solid inputs (+ one gas) → one molten metal and a byproduct (slag). Since 1.0.5-beta, §6direct§r alloys (solid → solid) are made in the §linduction furnace§r, a machine of its own again, and the crucible no longer makes plain steel: steel comes from the §lblast furnace§r. 1.0.6: it remelts any form of any metal at §l100%§r (nugget, block, plate, rod, gear, tool head…); only the bronze age stations give back half of a part.\n§6Processes§r\n• §lMelt§r (own recipes): 514 recipes\n• §lVacuum§r (former vacuum furnace): 46 recipes\n• §lGlass§r (former glass furnace): 11 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10489,12 +10489,12 @@
       "pioneers:basic_casting_machine",
       "pioneers:industrial_casting_machine"
      ],
-     "text": "The §lCasting Machine§r casts liquid metal in a mold (die or foundry mold, coolant) and takes over the plastic §6injection molding§r of the former injection molder (pellets + mold → parts). In its multiblock only, the §lcontinuous casting§r of the former caster: ingots in series, slabs, billets, beam blanks, under water or oil at MKIII.\n§6Processes§r\n• §lMold casting§r (own recipes): 412 recipes\n• §lContinuous casting§r (former continuous caster; multiblock only): 81 recipes\n• §lInjection molding§r (former injection molder): 9 recipes\n§6Same inputs§r: liquid metal and die (part or continuous casting). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lCasting Machine§r casts liquid metal in a mold (die or foundry mold, coolant) and takes over the plastic §6injection molding§r of the former injection molder (pellets + mold → parts). In its multiblock only, the §lcontinuous casting§r of the former caster: ingots in series, slabs, billets, beam blanks, under water or oil at MKIII.\n§6Processes§r\n• §lMold casting§r (own recipes): 887 recipes\n• §lContinuous casting§r (former continuous caster; multiblock only): 81 recipes\n• §lInjection molding§r (former injection molder): 9 recipes\n§6Same inputs§r: liquid metal and die (part or continuous casting). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
         "label": "Mold casting",
-        "item": "pioneers:press_die",
+        "item": "pioneers:block_die",
         "done": true
        },
        {
@@ -10504,7 +10504,7 @@
        },
        {
         "label": "",
-        "item": "pioneers:polystyrene_foam",
+        "item": "pioneers:aluminium_block",
         "next": true
        }
       ],
@@ -10551,7 +10551,7 @@
       "pioneers:basic_machining_center",
       "pioneers:industrial_machining_center"
      ],
-     "text": "The §lMachining Center§r (formerly the CNC lathe) §6machines from stock§r: rods (from an ingot or a billet), shafts, screws, bolts, balls and precision parts; §lmilling§r (dies, foundry patterns and molds) and §lgrinding§r (tungsten fasteners, reconditioned objectives), with no lubricant. 1.0.6: gears and gems move to the §lCutting Machine§r, tool heads to the §lPower Hammer§r, rings and springs to the §lBender§r; the extruder's rods come here.\n§6Processes§r\n• §lTurning§r (own recipes): 15 recipes\n• §lMilling§r (former cnc mill): 7 recipes\n• §lGrinding§r (former precision grinder): 6 recipes\n§6Same inputs§r: vanadium steel plates and lubricant, duralumin plates. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lMachining Center§r (formerly the CNC lathe) §6machines from stock§r: rods (from an ingot or a billet), shafts, screws, bolts, balls and precision parts; §lmilling§r (dies, foundry patterns and molds) and §lgrinding§r (tungsten fasteners, reconditioned objectives), with no lubricant. 1.0.6: gears and gems move to the §lCutting Machine§r, tool heads to the §lPower Hammer§r, rings and springs to the §lBender§r; the extruder's rods come here.\n§6Processes§r\n• §lTurning§r (own recipes): 15 recipes\n• §lMilling§r (former cnc mill): 9 recipes\n• §lGrinding§r (former precision grinder): 6 recipes\n§6Same inputs§r: vanadium steel plates and lubricant, duralumin plates. The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {

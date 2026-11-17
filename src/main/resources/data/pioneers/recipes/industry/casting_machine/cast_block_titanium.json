@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 1,
+ "time": 900,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:block_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_titanium",
+   "amount": 1620
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titanium_block",
+   "count": 1
+  },
+  {
+   "item": "pioneers:block_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:titanium_nugget",
+   "count": 20
+  },
+  {
+   "item": "pioneers:titanium_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

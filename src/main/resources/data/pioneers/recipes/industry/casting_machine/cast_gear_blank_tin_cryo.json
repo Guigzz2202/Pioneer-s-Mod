@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 2,
+ "time": 30,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:gear_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_tin",
+   "amount": 684
+  },
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 112
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tin_gear_blank",
+   "count": 1
+  },
+  {
+   "item": "pioneers:gear_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:tin_nugget",
+   "count": 2
+  },
+  {
+   "item": "pioneers:tin_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 851
+  }
+ ]
+}

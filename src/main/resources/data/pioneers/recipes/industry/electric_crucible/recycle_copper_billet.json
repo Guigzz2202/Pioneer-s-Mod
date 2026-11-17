@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "electric_crucible",
  "tier": 0,
- "time": 60,
+ "time": 720,
  "items": [
   {
    "ingredient": {
@@ -21,7 +21,7 @@
  "fluid_results": [
   {
    "fluid": "pioneers:molten_copper",
-   "amount": 648
+   "amount": 1296
   }
  ]
 }

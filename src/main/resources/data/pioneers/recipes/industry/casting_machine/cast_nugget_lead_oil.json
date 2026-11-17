@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 1,
+ "time": 35,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:nugget_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_lead",
+   "amount": 160
+  },
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 20
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_nugget",
+   "count": 9
+  },
+  {
+   "item": "pioneers:nugget_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:lead_nugget",
+   "count": 1
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:quench_oil",
+   "amount": 18
+  }
+ ]
+}

@@ -164,4 +164,51 @@ public final class PatchP106MetiersTests {
         Gt.equal(IndustryMachine.CHEMICAL_REACTOR, machineOf(h, "industry/extruder/extrude_ptfe_sheet"), "feuille de PTFE : Reacteur chimique");
         h.succeed();
     }
+
+    private static IndustrialRecipe industrial(GameTestHelper h, String id) {
+        Optional<? extends Recipe<?>> r = byKey(h, id);
+        Gt.check(r.isPresent() && r.get() instanceof IndustrialRecipe, "recette industrielle absente : " + id);
+        return (IndustrialRecipe) r.get();
+    }
+
+    /**
+     * Refonte de la fusion et de la coulee (Guillaume, 17/11/2026 : « homogeneise ce procede a tous les metaux et leurs composants », « 100 %
+     * pour tout », « 5 matrices + pepite et bloc », « machines MK seulement ») : le creuset industriel refond toute forme de tout metal a
+     * 100 % ; la machine de coulee donne lingot, pepites, bloc, plaque, tige, tube et ebauche d'engrenage a tous les metaux qui ont la piece
+     * (metaux des etablis compris) ; matrices non empilables, rendues ; aucune recette en double (la roue de pompe passe au moule en sable).
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p106_coulee", timeoutTicks = 20)
+    public static void p106_fusion_et_coulee(GameTestHelper h) {
+        Gt.begin(h);
+        for (String d : List.of("ingot", "nugget", "block", "plate", "rod", "tube", "gear", "press")) {
+            Item die = ForgeRegistries.ITEMS.getValue(Pioneers.rl(d + "_die"));
+            Gt.check(die != null && die != Items.AIR, "matrice absente : " + d + "_die");
+            Gt.equal(1, new ItemStack(die).getMaxStackSize(), "matrice non empilable : " + d + "_die");
+        }
+        // coulee : toutes les formes, metaux des etablis compris (fer, cuivre, bronze, acier) et autres (chrome, titane)
+        for (String[] c : new String[][] {{"cast_plate_iron", "plate_die", "iron_plate", "1"}, {"cast_rod_copper", "rod_die", "copper_rod", "2"},
+              {"cast_block_steel", "block_die", "steel_block", "1"}, {"cast_pipe_copper", "tube_die", "copper_pipe", "2"},
+              {"cast_gear_blank_bronze", "gear_die", "bronze_gear_blank", "1"}, {"cast_nugget_chrome", "nugget_die", "chrome_nugget", "9"},
+              {"cast_block_titanium", "block_die", "titanium_block", "1"}, {"cast_ingot_zinc", "ingot_die", "zinc_ingot", "1"}}) {
+            IndustrialRecipe r = industrial(h, "industry/casting_machine/" + c[0]);
+            Gt.equal(IndustryMachine.CASTING_MACHINE, r.machine(), c[0] + " : machine de coulee");
+            Item die = ForgeRegistries.ITEMS.getValue(Pioneers.rl(c[1]));
+            Item part = ForgeRegistries.ITEMS.getValue(Pioneers.rl(c[2]));
+            Gt.check(r.results().get(0).stack().is(part), c[0] + " : produit " + c[2]);
+            Gt.equal(Integer.parseInt(c[3]), r.results().get(0).stack().getCount(), c[0] + " : nombre de pieces");
+            Gt.check(r.results().stream().anyMatch(x -> x.stack().is(die) && x.stack().getCount() == 1 && x.chance() >= 1f), c[0] + " : matrice rendue a 100 %");
+        }
+        // creuset industriel : 100 % de la valeur de la forme, metaux coulables a l'age du bronze ou non
+        for (String[] c : new String[][] {{"recycle_iron_plate", "144"}, {"recycle_chrome_plate", "144"}, {"recycle_steel_nugget", "16"},
+              {"recycle_titanium_block", "1296"}, {"recycle_copper_gear", "576"}, {"recycle_duralumin_rod", "72"}}) {
+            IndustrialRecipe r = industrial(h, "industry/electric_crucible/" + c[0]);
+            Gt.equal(IndustryMachine.ELECTRIC_CRUCIBLE, r.machine(), c[0] + " : creuset industriel");
+            Gt.equal(Integer.parseInt(c[1]), r.fluidResults().get(0).getAmount(), c[0] + " : mB rendus (100 %)");
+        }
+        // aucune recette en double : la roue de pompe se coule au moule en sable (la matrice a ebauche est a l'ebauche de bronze)
+        IndustrialRecipe imp = industrial(h, "industry/casting_machine/pump_impeller");
+        Gt.check(imp.items().stream().anyMatch(c -> c.ingredient().test(new ItemStack(ForgeRegistries.ITEMS.getValue(Pioneers.rl("sand_mold"))))),
+              "roue de pompe : moule en sable");
+        h.succeed();
+    }
 }

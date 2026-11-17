@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:gear_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_gold",
+   "amount": 764
+  },
+  {
+   "fluid": "minecraft:water",
+   "amount": 225
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_gear_blank",
+   "count": 1
+  },
+  {
+   "item": "pioneers:gear_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:gold_nugget",
+   "count": 7
+  },
+  {
+   "item": "pioneers:gold_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:exhaust_steam",
+   "amount": 1710
+  }
+ ]
+}
