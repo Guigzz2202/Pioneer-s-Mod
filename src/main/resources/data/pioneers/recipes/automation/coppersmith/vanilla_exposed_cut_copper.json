@@ -2,19 +2,19 @@
  "type": "pioneers:industrial",
  "machine": "sheet_metal_shop",
  "tier": 0,
- "time": 80,
+ "time": 50,
  "items": [
   {
    "ingredient": {
     "item": "minecraft:exposed_copper"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "minecraft:exposed_cut_copper",
-   "count": 4
+   "count": 1
   }
  ]
 }

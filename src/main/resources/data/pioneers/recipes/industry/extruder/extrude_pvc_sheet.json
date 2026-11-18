@@ -2,19 +2,19 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 0,
- "time": 80,
+ "time": 40,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:pvc_resin"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:pvc_sheet",
-   "count": 2
+   "count": 1
   }
  ]
 }

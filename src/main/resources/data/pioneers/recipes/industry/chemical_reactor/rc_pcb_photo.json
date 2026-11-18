@@ -2,29 +2,29 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 0,
- "time": 160,
+ "time": 80,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:epoxy_board"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "pioneers:photoresist",
-   "amount": 50
+   "amount": 25
   },
   {
    "fluid": "pioneers:etchant",
-   "amount": 100
+   "amount": 50
   }
  ],
  "results": [
   {
    "item": "pioneers:printed_circuit_board",
-   "count": 2
+   "count": 1
   }
  ]
 }

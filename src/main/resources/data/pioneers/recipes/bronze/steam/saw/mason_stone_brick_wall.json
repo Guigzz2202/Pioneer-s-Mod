@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:stone_bricks"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:stone_brick_wall",
-  "count": 6
+  "count": 1
  },
  "time": 40
 }

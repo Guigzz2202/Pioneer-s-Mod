@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:sandstone"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:sandstone_wall",
-  "count": 6
+  "count": 1
  }
 }

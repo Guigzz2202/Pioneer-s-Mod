@@ -2,26 +2,26 @@
  "type": "pioneers:industrial",
  "machine": "crystallizer",
  "tier": 1,
- "time": 400,
+ "time": 100,
  "family": "crystal_puller",
  "items": [
   {
    "ingredient": {
     "item": "pioneers:peridot_dust"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:argon",
-   "amount": 100
+   "amount": 25
   }
  ],
  "results": [
   {
    "item": "pioneers:peridot",
-   "count": 4
+   "count": 1
   }
  ]
 }

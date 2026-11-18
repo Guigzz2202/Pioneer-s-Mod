@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:end_stone"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:end_stone_bricks",
-  "count": 4
+  "count": 1
  },
  "time": 40
 }

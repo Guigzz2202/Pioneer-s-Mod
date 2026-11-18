@@ -3,31 +3,31 @@
  "machine": "reduction_furnace",
  "family": "roaster",
  "tier": 0,
- "time": 200,
+ "time": 100,
  "items": [
   {
    "ingredient": {
     "tag": "forge:crushed_ores/copper"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:oxygen",
-   "amount": 200
+   "amount": 100
   }
  ],
  "results": [
   {
    "item": "pioneers:copper_calcine",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:sulfur_dioxide",
-   "amount": 300
+   "amount": 150
   }
  ],
  "temperature": 700

@@ -2,20 +2,20 @@
  "type": "pioneers:industrial",
  "machine": "reduction_furnace",
  "tier": 0,
- "time": 120,
+ "time": 60,
  "family": "sintering_furnace",
  "items": [
   {
    "ingredient": {
     "item": "pioneers:alumina"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:alumina_ceramic",
-   "count": 2
+   "count": 1
   }
  ]
 }

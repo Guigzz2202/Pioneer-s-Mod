@@ -5,14 +5,14 @@
    "ingredient": {
     "item": "pioneers:champagne_tirage"
    },
-   "count": 4
+   "count": 1
   }
  ],
- "time": 12000,
+ "time": 3000,
  "results": [
   {
    "item": "pioneers:champagne",
-   "count": 4
+   "count": 1
   }
  ]
 }

@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:granite"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:granite_wall",
-  "count": 6
+  "count": 1
  }
 }

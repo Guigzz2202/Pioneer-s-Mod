@@ -2,32 +2,32 @@
  "type": "pioneers:industrial",
  "machine": "reduction_furnace",
  "tier": 0,
- "time": 200,
+ "time": 100,
  "family": "roaster",
  "items": [
   {
    "ingredient": {
     "item": "pioneers:argentite_concentrate"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:oxygen",
-   "amount": 200
+   "amount": 100
   }
  ],
  "results": [
   {
    "item": "pioneers:silver_dust",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:sulfur_dioxide",
-   "amount": 300
+   "amount": 150
   }
  ],
  "impurity": 1,

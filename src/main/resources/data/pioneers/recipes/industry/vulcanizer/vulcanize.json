@@ -2,20 +2,20 @@
  "type": "pioneers:industrial",
  "machine": "autoclave",
  "tier": 0,
- "time": 120,
+ "time": 60,
  "family": "vulcanizer",
  "items": [
   {
    "ingredient": {
     "item": "pioneers:rubber_compound"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:vulcanized_rubber",
-   "count": 2
+   "count": 1
   }
  ]
 }

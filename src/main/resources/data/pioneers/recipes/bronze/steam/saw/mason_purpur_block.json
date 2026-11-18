@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:popped_chorus_fruit"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:purpur_block",
-  "count": 4
+  "count": 1
  },
  "time": 40
 }

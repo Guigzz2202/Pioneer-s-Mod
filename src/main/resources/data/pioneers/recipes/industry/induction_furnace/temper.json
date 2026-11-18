@@ -2,19 +2,19 @@
  "type": "pioneers:industrial",
  "machine": "induction_furnace",
  "tier": 0,
- "time": 160,
+ "time": 80,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:hardened_steel_ingot"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:tempered_steel_ingot",
-   "count": 2
+   "count": 1
   }
  ]
 }

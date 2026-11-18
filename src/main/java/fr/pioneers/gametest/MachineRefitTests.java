@@ -123,15 +123,17 @@ public final class MachineRefitTests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_lot8a_graveur", timeoutTicks = 800)
     public static void graveur_objectif_s_use(GameTestHelper h) {
         Gt.begin(h);
-        AtelierTile m = atelier(h, IndustryMachine.PHOTOLITHOGRAPH, new BlockPos(2, 2, 2), "industry/photolithograph/pcm_copper_mesh");
-        m.itemInputs().get(0).setStack(new ItemStack(item("copper_foil"), 4));
+        //1.0.6 (Guillaume, 18/11/2026) : plus de grillage au graveur ; l'objectif en verre insole les galettes des puces (3 au lieu de 2)
+        AtelierTile m = atelier(h, IndustryMachine.PHOTOLITHOGRAPH, new BlockPos(2, 2, 2), "industry/photolithograph/rc_wafer_expose_glass");
+        m.itemInputs().get(0).setStack(new ItemStack(item("doped_wafer"), 2));
+        m.itemInputs().get(1).setStack(new ItemStack(item("p_doped_wafer"), 2));
         ItemStack objective = new ItemStack(item("glass_engraving_objective"));
         Gt.tool(m, objective);                                            // 1.0.5-beta (lot 44) : l'objectif dans la case Outil
         m.fluidInputs().get(0).setFluid(new FluidStack(fluid("photoresist"), 1_000));
-        Item mesh = item("copper_wire_mesh");
+        Item mesh = item("exposed_wafer");
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());
-            Gt.check(count(m, mesh) >= 2, "grillage photograve : " + count(m, mesh) + " / 2");
+            Gt.check(count(m, mesh) >= 6, "galettes insolees : " + count(m, mesh) + " / 6");
             ItemStack obj = Gt.toolSlot(m).getStack();
             Gt.check(obj.getItem() instanceof EngravingObjectiveItem, "l'objectif doit rester dans sa case Outil");
             Gt.equal(2, obj.getDamageValue(), "points d'usure de l'objectif apres deux gravures");
@@ -173,8 +175,9 @@ public final class MachineRefitTests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_lot8a_objectif", timeoutTicks = 1000)
     public static void objectif_use_puis_reconditionne(GameTestHelper h) {
         Gt.begin(h);
-        AtelierTile engraver = atelier(h, IndustryMachine.PHOTOLITHOGRAPH, new BlockPos(1, 2, 2), "industry/photolithograph/pcm_copper_mesh");
-        engraver.itemInputs().get(0).setStack(new ItemStack(item("copper_foil"), 8));
+        AtelierTile engraver = atelier(h, IndustryMachine.PHOTOLITHOGRAPH, new BlockPos(1, 2, 2), "industry/photolithograph/rc_wafer_expose_glass");
+        engraver.itemInputs().get(0).setStack(new ItemStack(item("doped_wafer"), 4));
+        engraver.itemInputs().get(1).setStack(new ItemStack(item("p_doped_wafer"), 4));
         ItemStack last = new ItemStack(item("glass_engraving_objective"));
         last.setDamageValue(last.getMaxDamage() - 1);
         Gt.tool(engraver, last);                                          // 1.0.5-beta (lot 44) : case Outil
@@ -198,7 +201,7 @@ public final class MachineRefitTests {
                 }
                 Gt.check(Gt.toolSlot(engraver).isEmpty(), "la case Outil est liberee de l'objectif use");
             }
-            Gt.equal(1, count(engraver, item("copper_wire_mesh")), "une seule gravure avec le dernier point");
+            Gt.equal(3, count(engraver, item("exposed_wafer")), "une seule gravure avec le dernier point (3 galettes)");
             Gt.check(count(grinder, fresh) == 1, "objectif reconditionne : " + count(grinder, fresh) + " / 1");
             for (ItemSlot s : grinder.itemOutputs()) {
                 if (s.getStack().is(fresh)) {

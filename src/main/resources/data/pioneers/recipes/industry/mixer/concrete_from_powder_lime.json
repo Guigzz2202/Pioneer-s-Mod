@@ -7,25 +7,25 @@
  "type": "pioneers:industrial",
  "machine": "mixer",
  "tier": 0,
- "time": 60,
+ "time": 32,
  "items": [
   {
    "ingredient": {
     "item": "minecraft:lime_concrete_powder"
    },
-   "count": 8
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "minecraft:water",
-   "amount": 500
+   "amount": 63
   }
  ],
  "results": [
   {
    "item": "minecraft:lime_concrete",
-   "count": 8
+   "count": 1
   }
  ]
 }

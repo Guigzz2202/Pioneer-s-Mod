@@ -2,19 +2,19 @@
  "type": "pioneers:industrial",
  "machine": "induction_furnace",
  "tier": 0,
- "time": 120,
+ "time": 60,
  "items": [
   {
    "ingredient": {
     "tag": "forge:plates/zinc"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:sacrificial_anode",
-   "count": 2
+   "count": 1
   }
  ]
 }

@@ -2,31 +2,31 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 0,
- "time": 160,
+ "time": 80,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:silicon"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "pioneers:hydrochloric_acid",
-   "amount": 500
+   "amount": 250
   }
  ],
  "gases": [
   {
    "gas": "pioneers:hydrogen",
-   "amount": 500
+   "amount": 250
   }
  ],
  "results": [
   {
    "item": "pioneers:polysilicon",
-   "count": 2
+   "count": 1
   }
  ]
 }

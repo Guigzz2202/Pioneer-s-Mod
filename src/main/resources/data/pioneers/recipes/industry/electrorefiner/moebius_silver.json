@@ -2,26 +2,26 @@
  "type": "pioneers:industrial",
  "machine": "electrolyzer",
  "tier": 1,
- "time": 200,
+ "time": 100,
  "family": "electrorefiner",
  "items": [
   {
    "ingredient": {
     "item": "pioneers:silver_ingot"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "pioneers:nitric_acid",
-   "amount": 50
+   "amount": 25
   }
  ],
  "results": [
   {
    "item": "pioneers:silver_ingot",
-   "count": 2
+   "count": 1
   }
  ],
  "pure": true,

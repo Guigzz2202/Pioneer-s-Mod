@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:polished_deepslate"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:polished_deepslate_wall",
-  "count": 6
+  "count": 1
  }
 }

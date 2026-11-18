@@ -2,19 +2,19 @@
  "type": "pioneers:industrial",
  "machine": "fermenter",
  "tier": 0,
- "time": 1920,
+ "time": 480,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:sparkling_cider_tirage"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:sparkling_cider",
-   "count": 4
+   "count": 1
   }
  ]
 }

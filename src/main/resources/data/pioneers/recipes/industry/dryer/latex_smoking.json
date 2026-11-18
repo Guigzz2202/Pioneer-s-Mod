@@ -2,19 +2,19 @@
  "type": "pioneers:industrial",
  "machine": "dryer",
  "tier": 0,
- "time": 80,
+ "time": 40,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:raw_latex"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:natural_rubber",
-   "count": 2
+   "count": 1
   }
  ]
 }

@@ -2,25 +2,25 @@
  "type": "pioneers:industrial",
  "machine": "food_processor",
  "tier": 0,
- "time": 100,
+ "time": 50,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:raw_king_crab"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "minecraft:water",
-   "amount": 250
+   "amount": 125
   }
  ],
  "results": [
   {
    "item": "pioneers:cooked_king_crab",
-   "count": 2
+   "count": 1
   }
  ]
 }

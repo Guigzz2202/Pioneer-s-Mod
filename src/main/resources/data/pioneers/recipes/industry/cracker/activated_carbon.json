@@ -2,25 +2,25 @@
  "type": "pioneers:industrial",
  "machine": "reduction_furnace",
  "tier": 0,
- "time": 100,
+ "time": 50,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:charcoal"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:steam",
-   "amount": 500
+   "amount": 250
   }
  ],
  "results": [
   {
    "item": "pioneers:activated_carbon",
-   "count": 2
+   "count": 1
   }
  ]
 }

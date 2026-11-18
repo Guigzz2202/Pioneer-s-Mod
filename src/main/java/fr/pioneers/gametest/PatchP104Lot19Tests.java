@@ -117,9 +117,10 @@ public final class PatchP104Lot19Tests {
     public static void p104_19_rendements(GameTestHelper h) {
         Gt.begin(h);
         Gt.equal(5, out(recipe(h, "industry/crystallizer/diamond_synth")), "diamant de synthese : 5 pour 8 graphites");
-        Gt.equal(2, out(recipe(h, "industry/electrolyzer/electrowin_cobalt")), "cobalt electrolytique : 1 lingot par sulfate");
+        //1.0.6 (recettes a l'unite) : 1 sulfate -> 1 lingot
+        Gt.equal(1, out(recipe(h, "industry/electrolyzer/electrowin_cobalt")), "cobalt electrolytique : 1 lingot par sulfate");
         Gt.equal(5, out(recipe(h, "industry/chemical_bath/electroform_nickel_foil")), "feuille de nickel electroformee : 5");
-        Gt.equal(4, out(recipe(h, "industry/crystal_puller/cz_peridot")), "peridot par tirage : 1 par poudre");
+        Gt.equal(1, out(recipe(h, "industry/crystal_puller/cz_peridot")), "peridot par tirage : 1 par poudre (1.0.6 : 1 -> 1)");
         Gt.equal(2, out(recipe(h, "industry/membrane_cell/lithium_carbonate")), "carbonate de lithium electrolytique : 2");
         Gt.equal(4, out(recipe(h, "industry/sintering_furnace/graphite_from_petcoke")), "graphite au coke de petrole : 4");
         for (String gem : new String[]{"ruby", "sapphire", "topaz", "emerald"}) {

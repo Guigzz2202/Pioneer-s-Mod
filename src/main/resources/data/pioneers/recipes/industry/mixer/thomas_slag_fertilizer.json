@@ -2,25 +2,25 @@
  "type": "pioneers:industrial",
  "machine": "mixer",
  "tier": 0,
- "time": 100,
+ "time": 50,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:thomas_slag"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "minecraft:water",
-   "amount": 50
+   "amount": 25
   }
  ],
  "results": [
   {
    "item": "pioneers:fertilizer",
-   "count": 2
+   "count": 1
   }
  ]
 }

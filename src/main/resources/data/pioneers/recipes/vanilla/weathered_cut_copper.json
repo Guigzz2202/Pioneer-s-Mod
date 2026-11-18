@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:weathered_copper"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:weathered_cut_copper",
-  "count": 4
+  "count": 1
  }
 }

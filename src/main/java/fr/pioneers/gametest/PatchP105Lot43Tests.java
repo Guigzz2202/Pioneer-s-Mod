@@ -120,9 +120,17 @@ public final class PatchP105Lot43Tests {
         only(mc, "centre d'usinage, boulons", bolt, 4);
         Gt.check(mc.items().size() == 1 && mc.items().get(0).count() == 1 && mc.items().get(0).ingredient().test(new ItemStack(rod)),
               "centre d'usinage : 1 tige d'acier");
-        //vis au centre d'usinage : 2 boulons -> 2 vis (toute la matiere)
-        IndustrialRecipe sc = IndustryRecipes.byId(s.level, IndustryMachine.MACHINING_CENTER, rl("industry/machining_center/screw_steel"));
-        only(sc, "centre d'usinage, vis", screw, 2);
+        //vis au centre d'usinage : 1.0.6 (Guillaume, 18/11/2026) : la recette du tour a vapeur reprise au MKI (1 boulon -> 1 vis, toute la
+        //matiere), plus de 2 pour 2 propre au centre d'usinage
+        Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.MACHINING_CENTER, rl("industry/machining_center/screw_steel")) == null,
+              "centre d'usinage : plus de recette 2 boulons -> 2 vis");
+        IndustrialRecipe sc = null;
+        for (IndustrialRecipe r : IndustryRecipes.of(s.level, IndustryMachine.MACHINING_CENTER)) {
+            if (!r.results().isEmpty() && r.results().get(0).stack().is(screw)) {
+                sc = r;
+            }
+        }
+        only(sc, "centre d'usinage, vis", screw, 1);
         //frappe a froid (marteau-pilon, famille) : 1 fil machine -> 8 boulons
         IndustrialRecipe ch = IndustryRecipes.byId(s.level, IndustryMachine.POWER_HAMMER, rl("industry/cold_header/head_bolt_steel"));
         only(ch, "frappe a froid", bolt, 8);

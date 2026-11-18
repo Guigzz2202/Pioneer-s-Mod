@@ -2,13 +2,13 @@
  "type": "pioneers:industrial",
  "machine": "extruder",
  "tier": 0,
- "time": 80,
+ "time": 40,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:polypropylene_pellets"
    },
-   "count": 2
+   "count": 1
   },
   {
    "ingredient": {
@@ -20,7 +20,7 @@
  "results": [
   {
    "item": "pioneers:plastic_pipe",
-   "count": 2
+   "count": 1
   },
   {
    "item": "pioneers:extrusion_shape_pipe",

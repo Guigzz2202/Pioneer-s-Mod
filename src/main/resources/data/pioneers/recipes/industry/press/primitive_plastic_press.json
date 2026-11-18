@@ -7,19 +7,19 @@
  "type": "pioneers:industrial",
  "machine": "press",
  "tier": 0,
- "time": 60,
+ "time": 32,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:primitive_plastic_mix"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:primitive_plastic",
-   "count": 2
+   "count": 1
   }
  ]
 }
