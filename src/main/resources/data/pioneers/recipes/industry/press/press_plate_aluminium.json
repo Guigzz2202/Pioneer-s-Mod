@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "press",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "items": [
   {
    "ingredient": {

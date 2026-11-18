@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "ore_separator",
  "tier": 0,
- "time": 200,
+ "time": 160,
  "family": "magnetic_separator",
  "items": [
   {

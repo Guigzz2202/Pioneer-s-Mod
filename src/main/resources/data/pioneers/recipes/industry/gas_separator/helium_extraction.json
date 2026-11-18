@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "gas_separator",
  "tier": 0,
- "time": 60,
+ "time": 160,
  "gases": [
   {
    "gas": "pioneers:natural_gas",

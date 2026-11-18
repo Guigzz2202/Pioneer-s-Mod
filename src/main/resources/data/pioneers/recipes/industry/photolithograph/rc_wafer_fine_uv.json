@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 2,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:implanted_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fluorite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:engraving_objectives/uv"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:fine_etched_wafer",
+   "count": 1
+  }
+ ]
+}

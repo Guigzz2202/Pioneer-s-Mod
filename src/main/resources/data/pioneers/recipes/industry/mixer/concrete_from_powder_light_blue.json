@@ -1,26 +1,31 @@
 {
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
  "type": "pioneers:industrial",
  "machine": "mixer",
  "tier": 0,
- "time": 60,
+ "time": 8,
  "items": [
   {
    "ingredient": {
     "item": "minecraft:light_blue_concrete_powder"
    },
-   "count": 8
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "minecraft:water",
-   "amount": 500
+   "amount": 63
   }
  ],
  "results": [
   {
    "item": "minecraft:light_blue_concrete",
-   "count": 8
+   "count": 1
   }
  ]
 }

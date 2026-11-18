@@ -2,25 +2,25 @@
  "type": "pioneers:industrial",
  "machine": "electrolyzer",
  "tier": 0,
- "time": 300,
+ "time": 160,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:magnesium_chloride"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:crude_magnesium",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:chlorine",
-   "amount": 250
+   "amount": 125
   }
  ],
  "temperature": 700

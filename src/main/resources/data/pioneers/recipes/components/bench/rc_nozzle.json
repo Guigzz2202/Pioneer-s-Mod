@@ -11,11 +11,11 @@
    "ingredient": {
     "tag": "forge:pipes/brass"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "result": {
   "item": "pioneers:nozzle",
-  "count": 2
+  "count": 1
  }
 }

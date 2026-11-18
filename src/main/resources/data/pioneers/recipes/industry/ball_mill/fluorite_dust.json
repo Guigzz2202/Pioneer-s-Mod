@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "crusher",
  "tier": 0,
- "time": 80,
+ "time": 160,
  "family": "ball_mill",
  "items": [
   {
@@ -10,12 +10,6 @@
     "item": "pioneers:fluorite"
    },
    "count": 1
-  }
- ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 10
   }
  ],
  "results": [

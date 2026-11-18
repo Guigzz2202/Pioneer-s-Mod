@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:mud_bricks"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:mud_brick_wall",
-  "count": 6
+  "count": 1
  },
- "time": 40
+ "time": 160
 }

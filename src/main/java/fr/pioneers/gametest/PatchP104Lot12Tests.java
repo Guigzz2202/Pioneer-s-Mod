@@ -142,7 +142,12 @@ public final class PatchP104Lot12Tests {
         AtelierTile t = base(h, base, new BlockPos(2, 2, 2), r);
         h.succeedWhen(() -> {
             t.getEnergy().setStored(t.getEnergy().getCapacity());
-            Gt.check(produced(t, r), absorbed + " -> " + base.key + " : " + path + " n'a encore rien produit");
+            if (!produced(t, r)) {   // message construit seulement en cas d'echec (une machine sans case Outil n'a pas de toolSlot)
+                Gt.check(false, absorbed + " -> " + base.key + " : " + path + " n'a encore rien produit (entrees " + t.presentItems() + ", outil "
+                      + (t.toolSlot() == null ? "aucune case" : t.toolSlot().getStack()) + ", gaz entree " + t.presentGases() + ", sorties de gaz "
+                      + t.gasOutputs().size() + ", sorties " + t.itemOutputs().stream().map(x -> x.getStack().toString()).toList() + ", energie "
+                      + t.getEnergy().getStored() + ")");
+            }
         });
     }
 
@@ -367,35 +372,13 @@ public final class PatchP104Lot12Tests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_12_nbt_base", timeoutTicks = 20)
     public static void p104_12_io_elargie_du_craqueur(GameTestHelper h) {
         Gt.begin(h);
-        BlockPos rel = new BlockPos(2, 2, 2);
-        h.setBlock(rel, Gt.compact(IndustryMachine.CRACKER, CableTier.BASIC).defaultBlockState());
-        AtelierTile t = (AtelierTile) h.getBlockEntity(rel);
-        //NBT d'un four tubulaire d'un monde du lot 11 (io 1/1/1/1/1/1, version 3) : entree, sortie, batterie en case 2 ; fluide de sortie
-        CompoundTag tag = new CompoundTag();
-        tag.putBoolean("pioneers", true);
-        tag.putInt("ioVersion", 3);
-        ListTag items = new ListTag();
-        items.add(slot(0, new ItemStack(item("wood_chips"), 9)));
-        items.add(slot(1, new ItemStack(item("activated_carbon"), 4)));
-        items.add(slot(2, new ItemStack(item("lead_acid_battery"), 1)));
-        tag.put("items", items);
-        ListTag fluids = new ListTag();
-        fluids.add(new CompoundTag());
-        fluids.add(fluid(new FluidStack(Fluids.WATER, 900)));
-        tag.put("fluids", fluids);
-        ListTag gases = new ListTag();
-        gases.add(new CompoundTag());
-        gases.add(new CompoundTag());
-        tag.put("gases", gases);
-        t.load(tag);
-        Gt.equal(9, t.itemInputs().get(0).getCount(), "entree gardee");
-        Gt.equal(4, t.itemOutputs().get(0).getCount(), "sortie gardee");
-        Gt.equal(900, t.fluidOutputs().get(0).getFluidAmount(), "fluide de sortie garde (reservoirs en plus apres)");
-        int battery = 0;
-        for (ItemSlot s : t.guiSlots()) {
-            battery += s.getStack().is(item("lead_acid_battery")) ? 1 : 0;
+        //1.0.6 : le craqueur est multibloc seulement (decision de Guillaume du 16/11/2026) : plus de compact, donc plus de NBT de compact a
+        //relire ; un compact d'un monde existant devient le controleur du multibloc
+        Gt.equal(IndustryMachine.Atelier.NONE, IndustryMachine.CRACKER.atelier, "craqueur : multibloc seulement");
+        Gt.check(!PiIndustry.ATELIERS.containsKey(IndustryMachine.CRACKER), "plus de compact du craqueur");
+        for (String t : List.of("basic", "advanced", "elite", "ultimate")) {
+            Gt.equal("industrial_cracker", GeneratedFusions.REMAP.get(t + "_cracker"), "ancien compact " + t + " : controleur du craqueur");
         }
-        Gt.equal(1, battery, "batterie gardee (case de batterie apres les sorties en plus)");
         h.succeed();
     }
 

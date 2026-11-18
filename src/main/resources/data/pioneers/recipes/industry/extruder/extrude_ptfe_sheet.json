@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "extruder",
+ "machine": "chemical_reactor",
  "tier": 0,
- "time": 80,
+ "time": 160,
  "items": [
   {
    "ingredient": {

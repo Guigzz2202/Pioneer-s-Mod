@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "extruder",
  "tier": 3,
- "time": 600,
+ "time": 400,
  "items": [
   {
    "ingredient": {
@@ -12,7 +12,7 @@
   },
   {
    "ingredient": {
-    "item": "pioneers:extrusion_die"
+    "item": "pioneers:extrusion_shape_rod"
    },
    "count": 1
   }
@@ -23,7 +23,7 @@
    "count": 18
   },
   {
-   "item": "pioneers:extrusion_die",
+   "item": "pioneers:extrusion_shape_rod",
    "count": 1
   }
  ]

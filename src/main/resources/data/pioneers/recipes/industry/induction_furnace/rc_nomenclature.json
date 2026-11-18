@@ -12,12 +12,6 @@
   },
   {
    "ingredient": {
-    "tag": "forge:gems/peridot"
-   },
-   "count": 1
-  },
-  {
-   "ingredient": {
     "tag": "forge:gems/zircon"
    },
    "count": 1

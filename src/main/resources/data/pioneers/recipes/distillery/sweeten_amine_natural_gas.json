@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "distillery",
  "tier": 0,
- "time": 60,
+ "time": 240,
  "fluids": [
   {
    "fluid": "pioneers:amine_solution",

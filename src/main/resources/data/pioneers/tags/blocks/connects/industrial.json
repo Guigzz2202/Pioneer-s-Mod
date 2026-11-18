@@ -88,6 +88,15 @@
   "pioneers:industrial_liquid_combustion_generator",
   "pioneers:exhaust_stack",
   "pioneers:item_silo",
+  "pioneers:industrial_reduction_furnace",
+  "pioneers:industrial_gear_hobber",
+  "pioneers:industrial_joinery",
+  "pioneers:industrial_tailoring_workshop",
+  "pioneers:industrial_packaging_machine",
+  "pioneers:industrial_sheet_metal_shop",
+  "pioneers:industrial_glassworks",
+  "pioneers:industrial_electromechanical_bench",
+  "pioneers:industrial_stoneworks",
   "pioneers:robotic_assembly_bay",
   "pioneers:rocket_integration_hall"
  ]

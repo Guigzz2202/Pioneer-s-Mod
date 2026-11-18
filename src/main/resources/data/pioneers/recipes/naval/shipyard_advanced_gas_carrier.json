@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "shipyard",
  "tier": 1,
- "time": 450,
+ "time": 400,
  "items": [
   {
    "ingredient": {

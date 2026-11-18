@@ -8,12 +8,16 @@ import fr.pioneers.api.machine.unit.Surplus;
 import fr.pioneers.api.machine.unit.UnitHost;
 import fr.pioneers.core.energy.EnergyBuffer;
 import fr.pioneers.core.energy.EnergyPush;
+import fr.pioneers.core.inventory.ItemSlot;
+import fr.pioneers.core.side.SideType;
 import fr.pioneers.tech.kinetics.KineticNode;
 import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.energy.IEnergyStorage;
 
 /**
  * API Machine (lot 7) : UNITE DE GENERATEUR de la dynamo (code de l'ancienne {@code DynamoTile}, qui ne fait plus que la porter par
@@ -41,7 +45,13 @@ public class DynamoUnit extends GeneratorUnit {
         this.power = (PowerSource.Kinetic) machine.power();
         long capacity = ratedFe() * DynamoTile.RESERVE_TICKS;
         energy = new EnergyBuffer(() -> capacity, 0, (int) Math.min(Integer.MAX_VALUE, capacity), machine::changed);
+        //1.0.6 : case de recharge sous la reserve (meme place que les machines compactes) : la dynamo charge l'objet
+        battery = machine.slot(ItemSlot.of(s -> s.getCapability(ForgeCapabilities.ENERGY).map(IEnergyStorage::canReceive).orElse(false),
+              machine::changed, StandardLayout.BATTERY_X, StandardLayout.BATTERY_Y).ghostIcon("ghost_battery"));
     }
+
+    /** 1.0.6 : case de recharge (l'objet se charge depuis la reserve). */
+    public final ItemSlot battery;
 
     public long ratedFe() {
         return DynamoTile.RATED_FE[cableTier.ordinal()];
@@ -64,8 +74,13 @@ public class DynamoUnit extends GeneratorUnit {
     // ------------------------------------------------------------------
 
     public double rating() {
-        //1.0.4-beta (lot 5) : reserve pleine, la dynamo GARDE sa charge (la source ne part plus a vide) : le surplus est perdu (Surplus)
-        return DynamoTile.EXCITATION[excitation] > 0 ? ratedFe() * 20.0 / DynamoTile.FE_PER_JOULE : 0;
+        //1.0.6 : commande redstone (onglet Redstone) : arretee, plus d'excitation
+        //1.0.6 (revision de la mecanique, Guillaume : « des fois j'atteins 100 % de charge alors que rien n'est connecte ») : elle ne prend
+        //que l'energie que sa reserve peut garder (reserve pleine : aucune charge sur l'arbre) ; les sources regulees gardent leur vitesse
+        if (DynamoTile.EXCITATION[excitation] <= 0 || !tile.redstoneAllows()) {
+            return 0;
+        }
+        return Math.min(ratedFe(), energy.getNeeded()) * 20.0 / DynamoTile.FE_PER_JOULE;
     }
 
     public double excitationShare() {
@@ -101,12 +116,17 @@ public class DynamoUnit extends GeneratorUnit {
         }
         surplus.note(level.getGameTime(), whole, inserted);
         Direction.Axis axis = tile.axis();
+        //1.0.6 : recharge de l'objet de la case, puis sortie par les faces ouvertes (onglet Faces)
+        if (!battery.isEmpty() && energy.getStored() > 0) {
+            battery.getStack().getCapability(ForgeCapabilities.ENERGY).ifPresent(item ->
+                  energy.extract(item.receiveEnergy((int) Math.min(Integer.MAX_VALUE, Math.min(ratedFe(), energy.getStored())), false), false));
+        }
         long given = energy.getStored() <= 0 ? 0 : EnergyPush.toNeighbours(level, pos(), energy.getStored(), (d, be) -> d.getAxis() != axis
-              && !(be instanceof KineticNode), amount -> energy.extract(amount, false));
+              && !(be instanceof KineticNode) && tile.sideOpen(SideType.ENERGY, d), amount -> energy.extract(amount, false));
         idleOut = given > 0 || energy.getStored() <= 0 ? 0 : Math.min(1_000, idleOut + 1);
         double capacity = tile.networkCapacity();
         match = capacity <= 1 ? 0 : Math.min(1, mechanical / capacity);
-        state = tile.jammed() ? DynamoTile.STALLED : DynamoTile.EXCITATION[excitation] <= 0 ? DynamoTile.OFF : w < 0.05 ? DynamoTile.STOPPED
+        state = tile.jammed() ? DynamoTile.STALLED : DynamoTile.EXCITATION[excitation] <= 0 || !tile.redstoneAllows() ? DynamoTile.OFF : w < 0.05 ? DynamoTile.STOPPED
               : w > tile.maxSpeed() ? DynamoTile.OVERSPEED : !hasRoom() ? DynamoTile.NO_OUTPUT
               : electricTorque() >= ratedTorque() * 0.98 ? DynamoTile.TORQUE_LIMIT
               : mechanical >= ratedFe() * 20.0 / DynamoTile.FE_PER_JOULE * 0.98 ? DynamoTile.SATURATED : DynamoTile.PRODUCING;
@@ -146,28 +166,38 @@ public class DynamoUnit extends GeneratorUnit {
     public void save(CompoundTag tag) {
         tag.put("energy", energy.serializeNBT());
         tag.putInt("excitation", excitation);
+        if (!battery.isEmpty()) {
+            tag.put("battery", battery.getStack().save(new CompoundTag()));
+        }
     }
 
     @Override
     public void load(CompoundTag tag) {
         energy.deserializeNBT(tag.getCompound("energy"));
         excitation = Math.max(0, Math.min(DynamoTile.EXCITATION.length - 1, tag.getInt("excitation")));
+        battery.setStack(tag.contains("battery") ? net.minecraft.world.item.ItemStack.of(tag.getCompound("battery")) : net.minecraft.world.item.ItemStack.EMPTY);
     }
 
     // ------------------------------------------------------------------
-    // Interface standard v2 : vitesse (energie motrice), reserve, carte des mesures, ecran raccourci + excitation
+    // Interface standard (1.0.6, Guillaume : « au norme des machines compactes ») : reserve et case de recharge a gauche comme partout,
+    // rotation en entree (jauge de vitesse a la place de la premiere jauge), fleche, carte des mesures et de l'excitation, ecran standard
     // ------------------------------------------------------------------
 
-    public static final StandardLayout.Rect RESERVE = new StandardLayout.Rect(StandardLayout.PANEL_X, StandardLayout.TOP, StandardLayout.GAUGE_W,
-          StandardLayout.GAUGE_H);
-    public static final StandardLayout.Rect CARD = new StandardLayout.Rect(RESERVE.x() + RESERVE.w() + 6, StandardLayout.TOP,
-          StandardLayout.WIDTH - 8 - (RESERVE.x() + RESERVE.w() + 6), StandardLayout.GAUGE_H);
+    /** Jauge de vitesse (entree : la rotation), fleche, carte (mesures en haut, bouton d'excitation en bas). */
+    public static final StandardLayout.Rect SPEED = new StandardLayout.Rect(28, StandardLayout.TOP, StandardLayout.GAUGE_W, StandardLayout.GAUGE_H);
+    public static final StandardLayout.Rect ARROW = new StandardLayout.Rect(SPEED.x() + SPEED.w() + 6, StandardLayout.TOP + StandardLayout.GAUGE_H / 2 - 4,
+          28, 8);
+    public static final StandardLayout.Rect CARD = new StandardLayout.Rect(ARROW.x() + ARROW.w() + 6, StandardLayout.TOP,
+          StandardLayout.WIDTH - 8 - (ARROW.x() + ARROW.w() + 6), StandardLayout.GAUGE_H - 16);
+    public static final StandardLayout.Rect BUTTON = new StandardLayout.Rect(CARD.x(), CARD.y() + CARD.h() + 3, CARD.w(), 12);
+    public static final StandardLayout.Rect ENERGY = new StandardLayout.Rect(8, StandardLayout.TOP, StandardLayout.GAUGE_W, StandardLayout.ENERGY_H);
 
     public static List<StandardLayout.Part> parts() {
-        StandardLayout.Rect p = StandardLayout.POWER;
-        return List.of(new StandardLayout.Part("power", new StandardLayout.Rect(p.x() - 1, p.y() - 1, p.w() + 2, p.h() + 2)),
-              new StandardLayout.Part("energy", new StandardLayout.Rect(RESERVE.x() - 1, RESERVE.y() - 1, RESERVE.w() + 2, RESERVE.h() + 2)),
-              new StandardLayout.Part("card", CARD), new StandardLayout.Part("screen", StandardLayout.shortScreen(StandardLayout.WIDTH)),
-              new StandardLayout.Part("setting", StandardLayout.settingRow(StandardLayout.WIDTH)));
+        StandardLayout.Rect s = StandardLayout.screen(StandardLayout.WIDTH);
+        return List.of(new StandardLayout.Part("energy", new StandardLayout.Rect(ENERGY.x() - 1, ENERGY.y() - 1, ENERGY.w() + 2, ENERGY.h() + 2)),
+              new StandardLayout.Part("battery", new StandardLayout.Rect(StandardLayout.BATTERY_X - 1, StandardLayout.BATTERY_Y - 1, 18, 18)),
+              new StandardLayout.Part("gauge", new StandardLayout.Rect(SPEED.x() - 1, SPEED.y() - 1, SPEED.w() + 2, SPEED.h() + 2)),
+              new StandardLayout.Part("arrow", ARROW), new StandardLayout.Part("card", CARD), new StandardLayout.Part("setting", BUTTON),
+              new StandardLayout.Part("screen", s));
     }
 }

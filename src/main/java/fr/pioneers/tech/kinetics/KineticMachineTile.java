@@ -10,7 +10,12 @@ import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.inventory.ItemSlots;
 import fr.pioneers.core.machine.MachineGui;
 import fr.pioneers.core.machine.MachineMenu;
+import fr.pioneers.core.machine.MachineTile;
+import fr.pioneers.core.machine.RedstoneMode;
 import fr.pioneers.core.side.SideConfig;
+import fr.pioneers.core.side.SideMode;
+import fr.pioneers.core.side.SideType;
+import java.util.EnumSet;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -52,6 +57,12 @@ public abstract class KineticMachineTile extends KineticTile implements MachineG
     private MachineUnit unit;
     @Nullable
     private UiValues named;
+    /** 1.0.6 (Guillaume : dynamo « au norme des machines compactes ») : faces reglables (onglet Faces) d'une machine electrique cinetique. */
+    @Nullable
+    private SideConfig sides;
+    /** 1.0.6 : commande redstone (onglet Redstone) ; {@link #redstoneTab} : la machine la propose. */
+    private RedstoneMode redstone = RedstoneMode.IGNORED;
+    private boolean redstoneTab;
 
     protected KineticMachineTile(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
@@ -66,6 +77,45 @@ public abstract class KineticMachineTile extends KineticTile implements MachineG
     @Nullable
     public MachineUnit unit() {
         return unit;
+    }
+
+    /**
+     * 1.0.6 : faces reglables d'une ressource (energie d'une dynamo ou d'un moteur), comme les machines compactes : onglet Faces, reglage
+     * sauve. Facade = {@code FACING} du bloc s'il en a une.
+     */
+    protected SideConfig enableSides(SideType type, SideMode initial, SideMode... allowed) {
+        sides = new SideConfig(EnumSet.of(SideMode.NONE, allowed), initial, false, this::sideFacing, this::setChanged).addType(type);
+        return sides;
+    }
+
+    private Direction sideFacing() {
+        BlockState st = getBlockState();
+        return st.hasProperty(net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING)
+               ? st.getValue(net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING) : Direction.NORTH;
+    }
+
+    /** 1.0.6 : la face {@code side} laisse-t-elle passer la ressource (pas de faces reglables : oui) ? */
+    public boolean sideOpen(SideType type, @Nullable Direction side) {
+        return sides == null || side == null || sides.mode(type, side) != SideMode.NONE;
+    }
+
+    /** 1.0.6 : commande redstone proposee (onglet Redstone, comme les machines compactes). */
+    protected void enableRedstone() {
+        redstoneTab = true;
+    }
+
+    public boolean hasRedstoneTab() {
+        return redstoneTab;
+    }
+
+    @Override
+    public boolean redstoneTab() {
+        return redstoneTab;
+    }
+
+    /** La commande redstone laisse-t-elle travailler la machine ? */
+    public boolean redstoneAllows() {
+        return !redstoneTab || level == null || redstone.allows(level.hasNeighborSignal(worldPosition));
     }
 
     /** Cases declarees par l'unite (ordre d'affichage et de sauvegarde). */
@@ -128,6 +178,12 @@ public abstract class KineticMachineTile extends KineticTile implements MachineG
         if (unit != null) {
             unit.save(tag);
         }
+        if (sides != null) {
+            tag.put("sideConfig", sides.save());
+        }
+        if (redstoneTab) {
+            tag.putInt("redstone", redstone.ordinal());
+        }
     }
 
     @Override
@@ -135,6 +191,12 @@ public abstract class KineticMachineTile extends KineticTile implements MachineG
         super.load(tag);
         if (unit != null) {
             unit.load(tag);
+        }
+        if (sides != null && tag.contains("sideConfig")) {
+            sides.load(tag.getCompound("sideConfig"));
+        }
+        if (redstoneTab) {
+            redstone = RedstoneMode.byIndex(tag.getInt("redstone"));
         }
     }
 
@@ -193,6 +255,9 @@ public abstract class KineticMachineTile extends KineticTile implements MachineG
             if (unit != null) {
                 unit.declareValues(b);
             }
+            if (redstoneTab) {
+                b.add(UiValues.REDSTONE, () -> redstone.ordinal());
+            }
             named = b.build();
         }
         return named;
@@ -211,7 +276,18 @@ public abstract class KineticMachineTile extends KineticTile implements MachineG
     @Nullable
     @Override
     public SideConfig getSideConfig() {
-        return null;
+        return sides;
+    }
+
+    /** 1.0.6 : onglet Redstone (meme action que les machines compactes), sinon les actions communes (faces) et propres. */
+    @Override
+    public void handleAction(net.minecraft.server.level.ServerPlayer player, int action) {
+        if (redstoneTab && action == MachineTile.REDSTONE) {
+            redstone = redstone.next();
+            setChanged();
+            return;
+        }
+        MachineGui.super.handleAction(player, action);
     }
 
     @NotNull

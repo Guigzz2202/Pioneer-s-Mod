@@ -125,6 +125,21 @@ public final class Gt {
         return current;
     }
 
+    // ------------------------------------------------------------------ buffers
+    /**
+     * Ouvre en entree-sortie les six faces d'un buffer pose par le test. Un buffer neuf a toutes ses faces fermees (le joueur les regle) :
+     * sans face ouverte, un cable ne s'y branche pas et le reseau sans fiche n'existe pas.
+     */
+    public static fr.pioneers.logistics.transport.buffer.BufferTile openFaces(GameTestHelper h, BlockPos abs) {
+        net.minecraft.world.level.block.entity.BlockEntity be = h.getLevel().getBlockEntity(abs);
+        check(be instanceof fr.pioneers.logistics.transport.buffer.BufferTile, "pas de buffer en " + abs);
+        fr.pioneers.logistics.transport.buffer.BufferTile b = (fr.pioneers.logistics.transport.buffer.BufferTile) be;
+        for (fr.pioneers.core.RelativeSide r : fr.pioneers.core.RelativeSide.values()) {
+            b.unit().sides().set(r, fr.pioneers.core.side.SideMode.IO);
+        }
+        return b;
+    }
+
     // ------------------------------------------------------------------ verifications
     public static void check(boolean ok, String what) {
         if (!ok) {
@@ -205,15 +220,17 @@ public final class Gt {
      * evenements de connexion ; ses paquets partent dans un canal en memoire et sont jetes.
      */
     public static ServerPlayer connect(MinecraftServer server, ServerLevel level, UUID id, String account) {
+        //1.0.6 : le mode de jeu reel, comme un vrai joueur (avant : toujours faux, un test qui passait le joueur en creatif ou en spectateur
+        //ne le voyait jamais) ; gameMode est encore null pendant le constructeur de Player, qui lit deja ces deux methodes
         ServerPlayer p = new ServerPlayer(server, level, new GameProfile(id, account)) {
             @Override
             public boolean isSpectator() {
-                return false;
+                return gameMode != null && gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
             }
 
             @Override
             public boolean isCreative() {
-                return false;
+                return gameMode != null && gameMode.getGameModeForPlayer() == GameType.CREATIVE;
             }
         };
         Connection connection = new Connection(PacketFlow.SERVERBOUND);

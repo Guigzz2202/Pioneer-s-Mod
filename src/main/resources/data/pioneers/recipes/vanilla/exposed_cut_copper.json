@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:exposed_copper"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:exposed_cut_copper",
-  "count": 4
+  "count": 1
  }
 }

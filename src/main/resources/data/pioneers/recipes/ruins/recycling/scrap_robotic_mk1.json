@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "recycler",
  "tier": 0,
- "time": 800,
+ "time": 160,
  "items": [
   {
    "ingredient": {
@@ -34,14 +34,6 @@
    },
    {
     "item": "pioneers:press_die",
-    "weight": 12,
-    "count": [
-     1,
-     3
-    ]
-   },
-   {
-    "item": "pioneers:extrusion_die",
     "weight": 12,
     "count": [
      1,

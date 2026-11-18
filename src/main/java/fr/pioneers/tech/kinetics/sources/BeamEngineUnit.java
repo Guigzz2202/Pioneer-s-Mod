@@ -84,6 +84,13 @@ public class BeamEngineUnit extends MachineUnit {
         return temperature;
     }
 
+    private double delivered;
+
+    /** 1.0.6 : couple rendu au reseau a ce tick (N.m). */
+    public void delivered(double torque) {
+        delivered = Math.max(0, torque);
+    }
+
     /** Couple de demarrage de la source (N.m). */
     public double sourceTorque() {
         return BeamEngineTile.TAU0 * pressure() * KineticsConfig.sourcePower();
@@ -129,7 +136,8 @@ public class BeamEngineUnit extends MachineUnit {
         }
         heat -= (temperature - 300) * BeamEngineTile.LOSS;
         //Vapeur consommee par le piston : la puissance fournie s'evapore en eau
-        double out = Math.max(0, sourceTorque() * Math.max(0, 1 - Math.abs(speed) / BeamEngineTile.FREE)) * Math.abs(speed) * 2 * Math.PI / 60;
+        //1.0.6 : la puissance vraiment rendue (couple donne par le reseau x vitesse) : un balancier peu charge use peu
+        double out = delivered * Math.abs(speed) * 2 * Math.PI / 60;
         heat -= out * 0.05 * 1.2;
         if (out > 0) {
             water.drain(Math.max(1, (int) Math.round(out / 1650)), IFluidHandler.FluidAction.EXECUTE);

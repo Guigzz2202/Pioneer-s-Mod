@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:basalt"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:polished_basalt",
-  "count": 4
+  "count": 1
  }
 }

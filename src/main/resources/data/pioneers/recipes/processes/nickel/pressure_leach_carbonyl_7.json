@@ -1,33 +1,32 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
- "family": "reduction_furnace",
+ "machine": "reduction_furnace",
  "tier": 1,
- "time": 300,
+ "time": 150,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:nickel_sulfate"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:hydrogen",
-   "amount": 1000
+   "amount": 500
   }
  ],
  "results": [
   {
    "item": "pioneers:nickel_dust",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:sulfur_dioxide",
-   "amount": 200
+   "amount": 100
   }
  ],
  "temperature": 800

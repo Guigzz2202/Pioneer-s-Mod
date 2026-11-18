@@ -5,18 +5,18 @@
    "ingredient": {
     "item": "pioneers:barley"
    },
-   "count": 8
+   "count": 1
   }
  ],
  "fluid": {
   "fluid": "minecraft:water",
-  "amount": 500
+  "amount": 63
  },
- "time": 2400,
+ "time": 300,
  "results": [
   {
    "item": "pioneers:green_malt",
-   "count": 8
+   "count": 1
   }
  ]
 }

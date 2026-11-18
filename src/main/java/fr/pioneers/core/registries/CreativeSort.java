@@ -578,7 +578,7 @@ public final class CreativeSort {
               "piston").add(tiers("%s_piston")).add("crankshaft", "camshaft", "poppet_valve", "engine_block").add(tiers("%s_engine_block"))
               .add("motor_stator", "motor_rotor", "electric_motor").add(tiers("%s_electric_motor")).add("pump_impeller", "pump_housing",
                     "centrifugal_pump").add(tiers("%s_centrifugal_pump")).add("bladed_rotor").add(tiers("%s_bladed_rotor")).add("planetary_gear")
-              .add(tiers("%s_planetary_gear")).add("heat_exchanger").add(tiers("%s_heat_exchanger")).add("extrusion_die", "press_die", "tube_die",
+              .add(tiers("%s_planetary_gear")).add("heat_exchanger").add(tiers("%s_heat_exchanger")).add("press_die", "tube_die",
                     "graphite_electrode")
               //MAJ Recettes (lot 8a) : objectifs du graveur optique (outillage use d'un point par gravure), neufs puis uses
               .add("glass_engraving_objective", "uv_engraving_objective", "euv_engraving_objective", "worn_glass_engraving_objective",

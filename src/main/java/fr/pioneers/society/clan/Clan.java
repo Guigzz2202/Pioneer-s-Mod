@@ -202,6 +202,11 @@ public final class Clan {
     public final Map<String, Map<Long, Claim>> claims = new HashMap<>();
     /** 1.0.3-beta (lot 16) : claims achetes au tresor (ajoutes au budget, jamais rendus : abandonner un chunk ne les rembourse pas). */
     public int boughtClaims;
+    /**
+     * 1.0.6 (Guillaume, 17/11/2026 : « acheter comme on le souhaite des claims et des chunkloads pour preparer le stock ») : emplacements de
+     * chunkloading achetes au tresor (stock ; un chunk charge en prend un, le liberer le rend). Monde d'avant : au moins les emplacements tenus.
+     */
+    public int boughtChunkloads;
     /** 1.0.3-beta (lot 16) : permissions des visiteurs par zone (allies, neutres, etrangers, ennemis) ; defauts = l'ancienne regle. */
     public ZonePerms zonePerms = ZonePerms.DEFAULTS;
     /** Emplacements de chunkloading actifs : « dimension|chunk ». */
@@ -359,6 +364,7 @@ public final class Clan {
         });
         t.put("claims", cl);
         t.putInt("bought", boughtClaims);
+        t.putInt("boughtCl", boughtChunkloads);
         if (!zonePerms.isDefault()) {
             t.putIntArray("zperm", zonePerms.toArray());
         }
@@ -458,6 +464,7 @@ public final class Clan {
         for (Tag x : t.getList("load", Tag.TAG_STRING)) {
             c.chunkload.add(x.getAsString());
         }
+        c.boughtChunkloads = Math.max(Math.max(0, t.getInt("boughtCl")), c.chunkload.size());
         CompoundTag fn = t.getCompound("functions");
         fn.getAllKeys().forEach(k -> c.functions.put(k, fn.getString(k)));
         c.proposals.addAll(t.getList("proposals", Tag.TAG_COMPOUND));

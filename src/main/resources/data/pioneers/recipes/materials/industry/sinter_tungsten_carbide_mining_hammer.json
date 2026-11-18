@@ -1,9 +1,9 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "family": "sintering_furnace",
  "tier": 3,
- "time": 600,
+ "time": 400,
  "items": [
   {
    "ingredient": {

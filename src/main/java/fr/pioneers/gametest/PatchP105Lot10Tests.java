@@ -84,9 +84,14 @@ public final class PatchP105Lot10Tests {
     static void grass(GameTestHelper h, int n) {
         for (int x = 1; x <= n; x++) {
             for (int z = 1; z <= n; z++) {
-                h.getLevel().setBlock(h.absolutePos(new BlockPos(x, 0, z)), Blocks.GRASS_BLOCK.defaultBlockState(), 3);
+                //1.0.6 : sur le sol du gabarit (y = 1) : en y = 0 l'herbe etait sous la pierre, et le troupeau naissait sur la pierre
+                h.getLevel().setBlock(h.absolutePos(new BlockPos(x, 1, z)), Blocks.GRASS_BLOCK.defaultBlockState(), 3);
             }
         }
+    }
+
+    static BlockPos top(ServerLevel level, BlockPos c) {
+        return level.getHeightmapPos(net.minecraft.world.level.levelgen.Heightmap.Types.MOTION_BLOCKING, c);
     }
 
     static FaunaSpawner.Limits noViewer() {
@@ -132,8 +137,17 @@ public final class PatchP105Lot10Tests {
         if (mine) {
             ClaimIndex.set(dim, chunk, null);
         }
+        //1.0.6 : la regle d'apparition des animaux lit la lumiere du ciel, calculee aux ticks suivants sur un sol tout juste pose : on l'attend
+        BlockPos top = level.getHeightmapPos(net.minecraft.world.level.levelgen.Heightmap.Types.MOTION_BLOCKING, c);
+        h.startSequence()
+              .thenWaitUntil(() -> Gt.check(level.getBrightness(net.minecraft.world.level.LightLayer.SKY, top) >= 15, "lumiere du ciel pas encore calculee"))
+              .thenExecute(() -> herdOutsideClaim(s, level, who, c, zone, before));
+    }
+
+    private static void herdOutsideClaim(Gt.Scope s, ServerLevel level, UUID who, BlockPos c, long zone, int before) {
         HerdData.Herd herd = HerdEvents.spawnAt(level, who, c.getX(), c.getZ(), "pioneers:deer", HuntSettings.DEFAULT, noViewer(), 0);
-        Gt.check(herd != null && !herd.members.isEmpty(), "hors claim : un troupeau de cerfs apparait");
+        Gt.check(herd != null && !herd.members.isEmpty(), "hors claim : un troupeau de cerfs apparait (sol " + level.getBlockState(top(level, c).below())
+              + ", lumiere " + level.getRawBrightness(top(level, c), 0) + ", heure " + level.getDayTime() % 24000 + ")");
         forget(s, herd);
         List<Entity> beasts = new ArrayList<>();
         for (UUID u : herd.members) {
@@ -210,21 +224,25 @@ public final class PatchP105Lot10Tests {
 
     // ------------------------------------------------------------------ 4. degats contre un joueur divises par 2
 
-    @GameTest(template = Gt.BORDER, batch = "pioneers_p105_10_pvp", timeoutTicks = 40)
+    @GameTest(template = Gt.BORDER, batch = "pioneers_p105_10_pvp", timeoutTicks = 120)
     public static void p105_10_degats_pvp_divises(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         s.onCleanup(() -> HuntSettings.forced = null);
         HuntSettings.forced = HuntSettings.DEFAULT;
         Gt.check(Math.abs(HuntRules.pvp(20F, HuntRules.PVP_FACTOR) - 10F) < 1e-4, "regle : x 0,5 par defaut");
         ServerPlayer a = s.player("huntc", "Gaspard", new BlockPos(3, 1, 10)), b = s.player("huntd", "Marius", new BlockPos(12, 1, 10));
-        Vec3 eye = a.getEyePosition();
-        Vec3 dir = b.position().add(0, 1.0, 0).subtract(eye).normalize();
-        Firearms.Shot shot = Firearms.ray(s.level, a, eye, dir, 12F, 64);
-        Gt.check(shot.hit() == b, "le tir touche le joueur");
-        if (s.server.isPvpAllowed()) {
-            Gt.check(Math.abs(shot.damage() - 6F) < 1e-3, "degats x 0,5 contre un joueur : " + shot.damage());
-        }
-        s.done();
+        //1.0.6 : un joueur qui arrive est invulnerable 60 ticks (ServerPlayer.spawnInvulnerableTime) : le tir part une fois cette protection
+        //passee (le test passait seulement quand une serie d'avant laissait le temps s'ecouler)
+        h.runAfterDelay(61, () -> {
+            Vec3 eye = a.getEyePosition();
+            Vec3 dir = b.position().add(0, 1.0, 0).subtract(eye).normalize();
+            Firearms.Shot shot = Firearms.ray(s.level, a, eye, dir, 12F, 64);
+            Gt.check(shot.hit() == b, "le tir touche le joueur");
+            if (s.server.isPvpAllowed()) {
+                Gt.check(Math.abs(shot.damage() - 6F) < 1e-3, "degats x 0,5 contre un joueur : " + shot.damage());
+            }
+            s.done();
+        });
     }
 
     // ------------------------------------------------------------------ 5. tir refuse sous l'eau

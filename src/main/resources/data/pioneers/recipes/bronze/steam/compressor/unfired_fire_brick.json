@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "pioneers:fire_clay"
    },
-   "count": 3
+   "count": 2
   }
  ],
  "result": {
   "item": "pioneers:unfired_fire_brick",
-  "count": 4
+  "count": 1
  },
- "time": 80
+ "time": 160
 }

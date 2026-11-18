@@ -1,6 +1,6 @@
 {
  "type": "pioneers:bench",
- "bench": "metalworker",
+ "bench": "assembly",
  "tools": [
   {
    "tag": "pioneers:tools/hammers"

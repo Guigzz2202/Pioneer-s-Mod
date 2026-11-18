@@ -101,7 +101,8 @@ public final class PatchP103Lot1Tests {
     @GameTest(template = Gt.BORDER, batch = "pioneers_p103_fish", timeoutTicks = 40)
     public static void p103_poissons_plafonds(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
-        Gt.check(PiFish.SPAWN_CAP < 9 && PiFish.BREED_CAP < PiFish.SPAWN_CAP, "plafonds de zone plus bas qu'en 1.0.2 (9) : "
+        //1.0.6 (reponse de Guillaume du 16/11/2026) : plafond d'apparition de 10 poissons par zone garde ; la reproduction reste sous ce plafond
+        Gt.check(PiFish.SPAWN_CAP == 10 && PiFish.BREED_CAP < PiFish.SPAWN_CAP, "plafonds de zone (apparition 10, reproduction en dessous) : "
                                                                               + PiFish.SPAWN_CAP + " / " + PiFish.BREED_CAP);
         Gt.equal(48000, PiFish.ROE_CHANCE, "ponte deux fois plus rare (1 sur 48 000 ticks au lieu de 24 000)");
         Gt.equal(1, PiFish.bodyCap(20, PiFish.BREED_CAP), "mare de 20 blocs : 1 poisson");

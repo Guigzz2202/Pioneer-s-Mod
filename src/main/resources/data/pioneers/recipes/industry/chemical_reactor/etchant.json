@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 1,
- "time": 40,
+ "time": 80,
  "fluids": [
   {
    "fluid": "pioneers:hydrofluoric_acid",

@@ -3,7 +3,7 @@
  "machine": "extractor",
  "family": "solvent_extractor",
  "tier": 1,
- "time": 300,
+ "time": 160,
  "fluids": [
   {
    "fluid": "pioneers:nickel_cobalt_liquor",

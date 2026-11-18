@@ -11,11 +11,11 @@
    "ingredient": {
     "tag": "forge:storage_blocks/copper"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:cut_copper",
-  "count": 4
+  "count": 1
  }
 }

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "press",
  "tier": 0,
- "time": 50,
+ "time": 160,
  "items": [
   {
    "ingredient": {
@@ -20,7 +20,7 @@
  "results": [
   {
    "item": "pioneers:tin_sheet",
-   "count": 1
+   "count": 2
   },
   {
    "item": "pioneers:press_die",

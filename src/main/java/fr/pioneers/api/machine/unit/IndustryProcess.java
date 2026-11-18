@@ -4,6 +4,7 @@ import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.core.Action;
 import fr.pioneers.core.Automation;
+import fr.pioneers.api.machine.resource.ResourceRows;
 import fr.pioneers.core.gas.BasicGasTank;
 import fr.pioneers.core.gas.GasTankHandler;
 import fr.pioneers.core.inventory.ItemSlot;
@@ -111,18 +112,23 @@ public class IndustryProcess extends ProcessUnit implements RecipeMatch.Buffers 
                : Remanents.hasToolSlot(kind.key) ? machine.slot(ToolBay.slot(kind.key, this, this::inputChanged, layout.toolX, layout.toolY)) : null;
         tools = tool == null ? List.of() : List.of(tool);
         int tank = 16_000 * (t + 1);
+        //1.0.6 : liquides et gaz partages (une jauge = un liquide ou un gaz) quand les recettes prennent des deux (ResourceRows)
+        pairedIn = ResourceRows.pairedIn(kind);
+        pairedOut = ResourceRows.pairedOut(kind);
         for (int i = 0; i < kind.fluidsIn; i++) {
             //MAJ Recettes (lot 4b) : jamais deux reservoirs d'entree du meme fluide (machine de coulee : le metal fondu ne prend pas le
             //reservoir du fluide de refroidissement)
             int index = i;
-            fluidIn.add(machine.fluidTank(new IoTank(tank, false, f -> acceptsFluid(f) && !heldElsewhere(index, f), this::tanksChanged)));
+            fluidIn.add(machine.fluidTank(new IoTank(tank, false, f -> acceptsFluid(f) && (pairedIn
+                  ? ResourceRows.fluidFits(fluidIn, gasIn, index, f, lockedOrNull()) : !heldElsewhere(index, f)), this::tanksChanged)));
         }
         for (int i = 0; i < kind.fluidsOut; i++) {
             fluidOut.add(machine.fluidTank(new IoTank(tank, true, f -> true, this::outputTanksChanged)));
         }
         for (int i = 0; i < kind.gasesIn; i++) {
-            gasIn.add(machine.gasTank(BasicGasTank.input(tank * 2L, g -> level() == null || lockAllowsGas(g, () -> IndustryRecipes.acceptsGas(level(), kind, g)),
-                  this::tanksChanged)));
+            int index = i;
+            gasIn.add(machine.gasTank(BasicGasTank.input(tank * 2L, g -> level() == null || lockAllowsGas(g, () -> IndustryRecipes.acceptsGas(level(), kind, g))
+                  && (!pairedIn || ResourceRows.gasFits(fluidIn, gasIn, index, g, lockedOrNull())), this::tanksChanged)));
         }
         for (int i = 0; i < kind.gasesOut; i++) {
             gasOut.add(machine.gasTank(BasicGasTank.output(tank * 2L, this::outputTanksChanged)));
@@ -144,6 +150,20 @@ public class IndustryProcess extends ProcessUnit implements RecipeMatch.Buffers 
         }) : null;
     }
 
+    /** 1.0.6 : jauges de liquide et de gaz partagees (entrees, sorties) : {@link ResourceRows}. */
+    private final boolean pairedIn, pairedOut;
+
+    @Override
+    public boolean pairedOutputs() {
+        return pairedOut;
+    }
+
+    /** Recette verrouillee (choix de recette), ou null. */
+    @Nullable
+    private fr.pioneers.core.recipe.RecipeChoice lockedOrNull() {
+        return level() != null && lock.isSet() ? lockedChoice() : null;
+    }
+
     /** L'unite de generateur (generateur a combustion), ou null. */
     @Nullable
     public FuelGenerator generator() {
@@ -152,7 +172,8 @@ public class IndustryProcess extends ProcessUnit implements RecipeMatch.Buffers 
 
     /** Cases et reservoirs d'une machine du catalogue (disposition de l'interface standard). */
     public static StandardLayout.Counts counts(IndustryMachine m) {
-        return new StandardLayout.Counts(m.itemsIn, m.itemsOut, m.fluidsIn, m.gasesIn, m.fluidsOut, m.gasesOut);
+        return new StandardLayout.Counts(m.itemsIn, m.itemsOut, m.fluidsIn, m.gasesIn, m.fluidsOut, m.gasesOut, ResourceRows.pairedIn(m),
+              ResourceRows.pairedOut(m));
     }
 
     /** Puissance (FE/t) d'une machine d'atelier a ce tier. */
@@ -356,7 +377,7 @@ public class IndustryProcess extends ProcessUnit implements RecipeMatch.Buffers 
                 }
                 current = found;
                 if (found != null) {
-                    duration = Tiers.ticks(found.time(), tier.ordinal(), found.tier(), false);
+                    duration = Tiers.ticks(found.time(), tier.ordinal(), found.tier(), false, found.machine());
                     if (found.draws() != null) {
                         //1.9 (MAJ RP) : tri plus rapide (skill Recuperation du proprietaire)
                         duration = (int) Math.max(1, Math.round(duration / machine.tile().ownerFactor("salvage.sort_speed")));

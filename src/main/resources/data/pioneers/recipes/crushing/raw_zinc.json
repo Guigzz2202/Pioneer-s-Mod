@@ -1,4 +1,9 @@
 {
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
  "type": "pioneers:crushing",
  "input": {
   "tag": "forge:raw_materials/zinc"

@@ -8,23 +8,23 @@
    "ingredient": {
     "item": "pioneers:epoxy_board"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "pioneers:photoresist",
-   "amount": 50
+   "amount": 25
   },
   {
    "fluid": "pioneers:etchant",
-   "amount": 100
+   "amount": 50
   }
  ],
  "results": [
   {
    "item": "pioneers:printed_circuit_board",
-   "count": 2
+   "count": 1
   }
  ]
 }

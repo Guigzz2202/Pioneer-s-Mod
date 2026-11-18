@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "casting_machine",
  "tier": 0,
- "time": 100,
+ "time": 160,
  "family": "injection_molder",
  "items": [
   {

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 1,
- "time": 400,
+ "time": 160,
  "family": "fischer_tropsch_reactor",
  "items": [
   {

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "centrifuge",
  "tier": 1,
- "time": 200,
+ "time": 160,
  "family": "desalter",
  "fluids": [
   {

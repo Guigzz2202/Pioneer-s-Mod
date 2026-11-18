@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "distillation_column",
  "tier": 0,
- "time": 40,
+ "time": 160,
  "family": "stripper",
  "fluids": [
   {

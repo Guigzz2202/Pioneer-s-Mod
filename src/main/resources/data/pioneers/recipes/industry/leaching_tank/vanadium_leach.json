@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "extractor",
  "tier": 0,
- "time": 200,
+ "time": 160,
  "family": "leaching_tank",
  "items": [
   {

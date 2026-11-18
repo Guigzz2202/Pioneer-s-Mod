@@ -6,13 +6,13 @@
    "ingredient": {
     "item": "minecraft:blue_concrete_powder"
    },
-   "count": 8
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:blue_concrete",
-  "count": 8
+  "count": 1
  },
- "time": 80,
- "water": 1000
+ "time": 160,
+ "water": 125
 }

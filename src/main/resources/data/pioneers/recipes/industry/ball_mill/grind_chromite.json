@@ -12,12 +12,6 @@
    "count": 1
   }
  ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 100
-  }
- ],
  "results": [
   {
    "item": "pioneers:ground_chromite",

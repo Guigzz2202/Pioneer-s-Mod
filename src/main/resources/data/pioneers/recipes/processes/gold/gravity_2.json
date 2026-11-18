@@ -3,7 +3,7 @@
  "machine": "ore_separator",
  "family": "shaking_table",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "items": [
   {
    "ingredient": {

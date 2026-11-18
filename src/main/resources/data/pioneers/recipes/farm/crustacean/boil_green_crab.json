@@ -5,18 +5,18 @@
    "ingredient": {
     "item": "pioneers:raw_green_crab"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "fluid": {
   "fluid": "minecraft:water",
-  "amount": 250
+  "amount": 125
  },
- "time": 200,
+ "time": 100,
  "results": [
   {
    "item": "pioneers:cooked_green_crab",
-   "count": 2
+   "count": 1
   }
  ]
 }

@@ -82,22 +82,12 @@ final class StandardView implements MachineScreens.View {
         Rect e = l.energy;
         gui.energy(g, mouseX, mouseY, e.x(), e.y(), e.w(), e.h());
         MachineViews views = gui.views();
-        for (int i = 0; i < l.fluidIn.size(); i++) {
-            Rect r = l.fluidIn.get(i);
-            views.fluidGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.fluidInTanks().get(i));
-        }
-        for (int i = 0; i < l.gasIn.size(); i++) {
-            Rect r = l.gasIn.get(i);
-            views.gasGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.gasInTanks().get(i), Component.translatable("gui.pioneers.machine.in"));
-        }
-        for (int i = 0; i < l.fluidOut.size(); i++) {
-            Rect r = l.fluidOut.get(i);
-            views.fluidGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.fluidOutTanks().get(i));
-        }
-        for (int i = 0; i < l.gasOut.size(); i++) {
-            Rect r = l.gasOut.get(i);
-            views.gasGauge(g, mouseX, mouseY, r.x(), r.y(), r.w(), r.h(), tile.gasOutTanks().get(i), Component.translatable("gui.pioneers.machine.out"));
-        }
+        //1.0.6 : jauges de ressources (liquide ou gaz, infobulle de la sorte, fantome de ce qu'attend la recette verrouillee)
+        fr.pioneers.core.recipe.RecipeChoice locked = tile.recipeLock().isSet() ? tile.lockedChoice() : null;
+        boolean pin = tile.machine != null && fr.pioneers.api.machine.resource.ResourceRows.pairedIn(tile.machine);
+        boolean pout = tile.machine != null && fr.pioneers.api.machine.resource.ResourceRows.pairedOut(tile.machine);
+        views.resourceRow(g, mouseX, mouseY, l.fluidIn, l.gasIn, tile.fluidInTanks(), tile.gasInTanks(), pin, false, locked);
+        views.resourceRow(g, mouseX, mouseY, l.fluidOut, l.gasOut, tile.fluidOutTanks(), tile.gasOutTanks(), pout, true, locked);
         long duration = gui.value(UiValues.DURATION);
         double progress = duration <= 0 ? 0 : gui.value(UiValues.PROGRESS) / (double) duration;
         int status = (int) gui.value(UiValues.STATUS);

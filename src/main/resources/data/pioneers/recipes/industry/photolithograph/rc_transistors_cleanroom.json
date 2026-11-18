@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 1,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:etched_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:wires/gold"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:engraving_objectives/glass"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:epoxy_resin",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:transistor",
+   "count": 32
+  }
+ ],
+ "industrial": true
+}

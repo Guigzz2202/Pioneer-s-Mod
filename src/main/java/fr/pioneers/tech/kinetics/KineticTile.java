@@ -498,8 +498,14 @@ public abstract class KineticTile extends PiBlockEntity implements KineticNode {
         if (net != null) {
             lines.add(Component.translatable("kinetics.pioneers.info.network", net.size(), net.sources(), net.machines()).withStyle(ChatFormatting.GRAY));
             lines.add(Component.translatable("kinetics.pioneers.info.power", watts(net.power()), watts(net.capacity())).withStyle(ChatFormatting.GOLD));
-            lines.add(Component.translatable("kinetics.pioneers.info.load", Math.round(net.loadRatio() * 100)).withStyle(
-                  net.loadRatio() > 1 ? ChatFormatting.RED : ChatFormatting.GRAY));
+            //1.0.6 (revision de la mecanique) : charge rapportee au couple nominal des sources ; sans source qui pousse, « aucune source »
+            double ratio = net.loadRatio();
+            lines.add(Double.isNaN(ratio) ? Component.translatable("kinetics.pioneers.info.no_source").withStyle(ChatFormatting.GRAY)
+                  : ratio > 1 ? Component.translatable("kinetics.pioneers.info.load_over", Component.translatable("card.pioneers.percent", Math.round(ratio * 100)))
+                  : Component.translatable("kinetics.pioneers.info.load", Math.round(ratio * 100))
+                  .withStyle(ratio > 1 ? ChatFormatting.RED : ChatFormatting.GRAY));
+            lines.add(Component.translatable("kinetics.pioneers.info.regime", fmt(net.nominalSpeed() * Math.abs(net.effectiveRatio(this))))
+                  .withStyle(ChatFormatting.GRAY));
         }
         if (jammed) {
             lines.add(Component.translatable("kinetics.pioneers.info.jammed").withStyle(ChatFormatting.RED));
@@ -518,7 +524,7 @@ public abstract class KineticTile extends PiBlockEntity implements KineticNode {
         KineticNetwork net = network;
         List<Component> all = new ArrayList<>();
         describe(all);
-        int base = 2 + (net != null ? 3 : 0) + (jammed ? 1 : 0);
+        int base = 2 + (net != null ? 4 : 0) + (jammed ? 1 : 0);
         List<Component> own = all.size() > base ? all.subList(base, all.size()) : List.of();
         if (!sneaking) {
             double vmax = maxSpeed(), v = Math.abs(speed);
@@ -527,10 +533,12 @@ public abstract class KineticTile extends PiBlockEntity implements KineticNode {
             double tmax = maxTorque(), r = torque / tmax;
             lines.add(FarmCard.Line.gauge(FarmCard.label("torque"), (float) r, Component.translatable("card.pioneers.nm", fmt(torque), fmt(tmax)),
                   r > 0.9 ? 0xF05050 : r > 0.7 ? 0xF0B040 : 0x6EDC5A));
-            if (net != null) {
+            if (net != null && Double.isNaN(net.loadRatio())) {
+                lines.add(FarmCard.Line.pair(FarmCard.label("load"), FarmCard.word("no_source"), FarmCard.DIM));
+            } else if (net != null) {
                 double load = net.loadRatio();
-                lines.add(FarmCard.Line.gauge(FarmCard.label("load"), (float) load, Component.translatable("card.pioneers.percent", Math.round(load * 100)),
-                      load > 1 ? 0xF05050 : load > 0.85 ? 0xF0B040 : 0x6EDC5A));
+                lines.add(FarmCard.Line.gauge(FarmCard.label("load"), (float) load, load > 1 ? Component.translatable("card.pioneers.load_over",
+                      Component.translatable("card.pioneers.percent", Math.round(load * 100))) : Component.translatable("card.pioneers.percent", Math.round(load * 100)), load > 1 ? 0xF05050 : load > 0.85 ? 0xF0B040 : 0x6EDC5A));
             } else {
                 lines.add(FarmCard.Line.pair(FarmCard.label("network"), FarmCard.word("none"), FarmCard.DIM));
             }

@@ -3,19 +3,13 @@
  "machine": "crusher",
  "family": "ball_mill",
  "tier": 0,
- "time": 140,
+ "time": 160,
  "items": [
   {
    "ingredient": {
     "tag": "forge:crushed_ores/zinc"
    },
    "count": 1
-  }
- ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 100
   }
  ],
  "results": [

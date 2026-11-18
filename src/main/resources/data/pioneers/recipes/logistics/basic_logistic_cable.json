@@ -2,25 +2,19 @@
  "type": "minecraft:crafting_shaped",
  "category": "building",
  "pattern": [
-  "TTT",
-  "WBG",
-  "TRT"
+  "AAA",
+  "BCB",
+  "AAA"
  ],
  "key": {
-  "T": {
+  "A": {
    "tag": "forge:pipes/steel"
   },
-  "W": {
-   "tag": "forge:wires/copper"
-  },
   "B": {
-   "item": "pioneers:fire_brick"
+   "tag": "forge:wires/brass"
   },
-  "G": {
-   "tag": "forge:glass_panes"
-  },
-  "R": {
-   "item": "pioneers:natural_rubber"
+  "C": {
+   "item": "pioneers:bronze_logistic_cable"
   }
  },
  "result": {

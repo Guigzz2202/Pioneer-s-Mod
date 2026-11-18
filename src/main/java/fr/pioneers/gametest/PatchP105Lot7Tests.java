@@ -134,7 +134,10 @@ public final class PatchP105Lot7Tests {
         dog.tame(p);
         PetHomeBlock.link(dog, s.level, kennel, p);
         h.startSequence()
-              .thenWaitUntil(() -> Gt.check(w.getTarget() == sheep, "la nuit, le loup chasse le mouton"))
+              //1.0.6 : le mouton vanilla devient l'entite de sa race au tick suivant (1.0.3-beta lot 8, BreedConversion), meme UUID
+              .thenWaitUntil(() -> Gt.check(w.getTarget() != null && w.getTarget().getUUID().equals(sheep.getUUID()),
+                    "la nuit, le loup chasse le mouton (cible " + w.getTarget() + ", nuit " + s.level.isNight() + ", loup vivant " + w.isAlive() + " "
+                    + w.getHealth() + " peur " + w.fear() + ", distance " + w.distanceTo(sheep) + ", chien vise " + dog.getTarget() + ")"))
               .thenWaitUntil(() -> Gt.check(dog.getTarget() == w, "le chien autonome defend le betail contre le loup"))
               .thenExecute(s::done);
     }
@@ -190,7 +193,9 @@ public final class PatchP105Lot7Tests {
         Gt.check(r2.steal(crate).isEmpty() && r3.steal(furnace).isEmpty(), "rien dans la caisse d'entrepot ni dans le four");
         Gt.equal(3, ((Container) s.level.getBlockEntity(furnace)).getItem(0).getCount(), "le four est intact");
         r1.kill();
-        Gt.check(!s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(4), e -> e.getItem().is(Items.BREAD)).isEmpty(),
+        //le pain vanilla qui tombe au sol devient le pain du mod (fr.pioneers.core.vanilla.VanillaEvents.onJoin, vanilla_replacements.json)
+        net.minecraft.world.item.Item bread = fr.pioneers.core.vanilla.VanillaReplacements.convert(new ItemStack(Items.BREAD)).getItem();
+        Gt.check(!s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(4), e -> e.getItem().is(bread)).isEmpty(),
               "tue, il lache son butin (vivant " + r1.isAlive() + ", butin " + r1.loot() + ", en " + r1.blockPosition() + ", objets au sol "
               + s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(8)).stream().map(e -> e.getItem().toString()).toList() + ")");
         s.done();
@@ -297,18 +302,22 @@ public final class PatchP105Lot7Tests {
 
     // ------------------------------------------------------------------ 9. le serpent mord : poison leger
 
-    @GameTest(template = Gt.BORDER, batch = "pioneers_p105_7_snake", timeoutTicks = 40)
+    @GameTest(template = Gt.BORDER, batch = "pioneers_p105_7_snake", timeoutTicks = 120)
     public static void p105_7_serpent_mord_poison_leger(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         grass(h);
         s.notPeaceful();
-        Snake sn = add(s, PiWild7.SNAKE.get(), new BlockPos(8, 1, 8));
-        ServerPlayer p = s.player("snake", "Hector", new BlockPos(8, 1, 9));
+        //1.0.6 : joueur debout sur le sol du gabarit (y = 2) ; un joueur qui arrive est invulnerable 60 ticks (ServerPlayer.spawnInvulnerableTime) :
+        //la morsure etait toujours refusee. Le serpent est pose une fois cette protection passee.
+        ServerPlayer p = s.player("snake", "Hector", new BlockPos(8, 2, 9));
         Gt.check(Wild7Rules.snakeBites(1.5, false) && !Wild7Rules.snakeBites(3, false) && Wild7Rules.snakeBites(5, true), "regle : moins de 2 blocs ou blesse");
-        Gt.check(sn.provoke() == p, "le joueur trop pres est vise");
-        Gt.check(sn.doHurtTarget(p), "morsure");
-        Gt.check(p.hasEffect(MobEffects.POISON) && p.getEffect(MobEffects.POISON).getAmplifier() == 0, "poison leger (niveau I)");
-        Gt.check(sn.getTarget() == null, "apres la morsure, il se calme");
-        s.done();
+        h.runAfterDelay(61, () -> {
+            Snake sn = add(s, PiWild7.SNAKE.get(), new BlockPos(8, 1, 8));
+            Gt.check(sn.provoke() == p, "le joueur trop pres est vise");
+            Gt.check(sn.doHurtTarget(p), "morsure (vie " + p.getHealth() + ", mode " + p.gameMode.getGameModeForPlayer() + ")");
+            Gt.check(p.hasEffect(MobEffects.POISON) && p.getEffect(MobEffects.POISON).getAmplifier() == 0, "poison leger (niveau I)");
+            Gt.check(sn.getTarget() == null, "apres la morsure, il se calme");
+            s.done();
+        });
     }
 }

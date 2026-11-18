@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "extractor",
  "tier": 1,
- "time": 240,
+ "time": 160,
  "family": "solvent_extractor",
  "fluids": [
   {

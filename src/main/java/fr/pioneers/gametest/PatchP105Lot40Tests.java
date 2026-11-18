@@ -70,7 +70,7 @@ public final class PatchP105Lot40Tests {
           Map.entry("machine_frame_basic", new String[]{"steel_screw", "steel_bolt"}),
           Map.entry("machine_hull_basic", new String[]{"machine_frame_basic"}),
           Map.entry("industrial_casing_basic", new String[]{"steel_sheet"}),
-          Map.entry("basic_logistic_cable", new String[]{"natural_rubber"}),
+          Map.entry("basic_logistic_cable", new String[]{"bronze_logistic_cable"}),   //1.0.6 : recette de Guillaume du 17/11
           Map.entry("bearing", new String[]{"steel_balls"}),
           Map.entry("power_supply_unit", new String[]{"copper_coil"}),
           Map.entry("centrifugal_pump", new String[]{"electric_motor", "pump_housing"}),
@@ -103,6 +103,18 @@ public final class PatchP105Lot40Tests {
 
     static String id(ItemStack st) {
         return String.valueOf(ForgeRegistries.ITEMS.getKey(st.getItem()));
+    }
+
+    /** Objets {@code item} tombes au sol pres de {@code pos} (lot rendu sans place). */
+    static int dropped(net.minecraft.server.level.ServerLevel level, BlockPos pos, Item item) {
+        int n = 0;
+        for (net.minecraft.world.entity.item.ItemEntity e : level.getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,
+              new net.minecraft.world.phys.AABB(pos).inflate(3))) {
+            if (e.getItem().is(item)) {
+                n += e.getItem().getCount();
+            }
+        }
+        return n;
     }
 
     static int count(List<ItemSlot> slots, Item item) {
@@ -238,9 +250,11 @@ public final class PatchP105Lot40Tests {
                 Gt.check(FLAT.matcher(out).find() || FLAT_EXCEPTIONS.contains(out), "presse a vapeur : " + r.getId() + " -> " + out);
             }
         }
-        //une recette partie de la presse garde son identifiant chez sa machine (tiges a la matrice : extrudeuse)
+        //une recette partie de la presse est suivie chez sa machine (tiges : extrudeuse) ; 1.0.6 (17/11/2026) : la voie de l'extrudeuse a
+        //forme vaut pour tous les metaux, la recette partie de la presse en est le doublon (desactivee, verrou suivi)
         ResourceLocation rod = rl("industry/press/press_rod_nickel");
-        Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.EXTRUDER, rod) != null, "tige de nickel a la matrice : a l'extrudeuse");
+        Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.EXTRUDER, fr.pioneers.core.common.PiRemaps.recipeId(rod)) != null,
+              "tige de nickel : a l'extrudeuse");
         Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.PRESS, rod) == null, "tige de nickel a la matrice : plus a la presse");
         s.done();
     }
@@ -255,11 +269,14 @@ public final class PatchP105Lot40Tests {
         //monde existant : lot de 2 operations de tiges a la matrice (entrees deja prises) : rendues dans les sorties
         Gt.check(fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("industry/press/press_rod_nickel"), 2), "lot de tiges rendu");
         Gt.equal(2, count(ctrl.itemOutputs(), item("nickel_ingot")), "2 operations : 2 lingots de nickel rendus");
-        Gt.equal(2, count(ctrl.itemOutputs(), item("rod_die")), "2 operations : 2 matrices a tige rendues");
+        //1.0.6 : matrices non empilables et cases de sortie au plus juste : la matrice qui n'a pas de case tombe devant le controleur
+        Gt.equal(2, count(ctrl.itemOutputs(), item("rod_die")) + dropped(s.level, ctrl.getBlockPos(), item("rod_die")),
+              "2 operations : 2 matrices a tige rendues (cases ou sol)");
         Gt.check(!fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("industry/press/press_plate_nickel"), 1), "plaque a la presse : rien a rendre");
         Gt.check(fr.pioneers.tech.industry.multi.BatchRefund.of(ctrl, rl("automation/potter/bronze_bench_unfired_fire_brick"), 3),
               "copie retiree de la brique crue : lot rendu");
-        Gt.equal(6, count(ctrl.itemOutputs(), item("fire_clay")), "3 operations : 6 argiles refractaires rendues");
+        Gt.equal(6, count(ctrl.itemOutputs(), item("fire_clay")) + dropped(s.level, ctrl.getBlockPos(), item("fire_clay")),
+              "3 operations : 6 argiles refractaires rendues (cases ou sol)");
         s.done();
     }
 
@@ -277,7 +294,8 @@ public final class PatchP105Lot40Tests {
         var c = s.level.getRecipeManager().byKey(rl("bronze/steam/compressor/unfired_fire_brick"));
         Gt.check(c.isPresent() && c.get() instanceof SteamRecipe, "compacteur a vapeur : brique refractaire crue");
         SteamRecipe rc = (SteamRecipe) c.get();
-        Gt.check(rc.machine() == SteamMachine.COMPRESSOR && rc.inputs().get(0).count() == 3 && rc.result().getCount() == 4, "3 argiles refractaires -> 4");
+        Gt.check(rc.machine() == SteamMachine.COMPRESSOR && rc.inputs().get(0).count() == 2 && rc.result().getCount() == 1,
+              "2 argiles refractaires -> 1 (1.0.6, Guillaume 17/11)");
         //la main reste : 2 argiles refractaires -> 1 brique crue au potier
         Gt.check(s.level.getRecipeManager().byKey(rl("bronze/bench/unfired_fire_brick")).isPresent(), "potier : brique crue a la main gardee");
         s.done();

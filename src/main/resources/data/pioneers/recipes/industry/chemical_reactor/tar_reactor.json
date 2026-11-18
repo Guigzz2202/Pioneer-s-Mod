@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 0,
- "time": 200,
+ "time": 160,
  "fluids": [
   {
    "fluid": "pioneers:coal_tar",

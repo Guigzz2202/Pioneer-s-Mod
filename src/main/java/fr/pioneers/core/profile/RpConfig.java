@@ -29,7 +29,13 @@ public final class RpConfig {
     // ------------------------------------------------------------------ clans (bloc 4)
     public static ForgeConfigSpec.BooleanValue CLANS, WAR;
     public static ForgeConfigSpec.IntValue MAX_CLANS, MAX_MEMBERS, CLAIM_BASE, CLAIM_PER_MEMBER, CLAIM_PER_LEVEL, CLAIM_MAX, CLAIM_SOLO_MAX,
-          CHUNKLOAD_GLOBAL_MAX, MAX_PLAYER_PEOPLES;
+          MAX_PLAYER_PEOPLES;
+    /**
+     * 1.0.6 (Guillaume, 17/11/2026, 21 h 12 : « retire tous les plafonds, au pire on change dans les configs ») : plafonds des claims et du
+     * chunkloading SANS LIMITE par defaut (0 = sans plafond), sous de nouvelles cles (les anciennes valeurs des fichiers de config ne
+     * s'appliquent plus) : part gratuite du budget, claims achetes, emplacements de chunkloading achetes, chunks charges du serveur.
+     */
+    public static ForgeConfigSpec.IntValue CHUNKLOAD_BUY_MAX, CHUNKLOAD_BUY_SOLO_MAX, CHUNKLOAD_SERVER_MAX;
     public static ForgeConfigSpec.ConfigValue<List<? extends String>> CHUNKLOAD_DIMENSIONS;
     /**
      * 1.0.3-beta (lot 16) : achat de claims au tresor du clan (plafonds d'achat). 1.0.5-beta (lot 13, Guillaume : « prix fixe 100 Shining ») :
@@ -99,17 +105,23 @@ public final class RpConfig {
         CLAIM_BASE = b.comment("Budget de claims : B = base + parMembre * actifs + parNiveau * niveau.").defineInRange("claimBase", 9, 0, 10_000);
         CLAIM_PER_MEMBER = b.defineInRange("claimPerMember", 3, 0, 10_000);
         CLAIM_PER_LEVEL = b.defineInRange("claimPerLevel", 4, 0, 10_000);
-        CLAIM_MAX = b.defineInRange("claimMax", 400, 1, 100_000);
-        CLAIM_SOLO_MAX = b.comment("Plafond du Solitaire (clan solo).").defineInRange("claimSoloMax", 100, 1, 100_000);
-        CLAIM_PRICE = b.comment("Achat de claims au tresor du clan : prix fixe d'un claim achete (Shining). Les plafonds claimMax / claimSoloMax"
-              + " ne bornent que la part gratuite du budget.").defineInRange("claimPrice", 100L, 0L, 1_000_000_000L);
-        CLAIM_BUY_MAX = b.comment("Claims achetes au plus par un clan (0 : achat ferme).").defineInRange("claimBuyMax", 200, 0, 100_000);
-        CLAIM_BUY_SOLO_MAX = b.comment("Claims achetes au plus par un Solitaire (clan solo).").defineInRange("claimBuySoloMax", 50, 0, 100_000);
-        CHUNKLOAD_GLOBAL_MAX = b.comment("Chunks charges au plus pour tous les clans.").defineInRange("chunkloadGlobalMax", 200, 0, 100_000);
+        CLAIM_MAX = b.comment("Plafond de la part gratuite du budget de claims (0 : sans plafond).").defineInRange("claimFreeLimit", 0, 0, 1_000_000);
+        CLAIM_SOLO_MAX = b.comment("Plafond de la part gratuite du Solitaire (clan solo ; 0 : sans plafond).").defineInRange("claimFreeSoloLimit", 0, 0,
+              1_000_000);
+        CLAIM_PRICE = b.comment("Achat de claims au tresor du clan : prix fixe d'un claim achete (Shining).").defineInRange("claimPrice", 100L, 0L,
+              1_000_000_000L);
+        CLAIM_BUY_MAX = b.comment("Claims achetes au plus par un clan (0 : sans plafond).").defineInRange("claimBuyLimit", 0, 0, 1_000_000);
+        CLAIM_BUY_SOLO_MAX = b.comment("Claims achetes au plus par un Solitaire (0 : sans plafond).").defineInRange("claimBuySoloLimit", 0, 0, 1_000_000);
+        CHUNKLOAD_BUY_MAX = b.comment("Emplacements de chunkloading achetes au plus par un clan (0 : sans plafond).").defineInRange("chunkloadBuyLimit", 0,
+              0, 1_000_000);
+        CHUNKLOAD_BUY_SOLO_MAX = b.comment("Emplacements de chunkloading achetes au plus par un Solitaire (0 : sans plafond).")
+              .defineInRange("chunkloadBuySoloLimit", 0, 0, 1_000_000);
+        CHUNKLOAD_SERVER_MAX = b.comment("Chunks charges au plus pour tous les clans du serveur (0 : sans plafond ; au-dela : file d'attente).")
+              .defineInRange("chunkloadServerLimit", 0, 0, 1_000_000);
         CHUNKLOAD_DIMENSIONS = b.comment("Dimensions ou le chunkloading de clan est permis.")
               .defineListAllowEmpty(List.of("chunkloadDimensions"), () -> List.of("minecraft:overworld"), o -> o instanceof String);
-        CHUNKLOAD_PRICE_BASE = b.comment("Prix du n-ieme emplacement de chunkloading d'un clan, paye a la pose par le tresor :",
-              "min(chunkloadPriceMax, arrondi(chunkloadPriceBase + chunkloadPriceCoef * ln n)) Shining (1er : 50, 2e : 125, 4e : 200, 8e : 275).")
+        CHUNKLOAD_PRICE_BASE = b.comment("Prix du n-ieme emplacement de chunkloading achete par un clan (tresor) :",
+              "min(chunkloadPriceMax, arrondi(chunkloadPriceBase + chunkloadPriceCoef * ln n)) Shining (1er : 50, 2e : 125, 4e : 200, 8e : 275), paye a l'achat.")
               .defineInRange("chunkloadPriceBase", 50L, 0L, 1_000_000_000L);
         CHUNKLOAD_PRICE_COEF = b.comment("Coefficient du logarithme neperien du prix des emplacements.").defineInRange("chunkloadPriceCoef", 108.0, 0.0, 1_000_000.0);
         CHUNKLOAD_PRICE_MAX = b.comment("Prix maximal d'un emplacement de chunkloading.").defineInRange("chunkloadPriceMax", 500L, 0L, 1_000_000_000L);

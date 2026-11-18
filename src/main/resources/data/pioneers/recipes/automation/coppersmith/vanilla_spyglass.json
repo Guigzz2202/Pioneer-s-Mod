@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "assembler",
+ "machine": "sheet_metal_shop",
  "tier": 0,
- "time": 70,
+ "time": 160,
  "items": [
   {
    "ingredient": {

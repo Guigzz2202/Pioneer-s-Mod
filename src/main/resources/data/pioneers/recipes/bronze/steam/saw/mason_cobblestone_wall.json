@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:cobblestone"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:cobblestone_wall",
-  "count": 6
+  "count": 1
  },
- "time": 40
+ "time": 160
 }

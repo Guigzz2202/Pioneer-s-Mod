@@ -90,7 +90,7 @@ public final class PatchP105Lot44Tests {
     public static void p105_44_presse_matrice_case_outil(GameTestHelper h) {
         Gt.begin(h);
         AtelierTile p = atelier(h, IndustryMachine.PRESS, new BlockPos(2, 2, 2));
-        Gt.check(p.setLockedRecipe(rl("industry/press/press_plate_iron")), "plaque de fer a la presse absente");
+        Gt.check(p.setLockedRecipe(rl("bronze/steam/press/plate_iron")), "plaque de fer a la presse absente");
         Item ingot = Items.IRON_INGOT, die = item("plate_die"), plate = item("iron_plate");
         //Une entree d'entonnoir : tout le gestionnaire d'objets vu de l'exterieur (cases d'entree, sorties, batterie, case Outil)
         ItemSlots hopper = new ItemSlots(p.guiSlots(), Automation.EXTERNAL);

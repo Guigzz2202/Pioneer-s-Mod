@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "machining_center",
+ "machine": "power_hammer",
  "tier": 1,
- "time": 240,
+ "time": 160,
  "items": [
   {
    "ingredient": {

@@ -30,6 +30,12 @@
     "tag": "forge:rods/brass"
    },
    "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/redsteel"
+   },
+   "count": 1
   }
  ],
  "result": {

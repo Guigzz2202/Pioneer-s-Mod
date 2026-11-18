@@ -12,12 +12,6 @@
    "count": 1
   }
  ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 50
-  }
- ],
  "results": [
   {
    "item": "pioneers:steel_balls",

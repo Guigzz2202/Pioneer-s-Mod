@@ -1,20 +1,20 @@
 {
  "type": "pioneers:industrial",
- "machine": "extruder",
+ "machine": "chemical_reactor",
  "tier": 0,
- "time": 80,
+ "time": 160,
  "items": [
   {
    "ingredient": {
     "tag": "forge:glass"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:glass_fiber",
-   "count": 2
+   "count": 1
   }
  ]
 }

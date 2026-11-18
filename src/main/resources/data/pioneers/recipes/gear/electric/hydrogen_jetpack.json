@@ -3,7 +3,7 @@
  "machine": "assembler",
  "family": "component_assembler",
  "tier": 0,
- "time": 320,
+ "time": 160,
  "items": [
   {
    "ingredient": {

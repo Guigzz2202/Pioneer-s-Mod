@@ -134,7 +134,8 @@ public final class PatchP105Lot42Tests {
     public static void p105_42_presse_deplacee_entrees_d_avant(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         String path = "industry/press/press_slab_aluminium";
-        Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.SAWMILL, rl(path)) != null, "dalle d'aluminium a la scie industrielle");
+        //1.0.6 (une machine par transformation de forme) : bloc -> dalles au compresseur
+        Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.COMPRESSOR, rl(path)) != null, "dalle d'aluminium au compresseur");
         Gt.check(IndustryRecipes.byId(s.level, IndustryMachine.PRESS, rl(path)) == null, "dalle d'aluminium plus a la presse");
         ControllerTile ctrl = controller(h, IndustryMachine.PRESS);
         savedBatch(ctrl, path, 2);

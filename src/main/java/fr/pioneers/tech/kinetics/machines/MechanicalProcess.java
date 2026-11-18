@@ -249,8 +249,11 @@ public class MechanicalProcess extends ProcessUnit {
             case DRILL -> drill(level, omega, rate);
             default -> process(level, omega, rate);
         }
-        //Charge declaree au reseau : couple de travail engage, 5 % a vide
-        power.declareLoad(engaged ? type.torque : type.torque * 0.05);
+        //Charge declaree au reseau : couple de travail engage, 5 % a vide ; 1.0.6 (revision de la mecanique, Guillaume : « des fois je dois
+        //ralentir le systeme pour qu'il aille plus vite ») : au-dela de sa cadence plafond (1,5 x la nominale), la machine ne va pas plus vite et
+        //ne prend plus de puissance (couple reduit d'autant) : une machine trop rapide ne vole plus la force des autres
+        double cap = Math.abs(omega) > type.nominalSpeed * 1.5 ? type.nominalSpeed * 1.5 / Math.abs(omega) : 1;
+        power.declareLoad((engaged ? type.torque : type.torque * 0.05) * cap);
         if (status != sentStatus) {
             sentStatus = status;
             machine.syncNow();

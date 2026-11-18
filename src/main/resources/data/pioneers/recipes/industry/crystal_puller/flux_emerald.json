@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "crystallizer",
  "tier": 2,
- "time": 800,
+ "time": 400,
  "family": "crystal_puller",
  "items": [
   {

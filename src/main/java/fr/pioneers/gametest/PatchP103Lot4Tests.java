@@ -86,18 +86,35 @@ public final class PatchP103Lot4Tests {
         Gt.check(gear instanceof BenchRecipe b && b.tools().size() == 2 && b.ingredients().size() == 2, "etabli : ebauche + 3 plaques, marteau et lime");
         Gt.check(server.getRecipeManager().byKey(rl("components_bench/aluminium_plate_from_ingots")).isEmpty(),
               "l'aluminium ne se travaille plus a l'etabli");
-        IndustrialRecipe wire = industrial(server, "industry/wiremill/wire_ingot_copper");
-        //1.0.5-beta (lot 43, regle permanente du cout matiere) : 1 lingot = 144 mB = 2 fils de 72 mB, jamais plus
-        Gt.equal(2, wire.results().get(0).stack().getCount(), "trefileuse : 1 lingot de cuivre -> 2 fils");
+        //1.0.5-beta (lot 43, regle permanente du cout matiere) : 1 lingot = 144 mB = 2 fils de 72 mB, jamais plus ; 1.0.6 : la copie MKI est
+        //desactivee (doublon), la trefileuse MKI fait la recette a vapeur
+        Gt.check(server.getRecipeManager().byKey(rl("bronze/steam/wiremill/wire_copper")).orElse(null) instanceof fr.pioneers.tech.bronze.machines.SteamRecipe w
+              && w.result().getCount() == 2, "trefileuse : 1 lingot de cuivre -> 2 fils");
         IndustrialRecipe rodWire = industrial(server, "industry/wiremill/wire_copper");
         Gt.equal(1, rodWire.tier(), "trefileuse : tige -> 2 fils au MKII");
-        IndustrialRecipe ring = industrial(server, "industry/extruder/extrude_ring_steel");
-        Gt.equal(1, ring.tier(), "extrudeuse : forme anneau au MKII");
-        Gt.check(ring.items().stream().anyMatch(c -> c.ingredient().test(new ItemStack(item("extrusion_shape_ring")))), "forme anneau en entree");
-        Gt.equal(2, industrial(server, "industry/extruder/extrude_gear_iron").tier(), "extrudeuse : engrenage au MKIII");
+        //1.0.6 (une machine par transformation de forme) : la forme de l'anneau est retiree (Cintreuse) ; un objet deja fabrique devient la
+        //filiere d'extrusion vierge. Demande de Guillaume du 17/11/2026 : l'extrudeuse garde une voie generique, un peu moins rentable, pour
+        //la plaque (1 lingot), le fil (1 lingot -> 2) et l'ebauche d'engrenage (5 lingots)
+        Gt.check(server.getRecipeManager().byKey(rl("industry/extruder/extrude_ring_steel")).isEmpty(), "plus d'anneau extrude");
+        IndustrialRecipe extrGear = industrial(server, "industry/extruder/extrude_gear_blank_iron");
+        Gt.equal(5, extrGear.items().get(0).count(), "ebauche d'engrenage extrudee : 5 lingots");
+        Gt.check(server.getRecipeManager().byKey(rl("industry/power_hammer/forge_billet_gear_blank_iron")).isEmpty(), "plus de billette -> 2 ebauches");
+        Gt.equal(1, industrial(server, "industry/gear_hobber/hob_gear_iron").results().size(), "decoupeuse : l'engrenage sans pepites");
+        Gt.equal(2, industrial(server, "industry/extruder/extrude_wire_copper").results().get(0).stack().getCount(), "fil extrude : 1 lingot -> 2");
+        Gt.equal(1, industrial(server, "industry/extruder/extrude_plate_iron").results().get(0).stack().getCount(), "plaque extrudee : 1 lingot -> 1");
+        Gt.check(!ForgeRegistries.ITEMS.containsKey(rl("extrusion_shape_ring")), "forme anneau retiree du registre");
+        Gt.equal("extrusion_shape_rod", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_shape_ring"), "forme anneau -> forme tige");
+        //17/11/2026 (Guillaume) : filiere vierge supprimee (-> forme tige), forme engrenage -> forme ebauche d'engrenage
+        Gt.check(!ForgeRegistries.ITEMS.containsKey(rl("extrusion_die")), "filiere vierge retiree du registre");
+        Gt.equal("extrusion_shape_rod", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_die"), "filiere vierge -> forme tige");
+        Gt.equal("extrusion_shape_gear_blank", fr.pioneers.core.common.PiRemaps.simplifiedItem("extrusion_shape_gear"), "forme engrenage -> forme ebauche");
         IndustrialRecipe press = industrial(server, "industry/press/press_sheet_steel");
-        Gt.equal(1, press.results().get(0).stack().getCount(), "presse electrique : 1 plaque -> 1 tole");
-        Gt.check(server.getRecipeManager().byKey(rl("industry/casting_machine/cast_plate_iron")).isEmpty(), "plus de plaque de fer coulee en machine");
+        //1.0.6 (reponse de Guillaume du 16/11/2026) : 2 toles par plaque, comme la calandre (tableau du lot 4 : 1 avant)
+        Gt.equal(2, press.results().get(0).stack().getCount(), "presse electrique : 1 plaque -> 2 toles");
+        //1.0.6 (Guillaume, 17/11/2026 : « homogeneise [la coulee] a tous les metaux et leurs composants ») : la plaque de fer se coule de
+        //nouveau (voie « casting » du tableau, parts_p103.ROUTES), matrice rendue
+        Gt.check(industrial(server, "industry/casting_machine/cast_plate_iron").results().get(0).stack().is(item("iron_plate")),
+              "plaque de fer coulee en machine (voie de coulee du tableau)");
         Recipe<?> slab = server.getRecipeManager().byKey(rl("compressing/slab_iron")).orElse(null);
         Gt.check(slab instanceof ProcessingRecipe p && p.getResult().is(item("iron_slab")), "compacteur : bloc de fer -> brame");
         Recipe<?> billet = server.getRecipeManager().byKey(rl("compressing/billet_iron")).orElse(null);

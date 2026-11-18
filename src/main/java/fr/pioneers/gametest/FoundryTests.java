@@ -203,6 +203,8 @@ public final class FoundryTests {
         Block[][] lines = {{basic, basic, basic}, {bronze, basic, bronze}, {bronze, bronze, bronze}};
         for (int z = 0; z < lines.length; z++) {
             h.setBlock(new BlockPos(0, 2, 1 + 2 * z), PiTransport.buffer(BufferType.FLUID, CableTier.BASIC).getBlock());
+            //un buffer neuf a ses faces fermees : sans face ouverte, le cable ne s'y branche pas (pas de fiche, pas de reseau)
+            Gt.openFaces(h, h.absolutePos(new BlockPos(0, 2, 1 + 2 * z)));
             for (int x = 0; x < 3; x++) {
                 h.setBlock(new BlockPos(1 + x, 2, 1 + 2 * z), lines[z][x]);
             }

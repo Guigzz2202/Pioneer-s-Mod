@@ -130,7 +130,8 @@ public class PiJeiPlugin implements IModPlugin {
         for (IndustryMachine m : IndustryMachine.values()) {
             switch (m.source) {
                 //MAJ Recettes (lot 1) : le four electrique a sa categorie (cuissons filtrees par IndustryRecipes : nourriture et age du bronze)
-                case INDUSTRIAL, CRUSHING, COMPRESSING, SMELTING -> INDUSTRY.put(m, JeiOrder.create("industry_" + m.key,
+                //1.0.6 : la Taillerie de pierre (recettes du tailleur de pierre converties) a sa page
+                case INDUSTRIAL, CRUSHING, COMPRESSING, SMELTING, STONECUTTING -> INDUSTRY.put(m, JeiOrder.create("industry_" + m.key,
                       IndustrialRecipe.class));
                 default -> {
                 }
@@ -232,7 +233,8 @@ public class PiJeiPlugin implements IModPlugin {
                 registration.addRecipeCategories(new MechanicalCategory(helper, recipeType, type));
             }
         });
-        registration.addRecipeCategories(new GrindingCategory(helper));
+        //1.0.6 (demande de Guillaume du 16/11/2026 : « JEI ne groupe toujours pas les machines a vapeur et les machines MK ») : plus de page
+        //« Broyage » a part : la famille du broyage est la page du broyeur, comme toutes les familles de tiers (familyPage)
         registration.addRecipeCategories(new ProcessCategory(helper));  //1.0.3-beta (lot 10) : une page « Procede » par materiau complexe
         registration.addRecipeCategories(new PartsCategory(helper));   //1.0.3-beta (lot 4) : une page par piece metallique, toutes ses voies
         MeltingCategories.categories(registration, helper);
@@ -300,14 +302,16 @@ public class PiJeiPlugin implements IModPlugin {
         all.addAll(STEAM.values());
         all.addAll(BENCH.values());
         all.addAll(List.of(ASTEROID_ANALYSIS, GEOLOGY_ANALYSIS, BIOLOGY_ANALYSIS, BIOME_ANALYSIS, REACTORS, FUELS, BoilerJei.TYPE, KILN, CASTING, BLAST, DEPOSIT,
-              FLUID_DEPOSIT, mezz.jei.api.constants.RecipeTypes.SMELTING, mezz.jei.api.constants.RecipeTypes.FUELING));
+              FLUID_DEPOSIT, mezz.jei.api.constants.RecipeTypes.SMELTING, mezz.jei.api.constants.RecipeTypes.FUELING,
+              mezz.jei.api.constants.RecipeTypes.STONECUTTING));   //1.0.6 : la Taillerie de pierre, catalyseur du tailleur de pierre
         //1.0.5-beta (lot 13, journal de Guillaume : « type de recette inconnu pioneers:forge_hearth ») : pages de la forge primaire citees par
         //les fiches (foyer de forge) ; le catalyseur du foyer vient donc de sa fiche (plus de ligne a la main dans ForgeCategories)
         all.addAll(List.of(ForgeCategories.HEARTH, ForgeCategories.ANVIL, ForgeCategories.QUENCH));
         for (RecipeType<?> t : all) {
-            out.put(JeiOrder.uid(t), merged(t) ? GrindingCategory.TYPE : t);
+            RecipeType<?> page = familyPage(t);
+            out.put(JeiOrder.uid(t), page != null ? page : t);
         }
-        out.put(JeiOrder.uid(GrindingCategory.TYPE), GrindingCategory.TYPE);
+        out.put(JeiOrder.uid(GrindingCategory.TYPE), INDUSTRY.get(IndustryMachine.CRUSHER));   //1.0.6 : alias de l'ancienne page « Broyage »
         //1.0.3-beta (lot 6) : anciennes pages de fonte par poste -> « Fusion des metaux » ; « Coulee en moule » -> « Coulee »
         MeltingCategories.MERGED.forEach(uid -> out.put(uid, MeltingCategories.MELTING));
         out.put(JeiOrder.uid(MeltingCategories.MELTING), MeltingCategories.MELTING);
@@ -315,9 +319,41 @@ public class PiJeiPlugin implements IModPlugin {
         return out;
     }
 
-    /** 1.0.3-beta (lot 3) : categorie reunie dans « Broyage » (son identifiant reste un alias pour les fiches de l'API Machine). */
+    /** Categorie reunie dans la page de sa famille ({@link #familyPage}) : pas de page a elle (son identifiant reste un alias pour les fiches). */
     static boolean merged(RecipeType<?> type) {
-        return GrindingCategory.MERGED.contains(JeiOrder.uid(type));
+        return familyPage(type) != null;
+    }
+
+    /**
+     * 1.0.6 (demande de Guillaume du 16/11/2026 : « JEI ne groupe toujours pas les machines a vapeur et les machines MK, cf. laminoir ») : UNE
+     * page par famille de tiers (T:gc/api/tier_families.py) : la page de sa machine MKI ; les pages basses (machine mecanique : meule,
+     * concasseur, tamis, scie, tour ; machine a vapeur) y sont reunies, leurs recettes montrees converties (filigrane mecanique ou vapeur,
+     * energie et duree au MKI) et leurs machines en catalyseurs. Null : page a part.
+     */
+    @org.jetbrains.annotations.Nullable
+    static RecipeType<?> familyPage(RecipeType<?> type) {
+        for (Map.Entry<SteamMachine, RecipeType<SteamRecipe>> e : STEAM.entrySet()) {
+            if (e.getValue() == type) {
+                return industryOf(fr.pioneers.api.machine.tier.GeneratedTierFamilies.STEAM_FAMILY.get("steam:" + e.getKey().key()));
+            }
+        }
+        for (Map.Entry<MachineType, RecipeType<MechanicalRecipe>> e : MECHANICAL.entrySet()) {
+            if (e.getValue() == type) {
+                for (fr.pioneers.api.machine.tier.GeneratedTierFamilies.Family f : fr.pioneers.api.machine.tier.GeneratedTierFamilies.FAMILIES) {
+                    if (f.engine() && f.low().contains("mechanical:" + e.getKey().recipe.id())) {
+                        return industryOf(f.key());
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    @org.jetbrains.annotations.Nullable
+    private static RecipeType<?> industryOf(@org.jetbrains.annotations.Nullable String family) {
+        fr.pioneers.api.machine.tier.GeneratedTierFamilies.Family f = fr.pioneers.api.machine.tier.TierRecipes.family(family);
+        IndustryMachine m = f == null || f.industry() == null ? null : IndustryMachine.byKey(f.industry());
+        return m == null ? null : INDUSTRY.get(m);
     }
 
 
@@ -372,7 +408,6 @@ public class PiJeiPlugin implements IModPlugin {
                 registration.addRecipes(recipeType, manager.getAllRecipesFor(PiRecipes.MECHANICAL.get(type.recipe).get()));
             }
         });
-        registration.addRecipes(GrindingCategory.TYPE, GrindingCategory.recipes(level));
         registration.addRecipes(PartsCategory.TYPE, PartsCategory.recipes(level));
         //1.0.3-beta (correctif) : une page « Procede » illisible ne doit plus couper toutes les recettes enregistrees apres elle
         try {
@@ -396,6 +431,12 @@ public class PiJeiPlugin implements IModPlugin {
                 //1.0.3-beta (lot 6) : les fontes du creuset electrique (une entree -> un metal fondu) sont dans « Fusion des metaux »
                 //1.0.5-beta (lot 38) : sans les recettes basses converties (elles sont sur les pages de leur famille basse, la machine en catalyseur)
                 List<IndustrialRecipe> shown = m == IndustryMachine.SOLID_COMBUSTION_GENERATOR ? solidFuels(level) : IndustryRecipes.withoutLow(IndustryRecipes.of(level, m));
+                //1.0.6 : page de la famille de tiers : aussi les recettes basses converties (mecaniques, a vapeur), sauf les cuissons vanilla (elles
+                //ont la page du four, la machine en catalyseur)
+                if (IndustryRecipes.tierFamily(m) != null) {
+                    shown = IndustryRecipes.of(level, m).stream().filter(r -> !r.converted()
+                          || !(manager.byKey(r.getId()).orElse(null) instanceof net.minecraft.world.item.crafting.SmeltingRecipe)).toList();
+                }
                 if (m == IndustryMachine.ELECTRIC_CRUCIBLE) {
                     shown = shown.stream().filter(r -> !MeltingCategories.isMelt(r)).toList();
                 }
@@ -477,7 +518,8 @@ public class PiJeiPlugin implements IModPlugin {
         registration.addRecipeCatalysts(DryingLineCategory.TYPE, fr.pioneers.building.home.PiHome.ROPE_HOOK.getBlock(), fr.pioneers.tech.kinetics.PiKinetics.FIBER_ROPE.get(),
               fr.pioneers.tech.kinetics.PiKinetics.TARRED_ROPE.get(), fr.pioneers.tech.kinetics.PiKinetics.LEATHER_BELT.get());
         KitchenMachineCatalysts.register(registration);   //1.6 : postes mecaniques et machines electriques de la cuisine
-        registration.addRecipeCatalysts(MECHANICAL.get(MachineType.SIFTER), PiMechanics.HAND_SIEVE);
+        registration.addRecipeCatalysts(familyPage(MECHANICAL.get(MachineType.SIFTER)) != null ? familyPage(MECHANICAL.get(MachineType.SIFTER))
+              : MECHANICAL.get(MachineType.SIFTER), PiMechanics.HAND_SIEVE);
         BENCH.forEach((type, recipeType) -> registration.addRecipeCatalyst(PiBronze.BENCHES.get(type).getBlock(), recipeType));
         registration.addRecipeCatalysts(BLAST, PiBronze.BLAST_FURNACE.getBlock(), PiBronze.TUYERE.getBlock(),
               PiBronze.FIRE_BRICKS.getBlock(), PiKinetics.machine(MachineType.BELLOWS));
@@ -501,6 +543,7 @@ public class PiJeiPlugin implements IModPlugin {
 
     @Override
     public void onRuntimeAvailable(@NotNull mezz.jei.api.runtime.IJeiRuntime runtime) {
+        JeiResourceKind.start(runtime);   //1.0.6 : « Azote liquide (Fluide) » dans l'infobulle des fluides
         //Refonte du guide (1.0.1-beta) : un clic sur une icone du guide ouvre ses recettes, un clic droit ses usages
         GuideLinks.setJei((stack, uses) -> runtime.getRecipesGui().show(runtime.getJeiHelpers().getFocusFactory()
               .createFocus(uses ? RecipeIngredientRole.INPUT : RecipeIngredientRole.OUTPUT, mezz.jei.api.constants.VanillaTypes.ITEM_STACK, stack)));
@@ -516,6 +559,7 @@ public class PiJeiPlugin implements IModPlugin {
 
     @Override
     public void onRuntimeUnavailable() {
+        JeiResourceKind.stop();
         GuideLinks.setJei(null);
     }
 }

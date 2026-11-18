@@ -137,6 +137,7 @@ public final class RuinTests {
 
     private static void generated(GameTestHelper h, int tier) {
         Gt.Scope s = Gt.begin(h);
+        s.notPeaceful();   // 1.0.6 : les Sentinelles (monstres) disparaissent en paisible pendant l'attente du chunk
         Gt.check(GenData.current() != null, "donnees de generation des ruines non chargees (data/pioneers/ruins/generation.json)");
         RuinGrid.Site site = farSite(s, tier, 0);
         force(s, site.chunkX(), site.chunkZ());
@@ -185,16 +186,23 @@ public final class RuinTests {
         Gt.check(consoles <= 1, "plus d'une Console : " + consoles);
         Gt.check(cabinets >= 1, "aucune Armoire d'archives");
         //Sentinelles : endormies, du site, du tier, nombre borne par la composition du tier
-        List<SentinelEntity> sentinels = s.level.getEntitiesOfClass(SentinelEntity.class, rs.box(16));
-        SentinelRules.Composition c = SentinelData.rules().composition(tier);
-        Gt.check(!sentinels.isEmpty(), "aucune Sentinelle posee");
-        Gt.check(sentinels.size() <= c.max + c.foremen, "trop de Sentinelles : " + sentinels.size());
-        for (SentinelEntity e : sentinels) {
-            Gt.check(e.asleep(), "Sentinelle eveillee a la generation");
-            Gt.equal(rs.id, e.site(), "site de la Sentinelle");
-            Gt.check(e.tier() >= 1 && e.tier() <= tier, "tier de la Sentinelle : " + e.tier());
-        }
-        s.done();
+        //1.0.6 : les entites d'un chunk tout juste force ne sont visibles qu'une fois ses tickets propages (ticks suivants) : on attend le chunk
+        long chunk = net.minecraft.world.level.ChunkPos.asLong(site.chunkX(), site.chunkZ());
+        RuinSites.Site site2 = rs;
+        h.startSequence()
+              .thenWaitUntil(() -> Gt.check(s.level.areEntitiesLoaded(chunk), "entites du chunk du site pas encore chargees"))
+              .thenExecute(() -> {
+                  List<SentinelEntity> sentinels = s.level.getEntitiesOfClass(SentinelEntity.class, site2.box(16));
+                  SentinelRules.Composition c = SentinelData.rules().composition(tier);
+                  Gt.check(!sentinels.isEmpty(), "aucune Sentinelle posee");
+                  Gt.check(sentinels.size() <= c.max + c.foremen, "trop de Sentinelles : " + sentinels.size());
+                  for (SentinelEntity e : sentinels) {
+                      Gt.check(e.asleep(), "Sentinelle eveillee a la generation");
+                      Gt.equal(site2.id, e.site(), "site de la Sentinelle");
+                      Gt.check(e.tier() >= 1 && e.tier() <= tier, "tier de la Sentinelle : " + e.tier());
+                  }
+                  s.done();
+              });
     }
 
     /** Annexes d'un site : blocs vanilla seulement, un coffre a la table des annexes, aucune Sentinelle, hors de l'emprise de la ruine. */
@@ -221,7 +229,8 @@ public final class RuinTests {
             }
         }
         List<RuinPlan.Annex> placed = AnnexFeature.placeAnnexesForTest(s.level, plan, 2);
-        Gt.check(!placed.isEmpty(), "aucune annexe posee sur un terrain plat");
+        Gt.check(!placed.isEmpty(), "aucune annexe posee sur un terrain plat (site " + site.chunkX() + ", " + site.chunkZ() + " ; annexes "
+              + planned.stream().map(a -> a.x() + "," + a.z() + " sol " + tops.get(a)).toList() + ", fond du monde " + s.level.getMinBuildHeight() + ")");
         for (RuinPlan.Annex a : placed) {
             Gt.check(a.x() < plan.boxMinX || a.x() > plan.boxMaxX || a.z() < plan.boxMinZ || a.z() > plan.boxMaxZ, "annexe sur l'emprise de la ruine");
             int top = tops.get(a), chests = 0, changed = 0;
@@ -589,6 +598,12 @@ public final class RuinTests {
     public static void restauration_rechargee_et_100_jours_chunk_decharge(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         ServerLevel level = s.level;
+        //1.0.6 : heure et calendrier remis a la fin (le test avance de 100 jours ; les series suivantes ne doivent pas en dependre)
+        long offset = fr.pioneers.world.season.SeasonData.get(s.server.overworld()).offset(), time = level.getDayTime();
+        s.onCleanup(() -> {
+            level.setDayTime(time);
+            fr.pioneers.world.season.SeasonEvents.setOffset(s.server, offset);
+        });
         BlockPos far = h.absolutePos(new BlockPos(4, 2, 4)).offset(3000, 0, 0);
         RuinSites.Site site = RuinSites.get(level).ensure(level, far.asLong(), 1, MACHINE, far.offset(-4, 0, -4), far.offset(4, 6, 4));
         ServerPlayer p = s.player("gtfar", "Lointaine", new BlockPos(4, 2, 4));
@@ -603,28 +618,34 @@ public final class RuinTests {
         RpNet.dispatch(p, RpActions.RESTORATION_ACTION, act(site, "repair"));
         Gt.equal(Restoration.REPAIR, site.project.getInt("stage"), "etape Remise en etat");
         s.move(p, new BlockPos(4, 2, 4));
-        Gt.check(!level.isLoaded(site.controller()), "le chunk du site devrait etre decharge");
-        CompoundTag before = site.project.copy();
-        int days = before.getInt("days");
-        //sauvegarde et relecture du registre des ruines
-        RuinSites reloaded = Gt.reload(RuinSites.get(level));
-        level.getDataStorage().set(RuinSites.NAME, reloaded);
-        RuinSites.Site again = RuinSites.get(level).site(site.id);
-        Gt.check(again != null && again != site, "site absent apres relecture");
-        Gt.check(again.state == RuinSites.State.RESTORING, "etat perdu a la relecture : " + again.state);
-        Gt.equal(before, again.project, "projet de restauration relu a l'identique");
-        Gt.check(again.contributors.containsKey(p.getUUID()), "contributeurs perdus");
-        long today = fr.pioneers.core.profile.PioneerApi.day(level);
-        level.setDayTime(level.getDayTime() + 100L * 24000L);
-        h.succeedWhen(() -> {
-            RuinSites.Site x = RuinSites.get(level).site(site.id);
-            Gt.check(x != null && x.project != null, "projet perdu");
-            Gt.equal(days, x.project.getInt("done"), "jours de chantier faits chunk decharge");
-            Gt.equal(today + 100, x.project.getLong("lastDay"), "dernier jour compte");
-            Gt.equal(Restoration.REPAIR, x.project.getInt("stage"), "mise en service avant le chargement du chunk");
-            Gt.check(x.state == RuinSites.State.RESTORING, "etat du site");
-            Gt.check(!level.isLoaded(x.controller()), "chunk du site charge pendant le test");
-            s.done();
-        });
+        //1.0.6 : ouvrir le chantier lit le site, ce qui charge son chunk (ticket d'un tick) : il se decharge aux ticks suivants, on l'attend
+        long[] today = new long[1];
+        int[] days = new int[1];
+        h.startSequence()
+              .thenWaitUntil(() -> Gt.check(!level.isLoaded(site.controller()), "le chunk du site devrait etre decharge"))
+              .thenExecute(() -> {
+                  CompoundTag before = site.project.copy();
+                  days[0] = before.getInt("days");
+                  //sauvegarde et relecture du registre des ruines
+                  RuinSites reloaded = Gt.reload(RuinSites.get(level));
+                  level.getDataStorage().set(RuinSites.NAME, reloaded);
+                  RuinSites.Site again = RuinSites.get(level).site(site.id);
+                  Gt.check(again != null && again != site, "site absent apres relecture");
+                  Gt.check(again.state == RuinSites.State.RESTORING, "etat perdu a la relecture : " + again.state);
+                  Gt.equal(before, again.project, "projet de restauration relu a l'identique");
+                  Gt.check(again.contributors.containsKey(p.getUUID()), "contributeurs perdus");
+                  today[0] = fr.pioneers.core.profile.PioneerApi.day(level);
+                  level.setDayTime(level.getDayTime() + 100L * 24000L);
+              })
+              .thenWaitUntil(() -> {
+                  RuinSites.Site x = RuinSites.get(level).site(site.id);
+                  Gt.check(x != null && x.project != null, "projet perdu");
+                  Gt.equal(days[0], x.project.getInt("done"), "jours de chantier faits chunk decharge");
+                  Gt.equal(today[0] + 100, x.project.getLong("lastDay"), "dernier jour compte");
+                  Gt.equal(Restoration.REPAIR, x.project.getInt("stage"), "mise en service avant le chargement du chunk");
+                  Gt.check(x.state == RuinSites.State.RESTORING, "etat du site");
+                  Gt.check(!level.isLoaded(x.controller()), "chunk du site charge pendant le test");
+              })
+              .thenExecute(s::done);
     }
 }

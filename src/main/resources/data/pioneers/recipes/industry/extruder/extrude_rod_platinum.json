@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 1,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/platinum"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_rod"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:platinum_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:extrusion_shape_rod",
+   "count": 1
+  }
+ ]
+}

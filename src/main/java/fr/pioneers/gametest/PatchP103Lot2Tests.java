@@ -15,6 +15,7 @@ import io.netty.buffer.Unpooled;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.core.BlockPos;
@@ -88,11 +89,12 @@ public final class PatchP103Lot2Tests {
     public static void p103_fer_mk1_deux_lingots(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         MinecraftServer server = h.getLevel().getServer();
-        //broyeur du kit : 1 minerai brut -> 2 concasses
-        Recipe<?> crush = server.getRecipeManager().byKey(rl("crushing/raw_iron")).orElse(null);
-        Gt.check(crush != null, "recette crushing/raw_iron absente");
-        ItemStack out = crush.getResultItem(server.registryAccess());
-        Gt.check(out.is(item("crushed_iron")) && out.getCount() == 2, "broyeur : 1 minerai -> 2 concasses (" + out + ")");
+        //1 minerai brut -> 2 concasses (1.0.6 : la recette du kit, doublon du concasseur, est desactivee ; le broyeur fait celle du concasseur)
+        Gt.check(server.getRecipeManager().byKey(rl("crushing/raw_iron")).isEmpty(), "recette du kit crushing/raw_iron desactivee");
+        Recipe<?> crush = server.getRecipeManager().byKey(rl("materials/jaw_crushing_crushed_iron")).orElse(null);
+        Gt.check(crush instanceof MechanicalRecipe, "recette du concasseur absente");
+        ItemStack out = ((MechanicalRecipe) crush).results().get(0).stack();
+        Gt.check(out.is(item("crushed_iron")) && out.getCount() == 2, "concasseur : 1 minerai -> 2 concasses (" + out + ")");
         //les trois machines MKI : ni circuit MKI, ni moteur electrique, ni train epicycloidal, ni matrice de presse
         Item[] late = {item("circuit_mk1"), item("electric_motor"), item("planetary_gear"), item("press_die"), item("cast_iron_housing")};
         for (String r : List.of("machines/basic_crusher", "industry/crafting/basic_electric_crucible", "industry/crafting/basic_casting_machine")) {

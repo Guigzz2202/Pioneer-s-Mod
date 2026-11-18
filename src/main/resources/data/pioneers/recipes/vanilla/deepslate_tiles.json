@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:deepslate_bricks"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:deepslate_tiles",
-  "count": 4
+  "count": 1
  }
 }

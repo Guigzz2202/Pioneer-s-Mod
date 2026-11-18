@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:mossy_cobblestone"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:mossy_cobblestone_wall",
-  "count": 6
+  "count": 1
  }
 }

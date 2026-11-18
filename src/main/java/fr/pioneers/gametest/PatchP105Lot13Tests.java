@@ -116,7 +116,9 @@ public final class PatchP105Lot13Tests {
         Boar b = field(s, crop);
         Gt.check(!b.rootable(h.absolutePos(crop), h.absolutePos(crop.west(5))), "une culture en claim est a l'abri");
         h.runAfterDelay(400, () -> {
-            Gt.check(wheat(h, crop), "le sanglier a detruit le ble d'un claim");
+            //1.0.6 : diagnostic (echec de la CI du 17/11, run 44130056403, introuvable en local) : bloc, sol, claim, sanglier
+            Gt.check(wheat(h, crop), "le sanglier a detruit le ble d'un claim (bloc " + h.getBlockState(crop) + ", sol " + h.getBlockState(crop.below())
+                  + ", claim " + fr.pioneers.world.wild.PiWild7.claimed(s.level, h.absolutePos(crop)) + ")" + diag(h, b, crop));
             s.done();
         });
     }
@@ -143,7 +145,9 @@ public final class PatchP105Lot13Tests {
         List<BlockPos> inside = HouseNbt.positions(tile.getBlockPos(), tile.facing(), BlastLayout.SHAPE, "I");
         Gt.check(!inside.isEmpty(), "aucune case interieure au haut fourneau");
         BlockPos low = inside.stream().min(Comparator.comparingInt(BlockPos::getY)).orElseThrow();
-        Pig pig = EntityType.PIG.create(s.level);
+        //1.0.6 : le cochon de race directement : un cochon vanilla devient l'entite de sa race au tick suivant (1.0.3-beta lot 8,
+        //BreedConversion) et le cochon suivi par le test etait retire (« pas vivant » sans aucun degat)
+        Pig pig = (Pig) fr.pioneers.farm.animal.breed.PiBreeds.type(fr.pioneers.farm.animal.AnimalSpecies.PIG, 0).create(s.level);
         Gt.check(pig != null, "cochon");
         pig.moveTo(low.getX() + 0.5, low.getY(), low.getZ() + 0.5, 0, 0);
         pig.setNoAi(true);
@@ -179,7 +183,9 @@ public final class PatchP105Lot13Tests {
             Pig pig = pigInside(s, tile);
             float before = pig.getHealth();
             h.runAfterDelay(4 * FurnaceHeat.PERIOD, () -> {
-                Gt.check(pig.isAlive() && pig.getHealth() >= before, "un four eteint ne blesse pas");
+                Gt.check(pig.isAlive() && pig.getHealth() >= before, "un four eteint ne blesse pas (sante " + pig.getHealth() + " / " + before
+                      + ", degat " + (pig.getLastDamageSource() == null ? "aucun" : pig.getLastDamageSource().getMsgId()) + ", en " + pig.blockPosition()
+                      + " : " + s.level.getBlockState(pig.blockPosition()) + ")");
                 Gt.check(pig.getRemainingFireTicks() <= 0, "un four eteint n'enflamme pas");
                 s.done();
             });
@@ -230,13 +236,17 @@ public final class PatchP105Lot13Tests {
         s.claim(c, f.getWorldPosition());
         Gt.equal(0, PatchP104Lot8Tests.owners(s.level, f.toLong()), "un claim charge encore le chunk");
         Gt.check(!ClanChunkloading.isLoaded(c, dim, f.toLong()), "claim dit charge sans emplacement");
-        //1er emplacement : 50 a la pose
+        //1.0.6 : 1er emplacement ACHETE d'avance (50), puis pose sans rien payer
         long before = c.treasury;
         Gt.equal(50L, ClanChunkloading.nextPrice(s.server, c), "prix affiche du 1er emplacement");
         ClanChunkloading.load(rep, s.level, f.toLong());
-        Gt.check(c.chunkload.contains(ClanTerritory.key(dim, f.toLong())), "emplacement non pris");
-        Gt.equal(before - 50L, c.treasury, "1er emplacement paye 50 a la pose");
+        Gt.check(!c.chunkload.contains(ClanTerritory.key(dim, f.toLong())), "pose sans emplacement achete");
+        Gt.check(ClanChunkloading.buySlots(rep, 1, -1) == null, "achat d'un emplacement refuse");
+        Gt.equal(before - 50L, c.treasury, "1er emplacement paye 50 a l'achat");
         Gt.equal(125L, ClanChunkloading.nextPrice(s.server, c), "prix affiche du 2e emplacement");
+        ClanChunkloading.load(rep, s.level, f.toLong());
+        Gt.check(c.chunkload.contains(ClanTerritory.key(dim, f.toLong())), "emplacement non pris");
+        Gt.equal(before - 50L, c.treasury, "rien a payer a la pose");
         ClanChunkloading.unload(s.server, c, ClanTerritory.key(dim, f.toLong()), false);
         s.done();
     }

@@ -1,4 +1,9 @@
 {
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
  "type": "pioneers:industrial",
  "machine": "crusher",
  "tier": 0,
@@ -10,12 +15,6 @@
     "tag": "forge:gems/lapis"
    },
    "count": 1
-  }
- ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 10
   }
  ],
  "results": [

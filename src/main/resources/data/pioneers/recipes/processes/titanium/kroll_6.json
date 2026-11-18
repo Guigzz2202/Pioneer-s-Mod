@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "kroll_reactor",
  "tier": 1,
- "time": 480,
+ "time": 400,
  "items": [
   {
    "ingredient": {

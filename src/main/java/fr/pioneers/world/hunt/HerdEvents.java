@@ -91,13 +91,9 @@ public final class HerdEvents {
     public static void hooks() {
         //1.0.5-beta (lot 31, retour 43) : bouton Chasse allume SEULEMENT si un troupeau est a portee du flair de CE chien (piste comprise)
         HuntEvents.highlight = (dog, master) -> dog.level() instanceof ServerLevel level && huntInReach(level, dog.position(), scentOf(dog, master));
-        HuntEvents.herdNear = dog -> {
-            if (!(dog.level() instanceof ServerLevel level)) {
-                return false;
-            }
-            HerdData.Herd h = activeNear(level, dog.position(), HuntRules.DOG_ALERT);
-            return h != null && h.found < 0;
-        };
+        //1.0.6 : n'importe quel troupeau actif pas encore trouve (avant : le PREMIER troupeau a portee seulement ; s'il etait deja trouve, un
+        //troupeau neuf plus loin ne donnait plus l'alerte)
+        HuntEvents.herdNear = dog -> dog.level() instanceof ServerLevel level && unfoundNear(level, dog.position(), HuntRules.DOG_ALERT) != null;
         HuntEvents.trail = (dog, range) -> dog.level() instanceof ServerLevel level ? nearestMember(level, dog.position(), range) : null;
         HuntEvents.scentBonus = HuntSkill::scentBonus;
     }
@@ -122,6 +118,20 @@ public final class HerdEvents {
             }
         }
         return false;
+    }
+
+    /** 1.0.6 : troupeau actif (pas en dispersion) et pas encore trouve dont le centre est a {@code range} blocs, ou null. */
+    @Nullable
+    public static HerdData.Herd unfoundNear(ServerLevel level, Vec3 pos, double range) {
+        if (level.dimension() != Level.OVERWORLD || level.getServer() == null) {
+            return null;
+        }
+        for (HerdData.Herd h : HerdData.get(level.getServer()).herds()) {
+            if (h.disperse < 0 && h.found < 0 && Vec3.atCenterOf(h.center).distanceToSqr(pos) < range * range) {
+                return h;
+            }
+        }
+        return null;
     }
 
     /** Troupeau actif (pas en dispersion) dont le centre est a {@code range} blocs, ou null. */

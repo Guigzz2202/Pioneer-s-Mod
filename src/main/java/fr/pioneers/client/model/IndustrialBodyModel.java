@@ -59,6 +59,8 @@ public class IndustrialBodyModel extends BakedModelWrapper<BakedModel> {
     private static final ModelProperty<Integer> MASK = new ModelProperty<>();
     /** 1.0.4-beta (lot 30) : port a la peau de tole : la tole dont il prend le modele (la plus frequente de ses voisines). */
     private static final ModelProperty<BlockState> SHEET = new ModelProperty<>();
+    /** 1.0.6 : port d'une salle blanche (voisin d'une paroi ou d'un controleur de salle blanche) : corps blanc de la paroi. */
+    private static final ModelProperty<Boolean> CLEAN = new ModelProperty<>();
     private static final String[] TIERS = {"basic", "advanced", "elite", "ultimate"};
     private static final String[] VARIANTS = {"frame", "h", "v", "inner"};
     /** Pour chaque face : voisins qui decident des quarts (horizontal bas / haut, vertical bas / haut), comme tools/gc/industry/design.py. */
@@ -91,13 +93,17 @@ public class IndustrialBodyModel extends BakedModelWrapper<BakedModel> {
     private final String fixedStyle;
     @Nullable
     private final PartBlock.Kind part;
+    /** 1.0.6 : port industriel (il prend le corps de la salle blanche quand il en borde une paroi). */
+    private final boolean port;
 
-    private IndustrialBodyModel(BakedModel original, boolean skipFront, boolean niche, @Nullable String fixedStyle, @Nullable PartBlock.Kind part) {
+    private IndustrialBodyModel(BakedModel original, boolean skipFront, boolean niche, @Nullable String fixedStyle, @Nullable PartBlock.Kind part,
+          boolean port) {
         super(original);
         this.skipFront = skipFront;
         this.niche = niche;
         this.fixedStyle = fixedStyle;
         this.part = part;
+        this.port = port;
     }
 
     private static ResourceLocation quarter(String folder, Direction face, int qh, int qv, int variant) {
@@ -160,6 +166,8 @@ public class IndustrialBodyModel extends BakedModelWrapper<BakedModel> {
         PiIndustry.PARTS.values().forEach(e -> blocks.add(e.getBlock()));
         //1.9.2 : controleurs des multiblocs d'assemblage (meme corps connecte, metier fixe)
         PiWorksMachines.HALLS.values().forEach(e -> blocks.add(e.getBlock()));
+        java.util.Set<Block> ports = new java.util.HashSet<>();
+        PiIndustry.PORTS.values().forEach(e -> ports.add(e.getBlock()));
         for (Block block : blocks) {
             String style = block instanceof ControllerBlock c ? c.machine.style.getSerializedName()
                            : block instanceof AssemblyHallControllerBlock h ? h.kind.style.getSerializedName() : null;
@@ -169,7 +177,7 @@ public class IndustrialBodyModel extends BakedModelWrapper<BakedModel> {
                 BakedModel model = models.get(key);
                 if (model != null && !(model instanceof IndustrialBodyModel)) {
                     models.put(key, new IndustrialBodyModel(model, block instanceof AssemblyHallControllerBlock, block instanceof ControllerBlock,
-                          cleanroom(block) ? CLEANROOM : style, kind));
+                          cleanroom(block) ? CLEANROOM : style, kind, ports.contains(block)));
                 }
             }
         }
@@ -184,18 +192,32 @@ public class IndustrialBodyModel extends BakedModelWrapper<BakedModel> {
     @Override
     public ModelData getModelData(@NotNull BlockAndTintGetter level, @NotNull BlockPos pos, @NotNull BlockState state, @NotNull ModelData modelData) {
         int mask = 0;
+        //1.0.6 (Guillaume, 18/11/2026 : « corrige les textures connectees de la salle blanche au niveau des ports ») : un port qui borde une
+        //paroi ou un controleur de salle blanche prend le corps blanc et se raccorde a la famille de la salle blanche (ports compris)
+        boolean clean = port && cleanNeighbor(level, pos);
         //1.0.4-beta (lot 26) : controleur de salle blanche : raccorde aux parois de salle blanche
-        var family = CLEANROOM.equals(fixedStyle) ? Connections.CLEANROOM : Connections.INDUSTRIAL;
+        var family = CLEANROOM.equals(fixedStyle) || clean ? Connections.CLEANROOM : Connections.INDUSTRIAL;
         for (Direction d : Direction.values()) {
             if (Connections.member(level.getBlockState(pos.relative(d)), family)) {
                 mask |= 1 << d.ordinal();
             }
         }
-        ModelData.Builder out = super.getModelData(level, pos, state, modelData).derive().with(MASK, mask);
+        ModelData.Builder out = super.getModelData(level, pos, state, modelData).derive().with(MASK, mask).with(CLEAN, clean);
         if (onSheet(state)) {
             out.with(SHEET, sheetOf(level, pos, state));
         }
         return out.build();
+    }
+
+    /** 1.0.6 : une voisine est une paroi de salle blanche ou un controleur de salle blanche (pas seulement un autre port). */
+    private static boolean cleanNeighbor(BlockAndTintGetter level, BlockPos pos) {
+        for (Direction d : Direction.values()) {
+            BlockState n = level.getBlockState(pos.relative(d));
+            if (Connections.member(n, Connections.CLEANROOM) && !(n.getBlock() instanceof fr.pioneers.tech.industry.multi.PortBlock)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static boolean onSheet(@Nullable BlockState state) {
@@ -272,8 +294,8 @@ public class IndustrialBodyModel extends BakedModelWrapper<BakedModel> {
         String style = fixedStyle != null ? fixedStyle : state.hasProperty(IndustryStyle.STYLE) ? state.getValue(IndustryStyle.STYLE).getSerializedName()
                                                                                                  : "neutral";
         String folder = tier <= 0 ? UNFORMED : TIERS[Math.min(4, tier) - 1] + "_" + style.toLowerCase(Locale.ROOT);
-        if (CLEANROOM.equals(fixedStyle)) {
-            //1.0.4-beta (lot 26) : blanc, forme ou non (les quarts se raccordent aux parois de salle blanche voisines)
+        if (CLEANROOM.equals(fixedStyle) || Boolean.TRUE.equals(data.get(CLEAN))) {
+            //1.0.4-beta (lot 26) : blanc, forme ou non (les quarts se raccordent aux parois de salle blanche voisines) ; 1.0.6 : ports aussi
             folder = CLEANROOM;
             tier = Math.max(1, tier);
         }

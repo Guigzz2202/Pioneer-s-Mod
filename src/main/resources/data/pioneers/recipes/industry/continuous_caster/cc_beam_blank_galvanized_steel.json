@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "casting_machine",
  "tier": 1,
- "time": 200,
+ "time": 160,
  "family": "continuous_caster",
  "fluids": [
   {

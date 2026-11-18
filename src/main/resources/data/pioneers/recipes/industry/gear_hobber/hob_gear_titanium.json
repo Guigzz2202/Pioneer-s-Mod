@@ -1,9 +1,13 @@
 {
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
  "type": "pioneers:industrial",
- "machine": "machining_center",
+ "machine": "gear_hobber",
  "tier": 2,
  "time": 145,
- "family": "gear_hobber",
  "items": [
   {
    "ingredient": {

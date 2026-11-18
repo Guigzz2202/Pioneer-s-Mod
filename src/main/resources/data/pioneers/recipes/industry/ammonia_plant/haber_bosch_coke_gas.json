@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "family": "ammonia_plant",
  "items": [
   {

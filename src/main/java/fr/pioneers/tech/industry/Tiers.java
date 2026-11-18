@@ -47,7 +47,18 @@ public final class Tiers {
 
     /** Duree d'une operation (ticks) dans une machine du tier. */
     public static int ticks(int recipeTime, int machineTier, int recipeTier, boolean industrial) {
+        return ticks(recipeTime, machineTier, recipeTier, industrial, null);
+    }
+
+    /**
+     * 1.0.6 : duree d'une operation avec le PLANCHER des durees ({@link PowerRules#floorTicks} : au moins 1 s au MKIV, 2 s ou 4 s pour les
+     * recettes MKIII et MKIV, x 2 par tier d'avant) ; jamais au-dessus de la duree de base ; machines de {@link PowerRules#NO_FLOOR} sans plancher.
+     */
+    public static int ticks(int recipeTime, int machineTier, int recipeTier, boolean industrial, @org.jetbrains.annotations.Nullable IndustryMachine machine) {
         double t = recipeTime / (double) speed(machineTier, recipeTier);
+        if (machine == null || !PowerRules.NO_FLOOR.contains(machine.key)) {
+            t = Math.max(t, Math.min(recipeTime, PowerRules.floorTicks(machineTier + 2, recipeTier)));
+        }
         if (industrial) {
             t *= INDUSTRIAL_TIME;
         }

@@ -143,6 +143,7 @@ public final class MachineScreens {
         register("caravan_relay", CaravanViews.RELAY);   //1.0.4-beta (lot 10) : relais de caravane
         register("farm", FarmViews.VIEW);   //1.0.5-beta (lot 41, retour 60) : postes de la cuisine et appareils de la ferme
         register("dynamo", AgeViews.DYNAMO);
+        register("motor", AgeViews.MOTOR);
         //1.0.2-beta : pieces de transmission a l'interface v2, avec un curseur (boite de vitesses : rapport ; regulateur a boules : vitesse visee)
         register("transmission", TransmissionViews.TRANSMISSION);
         register("governor", TransmissionViews.GOVERNOR);

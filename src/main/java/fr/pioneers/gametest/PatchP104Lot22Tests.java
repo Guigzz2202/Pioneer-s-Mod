@@ -184,7 +184,8 @@ public final class PatchP104Lot22Tests {
                 in.setStack(new ItemStack(Items.COBBLESTONE, 40));
                 h.runAfterDelay(4, () -> {
                     long[] v = SiloCore.unpack(tile.guiValue(SiloCore.VALUE_STORED));
-                    Gt.equal(104L, v[0], "objets tenus");
+                    Gt.equal(104L, v[0], "objets tenus (entree " + in.getStack() + ", sortie " + out.getStack() + ", forme " + tile.formed()
+                          + ", tier " + tile.tier() + ", valeur brute " + tile.guiValue(SiloCore.VALUE_STORED) + ")");
                     Gt.check(in.isEmpty(), "entree pas videe dans le stock");
                     Gt.check(out.getStack().is(Items.COBBLESTONE) && out.getCount() == 64, "sortie pas tenue pleine : " + out.getStack());
                     Gt.check(!in.isItemValid(new ItemStack(Items.DIRT)), "le silo prend un deuxieme objet");

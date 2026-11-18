@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "electric_crucible",
  "tier": 0,
- "time": 120,
+ "time": 160,
  "items": [
   {
    "ingredient": {

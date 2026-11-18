@@ -1,4 +1,9 @@
 {
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
  "type": "pioneers:industrial",
  "machine": "rolling_mill",
  "tier": 0,

@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "assembler",
+ "machine": "electromechanical_bench",
  "tier": 0,
- "time": 130,
+ "time": 160,
  "items": [
   {
    "ingredient": {

@@ -146,6 +146,19 @@ public final class PatchP104Lot11Tests {
         });
     }
 
+    /** 1.0.6 : machine rendue par la fusion (Calcinateur, Decoupeuse) : sa recette tourne chez elle, sans famille. */
+    private static void own(GameTestHelper h, IndustryMachine machine, String path) {
+        Gt.begin(h);
+        IndustrialRecipe r = recipe(h, path);
+        Gt.check(r.machine() == machine, path + " : machine " + r.machine().key + " au lieu de " + machine.key);
+        Gt.check(r.family() == null, path + " : famille " + r.family());
+        AtelierTile t = base(h, machine, new BlockPos(2, 2, 2), r);
+        h.succeedWhen(() -> {
+            t.getEnergy().setStored(t.getEnergy().getCapacity());
+            Gt.check(produced(t, r), machine.key + " : " + path + " n'a encore rien produit");
+        });
+    }
+
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_11_ball_mill", timeoutTicks = 400)
     public static void p104_11_broyage_fin_au_broyeur(GameTestHelper h) {
         runs(h, "ball_mill", "industry/ball_mill/grind_chalcopyrite");
@@ -178,7 +191,8 @@ public final class PatchP104Lot11Tests {
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_11_reduction", timeoutTicks = 400)
     public static void p104_11_reduction_au_four(GameTestHelper h) {
-        runs(h, "reduction_furnace", "industry/reduction_furnace/vanadium_alumino");
+        //1.0.6 : le four de reduction est rendu (Calcinateur) : il reprend le grillage, le frittage et le dopage
+        own(h, IndustryMachine.REDUCTION_FURNACE, "industry/reduction_furnace/vanadium_alumino");
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_11_sinter", timeoutTicks = 400)
@@ -245,7 +259,8 @@ public final class PatchP104Lot11Tests {
             }
         }
         Gt.equal("advanced_crusher", PiRemaps.p104Block("advanced_ball_mill"), "broyeur a boulets MKII -> broyeur MKII");
-        Gt.equal("elite_furnace", PiRemaps.p104Block("elite_quench_tank"), "four de traitement MKIII -> four industriel MKIII");
+        //1.0.6 : la trempe va au Bain chimique
+        Gt.equal("elite_chemical_bath", PiRemaps.p104Block("elite_quench_tank"), "four de traitement MKIII -> bain chimique MKIII");
         Gt.equal("industrial_ore_separator", PiRemaps.p104Block("industrial_optical_sorter"), "multibloc du trieur -> multibloc du separateur");
         //1.0.4-beta (lot 22) : le four a pyrolyse est rendu : ses compacts de la 1.0.2 vont a nouveau a son controleur
         Gt.equal("industrial_pyrolysis_oven", PiRemaps.simplifiedBlock("basic_pyrolysis_oven"), "four a pyrolyse compact -> son controleur");
@@ -316,7 +331,8 @@ public final class PatchP104Lot11Tests {
         Gt.equal(4, t.itemInputs().get(0).getCount(), "entree du kit");
         Gt.equal(2, t.itemOutputs().get(0).getCount(), "sortie du kit");
         Gt.equal(1, t.itemOutputs().get(1).getCount(), "2e sortie du kit");
-        Gt.equal(500, t.fluidInputs().get(0).getFluidAmount(), "eau dans le reservoir du kit");
+        //1.0.6 : le broyeur n'a plus de reservoir (broyage fin sans eau) : l'eau d'un broyeur a boulets relu est perdue, les objets restent
+        Gt.check(t.fluidInputs().isEmpty(), "broyeur sans reservoir d'eau (1.0.6)");
         h.succeed();
     }
 

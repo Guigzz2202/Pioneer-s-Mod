@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "assembler",
  "tier": 1,
- "time": 260,
+ "time": 160,
  "items": [
   {
    "ingredient": {

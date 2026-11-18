@@ -1,6 +1,6 @@
 {
- "parent": "minecraft:item/generated",
- "textures": {
-  "layer0": "pioneers:item/rod_die"
- }
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pioneers:item/rod_die"
+  }
 }

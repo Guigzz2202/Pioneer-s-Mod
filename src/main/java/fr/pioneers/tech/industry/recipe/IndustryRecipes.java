@@ -32,6 +32,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
+import net.minecraft.world.item.crafting.StonecutterRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.ForgeHooks;
@@ -52,6 +53,8 @@ public final class IndustryRecipes {
      * Lot 21 : 80 (multibloc : x 0,8 de la regle industrielle, 64 / 32 / 16 / 8 ticks par operation, en parallele).
      */
     public static final int SMELT_TIME = fr.pioneers.tech.machine.MachineKind.Rules.FURNACE_TICKS;
+    /** 1.0.6 : duree d'une taille de pierre a la Taillerie MKI (ticks). */
+    public static final int CUT_TIME = 40;
     /** Broyage et compression du kit : durees (ticks, tier basique). */
     public static final int CRUSH_TIME = 160, COMPRESS_TIME = 200;
 
@@ -152,6 +155,21 @@ public final class IndustryRecipes {
                     if (PiTags.Items.electricFurnaceAllows(result)) {
                         out.add(simple(r.getId(), machine, r.getIngredients().get(0), 1, result, SMELT_TIME));
                     }
+                }
+            }
+            //1.0.6 (Taillerie de pierre, decision de Guillaume du 16/11/2026 : « toute la taille ») : chaque recette du tailleur de pierre
+            //(vanilla et mod), avec le rendement de tier compte depuis la main (T0) ; le cuivre se travaille a la Chaudronnerie
+            case STONECUTTING -> {
+                for (StonecutterRecipe r : PiRecipes.sorted(level, RecipeType.STONECUTTING)) {
+                    if (r.getIngredients().isEmpty()) {
+                        continue;
+                    }
+                    ItemStack result = r.getResultItem(level.registryAccess()).copy();
+                    ResourceLocation rid = ForgeRegistries.ITEMS.getKey(result.getItem());
+                    if (result.isEmpty() || rid == null || rid.getPath().contains("copper")) {
+                        continue;
+                    }
+                    out.add(cut(r.getId(), machine, r.getIngredients().get(0), result));
                 }
             }
             default -> {
@@ -281,8 +299,8 @@ public final class IndustryRecipes {
      * ajoutee. Rend les recettes propres retirees, chacune avec la recette basse qui la remplace.
      */
     private static Map<ResourceLocation, ResourceLocation> low(Level level, IndustryMachine machine, List<IndustrialRecipe> out) {
-        String family = tierFamily(machine);
-        if (family == null) {
+        List<TierRecipe> lows = lows(level, machine);
+        if (lows.isEmpty()) {
             return Map.of();
         }
         Set<ResourceLocation> ids = new HashSet<>();
@@ -290,7 +308,7 @@ public final class IndustryRecipes {
             ids.add(r.getId());
         }
         Map<ResourceLocation, ResourceLocation> gone = new HashMap<>();
-        for (TierRecipe t : TierRecipes.natives(level, family)) {   // lot 47 : sans les recettes MKI ouvertes a la vapeur
+        for (TierRecipe t : lows) {
             if (ids.contains(t.id()) || t.minTier() > 1 || t.inputs().isEmpty()) {
                 continue;
             }
@@ -319,6 +337,51 @@ public final class IndustryRecipes {
             out.removeIf(r -> gone.containsKey(r.getId()));
         }
         return Map.copyOf(gone);
+    }
+
+    /**
+     * Recettes basses que la machine fait au MKI : celles de sa famille de tiers (lot 47 : sans les recettes MKI ouvertes a la vapeur), sauf
+     * celles qu'une autre machine fait au MKI ; 1.0.6 (« un role par machine ») : plus les recettes basses d'autres familles dont le geste
+     * est le role de cette machine ({@link GeneratedTierFamilies#LOW_MOVED} : anneaux et ressorts du tour -> Cintreuse...).
+     */
+    private static List<TierRecipe> lows(Level level, IndustryMachine machine) {
+        String family = tierFamily(machine);
+        List<TierRecipe> out = new ArrayList<>();
+        if (family != null) {
+            for (TierRecipe t : TierRecipes.natives(level, family)) {
+                String to = GeneratedTierFamilies.LOW_MOVED.get(t.id().toString());
+                if (to == null || to.equals(machine.key)) {
+                    out.add(t);
+                }
+            }
+        }
+        if (GeneratedTierFamilies.LOW_MOVED.containsValue(machine.key)) {
+            for (GeneratedTierFamilies.Family f : GeneratedTierFamilies.FAMILIES) {
+                if (!f.engine() || f.key().equals(family)) {
+                    continue;
+                }
+                for (TierRecipe t : TierRecipes.natives(level, f.key())) {
+                    if (machine.key.equals(GeneratedTierFamilies.LOW_MOVED.get(t.id().toString()))) {
+                        out.add(t);
+                    }
+                }
+            }
+        }
+        return out;
+    }
+
+    /**
+     * 1.0.6 : recette du tailleur de pierre convertie a la Taillerie de pierre : 1 entree, 1 produit, rendement de tier compte depuis le T0
+     * (la main : « meilleur rendement qu'a la main ») : x1,75 au MKI ... x3,5 au MKIV (la fraction est tiree au sort, RecipeMatch).
+     */
+    private static IndustrialRecipe cut(ResourceLocation id, IndustryMachine machine, Ingredient input, ItemStack result) {
+        IndustrialRecipe r = new IndustrialRecipe(id, machine, 0, CUT_TIME, List.of(new Counted(input, 1)), List.of(), List.of(),
+              List.of(new Result(result, 1F)), List.of(), List.of(), 0, false, false, false, 0, 0, false);
+        double[] y = new double[4];
+        for (int i = 0; i < 4; i++) {
+            y[i] = fr.pioneers.api.machine.PowerRules.yieldFactor(i + 2, 0);
+        }
+        return r.withTierYield(y);
     }
 
     /**

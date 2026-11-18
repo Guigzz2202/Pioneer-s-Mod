@@ -11,7 +11,6 @@ import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeTier;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.TierSortingRegistry;
 import org.jetbrains.annotations.Nullable;
 
@@ -31,13 +30,11 @@ public final class PiTiers {
 
     static {
         for (GeneratedMaterials.TierDef def : GeneratedMaterials.TIERS) {
-            TagKey<Block> needs = switch (def.level()) {
-                case 0 -> BlockTags.create(Pioneers.rl("needs_" + def.id() + "_tool"));
-                case 1 -> BlockTags.NEEDS_STONE_TOOL;
-                case 2 -> BlockTags.NEEDS_IRON_TOOL;
-                case 3 -> BlockTags.NEEDS_DIAMOND_TOOL;
-                default -> Tags.Blocks.NEEDS_NETHERITE_TOOL;
-            };
+            //1.0.6 : chaque materiau a SA balise « needs » (vide). TierSortingRegistry refuse a un tier tout bloc de la balise d'un tier
+            //classe au-dessus de lui : avec la balise vanilla de son niveau (needs_diamond_tool pour l'acier...), un materiau privait les
+            //outils de meme niveau classes sous lui, vanilla compris, de leurs blocs (pioche en diamant sans obsidienne, pioche en fer sans
+            //minerai de diamant, perceuse Voltaique selon l'ordre de tri). Le niveau vient du rang dans l'ordre de Forge, pas de la balise.
+            TagKey<Block> needs = BlockTags.create(Pioneers.rl("needs_" + def.id() + "_tool"));
             Ingredient repair = Ingredient.EMPTY;
             Tier tier = new ForgeTier(def.level(), def.uses(), def.speed(), def.damage(), def.enchant(), needs, () -> repair);
             List<Object> after;

@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "sawmill",
+ "machine": "gear_hobber",
  "tier": 0,
- "time": 140,
+ "time": 160,
  "family": "wafer_saw",
  "items": [
   {

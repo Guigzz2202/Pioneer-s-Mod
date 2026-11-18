@@ -1,9 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "electric_crucible",
+ "machine": "assembler",
  "tier": 2,
  "time": 300,
- "family": "tank_furnace",
  "items": [
   {
    "ingredient": {

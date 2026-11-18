@@ -5,6 +5,13 @@
   "pioneers:industrial_photolithograph",
   "pioneers:semiconductor_fab",
   "pioneers:data_center",
-  "pioneers:quantum_computer"
+  "pioneers:quantum_computer",
+  "pioneers:industrial_item_port",
+  "pioneers:industrial_fluid_port",
+  "pioneers:industrial_gas_port",
+  "pioneers:industrial_energy_port",
+  "pioneers:industrial_heat_port",
+  "pioneers:industrial_pressure_port",
+  "pioneers:industrial_data_port"
  ]
 }

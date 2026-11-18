@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "sawmill",
+ "machine": "glassworks",
  "tier": 0,
- "time": 100,
+ "time": 160,
  "items": [
   {
    "ingredient": {

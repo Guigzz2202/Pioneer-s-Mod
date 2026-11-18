@@ -486,11 +486,28 @@ public final class Metals {
      * SORTIE DE SECOURS (« Vider le bain ») : chaque part du bain ({@link #pourable} sans filtre : le bain entier s'il est un metal ou un alliage,
      * sinon sa decomposition : bronze en lingots de bronze, surplus en cuivre...) en lingots et pepites ; les restes de moins d'une pepite (et
      * les metaux sans pepite) font une scorie. Le bain est vide ensuite.
+     * <p>
+     * 1.0.6 (reponse de Guillaume du 16/11/2026) : un alliage de la decomposition qui ferait moins d'une pepite n'est PAS forme : ses metaux
+     * sont rendus purs (un reste de zinc n'emporte plus de cuivre dans la scorie).
      */
     public static List<ItemStack> spill(Map<String, Integer> mix) {
         List<ItemStack> out = new ArrayList<>();
         int residue = 0;
+        List<Portion> parts = new ArrayList<>();
+        Map<String, Integer> pure = new LinkedHashMap<>(normalized(mix));
         for (Portion p : pourable(mix, "", false)) {
+            if (isAlloy(p.metal()) && p.mb() >= ForgeMetals.NUGGET_MB) {
+                pour(pure, p.metal(), p.mb());
+                parts.add(p);
+            }
+        }
+        //metaux restants (parts pures et alliages trop petits non formes), rendus tels quels
+        pure.forEach((metal, mb) -> {
+            if (mb > 0) {
+                parts.add(new Portion(metal, mb));
+            }
+        });
+        for (Portion p : parts) {
             int v = p.mb();
             int ingots = v / INGOT;
             int nuggets = (v - ingots * INGOT) / ForgeMetals.NUGGET_MB;
