@@ -1,4 +1,4 @@
-# Pioneer's — 1.0.6-beta — Un rôle par machine
+# Pioneer's — 1.0.6-beta — Micropatch technique et correctifs
 
 **En bref** : chaque machine a un rôle clair et une seule machine fait chaque transformation ; JEI montre une page par famille de machines ; sept **machines de métier** et deux nouveaux multiblocs animés (**Découpeuse**, **Calcinateur**) ; fusion à 100 % et coulée de toutes les formes pour tous les métaux ; interfaces au plus juste avec des jauges liquide / gaz partagées ; **moteur électrique** MKI à MKIV ; mécanique revue (charge lisible, dynamo sur le surplus) ; salle blanche : circuits en lots et graveur des puces ; recettes à l'unité et durées encadrées. Les mondes existants sont repris (cases et réservoirs rangés, recettes renvoyées, lots en cours rendus). Version du protocole réseau : 22 (un client 1.0.5 ne peut pas rejoindre un serveur 1.0.6).
 
