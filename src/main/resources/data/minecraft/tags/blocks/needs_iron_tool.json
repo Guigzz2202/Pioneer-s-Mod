@@ -352,6 +352,18 @@
   "pioneers:industrial_casing_stellar",
   "pioneers:industrial_glass_stellar",
   "pioneers:stellar_alloy_frame",
-  "pioneers:stellar_alloy_sheet_metal"
+  "pioneers:stellar_alloy_sheet_metal",
+  "pioneers:stellar_ore_separator",
+  "pioneers:stellar_electric_crucible",
+  "pioneers:stellar_mixer",
+  "pioneers:stellar_press",
+  "pioneers:stellar_rolling_mill",
+  "pioneers:stellar_wiremill",
+  "pioneers:stellar_machining_center",
+  "pioneers:stellar_extractor",
+  "pioneers:stellar_sawmill",
+  "pioneers:stellar_power_hammer",
+  "pioneers:stellar_induction_furnace",
+  "pioneers:stellar_stoneworks"
  ]
 }

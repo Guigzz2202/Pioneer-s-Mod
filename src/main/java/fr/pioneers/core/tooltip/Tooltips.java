@@ -35,9 +35,14 @@ public final class Tooltips {
     public static final ChatFormatting DESC = ChatFormatting.GRAY, LABEL = ChatFormatting.GRAY, VALUE = ChatFormatting.WHITE,
           ENERGY = ChatFormatting.YELLOW, STATE = ChatFormatting.AQUA, NOTE = ChatFormatting.GOLD, WARN = ChatFormatting.RED,
           GOOD = ChatFormatting.GREEN, HINT = ChatFormatting.DARK_GRAY;
-    /** Couleurs des tiers lisibles sur le fond d'une infobulle (MKI vert, MKII bleu, MKIII rouge, MKIV bordeaux, creatif violet). */
-    private static final int[] TIER_RGB = {0x5FD068, 0x5C9BFF, 0xFF5A50, 0xD0507A, 0xB040FF};
-    private static final String[] TIER_IDS = {"basic", "advanced", "elite", "ultimate"};
+    /**
+     * Couleurs des tiers lisibles sur le fond d'une infobulle (MKI vert, MKII bleu, MKIII rouge, MKIV bordeaux, 1.0.7 : MKV violet du tier,
+     * creatif violet fluo).
+     */
+    private static final int[] TIER_RGB = {0x5FD068, 0x5C9BFF, 0xFF5A50, 0xD0507A, 0xB98AE6, 0xB040FF};
+    private static final String[] TIER_IDS = {"basic", "advanced", "elite", "ultimate", "stellar"};
+    /** 1.0.7 (lot 3) : indice du creatif (4 est le MKV, prefixe stellar_). */
+    public static final int CREATIVE = 5;
     /** Au-dela, une description est « longue » : premiere phrase seule, le reste sous Maj. */
     public static final int SHORT = 110;
     public static final String HOLD_SHIFT = "tooltip.pioneers.hold_shift";
@@ -221,7 +226,7 @@ public final class Tooltips {
 
     // ------------------------------------------------------------------ 3. tier
 
-    /** Tier MK (0 = MKI ... 3 = MKIV, 4 = creatif) : « Tier : MKII » dans la couleur du tier. */
+    /** Tier MK (0 = MKI ... 3 = MKIV, 4 = MKV, {@link #CREATIVE} = creatif) : « Tier : MKII » dans la couleur du tier. */
     public Tooltips tier(int tier) {
         return add(Section.TIER, Component.translatable("tooltip.pioneers.stat", Component.translatable("tooltip.pioneers.tier").withStyle(LABEL),
               tierName(tier)).withStyle(LABEL));
@@ -229,17 +234,17 @@ public final class Tooltips {
 
     /** Nom du tier (« MKII ») dans sa couleur. */
     public static MutableComponent tierName(int tier) {
-        int t = Math.max(0, Math.min(4, tier));
-        MutableComponent name = t == 4 ? Component.translatable("tooltip.pioneers.tier.creative")
+        int t = Math.max(0, Math.min(CREATIVE, tier));
+        MutableComponent name = t == CREATIVE ? Component.translatable("tooltip.pioneers.tier.creative")
                                        : Component.translatable("industry.pioneers.tier." + TIER_IDS[t]);
         return name.withStyle(Style.EMPTY.withColor(TextColor.fromRgb(TIER_RGB[t])));
     }
 
     public static int tierColor(int tier) {
-        return TIER_RGB[Math.max(0, Math.min(4, tier))];
+        return TIER_RGB[Math.max(0, Math.min(CREATIVE, tier))];
     }
 
-    /** Tier d'un identifiant (basic_..., advanced_..., elite_..., ultimate_..., creative_...) ; -1 sinon. */
+    /** Tier d'un identifiant (basic_..., advanced_..., elite_..., ultimate_..., stellar_..., creative_...) ; -1 sinon. */
     public static int tierOf(String id) {
         String p = id.toLowerCase(Locale.ROOT);
         for (int i = 0; i < TIER_IDS.length; i++) {
@@ -247,7 +252,7 @@ public final class Tooltips {
                 return i;
             }
         }
-        return p.startsWith("creative_") ? 4 : -1;
+        return p.startsWith("creative_") ? CREATIVE : -1;
     }
 
     // ------------------------------------------------------------------ 4. etat de la pile

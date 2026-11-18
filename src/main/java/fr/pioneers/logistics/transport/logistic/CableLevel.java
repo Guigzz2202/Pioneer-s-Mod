@@ -117,8 +117,9 @@ public enum CableLevel {
             case ADVANCED -> ADVANCED;
             case ELITE -> ELITE;
             case ULTIMATE -> ULTIMATE;
-            //1.0.7 : le MKV prend le cable supraconducteur (le seul niveau au-dela du MKIV)
-            case STELLAR -> SUPER;
+            //1.0.7 : le MKV garde le cable logistique ultime (le supraconducteur ne porte que l'energie) : 2 048 objets par seconde, bien
+            //au-dela d'une compacte MKV (une operation toutes les 10 ticks au plus)
+            case STELLAR -> ULTIMATE;
         };
     }
 

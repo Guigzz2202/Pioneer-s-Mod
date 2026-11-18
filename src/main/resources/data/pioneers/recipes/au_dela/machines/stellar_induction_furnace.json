@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_induction_furnace"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mercurian_refractory_brick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superalloy_seed_crystal"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:stellar_induction_furnace",
+  "count": 1
+ }
+}

@@ -1,5 +1,7 @@
 package fr.pioneers.tech.industry;
 
+import fr.pioneers.api.machine.tier.GeneratedTierFamilies;
+
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.gas.Gas;
 import fr.pioneers.api.gas.GasStack;
@@ -133,7 +135,8 @@ public final class PiIndustry {
                 continue;
             }
             Map<CableTier, BlockEntry<AtelierBlock>> tiers = new EnumMap<>(CableTier.class);
-            for (CableTier tier : CableTier.MK) {
+            //1.0.7 (lot 3) : les machines des familles ont aussi leur compacte MKV (GeneratedTierFamilies.MKV_MACHINES)
+            for (CableTier tier : GeneratedTierFamilies.MKV_MACHINES.contains(m.key) ? CableTier.values() : CableTier.MK.toArray(new CableTier[0])) {
                 tiers.put(tier, block(m.atelierId(tier), () -> new AtelierBlock(m, tier, metal().noOcclusion()
                       .lightLevel(state -> state.getValue(AtelierBlock.ACTIVE) ? 8 : 0))));
             }

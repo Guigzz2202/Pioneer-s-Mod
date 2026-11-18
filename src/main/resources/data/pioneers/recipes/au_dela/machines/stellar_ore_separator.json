@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_ore_separator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tigrite_centrifuge_bowl"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titan_magnetic_bearing"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:stellar_ore_separator",
+  "count": 1
+ }
+}

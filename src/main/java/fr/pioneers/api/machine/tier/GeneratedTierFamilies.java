@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * GENERE par tools/gc/api/gen_api.py d'apres la source unique tools/gc/api/tier_families.py (1.0.5-beta, lot 38 ; specification
  * docs/specification-age-bronze-1.0.5.md §2) : NE PAS MODIFIER A LA MAIN. Tiers globaux T0 mecanique, T1 bronze, T2 MKI .. T5 MKIV,
- * T6 MKV ; 18 familles ; 105 blocs a tier ; 61 recettes basses a rendement.
+ * T6 MKV ; 18 familles ; 120 blocs a tier ; 61 recettes basses a rendement.
  */
 public final class GeneratedTierFamilies {
 
@@ -32,24 +32,27 @@ public final class GeneratedTierFamilies {
     public record Family(String key, List<String> low, String industry, boolean engine, List<String> blocks) {}
 
     public static final List<Family> FAMILIES = List.of(
-        new Family("broyage", List.of("mechanical:milling", "mechanical:jaw_crushing", "steam:macerator"), "crusher", true, List.of("millstone", "jaw_crusher", "steam_macerator", "basic_crusher", "advanced_crusher", "elite_crusher", "ultimate_crusher", "industrial_crusher")),
-        new Family("tamisage", List.of("mechanical:sifting", "steam:sifter"), "ore_separator", true, List.of("mechanical_sifter", "steam_sifter", "basic_ore_separator", "advanced_ore_separator", "elite_ore_separator", "ultimate_ore_separator", "industrial_ore_separator")),
-        new Family("sciage", List.of("mechanical:sawing", "steam:saw"), "sawmill", true, List.of("mechanical_saw", "steam_saw", "basic_sawmill", "advanced_sawmill", "elite_sawmill", "ultimate_sawmill", "industrial_sawmill")),
-        new Family("tournage", List.of("mechanical:turning", "steam:lathe"), "machining_center", true, List.of("wood_lathe", "steam_lathe", "basic_machining_center", "advanced_machining_center", "elite_machining_center", "ultimate_machining_center", "industrial_machining_center")),
-        new Family("compression", List.of("steam:compressor"), "compressor", true, List.of("steam_compressor", "basic_compressor", "advanced_compressor", "elite_compressor", "ultimate_compressor", "industrial_compressor")),
-        new Family("extraction", List.of("steam:extractor"), "extractor", true, List.of("steam_extractor", "basic_extractor", "advanced_extractor", "elite_extractor", "ultimate_extractor", "industrial_extractor")),
-        new Family("cuisson", List.of("smelting", "steam:furnace"), "furnace", true, List.of("steam_furnace", "basic_furnace", "advanced_furnace", "elite_furnace", "ultimate_furnace", "industrial_furnace")),
-        new Family("laminage", List.of("steam:rolling_mill"), "rolling_mill", true, List.of("steam_rolling_mill", "basic_rolling_mill", "advanced_rolling_mill", "elite_rolling_mill", "ultimate_rolling_mill", "industrial_rolling_mill")),
-        new Family("trefilage", List.of("steam:wiremill"), "wiremill", true, List.of("steam_wiremill", "basic_wiremill", "advanced_wiremill", "elite_wiremill", "ultimate_wiremill", "industrial_wiremill")),
-        new Family("melange", List.of("steam:mixer"), "mixer", true, List.of("steam_mixer", "basic_mixer", "advanced_mixer", "elite_mixer", "ultimate_mixer", "industrial_mixer")),
-        new Family("presse", List.of("steam:press"), "press", true, List.of("steam_press", "basic_press", "advanced_press", "elite_press", "ultimate_press", "industrial_press")),
-        new Family("frappe", List.of(), "power_hammer", true, List.of("basic_power_hammer", "advanced_power_hammer", "elite_power_hammer", "ultimate_power_hammer", "industrial_power_hammer")),
-        new Family("taille", List.of(), "stoneworks", true, List.of("basic_stoneworks", "advanced_stoneworks", "elite_stoneworks", "ultimate_stoneworks", "industrial_stoneworks")),
-        new Family("induction", List.of("steam:induction_furnace"), "induction_furnace", true, List.of("steam_induction_furnace", "basic_induction_furnace", "advanced_induction_furnace", "elite_induction_furnace", "ultimate_induction_furnace")),
-        new Family("creuset", List.of(), null, false, List.of("clay_crucible", "crucible_furnace", "auto_foundry", "basic_electric_crucible", "advanced_electric_crucible", "elite_electric_crucible", "ultimate_electric_crucible", "industrial_electric_crucible")),
+        new Family("broyage", List.of("mechanical:milling", "mechanical:jaw_crushing", "steam:macerator"), "crusher", true, List.of("millstone", "jaw_crusher", "steam_macerator", "basic_crusher", "advanced_crusher", "elite_crusher", "ultimate_crusher", "stellar_crusher", "industrial_crusher")),
+        new Family("tamisage", List.of("mechanical:sifting", "steam:sifter"), "ore_separator", true, List.of("mechanical_sifter", "steam_sifter", "basic_ore_separator", "advanced_ore_separator", "elite_ore_separator", "ultimate_ore_separator", "stellar_ore_separator", "industrial_ore_separator")),
+        new Family("sciage", List.of("mechanical:sawing", "steam:saw"), "sawmill", true, List.of("mechanical_saw", "steam_saw", "basic_sawmill", "advanced_sawmill", "elite_sawmill", "ultimate_sawmill", "stellar_sawmill", "industrial_sawmill")),
+        new Family("tournage", List.of("mechanical:turning", "steam:lathe"), "machining_center", true, List.of("wood_lathe", "steam_lathe", "basic_machining_center", "advanced_machining_center", "elite_machining_center", "ultimate_machining_center", "stellar_machining_center", "industrial_machining_center")),
+        new Family("compression", List.of("steam:compressor"), "compressor", true, List.of("steam_compressor", "basic_compressor", "advanced_compressor", "elite_compressor", "ultimate_compressor", "stellar_compressor", "industrial_compressor")),
+        new Family("extraction", List.of("steam:extractor"), "extractor", true, List.of("steam_extractor", "basic_extractor", "advanced_extractor", "elite_extractor", "ultimate_extractor", "stellar_extractor", "industrial_extractor")),
+        new Family("cuisson", List.of("smelting", "steam:furnace"), "furnace", true, List.of("steam_furnace", "basic_furnace", "advanced_furnace", "elite_furnace", "ultimate_furnace", "stellar_furnace", "industrial_furnace")),
+        new Family("laminage", List.of("steam:rolling_mill"), "rolling_mill", true, List.of("steam_rolling_mill", "basic_rolling_mill", "advanced_rolling_mill", "elite_rolling_mill", "ultimate_rolling_mill", "stellar_rolling_mill", "industrial_rolling_mill")),
+        new Family("trefilage", List.of("steam:wiremill"), "wiremill", true, List.of("steam_wiremill", "basic_wiremill", "advanced_wiremill", "elite_wiremill", "ultimate_wiremill", "stellar_wiremill", "industrial_wiremill")),
+        new Family("melange", List.of("steam:mixer"), "mixer", true, List.of("steam_mixer", "basic_mixer", "advanced_mixer", "elite_mixer", "ultimate_mixer", "stellar_mixer", "industrial_mixer")),
+        new Family("presse", List.of("steam:press"), "press", true, List.of("steam_press", "basic_press", "advanced_press", "elite_press", "ultimate_press", "stellar_press", "industrial_press")),
+        new Family("frappe", List.of(), "power_hammer", true, List.of("basic_power_hammer", "advanced_power_hammer", "elite_power_hammer", "ultimate_power_hammer", "stellar_power_hammer", "industrial_power_hammer")),
+        new Family("taille", List.of(), "stoneworks", true, List.of("basic_stoneworks", "advanced_stoneworks", "elite_stoneworks", "ultimate_stoneworks", "stellar_stoneworks", "industrial_stoneworks")),
+        new Family("induction", List.of("steam:induction_furnace"), "induction_furnace", true, List.of("steam_induction_furnace", "basic_induction_furnace", "advanced_induction_furnace", "elite_induction_furnace", "ultimate_induction_furnace", "stellar_induction_furnace")),
+        new Family("creuset", List.of(), null, false, List.of("clay_crucible", "crucible_furnace", "auto_foundry", "basic_electric_crucible", "advanced_electric_crucible", "elite_electric_crucible", "ultimate_electric_crucible", "stellar_electric_crucible", "industrial_electric_crucible")),
         new Family("forage", List.of(), null, false, List.of("mechanical_drill", "steam_drill", "drill")),
         new Family("soufflage", List.of(), null, false, List.of("bellows", "steam_blower")),
         new Family("rotation", List.of(), null, false, List.of("water_wheel", "windmill_hub", "horse_mill", "beam_engine", "steam_engine")));
+
+    /** 1.0.7 (lot 3) : machines (cle IndustryMachine ou du kit) qui ont leur compacte MKV (prefixe stellar_). */
+    public static final Set<String> MKV_MACHINES = Set.of("crusher", "ore_separator", "sawmill", "machining_center", "compressor", "extractor", "furnace", "rolling_mill", "wiremill", "mixer", "press", "power_hammer", "stoneworks", "induction_furnace", "electric_crucible");
 
     /** Bloc -> famille. */
     public static final Map<String, String> FAMILY_OF = Map.ofEntries(
@@ -139,6 +142,21 @@ public final class GeneratedTierFamilies {
           Map.entry("steam_saw", "sciage"),
           Map.entry("steam_sifter", "tamisage"),
           Map.entry("steam_wiremill", "trefilage"),
+          Map.entry("stellar_compressor", "compression"),
+          Map.entry("stellar_crusher", "broyage"),
+          Map.entry("stellar_electric_crucible", "creuset"),
+          Map.entry("stellar_extractor", "extraction"),
+          Map.entry("stellar_furnace", "cuisson"),
+          Map.entry("stellar_induction_furnace", "induction"),
+          Map.entry("stellar_machining_center", "tournage"),
+          Map.entry("stellar_mixer", "melange"),
+          Map.entry("stellar_ore_separator", "tamisage"),
+          Map.entry("stellar_power_hammer", "frappe"),
+          Map.entry("stellar_press", "presse"),
+          Map.entry("stellar_rolling_mill", "laminage"),
+          Map.entry("stellar_sawmill", "sciage"),
+          Map.entry("stellar_stoneworks", "taille"),
+          Map.entry("stellar_wiremill", "trefilage"),
           Map.entry("ultimate_compressor", "compression"),
           Map.entry("ultimate_crusher", "broyage"),
           Map.entry("ultimate_electric_crucible", "creuset"),
@@ -247,6 +265,21 @@ public final class GeneratedTierFamilies {
           Map.entry("steam_saw", 1),
           Map.entry("steam_sifter", 1),
           Map.entry("steam_wiremill", 1),
+          Map.entry("stellar_compressor", 6),
+          Map.entry("stellar_crusher", 6),
+          Map.entry("stellar_electric_crucible", 6),
+          Map.entry("stellar_extractor", 6),
+          Map.entry("stellar_furnace", 6),
+          Map.entry("stellar_induction_furnace", 6),
+          Map.entry("stellar_machining_center", 6),
+          Map.entry("stellar_mixer", 6),
+          Map.entry("stellar_ore_separator", 6),
+          Map.entry("stellar_power_hammer", 6),
+          Map.entry("stellar_press", 6),
+          Map.entry("stellar_rolling_mill", 6),
+          Map.entry("stellar_sawmill", 6),
+          Map.entry("stellar_stoneworks", 6),
+          Map.entry("stellar_wiremill", 6),
           Map.entry("ultimate_compressor", 5),
           Map.entry("ultimate_crusher", 5),
           Map.entry("ultimate_electric_crucible", 5),

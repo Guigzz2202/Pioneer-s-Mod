@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_stoneworks"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:phobos_deimos_forged_frame"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tharsium_truss_beam"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pallasite_cermet"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:stellar_stoneworks",
+  "count": 1
+ }
+}

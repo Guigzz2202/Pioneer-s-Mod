@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_extractor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:supercritical_exchanger_core"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:acidproof_venusium_liner"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:venusian_spiral_gasket"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:stellar_extractor",
+  "count": 1
+ }
+}

@@ -293,7 +293,8 @@ public final class PatchP105Lot38Tests {
             Gt.check(e != null, "fiche de l'API : " + r[0]);
             Gt.equal(Integer.parseInt(r[1]), e.spec().globalTier(e.tier()), "MachineSpec.globalTier de " + r[0]);
         }
-        Gt.check(GeneratedTierFamilies.YIELD.length == 6 && GeneratedTierFamilies.YIELD[5] == 3.5, "table R");
+        //1.0.7 : T6 = MKV, R(T6) = 4,375
+        Gt.check(GeneratedTierFamilies.YIELD.length == 7 && GeneratedTierFamilies.YIELD[5] == 3.5 && GeneratedTierFamilies.YIELD[6] == 4.375, "table R");
         //JEI : une recette basse convertie n'a jamais d'ingredient vide
         for (TierRecipe r : TierRecipes.of(s.level, "sciage")) {
             for (Counted c : r.inputs()) {

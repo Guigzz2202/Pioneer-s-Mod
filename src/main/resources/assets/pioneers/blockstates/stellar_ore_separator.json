@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "active=false,facing=north": {
+   "model": "pioneers:block/industry/stellar_ore_separator"
+  },
+  "active=true,facing=north": {
+   "model": "pioneers:block/industry/stellar_ore_separator_on"
+  },
+  "active=false,facing=east": {
+   "model": "pioneers:block/industry/stellar_ore_separator",
+   "y": 90
+  },
+  "active=true,facing=east": {
+   "model": "pioneers:block/industry/stellar_ore_separator_on",
+   "y": 90
+  },
+  "active=false,facing=south": {
+   "model": "pioneers:block/industry/stellar_ore_separator",
+   "y": 180
+  },
+  "active=true,facing=south": {
+   "model": "pioneers:block/industry/stellar_ore_separator_on",
+   "y": 180
+  },
+  "active=false,facing=west": {
+   "model": "pioneers:block/industry/stellar_ore_separator",
+   "y": 270
+  },
+  "active=true,facing=west": {
+   "model": "pioneers:block/industry/stellar_ore_separator_on",
+   "y": 270
+  }
+ }
+}

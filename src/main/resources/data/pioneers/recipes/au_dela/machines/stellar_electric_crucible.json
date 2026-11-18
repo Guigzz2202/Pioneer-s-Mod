@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_electric_crucible"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mercurian_refractory_brick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superalloy_seed_crystal"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:stellar_electric_crucible",
+  "count": 1
+ }
+}

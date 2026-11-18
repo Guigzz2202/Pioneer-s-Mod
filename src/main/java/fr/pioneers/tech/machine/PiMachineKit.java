@@ -32,7 +32,9 @@ public final class PiMachineKit {
     static {
         for (MachineKind kind : MachineKind.values()) {
             Map<CableTier, BlockEntry<KitMachineBlock>> tiers = new EnumMap<>(CableTier.class);
-            for (CableTier tier : CableTier.MK) {
+            //1.0.7 (lot 3) : compacte MKV des machines de famille (broyeur, four, compresseur ; GeneratedTierFamilies.MKV_MACHINES)
+            for (CableTier tier : fr.pioneers.api.machine.tier.GeneratedTierFamilies.MKV_MACHINES.contains(kind.name)
+                  ? CableTier.values() : CableTier.MK.toArray(new CableTier[0])) {
                 tiers.put(tier, PiCoreRegistries.block(kind.id(tier), () -> new KitMachineBlock(kind, tier, BlockBehaviour.Properties.of()
                       .mapColor(MapColor.METAL).strength(3.5F, 9.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion()
                       .lightLevel(state -> state.getValue(KitMachineBlock.ACTIVE) ? 8 : 0))));

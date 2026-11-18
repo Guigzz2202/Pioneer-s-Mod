@@ -137,7 +137,8 @@ public final class MachineTooltips {
                 if (global >= 2) {
                     globalTier(tips, global, family, spec.tiers() == TierMode.SINGLE_MKI ? 0 : tier);
                 } else {
-                    tips.tier(tier);
+                    //1.0.7 (lot 3) : le 5e bloc d'une fiche MK_CREATIVE est le creatif (l'indice 4 des tiers MK est le MKV)
+                    tips.tier(spec.tiers() == TierMode.MK_CREATIVE && tier == 4 ? Tooltips.CREATIVE : tier);
                 }
             }
             case AGE, TIER -> {

@@ -69,7 +69,8 @@ public enum MachineKind {
 
     /** Duree d'une operation (ticks). */
     public int ticks(CableTier tier) {
-        return Math.max(1, baseTicks / speed(tier));
+        //1.0.7 (lot 3) : au MKV, jamais sous 10 ticks (plancher des durees, PowerRules.MKV_MIN)
+        return Math.max(tier == CableTier.STELLAR ? fr.pioneers.api.machine.PowerRules.MKV_MIN[0] : 1, baseTicks / speed(tier));
     }
 
     /** Generateur : ticks de combustion consommes par tick. */

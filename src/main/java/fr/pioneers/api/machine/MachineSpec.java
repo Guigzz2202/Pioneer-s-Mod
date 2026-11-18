@@ -74,12 +74,14 @@ public record MachineSpec(String key, String family, Kind kind, Form form, TierM
 
     /**
      * 1.0.5-beta (lot 38) : TIER GLOBAL du bloc d'indice {@code blockIndex} (T0 mecanique, T1 bronze, T2 MKI .. T5 MKIV ; -1 : sans tier,
-     * creatif, ou multibloc dont le tier est celui de ses carcasses) : MK -> indice + 2, TIER -> {@link #tier}, AGE -> 0 (mecanique) ou 1
+     * creatif, ou multibloc dont le tier est celui de ses carcasses) : MK -> indice + 2 (5e bloc : T6 MKV), TIER -> {@link #tier}, AGE -> 0 (mecanique) ou 1
      * (bronze), SINGLE_MKI -> 2.
      */
     public int globalTier(int blockIndex) {
         return switch (tiers) {
-            case MK, MK_CREATIVE -> blockIndex <= 3 ? blockIndex + 2 : -1;
+            //1.0.7 (lot 3) : le 5e bloc d'une fiche MK est la compacte MKV (T6) ; celui d'une fiche MK_CREATIVE reste le creatif
+            case MK -> blockIndex <= 4 ? blockIndex + 2 : -1;
+            case MK_CREATIVE -> blockIndex <= 3 ? blockIndex + 2 : -1;
             case SINGLE_MKI -> 2;
             case TIER -> tier;
             case AGE -> "mechanical".equals(age) ? 0 : "bronze".equals(age) ? 1 : -1;
