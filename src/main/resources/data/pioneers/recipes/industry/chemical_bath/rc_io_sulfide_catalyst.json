@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/lokite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pele_frond"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:torch_bulb"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:io_sulfide_catalyst",
+   "count": 4
+  }
+ ]
+}

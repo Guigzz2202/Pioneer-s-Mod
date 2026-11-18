@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/ruachite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ruachite_crystal_grid"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:triton_cantaloupe"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ruachite_deposition_grid",
+   "count": 1
+  }
+ ]
+}

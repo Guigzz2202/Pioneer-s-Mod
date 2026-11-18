@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/terminite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/flarium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:alumina_ceramic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:insulating_varnish"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:terminator_thermoelectric_strip",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/conamarite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:chaos_polyp"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ice_lily_bulb"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:plastic_sheet"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:europan_osmosis_membrane",
+   "count": 2
+  }
+ ]
+}

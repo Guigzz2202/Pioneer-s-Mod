@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/hygeite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_tendril"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:soot_puff"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hygiean_carbon_electrode",
+   "count": 2
+  }
+ ]
+}

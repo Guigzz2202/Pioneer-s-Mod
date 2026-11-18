@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/ruachite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:triton_cantaloupe"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:spire_crystal"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tritonian_ion_membrane",
+   "count": 2
+  }
+ ]
+}

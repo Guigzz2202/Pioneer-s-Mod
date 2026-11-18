@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:billets/pallasite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:olivine_bud"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pallas_frond"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pallasite_cermet",
+   "count": 2
+  }
+ ]
+}

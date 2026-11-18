@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ivy_strand"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:corona_pad"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/veronite"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:miranda_braided_insulation",
+   "count": 2
+  }
+ ]
+}

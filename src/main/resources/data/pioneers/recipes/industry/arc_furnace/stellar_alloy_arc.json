@@ -21,12 +21,6 @@
     "tag": "forge:ingots/venusium"
    },
    "count": 2
-  },
-  {
-   "ingredient": {
-    "item": "pioneers:graphite_electrode"
-   },
-   "count": 1
   }
  ],
  "gases": [

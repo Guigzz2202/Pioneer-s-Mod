@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/lokite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/conamarite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/valhallite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/sulcite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_fiber"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:jovian_pressure_vessel",
+   "count": 1
+  }
+ ]
+}

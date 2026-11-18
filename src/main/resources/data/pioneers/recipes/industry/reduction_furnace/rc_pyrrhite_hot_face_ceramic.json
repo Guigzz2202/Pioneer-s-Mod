@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/pyrrhite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cinder_fig"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pyrrhite_hot_face_ceramic",
+   "count": 2
+  }
+ ]
+}

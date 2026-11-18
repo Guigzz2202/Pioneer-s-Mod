@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/flarium"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tolimanite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flare_spine"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lead_shielding"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:flarium_flare_shield",
+   "count": 1
+  }
+ ]
+}

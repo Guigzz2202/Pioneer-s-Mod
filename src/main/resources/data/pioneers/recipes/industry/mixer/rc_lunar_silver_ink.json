@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:silver_bean"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:selenite_dust"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lunar_silver_ink",
+   "count": 2
+  }
+ ]
+}

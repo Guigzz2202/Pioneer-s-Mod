@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/venusian_spiral_gasket"
+ }
+}

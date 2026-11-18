@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/valhallite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:crater_lint"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:valhalla_berry"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:callisto_filter_cartridge",
+   "count": 2
+  }
+ ]
+}

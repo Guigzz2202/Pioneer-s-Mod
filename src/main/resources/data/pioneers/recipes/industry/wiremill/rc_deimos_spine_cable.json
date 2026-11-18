@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/deimite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dread_spine"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pale_fluff"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:deimos_spine_cable",
+   "count": 2
+  }
+ ]
+}

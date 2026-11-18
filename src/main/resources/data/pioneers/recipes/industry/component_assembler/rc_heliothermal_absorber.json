@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/mercurium"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_crystal"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ash_berry"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_tile"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:heliothermal_absorber",
+   "count": 1
+  }
+ ]
+}

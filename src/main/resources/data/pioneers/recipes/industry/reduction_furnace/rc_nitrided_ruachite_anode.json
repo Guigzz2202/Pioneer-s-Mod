@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/ruachite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:spire_crystal"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:nitrided_ruachite_anode",
+   "count": 2
+  }
+ ]
+}

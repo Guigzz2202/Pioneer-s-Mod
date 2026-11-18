@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/flarium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/terminite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/tolimanite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flare_spine"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:binary_pear"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photodiode"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:flarium_particle_detector",
+   "count": 1
+  }
+ ]
+}

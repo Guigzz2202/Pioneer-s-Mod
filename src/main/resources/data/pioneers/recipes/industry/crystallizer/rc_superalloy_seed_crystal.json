@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:billets/mercurium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:metallic_fiber"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:superalloy_seed_crystal",
+   "count": 2
+  }
+ ]
+}

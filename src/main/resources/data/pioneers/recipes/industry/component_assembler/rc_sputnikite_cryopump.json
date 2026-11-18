@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 180,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/sputnikite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/mordorite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_centrifugal_pump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dusk_cap"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sputnikite_cryopump",
+   "count": 1
+  }
+ ]
+}

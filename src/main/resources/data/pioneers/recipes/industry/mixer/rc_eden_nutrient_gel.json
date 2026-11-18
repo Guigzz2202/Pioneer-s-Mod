@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 3,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:eden_berry"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:frost_petal"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:eden_nutrient_gel",
+   "count": 4
+  }
+ ]
+}

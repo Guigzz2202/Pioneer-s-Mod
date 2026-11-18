@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/ahunite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/vestalite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/pallasite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/hygeite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/meteoritite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_screw"
+   },
+   "count": 4
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:belt_structural_node",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "pioneers:item/phobos_deimos_forged_frame"
+ }
+}

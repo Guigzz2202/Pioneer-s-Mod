@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/lunarium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:silver_bean"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:silvered_lunar_mirror",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ash_berry"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:metallic_fiber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/mercurium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mercurian_refractory_brick",
+   "count": 4
+  }
+ ]
+}

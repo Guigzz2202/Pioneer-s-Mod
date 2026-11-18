@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:alabaster_petal"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/lunarium"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sintered_alabaster_insulator",
+   "count": 2
+  }
+ ]
+}

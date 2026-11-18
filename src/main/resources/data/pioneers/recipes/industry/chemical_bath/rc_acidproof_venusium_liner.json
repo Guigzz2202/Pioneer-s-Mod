@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "chemical_bath",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/venusium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ember_pod"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sulfur_pollen"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:sulfuric_acid",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:acidproof_venusium_liner",
+   "count": 2
+  }
+ ]
+}

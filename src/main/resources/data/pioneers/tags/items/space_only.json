@@ -18,6 +18,14 @@
    "required": false
   },
   {
+   "id": "pioneers:acidproof_venusium_liner",
+   "required": false
+  },
+  {
+   "id": "pioneers:additive_feedstock_cartridge",
+   "required": false
+  },
+  {
    "id": "pioneers:advanced_maglev_locomotive",
    "required": false
   },
@@ -158,6 +166,10 @@
    "required": false
   },
   {
+   "id": "pioneers:belt_structural_node",
+   "required": false
+  },
+  {
    "id": "pioneers:beryllium_mirror",
    "required": false
   },
@@ -167,6 +179,10 @@
   },
   {
    "id": "pioneers:binary_pear",
+   "required": false
+  },
+  {
+   "id": "pioneers:binary_sun_absorber",
    "required": false
   },
   {
@@ -187,6 +203,10 @@
   },
   {
    "id": "pioneers:borealite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:borealite_frost_insulator",
    "required": false
   },
   {
@@ -219,6 +239,10 @@
   },
   {
    "id": "pioneers:brine_reed_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:callisto_filter_cartridge",
    "required": false
   },
   {
@@ -290,6 +314,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ceres_carburizing_salts",
+   "required": false
+  },
+  {
    "id": "pioneers:ceres_clay",
    "required": false
   },
@@ -347,6 +375,10 @@
   },
   {
    "id": "pioneers:charon_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:charon_thermal_shield",
    "required": false
   },
   {
@@ -910,6 +942,10 @@
    "required": false
   },
   {
+   "id": "pioneers:degenerate_shielding_plate",
+   "required": false
+  },
+  {
    "id": "pioneers:deimite_billet",
    "required": false
   },
@@ -991,6 +1027,10 @@
   },
   {
    "id": "pioneers:deimos_sandstone_wall",
+   "required": false
+  },
+  {
+   "id": "pioneers:deimos_spine_cable",
    "required": false
   },
   {
@@ -1090,6 +1130,10 @@
    "required": false
   },
   {
+   "id": "pioneers:eden_nutrient_gel",
+   "required": false
+  },
+  {
    "id": "pioneers:edenite_billet",
    "required": false
   },
@@ -1135,6 +1179,10 @@
   },
   {
    "id": "pioneers:ember_pod_plant_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:ember_thermal_cell",
    "required": false
   },
   {
@@ -1258,6 +1306,14 @@
    "required": false
   },
   {
+   "id": "pioneers:europan_cryo_scrubber",
+   "required": false
+  },
+  {
+   "id": "pioneers:europan_osmosis_membrane",
+   "required": false
+  },
+  {
    "id": "pioneers:euv_engraving_objective",
    "required": false
   },
@@ -1326,6 +1382,10 @@
    "required": false
   },
   {
+   "id": "pioneers:flarium_flare_shield",
+   "required": false
+  },
+  {
    "id": "pioneers:flarium_ingot",
    "required": false
   },
@@ -1335,6 +1395,10 @@
   },
   {
    "id": "pioneers:flarium_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:flarium_particle_detector",
    "required": false
   },
   {
@@ -1363,6 +1427,10 @@
   },
   {
    "id": "pioneers:frost_bell_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:frost_capacitor_cell",
    "required": false
   },
   {
@@ -1418,6 +1486,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ganymede_molecular_sieve",
+   "required": false
+  },
+  {
    "id": "pioneers:ganymede_regolith",
    "required": false
   },
@@ -1450,6 +1522,10 @@
    "required": false
   },
   {
+   "id": "pioneers:gravitational_calibration_mass",
+   "required": false
+  },
+  {
    "id": "pioneers:greenhouse_controller",
    "required": false
   },
@@ -1474,6 +1550,14 @@
    "required": false
   },
   {
+   "id": "pioneers:heliothermal_absorber",
+   "required": false
+  },
+  {
+   "id": "pioneers:helium3_trap_cell",
+   "required": false
+  },
+  {
    "id": "pioneers:hematite_ore",
    "required": false
   },
@@ -1490,6 +1574,10 @@
    "required": false
   },
   {
+   "id": "pioneers:hts_tape",
+   "required": false
+  },
+  {
    "id": "pioneers:hygeite_billet",
    "required": false
   },
@@ -1503,6 +1591,10 @@
   },
   {
    "id": "pioneers:hygeite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:hygeite_emitter_cathode",
    "required": false
   },
   {
@@ -1542,6 +1634,10 @@
    "required": false
   },
   {
+   "id": "pioneers:hygiean_carbon_electrode",
+   "required": false
+  },
+  {
    "id": "pioneers:ice_lily",
    "required": false
   },
@@ -1551,6 +1647,10 @@
   },
   {
    "id": "pioneers:ice_lily_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:ice_melt_exchanger",
    "required": false
   },
   {
@@ -1586,6 +1686,10 @@
    "required": false
   },
   {
+   "id": "pioneers:io_sulfide_catalyst",
+   "required": false
+  },
+  {
    "id": "pioneers:io_sulfur",
    "required": false
   },
@@ -1607,6 +1711,14 @@
   },
   {
    "id": "pioneers:josephson_junction",
+   "required": false
+  },
+  {
+   "id": "pioneers:jovian_catalyst_cartridge",
+   "required": false
+  },
+  {
+   "id": "pioneers:jovian_pressure_vessel",
    "required": false
   },
   {
@@ -1775,6 +1887,10 @@
   },
   {
    "id": "pioneers:lunar_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:lunar_silver_ink",
    "required": false
   },
   {
@@ -1979,6 +2095,14 @@
   },
   {
    "id": "pioneers:marsium_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:martian_hull_segment",
+   "required": false
+  },
+  {
+   "id": "pioneers:mercurian_refractory_brick",
    "required": false
   },
   {
@@ -2234,6 +2358,10 @@
    "required": false
   },
   {
+   "id": "pioneers:miranda_braided_insulation",
+   "required": false
+  },
+  {
    "id": "pioneers:miranda_regolith",
    "required": false
   },
@@ -2410,6 +2538,10 @@
    "required": false
   },
   {
+   "id": "pioneers:neutronium_flywheel",
+   "required": false
+  },
+  {
    "id": "pioneers:neutronium_ingot",
    "required": false
   },
@@ -2534,6 +2666,10 @@
    "required": false
   },
   {
+   "id": "pioneers:nitrided_ruachite_anode",
+   "required": false
+  },
+  {
    "id": "pioneers:nitrogen_spire",
    "required": false
   },
@@ -2559,6 +2695,10 @@
   },
   {
    "id": "pioneers:olivine_bud",
+   "required": false
+  },
+  {
+   "id": "pioneers:olivine_investment_shell",
    "required": false
   },
   {
@@ -2810,6 +2950,10 @@
    "required": false
   },
   {
+   "id": "pioneers:pallasite_cermet",
+   "required": false
+  },
+  {
    "id": "pioneers:pallasite_concentrate",
    "required": false
   },
@@ -2894,7 +3038,15 @@
    "required": false
   },
   {
+   "id": "pioneers:phobos_deimos_forged_frame",
+   "required": false
+  },
+  {
    "id": "pioneers:phobos_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobos_mycelium_panel",
    "required": false
   },
   {
@@ -3442,6 +3594,10 @@
    "required": false
   },
   {
+   "id": "pioneers:pyrrhite_hot_face_ceramic",
+   "required": false
+  },
+  {
    "id": "pioneers:pyrrhite_ingot",
    "required": false
   },
@@ -3910,6 +4066,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ruachite_deposition_grid",
+   "required": false
+  },
+  {
    "id": "pioneers:ruachite_dust",
    "required": false
   },
@@ -3947,6 +4107,10 @@
   },
   {
    "id": "pioneers:rust_fiber",
+   "required": false
+  },
+  {
+   "id": "pioneers:rust_fiber_composite",
    "required": false
   },
   {
@@ -3998,11 +4162,19 @@
    "required": false
   },
   {
+   "id": "pioneers:silvered_lunar_mirror",
+   "required": false
+  },
+  {
    "id": "pioneers:singularity_core",
    "required": false
   },
   {
    "id": "pioneers:singularity_plating",
+   "required": false
+  },
+  {
+   "id": "pioneers:sintered_alabaster_insulator",
    "required": false
   },
   {
@@ -4198,6 +4370,14 @@
    "required": false
   },
   {
+   "id": "pioneers:sputnikite_cryopump",
+   "required": false
+  },
+  {
+   "id": "pioneers:sputnikite_cryostat_vessel",
+   "required": false
+  },
+  {
    "id": "pioneers:sputnikite_dust",
    "required": false
   },
@@ -4235,6 +4415,10 @@
   },
   {
    "id": "pioneers:stellar_alloy_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_chassis",
    "required": false
   },
   {
@@ -4498,6 +4682,10 @@
    "required": false
   },
   {
+   "id": "pioneers:superalloy_seed_crystal",
+   "required": false
+  },
+  {
    "id": "pioneers:supercapacitor",
    "required": false
   },
@@ -4507,6 +4695,14 @@
   },
   {
    "id": "pioneers:superconducting_transformer",
+   "required": false
+  },
+  {
+   "id": "pioneers:supercritical_exchanger_core",
+   "required": false
+  },
+  {
+   "id": "pioneers:terminator_thermoelectric_strip",
    "required": false
   },
   {
@@ -4650,6 +4846,10 @@
    "required": false
   },
   {
+   "id": "pioneers:tharsium_truss_beam",
+   "required": false
+  },
+  {
    "id": "pioneers:thermal_suit_boots",
    "required": false
   },
@@ -4670,11 +4870,27 @@
    "required": false
   },
   {
+   "id": "pioneers:tholin_multilayer_insulation",
+   "required": false
+  },
+  {
    "id": "pioneers:tholin_sedge",
    "required": false
   },
   {
    "id": "pioneers:tholin_sedge_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:tidal_bioreactor_cell",
+   "required": false
+  },
+  {
+   "id": "pioneers:tidal_induction_coil",
+   "required": false
+  },
+  {
+   "id": "pioneers:tidal_nacre_plate",
    "required": false
   },
   {
@@ -4710,6 +4926,10 @@
    "required": false
   },
   {
+   "id": "pioneers:tigrite_centrifuge_bowl",
+   "required": false
+  },
+  {
    "id": "pioneers:tigrite_concentrate",
    "required": false
   },
@@ -4742,6 +4962,14 @@
    "required": false
   },
   {
+   "id": "pioneers:titan_amber_varnish",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_cryo_panel",
+   "required": false
+  },
+  {
    "id": "pioneers:titan_ice",
    "required": false
   },
@@ -4759,6 +4987,10 @@
   },
   {
    "id": "pioneers:titan_ice_bricks",
+   "required": false
+  },
+  {
+   "id": "pioneers:titan_magnetic_bearing",
    "required": false
   },
   {
@@ -4783,6 +5015,10 @@
   },
   {
    "id": "pioneers:titania_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:titanian_frost_dielectric",
    "required": false
   },
   {
@@ -5070,6 +5306,10 @@
    "required": false
   },
   {
+   "id": "pioneers:tritonian_ion_membrane",
+   "required": false
+  },
+  {
    "id": "pioneers:tungsten_bolt",
    "required": false
   },
@@ -5235,6 +5475,10 @@
   },
   {
    "id": "pioneers:twilight_bulb",
+   "required": false
+  },
+  {
+   "id": "pioneers:twilight_ir_photodiode",
    "required": false
   },
   {
@@ -5446,6 +5690,10 @@
    "required": false
   },
   {
+   "id": "pioneers:venusian_spiral_gasket",
+   "required": false
+  },
+  {
    "id": "pioneers:venusium_billet",
    "required": false
   },
@@ -5607,6 +5855,10 @@
   },
   {
    "id": "pioneers:vestalite_rod",
+   "required": false
+  },
+  {
+   "id": "pioneers:vestan_atomized_powder",
    "required": false
   },
   {

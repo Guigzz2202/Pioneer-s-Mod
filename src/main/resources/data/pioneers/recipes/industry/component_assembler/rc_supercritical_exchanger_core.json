@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/venusium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_heat_exchanger"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:volcanic_thorn"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:supercritical_exchanger_core",
+   "count": 1
+  }
+ ]
+}

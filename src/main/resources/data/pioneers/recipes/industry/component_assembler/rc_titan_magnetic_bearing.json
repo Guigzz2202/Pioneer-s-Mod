@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/krakenite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/tigrite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_bearing"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tiger_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titan_amber_varnish"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titan_magnetic_bearing",
+   "count": 1
+  }
+ ]
+}

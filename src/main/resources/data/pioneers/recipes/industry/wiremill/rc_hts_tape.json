@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/messinite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/veronite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:veronite_superconductor"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:hts_tape",
+   "count": 2
+  }
+ ]
+}

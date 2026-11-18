@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mixer",
+ "tier": 3,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:amber_gourd"
+   },
+   "count": 3
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:ethanol",
+   "amount": 250
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:titan_amber_varnish",
+   "count": 4
+  }
+ ]
+}

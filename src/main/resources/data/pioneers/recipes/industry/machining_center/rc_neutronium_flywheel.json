@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 140,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:billets/neutronium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_bearing"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:neutronium_flywheel",
+   "count": 1
+  }
+ ]
+}

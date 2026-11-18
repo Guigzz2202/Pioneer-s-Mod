@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/venusium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:volcanic_thorn"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sulfur_pollen"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:venusian_spiral_gasket",
+   "count": 4
+  }
+ ]
+}

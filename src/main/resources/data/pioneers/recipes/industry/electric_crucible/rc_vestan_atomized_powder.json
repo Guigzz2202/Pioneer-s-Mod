@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:billets/vestalite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:eucrite_flakes"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:vesta_hip"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:vestan_atomized_powder",
+   "count": 4
+  }
+ ]
+}

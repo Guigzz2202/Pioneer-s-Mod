@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 160,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/neutronium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:inertial_measurement_unit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_screw"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gravitational_calibration_mass",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "autoclave",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:rust_fiber"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:scarlet_resin"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:rust_fiber_composite",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/sputnikite"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/mordorite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryostat"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tholin_fiber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heart_petal"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mordor_burr"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sputnikite_cryostat_vessel",
+   "count": 1
+  }
+ ]
+}

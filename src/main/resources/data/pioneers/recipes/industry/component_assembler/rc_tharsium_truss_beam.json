@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/tharsium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/marsium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:scarlet_resin"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rust_fiber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_bolt"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tharsium_truss_beam",
+   "count": 1
+  }
+ ]
+}

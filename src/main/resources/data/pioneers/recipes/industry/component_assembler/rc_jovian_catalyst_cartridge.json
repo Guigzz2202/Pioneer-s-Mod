@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 220,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/lokite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/sulcite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:torch_bulb"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sulcus_straw"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aurora_petal"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_screw"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:jovian_catalyst_cartridge",
+   "count": 1
+  }
+ ]
+}

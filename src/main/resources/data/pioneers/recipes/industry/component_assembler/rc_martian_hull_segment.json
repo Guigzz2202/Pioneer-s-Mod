@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/marsium"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/deimite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/meteoritite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rust_fiber_composite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pale_fluff"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:martian_hull_segment",
+   "count": 1
+  }
+ ]
+}
