@@ -1,3 +1,54 @@
+# Pioneer's — 1.0.6-beta — Un rôle par machine
+
+**En bref** : chaque machine a un rôle clair et une seule machine fait chaque transformation ; JEI montre une page par famille de machines ; sept **machines de métier** et deux nouveaux multiblocs animés (**Découpeuse**, **Calcinateur**) ; fusion à 100 % et coulée de toutes les formes pour tous les métaux ; interfaces au plus juste avec des jauges liquide / gaz partagées ; **moteur électrique** MKI à MKIV ; mécanique revue (charge lisible, dynamo sur le surplus) ; salle blanche : circuits en lots et graveur des puces ; recettes à l'unité et durées encadrées. Les mondes existants sont repris (cases et réservoirs rangés, recettes renvoyées, lots en cours rendus). Version du protocole réseau : 22 (un client 1.0.5 ne peut pas rejoindre un serveur 1.0.6).
+
+## Machines et rôles
+
+- **Un rôle par machine** : chaque transformation d'une forme de métal n'a plus qu'une machine (plaque et tôle → Presse, tige → Extrudeuse, fil → Tréfileuse, anneau, ressort, tube roulé → Cintreuse, engrenage → Découpeuse, ébauche, billette, tête d'outil → Marteau-pilon, feuille → Laminoir). Les recettes en double sont renvoyées à la bonne machine ou retirées ; les recettes posées dans un monde existant suivent.
+- **Machines de métier** (MKI à MKIV) : Menuiserie, Atelier de confection, Conditionneuse, Chaudronnerie, Atelier de verrerie, Banc électromécanique, Taillerie de pierre. Les copies automatisées des recettes d'établi vont à la machine du métier ; l'Assembleur ne fait plus de machines (établi de montage).
+- **Taillerie de pierre** : toute la taille de pierre, avec un meilleur rendement qu'à la main (×1,75 au MKI à ×3,5 au MKIV).
+- **Découpeuse** (engrenages, gemmes, galettes, pivots) et **Calcinateur** (réduction, grillage, calcination, frittage, dopage), en compacte et en multibloc. La Découpeuse multibloc a un **portique animé** qui découpe les engrenages au chalumeau ; les bobines du Calcinateur rougeoient.
+- **Craqueur** : multibloc seulement. **Broyeur** : sans réservoir d'eau.
+- **Extrudeuse** : elle ne travaille qu'avec ses **formes d'extrusion** (tige, tube ; voie plus lente pour la plaque, le fil et l'ébauche d'engrenage), pour tous les métaux. Les formes ne s'empilent plus. Filière d'extrusion vierge supprimée (remplacée par la forme tige).
+- **Moteur électrique compact** MKI à MKIV : il transforme l'électricité en rotation, couple croissant par tier, **vitesse visée réglable** et sens inversable.
+
+## Fusion et coulée
+
+- Le **creuset industriel** refond **à 100 %** toute forme de tout métal. La **machine de coulée** donne lingot, pépites, bloc, plaque, tige, tube et ébauche d'engrenage pour tout métal fondu. Nouvelles matrices à pépites et à bloc ; matrices non empilables, icônes refaites.
+- **JEI** : pages « Alliages » (métal fondu ou lingot, selon l'objet cliqué) et « Fusion des métaux » (valeur réelle de chaque objet en mB) plus simples.
+
+## Interfaces et JEI
+
+- **Cases au plus juste** : chaque machine n'a plus que les cases et les réservoirs dont ses recettes ont besoin (43 machines revues). Une jauge sert au **liquide ou au gaz** ; l'infobulle dit « Fluide » ou « Gaz » et montre la ressource attendue en fantôme. Cases tampon des multiblocs réduites à 2 piles par sorte d'objet.
+- **JEI** : une page par famille de machines (les recettes mécaniques et à vapeur avec celles du MKI), énergie et durée au MKI, plus de doublons ; le type de chaque ressource est affiché (« Azote (Gaz) »).
+- **Dynamo compacte** au standard des machines compactes (réserve, case de recharge, faces, redstone).
+
+## Mécanique
+
+- Les sources sont **régulées** : couple fort au démarrage, puis puissance constante jusqu'à leur régime. La **charge** se lit simplement (100 % = les sources donnent tout au régime) ; plus de 100 % quand rien n'est branché (« aucune source »).
+- La **dynamo** ne prend que le **surplus** des sources et s'arrête quand sa réserve est pleine. La machine à vapeur ne consomme plus de vapeur à vide ; une machine trop rapide ne gaspille plus de puissance.
+
+## Recettes
+
+- **Recettes à l'unité** : une recette N → N devient 1 → 1 (durée et fluides divisés).
+- **Durées** : au MKIV, au moins 1 s (2 s pour une recette MKIII, 4 s pour une recette MKIV), deux fois plus long à chaque tier d'avant ; au plus 8 s (20 s pour les machines de précision et les matériaux avancés). Les machines à vapeur passent à 8 s.
+- **Salle blanche** : circuits en lots à l'usine de semi-conducteurs (MKI ×8, MKII ×6, MKIII ×4, MKIV ×3) ; le **graveur de salle blanche** fait en quantité circuits imprimés, multicouches, transistors, CI CMS et puces photoniques ; le **graveur optique** grave les galettes des puces avec ses objectifs (verre, UV, EUV) ; plus de ressorts ni de grillage au graveur. **Ports** de salle blanche raccordés aux parois.
+- **Vis et boulons** de tous les métaux au centre d'usinage ; vis d'acier au tour à vapeur. **Engrenage d'acier rouge** dans la machine de base MKI ; la Placeuse de composants fait 4 machines de base d'un coup.
+- **Câble logistique MKI** : nouvelle recette (tube d'acier, fil de laiton, câble en bronze → 8). Ressorts à la Cintreuse ; brique réfractaire sans péridot.
+
+## Clans
+
+- Les emplacements de **chunkloading s'achètent** au trésor comme les claims ; plus aucun plafond par défaut (réglable dans la configuration).
+
+## Corrections et performance
+
+- Mémoire : environ deux fois moins d'états de blocs (câbles hérités, verre industriel).
+- Un objet retiré puis remis n'est plus caché dans un monde existant.
+- Minimap : téléportation juste au-dessus d'un waypoint posé dans un bloc.
+- Fonderie : vider le bain ne forme plus d'alliage de moins d'une pépite. La presse rend 2 tôles par plaque.
+- Moins de rats et de pigeons ; sons de l'éléphant et du pigeon adoucis ; sons des animaux sauvages remis.
+- Le chien de chasse sent tout troupeau pas encore trouvé ; le loup apprivoisé d'un monde d'avant retrouve son maître.
+
 # Pioneer's — 1.0.5-beta — The world is alive
 
 **En bref** : le monde vit. Un **calendrier de 4 saisons** de 10 jours change le climat, les couleurs et le temps (vraie neige d'hiver sans couche) ; les cultures hors saison fanent après un jour de grâce ; la **serre** devient un bâtiment fermé avec son régulateur. Les **animaux restent** et se repeuplent par zone de 128 blocs ; **32 espèces sauvages** (gibier, prédateurs, petite faune, savane, jungle, mer et côtes) ; **chiens et chats** de race, maître par l'étiquette, niche et panier, touche **Rappel (G)** ; la **chasse** (troupeaux, chien pisteur, savoir-faire Chasse, mousquet, revolver, harpon, trophées) ; la **cuisine du gibier** (fumaisons, plats, huile de lampe). Guide : chapitre « Le monde vivant » (touche H). Réglages serveur : sections `seasons`, `fauna`, `pets`, `hunt` de `pioneers-common.toml`. Le détail lot par lot suit.
