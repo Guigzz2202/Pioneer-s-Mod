@@ -89,7 +89,7 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.DRUM, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
     FERMENTER("fermenter", Atelier.NEW, true, null, 2, 1, 1, 3, 0, 3, Source.INDUSTRIAL, Kind.PROCESS, 10, 0xAA965A, new int[]{5, 12, 0, 5, 12, 0}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.TOWER, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
-    PHOTOLITHOGRAPH("photolithograph", Atelier.NEW, true, null, 3, 2, 1, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xC8B4FF, new int[]{9, 4, 13, 9, 4, 13}, false, false, new String[]{},
+    PHOTOLITHOGRAPH("photolithograph", Atelier.NEW, true, null, 3, 2, 2, 0, 2, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xC8B4FF, new int[]{9, 4, 13, 9, 4, 13}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
     PICK_AND_PLACE("pick_and_place", Atelier.NEW, true, null, 10, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 30, 0x50C878, new int[]{5, 4, 17, 5, 4, 17}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.LINE, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
@@ -320,7 +320,7 @@ public enum IndustryMachine {
      * MAJ Recettes (lot 9a) : version des cases et reservoirs ecrite dans le NBT des machines ({@code ioVersion}) ; une machine sauvee sans
      * cette marque vient d'un monde d'avant la MAJ et ses cases sont remises en place par {@link IoMigration}.
      */
-    public static final int IO_VERSION = 11;
+    public static final int IO_VERSION = 12;
 
     /**
      * Anciennes io (objets, fluides, gaz : entree puis sortie) des machines dont l'io a change, la plus ancienne d'abord : {version des cases
@@ -358,7 +358,7 @@ public enum IndustryMachine {
           java.util.Map.entry("cracker", new int[][]{{4, 1, 1, 1, 1, 1, 1}, {10, 1, 3, 1, 3, 2, 4}}),
           java.util.Map.entry("autoclave", new int[][]{{10, 2, 1, 1, 1, 1, 1}}),
           java.util.Map.entry("fermenter", new int[][]{{10, 2, 1, 1, 2, 0, 1}}),
-          java.util.Map.entry("photolithograph", new int[][]{{1, 3, 2, 1, 0, 0, 0}, {10, 3, 2, 1, 0, 1, 0}}),
+          java.util.Map.entry("photolithograph", new int[][]{{1, 3, 2, 1, 0, 0, 0}, {10, 3, 2, 1, 0, 1, 0}, {11, 3, 2, 1, 0, 0, 0}}),
           java.util.Map.entry("pick_and_place", new int[][]{{10, 12, 1, 0, 0, 0, 0}}),
           java.util.Map.entry("bottler", new int[][]{{10, 1, 1, 1, 1, 1, 0}}),
           java.util.Map.entry("cryogenic_unit", new int[][]{{5, 0, 0, 0, 1, 1, 1}, {10, 0, 1, 2, 1, 1, 1}}),

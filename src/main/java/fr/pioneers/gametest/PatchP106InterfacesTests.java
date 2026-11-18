@@ -345,4 +345,39 @@ public final class PatchP106InterfacesTests {
         Gt.equal(2, fr.pioneers.society.clan.territory.ClanChunkloading.free(s.server, c), "stock rendu");
         s.done();
     }
+
+    /**
+     * Retours du 18/11/2026 (Guillaume) : « le grillage ne doit plus etre fait dans le graveur optique » ; « le craft 2 boulons = 2 vis dans le
+     * centre d'usinage doit etre supprime, la recette de vapeur suffit : 4 s au tier vapeur puis 2 s au MKI » ; « l'engrenage d'acier rouge
+     * dans les machines de base MKI ; la placeuse de composants propose un craft alternatif permettant d'en creer plus ».
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p106_recettes_1811", timeoutTicks = 20)
+    public static void p106_recettes_18_11(GameTestHelper h) {
+        Gt.begin(h);
+        var rm = h.getLevel().getRecipeManager();
+        //la vis d'aluminium reste au centre d'usinage (sans elle, pas de chassis MKII : la frappe a froid est MKII)
+        for (String gone : new String[]{"industry/photolithograph/pcm_copper_mesh", "industry/machining_center/screw_steel"}) {
+            Gt.check(rm.byKey(fr.pioneers.Pioneers.rl(gone)).isEmpty(), "recette retiree encore la : " + gone);
+        }
+        var screw = rm.byKey(fr.pioneers.Pioneers.rl("bronze/steam/lathe/steel_screw"));
+        Gt.check(screw.isPresent() && screw.get() instanceof fr.pioneers.tech.bronze.machines.SteamRecipe, "tour a vapeur : vis d'acier absente");
+        Gt.equal(80, ((fr.pioneers.tech.bronze.machines.SteamRecipe) screw.get()).time(), "vis d'acier : 4 s au tier vapeur");
+        var batch = rm.byKey(fr.pioneers.Pioneers.rl("machine_hulls/machine_hull_basic_batch"));
+        Gt.check(batch.isPresent() && batch.get() instanceof fr.pioneers.tech.industry.recipe.IndustrialRecipe, "lot de machines de base absent");
+        var b = (fr.pioneers.tech.industry.recipe.IndustrialRecipe) batch.get();
+        Gt.check(b.machine() == fr.pioneers.tech.industry.IndustryMachine.PICK_AND_PLACE, "lot de machines de base : Placeuse de composants");
+        Gt.equal(4, b.results().get(0).stack().getCount(), "Placeuse : 4 machines de base MKI");
+        Gt.check(rm.byKey(fr.pioneers.Pioneers.rl("automation/assembly/machine_hulls_machine_hull_basic")).isPresent(),
+              "la copie 1 pour 1 a l'Assembleur reste");
+        //le graveur fait les galettes des puces a l'objectif (verre MKII, UV MKIII, EUV MKIV)
+        for (String id : new String[]{"industry/photolithograph/rc_wafer_expose_glass", "industry/photolithograph/rc_wafer_fine_uv",
+              "industry/photolithograph/rc_wafer_euv_litho"}) {
+            var r = rm.byKey(fr.pioneers.Pioneers.rl(id));
+            Gt.check(r.isPresent() && r.get() instanceof fr.pioneers.tech.industry.recipe.IndustrialRecipe ir
+                     && ir.machine() == fr.pioneers.tech.industry.IndustryMachine.PHOTOLITHOGRAPH, "graveur : " + id + " absente");
+        }
+        Gt.check(fr.pioneers.tech.industry.recipe.Remanents.isTool("photolithograph", new net.minecraft.world.item.ItemStack(net.minecraftforge.registries.ForgeRegistries.ITEMS.getValue(fr.pioneers.Pioneers.rl("glass_engraving_objective")))),
+              "objectif en verre : outil du graveur");
+        h.succeed();
+    }
 }

@@ -96,7 +96,11 @@ public final class PatchP104Lot16Tests {
             if (t > 0) {
                 Gt.check(takes(r, "machine_hull_" + TIERS[t - 1], 1), hull + " : machine de base du tier d'avant");
             }
-            Gt.equal(t == 0 ? 4 : 5, r.ingredients().size(), hull + " : " + (t == 0 ? 4 : 5) + " entrees");
+            //1.0.6 (Guillaume, 18/11/2026) : la machine de base MKI demande aussi un engrenage d'acier rouge (une entree de plus)
+            if (t == 0) {
+                Gt.check(takes(r, "redsteel_gear", 1), hull + " : engrenage d'acier rouge");
+            }
+            Gt.equal(5, r.ingredients().size(), hull + " : 5 entrees");
         }
         h.succeed();
     }

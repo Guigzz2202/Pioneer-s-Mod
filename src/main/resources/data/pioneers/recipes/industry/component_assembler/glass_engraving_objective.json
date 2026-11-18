@@ -19,13 +19,7 @@
   },
   {
    "ingredient": {
-    "item": "pioneers:polarizing_filter"
-   },
-   "count": 1
-  },
-  {
-   "ingredient": {
-    "item": "pioneers:neon_tube"
+    "item": "pioneers:vacuum_tube"
    },
    "count": 1
   },

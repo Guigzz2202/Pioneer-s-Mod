@@ -2,13 +2,19 @@
  "type": "pioneers:industrial",
  "machine": "photolithograph",
  "tier": 1,
- "time": 200,
+ "time": 180,
  "items": [
   {
    "ingredient": {
-    "tag": "forge:foils/copper"
+    "item": "pioneers:doped_wafer"
    },
-   "count": 2
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:p_doped_wafer"
+   },
+   "count": 1
   },
   {
    "ingredient": {
@@ -25,8 +31,8 @@
  ],
  "results": [
   {
-   "item": "pioneers:copper_wire_mesh",
-   "count": 1
+   "item": "pioneers:exposed_wafer",
+   "count": 3
   }
  ]
 }

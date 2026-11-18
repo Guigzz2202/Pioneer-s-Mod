@@ -346,11 +346,11 @@ public final class GeneratedMachines {
               null, "fermenter", "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
         l.add(new MachineSpec("photolithograph", "industry", Kind.PROCESS, Form.COMPACT, TierMode.MK, null, Power.FE_IN,
               List.of("basic_photolithograph", "advanced_photolithograph", "elite_photolithograph", "ultimate_photolithograph"),
-              List.of("industry_atelier"), List.of(port(SideType.ITEMS, Role.IN, 3), port(SideType.ITEMS, Role.OUT, 2), port(SideType.FLUIDS, Role.IN, 1), port(SideType.ENERGY, Role.IN, 1)), true, true, "industrial:photolithograph", true, List.of("pioneers:industry_photolithograph"),
+              List.of("industry_atelier"), List.of(port(SideType.ITEMS, Role.IN, 3), port(SideType.ITEMS, Role.OUT, 2), port(SideType.FLUIDS, Role.IN, 2), port(SideType.GASES, Role.IN, 2), port(SideType.ENERGY, Role.IN, 1)), true, true, "industrial:photolithograph", true, List.of("pioneers:industry_photolithograph"),
               "industrial_photolithograph", null, "standard", false, "industry", "api.machine.unit.IndustryProcess", true, 2, -1));
         l.add(new MachineSpec("industrial_photolithograph", "industry", Kind.PROCESS, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
               List.of("industrial_photolithograph"),
-              List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 3), port(SideType.ITEMS, Role.OUT, 2), port(SideType.FLUIDS, Role.IN, 2), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:photolithograph", true, List.of("pioneers:cleanroom_photolithograph"),
+              List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 3), port(SideType.ITEMS, Role.OUT, 2), port(SideType.FLUIDS, Role.IN, 3), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.IN, 2), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:photolithograph", true, List.of("pioneers:cleanroom_photolithograph"),
               null, "photolithograph", "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
         l.add(new MachineSpec("pick_and_place", "industry", Kind.PROCESS, Form.COMPACT, TierMode.MK, null, Power.FE_IN,
               List.of("basic_pick_and_place", "advanced_pick_and_place", "elite_pick_and_place", "ultimate_pick_and_place"),
