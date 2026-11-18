@@ -7,7 +7,7 @@ import fr.pioneers.api.data.DataType;
 import fr.pioneers.api.data.IDataConfigurable;
 import fr.pioneers.api.data.IDataHandler;
 import fr.pioneers.api.data.IDataTank;
-import fr.pioneers.clan.ClanApi;
+import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.core.Action;
 import fr.pioneers.core.Automation;
 import fr.pioneers.core.Directions;

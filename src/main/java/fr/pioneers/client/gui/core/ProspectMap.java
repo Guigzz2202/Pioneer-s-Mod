@@ -3,7 +3,7 @@ package fr.pioneers.client.gui.core;
 import fr.pioneers.core.RenderClock;
 import fr.pioneers.space.mining.Deposit;
 import fr.pioneers.space.mining.DrillHead;
-import fr.pioneers.tile.TileEntityMiningOutpost;
+import fr.pioneers.space.tile.TileEntityMiningOutpost;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.ChatFormatting;

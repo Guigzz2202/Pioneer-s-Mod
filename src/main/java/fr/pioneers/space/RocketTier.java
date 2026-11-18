@@ -1,7 +1,7 @@
 package fr.pioneers.space;
 
-import fr.pioneers.registries.PiEntityTypes;
-import fr.pioneers.registries.PiItems;
+import fr.pioneers.core.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 

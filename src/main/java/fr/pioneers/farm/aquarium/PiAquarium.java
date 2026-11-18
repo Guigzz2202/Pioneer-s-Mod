@@ -2,7 +2,7 @@ package fr.pioneers.farm.aquarium;
 
 import fr.pioneers.core.registry.BlockEntry;
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.registries.PiTileEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.SoundType;
@@ -36,6 +36,6 @@ public final class PiAquarium {
     public static final RegistryObject<Item> CRUSTACEAN_BUCKET = PiCoreRegistries.ITEMS.register("crustacean_bucket",
           () -> new CrustaceanBucketItem(new Item.Properties().stacksTo(1)));
 
-    /** 1.0.5-beta (lot 25) : interface de composition du bassin ({@link AquariumMenu}, ecran {@code J:client/farm/aquarium/AquariumScreen}). */
+    /** 1.0.5-beta (lot 25) : interface de composition du bassin ({@link AquariumMenu}, ecran {@code J:farm/client/aquarium/AquariumScreen}). */
     public static final RegistryObject<MenuType<AquariumMenu>> MENU = PiCoreRegistries.MENUS.register("aquarium", () -> IForgeMenuType.create(AquariumMenu::client));
 }

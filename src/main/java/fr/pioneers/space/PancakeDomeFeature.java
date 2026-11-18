@@ -1,6 +1,6 @@
 package fr.pioneers.space;
 
-import fr.pioneers.registries.PiBlocks;
+import fr.pioneers.core.registries.PiBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;

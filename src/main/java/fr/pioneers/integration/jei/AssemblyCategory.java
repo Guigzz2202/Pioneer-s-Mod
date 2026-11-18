@@ -1,7 +1,7 @@
 package fr.pioneers.integration.jei;
 
-import fr.pioneers.recipe.AssemblyRecipe;
-import fr.pioneers.recipe.AssemblyStation;
+import fr.pioneers.core.recipes.AssemblyRecipe;
+import fr.pioneers.core.recipes.AssemblyStation;
 import fr.pioneers.space.research.ResearchEffects;
 import fr.pioneers.space.research.ResearchNode;
 import java.util.ArrayList;

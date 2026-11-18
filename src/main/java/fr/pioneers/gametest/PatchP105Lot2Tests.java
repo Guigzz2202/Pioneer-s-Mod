@@ -1,12 +1,12 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.season.SeasonData;
-import fr.pioneers.season.SeasonEvents;
-import fr.pioneers.season.SeasonPrecipitation;
-import fr.pioneers.season.Seasons.Season;
-import fr.pioneers.weather.Precipitation;
-import fr.pioneers.weather.PrecipitationType;
-import fr.pioneers.weather.Precipitations;
+import fr.pioneers.world.season.SeasonData;
+import fr.pioneers.world.season.SeasonEvents;
+import fr.pioneers.world.season.SeasonPrecipitation;
+import fr.pioneers.world.season.Seasons.Season;
+import fr.pioneers.world.weather.Precipitation;
+import fr.pioneers.world.weather.PrecipitationType;
+import fr.pioneers.world.weather.Precipitations;
 import java.util.concurrent.atomic.AtomicReference;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
@@ -63,7 +63,11 @@ public final class PatchP105Lot2Tests {
         boolean raining = data.isRaining(), thundering = data.isThundering();
         int clear = data.getClearWeatherTime(), rainTime = data.getRainTime(), thunderTime = data.getThunderTime();
         level.setWeatherParameters(0, 24_000, true, false);
+        //1.0.6 : isRaining lit le niveau de pluie, qui monte de 0,01 par tick : sans lui, il ne « pleut » qu'apres 20 ticks
+        float rainLevel = level.getRainLevel(1.0F);
+        level.setRainLevel(1.0F);
         s.onCleanup(() -> {
+            level.setRainLevel(rainLevel);
             data.setClearWeatherTime(clear);
             data.setRaining(raining);
             data.setRainTime(rainTime);

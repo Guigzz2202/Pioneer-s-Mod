@@ -1,6 +1,6 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.economy.EconomyBlocks;
+import fr.pioneers.society.economy.EconomyBlocks;
 import fr.pioneers.farm.PiFishing;
 import fr.pioneers.farm.crow.CrowSpawner;
 import fr.pioneers.farm.fish.PiFish;

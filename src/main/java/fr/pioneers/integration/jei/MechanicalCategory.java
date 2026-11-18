@@ -1,8 +1,8 @@
 package fr.pioneers.integration.jei;
 
-import fr.pioneers.kinetics.machines.MachineType;
-import fr.pioneers.kinetics.machines.MechanicalRecipe;
-import fr.pioneers.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.machines.MachineType;
+import fr.pioneers.tech.kinetics.machines.MechanicalRecipe;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -83,7 +83,7 @@ class MechanicalCategory extends PiCategory<MechanicalRecipe> {
         //1.0.5-beta (lot 38) : recette de tier 0 de sa famille (les machines a vapeur et MKI de la famille la font aussi)
         if (fr.pioneers.api.machine.tier.GeneratedTierFamilies.FAMILY_OF.containsKey(machine.id())) {
             ItemStack main = recipe.results().isEmpty() ? ItemStack.EMPTY : recipe.results().get(0).stack();
-            out.add(TierChips.minTier(0, recipe.getId(), List.of(new fr.pioneers.bronze.bench.BenchRecipe.Counted(recipe.input(), recipe.count())), main));
+            out.add(TierChips.minTier(0, recipe.getId(), List.of(new fr.pioneers.tech.bronze.bench.BenchRecipe.Counted(recipe.input(), recipe.count())), main));
         }
         return out;
     }

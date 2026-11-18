@@ -1,23 +1,23 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.fauna.FaunaCounter;
-import fr.pioneers.fauna.FaunaData;
-import fr.pioneers.fauna.FaunaGroup;
-import fr.pioneers.fauna.FaunaRegistry;
-import fr.pioneers.fauna.FaunaRules;
-import fr.pioneers.fauna.FaunaSettings;
-import fr.pioneers.fauna.FaunaSpawner;
-import fr.pioneers.fauna.FaunaZones;
-import fr.pioneers.season.SeasonData;
-import fr.pioneers.season.SeasonEvents;
-import fr.pioneers.season.Seasons.Season;
-import fr.pioneers.wild.Bison;
-import fr.pioneers.wild.Boar;
-import fr.pioneers.wild.Deer;
-import fr.pioneers.wild.Hare;
-import fr.pioneers.wild.PiWild;
-import fr.pioneers.wild.WildAnimal;
-import fr.pioneers.wild.WildRules;
+import fr.pioneers.world.fauna.FaunaCounter;
+import fr.pioneers.world.fauna.FaunaData;
+import fr.pioneers.world.fauna.FaunaGroup;
+import fr.pioneers.world.fauna.FaunaRegistry;
+import fr.pioneers.world.fauna.FaunaRules;
+import fr.pioneers.world.fauna.FaunaSettings;
+import fr.pioneers.world.fauna.FaunaSpawner;
+import fr.pioneers.world.fauna.FaunaZones;
+import fr.pioneers.world.season.SeasonData;
+import fr.pioneers.world.season.SeasonEvents;
+import fr.pioneers.world.season.Seasons.Season;
+import fr.pioneers.world.wild.Bison;
+import fr.pioneers.world.wild.Boar;
+import fr.pioneers.world.wild.Deer;
+import fr.pioneers.world.wild.Hare;
+import fr.pioneers.world.wild.PiWild;
+import fr.pioneers.world.wild.WildAnimal;
+import fr.pioneers.world.wild.WildRules;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -50,7 +50,8 @@ public final class PatchP105Lot6Tests {
     static <T extends Entity> T add(Gt.Scope s, EntityType<T> type, BlockPos abs) {
         T e = type.create(s.level);
         Gt.check(e != null, "creation de " + type);
-        e.moveTo(abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5, 0, 0);
+        BlockPos at = Gt.standing(s.level, abs);   // 1.0.6 : sur le sol du gabarit, pas dedans
+        e.moveTo(at.getX() + 0.5, at.getY(), at.getZ() + 0.5, 0, 0);
         s.level.addFreshEntity(e);
         s.onCleanup(e::discard);
         return e;
@@ -178,7 +179,7 @@ public final class PatchP105Lot6Tests {
         Deer stag = wild(s, PiWild.DEER.get(), new BlockPos(3, 1, 3), WildRules.MALE, false);
         Deer hind = wild(s, PiWild.DEER.get(), new BlockPos(6, 1, 6), WildRules.FEMALE, false);
         Deer fawn = wild(s, PiWild.DEER.get(), new BlockPos(3, 1, 6), WildRules.MALE, true);
-        int len = fr.pioneers.season.Seasons.serverLength();
+        int len = fr.pioneers.world.season.Seasons.serverLength();
         SeasonEvents.set(s.server, Season.SUMMER, len / 2 + 1);
         Gt.check(stag.antlers() > 0.99F, "l'ete : le cerf porte ses bois");
         SeasonEvents.set(s.server, Season.WINTER, len * 3 / 4 + 1);

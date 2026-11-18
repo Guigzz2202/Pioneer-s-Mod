@@ -1,22 +1,22 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.block.Connections;
+import fr.pioneers.core.common.block.Connections;
 import fr.pioneers.core.block.Covers;
 import fr.pioneers.core.block.PiCoverFrame;
 import fr.pioneers.core.profile.WaypointTeleport;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.multi.GeneratedNbtShapes;
-import fr.pioneers.industry.multi.PortBlock;
-import fr.pioneers.industry.multi.SheetMetalBlock;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiTransport;
-import fr.pioneers.transport.CableTier;
-import fr.pioneers.transport.buffer.BufferType;
-import fr.pioneers.transport.logistic.CableLevel;
-import fr.pioneers.transport.logistic.LogisticCableTile;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.multi.GeneratedNbtShapes;
+import fr.pioneers.tech.industry.multi.PortBlock;
+import fr.pioneers.tech.industry.multi.SheetMetalBlock;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.PiTransport;
+import fr.pioneers.logistics.transport.CableTier;
+import fr.pioneers.logistics.transport.buffer.BufferType;
+import fr.pioneers.logistics.transport.logistic.CableLevel;
+import fr.pioneers.logistics.transport.logistic.LogisticCableTile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -169,7 +169,7 @@ public final class PatchP104Lot30Tests {
         ServerPlayer p = s.player("gttp30", "Ines", new BlockPos(1, 1, 1));
         p.setGameMode(GameType.CREATIVE);
         Gt.check(!WaypointTeleport.allowed(p), "joueur ordinaire en creatif : pas de teleportation");
-        s.server.getPlayerList().op(p.getGameProfile());
+        Gt.op(s.server, p);   // 1.0.6 : niveau 4 (op() donne le niveau 0 du serveur de GameTests)
         try {
             p.setGameMode(GameType.SURVIVAL);
             Gt.check(!WaypointTeleport.allowed(p), "operateur en survie : refuse");

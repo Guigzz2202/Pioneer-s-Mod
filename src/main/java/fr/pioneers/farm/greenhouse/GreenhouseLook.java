@@ -1,6 +1,6 @@
 package fr.pioneers.farm.greenhouse;
 
-import fr.pioneers.common.look.LookCards;
+import fr.pioneers.core.common.look.LookCards;
 import fr.pioneers.farm.FarmCard;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

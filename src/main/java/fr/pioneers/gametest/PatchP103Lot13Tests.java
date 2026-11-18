@@ -1,6 +1,6 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.economy.LedgerLabels;
+import fr.pioneers.society.economy.LedgerLabels;
 import fr.pioneers.farm.PiFarm;
 import fr.pioneers.farm.PiKitchen;
 import fr.pioneers.farm.crop.FarmCropBlock;
@@ -75,8 +75,11 @@ public final class PatchP103Lot13Tests {
         Gt.check(MushroomCropBlock.shaded(s.level, h.absolutePos(dark)), "case noire : a l'ombre");
         h.setBlock(dark, Blocks.TORCH.defaultBlockState());
         h.setBlock(dark.above(), Blocks.AIR.defaultBlockState());
-        Gt.check(!MushroomCropBlock.shaded(s.level, h.absolutePos(dark.above())), "contre une torche : trop clair");
-        h.succeed();
+        //1.0.6 : la lumiere de la torche se propage au tick suivant (moteur de lumiere) : verdict quelques ticks plus tard
+        h.runAfterDelay(5, () -> {
+            Gt.check(!MushroomCropBlock.shaded(s.level, h.absolutePos(dark.above())), "contre une torche : trop clair");
+            h.succeed();
+        });
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p103_13_drinks", timeoutTicks = 20)

@@ -1,7 +1,7 @@
 package fr.pioneers.core.profile;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.PiCommonConfig;
+import fr.pioneers.core.common.PiCommonConfig;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

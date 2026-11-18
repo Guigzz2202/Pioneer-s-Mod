@@ -2,19 +2,19 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.bronze.machines.SteamProcessTile;
-import fr.pioneers.common.PiRemaps;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
+import fr.pioneers.core.common.PiRemaps;
 import fr.pioneers.core.gas.BasicGasTank;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.recipe.RecipeChoice;
-import fr.pioneers.industry.GeneratedFusions;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.GeneratedFusions;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
@@ -89,7 +89,9 @@ public final class PatchP104Lot11Tests {
                 continue;
             }
             Gt.check(i < t.itemInputs().size(), machine.key + " : pas assez de cases d'entree pour " + r.getId());
-            t.itemInputs().get(i).setStack(stacks[0].copyWithCount(Math.min(64, r.items().get(i).count() * 2)));
+            //1.0.6 : une recette « impure_only » (electroraffinage) ne prend que des lingots impurs
+            ItemStack in = stacks[0].copyWithCount(Math.min(64, r.items().get(i).count() * 2));
+            t.itemInputs().get(i).setStack(i == 0 && r.impureOnly() ? fr.pioneers.tech.industry.Impurity.set(in, 1) : in);
         }
         for (int i = 0; i < r.fluids().size(); i++) {
             List<FluidStack> f = r.fluids().get(i).displayed();
@@ -104,24 +106,26 @@ public final class PatchP104Lot11Tests {
         return t;
     }
 
-    /** Quelque chose est sorti : un objet du premier resultat, ou un fluide / gaz produit. */
+    /**
+     * Quelque chose est sorti : un objet des resultats, un fluide ou un gaz produit. 1.0.6 : l'outil rendu (catalyseur, adsorbant) reste dans
+     * sa case Outil (lot 44 du 1.0.5-beta) et un resultat a chance peut tarder : on ne regarde plus seulement le premier resultat.
+     */
     private static boolean produced(AtelierTile t, IndustrialRecipe r) {
-        Item main = r.results().isEmpty() ? null : r.results().get(0).stack().getItem();
         for (ItemSlot s : t.itemOutputs()) {
-            if (main != null && s.getStack().is(main)) {
+            for (var res : r.results()) {
+                if (!s.getStack().isEmpty() && s.getStack().is(res.stack().getItem())) {
+                    return true;
+                }
+            }
+        }
+        for (FluidTank tank : t.fluidOutputs()) {
+            if (!tank.isEmpty()) {
                 return true;
             }
         }
-        if (main == null) {
-            for (FluidTank tank : t.fluidOutputs()) {
-                if (!tank.isEmpty()) {
-                    return true;
-                }
-            }
-            for (BasicGasTank tank : t.gasOutputs()) {
-                if (!tank.isEmpty()) {
-                    return true;
-                }
+        for (BasicGasTank tank : t.gasOutputs()) {
+            if (!tank.isEmpty()) {
+                return true;
             }
         }
         return false;
@@ -207,8 +211,9 @@ public final class PatchP104Lot11Tests {
         });
     }
 
-    @GameTest(template = Gt.SMALL, batch = "pioneers_p104_11_vacuum", timeoutTicks = 400)
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p104_11_vacuum", timeoutTicks = 1200)
     public static void p104_11_sous_vide_au_creuset(GameTestHelper h) {
+        //1.0.6 : 1 800 ticks de recette (tier 2) : 900 ticks au MKIV, plus que les 400 du test d'origine
         runs(h, "vacuum_furnace", "industry/vacuum_furnace/vacuum_titanium");
     }
 
@@ -225,9 +230,13 @@ public final class PatchP104Lot11Tests {
         for (Map.Entry<String, String> e : GeneratedFusions.REMAP.entrySet()) {
             String old = e.getKey(), now = e.getValue();
             Gt.equal(now, PiRemaps.p104Block(old), "remap de " + old);
-            Gt.equal(now, PiRemaps.simplifiedBlock(old), "chaine des remaps de " + old);
+            //1.0.6 : la base du lot 11 a pu etre retiree a son tour (lot 23 : modules -> carcasse MKI) : la chaine d'un ancien id finit la
+            //ou finit celle de sa base
+            String end = PiRemaps.simplifiedBlock(now);
+            Gt.equal(end != null && !end.isEmpty() ? end : now, PiRemaps.simplifiedBlock(old), "chaine des remaps de " + old);
             Gt.check(!ForgeRegistries.BLOCKS.containsKey(rl(old)), old + " encore enregistre");
-            Gt.check(ForgeRegistries.BLOCKS.containsKey(rl(now)), now + " (remplacant de " + old + ") absent");
+            String last = end != null && !end.isEmpty() ? end : now;
+            Gt.check(ForgeRegistries.BLOCKS.containsKey(rl(last)), last + " (remplacant de " + old + ", via " + now + ") absent");
             for (String t : new String[]{"basic_", "advanced_", "elite_", "ultimate_"}) {
                 //1.0.4-beta (lot 12) : base multibloc seul (colonne de distillation) : son controleur (id = sa cle)
                 if (old.startsWith(t) && !now.startsWith("industrial_") && IndustryMachine.byKey(now) == null) {

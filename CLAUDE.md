@@ -7,8 +7,10 @@ Ce dépôt contient **seulement le code du mod** (Forge 1.20.1, 47.4.20). La ré
 - Réponses en français, concises. Aperçus en images quand c'est visuel.
 
 ## Git
-- `main` est toujours stable et jouable. Une branche par lot ou MAJ : `maj/<version>-<sujet>`, `refactor/<sujet>`, `fix/<sujet>`.
-- Les commits sont faits par étape logique. Le merge dans `main` se fait seulement après validation en jeu par Guillaume, et c'est la seule chose dont on lui rend compte côté git.
+- `main` est l'état publié du mod, stable et jouable. La branche de la prochaine version (aujourd'hui **`1.0.6`**) sert au développement de la MAJ : elle part de `main` et y revient à la sortie de la version, après validation en jeu par Guillaume.
+- Une branche par lot, créée depuis la branche de version : `maj/<version>-<sujet>`, `refactor/<sujet>`, `fix/<sujet>`. Le lot revient dans la branche de version après le test en jeu de Guillaume.
+- Les commits sont faits par étape logique. On rend compte à Guillaume des fusions (dans la branche de version et dans `main`), et de rien d'autre côté git.
+- Messages de commit au format **Conventional Commits** : `type(portée): description` (`feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `build`, `ci`, `chore`, `style`), description courte en français sans point final. Ex. `chore(doc): découper CLAUDE.md`, `fix(logistique): câble qui ne se connecte pas`. Même règle pour les titres de merge et de PR.
 - Étiquette de version sur `main` à chaque version publiée : `v<mod_version>`.
 
 ## Build

@@ -190,7 +190,7 @@ public final class MinimapConfig {
 
     public static void save() {
         try {
-            fr.pioneers.common.PiClientConfig.SPEC.save();
+            fr.pioneers.core.common.PiClientConfig.SPEC.save();
         } catch (IllegalStateException ignored) {
             //fichier pas encore charge
         }

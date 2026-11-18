@@ -2,8 +2,8 @@ package fr.pioneers.client.gui.core;
 
 import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.StandardLayout.Rect;
-import fr.pioneers.caravan.RelayTile;
-import fr.pioneers.caravan.RelayUnit;
+import fr.pioneers.logistics.caravan.RelayTile;
+import fr.pioneers.logistics.caravan.RelayUnit;
 import fr.pioneers.client.gui.GuiDraw;
 import java.util.ArrayList;
 import java.util.List;

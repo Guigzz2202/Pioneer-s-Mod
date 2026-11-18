@@ -112,7 +112,7 @@ public final class HerdEvents {
             HerdRules.rollHorse(d, HerdRules.kindBreed(2), r);
         } else if (e instanceof Camel) {
             //1.0.4-beta (lot 10) : chameau de Bactriane (kind 3) ou dromadaire (kind 4) : charge de bat et force de trait
-            HerdRules.rollHorse(d, HerdRules.kindBreed(e instanceof fr.pioneers.caravan.DromedaryEntity ? 4 : 3), r);
+            HerdRules.rollHorse(d, HerdRules.kindBreed(e instanceof fr.pioneers.logistics.caravan.DromedaryEntity ? 4 : 3), r);
         } else if (e instanceof net.minecraft.world.entity.animal.horse.Llama) {
             //1.0.4-beta (lot 28) : lama vanilla : race au climat (il deviendra l'entite de sa race au tick suivant : HerdBreeds)
             HerdRules.rollHorse(d, HerdRules.climateBreed(temp, HerdRules.kindRanges(5), r), r);
@@ -158,7 +158,7 @@ public final class HerdEvents {
             return;
         }
         int breed = child instanceof Horse ? HerdRules.childBreed(a.breed, b.breed, r) : child instanceof Mule ? HerdRules.kindBreed(2)
-              : child instanceof fr.pioneers.caravan.DromedaryEntity ? HerdRules.kindBreed(4) : child instanceof Camel ? HerdRules.kindBreed(3)
+              : child instanceof fr.pioneers.logistics.caravan.DromedaryEntity ? HerdRules.kindBreed(4) : child instanceof Camel ? HerdRules.kindBreed(3)
               //1.0.4-beta (lot 28) : anes et lamas : la race d'un des parents, 50 / 50
               : child instanceof net.minecraft.world.entity.animal.horse.Llama ? HerdRules.kindChild(a.breed, b.breed, 5, r)
               : HerdRules.kindChild(a.breed, b.breed, 1, r);

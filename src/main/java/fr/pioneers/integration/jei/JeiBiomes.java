@@ -1,6 +1,6 @@
 package fr.pioneers.integration.jei;
 
-import fr.pioneers.geology.DepositType;
+import fr.pioneers.world.geology.DepositType;
 import fr.pioneers.space.SolarSystem;
 import java.util.ArrayList;
 import java.util.IdentityHashMap;

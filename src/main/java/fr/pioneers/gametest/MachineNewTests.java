@@ -3,10 +3,10 @@ package fr.pioneers.gametest;
 import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.api.gas.GasStack;
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -154,7 +154,10 @@ public final class MachineNewTests {
         Item disc = item("diamond_disc");
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());
-            Gt.equal(2, count(m, disc), "disques diamantes projetes");
+            //1.0.6 : autant que la recette en rend (4 aujourd'hui ; le test d'origine en attendait 2)
+            int want = ((fr.pioneers.tech.industry.recipe.IndustrialRecipe) h.getLevel().getRecipeManager()
+                  .byKey(rl("industry/plasma_sprayer/spray_diamond_discs")).orElseThrow()).results().get(0).stack().getCount();
+            Gt.equal(want, count(m, disc), "disques diamantes projetes");
         });
     }
 

@@ -1,12 +1,12 @@
 package fr.pioneers.space.event;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.PiCommonConfig;
-import fr.pioneers.item.ItemSpaceSuit;
-import fr.pioneers.network.PacketSpaceEvent;
-import fr.pioneers.network.PiNetwork;
-import fr.pioneers.registries.PiEntityTypes;
-import fr.pioneers.registries.PiSounds;
+import fr.pioneers.core.common.PiCommonConfig;
+import fr.pioneers.space.item.ItemSpaceSuit;
+import fr.pioneers.core.network.PacketSpaceEvent;
+import fr.pioneers.core.network.PiNetwork;
+import fr.pioneers.core.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiSounds;
 import fr.pioneers.space.PiDimensions;
 import fr.pioneers.space.SolarSystem.Body;
 import fr.pioneers.space.SolarSystem.Sector;
@@ -15,7 +15,7 @@ import fr.pioneers.space.environment.Environments;
 import fr.pioneers.space.environment.OxygenRooms;
 import fr.pioneers.space.environment.SurvivalHandler;
 import fr.pioneers.space.research.ResearchEffects;
-import fr.pioneers.tile.TileEntityForceField;
+import fr.pioneers.space.tile.TileEntityForceField;
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;

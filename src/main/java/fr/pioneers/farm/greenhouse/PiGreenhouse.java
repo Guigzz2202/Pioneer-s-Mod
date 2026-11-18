@@ -2,7 +2,7 @@ package fr.pioneers.farm.greenhouse;
 
 import fr.pioneers.core.registry.BlockEntry;
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.registries.PiTileEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 import java.util.EnumMap;
 import java.util.HashSet;
 import java.util.Map;

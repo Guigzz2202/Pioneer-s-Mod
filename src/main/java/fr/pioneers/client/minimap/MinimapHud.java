@@ -63,7 +63,7 @@ final class MinimapHud {
         MinimapConfig.Corner corner = MinimapConfig.pick(MinimapConfig.CORNER, MinimapConfig.DEFAULT_CORNER);
         boolean right = corner == MinimapConfig.Corner.TOP_RIGHT || corner == MinimapConfig.Corner.BOTTOM_RIGHT;
         boolean bottom = corner == MinimapConfig.Corner.BOTTOM_LEFT || corner == MinimapConfig.Corner.BOTTOM_RIGHT;
-        fr.pioneers.network.PacketEnvironment env = MinimapConfig.on(MinimapConfig.ENVIRONMENT, true) ? EnvironmentInfo.get() : null;
+        fr.pioneers.core.network.PacketEnvironment env = MinimapConfig.on(MinimapConfig.ENVIRONMENT, true) ? EnvironmentInfo.get() : null;
         Texts T = texts(mc, env);
         List<Component> info = T.info;
         Font font = mc.font;
@@ -160,7 +160,7 @@ final class MinimapHud {
      * Trop large : l'humidite part, puis la ligne est resserree (jamais sous 0,5). 1.0.5-beta (lot 1) : {@code withSeason} : la saison et le
      * jour suivent le climat (« 17 °C · 45 % · Automne, j. 3/10 ») quand la ligne entiere tient sans resserrer.
      */
-    private static void environment(GuiGraphics g, Font font, fr.pioneers.network.PacketEnvironment env, Texts T, float cx, int ty, int maxW, float es,
+    private static void environment(GuiGraphics g, Font font, fr.pioneers.core.network.PacketEnvironment env, Texts T, float cx, int ty, int maxW, float es,
           int tc, boolean withSeason, boolean climateLine) {
         Component[] texts = {T.climate(env, true, withSeason), T.oxygen, T.gravity};
         int[] icons = {Icons.THERMO, Icons.OXYGEN, Icons.GRAVITY};
@@ -199,7 +199,7 @@ final class MinimapHud {
      * 1.0.5-beta (lot 14) : ligne climat des cultures, centree : thermometre (couleur de la temperature) + « Tempéré 17 °C », goutte (couleur de
      * l'humidite) + « Humide 72 % » ; {@code parts} : l'une, l'autre ou les deux (null = absente). Resserree jusqu'a 0,5 au plus.
      */
-    private static void climateLine(GuiGraphics g, Font font, fr.pioneers.network.PacketEnvironment env, Component[] parts, float cx, int ty, int maxW, float es,
+    private static void climateLine(GuiGraphics g, Font font, fr.pioneers.core.network.PacketEnvironment env, Component[] parts, float cx, int ty, int maxW, float es,
           int tc) {
         int[] icons = {Icons.THERMO, Icons.HUMIDITY};
         int[] tints = {EnvironmentInfo.temperatureColor(env.temperature()), EnvironmentInfo.humidityColor(env.climateH())};
@@ -261,14 +261,14 @@ final class MinimapHud {
         @org.jetbrains.annotations.Nullable
         Object dim;
         @org.jetbrains.annotations.Nullable
-        fr.pioneers.network.PacketEnvironment env;
+        fr.pioneers.core.network.PacketEnvironment env;
         String lang = "";
         List<Component> info = List.of();
         @org.jetbrains.annotations.Nullable
         Component season, zone, wet, oxygen, gravity;
         final Component[] climate = new Component[4];
 
-        Component climate(fr.pioneers.network.PacketEnvironment env, boolean humid, boolean withSeason) {
+        Component climate(fr.pioneers.core.network.PacketEnvironment env, boolean humid, boolean withSeason) {
             int i = (humid ? 2 : 0) + (withSeason ? 1 : 0);
             if (climate[i] == null) {
                 //ligne climat avec humidite et saison (essai « tient-elle ? », lot 1) ou ses variantes resserrees
@@ -280,7 +280,7 @@ final class MinimapHud {
 
     private static final Texts TEXTS = new Texts();
 
-    private static Texts texts(Minecraft mc, @org.jetbrains.annotations.Nullable fr.pioneers.network.PacketEnvironment env) {
+    private static Texts texts(Minecraft mc, @org.jetbrains.annotations.Nullable fr.pioneers.core.network.PacketEnvironment env) {
         long tick = mc.level.getGameTime(), pos = mc.player.blockPosition().asLong();
         int flags = (MinimapConfig.on(MinimapConfig.COORDS, true) ? 1 : 0) | (MinimapConfig.on(MinimapConfig.BIOME, true) ? 2 : 0)
                     | (MinimapConfig.on(MinimapConfig.TIME, false) ? 4 : 0) | (MinimapConfig.on(MinimapConfig.ASTRE, true) ? 8 : 0);

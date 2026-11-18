@@ -1,6 +1,6 @@
 package fr.pioneers.space.giant;
 
-import fr.pioneers.item.ItemWithDescription;
+import fr.pioneers.space.item.ItemWithDescription;
 import fr.pioneers.space.PiDimensions;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

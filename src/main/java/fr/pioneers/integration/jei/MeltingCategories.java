@@ -1,24 +1,24 @@
 package fr.pioneers.integration.jei;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.bronze.autofoundry.FoundryUnit;
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.foundry.CrucibleFurnaceTile;
-import fr.pioneers.bronze.foundry.Metals;
-import fr.pioneers.forge.ForgeHeat;
-import fr.pioneers.forge.ForgeMetals;
-import fr.pioneers.forge.MoltenLoad;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.Tiers;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.industry.recipe.OreYields;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.materials.GeneratedMaterials;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiForge;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiMachineKit;
+import fr.pioneers.tech.bronze.autofoundry.FoundryUnit;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.foundry.CrucibleFurnaceTile;
+import fr.pioneers.tech.bronze.foundry.Metals;
+import fr.pioneers.tech.forge.ForgeHeat;
+import fr.pioneers.tech.forge.ForgeMetals;
+import fr.pioneers.tech.forge.MoltenLoad;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.Tiers;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.industry.recipe.OreYields;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.tech.materials.GeneratedMaterials;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.forge.PiForge;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.tech.machine.PiMachineKit;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -173,7 +173,7 @@ final class MeltingCategories {
             registration.addRecipeCatalyst(s, MELTING);
         }
         registration.addRecipeCatalysts(ALLOYS, PiBronze.CRUCIBLE_FURNACE.getBlock(), PiBronze.AUTO_FOUNDRY.getBlock(), PiForge.CLAY_CRUCIBLE.getBlock(),
-              PiBronze.STEAM_MACHINES.get(fr.pioneers.bronze.machines.SteamMachine.INDUCTION_FURNACE).getBlock());
+              PiBronze.STEAM_MACHINES.get(fr.pioneers.tech.bronze.machines.SteamMachine.INDUCTION_FURNACE).getBlock());
         //1.0.4-beta (lot 11) : plus de fondeur d'alliages a vapeur (fourneau a creuset) ; four sous vide fondu dans le Creuset industriel ;
         //1.0.5-beta (lot 39) : le four a induction redevient une machine (alliages directs, vapeur T1 puis MKI a MKIV)
         for (IndustryMachine m : ALLOY_MACHINES) {
@@ -631,7 +631,7 @@ final class MeltingCategories {
             routes.add(new Route(new ItemStack(PiForge.CLAY_CRUCIBLE.getBlock()), Component.translatable("jei.pioneers.alloys.how.clay",
                   MoltenLoad.CLAY_CRUCIBLE_MB, clayDose(parts))));
             //1.0.5-beta (lot 39, retour 51) : alliage direct au four a induction a vapeur (T1 ; MKI a MKIV par la famille)
-            routes.add(new Route(new ItemStack(PiBronze.STEAM_MACHINES.get(fr.pioneers.bronze.machines.SteamMachine.INDUCTION_FURNACE).getBlock()),
+            routes.add(new Route(new ItemStack(PiBronze.STEAM_MACHINES.get(fr.pioneers.tech.bronze.machines.SteamMachine.INDUCTION_FURNACE).getBlock()),
                   Component.translatable("jei.pioneers.alloys.how.induction", ratio(parts))));
             out.put(alloy, new Alloy(alloy, parts, total, routes, false));
         }

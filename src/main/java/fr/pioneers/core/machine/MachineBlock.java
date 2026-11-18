@@ -191,7 +191,7 @@ public class MachineBlock extends Block implements EntityBlock {
         }
         if (player instanceof ServerPlayer serverPlayer) {
             //1.9 (MAJ RP) : machine restauree reservee a ses contributeurs (reglage ruins.restoredOwnerOnly)
-            if (!fr.pioneers.ruins.RuinApi.mayUse(serverPlayer, tile)) {
+            if (!fr.pioneers.world.ruins.RuinApi.mayUse(serverPlayer, tile)) {
                 serverPlayer.displayClientMessage(net.minecraft.network.chat.Component.translatable("ruins.pioneers.restore.reserved"), true);
                 return InteractionResult.CONSUME;
             }

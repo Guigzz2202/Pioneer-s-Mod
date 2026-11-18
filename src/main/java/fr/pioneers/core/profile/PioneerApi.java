@@ -1,7 +1,7 @@
 package fr.pioneers.core.profile;
 
-import fr.pioneers.common.PiCommonConfig;
-import fr.pioneers.registries.PiTriggers;
+import fr.pioneers.core.common.PiCommonConfig;
+import fr.pioneers.core.registries.PiTriggers;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashMap;

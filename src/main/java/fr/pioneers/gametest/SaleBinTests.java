@@ -1,12 +1,12 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.economy.EconomyApi;
-import fr.pioneers.economy.EconomyBlocks;
-import fr.pioneers.economy.Values;
-import fr.pioneers.economy.bin.SaleBinBlock;
-import fr.pioneers.economy.bin.SaleBinRules;
-import fr.pioneers.economy.bin.SaleBinTile;
-import fr.pioneers.village.VillageData;
+import fr.pioneers.society.economy.EconomyApi;
+import fr.pioneers.society.economy.EconomyBlocks;
+import fr.pioneers.society.economy.Values;
+import fr.pioneers.society.economy.bin.SaleBinBlock;
+import fr.pioneers.society.economy.bin.SaleBinRules;
+import fr.pioneers.society.economy.bin.SaleBinTile;
+import fr.pioneers.society.village.VillageData;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -123,7 +123,7 @@ public final class SaleBinTests {
             long before = EconomyApi.balance(p);
             Gt.disconnect(s.server, id);
             SaleBinTile.Night n = tile.midnight(s.level);
-            Gt.check(n.refusal() == null && n.tokens() > 0, "rien vendu en l'absence du proprietaire");
+            Gt.check(n.refusal() == null && n.tokens() > 0, "rien vendu en l'absence du proprietaire (refus " + n.refusal() + ", jetons " + n.tokens() + ")");
             ServerPlayer q = s.reconnect(id, account, at);
             Gt.equal(before + n.tokens(), EconomyApi.balance(q), "credit du bac applique a la connexion");
             Gt.equal(SaleBinRules.night(s.level.getDayTime() + 24_000L), SaleBinRules.night(s.level.getDayTime()) + 1, "nuit suivante");

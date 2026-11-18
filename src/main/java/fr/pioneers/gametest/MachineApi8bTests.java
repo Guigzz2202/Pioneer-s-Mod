@@ -2,19 +2,19 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.UiValues;
-import fr.pioneers.bronze.foundry.CastingTableTile;
-import fr.pioneers.bronze.foundry.CrucibleFurnaceTile;
-import fr.pioneers.bronze.foundry.KilnTile;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamProcessTile;
-import fr.pioneers.bronze.steam.SteamEngineTile;
+import fr.pioneers.tech.bronze.foundry.CastingTableTile;
+import fr.pioneers.tech.bronze.foundry.CrucibleFurnaceTile;
+import fr.pioneers.tech.bronze.foundry.KilnTile;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
+import fr.pioneers.tech.bronze.steam.SteamEngineTile;
 import fr.pioneers.core.machine.MachineGui;
-import fr.pioneers.kinetics.kitchen.KitchenMachineTile;
-import fr.pioneers.kinetics.kitchen.KitchenMachineType;
-import fr.pioneers.kinetics.kitchen.PiKitchenMachines;
-import fr.pioneers.kinetics.sources.BeamEngineTile;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.kitchen.KitchenMachineTile;
+import fr.pioneers.tech.kinetics.kitchen.KitchenMachineType;
+import fr.pioneers.tech.kinetics.kitchen.PiKitchenMachines;
+import fr.pioneers.tech.kinetics.sources.BeamEngineTile;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -79,7 +79,9 @@ public final class MachineApi8bTests {
         roundTrip(a, b, "slots", "progress", "in");
         Gt.equal(5, b.inputs().get(0).getStack().getCount(), "ingredient relu");
         Gt.equal(750, b.tankIn().getFluidAmount(), "liquide d'entree relu");
-        Gt.equal(KitchenMachineType.KNEADER.inputs() + KitchenMachineType.KNEADER.outputs(), b.guiSlots().size(), "cases : entrees puis sorties");
+        //1.0.5-beta (lots 32 et 41) : la paire « Remplir » du reservoir d'entree (case pleine, case vide) suit les entrees et les sorties
+        Gt.equal(KitchenMachineType.KNEADER.inputs() + KitchenMachineType.KNEADER.outputs() + 2, b.guiSlots().size(),
+              "cases : entrees, sorties, puis la paire Remplir");
         UiValues ui = b.uiValues();
         Gt.equal(10, ui.size(), "valeurs d'interface");
         Gt.equal(0, ui.index(UiValues.SPEED), "vitesse a l'indice 0");
@@ -111,7 +113,7 @@ public final class MachineApi8bTests {
         roundTrip(a, b, "slots", "water", "temperature", "burn", "burnTotal");
         Gt.equal(6, b.guiSlots().get(0).getStack().getCount(), "combustible relu (premiere case)");
         Gt.equal(2000, b.engine().water().getFluidAmount(), "eau relue");
-        Gt.equal(8, b.uiValues().size(), "valeurs de la machine a balancier");
+        Gt.equal(9, b.uiValues().size(), "valeurs de la machine a balancier (1.0.4-beta lot 5 : + surplus, en fin de liste)");
         Gt.equal(3000L, b.guiValue(2), "chaudiere 300 K x10 a l'indice 2");
         Gt.equal(5, b.uiValues().index(UiValues.WATER_MAX), "contenance de l'eau a l'indice 5");
         v2(b, "machine a balancier");

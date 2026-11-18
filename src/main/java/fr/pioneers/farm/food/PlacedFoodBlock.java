@@ -2,7 +2,7 @@ package fr.pioneers.farm.food;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.registries.PiTileEntityTypes;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

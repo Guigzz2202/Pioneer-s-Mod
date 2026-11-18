@@ -1,12 +1,12 @@
 package fr.pioneers.client.model;
 
-import fr.pioneers.content.spacesim.SpaceSimPart;
-import fr.pioneers.content.spacesim.SpaceSimPartBlock;
-import fr.pioneers.content.stabilizer.StabilizerPart;
-import fr.pioneers.content.stabilizer.StabilizerPartBlock;
+import fr.pioneers.space.content.spacesim.SpaceSimPart;
+import fr.pioneers.space.content.spacesim.SpaceSimPartBlock;
+import fr.pioneers.space.content.stabilizer.StabilizerPart;
+import fr.pioneers.space.content.stabilizer.StabilizerPartBlock;
 import fr.pioneers.core.Directions;
-import fr.pioneers.registries.PiCosmicBlocks;
-import fr.pioneers.registries.PiRobotics;
+import fr.pioneers.space.content.PiCosmicBlocks;
+import fr.pioneers.logistics.robotics.PiRobotics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockAndTintGetter;

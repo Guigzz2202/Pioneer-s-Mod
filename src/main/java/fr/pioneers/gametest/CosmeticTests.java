@@ -1,14 +1,14 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchTile;
-import fr.pioneers.bronze.bench.BenchType;
-import fr.pioneers.cosmetic.CosmeticActions;
-import fr.pioneers.cosmetic.CosmeticCap;
-import fr.pioneers.cosmetic.CosmeticPiece;
-import fr.pioneers.cosmetic.PiCosmetics;
-import fr.pioneers.cosmetic.Wardrobe;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchTile;
+import fr.pioneers.tech.bronze.bench.BenchType;
+import fr.pioneers.equipment.cosmetic.CosmeticActions;
+import fr.pioneers.equipment.cosmetic.CosmeticCap;
+import fr.pioneers.equipment.cosmetic.CosmeticPiece;
+import fr.pioneers.equipment.cosmetic.PiCosmetics;
+import fr.pioneers.equipment.cosmetic.Wardrobe;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import java.util.UUID;
 import net.minecraft.core.BlockPos;
@@ -78,6 +78,9 @@ public final class CosmeticTests {
         Gt.Scope s = Gt.begin(h);
         ServerPlayer p = s.player("gtcot", "Tancrede", AT);
         p.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.IRON_CHESTPLATE));
+        //1.0.6 : les attributs de l'equipement ne passent qu'au tick du joueur (detectEquipmentUpdates), que le joueur factice n'a pas :
+        //on les applique comme lui
+        p.getAttributes().addTransientAttributeModifiers(p.getItemBySlot(EquipmentSlot.CHEST).getAttributeModifiers(EquipmentSlot.CHEST));
         int top = CosmeticPiece.TOP.ordinal();
         //Geste du panneau : l'objet tenu par la souris va dans sa case, une piece d'un autre emplacement est refusee
         p.inventoryMenu.setCarried(piece("explorer", CosmeticPiece.HAT));

@@ -1,6 +1,6 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.common.PiCommonConfig;
+import fr.pioneers.core.common.PiCommonConfig;
 import fr.pioneers.core.profile.PioneerApi;
 import fr.pioneers.core.profile.PioneerCap;
 import fr.pioneers.core.profile.PioneerDefs;

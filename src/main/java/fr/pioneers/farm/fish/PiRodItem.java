@@ -1,7 +1,7 @@
 package fr.pioneers.farm.fish;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.client.farm.fish.RodClient;
+import fr.pioneers.farm.client.fish.RodClient;
 import fr.pioneers.core.tooltip.GearTips;
 import fr.pioneers.core.tooltip.Tooltips;
 import java.util.HashSet;
@@ -125,8 +125,8 @@ public class PiRodItem extends Item {
             other.shrink(1);
         }
         //1.0.5-beta (lot 31, retour 42) : panier de peche en main secondaire : il fournit l'appat (ver de terre, appat)
-        if (!bait && other.getItem() instanceof fr.pioneers.home.bag.BagItem b && b.kind == fr.pioneers.home.bag.BagKind.FISH_BAG) {
-            bait = !fr.pioneers.home.bag.BagStore.takeOne(other, b.kind, s -> s.is(BAIT), player.getAbilities().instabuild).isEmpty();
+        if (!bait && other.getItem() instanceof fr.pioneers.building.home.bag.BagItem b && b.kind == fr.pioneers.building.home.bag.BagKind.FISH_BAG) {
+            bait = !fr.pioneers.building.home.bag.BagStore.takeOne(other, b.kind, s -> s.is(BAIT), player.getAbilities().instabuild).isEmpty();
         }
         level.addFreshEntity(PiBobber.cast(player, tier, bait, power));
         level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.FISHING_BOBBER_THROW, SoundSource.NEUTRAL, 0.35F + 0.35F * power,

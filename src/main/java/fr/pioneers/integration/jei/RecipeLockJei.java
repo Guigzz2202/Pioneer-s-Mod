@@ -67,8 +67,8 @@ public final class RecipeLockJei {
               boolean maxTransfer, boolean doTransfer) {
             //1.0.5-beta (lot 17) : COMPTOIR D'ENTREPOT ouvert : « + » = les ingredients de la recette au panier (JEI ne garde qu'une poignee
             //universelle par menu : celle-ci passe la main)
-            if (menu.getTile() instanceof fr.pioneers.warehouse.CounterTile counter && counter.role() == fr.pioneers.warehouse.CounterTile.Role.COUNTER) {
-                return WarehouseJei.transfer(counter, menu.value(fr.pioneers.warehouse.CounterUnit.DIAG), slots, maxTransfer, doTransfer, helper);
+            if (menu.getTile() instanceof fr.pioneers.logistics.warehouse.CounterTile counter && counter.role() == fr.pioneers.logistics.warehouse.CounterTile.Role.COUNTER) {
+                return WarehouseJei.transfer(counter, menu.value(fr.pioneers.logistics.warehouse.CounterUnit.DIAG), slots, maxTransfer, doTransfer, helper);
             }
             ResourceLocation id = recipe instanceof Recipe<?> r ? r.getId() : null;
             if (id == null || !(Minecraft.getInstance().screen instanceof GuiMachine screen) || !screen.canLockRecipe(id)) {

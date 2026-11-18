@@ -1,10 +1,10 @@
 package fr.pioneers.space;
 
-import fr.pioneers.common.PiCommonConfig;
-import fr.pioneers.common.PiLang;
-import fr.pioneers.industry.IndustryEvents;
-import fr.pioneers.registries.PiEntityTypes;
-import fr.pioneers.registries.PiSounds;
+import fr.pioneers.core.common.PiCommonConfig;
+import fr.pioneers.core.common.PiLang;
+import fr.pioneers.tech.industry.IndustryEvents;
+import fr.pioneers.core.registries.PiEntityTypes;
+import fr.pioneers.core.registries.PiSounds;
 import fr.pioneers.space.module.RocketCargo;
 import fr.pioneers.space.module.RocketMenu;
 import fr.pioneers.space.module.RocketModule;
@@ -13,7 +13,7 @@ import fr.pioneers.space.research.ResearchNode;
 import fr.pioneers.space.station.ItemStationKit;
 import fr.pioneers.space.station.OrbitalStations;
 import fr.pioneers.space.station.StationBuilder;
-import fr.pioneers.tile.TileEntityLaunchPad;
+import fr.pioneers.space.tile.TileEntityLaunchPad;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.ChatFormatting;

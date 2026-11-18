@@ -1,8 +1,8 @@
 package fr.pioneers.space.assembly;
 
 import fr.pioneers.core.machine.MachineBlock;
-import fr.pioneers.industry.multi.IndustryStyle;
-import fr.pioneers.tile.TileEntityAssemblyHall;
+import fr.pioneers.tech.industry.multi.IndustryStyle;
+import fr.pioneers.space.tile.TileEntityAssemblyHall;
 import java.util.function.BiFunction;
 import java.util.function.Supplier;
 import net.minecraft.core.BlockPos;

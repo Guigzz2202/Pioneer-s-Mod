@@ -2,9 +2,9 @@ package fr.pioneers.space.giant;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.gas.Gas;
-import fr.pioneers.common.PiCommonConfig;
+import fr.pioneers.core.common.PiCommonConfig;
 import fr.pioneers.core.gas.PiGasTypes;
-import fr.pioneers.registries.PiItems;
+import fr.pioneers.core.registries.PiItems;
 import fr.pioneers.space.SolarSystem.Body;
 import java.util.Locale;
 import java.util.function.Supplier;

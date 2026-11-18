@@ -1,18 +1,18 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.core.profile.KnownPlayers;
-import fr.pioneers.economy.EconomyApi;
-import fr.pioneers.economy.contract.Contract;
-import fr.pioneers.economy.contract.ContractData;
-import fr.pioneers.economy.contract.ContractRules;
-import fr.pioneers.economy.contract.ContractService;
-import fr.pioneers.economy.mail.Letters;
-import fr.pioneers.paperwork.PaperBinKind;
-import fr.pioneers.paperwork.PaperBinMenu;
-import fr.pioneers.paperwork.PaperBinRules;
-import fr.pioneers.paperwork.PaperBinTile;
-import fr.pioneers.paperwork.PiPaperwork;
-import fr.pioneers.ruins.LoreItem;
+import fr.pioneers.society.economy.EconomyApi;
+import fr.pioneers.society.economy.contract.Contract;
+import fr.pioneers.society.economy.contract.ContractData;
+import fr.pioneers.society.economy.contract.ContractRules;
+import fr.pioneers.society.economy.contract.ContractService;
+import fr.pioneers.society.economy.mail.Letters;
+import fr.pioneers.society.paperwork.PaperBinKind;
+import fr.pioneers.society.paperwork.PaperBinMenu;
+import fr.pioneers.society.paperwork.PaperBinRules;
+import fr.pioneers.society.paperwork.PaperBinTile;
+import fr.pioneers.society.paperwork.PiPaperwork;
+import fr.pioneers.world.ruins.LoreItem;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +54,7 @@ public final class PatchP105Lot16Tests {
         Gt.Scope s = Gt.begin(h);
         List<PaperBinRules.Paper> all = new ArrayList<>();
         ItemStack[] papers = {letter("transfer", "Mireille", "", 3_000, false), letter("contract_proposed", "Joran", "Charpente", 1_000, true),
-              letter("contract_accepted", "Ernest", "Forge", 2_000, true), new ItemStack(fr.pioneers.ruins.RuinItems.LORE_PAGE.get())};
+              letter("contract_accepted", "Ernest", "Forge", 2_000, true), new ItemStack(fr.pioneers.world.ruins.RuinItems.LORE_PAGE.get())};
         for (int i = 0; i < papers.length; i++) {
             PaperBinRules.Paper p = PaperBinRules.paper(i, papers[i]);
             if (p != null) {
@@ -96,7 +96,7 @@ public final class PatchP105Lot16Tests {
         inv.setItem(0, LoreItem.page("ch01_smith_colors", false));
         inv.setItem(1, LoreItem.note("note_01"));
         inv.setItem(2, letter("transfer", "Mireille", "", 1, false));
-        inv.setItem(3, new ItemStack(fr.pioneers.ruins.RuinItems.LORE_PAGE.get()));          //page sans entree : refusee
+        inv.setItem(3, new ItemStack(fr.pioneers.world.ruins.RuinItems.LORE_PAGE.get()));          //page sans entree : refusee
         Gt.equal(2, PaperBinMenu.deposit(inv, tile.items, PaperBinKind.ARCHIVES), "page et note rangees");
         Gt.check(!inv.getItem(2).isEmpty() && !inv.getItem(3).isEmpty(), "lettre et page vierge restent dans l'inventaire");
         Gt.equal("ch01_smith_colors", PaperBinRules.loreId(tile.items.getItem(0)), "l'ecrit garde son entree du Codex");

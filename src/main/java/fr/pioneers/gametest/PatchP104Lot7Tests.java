@@ -1,14 +1,14 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.core.profile.PioneerCap;
-import fr.pioneers.economy.EconomyApi;
-import fr.pioneers.economy.contract.Contract;
-import fr.pioneers.economy.contract.ContractData;
-import fr.pioneers.economy.contract.ContractEngine;
-import fr.pioneers.economy.contract.ContractItems;
-import fr.pioneers.economy.contract.ContractRules;
-import fr.pioneers.economy.contract.ContractService;
-import fr.pioneers.economy.contract.InvoiceItem;
+import fr.pioneers.society.economy.EconomyApi;
+import fr.pioneers.society.economy.contract.Contract;
+import fr.pioneers.society.economy.contract.ContractData;
+import fr.pioneers.society.economy.contract.ContractEngine;
+import fr.pioneers.society.economy.contract.ContractItems;
+import fr.pioneers.society.economy.contract.ContractRules;
+import fr.pioneers.society.economy.contract.ContractService;
+import fr.pioneers.society.economy.contract.InvoiceItem;
 import java.time.Instant;
 import java.time.ZonedDateTime;
 import java.util.UUID;

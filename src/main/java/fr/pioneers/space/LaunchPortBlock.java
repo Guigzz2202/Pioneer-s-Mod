@@ -1,8 +1,8 @@
 package fr.pioneers.space;
 
-import fr.pioneers.common.PortMode;
-import fr.pioneers.common.port.PortConfigurable;
-import fr.pioneers.registries.PiTileEntityTypes;
+import fr.pioneers.core.common.PortMode;
+import fr.pioneers.core.common.port.PortConfigurable;
+import fr.pioneers.core.registries.PiTileEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

@@ -7,7 +7,7 @@ import fr.pioneers.Pioneers;
 import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.api.gas.Gas;
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.industry.Tiers;
+import fr.pioneers.tech.industry.Tiers;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
@@ -886,7 +886,7 @@ final class ProcessCategory extends PiCategory<ProcessCategory.Page> {
             g.fill(nodeX(c - 1) + 18, ny + 9, mx, ny + 10, JeiDraw.ACCENT);
             //la machine SUR la fleche : cadre du tier de l'etape (laiton pour un etabli), fond sombre ; le pictogramme est la case (Picto)
             //1.0.4-beta (lot 32) : etape faite en salle blanche (usine de semi-conducteurs) : cadre gris argent, jamais la couleur d'un tier
-            g.fill(mx, ny, mx + 18, ny + 18, fr.pioneers.industry.multi.Cleanroom.byController(s.station()) != null ? 0xFF000000 | JeiDraw.Family.CLEANROOM.rgb
+            g.fill(mx, ny, mx + 18, ny + 18, fr.pioneers.tech.industry.multi.Cleanroom.byController(s.station()) != null ? 0xFF000000 | JeiDraw.Family.CLEANROOM.rgb
                                              : s.tier() >= 0 ? Tiers.tier(s.tier()).color | 0xFF000000 : JeiDraw.SLOT_CAT);
             g.fill(mx + 1, ny + 1, mx + 17, ny + 17, JeiDraw.SLOT_FILL);
             arrowHead(g, mx + 18, nodeX(c) - (k == n ? 1 : 0), ny);

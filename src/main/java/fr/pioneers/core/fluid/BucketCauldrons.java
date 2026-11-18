@@ -1,6 +1,6 @@
 package fr.pioneers.core.fluid;
 
-import fr.pioneers.registries.PiForge;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

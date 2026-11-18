@@ -2,21 +2,21 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.farm.PiFishing;
 import fr.pioneers.farm.fish.PiFish;
-import fr.pioneers.pet.CatBasketTile;
-import fr.pioneers.pet.GeneratedPets;
-import fr.pioneers.pet.Pet;
-import fr.pioneers.pet.PetCat;
-import fr.pioneers.pet.PetConversion;
-import fr.pioneers.pet.PetCore;
-import fr.pioneers.pet.PetDog;
-import fr.pioneers.pet.PetGoals;
-import fr.pioneers.pet.PetHomeBlock;
-import fr.pioneers.pet.PetMaster;
-import fr.pioneers.pet.PetMode;
-import fr.pioneers.pet.PetRecall;
-import fr.pioneers.pet.PetRegistry;
-import fr.pioneers.pet.PetRules;
-import fr.pioneers.pet.PiPets;
+import fr.pioneers.world.pet.CatBasketTile;
+import fr.pioneers.world.pet.GeneratedPets;
+import fr.pioneers.world.pet.Pet;
+import fr.pioneers.world.pet.PetCat;
+import fr.pioneers.world.pet.PetConversion;
+import fr.pioneers.world.pet.PetCore;
+import fr.pioneers.world.pet.PetDog;
+import fr.pioneers.world.pet.PetGoals;
+import fr.pioneers.world.pet.PetHomeBlock;
+import fr.pioneers.world.pet.PetMaster;
+import fr.pioneers.world.pet.PetMode;
+import fr.pioneers.world.pet.PetRecall;
+import fr.pioneers.world.pet.PetRegistry;
+import fr.pioneers.world.pet.PetRules;
+import fr.pioneers.world.pet.PiPets;
 import java.util.UUID;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -54,7 +54,8 @@ public final class PatchP105Lot5Tests {
     static <T extends Entity> T add(Gt.Scope s, EntityType<T> type, BlockPos abs) {
         T e = type.create(s.level);
         Gt.check(e != null, "creation de " + type);
-        e.moveTo(abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5, 0, 0);
+        BlockPos at = Gt.standing(s.level, abs);   // 1.0.6 : sur le sol du gabarit, pas dedans
+        e.moveTo(at.getX() + 0.5, at.getY(), at.getZ() + 0.5, 0, 0);
         s.level.addFreshEntity(e);
         s.onCleanup(() -> {
             if (!e.isRemoved()) {

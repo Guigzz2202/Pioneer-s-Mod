@@ -2,9 +2,9 @@ package fr.pioneers.farm.crop;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.farm.greenhouse.GreenhouseRegistry;
-import fr.pioneers.season.BiomeClimates;
-import fr.pioneers.season.SeasonClimate;
-import fr.pioneers.season.Seasons;
+import fr.pioneers.world.season.BiomeClimates;
+import fr.pioneers.world.season.SeasonClimate;
+import fr.pioneers.world.season.Seasons;
 import fr.pioneers.space.SolarSystem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;

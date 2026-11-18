@@ -2,20 +2,20 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.api.multiblock.HouseNbt;
 import fr.pioneers.api.multiblock.HouseShapes;
-import fr.pioneers.bronze.foundry.KilnTile;
-import fr.pioneers.bronze.steam.BoilerPart;
-import fr.pioneers.bronze.steam.BoilerPartBlock;
-import fr.pioneers.bronze.steam.FireboxTile;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.bronze.CokeOvenTile;
-import fr.pioneers.industry.construction.FireboxWallBlock;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.multi.GeneratedNbtShapes;
-import fr.pioneers.industry.multi.ShapeTemplate;
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.foundry.KilnTile;
+import fr.pioneers.tech.bronze.steam.BoilerPart;
+import fr.pioneers.tech.bronze.steam.BoilerPartBlock;
+import fr.pioneers.tech.bronze.steam.FireboxTile;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.bronze.CokeOvenTile;
+import fr.pioneers.tech.industry.construction.FireboxWallBlock;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.multi.GeneratedNbtShapes;
+import fr.pioneers.tech.industry.multi.ShapeTemplate;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -120,7 +120,9 @@ public final class PatchP104Lot24Tests {
             tile.itemInputs().get(0).setStack(one.copyWithCount(Math.min(one.getMaxStackSize(), r.items().get(0).count() * 8)));
             h.succeedWhen(() -> {
                 tile.getEnergy().setStored(tile.getEnergy().getCapacity());
-                Gt.check(fire.stream().allMatch(p -> h.getLevel().getBlockState(p).getValue(FireboxWallBlock.LIT)), "foyers eteints en marche");
+                Gt.check(fire.stream().allMatch(p -> h.getLevel().getBlockState(p).getValue(FireboxWallBlock.LIT)), "foyers eteints en marche (recette " + r.getId() + ", entree "
+                      + tile.itemInputs().get(0).getStack() + ", sorties " + tile.itemOutputs().stream().map(o -> o.getStack().toString()).toList()
+                      + ", etat " + tile.guiValue(3) + ")");
                 //Rupture : une paroi de foyer cassee, les autres s'eteignent
                 h.getLevel().destroyBlock(fire.get(0), false);
                 tile.requestCheck();
@@ -199,7 +201,7 @@ public final class PatchP104Lot24Tests {
     // ------------------------------------------------------------------ age du bronze
 
     /** Construit un plan maison (convention : avant du plan = facade du controleur) ; rend le controleur. */
-    private static BlockPos house(GameTestHelper h, fr.pioneers.common.projector.Blueprint plan, Direction facing) {
+    private static BlockPos house(GameTestHelper h, fr.pioneers.core.common.projector.Blueprint plan, Direction facing) {
         return MultiblockApi6Tests.buildHouse(h, plan, facing);
     }
 
@@ -287,11 +289,11 @@ public final class PatchP104Lot24Tests {
         BlockPos c = house(h, HouseShapes.STEAM_DRILL, Direction.SOUTH);
         h.runAfterDelay(60, () -> {
             BlockEntity be = h.getBlockEntity(c);
-            Gt.check(be instanceof fr.pioneers.geology.drill.SteamDrillTile, "pas de foreuse en " + c);
-            fr.pioneers.geology.drill.SteamDrillTile drill = (fr.pioneers.geology.drill.SteamDrillTile) be;
+            Gt.check(be instanceof fr.pioneers.world.geology.drill.SteamDrillTile, "pas de foreuse en " + c);
+            fr.pioneers.world.geology.drill.SteamDrillTile drill = (fr.pioneers.world.geology.drill.SteamDrillTile) be;
             Gt.check(drill.formed(), "la foreuse construite au plan ne se forme pas");
             Gt.check(!drill.center().equals(drill.getBlockPos()), "le centre de la foreuse n'est plus le controleur");
-            Gt.check(h.getLevel().getBlockState(drill.center()).is(fr.pioneers.industry.construction.PiConstruction.DRILL_STRING_BRONZE.getBlock()),
+            Gt.check(h.getLevel().getBlockState(drill.center()).is(fr.pioneers.tech.industry.construction.PiConstruction.DRILL_STRING_BRONZE.getBlock()),
                   "train de forage en bronze au centre");
             s.done();
         });

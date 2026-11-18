@@ -1,10 +1,10 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -92,8 +92,9 @@ public final class FormMachineTests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_lot4a_enrouleuse", timeoutTicks = 600)
     public static void enrouleuse_ressorts(GameTestHelper h) {
         Gt.begin(h);
-        AtelierTile m = atelier(h, IndustryMachine.BENDER, new BlockPos(2, 2, 2), "industry/spring_coiler/coil_spring_brass");
-        m.itemInputs().get(0).setStack(new ItemStack(item("brass_wire"), 4));
+        //1.0.6 : la recette actuelle enroule 2 tiges (2 x 72 mB = 144 mB, le ressort) ; plus de recette depuis le fil
+        AtelierTile m = atelier(h, IndustryMachine.BENDER, new BlockPos(2, 2, 2), "industry/spring_coiler/coil_rod_spring_brass");
+        m.itemInputs().get(0).setStack(new ItemStack(item("brass_rod"), 4));
         Item spring = item("brass_spring");
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());
@@ -104,8 +105,12 @@ public final class FormMachineTests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_lot4a_tailleuse", timeoutTicks = 600)
     public static void tailleuse_engrenage_et_copeaux(GameTestHelper h) {
         Gt.begin(h);
-        AtelierTile m = atelier(h, IndustryMachine.MACHINING_CENTER, new BlockPos(2, 2, 2), "industry/gear_hobber/cut_gear_bronze");
+        //1.0.6 : la taille d'une ebauche d'engrenage est la recette hob_gear (cut_gear part de la plaque)
+        AtelierTile m = atelier(h, IndustryMachine.MACHINING_CENTER, new BlockPos(2, 2, 2), "industry/gear_hobber/hob_gear_bronze");
         m.itemInputs().get(0).setStack(new ItemStack(item("bronze_gear_blank"), 1));
+        //la taille se fait au lubrifiant (50 mB)
+        m.fluidInputs().get(0).setFluid(new net.minecraftforge.fluids.FluidStack(net.minecraftforge.registries.ForgeRegistries.FLUIDS
+              .getValue(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("pioneers", "lubricant")), 1_000));
         Item gear = item("bronze_gear"), nugget = item("bronze_nugget");
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());

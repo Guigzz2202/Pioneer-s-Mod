@@ -3,7 +3,7 @@ package fr.pioneers.integration.jei;
 import fr.pioneers.api.machine.PowerRules;
 import fr.pioneers.api.machine.tier.GeneratedTierFamilies;
 import fr.pioneers.api.machine.tier.TierRecipes;
-import fr.pioneers.bronze.bench.BenchRecipe.Counted;
+import fr.pioneers.tech.bronze.bench.BenchRecipe.Counted;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.network.chat.Component;

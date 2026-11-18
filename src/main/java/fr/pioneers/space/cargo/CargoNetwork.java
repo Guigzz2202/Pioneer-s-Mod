@@ -1,7 +1,7 @@
 package fr.pioneers.space.cargo;
 
 import fr.pioneers.space.LaunchVisualEntity;
-import fr.pioneers.tile.TileEntityLaunchPad;
+import fr.pioneers.space.tile.TileEntityLaunchPad;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;

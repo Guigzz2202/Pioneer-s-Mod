@@ -1,9 +1,9 @@
 package fr.pioneers.space.research;
 
 import fr.pioneers.core.tooltip.Tooltips;
-import fr.pioneers.data.ItemBiomeDataCell;
-import fr.pioneers.data.SpaceBiomes;
-import fr.pioneers.registries.PiItems;
+import fr.pioneers.core.data.ItemBiomeDataCell;
+import fr.pioneers.core.data.SpaceBiomes;
+import fr.pioneers.core.registries.PiItems;
 import fr.pioneers.space.SolarSystem.Body;
 import fr.pioneers.space.SolarSystem;
 import java.util.List;

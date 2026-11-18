@@ -1,11 +1,11 @@
 package fr.pioneers.integration.jei;
 
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.geology.DepositType;
-import fr.pioneers.geology.fluid.FluidDepositType;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.registries.PiChemistry;
-import fr.pioneers.registries.PiIndustry;
+import fr.pioneers.world.geology.DepositType;
+import fr.pioneers.world.geology.fluid.FluidDepositType;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.chemistry.PiChemistry;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

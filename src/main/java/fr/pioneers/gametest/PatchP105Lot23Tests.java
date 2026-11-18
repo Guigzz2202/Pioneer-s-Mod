@@ -2,22 +2,22 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.api.multiblock.HouseNbt;
 import fr.pioneers.api.multiblock.HouseShapes;
-import fr.pioneers.bronze.HeatPalette;
-import fr.pioneers.bronze.HouseControllerBlock;
-import fr.pioneers.bronze.blast.BlastFurnaceTile;
-import fr.pioneers.bronze.blast.FireBricksBlock;
-import fr.pioneers.bronze.foundry.KilnMasonry;
-import fr.pioneers.bronze.foundry.KilnMasonryBlock;
-import fr.pioneers.bronze.foundry.KilnTile;
+import fr.pioneers.tech.bronze.HeatPalette;
+import fr.pioneers.tech.bronze.HouseControllerBlock;
+import fr.pioneers.tech.bronze.blast.BlastFurnaceTile;
+import fr.pioneers.tech.bronze.blast.FireBricksBlock;
+import fr.pioneers.tech.bronze.foundry.KilnMasonry;
+import fr.pioneers.tech.bronze.foundry.KilnMasonryBlock;
+import fr.pioneers.tech.bronze.foundry.KilnTile;
 import fr.pioneers.core.block.Covers;
 import fr.pioneers.core.block.PiCoverFrame;
-import fr.pioneers.forge.smithing.ForgeHearthTile;
-import fr.pioneers.industry.bronze.CokeOvenTile;
-import fr.pioneers.kinetics.AxisKineticBlock;
-import fr.pioneers.kinetics.parts.CogTile;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiForge;
-import fr.pioneers.registries.PiKinetics;
+import fr.pioneers.tech.forge.smithing.ForgeHearthTile;
+import fr.pioneers.tech.industry.bronze.CokeOvenTile;
+import fr.pioneers.tech.kinetics.AxisKineticBlock;
+import fr.pioneers.tech.kinetics.parts.CogTile;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.forge.PiForge;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -155,7 +155,7 @@ public final class PatchP105Lot23Tests {
         BlockState[] heated = {PiBronze.FIRE_BRICKS.getBlock().defaultBlockState(), PiBronze.FIRE_BRICK_FIREBOX.getBlock().defaultBlockState(),
               PiBronze.FOUNDRY_VAT.getBlock().defaultBlockState(), PiBronze.TUYERE.getBlock().defaultBlockState(),
               PiBronze.BLAST_FURNACE.getBlock().defaultBlockState(), PiBronze.AUTO_FOUNDRY.getBlock().defaultBlockState(),
-              fr.pioneers.registries.PiIndustry.COKE_OVEN.getBlock().defaultBlockState(), PiBronze.POTTERY_KILN.getBlock().defaultBlockState(),
+              fr.pioneers.tech.industry.PiIndustry.COKE_OVEN.getBlock().defaultBlockState(), PiBronze.POTTERY_KILN.getBlock().defaultBlockState(),
               PiBronze.KILN_MASONRY.get().defaultBlockState()};
         for (BlockState st : heated) {
             for (int k = 0; k <= HeatPalette.MAX; k++) {

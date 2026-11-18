@@ -12,7 +12,7 @@ import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.math.Axis;
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.PiClientConfig;
+import fr.pioneers.core.common.PiClientConfig;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;

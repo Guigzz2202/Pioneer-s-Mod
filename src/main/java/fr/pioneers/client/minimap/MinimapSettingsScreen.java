@@ -1,7 +1,7 @@
 package fr.pioneers.client.minimap;
 
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.client.robotics.RoboticsScreen;
+import fr.pioneers.logistics.robotics.client.RoboticsScreen;
 import java.util.Locale;
 import java.util.function.IntConsumer;
 import javax.annotation.Nullable;

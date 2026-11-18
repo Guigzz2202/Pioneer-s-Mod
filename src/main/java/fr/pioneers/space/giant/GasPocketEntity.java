@@ -1,6 +1,6 @@
 package fr.pioneers.space.giant;
 
-import fr.pioneers.registries.PiSounds;
+import fr.pioneers.core.registries.PiSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;

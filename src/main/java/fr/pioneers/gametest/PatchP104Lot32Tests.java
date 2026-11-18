@@ -1,11 +1,11 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.compute.ComputeCore;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.Tiers;
-import fr.pioneers.industry.multi.Cleanroom;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.multi.GeneratedNbtShapes;
+import fr.pioneers.tech.compute.ComputeCore;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.Tiers;
+import fr.pioneers.tech.industry.multi.Cleanroom;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.multi.GeneratedNbtShapes;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;

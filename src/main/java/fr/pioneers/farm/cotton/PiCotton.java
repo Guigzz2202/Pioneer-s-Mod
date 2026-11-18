@@ -1,7 +1,7 @@
 package fr.pioneers.farm.cotton;
 
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.item.ItemWithDescription;
+import fr.pioneers.space.item.ItemWithDescription;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.RegistryObject;
 

@@ -2,7 +2,7 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.api.multiblock.HouseShapes;
-import fr.pioneers.bronze.blast.BlastFurnaceTile;
+import fr.pioneers.tech.bronze.blast.BlastFurnaceTile;
 import fr.pioneers.core.Action;
 import fr.pioneers.core.Automation;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
@@ -13,7 +13,7 @@ import fr.pioneers.farm.herd.GeneratedHerd;
 import fr.pioneers.farm.herd.HerdData;
 import fr.pioneers.farm.herd.HerdRules;
 import fr.pioneers.farm.herd.PiHerd;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.Random;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -59,7 +59,7 @@ public final class PatchP104Lot9Tests {
         Gt.Scope s = Gt.begin(h);
         Direction forward = Direction.SOUTH;
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, forward);
-        BlockPos c = anchor.relative(forward);
+        BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, forward, anchor);
         BlockEntity be = h.getBlockEntity(c);
         Gt.check(be instanceof BlastFurnaceTile, "pas de haut fourneau en " + c);
         BlastFurnaceTile tile = (BlastFurnaceTile) be;
@@ -98,7 +98,7 @@ public final class PatchP104Lot9Tests {
         Gt.Scope s = Gt.begin(h);
         Direction forward = Direction.SOUTH;
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, forward);
-        BlockPos c = anchor.relative(forward);
+        BlockPos c = MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, forward, anchor);
         h.runAfterDelay(60, () -> {
             BlastFurnaceTile tile = (BlastFurnaceTile) h.getBlockEntity(c);
             Gt.check(tile.formed(), "haut fourneau forme");
@@ -122,7 +122,7 @@ public final class PatchP104Lot9Tests {
     public static void p104_9_haut_fourneau_migration(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         BlockPos anchor = MultiblockApi6Tests.buildHouse(h, HouseShapes.BLAST_FURNACE, Direction.SOUTH);
-        BlastFurnaceTile tile = (BlastFurnaceTile) h.getBlockEntity(anchor.relative(Direction.SOUTH));
+        BlastFurnaceTile tile = (BlastFurnaceTile) h.getBlockEntity(MultiblockApi6Tests.controllerOf(HouseShapes.BLAST_FURNACE, 0, Direction.SOUTH, anchor));
         //Sauvegarde d'avant le lot 9 : une case de charge (0), l'acier (1), le laitier (2), pas de slots_v
         CompoundTag tag = tile.saveWithoutMetadata();
         tag.remove("slots_v");

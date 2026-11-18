@@ -1,16 +1,16 @@
 package fr.pioneers.client.model;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.block.Connections;
-import fr.pioneers.industry.multi.ControllerBlock;
-import fr.pioneers.industry.multi.GeneratedNbtShapes;
-import fr.pioneers.industry.multi.IndustryStyle;
-import fr.pioneers.industry.multi.PartBlock;
-import fr.pioneers.industry.multi.SheetMetalBlock;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiWorksMachines;
+import fr.pioneers.core.common.block.Connections;
+import fr.pioneers.tech.industry.multi.ControllerBlock;
+import fr.pioneers.tech.industry.multi.GeneratedNbtShapes;
+import fr.pioneers.tech.industry.multi.IndustryStyle;
+import fr.pioneers.tech.industry.multi.PartBlock;
+import fr.pioneers.tech.industry.multi.SheetMetalBlock;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.space.assembly.PiWorksMachines;
 import fr.pioneers.space.assembly.AssemblyHallControllerBlock;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

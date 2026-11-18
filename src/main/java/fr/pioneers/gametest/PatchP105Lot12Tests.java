@@ -1,14 +1,14 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.hunt.HarpoonEntity;
-import fr.pioneers.hunt.HarpoonItem;
-import fr.pioneers.hunt.PiHunt;
-import fr.pioneers.pet.PetDog;
-import fr.pioneers.pet.PetMaster;
-import fr.pioneers.pet.PetRules;
-import fr.pioneers.pet.PiPets;
-import fr.pioneers.wild.Deer;
-import fr.pioneers.wild.PiWild;
+import fr.pioneers.world.hunt.HarpoonEntity;
+import fr.pioneers.world.hunt.HarpoonItem;
+import fr.pioneers.world.hunt.PiHunt;
+import fr.pioneers.world.pet.PetDog;
+import fr.pioneers.world.pet.PetMaster;
+import fr.pioneers.world.pet.PetRules;
+import fr.pioneers.world.pet.PiPets;
+import fr.pioneers.world.wild.Deer;
+import fr.pioneers.world.wild.PiWild;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;

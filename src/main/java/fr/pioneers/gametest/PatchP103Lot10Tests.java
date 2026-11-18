@@ -46,7 +46,8 @@ public final class PatchP103Lot10Tests {
         if (node == null || node.isJsonNull()) {
             return;
         }
-        String id = node.getAsJsonObject().get("id").getAsString();
+        //1.0.6 : « product » s'ecrit en texte simple depuis le correctif du 1.0.3-beta (lu ainsi par ProcessCategory.node)
+        String id = node.isJsonPrimitive() ? node.getAsString() : node.getAsJsonObject().get("id").getAsString();
         if (id.startsWith("fluid:")) {
             var f = ForgeRegistries.FLUIDS.getValue(new ResourceLocation(id.substring(6)));
             Gt.check(f != null && f != Fluids.EMPTY, where + " : fluide inconnu " + id);

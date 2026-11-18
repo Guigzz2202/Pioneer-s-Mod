@@ -1,18 +1,18 @@
 package fr.pioneers.api.multiblock;
 
 import fr.pioneers.core.tooltip.Tooltips;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.ConcreteShellBlock;
-import fr.pioneers.industry.multi.ControllerBlock;
-import fr.pioneers.industry.multi.IndustrialGlassBlock;
-import fr.pioneers.industry.multi.ModuleBlock;
-import fr.pioneers.industry.multi.PartBlock;
-import fr.pioneers.industry.multi.PortBlock;
-import fr.pioneers.industry.multi.ShapeTemplate;
-import fr.pioneers.industry.multi.SheetMetalBlock;
-import fr.pioneers.industry.multi.Signature;
-import fr.pioneers.industry.multi.StructureFrameBlock;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.ConcreteShellBlock;
+import fr.pioneers.tech.industry.multi.ControllerBlock;
+import fr.pioneers.tech.industry.multi.IndustrialGlassBlock;
+import fr.pioneers.tech.industry.multi.ModuleBlock;
+import fr.pioneers.tech.industry.multi.PartBlock;
+import fr.pioneers.tech.industry.multi.PortBlock;
+import fr.pioneers.tech.industry.multi.ShapeTemplate;
+import fr.pioneers.tech.industry.multi.SheetMetalBlock;
+import fr.pioneers.tech.industry.multi.Signature;
+import fr.pioneers.tech.industry.multi.StructureFrameBlock;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -131,7 +131,7 @@ public final class MultiblockTooltips {
                 if (frame) {
                     u.merge("frame", 1, Integer::sum);
                 }
-                if (m.shape == fr.pioneers.industry.multi.IndustryShape.HYPERBOLOID) {
+                if (m.shape == fr.pioneers.tech.industry.multi.IndustryShape.HYPERBOLOID) {
                     u.merge("concrete", 1, Integer::sum);
                 }
             }

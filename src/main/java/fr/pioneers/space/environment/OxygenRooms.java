@@ -1,7 +1,7 @@
 package fr.pioneers.space.environment;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.tile.TileEntityOxygenDiffuser;
+import fr.pioneers.space.tile.TileEntityOxygenDiffuser;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;

@@ -2,12 +2,12 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.BatchRefund;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.multi.GeneratedBatchRefund;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.registries.PiIndustry;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.BatchRefund;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.multi.GeneratedBatchRefund;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

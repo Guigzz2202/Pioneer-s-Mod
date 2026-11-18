@@ -1,6 +1,6 @@
 package fr.pioneers.space.giant;
 
-import fr.pioneers.registries.PiGiantBlocks;
+import fr.pioneers.space.giant.PiGiantBlocks;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;

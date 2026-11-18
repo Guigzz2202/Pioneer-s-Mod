@@ -1,7 +1,7 @@
 package fr.pioneers.space.assembly;
 
-import fr.pioneers.industry.multi.IndustryStyle;
-import fr.pioneers.recipe.AssemblyStation;
+import fr.pioneers.tech.industry.multi.IndustryStyle;
+import fr.pioneers.core.recipes.AssemblyStation;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;

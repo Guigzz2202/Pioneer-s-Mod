@@ -1,21 +1,21 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.common.PiRemaps;
+import fr.pioneers.core.common.PiRemaps;
 import fr.pioneers.farm.FarmIds;
 import fr.pioneers.farm.PiFishing;
-import fr.pioneers.pet.CatBasketTile;
-import fr.pioneers.pet.PetCat;
-import fr.pioneers.pet.PetDog;
-import fr.pioneers.pet.PetHomeBlock;
-import fr.pioneers.pet.PetMode;
-import fr.pioneers.pet.PetReact;
-import fr.pioneers.pet.PetRegistry;
-import fr.pioneers.pet.PiPets;
-import fr.pioneers.season.SeasonData;
-import fr.pioneers.season.SeasonEvents;
-import fr.pioneers.wild.GrayWolf;
-import fr.pioneers.wild.PiWild7;
-import fr.pioneers.wild.PiWild9;
+import fr.pioneers.world.pet.CatBasketTile;
+import fr.pioneers.world.pet.PetCat;
+import fr.pioneers.world.pet.PetDog;
+import fr.pioneers.world.pet.PetHomeBlock;
+import fr.pioneers.world.pet.PetMode;
+import fr.pioneers.world.pet.PetReact;
+import fr.pioneers.world.pet.PetRegistry;
+import fr.pioneers.world.pet.PiPets;
+import fr.pioneers.world.season.SeasonData;
+import fr.pioneers.world.season.SeasonEvents;
+import fr.pioneers.world.wild.GrayWolf;
+import fr.pioneers.world.wild.PiWild7;
+import fr.pioneers.world.wild.PiWild9;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
@@ -51,7 +51,8 @@ public final class PatchP105Lot28Tests {
     static <T extends Entity> T add(Gt.Scope s, EntityType<T> type, BlockPos abs) {
         T e = type.create(s.level);
         Gt.check(e != null, "creation de " + type);
-        e.moveTo(abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5, 0, 0);
+        BlockPos at = Gt.standing(s.level, abs);   // 1.0.6 : sur le sol du gabarit, pas dedans
+        e.moveTo(at.getX() + 0.5, at.getY(), at.getZ() + 0.5, 0, 0);
         s.level.addFreshEntity(e);
         s.onCleanup(() -> {
             if (!e.isRemoved()) {

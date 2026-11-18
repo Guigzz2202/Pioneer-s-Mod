@@ -4,7 +4,7 @@ import fr.pioneers.api.data.IDataHandler;
 import fr.pioneers.api.gas.IGasHandler;
 import fr.pioneers.api.heat.IHeatHandler;
 import fr.pioneers.api.pressure.IPressureHandler;
-import fr.pioneers.compat.mekanism.MekanismCompat;
+import fr.pioneers.core.compat.mekanism.MekanismCompat;
 import fr.pioneers.core.gas.PiGasTypes;
 import fr.pioneers.core.registry.PiCoreRegistries;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;

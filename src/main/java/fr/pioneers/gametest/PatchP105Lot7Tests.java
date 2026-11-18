@@ -1,28 +1,28 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.common.PiCommonConfig;
+import fr.pioneers.core.common.PiCommonConfig;
 import fr.pioneers.farm.device.DeviceBlock;
 import fr.pioneers.farm.device.DeviceSites;
 import fr.pioneers.farm.device.PiFarmDevices;
-import fr.pioneers.pet.Pet;
-import fr.pioneers.pet.PetCat;
-import fr.pioneers.pet.PetCore;
-import fr.pioneers.pet.PetDog;
-import fr.pioneers.pet.PetHomeBlock;
-import fr.pioneers.pet.PetRegistry;
-import fr.pioneers.pet.PiPets;
-import fr.pioneers.season.SeasonData;
-import fr.pioneers.season.SeasonEvents;
-import fr.pioneers.warehouse.PiWarehouse;
-import fr.pioneers.wild.Bear;
-import fr.pioneers.wild.BirdHouseBlock;
-import fr.pioneers.wild.GrayWolf;
-import fr.pioneers.wild.PiWild7;
-import fr.pioneers.wild.Rat;
-import fr.pioneers.wild.RatTrapBlock;
-import fr.pioneers.wild.Snake;
-import fr.pioneers.wild.Wild7Rules;
-import fr.pioneers.clan.Clan;
+import fr.pioneers.world.pet.Pet;
+import fr.pioneers.world.pet.PetCat;
+import fr.pioneers.world.pet.PetCore;
+import fr.pioneers.world.pet.PetDog;
+import fr.pioneers.world.pet.PetHomeBlock;
+import fr.pioneers.world.pet.PetRegistry;
+import fr.pioneers.world.pet.PiPets;
+import fr.pioneers.world.season.SeasonData;
+import fr.pioneers.world.season.SeasonEvents;
+import fr.pioneers.logistics.warehouse.PiWarehouse;
+import fr.pioneers.world.wild.Bear;
+import fr.pioneers.world.wild.BirdHouseBlock;
+import fr.pioneers.world.wild.GrayWolf;
+import fr.pioneers.world.wild.PiWild7;
+import fr.pioneers.world.wild.Rat;
+import fr.pioneers.world.wild.RatTrapBlock;
+import fr.pioneers.world.wild.Snake;
+import fr.pioneers.world.wild.Wild7Rules;
+import fr.pioneers.society.clan.Clan;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -63,7 +63,8 @@ public final class PatchP105Lot7Tests {
         BlockPos abs = s.h.absolutePos(rel);
         T e = type.create(s.level);
         Gt.check(e != null, "creation de " + type);
-        e.moveTo(abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5, 0, 0);
+        BlockPos at = Gt.standing(s.level, abs);   // 1.0.6 : sur le sol du gabarit, pas dedans
+        e.moveTo(at.getX() + 0.5, at.getY(), at.getZ() + 0.5, 0, 0);
         s.level.addFreshEntity(e);
         s.onCleanup(() -> {
             if (!e.isRemoved()) {
@@ -190,7 +191,8 @@ public final class PatchP105Lot7Tests {
         Gt.equal(3, ((Container) s.level.getBlockEntity(furnace)).getItem(0).getCount(), "le four est intact");
         r1.kill();
         Gt.check(!s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(4), e -> e.getItem().is(Items.BREAD)).isEmpty(),
-              "tue, il lache son butin");
+              "tue, il lache son butin (vivant " + r1.isAlive() + ", butin " + r1.loot() + ", en " + r1.blockPosition() + ", objets au sol "
+              + s.level.getEntitiesOfClass(ItemEntity.class, new AABB(chest).inflate(8)).stream().map(e -> e.getItem().toString()).toList() + ")");
         s.done();
     }
 

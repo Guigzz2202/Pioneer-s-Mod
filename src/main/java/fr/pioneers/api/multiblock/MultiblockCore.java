@@ -1,19 +1,19 @@
 package fr.pioneers.api.multiblock;
 
-import fr.pioneers.common.block.Connections;
-import fr.pioneers.industry.construction.FireboxWallBlock;
-import fr.pioneers.industry.construction.StackedColumnBlock;
-import fr.pioneers.industry.multi.BigInterior;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.ControllerBlock;
-import fr.pioneers.industry.multi.IndustrialGlassBlock;
-import fr.pioneers.industry.multi.IndustryStyle;
-import fr.pioneers.industry.multi.ModuleBlock;
-import fr.pioneers.industry.multi.NbtAnims;
-import fr.pioneers.industry.multi.PartBlock;
-import fr.pioneers.industry.multi.PortTile;
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.industry.multi.Structures;
+import fr.pioneers.core.common.block.Connections;
+import fr.pioneers.tech.industry.construction.FireboxWallBlock;
+import fr.pioneers.tech.industry.construction.StackedColumnBlock;
+import fr.pioneers.tech.industry.multi.BigInterior;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.ControllerBlock;
+import fr.pioneers.tech.industry.multi.IndustrialGlassBlock;
+import fr.pioneers.tech.industry.multi.IndustryStyle;
+import fr.pioneers.tech.industry.multi.ModuleBlock;
+import fr.pioneers.tech.industry.multi.NbtAnims;
+import fr.pioneers.tech.industry.multi.PartBlock;
+import fr.pioneers.tech.industry.multi.PortTile;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.tech.industry.multi.Structures;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
@@ -405,9 +405,9 @@ public final class MultiblockCore {
         //Textures connectees : recalculees ici aussi (mondes d'avant la 0.16.4 : six cotes non connectes au chargement)
         if (next.getBlock() instanceof CasingBlock) {
             next = Connections.connect(next, level, p, Connections.INDUSTRIAL);
-        } else if (next.getBlock() instanceof IndustrialGlassBlock glass) {
-            //0.20.28 : la vitre garde la couleur de son propre tier
-            next = Connections.connect(next.setValue(IndustryStyle.TIER, glass.tier + 1), level, p, Connections.INDUSTRIAL_GLASS);
+        } else if (next.getBlock() instanceof IndustrialGlassBlock) {
+            //0.20.28 : la vitre garde la couleur de son propre tier (1.0.6 : fixee par son bloc, plus dans l'etat)
+            next = Connections.connect(next, level, p, Connections.INDUSTRIAL_GLASS);
         }
         if (next != state) {
             level.setBlock(p, next, Block.UPDATE_CLIENTS);

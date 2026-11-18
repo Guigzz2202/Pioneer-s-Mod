@@ -3,7 +3,7 @@ package fr.pioneers.client.render;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import fr.pioneers.Pioneers;
-import fr.pioneers.tile.TileEntityChunkLoader;
+import fr.pioneers.space.tile.TileEntityChunkLoader;
 import java.util.HashMap;
 import java.util.Map;
 import net.minecraft.client.Minecraft;

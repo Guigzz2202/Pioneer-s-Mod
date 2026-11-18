@@ -1,15 +1,15 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.clan.Clan;
-import fr.pioneers.clan.ClanApi;
-import fr.pioneers.clan.Permission;
-import fr.pioneers.clan.core.ClanClock;
-import fr.pioneers.clan.core.ClanDefs;
-import fr.pioneers.clan.core.ClanRoles;
-import fr.pioneers.clan.territory.ClanTerritory;
-import fr.pioneers.clan.territory.TerritoryRules;
-import fr.pioneers.clan.treasury.ClanFinance;
-import fr.pioneers.clan.vote.ClanGov;
+import fr.pioneers.society.clan.Clan;
+import fr.pioneers.society.clan.ClanApi;
+import fr.pioneers.society.clan.Permission;
+import fr.pioneers.society.clan.core.ClanClock;
+import fr.pioneers.society.clan.core.ClanDefs;
+import fr.pioneers.society.clan.core.ClanRoles;
+import fr.pioneers.society.clan.territory.ClanTerritory;
+import fr.pioneers.society.clan.territory.TerritoryRules;
+import fr.pioneers.society.clan.treasury.ClanFinance;
+import fr.pioneers.society.clan.vote.ClanGov;
 import fr.pioneers.core.profile.PioneerCap;
 import fr.pioneers.core.profile.PioneerProfile;
 import fr.pioneers.core.profile.ProfileEvents;
@@ -156,7 +156,7 @@ public final class PatchP104Lot8Tests {
         s.claim(c, f.getWorldPosition());
         Gt.check(c.claim(dim, f.toLong()) != null, "claim refuse");
         Gt.equal(0, owners(s.level, f.toLong()), "un claim pose encore un ticket (claims charges d'office retires)");
-        Gt.check(!fr.pioneers.clan.territory.ClanChunkloading.isLoaded(c, dim, f.toLong()), "chunk revendique dit charge sans emplacement");
+        Gt.check(!fr.pioneers.society.clan.territory.ClanChunkloading.isLoaded(c, dim, f.toLong()), "chunk revendique dit charge sans emplacement");
         ClanTerritory.unclaim(p, s.level, f.toLong());
         Gt.check(c.claim(dim, f.toLong()) == null, "abandon refuse");
         Gt.equal(0, owners(s.level, f.toLong()), "ticket apres l'abandon");

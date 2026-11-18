@@ -1,15 +1,15 @@
 package fr.pioneers.gametest;
 
 import fr.pioneers.api.multiblock.MultiblockCore;
-import fr.pioneers.common.projector.ProjectedStructure;
+import fr.pioneers.core.common.projector.ProjectedStructure;
 import fr.pioneers.core.machine.MachineBlock;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.construction.StackedColumnBlock;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.ControllerTile;
-import fr.pioneers.industry.multi.IndustrialBlueprint;
-import fr.pioneers.industry.multi.ModuleBlock;
-import fr.pioneers.industry.multi.Structure;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.construction.StackedColumnBlock;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.multi.IndustrialBlueprint;
+import fr.pioneers.tech.industry.multi.ModuleBlock;
+import fr.pioneers.tech.industry.multi.Structure;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -85,7 +85,7 @@ public final class MultiblockApiTests {
         BlockPos c = build(h, m);
         ControllerTile tile = controller(h, c);
         //1.0.4-beta (lot 24) : structure de Guillaume sans piece a tier (salle blanche) : tier fixe
-        fr.pioneers.industry.multi.ShapeTemplate t = m.freeform ? null : fr.pioneers.industry.multi.ShapeTemplate.of(m).get(0);
+        fr.pioneers.tech.industry.multi.ShapeTemplate t = m.freeform ? null : fr.pioneers.tech.industry.multi.ShapeTemplate.of(m).get(0);
         int tier0 = t != null && t.nbt && t.fixedTier >= 0 ? t.fixedTier : 0;
         h.runAfterDelay(5, () -> {
             Gt.check(tile.formed(), m.multiId() + " : le plan ne se forme pas (" + tile.guiValue(5) + ")");
@@ -93,7 +93,7 @@ public final class MultiblockApiTests {
             //Sauvegarde FORMEE : reservoir de caloporteur rempli, aller-retour identique
             tile.coolantTank().setFluid(new FluidStack(Fluids.WATER, 1_234));
             CompoundTag tag = tile.saveWithoutMetadata();
-            BlockEntity copy = BlockEntity.loadStatic(tile.getBlockPos(), tile.getBlockState(), tag.copy());
+            BlockEntity copy = Gt.reloadTile(tile);
             Gt.check(copy instanceof ControllerTile, "relecture : pas un controleur");
             Gt.equal(tag, copy.saveWithoutMetadata(), "sauvegarde d'un controleur forme : aller-retour");
             Gt.equal(1_234, ((ControllerTile) copy).coolantTank().getFluidAmount(), "caloporteur relu");
@@ -103,7 +103,7 @@ public final class MultiblockApiTests {
                 BlockPos abs = h.absolutePos(p);
                 //1.0.4-beta (lot 24) : une carcasse, ou une paroi de salle blanche (structures de Guillaume sans carcasse)
                 net.minecraft.world.level.block.Block b = h.getLevel().isLoaded(abs) ? h.getLevel().getBlockState(abs).getBlock() : null;
-                boolean piece = b instanceof CasingBlock cb && !cb.scorched() || b instanceof fr.pioneers.industry.construction.CleanroomPanelBlock;
+                boolean piece = b instanceof CasingBlock cb && !cb.scorched() || b instanceof fr.pioneers.tech.industry.construction.CleanroomPanelBlock;
                 if (!p.equals(c) && piece && tile.structure() != null && tile.structure().isPart(abs)) {
                     casing = p.immutable();
                     break;

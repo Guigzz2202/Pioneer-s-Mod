@@ -1,9 +1,9 @@
 package fr.pioneers.integration.jei;
 
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.content.absorber.AbsorberControllerTile;
+import fr.pioneers.space.content.absorber.AbsorberControllerTile;
 import fr.pioneers.core.gas.PiGasTypes;
-import fr.pioneers.registries.PiCosmicBlocks;
+import fr.pioneers.space.content.PiCosmicBlocks;
 import fr.pioneers.space.SolarSystem.Body;
 import fr.pioneers.space.research.ResearchNode;
 import java.util.ArrayList;

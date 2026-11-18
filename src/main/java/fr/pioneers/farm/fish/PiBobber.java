@@ -666,7 +666,7 @@ public class PiBobber extends Projectile {
         ItemStack fish = FishItems.of(species, cm);
         //1.0.5-beta (lot 31, retour 42) : la prise va DIRECTEMENT dans un panier de peche de l'inventaire (son discret) ; sinon elle vole
         //jusqu'au joueur comme avant (et le ramassage la range encore dans un panier qui a de la place)
-        ItemStack rest = fr.pioneers.home.bag.BagEvents.deliver(owner, fish);
+        ItemStack rest = fr.pioneers.building.home.bag.BagEvents.deliver(owner, fish);
         if (!rest.isEmpty()) {
             ItemEntity it = new ItemEntity(level(), getX(), getY() + 0.3, getZ(), rest);
             double dx = owner.getX() - getX(), dy = owner.getY() - getY(), dz = owner.getZ() - getZ();

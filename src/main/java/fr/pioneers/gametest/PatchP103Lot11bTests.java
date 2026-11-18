@@ -1,19 +1,19 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.BronzeBlock;
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamProcessTile;
-import fr.pioneers.economy.PriceService;
-import fr.pioneers.home.PiHome;
-import fr.pioneers.home.basket.BasketHeap;
-import fr.pioneers.home.basket.BasketTile;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.village.FoundingRules;
-import fr.pioneers.village.VillageData;
-import fr.pioneers.village.VillageFounding;
-import fr.pioneers.village.VillagerLore;
-import fr.pioneers.village.Villagers;
+import fr.pioneers.tech.bronze.BronzeBlock;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
+import fr.pioneers.society.economy.PriceService;
+import fr.pioneers.building.home.PiHome;
+import fr.pioneers.building.home.basket.BasketHeap;
+import fr.pioneers.building.home.basket.BasketTile;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.society.village.FoundingRules;
+import fr.pioneers.society.village.VillageData;
+import fr.pioneers.society.village.VillageFounding;
+import fr.pioneers.society.village.VillagerLore;
+import fr.pioneers.society.village.Villagers;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -158,7 +158,7 @@ public final class PatchP103Lot11bTests {
         for (VillageData.Village old : data.within(abs, 128)) {
             data.remove(old.id);
         }
-        h.setBlock(boardRel, fr.pioneers.village.VillageBlocks.NEEDS_BOARD.getBlock().defaultBlockState());
+        h.setBlock(boardRel, fr.pioneers.society.village.VillageBlocks.NEEDS_BOARD.getBlock().defaultBlockState());
         FoundingRules.Decision d = VillageFounding.onBoardPlaced(s.level, abs, founder);
         Gt.equal(FoundingRules.Decision.FOUND, d, "loin de tout village : fondation");
         VillageData.Village v = data.owned(abs);
@@ -170,7 +170,7 @@ public final class PatchP103Lot11bTests {
         }
         //un autre joueur ne fonde pas dans ce village
         BlockPos second = boardRel.offset(4, 0, 0);
-        h.setBlock(second, fr.pioneers.village.VillageBlocks.NEEDS_BOARD.getBlock().defaultBlockState());
+        h.setBlock(second, fr.pioneers.society.village.VillageBlocks.NEEDS_BOARD.getBlock().defaultBlockState());
         Gt.equal(FoundingRules.Decision.REFUSED, VillageFounding.onBoardPlaced(s.level, h.absolutePos(second), other), "pas de fondation chez un autre");
         Gt.equal(founder.getUUID(), v.owner, "un seul fondateur");
         //la fondatrice agrandit son village

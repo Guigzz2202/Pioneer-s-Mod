@@ -1,10 +1,10 @@
 package fr.pioneers.api.multiblock;
 
-import fr.pioneers.common.projector.Blueprint;
-import fr.pioneers.common.projector.BlueprintBill;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.multi.ControllerBlock;
-import fr.pioneers.industry.multi.IndustrialBlueprint;
+import fr.pioneers.core.common.projector.Blueprint;
+import fr.pioneers.core.common.projector.BlueprintBill;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.multi.ControllerBlock;
+import fr.pioneers.tech.industry.multi.IndustrialBlueprint;
 import java.util.List;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.Nullable;

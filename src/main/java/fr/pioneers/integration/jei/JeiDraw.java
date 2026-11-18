@@ -1,8 +1,8 @@
 package fr.pioneers.integration.jei;
 
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.industry.Tiers;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.Tiers;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.ArrayList;
 import java.util.List;
 import mezz.jei.api.gui.builder.ITooltipBuilder;

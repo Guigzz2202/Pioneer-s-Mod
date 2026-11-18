@@ -14,23 +14,23 @@ import fr.pioneers.core.recipe.RecipeChoice;
 import fr.pioneers.core.recipe.RecipeSources;
 import fr.pioneers.core.side.SideMode;
 import fr.pioneers.core.side.SideType;
-import fr.pioneers.industry.Impurity;
-import fr.pioneers.industry.IndustryEvents;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.IoMigration;
-import fr.pioneers.industry.IoTank;
-import fr.pioneers.industry.TankView;
-import fr.pioneers.industry.Tiers;
-import fr.pioneers.industry.recipe.IndustrialRecipe;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.industry.recipe.RecipeMatch;
-import fr.pioneers.machine.AcceptCache;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.machine.ProcessingRecipe;
-import fr.pioneers.recipe.PiRecipes;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
-import fr.pioneers.transport.Transfer;
+import fr.pioneers.tech.industry.Impurity;
+import fr.pioneers.tech.industry.IndustryEvents;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.IoMigration;
+import fr.pioneers.tech.industry.IoTank;
+import fr.pioneers.tech.industry.TankView;
+import fr.pioneers.tech.industry.Tiers;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.industry.recipe.RecipeMatch;
+import fr.pioneers.tech.machine.AcceptCache;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.tech.machine.ProcessingRecipe;
+import fr.pioneers.core.recipes.PiRecipes;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
+import fr.pioneers.logistics.transport.Transfer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -280,7 +280,7 @@ public class KitProcess extends ProcessUnit implements RecipeMatch.Buffers {
 
     private boolean receivedTakes(Level level, ItemStack stack) {
         for (IndustrialRecipe r : IndustryRecipes.kitReceived(level, catalog)) {
-            for (fr.pioneers.bronze.bench.BenchRecipe.Counted c : r.items()) {
+            for (fr.pioneers.tech.bronze.bench.BenchRecipe.Counted c : r.items()) {
                 if (c.ingredient().test(stack)) {
                     return true;
                 }
@@ -393,7 +393,7 @@ public class KitProcess extends ProcessUnit implements RecipeMatch.Buffers {
         }
         //1.0.3-beta (lot 3) : recettes PROPRES au four electrique (pioneers:industrial, machine electric_furnace : minerai brut, concasse et poudre
         //des metaux de tier 1 -> 1 lingot) ; elles passent avant les cuissons vanilla (le four vanilla, lui, ne fond toujours pas le minerai)
-        for (fr.pioneers.industry.recipe.IndustrialRecipe r : fr.pioneers.industry.recipe.IndustryRecipes.of(level, fr.pioneers.industry.IndustryMachine.FURNACE)) {
+        for (fr.pioneers.tech.industry.recipe.IndustrialRecipe r : fr.pioneers.tech.industry.recipe.IndustryRecipes.of(level, fr.pioneers.tech.industry.IndustryMachine.FURNACE)) {
             if (r.items().size() == 1 && !r.results().isEmpty() && r.fluids().isEmpty() && r.gases().isEmpty() && r.fluidResults().isEmpty()
                 && r.getId().getPath().startsWith("industry/furnace/") && r.items().get(0).ingredient().test(stack)) {
                 return new Found(r.items().get(0).count(), r.results().get(0).stack().copy(), 0);

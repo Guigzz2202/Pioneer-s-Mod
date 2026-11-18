@@ -1,17 +1,17 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.BronzeBlock;
-import fr.pioneers.bronze.autofoundry.AutoFoundryTile;
-import fr.pioneers.bronze.autofoundry.AutoMoldBlock;
-import fr.pioneers.bronze.autofoundry.AutoMoldTile;
-import fr.pioneers.bronze.autofoundry.AutoMoldUnit;
-import fr.pioneers.bronze.autofoundry.CastingChannelBlock;
-import fr.pioneers.bronze.autofoundry.FoundryLayout;
-import fr.pioneers.bronze.autofoundry.FoundryPartBlock;
-import fr.pioneers.bronze.autofoundry.FoundryUnit;
-import fr.pioneers.bronze.foundry.CastingRecipe;
-import fr.pioneers.forge.ForgeMetals;
-import fr.pioneers.registries.PiBronze;
+import fr.pioneers.tech.bronze.BronzeBlock;
+import fr.pioneers.tech.bronze.autofoundry.AutoFoundryTile;
+import fr.pioneers.tech.bronze.autofoundry.AutoMoldBlock;
+import fr.pioneers.tech.bronze.autofoundry.AutoMoldTile;
+import fr.pioneers.tech.bronze.autofoundry.AutoMoldUnit;
+import fr.pioneers.tech.bronze.autofoundry.CastingChannelBlock;
+import fr.pioneers.tech.bronze.autofoundry.FoundryLayout;
+import fr.pioneers.tech.bronze.autofoundry.FoundryPartBlock;
+import fr.pioneers.tech.bronze.autofoundry.FoundryUnit;
+import fr.pioneers.tech.bronze.foundry.CastingRecipe;
+import fr.pioneers.tech.forge.ForgeMetals;
+import fr.pioneers.tech.bronze.PiBronze;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -175,7 +175,7 @@ public final class PatchP102Lot4Tests {
         u.mix().put("tin", 144);
         u.setTemperature(1180);
         u.setAutoPour(false);
-        Gt.check(f.setLockedRecipe(fr.pioneers.bronze.foundry.CrucibleUnit.choiceId("bronze")), "verrou sur le bronze");
+        Gt.check(f.setLockedRecipe(fr.pioneers.tech.bronze.foundry.CrucibleUnit.choiceId("bronze")), "verrou sur le bronze");
         f.guiSlots().get(0).setStack(new ItemStack(Items.CHARCOAL, 9));
         CompoundTag tag = f.saveWithoutMetadata();
         BlockPos other = h.absolutePos(new BlockPos(20, 2, 8));

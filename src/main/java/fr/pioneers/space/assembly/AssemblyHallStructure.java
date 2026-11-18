@@ -1,16 +1,16 @@
 package fr.pioneers.space.assembly;
 
-import fr.pioneers.common.block.Connections;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.IndustrialGlassBlock;
-import fr.pioneers.industry.multi.IndustryStyle;
-import fr.pioneers.industry.multi.PortBlock;
-import fr.pioneers.industry.multi.SheetMetalBlock;
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.industry.multi.StructureFrameBlock;
-import fr.pioneers.registries.PiBlocks;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiWorksMachines;
+import fr.pioneers.core.common.block.Connections;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.IndustrialGlassBlock;
+import fr.pioneers.tech.industry.multi.IndustryStyle;
+import fr.pioneers.tech.industry.multi.PortBlock;
+import fr.pioneers.tech.industry.multi.SheetMetalBlock;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.tech.industry.multi.StructureFrameBlock;
+import fr.pioneers.core.registries.PiBlocks;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.space.assembly.PiWorksMachines;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -169,9 +169,9 @@ public final class AssemblyHallStructure {
             if (next.hasProperty(IndustryStyle.STYLE) && next.getValue(IndustryStyle.STYLE) != style) {
                 next = next.setValue(IndustryStyle.STYLE, style);
             }
-            if (next.getBlock() instanceof IndustrialGlassBlock glass) {
-                //0.20.28 : la vitre garde la couleur de son propre tier
-                next = Connections.connect(next.setValue(IndustryStyle.TIER, glass.tier + 1), level, p, Connections.INDUSTRIAL_GLASS);
+            if (next.getBlock() instanceof IndustrialGlassBlock) {
+                //0.20.28 : la vitre garde la couleur de son propre tier (1.0.6 : fixee par son bloc, plus dans l'etat)
+                next = Connections.connect(next, level, p, Connections.INDUSTRIAL_GLASS);
             } else if (next.hasProperty(IndustryStyle.TIER) && next.getValue(IndustryStyle.TIER) != t) {
                 next = next.setValue(IndustryStyle.TIER, t);
             }

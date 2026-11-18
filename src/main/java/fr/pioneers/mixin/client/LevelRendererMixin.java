@@ -1,6 +1,6 @@
 package fr.pioneers.mixin.client;
 
-import fr.pioneers.weather.Precipitations;
+import fr.pioneers.world.weather.Precipitations;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.core.BlockPos;

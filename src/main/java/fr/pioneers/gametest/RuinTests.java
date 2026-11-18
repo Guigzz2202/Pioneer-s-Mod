@@ -5,31 +5,31 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.profile.RpActions;
 import fr.pioneers.core.profile.RpNet;
-import fr.pioneers.economy.EconomyApi;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.ruins.ArchiveCabinetTile;
-import fr.pioneers.ruins.DerelictBlock;
-import fr.pioneers.ruins.DerelictControllerTile;
-import fr.pioneers.ruins.Restoration;
-import fr.pioneers.ruins.RuinApi;
-import fr.pioneers.ruins.RuinBlocks;
-import fr.pioneers.ruins.RuinItems;
-import fr.pioneers.ruins.RuinSites;
-import fr.pioneers.ruins.ScrapCategory;
-import fr.pioneers.ruins.ScrapItem;
-import fr.pioneers.ruins.SiteTile;
-import fr.pioneers.ruins.gen.AnnexFeature;
-import fr.pioneers.ruins.gen.GenData;
-import fr.pioneers.ruins.gen.RuinFeature;
-import fr.pioneers.ruins.gen.RuinGrid;
-import fr.pioneers.ruins.gen.RuinPlan;
-import fr.pioneers.ruins.sentinel.GuardianEntity;
-import fr.pioneers.ruins.sentinel.SentinelData;
-import fr.pioneers.ruins.sentinel.SentinelEntity;
-import fr.pioneers.ruins.sentinel.SentinelRules;
-import fr.pioneers.ruins.sentinel.SentinelTypes;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.society.economy.EconomyApi;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.world.ruins.ArchiveCabinetTile;
+import fr.pioneers.world.ruins.DerelictBlock;
+import fr.pioneers.world.ruins.DerelictControllerTile;
+import fr.pioneers.world.ruins.Restoration;
+import fr.pioneers.world.ruins.RuinApi;
+import fr.pioneers.world.ruins.RuinBlocks;
+import fr.pioneers.world.ruins.RuinItems;
+import fr.pioneers.world.ruins.RuinSites;
+import fr.pioneers.world.ruins.ScrapCategory;
+import fr.pioneers.world.ruins.ScrapItem;
+import fr.pioneers.world.ruins.SiteTile;
+import fr.pioneers.world.ruins.gen.AnnexFeature;
+import fr.pioneers.world.ruins.gen.GenData;
+import fr.pioneers.world.ruins.gen.RuinFeature;
+import fr.pioneers.world.ruins.gen.RuinGrid;
+import fr.pioneers.world.ruins.gen.RuinPlan;
+import fr.pioneers.world.ruins.sentinel.GuardianEntity;
+import fr.pioneers.world.ruins.sentinel.SentinelData;
+import fr.pioneers.world.ruins.sentinel.SentinelEntity;
+import fr.pioneers.world.ruins.sentinel.SentinelRules;
+import fr.pioneers.world.ruins.sentinel.SentinelTypes;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -67,8 +67,12 @@ import net.minecraftforge.gametest.PrefixGameTestTemplate;
 @PrefixGameTestTemplate(false)
 public final class RuinTests {
 
-    /** Cle d'une nomenclature de restauration MKI ({@code data/pioneers/ruins/restoration/acid_etcher.json}). */
-    static final String MACHINE = "acid_etcher";
+    /**
+     * Cle d'une nomenclature de restauration MKI ({@code data/pioneers/ruins/restoration/chemical_reactor.json}). 1.0.6 : la graveuse a
+     * l'acide ({@code acid_etcher}) est absorbee depuis les fusions du 1.0.4-beta et n'a plus de nomenclature (« restore.unknown » : aucun
+     * chantier ne s'ouvrait).
+     */
+    static final String MACHINE = "chemical_reactor";
 
     private RuinTests() {
     }

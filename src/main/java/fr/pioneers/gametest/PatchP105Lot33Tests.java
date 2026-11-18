@@ -1,10 +1,10 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.pet.PetDog;
-import fr.pioneers.pet.PetListSync;
-import fr.pioneers.pet.PetMaster;
-import fr.pioneers.pet.PetRegistry;
-import fr.pioneers.pet.PiPets;
+import fr.pioneers.world.pet.PetDog;
+import fr.pioneers.world.pet.PetListSync;
+import fr.pioneers.world.pet.PetMaster;
+import fr.pioneers.world.pet.PetRegistry;
+import fr.pioneers.world.pet.PiPets;
 import java.util.UUID;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;

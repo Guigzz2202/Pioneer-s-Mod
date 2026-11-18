@@ -1,8 +1,8 @@
 package fr.pioneers.core.profile;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.common.PiCommonConfig;
-import fr.pioneers.network.PacketGuard;
+import fr.pioneers.core.common.PiCommonConfig;
+import fr.pioneers.core.network.PacketGuard;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;

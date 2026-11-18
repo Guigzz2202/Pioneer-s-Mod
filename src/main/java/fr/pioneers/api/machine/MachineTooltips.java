@@ -7,21 +7,21 @@ import fr.pioneers.api.machine.tier.GeneratedTierFamilies;
 import fr.pioneers.core.Texts;
 import fr.pioneers.core.side.SideType;
 import fr.pioneers.core.tooltip.Tooltips;
-import fr.pioneers.energy.GeneratorBlock;
-import fr.pioneers.industry.GeneratorOutput;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierBlock;
-import fr.pioneers.industry.atelier.DynamoBlock;
-import fr.pioneers.industry.atelier.DynamoTile;
-import fr.pioneers.industry.multi.Cleanroom;
-import fr.pioneers.industry.multi.ControllerBlock;
-import fr.pioneers.machine.KitMachineBlock;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.transport.buffer.BufferBlock;
-import fr.pioneers.transport.buffer.BufferTile;
-import fr.pioneers.transport.buffer.BufferType;
-import fr.pioneers.transport.heat.ElectricHeaterTile;
-import fr.pioneers.transport.pressure.AirCompressorTile;
+import fr.pioneers.tech.energy.GeneratorBlock;
+import fr.pioneers.tech.industry.GeneratorOutput;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierBlock;
+import fr.pioneers.tech.industry.atelier.DynamoBlock;
+import fr.pioneers.tech.industry.atelier.DynamoTile;
+import fr.pioneers.tech.industry.multi.Cleanroom;
+import fr.pioneers.tech.industry.multi.ControllerBlock;
+import fr.pioneers.tech.machine.KitMachineBlock;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.logistics.transport.buffer.BufferBlock;
+import fr.pioneers.logistics.transport.buffer.BufferTile;
+import fr.pioneers.logistics.transport.buffer.BufferType;
+import fr.pioneers.logistics.transport.heat.ElectricHeaterTile;
+import fr.pioneers.logistics.transport.pressure.AirCompressorTile;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -153,7 +153,7 @@ public final class MachineTooltips {
                     //1.0.5-beta (lot 39) : le four a induction a vapeur prend 6 mB/t (GeneratedTierFamilies.steamUse)
                     tips.spec("tooltip.pioneers.tier.steam_use", id == null ? GeneratedTierFamilies.STEAM_USE
                                 : GeneratedTierFamilies.steamUse(id.contains(":") ? id.substring(id.indexOf(':') + 1) : id),
-                          Texts.format(Math.round(fr.pioneers.bronze.steam.SteamRules.PROCESS_RESERVE)));
+                          Texts.format(Math.round(fr.pioneers.tech.bronze.steam.SteamRules.PROCESS_RESERVE)));
                 }
             }
             default -> {

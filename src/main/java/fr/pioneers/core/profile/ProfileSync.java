@@ -1,7 +1,7 @@
 package fr.pioneers.core.profile;
 
-import fr.pioneers.clan.Clan;
-import fr.pioneers.clan.ClanApi;
+import fr.pioneers.society.clan.Clan;
+import fr.pioneers.society.clan.ClanApi;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.server.level.ServerPlayer;
@@ -40,7 +40,7 @@ public final class ProfileSync {
 
     /**
      * Identite visible d'un joueur (nom du personnage, vocation, initiation, couleur du clan) : a lui et a ceux qui le suivent. 1.12.0 : sans
-     * l'ancienne allure (habillage : garde-robe cosmetique, {@code fr.pioneers.cosmetic} ; barbe et coiffure : skin du joueur).
+     * l'ancienne allure (habillage : garde-robe cosmetique, {@code fr.pioneers.equipment.cosmetic} ; barbe et coiffure : skin du joueur).
      */
     public static void identity(Player player) {
         if (player instanceof ServerPlayer sp) {

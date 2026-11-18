@@ -1,11 +1,11 @@
 package fr.pioneers.core.profile;
 
-import fr.pioneers.common.look.LookCards;
+import fr.pioneers.core.common.look.LookCards;
 import fr.pioneers.core.machine.MachineBlock;
 import fr.pioneers.core.machine.MachineTile;
 import fr.pioneers.farm.FarmCard;
 import fr.pioneers.farm.FarmCard.Line;
-import fr.pioneers.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.multi.ControllerTile;
 import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

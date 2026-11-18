@@ -2,10 +2,10 @@ package fr.pioneers.integration.jei;
 
 import fr.pioneers.api.gas.Gas;
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.registries.PiBaseMachines;
-import fr.pioneers.registries.PiItems;
-import fr.pioneers.registries.PiRobotics;
-import fr.pioneers.robotics.UnitKind;
+import fr.pioneers.space.base.PiBaseMachines;
+import fr.pioneers.core.registries.PiItems;
+import fr.pioneers.logistics.robotics.PiRobotics;
+import fr.pioneers.logistics.robotics.UnitKind;
 import fr.pioneers.space.SolarSystem.Body;
 import fr.pioneers.space.giant.PocketKind.Layer;
 import fr.pioneers.space.giant.PocketKind;

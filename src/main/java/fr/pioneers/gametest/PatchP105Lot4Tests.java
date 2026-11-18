@@ -1,7 +1,7 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.clan.ClaimIndex;
-import fr.pioneers.clan.ClanApi;
+import fr.pioneers.society.clan.ClaimIndex;
+import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.farm.PiFarm;
 import fr.pioneers.farm.PiFishing;
 import fr.pioneers.farm.crop.FarmCropBlock;
@@ -9,17 +9,17 @@ import fr.pioneers.farm.crow.Crow;
 import fr.pioneers.farm.device.PiFarmDevices;
 import fr.pioneers.farm.device.ScarecrowBlock;
 import fr.pioneers.farm.fish.PiFish;
-import fr.pioneers.fauna.FaunaCounter;
-import fr.pioneers.fauna.FaunaData;
-import fr.pioneers.fauna.FaunaEvents;
-import fr.pioneers.fauna.FaunaGroup;
-import fr.pioneers.fauna.FaunaPools;
-import fr.pioneers.fauna.FaunaRegistry;
-import fr.pioneers.fauna.FaunaRules;
-import fr.pioneers.fauna.FaunaSettings;
-import fr.pioneers.fauna.FaunaSpawner;
-import fr.pioneers.fauna.FaunaSpecies;
-import fr.pioneers.fauna.FaunaZones;
+import fr.pioneers.world.fauna.FaunaCounter;
+import fr.pioneers.world.fauna.FaunaData;
+import fr.pioneers.world.fauna.FaunaEvents;
+import fr.pioneers.world.fauna.FaunaGroup;
+import fr.pioneers.world.fauna.FaunaPools;
+import fr.pioneers.world.fauna.FaunaRegistry;
+import fr.pioneers.world.fauna.FaunaRules;
+import fr.pioneers.world.fauna.FaunaSettings;
+import fr.pioneers.world.fauna.FaunaSpawner;
+import fr.pioneers.world.fauna.FaunaSpecies;
+import fr.pioneers.world.fauna.FaunaZones;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -63,7 +63,8 @@ public final class PatchP105Lot4Tests {
     static <T extends Entity> T add(Gt.Scope s, EntityType<T> type, BlockPos abs) {
         T e = type.create(s.level);
         Gt.check(e != null, "creation de " + type);
-        e.moveTo(abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5, 0, 0);
+        BlockPos at = Gt.standing(s.level, abs);   // 1.0.6 : sur le sol du gabarit, pas dedans
+        e.moveTo(at.getX() + 0.5, at.getY(), at.getZ() + 0.5, 0, 0);
         s.level.addFreshEntity(e);
         s.onCleanup(e::discard);
         return e;
@@ -99,8 +100,10 @@ public final class PatchP105Lot4Tests {
     static FaunaSettings settings(int counted) {
         int[] caps = FaunaSettings.DEFAULT.caps().clone();
         caps[FaunaGroup.GAME.ordinal()] = Math.max(caps[FaunaGroup.GAME.ordinal()], 4 * counted + 64);
+        //1.0.6 : reproduction sauvage (lot 6) coupee : ses naissances (d'autres betes de la zone, voisines des autres tests) comptaient
+        //dans les apparitions du passage ; ces tests ne regardent que le repeuplement du lot 4
         return new FaunaSettings(true, FaunaRules.PERIOD, FaunaRules.THRESHOLD, FaunaRules.PLAYER_DISTANCE, FaunaRules.VILLAGE_DISTANCE, true,
-              FaunaRules.AI_DISTANCE, caps);
+              FaunaRules.AI_DISTANCE, caps).withWildBreeding(false, 0, FaunaRules.WILD_BREED_DISTANCE);
     }
 
     static int[] gameStart(int counted) {
@@ -147,7 +150,12 @@ public final class PatchP105Lot4Tests {
               "regles du jeu : la vache ne nait plus au hasard (evenement refuse)");
         long zone = FaunaRules.zoneKey(crow.getBlockX(), crow.getBlockZ());
         Gt.check(FaunaCounter.of(level).species(zone, FaunaRegistry.byId("pioneers:crow")) >= 1, "le corbeau est compte dans sa zone");
-        Gt.check(FaunaCounter.of(level).groups(zone)[FaunaGroup.GAME.ordinal()] >= 2, "vache et mouton comptes (gibier)");
+        //1.0.6 : la vache et le mouton peuvent tomber dans une autre zone que le corbeau (gabarit a cheval sur une limite de zone) :
+        //chacun est compte dans SA zone
+        long zc = FaunaRules.zoneKey(cow.getBlockX(), cow.getBlockZ()), zs = FaunaRules.zoneKey(sheep.getBlockX(), sheep.getBlockZ());
+        int g = FaunaGroup.GAME.ordinal();
+        Gt.check(zc == zs ? FaunaCounter.of(level).groups(zc)[g] >= 2 : FaunaCounter.of(level).groups(zc)[g] >= 1 && FaunaCounter.of(level).groups(zs)[g] >= 1,
+              "vache et mouton comptes (gibier)");
         s.done();
     }
 
@@ -221,7 +229,10 @@ public final class PatchP105Lot4Tests {
         FaunaZones.Pass p = FaunaZones.pass(level, zone, settings(counted), new FaunaZones.Limits(List.of(far), area), gameStart(counted));
         p.spawned().forEach(e -> s.onCleanup(e::discard));
         Gt.check(p.planned().contains(FaunaGroup.GAME), "gibier sous 25 % : prevu");
-        Gt.equal(0L, (long) p.spawned().size(), "aire dans un claim : aucun repeuplement");
+        //1.0.6 : les especes « pres des constructions » (rats du gibier) peuvent revenir dans un claim (regle verifiee plus bas) : on ne compte
+        //que les autres
+        Gt.equal(0L, p.spawned().stream().filter(e -> FaunaRegistry.of(e) == null || !FaunaRegistry.of(e).isNearBuildings()).count(),
+              "aire dans un claim : aucun repeuplement (hors rats et pigeons)");
         BlockPos mid = h.absolutePos(new BlockPos(9, 1, 9));
         FaunaSpecies near = FaunaSpecies.of("pioneers:test_rat", FaunaGroup.GAME).nearBuildings();
         FaunaSpawner.Limits lim = new FaunaSpawner.Limits(List.of(far), FaunaRules.PLAYER_DISTANCE, FaunaRules.VILLAGE_DISTANCE, true, 256);

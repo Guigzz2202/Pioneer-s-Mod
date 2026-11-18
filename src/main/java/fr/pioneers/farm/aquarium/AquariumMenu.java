@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * 1.0.5-beta (lot 25) : interface de COMPOSITION d'un bassin d'aquarium (Maj + clic droit, {@code AquariumEvents}) : aucune case propre,
  * seulement l'inventaire du joueur (synchronise : l'ecran compte les objets disponibles). Les poses et retraits passent par
- * {@link PacketAquarium} ({@link AquariumCompose#edit}, valide au serveur). Cotes communes avec l'ecran {@code J:client/farm/aquarium/
+ * {@link PacketAquarium} ({@link AquariumCompose#edit}, valide au serveur). Cotes communes avec l'ecran {@code J:farm/client/aquarium/
  * AquariumScreen} et sa maquette {@code tools/aquarium/aquarium_gui.py}.
  */
 public class AquariumMenu extends AbstractContainerMenu {

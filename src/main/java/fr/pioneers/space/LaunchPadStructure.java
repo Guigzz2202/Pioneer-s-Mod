@@ -1,9 +1,9 @@
 package fr.pioneers.space;
 
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.registries.PiBaseMachines;
-import fr.pioneers.registries.PiBlocks;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.space.base.PiBaseMachines;
+import fr.pioneers.core.registries.PiBlocks;
+import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;

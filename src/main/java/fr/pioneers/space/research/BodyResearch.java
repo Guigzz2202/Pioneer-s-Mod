@@ -2,7 +2,7 @@ package fr.pioneers.space.research;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
-import fr.pioneers.registries.PiItems;
+import fr.pioneers.core.registries.PiItems;
 import fr.pioneers.space.SolarSystem.Body;
 import fr.pioneers.space.farm.SpacePlant;
 import fr.pioneers.space.mining.MiningMaterial;

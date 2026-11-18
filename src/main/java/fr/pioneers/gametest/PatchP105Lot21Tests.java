@@ -1,16 +1,16 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchTile;
-import fr.pioneers.bronze.bench.BenchType;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchTile;
+import fr.pioneers.tech.bronze.bench.BenchType;
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiMachineKit;
-import fr.pioneers.transport.CableTier;
-import fr.pioneers.wild.Boar;
-import fr.pioneers.wild.PiWild;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.machine.PiMachineKit;
+import fr.pioneers.logistics.transport.CableTier;
+import fr.pioneers.world.wild.Boar;
+import fr.pioneers.world.wild.PiWild;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -52,7 +52,8 @@ public final class PatchP105Lot21Tests {
     @GameTest(template = Gt.BORDER, batch = "pioneers_p105_21_boar", timeoutTicks = 1600)
     public static void p105_21_sanglier_fouille_sans_planter(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
-        BlockPos[] crops = {new BlockPos(12, 1, 10), new BlockPos(13, 1, 10), new BlockPos(14, 1, 10)};
+        //1.0.6 : cultures SUR le sol du gabarit (terre labouree en y = 1, a la place de la pierre), plus dans un trou du sol
+        BlockPos[] crops = {new BlockPos(12, 2, 10), new BlockPos(13, 2, 10), new BlockPos(14, 2, 10)};
         for (BlockPos c : crops) {
             h.setBlock(c.below(), Blocks.FARMLAND);
             h.setBlock(c, Blocks.WHEAT.defaultBlockState().setValue(CropBlock.AGE, 7));
@@ -73,7 +74,8 @@ public final class PatchP105Lot21Tests {
         });
         h.succeedWhen(() -> {
             for (BlockPos c : crops) {
-                Gt.check(!h.getBlockState(c).is(Blocks.WHEAT), "le sanglier n'a pas encore fouille " + c);
+                Gt.check(!h.getBlockState(c).is(Blocks.WHEAT), "le sanglier n'a pas encore fouille " + c + " (sanglier en " + b.blockPosition() + ", culture en " + h.absolutePos(c)
+                      + ", but " + (goal.isRunning() ? "actif" : "arrete") + ", chemin " + (b.getNavigation().isDone() ? "fini" : "en cours") + ")");
             }
             Gt.check(b.isAlive(), "sanglier perdu");
             s.done();
@@ -101,9 +103,18 @@ public final class PatchP105Lot21Tests {
         AtelierTile f = (AtelierTile) h.getBlockEntity(rel);
         f.getEnergy().setStored(f.getEnergy().getCapacity());
         f.itemInputs().get(0).setStack(new ItemStack(Items.BEEF, 3));
+        //diagnostic : tick du premier boeuf cuit
+        long[] first = {-1}, start = {h.getTick()};
+        h.onEachTick(() -> {
+            if (first[0] < 0 && PatchP105Lot14Tests.cooked(f) > 0) {
+                first[0] = h.getTick();
+            }
+        });
         h.startSequence()
               .thenExecuteAfter(6, () -> Gt.equal(0, PatchP105Lot14Tests.cooked(f), "MKIV : rien de cuit avant 10 ticks"))
-              .thenExecuteAfter(10, () -> Gt.check(PatchP105Lot14Tests.cooked(f) >= 1, "MKIV : boeuf cuit en 10 ticks (vu a 16)"))
+              .thenWaitUntil(() -> Gt.check(PatchP105Lot14Tests.cooked(f) > 0, "pas encore de boeuf cuit"))
+              .thenExecute(() -> Gt.check(first[0] - start[0] <= 16, "boeuf cuit en 10 ticks : premier cuit " + (first[0] - start[0]) + " ticks apres le depart, energie "
+                    + f.getEnergy().getStored() + " / " + f.getEnergy().getCapacity()))
               .thenExecute(s::done);
     }
 

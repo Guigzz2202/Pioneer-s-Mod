@@ -1,6 +1,6 @@
 package fr.pioneers.farm.device;
 
-import fr.pioneers.clan.ClanApi;
+import fr.pioneers.society.clan.ClanApi;
 import fr.pioneers.farm.FarmCard;
 import fr.pioneers.farm.animal.AnimalSpecies;
 import fr.pioneers.farm.animal.FarmSites;

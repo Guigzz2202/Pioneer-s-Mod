@@ -2,9 +2,9 @@ package fr.pioneers.integration.jei;
 
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
-import fr.pioneers.mechanics.PiMechanics;
-import fr.pioneers.registries.PiFluids;
-import fr.pioneers.registries.PiForge;
+import fr.pioneers.tech.mechanics.PiMechanics;
+import fr.pioneers.core.registries.PiFluids;
+import fr.pioneers.tech.forge.PiForge;
 import java.util.ArrayList;
 import java.util.List;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

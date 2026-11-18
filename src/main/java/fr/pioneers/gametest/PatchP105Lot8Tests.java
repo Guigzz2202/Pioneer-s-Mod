@@ -1,17 +1,17 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.common.PiCommonConfig;
-import fr.pioneers.pet.PetCore;
-import fr.pioneers.pet.PetRegistry;
-import fr.pioneers.wild.Elephant;
-import fr.pioneers.wild.Giraffe;
-import fr.pioneers.wild.Lion;
-import fr.pioneers.wild.Monkey;
-import fr.pioneers.wild.PiWild8;
-import fr.pioneers.wild.Rhino;
-import fr.pioneers.wild.Tiger;
-import fr.pioneers.wild.Wild8Rules;
-import fr.pioneers.wild.WildRules;
+import fr.pioneers.core.common.PiCommonConfig;
+import fr.pioneers.world.pet.PetCore;
+import fr.pioneers.world.pet.PetRegistry;
+import fr.pioneers.world.wild.Elephant;
+import fr.pioneers.world.wild.Giraffe;
+import fr.pioneers.world.wild.Lion;
+import fr.pioneers.world.wild.Monkey;
+import fr.pioneers.world.wild.PiWild8;
+import fr.pioneers.world.wild.Rhino;
+import fr.pioneers.world.wild.Tiger;
+import fr.pioneers.world.wild.Wild8Rules;
+import fr.pioneers.world.wild.WildRules;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
@@ -42,7 +42,8 @@ public final class PatchP105Lot8Tests {
         BlockPos abs = s.h.absolutePos(rel);
         T e = type.create(s.level);
         Gt.check(e != null, "creation de " + type);
-        e.moveTo(abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5, 0, 0);
+        BlockPos at = Gt.standing(s.level, abs);   // 1.0.6 : sur le sol du gabarit, pas dedans
+        e.moveTo(at.getX() + 0.5, at.getY(), at.getZ() + 0.5, 0, 0);
         s.level.addFreshEntity(e);
         s.onCleanup(() -> {
             if (!e.isRemoved()) {

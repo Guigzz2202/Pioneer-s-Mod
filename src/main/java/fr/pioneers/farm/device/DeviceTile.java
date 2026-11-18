@@ -129,7 +129,7 @@ public abstract class DeviceTile extends PiBlockEntity {
 
     protected static void give(Player player, ItemStack stack) {
         //1.0.5-beta (lot 31, retour 42) : graines, pousses, poissons rendus par un appareil : dans un sac adapte d'abord
-        fr.pioneers.home.bag.BagEvents.give(player, stack);
+        fr.pioneers.building.home.bag.BagEvents.give(player, stack);
     }
 
     /** Range une pile dans les cases [from, to) (empile d'abord) ; rend le reste. */

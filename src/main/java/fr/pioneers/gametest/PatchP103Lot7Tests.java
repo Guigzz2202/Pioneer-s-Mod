@@ -1,28 +1,28 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.steam.AccessoryBlock;
-import fr.pioneers.bronze.steam.AccessoryTile;
-import fr.pioneers.bronze.steam.BoilerPart;
-import fr.pioneers.bronze.steam.FireboxTile;
-import fr.pioneers.bronze.steam.SteamAccessory;
+import fr.pioneers.tech.bronze.steam.AccessoryBlock;
+import fr.pioneers.tech.bronze.steam.AccessoryTile;
+import fr.pioneers.tech.bronze.steam.BoilerPart;
+import fr.pioneers.tech.bronze.steam.FireboxTile;
+import fr.pioneers.tech.bronze.steam.SteamAccessory;
 import fr.pioneers.farm.PiFarm;
 import fr.pioneers.farm.crop.Genes;
 import fr.pioneers.farm.food.DishShelfBlock;
-import fr.pioneers.home.HomeWoods;
-import fr.pioneers.home.PiHome;
-import fr.pioneers.home.bag.BagContents;
-import fr.pioneers.home.bag.BagEvents;
-import fr.pioneers.home.bag.BagItem;
-import fr.pioneers.home.bag.BagKind;
-import fr.pioneers.home.bag.BagUpgradeRecipe;
-import fr.pioneers.home.furniture.CabinetBlock;
-import fr.pioneers.home.furniture.TableBlock;
-import fr.pioneers.home.line.Clothesline;
-import fr.pioneers.home.line.HookBlock;
-import fr.pioneers.home.line.HookTile;
-import fr.pioneers.kinetics.rope.LinkType;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiKinetics;
+import fr.pioneers.building.home.HomeWoods;
+import fr.pioneers.building.home.PiHome;
+import fr.pioneers.building.home.bag.BagContents;
+import fr.pioneers.building.home.bag.BagEvents;
+import fr.pioneers.building.home.bag.BagItem;
+import fr.pioneers.building.home.bag.BagKind;
+import fr.pioneers.building.home.bag.BagUpgradeRecipe;
+import fr.pioneers.building.home.furniture.CabinetBlock;
+import fr.pioneers.building.home.furniture.TableBlock;
+import fr.pioneers.building.home.line.Clothesline;
+import fr.pioneers.building.home.line.HookBlock;
+import fr.pioneers.building.home.line.HookTile;
+import fr.pioneers.tech.kinetics.rope.LinkType;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -54,17 +54,12 @@ public final class PatchP103Lot7Tests {
 
     // ================================================================== surete de chaudiere
     private static FireboxTile boiler(GameTestHelper h, BlockPos at, boolean cutoff) {
-        h.setBlock(at, PiBronze.FIREBOX.getBlock().defaultBlockState());
-        h.setBlock(at.above(), PiBronze.BOILER_PARTS.get(BoilerPart.COPPER_SHELL).getBlock());
-        h.setBlock(at.above(2), PiBronze.BOILER_PARTS.get(BoilerPart.STEAM_DOME).getBlock());
-        if (cutoff) {
-            h.setBlock(at.above().east(), PiBronze.ACCESSORIES.get(SteamAccessory.SAFETY_VALVE).getBlock().defaultBlockState()
-                  .setValue(AccessoryBlock.FACING, Direction.EAST));
-        }
-        FireboxTile f = (FireboxTile) h.getBlockEntity(at);
-        f.house().checkNow();
-        Gt.check(f.formed(), "chaudiere non formee");
-        f.guiSlots().get(0).setStack(new ItemStack(Items.COAL, 16));
+        //1.0.6 : forme de Guillaume du lot 24 (l'ancienne colonne n'est plus formee) ; at = coin de la forme
+        FireboxTile f = MultiblockApi6Tests.boiler(h, at, 0, cutoff ? PiBronze.ACCESSORIES.get(SteamAccessory.SAFETY_VALVE).getBlock()
+              .defaultBlockState().setValue(AccessoryBlock.FACING, Direction.EAST) : null);
+        //1.0.6 : charbon mis APRES le premier tick de la surete (comme en jeu : l'accessoire est deja la quand on charge le foyer) ; avant,
+        //le foyer pose avant la surete brulait un charbon a son premier tick
+        h.runAfterDelay(2, () -> f.guiSlots().get(0).setStack(new ItemStack(Items.COAL, 16)));
         return f;
     }
 
@@ -74,14 +69,16 @@ public final class PatchP103Lot7Tests {
         Gt.check(!AccessoryTile.trip(false, 0.21, 20) && AccessoryTile.trip(false, 0.19, 20), "coupe sous 20 %");
         Gt.check(AccessoryTile.trip(true, 0.24, 20) && !AccessoryTile.trip(true, 0.25, 20), "reprise a 25 % seulement (pas de clignotement)");
         FireboxTile cut = boiler(h, new BlockPos(3, 1, 3), true), free = boiler(h, new BlockPos(14, 1, 14), false);
-        cut.fillWater(400, false);                                   // 10 % de 4 000 mB
-        free.fillWater(400, false);
+        //1.0.6 : quantites en part de la contenance (la chaudiere de Guillaume a 11 corps, 4 000 mB chacun ; la colonne d'avant, un seul)
+        int cap = cut.waterCapacity();
+        cut.fillWater(cap / 10, false);                              // 10 %
+        free.fillWater(cap / 10, false);
         h.runAtTickTime(60, () -> {
             Gt.check(cut.cut(), "eau a 10 % : la surete a coupe le foyer");
             Gt.check(cut.guiSlots().get(0).getStack().getCount() >= 15, "foyer coupe : le charbon ne brule plus");
             Gt.check(!free.cut(), "sans surete : rien ne coupe (comportement d'avant)");
             Gt.check(free.guiSlots().get(0).getStack().getCount() < 16, "sans surete : le foyer brule son charbon");
-            cut.fillWater(800, false);                               // 30 %
+            cut.fillWater(cap / 5, false);                           // 30 %
         });
         h.runAtTickTime(120, () -> {
             Gt.check(!cut.cut(), "eau remise a 30 % : la chaudiere repart");

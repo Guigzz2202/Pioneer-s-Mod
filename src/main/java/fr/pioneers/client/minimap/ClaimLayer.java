@@ -1,6 +1,6 @@
 package fr.pioneers.client.minimap;
 
-import fr.pioneers.client.clan.ui.ClanMapAccess;
+import fr.pioneers.society.clan.client.ui.ClanMapAccess;
 import java.util.ArrayList;
 import java.util.List;
 

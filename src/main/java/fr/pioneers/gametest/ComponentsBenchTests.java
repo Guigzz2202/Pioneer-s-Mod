@@ -1,14 +1,14 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchTile;
-import fr.pioneers.bronze.bench.BenchType;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchTile;
+import fr.pioneers.tech.bronze.bench.BenchType;
 import fr.pioneers.core.inventory.ItemSlot;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -107,7 +107,9 @@ public final class ComponentsBenchTests {
                     n += slot.getCount();
                 }
             }
-            Gt.equal(2, n, "deux toles pour une plaque");
+            //1.0.6 : depuis le lot 4 du 1.0.3-beta (T:industry/parts_p103.py), le coup de presse rend UNE tole par plaque (voie rapide et peu
+            //couteuse en energie) ; les deux toles par plaque sont celles de la calandre (sheet_<metal>)
+            Gt.equal(1, n, "une tole pour une plaque a la presse");
             Gt.check(m.itemInputs().get(0).isEmpty(), "plaque consommee");
         });
     }

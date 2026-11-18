@@ -1,7 +1,7 @@
 package fr.pioneers.client.gui.core;
 
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.computing.NetworkTerminalTile;
+import fr.pioneers.tech.computing.NetworkTerminalTile;
 import fr.pioneers.core.Texts;
 import java.util.List;
 import java.util.Locale;

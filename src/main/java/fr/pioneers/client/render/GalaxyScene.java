@@ -4,7 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import fr.pioneers.Pioneers;
-import fr.pioneers.content.universe.GalaxyType;
+import fr.pioneers.space.content.universe.GalaxyType;
 import fr.pioneers.core.RenderClock;
 import java.util.ArrayList;
 import java.util.EnumMap;

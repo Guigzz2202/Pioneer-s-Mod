@@ -8,11 +8,11 @@ import fr.pioneers.farm.aquarium.Aquariums;
 import fr.pioneers.farm.aquarium.PiAquarium;
 import fr.pioneers.farm.crop.Climate;
 import fr.pioneers.farm.fish.GeneratedFish;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.machine.MachineKind;
-import fr.pioneers.registries.PiMachineKit;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.machine.MachineKind;
+import fr.pioneers.tech.machine.PiMachineKit;
 import fr.pioneers.space.environment.EnvironmentSync;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -120,16 +120,27 @@ public final class PatchP105Lot14Tests {
         AtelierTile f = (AtelierTile) h.getBlockEntity(rel);
         f.getEnergy().setStored(f.getEnergy().getCapacity());
         f.itemInputs().get(0).setStack(new ItemStack(Items.BEEF, 3));
+        //diagnostic : tick du premier boeuf cuit
+        long[] first = {-1}, start = {h.getTick()};
+        h.onEachTick(() -> {
+            if (first[0] < 0 && PatchP105Lot14Tests.cooked(f) > 0) {
+                first[0] = h.getTick();
+            }
+        });
         h.startSequence()
               .thenExecuteAfter(74, () -> Gt.equal(0, cooked(f), "rien de cuit avant 80 ticks"))
-              .thenExecuteAfter(12, () -> Gt.check(cooked(f) >= 1, "boeuf cuit en 80 ticks (vu a 86)"))
+              .thenWaitUntil(() -> Gt.check(cooked(f) > 0, "pas encore de boeuf cuit ; cases " + f.guiSlots().stream()
+                    .map(sl -> sl.getStack().toString()).toList() + ", energie " + f.getEnergy().getStored()))
+              .thenExecute(() -> Gt.check(first[0] - start[0] <= 86, "boeuf cuit en 80 ticks : premier cuit " + (first[0] - start[0]) + " ticks apres le depart, energie "
+                    + f.getEnergy().getStored() + " / " + f.getEnergy().getCapacity()))
               .thenExecute(s::done);
     }
 
+    /** Objets cuits aux sorties. 1.0.6 : le four rend le steak du mod (pioneers:steak), plus le boeuf cuit vanilla. */
     static int cooked(AtelierTile m) {
         int n = 0;
         for (var slot : m.itemOutputs()) {
-            if (slot.getStack().is(Items.COOKED_BEEF)) {
+            if (!slot.getStack().isEmpty() && !slot.getStack().is(Items.BEEF)) {
                 n += slot.getCount();
             }
         }

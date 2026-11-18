@@ -1,11 +1,11 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.kinetics.AxisKineticBlock;
-import fr.pioneers.kinetics.KineticNetwork;
-import fr.pioneers.kinetics.KineticNetworks;
-import fr.pioneers.kinetics.KineticTile;
-import fr.pioneers.kinetics.parts.HandCrankBlock;
-import fr.pioneers.registries.PiKinetics;
+import fr.pioneers.tech.kinetics.AxisKineticBlock;
+import fr.pioneers.tech.kinetics.KineticNetwork;
+import fr.pioneers.tech.kinetics.KineticNetworks;
+import fr.pioneers.tech.kinetics.KineticTile;
+import fr.pioneers.tech.kinetics.parts.HandCrankBlock;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -84,7 +84,7 @@ public final class PatchP105Lot29Tests {
         Gt.check(level.getBlockEntity(chest) instanceof net.minecraft.world.level.block.entity.ChestBlockEntity c && c.isEmpty(), "coffre pose");
         ((net.minecraft.world.level.block.entity.ChestBlockEntity) level.getBlockEntity(chest)).setItem(0, new net.minecraft.world.item.ItemStack(
               net.minecraft.world.item.Items.BREAD));
-        java.util.function.Predicate<BlockState> lit = fr.pioneers.wild.GrayWolf::fire;
+        java.util.function.Predicate<BlockState> lit = fr.pioneers.world.wild.GrayWolf::fire;
         java.util.function.Predicate<net.minecraft.world.level.block.entity.BlockEntity> full =
               t -> t instanceof net.minecraft.world.Container ct && !ct.isEmpty();
         net.minecraft.util.RandomSource rnd = net.minecraft.util.RandomSource.create(29);

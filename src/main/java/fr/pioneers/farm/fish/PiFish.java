@@ -49,14 +49,14 @@ import org.jetbrains.annotations.Nullable;
  * {@link #ROE_CHANCE} 48 000 ticks. La peche ne depend pas des poissons presents (tirage par le milieu, {@link FishSpawns}) : inchangee.
  * <p>
  * 1.0.5-beta (lot 4, spec §3 : faune persistante) : les poissons ne disparaissent plus et n'apparaissent plus au hasard ; ils sont poses a
- * la generation des troncons et par le repeuplement de la zone (groupe des poissons, {@link fr.pioneers.fauna.FaunaRegistry}). PLAFONDS
+ * la generation des troncons et par le repeuplement de la zone (groupe des poissons, {@link fr.pioneers.world.fauna.FaunaRegistry}). PLAFONDS
  * UNIFIES : le repeuplement passe par {@link #checkSpawn} (plafond de zone {@link #SPAWN_CAP} et d'etendue d'eau, comme l'ancienne
  * apparition naturelle), puis par le plafond du groupe des poissons de la zone de 128 blocs (reglage {@code fauna.capFish}) ; la ponte et
  * l'eclosion gardent {@link #BREED_CAP} (pisciculture, frai et aquariums inchanges ; un bassin dans un claim n'est pas compte dans la
  * faune sauvage).
  * <p>
  * 1.0.5-beta (lot 13, Guillaume : « trop peu de poissons apparaissent ») : plafond d'apparition de zone 6 -> 10 (bancs de 3 a 6 qui
- * tiennent cote a cote) ; bancs plus gros et plus nombreux (T:farm2/data_fish.py FISH_SPAWNS, J:fauna/FaunaRules.WATER_CHANCE 0,25) ;
+ * tiennent cote a cote) ; bancs plus gros et plus nombreux (T:farm2/data_fish.py FISH_SPAWNS, J:world/fauna/FaunaRules.WATER_CHANCE 0,25) ;
  * le plafond du groupe des poissons par zone de 128 blocs (48, budget du lot 4) est inchange.
  */
 public class PiFish extends AbstractFish {
@@ -165,7 +165,7 @@ public class PiFish extends AbstractFish {
      */
     @Override
     public boolean removeWhenFarAway(double distance) {
-        return !fr.pioneers.fauna.FaunaSettings.current().enabled() && !fromBucket() && !hasCustomName();
+        return !fr.pioneers.world.fauna.FaunaSettings.current().enabled() && !fromBucket() && !hasCustomName();
     }
 
     @Override

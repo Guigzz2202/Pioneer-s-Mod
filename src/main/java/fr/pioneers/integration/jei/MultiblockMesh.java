@@ -2,7 +2,7 @@ package fr.pioneers.integration.jei;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import fr.pioneers.common.projector.BlueprintBill;
+import fr.pioneers.core.common.projector.BlueprintBill;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;

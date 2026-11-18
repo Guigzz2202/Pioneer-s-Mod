@@ -3,7 +3,7 @@ package fr.pioneers.api.multiblock;
 import fr.pioneers.api.machine.MachineRegistry;
 import fr.pioneers.api.machine.MachineSpec;
 import fr.pioneers.core.registry.PiCoreRegistries;
-import fr.pioneers.industry.IndustryMachine;
+import fr.pioneers.tech.industry.IndustryMachine;
 import java.util.HashMap;
 import java.util.IdentityHashMap;
 import java.util.List;

@@ -2,24 +2,24 @@ package fr.pioneers.gametest;
 
 import com.mojang.authlib.GameProfile;
 import fr.pioneers.api.machine.unit.ToolBay;
-import fr.pioneers.clan.Clan;
-import fr.pioneers.clan.ClanApi;
-import fr.pioneers.clan.ClanData;
-import fr.pioneers.clan.Faction;
-import fr.pioneers.clan.core.ClanClock;
-import fr.pioneers.clan.core.ClanCore;
-import fr.pioneers.clan.core.ClanRoles;
-import fr.pioneers.clan.faction.FactionSaved;
-import fr.pioneers.clan.territory.ClanChunkloading;
-import fr.pioneers.clan.territory.ClanTerritory;
-import fr.pioneers.clan.war.ClanDiplomacy;
-import fr.pioneers.clan.war.Siege;
-import fr.pioneers.clan.war.War;
+import fr.pioneers.society.clan.Clan;
+import fr.pioneers.society.clan.ClanApi;
+import fr.pioneers.society.clan.ClanData;
+import fr.pioneers.society.clan.Faction;
+import fr.pioneers.society.clan.core.ClanClock;
+import fr.pioneers.society.clan.core.ClanCore;
+import fr.pioneers.society.clan.core.ClanRoles;
+import fr.pioneers.society.clan.faction.FactionSaved;
+import fr.pioneers.society.clan.territory.ClanChunkloading;
+import fr.pioneers.society.clan.territory.ClanTerritory;
+import fr.pioneers.society.clan.war.ClanDiplomacy;
+import fr.pioneers.society.clan.war.Siege;
+import fr.pioneers.society.clan.war.War;
 import fr.pioneers.core.profile.PioneerCap;
 import fr.pioneers.core.profile.PioneerProfile;
-import fr.pioneers.reputation.PeopleApi;
-import fr.pioneers.ruins.RuinSites;
-import fr.pioneers.village.VillageData;
+import fr.pioneers.society.reputation.PeopleApi;
+import fr.pioneers.world.ruins.RuinSites;
+import fr.pioneers.society.village.VillageData;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelOutboundHandlerAdapter;
 import io.netty.channel.ChannelPromise;
@@ -77,11 +77,11 @@ public final class Gt {
      * 1.0.4-beta (lot 11) : bloc compact d'une machine du catalogue a ce tier : atelier, ou machine du KIT (broyeur, four industriel,
      * compacteur, qui ont absorbe d'autres machines : leurs recettes recues tournent par la voie B de KitProcess).
      */
-    public static net.minecraft.world.level.block.Block compact(fr.pioneers.industry.IndustryMachine m, fr.pioneers.transport.CableTier t) {
-        if (m.atelier == fr.pioneers.industry.IndustryMachine.Atelier.KIT) {
-            return fr.pioneers.registries.PiMachineKit.MACHINES.get(fr.pioneers.machine.MachineKind.valueOf(m.name())).get(t).getBlock();
+    public static net.minecraft.world.level.block.Block compact(fr.pioneers.tech.industry.IndustryMachine m, fr.pioneers.logistics.transport.CableTier t) {
+        if (m.atelier == fr.pioneers.tech.industry.IndustryMachine.Atelier.KIT) {
+            return fr.pioneers.tech.machine.PiMachineKit.MACHINES.get(fr.pioneers.tech.machine.MachineKind.valueOf(m.name())).get(t).getBlock();
         }
-        return fr.pioneers.registries.PiIndustry.ATELIERS.get(m).get(t).getBlock();
+        return fr.pioneers.tech.industry.PiIndustry.ATELIERS.get(m).get(t).getBlock();
     }
 
 
@@ -120,6 +120,8 @@ public final class Gt {
             current.cleanup();
         }
         current = new Scope(h);
+        //1.0.6 : table des echeances sure (un rappel peut planifier a son tour sans faire planter le serveur de tests)
+        GtTickMap.install(h);
         return current;
     }
 
@@ -150,6 +152,37 @@ public final class Gt {
     @SuppressWarnings("unchecked")
     public static <T extends SavedData> T reload(T data) {
         return (T) load(data.getClass(), data.save(new CompoundTag()));
+    }
+
+    /**
+     * 1.0.6 : rend un joueur operateur de niveau 4. {@code PlayerList.op} prend le niveau du serveur ({@code getOperatorUserPermissionLevel}),
+     * que le serveur de GameTests met a 0 : l'operateur n'y avait aucun droit.
+     */
+    public static void op(net.minecraft.server.MinecraftServer server, net.minecraft.server.level.ServerPlayer p) {
+        server.getPlayerList().getOps().add(new net.minecraft.server.players.ServerOpListEntry(p.getGameProfile(), 4, false));
+        server.getPlayerList().sendPlayerPermissionLevel(p);
+    }
+
+    /**
+     * 1.0.6 : premiere case libre (sans collision) a partir de {@code abs} en montant (8 au plus). Dans un gabarit, le sol de pierre est en
+     * y = 1 relatif (y = 0 : la couche du bloc de structure) : une bete posee en y = 1 naissait DANS la pierre (etouffee, sans chemin).
+     */
+    public static BlockPos standing(net.minecraft.world.level.Level level, BlockPos abs) {
+        BlockPos p = abs;
+        for (int i = 0; i < 8 && !level.getBlockState(p).getCollisionShape(level, p).isEmpty(); i++) {
+            p = p.above();
+        }
+        return p;
+    }
+
+    /**
+     * Relit une tile comme au chargement d'un chunk : {@code BlockEntity.loadStatic} lit le type dans la cle « id », que seule
+     * {@code saveWithId} ecrit ({@code saveWithoutMetadata} ne l'a pas : la relecture rendait null). A comparer ensuite par
+     * {@code saveWithoutMetadata} des deux cotes.
+     */
+    @javax.annotation.Nullable
+    public static net.minecraft.world.level.block.entity.BlockEntity reloadTile(net.minecraft.world.level.block.entity.BlockEntity tile) {
+        return net.minecraft.world.level.block.entity.BlockEntity.loadStatic(tile.getBlockPos(), tile.getBlockState(), tile.saveWithId());
     }
 
     /** Relit un NBT avec la fonction {@code static load(CompoundTag)} (souvent privee) d'une classe de donnee de monde du mod. */

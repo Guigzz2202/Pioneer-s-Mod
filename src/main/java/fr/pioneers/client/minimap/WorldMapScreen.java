@@ -2,7 +2,7 @@ package fr.pioneers.client.minimap;
 
 import fr.pioneers.client.PiKeys;
 import fr.pioneers.client.gui.GuiDraw;
-import fr.pioneers.client.robotics.RoboticsScreen;
+import fr.pioneers.logistics.robotics.client.RoboticsScreen;
 import java.util.List;
 import javax.annotation.Nullable;
 import net.minecraft.client.gui.GuiGraphics;

@@ -3,19 +3,19 @@ package fr.pioneers.gametest;
 import fr.pioneers.api.machine.unit.FuelGenerator;
 import fr.pioneers.api.machine.unit.IndustryProcess;
 import fr.pioneers.api.machine.unit.ProcessUnit;
-import fr.pioneers.bronze.steam.BoilerPart;
-import fr.pioneers.bronze.steam.FireboxTile;
-import fr.pioneers.bronze.steam.SteamRules;
+import fr.pioneers.tech.bronze.steam.BoilerPart;
+import fr.pioneers.tech.bronze.steam.FireboxTile;
+import fr.pioneers.tech.bronze.steam.SteamRules;
 import fr.pioneers.core.vanilla.PiVanillaMaterials;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.lighting.LightFixtureBlock;
-import fr.pioneers.lighting.LightLinks;
-import fr.pioneers.lighting.LightSwitchBlock;
-import fr.pioneers.lighting.PiLighting;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.building.lighting.LightFixtureBlock;
+import fr.pioneers.building.lighting.LightLinks;
+import fr.pioneers.building.lighting.LightSwitchBlock;
+import fr.pioneers.building.lighting.PiLighting;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -170,15 +170,8 @@ public final class PatchP104Lot5Tests {
     public static void p104_5_chaudiere_pleine_continue(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         BlockPos at = new BlockPos(3, 1, 3);
-        h.setBlock(at, PiBronze.FIREBOX.getBlock().defaultBlockState());
-        h.setBlock(at.above(), PiBronze.BOILER_PARTS.get(BoilerPart.COPPER_SHELL).getBlock());
-        h.setBlock(at.above(2), PiBronze.BOILER_PARTS.get(BoilerPart.STEAM_DOME).getBlock());
-        for (int i = 0; i < BoilerPart.MAX_CHIMNEY; i++) {
-            h.setBlock(at.above(3 + i), PiBronze.BOILER_PARTS.get(BoilerPart.CHIMNEY).getBlock());
-        }
-        FireboxTile f = (FireboxTile) h.getBlockEntity(at);
-        f.house().checkNow();
-        Gt.check(f.formed(), "chaudiere non formee");
+        //1.0.6 : forme de Guillaume du lot 24 (l'ancienne colonne n'est plus formee) ; at = coin de la forme
+        FireboxTile f = MultiblockApi6Tests.boiler(h, at, BoilerPart.MAX_CHIMNEY, null);
         f.guiSlots().get(0).setStack(new ItemStack(PiVanillaMaterials.COAL.get(), 32));
         f.fillWater(3_000, false);
         int[] coal = new int[1];

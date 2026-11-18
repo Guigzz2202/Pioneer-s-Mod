@@ -4,7 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import fr.pioneers.Pioneers;
 import fr.pioneers.core.RenderClock;
-import fr.pioneers.tile.TileEntityForceField;
+import fr.pioneers.space.tile.TileEntityForceField;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.client.Minecraft;

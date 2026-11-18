@@ -4,7 +4,7 @@ import fr.pioneers.api.machine.UiValues;
 import fr.pioneers.core.block.PiBlockEntity;
 import fr.pioneers.core.menu.PiTileMenu;
 import fr.pioneers.core.side.SideConfig;
-import fr.pioneers.registries.PiTransport;
+import fr.pioneers.logistics.transport.PiTransport;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;

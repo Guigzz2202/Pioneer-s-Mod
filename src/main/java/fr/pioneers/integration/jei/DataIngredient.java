@@ -5,7 +5,7 @@ import fr.pioneers.Pioneers;
 import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.api.data.DataStack;
 import fr.pioneers.api.data.DataType;
-import fr.pioneers.data.DataUnits;
+import fr.pioneers.core.data.DataUnits;
 import java.util.ArrayList;
 import java.util.List;
 import mezz.jei.api.ingredients.IIngredientHelper;

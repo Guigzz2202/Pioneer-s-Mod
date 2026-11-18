@@ -2,18 +2,18 @@ package fr.pioneers.gametest;
 
 import fr.pioneers.api.machine.StandardLayout;
 import fr.pioneers.api.machine.UiValues;
-import fr.pioneers.bronze.machines.SteamBlowerTile;
-import fr.pioneers.bronze.machines.SteamMachine;
-import fr.pioneers.bronze.machines.SteamProcessTile;
+import fr.pioneers.tech.bronze.machines.SteamBlowerTile;
+import fr.pioneers.tech.bronze.machines.SteamMachine;
+import fr.pioneers.tech.bronze.machines.SteamProcessTile;
 import fr.pioneers.core.machine.MachineGui;
-import fr.pioneers.industry.atelier.DynamoTile;
-import fr.pioneers.industry.bronze.CokeOvenTile;
-import fr.pioneers.kinetics.machines.MachineType;
-import fr.pioneers.kinetics.machines.MechanicalMachineTile;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiKinetics;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.atelier.DynamoTile;
+import fr.pioneers.tech.industry.bronze.CokeOvenTile;
+import fr.pioneers.tech.kinetics.machines.MachineType;
+import fr.pioneers.tech.kinetics.machines.MechanicalMachineTile;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.tech.kinetics.PiKinetics;
+import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -68,8 +68,9 @@ public final class MachineApi7Tests {
         roundTrip(a, b, "slots", "progress", "water", "placedWater");
         Gt.equal(12, b.inputs().get(0).getStack().getCount(), "entree relue");
         Gt.check(b.guiSlots().get(b.guiSlots().size() - 1).getStack().is(Items.FLINT), "derniere sortie relue (ordre des cases)");
-        //Ordre des cases : entree, maille, sorties ; valeurs nommees aux indices d'avant (8)
-        Gt.equal(1 + 1 + MachineType.SIFTER.outputs, b.guiSlots().size(), "cases du tamis");
+        //Ordre des cases : entree, sorties (1.0.2-beta lot 2 : plus de case de maille, MechanicalProcess.MESHLESS) ; valeurs nommees aux
+        //indices d'avant (8)
+        Gt.equal(1 + MachineType.SIFTER.outputs, b.guiSlots().size(), "cases du tamis");
         UiValues ui = b.uiValues();
         Gt.equal(8, ui.size(), "valeurs d'interface");
         Gt.equal(0, ui.index(UiValues.SPEED), "vitesse a l'indice 0");
@@ -110,7 +111,7 @@ public final class MachineApi7Tests {
         SteamBlowerTile w2 = place(h, new BlockPos(5, 2, 5), PiBronze.STEAM_BLOWER.getBlock(), SteamBlowerTile.class);
         w.steam(Direction.DOWN).add(150, 0);
         roundTrip(w, w2, "steam");
-        Gt.equal(3, w2.uiValues().size(), "valeurs de la soufflerie");
+        Gt.equal(4, w2.uiValues().size(), "valeurs de la soufflerie (1.0.2-beta lot 3 : + contenance)");
         Gt.equal(StandardLayout.ZONE, w2.guiHeight(), "interface v2 de la soufflerie");
         s.done();
     }

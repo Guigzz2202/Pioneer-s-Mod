@@ -9,20 +9,20 @@ import fr.pioneers.api.data.DataStack;
 import fr.pioneers.api.data.DataType;
 import fr.pioneers.api.gas.Gas;
 import fr.pioneers.api.gas.GasStack;
-import fr.pioneers.compute.AiChips;
+import fr.pioneers.tech.compute.AiChips;
 import fr.pioneers.core.Texts;
-import fr.pioneers.data.PiDataTypes;
-import fr.pioneers.energy.EnergyKind;
-import fr.pioneers.energy.MicrobialCellTile;
-import fr.pioneers.energy.PiEnergy;
-import fr.pioneers.industry.Extraction;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.DynamoTile;
-import fr.pioneers.kinetics.machines.DrillProducts;
-import fr.pioneers.kinetics.machines.MachineType;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.registries.PiItems;
-import fr.pioneers.registries.PiKinetics;
+import fr.pioneers.core.data.PiDataTypes;
+import fr.pioneers.tech.energy.EnergyKind;
+import fr.pioneers.tech.energy.MicrobialCellTile;
+import fr.pioneers.tech.energy.PiEnergy;
+import fr.pioneers.tech.industry.Extraction;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.DynamoTile;
+import fr.pioneers.tech.kinetics.machines.DrillProducts;
+import fr.pioneers.tech.kinetics.machines.MachineType;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.core.registries.PiItems;
+import fr.pioneers.tech.kinetics.PiKinetics;
 import fr.pioneers.space.SolarSystem.Body;
 import fr.pioneers.space.mining.DrillHead;
 import fr.pioneers.space.mining.MiningMaterial;
@@ -430,18 +430,18 @@ final class Productions {
 
     /**
      * 1.0.5-beta (lot 46, retour 72) : BLOC A EAU : un tier par entree (eau par tick, FE/t, pompe multibloc du meme tier pour comparer) ;
-     * chiffres = la regle du jeu ({@link fr.pioneers.industry.GeneratedLot46}, {@link fr.pioneers.industry.Tiers#power}).
+     * chiffres = la regle du jeu ({@link fr.pioneers.tech.industry.GeneratedLot46}, {@link fr.pioneers.tech.industry.Tiers#power}).
      */
     private static List<ProductionCategory.Entry> water() {
         List<ProductionCategory.Entry> out = new ArrayList<>();
         List<ItemStack> all = machines(IndustryMachine.WATER_SOURCE);
         for (int t = 0; t < all.size() && t < 4; t++) {
-            int rate = fr.pioneers.industry.GeneratedLot46.WATER_RATE[t];
+            int rate = fr.pioneers.tech.industry.GeneratedLot46.WATER_RATE[t];
             out.add(new ProductionCategory.Entry(all.get(t).getHoverName(), List.of(ProductionCategory.Slot.item(all.get(t))),
                   List.of(ProductionCategory.Slot.fluid(new FluidStack(Fluids.WATER, rate))),
                   List.of(Component.translatable("jei.pioneers.prod.water.line", TIER_NAMES[t], Texts.grouped(rate),
-                              Texts.grouped(fr.pioneers.industry.Tiers.power(t))),
-                        Component.translatable("jei.pioneers.prod.water.pump", Texts.grouped(fr.pioneers.industry.GeneratedLot46.PUMP_RATE[t])))));
+                              Texts.grouped(fr.pioneers.tech.industry.Tiers.power(t))),
+                        Component.translatable("jei.pioneers.prod.water.pump", Texts.grouped(fr.pioneers.tech.industry.GeneratedLot46.PUMP_RATE[t])))));
         }
         return out;
     }
@@ -456,7 +456,7 @@ final class Productions {
 
     /**
      * 1.0.5-beta (lot 46, retour 72 ; « echantillon + eau + lave jamais consommee ») : GENERATEUR DE ROCHES : une entree par roche permise
-     * (source unique {@link fr.pioneers.industry.GeneratedLot46#ROCKS}) : machines du tier minimal et au-dessus, echantillon (jamais consomme),
+     * (source unique {@link fr.pioneers.tech.industry.GeneratedLot46#ROCKS}) : machines du tier minimal et au-dessus, echantillon (jamais consomme),
      * 1 000 mB d'eau et de lave (jamais prelevees) -> la meme roche.
      */
     private static List<ProductionCategory.Entry> rocks() {
@@ -465,14 +465,14 @@ final class Productions {
         if (all.size() < 4) {
             return out;
         }
-        int keep = fr.pioneers.industry.GeneratedLot46.SAMPLE_FLUID;
+        int keep = fr.pioneers.tech.industry.GeneratedLot46.SAMPLE_FLUID;
         List<Component> never = List.of(Component.translatable("jei.pioneers.prod.rocks.never"));
-        for (String id : fr.pioneers.industry.GeneratedLot46.ROCKS) {
+        for (String id : fr.pioneers.tech.industry.GeneratedLot46.ROCKS) {
             Item rock = item(id);
             if (rock == Items.AIR) {
                 continue;
             }
-            int t = fr.pioneers.industry.GeneratedLot46.ROCK_TIER.get(id);
+            int t = fr.pioneers.tech.industry.GeneratedLot46.ROCK_TIER.get(id);
             ItemStack stack = new ItemStack(rock);
             out.add(new ProductionCategory.Entry(stack.getHoverName(), List.of(ProductionCategory.Slot.items(all.subList(t, 4)),
                   ProductionCategory.Slot.item(stack).with(null, List.of(Component.translatable("jei.pioneers.prod.rocks.sample"))),
@@ -480,7 +480,7 @@ final class Productions {
                   ProductionCategory.Slot.fluid(new FluidStack(Fluids.LAVA, keep)).with(null, never)),
                   List.of(ProductionCategory.Slot.item(stack.copy())),
                   List.of(Component.translatable("jei.pioneers.prod.rocks.line", TIER_NAMES[t],
-                        secs(fr.pioneers.industry.GeneratedLot46.ROCK_TICKS[t]), Texts.grouped(fr.pioneers.industry.Tiers.power(t))))));
+                        secs(fr.pioneers.tech.industry.GeneratedLot46.ROCK_TICKS[t]), Texts.grouped(fr.pioneers.tech.industry.Tiers.power(t))))));
         }
         return out;
     }

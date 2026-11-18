@@ -1,13 +1,13 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.bronze.bench.BenchRecipe;
-import fr.pioneers.bronze.bench.BenchTile;
-import fr.pioneers.bronze.bench.BenchType;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.bronze.bench.BenchRecipe;
+import fr.pioneers.tech.bronze.bench.BenchTile;
+import fr.pioneers.tech.bronze.bench.BenchType;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -62,8 +62,12 @@ public final class BenchesE1Tests {
               "chassis MKI absent de l'etabli de composants avances");
         Gt.check(!has(BenchTile.recipes(h.getLevel(), BenchType.ASSEMBLY), "components/bench/rc_machine_frame_basic"),
               "chassis MKI encore a l'etabli de montage");
-        Gt.check(has(BenchTile.recipes(h.getLevel(), BenchType.LOGISTICS), "rail/basic_steam_locomotive"),
-              "locomotive a vapeur MKI absente de l'etabli de pieces logistiques");
+        //1.0.4-beta (lot 4, vehicules aux ateliers seulement : T:rail/data.py VEHICLE_BENCH) : la locomotive n'a plus de recette d'etabli,
+        //elle se fabrique a l'atelier ferroviaire (rail/works_<id>)
+        Gt.check(!has(BenchTile.recipes(h.getLevel(), BenchType.LOGISTICS), "rail/basic_steam_locomotive"),
+              "locomotive a vapeur MKI encore a l'etabli de pieces logistiques");
+        Gt.check(h.getLevel().getRecipeManager().byKey(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("pioneers",
+              "rail/works_basic_steam_locomotive")).isPresent(), "locomotive a vapeur MKI absente de l'atelier ferroviaire");
         h.succeed();
     }
 

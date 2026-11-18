@@ -1,6 +1,6 @@
 package fr.pioneers.space;
 
-import fr.pioneers.registries.PiMenus;
+import fr.pioneers.core.registries.PiMenus;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;

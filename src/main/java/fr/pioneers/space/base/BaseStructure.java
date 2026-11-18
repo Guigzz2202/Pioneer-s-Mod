@@ -1,15 +1,15 @@
 package fr.pioneers.space.base;
 
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.common.block.Connections;
-import fr.pioneers.industry.multi.CasingBlock;
-import fr.pioneers.industry.multi.IndustrialGlassBlock;
-import fr.pioneers.industry.multi.IndustryStyle;
-import fr.pioneers.industry.multi.SheetMetalBlock;
-import fr.pioneers.industry.multi.StructureFrameBlock;
-import fr.pioneers.registries.PiBaseMachines;
-import fr.pioneers.registries.PiBlocks;
-import fr.pioneers.registries.PiIndustry;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.core.common.block.Connections;
+import fr.pioneers.tech.industry.multi.CasingBlock;
+import fr.pioneers.tech.industry.multi.IndustrialGlassBlock;
+import fr.pioneers.tech.industry.multi.IndustryStyle;
+import fr.pioneers.tech.industry.multi.SheetMetalBlock;
+import fr.pioneers.tech.industry.multi.StructureFrameBlock;
+import fr.pioneers.space.base.PiBaseMachines;
+import fr.pioneers.core.registries.PiBlocks;
+import fr.pioneers.tech.industry.PiIndustry;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -212,9 +212,9 @@ public final class BaseStructure {
             }
             if (next.getBlock() instanceof CasingBlock) {
                 next = Connections.connect(next, level, p, Connections.INDUSTRIAL);
-            } else if (next.getBlock() instanceof IndustrialGlassBlock glass) {
-                //0.20.28 : la vitre garde la couleur de son propre tier
-                next = Connections.connect(next.setValue(IndustryStyle.TIER, glass.tier + 1), level, p, Connections.INDUSTRIAL_GLASS);
+            } else if (next.getBlock() instanceof IndustrialGlassBlock) {
+                //0.20.28 : la vitre garde la couleur de son propre tier (1.0.6 : fixee par son bloc, plus dans l'etat)
+                next = Connections.connect(next, level, p, Connections.INDUSTRIAL_GLASS);
             }
             if (next != state) {
                 level.setBlock(p, next, Block.UPDATE_CLIENTS);

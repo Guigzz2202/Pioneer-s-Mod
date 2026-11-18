@@ -1,32 +1,32 @@
 package fr.pioneers.api.multiblock;
 
-import fr.pioneers.bronze.autofoundry.FoundryLayout;
-import fr.pioneers.warehouse.CrateLayout;
-import fr.pioneers.warehouse.PiWarehouse;
-import fr.pioneers.bronze.blast.BlastFurnaceTile;
-import fr.pioneers.bronze.blast.BlastLayout;
-import fr.pioneers.bronze.steam.FireboxTile;
-import fr.pioneers.common.projector.Blueprint;
-import fr.pioneers.common.projector.ProjectedStructure;
-import fr.pioneers.common.projector.ProjectedStructure.Ghost;
-import fr.pioneers.common.projector.ProjectedStructure.Plan;
-import fr.pioneers.content.absorber.AbsorberStructure;
-import fr.pioneers.content.spacesim.SpaceSimShape;
-import fr.pioneers.content.spacesim.SpaceSimStructure;
-import fr.pioneers.content.stabilizer.StabilizerStructure;
-import fr.pioneers.geology.drill.SteamDrillTile;
-import fr.pioneers.industry.multi.Structure;
-import fr.pioneers.naval.HarborBlueprint;
-import fr.pioneers.naval.HarborStructure;
-import fr.pioneers.registries.PiBaseMachines;
-import fr.pioneers.registries.PiBlocks;
-import fr.pioneers.registries.PiBronze;
-import fr.pioneers.registries.PiCosmicBlocks;
-import fr.pioneers.registries.PiNaval;
-import fr.pioneers.registries.PiRobotics;
-import fr.pioneers.registries.PiSpaceSim;
-import fr.pioneers.registries.PiStabilizer;
-import fr.pioneers.robotics.hub.RoboticHubValidator;
+import fr.pioneers.tech.bronze.autofoundry.FoundryLayout;
+import fr.pioneers.logistics.warehouse.CrateLayout;
+import fr.pioneers.logistics.warehouse.PiWarehouse;
+import fr.pioneers.tech.bronze.blast.BlastFurnaceTile;
+import fr.pioneers.tech.bronze.blast.BlastLayout;
+import fr.pioneers.tech.bronze.steam.FireboxTile;
+import fr.pioneers.core.common.projector.Blueprint;
+import fr.pioneers.core.common.projector.ProjectedStructure;
+import fr.pioneers.core.common.projector.ProjectedStructure.Ghost;
+import fr.pioneers.core.common.projector.ProjectedStructure.Plan;
+import fr.pioneers.space.content.absorber.AbsorberStructure;
+import fr.pioneers.space.content.spacesim.SpaceSimShape;
+import fr.pioneers.space.content.spacesim.SpaceSimStructure;
+import fr.pioneers.space.content.stabilizer.StabilizerStructure;
+import fr.pioneers.world.geology.drill.SteamDrillTile;
+import fr.pioneers.tech.industry.multi.Structure;
+import fr.pioneers.logistics.naval.HarborBlueprint;
+import fr.pioneers.logistics.naval.HarborStructure;
+import fr.pioneers.space.base.PiBaseMachines;
+import fr.pioneers.core.registries.PiBlocks;
+import fr.pioneers.tech.bronze.PiBronze;
+import fr.pioneers.space.content.PiCosmicBlocks;
+import fr.pioneers.logistics.naval.PiNaval;
+import fr.pioneers.logistics.robotics.PiRobotics;
+import fr.pioneers.space.simulation.PiSpaceSim;
+import fr.pioneers.space.content.PiStabilizer;
+import fr.pioneers.logistics.robotics.hub.RoboticHubValidator;
 import fr.pioneers.space.LaunchPadStructure;
 import fr.pioneers.space.assembly.AssemblyHall;
 import fr.pioneers.space.assembly.AssemblyHallBlueprint;
@@ -223,10 +223,10 @@ public final class HouseShapes {
           (plan, v) -> HouseNbt.draw(plan, BlastLayout.SHAPE, PiBronze.BLAST_FURNACE.getBlock(), false));
     /** 1.0.4-beta (lot 24, Guillaume : « le four a poterie prend une nouvelle structure ») : four de potier ({@link HouseNbt}). */
     public static final HousePlan POTTERY_KILN = new HousePlan(1, "pottery_kiln", 1, PiBronze.POTTERY_KILN::getBlock, null,
-          (plan, v) -> HouseNbt.draw(plan, fr.pioneers.bronze.foundry.KilnTile.SHAPE, PiBronze.POTTERY_KILN.getBlock(), false));
+          (plan, v) -> HouseNbt.draw(plan, fr.pioneers.tech.bronze.foundry.KilnTile.SHAPE, PiBronze.POTTERY_KILN.getBlock(), false));
     /** 1.0.4-beta (lot 24) : four a coke primitif de Guillaume ({@link HouseNbt}). */
-    public static final HousePlan COKE_OVEN = new HousePlan(1, "coke_oven", 1, fr.pioneers.registries.PiIndustry.COKE_OVEN::getBlock, null,
-          (plan, v) -> HouseNbt.draw(plan, fr.pioneers.industry.bronze.CokeOvenTile.SHAPE, fr.pioneers.registries.PiIndustry.COKE_OVEN.getBlock(), false));
+    public static final HousePlan COKE_OVEN = new HousePlan(1, "coke_oven", 1, fr.pioneers.tech.industry.PiIndustry.COKE_OVEN::getBlock, null,
+          (plan, v) -> HouseNbt.draw(plan, fr.pioneers.tech.industry.bronze.CokeOvenTile.SHAPE, fr.pioneers.tech.industry.PiIndustry.COKE_OVEN.getBlock(), false));
     /**
      * 1.0.2-beta (lot 4) : fonderie automatique, une variante par taille ({@link FoundryLayout.Size} : 1 x 1 x 2, 2 x 2 x 3, 3 x 3 x 5) ; le
      * controleur (porte du foyer) sur la rangee de devant, au milieu (a gauche pour la taille 2 x 2).
@@ -722,11 +722,11 @@ public final class HouseShapes {
         }));
         //1.0.4-beta (lot 24) : four de potier et four a coke primitif devenus multiblocs (structures de Guillaume, HouseNbt)
         l.add(new Shape("pottery_kiln", () -> List.of(POTTERY_KILN), (view, plan, i, v, anchor, f) -> {
-            BlockPos fault = fr.pioneers.bronze.foundry.KilnTile.fault(view, anchor, f);
+            BlockPos fault = fr.pioneers.tech.bronze.foundry.KilnTile.fault(view, anchor, f);
             return fault == null ? Check.ok(anchor) : Check.fail("kiln", fault, anchor);
         }));
         l.add(new Shape("coke_oven", () -> List.of(COKE_OVEN), (view, plan, i, v, anchor, f) -> {
-            BlockPos fault = fr.pioneers.industry.bronze.CokeOvenTile.fault(view, anchor, f);
+            BlockPos fault = fr.pioneers.tech.industry.bronze.CokeOvenTile.fault(view, anchor, f);
             return fault == null ? Check.ok(anchor) : Check.fail("coke_oven", fault, anchor);
         }));
         //1.0.5-beta (lot 3) : serre : le RELEVE UNIQUE (GreenhouseScan, le meme qu'en jeu) sur le monde du plan

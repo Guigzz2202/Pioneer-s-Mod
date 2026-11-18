@@ -6,12 +6,12 @@ import fr.pioneers.core.Automation;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.machine.MachineMenu;
 import fr.pioneers.core.machine.MachineTile;
-import fr.pioneers.industry.GeneratorOutput;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.industry.atelier.AtelierTile;
-import fr.pioneers.industry.recipe.IndustryRecipes;
-import fr.pioneers.registries.PiIndustry;
-import fr.pioneers.transport.CableTier;
+import fr.pioneers.tech.industry.GeneratorOutput;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.tech.industry.atelier.AtelierTile;
+import fr.pioneers.tech.industry.recipe.IndustryRecipes;
+import fr.pioneers.tech.industry.PiIndustry;
+import fr.pioneers.logistics.transport.CableTier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -44,7 +44,7 @@ public final class PatchP103Lot6Tests {
     }
 
     private static AtelierTile atelier(GameTestHelper h, BlockPos rel, IndustryMachine machine, CableTier tier) {
-        BlockState st = PiIndustry.ATELIERS.get(machine).get(tier).getBlock().defaultBlockState();
+        BlockState st = Gt.compact(machine, tier).defaultBlockState();   // 1.0.6 : le four est une machine du kit (1.0.4-beta lot 11)
         if (st.hasProperty(BlockStateProperties.HORIZONTAL_FACING)) {
             st = st.setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH);
         }

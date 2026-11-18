@@ -1,15 +1,15 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.clan.Clan;
-import fr.pioneers.clan.ClanApi;
-import fr.pioneers.clan.Permission;
-import fr.pioneers.clan.core.ClanRoles;
-import fr.pioneers.clan.territory.ClanTerritory;
-import fr.pioneers.industry.IndustryMachine;
-import fr.pioneers.registries.PiTransport;
-import fr.pioneers.ruins.RuinBlocks;
-import fr.pioneers.transport.CableTier;
-import fr.pioneers.transport.buffer.BufferType;
+import fr.pioneers.society.clan.Clan;
+import fr.pioneers.society.clan.ClanApi;
+import fr.pioneers.society.clan.Permission;
+import fr.pioneers.society.clan.core.ClanRoles;
+import fr.pioneers.society.clan.territory.ClanTerritory;
+import fr.pioneers.tech.industry.IndustryMachine;
+import fr.pioneers.logistics.transport.PiTransport;
+import fr.pioneers.world.ruins.RuinBlocks;
+import fr.pioneers.logistics.transport.CableTier;
+import fr.pioneers.logistics.transport.buffer.BufferType;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;

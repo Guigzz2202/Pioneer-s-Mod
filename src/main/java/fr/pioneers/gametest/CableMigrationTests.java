@@ -1,17 +1,17 @@
 package fr.pioneers.gametest;
 
-import fr.pioneers.registries.PiTransport;
-import fr.pioneers.transport.legacy.LegacyCableBlock;
-import fr.pioneers.transport.legacy.LegacyCableTile;
-import fr.pioneers.transport.legacy.LegacyMigration;
-import fr.pioneers.transport.logistic.CableLevel;
-import fr.pioneers.transport.logistic.ChannelDef;
-import fr.pioneers.transport.logistic.ChannelKind;
-import fr.pioneers.transport.logistic.LogisticCableBlock;
-import fr.pioneers.transport.logistic.LogisticNetwork;
-import fr.pioneers.transport.logistic.LogisticNetworks;
-import fr.pioneers.transport.logistic.PointConfig;
-import fr.pioneers.transport.logistic.Role;
+import fr.pioneers.logistics.transport.PiTransport;
+import fr.pioneers.logistics.transport.legacy.LegacyCableBlock;
+import fr.pioneers.logistics.transport.legacy.LegacyCableTile;
+import fr.pioneers.logistics.transport.legacy.LegacyMigration;
+import fr.pioneers.logistics.transport.logistic.CableLevel;
+import fr.pioneers.logistics.transport.logistic.ChannelDef;
+import fr.pioneers.logistics.transport.logistic.ChannelKind;
+import fr.pioneers.logistics.transport.logistic.LogisticCableBlock;
+import fr.pioneers.logistics.transport.logistic.LogisticNetwork;
+import fr.pioneers.logistics.transport.logistic.LogisticNetworks;
+import fr.pioneers.logistics.transport.logistic.PointConfig;
+import fr.pioneers.logistics.transport.logistic.Role;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -53,15 +53,14 @@ public final class CableMigrationTests {
         return n;
     }
 
-    /** Pose un ancien cable avec ses faces (etat sauve) et son NBT d'avant. */
+    /** Pose un ancien cable (etat sauve : seulement l'eau depuis la 1.0.6) et son NBT d'avant. */
     private static void old(GameTestHelper h, BlockPos rel, String id, Direction plug, int pulling, int pushing, ListTag share) {
         LegacyCableBlock block = PiTransport.legacy(id);
         Gt.check(block != null, "bloc herite absent : " + id);
-        BlockState state = block.defaultBlockState();
-        for (Direction d : new Direction[]{Direction.EAST, Direction.WEST}) {
-            state = state.setValue(LegacyCableBlock.PROPERTIES.get(d), d == plug ? LegacyCableBlock.Side.PLUG : LegacyCableBlock.Side.CABLE);
-        }
-        h.setBlock(rel, state);
+        //1.0.6 : l'etat ne garde plus les faces (memoire du client) ; la face branchee se relit sur le voisin a tile a la conversion
+        h.setBlock(rel, block.defaultBlockState());
+        int want = plug == null ? 0 : 1 << plug.ordinal();
+        Gt.equal(want, block.plugMask(h.getLevel(), h.absolutePos(rel)), "faces branchees relues sur les voisins : " + id + " " + rel);
         LegacyCableTile tile = (LegacyCableTile) h.getBlockEntity(rel);
         CompoundTag tag = new CompoundTag();
         tag.putByte("disabled", (byte) 0);

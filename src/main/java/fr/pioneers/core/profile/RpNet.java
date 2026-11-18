@@ -1,7 +1,7 @@
 package fr.pioneers.core.profile;
 
 import fr.pioneers.Pioneers;
-import fr.pioneers.network.PiNetwork;
+import fr.pioneers.core.network.PiNetwork;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -159,7 +159,7 @@ public final class RpNet {
 
         public void handle(Supplier<NetworkEvent.Context> ctx) {
             ctx.get().setPacketHandled(true);
-            DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> fr.pioneers.client.rp.RpClient.receive(action, tag));
+            DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> fr.pioneers.society.rp.client.RpClient.receive(action, tag));
         }
     }
 }

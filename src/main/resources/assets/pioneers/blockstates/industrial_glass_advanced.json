@@ -2,1927 +2,6 @@
  "multipart": [
   {
    "when": {
-    "tier": "0",
-    "west": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/north_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/south_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/west_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "north": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "south": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/east_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/down_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "west": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "0",
-    "east": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t0/up_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/north_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/south_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/west_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "north": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "south": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/east_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/down_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "west": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "1",
-    "east": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t1/up_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "2",
     "west": "false",
     "down": "false"
    },
@@ -1932,7 +11,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "down": "false"
    },
@@ -1942,7 +20,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "down": "true"
    },
@@ -1952,7 +29,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "down": "true"
    },
@@ -1962,7 +38,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "up": "false"
    },
@@ -1972,7 +47,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "up": "false"
    },
@@ -1982,7 +56,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "up": "true"
    },
@@ -1992,7 +65,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "up": "true"
    },
@@ -2002,7 +74,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "down": "false"
    },
@@ -2012,7 +83,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "down": "false"
    },
@@ -2022,7 +92,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "down": "true"
    },
@@ -2032,7 +101,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "down": "true"
    },
@@ -2042,7 +110,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "up": "false"
    },
@@ -2052,7 +119,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "up": "false"
    },
@@ -2062,7 +128,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "up": "true"
    },
@@ -2072,7 +137,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "up": "true"
    },
@@ -2082,7 +146,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "down": "false"
    },
@@ -2092,7 +155,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "down": "false"
    },
@@ -2102,7 +164,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "down": "true"
    },
@@ -2112,7 +173,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "down": "true"
    },
@@ -2122,7 +182,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "up": "false"
    },
@@ -2132,7 +191,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "up": "false"
    },
@@ -2142,7 +200,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "up": "true"
    },
@@ -2152,7 +209,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "up": "true"
    },
@@ -2162,7 +218,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "down": "false"
    },
@@ -2172,7 +227,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "down": "false"
    },
@@ -2182,7 +236,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "down": "true"
    },
@@ -2192,7 +245,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "down": "true"
    },
@@ -2202,7 +254,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "up": "false"
    },
@@ -2212,7 +263,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "up": "false"
    },
@@ -2222,7 +272,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "up": "true"
    },
@@ -2232,7 +281,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "up": "true"
    },
@@ -2242,7 +290,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "false",
     "down": "false"
    },
@@ -2252,7 +299,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "true",
     "down": "false"
    },
@@ -2262,7 +308,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "false",
     "down": "true"
    },
@@ -2272,7 +317,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "true",
     "down": "true"
    },
@@ -2282,7 +326,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "false",
     "up": "false"
    },
@@ -2292,7 +335,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "true",
     "up": "false"
    },
@@ -2302,7 +344,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "false",
     "up": "true"
    },
@@ -2312,7 +353,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "true",
     "up": "true"
    },
@@ -2322,7 +362,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "false",
     "down": "false"
    },
@@ -2332,7 +371,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "true",
     "down": "false"
    },
@@ -2342,7 +380,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "false",
     "down": "true"
    },
@@ -2352,7 +389,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "true",
     "down": "true"
    },
@@ -2362,7 +398,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "false",
     "up": "false"
    },
@@ -2372,7 +407,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "true",
     "up": "false"
    },
@@ -2382,7 +416,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "false",
     "up": "true"
    },
@@ -2392,7 +425,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "true",
     "up": "true"
    },
@@ -2402,7 +434,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "false",
     "down": "false"
    },
@@ -2412,7 +443,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "true",
     "down": "false"
    },
@@ -2422,7 +452,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "false",
     "down": "true"
    },
@@ -2432,7 +461,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "true",
     "down": "true"
    },
@@ -2442,7 +470,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "false",
     "up": "false"
    },
@@ -2452,7 +479,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "true",
     "up": "false"
    },
@@ -2462,7 +488,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "false",
     "up": "true"
    },
@@ -2472,7 +497,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "north": "true",
     "up": "true"
    },
@@ -2482,7 +506,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "false",
     "down": "false"
    },
@@ -2492,7 +515,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "true",
     "down": "false"
    },
@@ -2502,7 +524,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "false",
     "down": "true"
    },
@@ -2512,7 +533,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "true",
     "down": "true"
    },
@@ -2522,7 +542,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "false",
     "up": "false"
    },
@@ -2532,7 +551,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "true",
     "up": "false"
    },
@@ -2542,7 +560,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "false",
     "up": "true"
    },
@@ -2552,7 +569,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "south": "true",
     "up": "true"
    },
@@ -2562,7 +578,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "north": "false"
    },
@@ -2572,7 +587,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "north": "false"
    },
@@ -2582,7 +596,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "north": "true"
    },
@@ -2592,7 +605,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "north": "true"
    },
@@ -2602,7 +614,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "south": "false"
    },
@@ -2612,7 +623,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "south": "false"
    },
@@ -2622,7 +632,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "south": "true"
    },
@@ -2632,7 +641,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "south": "true"
    },
@@ -2642,7 +650,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "north": "false"
    },
@@ -2652,7 +659,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "north": "false"
    },
@@ -2662,7 +668,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "north": "true"
    },
@@ -2672,7 +677,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "north": "true"
    },
@@ -2682,7 +686,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "south": "false"
    },
@@ -2692,7 +695,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "south": "false"
    },
@@ -2702,7 +704,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "south": "true"
    },
@@ -2712,7 +713,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "south": "true"
    },
@@ -2722,7 +722,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "north": "false"
    },
@@ -2732,7 +731,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "north": "false"
    },
@@ -2742,7 +740,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "north": "true"
    },
@@ -2752,7 +749,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "north": "true"
    },
@@ -2762,7 +758,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "south": "false"
    },
@@ -2772,7 +767,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "south": "false"
    },
@@ -2782,7 +776,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "false",
     "south": "true"
    },
@@ -2792,7 +785,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "west": "true",
     "south": "true"
    },
@@ -2802,7 +794,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "north": "false"
    },
@@ -2812,7 +803,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "north": "false"
    },
@@ -2822,7 +812,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "north": "true"
    },
@@ -2832,7 +821,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "north": "true"
    },
@@ -2842,7 +830,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "south": "false"
    },
@@ -2852,7 +839,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "south": "false"
    },
@@ -2862,7 +848,6 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "false",
     "south": "true"
    },
@@ -2872,1932 +857,11 @@
   },
   {
    "when": {
-    "tier": "2",
     "east": "true",
     "south": "true"
    },
    "apply": {
     "model": "pioneers:block/industry/design/ct/glass_t2/up_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/north_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/south_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/west_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "north": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "south": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/east_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/down_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "west": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "3",
-    "east": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t3/up_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/north_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/south_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/west_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "north": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "false",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "true",
-    "down": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "false",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "true",
-    "down": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "false",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "true",
-    "up": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "false",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "south": "true",
-    "up": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/east_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/down_11_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_00_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_00_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_00_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_00_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_01_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_01_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_01_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "west": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_01_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_10_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "north": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_10_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_10_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "north": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_10_inner"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_11_frame"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "south": "false"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_11_h"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "false",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_11_v"
-   }
-  },
-  {
-   "when": {
-    "tier": "4",
-    "east": "true",
-    "south": "true"
-   },
-   "apply": {
-    "model": "pioneers:block/industry/design/ct/glass_t4/up_11_inner"
    }
   }
  ]
