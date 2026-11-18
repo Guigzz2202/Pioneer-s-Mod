@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "centrifuge",
  "tier": 0,
- "time": 60,
+ "time": 160,
  "fluids": [
   {
    "fluid": "pioneers:molasses",

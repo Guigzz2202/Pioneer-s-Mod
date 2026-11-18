@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:prismarine"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:prismarine_wall",
-  "count": 6
+  "count": 1
  },
- "time": 40
+ "time": 160
 }

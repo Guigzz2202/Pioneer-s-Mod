@@ -318,11 +318,18 @@ final class BronzeCategories {
 
         @Override
         protected List<JeiDraw.Chip> chips(SteamRecipe recipe) {
-            //1.0.5-beta (lot 38) : + « Tier min. » de la recette (les machines MKI de la famille la font aussi)
-            return List.of(JeiDraw.Chip.of(JeiDraw.Pic.STEAM, Component.translatable("jei.pioneers.chip.steam"), JeiDraw.COLD,
-                  Component.translatable("jei.pioneers.steam_machine", seconds(recipe.time()),
-                        fr.pioneers.core.Texts.format(Math.round(recipe.time() * recipe.machine().steamUse())))),
-                  TierChips.minTier(recipe.minTier(), recipe.getId(), recipe.inputs(), recipe.result()));
+            //1.0.5-beta (lot 38) : + « Tier min. » de la recette (les machines MKI de la famille la font aussi) ; 1.0.6 (demande de Guillaume du
+            //16/11/2026) : energie et duree au plus bas tier electrique (MKI) de la famille, sinon la duree a la vapeur ; tiers permis
+            String family = fr.pioneers.api.machine.tier.GeneratedTierFamilies.STEAM_FAMILY.get("steam:" + recipe.machine().key());
+            Component steam = Component.translatable("jei.pioneers.steam_machine", seconds(recipe.time()),
+                  fr.pioneers.core.Texts.format(Math.round(recipe.time() * recipe.machine().steamUse())));
+            JeiDraw.Chip energy = TierChips.electric(family, recipe.minTier(), recipe.time());
+            List<JeiDraw.Chip> out = new ArrayList<>(List.of(energy != null ? energy : TierChips.duration(JeiDraw.Pic.STEAM, recipe.time(), steam)));
+            JeiDraw.Chip yield = TierChips.yieldOf(recipe.minTier(), recipe.getId(), recipe.inputs(), recipe.result());
+            if (yield != null) {
+                out.add(yield);
+            }
+            return out;
         }
 
         @Override

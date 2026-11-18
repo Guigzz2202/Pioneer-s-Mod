@@ -6,6 +6,10 @@ import fr.pioneers.api.gas.GasStack;
 import fr.pioneers.core.Texts;
 import fr.pioneers.core.gas.BasicGasTank;
 import fr.pioneers.core.data.DataUnits;
+import fr.pioneers.api.machine.StandardLayout.Rect;
+import fr.pioneers.core.recipe.RecipeChoice;
+import fr.pioneers.tech.industry.recipe.IndustrialRecipe;
+import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
@@ -16,6 +20,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.capability.templates.FluidTank;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Lot 8c : plus de vues d'avant aiguillees par classe (la chaine stabilisateur / simulateur / absorbeur / etablis est retiree : chaque bloc a
@@ -138,6 +143,161 @@ final class MachineViews {
             gui.tooltip(List.of(stack.isEmpty() ? tr("buffer.empty") : stack.getDisplayName(),
                   tr("buffer.amount", Texts.format(stack.getAmount()), Texts.format(tank.getCapacity()), "mB").withStyle(ChatFormatting.GRAY)));
         }
+    }
+
+    // ------------------------------------------------------------------
+    // 1.0.6 : jauges de RESSOURCES des machines de recettes (liquides et gaz traites de la meme facon)
+    // ------------------------------------------------------------------
+
+    /**
+     * 1.0.6 (Guillaume, 17/11/2026 : « fusionner les jauges de gaz et de liquide ; pour chaque ressource indiquer en infobulle s'il s'agit de
+     * liquide ou de gaz afin de savoir ce qu'on attend exactement ») : les jauges d'un cote (entrees ou sorties). Partagees, la jauge i
+     * montre le reservoir de liquide i ou celui de gaz i (celui qui a du contenu) ; une jauge vide montre en fantome la ressource que la
+     * recette verrouillee attend (ou produit) a cette place. Infobulle : sens, nom, « Liquide » ou « Gaz » (ou ce que la jauge accepte),
+     * ressource attendue, quantite.
+     */
+    void resourceRow(GuiGraphics graphics, int mouseX, int mouseY, List<Rect> fluidRects, List<Rect> gasRects, List<? extends FluidTank> fluids,
+          List<BasicGasTank> gases, boolean paired, boolean output, @Nullable RecipeChoice locked) {
+        int nf = Math.min(fluidRects.size(), fluids.size()), ng = Math.min(gasRects.size(), gases.size());
+        Want[] want = expected(locked, fluids, gases, paired, output);
+        if (paired) {
+            for (int i = 0; i < nf; i++) {
+                resourceGauge(graphics, mouseX, mouseY, fluidRects.get(i), fluids.get(i), i < gases.size() ? gases.get(i) : null, output, want[i]);
+            }
+            return;
+        }
+        for (int i = 0; i < nf; i++) {
+            resourceGauge(graphics, mouseX, mouseY, fluidRects.get(i), fluids.get(i), null, output, want[i]);
+        }
+        for (int i = 0; i < ng; i++) {
+            resourceGauge(graphics, mouseX, mouseY, gasRects.get(i), null, gases.get(i), output, want[fluids.size() + i]);
+        }
+    }
+
+    /**
+     * Ressource attendue par jauge vide (FluidStack ou GasStack, sinon null) : celles de la recette verrouillee qu'aucune jauge ne tient,
+     * dans l'ordre (liquides puis gaz), posees sur les jauges vides (partagees : n'importe laquelle ; sinon de leur sorte).
+     */
+    /** Ressource attendue par une jauge vide : un liquide ou un gaz (l'autre null). */
+    record Want(@Nullable FluidStack fluid, @Nullable GasStack gas) {
+    }
+
+    static Want[] expected(@Nullable RecipeChoice c, List<? extends FluidTank> fluids, List<BasicGasTank> gases, boolean paired, boolean output) {
+        Want[] out = new Want[paired ? fluids.size() : fluids.size() + gases.size()];
+        if (c == null) {
+            return out;
+        }
+        List<Want> wf = new ArrayList<>(), wg = new ArrayList<>();
+        if (output) {
+            for (FluidStack f : c.fluidOutputs()) {
+                if (!f.isEmpty() && fluids.stream().noneMatch(t -> !t.isEmpty() && t.getFluid().isFluidEqual(f))) {
+                    wf.add(new Want(f, null));
+                }
+            }
+            for (IndustrialRecipe.GasAmount a : c.gasOutputs()) {
+                GasStack gs = a.stack();
+                if (!gs.isEmpty() && gases.stream().noneMatch(t -> !t.getStack().isEmpty() && t.getStack().isSameGas(gs))) {
+                    wg.add(new Want(null, gs));
+                }
+            }
+        } else {
+            for (IndustrialRecipe.FluidIn in : c.fluids()) {
+                if (fluids.stream().noneMatch(t -> !t.isEmpty() && in.test(t.getFluid())) && !in.displayed().isEmpty()) {
+                    wf.add(new Want(in.displayed().get(0), null));
+                }
+            }
+            for (IndustrialRecipe.GasAmount a : c.gases()) {
+                if (gases.stream().noneMatch(t -> !t.getStack().isEmpty() && a.test(t.getStack())) && !a.stack().isEmpty()) {
+                    wg.add(new Want(null, a.stack()));
+                }
+            }
+        }
+        if (paired) {
+            List<Want> all = new ArrayList<>(wf);
+            all.addAll(wg);
+            int k = 0;
+            for (int i = 0; i < out.length && k < all.size(); i++) {
+                if (fluids.get(i).isEmpty() && (i >= gases.size() || gases.get(i).getStack().isEmpty())) {
+                    out[i] = all.get(k++);
+                }
+            }
+            return out;
+        }
+        int k = 0;
+        for (int i = 0; i < fluids.size() && k < wf.size(); i++) {
+            if (fluids.get(i).isEmpty()) {
+                out[i] = wf.get(k++);
+            }
+        }
+        k = 0;
+        for (int i = 0; i < gases.size() && k < wg.size(); i++) {
+            if (gases.get(i).getStack().isEmpty()) {
+                out[fluids.size() + i] = wg.get(k++);
+            }
+        }
+        return out;
+    }
+
+    /** Une jauge de ressource : liquide, gaz, ou vide (fantome de la ressource attendue). */
+    private void resourceGauge(GuiGraphics graphics, int mouseX, int mouseY, Rect r, @Nullable FluidTank fluid, @Nullable BasicGasTank gas,
+          boolean output, @Nullable Want want) {
+        int x = r.x(), y = r.y(), w = r.w(), h = r.h();
+        boolean hasFluid = fluid != null && !fluid.isEmpty(), hasGas = gas != null && !gas.getStack().isEmpty();
+        if (hasFluid) {
+            FluidStack stack = fluid.getFluid();
+            IClientFluidTypeExtensions ext = IClientFluidTypeExtensions.of(stack.getFluid());
+            content(graphics, x, y, w, h, stack.getAmount() / (double) Math.max(1, fluid.getCapacity()), GuiMachine.atlas(ext.getStillTexture(stack)),
+                  ext.getTintColor(stack) | 0xFF000000);
+        } else if (hasGas) {
+            GasStack stack = gas.getStack();
+            content(graphics, x, y, w, h, stack.getAmount() / (double) Math.max(1, gas.getCapacity()), GuiMachine.atlas(stack.getGas().getIcon()),
+                  stack.getGas().getTint() | 0xFF000000);
+        } else {
+            gui.frame(graphics, x, y, w, h);
+            if (want != null && want.fluid() != null) {
+                IClientFluidTypeExtensions ext = IClientFluidTypeExtensions.of(want.fluid().getFluid());
+                GuiMachine.ghost(graphics, GuiMachine.atlas(ext.getStillTexture(want.fluid())), ext.getTintColor(want.fluid()), x + 1, y + 1, w - 2, h - 2);
+            } else if (want != null && want.gas() != null) {
+                GuiMachine.ghost(graphics, GuiMachine.atlas(want.gas().getGas().getIcon()), want.gas().getGas().getTint(), x + 1, y + 1, w - 2, h - 2);
+            }
+            GuiMachine.ticks(graphics, x, y, w, h);
+        }
+        if (!gui.over(mouseX, mouseY, x, y, w, h)) {
+            return;
+        }
+        List<Component> lines = new ArrayList<>();
+        lines.add(Component.translatable(output ? "gui.pioneers.machine.out" : "gui.pioneers.machine.in").withStyle(ChatFormatting.GRAY));
+        long amount = 0, capacity = fluid != null ? fluid.getCapacity() : gas != null ? gas.getCapacity() : 0;
+        if (hasFluid) {
+            lines.add(fluid.getFluid().getDisplayName());
+            lines.add(kind(true));
+            amount = fluid.getFluidAmount();
+        } else if (hasGas) {
+            lines.add(gas.getStack().getGas().getName());
+            lines.add(kind(false));
+            amount = gas.getStack().getAmount();
+            capacity = gas.getCapacity();
+        } else {
+            lines.add(tr("buffer.empty"));
+            lines.add(Component.translatable(fluid != null && gas != null ? "gui.pioneers.resource.both" : fluid != null ? "gui.pioneers.resource.liquid"
+                  : "gui.pioneers.resource.gas").withStyle(fluid != null && gas != null ? ChatFormatting.WHITE : fluid != null ? LIQUID : GAS));
+            if (want != null) {
+                boolean liquid = want.fluid() != null;
+                Component name = liquid ? want.fluid().getDisplayName() : want.gas().getGas().getName();
+                lines.add(Component.translatable(output ? "gui.pioneers.resource.makes" : "gui.pioneers.resource.expected", name,
+                      Component.translatable(liquid ? "gui.pioneers.resource.liquid_word" : "gui.pioneers.resource.gas_word"))
+                      .withStyle(liquid ? LIQUID : GAS));
+            }
+        }
+        lines.add(tr("buffer.amount", Texts.format(amount), Texts.format(capacity), "mB").withStyle(ChatFormatting.GRAY));
+        gui.tooltip(lines);
+    }
+
+    /** Couleurs de la sorte de ressource dans les infobulles (liquide bleu, gaz jaune pale). */
+    private static final ChatFormatting LIQUID = ChatFormatting.AQUA, GAS = ChatFormatting.YELLOW;
+
+    private static Component kind(boolean liquid) {
+        return Component.translatable(liquid ? "gui.pioneers.resource.liquid" : "gui.pioneers.resource.gas").withStyle(liquid ? LIQUID : GAS);
     }
 
     private void content(GuiGraphics graphics, int x, int y, int w, int h, double ratio, TextureAtlasSprite sprite, int tint) {

@@ -73,6 +73,31 @@ public final class RecipeMatch {
         }
 
         /**
+         * 1.0.6 (Guillaume, 17/11/2026 : « fusionner les jauges de gaz et de liquide ») : les reservoirs de sortie de liquide t et de gaz t
+         * sont UNE jauge (un seul contenu, liquide ou gaz) : {@link fr.pioneers.api.machine.resource.ResourceRows}.
+         */
+        default boolean pairedOutputs() {
+            return false;
+        }
+
+        /** Noms des reservoirs pour les vues et les GameTests (ateliers, controleurs). */
+        default List<FluidTank> fluidInTanks() {
+            return fluidInputs();
+        }
+
+        default List<FluidTank> fluidOutTanks() {
+            return fluidOutputs();
+        }
+
+        default List<BasicGasTank> gasInTanks() {
+            return gasInputs();
+        }
+
+        default List<BasicGasTank> gasOutTanks() {
+            return gasOutputs();
+        }
+
+        /**
          * 1.0.5-beta (lot 44, retour 62) : CASE « OUTIL » de la machine ({@link Remanents}) : l'ingredient outil d'une recette (matrice, forme
          * d'extrusion, catalyseur...) y est lu, pris, et y revient ; vide : la machine n'en a pas (l'outil est alors une entree ordinaire).
          */
@@ -366,7 +391,7 @@ public final class RecipeMatch {
                 if (b.strictFluidOrder() && t != Math.min(index, b.fluidOutputs().size() - 1)) {
                     continue;
                 }
-                if (!used[t] && (vent ? kind(tank, want) : room(tank, want))) {
+                if (!used[t] && fluidSlot(b, t, null) && (vent ? kind(tank, want) : room(tank, want))) {
                     used[t] = true;
                     ok = true;
                     break;
@@ -386,7 +411,7 @@ public final class RecipeMatch {
             boolean ok = false;
             for (int t = 0; t < b.gasOutputs().size(); t++) {
                 BasicGasTank tank = b.gasOutputs().get(t);
-                if (!usedGas[t] && (vent ? gasKind(tank, want) : tank.insert(want, Action.SIMULATE, Automation.INTERNAL).isEmpty())) {
+                if (!usedGas[t] && gasSlot(b, t, used) && (vent ? gasKind(tank, want) : tank.insert(want, Action.SIMULATE, Automation.INTERNAL).isEmpty())) {
                     usedGas[t] = true;
                     ok = true;
                     break;
@@ -429,6 +454,22 @@ public final class RecipeMatch {
     }
 
     /** 1.0.4-beta (lot 5) : le reservoir est-il de l'espece de {@code want} (vide ou meme fluide), plein ou non ? */
+    /** 1.0.6 : le liquide peut aller dans la jauge de sortie t (jauges partagees : le gaz de la meme jauge est vide et pas servi). */
+    private static boolean fluidSlot(Buffers b, int t, @Nullable boolean[] usedGas) {
+        if (!b.pairedOutputs() || t >= b.gasOutputs().size()) {
+            return true;
+        }
+        return b.gasOutputs().get(t).getStack().isEmpty() && (usedGas == null || t >= usedGas.length || !usedGas[t]);
+    }
+
+    /** 1.0.6 : le gaz peut aller dans la jauge de sortie t (jauges partagees : le liquide de la meme jauge est vide et pas servi). */
+    private static boolean gasSlot(Buffers b, int t, boolean[] usedFluid) {
+        if (!b.pairedOutputs() || t >= b.fluidOutputs().size()) {
+            return true;
+        }
+        return b.fluidOutputs().get(t).isEmpty() && (t >= usedFluid.length || !usedFluid[t]);
+    }
+
     private static boolean kind(FluidTank tank, FluidStack want) {
         return tank.isEmpty() || tank.getFluid().isFluidEqual(want);
     }
@@ -600,6 +641,9 @@ public final class RecipeMatch {
                 if (b.strictFluidOrder() && t != Math.min(index, b.fluidOutputs().size() - 1)) {
                     continue;
                 }
+                if (!fluidSlot(b, t, null)) {
+                    continue;
+                }
                 if (!used[t] && room(tank, want)) {
                     used[t] = true;
                     fill(tank, want);
@@ -624,6 +668,9 @@ public final class RecipeMatch {
             }
             want = want.copyWithAmount(want.getAmount() * k);
             for (int t = 0; t < b.gasOutputs().size(); t++) {
+                if (!gasSlot(b, t, used)) {
+                    continue;
+                }
                 if (!usedGas[t] && b.gasOutputs().get(t).insert(want, Action.SIMULATE, Automation.INTERNAL).isEmpty()) {
                     usedGas[t] = true;
                     b.gasOutputs().get(t).insert(want, Action.EXECUTE, Automation.INTERNAL);

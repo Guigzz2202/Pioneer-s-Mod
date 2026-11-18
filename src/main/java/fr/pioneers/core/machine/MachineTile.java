@@ -391,6 +391,11 @@ public abstract class MachineTile extends PiBlockEntity implements MenuProvider,
     }
 
     @Override
+    public boolean redstoneTab() {
+        return true;
+    }
+
+    @Override
     public void handleAction(ServerPlayer player, int action) {
         if (action == REDSTONE) {
             redstone = redstone.next();

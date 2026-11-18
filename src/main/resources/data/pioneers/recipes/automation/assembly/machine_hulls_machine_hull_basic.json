@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "assembler",
  "tier": 0,
- "time": 100,
+ "time": 160,
  "items": [
   {
    "ingredient": {
@@ -27,6 +27,12 @@
     "tag": "forge:rods/brass"
    },
    "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/redsteel"
+   },
+   "count": 1
   }
  ],
  "results": [

@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "sawmill",
+ "machine": "compressor",
  "tier": 1,
- "time": 430,
+ "time": 160,
  "items": [
   {
    "ingredient": {

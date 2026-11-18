@@ -159,7 +159,11 @@ public final class ClanMapNet {
             res = new CompoundTag();
             res.putString("error", "clan.pioneers.ui.map.too_far");
         } else {
-            res = ClanTerritory.area(p, level, x0, z0, x1, z1, !t.getBoolean("unclaim"), apply);
+            //1.0.6 : mode du trace : 0 reclamer, 1 rendre, 2 charger, 3 liberer (ancien paquet : drapeau « unclaim »)
+            int mode = t.contains("mode") ? t.getInt("mode") : t.getBoolean("unclaim") ? 1 : 0;
+            res = mode >= 2 ? fr.pioneers.society.clan.territory.ClanChunkloading.area(p, level, x0, z0, x1, z1, mode == 2, apply)
+                  : ClanTerritory.area(p, level, x0, z0, x1, z1, mode == 0, apply);
+            res.putInt("mode", mode);
         }
         res.putBoolean("apply", apply);
         CompoundTag msg = new CompoundTag();

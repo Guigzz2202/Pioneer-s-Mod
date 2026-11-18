@@ -1,6 +1,6 @@
 {
  "type": "pioneers:steam_processing",
- "machine": "rolling_mill",
+ "machine": "press",
  "inputs": [
   {
    "ingredient": {
@@ -13,5 +13,5 @@
   "item": "pioneers:brass_sheet",
   "count": 2
  },
- "time": 80
+ "time": 160
 }

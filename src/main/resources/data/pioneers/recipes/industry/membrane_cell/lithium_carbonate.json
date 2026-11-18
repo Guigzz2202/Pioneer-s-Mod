@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "electrolyzer",
  "tier": 1,
- "time": 300,
+ "time": 160,
  "family": "membrane_cell",
  "fluids": [
   {

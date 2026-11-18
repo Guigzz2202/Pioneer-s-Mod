@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "assembler",
+ "machine": "stoneworks",
  "tier": 2,
  "time": 130,
  "items": [

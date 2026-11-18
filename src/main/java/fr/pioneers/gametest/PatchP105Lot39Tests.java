@@ -199,7 +199,8 @@ public final class PatchP105Lot39Tests {
         IndustryMachine c = IndustryMachine.ELECTRIC_CRUCIBLE;
         Gt.equal(3, c.itemsIn, "creuset : 3 entrees d'objets");
         Gt.equal(1, c.gasesIn, "creuset : un gaz en entree");
-        Gt.equal(8, IndustryMachine.IO_VERSION, "IO_VERSION 8 (creuset 4 -> 3 entrees)");
+        //1.0.6 : IO_VERSION 9 (broyeur, four, centre d'usinage et scie a l'io de leurs recettes) ; l'epoque du creuset reste 8
+        Gt.check(IndustryMachine.IO_VERSION >= 8, "IO_VERSION 8 au moins (creuset 4 -> 3 entrees)");
         Gt.equal(3, CrucibleFurnaceTile.METAL_SLOTS, "fourneau a creuset : 3 cases de metal");
         CrucibleFurnaceTile f = (CrucibleFurnaceTile) place(h, new BlockPos(1, 1, 1), PiBronze.CRUCIBLE_FURNACE.getBlock());
         Gt.equal(2 + CrucibleFurnaceTile.METAL_SLOTS, f.guiSlots().size(), "fourneau a creuset : creuset, combustible, 3 metaux");
@@ -225,7 +226,7 @@ public final class PatchP105Lot39Tests {
         Gt.check(ore.yieldOnFluid() && ore.yieldedFluid(0) == 216 && ore.yieldedFluid(3) == 432, "rendement du tier sur le metal fondu (216 / 432 mB)");
         IndustrialRecipe rec = IndustryRecipes.byId(s.level, c, rl("industry/electric_crucible/recycle_iron_plate"));
         Gt.check(rec != null && rec.results().size() == 1 && Math.abs(rec.results().get(0).chance() - 0.05F) < 1e-6
-                 && rec.fluidResults().get(0).getAmount() == 72, "recyclage : laitier 5 %, 72 mB gardes");
+                 && rec.fluidResults().get(0).getAmount() == 144, "recyclage : laitier 5 %, 144 mB (1.0.6 : 100 %)");
         //le haut fourneau reste la source de l'acier (Java) ; l'acier se refond toujours au creuset
         Gt.check(IndustryRecipes.byId(s.level, c, rl("industry/electric_crucible/melt_ingot_steel")) != null, "refonte de l'acier gardee");
         s.done();

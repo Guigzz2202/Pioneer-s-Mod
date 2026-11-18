@@ -134,11 +134,12 @@ public final class PatchP105Lot22Tests {
     // ================================================================== 1 bis. poubelle : un entonnoir et des buffers qui ejectent dedans se vident
     @GameTest(template = Gt.SMALL, batch = "pioneers_p105_22_trash_feed", timeoutTicks = 400)
     public static void p105_22_poubelle_videe_par_ses_voisins(GameTestHelper h) {
-        //Entonnoir vanilla (bec en bas) sur la poubelle : 64 pierres
+        //Entonnoir vanilla (bec en bas) sur la poubelle : 32 pierres
         h.setBlock(new BlockPos(2, 1, 2), PiTrash.TRASH_CAN.getBlock());
         h.setBlock(new BlockPos(2, 2, 2), Blocks.HOPPER.defaultBlockState().setValue(HopperBlock.FACING, Direction.DOWN));
         Container hopper = (Container) h.getBlockEntity(new BlockPos(2, 2, 2));
-        hopper.setItem(0, new ItemStack(Items.COBBLESTONE, 64));
+        //1.0.6 : un entonnoir vanilla verse un objet tous les 8 ticks : 64 pierres demandaient 512 ticks, plus que les 400 du test
+        hopper.setItem(0, new ItemStack(Items.COBBLESTONE, 32));
         //Buffers de fluide, de gaz, d'energie qui ejectent dans une poubelle commune
         BlockPos trash = new BlockPos(6, 1, 6);
         h.setBlock(trash, PiTrash.TRASH_CAN.getBlock());

@@ -176,7 +176,8 @@ public final class PatchP104Lot30Tests {
             p.setGameMode(GameType.ADVENTURE);
             Gt.check(!WaypointTeleport.allowed(p), "operateur en aventure : refuse");
             p.setGameMode(GameType.CREATIVE);
-            Gt.check(WaypointTeleport.allowed(p), "operateur en creatif : permis");
+            Gt.check(WaypointTeleport.allowed(p), "operateur en creatif : permis (admin " + WaypointTeleport.admin(p) + ", niveau "
+                  + s.server.getProfilePermissions(p.getGameProfile()) + ", mode " + p.gameMode.getGameModeForPlayer() + ", creatif " + p.isCreative() + ")");
             p.setGameMode(GameType.SPECTATOR);
             Gt.check(WaypointTeleport.allowed(p), "operateur en spectateur : permis");
         } finally {

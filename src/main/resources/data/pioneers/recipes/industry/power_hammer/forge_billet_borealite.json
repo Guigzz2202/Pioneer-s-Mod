@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "power_hammer",
  "tier": 3,
- "time": 480,
+ "time": 400,
  "items": [
   {
    "ingredient": {

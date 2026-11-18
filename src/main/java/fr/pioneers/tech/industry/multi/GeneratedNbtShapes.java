@@ -152,6 +152,9 @@ public final class GeneratedNbtShapes {
               "CCKCCCCCCCCCCCCCCCCCCCCCCFGGGFGIIIGGIRIGGIIIGFGGGFFGGGFGIIIGGIRIGGIIIGFGGGFFGGGFGIIIGGIRIGGIIIGFGGGFFGGGFGIIIG"
               + "GIRIGGIIIGFGGGFFGGGFGIIIGGIRIGGIIIGFGGGFFGGGFGIIIGGIRIGGIIIGFGGGFFGGGFGIIIGGIRIGGIIIGFGGGFCCCCCCCCCCCCCCCCCCCC"
               + "CCCCC");
+        put("gear_hobber", 5, 5, 5, 2, 0, 0, 58, 31, -1,
+              "CCKCCCCCCCCCCCCCCCCCCCCCCF...F.III..III..III.F...FF...F.III..III..III.F...FF...F.III..III..III.F...FFFFFFFIFIF"
+              + "FFCFFFIFIFFFFFF");
         put("hot_blast_stove", 5, 7, 5, 2, 0, 0, 222, 219, -1,
               ".CKC.CCCCCCCCCCCCCCC.CCC...F...SSS.FSSSF.SSS...F....F...SSS.FSSSF.SSS...F....F...SSS.FSSSF.SSS...F....F...FFF."
               + "FFSFF.FFF...F....F...SSS.FSSSF.SSS...F.........F...FFF...F.......");
@@ -206,6 +209,8 @@ public final class GeneratedNbtShapes {
         put("recycler", 5, 6, 5, 2, 0, 0, 141, 90, -1,
               "CCKCCCCCCCCCCCCCCCCCCCCCCFSSSFSIIISSIIISSIIISFSSSFFSSSFSIIISSIIISSIIISFSSSFFSSSFSIIISSIIISSIIISFSSSFFSSSFSIIIS"
               + "SIIISSIIISFSSSF.FFF.FIIIFFIIIFFIIIF.FFF.");
+        put("reduction_furnace", 3, 3, 5, 1, 0, 0, 42, 3, -1,
+              "CKCSHSSHSSHSCCCCCCHIHHIHHIHCCCCCCSHSSHSSHSCCC");
         put("rolling_mill", 3, 3, 7, 1, 0, 0, 159, 57, -1,
               "CKCCCCCCCCCCCCCCCCCCCF.F......F.F......F.FFFFFIFFIFFFFFIFFIFFFF");
         put("sawmill", 3, 3, 7, 1, 0, 0, 130, 45, -1,

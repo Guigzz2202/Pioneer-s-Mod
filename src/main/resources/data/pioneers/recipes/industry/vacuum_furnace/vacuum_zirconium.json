@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "electric_crucible",
  "tier": 1,
- "time": 1800,
+ "time": 400,
  "family": "vacuum_furnace",
  "items": [
   {

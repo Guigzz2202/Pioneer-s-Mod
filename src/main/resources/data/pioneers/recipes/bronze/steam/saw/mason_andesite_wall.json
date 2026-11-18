@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:andesite"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:andesite_wall",
-  "count": 6
+  "count": 1
  },
- "time": 40
+ "time": 160
 }

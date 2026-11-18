@@ -17,8 +17,8 @@ import net.minecraft.sounds.SoundSource;
  * API Machine (lot 8b) : UNITE de la machine a vapeur, code de l'ancienne {@code SteamEngineTile} qui ne fait plus que la porter (source du
  * reseau de rotation et noeud de vapeur : coffre, faces, echanges {@link Steam#exchangeAll}). Energie motrice : la VAPEUR du coffre
  * ({@link PowerSource.Steam}, pretee par la tile) ; la rotation est LUE sur le noeud. 1.0.2-beta (lot 3, plus de pression) : part du couple
- * = vapeur fournie (prise {@link SteamRules#engineNeed} : {@link SteamEngineTile#USE} mB par tr/min et par tick, au moins a 10 tr/min ; 1 si le
- * coffre la tient), reduite par l'humidite, +25 % avec un condenseur devant l'echappement. Aucune cle de sauvegarde propre (la vapeur
+ * = vapeur fournie (prise {@link SteamRules#engineNeed} ; 1.0.6 : a la puissance rendue, {@link SteamRules#ENGINE_FULL_USE} mB/t a pleine
+ * puissance ; 1 si le coffre la tient), reduite par l'humidite, +25 % avec un condenseur devant l'echappement. Aucune cle de sauvegarde propre (la vapeur
  * {@code steam} / {@code wet} reste a la tile).
  */
 public class SteamEngineUnit extends MachineUnit {
@@ -26,7 +26,7 @@ public class SteamEngineUnit extends MachineUnit {
     private final SteamEngineTile tile;
     private final PowerSource.Steam steam;
     private final PowerSource.Kinetic rotation;
-    private double used, effective;
+    private double used, effective, delivered;
     private float stroke;
 
     public SteamEngineUnit(UnitHost machine, SteamEngineTile tile, PowerSource.Steam steam, PowerSource.Kinetic rotation) {
@@ -38,6 +38,11 @@ public class SteamEngineUnit extends MachineUnit {
 
     public double used() {
         return used;
+    }
+
+    /** 1.0.6 : couple rendu au reseau a ce tick (N.m), donne par le reseau. */
+    public void delivered(double torque) {
+        delivered = Math.max(0, torque);
     }
 
     /** Part du couple retenue au dernier tick (0..1,25). */
@@ -61,11 +66,15 @@ public class SteamEngineUnit extends MachineUnit {
         }
         BlockPos pos = pos();
         double omega = rotation.omega();
-        //Prise du tick : a l'arret, celle de 10 tr/min (le coffre doit pouvoir lancer la machine) ; on ne prend que ce que la rotation use
-        double need = SteamRules.engineNeed(omega);
+        //1.0.6 (revision de la mecanique) : vapeur a la PUISSANCE rendue (couple rendu par le reseau x vitesse) ; part du couple de demarrage
+        //qui serait rendue a pleine vapeur (la courbe est proportionnelle au couple de demarrage) : prise demandee ; a l'arret, celle de 10 tr/min
+        double stall = SteamEngineTile.TORQUE * fr.pioneers.tech.kinetics.KineticsConfig.sourcePower();
+        double share = stall <= 0 ? 0 : delivered / stall;
+        double full = effective > 0.02 ? share / effective : 1;
+        double need = SteamRules.engineNeed(omega, Math.max(full, omega < 0.5 ? 1 : 0));
         double supply = steam.volume().supply(need);
         effective = effective(supply);
-        used = omega > 0.5 ? steam.take(SteamEngineTile.USE * omega) : 0;
+        used = omega > 0.5 ? steam.take(SteamRules.engineUse(omega, share)) : 0;
         //Bouffees d'echappement, deux par tour
         if (omega > 1) {
             float before = stroke;

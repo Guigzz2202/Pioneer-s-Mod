@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "distillery",
  "tier": 1,
- "time": 450,
+ "time": 400,
  "fluids": [
   {
    "fluid": "pioneers:crude_titanium_tetrachloride",

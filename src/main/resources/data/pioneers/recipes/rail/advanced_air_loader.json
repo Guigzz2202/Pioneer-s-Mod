@@ -1,6 +1,6 @@
 {
  "type": "pioneers:bench",
- "bench": "logistics",
+ "bench": "assembly",
  "tools": [
   {
    "tag": "forge:tools/wrench"

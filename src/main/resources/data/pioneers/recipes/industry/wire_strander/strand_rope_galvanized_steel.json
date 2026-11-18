@@ -9,13 +9,13 @@
    "ingredient": {
     "tag": "forge:wires/galvanized_steel"
    },
-   "count": 3
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:galvanized_steel_wire_rope",
-   "count": 3
+   "count": 1
   }
  ]
 }

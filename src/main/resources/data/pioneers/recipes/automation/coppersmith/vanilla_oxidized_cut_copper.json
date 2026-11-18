@@ -1,20 +1,20 @@
 {
  "type": "pioneers:industrial",
- "machine": "bender",
+ "machine": "sheet_metal_shop",
  "tier": 0,
- "time": 80,
+ "time": 160,
  "items": [
   {
    "ingredient": {
     "item": "minecraft:oxidized_copper"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "minecraft:oxidized_cut_copper",
-   "count": 4
+   "count": 1
   }
  ]
 }

@@ -1,33 +1,33 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "family": "roaster",
  "tier": 0,
- "time": 200,
+ "time": 160,
  "items": [
   {
    "ingredient": {
     "tag": "forge:crushed_ores/lead"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:oxygen",
-   "amount": 200
+   "amount": 100
   }
  ],
  "results": [
   {
    "item": "pioneers:lead_dust",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:sulfur_dioxide",
-   "amount": 300
+   "amount": 150
   }
  ],
  "temperature": 700

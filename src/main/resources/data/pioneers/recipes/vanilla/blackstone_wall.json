@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:blackstone"
    },
-   "count": 6
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:blackstone_wall",
-  "count": 6
+  "count": 1
  }
 }

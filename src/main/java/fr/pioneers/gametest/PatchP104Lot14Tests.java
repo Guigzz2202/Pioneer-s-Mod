@@ -159,7 +159,8 @@ public final class PatchP104Lot14Tests {
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_strander", timeoutTicks = 400)
     public static void p104_14_toronnage_a_la_trefileuse(GameTestHelper h) {
-        runs(h, "wire_strander", "industry/wire_strander/strand_fiber_rope");
+        //1.0.6 : les cordes de fibres se filent a l'Atelier de confection ; le toronnage des fils de metal reste a la trefileuse
+        runs(h, "wire_strander", "industry/wire_strander/strand_rope_copper");
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_coiler", timeoutTicks = 400)
@@ -179,12 +180,18 @@ public final class PatchP104Lot14Tests {
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_grinder", timeoutTicks = 400)
     public static void p104_14_rectification_au_centre_d_usinage(GameTestHelper h) {
-        runs(h, "grinder", "industry/grinder/cut_peridot");
+        //1.0.6 : la taille des gemmes passe a la Decoupeuse ; la rectification (billes, visserie) reste au Centre d'usinage
+        runs(h, "grinder", "industry/grinder/grind_steel_balls");
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_hobber", timeoutTicks = 400)
     public static void p104_14_taillage_au_centre_d_usinage(GameTestHelper h) {
-        runs(h, "gear_hobber", "industry/gear_hobber/cut_gear_aluminium");
+        //1.0.6 : la tailleuse est rendue (Decoupeuse) : la taille des engrenages se fait chez elle, sans famille
+        Gt.begin(h);
+        IndustrialRecipe r = recipe(h, "industry/gear_hobber/cut_gear_aluminium");
+        Gt.check(r.machine() == IndustryMachine.GEAR_HOBBER && r.family() == null, "taillage : Decoupeuse, sans famille");
+        Gt.check(recipe(h, "industry/grinder/cut_peridot").machine() == IndustryMachine.GEAR_HOBBER, "taille des gemmes : Decoupeuse");
+        h.succeed();
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_wafer", timeoutTicks = 400)
@@ -209,7 +216,8 @@ public final class PatchP104Lot14Tests {
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_logistics", timeoutTicks = 600)
     public static void p104_14_pieces_logistiques_a_l_assembleur(GameTestHelper h) {
-        runs(h, "logistics_assembler", "automation/logistics/naval_basic_harbor");
+        //1.0.6 : plus aucune machine a l'Assembleur (le port est une machine : etabli de montage) ; une piece logistique y reste
+        runs(h, "logistics_assembler", "automation/logistics/naval_harbor_crane");
     }
 
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_welder", timeoutTicks = 400)
@@ -236,7 +244,15 @@ public final class PatchP104Lot14Tests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_p104_14_multi", timeoutTicks = 20)
     public static void p104_14_recettes_au_multibloc_de_la_base(GameTestHelper h) {
         Gt.begin(h);
-        multi(h, "forge", "industry/forge/forge_brass_axe");
+        multi(h, "forge", "industry/forge/steel_bloom_cold");
+        //1.0.6 (demande de Guillaume du 16/11/2026) : les tetes d'outils des metaux de base se forgent au Marteau-pilon compact ; celles des
+        //metaux avances (fraisees jusqu'ici) au multibloc seulement
+        IndustrialRecipe axe = recipe(h, "industry/forge/forge_brass_axe");
+        Gt.check(!axe.industrialOnly() && IndustryRecipes.choices(h.getLevel(), IndustryMachine.POWER_HAMMER, false).stream()
+              .anyMatch(c -> c.id().equals(axe.getId())), "tete d'outil en laiton au Marteau-pilon compact");
+        //1.0.6 : metaux avances aux tiers superieurs (MKII a MKIV, compacte ou multibloc des carcasses de ce tier)
+        IndustrialRecipe ti = recipe(h, "industry/cnc_mill/mill_titanium_pickaxe_heads");
+        Gt.check(ti.machine() == IndustryMachine.POWER_HAMMER && !ti.industrialOnly() && ti.tier() >= 1, "tete en titane : Marteau-pilon, MKII et plus");
         multi(h, "continuous_caster", "industry/continuous_caster/cc_beam_blank_aluminium");
         //le foyer de forge garde ses deux recettes de lopin (famille « forge » du Marteau-pilon, reservees au multibloc)
         IndustrialRecipe bloom = recipe(h, "industry/forge/steel_bloom_cold");
@@ -261,8 +277,9 @@ public final class PatchP104Lot14Tests {
         Gt.equal("elite_casting_machine", PiRemaps.p104Block("elite_injection_molder"), "presse a injection MKIII -> Machine de coulee MKIII");
         Gt.equal("basic_machining_center", PiRemaps.p104Block("basic_cnc_mill"), "fraiseuse MKI -> Centre d'usinage MKI");
         Gt.equal("advanced_machining_center", PiRemaps.p104Block("advanced_grinder"), "rectifieuse MKII -> Centre d'usinage MKII");
-        Gt.equal("ultimate_machining_center", PiRemaps.p104Block("ultimate_gear_hobber"), "tailleuse MKIV -> Centre d'usinage MKIV");
-        Gt.equal("elite_sawmill", PiRemaps.p104Block("elite_wafer_saw"), "scie a galettes MKIII -> Scie industrielle MKIII");
+        //1.0.6 : la tailleuse est rendue (Decoupeuse) et reprend la scie a galettes
+        Gt.check(PiRemaps.p104Block("ultimate_gear_hobber") == null, "tailleuse MKIV : machine rendue, plus de remap");
+        Gt.equal("elite_gear_hobber", PiRemaps.p104Block("elite_wafer_saw"), "scie a galettes MKIII -> Decoupeuse MKIII");
         Gt.equal("advanced_chemical_bath", PiRemaps.p104Block("advanced_plasma_sprayer"), "projection plasma MKII -> Bain chimique MKII");
         Gt.equal("basic_chemical_bath", PiRemaps.p104Block("basic_acid_etcher"), "graveur MKI -> Bain chimique MKI");
         Gt.equal("elite_assembler", PiRemaps.p104Block("elite_component_assembler"), "assembleur de composants MKIII -> Assembleur MKIII");
@@ -381,13 +398,18 @@ public final class PatchP104Lot14Tests {
         Gt.check(IndustryMachine.IO_VERSION >= 6, "version des cases 6 au moins (fusion 4/4)");
         Gt.equal(9, IndustryMachine.ASSEMBLER.itemsIn, "Assembleur : 9 entrees");
         Gt.equal(2, IndustryMachine.ASSEMBLER.itemsOut, "Assembleur : 2 sorties (soudeuse)");
-        Gt.equal(1, IndustryMachine.ASSEMBLER.gasesIn, "Assembleur : argon (soudeuse)");
+        //1.0.6 (audit des cases) : liquides et gaz partages : 2 jauges qui prennent liquide ou gaz (resine, helium liquide, argon)
+        Gt.equal(2, IndustryMachine.ASSEMBLER.gasesIn, "Assembleur : 2 jauges partagees (argon de la soudeuse)");
         Gt.equal(6, IndustryMachine.CHEMICAL_BATH.itemsIn, "Bain chimique : 6 entrees (projection plasma)");
         Gt.equal(3, IndustryMachine.MACHINING_CENTER.itemsIn, "Centre d'usinage : 3 entrees (fraiseuse, rectifieuse)");
-        Gt.equal(1, IndustryMachine.MACHINING_CENTER.fluidsIn, "Centre d'usinage : lubrifiant ou eau");
+        //1.0.6 (un role par machine) : le centre d'usinage travaille a sec (plus de lubrifiant ni d'eau)
+        Gt.equal(0, IndustryMachine.MACHINING_CENTER.fluidsIn, "Centre d'usinage : a sec");
         Gt.equal(3, IndustryMachine.WIREMILL.itemsIn, "Trefileuse : 3 entrees (tour de fibrage)");
         Gt.equal(2, IndustryMachine.CASTING_MACHINE.itemsIn, "Machine de coulee : 2 entrees (presse a injection)");
-        Gt.equal(1, IndustryMachine.BENDER.fluidsIn, "Cintreuse : huile de trempe (enrouleuse)");
+        //1.0.6 (audit des cases) : plus de recette a l'huile ; les tubes soudes (ex-soudeuse) demandent l'argon et rendent 2 sorties
+        Gt.equal(0, IndustryMachine.BENDER.fluidsIn, "Cintreuse : plus d'huile");
+        Gt.equal(1, IndustryMachine.BENDER.gasesIn, "Cintreuse : argon (tubes soudes)");
+        Gt.equal(2, IndustryMachine.BENDER.itemsOut, "Cintreuse : 2 sorties (tubes soudes)");
         Gt.check(IndustryMachine.byKey("forming_station") == null && IndustryMachine.byKey("arc_welder") == null, "absorbees hors du catalogue");
         h.succeed();
     }
@@ -407,9 +429,13 @@ public final class PatchP104Lot14Tests {
         //l'outil de coupe en carbure se fritte a la poudre de carbure (la voie a la poudre de l'imprimante est partie)
         IndustrialRecipe tool = recipe(h, "industry/induction_furnace/rc_carbide_cutting_tools");
         Gt.check(uses(tool, item("tungsten_carbide_dust")) && !uses(tool, item("tungsten_carbide_plate")), "outil de coupe en carbure : poudre, sans plaque");
-        //« 1 bloc -> 9 plaques » (exemple impose de Guillaume) au Laminoir, MKII
-        IndustrialRecipe block = recipe(h, "industry/rolling_mill/roll_block_plate_iron");
-        Gt.check(block.machine() == IndustryMachine.ROLLING_MILL && block.tier() == 1, "bloc -> 9 plaques : Laminoir MKII");
+        //« 1 bloc -> 9 plaques » (exemple impose de Guillaume) au Laminoir ; 1.0.6 : la recette MKII etait le doublon de celle du laminoir a
+        //vapeur (desactivee, verrou suivi) : le Laminoir fait celle-ci des le MKI (recette basse convertie)
+        ResourceLocation steamBlock = rl("bronze/steam/rolling_mill/block_plate_iron");
+        Gt.equal(steamBlock, PiRemaps.recipeId(rl("industry/rolling_mill/roll_block_plate_iron")), "bloc -> 9 plaques : verrou suivi");
+        IndustrialRecipe block = IndustryRecipes.of(h.getLevel(), IndustryMachine.ROLLING_MILL).stream().filter(r -> r.getId().equals(steamBlock))
+              .findFirst().orElse(null);
+        Gt.check(block != null && block.converted() && block.tier() == 0, "bloc -> 9 plaques : Laminoir des le MKI");
         Gt.equal(9, block.results().get(0).stack().getCount(), "bloc -> 9 plaques");
         h.succeed();
     }

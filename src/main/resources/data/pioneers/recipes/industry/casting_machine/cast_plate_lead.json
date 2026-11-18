@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:plate_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_lead",
+   "amount": 228
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:lead_plate",
+   "count": 1
+  },
+  {
+   "item": "pioneers:plate_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:lead_nugget",
+   "count": 5
+  },
+  {
+   "item": "pioneers:lead_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ]
+}

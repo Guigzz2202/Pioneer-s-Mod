@@ -13,14 +13,11 @@ final class GeneratedJeiIcons {
 
     static final Set<String> NAMES = Set.of(
           "alloys",
-          "casting",
           "compressed_air",
           "deposit",
           "drying_line",
           "fluid_deposit",
           "fuels",
-          "grinding",
-          "industry_recycler",
           "metal_melting",
           "metal_parts",
           "multiblock",

@@ -1,9 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "rolling_mill",
+ "machine": "tailoring_workshop",
  "tier": 2,
- "time": 40,
- "family": "calender",
+ "time": 80,
  "items": [
   {
    "ingredient": {

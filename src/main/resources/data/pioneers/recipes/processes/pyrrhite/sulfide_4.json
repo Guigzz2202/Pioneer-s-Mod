@@ -3,25 +3,25 @@
  "machine": "electric_crucible",
  "family": "vacuum_furnace",
  "tier": 3,
- "time": 240,
+ "time": 120,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:crude_pyrrhite"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:argon",
-   "amount": 50
+   "amount": 25
   }
  ],
  "results": [
   {
    "item": "pioneers:pyrrhite_ingot",
-   "count": 2
+   "count": 1
   }
  ],
  "temperature": 1700

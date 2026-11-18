@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:oxidized_copper"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:oxidized_cut_copper",
-  "count": 4
+  "count": 1
  }
 }

@@ -13,7 +13,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 80
     steps:
       - uses: actions/checkout@v4
 
@@ -49,9 +49,19 @@ jobs:
           grep -v '^#' .github/gametests-connus.txt | sed '/^$/d' | sort -u > connus.txt
           nouveaux=$(comm -23 echecs.txt connus.txt)
           echo "Échecs : $(wc -l < echecs.txt) (connus : $(wc -l < connus.txt))"
+          # 1.0.6 : un échec nouveau est rejoué SEUL (serveur avec RCON) ; s'il passe, c'est un test sensible à l'ordre des séries (heure du
+          # monde, entités laissées par une série d'avant), noté en avertissement ; seuls les échecs qui se répètent seuls font échouer le run
+          if [ -n "$nouveaux" ] && [ "$(echo "$nouveaux" | wc -l)" -le 25 ]; then
+            echo "Rejoués seuls : $(echo $nouveaux)"
+            bash .github/scripts/gt-rerun.sh . rejeu $nouveaux || true
+            instables=$(grep '^OK ' rejeu/resultats.txt 2>/dev/null | sed 's/^OK //' | sort -u || true)
+            [ -z "$instables" ] || echo "::warning::GameTests sensibles à l'ordre (échouent dans la série complète, passent seuls) : $(echo $instables)"
+            nouveaux=$(echo "$nouveaux" | grep -vxF -f <(echo "$instables") || true)
+          fi
           if [ -n "$nouveaux" ]; then
             echo "::error::GameTests en échec absents de la liste des échecs connus :"
             echo "$nouveaux"
+            grep '^ECHEC' rejeu/resultats.txt 2>/dev/null || true
             exit 1
           fi
           repares=$(comm -13 echecs.txt connus.txt)

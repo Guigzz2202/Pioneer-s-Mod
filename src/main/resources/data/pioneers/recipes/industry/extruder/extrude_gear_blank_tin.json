@@ -6,9 +6,9 @@
  "items": [
   {
    "ingredient": {
-    "tag": "forge:billets/tin"
+    "tag": "forge:ingots/tin"
    },
-   "count": 1
+   "count": 5
   },
   {
    "ingredient": {
@@ -20,7 +20,7 @@
  "results": [
   {
    "item": "pioneers:tin_gear_blank",
-   "count": 2
+   "count": 1
   },
   {
    "item": "pioneers:extrusion_shape_gear_blank",

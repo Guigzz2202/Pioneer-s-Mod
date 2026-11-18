@@ -1,9 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "assembler",
+ "machine": "bender",
  "tier": 1,
- "time": 195,
- "family": "arc_welder",
+ "time": 160,
  "items": [
   {
    "ingredient": {

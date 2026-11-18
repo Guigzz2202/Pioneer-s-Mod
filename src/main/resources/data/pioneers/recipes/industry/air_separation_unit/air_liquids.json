@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "gas_separator",
  "tier": 1,
- "time": 300,
+ "time": 160,
  "family": "air_separation_unit",
  "fluid_results": [
   {

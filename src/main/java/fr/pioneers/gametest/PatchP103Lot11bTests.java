@@ -74,7 +74,7 @@ public final class PatchP103Lot11bTests {
         }
         Gt.check(lime, "poudre gris clair : chaux vive comme liant");
         Gt.check(loaded(s, "pioneers:vanilla/red_concrete_powder"), "poudre rouge (poudre gris clair + colorant) chargee");
-        Gt.check(loaded(s, "pioneers:industry/mixer/concrete_red") && loaded(s, "pioneers:industry/mixer/concrete_from_powder_white"),
+        Gt.check(loaded(s, "pioneers:industry/mixer/concrete_red") && loaded(s, "pioneers:bronze/steam/mixer/concrete_from_powder_white"),
               "betons du melangeur industriel charges");
         //melangeur a vapeur : avec eau -> beton rouge ; sans eau -> poudre gris clair
         BlockPos wet = new BlockPos(2, 2, 2), dry = new BlockPos(5, 2, 2);

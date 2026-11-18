@@ -5,14 +5,14 @@
    "ingredient": {
     "item": "pioneers:sparkling_cider_tirage"
    },
-   "count": 4
+   "count": 1
   }
  ],
- "time": 9600,
+ "time": 2400,
  "results": [
   {
    "item": "pioneers:sparkling_cider",
-   "count": 4
+   "count": 1
   }
  ]
 }

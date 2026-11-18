@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "mixer",
  "tier": 0,
- "time": 40,
+ "time": 160,
  "fluids": [
   {
    "fluid": "pioneers:bio_oil",

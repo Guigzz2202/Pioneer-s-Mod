@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "rolling_mill",
  "tier": 3,
- "time": 1055,
+ "time": 400,
  "items": [
   {
    "ingredient": {

@@ -2,25 +2,25 @@
  "type": "pioneers:industrial",
  "machine": "coke_oven",
  "tier": 0,
- "time": 400,
+ "time": 200,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:coal"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:coke",
-   "count": 2
+   "count": 1
   }
  ],
  "fluid_results": [
   {
    "fluid": "pioneers:creosote",
-   "amount": 100
+   "amount": 50
   }
  ]
 }

@@ -39,7 +39,10 @@ public final class SaleBinTests {
     static Item pick(String quota, boolean refused) {
         for (Item it : BuiltInRegistries.ITEM) {
             Values.Entry e = Values.entry(it);
-            if (e != null && e.value() > 0 && quota.equals(e.quota()) && Values.peddlerBuys(it) != refused && it.getMaxStackSize() == 64) {
+            //1.0.6 : un objet dont le quart de pile vaut au moins un jeton (la pierre, premiere du registre, se vend 64 pour 0 jeton :
+            //centimes tronques par SaleBinTile.midnight)
+            if (e != null && e.value() > 0 && e.value() * 16 >= 100 && quota.equals(e.quota()) && Values.peddlerBuys(it) != refused
+                && it.getMaxStackSize() == 64) {
                 return it;
             }
         }
@@ -123,7 +126,8 @@ public final class SaleBinTests {
             long before = EconomyApi.balance(p);
             Gt.disconnect(s.server, id);
             SaleBinTile.Night n = tile.midnight(s.level);
-            Gt.check(n.refusal() == null && n.tokens() > 0, "rien vendu en l'absence du proprietaire (refus " + n.refusal() + ", jetons " + n.tokens() + ")");
+            Gt.check(n.refusal() == null && n.tokens() > 0, "rien vendu en l'absence du proprietaire (refus " + n.refusal() + ", jetons " + n.tokens()
+                  + ", objet " + raw + ", vendable " + fr.pioneers.society.economy.Trade.sellable(new ItemStack(raw)) + ", nuit " + n + ")");
             ServerPlayer q = s.reconnect(id, account, at);
             Gt.equal(before + n.tokens(), EconomyApi.balance(q), "credit du bac applique a la connexion");
             Gt.equal(SaleBinRules.night(s.level.getDayTime() + 24_000L), SaleBinRules.night(s.level.getDayTime()) + 1, "nuit suivante");

@@ -106,15 +106,27 @@ public final class SteamRules {
         return heat / 6;
     }
 
-    /** Vapeur que prend la machine a vapeur ce tick (mB) a la vitesse {@code rpm}. */
-    public static double engineNeed(double rpm) {
-        return ENGINE_USE * Math.max(ENGINE_MIN_RPM, Math.abs(rpm));
+    /**
+     * 1.0.6 (revision de la mecanique) : vapeur prise ce tick (mB) a la vitesse {@code rpm} pour la part {@code share} (0..1) du couple de
+     * demarrage rendue : proportionnelle a la PUISSANCE donnee (une machine peu chargee prend peu de vapeur, plus « 0,48 mB/t par tr/min »
+     * meme a vide) ; a pleine puissance, {@link #ENGINE_FULL_USE} mB/t comme avant au meilleur point (60 tr/min).
+     */
+    public static double engineUse(double rpm, double share) {
+        return 2 * ENGINE_USE * Math.abs(rpm) * Math.max(0, Math.min(1, share));
     }
 
-    /** Puissance mecanique de la machine a vapeur (W) a la vitesse {@code rpm} (couple tau0 (1 - w / w libre)). */
+    /** Vapeur demandee ce tick pour rendre la part {@code share} du couple de demarrage (au moins celle de 10 tr/min : lancer la machine). */
+    public static double engineNeed(double rpm, double share) {
+        return 2 * ENGINE_USE * Math.max(ENGINE_MIN_RPM, Math.abs(rpm)) * Math.max(0, Math.min(1, share));
+    }
+
+    /** Vapeur a pleine puissance (mB/t). */
+    public static final double ENGINE_FULL_USE = 2 * ENGINE_USE * ENGINE_FREE * fr.pioneers.tech.kinetics.KineticNetwork.NOMINAL_SHARE;
+
+    /** Puissance mecanique de la machine a vapeur (W) a la vitesse {@code rpm} (source regulee : puissance constante jusqu'au regime). */
     public static double enginePower(double rpm) {
         double w = Math.abs(rpm);
-        return ENGINE_TORQUE * Math.max(0, 1 - w / ENGINE_FREE) * w * 2 * Math.PI / 60;
+        return fr.pioneers.tech.kinetics.KineticNetwork.sourceCurve(ENGINE_TORQUE, ENGINE_FREE, w) * w * 2 * Math.PI / 60;
     }
 
     // ------------------------------------------------------------------ 1.0.3-beta (lot 14) : chiffres de la chaudiere de l'age du bronze

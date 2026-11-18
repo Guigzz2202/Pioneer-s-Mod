@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "assembler",
  "tier": 0,
- "time": 140,
+ "time": 160,
  "family": "component_assembler",
  "items": [
   {

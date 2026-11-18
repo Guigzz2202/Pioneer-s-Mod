@@ -237,15 +237,16 @@ public final class PatchP105Lot41Tests {
 
     // ------------------------------------------------------------------ 4. enclos (retour 67)
 
+    //1.0.6 : sur le sol du gabarit (pierre en y = 1) : en y = 1 les clotures, les abreuvoirs et la vache etaient DANS le sol
     static void fence(GameTestHelper h, int x, int z) {
-        h.setBlock(new BlockPos(x, 1, z), Blocks.OAK_FENCE.defaultBlockState());
+        h.setBlock(new BlockPos(x, 2, z), Blocks.OAK_FENCE.defaultBlockState());
     }
 
     @GameTest(template = Gt.BORDER, batch = "pioneers_p105_41_pens", timeoutTicks = 1200)
     public static void p105_41_enclos(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         //Un joueur a cote (IA pleine : loin de tout joueur, l'IA est allegee et le test serait plus lent)
-        ServerPlayer watcher = s.player("p41e", "Berger", new BlockPos(6, 1, 9));
+        ServerPlayer watcher = s.player("p41e", "Berger", new BlockPos(6, 2, 9));
         Gt.check(watcher != null, "joueur temoin");
         //Deux enclos de 5 x 5 separes par une cloture (x = 6) : A (x 1..5), B (x 7..11), z 1..5
         for (int x = 0; x <= 12; x++) {
@@ -260,7 +261,7 @@ public final class PatchP105Lot41Tests {
         //Clotures reliees (comme posees a la main)
         for (int x = 0; x <= 12; x++) {
             for (int z = 0; z <= 6; z++) {
-                BlockPos r = new BlockPos(x, 1, z);
+                BlockPos r = new BlockPos(x, 2, z);
                 BlockState st = h.getBlockState(r);
                 if (st.is(Blocks.OAK_FENCE)) {
                     h.setBlock(r, st.setValue(FenceBlock.NORTH, h.getBlockState(r.north()).is(Blocks.OAK_FENCE))
@@ -270,13 +271,13 @@ public final class PatchP105Lot41Tests {
                 }
             }
         }
-        BlockPos ownRel = new BlockPos(1, 1, 1), otherRel = new BlockPos(8, 1, 3);
+        BlockPos ownRel = new BlockPos(1, 2, 1), otherRel = new BlockPos(8, 2, 3);
         StationTiles.Trough own = station(h, ownRel, StationBlock.Kind.WATER_TROUGH, StationTiles.Trough.class);
         StationTiles.Trough other = station(h, otherRel, StationBlock.Kind.WATER_TROUGH, StationTiles.Trough.class);
         FluidStack water = new FluidStack(net.minecraft.world.level.material.Fluids.WATER, 2000);
         own.farmTank(0).fill(water.copy(), IFluidHandler.FluidAction.EXECUTE);
         other.farmTank(0).fill(water.copy(), IFluidHandler.FluidAction.EXECUTE);
-        Animal cow = (Animal) h.spawn(PiBreeds.type(AnimalSpecies.COW, 0), new BlockPos(5, 1, 3));
+        Animal cow = (Animal) h.spawn(PiBreeds.type(AnimalSpecies.COW, 0), new BlockPos(5, 2, 3));
         h.runAfterDelay(5, () -> {
             AnimalData d = PiAnimals.get(cow);
             Gt.check(d != null, "vache sans donnees d'elevage");

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "food_processor",
  "tier": 0,
- "time": 300,
+ "time": 160,
  "items": [
   {
    "ingredient": {

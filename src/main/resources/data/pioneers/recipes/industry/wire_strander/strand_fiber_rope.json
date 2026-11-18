@@ -1,9 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "wiremill",
+ "machine": "tailoring_workshop",
  "tier": 0,
- "time": 60,
- "family": "wire_strander",
+ "time": 160,
  "items": [
   {
    "ingredient": {

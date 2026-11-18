@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "minecraft:diorite"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:polished_diorite",
-  "count": 4
+  "count": 1
  }
 }

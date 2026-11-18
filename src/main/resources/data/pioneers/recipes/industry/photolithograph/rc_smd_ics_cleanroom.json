@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 2,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fine_etched_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:smd_package"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:engraving_objectives/uv"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:smd_integrated_circuit",
+   "count": 16
+  }
+ ],
+ "industrial": true
+}

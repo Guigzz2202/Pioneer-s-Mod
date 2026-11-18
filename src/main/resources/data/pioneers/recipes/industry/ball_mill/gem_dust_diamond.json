@@ -12,12 +12,6 @@
    "count": 1
   }
  ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 10
-  }
- ],
  "results": [
   {
    "item": "pioneers:diamond_dust",

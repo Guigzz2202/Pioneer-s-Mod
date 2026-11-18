@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:polished_blackstone"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:polished_blackstone_bricks",
-  "count": 4
+  "count": 1
  },
- "time": 40
+ "time": 160
 }

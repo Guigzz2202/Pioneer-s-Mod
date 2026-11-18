@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_crystal"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:euv_etched_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:engraving_objectives/euv"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:photonic_chip",
+   "count": 6
+  }
+ ],
+ "industrial": true
+}

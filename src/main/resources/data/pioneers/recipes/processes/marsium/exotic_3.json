@@ -2,37 +2,37 @@
  "type": "pioneers:industrial",
  "machine": "autoclave",
  "tier": 3,
- "time": 360,
+ "time": 180,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:marsium_salts"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "minecraft:water",
-   "amount": 500
+   "amount": 250
   }
  ],
  "gases": [
   {
    "gas": "pioneers:hydrogen",
-   "amount": 500
+   "amount": 250
   }
  ],
  "results": [
   {
    "item": "pioneers:crude_marsium",
-   "count": 2
+   "count": 1
   }
  ],
  "fluid_results": [
   {
    "fluid": "pioneers:sour_water",
-   "amount": 100
+   "amount": 50
   }
  ],
  "temperature": 250

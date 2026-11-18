@@ -1,9 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "machining_center",
+ "machine": "gear_hobber",
  "tier": 0,
- "time": 80,
- "family": "gear_hobber",
+ "time": 160,
  "items": [
   {
    "ingredient": {
@@ -22,10 +21,6 @@
   {
    "item": "pioneers:copper_gear",
    "count": 1
-  },
-  {
-   "item": "pioneers:copper_nugget",
-   "count": 4
   }
  ]
 }

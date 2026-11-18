@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "crusher",
  "tier": 0,
- "time": 100,
+ "time": 160,
  "family": "ball_mill",
  "items": [
   {
@@ -10,12 +10,6 @@
     "tag": "forge:ingots/constantan"
    },
    "count": 1
-  }
- ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 10
   }
  ],
  "results": [

@@ -6,12 +6,12 @@
    "ingredient": {
     "item": "minecraft:cobbled_deepslate"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:polished_deepslate",
-  "count": 4
+  "count": 1
  },
- "time": 40
+ "time": 160
 }

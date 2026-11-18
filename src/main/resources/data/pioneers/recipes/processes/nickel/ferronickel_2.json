@@ -1,33 +1,33 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "family": "roaster",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:crushed_pentlandite"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:oxygen",
-   "amount": 200
+   "amount": 100
   }
  ],
  "results": [
   {
    "item": "pioneers:nickel_calcine",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:sulfur_dioxide",
-   "amount": 400
+   "amount": 200
   }
  ],
  "temperature": 750

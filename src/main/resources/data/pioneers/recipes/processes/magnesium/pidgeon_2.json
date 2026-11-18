@@ -1,27 +1,27 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "family": "roaster",
  "tier": 1,
- "time": 200,
+ "time": 100,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:magnesium_hydroxide"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:magnesia",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:steam",
-   "amount": 200
+   "amount": 100
   }
  ],
  "temperature": 900

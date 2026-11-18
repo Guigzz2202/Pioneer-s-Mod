@@ -27,7 +27,7 @@ import net.minecraft.server.level.ServerPlayer;
 public final class ClanUiActions {
 
     private static final Set<String> OPS = Set.of("treaty", "war_declare", "war_ceasefire", "war_surrender", "windows", "invite_char", "claim_buy",
-          "zone_perms");
+          "zone_perms", "cl_buy");
 
     private ClanUiActions() {
     }
@@ -47,6 +47,10 @@ public final class ClanUiActions {
         String op = t.getString("op");
         if ("claim_buy".equals(op)) {
             return ClanTerritory.buy(p, t.getInt("n"), t.contains("seen") ? t.getInt("seen") : -1);
+        }
+        if ("cl_buy".equals(op)) {
+            //1.0.6 : emplacements de chunkloading achetes au tresor (stock)
+            return fr.pioneers.society.clan.territory.ClanChunkloading.buySlots(p, t.getInt("n"), t.contains("seen") ? t.getInt("seen") : -1);
         }
         if ("zone_perms".equals(op)) {
             Access.Zone zone;

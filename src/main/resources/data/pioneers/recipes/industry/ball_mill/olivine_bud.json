@@ -2,20 +2,20 @@
  "type": "pioneers:industrial",
  "machine": "crusher",
  "tier": 2,
- "time": 60,
+ "time": 80,
  "family": "ball_mill",
  "items": [
   {
    "ingredient": {
     "item": "pioneers:olivine_bud"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:crushed_olivine",
-   "count": 2
+   "count": 1
   }
  ]
 }

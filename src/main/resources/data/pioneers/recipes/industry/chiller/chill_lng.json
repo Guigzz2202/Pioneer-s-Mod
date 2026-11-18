@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "cryogenic_unit",
  "tier": 1,
- "time": 60,
+ "time": 80,
  "family": "chiller",
  "gases": [
   {

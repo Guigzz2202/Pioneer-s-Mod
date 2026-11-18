@@ -414,7 +414,9 @@ public final class PatchP104Lot13Tests {
         Gt.equal(2, pj.gasesOut, "chevalet : deux sorties de gaz (gaz associe, helium)");
         Gt.check(GeneratedFusions.WELLS.get("derrick").contains("oil"), "progres du derrick : gisement de petrole");
         Gt.equal(2, IndustryMachine.CENTRIFUGE.fluidsIn, "centrifugeuse : deux entrees de fluide (dessaleur)");
-        Gt.equal(3, IndustryMachine.GAS_SEPARATOR.fluidsOut, "Separateur de gaz : trois sorties de fluide (air liquide)");
+        //1.0.6 (audit des cases) : 6 jauges de sortie partagees (liquide ou gaz : fractions de l'air)
+        Gt.equal(6, IndustryMachine.GAS_SEPARATOR.fluidsOut, "Separateur de gaz : 6 jauges de sortie (air liquide et gaz)");
+        Gt.check(fr.pioneers.api.machine.resource.ResourceRows.pairedOut(IndustryMachine.GAS_SEPARATOR), "Separateur de gaz : sorties partagees");
         Gt.equal(IndustryMachine.Atelier.NONE, IndustryMachine.HOT_CELL.atelier, "Cellule blindee : multibloc seul");
         Gt.equal("industrial_hot_cell", IndustryMachine.HOT_CELL.multiId(), "Cellule blindee : id du controleur garde");
         Gt.check(!PiIndustry.ATELIERS.containsKey(IndustryMachine.HOT_CELL), "Cellule blindee : plus de compact");

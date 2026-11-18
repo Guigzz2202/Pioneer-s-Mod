@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "electrolyzer",
  "tier": 0,
- "time": 40,
+ "time": 160,
  "family": "fluorine_plant",
  "fluids": [
   {

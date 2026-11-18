@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "rolling_mill",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:iron_plate",
+  "count": 9
+ },
+ "time": 160
+}

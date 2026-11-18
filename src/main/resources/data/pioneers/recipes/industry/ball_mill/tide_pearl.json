@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "crusher",
  "tier": 2,
- "time": 40,
+ "time": 80,
  "family": "ball_mill",
  "items": [
   {

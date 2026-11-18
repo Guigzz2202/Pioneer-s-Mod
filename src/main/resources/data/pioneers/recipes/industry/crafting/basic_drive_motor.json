@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_basic"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:steel_screw"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:electric_motor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk1"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:planetary_gear"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:bearing"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:basic_drive_motor",
+  "count": 1
+ }
+}

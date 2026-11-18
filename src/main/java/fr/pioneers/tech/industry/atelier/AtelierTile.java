@@ -271,6 +271,12 @@ public class AtelierTile extends MachineTile implements RecipeMatch.Buffers, Rec
         return unit.gasOutputs();
     }
 
+    /** 1.0.6 : jauges de sortie partagees (liquide ou gaz) de l'unite. */
+    @Override
+    public boolean pairedOutputs() {
+        return unit instanceof RecipeMatch.Buffers b && b.pairedOutputs();
+    }
+
     public List<FluidTank> fluidInTanks() {
         return unit.fluidInputs();
     }

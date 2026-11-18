@@ -168,6 +168,7 @@ public final class BigMachines {
             case PULLER -> Lot6.puller(m, w, h, l);
             case PULSED -> Lot6.pulsed(m, w, h, l);
             case DIFFUSION -> Lot6.diffusion(m, w, h, l, prof);
+            case GANTRY -> Lot12.gantry(m, w, h, l);
             case MAGSEP -> Lot6.magSep(m, w, h, l, prof);
             case DESALTER -> Lot6.desalter(m, w, h, l);
             case MEMBRANE -> Lot6.membrane(m, w, h, l, prof);
@@ -257,6 +258,7 @@ public final class BigMachines {
             case PULLER -> Lot6.pullerLife(m, w, h, l, a);
             case PULSED -> Lot6.pulsedLife(m, w, h, l, tint, a);
             case DIFFUSION -> Lot6.diffusionLife(m, w, h, l, a);
+            case GANTRY -> Lot12.gantryLife(m, w, h, l, a);
             case MAGSEP -> Lot6.magSepLife(m, w, h, l, tint, a);
             case DESALTER -> Lot6.desalterLife(m, w, h, l, tint, a);
             case MEMBRANE -> Lot6.membraneLife(m, w, h, l, prof, tint, a);

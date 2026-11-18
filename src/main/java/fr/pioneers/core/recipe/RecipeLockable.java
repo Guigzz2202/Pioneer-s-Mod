@@ -67,6 +67,12 @@ public interface RecipeLockable {
         return recipeLock().resolve(recipeChoices());
     }
 
+    /** 1.0.6 : recette verrouillee, ou null sans verrou (jauges partagees : ResourceRows). */
+    @Nullable
+    default RecipeChoice lockedIfSet() {
+        return recipeLock().isSet() ? lockedChoice() : null;
+    }
+
     /**
      * Serveur : pose ({@code id}) ou retire ({@code null}) le verrou. Faux si la recette n'est pas une recette de cette machine (rien ne
      * change).

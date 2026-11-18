@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "chemical_bath",
  "tier": 1,
- "time": 400,
+ "time": 160,
  "family": "quench_tank",
  "items": [
   {
@@ -22,12 +22,6 @@
   {
    "item": "pioneers:drill_bit",
    "count": 2
-  }
- ],
- "gas_results": [
-  {
-   "gas": "pioneers:hydrogen",
-   "amount": 300
   }
  ]
 }

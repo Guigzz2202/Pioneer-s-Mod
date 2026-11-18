@@ -59,7 +59,8 @@ public final class IoMigration {
      */
     public static CompoundTag reload(IndustryMachine m, CompoundTag tag, List<ItemStack> overflow, boolean controller) {
         overflow.clear();
-        if (needed(m, tag)) {
+        //1.0.6 : un controleur sauve avant BUFFER_ERA a ses cases tampon d'avant (6 ou 9) meme si son io n'a pas change
+        if (needed(m, tag) || controller && tag.getBoolean("pioneers") && tag.getInt(NBT) < BUFFER_ERA) {
             return controller ? controller(m, tag, overflow) : atelier(m, tag, overflow);
         }
         loadOverflow(tag, overflow);
@@ -134,7 +135,7 @@ public final class IoMigration {
         String hint = hint(tag);
         List<Candidate> fit = new ArrayList<>();
         for (Candidate c : all) {
-            Layout l = controller ? controller(base, c.io()) : atelier(c.io());
+            Layout l = controller ? controller(base, c.io(), version < BUFFER_ERA) : atelier(c.io());
             if (l.fluids().size() == fluids && l.gases().size() == gases && maxSlot < l.items().size()) {
                 fit.add(c);
             }
@@ -208,17 +209,28 @@ public final class IoMigration {
         return new Layout(items, fluids, gases);
     }
 
-    /** Cases tampon d'un controleur (comme ControllerLayout : 6, ou 9 pour trois sortes d'objets). */
-    private static int buffer(int kinds) {
-        return kinds == 0 ? 0 : kinds <= 2 ? 6 : 9;
+    /**
+     * 1.0.6 (Guillaume, 17/11/2026 : « pourquoi autant de slots ? ») : version des cases a partir de laquelle un controleur a ses cases tampon au
+     * plus juste ({@link fr.pioneers.api.multiblock.MultiblockLayout#buffer} : 2 piles par sorte d'objet) ; avant : 6, ou 9 pour trois sortes.
+     */
+    public static final int BUFFER_ERA = 11;
+
+    /** Cases tampon d'un controleur : regle d'avant la version {@link #BUFFER_ERA} ({@code old}), sinon celle de MultiblockLayout. */
+    private static int buffer(int kinds, boolean old) {
+        return old ? kinds == 0 ? 0 : kinds <= 2 ? 6 : 9 : fr.pioneers.api.multiblock.MultiblockLayout.buffer(kinds);
     }
 
     /** Controleur de multibloc (meme ordre de declaration que ControllerTile). */
     public static Layout controller(IndustryMachine m, int[] io) {
+        return controller(m, io, false);
+    }
+
+    /** Controleur de multibloc ; {@code oldBuffer} : cases tampon d'avant la version {@link #BUFFER_ERA}. */
+    public static Layout controller(IndustryMachine m, int[] io, boolean oldBuffer) {
         List<String> items = new ArrayList<>(), fluids = new ArrayList<>(), gases = new ArrayList<>();
         boolean drill = m.kind == IndustryMachine.Kind.DRILL, tank = m.kind == IndustryMachine.Kind.TANK;
-        add(items, "in", drill ? 0 : buffer(io[0]));
-        add(items, "out", drill ? 9 : buffer(io[1]));
+        add(items, "in", drill ? 0 : buffer(io[0], oldBuffer));
+        add(items, "out", drill ? 9 : buffer(io[1], oldBuffer));
         add(fluids, "in", tank ? Math.min(1, io[2]) : io[2]);
         fluids.add("coolant0");
         add(fluids, "out", tank ? 0 : io[3]);
@@ -247,7 +259,7 @@ public final class IoMigration {
         if (!c.key().equals(m.key)) {
             LOGGER.info("Pioneer's : controleur {} relu comme {} (fusion des machines)", c.key(), m.key);
         }
-        return remap(m, tag, controller(m, c.io()), controller(m, io(m)), overflow);
+        return remap(m, tag, controller(m, c.io(), tag.getInt(NBT) < BUFFER_ERA), controller(m, io(m)), overflow);
     }
 
     /** Sorte d'une case : son nom sans le numero (in, out, battery, coolant...). */

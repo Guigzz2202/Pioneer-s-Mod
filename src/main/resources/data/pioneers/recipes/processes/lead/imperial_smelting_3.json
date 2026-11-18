@@ -3,7 +3,7 @@
  "machine": "ore_separator",
  "family": "flotation_cell",
  "tier": 0,
- "time": 200,
+ "time": 160,
  "items": [
   {
    "ingredient": {

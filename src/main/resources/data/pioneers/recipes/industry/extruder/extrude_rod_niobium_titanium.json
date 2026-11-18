@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 2,
+ "time": 145,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/niobium_titanium"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_rod"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:niobium_titanium_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:extrusion_shape_rod",
+   "count": 1
+  }
+ ]
+}

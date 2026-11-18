@@ -5,18 +5,18 @@
    "ingredient": {
     "item": "minecraft:honey_bottle"
    },
-   "count": 3
+   "count": 1
   }
  ],
  "fluid": {
   "fluid": "minecraft:water",
-  "amount": 1000
+  "amount": 334
  },
- "time": 200,
+ "time": 67,
  "results": [
   {
    "item": "minecraft:glass_bottle",
-   "count": 3
+   "count": 1
   }
  ],
  "fluid_result": {

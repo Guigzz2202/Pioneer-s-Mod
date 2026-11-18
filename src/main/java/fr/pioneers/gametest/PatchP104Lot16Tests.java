@@ -96,7 +96,11 @@ public final class PatchP104Lot16Tests {
             if (t > 0) {
                 Gt.check(takes(r, "machine_hull_" + TIERS[t - 1], 1), hull + " : machine de base du tier d'avant");
             }
-            Gt.equal(t == 0 ? 4 : 5, r.ingredients().size(), hull + " : " + (t == 0 ? 4 : 5) + " entrees");
+            //1.0.6 (Guillaume, 18/11/2026) : la machine de base MKI demande aussi un engrenage d'acier rouge (une entree de plus)
+            if (t == 0) {
+                Gt.check(takes(r, "redsteel_gear", 1), hull + " : engrenage d'acier rouge");
+            }
+            Gt.equal(5, r.ingredients().size(), hull + " : 5 entrees");
         }
         h.succeed();
     }
@@ -127,9 +131,12 @@ public final class PatchP104Lot16Tests {
         Gt.check(takes(relay, "copper_coil", 1) && takes(relay, "porcelain_insulator", 1), "relais : bobine de cuivre et porcelaine");
         Gt.check(!takes(relay, "silver_foil", 1), "relais a l'etabli : encore de l'argent (machines MK1)");
         BenchRecipe res = find(h, BenchType.REDSTONER, "components/bench/rc_carbon_resistor_bench");
-        Gt.check(res != null && takes(res, "charcoal", 1) && !takes(res, "coke", 1), "resistance au carbone : charbon de bois a l'etabli");
-        BenchRecipe board = find(h, BenchType.CARPENTER, "tiers/perforated_board_paper");
-        Gt.check(board != null && board.result().is(stack("perforated_board").getItem()), "carte perforee en carton : etabli du menuisier");
+        //1.0.5 (lot 40, regle permanente des composants cles du MKI) : la resistance garde sa piece de l'age du bronze, la boule de charbon
+        //(compacteur a vapeur), a la place du charbon de bois ; toujours pas de coke
+        Gt.check(res != null && takes(res, "coal_ball", 1) && !takes(res, "coke", 1), "resistance au carbone : boule de charbon a l'etabli");
+        //1.0.5 (lot 40, retour 54 de Guillaume : routes a la main retirees, p105_lot40.GATED) : la carte perforee se presse (presse a vapeur,
+        //presse MKI) et n'a plus de recette a l'etabli
+        Gt.check(find(h, BenchType.CARPENTER, "tiers/perforated_board_paper") == null, "carte perforee : plus de recette a l'etabli (lot 40)");
         BenchRecipe circuit = find(h, BenchType.ADVANCED_COMPONENTS, "components/bench/rc_circuit_mk1_bench");
         Gt.check(circuit != null && takes(circuit, "relay", 1) && takes(circuit, "perforated_board", 1), "circuit a tubes a l'etabli de composants avances");
         h.succeed();

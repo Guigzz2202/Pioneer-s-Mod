@@ -1,4 +1,9 @@
 {
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
  "type": "pioneers:compressing",
  "input": {
   "item": "minecraft:wheat"

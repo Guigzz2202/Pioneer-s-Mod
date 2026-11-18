@@ -56,7 +56,7 @@ public final class PatchP105Lot5Tests {
         Gt.check(e != null, "creation de " + type);
         BlockPos at = Gt.standing(s.level, abs);   // 1.0.6 : sur le sol du gabarit, pas dedans
         e.moveTo(at.getX() + 0.5, at.getY(), at.getZ() + 0.5, 0, 0);
-        s.level.addFreshEntity(e);
+        Gt.check(s.level.addFreshEntity(e), "pose de " + type + " refusee en " + at);
         s.onCleanup(() -> {
             if (!e.isRemoved()) {
                 e.discard();
@@ -136,7 +136,9 @@ public final class PatchP105Lot5Tests {
         cat.tame(p);
         cat.setLeashedTo(p, true);
         Pet led = PetHomeBlock.led(s.level, p, true);
-        Gt.check(led == cat, "le chat en laisse est trouve");
+        //1.0.6 : diagnostic (echec de la CI du 17/11, run 44139293540, introuvable en local)
+        Gt.check(led == cat, "le chat en laisse est trouve (trouve " + (led == null ? "aucun" : led.self().blockPosition()) + ", chat en " + cat.blockPosition()
+              + ", joueur en " + p.blockPosition() + ", laisse au joueur " + (cat.getLeashHolder() == p) + ")");
         PetHomeBlock.link(led, s.level, basket, p);
         Gt.equal(PetMode.AUTONOMOUS, cat.mode(), "lie : mode Autonome");
         Gt.check(cat.home() != null && cat.home().pos().equals(basket), "panier lie");
@@ -245,7 +247,12 @@ public final class PatchP105Lot5Tests {
         PiFish fish = PiFishing.create(s.level, 0, 1F);
         Gt.check(fish != null, "poisson cree");
         fish.moveTo(water.getX() + 0.5, water.getY() + 0.2, water.getZ() + 0.5, 0, 0);
-        s.level.addFreshEntity(fish);
+        //1.0.6 : un poisson laisse a portee du bassin par un test d'avant (la CI pose chaque serie a la meme place) serait pris au hasard a la
+        //place du notre (run 44130056403) : seul le poisson du test reste a portee du chat
+        for (PiFish other : s.level.getEntitiesOfClass(PiFish.class, new net.minecraft.world.phys.AABB(water).inflate(PetRules.FISH_REACH + 2))) {
+            other.discard();
+        }
+        Gt.check(s.level.addFreshEntity(fish), "poisson pose dans le monde");
         s.onCleanup(() -> {
             if (!fish.isRemoved()) {
                 fish.discard();
@@ -256,7 +263,8 @@ public final class PatchP105Lot5Tests {
         PetHomeBlock.link(cat, s.level, basket, p);
         ItemStack caught = PetGoals.catchFish(cat, water, true);
         Gt.check(!caught.isEmpty(), "le chat attrape un poisson");
-        Gt.check(fish.isRemoved(), "c'est le vrai poisson du coin (population des poissons respectee)");
+        Gt.check(fish.isRemoved(), "c'est le vrai poisson du coin (population des poissons respectee ; poisson en " + fish.blockPosition() + ", bassin "
+              + water + ")");
         PetGoals.deposit(cat, basket, caught);
         Gt.check(s.level.getBlockEntity(basket) instanceof CatBasketTile t && !t.empty(), "le poisson est dans le panier");
         Gt.check(s.level.getBlockEntity(basket) instanceof CatBasketTile t2 && t2.comparator() > 0, "comparateur du panier");

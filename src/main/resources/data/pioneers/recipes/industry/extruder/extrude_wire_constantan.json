@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 0,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/constantan"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_wire"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:constantan_wire",
+   "count": 2
+  },
+  {
+   "item": "pioneers:extrusion_shape_wire",
+   "count": 1
+  }
+ ]
+}

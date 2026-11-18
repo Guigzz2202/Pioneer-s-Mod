@@ -130,7 +130,7 @@ public final class PatchP105Lot27Tests {
         Gt.check(recipe(h, "bronze/steam/macerator/tuff_alluvial_gravel").isEmpty(), "broyeur a vapeur : doublon du tuf retire");
         Gt.check(fr.pioneers.api.machine.tier.TierRecipes.byId(h.getLevel(), "broyage", fr.pioneers.Pioneers.rl("mechanical/jaw_crushing/tuff_to_alluvial_gravel")) != null,
               "broyeur a vapeur : tuf par la recette du concasseur");
-        for (String path : new String[]{"bronze/bench/tuff_alluvial_gravel", "crushing/tuff"}) {
+        for (String path : new String[]{"bronze/bench/tuff_alluvial_gravel"}) {
             Optional<? extends Recipe<?>> r = recipe(h, path);
             Gt.check(r.isPresent(), "recette absente : " + path);
             Gt.equal(alluvial, id(r.get().getResultItem(h.getLevel().registryAccess())), "produit de " + path);

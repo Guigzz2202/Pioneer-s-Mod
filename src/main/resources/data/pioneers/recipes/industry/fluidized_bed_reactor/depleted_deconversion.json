@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 1,
- "time": 240,
+ "time": 160,
  "family": "fluidized_bed_reactor",
  "gases": [
   {

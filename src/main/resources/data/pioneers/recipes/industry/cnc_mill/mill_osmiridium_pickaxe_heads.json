@@ -1,6 +1,6 @@
 {
  "type": "pioneers:industrial",
- "machine": "machining_center",
+ "machine": "power_hammer",
  "tier": 3,
  "time": 400,
  "family": "cnc_mill",
@@ -10,12 +10,6 @@
     "item": "pioneers:osmiridium_billet"
    },
    "count": 1
-  }
- ],
- "fluids": [
-  {
-   "fluid": "pioneers:lubricant",
-   "amount": 50
   }
  ],
  "results": [

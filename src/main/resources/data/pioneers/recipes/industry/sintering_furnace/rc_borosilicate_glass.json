@@ -1,27 +1,27 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "tier": 0,
- "time": 140,
+ "time": 160,
  "family": "sintering_furnace",
  "items": [
   {
    "ingredient": {
     "tag": "forge:glass"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:diborane",
-   "amount": 50
+   "amount": 25
   }
  ],
  "results": [
   {
    "item": "pioneers:borosilicate_glass",
-   "count": 2
+   "count": 1
   }
  ]
 }

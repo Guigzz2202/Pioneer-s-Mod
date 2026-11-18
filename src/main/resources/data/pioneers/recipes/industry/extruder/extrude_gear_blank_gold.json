@@ -2,13 +2,13 @@
  "type": "pioneers:industrial",
  "machine": "extruder",
  "tier": 0,
- "time": 180,
+ "time": 160,
  "items": [
   {
    "ingredient": {
-    "tag": "forge:billets/gold"
+    "tag": "forge:ingots/gold"
    },
-   "count": 1
+   "count": 5
   },
   {
    "ingredient": {
@@ -20,7 +20,7 @@
  "results": [
   {
    "item": "pioneers:gold_gear_blank",
-   "count": 2
+   "count": 1
   },
   {
    "item": "pioneers:extrusion_shape_gear_blank",

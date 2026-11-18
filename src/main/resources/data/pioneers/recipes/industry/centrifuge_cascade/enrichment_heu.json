@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "centrifuge_cascade",
  "tier": 3,
- "time": 800,
+ "time": 400,
  "gases": [
   {
    "gas": "pioneers:haleu_hexafluoride",

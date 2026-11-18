@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "blast_furnace",
  "tier": 2,
- "time": 500,
+ "time": 400,
  "items": [
   {
    "ingredient": {

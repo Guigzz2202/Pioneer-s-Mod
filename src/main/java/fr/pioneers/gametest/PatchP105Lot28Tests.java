@@ -3,6 +3,7 @@ package fr.pioneers.gametest;
 import fr.pioneers.core.common.PiRemaps;
 import fr.pioneers.farm.FarmIds;
 import fr.pioneers.farm.PiFishing;
+import fr.pioneers.farm.fish.PiFish;
 import fr.pioneers.world.pet.CatBasketTile;
 import fr.pioneers.world.pet.PetCat;
 import fr.pioneers.world.pet.PetDog;
@@ -96,19 +97,33 @@ public final class PatchP105Lot28Tests {
         ServerPlayer p = s.player("p28c", "Lise", new BlockPos(2, 1, 2));
         BlockPos basket = h.absolutePos(new BlockPos(4, 1, 10));
         s.level.setBlock(basket, PiPets.BASKETS.get(2).getBlock().defaultBlockState(), 3);
-        BlockPos water = h.absolutePos(new BlockPos(12, 0, 10));
+        //1.0.6 : la mare au niveau du sol du gabarit (y = 1) ; en y = 0 elle etait sous la pierre, hors de portee du chat
+        BlockPos water = h.absolutePos(new BlockPos(12, 1, 10));
         for (int dx = -1; dx <= 1; dx++) {
             for (int dz = -1; dz <= 1; dz++) {
                 s.level.setBlock(water.offset(dx, 0, dz), Blocks.WATER.defaultBlockState(), 3);
             }
         }
+        //1.0.6 : un vrai poisson dans la mare : sans lui, la prise depend du biome et de la saison du lieu du test (FishSpawns.pickWild), qui
+        //changent a chaque run de la CI
+        PiFish fish = PiFishing.create(s.level, 0, 1F);
+        Gt.check(fish != null, "poisson cree");
+        fish.moveTo(water.getX() + 0.5, water.getY() + 0.2, water.getZ() + 0.5, 0, 0);
+        s.level.addFreshEntity(fish);
+        s.onCleanup(() -> {
+            if (!fish.isRemoved()) {
+                fish.discard();
+            }
+        });
         PetCat cat = add(s, PiPets.CATS.get(5).get(), h.absolutePos(new BlockPos(6, 1, 10)));
         cat.tame(p);
         PetHomeBlock.link(cat, s.level, basket, p);
         cat.brain().testCatch = true;
         cat.brain().nextFish = 0;
         h.succeedWhen(() -> {
-            Gt.check(s.level.getBlockEntity(basket) instanceof CatBasketTile t && !t.empty(), "un poisson peche est dans le panier");
+            Gt.check(s.level.getBlockEntity(basket) instanceof CatBasketTile t && !t.empty(), "un poisson peche est dans le panier (chat en "
+                  + cat.blockPosition() + ", jour " + s.level.isDay() + ", coin " + cat.brain().fishWater + " / " + cat.brain().fishBank + ", porte "
+                  + cat.brain().carried + ", mode " + cat.mode() + ", poisson pris " + fish.isRemoved() + ", chat vie " + cat.getHealth() + ")");
             s.done();
         });
     }

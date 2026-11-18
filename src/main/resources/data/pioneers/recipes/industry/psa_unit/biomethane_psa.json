@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "gas_separator",
  "tier": 1,
- "time": 60,
+ "time": 80,
  "family": "psa_unit",
  "items": [
   {

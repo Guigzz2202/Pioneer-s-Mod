@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 3,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fine_etched_wafer"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/tin"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:engraving_objectives/euv"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 50
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:euv_etched_wafer",
+   "count": 1
+  }
+ ]
+}

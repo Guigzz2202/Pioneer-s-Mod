@@ -12,12 +12,6 @@
    "count": 4
   }
  ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 100
-  }
- ],
  "results": [
   {
    "item": "pioneers:reclaimed_silicon",

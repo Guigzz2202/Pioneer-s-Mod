@@ -272,7 +272,7 @@ final class MultiProcess extends MachineUnit {
                 duration = GeneratorOutput.duration(r.time(), c.tier());
                 batchPower = Math.round(k * GeneratorOutput.exactPerTick(r, c.tier(), true));
             } else {
-                duration = Tiers.ticks(r.time(), c.tier(), r.tier(), true);
+                duration = Tiers.ticks(r.time(), c.tier(), r.tier(), true, c.machine);
                 if (r.draws() != null) {
                     duration = (int) Math.max(1, Math.round(duration / c.ownerFactor("salvage.sort_speed")));
                 }

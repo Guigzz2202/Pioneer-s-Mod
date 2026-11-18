@@ -8,7 +8,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.TierSortingRegistry;
 
 /**
@@ -89,7 +88,9 @@ public enum ModularTier {
     /** Materiau d'outil (niveau de minage 4, apres la netherite) ; enregistre au premier appel. */
     public synchronized Tier toolTier() {
         if (toolTier == null) {
-            toolTier = new ForgeTier(4, 0, digSpeed, bladeDamage - 1, 0, Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.EMPTY);
+            //1.0.6 : balise propre (vide), voir PiTiers
+            toolTier = new ForgeTier(4, 0, digSpeed, bladeDamage - 1, 0, net.minecraft.tags.BlockTags.create(Pioneers.rl("needs_modular_" + id() + "_tool")),
+                  () -> Ingredient.EMPTY);
             TierSortingRegistry.registerTier(toolTier, Pioneers.rl("modular_" + id()), List.of(Tiers.NETHERITE), List.of());
         }
         return toolTier;

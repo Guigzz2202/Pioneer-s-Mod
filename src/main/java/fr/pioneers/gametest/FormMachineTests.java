@@ -92,7 +92,10 @@ public final class FormMachineTests {
     @GameTest(template = Gt.SMALL, batch = "pioneers_lot4a_enrouleuse", timeoutTicks = 600)
     public static void enrouleuse_ressorts(GameTestHelper h) {
         Gt.begin(h);
-        //1.0.6 : la recette actuelle enroule 2 tiges (2 x 72 mB = 144 mB, le ressort) ; plus de recette depuis le fil
+        //1.0.6 : on enroule 2 tiges (2 x 72 mB = 144 mB, le ressort) ; plus de recette depuis le fil. Guillaume, 17/11 (« les ressorts doivent
+        //etre faisables dans la cintreuse ») : la Cintreuse garde ses propres recettes de ressort (plus de renvoi vers celle du tour)
+        Gt.equal(rl("industry/spring_coiler/coil_rod_spring_brass"), fr.pioneers.core.common.PiRemaps.recipeId(rl("industry/spring_coiler/coil_rod_spring_brass")),
+              "recette de la Cintreuse gardee");
         AtelierTile m = atelier(h, IndustryMachine.BENDER, new BlockPos(2, 2, 2), "industry/spring_coiler/coil_rod_spring_brass");
         m.itemInputs().get(0).setStack(new ItemStack(item("brass_rod"), 4));
         Item spring = item("brass_spring");
@@ -106,16 +109,18 @@ public final class FormMachineTests {
     public static void tailleuse_engrenage_et_copeaux(GameTestHelper h) {
         Gt.begin(h);
         //1.0.6 : la taille d'une ebauche d'engrenage est la recette hob_gear (cut_gear part de la plaque)
-        AtelierTile m = atelier(h, IndustryMachine.MACHINING_CENTER, new BlockPos(2, 2, 2), "industry/gear_hobber/hob_gear_bronze");
+        //1.0.6 : la tailleuse est rendue (Decoupeuse)
+        AtelierTile m = atelier(h, IndustryMachine.GEAR_HOBBER, new BlockPos(2, 2, 2), "industry/gear_hobber/hob_gear_bronze");
         m.itemInputs().get(0).setStack(new ItemStack(item("bronze_gear_blank"), 1));
         //la taille se fait au lubrifiant (50 mB)
         m.fluidInputs().get(0).setFluid(new net.minecraftforge.fluids.FluidStack(net.minecraftforge.registries.ForgeRegistries.FLUIDS
               .getValue(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("pioneers", "lubricant")), 1_000));
         Item gear = item("bronze_gear"), nugget = item("bronze_nugget");
+        //1.0.6 (Guillaume, 17/11 : « la decoupeuse ne rend plus de pepite quand elle fait un engrenage ») : aucun copeau
         h.succeedWhen(() -> {
             m.getEnergy().setStored(m.getEnergy().getCapacity());
             Gt.equal(1, count(m, gear), "engrenage taille");
-            Gt.equal(4, count(m, nugget), "copeaux en pepites");
+            Gt.equal(0, count(m, nugget), "aucun copeau en pepites");
         });
     }
 

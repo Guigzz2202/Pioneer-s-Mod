@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "gravity_compressor",
  "tier": 3,
- "time": 1000,
+ "time": 400,
  "items": [
   {
    "ingredient": {

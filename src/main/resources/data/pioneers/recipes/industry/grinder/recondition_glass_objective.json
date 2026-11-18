@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "machining_center",
  "tier": 1,
- "time": 240,
+ "time": 160,
  "family": "grinder",
  "items": [
   {
@@ -22,12 +22,6 @@
     "item": "pioneers:diamond_dust"
    },
    "count": 1
-  }
- ],
- "fluids": [
-  {
-   "fluid": "minecraft:water",
-   "amount": 100
   }
  ],
  "results": [

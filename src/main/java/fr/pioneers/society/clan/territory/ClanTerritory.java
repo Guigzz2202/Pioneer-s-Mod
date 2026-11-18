@@ -57,8 +57,8 @@ public final class ClanTerritory {
     public static TerritoryRules.Budget rules() {
         TerritoryDefs d = TerritoryDefs.get();
         return new TerritoryRules.Budget(PiCommonConfig.get(RpConfig.CLAIM_BASE, 9), PiCommonConfig.get(RpConfig.CLAIM_PER_MEMBER, 3),
-              PiCommonConfig.get(RpConfig.CLAIM_PER_LEVEL, 4), PiCommonConfig.get(RpConfig.CLAIM_MAX, 400),
-              PiCommonConfig.get(RpConfig.CLAIM_SOLO_MAX, 100), d.cooperativeBonus);
+              PiCommonConfig.get(RpConfig.CLAIM_PER_LEVEL, 4), PiCommonConfig.get(RpConfig.CLAIM_MAX, 0),
+              PiCommonConfig.get(RpConfig.CLAIM_SOLO_MAX, 0), d.cooperativeBonus);
     }
 
     /** Budget de claims du clan maintenant (membres actifs, niveau, regime) ; 1.0.3-beta (lot 16) : plus les claims achetes au tresor. */
@@ -74,7 +74,7 @@ public final class ClanTerritory {
     /** 1.0.3-beta (lot 16) : reglages de l'achat de claims (configuration du serveur, section clans). */
     public static TerritoryRules.Purchase purchase() {
         return new TerritoryRules.Purchase(PiCommonConfig.get(RpConfig.CLAIM_PRICE, 100L),
-              PiCommonConfig.get(RpConfig.CLAIM_BUY_MAX, 200), PiCommonConfig.get(RpConfig.CLAIM_BUY_SOLO_MAX, 50));
+              PiCommonConfig.get(RpConfig.CLAIM_BUY_MAX, 0), PiCommonConfig.get(RpConfig.CLAIM_BUY_SOLO_MAX, 0));
     }
 
     /**

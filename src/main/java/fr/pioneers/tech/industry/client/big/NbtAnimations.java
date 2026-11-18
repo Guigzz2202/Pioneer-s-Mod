@@ -18,6 +18,13 @@ import java.util.Map;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import fr.pioneers.Pioneers;
+import net.minecraft.resources.ResourceLocation;
+import org.joml.Matrix3f;
+import org.joml.Matrix4f;
+import fr.pioneers.api.multiblock.StructureMatcher;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -70,6 +77,15 @@ public final class NbtAnimations {
         boolean active = state.hasProperty(MachineBlock.ACTIVE) && state.getValue(MachineBlock.ACTIVE);
         draw(level, tile.getBlockPos(), state.getValue(ControllerBlock.FACING), s.cx(), s.cy(), s.cz(), anim, active, painted - 1, partialTick, pose,
               buffers);
+        //1.0.6 : blocs qui rougeoient en marche (bobines de chauffe du Calcinateur)
+        String glow = GeneratedNbtModels.glow(tile.machine.key);
+        if (glow != null) {
+            Regime r = regime(tile.getBlockPos(), RenderClock.clientTicks());
+            float k = ease(r.speed);
+            if (k > 0.01F) {
+                glow(tile.getBlockPos(), state.getValue(ControllerBlock.FACING), s, glow, k, r.phase + partialTick * ease(r.speed), pose, buffers);
+            }
+        }
         //1.0.4-beta (lot 26) : vraies plantes de la recette en cours (ferme hydroponique, plantation forestiere)
         GrowRender.draw(tile, level, tile.getBlockPos(), state.getValue(ControllerBlock.FACING), s, active, partialTick, pose, buffers);
     }
@@ -142,6 +158,104 @@ public final class NbtAnimations {
                   BlockPos.containing(p[0], p[1], p[2])));
             pose.popPose();
         }
+    }
+
+    /** 1.0.6 : lueur des bobines de chauffe (intensite dans le RGB, fond noir : RenderType.eyes est additif). */
+    private static final ResourceLocation COIL_GLOW = Pioneers.rl("textures/block/industry/fx/coil_glow.png");
+    private static final int FULL_BRIGHT = 0xF000F0;
+    private static final String SOLID = "KCSFGBHRDPWVLMUZI";
+
+    /**
+     * 1.0.6 : les blocs des lettres {@code letters} de la structure ROUGEOIENT en marche : un voile additif (orange, qui pulse lentement,
+     * decale d'un bloc a l'autre) sur chacune de leurs faces visibles (voisine hors de la structure ou case libre), a 0,002 bloc devant la
+     * face. Faces calculees une fois par structure ({@link #GLOW_FACES}, rien d'alloue a chaque image) ; un seul tampon, en passe a part.
+     */
+    static void glow(BlockPos c, Direction front, GeneratedNbtShapes.Shape s, String letters, float k, float phase, PoseStack pose,
+          MultiBufferSource buffers) {
+        float[] faces = glowFaces(c, front, s, letters);
+        if (faces.length == 0) {
+            return;
+        }
+        VertexConsumer b = buffers.getBuffer(RenderType.eyes(COIL_GLOW));
+        Matrix4f m = pose.last().pose();
+        Matrix3f nm = pose.last().normal();
+        for (int f = 0; f < faces.length; f += 5) {
+            float i = k * (0.72F + 0.28F * (float) Math.sin(phase * 0.06F + faces[f + 4]));
+            face(b, m, nm, DIRECTIONS[(int) faces[f + 3]], faces[f], faces[f + 1], faces[f + 2], 0.002F, i, 0.42F * i, 0.1F * i);
+        }
+    }
+
+    private static final Direction[] DIRECTIONS = Direction.values();
+    /** Faces visibles des blocs qui rougeoient, par controleur et facade : {ox, oy, oz, direction, decalage de phase} x n. */
+    private static final Map<Long, float[]> GLOW_FACES = new HashMap<>();
+
+    private static float[] glowFaces(BlockPos c, Direction front, GeneratedNbtShapes.Shape s, String letters) {
+        long key = c.asLong() * 31 + front.ordinal();
+        float[] got = GLOW_FACES.get(key);
+        if (got != null) {
+            return got;
+        }
+        if (GLOW_FACES.size() > 64) {
+            GLOW_FACES.clear();
+        }
+        java.util.List<Float> out = new java.util.ArrayList<>();
+        for (int y = 0; y < s.sy(); y++) {
+            for (int z = 0; z < s.sz(); z++) {
+                for (int x = 0; x < s.sx(); x++) {
+                    if (letters.indexOf(s.at(x, y, z)) < 0) {
+                        continue;
+                    }
+                    BlockPos p = NbtAnims.cell(c, front, s.cx(), s.cy(), s.cz(), x, y, z);
+                    for (Direction d : DIRECTIONS) {
+                        int[] q = StructureMatcher.relative(c, front, p.relative(d));
+                        int qx = q[0] + s.cx(), qy = q[1] + s.cy(), qz = q[2] + s.cz();
+                        boolean inside = qx >= 0 && qy >= 0 && qz >= 0 && qx < s.sx() && qy < s.sy() && qz < s.sz();
+                        if (inside && SOLID.indexOf(s.at(qx, qy, qz)) >= 0) {
+                            continue;                                   //face cachee par un bloc de la structure (ou l'interieur)
+                        }
+                        out.add((float) (p.getX() - c.getX()));
+                        out.add((float) (p.getY() - c.getY()));
+                        out.add((float) (p.getZ() - c.getZ()));
+                        out.add((float) d.ordinal());
+                        out.add((x + 2 * y + 3 * z) * 0.9F);
+                    }
+                }
+            }
+        }
+        float[] arr = new float[out.size()];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = out.get(i);
+        }
+        GLOW_FACES.put(key, arr);
+        return arr;
+    }
+
+    /** Une face du cube (ox, oy, oz) poussee de {@code e} vers l'exterieur, UV 0..1 (sans allocation). */
+    private static void face(VertexConsumer b, Matrix4f m, Matrix3f nm, Direction d, float ox, float oy, float oz, float e, float r, float g,
+          float bl) {
+        float x0 = ox - e, y0 = oy - e, z0 = oz - e, x1 = ox + 1 + e, y1 = oy + 1 + e, z1 = oz + 1 + e;
+        switch (d) {
+            case UP -> quad(b, m, nm, d, x0, y1, z0, x0, y1, z1, x1, y1, z1, x1, y1, z0, r, g, bl);
+            case DOWN -> quad(b, m, nm, d, x0, y0, z1, x0, y0, z0, x1, y0, z0, x1, y0, z1, r, g, bl);
+            case NORTH -> quad(b, m, nm, d, x1, y1, z0, x1, y0, z0, x0, y0, z0, x0, y1, z0, r, g, bl);
+            case SOUTH -> quad(b, m, nm, d, x0, y1, z1, x0, y0, z1, x1, y0, z1, x1, y1, z1, r, g, bl);
+            case WEST -> quad(b, m, nm, d, x0, y1, z0, x0, y0, z0, x0, y0, z1, x0, y1, z1, r, g, bl);
+            case EAST -> quad(b, m, nm, d, x1, y1, z1, x1, y0, z1, x1, y0, z0, x1, y1, z0, r, g, bl);
+        }
+    }
+
+    private static void quad(VertexConsumer b, Matrix4f m, Matrix3f nm, Direction d, float ax, float ay, float az, float bx, float by, float bz,
+          float cx, float cy, float cz, float dx, float dy, float dz, float r, float g, float bl) {
+        vertex(b, m, nm, d, ax, ay, az, 0, 0, r, g, bl);
+        vertex(b, m, nm, d, bx, by, bz, 0, 1, r, g, bl);
+        vertex(b, m, nm, d, cx, cy, cz, 1, 1, r, g, bl);
+        vertex(b, m, nm, d, dx, dy, dz, 1, 0, r, g, bl);
+    }
+
+    private static void vertex(VertexConsumer b, Matrix4f m, Matrix3f nm, Direction d, float x, float y, float z, float u, float v, float r,
+          float g, float bl) {
+        b.vertex(m, x, y, z).color(r, g, bl, 1F).uv(u, v).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(FULL_BRIGHT)
+              .normal(nm, d.getStepX(), d.getStepY(), d.getStepZ()).endVertex();
     }
 
     /**

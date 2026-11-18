@@ -1,33 +1,33 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "family": "roaster",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:lead_zinc_concentrate"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "gases": [
   {
    "gas": "pioneers:oxygen",
-   "amount": 250
+   "amount": 125
   }
  ],
  "results": [
   {
    "item": "pioneers:lead_zinc_sinter",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:sulfur_dioxide",
-   "amount": 400
+   "amount": 200
   }
  ],
  "temperature": 800

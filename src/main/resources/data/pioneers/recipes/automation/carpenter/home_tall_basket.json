@@ -1,8 +1,8 @@
 {
  "type": "pioneers:industrial",
- "machine": "assembler",
+ "machine": "joinery",
  "tier": 0,
- "time": 230,
+ "time": 160,
  "items": [
   {
    "ingredient": {

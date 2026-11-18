@@ -8,13 +8,13 @@
    "ingredient": {
     "item": "pioneers:hardened_steel_ingot"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:tempered_steel_ingot",
-   "count": 2
+   "count": 1
   }
  ]
 }

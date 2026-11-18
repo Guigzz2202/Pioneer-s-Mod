@@ -1,4 +1,9 @@
 {
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
  "type": "pioneers:industrial",
  "machine": "cryogenic_unit",
  "tier": 1,

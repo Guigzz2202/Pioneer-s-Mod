@@ -2,25 +2,25 @@
  "type": "pioneers:industrial",
  "machine": "fermenter",
  "tier": 0,
- "time": 480,
+ "time": 60,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:barley"
    },
-   "count": 8
+   "count": 1
   }
  ],
  "fluids": [
   {
    "fluid": "minecraft:water",
-   "amount": 500
+   "amount": 63
   }
  ],
  "results": [
   {
    "item": "pioneers:green_malt",
-   "count": 8
+   "count": 1
   }
  ]
 }

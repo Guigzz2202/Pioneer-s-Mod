@@ -87,7 +87,7 @@ public final class BenchesE1Tests {
         Gt.begin(h);
         //1.0.4-beta (lot 14) : l'assembleur de composants est fondu dans l'Assembleur : le roulement y revient (meme id de recette) ; une
         //recette d'une autre machine (la Presse) reste un verrou a effacer
-        ResourceLocation moved = rl("industry/press/press_plate_iron");
+        ResourceLocation moved = rl("industry/press/press_plate_zircaloy");
         AtelierTile assembler = atelier(h, IndustryMachine.ASSEMBLER);
         assembler.recipeLock().set(moved);                                  // verrou d'une recette d'une autre machine
         Gt.check(assembler.dropMissingLock(), "le verrou d'une recette partie ailleurs doit etre efface");

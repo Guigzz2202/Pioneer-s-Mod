@@ -144,7 +144,8 @@ public final class MachineApi7Tests {
         roundTrip(a, b, "energy", "excitation", "speed");
         Gt.equal(12_345L, b.guiValue(0), "reserve relue (indice 0)");
         Gt.equal(1L, b.guiValue(7), "excitation relue (indice 7)");
-        Gt.equal(13, b.uiValues().size(), "valeurs de la dynamo");
+        //1.0.6 : + la commande redstone (onglet Redstone, comme les machines compactes)
+        Gt.equal(14, b.uiValues().size(), "valeurs de la dynamo");
         Gt.equal(DynamoTile.RATED_FE[1], b.guiValue(9), "puissance nominale du tier (indice 9)");
         Gt.check(b instanceof MachineGui && b.guiHeight() == StandardLayout.ZONE, "interface v2 de la dynamo");
         s.done();

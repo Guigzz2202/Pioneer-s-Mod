@@ -137,7 +137,8 @@ public final class PatchP105Lot31Tests {
             used += p.getInventory().getItem(i).isEmpty() ? 0 : 1;
         }
         Gt.check(used <= 3, "inventaire presque vide : le ble et le sac (" + used + " cases)");
-        Gt.check(s.level.getBlockState(o).getBlock() == wheat && !wheat.isMaxAge(s.level.getBlockState(o)), "le champ est replante");
+        Gt.check(s.level.getBlockState(o).getBlock() == wheat && !wheat.isMaxAge(s.level.getBlockState(o)), "le champ est replante (" + s.level.getBlockState(o)
+              + ", dessous " + s.level.getBlockState(o.below()) + ")");
         //semis 3 x 3 depuis le sac (clic droit sur la terre labouree du centre) : les 8 voisines ont deja une pousse, on vide d'abord
         BlockPos sow = h.absolutePos(new BlockPos(14, 1, 14));
         for (int dx = -1; dx <= 1; dx++) {

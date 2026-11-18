@@ -1,0 +1,49 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 2,
+ "time": 90,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:block_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_aluminium",
+   "amount": 1364
+  },
+  {
+   "fluid": "pioneers:liquid_nitrogen",
+   "amount": 225
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aluminium_block",
+   "count": 1
+  },
+  {
+   "item": "pioneers:block_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:aluminium_nugget",
+   "count": 4
+  },
+  {
+   "item": "pioneers:aluminium_nugget",
+   "count": 1,
+   "chance": 0.25
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 1710
+  }
+ ]
+}

@@ -150,7 +150,14 @@ public class Elephant extends WildAnimal {
 
     @Override
     protected void playStepSound(@NotNull BlockPos pos, @NotNull BlockState state) {
-        playSound(SoundEvents.RAVAGER_STEP, 0.35F, 0.7F);
+        //1.0.6 (Guillaume, 17/11 : pas beaucoup trop forts, « un genre de bruit de verre casse ») : le pas du ravageur ralenti craquait
+        //comme du verre ; pas sourd et feutre du renifleur (gros animal), bas et grave, un pas tous les deux blocs (nextStep)
+        playSound(SoundEvents.SNIFFER_STEP, 0.22F, 0.72F);
+    }
+
+    @Override
+    protected float nextStep() {
+        return (int) moveDist + 2.2F;
     }
 
     @Override

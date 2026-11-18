@@ -3,7 +3,7 @@
  "machine": "cryogenic_unit",
  "family": "plate_heat_exchanger",
  "tier": 0,
- "time": 80,
+ "time": 160,
  "fluids": [
   {
    "fluid": "minecraft:water",

@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:steam_processing",
+ "machine": "rolling_mill",
+ "inputs": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/redsteel"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:redsteel_plate",
+  "count": 9
+ },
+ "time": 160
+}

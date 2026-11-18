@@ -1,0 +1,82 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "facing": "north",
+    "active": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_tailoring_workshop"
+   }
+  },
+  {
+   "when": {
+    "facing": "north",
+    "active": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_tailoring_workshop_on"
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "active": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_tailoring_workshop",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "east",
+    "active": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_tailoring_workshop_on",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "active": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_tailoring_workshop",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "south",
+    "active": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_tailoring_workshop_on",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "active": "false"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_tailoring_workshop",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "facing": "west",
+    "active": "true"
+   },
+   "apply": {
+    "model": "pioneers:block/industry/industrial_tailoring_workshop_on",
+    "y": 270
+   }
+  }
+ ]
+}

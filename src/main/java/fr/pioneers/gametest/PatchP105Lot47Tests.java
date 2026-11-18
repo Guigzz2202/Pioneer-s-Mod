@@ -38,7 +38,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 public final class PatchP105Lot47Tests {
 
     /** Recette MKI ouverte (lot 47) et recette MKI fermee de la famille « trefilage ». */
-    static final ResourceLocation OPEN = Pioneers.rl("industry/wiremill/hemp_string"), CLOSED = Pioneers.rl("industry/wiremill/wire_nickel");
+    //1.0.6 : la ficelle de chanvre se file a l'Atelier de confection : la recette ouverte est le toronnage d'un fil de cuivre
+    static final ResourceLocation OPEN = Pioneers.rl("industry/wire_strander/strand_rope_copper"), CLOSED = Pioneers.rl("industry/wiremill/wire_nickel");
 
     private PatchP105Lot47Tests() {
     }
@@ -79,13 +80,13 @@ public final class PatchP105Lot47Tests {
         Gt.equal((long) mki.time() * GeneratedTierFamilies.OPEN_SLOWDOWN, t.duration(1), "deux fois plus lente qu'au MKI");
         Gt.check(t.yieldFactor(1) == 1.0, "sans rendement");
         Gt.check(TierRecipes.choices(s.level, "trefilage").stream().map(RecipeChoice::id).anyMatch(OPEN::equals), "au selecteur");
-        Gt.check(TierRecipes.accepts(s.level, "trefilage", new ItemStack(item("hemp_fiber"))), "fibre de chanvre acceptee a l'entree");
+        Gt.check(TierRecipes.accepts(s.level, "trefilage", new ItemStack(item("copper_wire"))), "fil de cuivre accepte a l'entree");
         SteamProcessTile mill = place(h, new BlockPos(2, 1, 2), SteamMachine.WIREMILL);
         Gt.check(mill.process().setLockedRecipe(OPEN), "verrou du selecteur sur la recette ouverte");
-        mill.inputs().get(0).setStack(new ItemStack(item("hemp_fiber"), 1));
+        mill.inputs().get(0).setStack(new ItemStack(item("copper_wire"), 1));
         Gt.check(mill.process().craftNow(), "la trefileuse a vapeur fait la recette MKI ouverte");
-        Gt.equal(3, count(mill.guiSlots(), Items.STRING), "fibre de chanvre -> 3 ficelles, comme au MKI");
-        Gt.equal(0, count(mill.inputs(), item("hemp_fiber")), "la fibre est prise");
+        Gt.equal(1, count(mill.guiSlots(), item("copper_wire_rope")), "fil de cuivre -> 1 cable tresse, comme au MKI");
+        Gt.equal(0, count(mill.inputs(), item("copper_wire")), "le fil est pris");
         s.done();
     }
 

@@ -3,7 +3,7 @@
  "machine": "assembler",
  "family": "logistics_assembler",
  "tier": 1,
- "time": 200,
+ "time": 160,
  "items": [
   {
    "ingredient": {

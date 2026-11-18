@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pick_and_place",
+ "tier": 0,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:machine_frame_basic"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:circuit_mk1"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/brass"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/brass"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:gears/redsteel"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:machine_hull_basic",
+   "count": 4
+  }
+ ]
+}

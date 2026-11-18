@@ -1,0 +1,44 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "casting_machine",
+ "tier": 1,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:block_die"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:molten_gold",
+   "amount": 1440
+  },
+  {
+   "fluid": "pioneers:coolant",
+   "amount": 450
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gold_block",
+   "count": 1
+  },
+  {
+   "item": "pioneers:block_die",
+   "count": 1
+  },
+  {
+   "item": "pioneers:gold_nugget",
+   "count": 9
+  }
+ ],
+ "fluid_results": [
+  {
+   "fluid": "pioneers:hot_coolant",
+   "amount": 450
+  }
+ ]
+}

@@ -2,13 +2,13 @@
  "type": "pioneers:industrial",
  "machine": "extruder",
  "tier": 0,
- "time": 200,
+ "time": 160,
  "items": [
   {
    "ingredient": {
-    "tag": "forge:billets/copper"
+    "tag": "forge:ingots/copper"
    },
-   "count": 1
+   "count": 5
   },
   {
    "ingredient": {
@@ -20,7 +20,7 @@
  "results": [
   {
    "item": "pioneers:copper_gear_blank",
-   "count": 2
+   "count": 1
   },
   {
    "item": "pioneers:extrusion_shape_gear_blank",

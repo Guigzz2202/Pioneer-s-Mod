@@ -40,12 +40,14 @@ public final class PatchP103Lot16Tests {
         Gt.Scope s = Gt.begin(h);
         TerritoryRules.Purchase p = ClanTerritory.purchase();
         //1.0.5-beta (lot 13, Guillaume : « prix fixe 100 Shining ») : plus de progression
-        for (int i = 1; i <= p.max(); i++) {
+        for (int i = 1; i <= 200; i++) {
             Gt.equal(100L, TerritoryRules.claimPrice(p, i), "prix fixe du claim achete no " + i);
         }
         Gt.equal(500L, TerritoryRules.claimsPrice(p, 7, 5), "cinq claims de plus");
-        Gt.equal(200, p.max(), "plafond d'achat d'un clan");
-        Gt.equal(50, p.soloMax(), "plafond d'achat d'un Solitaire");
+        //1.0.6 (Guillaume, 17/11/2026 : « retire tous les plafonds ») : sans plafond par defaut (0 dans la configuration)
+        Gt.equal(Integer.MAX_VALUE, TerritoryRules.buyCap(p, false), "aucun plafond d'achat d'un clan");
+        Gt.equal(Integer.MAX_VALUE, TerritoryRules.buyCap(p, true), "aucun plafond d'achat d'un Solitaire");
+        Gt.equal(100_000, TerritoryRules.budget(ClanTerritory.rules(), 40_000, 1, false, false) > 99_999 ? 100_000 : 0, "budget gratuit sans plafond");
         s.done();
     }
 

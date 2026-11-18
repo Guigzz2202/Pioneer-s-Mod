@@ -194,6 +194,16 @@ public final class ClanUiViews {
             t.putLong("treasury", c.treasury);
         }
         t.putBoolean("frozen", c.frozen);
+        //1.0.6 : stock de chunkloading achete (emplacements libres, achetes, plafond, prix des prochains)
+        int clCap = ClanChunkloading.buyCap(c);
+        t.putInt("clFree", ClanChunkloading.free(server, c));
+        t.putInt("clBought", c.boughtChunkloads);
+        t.putInt("clBuyMax", clCap);
+        long[] clNext = new long[Math.max(0, Math.min(64, clCap - c.boughtChunkloads))];
+        for (int i = 0; i < clNext.length; i++) {
+            clNext[i] = ClanChunkloading.price(c.boughtChunkloads + 1 + i);
+        }
+        t.putLongArray("clPrices", clNext);
         //permissions des visiteurs par zone (Membres, Ouverte), lues par tout membre ; reglees avec la permission ZONES
         t.putIntArray("zperm", c.zonePerms.toArray());
         ListTag fns = new ListTag();

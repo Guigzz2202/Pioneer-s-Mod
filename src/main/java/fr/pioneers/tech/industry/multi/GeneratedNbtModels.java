@@ -82,6 +82,8 @@ public final class GeneratedNbtModels {
     public static final Map<Character, float[]> SPIN_SPEED = new HashMap<>();
     /** Piece -> {tours par seconde, montee, descente (ticks)}. */
     public static final Map<String, float[]> PART_SPEED = new HashMap<>();
+    /** 1.0.6 : lettres des blocs de la structure qui rougeoient en marche (bobines de chauffe du Calcinateur). */
+    private static final Map<String, String> GLOW = new HashMap<>();
 
     static {
         put("aquafarm", new Model(BigInterior.Kind.FISHFARM, 1, 2, 1, 3, 5, 3, false),
@@ -204,6 +206,10 @@ public final class GeneratedNbtModels {
               List.of(new Spin('R', 2, 1, 7, 2)),
               List.of(),
               List.of(new Fx(Fx.Kind.SMOKE, 2.5F, 9.0F, 2.5F)));
+        put("gear_hobber", new Model(BigInterior.Kind.GANTRY, 1, 1, 1, 3, 3, 3, false),
+              List.of(),
+              List.of(),
+              List.of());
         put("hot_blast_stove", null,
               List.of(),
               List.of(),
@@ -264,6 +270,10 @@ public final class GeneratedNbtModels {
               List.of(),
               List.of(),
               List.of());
+        put("reduction_furnace", null,
+              List.of(),
+              List.of(),
+              List.of());
         put("rolling_mill", new Model(BigInterior.Kind.ROLLING, 1, 1, 0, 1, 1, 6, false),
               List.of(),
               List.of(),
@@ -307,6 +317,7 @@ public final class GeneratedNbtModels {
         SPIN_SPEED.put('P', new float[]{0.75F, 60, 100, 1.0F});
         SPIN_SPEED.put('R', new float[]{1.5F, 160, 240, 1.0F});
         PART_SPEED.put("crank", new float[]{0.4F, 80, 120});
+        GLOW.put("reduction_furnace", "H");
     }
 
     private GeneratedNbtModels() {
@@ -330,6 +341,12 @@ public final class GeneratedNbtModels {
     @Nullable
     public static Anim house(String key) {
         return HOUSE.get(key);
+    }
+
+    /** Lettres des blocs qui rougeoient en marche (multibloc industriel a NBT), ou null. */
+    @Nullable
+    public static String glow(String key) {
+        return GLOW.get(key);
     }
 
     /** Cles des multiblocs industriels animes. */

@@ -75,6 +75,11 @@ public class BeamEngineTile extends KineticMachineTile {
     }
 
     @Override
+    public void sourceDelivered(double torque) {
+        unit.delivered(torque);
+    }
+
+    @Override
     public double inertia() {
         return 150;
     }

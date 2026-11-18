@@ -1,27 +1,27 @@
 {
  "type": "pioneers:industrial",
- "machine": "furnace",
+ "machine": "reduction_furnace",
  "family": "roaster",
  "tier": 2,
- "time": 200,
+ "time": 100,
  "items": [
   {
    "ingredient": {
     "item": "pioneers:ammonium_paratungstate"
    },
-   "count": 2
+   "count": 1
   }
  ],
  "results": [
   {
    "item": "pioneers:tungsten_oxide",
-   "count": 2
+   "count": 1
   }
  ],
  "gas_results": [
   {
    "gas": "pioneers:ammonia",
-   "amount": 200
+   "amount": 100
   }
  ],
  "temperature": 600

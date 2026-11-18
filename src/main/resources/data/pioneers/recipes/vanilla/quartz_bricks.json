@@ -11,11 +11,11 @@
    "ingredient": {
     "item": "pioneers:quartz_block"
    },
-   "count": 4
+   "count": 1
   }
  ],
  "result": {
   "item": "minecraft:quartz_bricks",
-  "count": 4
+  "count": 1
  }
 }

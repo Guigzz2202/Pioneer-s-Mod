@@ -2,11 +2,11 @@
  "type": "pioneers:industrial",
  "machine": "casting_machine",
  "tier": 0,
- "time": 80,
+ "time": 160,
  "items": [
   {
    "ingredient": {
-    "item": "pioneers:gear_die"
+    "item": "pioneers:sand_mold"
    },
    "count": 1
   }
@@ -23,7 +23,7 @@
    "count": 2
   },
   {
-   "item": "pioneers:gear_die",
+   "item": "pioneers:sand_mold",
    "count": 1
   }
  ]

@@ -42,7 +42,12 @@ public final class StandardLayout {
     public record Part(String role, Rect r) {}
 
     /** Nombre de cases et de reservoirs de chaque sorte (entrees, sorties). */
-    public record Counts(int itemsIn, int itemsOut, int fluidsIn, int gasesIn, int fluidsOut, int gasesOut) {}
+    public record Counts(int itemsIn, int itemsOut, int fluidsIn, int gasesIn, int fluidsOut, int gasesOut, boolean pairedIn, boolean pairedOut) {
+
+        public Counts(int itemsIn, int itemsOut, int fluidsIn, int gasesIn, int fluidsOut, int gasesOut) {
+            this(itemsIn, itemsOut, fluidsIn, gasesIn, fluidsOut, gasesOut, false, false);
+        }
+    }
 
     /** Largeur minimale du panneau (lot 4 : 196 ; l'inventaire de 176 est centre dans son cadre). */
     public static final int WIDTH = 196;
@@ -118,10 +123,14 @@ public final class StandardLayout {
         x += GAUGE_W + 8;
         List<Rect> fi = new ArrayList<>(), gi = new ArrayList<>(), fo = new ArrayList<>(), go = new ArrayList<>();
         List<int[]> ii = new ArrayList<>(), io = new ArrayList<>();
+        //1.0.6 : jauges partagees (liquide ou gaz) : le reservoir de liquide i et celui de gaz i ont la meme jauge
         for (int i = 0; i < m.fluidsIn(); i++, x += GAUGE_W + 3) {
             fi.add(new Rect(x, TOP, GAUGE_W, GAUGE_H));
+            if (m.pairedIn()) {
+                gi.add(fi.get(i));
+            }
         }
-        for (int i = 0; i < m.gasesIn(); i++, x += GAUGE_W + 3) {
+        for (int i = 0; i < (m.pairedIn() ? 0 : m.gasesIn()); i++, x += GAUGE_W + 3) {
             gi.add(new Rect(x, TOP, GAUGE_W, GAUGE_H));
         }
         if (m.fluidsIn() + m.gasesIn() > 0) {
@@ -150,8 +159,11 @@ public final class StandardLayout {
         }
         for (int i = 0; i < m.fluidsOut(); i++, x += GAUGE_W + 3) {
             fo.add(new Rect(x, TOP, GAUGE_W, GAUGE_H));
+            if (m.pairedOut()) {
+                go.add(fo.get(i));
+            }
         }
-        for (int i = 0; i < m.gasesOut(); i++, x += GAUGE_W + 3) {
+        for (int i = 0; i < (m.pairedOut() ? 0 : m.gasesOut()); i++, x += GAUGE_W + 3) {
             go.add(new Rect(x, TOP, GAUGE_W, GAUGE_H));
         }
         width = Math.max(WIDTH, x + 8);
@@ -268,8 +280,13 @@ public final class StandardLayout {
         List<Part> out = new ArrayList<>();
         out.add(new Part("energy", new Rect(energy.x() - 1, energy.y() - 1, energy.w() + 2, energy.h() + 2)));
         out.add(new Part("battery", slotFrame(batteryX, batteryY)));
+        //1.0.6 : une jauge partagee (liquide ou gaz) n'est qu'un element
+        java.util.Set<Rect> seen = new java.util.HashSet<>();
         for (List<Rect> list : List.of(fluidIn, gasIn, fluidOut, gasOut)) {
             for (Rect r : list) {
+                if (!seen.add(r)) {
+                    continue;
+                }
                 out.add(new Part("gauge", new Rect(r.x() - 1, r.y() - 1, r.w() + 2, r.h() + 2)));
             }
         }

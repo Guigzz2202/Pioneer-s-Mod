@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "machining_center",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "family": "cnc_mill",
  "items": [
   {
@@ -10,12 +10,6 @@
     "tag": "forge:plates/vanadium_steel"
    },
    "count": 3
-  }
- ],
- "fluids": [
-  {
-   "fluid": "pioneers:lubricant",
-   "amount": 50
   }
  ],
  "results": [
