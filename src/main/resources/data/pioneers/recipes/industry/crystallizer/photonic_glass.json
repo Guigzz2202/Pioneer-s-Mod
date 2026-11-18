@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystallizer",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:fused_silica"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_crystal"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:photonic_glass",
+   "count": 2
+  }
+ ]
+}

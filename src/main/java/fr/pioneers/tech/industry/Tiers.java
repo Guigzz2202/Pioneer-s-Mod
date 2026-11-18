@@ -73,12 +73,13 @@ public final class Tiers {
         return PowerRules.nominal(tier);
     }
 
-    /** Rendement des traitements de minerai : x1 basique, x1,25 avance, x1,5 elite, x2 ultime (sur le x2 deja donne par la recette). */
+    /** Rendement des traitements de minerai : x1 basique, x1,25 avance, x1,5 elite, x2 ultime, x2,5 MKV (sur le x2 deja donne par la recette). */
     public static double oreBonus(int tier) {
-        return switch (Math.max(0, Math.min(3, tier))) {
+        return switch (Math.max(0, Math.min(4, tier))) {
             case 1 -> 1.25;
             case 2 -> 1.5;
             case 3 -> 2.0;
+            case 4 -> 2.5;
             default -> 1.0;
         };
     }

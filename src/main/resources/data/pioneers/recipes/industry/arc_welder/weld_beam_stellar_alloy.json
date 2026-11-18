@@ -1,0 +1,25 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 190,
+ "family": "arc_welder",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/stellar_alloy"
+   },
+   "count": 3
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_beam",
+   "count": 2
+  },
+  {
+   "item": "pioneers:stellar_alloy_nugget",
+   "count": 9
+  }
+ ]
+}

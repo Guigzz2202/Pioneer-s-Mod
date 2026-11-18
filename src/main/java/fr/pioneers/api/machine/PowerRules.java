@@ -16,8 +16,9 @@ public final class PowerRules {
     public static final double INDUSTRIAL_TIME = 0.8;
     public static final double INDUSTRIAL_ENERGY = 0.75;
     public static final double INDUSTRIAL_YIELD = 1.25;
-    private static final int[] PARALLEL = {4, 8, 16, 32};
-    private static final int[] NOMINAL = {800, 1_100, 1_500, 2_100};
+    /** 1.0.7 : MKV (indice 4) : 64 operations, carcasses MKV a 3 000 K. */
+    private static final int[] PARALLEL = {4, 8, 16, 32, 64};
+    private static final int[] NOMINAL = {800, 1_100, 1_500, 2_100, 3_000};
 
     private PowerRules() {
     }
@@ -36,7 +37,7 @@ public final class PowerRules {
     // 1.0.5-beta (lot 38, specification age du bronze §2.2) : TIERS GLOBAUX (T0 mecanique, T1 bronze, T2 MKI .. T5 MKIV)
     // ------------------------------------------------------------------
 
-    /** Table absolue des rendements R(tier global) : T0 1 · T1 1,5 · T2 1,75 · T3 2,1875 · T4 2,625 · T5 3,5 (source : tier_families.py). */
+    /** Table absolue des rendements R(tier global) : T0 1 · T1 1,5 · T2 1,75 · T3 2,1875 · T4 2,625 · T5 3,5 · T6 (MKV) 4,375 (source : tier_families.py). */
     public static final double[] GLOBAL_YIELD = fr.pioneers.api.machine.tier.GeneratedTierFamilies.YIELD;
 
     /** Tier global d'un tier MK (0 = MKI -> 2). */
@@ -58,6 +59,13 @@ public final class PowerRules {
 
     /** Duree minimale au MKIV (ticks) selon le tier de la recette (0 MKI .. 3 MKIV) : 1 s, 1 s, 2 s, 4 s. */
     public static final int[] MKIV_MIN = {20, 20, 40, 80};
+    /**
+     * 1.0.7 (brief « Plus loin et au-dela » §4) : duree minimale au MKV (tier global 6) selon le tier de la recette (0 MKI .. 4 MKV) : deux
+     * fois plus vite qu'au MKIV, jamais sous 10 ticks (0,5 s) ; une recette MKV au MKV, 4 s (comme une recette MKIV au MKIV).
+     */
+    public static final int[] MKV_MIN = {10, 10, 20, 40, 80};
+    /** Tier global du MKV. */
+    public static final int MKV = 6;
     /** Machines dont la duree n'est pas celle d'une fabrication (production de vapeur ou de chaleur, croissance, fermentation...). */
     public static final java.util.Set<String> NO_FLOOR = java.util.Set.of("boiler", "cooling_tower", "hot_blast_stove", "exhaust_stack",
           "item_silo", "aquafarm", "hydroponic_farm", "tree_plantation", "fermenter", "spent_fuel_pool", "dryer", "coke_oven");
@@ -68,6 +76,9 @@ public final class PowerRules {
      * recette MKI...) ; la vitesse x 2 par tier (regle des tiers) reste entiere jusqu'au plancher.
      */
     public static int floorTicks(int globalTier, int recipeTier) {
+        if (globalTier >= MKV) {
+            return MKV_MIN[Math.max(0, Math.min(4, recipeTier))];
+        }
         return MKIV_MIN[Math.max(0, Math.min(3, recipeTier))];
     }
 
@@ -78,10 +89,10 @@ public final class PowerRules {
     }
 
     public static int parallelCap(int tier) {
-        return PARALLEL[Math.max(0, Math.min(3, tier))];
+        return PARALLEL[Math.max(0, Math.min(PARALLEL.length - 1, tier))];
     }
 
     public static int nominal(int tier) {
-        return NOMINAL[Math.max(0, Math.min(3, tier))];
+        return NOMINAL[Math.max(0, Math.min(NOMINAL.length - 1, tier))];
     }
 }

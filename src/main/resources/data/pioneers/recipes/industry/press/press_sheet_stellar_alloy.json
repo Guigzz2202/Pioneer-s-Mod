@@ -1,0 +1,30 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "press",
+ "tier": 3,
+ "time": 80,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/stellar_alloy"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:press_die"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_sheet",
+   "count": 2
+  },
+  {
+   "item": "pioneers:press_die",
+   "count": 1
+  }
+ ]
+}

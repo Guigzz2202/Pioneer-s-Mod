@@ -6,6 +6,7 @@
   "#forge:beams/galvanized_steel",
   "#forge:beams/duralumin",
   "#forge:beams/aluminium",
-  "#forge:beams/stainless_steel"
+  "#forge:beams/stainless_steel",
+  "#forge:beams/stellar_alloy"
  ]
 }

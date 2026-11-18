@@ -1,0 +1,26 @@
+{
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 3,
+ "time": 95,
+ "family": "calender",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/stellar_alloy"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_sheet",
+   "count": 2
+  }
+ ]
+}

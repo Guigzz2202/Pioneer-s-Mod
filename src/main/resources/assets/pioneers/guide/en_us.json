@@ -10080,7 +10080,7 @@
       "pioneers:basic_crystallizer",
       "pioneers:industrial_crystallizer"
      ],
-     "text": "The §lcrystallizer§r grows crystals and gems (salts, sulfates, Verneuil gems) and takes over the Czochralski §6crystal pulling§r of the former crystal puller: single-crystal silicon ingots and gem boules, to be sawn into wafers.\n§6Processes§r\n• §lCrystallization§r (own recipes): 11 recipes\n• §lCrystal pulling (Czochralski)§r (former crystal puller): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lcrystallizer§r grows crystals and gems (salts, sulfates, Verneuil gems) and takes over the Czochralski §6crystal pulling§r of the former crystal puller: single-crystal silicon ingots and gem boules, to be sawn into wafers.\n§6Processes§r\n• §lCrystallization§r (own recipes): 12 recipes\n• §lCrystal pulling (Czochralski)§r (former crystal puller): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10264,7 +10264,7 @@
       "pioneers:basic_press",
       "pioneers:industrial_press"
      ],
-     "text": "The §lPress§r (formerly the electric press) only §6flattens§r: ingot + die → plate, plate → 2 sheets, laminates pressed flat (plywood, epoxy board, perforated and etched boards). 1.0.6: it is the only machine for plates made from an ingot and sheets made from a plate (steam press included). Anything that does not flatten is made at the machine of its action: rods at the machining center, tubes at the extruder, foils at the rolling mill, rivets and nails at the power hammer (cold heading), compacts and pellets at the compressor, mixes at the mixer, assemblies at the assembler. The forming station is merged into it; a station already placed becomes a Press of the same tier. The compact steam press is its tier 1.\n§6Processes§r\n• §lPressing§r (own recipes): 77 recipes\n• §lForming§r (former forming station): no recipe (its copies duplicated other machines)\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lPress§r (formerly the electric press) only §6flattens§r: ingot + die → plate, plate → 2 sheets, laminates pressed flat (plywood, epoxy board, perforated and etched boards). 1.0.6: it is the only machine for plates made from an ingot and sheets made from a plate (steam press included). Anything that does not flatten is made at the machine of its action: rods at the machining center, tubes at the extruder, foils at the rolling mill, rivets and nails at the power hammer (cold heading), compacts and pellets at the compressor, mixes at the mixer, assemblies at the assembler. The forming station is merged into it; a station already placed becomes a Press of the same tier. The compact steam press is its tier 1.\n§6Processes§r\n• §lPressing§r (own recipes): 79 recipes\n• §lForming§r (former forming station): no recipe (its copies duplicated other machines)\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10292,7 +10292,7 @@
       "pioneers:basic_power_hammer",
       "pioneers:industrial_power_hammer"
      ],
-     "text": "The §lPower Hammer§r forges by impact: billets of non-castable metals, die-forged gear blanks, and every §ltool head§r: base metals from the MKI compact, advanced metals at the higher tiers (MKII to MKIV, compact or multiblock). It takes over the §6cold heading§r of the former cold header (screws, bolts, rivets, nails and balls, from wire rod or wire). The forge hearth keeps its two bloom recipes. It no longer has a steam age: the steam hammer is gone (1.0.5). 1.0.6: rings move to the §lBender§r.\n§6Processes§r\n• §lDrop forging§r (own recipes): 158 recipes\n• §lHot forging (tool heads)§r (former industrial forging press; multiblock only): 100 recipes\n• §lCold heading (fasteners)§r (former cold header): 15 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lPower Hammer§r forges by impact: billets of non-castable metals, die-forged gear blanks, and every §ltool head§r: base metals from the MKI compact, advanced metals at the higher tiers (MKII to MKIV, compact or multiblock). It takes over the §6cold heading§r of the former cold header (screws, bolts, rivets, nails and balls, from wire rod or wire). The forge hearth keeps its two bloom recipes. It no longer has a steam age: the steam hammer is gone (1.0.5). 1.0.6: rings move to the §lBender§r.\n§6Processes§r\n• §lDrop forging§r (own recipes): 159 recipes\n• §lHot forging (tool heads)§r (former industrial forging press; multiblock only): 100 recipes\n• §lCold heading (fasteners)§r (former cold header): 15 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10354,7 +10354,7 @@
       "pioneers:basic_rolling_mill",
       "pioneers:industrial_rolling_mill"
      ],
-     "text": "The §lRolling Mill§r (formerly the electric rolling mill) §6rolls§r semi-finished stock between cylinders: block → 9 plates, slab → plates and sheets, billet → plates or wire rod, beam blank → beams, plate → foils. 1.0.6: plates made from an ingot and sheets made from a plate come from the §lPress§r; the steam rolling mill rolls blocks into 9 plates. It takes over the §lcalendering§r of the former calender: rubber and plastic sheets, belts, gaskets, woven meshes.\n§6Processes§r\n• §lRolling§r (own recipes): 151 recipes\n• §lCalendering§r (former calender): 20 recipes\n§6Same inputs§r: plate (foil or sheets), slab (plates or sheets). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lRolling Mill§r (formerly the electric rolling mill) §6rolls§r semi-finished stock between cylinders: block → 9 plates, slab → plates and sheets, billet → plates or wire rod, beam blank → beams, plate → foils. 1.0.6: plates made from an ingot and sheets made from a plate come from the §lPress§r; the steam rolling mill rolls blocks into 9 plates. It takes over the §lcalendering§r of the former calender: rubber and plastic sheets, belts, gaskets, woven meshes.\n§6Processes§r\n• §lRolling§r (own recipes): 155 recipes\n• §lCalendering§r (former calender): 20 recipes\n§6Same inputs§r: plate (foil or sheets), slab (plates or sheets). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10399,7 +10399,7 @@
       "pioneers:basic_wiremill",
       "pioneers:industrial_wiremill"
      ],
-     "text": "The §lWiremill§r (formerly the electric wiremill) §6draws§r metal into wire: ingot, wire rod or rod → wire. It takes over the §lfiber drawing§r of the former fiber draw tower (glass, optical and fluoride glass fibers, carbon and aramid fibers: the molten glass or the precursor enters through its tank) and the §lstranding§r of the former wire strander (lossless wire ropes, wiring harnesses, network cables). 1.0.6: fiber spinning (cotton thread, string, ropes) moves to the §lTailoring Workshop§r.\n§6Processes§r\n• §lWire drawing§r (own recipes): 43 recipes\n• §lFiber drawing§r (former fiber draw tower): 8 recipes\n• §lStranding§r (former wire strander): 6 recipes\n§6Same inputs§r: hemp fiber, wire (wire rope). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lWiremill§r (formerly the electric wiremill) §6draws§r metal into wire: ingot, wire rod or rod → wire. It takes over the §lfiber drawing§r of the former fiber draw tower (glass, optical and fluoride glass fibers, carbon and aramid fibers: the molten glass or the precursor enters through its tank) and the §lstranding§r of the former wire strander (lossless wire ropes, wiring harnesses, network cables). 1.0.6: fiber spinning (cotton thread, string, ropes) moves to the §lTailoring Workshop§r.\n§6Processes§r\n• §lWire drawing§r (own recipes): 44 recipes\n• §lFiber drawing§r (former fiber draw tower): 8 recipes\n• §lStranding§r (former wire strander): 6 recipes\n§6Same inputs§r: hemp fiber, wire (wire rope). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10461,7 +10461,7 @@
       "pioneers:basic_bender",
       "pioneers:industrial_bender"
      ],
-     "text": "The §lBender§r bends, rolls and coils: rings (from a rod or an ingot), tubes rolled from a sheet or a plate, bent plates and tubes, springs from wire, rod or wire rod, oil-tempered precision springs at MKIII (an extra fluid tank). 1.0.6: from MKI on, it is the only machine for rings and springs; the lathes (mechanical and steam) keep theirs.\n§6Processes§r\n• §lBending§r (own recipes): 34 recipes\n• §lCoiling (springs)§r (former spring coiler): 37 recipes\n§6Same inputs§r: copper rods (lightning rod or spring), iron rods (iron bars or spring), metal rod (rings or spring). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lBender§r bends, rolls and coils: rings (from a rod or an ingot), tubes rolled from a sheet or a plate, bent plates and tubes, springs from wire, rod or wire rod, oil-tempered precision springs at MKIII (an extra fluid tank). 1.0.6: from MKI on, it is the only machine for rings and springs; the lathes (mechanical and steam) keep theirs.\n§6Processes§r\n• §lBending§r (own recipes): 35 recipes\n• §lCoiling (springs)§r (former spring coiler): 39 recipes\n§6Same inputs§r: copper rods (lightning rod or spring), iron rods (iron bars or spring), metal rod (rings or spring). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10613,7 +10613,7 @@
       "pioneers:basic_gear_hobber",
       "pioneers:industrial_gear_hobber"
      ],
-     "text": "The §lCutting Machine§r §6cuts a plate, a crystal or a boule into parts§r: gears cut from plates or blanks, cut gems, sapphire and ruby boules, silicon wafers. One §lcutting fluid§r: water for crystals and wafers, lubricant to cut hard metals. Offcuts come back as nuggets.\n§6Processes§r\n• §lCutting§r (own recipes): 43 recipes\n• §lWafer slicing§r (former cutting machine (wafer slicing)): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lCutting Machine§r §6cuts a plate, a crystal or a boule into parts§r: gears cut from plates or blanks, cut gems, sapphire and ruby boules, silicon wafers. One §lcutting fluid§r: water for crystals and wafers, lubricant to cut hard metals. Offcuts come back as nuggets.\n§6Processes§r\n• §lCutting§r (own recipes): 45 recipes\n• §lWafer slicing§r (former cutting machine (wafer slicing)): 8 recipes\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {
@@ -10746,7 +10746,7 @@
       "pioneers:basic_assembler",
       "pioneers:industrial_assembler"
      ],
-     "text": "The §lAssembler§r builds parts and components. It takes over §6all§r the recipes of the former component assembler (frames, motors, bearings, pumps, circuits, computers, at the same tiers), the logistics parts bench copies of the former logistics assembler (rockets, spaceport, rail, harbors, robotics) and the §larc welding§r of the former welder (tanks, hulls, welded tubes, casings, under argon from MKII). Nine inputs, two outputs, one fluid and one gas tank.\n§6Processes§r\n• §lAssembly§r (own recipes): 16 recipes\n• §lComponents§r (former component assembler): 195 recipes\n• §lLogistics parts§r (former logistics assembler): no recipe (its copies duplicated other machines)\n• §lArc welding§r (former arc welder): 15 recipes\n§6Same inputs§r: steel plates (armor or welded beam), steel plates, rods and screws (wrench or welded frame). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
+     "text": "The §lAssembler§r builds parts and components. It takes over §6all§r the recipes of the former component assembler (frames, motors, bearings, pumps, circuits, computers, at the same tiers), the logistics parts bench copies of the former logistics assembler (rockets, spaceport, rail, harbors, robotics) and the §larc welding§r of the former welder (tanks, hulls, welded tubes, casings, under argon from MKII). Nine inputs, two outputs, one fluid and one gas tank.\n§6Processes§r\n• §lAssembly§r (own recipes): 16 recipes\n• §lComponents§r (former component assembler): 195 recipes\n• §lLogistics parts§r (former logistics assembler): no recipe (its copies duplicated other machines)\n• §lArc welding§r (former arc welder): 17 recipes\n§6Same inputs§r: steel plates (armor or welded beam), steel plates, rods and screws (wrench or welded frame). The machine's own recipe (otherwise the most complete one) goes first; for the other one, lock it in the §lRecipes§r tab.\nJEI: one page per machine, steam and mechanical recipes included; each recipe's watermark gives its age.",
      "flow": [
       [
        {

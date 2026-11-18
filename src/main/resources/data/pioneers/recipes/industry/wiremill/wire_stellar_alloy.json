@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "wiremill",
+ "tier": 3,
+ "time": 95,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/stellar_alloy"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_wire",
+   "count": 1
+  }
+ ]
+}

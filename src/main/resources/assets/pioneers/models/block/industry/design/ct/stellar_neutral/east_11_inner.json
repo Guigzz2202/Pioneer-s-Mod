@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/east_11",
+ "textures": {
+  "t": "pioneers:block/industry/design/casing/stellar_neutral_inner"
+ }
+}

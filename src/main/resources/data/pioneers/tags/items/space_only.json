@@ -2946,6 +2946,10 @@
    "required": false
   },
   {
+   "id": "pioneers:photonic_glass",
+   "required": false
+  },
+  {
    "id": "pioneers:photonic_motherboard",
    "required": false
   },
@@ -4219,6 +4223,42 @@
   },
   {
    "id": "pioneers:sputnikite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_beam",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_billet",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_foil",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_gear",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_alloy_sheet",
    "required": false
   },
   {

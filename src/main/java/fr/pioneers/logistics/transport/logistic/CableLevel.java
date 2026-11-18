@@ -117,6 +117,8 @@ public enum CableLevel {
             case ADVANCED -> ADVANCED;
             case ELITE -> ELITE;
             case ULTIMATE -> ULTIMATE;
+            //1.0.7 : le MKV prend le cable supraconducteur (le seul niveau au-dela du MKIV)
+            case STELLAR -> SUPER;
         };
     }
 

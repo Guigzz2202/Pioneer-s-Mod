@@ -22,6 +22,7 @@
   "#forge:gears/vanadium_steel",
   "#forge:gears/tungsten_carbide",
   "#forge:gears/stellite",
-  "#forge:gears/redsteel"
+  "#forge:gears/redsteel",
+  "#forge:gears/stellar_alloy"
  ]
 }

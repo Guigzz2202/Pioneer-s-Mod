@@ -46,11 +46,11 @@ public final class PiConstruction {
     public static final Map<CableTier, BlockEntry<HeatingCoilBlock>> HEATING_COILS = new EnumMap<>(CableTier.class);
 
     static {
-        for (CableTier tier : CableTier.values()) {
+        for (CableTier tier : CableTier.MK) {
             FIREBOXES.put(tier, PiCoreRegistries.block("firebox_" + tier.id(), () -> new FireboxWallBlock(tier, metal(MapColor.TERRACOTTA_ORANGE)
                   .lightLevel(state -> state.getValue(FireboxWallBlock.LIT) ? FIREBOX_LIGHT : 0))));
         }
-        for (CableTier tier : CableTier.values()) {
+        for (CableTier tier : CableTier.MK) {
             HEATING_COILS.put(tier, PiCoreRegistries.block("heating_coil_" + tier.id(), () -> new HeatingCoilBlock(tier, metal(MapColor.METAL))));
         }
     }
@@ -73,7 +73,7 @@ public final class PiConstruction {
     static {
         for (String family : STACKED_FAMILIES) {
             Map<CableTier, BlockEntry<StackedColumnBlock>> byTier = new EnumMap<>(CableTier.class);
-            for (CableTier tier : CableTier.values()) {
+            for (CableTier tier : CableTier.MK) {
                 byTier.put(tier, PiCoreRegistries.block(family + "_" + tier.id(), () -> new StackedColumnBlock(family, tier,
                       metal(MapColor.METAL).noOcclusion().isRedstoneConductor((s, l, p) -> false).isSuffocating((s, l, p) -> false)
                             .isViewBlocking((s, l, p) -> false))));

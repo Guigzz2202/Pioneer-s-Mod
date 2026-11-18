@@ -73,6 +73,7 @@
   "#forge:ingots/galvanized_steel",
   "#forge:ingots/netherite",
   "#forge:ingots/red_alloy",
-  "#forge:ingots/redsteel"
+  "#forge:ingots/redsteel",
+  "#forge:ingots/stellar_alloy"
  ]
 }

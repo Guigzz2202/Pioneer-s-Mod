@@ -3,6 +3,7 @@
   "values": [
     "pioneers:aluminium_sheet_metal",
     "pioneers:steel_sheet_metal",
+    "pioneers:stellar_alloy_sheet_metal",
     "pioneers:titanium_sheet_metal",
     "pioneers:tungsten_sheet_metal"
   ]

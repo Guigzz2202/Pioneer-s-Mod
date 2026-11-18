@@ -1,0 +1,6 @@
+{
+ "parent": "pioneers:block/industry/design/q/west_01",
+ "textures": {
+  "t": "pioneers:block/industry/design/casing/stellar_digital_frame"
+ }
+}

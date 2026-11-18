@@ -347,6 +347,11 @@
   "pioneers:industrial_stoneworks",
   "pioneers:advanced_drive_motor",
   "pioneers:elite_drive_motor",
-  "pioneers:ultimate_drive_motor"
+  "pioneers:ultimate_drive_motor",
+  "pioneers:stellar_alloy_block",
+  "pioneers:industrial_casing_stellar",
+  "pioneers:industrial_glass_stellar",
+  "pioneers:stellar_alloy_frame",
+  "pioneers:stellar_alloy_sheet_metal"
  ]
 }

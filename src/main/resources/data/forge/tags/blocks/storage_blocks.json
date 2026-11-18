@@ -139,6 +139,7 @@
   "#forge:storage_blocks/sunflower_seeds",
   "#forge:storage_blocks/hops",
   "#forge:storage_blocks/red_alloy",
-  "#forge:storage_blocks/redsteel"
+  "#forge:storage_blocks/redsteel",
+  "#forge:storage_blocks/stellar_alloy"
  ]
 }

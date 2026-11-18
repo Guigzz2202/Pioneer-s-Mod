@@ -20,6 +20,7 @@
   "#forge:springs/duralumin",
   "#forge:springs/nichrome",
   "#forge:springs/vanadium_steel",
-  "#forge:springs/nitinol"
+  "#forge:springs/nitinol",
+  "#forge:springs/stellar_alloy"
  ]
 }

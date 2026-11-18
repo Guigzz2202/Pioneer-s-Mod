@@ -7,7 +7,15 @@ public enum CableTier {
     BASIC(0x4F8A55),
     ADVANCED(0x4468A0),
     ELITE(0xB5413A),
-    ULTIMATE(0x6B2340);
+    ULTIMATE(0x6B2340),
+    /**
+     * 1.0.7 (« Plus loin et au-dela ») : tier MKV (T6 global), materiau l'alliage stellaire. Seuls les registres qui l'ouvrent le prennent
+     * (blocs de structure des multiblocs au lot 1) ; les autres bouclent sur {@link #MK} (MKI a MKIV).
+     */
+    STELLAR(0x7A4FA0);
+
+    /** Les quatre tiers MKI a MKIV (registres qui n'ont pas de MKV). */
+    public static final java.util.List<CableTier> MK = java.util.List.of(BASIC, ADVANCED, ELITE, ULTIMATE);
 
     /** Couleur des bagues du tier (RGB). */
     public final int color;

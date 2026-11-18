@@ -1,0 +1,26 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 3,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/stellar_alloy"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:lubricant",
+   "amount": 50
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_foil",
+   "count": 8
+  }
+ ]
+}

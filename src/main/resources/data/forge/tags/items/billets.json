@@ -59,6 +59,7 @@
   "#forge:billets/iron",
   "#forge:billets/gold",
   "#forge:billets/tin",
-  "#forge:billets/lead"
+  "#forge:billets/lead",
+  "#forge:billets/stellar_alloy"
  ]
 }

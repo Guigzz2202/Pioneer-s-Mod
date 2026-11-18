@@ -569,6 +569,19 @@ public final class GeneratedMaterials {
         new Entry("niobium_titanium_wire", Kind.ITEM, "niobium_titanium", "wire", 0, 1, 2),
         new Entry("niobium_titanium_block", Kind.BLOCK, "niobium_titanium", "block", 0, 9, 1),
         new Entry("niobium_titanium_billet", Kind.ITEM, "niobium_titanium", "billet", 0, 9, 1),
+        new Entry("stellar_alloy_ingot", Kind.ITEM, "stellar_alloy", "ingot", 0, 1, 1),
+        new Entry("stellar_alloy_nugget", Kind.ITEM, "stellar_alloy", "nugget", 0, 1, 9),
+        new Entry("stellar_alloy_plate", Kind.ITEM, "stellar_alloy", "plate", 0, 1, 1),
+        new Entry("stellar_alloy_rod", Kind.ITEM, "stellar_alloy", "rod", 0, 1, 2),
+        new Entry("stellar_alloy_ring", Kind.ITEM, "stellar_alloy", "ring", 0, 1, 4),
+        new Entry("stellar_alloy_gear", Kind.ITEM, "stellar_alloy", "gear", 0, 4, 1),
+        new Entry("stellar_alloy_spring", Kind.ITEM, "stellar_alloy", "spring", 0, 1, 1),
+        new Entry("stellar_alloy_wire", Kind.ITEM, "stellar_alloy", "wire", 0, 1, 2),
+        new Entry("stellar_alloy_block", Kind.BLOCK, "stellar_alloy", "block", 0, 9, 1),
+        new Entry("stellar_alloy_foil", Kind.ITEM, "stellar_alloy", "foil", 0, 1, 4),
+        new Entry("stellar_alloy_sheet", Kind.ITEM, "stellar_alloy", "sheet", 0, 1, 2),
+        new Entry("stellar_alloy_beam", Kind.ITEM, "stellar_alloy", "beam", 0, 1, 1),
+        new Entry("stellar_alloy_billet", Kind.ITEM, "stellar_alloy", "billet", 0, 9, 1),
         new Entry("lunarium_plate", Kind.ITEM, "lunarium", "plate", 0, 1, 1),
         new Entry("lunarium_rod", Kind.ITEM, "lunarium", "rod", 0, 1, 2),
         new Entry("lunarium_billet", Kind.ITEM, "lunarium", "billet", 0, 9, 1),
@@ -1162,7 +1175,8 @@ public final class GeneratedMaterials {
         new Metal("stellite", 0x96A0BE, 1600, 800, 3, false, List.of()),
         new Metal("titanium_aluminide", 0xBEBAC8, 1730, 850, 3, false, List.of()),
         new Metal("nitinol", 0xAAA0AA, 1580, 800, 3, false, List.of()),
-        new Metal("niobium_titanium", 0x8C96B4, 2400, 1300, 3, false, List.of())
+        new Metal("niobium_titanium", 0x8C96B4, 2400, 1300, 3, false, List.of()),
+        new Metal("stellar_alloy", 0xAA4EB0, 3450, 1900, 3, false, List.of())
     );
 
     public static final List<Melt> MELTS = List.of(

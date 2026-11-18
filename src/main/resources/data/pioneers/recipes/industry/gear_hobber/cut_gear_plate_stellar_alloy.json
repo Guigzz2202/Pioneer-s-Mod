@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gear_hobber",
+ "tier": 3,
+ "time": 290,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/stellar_alloy"
+   },
+   "count": 5
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_gear",
+   "count": 1
+  },
+  {
+   "item": "pioneers:stellar_alloy_nugget",
+   "count": 9
+  }
+ ]
+}

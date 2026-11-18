@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/venusium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rods/mercurium"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:screws/tungsten"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:bolts/tungsten"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:springs/stellar_alloy"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:rings/stellar_alloy"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:stellar_alloy_frame",
+  "count": 1
+ }
+}

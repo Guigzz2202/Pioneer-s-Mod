@@ -21,6 +21,7 @@
   "#forge:rings/duralumin",
   "#forge:rings/nichrome",
   "#forge:rings/vanadium_steel",
-  "#forge:rings/babbitt"
+  "#forge:rings/babbitt",
+  "#forge:rings/stellar_alloy"
  ]
 }

@@ -1,0 +1,18 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:stellar_alloy_ingot",
+  "pioneers:stellar_alloy_nugget",
+  "pioneers:stellar_alloy_plate",
+  "pioneers:stellar_alloy_rod",
+  "pioneers:stellar_alloy_ring",
+  "pioneers:stellar_alloy_gear",
+  "pioneers:stellar_alloy_spring",
+  "pioneers:stellar_alloy_wire",
+  "pioneers:stellar_alloy_block",
+  "pioneers:stellar_alloy_foil",
+  "pioneers:stellar_alloy_sheet",
+  "pioneers:stellar_alloy_beam",
+  "pioneers:stellar_alloy_billet"
+ ]
+}

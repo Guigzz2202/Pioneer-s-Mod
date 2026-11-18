@@ -1,0 +1,7 @@
+{
+ "variants": {
+  "": {
+   "model": "pioneers:block/industry/frame/stellar_alloy_frame"
+  }
+ }
+}

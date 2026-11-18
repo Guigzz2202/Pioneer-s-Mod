@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "arc_furnace",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/marsium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/mercurium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/venusium"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:graphite_electrode"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_ingot",
+   "count": 4
+  }
+ ],
+ "pure": true
+}

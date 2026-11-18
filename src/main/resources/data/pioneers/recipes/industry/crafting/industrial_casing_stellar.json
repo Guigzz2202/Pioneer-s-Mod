@@ -1,0 +1,51 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:storage_blocks/stellar_alloy"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:beams/stellar_alloy"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/stellar_alloy"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:sheets/stellar_alloy"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "tag": "forge:plates/stellar_alloy"
+   },
+   "count": 9
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_frame"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "pioneers:industrial_casing_stellar",
+  "count": 6
+ }
+}

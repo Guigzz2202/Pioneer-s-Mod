@@ -88,7 +88,7 @@ public final class PatchP105Lot21Tests {
     public static void p105_21_fours_electriques(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         int[] want = {80, 40, 20, 10};
-        for (CableTier t : CableTier.values()) {
+        for (CableTier t : CableTier.MK) {
             Gt.equal(want[t.ordinal()], MachineKind.FURNACE.ticks(t), "four electrique " + t.id() + " : ticks par cuisson");
         }
         Gt.equal(81_920L, MachineKind.FURNACE.power(CableTier.BASIC) * MachineKind.FURNACE.ticks(CableTier.BASIC), "MKI : FE par cuisson");

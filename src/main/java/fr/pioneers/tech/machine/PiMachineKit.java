@@ -32,7 +32,7 @@ public final class PiMachineKit {
     static {
         for (MachineKind kind : MachineKind.values()) {
             Map<CableTier, BlockEntry<KitMachineBlock>> tiers = new EnumMap<>(CableTier.class);
-            for (CableTier tier : CableTier.values()) {
+            for (CableTier tier : CableTier.MK) {
                 tiers.put(tier, PiCoreRegistries.block(kind.id(tier), () -> new KitMachineBlock(kind, tier, BlockBehaviour.Properties.of()
                       .mapColor(MapColor.METAL).strength(3.5F, 9.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion()
                       .lightLevel(state -> state.getValue(KitMachineBlock.ACTIVE) ? 8 : 0))));

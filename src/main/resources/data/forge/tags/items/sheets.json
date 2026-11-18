@@ -12,6 +12,7 @@
   "#forge:sheets/brass",
   "#forge:sheets/nickel",
   "#forge:sheets/magnesium",
-  "#forge:sheets/duralumin"
+  "#forge:sheets/duralumin",
+  "#forge:sheets/stellar_alloy"
  ]
 }

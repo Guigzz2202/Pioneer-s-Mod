@@ -73,6 +73,7 @@
   "#forge:plates/borealite",
   "#forge:plates/neutronium",
   "#forge:plates/red_alloy",
-  "#forge:plates/redsteel"
+  "#forge:plates/redsteel",
+  "#forge:plates/stellar_alloy"
  ]
 }

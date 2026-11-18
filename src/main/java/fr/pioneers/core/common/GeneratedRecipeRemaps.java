@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * GENERE par tools/gc/balance/machine_cleanup.py (1.0.6, demande de Guillaume du 16/11/2026) : NE PAS MODIFIER A LA MAIN. Recettes de
  * machine desactivees (doublon d'une autre recette de la meme machine) -> recette gardee ({@link PiRemaps#recipeId} : verrous suivis, lot
- * en cours d'un multibloc repris). 227 entree(s).
+ * en cours d'un multibloc repris). 230 entree(s).
  */
 public final class GeneratedRecipeRemaps {
 
@@ -64,6 +64,7 @@ public final class GeneratedRecipeRemaps {
           Map.entry("industry/calender/sheet_nickel", "industry/press/press_sheet_nickel"),
           Map.entry("industry/calender/sheet_stainless_steel", "industry/press/press_sheet_stainless_steel"),
           Map.entry("industry/calender/sheet_steel", "industry/press/press_sheet_steel"),
+          Map.entry("industry/calender/sheet_stellar_alloy", "industry/press/press_sheet_stellar_alloy"),
           Map.entry("industry/calender/sheet_tin", "industry/press/press_sheet_tin"),
           Map.entry("industry/calender/sheet_titanium", "industry/press/press_sheet_titanium"),
           Map.entry("industry/calender/sheet_tungsten", "industry/press/press_sheet_tungsten"),
@@ -106,6 +107,7 @@ public final class GeneratedRecipeRemaps {
           Map.entry("industry/machining_center/turn_billet_rod_pyrrhite", "industry/extruder/extrude_billet_rod_pyrrhite"),
           Map.entry("industry/machining_center/turn_billet_rod_ruachite", "industry/extruder/extrude_billet_rod_ruachite"),
           Map.entry("industry/machining_center/turn_billet_rod_sputnikite", "industry/extruder/extrude_billet_rod_sputnikite"),
+          Map.entry("industry/machining_center/turn_billet_rod_stellar_alloy", "industry/extruder/extrude_billet_rod_stellar_alloy"),
           Map.entry("industry/machining_center/turn_billet_rod_stellite", "industry/extruder/extrude_billet_rod_stellite"),
           Map.entry("industry/machining_center/turn_billet_rod_sulcite", "industry/extruder/extrude_billet_rod_sulcite"),
           Map.entry("industry/machining_center/turn_billet_rod_terminite", "industry/extruder/extrude_billet_rod_terminite"),
@@ -194,6 +196,7 @@ public final class GeneratedRecipeRemaps {
           Map.entry("industry/press/press_rod_silver", "industry/extruder/extrude_rod_silver"),
           Map.entry("industry/press/press_rod_sputnikite", "industry/extruder/extrude_rod_sputnikite"),
           Map.entry("industry/press/press_rod_stainless_steel", "industry/extruder/extrude_rod_stainless_steel"),
+          Map.entry("industry/press/press_rod_stellar_alloy", "industry/extruder/extrude_rod_stellar_alloy"),
           Map.entry("industry/press/press_rod_stellite", "industry/extruder/extrude_rod_stellite"),
           Map.entry("industry/press/press_rod_sulcite", "industry/extruder/extrude_rod_sulcite"),
           Map.entry("industry/press/press_rod_terminite", "industry/extruder/extrude_rod_terminite"),

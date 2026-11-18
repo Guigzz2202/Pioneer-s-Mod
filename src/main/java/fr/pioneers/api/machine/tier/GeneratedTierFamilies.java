@@ -7,12 +7,12 @@ import java.util.Set;
 /**
  * GENERE par tools/gc/api/gen_api.py d'apres la source unique tools/gc/api/tier_families.py (1.0.5-beta, lot 38 ; specification
  * docs/specification-age-bronze-1.0.5.md §2) : NE PAS MODIFIER A LA MAIN. Tiers globaux T0 mecanique, T1 bronze, T2 MKI .. T5 MKIV,
- * T6 hors echelle ; 18 familles ; 105 blocs a tier ; 61 recettes basses a rendement.
+ * T6 MKV ; 18 familles ; 105 blocs a tier ; 61 recettes basses a rendement.
  */
 public final class GeneratedTierFamilies {
 
-    /** Table absolue des rendements R(tier) (T0 .. T5) : une recette a rendement de tier m faite au tier N donne R(N) / R(m). */
-    public static final double[] YIELD = {1.0, 1.5, 1.75, 2.1875, 2.625, 3.5};
+    /** Table absolue des rendements R(tier) (T0 .. T6) : une recette a rendement de tier m faite au tier N donne R(N) / R(m). */
+    public static final double[] YIELD = {1.0, 1.5, 1.75, 2.1875, 2.625, 3.5, 4.375};
     /** Couleurs des pastilles « T<n> » (T0 .. T6 ; le texte est toujours ecrit). */
     public static final int[] COLORS = {0x8E9AA0, 0xB8692E, 0x58C860, 0x488CE6, 0xDC4038, 0x962848, 0x7A4FA0};
     /** Vapeur prise par tick par les machines de traitement T1 (mB). */

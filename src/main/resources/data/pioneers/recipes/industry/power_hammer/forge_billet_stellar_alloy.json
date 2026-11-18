@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 3,
+ "time": 290,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/stellar_alloy"
+   },
+   "count": 9
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_billet",
+   "count": 1
+  }
+ ]
+}

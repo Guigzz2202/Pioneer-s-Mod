@@ -164,7 +164,9 @@ public final class CreativeSort {
           "hardened_steel", "tempered_steel", "galvanized_steel", "nickel", "silver", "invar", "constantan", "electrum", "aluminium", "duralumin",
           "magnesium", "chrome", "nichrome", "cobalt", "stainless_steel", "vanadium", "vanadium_steel", "babbitt", "titanium", "titanium_aluminide",
           "tungsten", "tungsten_carbide", "zirconium", "zircaloy", "niobium", "niobium_titanium", "platinum", "iridium", "osmium", "osmiridium",
-          "stellite", "nitinol", "netherite", "depleted_uranium", "lunar_alloy");
+          "stellite", "nitinol", "netherite", "depleted_uranium", "lunar_alloy",
+          //1.0.7 : alliage stellaire (materiau du tier MKV)
+          "stellar_alloy");
 
     /** Metaux des astres, du plus proche au plus lointain (ordre de {@code materials.py SPACE}). */
     static final List<String> SPACE_METALS = List.of("lunarium", "mercurium", "venusium", "marsium", "tharsium", "phobite", "deimite",
@@ -348,11 +350,12 @@ public final class CreativeSort {
               "concrete_shell_panel", "industrial_dilution_refrigerator", "server_rack_module");
         //modules des machines du catalogue encore enregistres (baies de serveurs), dans l'ordre de la premiere machine qui s'en sert
         building.modules = true;
-        //2. carcasses, verres, cadres, toles : chaque famille MKI a MKIV
+        //2. carcasses, verres, cadres, toles : chaque famille MKI a MKV (1.0.7)
         section(t, "multiblocs : carcasses et verres").add("industrial_casing_basic", "industrial_casing_advanced", "industrial_casing_elite",
-              "industrial_casing_ultimate", "industrial_glass", "industrial_glass_advanced", "industrial_glass_elite", "industrial_glass_ultimate",
-              "steel_frame", "aluminium_frame", "titanium_frame", "tungsten_frame", "steel_sheet_metal", "aluminium_sheet_metal",
-              "titanium_sheet_metal", "tungsten_sheet_metal", "B:industrial_casing_*", "B:industrial_glass*", "B:*_sheet_metal");
+              "industrial_casing_ultimate", "industrial_casing_stellar", "industrial_glass", "industrial_glass_advanced", "industrial_glass_elite",
+              "industrial_glass_ultimate", "industrial_glass_stellar", "steel_frame", "aluminium_frame", "titanium_frame", "tungsten_frame",
+              "stellar_alloy_frame", "steel_sheet_metal", "aluminium_sheet_metal", "titanium_sheet_metal", "tungsten_sheet_metal",
+              "stellar_alloy_sheet_metal", "B:industrial_casing_*", "B:industrial_glass*", "B:*_sheet_metal");
         //3. ports
         section(t, "multiblocs : ports").add("industrial_item_port", "industrial_fluid_port", "industrial_gas_port", "industrial_energy_port",
               "industrial_heat_port", "industrial_pressure_port", "industrial_data_port", "B:industrial_*_port");
@@ -548,7 +551,9 @@ public final class CreativeSort {
             forms.addAll(each(METALS, "%s_" + form));
         }
         section(t, "formes").add(forms).add("depleted_uranium_plate", "lunar_alloy_plate", "tharsium_magnet", "zircaloy_tube",
-              "steel_cladding_tube", "finned_tube", "nichrome_coil", "copper_coil", "superconducting_coil", "nbti_cable", "sulcite_hts_tape");
+              "steel_cladding_tube", "finned_tube", "nichrome_coil", "copper_coil", "superconducting_coil", "nbti_cable", "sulcite_hts_tape",
+              //1.0.7 : verre technique du caisson vitre MKV
+              "photonic_glass");
         List<String> heads = new ArrayList<>();
         for (String tool : TOOLS) {
             heads.addAll(each(List.of("flint", "stone"), "%s_" + tool + "_head", "%s_" + tool + "_blade"));

@@ -121,19 +121,19 @@ public final class PiIndustry {
                 continue;
             }
             if (m == IndustryMachine.DYNAMO) {
-                for (CableTier tier : CableTier.values()) {
+                for (CableTier tier : CableTier.MK) {
                     DYNAMOS.put(tier, block(m.atelierId(tier), () -> new DynamoBlock(tier, metal().noOcclusion())));
                 }
                 continue;
             }
             if (m == IndustryMachine.DRIVE_MOTOR) {
-                for (CableTier tier : CableTier.values()) {
+                for (CableTier tier : CableTier.MK) {
                     MOTORS.put(tier, block(m.atelierId(tier), () -> new DynamoBlock(tier, true, metal().noOcclusion())));
                 }
                 continue;
             }
             Map<CableTier, BlockEntry<AtelierBlock>> tiers = new EnumMap<>(CableTier.class);
-            for (CableTier tier : CableTier.values()) {
+            for (CableTier tier : CableTier.MK) {
                 tiers.put(tier, block(m.atelierId(tier), () -> new AtelierBlock(m, tier, metal().noOcclusion()
                       .lightLevel(state -> state.getValue(AtelierBlock.ACTIVE) ? 8 : 0))));
             }
@@ -173,7 +173,7 @@ public final class PiIndustry {
 
     /** 1.0 : cadres de structure par tier (acier, aluminium, titane, tungstene). */
     public static final Map<CableTier, BlockEntry<StructureFrameBlock>> FRAMES = new EnumMap<>(CableTier.class);
-    public static final String[] FRAME_IDS = {"steel_frame", "aluminium_frame", "titanium_frame", "tungsten_frame"};
+    public static final String[] FRAME_IDS = {"steel_frame", "aluminium_frame", "titanium_frame", "tungsten_frame", "stellar_alloy_frame"};
 
     static {
         for (CableTier tier : CableTier.values()) {
@@ -184,7 +184,8 @@ public final class PiIndustry {
 
     /** 1.0 : toles de structure par tier (parois des contenants). */
     public static final Map<CableTier, BlockEntry<SheetMetalBlock>> SHEETS = new EnumMap<>(CableTier.class);
-    public static final String[] SHEET_IDS = {"steel_sheet_metal", "aluminium_sheet_metal", "titanium_sheet_metal", "tungsten_sheet_metal"};
+    public static final String[] SHEET_IDS = {"steel_sheet_metal", "aluminium_sheet_metal", "titanium_sheet_metal", "tungsten_sheet_metal",
+          "stellar_alloy_sheet_metal"};
 
     static {
         for (CableTier tier : CableTier.values()) {
@@ -201,7 +202,8 @@ public final class PiIndustry {
      * d'une carcasse du tier (une pour une) ; comme une carcasse, la vitre la plus faible donne son tier au multibloc.
      */
     public static final Map<CableTier, BlockEntry<IndustrialGlassBlock>> GLASSES = new EnumMap<>(CableTier.class);
-    public static final String[] GLASS_IDS = {"industrial_glass", "industrial_glass_advanced", "industrial_glass_elite", "industrial_glass_ultimate"};
+    public static final String[] GLASS_IDS = {"industrial_glass", "industrial_glass_advanced", "industrial_glass_elite", "industrial_glass_ultimate",
+          "industrial_glass_stellar"};
 
     static {
         for (CableTier tier : CableTier.values()) {
@@ -237,7 +239,7 @@ public final class PiIndustry {
                         : (module.name().equals("FUEL_CHANNEL") || module.name().equals("FUEL_RACK")) && state.getValue(
                               PartBlock.ACTIVE) ? 9 : 0))));
         }
-        for (CableTier tier : CableTier.values()) {
+        for (CableTier tier : CableTier.MK) {
             RADIATORS.put(tier, block(tier.id() + "_radiator", () -> new RadiatorBlock(tier, metal().noOcclusion())));
         }
     }

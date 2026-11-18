@@ -71,6 +71,7 @@
   "#forge:rods/borealite",
   "#forge:rods/neutronium",
   "#forge:rods/red_alloy",
-  "#forge:rods/redsteel"
+  "#forge:rods/redsteel",
+  "#forge:rods/stellar_alloy"
  ]
 }

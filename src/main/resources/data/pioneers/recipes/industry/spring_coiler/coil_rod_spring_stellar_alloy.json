@@ -1,0 +1,21 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "bender",
+ "tier": 3,
+ "time": 240,
+ "family": "spring_coiler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/stellar_alloy"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_alloy_spring",
+   "count": 1
+  }
+ ]
+}

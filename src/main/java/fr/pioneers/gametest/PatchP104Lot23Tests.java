@@ -155,7 +155,7 @@ public final class PatchP104Lot23Tests {
         Gt.begin(h);
         ServerLevel level = h.getLevel();
         int x = 1;
-        for (CableTier t : CableTier.values()) {
+        for (CableTier t : CableTier.MK) {
             FireboxWallBlock b = PiConstruction.FIREBOXES.get(t).getBlock();
             BlockPos rel = new BlockPos(x, 1, 1), up = rel.above();
             h.setBlock(rel, b.defaultBlockState());

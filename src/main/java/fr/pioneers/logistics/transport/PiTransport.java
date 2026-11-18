@@ -58,7 +58,7 @@ public final class PiTransport {
     static {
         for (BufferType type : BufferType.values()) {
             Map<CableTier, BlockEntry<BufferBlock>> tiers = new EnumMap<>(CableTier.class);
-            for (CableTier tier : CableTier.values()) {
+            for (CableTier tier : CableTier.MK) {
                 tiers.put(tier, PiCoreRegistries.plainBlock(type.bufferId(tier), () -> {
                     BlockBehaviour.Properties properties = BlockBehaviour.Properties.of().mapColor(MapColor.METAL).strength(3.5F, 9.0F).sound(SoundType.METAL)
                           .requiresCorrectToolForDrops().noOcclusion();
