@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "machining_center",
  "tier": 1,
- "time": 45,
+ "time": 80,
  "items": [
   {
    "ingredient": {

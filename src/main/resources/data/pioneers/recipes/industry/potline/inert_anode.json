@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "electrolyzer",
  "tier": 3,
- "time": 75,
+ "time": 80,
  "family": "potline",
  "items": [
   {

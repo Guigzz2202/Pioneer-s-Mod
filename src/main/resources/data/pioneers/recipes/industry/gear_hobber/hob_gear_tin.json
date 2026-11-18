@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "gear_hobber",
  "tier": 0,
- "time": 65,
+ "time": 160,
  "items": [
   {
    "ingredient": {

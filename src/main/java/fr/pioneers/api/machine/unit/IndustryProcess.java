@@ -377,7 +377,7 @@ public class IndustryProcess extends ProcessUnit implements RecipeMatch.Buffers 
                 }
                 current = found;
                 if (found != null) {
-                    duration = Tiers.ticks(found.time(), tier.ordinal(), found.tier(), false);
+                    duration = Tiers.ticks(found.time(), tier.ordinal(), found.tier(), false, found.machine());
                     if (found.draws() != null) {
                         //1.9 (MAJ RP) : tri plus rapide (skill Recuperation du proprietaire)
                         duration = (int) Math.max(1, Math.round(duration / machine.tile().ownerFactor("salvage.sort_speed")));

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "recycler",
  "tier": 0,
- "time": 800,
+ "time": 160,
  "items": [
   {
    "ingredient": {

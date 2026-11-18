@@ -46,7 +46,29 @@ public final class PowerRules {
 
     /** Duree (ticks) d'une recette de duree de base {@code time} et de tier minimal {@code minTier} a ce tier global : ÷ 2 par tier d'ecart. */
     public static int globalDuration(int time, int tier, int minTier) {
-        return Math.max(1, time >> Math.max(0, Math.min(30, tier - minTier)));
+        return Math.max(Math.max(1, time >> Math.max(0, Math.min(30, tier - minTier))), Math.min(time, floorTicks(tier, minTier - 2)));
+    }
+
+    // ------------------------------------------------------------------
+    // 1.0.6 (Guillaume, 18/11/2026 : « si une recette MKIV atteint 0,2 s alors on doit augmenter pour qu'elle atteigne 1 s ; cela se repercute
+    // sur les tiers precedents ; les materiaux les plus avances tendent vers 2 ou 4 s pour les materiaux specifiques au MKIV » ; « aucune
+    // recette ne depasse 8 s sauf justification, 20 s au plus ») : PLANCHER DES DUREES. Les durees de base des recettes JSON sont posees par
+    // tools/gc/balance/recipe_times.py ; le plancher tient aussi les recettes faites en Java (bas tiers, cuisson, taille, concassage).
+    // ------------------------------------------------------------------
+
+    /** Duree minimale au MKIV (ticks) selon le tier de la recette (0 MKI .. 3 MKIV) : 1 s, 1 s, 2 s, 4 s. */
+    public static final int[] MKIV_MIN = {20, 20, 40, 80};
+    /** Machines dont la duree n'est pas celle d'une fabrication (production de vapeur ou de chaleur, croissance, fermentation...). */
+    public static final java.util.Set<String> NO_FLOOR = java.util.Set.of("boiler", "cooling_tower", "hot_blast_stove", "exhaust_stack",
+          "item_silo", "aquafarm", "hydroponic_farm", "tree_plantation", "fermenter", "spent_fuel_pool", "dryer", "coke_oven");
+
+    /**
+     * Plancher (ticks) d'une recette de tier industriel {@code recipeTier} (0..3), a tout tier global {@code globalTier} : aucune operation sous
+     * {@link #MKIV_MIN}. La repercussion sur les tiers precedents est portee par les durees de base (recipe_times.py : 8 s au MKI pour une
+     * recette MKI...) ; la vitesse x 2 par tier (regle des tiers) reste entiere jusqu'au plancher.
+     */
+    public static int floorTicks(int globalTier, int recipeTier) {
+        return MKIV_MIN[Math.max(0, Math.min(3, recipeTier))];
     }
 
     /** Rendement d'une recette A RENDEMENT de tier minimal {@code minTier} faite au tier global {@code tier} : R(tier) / R(minTier), >= 1. */

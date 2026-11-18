@@ -373,7 +373,12 @@ public final class PatchP106InterfacesTests {
         }
         var screw = rm.byKey(fr.pioneers.Pioneers.rl("bronze/steam/lathe/steel_screw"));
         Gt.check(screw.isPresent() && screw.get() instanceof fr.pioneers.tech.bronze.machines.SteamRecipe, "tour a vapeur : vis d'acier absente");
-        Gt.equal(80, ((fr.pioneers.tech.bronze.machines.SteamRecipe) screw.get()).time(), "vis d'acier : 4 s au tier vapeur");
+        //regle des durees du 18/11 (12 h 57) : 8 s au plus a la vapeur, puis x 2 par tier jusqu'au plancher de 1 s (MKIII et MKIV)
+        int st = ((fr.pioneers.tech.bronze.machines.SteamRecipe) screw.get()).time();
+        Gt.equal(160, st, "vis d'acier : 8 s au tier vapeur");
+        Gt.equal(80, fr.pioneers.api.machine.PowerRules.globalDuration(st, 2, 1), "vis d'acier : 4 s au MKI");
+        Gt.equal(20, fr.pioneers.api.machine.PowerRules.globalDuration(st, 4, 1), "vis d'acier : 1 s au MKIII");
+        Gt.equal(20, fr.pioneers.api.machine.PowerRules.globalDuration(st, 5, 1), "vis d'acier : 1 s au MKIV (plancher)");
         var batch = rm.byKey(fr.pioneers.Pioneers.rl("machine_hulls/machine_hull_basic_batch"));
         Gt.check(batch.isPresent() && batch.get() instanceof fr.pioneers.tech.industry.recipe.IndustrialRecipe, "lot de machines de base absent");
         var b = (fr.pioneers.tech.industry.recipe.IndustrialRecipe) batch.get();

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "rail_works",
  "tier": 0,
- "time": 110,
+ "time": 160,
  "items": [
   {
    "ingredient": {

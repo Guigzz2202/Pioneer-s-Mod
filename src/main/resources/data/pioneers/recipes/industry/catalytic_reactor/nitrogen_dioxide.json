@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "chemical_reactor",
  "tier": 0,
- "time": 40,
+ "time": 160,
  "family": "catalytic_reactor",
  "gases": [
   {

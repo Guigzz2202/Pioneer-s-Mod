@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "electrolyzer",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "fluids": [
   {
    "fluid": "pioneers:zinc_sulfate",

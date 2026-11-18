@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "casting_machine",
  "tier": 2,
- "time": 30,
+ "time": 80,
  "items": [
   {
    "ingredient": {

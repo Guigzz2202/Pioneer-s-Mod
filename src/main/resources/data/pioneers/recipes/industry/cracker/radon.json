@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "reduction_furnace",
  "tier": 1,
- "time": 200,
+ "time": 160,
  "items": [
   {
    "ingredient": {

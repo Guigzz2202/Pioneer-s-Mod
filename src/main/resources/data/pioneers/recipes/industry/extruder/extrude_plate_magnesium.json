@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "extruder",
  "tier": 1,
- "time": 360,
+ "time": 160,
  "items": [
   {
    "ingredient": {

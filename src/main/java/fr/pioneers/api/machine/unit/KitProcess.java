@@ -618,7 +618,7 @@ public class KitProcess extends ProcessUnit implements RecipeMatch.Buffers {
                 received = found;
             }
             if (received != null) {
-                duration = Tiers.ticks(received.time(), tier.ordinal(), received.tier(), false);
+                duration = Tiers.ticks(received.time(), tier.ordinal(), received.tier(), false, received.machine());
                 tierNeeded = -1;
             } else {
                 tierNeeded = RecipeMatch.tierNeeded(list, this, tier.ordinal(), false, locked);

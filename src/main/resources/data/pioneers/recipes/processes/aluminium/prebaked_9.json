@@ -3,7 +3,7 @@
  "machine": "electrolyzer",
  "family": "potline",
  "tier": 1,
- "time": 240,
+ "time": 160,
  "industrial": true,
  "items": [
   {

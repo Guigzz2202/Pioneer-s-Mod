@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "assembler",
  "tier": 1,
- "time": 190,
+ "time": 160,
  "family": "arc_welder",
  "items": [
   {

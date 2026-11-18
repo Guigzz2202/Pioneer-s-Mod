@@ -3,7 +3,7 @@
  "machine": "electric_crucible",
  "family": "vacuum_furnace",
  "tier": 1,
- "time": 800,
+ "time": 400,
  "items": [
   {
    "ingredient": {

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "semiconductor_fab",
  "tier": 1,
- "time": 520,
+ "time": 400,
  "items": [
   {
    "ingredient": {

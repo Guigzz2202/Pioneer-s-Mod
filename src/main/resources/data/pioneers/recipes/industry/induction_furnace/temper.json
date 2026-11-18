@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "induction_furnace",
  "tier": 0,
- "time": 80,
+ "time": 160,
  "items": [
   {
    "ingredient": {

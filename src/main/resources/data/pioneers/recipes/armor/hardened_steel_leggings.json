@@ -3,7 +3,7 @@
  "machine": "chemical_bath",
  "family": "quench_tank",
  "tier": 0,
- "time": 280,
+ "time": 160,
  "items": [
   {
    "ingredient": {

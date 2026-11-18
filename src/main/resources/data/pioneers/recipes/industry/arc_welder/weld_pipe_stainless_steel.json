@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "bender",
  "tier": 1,
- "time": 195,
+ "time": 160,
  "items": [
   {
    "ingredient": {

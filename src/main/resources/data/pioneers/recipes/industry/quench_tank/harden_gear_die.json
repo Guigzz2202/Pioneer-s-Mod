@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "chemical_bath",
  "tier": 0,
- "time": 300,
+ "time": 160,
  "family": "quench_tank",
  "items": [
   {

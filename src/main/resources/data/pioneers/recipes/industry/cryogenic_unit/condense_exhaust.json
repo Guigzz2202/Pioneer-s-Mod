@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "cryogenic_unit",
  "tier": 0,
- "time": 20,
+ "time": 160,
  "gases": [
   {
    "gas": "pioneers:exhaust_steam",

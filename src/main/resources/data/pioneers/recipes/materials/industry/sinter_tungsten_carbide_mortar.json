@@ -3,7 +3,7 @@
  "machine": "reduction_furnace",
  "family": "sintering_furnace",
  "tier": 3,
- "time": 440,
+ "time": 400,
  "items": [
   {
    "ingredient": {

@@ -3,7 +3,7 @@
  "machine": "chemical_reactor",
  "family": "fluidized_bed_reactor",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "items": [
   {
    "ingredient": {

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "bottler",
  "tier": 2,
- "time": 20,
+ "time": 80,
  "items": [
   {
    "ingredient": {

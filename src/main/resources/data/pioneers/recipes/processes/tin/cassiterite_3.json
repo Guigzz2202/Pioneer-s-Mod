@@ -3,7 +3,7 @@
  "machine": "reduction_furnace",
  "family": "roaster",
  "tier": 0,
- "time": 80,
+ "time": 160,
  "items": [
   {
    "ingredient": {

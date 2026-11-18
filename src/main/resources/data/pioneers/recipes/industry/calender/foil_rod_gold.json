@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "rolling_mill",
  "tier": 0,
- "time": 70,
+ "time": 160,
  "family": "calender",
  "items": [
   {

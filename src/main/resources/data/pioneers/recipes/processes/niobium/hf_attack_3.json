@@ -3,7 +3,7 @@
  "machine": "extractor",
  "family": "leaching_tank",
  "tier": 1,
- "time": 300,
+ "time": 160,
  "items": [
   {
    "ingredient": {

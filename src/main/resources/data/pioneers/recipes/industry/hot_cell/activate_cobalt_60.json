@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "hot_cell",
  "tier": 2,
- "time": 600,
+ "time": 400,
  "items": [
   {
    "ingredient": {

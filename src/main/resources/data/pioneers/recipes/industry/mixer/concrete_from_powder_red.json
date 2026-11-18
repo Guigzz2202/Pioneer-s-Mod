@@ -7,7 +7,7 @@
  "type": "pioneers:industrial",
  "machine": "mixer",
  "tier": 0,
- "time": 32,
+ "time": 8,
  "items": [
   {
    "ingredient": {

@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "cracker",
  "tier": 0,
- "time": 120,
+ "time": 160,
  "fluids": [
   {
    "fluid": "pioneers:atmospheric_residue",

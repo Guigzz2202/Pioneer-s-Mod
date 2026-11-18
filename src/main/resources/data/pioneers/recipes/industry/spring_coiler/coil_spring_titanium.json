@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "bender",
  "tier": 1,
- "time": 180,
+ "time": 160,
  "family": "spring_coiler",
  "items": [
   {

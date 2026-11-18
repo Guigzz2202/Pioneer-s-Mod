@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "chemical_bath",
  "tier": 0,
- "time": 140,
+ "time": 160,
  "items": [
   {
    "ingredient": {

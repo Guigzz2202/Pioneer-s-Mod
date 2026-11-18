@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "tailoring_workshop",
  "tier": 0,
- "time": 60,
+ "time": 160,
  "items": [
   {
    "ingredient": {

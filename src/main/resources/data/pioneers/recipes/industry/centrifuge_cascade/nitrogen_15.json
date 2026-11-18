@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "centrifuge_cascade",
  "tier": 2,
- "time": 600,
+ "time": 400,
  "gases": [
   {
    "gas": "pioneers:nitrogen",

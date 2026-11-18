@@ -3,7 +3,7 @@
  "machine": "extractor",
  "family": "oil_press",
  "tier": 0,
- "time": 48,
+ "time": 160,
  "items": [
   {
    "ingredient": {

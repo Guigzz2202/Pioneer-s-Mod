@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "ore_separator",
  "tier": 1,
- "time": 200,
+ "time": 160,
  "family": "shaking_table",
  "items": [
   {

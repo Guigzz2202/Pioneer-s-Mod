@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "autoclave",
  "tier": 0,
- "time": 120,
+ "time": 160,
  "fluids": [
   {
    "fluid": "pioneers:liquid_ammonia",

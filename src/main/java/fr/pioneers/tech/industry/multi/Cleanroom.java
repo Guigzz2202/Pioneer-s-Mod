@@ -64,7 +64,7 @@ public final class Cleanroom {
 
     /** Duree d'une operation (ticks) d'une recette dans cette salle blanche (meme regle que {@code MultiProcess}). */
     public static int ticks(IndustryMachine machine, int recipeTime, int recipeTier) {
-        return Tiers.ticks(recipeTime, level(machine), recipeTier, true);
+        return Tiers.ticks(recipeTime, level(machine), recipeTier, true, machine);
     }
 
     /** La salle blanche peut-elle faire une recette de ce niveau ? (statut « hors de portee » sinon). */

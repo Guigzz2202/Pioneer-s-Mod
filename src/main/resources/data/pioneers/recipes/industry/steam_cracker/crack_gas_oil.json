@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "cracker",
  "tier": 0,
- "time": 240,
+ "time": 160,
  "family": "steam_cracker",
  "fluids": [
   {

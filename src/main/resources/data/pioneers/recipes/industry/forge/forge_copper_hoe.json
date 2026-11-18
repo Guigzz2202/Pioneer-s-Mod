@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "power_hammer",
  "tier": 0,
- "time": 180,
+ "time": 160,
  "family": "forge",
  "items": [
   {

@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 1,
+ "time": 200,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:epoxy_board"
+   },
+   "count": 3
+  },
+  {
+   "ingredient": {
+    "tag": "forge:foils/copper"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "tag": "pioneers:engraving_objectives/glass"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:photoresist",
+   "amount": 100
+  },
+  {
+   "fluid": "pioneers:etchant",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:multilayer_pcb",
+   "count": 4
+  }
+ ],
+ "industrial": true
+}

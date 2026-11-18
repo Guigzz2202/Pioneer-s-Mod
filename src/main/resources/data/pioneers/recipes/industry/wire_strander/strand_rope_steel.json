@@ -2,7 +2,7 @@
  "type": "pioneers:industrial",
  "machine": "wiremill",
  "tier": 0,
- "time": 40,
+ "time": 160,
  "family": "wire_strander",
  "items": [
   {
