@@ -1,0 +1,24 @@
+{
+ "type": "pioneers:bench",
+ "bench": "components",
+ "tools": [
+  {
+   "tag": "pioneers:tools/hammers"
+  },
+  {
+   "tag": "pioneers:tools/files"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/redsteel"
+   },
+   "count": 6
+  }
+ ],
+ "result": {
+  "item": "pioneers:redsteel_gear",
+  "count": 1
+ }
+}
