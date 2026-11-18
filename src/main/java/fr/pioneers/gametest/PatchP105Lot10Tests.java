@@ -224,21 +224,25 @@ public final class PatchP105Lot10Tests {
 
     // ------------------------------------------------------------------ 4. degats contre un joueur divises par 2
 
-    @GameTest(template = Gt.BORDER, batch = "pioneers_p105_10_pvp", timeoutTicks = 40)
+    @GameTest(template = Gt.BORDER, batch = "pioneers_p105_10_pvp", timeoutTicks = 120)
     public static void p105_10_degats_pvp_divises(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         s.onCleanup(() -> HuntSettings.forced = null);
         HuntSettings.forced = HuntSettings.DEFAULT;
         Gt.check(Math.abs(HuntRules.pvp(20F, HuntRules.PVP_FACTOR) - 10F) < 1e-4, "regle : x 0,5 par defaut");
         ServerPlayer a = s.player("huntc", "Gaspard", new BlockPos(3, 1, 10)), b = s.player("huntd", "Marius", new BlockPos(12, 1, 10));
-        Vec3 eye = a.getEyePosition();
-        Vec3 dir = b.position().add(0, 1.0, 0).subtract(eye).normalize();
-        Firearms.Shot shot = Firearms.ray(s.level, a, eye, dir, 12F, 64);
-        Gt.check(shot.hit() == b, "le tir touche le joueur");
-        if (s.server.isPvpAllowed()) {
-            Gt.check(Math.abs(shot.damage() - 6F) < 1e-3, "degats x 0,5 contre un joueur : " + shot.damage());
-        }
-        s.done();
+        //1.0.6 : un joueur qui arrive est invulnerable 60 ticks (ServerPlayer.spawnInvulnerableTime) : le tir part une fois cette protection
+        //passee (le test passait seulement quand une serie d'avant laissait le temps s'ecouler)
+        h.runAfterDelay(61, () -> {
+            Vec3 eye = a.getEyePosition();
+            Vec3 dir = b.position().add(0, 1.0, 0).subtract(eye).normalize();
+            Firearms.Shot shot = Firearms.ray(s.level, a, eye, dir, 12F, 64);
+            Gt.check(shot.hit() == b, "le tir touche le joueur");
+            if (s.server.isPvpAllowed()) {
+                Gt.check(Math.abs(shot.damage() - 6F) < 1e-3, "degats x 0,5 contre un joueur : " + shot.damage());
+            }
+            s.done();
+        });
     }
 
     // ------------------------------------------------------------------ 5. tir refuse sous l'eau
