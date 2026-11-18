@@ -359,6 +359,18 @@ public final class PatchP106InterfacesTests {
         for (String gone : new String[]{"industry/photolithograph/pcm_copper_mesh", "industry/machining_center/screw_steel"}) {
             Gt.check(rm.byKey(fr.pioneers.Pioneers.rl(gone)).isEmpty(), "recette retiree encore la : " + gone);
         }
+        //10 h 20 : « toutes les vis et boulons doivent se faire au centre d'usinage » (la vis d'acier par la recette du tour a vapeur)
+        java.util.Set<net.minecraft.world.item.Item> machined = new java.util.HashSet<>();
+        for (fr.pioneers.tech.industry.recipe.IndustrialRecipe r : fr.pioneers.tech.industry.recipe.IndustryRecipes.of(h.getLevel(),
+              fr.pioneers.tech.industry.IndustryMachine.MACHINING_CENTER)) {
+            r.results().forEach(x -> machined.add(x.stack().getItem()));
+        }
+        for (String m : new String[]{"steel", "aluminium", "titanium", "tungsten"}) {
+            for (String f : new String[]{"bolt", "screw"}) {
+                Gt.check(machined.contains(net.minecraftforge.registries.ForgeRegistries.ITEMS.getValue(fr.pioneers.Pioneers.rl(m + "_" + f))),
+                      "centre d'usinage : pas de " + m + "_" + f);
+            }
+        }
         var screw = rm.byKey(fr.pioneers.Pioneers.rl("bronze/steam/lathe/steel_screw"));
         Gt.check(screw.isPresent() && screw.get() instanceof fr.pioneers.tech.bronze.machines.SteamRecipe, "tour a vapeur : vis d'acier absente");
         Gt.equal(80, ((fr.pioneers.tech.bronze.machines.SteamRecipe) screw.get()).time(), "vis d'acier : 4 s au tier vapeur");
