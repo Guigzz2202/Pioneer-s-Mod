@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_tape"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:frost_capacitor_cell"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanian_frost_dielectric"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:superconducting_wiremill",
+  "count": 1
+ }
+}

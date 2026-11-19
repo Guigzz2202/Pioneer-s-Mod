@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "deep_geothermal_probe",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:supercritical_exchanger_core"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:venusian_spiral_gasket"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:acidproof_venusium_liner"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:carbon_dioxide",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:supercritical_working_fluid_cell",
+   "count": 1
+  }
+ ],
+ "energy": 8000,
+ "industrial": true
+}

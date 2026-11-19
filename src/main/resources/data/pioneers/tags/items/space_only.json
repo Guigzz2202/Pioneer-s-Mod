@@ -934,6 +934,10 @@
    "required": false
   },
   {
+   "id": "pioneers:dark_matter_trap",
+   "required": false
+  },
+  {
    "id": "pioneers:data_crystal_5d",
    "required": false
   },

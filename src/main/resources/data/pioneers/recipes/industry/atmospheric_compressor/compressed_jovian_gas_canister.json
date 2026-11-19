@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "atmospheric_compressor",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:jovian_pressure_vessel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:callisto_filter_cartridge"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:hydrogen",
+   "amount": 4000
+  },
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:compressed_jovian_gas_canister",
+   "count": 1
+  }
+ ],
+ "energy": 8000,
+ "industrial": true
+}

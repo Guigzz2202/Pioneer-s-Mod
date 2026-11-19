@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:phobos_deimos_forged_frame"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tharsium_truss_beam"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:deimos_spine_cable"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:orbital_matrix_forge",
+  "count": 1
+ }
+}

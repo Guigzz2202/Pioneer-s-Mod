@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "orbital_matrix_forge",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:phobos_deimos_forged_frame"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:isostatic_preform"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tharsium_truss_beam"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:orbital_forged_spar",
+   "count": 1
+  }
+ ],
+ "energy": 8000,
+ "industrial": true
+}

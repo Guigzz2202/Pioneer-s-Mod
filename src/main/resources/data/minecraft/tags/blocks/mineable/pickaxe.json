@@ -1855,6 +1855,15 @@
   "pioneers:sun_swarm_port",
   "pioneers:halo_observatory_port",
   "pioneers:halo_detector",
-  "pioneers:gravitational_lens"
+  "pioneers:gravitational_lens",
+  "pioneers:orbital_matrix_forge",
+  "pioneers:refractory_preparer",
+  "pioneers:deep_geothermal_probe",
+  "pioneers:atmospheric_compressor",
+  "pioneers:deuterium_purifier",
+  "pioneers:superconducting_wiremill",
+  "pioneers:electrodeposition_vat",
+  "pioneers:helium_liquefier",
+  "pioneers:regolith_helium3_extractor"
  ]
 }

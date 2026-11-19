@@ -222,6 +222,24 @@ public enum IndustryMachine {
     HALO_DETECTOR("halo_detector", Atelier.NONE, true, null, 4, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xA082F0, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
     GRAVITATIONAL_LENS("gravitational_lens", Atelier.NONE, true, null, 3, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0x6E5AC8, new int[]{15, 6, 15, 15, 6, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    ORBITAL_MATRIX_FORGE("orbital_matrix_forge", Atelier.NONE, true, null, 3, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xBE5A3C, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    REFRACTORY_PREPARER("refractory_preparer", Atelier.NONE, true, null, 2, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xE6A050, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    DEEP_GEOTHERMAL_PROBE("deep_geothermal_probe", Atelier.NONE, true, null, 3, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xD66E3C, new int[]{7, 15, 0, 7, 15, 0}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.TOWER, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
+    ATMOSPHERIC_COMPRESSOR("atmospheric_compressor", Atelier.NONE, true, null, 2, 1, 0, 0, 2, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xE2B46E, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    DEUTERIUM_PURIFIER("deuterium_purifier", Atelier.NONE, true, null, 2, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xDCC896, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    SUPERCONDUCTING_WIREMILL("superconducting_wiremill", Atelier.NONE, true, null, 2, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0x64DCC8, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
+    ELECTRODEPOSITION_VAT("electrodeposition_vat", Atelier.NONE, true, null, 3, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0x5A82E6, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
+    HELIUM_LIQUEFIER("helium_liquefier", Atelier.NONE, true, null, 2, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xA0DCFA, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    REGOLITH_HELIUM3_EXTRACTOR("regolith_helium3_extractor", Atelier.NONE, true, null, 2, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xC8C8BE, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{});
 
     /** Ou est la machine d'atelier : nouvelle (generee), kit existant, machine d'avant l'electricite, ou aucune (multibloc seulement). */
@@ -347,7 +365,7 @@ public enum IndustryMachine {
     }
 
     /** 1.0 : contenants en toles (cuves, reservoirs, bacs) : paroi en toles au-dessus des deux premieres rangees de carcasses. */
-    private static final java.util.Set<String> SHEET = java.util.Set.of("crusher", "ore_separator", "electrolyzer", "chemical_bath", "mixer", "chemical_reactor", "bayer_digester", "cooling_tower", "autoclave", "fermenter", "storage_tank", "gas_holder", "food_processor", "fission_reactor", "fast_reactor", "item_silo");
+    private static final java.util.Set<String> SHEET = java.util.Set.of("crusher", "ore_separator", "electrolyzer", "chemical_bath", "mixer", "chemical_reactor", "bayer_digester", "cooling_tower", "autoclave", "fermenter", "storage_tank", "gas_holder", "food_processor", "fission_reactor", "fast_reactor", "item_silo", "deep_geothermal_probe");
 
     public boolean sheet() {
         return SHEET.contains(key);

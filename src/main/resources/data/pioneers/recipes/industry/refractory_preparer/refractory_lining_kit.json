@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "refractory_preparer",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:mercurian_refractory_brick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pallasite_cermet"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:refractory_lining_kit",
+   "count": 1
+  }
+ ],
+ "energy": 8000,
+ "industrial": true
+}
