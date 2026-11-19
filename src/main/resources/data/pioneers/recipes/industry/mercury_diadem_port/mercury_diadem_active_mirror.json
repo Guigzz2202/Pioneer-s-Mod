@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mercury_diadem_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:heliothermal_absorber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_tape"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_sheet_metal"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:active_heliothermal_mirror",
+   "count": 1
+  }
+ ],
+ "energy": 48000,
+ "industrial": true
+}

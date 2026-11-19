@@ -176,11 +176,14 @@ final class GeneratedJeiOrder {
           Map.entry("industry_quantum_computer", 162),
           Map.entry("industry_tokamak", 163),
           Map.entry("solar_absorber", 164),
-          Map.entry("industry_mars_elevator_port", 165),
-          Map.entry("industry_stellarator", 166),
-          Map.entry("drone_harvest", 167),
-          Map.entry("black_hole", 168),
-          Map.entry("industry_fragment_reactor", 169),
-          Map.entry("solar_simulation", 170),
-          Map.entry("universe_simulation", 171));
+          Map.entry("industry_solar_concentrator", 165),
+          Map.entry("industry_mercury_diadem_port", 166),
+          Map.entry("industry_isostatic_press", 167),
+          Map.entry("industry_mars_elevator_port", 168),
+          Map.entry("industry_stellarator", 169),
+          Map.entry("drone_harvest", 170),
+          Map.entry("black_hole", 171),
+          Map.entry("industry_fragment_reactor", 172),
+          Map.entry("solar_simulation", 173),
+          Map.entry("universe_simulation", 174));
 }

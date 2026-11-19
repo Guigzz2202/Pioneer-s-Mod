@@ -1840,6 +1840,9 @@
   "pioneers:stellar_induction_furnace",
   "pioneers:stellar_stoneworks",
   "pioneers:megastructure_site",
-  "pioneers:mars_elevator_port"
+  "pioneers:mars_elevator_port",
+  "pioneers:mercury_diadem_port",
+  "pioneers:solar_concentrator",
+  "pioneers:isostatic_press"
  ]
 }

@@ -28,7 +28,7 @@ public final class SkyScene {
 
     public static final int SUN = 0, POINT = 1, DISC = 2, MEGA = 3;
     /** 1.0.7 (lot 4) : geometries des megastructures (index de T:au_dela/megastructures.py SKY_KINDS). */
-    public static final int MEGA_TETHER = 0;
+    public static final int MEGA_TETHER = 0, MEGA_RING = 1;
     /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
     private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
 
@@ -70,6 +70,11 @@ public final class SkyScene {
         public double bx, by, bz;
         /** Cable : part a l'ombre depuis la base (0 = tout eclaire, 1 = tout dans l'ombre de l'astre), eclat de l'aube (0..1), largeur (deg). */
         public double shadow, glint, width;
+        /**
+         * Anneau (lot 5) : x, y, z = sommet de l'arc, bx, by, bz = point est de l'horizon ; ux, uy, uz = verticale du lieu (repere du ciel) ;
+         * rayon de l'anneau en rayons de l'astre ; largeur de la bande des reflets autour du terminateur (deg) ; surcroit du cote jour.
+         */
+        public double ux, uy, uz, ratio, terminator, dayBoost;
     }
 
     /** Reglages d'un observateur : l'astre, et pour une lune en rotation synchrone l'astre fixe de son ciel. */
@@ -166,6 +171,8 @@ public final class SkyScene {
             if (MEGA_BODY[i] == observer.body) {
                 if (Megastructures.skyKind(i) == MEGA_TETHER) {
                     items.add(tether(i, timeDeg));
+                } else if (Megastructures.skyKind(i) == MEGA_RING) {
+                    items.add(ring(i, timeDeg));
                 }
                 continue;
             }
@@ -213,6 +220,61 @@ public final class SkyScene {
         }
         item.glint = Megastructures.sky(i, 5) * Math.exp(-(sunAlt / 12) * (sunAlt / 12));
         return item;
+    }
+
+    /**
+     * Anneau de miroirs en orbite equatoriale (Diademe), vu de la surface : arc d'un horizon a l'autre (est, sommet, ouest), fixe par rapport
+     * au sol. L'eclairage de chaque point de l'arc se calcule a part ({@link #ringShade}), sans allocation, au rendu comme au banc.
+     */
+    private Item ring(int i, double timeDeg) {
+        Item item = new Item();
+        item.type = MEGA;
+        item.body = MEGA_BODY[i];
+        item.mega = i;
+        item.megaKind = MEGA_RING;
+        item.dist = 1;
+        double[] p = new double[3];
+        ground(Math.toRadians(Megastructures.sky(i, 1)), Math.toRadians(Megastructures.sky(i, 0)), timeDeg, p);
+        item.x = p[0];
+        item.y = p[1];
+        item.z = p[2];
+        ground(0, Math.toRadians(90), timeDeg, p);
+        item.bx = p[0];
+        item.by = p[1];
+        item.bz = p[2];
+        ground(Math.PI / 2, 0, timeDeg, p);
+        item.ux = p[0];
+        item.uy = p[1];
+        item.uz = p[2];
+        item.width = Megastructures.sky(i, 2);
+        item.ratio = Megastructures.sky(i, 3) / Megastructures.sky(i, 4);
+        item.glint = Megastructures.sky(i, 5);
+        item.terminator = Megastructures.sky(i, 6);
+        item.dayBoost = Megastructures.sky(i, 7);
+        return item;
+    }
+
+    /**
+     * Eclat (0 = dans l'ombre de l'astre) du point de l'anneau vu dans la direction (dx, dy, dz) du repere du ciel : l'astre a pour rayon 1 et
+     * pour centre l'origine, l'observateur est a sa surface (verticale du lieu), le Soleil en +Y. Plus clair du cote jour, reflets les plus
+     * vifs pres du terminateur (plan perpendiculaire au Soleil).
+     */
+    public static double ringShade(Item ring, double dx, double dy, double dz) {
+        double od = ring.ux * dx + ring.uy * dy + ring.uz * dz;
+        double disc = od * od - (1 - ring.ratio * ring.ratio);
+        if (disc < 0) {
+            return 0;
+        }
+        double t = -od + Math.sqrt(disc);
+        double px = ring.ux + dx * t, py = ring.uy + dy * t, pz = ring.uz + dz * t;
+        //ombre : derriere l'astre par rapport au Soleil (+Y), a moins d'un rayon de l'axe
+        if (py < 0 && px * px + pz * pz < 1) {
+            return 0;
+        }
+        double cos = py / ring.ratio;
+        double a = Math.toDegrees(Math.acos(Math.max(-1, Math.min(1, cos))));
+        double g = ring.glint * Math.exp(-((a - 90) / ring.terminator) * ((a - 90) / ring.terminator));
+        return 0.45 + ring.dayBoost * Math.max(0, cos) + g;
     }
 
     /** Direction (altitude, azimut depuis le nord vers l'est) du repere du sol vers le repere du ciel a l'heure donnee. */

@@ -192,6 +192,12 @@ public enum IndustryMachine {
     DRIVE_MOTOR("drive_motor", Atelier.NEW, false, null, 0, 0, 0, 0, 0, 0, Source.KINETIC, Kind.GENERATOR, 0, 0x468CD7, new int[]{3, 3, 3, 11, 11, 11}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.BOX, fr.pioneers.tech.industry.multi.IndustryStyle.NEUTRAL, new String[]{}),
     MARS_ELEVATOR_PORT("mars_elevator_port", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0xC8603A, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    MERCURY_DIADEM_PORT("mercury_diadem_port", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0xDEA848, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    SOLAR_CONCENTRATOR("solar_concentrator", Atelier.NONE, true, null, 3, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xFFBE46, new int[]{15, 6, 17, 15, 6, 17}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    ISOSTATIC_PRESS("isostatic_press", Atelier.NONE, true, null, 2, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xBE543C, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{});
 
     /** Ou est la machine d'atelier : nouvelle (generee), kit existant, machine d'avant l'electricite, ou aucune (multibloc seulement). */

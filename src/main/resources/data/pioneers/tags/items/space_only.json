@@ -1706,6 +1706,10 @@
    "required": false
   },
   {
+   "id": "pioneers:isostatic_preform",
+   "required": false
+  },
+  {
    "id": "pioneers:ivy_strand",
    "required": false
   },
@@ -4679,6 +4683,10 @@
   },
   {
    "id": "pioneers:sulfur_torch_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:superalloy_melt_charge",
    "required": false
   },
   {

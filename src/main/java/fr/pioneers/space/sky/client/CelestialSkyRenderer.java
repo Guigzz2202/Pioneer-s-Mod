@@ -366,6 +366,89 @@ public final class CelestialSkyRenderer {
     private static void drawMega(Matrix4f matrix, SkyScene.Item item, Style style) {
         if (item.megaKind == SkyScene.MEGA_TETHER) {
             drawTether(matrix, item, style);
+        } else if (item.megaKind == SkyScene.MEGA_RING) {
+            drawRingArc(matrix, item, style);
+        }
+    }
+
+    /** Anneau (Diademe) : arc est - sommet - ouest ; eclat de chaque morceau par {@link SkyScene#ringShade} (ombre, jour, terminateur). */
+    private static final int RING_STEPS = 72;
+    private static final double[] RS = new double[RING_STEPS + 1];
+
+    private static void drawRingArc(Matrix4f matrix, SkyScene.Item item, Style style) {
+        flushPoints();
+        int rgb = fr.pioneers.space.mega.Megastructures.color(item.mega);
+        float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
+        float night = Math.min(1, style.starBrightness * 2), fade = 1 - style.rain * 0.7F;
+        //base orthonormee du plan de l'arc : E (est) et A' (sommet sans sa part selon E)
+        double ex = item.bx, ey = item.by, ez = item.bz;
+        double d = item.x * ex + item.y * ey + item.z * ez;
+        double ax = item.x - d * ex, ay = item.y - d * ey, az = item.z - d * ez;
+        double al = Math.max(1e-9, Math.sqrt(ax * ax + ay * ay + az * az));
+        ax /= al;
+        ay /= al;
+        az /= al;
+        //normale du plan : largeur de la bande
+        double nx = ey * az - ez * ay, ny = ez * ax - ex * az, nz = ex * ay - ey * ax;
+        double w = R * Math.tan(Math.toRadians(item.width));
+        boolean glints = false;
+        for (int i = 0; i <= RING_STEPS; i++) {
+            double th = Math.PI * i / RING_STEPS;
+            double c = Math.cos(th), sn = Math.sin(th);
+            double px = c * ex + sn * ax, py = c * ey + sn * ay, pz = c * ez + sn * az;
+            RS[i] = SkyScene.ringShade(item, px, py, pz);
+            glints |= RS[i] > 1.0;
+        }
+        RenderSystem.setShader(GameRenderer::getPositionColorShader);
+        BufferBuilder builder = Tesselator.getInstance().getBuilder();
+        normal();
+        builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+        for (int i = 0; i < RING_STEPS; i++) {
+            ringQuad(builder, matrix, item, ex, ey, ez, ax, ay, az, nx, ny, nz, i, w, cr, cg, cb, night, fade, 1, false);
+        }
+        BufferUploader.drawWithShader(builder.end());
+        if (glints) {
+            additive();
+            builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+            for (int i = 0; i < RING_STEPS; i++) {
+                ringQuad(builder, matrix, item, ex, ey, ez, ax, ay, az, nx, ny, nz, i, w, cr, cg, cb, night, fade, 3, true);
+            }
+            BufferUploader.drawWithShader(builder.end());
+        }
+        normal();
+    }
+
+    private static void ringQuad(BufferBuilder builder, Matrix4f matrix, SkyScene.Item item, double ex, double ey, double ez, double ax, double ay,
+          double az, double nx, double ny, double nz, int i, double w, float cr, float cg, float cb, float night, float fade, double widen,
+          boolean glow) {
+        for (int k = 0; k < 4; k++) {
+            int j = k == 0 || k == 3 ? i : i + 1;
+            double side = k < 2 ? -widen : widen;
+            double th = Math.PI * j / RING_STEPS;
+            double c = Math.cos(th), sn = Math.sin(th);
+            double px = c * ex + sn * ax, py = c * ey + sn * ay, pz = c * ez + sn * az;
+            double b = RS[j];
+            float r, g, bl, a;
+            if (glow) {
+                double e = Math.max(0, b - 1);
+                r = cr;
+                g = cg;
+                bl = cb;
+                a = (float) Math.min(0.8, 0.45 * e) * fade;
+            } else if (b <= 0) {
+                r = 0.10F;
+                g = 0.09F;
+                bl = 0.12F;
+                a = (0.25F + 0.2F * night) * fade;
+            } else {
+                float k1 = (float) Math.min(1.4, b);
+                r = Math.min(1, cr * k1);
+                g = Math.min(1, cg * k1);
+                bl = Math.min(1, cb * k1);
+                a = (0.5F + 0.4F * night) * fade;
+            }
+            builder.vertex(matrix, (float) (R * px + nx * w * side), (float) (R * py + ny * w * side), (float) (R * pz + nz * w * side))
+                  .color(r, g, bl, a).endVertex();
         }
     }
 

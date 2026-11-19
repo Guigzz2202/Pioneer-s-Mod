@@ -99,6 +99,9 @@
   "pioneers:industrial_electromechanical_bench",
   "pioneers:industrial_stoneworks",
   "pioneers:mars_elevator_port",
+  "pioneers:mercury_diadem_port",
+  "pioneers:solar_concentrator",
+  "pioneers:isostatic_press",
   "pioneers:robotic_assembly_bay",
   "pioneers:rocket_integration_hall"
  ]

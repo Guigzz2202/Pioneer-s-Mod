@@ -95,9 +95,7 @@ import org.jetbrains.annotations.Nullable;
 public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, RecipeLockable, MultiblockPort {
 
     public static final int UNFORMED = 0, IDLE = 1, WORKING = 2, NO_ENERGY = 3, FULL = 4, NO_RECIPE = 5, OVERHEAT = 6, TIER = 7, NO_DEPOSIT = 8,
-          EXHAUSTED = 9, TOO_DEEP = 10, NO_FLUID = 11, RESEARCH = 12, NO_TUBES = 13,
-    //1.0.7 (lot 4) : port de megastructure hors de son astre ou avant le deblocage ; port sans carcasses MKV
-          MEGA_LOCKED = 14, MKV_CASINGS = 15;
+          EXHAUSTED = 9, TOO_DEEP = 10, NO_FLUID = 11, RESEARCH = 12, NO_TUBES = 13, MEGA_LOCKED = 14, MKV_CASINGS = 15;
     public static final double HEAT_SCALE = 4, AMBIENT_PER_SHELL = 0.2, CAPACITY_PER_BLOCK = 1_000;
     /** Caloporteurs : joules absorbes par mB. */
     public static final double WATER_J = 400, COOLANT_J = 1_200, NITROGEN_J = 3_000;
@@ -191,6 +189,7 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
     private ComputeView clientCompute;
     /** 0.17.2 : puce d'IA installee (tous les multiblocs) et bonus d'un noyau d'usine superviseur (niveau, fin de validite). */
     private ItemStack aiChip = ItemStack.EMPTY;
+    public final MkvCoreSlot mkvCore = new MkvCoreSlot(this::setChanged);
     private int supervisedLevel, clientChip;
     private long supervisedUntil;
     /** 0.17.1 : copie client de la vue du reacteur (rendus du coeur). */
@@ -504,12 +503,7 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
     }
 
     public int tier() {
-        return lifecycle.structure() == null ? 0 : Math.max(0, Math.min(3, lifecycle.structure().tier()));
-    }
-
-    /** 1.0.7 (lot 4) : etat de l'ecran (UNFORMED, IDLE, WORKING..., MEGA_LOCKED, MKV_CASINGS), pour les GameTests et les diagnostics. */
-    public int statusCode() {
-        return status;
+        return lifecycle.structure() == null ? 0 : mkvCore.tier(lifecycle.structure().tier(), machine.key);
     }
 
     /** Operations en parallele permises par la structure. */
@@ -1393,6 +1387,7 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
         if (!aiChip.isEmpty()) {
             tag.put("aiChip", aiChip.save(new CompoundTag()));
         }
+        mkvCore.save(tag);
         if (lifecycle.big() != null) {
             tag.put("big", lifecycle.big().write());
         }
@@ -1425,6 +1420,7 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
             unit.load(tag.getCompound(unit.saveKey()));
         }
         aiChip = tag.contains("aiChip") ? ItemStack.of(tag.getCompound("aiChip")) : ItemStack.EMPTY;
+        mkvCore.load(tag);
         lifecycle.loadBig(tag.contains("big") ? BigInterior.View.read(tag.getCompound("big")) : null);
         if (tag.contains("tankCap")) {
             for (FluidTank t : getFluidTanks()) {

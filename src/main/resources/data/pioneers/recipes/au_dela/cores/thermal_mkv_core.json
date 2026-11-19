@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:ultimate_refractory_crucible"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heliothermal_absorber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superalloy_melt_charge"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:thermal_mkv_core",
+  "count": 1
+ }
+}

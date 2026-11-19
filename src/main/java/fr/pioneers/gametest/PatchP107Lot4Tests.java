@@ -172,7 +172,11 @@ public final class PatchP107Lot4Tests {
 
     /** Bati le port (plan du catalogue) ; carcasses MKV si demande. */
     private static ControllerTile port(GameTestHelper h, boolean mkv) {
-        IndustryMachine m = IndustryMachine.byKey(Megastructures.port(MARS));
+        return build(h, IndustryMachine.byKey(Megastructures.port(MARS)), mkv);
+    }
+
+    /** Bati le plan d'une machine du catalogue ; toute la structure au tier MKV si demande (lot 5 : multiblocs de famille). */
+    static ControllerTile build(GameTestHelper h, IndustryMachine m, boolean mkv) {
         Direction front = Direction.NORTH, forward = front.getOpposite();
         Map<BlockPos, ProjectedStructure.Ghost> plan = IndustrialBlueprint.of(m).layout(0, BlockPos.ZERO, forward);
         int minX = 0, minY = 0, minZ = 0;
@@ -223,11 +227,11 @@ public final class PatchP107Lot4Tests {
                 tile.getEnergy().setStored(tile.getEnergy().getCapacity());
                 h.runAfterDelay(30, () -> {
                     try {
-                        Gt.equal(ControllerTile.MEGA_LOCKED, tile.statusCode(), "avant le deblocage : refuse");
+                        Gt.equal(ControllerTile.MEGA_LOCKED, fr.pioneers.tech.industry.multi.MkvCoreSlot.status(tile), "avant le deblocage : refuse");
                         w.unlock(h.getLevel().getServer(), MARS);
                         h.runAfterDelay(30, () -> {
                             try {
-                                Gt.equal(ControllerTile.MKV_CASINGS, tile.statusCode(), "carcasses MKI : refuse");
+                                Gt.equal(ControllerTile.MKV_CASINGS, fr.pioneers.tech.industry.multi.MkvCoreSlot.status(tile), "carcasses MKI : refuse");
                                 s.done();
                             } finally {
                                 Megastructures.bodyOf = old;
@@ -269,7 +273,7 @@ public final class PatchP107Lot4Tests {
             }
             h.runAfterDelay(30, () -> {
                 try {
-                    Gt.equal(ControllerTile.MEGA_LOCKED, tile.statusCode(), "hors de Mars : refuse");
+                    Gt.equal(ControllerTile.MEGA_LOCKED, fr.pioneers.tech.industry.multi.MkvCoreSlot.status(tile), "hors de Mars : refuse");
                     Megastructures.bodyOf = l -> Body.MARS;
                 } catch (RuntimeException e) {
                     Megastructures.bodyOf = old;
@@ -279,7 +283,7 @@ public final class PatchP107Lot4Tests {
                 h.onEachTick(() -> tile.getEnergy().setStored(tile.getEnergy().getCapacity()));
                 boolean[] seen = {false};
                 h.succeedWhen(() -> {
-                    if (!seen[0] && tile.statusCode() == ControllerTile.WORKING) {
+                    if (!seen[0] && fr.pioneers.tech.industry.multi.MkvCoreSlot.status(tile) == ControllerTile.WORKING) {
                         //lot en cours : garde a la relecture
                         CompoundTag tag = tile.saveWithoutMetadata();
                         Gt.check(tag.toString().contains("batch"), "lot en cours absent de la sauvegarde");
@@ -289,7 +293,7 @@ public final class PatchP107Lot4Tests {
                     for (var slot : tile.itemOutputs()) {
                         made |= ForgeRegistries.ITEMS.getKey(slot.getStack().getItem()).toString().equals(Megastructures.gated(MARS)[1]);
                     }
-                    Gt.check(made, "poutre orbitale continue pas encore faite (etat " + tile.statusCode() + ")");
+                    Gt.check(made, "poutre orbitale continue pas encore faite (etat " + fr.pioneers.tech.industry.multi.MkvCoreSlot.status(tile) + ")");
                     Gt.check(seen[0], "jamais vu en marche");
                     Megastructures.bodyOf = old;
                     restore(w, saved);

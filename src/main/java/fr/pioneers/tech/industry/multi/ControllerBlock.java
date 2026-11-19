@@ -32,12 +32,18 @@ public class ControllerBlock extends MachineBlock {
         builder.add(IndustryStyle.TIER);
     }
 
-    /** 0.17.2 : la puce d'IA installee tombe avec le controleur. */
+    /** 0.17.2 : la puce d'IA installee tombe avec le controleur (1.0.7 : et le coeur MKV). */
     @Override
     @SuppressWarnings("deprecation")
     public void onRemove(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState newState, boolean moving) {
-        if (!state.is(newState.getBlock()) && level.getBlockEntity(pos) instanceof ControllerTile tile && !tile.aiChip().isEmpty()) {
-            Containers.dropItemStack(level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, tile.takeChip());
+        if (!state.is(newState.getBlock()) && level.getBlockEntity(pos) instanceof ControllerTile tile) {
+            if (!tile.aiChip().isEmpty()) {
+                Containers.dropItemStack(level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, tile.takeChip());
+            }
+            //1.0.7 (lot 5) : le coeur MKV tombe aussi
+            if (!tile.mkvCore.get().isEmpty()) {
+                Containers.dropItemStack(level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, tile.mkvCore.take());
+            }
         }
         super.onRemove(state, level, pos, newState, moving);
     }

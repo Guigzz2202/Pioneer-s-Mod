@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_stellar"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heliothermal_absorber"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mercurian_refractory_brick"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superalloy_seed_crystal"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:mercury_diadem_port",
+  "count": 1
+ }
+}

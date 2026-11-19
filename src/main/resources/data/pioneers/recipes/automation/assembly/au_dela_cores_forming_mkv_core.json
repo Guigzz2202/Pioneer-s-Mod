@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:continuous_orbital_beam"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:phobos_deimos_forged_frame"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:isostatic_preform"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:forming_mkv_core",
+   "count": 1
+  }
+ ]
+}
