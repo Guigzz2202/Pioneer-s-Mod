@@ -29,7 +29,7 @@ import org.slf4j.Logger;
  * 1.0.7 (« ciel grandiose ») : CAPTURES DU CIEL en jeu, pour les essais sans ecran (CI, job « ciel ») : actif seulement avec la propriete
  * systeme {@code pioneers.skyshots} (Gradle : {@code -PskyShots=mars_elevator,mercury_diadem}, ou {@code all} : toutes les megastructures
  * qui ont leur modele en 3D). Dans un monde solo deja ouvert, pour chaque megastructure : deblocage, joueur en creatif volant sur son
- * astre, puis une serie de vues (midi, fin d'apres-midi, crepuscule, nuit ; au repos et en fonctionnement force) capturees dans
+ * astre (au-dessus du relief alentour), puis une serie de vues (midi, fin d'apres-midi, crepuscule, nuit ; au repos et en fonctionnement force) capturees dans
  * {@code run/screenshots/sky_<id>_<n>_<vue>.png}, interface masquee. Le journal finit par « SKYSHOTS : FIN ».
  */
 @Mod.EventBusSubscriber(modid = Pioneers.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -114,8 +114,14 @@ public final class SkyShots {
                     wait = 40;
                     return;
                 }
-                int h = mc.level.getHeight(Heightmap.Types.MOTION_BLOCKING, 0, 0);
-                double y = Math.max(h, mc.level.getMinBuildHeight() + 1) + 0.2;
+                //au-dessus du plus haut relief alentour (128 blocs) : la vue degagee jusqu'a l'horizon
+                int h = mc.level.getMinBuildHeight() + 1;
+                for (int x = -64; x <= 64; x += 4) {
+                    for (int z = -64; z <= 64; z += 4) {
+                        h = Math.max(h, mc.level.getHeight(Heightmap.Types.MOTION_BLOCKING, x, z));
+                    }
+                }
+                double y = h + 4;
                 server.execute(() -> {
                     ServerLevel level = server.getLevel(dim);
                     ServerPlayer player = server.getPlayerList().getPlayers().isEmpty() ? null : server.getPlayerList().getPlayers().get(0);

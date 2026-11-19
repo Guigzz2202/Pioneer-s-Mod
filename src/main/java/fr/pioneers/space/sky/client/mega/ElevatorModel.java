@@ -172,6 +172,8 @@ public final class ElevatorModel {
             double fast = Math.pow(Math.max(0, Math.cos(2 * Math.PI * (y1 / 30 - t / 45))), 6);
             light(b, ax, y1, az0, 0.75 + 0.6 * fast * act, 1 - 0.6 * act, 0.25 + 0.65 * act, 0.2 + 0.8 * act,
                   (0.18 + 0.5 * night) * (0.25 + 0.75 * idle) * (1 - act) + act * (0.25 + 0.75 * fast));
+            //feux de balisage blancs de chaque noeud, la nuit
+            light(b, ax + 1.6, y1, az0, 0.38, 1, 0.92, 0.8, 0.55 * night);
             //le cable accroche la lumiere quand le Soleil est bas
             double vis = v.sunVisibility(kmS);
             double glint = glintGain * 0.4 * vis * grazing * grazing;
@@ -283,6 +285,9 @@ public final class ElevatorModel {
                 light(b, ox, TOP - 0.5, oz, 0.34, wr, wg, wb, wa * 0.8);
             }
         }
+        //liseres eclaires de l'anneau, la nuit (sa silhouette se detache sur le ciel)
+        ringY(b, ax, TOP - 1.5, az0, rr + 1.75, 0.35, 48, wr, wg * 0.95, wb * 0.85, 0.16 * night + 0.25 * act);
+        ringY(b, ax, TOP - 1.5, az0, rr - 1.75, 0.3, 48, wr, wg * 0.95, wb * 0.85, 0.1 * night + 0.15 * act);
         for (int k = 0; k < 8; k++) {
             double a = 2 * Math.PI * k / 8 + rot;
             beam(b, v, km, ax + Math.cos(a) * 4.8, TOP, az0 + Math.sin(a) * 4.8, ax + Math.cos(a) * (rr - 1.6), TOP, az0 + Math.sin(a) * (rr - 1.6),
