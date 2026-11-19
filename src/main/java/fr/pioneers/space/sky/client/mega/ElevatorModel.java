@@ -32,9 +32,9 @@ public final class ElevatorModel {
     /** Echelle du modele vers le ciel (les angles ne changent pas ; tout reste en deca de la voute). */
     public static final double SCALE = 0.6;
     /** Distance de la base, pied du cable (sommet de la fleche), centre de la station, bout visible du cable (unites du modele). */
-    static final double DIST = 70, FOOT = 34, TOP = 130, END = 172, MID = 82;
+    static final double DIST = 70, FOOT = 46, TOP = 130, END = 172, MID = 88;
     private static final double[] TIERS = {20, 15.5, 11, 7};
-    private static final double TIER_H = 4.5, TIER_Y = -2;
+    private static final double TIER_H = 6, TIER_Y = 3;
 
     private ElevatorModel() {
     }
@@ -64,6 +64,9 @@ public final class ElevatorModel {
         double mr = MegaKit.red(v.color), mg = MegaKit.green(v.color), mb = MegaKit.blue(v.color);
         double cr = MegaKit.red(v.accent), cg = MegaKit.green(v.accent), cb = MegaKit.blue(v.accent);
         double win = 0.07 + 0.88 * night;
+        //plateau de roche sous l'arcologie : elle domine le relief de l'horizon
+        box(b, v, 0.3, ax, (TIER_Y - 6) / 2, az0, fx * 26, 0, fz * 26, 0, (TIER_Y + 6) / 2, 0, sx * 26, 0, sz * 26, cr * 0.3, cg * 0.27,
+              cb * 0.25, 0.02);
         for (int i = 0; i < TIERS.length; i++) {
             double hs = TIERS[i], y0 = TIER_Y + i * TIER_H;
             double shade = 0.4 + 0.07 * i;
@@ -76,7 +79,7 @@ public final class ElevatorModel {
             light(b, ax - fx * (hs + 0.3), y0 + TIER_H / 2, az0 - fz * (hs + 0.3), hs * 0.75, 1, 0.68, 0.4, 0.07 * night + 0.05 * act);
             //baies de la face avant : deux rangees ; en fonctionnement, presque toutes allumees
             int n = (int) (hs * 2 / 1.2);
-            for (int row = 0; row < 2; row++) {
+            for (int row = 0; row < 3; row++) {
                 for (int k = 0; k < n; k++) {
                     double h = hash(i * 7 + row, k);
                     if (h < 0.32 - 0.26 * act) {
@@ -85,7 +88,7 @@ public final class ElevatorModel {
                     double off = -hs + (k + 0.5) * hs * 2 / n;
                     double wx = ax - fx * (hs + 0.1) + sx * off, wz = az0 - fz * (hs + 0.1) + sz * off;
                     boolean blue = h > 0.86 || act > 0.5 && h > 0.6;
-                    light(b, wx, y0 + 1.25 + row * 1.7, wz, 0.45, blue ? 0.55 : 1, blue ? 0.85 : 0.78, blue ? 1 : 0.48,
+                    light(b, wx, y0 + 1.3 + row * 1.7, wz, 0.62, blue ? 0.55 : 1, blue ? 0.85 : 0.78, blue ? 1 : 0.48,
                           win * (0.6 + 0.4 * h) * (0.85 + 0.15 * Math.sin(t * 0.02 + h * 40)));
                 }
             }
@@ -114,11 +117,11 @@ public final class ElevatorModel {
         //tours de lancement de part et d'autre, feu rouge au sommet
         for (int i = -1; i <= 1; i += 2) {
             double tx = ax + sx * 27 * i + fx * 3, tz = az0 + sz * 27 * i + fz * 3;
-            cylinderY(b, v, 0.5, tx, -2, tz, 2.3, 21, 12, mr * 0.55, mg * 0.55, mb * 0.55, 0.15);
-            cylinderY(b, v, 0.5, tx, 19, tz, 3.2, 1.2, 12, cr * 0.6, cg * 0.6, cb * 0.6, 0.15);
-            light(b, tx, 21, tz, 0.7, 1, 0.15, 0.1, blink(t, 60, 30, i * 15) * (0.45 + 0.55 * night));
-            for (int k = 0; k < 4; k++) {
-                light(b, tx - fx * 2.4, 3 + k * 4.2, tz - fz * 2.4, 0.3, 1, 0.8, 0.5, win * 0.8);
+            cylinderY(b, v, 0.5, tx, -4, tz, 2.6, 36, 12, mr * 0.55, mg * 0.55, mb * 0.55, 0.15);
+            cylinderY(b, v, 0.5, tx, 32, tz, 3.6, 1.4, 12, cr * 0.6, cg * 0.6, cb * 0.6, 0.15);
+            light(b, tx, 34, tz, 0.9, 1, 0.15, 0.1, blink(t, 60, 30, i * 15) * (0.45 + 0.55 * night));
+            for (int k = 0; k < 7; k++) {
+                light(b, tx - fx * 2.7, 4 + k * 4.2, tz - fz * 2.7, 0.42, 1, 0.8, 0.5, win * 0.8);
             }
         }
         //projecteurs : ils balaient la poussiere du ciel ; en fonctionnement, ils suivent la premiere cabine
@@ -173,7 +176,7 @@ public final class ElevatorModel {
             light(b, ax, y1, az0, 0.75 + 0.6 * fast * act, 1 - 0.6 * act, 0.25 + 0.65 * act, 0.2 + 0.8 * act,
                   (0.18 + 0.5 * night) * (0.25 + 0.75 * idle) * (1 - act) + act * (0.25 + 0.75 * fast));
             //feux de balisage blancs de chaque noeud, la nuit
-            light(b, ax + 1.6, y1, az0, 0.38, 1, 0.92, 0.8, 0.55 * night);
+            light(b, ax + 1.6, y1, az0, 0.7, 1, 0.92, 0.8, 0.6 * night);
             //le cable accroche la lumiere quand le Soleil est bas
             double vis = v.sunVisibility(kmS);
             double glint = glintGain * 0.4 * vis * grazing * grazing;
@@ -277,8 +280,8 @@ public final class ElevatorModel {
             double px = ax + cx * rr, pz = az0 + cz * rr;
             box(b, v, km, px, TOP, pz, -cz * half, 0, cx * half, cx * 1.7, 0, cz * 1.7, 0, 1.4, 0, band ? cr : mr * 0.92, band ? cg : mg * 0.92,
                   band ? cb : mb * 0.92, 0.4);
-            light(b, px - cz * half * 0.5, TOP - 1.5, pz + cx * half * 0.5, 0.5, wr, wg, wb, wa * (0.7 + 0.3 * hash(k, 3)));
-            light(b, px + cz * half * 0.5, TOP - 1.5, pz - cx * half * 0.5, 0.5, wr, wg, wb, wa * (0.7 + 0.3 * hash(k, 4)));
+            light(b, px - cz * half * 0.5, TOP - 1.5, pz + cx * half * 0.5, 0.75, wr, wg, wb, wa * (0.7 + 0.3 * hash(k, 3)));
+            light(b, px + cz * half * 0.5, TOP - 1.5, pz - cx * half * 0.5, 0.75, wr, wg, wb, wa * (0.7 + 0.3 * hash(k, 4)));
             double ox = px + cx * 1.8, oz = pz + cz * 1.8;
             if (cx * ox + cz * oz < 0) {
                 light(b, ox, TOP + 0.4, oz, 0.34, wr, wg, wb, wa * 0.8);
@@ -286,8 +289,8 @@ public final class ElevatorModel {
             }
         }
         //liseres eclaires de l'anneau, la nuit (sa silhouette se detache sur le ciel)
-        ringY(b, ax, TOP - 1.5, az0, rr + 1.75, 0.35, 48, wr, wg * 0.95, wb * 0.85, 0.16 * night + 0.25 * act);
-        ringY(b, ax, TOP - 1.5, az0, rr - 1.75, 0.3, 48, wr, wg * 0.95, wb * 0.85, 0.1 * night + 0.15 * act);
+        ringY(b, ax, TOP - 1.5, az0, rr + 1.75, 0.45, 48, wr, wg * 0.95, wb * 0.85, 0.3 * night + 0.25 * act);
+        ringY(b, ax, TOP - 1.5, az0, rr - 1.75, 0.4, 48, wr, wg * 0.95, wb * 0.85, 0.2 * night + 0.15 * act);
         for (int k = 0; k < 8; k++) {
             double a = 2 * Math.PI * k / 8 + rot;
             beam(b, v, km, ax + Math.cos(a) * 4.8, TOP, az0 + Math.sin(a) * 4.8, ax + Math.cos(a) * (rr - 1.6), TOP, az0 + Math.sin(a) * (rr - 1.6),

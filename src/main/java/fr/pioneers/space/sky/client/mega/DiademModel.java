@@ -137,9 +137,9 @@ public final class DiademModel {
                     double flick = 0.75 + 0.25 * Math.sin(t * 0.31 + k * 1.7 + row * 2.3);
                     double a = act * vis * flick;
                     if (row == 1) {
-                        ray(b, mcx, mcy, mcz, fX, fY + 1.5, fZ, 0.7, 1, 0.8, 0.5, a * 0.12);
+                        ray(b, mcx, mcy, mcz, fX, fY + 1.5, fZ, 1.1, 1, 0.78, 0.45, a * 0.22);
                     }
-                    ray(b, mcx, mcy, mcz, fX, fY + 1.5, fZ, 0.16, 1, 0.96, 0.88, a * 0.26);
+                    ray(b, mcx, mcy, mcz, fX, fY + 1.5, fZ, 0.28, 1, 0.96, 0.88, a * 0.5);
                 }
             }
             //lueur douce de l'arche eclairee (la nuit, l'anneau au Soleil se detache sur le ciel noir)
@@ -208,11 +208,12 @@ public final class DiademModel {
         double t = v.ticks, act = v.activity;
         double pulse = 1 + 0.15 * Math.sin(t * 0.21);
         double y = fY + 1.5;
-        light(b, fX, y, fZ, 34 * pulse, 1, 0.38, 0.1, act * 0.45);
-        light(b, fX, y, fZ, 15 * pulse, 1, 0.75, 0.4, act * 0.85);
-        light(b, fX, y, fZ, 5.5, 1, 1, 0.95, act);
-        cone(b, fX, y, fZ, fX, y + 70, fZ, 2.8, 0.6, 1, 0.8, 0.55, act * 0.55, 0, 8);
-        cone(b, fX, y, fZ, fX, y + 70, fZ, 0.9, 0.15, 1, 1, 0.95, act * 0.8, 0, 8);
+        light(b, fX, y + 6, fZ, 44 * pulse, 1, 0.38, 0.1, act * 0.5);
+        light(b, fX, y + 3, fZ, 18 * pulse, 1, 0.75, 0.4, act * 0.9);
+        light(b, fX, y, fZ, 7, 1, 1, 0.95, act);
+        //lance de lumiere : elle depasse les reliefs de l'horizon
+        cone(b, fX, y, fZ, fX, y + 85, fZ, 5, 1.2, 1, 0.75, 0.45, act * 0.6, 0.05 * act, 10);
+        cone(b, fX, y, fZ, fX, y + 85, fZ, 1.6, 0.3, 1, 1, 0.95, act * 0.95, 0.1 * act, 10);
         for (int k = 0; k < 3; k++) {
             double u = MegaKit.frac(t / 90.0 + k / 3.0);
             ringY(b, fX, y + 0.5 + u * 4, fZ, 3 + u * 26, 0.6 + u * 1.6, 28, 1, 0.55, 0.25, act * 0.5 * (1 - u));
