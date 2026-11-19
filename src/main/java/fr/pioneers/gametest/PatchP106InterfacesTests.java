@@ -397,4 +397,27 @@ public final class PatchP106InterfacesTests {
               "objectif en verre : outil du graveur");
         h.succeed();
     }
+
+    /**
+     * Retours du 18/11/2026, 19 h 41 (Guillaume) : « ajoute des recettes pour les composants en acier rouge par la voie manuelle » et « une
+     * recette au name tag » : plaque, tige et engrenage d'acier rouge a l'etabli de composants de base (toujours moins rentables qu'en
+     * machine), etiquette a l'etabli du tanneur.
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p107_recettes_1811", timeoutTicks = 20)
+    public static void p107_acier_rouge_et_etiquette(GameTestHelper h) {
+        Gt.begin(h);
+        var rm = h.getLevel().getRecipeManager();
+        String[][] want = {{"components_bench/redsteel_plate_from_ingots", "pioneers:redsteel_plate", "COMPONENTS"},
+              {"components_bench/redsteel_rod_from_ingot", "pioneers:redsteel_rod", "COMPONENTS"},
+              {"components_bench/redsteel_gear_from_ingots", "pioneers:redsteel_gear", "COMPONENTS"},
+              {"vanilla/name_tag", "minecraft:name_tag", "TANNER"}};
+        for (String[] w : want) {
+            var r = rm.byKey(fr.pioneers.Pioneers.rl(w[0]));
+            Gt.check(r.isPresent() && r.get() instanceof fr.pioneers.tech.bronze.bench.BenchRecipe, "recette d'etabli absente : " + w[0]);
+            var b = (fr.pioneers.tech.bronze.bench.BenchRecipe) r.get();
+            Gt.equal(w[1], String.valueOf(net.minecraftforge.registries.ForgeRegistries.ITEMS.getKey(b.result().getItem())), "produit de " + w[0]);
+            Gt.equal(w[2], b.bench().name(), "etabli de " + w[0]);
+        }
+        h.succeed();
+    }
 }
