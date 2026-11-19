@@ -666,6 +666,10 @@
    "required": false
   },
   {
+   "id": "pioneers:compressed_jovian_gas_canister",
+   "required": false
+  },
+  {
    "id": "pioneers:conamarite_billet",
    "required": false
   },
@@ -1038,6 +1042,10 @@
    "required": false
   },
   {
+   "id": "pioneers:deposited_ruachite_film",
+   "required": false
+  },
+  {
    "id": "pioneers:diamond_heatsink",
    "required": false
   },
@@ -1231,6 +1239,10 @@
   },
   {
    "id": "pioneers:enceladus_snow",
+   "required": false
+  },
+  {
+   "id": "pioneers:enriched_deuterium_cell",
    "required": false
   },
   {
@@ -1578,6 +1590,10 @@
    "required": false
   },
   {
+   "id": "pioneers:hts_cable_bundle",
+   "required": false
+  },
+  {
    "id": "pioneers:hts_tape",
    "required": false
   },
@@ -1791,6 +1807,10 @@
   },
   {
    "id": "pioneers:life_support_unit",
+   "required": false
+  },
+  {
+   "id": "pioneers:liquid_helium_dewar",
    "required": false
   },
   {
@@ -2715,6 +2735,10 @@
   },
   {
    "id": "pioneers:olivine_sprout_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:orbital_forged_spar",
    "required": false
   },
   {
@@ -3890,6 +3914,10 @@
    "required": false
   },
   {
+   "id": "pioneers:refractory_lining_kit",
+   "required": false
+  },
+  {
    "id": "pioneers:robotic_bay",
    "required": false
   },
@@ -4711,6 +4739,10 @@
   },
   {
    "id": "pioneers:supercritical_exchanger_core",
+   "required": false
+  },
+  {
+   "id": "pioneers:supercritical_working_fluid_cell",
    "required": false
   },
   {
