@@ -68,6 +68,10 @@ public final class SkyShots {
             LOG.info("SKYSHOTS : {} captures prevues", shots.size());
         }
         mc.options.hideGui = true;
+        if (mc.screen != null) {
+            //ecrans d'accueil (carnet de premiere connexion...) : fermes, la vue reste au ciel
+            mc.setScreen(null);
+        }
         if (index >= shots.size()) {
             done = true;
             MegaClient.force(0);
