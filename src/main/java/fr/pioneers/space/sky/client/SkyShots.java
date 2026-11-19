@@ -114,19 +114,19 @@ public final class SkyShots {
                     wait = 40;
                     return;
                 }
-                //au-dessus du plus haut relief alentour (128 blocs) : la vue degagee jusqu'a l'horizon
-                int h = mc.level.getMinBuildHeight() + 1;
-                for (int x = -64; x <= 64; x += 4) {
-                    for (int z = -64; z <= 64; z += 4) {
-                        h = Math.max(h, mc.level.getHeight(Heightmap.Types.MOTION_BLOCKING, x, z));
-                    }
-                }
-                double y = h + 4;
+                //au-dessus du plus haut relief alentour (128 blocs, tranches generees par le serveur) : la vue degagee jusqu'a l'horizon
                 server.execute(() -> {
                     ServerLevel level = server.getLevel(dim);
                     ServerPlayer player = server.getPlayerList().getPlayers().isEmpty() ? null : server.getPlayerList().getPlayers().get(0);
                     if (level != null && player != null) {
-                        player.teleportTo(level, 0.5, y, 0.5, 0, 0);
+                        int h = level.getMinBuildHeight() + 1;
+                        for (int x = -64; x <= 64; x += 4) {
+                            for (int z = -64; z <= 64; z += 4) {
+                                h = Math.max(h, level.getHeight(Heightmap.Types.MOTION_BLOCKING, x, z));
+                            }
+                        }
+                        LOG.info("SKYSHOTS : vue a la hauteur {}", h + 4);
+                        player.teleportTo(level, 0.5, h + 4, 0.5, 0, 0);
                     }
                 });
                 stage = 2;
