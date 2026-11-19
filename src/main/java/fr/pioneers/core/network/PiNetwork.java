@@ -15,7 +15,7 @@ public final class PiNetwork {
     private PiNetwork() {
     }
 
-    private static final String VERSION = "22"; //1.0.6-beta : menus des machines revus (jauges de ressources, moteur electrique, dynamo, chunkloads achetes ; une seule hausse pour toute la 1.0.6) ; //1.0.5-beta (lot 1) : calendrier des saisons (PacketSeason ; une seule hausse pour toute la 1.0.5) ; //1.0.4-beta (lot 1) : comptoir d entrepot (PacketWarehouse : demandes, liste de l entrepot ; une seule hausse pour toute la 1.0.4) ; //1.0.3-beta (lot 2) : gisements envoyes aux clients (PacketDeposits ; une seule hausse pour toute la 1.0.3) ; //Prochaine version (API Machine / Multibloc, lots 0 a 8c) : valeurs d interface NOMMEES, menus des machines a la geometrie v2, unites portees (une seule hausse pour toute la MAJ) ; //1.12.3 (lot F3) : piles de plus de 127 objets des buffers (PacketBigSlots) ; //1.12.1 (lot F1) : environnement de la minimap (PacketEnvironment) ; //1.12.0 (lot E4) : garde-robe cosmetique (CosmeticNet) ; //1.11 (D2b) : diagramme du cable logistique (PacketLogistic) ; //MAJ Recettes : verrou de recette (PacketRecipeLock) ; //1.9 : MAJ RP ; //1.6 : lots de la ferme (avant, 10 : notes des instruments ; 9 : fiches au regard ; 8 : elevage et peche ; 7 : chantiers en morceaux, synchro cinetique, ordinateurs)
+    private static final String VERSION = "23"; //1.0.7-beta : megastructures (PacketMegaState, PacketMegaDeliver ; une seule hausse pour toute la 1.0.7) ; //1.0.6-beta : menus des machines revus (jauges de ressources, moteur electrique, dynamo, chunkloads achetes ; une seule hausse pour toute la 1.0.6) ; //1.0.5-beta (lot 1) : calendrier des saisons (PacketSeason ; une seule hausse pour toute la 1.0.5) ; //1.0.4-beta (lot 1) : comptoir d entrepot (PacketWarehouse : demandes, liste de l entrepot ; une seule hausse pour toute la 1.0.4) ; //1.0.3-beta (lot 2) : gisements envoyes aux clients (PacketDeposits ; une seule hausse pour toute la 1.0.3) ; //Prochaine version (API Machine / Multibloc, lots 0 a 8c) : valeurs d interface NOMMEES, menus des machines a la geometrie v2, unites portees (une seule hausse pour toute la MAJ) ; //1.12.3 (lot F3) : piles de plus de 127 objets des buffers (PacketBigSlots) ; //1.12.1 (lot F1) : environnement de la minimap (PacketEnvironment) ; //1.12.0 (lot E4) : garde-robe cosmetique (CosmeticNet) ; //1.11 (D2b) : diagramme du cable logistique (PacketLogistic) ; //MAJ Recettes : verrou de recette (PacketRecipeLock) ; //1.9 : MAJ RP ; //1.6 : lots de la ferme (avant, 10 : notes des instruments ; 9 : fiches au regard ; 8 : elevage et peche ; 7 : chantiers en morceaux, synchro cinetique, ordinateurs)
 
     public static final SimpleChannel CHANNEL = NetworkRegistry.newSimpleChannel(Pioneers.rl("main"),
           () -> VERSION, VERSION::equals, VERSION::equals);
@@ -421,6 +421,17 @@ public final class PiNetwork {
               .encoder(fr.pioneers.building.home.bag.PacketBag::encode)
               .decoder(fr.pioneers.building.home.bag.PacketBag::decode)
               .consumerMainThread(fr.pioneers.building.home.bag.PacketBag::handle)
+              .add();
+        //1.0.7 (lot 4) : megastructures : etat pour les clients (connexion, changements au plus une fois par seconde) et livraison au chantier
+        CHANNEL.messageBuilder(fr.pioneers.space.mega.PacketMegaState.class, id++, NetworkDirection.PLAY_TO_CLIENT)
+              .encoder(fr.pioneers.space.mega.PacketMegaState::encode)
+              .decoder(fr.pioneers.space.mega.PacketMegaState::decode)
+              .consumerMainThread(fr.pioneers.space.mega.PacketMegaState::handle)
+              .add();
+        CHANNEL.messageBuilder(fr.pioneers.space.mega.PacketMegaDeliver.class, id++, NetworkDirection.PLAY_TO_SERVER)
+              .encoder(fr.pioneers.space.mega.PacketMegaDeliver::encode)
+              .decoder(fr.pioneers.space.mega.PacketMegaDeliver::decode)
+              .consumerMainThread(fr.pioneers.space.mega.PacketMegaDeliver::handle)
               .add();
     }
 

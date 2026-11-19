@@ -59,7 +59,8 @@ public final class SkyEvents {
         if (STYLE.starBrightness <= 0.01F || STYLE.rain >= 0.99F) {
             return;
         }
-        SkyScene scene = SkyScene.compute(SkyScene.observer(Body.EARTH), CelestialSkyRenderer.days(level), level.getTimeOfDay(partialTick) * 360.0F);
+        SkyScene scene = SkyScene.compute(SkyScene.observer(Body.EARTH), CelestialSkyRenderer.days(level), level.getTimeOfDay(partialTick) * 360.0F,
+              fr.pioneers.space.mega.client.MegaClient.unlockedMask());
         CelestialSkyRenderer.render(scene, level, partialTick, event.getPoseStack(), event.getProjectionMatrix(), STYLE);
     }
 }

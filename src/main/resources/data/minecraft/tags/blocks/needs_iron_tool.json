@@ -364,6 +364,8 @@
   "pioneers:stellar_sawmill",
   "pioneers:stellar_power_hammer",
   "pioneers:stellar_induction_furnace",
-  "pioneers:stellar_stoneworks"
+  "pioneers:stellar_stoneworks",
+  "pioneers:megastructure_site",
+  "pioneers:mars_elevator_port"
  ]
 }

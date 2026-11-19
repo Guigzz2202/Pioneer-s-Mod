@@ -507,7 +507,8 @@ public final class CreativeSort {
         section(t, "recherche").add("research_table", "biome_analyzer", "geo_spectrometer", "bio_sequencer", "biome_data_cell", "asteroid_crusher");
         //Spatioport : assemblage (et son multibloc), pas de tir, ergols ; fusees (chaque tier : fusee, pieces, plan), modules, station
         section(t, "spatioport").add("rocket_integration_hall", "rocket_assembl*", "launch_pad_core", "launch_pad", "launch_port", "launch_tower",
-              "flight_computer", "programmed_flight_computer", "launch_*").machines = m -> placeOf(m) == Tab.SPACE && !endgame(m);
+              "flight_computer", "programmed_flight_computer", "launch_*").machines = m -> placeOf(m) == Tab.SPACE && !endgame(m)
+              && !megaPort(m.key());
         section(t, "fusees", Order.TIER).add("rocket_tier_*", "rocket_nose_cone_tier_*", "rocket_tank_tier_*", "rocket_booster_tier_*",
               "rocket_aux_booster_tier_*", "rocket_wing_tier_*", "rocket_blueprint_tier_*", "rocket_*_tier_*");
         section(t, "modules de fusee").add("rocket_module_*", "rocket_blueprint_cargo", "orbital_station_kit", "turbopump", "cryogenic_turbopump",
@@ -524,6 +525,8 @@ public final class CreativeSort {
         //Geantes gazeuses
         section(t, "geantes gazeuses").add("aerostat_kit", "aerostat_deck", "aerostat_landing_pad", "aerostat_hull", "aerostat_buoyancy_cell",
               "drone_bay", "drone_pad", "aerostat_*");
+        //1.0.7 (lot 4) : megastructures : le chantier, les terminaux de port et les composants dont chacune est la seule source
+        section(t, "megastructures").add("megastructure_site").add(gatedIds()).machines = m -> megaPort(m.key());
         //Fin de jeu : stabilisateur, compresseur gravitationnel, synthetiseur, planetes simulees, simulateur, absorbeur
         section(t, "singularite").add("space_stabilizer_controller", "space_stabilizer_casing", "space_stabilizer_glass", "space_stabilizer_port",
               "space_stabilizer_power_port", "space_stabilizer_emitter", "singularity_core", "stellar_core", "void_singularity_cell",
@@ -844,10 +847,26 @@ public final class CreativeSort {
         if (k.contains("rail") || k.contains("ship") || k.contains("harbor") || k.contains("naval") || k.contains("robot")) {
             return Tab.LOGISTICS;
         }
-        if (k.contains("rocket") || k.contains("launch") || k.contains("propellant") || endgame(m)) {
+        if (k.contains("rocket") || k.contains("launch") || k.contains("propellant") || endgame(m) || megaPort(k)) {
             return Tab.SPACE;
         }
         return Tab.TECH;
+    }
+
+    /** 1.0.7 (lot 4) : composants gates des megastructures, dans l'ordre des megastructures (table generee, sans classe Minecraft). */
+    private static List<String> gatedIds() {
+        List<String> out = new ArrayList<>();
+        for (String[] gated : fr.pioneers.space.mega.GeneratedMegastructures.GATED) {
+            for (String g : gated) {
+                out.add(g.substring(g.indexOf(':') + 1));
+            }
+        }
+        return out;
+    }
+
+    /** 1.0.7 (lot 4) : la machine est-elle le port (terminal) d'une megastructure ? */
+    private static boolean megaPort(String key) {
+        return List.of(fr.pioneers.space.mega.GeneratedMegastructures.PORTS).contains(key);
     }
 
     /** Machines de la fin de jeu (planetes simulees). */

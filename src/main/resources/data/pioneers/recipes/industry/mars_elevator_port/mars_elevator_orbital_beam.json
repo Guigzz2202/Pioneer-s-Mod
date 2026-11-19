@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mars_elevator_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tharsium_truss_beam"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rust_fiber_composite"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superalloy_seed_crystal"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_frame"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:continuous_orbital_beam",
+   "count": 1
+  }
+ ],
+ "energy": 40000,
+ "industrial": true
+}

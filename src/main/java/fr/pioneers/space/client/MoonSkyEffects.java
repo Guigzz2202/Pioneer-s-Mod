@@ -56,7 +56,8 @@ public class MoonSkyEffects extends DimensionSpecialEffects {
     public boolean renderSky(ClientLevel level, int ticks, float partialTick, PoseStack poseStack, Camera camera, Matrix4f projection, boolean isFoggy, Runnable setupFog) {
         FogType fluid = camera.getFluidInCamera();
         if (fluid != FogType.LAVA && fluid != FogType.POWDER_SNOW) {
-            SkyScene scene = SkyScene.compute(observer, CelestialSkyRenderer.days(level), level.getTimeOfDay(partialTick) * 360.0F);
+            SkyScene scene = SkyScene.compute(observer, CelestialSkyRenderer.days(level), level.getTimeOfDay(partialTick) * 360.0F,
+              fr.pioneers.space.mega.client.MegaClient.unlockedMask());
             CelestialSkyRenderer.render(scene, level, partialTick, poseStack, projection, style);
         }
         setupFog.run();

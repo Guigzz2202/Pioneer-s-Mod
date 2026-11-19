@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 110,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_stellar"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_frame"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:megastructure_site",
+   "count": 1
+  }
+ ]
+}

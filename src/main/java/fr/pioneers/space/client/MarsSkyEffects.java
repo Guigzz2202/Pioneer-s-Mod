@@ -131,7 +131,8 @@ public class MarsSkyEffects extends DimensionSpecialEffects {
         style.skyR = r;
         style.skyG = g;
         style.skyB = b;
-        SkyScene scene = SkyScene.compute(observer, CelestialSkyRenderer.days(level), level.getTimeOfDay(partialTick) * 360.0F);
+        SkyScene scene = SkyScene.compute(observer, CelestialSkyRenderer.days(level), level.getTimeOfDay(partialTick) * 360.0F,
+              fr.pioneers.space.mega.client.MegaClient.unlockedMask());
         CelestialSkyRenderer.render(scene, level, partialTick, poseStack, projection, style);
         setupFog.run();
 

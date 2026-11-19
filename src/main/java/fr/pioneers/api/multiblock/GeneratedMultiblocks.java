@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * GENERE par tools/gc/api/gen_api.py d'apres les fiches tools/gc/api/multiblocks.py (catalogue industriel par adaptateur, multiblocs
- * maison) : NE PAS MODIFIER A LA MAIN. Une fiche par multibloc (API Multibloc, lot 5) : 103 fiches, 103 sur le moteur commun.
+ * maison) : NE PAS MODIFIER A LA MAIN. Une fiche par multibloc (API Multibloc, lot 5) : 104 fiches, 104 sur le moteur commun.
  */
 public final class GeneratedMultiblocks {
 
@@ -15,7 +15,7 @@ public final class GeneratedMultiblocks {
     public static final List<MultiblockSpec> ALL;
 
     static {
-        List<MultiblockSpec> l = new ArrayList<>(103);
+        List<MultiblockSpec> l = new ArrayList<>(104);
         part0(l);
         part1(l);
         part2(l);
@@ -289,6 +289,9 @@ public final class GeneratedMultiblocks {
         l.add(new MultiblockSpec("industrial_stoneworks", "industrial_stoneworks", List.of("industrial_stoneworks"), "stoneworks", Shape.TEMPLATE, "gantry",
               List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
               TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "batch", true, "MECHANICAL", null, "controller", "industry.multi.ControllerTile", true, 5));
+        l.add(new MultiblockSpec("mars_elevator_port", "mars_elevator_port", List.of("mars_elevator_port"), null, Shape.TEMPLATE, "hall",
+              List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
+              TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "batch", true, "MECHANICAL", null, "controller", "industry.multi.ControllerTile", true, 5));
         l.add(new MultiblockSpec("space_stabilizer_controller", "space_stabilizer_controller", List.of("space_stabilizer_controller"), null, Shape.PARAMETRIC, "stabilizer_chambers",
               List.of(role("wall", null, 0), role("port", null, 0)),
               TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "cosmic", "content.stabilizer.StabilizerControllerTile", true, 8));
@@ -304,12 +307,12 @@ public final class GeneratedMultiblocks {
         l.add(new MultiblockSpec("mining_outpost_controller", "mining_outpost_controller", List.of("mining_outpost_controller"), null, Shape.FIXED, "BaseLayout",
               List.of(role("wall", null, 0), role("port", null, 0)),
               TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "base", "tile.TileEntityMiningOutpost", true, 8));
-        l.add(new MultiblockSpec("drone_bay", "drone_bay", List.of("drone_bay"), null, Shape.FIXED, "BaseLayout",
-              List.of(role("wall", null, 0), role("port", null, 0)),
-              TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "base", "tile.TileEntityDroneBay", true, 8));
     }
 
     private static void part3(List<MultiblockSpec> l) {
+        l.add(new MultiblockSpec("drone_bay", "drone_bay", List.of("drone_bay"), null, Shape.FIXED, "BaseLayout",
+              List.of(role("wall", null, 0), role("port", null, 0)),
+              TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "base", "tile.TileEntityDroneBay", true, 8));
         l.add(new MultiblockSpec("launch_pad_core", "launch_pad_core", List.of("launch_pad_core"), null, Shape.PARAMETRIC, "launch_complex",
               List.of(role("pad", null, 0), role("tower", null, 0)),
               TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "base", "tile.TileEntityLaunchPad", true, 8));

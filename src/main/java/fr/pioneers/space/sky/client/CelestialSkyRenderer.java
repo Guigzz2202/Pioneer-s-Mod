@@ -26,6 +26,10 @@ import org.joml.Matrix4f;
  * Dessine le ciel calcule par {@link SkyScene} : etoiles et Voie lactee, Soleil a sa taille apparente, planetes en points
  * lumineux (taille et eclat selon leur magnitude reelle), astres proches en disques avec leurs phases, anneaux de Saturne,
  * eclipses, et la nuee d'asteroides de la ceinture.
+ * <p>
+ * 1.0.7 (lot 4) : les megastructures debloquees ({@link SkyScene#MEGA}) : le cable d'un ascenseur spatial (bande fine, partie a l'ombre
+ * sombre, partie eclairee a la couleur de la megastructure, eclat additif a l'aube et au crepuscule, feux de balisage la nuit) ; leur
+ * marque sur le disque de leur astre vu d'ailleurs. Aucune allocation par image (tableaux statiques).
  */
 public final class CelestialSkyRenderer {
 
@@ -161,6 +165,11 @@ public final class CelestialSkyRenderer {
                     }
                 }
                 case SkyScene.POINT -> drawPoint(matrix, item, item.pointAlpha, sun, style, sky);
+                case SkyScene.MEGA -> {
+                    if (!style.pointsOnly) {
+                        drawMega(matrix, item, style);
+                    }
+                }
                 default -> {
                     if (item.pointAlpha > 0.01F) {
                         drawPoint(matrix, item, item.pointAlpha, sun, style, sky);
@@ -341,7 +350,134 @@ public final class CelestialSkyRenderer {
         if (item.ring) {
             drawRing(matrix, item, h, true, style);
         }
+        if (item.megaMarks != 0) {
+            drawMarks(matrix, item, h, nx, ny, nz, rx, ry, rz, style);
+        }
         normal();
+    }
+
+    // ---------------------------------------------------------------- Megastructures (1.0.7, lot 4)
+
+    /** Points du cable (repere du ciel, rayon R) et normale de bande : reutilises a chaque image. */
+    private static final int TETHER_STEPS = 40;
+    private static final double[] TX = new double[TETHER_STEPS + 1], TY = new double[TETHER_STEPS + 1], TZ = new double[TETHER_STEPS + 1];
+    private static final double[] WX = new double[TETHER_STEPS + 1], WY = new double[TETHER_STEPS + 1], WZ = new double[TETHER_STEPS + 1];
+
+    private static void drawMega(Matrix4f matrix, SkyScene.Item item, Style style) {
+        if (item.megaKind == SkyScene.MEGA_TETHER) {
+            drawTether(matrix, item, style);
+        }
+    }
+
+    /**
+     * Cable d'un ascenseur spatial : arc de grand cercle de la base au sommet, bande fine qui s'affine vers le haut. La part a l'ombre est
+     * une silhouette sombre (feux rouges la nuit), la part eclairee prend la couleur de la megastructure ; l'eclat de l'aube et du crepuscule
+     * ajoute un halo additif sur la part eclairee.
+     */
+    private static void drawTether(Matrix4f matrix, SkyScene.Item item, Style style) {
+        flushPoints();
+        int rgb = fr.pioneers.space.mega.Megastructures.color(item.mega);
+        float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
+        float night = Math.min(1, style.starBrightness * 2), fade = 1 - style.rain * 0.7F;
+        double ax = item.bx, ay = item.by, az = item.bz, bx = item.x, by = item.y, bz = item.z;
+        double omega = Math.acos(Math.max(-1, Math.min(1, ax * bx + ay * by + az * bz)));
+        double so = Math.max(1e-6, Math.sin(omega));
+        for (int i = 0; i <= TETHER_STEPS; i++) {
+            double s = i / (double) TETHER_STEPS;
+            double ka = Math.sin((1 - s) * omega) / so, kb = Math.sin(s * omega) / so;
+            double px = ka * ax + kb * bx, py = ka * ay + kb * by, pz = ka * az + kb * bz;
+            TX[i] = px;
+            TY[i] = py;
+            TZ[i] = pz;
+            //tangente approchee (vers le sommet) puis largeur = point x tangente
+            double tx = bx - ax, ty = by - ay, tz = bz - az;
+            double wx = py * tz - pz * ty, wy = pz * tx - px * tz, wz = px * ty - py * tx;
+            double wl = Math.max(1e-6, Math.sqrt(wx * wx + wy * wy + wz * wz));
+            //largeur : la base est plus proche (plus large), le sommet s'affine
+            double w = R * Math.tan(Math.toRadians(item.width)) * (1.6 - 1.2 * s);
+            WX[i] = wx / wl * w;
+            WY[i] = wy / wl * w;
+            WZ[i] = wz / wl * w;
+        }
+        RenderSystem.setShader(GameRenderer::getPositionColorShader);
+        BufferBuilder builder = Tesselator.getInstance().getBuilder();
+        //silhouette et part eclairee (melange normal)
+        normal();
+        builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+        for (int i = 0; i < TETHER_STEPS; i++) {
+            double s = (i + 0.5) / TETHER_STEPS;
+            boolean lit = s >= item.shadow;
+            float k = lit ? 0.78F + 0.45F * (float) item.glint : 0.16F;
+            float a = (lit ? 0.62F + 0.3F * night : 0.38F + 0.2F * night) * fade;
+            float r = lit ? Math.min(1, cr * k) : 0.13F, g = lit ? Math.min(1, cg * k) : 0.10F, b = lit ? Math.min(1, cb * k) : 0.17F;
+            stripQuad(builder, matrix, i, r, g, b, a, 1);
+        }
+        BufferUploader.drawWithShader(builder.end());
+        //eclat de l'aube et du crepuscule, puis feux de balisage de la part a l'ombre (additifs)
+        boolean glint = item.glint > 0.03 && item.shadow < 1 - 1.0 / TETHER_STEPS, beacons = night > 0.2F && item.shadow > 4.5 / TETHER_STEPS;
+        if (glint || beacons) {
+            additive();
+            builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+            //un quad au moins : le premier morceau eclaire ou le premier feu
+            for (int i = 0; glint && i < TETHER_STEPS; i++) {
+                if ((i + 0.5) / TETHER_STEPS >= item.shadow) {
+                    stripQuad(builder, matrix, i, cr, cg, cb, (float) (0.5 * item.glint) * fade, 3.5);
+                }
+            }
+            for (int i = 4; beacons && i < TETHER_STEPS; i += 9) {
+                float a = (i + 0.5) / TETHER_STEPS < item.shadow ? 0.9F * night * fade : 0;
+                stripQuad(builder, matrix, i, 1, 0.25F, 0.2F, a, 2.6);
+            }
+            BufferUploader.drawWithShader(builder.end());
+        }
+        normal();
+    }
+
+    /** Morceau i de la bande du cable, elargi de {@code widen}. */
+    private static void stripQuad(BufferBuilder builder, Matrix4f matrix, int i, float r, float g, float b, float a, double widen) {
+        int j = i + 1;
+        builder.vertex(matrix, (float) (R * TX[i] - WX[i] * widen), (float) (R * TY[i] - WY[i] * widen), (float) (R * TZ[i] - WZ[i] * widen))
+              .color(r, g, b, a).endVertex();
+        builder.vertex(matrix, (float) (R * TX[i] + WX[i] * widen), (float) (R * TY[i] + WY[i] * widen), (float) (R * TZ[i] + WZ[i] * widen))
+              .color(r, g, b, a).endVertex();
+        builder.vertex(matrix, (float) (R * TX[j] + WX[j] * widen), (float) (R * TY[j] + WY[j] * widen), (float) (R * TZ[j] + WZ[j] * widen))
+              .color(r, g, b, a).endVertex();
+        builder.vertex(matrix, (float) (R * TX[j] - WX[j] * widen), (float) (R * TY[j] - WY[j] * widen), (float) (R * TZ[j] - WZ[j] * widen))
+              .color(r, g, b, a).endVertex();
+    }
+
+    /**
+     * Marque d'une megastructure sur le disque de son astre vu d'ailleurs : un fil lumineux qui part de l'equateur du disque et depasse son
+     * bord (le cable de l'ascenseur jusqu'a l'orbite), a la couleur de la megastructure.
+     */
+    private static void drawMarks(Matrix4f matrix, SkyScene.Item item, double h, double nx, double ny, double nz, double rx, double ry, double rz,
+          Style style) {
+        additive();
+        RenderSystem.setShader(GameRenderer::getPositionColorShader);
+        BufferBuilder builder = Tesselator.getInstance().getBuilder();
+        builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+        float fade = 1 - style.rain * 0.8F;
+        double w = Math.max(0.02, h * 0.035);
+        for (int i = 0; i < fr.pioneers.space.mega.Megastructures.COUNT; i++) {
+            if ((item.megaMarks & (1L << i)) == 0) {
+                continue;
+            }
+            int rgb = fr.pioneers.space.mega.Megastructures.color(i);
+            float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
+            //axe du fil : la droite du disque (equateur), largeur selon le haut du disque (n x r)
+            double ux = ny * rz - nz * ry, uy = nz * rx - nx * rz, uz = nx * ry - ny * rx;
+            double cx = R * nx, cy = R * ny, cz = R * nz;
+            double a0 = h * 0.15, a1 = h * 1.7;
+            builder.vertex(matrix, (float) (cx + rx * a0 - ux * w), (float) (cy + ry * a0 - uy * w), (float) (cz + rz * a0 - uz * w))
+                  .color(cr, cg, cb, 0.9F * fade).endVertex();
+            builder.vertex(matrix, (float) (cx + rx * a0 + ux * w), (float) (cy + ry * a0 + uy * w), (float) (cz + rz * a0 + uz * w))
+                  .color(cr, cg, cb, 0.9F * fade).endVertex();
+            builder.vertex(matrix, (float) (cx + rx * a1 + ux * w * 0.4), (float) (cy + ry * a1 + uy * w * 0.4), (float) (cz + rz * a1 + uz * w * 0.4))
+                  .color(cr, cg, cb, 0.1F * fade).endVertex();
+            builder.vertex(matrix, (float) (cx + rx * a1 - ux * w * 0.4), (float) (cy + ry * a1 - uy * w * 0.4), (float) (cz + rz * a1 - uz * w * 0.4))
+                  .color(cr, cg, cb, 0.1F * fade).endVertex();
+        }
+        BufferUploader.drawWithShader(builder.end());
     }
 
     /**

@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "mars_elevator_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:martian_hull_segment"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:deimos_spine_cable"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:acidproof_venusium_liner"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_sheet_metal"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:interstellar_hull",
+   "count": 1
+  }
+ ],
+ "energy": 40000,
+ "industrial": true
+}

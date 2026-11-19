@@ -1,5 +1,6 @@
 package fr.pioneers.space.sky.client;
 
+import fr.pioneers.space.mega.Megastructures;
 import fr.pioneers.space.sky.client.Celestial.Body;
 import java.util.ArrayList;
 import java.util.EnumMap;
@@ -17,10 +18,29 @@ import java.util.Map;
  * Lunes en rotation synchrone : leur planete reste immobile dans le ciel. Le jour local d'une telle lune dure une
  * revolution ; la position de la lune sur son orbite est donc deduite de l'heure, ce qui donne les bonnes phases
  * (pleine planete a minuit, nouvelle a midi) et les eclipses quand le Soleil passe derriere elle.
+ * <p>
+ * 1.0.7 (« Plus loin et au-dela », lot 4) : les MEGASTRUCTURES debloquees sont un parametre du calcul (masque {@code megas}, lu par le
+ * client dans l'etat synchronise) : dans le ciel de leur astre, un objet {@link #MEGA} porte leur geometrie (cable de l'Ascenseur : de
+ * l'horizon presque au zenith, fixe par rapport au sol) et ce que la lumiere du Soleil en eclaire ; vu d'un autre astre, le disque de leur
+ * astre porte leur marque ({@link Item#megaMarks}).
  */
 public final class SkyScene {
 
-    public static final int SUN = 0, POINT = 1, DISC = 2;
+    public static final int SUN = 0, POINT = 1, DISC = 2, MEGA = 3;
+    /** 1.0.7 (lot 4) : geometries des megastructures (index de T:au_dela/megastructures.py SKY_KINDS). */
+    public static final int MEGA_TETHER = 0;
+    /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
+    private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
+
+    static {
+        for (int i = 0; i < Megastructures.COUNT; i++) {
+            try {
+                MEGA_BODY[i] = Body.valueOf(Megastructures.body(i).name());
+            } catch (IllegalArgumentException e) {
+                MEGA_BODY[i] = null;
+            }
+        }
+    }
 
     /** Pole de Saturne (et de ses anneaux) en coordonnees ecliptiques. */
     private static final double[] SATURN_POLE = unitFromLonLat(79.5, 61.9);
@@ -43,6 +63,13 @@ public final class SkyScene {
         public boolean ring;
         /** Pole des anneaux dans le repere du ciel. */
         public double px, py, pz;
+        /** 1.0.7 (lot 4) : megastructures debloquees de cet astre, vues d'ailleurs (bit i : marque sur son disque). */
+        public long megaMarks;
+        /** Objet MEGA : index de la megastructure, sorte de geometrie ; cable : base (x, y, z = sommet ; bx, by, bz = base). */
+        public int mega = -1, megaKind;
+        public double bx, by, bz;
+        /** Cable : part a l'ombre depuis la base (0 = tout eclaire, 1 = tout dans l'ombre de l'astre), eclat de l'aube (0..1), largeur (deg). */
+        public double shadow, glint, width;
     }
 
     /** Reglages d'un observateur : l'astre, et pour une lune en rotation synchrone l'astre fixe de son ciel. */
@@ -117,9 +144,87 @@ public final class SkyScene {
      * @param timeDeg rotation du ciel (heure * 360, celle appliquee au Soleil)
      */
     public static SkyScene compute(Observer obs, double t, double timeDeg) {
+        return compute(obs, t, timeDeg, 0L);
+    }
+
+    /** @param megas megastructures debloquees (bit i), etat synchronise du client (1.0.7, lot 4) */
+    public static SkyScene compute(Observer obs, double t, double timeDeg, long megas) {
         SkyScene scene = new SkyScene(obs);
         scene.build(t, timeDeg);
+        if (megas != 0) {
+            scene.megastructures(megas, timeDeg);
+        }
         return scene;
+    }
+
+    /** 1.0.7 (lot 4) : objets MEGA du ciel de l'observateur, marques sur les disques des autres astres. */
+    private void megastructures(long megas, double timeDeg) {
+        for (int i = 0; i < Megastructures.COUNT; i++) {
+            if ((megas & (1L << i)) == 0 || MEGA_BODY[i] == null) {
+                continue;
+            }
+            if (MEGA_BODY[i] == observer.body) {
+                if (Megastructures.skyKind(i) == MEGA_TETHER) {
+                    items.add(tether(i, timeDeg));
+                }
+                continue;
+            }
+            for (Item item : items) {
+                if (item.body == MEGA_BODY[i] && item.type != MEGA) {
+                    item.megaMarks |= 1L << i;
+                }
+            }
+        }
+    }
+
+    /**
+     * Cable d'un ascenseur spatial vu de son astre, fixe par rapport au sol : de l'horizon (azimut reglable) presque jusqu'au zenith. Un
+     * point du cable a la hauteur h est eclaire tant que le Soleil est au-dessus de -acos(R / (R + h)) : au crepuscule le haut du cable
+     * reste dans la lumiere quand le sol est deja dans l'ombre ; l'eclat est le plus fort quand le Soleil frole l'horizon.
+     */
+    private Item tether(int i, double timeDeg) {
+        double az = Math.toRadians(Megastructures.sky(i, 0)), alt = Math.toRadians(Megastructures.sky(i, 1));
+        double top = Megastructures.sky(i, 3), radius = Megastructures.sky(i, 4);
+        Item item = new Item();
+        item.type = MEGA;
+        item.body = MEGA_BODY[i];
+        item.mega = i;
+        item.megaKind = MEGA_TETHER;
+        item.dist = 1;
+        item.width = Megastructures.sky(i, 2);
+        double[] p = new double[3];
+        ground(0, az, timeDeg, p);
+        item.bx = p[0];
+        item.by = p[1];
+        item.bz = p[2];
+        ground(alt, az, timeDeg, p);
+        item.x = p[0];
+        item.y = p[1];
+        item.z = p[2];
+        //hauteur du Soleil au-dessus de l'horizon (deg) : le Soleil du repere du sol est en (-sin t, cos t, 0)
+        double sunAlt = Math.toDegrees(Math.asin(Math.max(-1, Math.min(1, Math.cos(Math.toRadians(timeDeg))))));
+        if (sunAlt >= 0) {
+            item.shadow = 0;
+        } else {
+            double dip = Math.toRadians(-sunAlt);
+            double needed = dip >= Math.PI / 2 ? Double.MAX_VALUE : radius * (1 / Math.cos(dip) - 1);
+            //hauteur le long du cable : h(s) = sommet * s^3 (le cable s'eloigne vite du sol vu d'en bas)
+            item.shadow = Math.min(1, Math.cbrt(needed / top));
+        }
+        item.glint = Megastructures.sky(i, 5) * Math.exp(-(sunAlt / 12) * (sunAlt / 12));
+        return item;
+    }
+
+    /** Direction (altitude, azimut depuis le nord vers l'est) du repere du sol vers le repere du ciel a l'heure donnee. */
+    static void ground(double alt, double az, double timeDeg, double[] out) {
+        //sol : x = est, y = haut, z = sud
+        double gx = Math.cos(alt) * Math.sin(az), gy = Math.sin(alt), gz = -Math.cos(alt) * Math.cos(az);
+        //inverse du rendu YP(-90) puis XP(t) : YP(90), puis XP(-t)
+        double x = gz, y = gy, z = -gx;
+        double t = Math.toRadians(timeDeg);
+        out[0] = x;
+        out[1] = y * Math.cos(t) + z * Math.sin(t);
+        out[2] = -y * Math.sin(t) + z * Math.cos(t);
     }
 
     private void build(double t, double timeDeg) {

@@ -95,7 +95,9 @@ import org.jetbrains.annotations.Nullable;
 public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, RecipeLockable, MultiblockPort {
 
     public static final int UNFORMED = 0, IDLE = 1, WORKING = 2, NO_ENERGY = 3, FULL = 4, NO_RECIPE = 5, OVERHEAT = 6, TIER = 7, NO_DEPOSIT = 8,
-          EXHAUSTED = 9, TOO_DEEP = 10, NO_FLUID = 11, RESEARCH = 12, NO_TUBES = 13;
+          EXHAUSTED = 9, TOO_DEEP = 10, NO_FLUID = 11, RESEARCH = 12, NO_TUBES = 13,
+    //1.0.7 (lot 4) : port de megastructure hors de son astre ou avant le deblocage ; port sans carcasses MKV
+          MEGA_LOCKED = 14, MKV_CASINGS = 15;
     public static final double HEAT_SCALE = 4, AMBIENT_PER_SHELL = 0.2, CAPACITY_PER_BLOCK = 1_000;
     /** Caloporteurs : joules absorbes par mB. */
     public static final double WATER_J = 400, COOLANT_J = 1_200, NITROGEN_J = 3_000;
@@ -503,6 +505,11 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
 
     public int tier() {
         return lifecycle.structure() == null ? 0 : Math.max(0, Math.min(3, lifecycle.structure().tier()));
+    }
+
+    /** 1.0.7 (lot 4) : etat de l'ecran (UNFORMED, IDLE, WORKING..., MEGA_LOCKED, MKV_CASINGS), pour les GameTests et les diagnostics. */
+    public int statusCode() {
+        return status;
     }
 
     /** Operations en parallele permises par la structure. */
