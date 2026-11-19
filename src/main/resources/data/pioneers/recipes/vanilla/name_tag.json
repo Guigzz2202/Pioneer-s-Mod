@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:bench",
+ "bench": "tanner",
+ "tools": [
+  {
+   "tag": "pioneers:tools/knives"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "minecraft:leather"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:string"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "tag": "forge:nuggets/iron"
+   },
+   "count": 1
+  }
+ ],
+ "result": {
+  "item": "minecraft:name_tag",
+  "count": 1
+ }
+}

@@ -222,6 +222,15 @@ final class WarehouseViews {
     private int listStamp = -1, listSort = -1;
     private String listQuery;
     private List<PacketWarehouse.Entry> shown = List.of();
+    /**
+     * 1.0.7 (Guillaume, 18/11/2026 : « le tri par mods met en evidence les mods auquel les items appartiennent ») : rangees de la grille,
+     * {debut dans shown, longueur, HEADER ou ITEMS} ; tri par mod : une rangee d'en-tete (nom du mod, nombre de sortes) devant chaque mod,
+     * chaque mod commence sa rangee.
+     */
+    private List<int[]> rows = List.of();
+    private static final int ITEMS = 0, HEADER = 1;
+    /** Nom affiche des mods (nom du mod, sinon son identifiant), garde par identifiant. */
+    private final Map<String, String> modNames = new HashMap<>();
     /** Noms replies (recherche, tri par nom) gardes par type : calcules une fois. */
     private final Map<StockKey, String> folded = new HashMap<>();
     /** Panier local ; numero du prochain paquet ; dernier paquet envoye (NONE : rien en attente). */
@@ -245,6 +254,7 @@ final class WarehouseViews {
 
     WarehouseViews(GuiMachine gui) {
         this.gui = gui;
+        sort = Math.min(SORTS.length - 1, fr.pioneers.logistics.warehouse.client.WarehouseClientConfig.sort().ordinal()); //1.0.7 : tri garde
     }
 
     void init(BlockEntity tile) {
@@ -364,8 +374,7 @@ final class WarehouseViews {
         if (panel != NO_PANEL) {
             return inside(CounterTile.VOLET);
         }
-        int rows = (shown.size() + COLS - 1) / COLS;
-        scroll = Math.max(0, Math.min(Math.max(0, rows - ROWS), scroll - dir));
+        scroll = Math.max(0, Math.min(Math.max(0, rows.size() - ROWS), scroll - dir));
         return true;
     }
 
@@ -437,7 +446,11 @@ final class WarehouseViews {
         if (c < 0 || c >= COLS || r < 0 || r >= ROWS || (x - GRID_X) % CELL == CELL - 1 || (y - GRID_Y) % CELL == CELL - 1) {
             return null;
         }
-        int i = (scroll + r) * COLS + c;
+        int rr = scroll + r;
+        if (rr >= rows.size() || rows.get(rr)[2] == HEADER || c >= rows.get(rr)[1]) {
+            return null;
+        }
+        int i = rows.get(rr)[0] + c;
         return i < shown.size() ? shown.get(i) : null;
     }
 
@@ -691,8 +704,46 @@ final class WarehouseViews {
                 default -> Comparator.comparingLong(PacketWarehouse.Entry::count).reversed().thenComparing(byName);
             });
             shown = out;
+            rows = layout(out, sort == 2);
         }
         return shown;
+    }
+
+    /** 1.0.7 : rangees de la grille ; {@code byMod} : un en-tete devant chaque mod, chaque mod commence sa rangee. */
+    private static List<int[]> layout(List<PacketWarehouse.Entry> list, boolean byMod) {
+        List<int[]> out = new ArrayList<>();
+        int i = 0;
+        while (i < list.size()) {
+            int end = list.size();
+            if (byMod) {
+                String mod = modOf(list.get(i).proto());
+                end = i + 1;
+                while (end < list.size() && modOf(list.get(end).proto()).equals(mod)) {
+                    end++;
+                }
+                out.add(new int[]{i, end - i, HEADER});
+            }
+            for (int j = i; j < end; j += COLS) {
+                out.add(new int[]{j, Math.min(COLS, end - j), ITEMS});
+            }
+            i = end;
+        }
+        return out;
+    }
+
+    /** Nom affiche d'un mod (nom declare par le mod, sinon son identifiant). */
+    private String modName(String id) {
+        return modNames.computeIfAbsent(id, k -> net.minecraftforge.fml.ModList.get().getModContainerById(k)
+              .map(c -> c.getModInfo().getDisplayName()).orElse(k.isEmpty() ? "?" : k));
+    }
+
+    /** Couleur d'accent d'un mod (stable : tiree de son identifiant ; Minecraft en gris). */
+    private static int modColor(String id) {
+        if ("minecraft".equals(id)) {
+            return 0xFF8A949E;
+        }
+        float hue = (id.hashCode() & 0xFFFF) / 65536F;
+        return 0xFF000000 | (net.minecraft.util.Mth.hsvToRgb(hue, 0.45F, 0.85F) & 0xFFFFFF);
     }
 
     /** Objets de ce type dans les colis qui viennent au comptoir. */
@@ -730,6 +781,9 @@ final class WarehouseViews {
                   () -> {
                       sort = (sort + 1) % SORTS.length;
                       scroll = 0;
+                      //1.0.7 : le choix est garde (config/pioneers-client.toml)
+                      fr.pioneers.logistics.warehouse.client.WarehouseClientConfig.setSort(
+                            fr.pioneers.logistics.warehouse.client.WarehouseClientConfig.Sort.values()[sort]);
                   });
             if (gui.over(mouseX, mouseY, so.x(), so.y(), so.w(), so.h())) {
                 tip = List.of(Component.translatable("gui.pioneers.warehouse.sort.tip"));
@@ -776,11 +830,27 @@ final class WarehouseViews {
           @Nullable List<Component> tip) {
         StandardLayout.Rect gr = CounterTile.GRID;
         gui.screenAt(g, gr.x(), gr.y(), gr.w(), gr.h());
-        int rows = (list.size() + COLS - 1) / COLS;
+        int rows = this.rows.size();
         scroll = Math.max(0, Math.min(Math.max(0, rows - ROWS), scroll));
         for (int r = 0; r < ROWS; r++) {
+            int[] row = scroll + r < rows ? this.rows.get(scroll + r) : null;
+            if (row != null && row[2] == HEADER) {
+                //1.0.7 : bandeau du mod (accent de couleur, nom, nombre de sortes d'objets)
+                int y = GRID_Y + r * CELL, w = COLS * CELL - 1;
+                String id = modOf(list.get(row[0]).proto());
+                int color = modColor(id);
+                g.fill(GRID_X, y, GRID_X + w, y + CELL - 1, 0xFF161E26);
+                g.fill(GRID_X, y, GRID_X + 2, y + CELL - 1, color);
+                g.fill(GRID_X + 2, y + CELL - 2, GRID_X + w, y + CELL - 1, (color & 0xFFFFFF) | 0x60000000);
+                GuiDraw.text(g, gui.font(), Component.literal(modName(id)), GRID_X + 6, y + 5.5F, 0.75F, color, w - 34);
+                GuiDraw.right(g, gui.font(), Component.literal(Integer.toString(row[1])), GRID_X + w - 4, y + 6.5F, 0.6F, PiMenuScreen.DIM);
+                if (gui.over(mouseX, mouseY, GRID_X, y, w, CELL - 1)) {
+                    tip = List.of(Component.translatable("gui.pioneers.warehouse.mod_group", modName(id), row[1]).withStyle(ChatFormatting.GRAY));
+                }
+                continue;
+            }
             for (int c = 0; c < COLS; c++) {
-                int i = (scroll + r) * COLS + c;
+                int i = row == null || c >= row[1] ? Integer.MAX_VALUE : row[0] + c;
                 int x = GRID_X + c * CELL, y = GRID_Y + r * CELL;
                 if (i >= list.size()) {
                     g.fill(x, y, x + CELL - 1, y + CELL - 1, 0xFF10161C);
