@@ -301,6 +301,9 @@ public final class PatchP107Lot4Tests {
                     }
                     Gt.check(made, "poutre orbitale continue pas encore faite (etat " + fr.pioneers.tech.industry.multi.MkvCoreSlot.status(tile) + ")");
                     Gt.check(seen[0], "jamais vu en marche");
+                    //1.0.7 (« ciel grandiose ») : le port qui travaille met sa megastructure en marche dans le ciel
+                    Gt.check((fr.pioneers.space.mega.MegaActivity.mask(h.getLevel().getGameTime()) & (1L << MARS)) != 0,
+                          "Ascenseur pas en marche pour le ciel");
                     Megastructures.bodyOf = old;
                     restore(w, saved);
                     s.done();
