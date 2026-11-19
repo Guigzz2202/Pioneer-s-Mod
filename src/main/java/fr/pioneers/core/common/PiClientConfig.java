@@ -77,6 +77,7 @@ public final class PiClientConfig {
         fr.pioneers.client.minimap.MinimapConfig.build(builder); //1.10.3 : minimap (sans classe client de Minecraft)
         fr.pioneers.guide.client.JourneyHudConfig.build(builder); //1.0.3-beta (lot 2) : etapes du Periple a l'ecran (sans classe client de Minecraft)
         fr.pioneers.client.look.LookHudConfig.build(builder); //1.0.5-beta (lot 14) : fiche au regard (coin, ecarts, taille ; sans classe client)
+        fr.pioneers.logistics.warehouse.client.WarehouseClientConfig.build(builder); //1.0.7 : tri garde du comptoir d'entrepot
         SPEC = builder.build();
     }
 }
