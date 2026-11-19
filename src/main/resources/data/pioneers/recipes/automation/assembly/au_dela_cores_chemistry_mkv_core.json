@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:exotic_catalyst"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:jovian_catalyst_cartridge"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:europan_cryo_scrubber"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:chemistry_mkv_core",
+   "count": 1
+  }
+ ]
+}

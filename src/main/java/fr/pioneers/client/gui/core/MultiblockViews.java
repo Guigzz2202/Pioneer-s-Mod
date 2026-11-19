@@ -327,7 +327,7 @@ final class MultiblockViews {
                 long[] silo = SiloCore.unpack(gui.value(MultiblockValues.SILO));
                 rows.add(GuiMachine.Row.of("industry.pioneers.gui.silo", Component.translatable("industry.pioneers.gui.silo_value",
                       Texts.grouped(silo[0]), Texts.grouped(SiloCore.capacity((int) silo[1], (int) gui.value(MultiblockValues.TIER))))));
-            } else if (m.kind == IndustryMachine.Kind.DRILL) {
+            } else if (m.itemDrill()) {
                 rows.add(GuiMachine.Row.of("industry.pioneers.gui.reserve", Component.literal(Texts.format(gui.value(MultiblockValues.RESERVE)))));
             } else {
                 rows.add(new GuiMachine.Row(Component.translatable("gui.pioneers.multiblock.structure"), Component.translatable("gui.pioneers.multiblock.formed_value",

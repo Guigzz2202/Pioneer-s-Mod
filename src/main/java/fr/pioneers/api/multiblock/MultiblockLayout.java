@@ -77,7 +77,7 @@ public final class MultiblockLayout {
         int top = StandardLayout.TOP, gh = controlled ? CORE_GAUGE_H : StandardLayout.GAUGE_H, gw = StandardLayout.GAUGE_W, slot = StandardLayout.SLOT;
         gaugeH = gh;
         inputs = m.kind == IndustryMachine.Kind.DRILL ? 0 : buffer(m.itemsIn);
-        outputs = m.kind == IndustryMachine.Kind.DRILL ? 9 : buffer(m.itemsOut);
+        outputs = m.itemDrill() ? 9 : m.kind == IndustryMachine.Kind.DRILL ? 0 : buffer(m.itemsOut);
         int x = 8;
         energy = new Rect(x, top, gw, gh);
         x += gw + 4;

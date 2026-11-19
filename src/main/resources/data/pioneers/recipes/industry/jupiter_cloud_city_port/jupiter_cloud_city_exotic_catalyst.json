@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "jupiter_cloud_city_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:io_sulfide_catalyst"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ganymede_molecular_sieve"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:jovian_catalyst_cartridge"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_ingot"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:ammonia",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:exotic_catalyst",
+   "count": 1
+  }
+ ],
+ "energy": 56000,
+ "industrial": true
+}

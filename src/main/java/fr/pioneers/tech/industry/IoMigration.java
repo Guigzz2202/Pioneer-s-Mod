@@ -230,7 +230,7 @@ public final class IoMigration {
         List<String> items = new ArrayList<>(), fluids = new ArrayList<>(), gases = new ArrayList<>();
         boolean drill = m.kind == IndustryMachine.Kind.DRILL, tank = m.kind == IndustryMachine.Kind.TANK;
         add(items, "in", drill ? 0 : buffer(io[0], oldBuffer));
-        add(items, "out", drill ? 9 : buffer(io[1], oldBuffer));
+        add(items, "out", m.itemDrill() ? 9 : drill ? 0 : buffer(io[1], oldBuffer));
         add(fluids, "in", tank ? Math.min(1, io[2]) : io[2]);
         fluids.add("coolant0");
         add(fluids, "out", tank ? 0 : io[3]);

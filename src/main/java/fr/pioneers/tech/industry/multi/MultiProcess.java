@@ -4,6 +4,8 @@ import fr.pioneers.api.machine.unit.MachineUnit;
 import fr.pioneers.api.machine.unit.Surplus;
 import fr.pioneers.tech.compute.AiChips;
 import fr.pioneers.tech.compute.ComputeCore;
+import fr.pioneers.api.gas.GasStack;
+import fr.pioneers.core.Action;
 import fr.pioneers.core.Automation;
 import fr.pioneers.core.inventory.ItemSlot;
 import fr.pioneers.core.inventory.ItemSlots;
@@ -120,6 +122,9 @@ final class MultiProcess extends MachineUnit {
     boolean work() {
         if (fr.pioneers.space.mining.SpaceDrill.is(c.machine.key)) {
             return tickSpaceDrill();
+        }
+        if (fr.pioneers.space.giant.GasCollector.is(c.machine.key)) {
+            return tickGasCollector();
         }
         if (c.machine.kind == IndustryMachine.Kind.DRILL) {
             return tickDrill();
@@ -606,6 +611,57 @@ final class MultiProcess extends MachineUnit {
                 ItemHandlerHelper.insertItemStacked(new ItemSlots(c.outputs, Automation.INTERNAL), new ItemStack(vein.getByproduct(), extra), false);
             }
             fr.pioneers.space.mining.SpaceDrill.mine(sl, pos(), batchCount);
+            batchCount = 0;
+            progress = 0;
+        }
+        c.setChanged();
+        return true;
+    }
+
+    /**
+     * 1.0.7 (lot 7) : collecteur de gaz (MKV) : dans une geante, une operation capte le melange de gaz de la geante (un gaz par reservoir
+     * de sortie, mB x parallelisme) ; aucune reserve ; hors d'une geante, rien.
+     */
+    boolean tickGasCollector() {
+        int row = fr.pioneers.space.giant.GasCollector.row(level());
+        if (row < 0) {
+            c.status = ControllerTile.NO_DEPOSIT;
+            return false;
+        }
+        if (c.structure() == null || c.structure().tier() < fr.pioneers.logistics.transport.CableTier.STELLAR.ordinal()) {
+            c.status = ControllerTile.MKV_CASINGS;
+            return false;
+        }
+        if (!machine.canWork()) {
+            c.status = ControllerTile.IDLE;
+            return false;
+        }
+        if (batchCount <= 0) {
+            batchCount = c.parallel();
+            duration = Tiers.ticks(fr.pioneers.space.giant.GasCollector.TIME, c.tier(), 0, true);
+            batchPower = opPower(batchCount);
+            progress = 0;
+        }
+        fr.pioneers.api.gas.Gas[] gases = fr.pioneers.space.giant.GasCollector.gases(row);
+        int[] amounts = fr.pioneers.space.giant.GasCollector.amounts(row);
+        int n = Math.min(gases.length, c.gasOut.size());
+        for (int k = 0; k < n; k++) {
+            GasStack gas = GasStack.of(gases[k], (long) amounts[k] * batchCount);
+            if (!c.gasOut.get(k).insert(gas, Action.SIMULATE, Automation.INTERNAL).isEmpty()) {
+                c.status = ControllerTile.FULL;
+                return false;
+            }
+        }
+        if (!machine.use(batchPower)) {
+            c.status = ControllerTile.NO_ENERGY;
+            return false;
+        }
+        c.status = ControllerTile.WORKING;
+        progress += c.thermalFactor();
+        if (progress >= duration) {
+            for (int k = 0; k < n; k++) {
+                c.gasOut.get(k).insert(GasStack.of(gases[k], (long) amounts[k] * batchCount), Action.EXECUTE, Automation.INTERNAL);
+            }
             batchCount = 0;
             progress = 0;
         }

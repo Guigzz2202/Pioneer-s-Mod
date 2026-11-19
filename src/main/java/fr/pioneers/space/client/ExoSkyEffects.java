@@ -105,6 +105,8 @@ public class ExoSkyEffects extends DimensionSpecialEffects {
         FogType fluid = camera.getFluidInCamera();
         if (fluid != FogType.LAVA && fluid != FogType.POWDER_SNOW) {
             sky.render(level, partialTick, poseStack, projection, camera.getPosition());
+            //1.0.7 (lot 7) : feux de la Cite des Nuages dans le ciel de sa geante, une fois debloquee
+            fr.pioneers.space.mega.client.CityLights.render(level, partialTick, poseStack);
         }
         setupFog.run();
         return true;

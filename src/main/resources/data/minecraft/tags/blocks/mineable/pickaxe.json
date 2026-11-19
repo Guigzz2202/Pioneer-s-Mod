@@ -1845,6 +1845,8 @@
   "pioneers:solar_concentrator",
   "pioneers:isostatic_press",
   "pioneers:venus_great_drill_port",
-  "pioneers:space_drill"
+  "pioneers:space_drill",
+  "pioneers:jupiter_cloud_city_port",
+  "pioneers:gas_collector"
  ]
 }

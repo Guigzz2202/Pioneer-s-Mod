@@ -133,6 +133,11 @@ public final class Megastructures {
         return GeneratedMegastructures.SKY[i][k];
     }
 
+    /** Tous les reglages de la geometrie du ciel (tableau partage : ne pas modifier). */
+    public static double[] skyParams(int i) {
+        return GeneratedMegastructures.SKY[i];
+    }
+
     public static int color(int i) {
         return GeneratedMegastructures.COLOR[i];
     }

@@ -197,8 +197,12 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
     VENUS_GREAT_DRILL_PORT("venus_great_drill_port", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0xD67834, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    JUPITER_CLOUD_CITY_PORT("jupiter_cloud_city_port", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0xE2AA60, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.FLUID, new String[]{}),
     SPACE_DRILL("space_drill", Atelier.NONE, true, null, 0, 2, 0, 0, 0, 0, Source.DRILL, Kind.DRILL, 120, 0x966ED2, new int[]{9, 21, 0, 9, 21, 0}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.TOWER, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    GAS_COLLECTOR("gas_collector", Atelier.NONE, true, null, 0, 0, 0, 0, 0, 3, Source.DRILL, Kind.DRILL, 120, 0x78BEE6, new int[]{9, 15, 0, 9, 15, 0}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.TOWER, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
     SOLAR_CONCENTRATOR("solar_concentrator", Atelier.NONE, true, null, 3, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xFFBE46, new int[]{15, 6, 17, 15, 6, 17}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
     ISOSTATIC_PRESS("isostatic_press", Atelier.NONE, true, null, 2, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xBE543C, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
@@ -305,6 +309,11 @@ public enum IndustryMachine {
 
     public boolean isGenerator() {
         return kind == Kind.GENERATOR;
+    }
+
+    /** Foreuse qui rend des objets (9 cases de sortie) ; le collecteur de gaz (1.0.7, lot 7) est une foreuse a gaz, sans case d'objet. */
+    public boolean itemDrill() {
+        return kind == Kind.DRILL && gasesOut == 0;
     }
 
     @Nullable

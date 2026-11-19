@@ -28,7 +28,7 @@ public final class SkyScene {
 
     public static final int SUN = 0, POINT = 1, DISC = 2, MEGA = 3;
     /** 1.0.7 (lot 4) : geometries des megastructures (index de T:au_dela/megastructures.py SKY_KINDS). */
-    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2;
+    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2, MEGA_LIGHTS = 3;
     /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
     private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
 
@@ -319,6 +319,58 @@ public final class SkyScene {
         out[0] = x;
         out[1] = y * Math.cos(t) + z * Math.sin(t);
         out[2] = -y * Math.sin(t) + z * Math.cos(t);
+    }
+
+    /** Partie fractionnaire (tirages fixes des feux de la Cite). */
+    private static double frac(double v) {
+        return v - Math.floor(v);
+    }
+
+    /**
+     * 1.0.7 (lot 7) : feu {@code k} d'une cite flottante vue de sa geante (ciel des geantes, repere du sol : x est, y haut, z sud) : sa
+     * direction dans {@code out} et son eclat (0..1). Les plates-formes sont fixes autour de l'horizon (tirage fixe par feu, les plus
+     * lointaines plus basses), plus eclatantes la nuit ({@code night} : 0 en plein jour, 1 la nuit ; rapport nuit / jour = reglage 5),
+     * et scintillent dans la brume ; un feu sur quatre est un phare a eclats. p : reglages SKY de la megastructure.
+     */
+    public static double cityLight(double[] p, int k, double night, double ticks, double[] out) {
+        double az = 2 * Math.PI * frac(k * 0.6180339887 + 0.137);
+        double depth = frac(k * 0.4142135 + 0.71);
+        double el = Math.toRadians(p[1] + (p[2] - p[1]) * depth * depth);
+        out[0] = Math.cos(el) * Math.sin(az);
+        out[1] = Math.sin(el);
+        out[2] = -Math.cos(el) * Math.cos(az);
+        double base = 0.55 + 0.45 * frac(k * 0.318 + 0.05);
+        double dayNight = 1 / p[5] + (1 - 1 / p[5]) * Math.max(0, Math.min(1, night));
+        double twinkle = 1 - p[4] * 0.5 * (1 + Math.sin(ticks * 0.09 + k * 2.3));
+        if (k % 4 == 3) {
+            //phare a eclats : allume 15 ticks sur 60
+            twinkle = (ticks + k * 13) % 60 < 15 ? 1 : 0.15;
+        }
+        return Math.max(0, Math.min(1, base * dayNight * twinkle));
+    }
+
+    /**
+     * 1.0.7 (lot 7) : feu {@code k} d'une cite flottante vu d'ailleurs, sur le disque de sa geante : coordonnees du disque (unite = rayon ;
+     * x selon la droite r, y selon le haut u) dans {@code out}, eclat (0..1), nul du cote jour. n : visee du disque ; l : lumiere du Soleil
+     * arrivant sur l'astre (de l'astre vers le Soleil) ; feux dans une bande equatoriale.
+     */
+    public static double cityMark(double[] p, int k, double rx, double ry, double rz, double ux, double uy, double uz, double nx, double ny,
+          double nz, double lx, double ly, double lz, double[] out) {
+        double x = -0.85 + 1.7 * frac(k * 0.6180339887 + 0.13), y = (frac(k * 0.4142135 + 0.71) - 0.5) * 0.5;
+        double r2 = x * x + y * y;
+        if (r2 > 0.85) {
+            double f = Math.sqrt(0.85 / r2);
+            x *= f;
+            y *= f;
+            r2 = 0.85;
+        }
+        out[0] = x;
+        out[1] = y;
+        double sz = Math.sqrt(1 - r2);
+        //normale de la sphere en ce point (vers l'observateur = -n), comme l'eclairage du disque
+        double gx = x * rx + y * ux - sz * nx, gy = x * ry + y * uy - sz * ny, gz = x * rz + y * uz - sz * nz;
+        double mu0 = gx * lx + gy * ly + gz * lz;
+        return Math.max(0, Math.min(1, -mu0 * 4)) * (0.6 + 0.4 * frac(k * 0.318 + 0.05));
     }
 
     private void build(double t, double timeDeg) {

@@ -202,7 +202,7 @@ public final class IndustrialBlueprint implements Blueprint {
         special.put(ShapeTemplate.pack(0, 0, 0), PiIndustry.controller(machine).getBlock().defaultBlockState());
         Block in0 = machine.itemsIn > 0 ? port(PortBlock.Type.ITEM) : machine.fluidsIn > 0 ? port(PortBlock.Type.FLUID) : machine.gasesIn > 0
               ? port(PortBlock.Type.GAS) : null;
-        Block out0 = machine.itemsOut > 0 || machine.kind == IndustryMachine.Kind.DRILL ? port(PortBlock.Type.ITEM) : machine.fluidsOut > 0
+        Block out0 = machine.itemsOut > 0 || machine.itemDrill() ? port(PortBlock.Type.ITEM) : machine.fluidsOut > 0
               ? port(PortBlock.Type.FLUID) : machine.gasesOut > 0 ? port(PortBlock.Type.GAS) : null;
         boolean energy = suggest(special, shell, ShapeTemplate.pack(0, 1, 0), port(PortBlock.Type.ENERGY));
         boolean in = suggest(special, shell, ShapeTemplate.pack(-1, 0, 0), in0);

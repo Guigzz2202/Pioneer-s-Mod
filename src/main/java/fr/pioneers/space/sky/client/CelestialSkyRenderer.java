@@ -368,7 +368,7 @@ public final class CelestialSkyRenderer {
             drawRing(matrix, item, h, true, style);
         }
         if (item.megaMarks != 0) {
-            drawMarks(matrix, item, h, nx, ny, nz, rx, ry, rz, style);
+            drawMarks(matrix, item, h, nx, ny, nz, rx, ry, rz, upx, upy, upz, style);
         }
         normal();
     }
@@ -603,8 +603,11 @@ public final class CelestialSkyRenderer {
      * Marque d'une megastructure sur le disque de son astre vu d'ailleurs : un fil lumineux qui part de l'equateur du disque et depasse son
      * bord (le cable de l'ascenseur jusqu'a l'orbite), a la couleur de la megastructure.
      */
+    /** Coordonnees d'un feu sur le disque (rendu, fil du client seulement). */
+    private static final double[] MARK = new double[2];
+
     private static void drawMarks(Matrix4f matrix, SkyScene.Item item, double h, double nx, double ny, double nz, double rx, double ry, double rz,
-          Style style) {
+          double upx, double upy, double upz, Style style) {
         additive();
         RenderSystem.setShader(GameRenderer::getPositionColorShader);
         BufferBuilder builder = Tesselator.getInstance().getBuilder();
@@ -617,6 +620,29 @@ public final class CelestialSkyRenderer {
             }
             int rgb = fr.pioneers.space.mega.Megastructures.color(i);
             float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
+            if (fr.pioneers.space.mega.Megastructures.skyKind(i) == SkyScene.MEGA_LIGHTS) {
+                //1.0.7 (lot 7) : feux de la cite flottante sur la face de nuit du disque
+                double[] p = fr.pioneers.space.mega.Megastructures.skyParams(i);
+                double d = Math.max(0.012, h * 0.025);
+                for (int k = 0; k < (int) p[0]; k++) {
+                    double e = SkyScene.cityMark(p, k, rx, ry, rz, upx, upy, upz, nx, ny, nz, item.lx, item.ly, item.lz, MARK);
+                    if (e <= 0.01) {
+                        continue;
+                    }
+                    double qx = R * nx + h * (MARK[0] * rx + MARK[1] * upx), qy = R * ny + h * (MARK[0] * ry + MARK[1] * upy),
+                          qz = R * nz + h * (MARK[0] * rz + MARK[1] * upz);
+                    float a = (float) (e * fade);
+                    builder.vertex(matrix, (float) (qx - rx * d - upx * d), (float) (qy - ry * d - upy * d), (float) (qz - rz * d - upz * d))
+                          .color(cr, cg, cb, a).endVertex();
+                    builder.vertex(matrix, (float) (qx + rx * d - upx * d), (float) (qy + ry * d - upy * d), (float) (qz + rz * d - upz * d))
+                          .color(cr, cg, cb, a).endVertex();
+                    builder.vertex(matrix, (float) (qx + rx * d + upx * d), (float) (qy + ry * d + upy * d), (float) (qz + rz * d + upz * d))
+                          .color(cr, cg, cb, a).endVertex();
+                    builder.vertex(matrix, (float) (qx - rx * d + upx * d), (float) (qy - ry * d + upy * d), (float) (qz - rz * d + upz * d))
+                          .color(cr, cg, cb, a).endVertex();
+                }
+                continue;
+            }
             //axe du fil : la droite du disque (equateur), largeur selon le haut du disque (n x r)
             double ux = ny * rz - nz * ry, uy = nz * rx - nx * rz, uz = nx * ry - ny * rx;
             double cx = R * nx, cy = R * ny, cz = R * nz;

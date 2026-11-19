@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_stellar"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:jovian_pressure_vessel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:europan_cryo_scrubber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:jovian_catalyst_cartridge"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:jupiter_cloud_city_port",
+  "count": 1
+ }
+}
