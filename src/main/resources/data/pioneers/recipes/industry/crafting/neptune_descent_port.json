@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_stellar"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nitrided_ruachite_anode"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tritonian_ion_membrane"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ruachite_deposition_grid"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:neptune_descent_port",
+  "count": 1
+ }
+}

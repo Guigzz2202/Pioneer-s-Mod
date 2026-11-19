@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "neptune_descent_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ruachite_deposition_grid"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tritonian_ion_membrane"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:perfect_crystal_lattice",
+   "count": 1
+  }
+ ],
+ "energy": 68000,
+ "industrial": true
+}

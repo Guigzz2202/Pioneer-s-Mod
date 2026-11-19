@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "saturn_ring_rotor_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ice_melt_exchanger"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titan_amber_varnish"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:europan_cryo_scrubber"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium_3",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:separation_chamber",
+   "count": 1
+  }
+ ],
+ "energy": 60000,
+ "industrial": true
+}

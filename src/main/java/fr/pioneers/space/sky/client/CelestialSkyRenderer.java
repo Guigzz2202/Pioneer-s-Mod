@@ -620,7 +620,43 @@ public final class CelestialSkyRenderer {
             }
             int rgb = fr.pioneers.space.mega.Megastructures.color(i);
             float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
-            if (fr.pioneers.space.mega.Megastructures.skyKind(i) == SkyScene.MEGA_LIGHTS) {
+            int megaKind = fr.pioneers.space.mega.Megastructures.skyKind(i);
+            if (megaKind == SkyScene.MEGA_ROTOR) {
+                //1.0.7 (lot 8) : l'Anneau-Rotor se voit sur les anneaux eux-memes (drawRing)
+                continue;
+            }
+            if (megaKind == SkyScene.MEGA_AURORA) {
+                //1.0.7 (lot 8) : aurore permanente : une couronne lumineuse autour du bord du disque
+                for (int k = 0; k < 48; k++) {
+                    double f0 = 2 * Math.PI * k / 48, f1 = 2 * Math.PI * (k + 1) / 48;
+                    double c0 = Math.cos(f0), s0 = Math.sin(f0), c1 = Math.cos(f1), s1 = Math.sin(f1);
+                    double i0 = h * 1.02, o0 = h * 1.3;
+                    builder.vertex(matrix, (float) (R * nx + i0 * (c0 * rx + s0 * upx)), (float) (R * ny + i0 * (c0 * ry + s0 * upy)),
+                          (float) (R * nz + i0 * (c0 * rz + s0 * upz))).color(cr, cg, cb, 0.55F * fade).endVertex();
+                    builder.vertex(matrix, (float) (R * nx + i0 * (c1 * rx + s1 * upx)), (float) (R * ny + i0 * (c1 * ry + s1 * upy)),
+                          (float) (R * nz + i0 * (c1 * rz + s1 * upz))).color(cr, cg, cb, 0.55F * fade).endVertex();
+                    builder.vertex(matrix, (float) (R * nx + o0 * (c1 * rx + s1 * upx)), (float) (R * ny + o0 * (c1 * ry + s1 * upy)),
+                          (float) (R * nz + o0 * (c1 * rz + s1 * upz))).color(cr, cg, cb, 0).endVertex();
+                    builder.vertex(matrix, (float) (R * nx + o0 * (c0 * rx + s0 * upx)), (float) (R * ny + o0 * (c0 * ry + s0 * upy)),
+                          (float) (R * nz + o0 * (c0 * rz + s0 * upz))).color(cr, cg, cb, 0).endVertex();
+                }
+                continue;
+            }
+            if (megaKind == SkyScene.MEGA_COLUMN) {
+                //1.0.7 (lot 8) : la colonne de la Descente : un trait lumineux qui plonge dans le disque
+                double cw = Math.max(0.01, h * 0.03), y0 = h * 0.2, y1 = -h * 0.75;
+                double qx = R * nx, qy = R * ny, qz = R * nz;
+                builder.vertex(matrix, (float) (qx + upx * y0 - rx * cw), (float) (qy + upy * y0 - ry * cw), (float) (qz + upz * y0 - rz * cw))
+                      .color(cr, cg, cb, 0.95F * fade).endVertex();
+                builder.vertex(matrix, (float) (qx + upx * y0 + rx * cw), (float) (qy + upy * y0 + ry * cw), (float) (qz + upz * y0 + rz * cw))
+                      .color(cr, cg, cb, 0.95F * fade).endVertex();
+                builder.vertex(matrix, (float) (qx + upx * y1 + rx * cw), (float) (qy + upy * y1 + ry * cw), (float) (qz + upz * y1 + rz * cw))
+                      .color(cr, cg, cb, 0.15F * fade).endVertex();
+                builder.vertex(matrix, (float) (qx + upx * y1 - rx * cw), (float) (qy + upy * y1 - ry * cw), (float) (qz + upz * y1 - rz * cw))
+                      .color(cr, cg, cb, 0.15F * fade).endVertex();
+                continue;
+            }
+            if (megaKind == SkyScene.MEGA_LIGHTS) {
                 //1.0.7 (lot 7) : feux de la cite flottante sur la face de nuit du disque
                 double[] p = fr.pioneers.space.mega.Megastructures.skyParams(i);
                 double d = Math.max(0.012, h * 0.025);
@@ -764,6 +800,39 @@ public final class CelestialSkyRenderer {
                   .uv((float) (c[0] + 1) / 2, (float) (c[1] * sign + 1) / 2).color(bright, bright, bright, item.discAlpha).endVertex();
         }
         BufferUploader.drawWithShader(builder.end());
+        //1.0.7 (lot 8) : l'Anneau-Rotor, vu d'une lune : des segments reguliers plus vifs sur les anneaux, qui tournent lentement
+        for (int i = 0; i < fr.pioneers.space.mega.Megastructures.COUNT; i++) {
+            if ((item.megaMarks & (1L << i)) == 0 || fr.pioneers.space.mega.Megastructures.skyKind(i) != SkyScene.MEGA_ROTOR) {
+                continue;
+            }
+            double[] p = fr.pioneers.space.mega.Megastructures.skyParams(i);
+            int rgb = fr.pioneers.space.mega.Megastructures.color(i);
+            float r = (rgb >> 16 & 255) / 255F, g = (rgb >> 8 & 255) / 255F, b = (rgb & 255) / 255F;
+            double ticks = RenderClock.now();
+            double d = Math.max(0.012, h * 0.05);
+            additive();
+            RenderSystem.setShader(GameRenderer::getPositionColorShader);
+            builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+            int n = (int) p[0];
+            for (int k = 0; k < n; k++) {
+                double f = 2 * Math.PI * k / n + 2 * Math.PI * ticks * p[5] / n;
+                double v = Math.sin(f) * sign;
+                if (v < v0 || v > v1) {
+                    continue;
+                }
+                double ea = Math.cos(f) * size * 0.8, eb = Math.sin(f) * size * 0.8;
+                double qx = cx + ea * ax + eb * bx, qy = cy + ea * ay + eb * by, qz = cz + ea * az + eb * bz;
+                float alpha = (float) (Math.min(1, p[1]) * bright * item.discAlpha);
+                builder.vertex(matrix, (float) (qx - ax * d), (float) (qy - ay * d), (float) (qz - az * d)).color(r, g, b, alpha).endVertex();
+                builder.vertex(matrix, (float) (qx - bx * d * 0.5), (float) (qy - by * d * 0.5), (float) (qz - bz * d * 0.5)).color(r, g, b, alpha).endVertex();
+                builder.vertex(matrix, (float) (qx + ax * d), (float) (qy + ay * d), (float) (qz + az * d)).color(r, g, b, alpha).endVertex();
+                builder.vertex(matrix, (float) (qx + bx * d * 0.5), (float) (qy + by * d * 0.5), (float) (qz + bz * d * 0.5)).color(r, g, b, alpha).endVertex();
+            }
+            BufferUploader.drawWithShader(builder.end());
+            if (!style.atmosphere) {
+                normal();
+            }
+        }
     }
 
     // ---------------------------------------------------------------- Asteroides proches

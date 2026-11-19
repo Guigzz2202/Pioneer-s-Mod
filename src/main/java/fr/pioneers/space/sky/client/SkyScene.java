@@ -28,7 +28,7 @@ public final class SkyScene {
 
     public static final int SUN = 0, POINT = 1, DISC = 2, MEGA = 3;
     /** 1.0.7 (lot 4) : geometries des megastructures (index de T:au_dela/megastructures.py SKY_KINDS). */
-    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2, MEGA_LIGHTS = 3;
+    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2, MEGA_LIGHTS = 3, MEGA_ROTOR = 4, MEGA_AURORA = 5, MEGA_COLUMN = 6;
     /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
     private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
 
@@ -371,6 +371,58 @@ public final class SkyScene {
         double gx = x * rx + y * ux - sz * nx, gy = x * ry + y * uy - sz * ny, gz = x * rz + y * uz - sz * nz;
         double mu0 = gx * lx + gy * ly + gz * lz;
         return Math.max(0, Math.min(1, -mu0 * 4)) * (0.6 + 0.4 * frac(k * 0.318 + 0.05));
+    }
+
+    /** Bascule douce de 0 (sous a) a 1 (au-dessus de b). */
+    private static double step(double a, double b, double v) {
+        double x = Math.max(0, Math.min(1, (v - a) / (b - a)));
+        return x * x * (3 - 2 * x);
+    }
+
+    /**
+     * 1.0.7 (lot 8) : arc des anneaux de Saturne vu de la geante (Anneau-Rotor) : point {@code theta} (0 = est, pi / 2 = sommet au sud, pi =
+     * ouest) dans {@code out} (repere du sol : x est, y haut, z sud). p : (segments, surcroit des segments, hauteur du sommet en degres,
+     * largeur en degres, part allumee d'un segment 0..1, vitesse de rotation en tours de segment par tick).
+     */
+    public static void rotorArc(double[] p, double theta, double[] out) {
+        double a = Math.toRadians(p[2]);
+        out[0] = Math.cos(theta);
+        out[1] = Math.sin(theta) * Math.sin(a);
+        out[2] = Math.sin(theta) * Math.cos(a);
+    }
+
+    /** Eclat de l'arc des anneaux en {@code theta} : le fond, et des segments reguliers plus vifs qui tournent lentement (le rotor). */
+    public static double rotorShade(double[] p, double theta, double ticks) {
+        double u = frac(theta * p[0] / (2 * Math.PI) + ticks * p[5]);
+        double on = step(0, 0.06, u) * (1 - step(p[4] - 0.06, p[4], u));
+        return 0.45 + p[1] * on;
+    }
+
+    /**
+     * 1.0.7 (lot 8) : aurore permanente de la Boucle vue de sa geante : eclat (0..1) du rideau a l'azimut {@code az} (radians), et dans
+     * {@code out[0]} la hauteur de son bord haut (degres) ; le bas du rideau est a p[0]. Les rideaux ondulent avec le temps ; plus vifs la
+     * nuit. p : (hauteur du bas en degres, hauteur du haut en degres, ondulations par tour, vitesse, eclat de jour, eclat de nuit).
+     */
+    public static double aurora(double[] p, double az, double ticks, double night, double[] out) {
+        double w = 0.5 + 0.5 * Math.sin(az * p[2] + ticks * p[3]);
+        double w2 = 0.5 + 0.5 * Math.sin(az * (2 * p[2] + 1) - ticks * p[3] * 1.7);
+        out[0] = p[0] + (p[1] - p[0]) * (0.6 + 0.4 * w2);
+        double level = p[4] + (p[5] - p[4]) * Math.max(0, Math.min(1, night));
+        return level * (0.35 + 0.65 * w);
+    }
+
+    /**
+     * 1.0.7 (lot 8) : colonne lumineuse de la Descente vue de sa geante : direction du point {@code s} de la colonne (0 = le haut, 1 = sous
+     * l'horizon, dans les nuages) dans {@code out}, et son eclat : des impulsions qui descendent le long de la colonne. p : (azimut, hauteur
+     * du haut en degres, largeur en degres, vitesse des impulsions, eclat 0..1).
+     */
+    public static double column(double[] p, double s, double ticks, double[] out) {
+        double az = Math.toRadians(p[0]), el = Math.toRadians(p[1] + (-3 - p[1]) * s);
+        out[0] = Math.cos(el) * Math.sin(az);
+        out[1] = Math.sin(el);
+        out[2] = -Math.cos(el) * Math.cos(az);
+        double pulse = 0.5 + 0.5 * Math.sin(s * 18 - ticks * p[3]);
+        return p[4] * (0.55 + 0.45 * pulse) * (1 - step(0.85, 1, s));
     }
 
     private void build(double t, double timeDeg) {

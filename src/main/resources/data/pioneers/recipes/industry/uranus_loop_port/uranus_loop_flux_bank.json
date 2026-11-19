@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "uranus_loop_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:frost_capacitor_cell"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryostat_vessel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titanian_frost_dielectric"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_sheet_metal"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:flux_bank",
+   "count": 1
+  }
+ ],
+ "energy": 64000,
+ "industrial": true
+}

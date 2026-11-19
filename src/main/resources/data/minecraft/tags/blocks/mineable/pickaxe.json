@@ -1847,6 +1847,9 @@
   "pioneers:venus_great_drill_port",
   "pioneers:space_drill",
   "pioneers:jupiter_cloud_city_port",
-  "pioneers:gas_collector"
+  "pioneers:gas_collector",
+  "pioneers:saturn_ring_rotor_port",
+  "pioneers:uranus_loop_port",
+  "pioneers:neptune_descent_port"
  ]
 }

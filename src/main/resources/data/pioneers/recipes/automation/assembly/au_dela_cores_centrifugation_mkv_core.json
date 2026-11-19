@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 100,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:annular_rotor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tigrite_centrifuge_bowl"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titan_magnetic_bearing"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:centrifugation_mkv_core",
+   "count": 1
+  }
+ ]
+}

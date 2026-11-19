@@ -184,8 +184,11 @@ final class GeneratedJeiOrder {
           Map.entry("industry_stellarator", 170),
           Map.entry("industry_jupiter_cloud_city_port", 171),
           Map.entry("drone_harvest", 172),
-          Map.entry("black_hole", 173),
-          Map.entry("industry_fragment_reactor", 174),
-          Map.entry("solar_simulation", 175),
-          Map.entry("universe_simulation", 176));
+          Map.entry("industry_saturn_ring_rotor_port", 173),
+          Map.entry("industry_uranus_loop_port", 174),
+          Map.entry("industry_neptune_descent_port", 175),
+          Map.entry("black_hole", 176),
+          Map.entry("industry_fragment_reactor", 177),
+          Map.entry("solar_simulation", 178),
+          Map.entry("universe_simulation", 179));
 }
