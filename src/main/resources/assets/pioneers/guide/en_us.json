@@ -16580,6 +16580,73 @@
    ]
   },
   {
+   "id": "au_dela",
+   "icon": "pioneers:stellar_alloy_ingot",
+   "title": "Mechanics: Further and beyond",
+   "group": "mechanics",
+   "short": "Further and beyond",
+   "pages": [
+    {
+     "title": "The MKV tier",
+     "items": [
+      "pioneers:stellar_alloy_ingot",
+      "pioneers:industrial_casing_stellar",
+      "pioneers:photonic_glass",
+      "pioneers:stellar_alloy_chassis"
+     ],
+     "text": "§6MKV§r is tier 6, above MKIV. Its material is §6stellar alloy§r: one ingot each of marsium, mercurium and venusium melted in the MKIV arc furnace, under argon (better in Mercury's solar concentrator furnace).\n\nThe §6MKV structure blocks§r (casing, industrial glass, frame, sheet block) are made of stellar alloy; MKV glass takes §6photonic glass§r.\n\nEach system gives its §6MKV components§r, made in MKIV machines from the metals and harvests of its bodies; the §6stellar alloy chassis§r brings them together. Each machine family has its MKV compact machine (recipes down to 0.5 s)."
+    },
+    {
+     "title": "Megastructures",
+     "items": [
+      "pioneers:megastructure_site",
+      "pioneers:mars_elevator_port",
+      "pioneers:continuous_orbital_beam"
+     ],
+     "text": "A §6megastructure§r is not built block by block: you place a §6megastructure site§r on its body and deliver its ingredient list (by hand, by logistic cable or by cargo). As soon as the list is complete, it is unlocked at once, for the whole server, and shows in the sky.\n\nIts §6ports§r are multiblocks built on its body as an MKV structure (casings, glass and frames); their controller is the terminal. They run its §6unique recipes§r: each is the only source of three §6gated components§r, required further on (drill, collector, MKV cores, the next megastructures).\n\nThe Sun has no ground: the Swarm is built in the Sun's station; the Halo Observatory in Earth's station."
+    },
+    {
+     "title": "The ten megastructures",
+     "items": [
+      "pioneers:mantle_drill_bit",
+      "pioneers:capture_membrane",
+      "pioneers:flux_bank",
+      "pioneers:dark_matter_engine"
+     ],
+     "text": "Each one and its gated components, in progression order:\n• §6Mars Space Elevator§r (Mars): Colossal Drill Mast, Continuous Orbital Beam, Interstellar Hull.\n• §6Diadem§r (Mercury): Machine-Scale Monocrystal Blade, Active Heliothermal Mirror, Ultimate Refractory Crucible.\n• §6Great Bore§r (Venus): Mantle Drill Bit, Sealed Mantle Exchanger, Thermal Core.\n• §6Cloud City§r (Jupiter): Stabilized Metallic Hydrogen, Exotic Catalyst, Capture Membrane.\n• §6Ring Rotor§r (Saturn): Ultra-Pure Isotopic Target, Annular Rotor, Separation Chamber.\n• §6Loop§r (Uranus): Magnetospheric Coil, Interplanetary Cable, Flux Bank.\n• §6Descent§r (Neptune): Machine-Scale Electronic Diamond, Atomic Electrode, Perfect Crystal Lattice.\n• §6Cold Heart§r (Pluto): Superfluid Helium Cell, Master Qubit, Cryogenic Screen.\n• §6Swarm§r (the Sun): Confined Plasma Core, Swarm Lens, Aneutronic Injector.\n• §6Halo Observatory§r (Earth): Halo Density Map, Dark Matter Capsule, Dark Matter Engine."
+    },
+    {
+     "title": "MKV cores for multiblocks",
+     "items": [
+      "pioneers:forming_mkv_core",
+      "pioneers:thermal_mkv_core",
+      "pioneers:energy_mkv_core",
+      "pioneers:chemistry_mkv_core",
+      "pioneers:centrifugation_mkv_core"
+     ],
+     "text": "A family multiblock (press, rolling mill, furnace, extractor, mixer, crusher…) becomes §6MKV§r when its whole structure is MKV §6and§r its controller holds the §6MKV core§r of its domain: right-click the controller with the core in hand. The core drops back when the controller is broken.\n\n• forming (Mars Space Elevator); thermal (Diadem); energy (Great Bore); chemistry (Cloud City); centrifugation (Ring Rotor)."
+    },
+    {
+     "title": "Space drill and gas collector",
+     "items": [
+      "pioneers:space_drill",
+      "pioneers:colossal_drill_mast",
+      "pioneers:gas_collector"
+     ],
+     "text": "The §6space drill§r is built as MKV on any body: it drills the deep veins of the region (8 × 8 chunks), far more than rovers. It needs the colossal drill mast (Mars Space Elevator) and the mantle drill bit (Great Bore).\n\nThe §6gas collector§r, built as MKV on a giant's aerostat, endlessly captures the giant's mix (hydrogen, then ammonia, helium-3 or methane). It needs the Cloud City's capture membrane."
+    },
+    {
+     "title": "The dark matter station",
+     "items": [
+      "pioneers:halo_detector",
+      "pioneers:gravitational_lens",
+      "pioneers:dark_matter_capsule"
+     ],
+     "text": "In Earth's station, at the Lagrange point: the §6halo detector§r assembles the sensor arrays, the §6gravitational lens§r traps dark matter, and the §6Halo Observatory§r maps it, bottles it and draws the dark matter engine from it. At night, its lattice of points shows in Earth's sky."
+    }
+   ]
+  },
+  {
    "id": "robotics",
    "icon": "pioneers:robot_mk1",
    "title": "Mechanics: Robotics",

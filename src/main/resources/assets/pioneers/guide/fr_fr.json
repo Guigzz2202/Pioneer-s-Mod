@@ -16580,6 +16580,73 @@
    ]
   },
   {
+   "id": "au_dela",
+   "icon": "pioneers:stellar_alloy_ingot",
+   "title": "Mécanique : Plus loin et au-delà",
+   "group": "mechanics",
+   "short": "Plus loin et au-delà",
+   "pages": [
+    {
+     "title": "Le tier MKV",
+     "items": [
+      "pioneers:stellar_alloy_ingot",
+      "pioneers:industrial_casing_stellar",
+      "pioneers:photonic_glass",
+      "pioneers:stellar_alloy_chassis"
+     ],
+     "text": "Le §6MKV§r est le tier 6, au-dessus du MKIV. Son matériau est l'§6alliage stellaire§r : un lingot de marsium, un de mercurium et un de vénusium fondus au four à arc MKIV, sous argon (mieux au four solaire à concentration de Mercure).\n\nLes §6blocs de structure MKV§r (carcasse, verre industriel, cadre, bloc de tôle) se font en alliage stellaire ; le verre MKV prend du §6verre photonique§r.\n\nChaque système donne ses §6composants MKV§r, faits aux machines MKIV avec les métaux et les récoltes de ses astres ; le §6châssis en alliage stellaire§r les réunit. Chaque famille de machines a sa compacte MKV (recettes jusqu'à 0,5 s)."
+    },
+    {
+     "title": "Les mégastructures",
+     "items": [
+      "pioneers:megastructure_site",
+      "pioneers:mars_elevator_port",
+      "pioneers:continuous_orbital_beam"
+     ],
+     "text": "Une §6mégastructure§r ne se construit pas bloc par bloc : on pose un §6chantier de mégastructure§r sur son astre et on lui livre sa liste d'ingrédients (à la main, par câble logistique ou par cargo). Dès que la liste est complète, elle est débloquée d'un coup, pour tout le serveur, et apparaît dans le ciel.\n\nSes §6ports§r sont des multiblocs bâtis sur son astre en structure MKV (carcasses, verres et cadres) ; leur contrôleur est le terminal. Ils font ses §6recettes uniques§r : chacune est la seule source de trois §6composants gatés§r, exigés par la suite (foreuse, collecteur, cœurs MKV, mégastructures suivantes).\n\nLe Soleil n'a pas de sol : l'Essaim se bâtit dans la station du Soleil ; l'Observatoire du Halo dans la station de la Terre."
+    },
+    {
+     "title": "Les dix mégastructures",
+     "items": [
+      "pioneers:mantle_drill_bit",
+      "pioneers:capture_membrane",
+      "pioneers:flux_bank",
+      "pioneers:dark_matter_engine"
+     ],
+     "text": "Chacune et ses composants gatés, dans l'ordre de la progression :\n• §6Ascenseur de Mars§r (Mars) : mât de forage colossal, poutre orbitale continue, coque interstellaire.\n• §6Diadème§r (Mercure) : aube monocristalline de taille machine, miroir actif héliothermique, creuset réfractaire ultime.\n• §6Grand Forage§r (Vénus) : trépan de manteau, échangeur de manteau scellé, noyau thermique.\n• §6Cité des Nuages§r (Jupiter) : hydrogène métallique stabilisé, catalyseur exotique, membrane de captage.\n• §6Anneau-Rotor§r (Saturne) : cible isotopique ultra-pure, rotor annulaire, chambre de séparation.\n• §6Boucle§r (Uranus) : bobine magnétosphérique, câble interplanétaire, banque de flux.\n• §6Descente§r (Neptune) : diamant électronique de taille machine, électrode atomique, réseau cristallin parfait.\n• §6Cœur Froid§r (Pluton) : cellule d'hélium superfluide, qubit maître, écran cryogénique.\n• §6Essaim§r (le Soleil) : noyau de plasma confiné, lentille d'essaim, injecteur aneutronique.\n• §6Observatoire du Halo§r (la Terre) : carte de densité du halo, capsule de matière noire, moteur à matière noire."
+    },
+    {
+     "title": "Cœurs MKV des multiblocs",
+     "items": [
+      "pioneers:forming_mkv_core",
+      "pioneers:thermal_mkv_core",
+      "pioneers:energy_mkv_core",
+      "pioneers:chemistry_mkv_core",
+      "pioneers:centrifugation_mkv_core"
+     ],
+     "text": "Un multibloc de famille (presse, laminoir, four, extracteur, mélangeur, broyeur…) passe au §6MKV§r quand toute sa structure est MKV §6et§r que son contrôleur porte le §6cœur MKV§r de son domaine : clic droit sur le contrôleur avec le cœur en main. Le cœur revient quand on casse le contrôleur.\n\n• mise en forme (Ascenseur de Mars) ; thermique (Diadème) ; énergétique (Grand Forage) ; chimique (Cité des Nuages) ; centrifugation (Anneau-Rotor)."
+    },
+    {
+     "title": "Foreuse spatiale et collecteur de gaz",
+     "items": [
+      "pioneers:space_drill",
+      "pioneers:colossal_drill_mast",
+      "pioneers:gas_collector"
+     ],
+     "text": "La §6foreuse spatiale§r se bâtit en MKV sur n'importe quel astre : elle fore les filons profonds de la région (8 × 8 chunks), bien plus que les rovers. Elle demande le mât de forage colossal (Ascenseur de Mars) et le trépan de manteau (Grand Forage).\n\nLe §6collecteur de gaz§r, bâti en MKV sur un aérostat d'une géante, capte sans fin le mélange de la géante (hydrogène, puis ammoniac, hélium-3 ou méthane). Il demande la membrane de captage de la Cité des Nuages."
+    },
+    {
+     "title": "La station de matière noire",
+     "items": [
+      "pioneers:halo_detector",
+      "pioneers:gravitational_lens",
+      "pioneers:dark_matter_capsule"
+     ],
+     "text": "Dans la station de la Terre, au point de Lagrange : le §6détecteur de halo§r monte les réseaux de capteurs, la §6lentille gravitationnelle§r piège la matière noire, et l'§6Observatoire du Halo§r la cartographie, la met en capsule et en tire le moteur à matière noire. Le soir, son réseau de points se voit dans le ciel de la Terre."
+    }
+   ]
+  },
+  {
    "id": "robotics",
    "icon": "pioneers:robot_mk1",
    "title": "Mécanique : Robotique",
