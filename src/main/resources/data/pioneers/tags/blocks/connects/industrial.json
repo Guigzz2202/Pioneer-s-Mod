@@ -107,10 +107,13 @@
   "pioneers:neptune_descent_port",
   "pioneers:pluto_cold_heart_port",
   "pioneers:sun_swarm_port",
+  "pioneers:halo_observatory_port",
   "pioneers:space_drill",
   "pioneers:gas_collector",
   "pioneers:solar_concentrator",
   "pioneers:isostatic_press",
+  "pioneers:halo_detector",
+  "pioneers:gravitational_lens",
   "pioneers:robotic_assembly_bay",
   "pioneers:rocket_integration_hall"
  ]

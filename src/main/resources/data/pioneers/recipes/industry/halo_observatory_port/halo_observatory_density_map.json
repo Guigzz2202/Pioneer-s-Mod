@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "halo_observatory_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:halo_sensor_array"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_tape"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:halo_density_map",
+   "count": 1
+  }
+ ],
+ "energy": 84000,
+ "industrial": true
+}

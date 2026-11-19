@@ -209,6 +209,8 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
     SUN_SWARM_PORT("sun_swarm_port", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0xF0C86E, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    HALO_OBSERVATORY_PORT("halo_observatory_port", Atelier.NONE, true, null, 4, 1, 1, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0x8264D2, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
     SPACE_DRILL("space_drill", Atelier.NONE, true, null, 0, 2, 0, 0, 0, 0, Source.DRILL, Kind.DRILL, 120, 0x966ED2, new int[]{9, 21, 0, 9, 21, 0}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.TOWER, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
     GAS_COLLECTOR("gas_collector", Atelier.NONE, true, null, 0, 0, 0, 0, 0, 3, Source.DRILL, Kind.DRILL, 120, 0x78BEE6, new int[]{9, 15, 0, 9, 15, 0}, false, false, new String[]{},
@@ -216,7 +218,11 @@ public enum IndustryMachine {
     SOLAR_CONCENTRATOR("solar_concentrator", Atelier.NONE, true, null, 3, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xFFBE46, new int[]{15, 6, 17, 15, 6, 17}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
     ISOSTATIC_PRESS("isostatic_press", Atelier.NONE, true, null, 2, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xBE543C, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
-          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{});
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
+    HALO_DETECTOR("halo_detector", Atelier.NONE, true, null, 4, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xA082F0, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
+    GRAVITATIONAL_LENS("gravitational_lens", Atelier.NONE, true, null, 3, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0x6E5AC8, new int[]{15, 6, 15, 15, 6, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{});
 
     /** Ou est la machine d'atelier : nouvelle (generee), kit existant, machine d'avant l'electricite, ou aucune (multibloc seulement). */
     public enum Atelier { NEW, KIT, BRONZE, NONE }

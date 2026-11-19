@@ -80,9 +80,26 @@ public final class Megastructures {
         return -1;
     }
 
-    /** Megastructure de l'astre d'un monde, ou -1. */
+    /** Megastructure de l'astre d'un monde (hors megastructures de station), ou -1. */
     public static int here(Level level) {
-        return byBody(bodyOf.apply(level));
+        return find(bodyOf.apply(level), false);
+    }
+
+    /** 1.0.7 (lot 10) : vrai si la megastructure se livre et se batit dans la station de son astre (Observatoire du Halo). */
+    public static boolean station(int i) {
+        return GeneratedMegastructures.STATION[i];
+    }
+
+    /** Megastructure de l'astre, a sa surface ({@code station} faux) ou dans sa station, ou -1. */
+    private static int find(@Nullable Body body, boolean station) {
+        if (body != null) {
+            for (int i = 0; i < COUNT; i++) {
+                if (BODY[i] == body && GeneratedMegastructures.STATION[i] == station) {
+                    return i;
+                }
+            }
+        }
+        return -1;
     }
 
     /**
@@ -101,9 +118,21 @@ public final class Megastructures {
         return body;
     }
 
-    /** Megastructure du lieu (astre du monde, ou astre sans surface survole par la station), ou -1. */
+    /**
+     * Megastructure du lieu, ou -1 : celle de l'astre du monde ; dans la dimension des stations, celle de station de l'astre survole
+     * (Observatoire du Halo), sinon celle d'un astre sans surface (Essaim du Soleil).
+     */
     public static int here(Level level, net.minecraft.core.BlockPos pos) {
-        return byBody(bodyAt(level, pos));
+        Body body = bodyOf.apply(level);
+        if (body != null) {
+            return find(body, false);
+        }
+        if (level.dimension() == fr.pioneers.space.PiDimensions.ORBIT) {
+            Body over = fr.pioneers.space.station.OrbitalStations.bodyAt(pos.getX());
+            int i = find(over, true);
+            return i >= 0 ? i : over != null && over.dimension() == null ? find(over, false) : -1;
+        }
+        return -1;
     }
 
     /** Megastructure dont la machine est le port, ou -1. */

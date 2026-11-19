@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "gravitational_lens",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_shielding_plate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gravitational_calibration_mass"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryopump"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dark_matter_trap",
+   "count": 1
+  }
+ ],
+ "energy": 10000,
+ "industrial": true
+}

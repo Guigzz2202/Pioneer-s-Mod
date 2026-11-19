@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "halo_detector",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hts_tape"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gravitational_calibration_mass"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:frost_capacitor_cell"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:halo_sensor_array",
+   "count": 1
+  }
+ ],
+ "energy": 8000,
+ "industrial": true
+}

@@ -192,5 +192,8 @@ final class GeneratedJeiOrder {
           Map.entry("black_hole", 178),
           Map.entry("industry_fragment_reactor", 179),
           Map.entry("solar_simulation", 180),
-          Map.entry("universe_simulation", 181));
+          Map.entry("universe_simulation", 181),
+          Map.entry("industry_gravitational_lens", 182),
+          Map.entry("industry_halo_detector", 183),
+          Map.entry("industry_halo_observatory_port", 184));
 }

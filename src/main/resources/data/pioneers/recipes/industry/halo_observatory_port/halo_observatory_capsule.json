@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "halo_observatory_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:dark_matter_trap"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryogenic_screen"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_shielding_plate"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dark_matter_capsule",
+   "count": 1
+  }
+ ],
+ "energy": 84000,
+ "industrial": true
+}

@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gravitational_calibration_mass"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_shielding_plate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryopump"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:gravitational_lens",
+  "count": 1
+ }
+}

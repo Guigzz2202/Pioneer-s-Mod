@@ -28,7 +28,7 @@ public final class SkyScene {
 
     public static final int SUN = 0, POINT = 1, DISC = 2, MEGA = 3;
     /** 1.0.7 (lot 4) : geometries des megastructures (index de T:au_dela/megastructures.py SKY_KINDS). */
-    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2, MEGA_LIGHTS = 3, MEGA_ROTOR = 4, MEGA_AURORA = 5, MEGA_COLUMN = 6, MEGA_SWARM = 7;
+    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2, MEGA_LIGHTS = 3, MEGA_ROTOR = 4, MEGA_AURORA = 5, MEGA_COLUMN = 6, MEGA_SWARM = 7, MEGA_LATTICE = 8;
     /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
     private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
 
@@ -188,6 +188,8 @@ public final class SkyScene {
                     items.add(ring(i, timeDeg));
                 } else if (Megastructures.skyKind(i) == MEGA_PLUME) {
                     items.add(plume(i, timeDeg));
+                } else if (Megastructures.skyKind(i) == MEGA_LATTICE) {
+                    items.add(lattice(i));
                 }
                 continue;
             }
@@ -332,6 +334,56 @@ public final class SkyScene {
         out[0] = x;
         out[1] = y * Math.cos(t) + z * Math.sin(t);
         out[2] = -y * Math.sin(t) + z * Math.cos(t);
+    }
+
+    /**
+     * 1.0.7 (lot 10) : l'Observatoire du Halo vu de son astre : un reseau de points autour du point oppose au Soleil (le point de Lagrange
+     * L2), un peu decale au nord : x, y, z = centre ; ux, uy, uz et bx, by, bz = axes du reseau (repere du ciel).
+     */
+    private Item lattice(int i) {
+        Item item = new Item();
+        item.type = MEGA;
+        item.body = MEGA_BODY[i];
+        item.mega = i;
+        item.megaKind = MEGA_LATTICE;
+        item.dist = 1;
+        double[] p = Megastructures.skyParams(i);
+        double cx = -sun.x, cy = -sun.y, cz = -sun.z;
+        //axe 1 : perpendiculaire au centre dans le plan horizontal du ciel (x, z), axe 2 : centre x axe 1
+        double ax = -cz, az = cx;
+        double al = Math.sqrt(ax * ax + az * az);
+        if (al < 1e-6) {
+            ax = 1;
+            az = 0;
+            al = 1;
+        }
+        ax /= al;
+        az /= al;
+        double bx = cy * az, by = cz * ax - cx * az, bz = -cy * ax;
+        double off = Math.toRadians(p[5]);
+        item.x = cx * Math.cos(off) + bx * Math.sin(off);
+        item.y = cy * Math.cos(off) + by * Math.sin(off);
+        item.z = cz * Math.cos(off) + bz * Math.sin(off);
+        item.ux = ax;
+        item.uy = 0;
+        item.uz = az;
+        item.bx = item.y * az;
+        item.by = item.z * ax - item.x * az;
+        item.bz = -item.y * ax;
+        return item;
+    }
+
+    /** Point {@code k} du reseau du Halo : direction (repere du ciel) dans {@code out}, eclat (0..1) qui scintille. */
+    public static double latticePoint(Item item, double[] p, int k, double ticks, double[] out) {
+        int cols = (int) p[1];
+        double gi = k / cols - (p[0] - 1) / 2, gj = k % cols - (p[1] - 1) / 2;
+        double s = Math.toRadians(p[2]);
+        double x = item.x + s * (gi * item.ux + gj * item.bx), y = item.y + s * (gi * item.uy + gj * item.by), z = item.z + s * (gi * item.uz + gj * item.bz);
+        double l = Math.sqrt(x * x + y * y + z * z);
+        out[0] = x / l;
+        out[1] = y / l;
+        out[2] = z / l;
+        return 1 - p[4] * 0.5 * (1 + Math.sin(ticks * 0.05 + k * 2.1));
     }
 
     /** Partie fractionnaire (tirages fixes des feux de la Cite). */

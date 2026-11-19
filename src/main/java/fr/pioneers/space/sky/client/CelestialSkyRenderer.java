@@ -420,7 +420,40 @@ public final class CelestialSkyRenderer {
             drawRingArc(matrix, item, style);
         } else if (item.megaKind == SkyScene.MEGA_PLUME) {
             drawPlume(matrix, item, style, timeDeg);
+        } else if (item.megaKind == SkyScene.MEGA_LATTICE) {
+            drawLattice(matrix, item, style);
         }
+    }
+
+    /** 1.0.7 (lot 10) : reseau de points de l'Observatoire du Halo (la nuit, sous un ciel sans nuages). */
+    private static final double[] LP = new double[3];
+
+    private static void drawLattice(Matrix4f matrix, SkyScene.Item item, Style style) {
+        flushPoints();
+        float vis = (style.atmosphere ? Math.min(1, style.starBrightness * 2) : 1) * (1 - style.rain);
+        if (vis <= 0.01F) {
+            return;
+        }
+        double[] p = fr.pioneers.space.mega.Megastructures.skyParams(item.mega);
+        int rgb = fr.pioneers.space.mega.Megastructures.color(item.mega);
+        float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
+        double ticks = RenderClock.now();
+        double d = R * Math.tan(Math.toRadians(p[3]));
+        additive();
+        RenderSystem.setShader(GameRenderer::getPositionColorShader);
+        BufferBuilder builder = Tesselator.getInstance().getBuilder();
+        builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+        int n = (int) p[0] * (int) p[1];
+        for (int k = 0; k < n; k++) {
+            float a = (float) (SkyScene.latticePoint(item, p, k, ticks, LP) * vis);
+            double qx = R * LP[0], qy = R * LP[1], qz = R * LP[2];
+            builder.vertex(matrix, (float) (qx - item.ux * d), (float) (qy - item.uy * d), (float) (qz - item.uz * d)).color(cr, cg, cb, a).endVertex();
+            builder.vertex(matrix, (float) (qx - item.bx * d), (float) (qy - item.by * d), (float) (qz - item.bz * d)).color(cr, cg, cb, a).endVertex();
+            builder.vertex(matrix, (float) (qx + item.ux * d), (float) (qy + item.uy * d), (float) (qz + item.uz * d)).color(cr, cg, cb, a).endVertex();
+            builder.vertex(matrix, (float) (qx + item.bx * d), (float) (qy + item.by * d), (float) (qz + item.bz * d)).color(cr, cg, cb, a).endVertex();
+        }
+        BufferUploader.drawWithShader(builder.end());
+        normal();
     }
 
     /** Lueur sur l'horizon (bande additive) et panache qui monte dans les nuages en s'elargissant et en palissant (Grand Forage). */
@@ -654,8 +687,8 @@ public final class CelestialSkyRenderer {
             int rgb = fr.pioneers.space.mega.Megastructures.color(i);
             float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
             int megaKind = fr.pioneers.space.mega.Megastructures.skyKind(i);
-            if (megaKind == SkyScene.MEGA_SWARM) {
-                //1.0.7 (lot 9) : l'Essaim est dessine avec le Soleil (drawSun)
+            if (megaKind == SkyScene.MEGA_SWARM || megaKind == SkyScene.MEGA_LATTICE) {
+                //1.0.7 (lots 9 et 10) : l'Essaim est dessine avec le Soleil ; le Halo ne se voit que de son astre
                 continue;
             }
             if (megaKind == SkyScene.MEGA_PLUME) {

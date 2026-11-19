@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_stellar"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:halo_sensor_array"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_shielding_plate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gravitational_calibration_mass"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:halo_observatory_port",
+  "count": 1
+ }
+}
