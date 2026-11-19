@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "venus_great_drill_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:isostatic_preform"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superalloy_melt_charge"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:venusian_spiral_gasket"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:acidproof_venusium_liner"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mantle_drill_bit",
+   "count": 1
+  }
+ ],
+ "energy": 52000,
+ "industrial": true
+}

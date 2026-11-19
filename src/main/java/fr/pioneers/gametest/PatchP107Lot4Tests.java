@@ -114,8 +114,10 @@ public final class PatchP107Lot4Tests {
     public static void p107_4_chantier_livre_puis_debloque(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         Function<Level, Body> old = Megastructures.bodyOf;
+        s.onCleanup(() -> Megastructures.bodyOf = old);
         MegaWorld w = MegaWorld.get(h.getLevel().getServer());
         CompoundTag saved = w.save(new CompoundTag());
+        s.onCleanup(() -> w.restore(saved));
         try {
             w.reset(MARS);
             BlockPos at = new BlockPos(2, 2, 2);
@@ -215,8 +217,10 @@ public final class PatchP107Lot4Tests {
     public static void p107_4_port_refuse_hors_astre_et_en_mki(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         Function<Level, Body> old = Megastructures.bodyOf;
+        s.onCleanup(() -> Megastructures.bodyOf = old);
         MegaWorld w = MegaWorld.get(h.getLevel().getServer());
         CompoundTag saved = w.save(new CompoundTag());
+        s.onCleanup(() -> w.restore(saved));
         ControllerTile tile = port(h, false);
         h.runAfterDelay(5, () -> {
             try {
@@ -256,8 +260,10 @@ public final class PatchP107Lot4Tests {
     public static void p107_4_port_mkv_fait_sa_recette_unique(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         Function<Level, Body> old = Megastructures.bodyOf;
+        s.onCleanup(() -> Megastructures.bodyOf = old);
         MegaWorld w = MegaWorld.get(h.getLevel().getServer());
         CompoundTag saved = w.save(new CompoundTag());
+        s.onCleanup(() -> w.restore(saved));
         ControllerTile tile = port(h, true);
         h.runAfterDelay(5, () -> {
             try {

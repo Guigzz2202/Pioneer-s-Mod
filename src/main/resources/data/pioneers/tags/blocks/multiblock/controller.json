@@ -82,12 +82,14 @@
     "pioneers:semiconductor_fab",
     "pioneers:shipyard",
     "pioneers:solar_concentrator",
+    "pioneers:space_drill",
     "pioneers:spent_fuel_pool",
     "pioneers:steam_turbine",
     "pioneers:stellarator",
     "pioneers:storage_tank",
     "pioneers:synthesizer",
     "pioneers:tokamak",
-    "pioneers:tree_plantation"
+    "pioneers:tree_plantation",
+    "pioneers:venus_great_drill_port"
   ]
 }

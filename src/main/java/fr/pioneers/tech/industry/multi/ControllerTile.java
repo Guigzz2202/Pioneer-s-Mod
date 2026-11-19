@@ -1191,7 +1191,7 @@ public class ControllerTile extends MachineTile implements RecipeMatch.Buffers, 
 
     private long drillLeft() {
         Deposits.Deposit deposit = Deposits.at((ServerLevel) level, worldPosition.getX() >> 4, worldPosition.getZ() >> 4);
-        return deposit == null ? 0 : deposit.left((ServerLevel) level);
+        return fr.pioneers.space.mining.SpaceDrill.left(machine.key, (ServerLevel) level, worldPosition, deposit);
     }
 
     /** 0.17.0 : commande du reacteur (null si ce multibloc n'est pas un reacteur ou s'il n'est pas forme). */

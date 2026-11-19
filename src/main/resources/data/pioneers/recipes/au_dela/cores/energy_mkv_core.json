@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:sealed_mantle_exchanger"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:supercritical_exchanger_core"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ember_thermal_cell"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:energy_mkv_core",
+  "count": 1
+ }
+}

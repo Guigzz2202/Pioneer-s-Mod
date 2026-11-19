@@ -28,7 +28,7 @@ public final class SkyScene {
 
     public static final int SUN = 0, POINT = 1, DISC = 2, MEGA = 3;
     /** 1.0.7 (lot 4) : geometries des megastructures (index de T:au_dela/megastructures.py SKY_KINDS). */
-    public static final int MEGA_TETHER = 0, MEGA_RING = 1;
+    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2;
     /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
     private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
 
@@ -173,6 +173,8 @@ public final class SkyScene {
                     items.add(tether(i, timeDeg));
                 } else if (Megastructures.skyKind(i) == MEGA_RING) {
                     items.add(ring(i, timeDeg));
+                } else if (Megastructures.skyKind(i) == MEGA_PLUME) {
+                    items.add(plume(i, timeDeg));
                 }
                 continue;
             }
@@ -277,8 +279,38 @@ public final class SkyScene {
         return 0.45 + ring.dayBoost * Math.max(0, cos) + g;
     }
 
+    /**
+     * Lueur et panache d'un puits de forage (Grand Forage) : x, y, z = haut du panache, bx, by, bz = sa base sur l'horizon ; width = largeur
+     * du panache, terminator = demi-largeur de la lueur sur l'horizon (degres) ; glint = eclat, plus fort la nuit (la lueur du manteau perce
+     * mieux les nuages quand le jour baisse).
+     */
+    private Item plume(int i, double timeDeg) {
+        Item item = new Item();
+        item.type = MEGA;
+        item.body = MEGA_BODY[i];
+        item.mega = i;
+        item.megaKind = MEGA_PLUME;
+        item.dist = 1;
+        double az = Math.toRadians(Megastructures.sky(i, 0));
+        double[] p = new double[3];
+        ground(0, az, timeDeg, p);
+        item.bx = p[0];
+        item.by = p[1];
+        item.bz = p[2];
+        ground(Math.toRadians(Megastructures.sky(i, 2)), az, timeDeg, p);
+        item.x = p[0];
+        item.y = p[1];
+        item.z = p[2];
+        item.terminator = Megastructures.sky(i, 1);
+        item.width = Megastructures.sky(i, 3);
+        double sunAlt = Math.toDegrees(Math.asin(Math.max(-1, Math.min(1, Math.cos(Math.toRadians(timeDeg))))));
+        item.glint = Megastructures.sky(i, 4) * (0.35 + 0.65 * smoothstep(6, -12, sunAlt));
+        item.ux = az;
+        return item;
+    }
+
     /** Direction (altitude, azimut depuis le nord vers l'est) du repere du sol vers le repere du ciel a l'heure donnee. */
-    static void ground(double alt, double az, double timeDeg, double[] out) {
+    public static void ground(double alt, double az, double timeDeg, double[] out) {
         //sol : x = est, y = haut, z = sud
         double gx = Math.cos(alt) * Math.sin(az), gy = Math.sin(alt), gz = -Math.cos(alt) * Math.cos(az);
         //inverse du rendu YP(-90) puis XP(t) : YP(90), puis XP(-t)

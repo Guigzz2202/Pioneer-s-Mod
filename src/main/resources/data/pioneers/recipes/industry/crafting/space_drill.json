@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:colossal_drill_mast"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mantle_drill_bit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_stellar"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tharsium_truss_beam"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:space_drill",
+  "count": 1
+ }
+}

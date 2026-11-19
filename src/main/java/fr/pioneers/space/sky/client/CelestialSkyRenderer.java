@@ -90,6 +90,8 @@ public final class CelestialSkyRenderer {
         public boolean drawSun = true;
         public boolean drawStars = true;
         public boolean pointsOnly;
+        /** 1.0.7 (lot 6) : seulement les megastructures (ciel nuageux de Venus : ni astres ni etoiles). */
+        public boolean megaOnly;
     }
 
     private static void ensureBuffers() {
@@ -124,6 +126,21 @@ public final class CelestialSkyRenderer {
         poseStack.mulPose(Axis.XP.rotationDegrees(timeDeg));
         float sky = style.atmosphere ? Math.min(1, style.starBrightness * 2) * (1 - style.rain) : 1;
 
+        if (style.megaOnly) {
+            Matrix4f m = poseStack.last().pose();
+            for (SkyScene.Item item : scene.items) {
+                if (item.type == SkyScene.MEGA) {
+                    drawMega(m, item, style, timeDeg);
+                }
+            }
+            poseStack.popPose();
+            RenderSystem.setShaderColor(1, 1, 1, 1);
+            RenderSystem.defaultBlendFunc();
+            RenderSystem.disableBlend();
+            RenderSystem.enableCull();
+            RenderSystem.depthMask(true);
+            return;
+        }
         //Etoiles et Voie lactee, fixes par rapport aux etoiles (le Soleil y avance au fil de l'annee)
         if (style.drawStars && sky > 0.01F) {
             additive();
@@ -167,7 +184,7 @@ public final class CelestialSkyRenderer {
                 case SkyScene.POINT -> drawPoint(matrix, item, item.pointAlpha, sun, style, sky);
                 case SkyScene.MEGA -> {
                     if (!style.pointsOnly) {
-                        drawMega(matrix, item, style);
+                        drawMega(matrix, item, style, timeDeg);
                     }
                 }
                 default -> {
@@ -363,12 +380,65 @@ public final class CelestialSkyRenderer {
     private static final double[] TX = new double[TETHER_STEPS + 1], TY = new double[TETHER_STEPS + 1], TZ = new double[TETHER_STEPS + 1];
     private static final double[] WX = new double[TETHER_STEPS + 1], WY = new double[TETHER_STEPS + 1], WZ = new double[TETHER_STEPS + 1];
 
-    private static void drawMega(Matrix4f matrix, SkyScene.Item item, Style style) {
+    private static void drawMega(Matrix4f matrix, SkyScene.Item item, Style style, float timeDeg) {
         if (item.megaKind == SkyScene.MEGA_TETHER) {
             drawTether(matrix, item, style);
         } else if (item.megaKind == SkyScene.MEGA_RING) {
             drawRingArc(matrix, item, style);
+        } else if (item.megaKind == SkyScene.MEGA_PLUME) {
+            drawPlume(matrix, item, style, timeDeg);
         }
+    }
+
+    /** Lueur sur l'horizon (bande additive) et panache qui monte dans les nuages en s'elargissant et en palissant (Grand Forage). */
+    private static final double[] PG = new double[3];
+
+    private static void drawPlume(Matrix4f matrix, SkyScene.Item item, Style style, float timeDeg) {
+        flushPoints();
+        int rgb = fr.pioneers.space.mega.Megastructures.color(item.mega);
+        float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
+        float k = (float) item.glint * (1 - style.rain * 0.6F);
+        double az = item.ux, half = Math.toRadians(item.terminator), top = Math.toRadians(4);
+        RenderSystem.setShader(GameRenderer::getPositionColorShader);
+        BufferBuilder builder = Tesselator.getInstance().getBuilder();
+        additive();
+        builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+        //lueur : 16 morceaux le long de l'horizon, plus forte au centre
+        for (int i = 0; i < 16; i++) {
+            double a0 = az - half + 2 * half * i / 16, a1 = az - half + 2 * half * (i + 1) / 16;
+            float w0 = (float) Math.cos((i - 7.5) / 8.0 * Math.PI / 2), w1 = (float) Math.cos((i - 6.5) / 8.0 * Math.PI / 2);
+            plumeVertex(builder, matrix, 0, a0, timeDeg, cr, cg * 0.7F, cb * 0.5F, 0.7F * k * Math.max(0, w0));
+            plumeVertex(builder, matrix, 0, a1, timeDeg, cr, cg * 0.7F, cb * 0.5F, 0.7F * k * Math.max(0, w1));
+            plumeVertex(builder, matrix, top, a1, timeDeg, cr, cg * 0.7F, cb * 0.5F, 0);
+            plumeVertex(builder, matrix, top, a0, timeDeg, cr, cg * 0.7F, cb * 0.5F, 0);
+        }
+        //panache : 12 morceaux de la base au haut, de plus en plus large et pale
+        double alt1 = altitudeOf(item, timeDeg);
+        for (int i = 0; i < 12; i++) {
+            double t0 = i / 12.0, t1 = (i + 1) / 12.0;
+            double al0 = alt1 * t0, al1 = alt1 * t1;
+            double w0 = Math.toRadians(item.width) * (0.6 + 2.2 * t0), w1 = Math.toRadians(item.width) * (0.6 + 2.2 * t1);
+            float f0 = (float) (k * (1 - t0) * 0.8), f1 = (float) (k * (1 - t1) * 0.8);
+            plumeVertex(builder, matrix, al0, az - w0, timeDeg, cr, cg, cb, f0);
+            plumeVertex(builder, matrix, al0, az + w0, timeDeg, cr, cg, cb, f0);
+            plumeVertex(builder, matrix, al1, az + w1, timeDeg, cr, cg, cb, f1);
+            plumeVertex(builder, matrix, al1, az - w1, timeDeg, cr, cg, cb, f1);
+        }
+        BufferUploader.drawWithShader(builder.end());
+        normal();
+    }
+
+    /** Hauteur (rad) du haut du panache, relue de sa direction dans le repere du ciel. */
+    private static double altitudeOf(SkyScene.Item item, float timeDeg) {
+        //sol = YP(-90) XP(t) ciel : hauteur = composante verticale
+        double t = Math.toRadians(timeDeg);
+        double y1 = item.y * Math.cos(t) - item.z * Math.sin(t);
+        return Math.asin(Math.max(-1, Math.min(1, y1)));
+    }
+
+    private static void plumeVertex(BufferBuilder builder, Matrix4f matrix, double alt, double az, float timeDeg, float r, float g, float b, float a) {
+        SkyScene.ground(alt, az, timeDeg, PG);
+        builder.vertex(matrix, (float) (R * PG[0]), (float) (R * PG[1]), (float) (R * PG[2])).color(r, g, b, Math.max(0, a)).endVertex();
     }
 
     /** Anneau (Diademe) : arc est - sommet - ouest ; eclat de chaque morceau par {@link SkyScene#ringShade} (ombre, jour, terminateur). */

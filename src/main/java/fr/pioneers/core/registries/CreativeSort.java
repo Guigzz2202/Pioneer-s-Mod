@@ -853,7 +853,7 @@ public final class CreativeSort {
         return Tab.TECH;
     }
 
-    /** 1.0.7 (lot 4) : composants gates des megastructures, dans l'ordre des megastructures (table generee, sans classe Minecraft). */
+    /** 1.0.7 (lots 4 et 5) : composants gates, coeurs MKV et objets des chaines (table generee, sans classe Minecraft). */
     private static List<String> gatedIds() {
         List<String> out = new ArrayList<>();
         for (String[] gated : fr.pioneers.space.mega.GeneratedMegastructures.GATED) {
@@ -861,12 +861,20 @@ public final class CreativeSort {
                 out.add(g.substring(g.indexOf(':') + 1));
             }
         }
+        //lot 5 : coeurs MKV des multiblocs de famille et objets des chaines phares
+        for (String i : fr.pioneers.space.mega.GeneratedMegastructures.CORE_ITEMS) {
+            out.add(i.substring(i.indexOf(':') + 1));
+        }
+        for (String i : fr.pioneers.space.mega.GeneratedMegastructures.ITEMS) {
+            out.add(i.substring(i.indexOf(':') + 1));
+        }
         return out;
     }
 
-    /** 1.0.7 (lot 4) : la machine est-elle le port (terminal) d'une megastructure ? */
+    /** 1.0.7 (lots 4 a 6) : port (terminal) d'une megastructure, multibloc inedit ou foreuse spatiale de la MAJ ? */
     private static boolean megaPort(String key) {
-        return List.of(fr.pioneers.space.mega.GeneratedMegastructures.PORTS).contains(key);
+        return List.of(fr.pioneers.space.mega.GeneratedMegastructures.PORTS).contains(key)
+               || List.of(fr.pioneers.space.mega.GeneratedMegastructures.MACHINES).contains(key);
     }
 
     /** Machines de la fin de jeu (planetes simulees). */

@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "venus_great_drill_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ember_thermal_cell"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/venusium"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mercurian_refractory_brick"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:supercritical_exchanger_core"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:mantle_heat_core",
+   "count": 1
+  }
+ ],
+ "energy": 52000,
+ "industrial": true
+}

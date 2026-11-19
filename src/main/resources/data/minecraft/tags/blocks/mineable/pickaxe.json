@@ -1843,6 +1843,8 @@
   "pioneers:mars_elevator_port",
   "pioneers:mercury_diadem_port",
   "pioneers:solar_concentrator",
-  "pioneers:isostatic_press"
+  "pioneers:isostatic_press",
+  "pioneers:venus_great_drill_port",
+  "pioneers:space_drill"
  ]
 }

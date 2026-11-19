@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "venus_great_drill_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:supercritical_exchanger_core"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:acidproof_venusium_liner"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:venusian_spiral_gasket"
+   },
+   "count": 8
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:sealed_mantle_exchanger",
+   "count": 1
+  }
+ ],
+ "energy": 52000,
+ "industrial": true
+}

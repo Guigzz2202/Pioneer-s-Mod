@@ -118,6 +118,9 @@ final class MultiProcess extends MachineUnit {
 
     /** Un tick de travail (structure formee, ni reacteur ni fusion ni calcul, pas en surchauffe) : vrai si le multibloc a travaille. */
     boolean work() {
+        if (fr.pioneers.space.mining.SpaceDrill.is(c.machine.key)) {
+            return tickSpaceDrill();
+        }
         if (c.machine.kind == IndustryMachine.Kind.DRILL) {
             return tickDrill();
         }
@@ -552,6 +555,64 @@ final class MultiProcess extends MachineUnit {
         c.setChanged();
         return true;
     }
+    /**
+     * 1.0.7 (lot 6) : la foreuse spatiale ({@link fr.pioneers.space.mining.SpaceDrill}) : filon profond de l'astre sous elle, structure MKV,
+     * minerai principal du filon (et son sous-produit selon sa chance), reserve de la region.
+     */
+    boolean tickSpaceDrill() {
+        ServerLevel sl = (ServerLevel) level();
+        fr.pioneers.space.mining.MiningVein vein = fr.pioneers.space.mining.SpaceDrill.vein(sl, pos());
+        if (vein == null) {
+            c.status = ControllerTile.NO_DEPOSIT;
+            return false;
+        }
+        if (c.structure() == null || c.structure().tier() < fr.pioneers.logistics.transport.CableTier.STELLAR.ordinal()) {
+            c.status = ControllerTile.MKV_CASINGS;
+            return false;
+        }
+        int left = fr.pioneers.space.mining.SpaceDrill.left(sl, pos());
+        if (left <= 0) {
+            c.status = ControllerTile.EXHAUSTED;
+            return false;
+        }
+        if (!machine.canWork()) {
+            c.status = ControllerTile.IDLE;
+            return false;
+        }
+        if (batchCount <= 0) {
+            batchCount = Math.min(c.parallel(), left);
+            duration = Tiers.ticks(fr.pioneers.space.mining.SpaceDrill.TIME, c.tier(), 0, true);
+            batchPower = opPower(batchCount);
+            progress = 0;
+        }
+        ItemStack ore = new ItemStack(vein.getPrimary(), batchCount * fr.pioneers.space.mining.SpaceDrill.YIELD);
+        if (!ItemHandlerHelper.insertItemStacked(new ItemSlots(c.outputs, Automation.INTERNAL), ore.copy(), true).isEmpty()) {
+            c.status = ControllerTile.FULL;
+            return false;
+        }
+        if (!machine.use(batchPower)) {
+            c.status = ControllerTile.NO_ENERGY;
+            return false;
+        }
+        c.status = ControllerTile.WORKING;
+        progress += c.thermalFactor();
+        if (progress >= duration) {
+            ItemHandlerHelper.insertItemStacked(new ItemSlots(c.outputs, Automation.INTERNAL), ore, false);
+            int extra = 0;
+            for (int i = 0; i < batchCount; i++) {
+                extra += sl.random.nextFloat() < vein.byproductChance ? 1 : 0;
+            }
+            if (extra > 0) {
+                ItemHandlerHelper.insertItemStacked(new ItemSlots(c.outputs, Automation.INTERNAL), new ItemStack(vein.getByproduct(), extra), false);
+            }
+            fr.pioneers.space.mining.SpaceDrill.mine(sl, pos(), batchCount);
+            batchCount = 0;
+            progress = 0;
+        }
+        c.setChanged();
+        return true;
+    }
+
     boolean tickDrill() {
         Deposits.Deposit deposit = Deposits.at((ServerLevel) level(), pos().getX() >> 4, pos().getZ() >> 4);
         if (deposit == null) {

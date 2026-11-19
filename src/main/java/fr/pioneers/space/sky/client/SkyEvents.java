@@ -44,12 +44,29 @@ public final class SkyEvents {
         }
     }
 
+    /** 1.0.7 (lot 6) : ciel nuageux de Venus : seulement les megastructures (lueur et panache du Grand Forage). */
+    private static final CelestialSkyRenderer.Style VENUS = new CelestialSkyRenderer.Style();
+
+    static {
+        VENUS.atmosphere = true;
+        VENUS.megaOnly = true;
+    }
+
     @SubscribeEvent
     public static void onRenderLevel(RenderLevelStageEvent event) {
         if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_SKY) {
             return;
         }
         ClientLevel level = Minecraft.getInstance().level;
+        if (level != null && level.dimension() == fr.pioneers.space.PiDimensions.VENUS && event.getCamera().getFluidInCamera() == FogType.NONE
+            && fr.pioneers.space.mega.client.MegaClient.unlockedMask() != 0) {
+            float partialTick = event.getPartialTick();
+            VENUS.starBrightness = level.getStarBrightness(partialTick);
+            SkyScene scene = SkyScene.compute(SkyScene.observer(Body.VENUS), CelestialSkyRenderer.days(level), level.getTimeOfDay(partialTick) * 360.0F,
+                  fr.pioneers.space.mega.client.MegaClient.unlockedMask());
+            CelestialSkyRenderer.render(scene, level, partialTick, event.getPoseStack(), event.getProjectionMatrix(), VENUS);
+            return;
+        }
         if (level == null || level.dimension() != Level.OVERWORLD || event.getCamera().getFluidInCamera() != FogType.NONE) {
             return;
         }
