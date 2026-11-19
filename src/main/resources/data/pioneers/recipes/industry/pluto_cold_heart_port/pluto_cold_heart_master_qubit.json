@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pluto_cold_heart_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:hts_tape"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:frost_capacitor_cell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryostat_vessel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 1
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:master_qubit",
+   "count": 1
+  }
+ ],
+ "energy": 72000,
+ "industrial": true
+}

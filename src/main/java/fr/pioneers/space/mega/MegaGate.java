@@ -18,8 +18,8 @@ public final class MegaGate {
     }
 
     /** {@link ControllerTile#IDLE} si le port peut travailler, sinon l'etat a afficher. */
-    public static int status(Level level, int mega, @Nullable Structure.Result structure) {
-        if (!(level instanceof ServerLevel server) || Megastructures.here(level) != mega || !MegaWorld.get(server.getServer()).unlocked(mega)) {
+    public static int status(Level level, net.minecraft.core.BlockPos pos, int mega, @Nullable Structure.Result structure) {
+        if (!(level instanceof ServerLevel server) || Megastructures.here(level, pos) != mega || !MegaWorld.get(server.getServer()).unlocked(mega)) {
             return ControllerTile.MEGA_LOCKED;
         }
         if (structure == null || structure.tier() < CableTier.STELLAR.ordinal()) {

@@ -233,8 +233,41 @@ public final class CelestialSkyRenderer {
         double halo = Math.max(core * 5.5, R * Math.tan(Math.toRadians(3.5)));
         float haloAlpha = (float) Math.max(0.1, Math.min(0.55, 0.32 / Math.sqrt(au))) * (style.atmosphere ? 0.8F : 1);
         additive();
-        quad(matrix, 0, 1, 0, halo, 0, HALO, 1, 1, 1, haloAlpha * fade);
-        quad(matrix, 0, 1, 0, core * 16 / 14.0, 0, SUN, 1, 1, 1, fade);
+        //1.0.7 (lot 9) : l'Essaim voile et teinte le Soleil (1 sans lui)
+        float sl = (float) scene.sunLight, tr = (float) scene.sunTintR, tg = (float) scene.sunTintG, tb = (float) scene.sunTintB;
+        quad(matrix, 0, 1, 0, halo, 0, HALO, tr * sl, tg * sl, tb * sl, haloAlpha * fade);
+        quad(matrix, 0, 1, 0, core * 16 / 14.0, 0, SUN, tr * sl, tg * sl, tb * sl, fade);
+        if (sun.megaMarks != 0) {
+            drawSwarm(matrix, sun, core, fade);
+        }
+    }
+
+    /** 1.0.7 (lot 9) : l'Essaim autour du disque du Soleil : des eclats qui tournent lentement ({@link SkyScene#swarmGlint}). */
+    private static void drawSwarm(Matrix4f matrix, SkyScene.Item sun, double core, float fade) {
+        double ticks = RenderClock.now();
+        RenderSystem.setShader(GameRenderer::getPositionColorShader);
+        BufferBuilder builder = Tesselator.getInstance().getBuilder();
+        builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+        for (int i = 0; i < fr.pioneers.space.mega.Megastructures.COUNT; i++) {
+            if ((sun.megaMarks & (1L << i)) == 0 || fr.pioneers.space.mega.Megastructures.skyKind(i) != SkyScene.MEGA_SWARM) {
+                continue;
+            }
+            double[] p = fr.pioneers.space.mega.Megastructures.skyParams(i);
+            int rgb = fr.pioneers.space.mega.Megastructures.color(i);
+            float r = (rgb >> 16 & 255) / 255F, g = (rgb >> 8 & 255) / 255F, b = (rgb & 255) / 255F;
+            double d = Math.max(0.15, core * 0.08);
+            for (int k = 0; k < (int) p[4]; k++) {
+                double e = SkyScene.swarmGlint(p, k, ticks, MARK);
+                float a = (float) (e * fade);
+                //le disque du Soleil est dessine en (0, R, 0) dans le plan x / z
+                double x = MARK[0] * core, z = MARK[1] * core;
+                builder.vertex(matrix, (float) (x - d), R, (float) (z - d)).color(r, g, b, a).endVertex();
+                builder.vertex(matrix, (float) (x + d), R, (float) (z - d)).color(r, g, b, a).endVertex();
+                builder.vertex(matrix, (float) (x + d), R, (float) (z + d)).color(r, g, b, a).endVertex();
+                builder.vertex(matrix, (float) (x - d), R, (float) (z + d)).color(r, g, b, a).endVertex();
+            }
+        }
+        BufferUploader.drawWithShader(builder.end());
     }
 
     // ---------------------------------------------------------------- Points
@@ -621,6 +654,24 @@ public final class CelestialSkyRenderer {
             int rgb = fr.pioneers.space.mega.Megastructures.color(i);
             float cr = (rgb >> 16 & 255) / 255F, cg = (rgb >> 8 & 255) / 255F, cb = (rgb & 255) / 255F;
             int megaKind = fr.pioneers.space.mega.Megastructures.skyKind(i);
+            if (megaKind == SkyScene.MEGA_SWARM) {
+                //1.0.7 (lot 9) : l'Essaim est dessine avec le Soleil (drawSun)
+                continue;
+            }
+            if (megaKind == SkyScene.MEGA_PLUME) {
+                //1.0.7 (lot 9) : lueur d'un puits ou d'une plaine givree (Grand Forage, Coeur Froid) : une tache douce sur le disque
+                double qx = R * nx + h * (0.25 * rx - 0.2 * upx), qy = R * ny + h * (0.25 * ry - 0.2 * upy), qz = R * nz + h * (0.25 * rz - 0.2 * upz);
+                double d = h * 0.22;
+                builder.vertex(matrix, (float) (qx - rx * d), (float) (qy - ry * d), (float) (qz - rz * d)).color(cr, cg, cb, 0).endVertex();
+                builder.vertex(matrix, (float) (qx - upx * d), (float) (qy - upy * d), (float) (qz - upz * d)).color(cr, cg, cb, 0).endVertex();
+                builder.vertex(matrix, (float) (qx + rx * d), (float) (qy + ry * d), (float) (qz + rz * d)).color(cr, cg, cb, 0).endVertex();
+                builder.vertex(matrix, (float) qx, (float) qy, (float) qz).color(cr, cg, cb, 0.85F * fade).endVertex();
+                builder.vertex(matrix, (float) (qx + rx * d), (float) (qy + ry * d), (float) (qz + rz * d)).color(cr, cg, cb, 0).endVertex();
+                builder.vertex(matrix, (float) (qx + upx * d), (float) (qy + upy * d), (float) (qz + upz * d)).color(cr, cg, cb, 0).endVertex();
+                builder.vertex(matrix, (float) (qx - rx * d), (float) (qy - ry * d), (float) (qz - rz * d)).color(cr, cg, cb, 0).endVertex();
+                builder.vertex(matrix, (float) qx, (float) qy, (float) qz).color(cr, cg, cb, 0.85F * fade).endVertex();
+                continue;
+            }
             if (megaKind == SkyScene.MEGA_ROTOR) {
                 //1.0.7 (lot 8) : l'Anneau-Rotor se voit sur les anneaux eux-memes (drawRing)
                 continue;

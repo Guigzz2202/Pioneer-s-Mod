@@ -376,6 +376,8 @@
   "pioneers:gas_collector",
   "pioneers:saturn_ring_rotor_port",
   "pioneers:uranus_loop_port",
-  "pioneers:neptune_descent_port"
+  "pioneers:neptune_descent_port",
+  "pioneers:pluto_cold_heart_port",
+  "pioneers:sun_swarm_port"
  ]
 }

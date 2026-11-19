@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pluto_cold_heart_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryostat_vessel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryopump"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tholin_multilayer_insulation"
+   },
+   "count": 2
+  }
+ ],
+ "fluids": [
+  {
+   "fluid": "pioneers:liquid_helium",
+   "amount": 1000
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 4000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:superfluid_helium_cell",
+   "count": 1
+  }
+ ],
+ "energy": 72000,
+ "industrial": true
+}

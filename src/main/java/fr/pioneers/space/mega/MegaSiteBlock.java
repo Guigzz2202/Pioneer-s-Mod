@@ -35,7 +35,7 @@ public class MegaSiteBlock extends Block implements EntityBlock {
     @Nullable
     @Override
     public BlockState getStateForPlacement(@NotNull BlockPlaceContext context) {
-        if (Megastructures.here(context.getLevel()) < 0) {
+        if (Megastructures.here(context.getLevel(), context.getClickedPos()) < 0) {
             if (!context.getLevel().isClientSide && context.getPlayer() != null) {
                 context.getPlayer().displayClientMessage(Component.translatable("mega.pioneers.none_here"), true);
             }
@@ -48,7 +48,7 @@ public class MegaSiteBlock extends Block implements EntityBlock {
     public void setPlacedBy(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state, @Nullable LivingEntity placer,
           @NotNull ItemStack stack) {
         super.setPlacedBy(level, pos, state, placer, stack);
-        int i = Megastructures.here(level);
+        int i = Megastructures.here(level, pos);
         if (!level.isClientSide && i >= 0 && placer instanceof ServerPlayer player) {
             MegaWorld.get(player.server).open(i, player);
         }
@@ -59,7 +59,7 @@ public class MegaSiteBlock extends Block implements EntityBlock {
     @SuppressWarnings("deprecation")
     public InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player,
           @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
-        int i = Megastructures.here(level);
+        int i = Megastructures.here(level, pos);
         if (i < 0) {
             if (!level.isClientSide) {
                 player.displayClientMessage(Component.translatable("mega.pioneers.none_here"), true);
@@ -74,7 +74,7 @@ public class MegaSiteBlock extends Block implements EntityBlock {
 
     /** Livre au chantier tout ce qui lui manque encore dans l'inventaire du joueur (bouton de l'ecran). */
     static void deliverFrom(ServerPlayer player, BlockPos pos) {
-        int i = Megastructures.here(player.level());
+        int i = Megastructures.here(player.level(), pos);
         if (i < 0) {
             return;
         }

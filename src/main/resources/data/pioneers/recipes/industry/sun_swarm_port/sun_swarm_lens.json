@@ -1,0 +1,34 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sun_swarm_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:silvered_lunar_mirror"
+   },
+   "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heliothermal_absorber"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:swarm_lens",
+   "count": 1
+  }
+ ],
+ "energy": 80000,
+ "industrial": true
+}

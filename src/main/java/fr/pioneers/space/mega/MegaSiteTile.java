@@ -29,7 +29,7 @@ public class MegaSiteTile extends BlockEntity {
 
     /** Megastructure de l'astre du chantier, ou -1. */
     public int mega() {
-        return level == null ? -1 : Megastructures.here(level);
+        return level == null ? -1 : Megastructures.here(level, worldPosition);
     }
 
     @Override

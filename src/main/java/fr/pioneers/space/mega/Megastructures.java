@@ -85,6 +85,27 @@ public final class Megastructures {
         return byBody(bodyOf.apply(level));
     }
 
+    /**
+     * 1.0.7 (lot 9) : astre d'un lieu : celui du monde ; dans la dimension des stations, l'astre que survole la station s'il n'a pas de
+     * surface (le Soleil : l'Essaim se livre et ses ports se batissent dans la station du Soleil).
+     */
+    @Nullable
+    public static Body bodyAt(Level level, net.minecraft.core.BlockPos pos) {
+        Body body = bodyOf.apply(level);
+        if (body == null && level.dimension() == fr.pioneers.space.PiDimensions.ORBIT) {
+            Body over = fr.pioneers.space.station.OrbitalStations.bodyAt(pos.getX());
+            if (over != null && over.dimension() == null) {
+                return over;
+            }
+        }
+        return body;
+    }
+
+    /** Megastructure du lieu (astre du monde, ou astre sans surface survole par la station), ou -1. */
+    public static int here(Level level, net.minecraft.core.BlockPos pos) {
+        return byBody(bodyAt(level, pos));
+    }
+
     /** Megastructure dont la machine est le port, ou -1. */
     public static int byPort(String machineKey) {
         Integer i = BY_PORT.get(machineKey);

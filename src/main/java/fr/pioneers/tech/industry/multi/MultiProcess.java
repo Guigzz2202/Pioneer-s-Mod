@@ -162,7 +162,7 @@ final class MultiProcess extends MachineUnit {
         //1.0.7 (lot 4) : port d'une megastructure : sur son astre, megastructure debloquee, carcasses MKV (recettes uniques)
         int mega = fr.pioneers.space.mega.Megastructures.byPort(c.machine.key);
         if (mega >= 0) {
-            int gate = fr.pioneers.space.mega.MegaGate.status(level(), mega, c.structure());
+            int gate = fr.pioneers.space.mega.MegaGate.status(level(), pos(), mega, c.structure());
             if (gate != ControllerTile.IDLE) {
                 c.status = gate;
                 return;

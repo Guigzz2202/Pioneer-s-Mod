@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pluto_cold_heart_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:charon_thermal_shield"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tholin_multilayer_insulation"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:martian_hull_segment"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_sheet_metal"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:cryogenic_screen",
+   "count": 1
+  }
+ ],
+ "energy": 72000,
+ "industrial": true
+}

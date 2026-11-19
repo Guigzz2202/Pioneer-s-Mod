@@ -28,7 +28,7 @@ public final class SkyScene {
 
     public static final int SUN = 0, POINT = 1, DISC = 2, MEGA = 3;
     /** 1.0.7 (lot 4) : geometries des megastructures (index de T:au_dela/megastructures.py SKY_KINDS). */
-    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2, MEGA_LIGHTS = 3, MEGA_ROTOR = 4, MEGA_AURORA = 5, MEGA_COLUMN = 6;
+    public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2, MEGA_LIGHTS = 3, MEGA_ROTOR = 4, MEGA_AURORA = 5, MEGA_COLUMN = 6, MEGA_SWARM = 7;
     /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
     private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
 
@@ -137,6 +137,11 @@ public final class SkyScene {
     /** Distance au Soleil (km). */
     public double sunDistance;
     public Item sun;
+    /**
+     * 1.0.7 (lot 9) : lumiere du Soleil gardee (0..1) et sa teinte (rouge, vert, bleu), baissees par l'Essaim dans tout le systeme
+     * solaire ; 1 sans lui.
+     */
+    public double sunLight = 1, sunTintR = 1, sunTintG = 1, sunTintB = 1;
 
     private final double[] e1 = new double[3], e2 = new double[3], e3 = new double[3];
 
@@ -167,6 +172,14 @@ public final class SkyScene {
         for (int i = 0; i < Megastructures.COUNT; i++) {
             if ((megas & (1L << i)) == 0 || MEGA_BODY[i] == null) {
                 continue;
+            }
+            if (Megastructures.skyKind(i) == MEGA_SWARM) {
+                //1.0.7 (lot 9) : l'Essaim voile et teinte le Soleil dans tout le systeme (les ciels de SkyScene sont ceux du systeme solaire)
+                double[] p = Megastructures.skyParams(i);
+                sunLight = Math.min(sunLight, p[0]);
+                sunTintR *= p[1];
+                sunTintG *= p[2];
+                sunTintB *= p[3];
             }
             if (MEGA_BODY[i] == observer.body) {
                 if (Megastructures.skyKind(i) == MEGA_TETHER) {
@@ -423,6 +436,20 @@ public final class SkyScene {
         out[2] = -Math.cos(el) * Math.cos(az);
         double pulse = 0.5 + 0.5 * Math.sin(s * 18 - ticks * p[3]);
         return p[4] * (0.55 + 0.45 * pulse) * (1 - step(0.85, 1, s));
+    }
+
+    /**
+     * 1.0.7 (lot 9) : eclat {@code k} de l'Essaim autour du disque du Soleil : coordonnees dans le plan du disque (unite = rayon du disque)
+     * dans {@code out}, eclat (0..1) qui scintille ; les eclats tournent lentement sur des orbites de 1,3 a p[5] rayons. p : reglages SKY.
+     */
+    public static double swarmGlint(double[] p, int k, double ticks, double[] out) {
+        double r = 1.3 + (p[5] - 1.3) * frac(k * 0.4142135 + 0.3);
+        double a = 2 * Math.PI * frac(k * 0.6180339887) + ticks * 0.002 / r;
+        //orbites inclinees : l'essaim est un nuage, pas un anneau
+        double tilt = 0.35 + 0.65 * frac(k * 0.271 + 0.5);
+        out[0] = r * Math.cos(a);
+        out[1] = r * Math.sin(a) * tilt;
+        return (0.35 + 0.65 * frac(k * 0.318 + 0.05)) * (0.6 + 0.4 * Math.sin(ticks * 0.11 + k * 1.7));
     }
 
     private void build(double t, double timeDeg) {

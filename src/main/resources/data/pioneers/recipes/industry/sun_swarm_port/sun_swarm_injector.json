@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "sun_swarm_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:helium3_trap_cell"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sintered_alabaster_insulator"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_tape"
+   },
+   "count": 4
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:deuterium",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:aneutronic_injector",
+   "count": 1
+  }
+ ],
+ "energy": 80000,
+ "industrial": true
+}
