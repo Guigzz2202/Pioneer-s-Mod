@@ -48,6 +48,10 @@ minecraft {
             if (project.hasProperty('quickPlay')) {
                 args '--quickPlaySingleplayer', project.property('quickPlay')
             }
+            // 1.0.7 (« ciel grandiose ») : -PskyShots=<ids|all> : captures du ciel des megastructures (fr.pioneers.space.sky.client.SkyShots)
+            if (project.hasProperty('skyShots')) {
+                property 'pioneers.skyshots', project.property('skyShots')
+            }
         }
 
         server {

@@ -12,6 +12,9 @@ public final class MegaClient {
     private static long unlocked;
     private static int[][] delivered = new int[0][];
     private static String[] openers = new String[0];
+    /** 1.0.7 (« ciel grandiose ») : megastructures en fonctionnement (recu), forcees (captures) et activite affichee (0..1, lissee). */
+    private static long working, forced;
+    private static final float[] ACTIVITY = new float[Math.max(1, Megastructures.COUNT)];
 
     private MegaClient() {
     }
@@ -47,8 +50,40 @@ public final class MegaClient {
         return i < openers.length ? openers[i] : "";
     }
 
+    public static void setWorking(long mask) {
+        working = mask;
+    }
+
+    /** Captures du ciel : megastructures montrees en marche (bit i), les autres au repos, tout de suite (0 : rien de force). */
+    public static void force(long mask) {
+        forced = mask;
+        for (int i = 0; i < ACTIVITY.length && i < 64; i++) {
+            ACTIVITY[i] = (mask & (1L << i)) != 0 ? 1 : 0;
+        }
+    }
+
+    public static boolean working(int i) {
+        return ((working | forced) & (1L << i)) != 0;
+    }
+
+    /** Activite affichee de la megastructure (0 au repos, 1 en marche) : glisse en quelques secondes. */
+    public static float activity(int i) {
+        return i >= 0 && i < ACTIVITY.length ? ACTIVITY[i] : 0;
+    }
+
+    /** Un tick client : l'activite affichee suit l'etat. */
+    public static void tick() {
+        for (int i = 0; i < ACTIVITY.length; i++) {
+            float target = working(i) ? 1 : 0;
+            float a = ACTIVITY[i];
+            ACTIVITY[i] = Math.abs(target - a) < 0.004F ? target : a + (target - a) * 0.025F;
+        }
+    }
+
     /** Deconnexion : plus rien de debloque dans le ciel. */
     public static void clear() {
+        working = 0;
+        java.util.Arrays.fill(ACTIVITY, 0);
         unlocked = 0;
         delivered = new int[0][];
         openers = new String[0];

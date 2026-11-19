@@ -188,6 +188,11 @@ public final class Megastructures {
         return GeneratedMegastructures.SKY[i];
     }
 
+    /** 1.0.7 (ciel grandiose) : couleur d'accent de la megastructure (0xRRGGBB). */
+    public static int accent(int i) {
+        return GeneratedMegastructures.ACCENT[i];
+    }
+
     public static int color(int i) {
         return GeneratedMegastructures.COLOR[i];
     }

@@ -433,6 +433,12 @@ public final class PiNetwork {
               .decoder(fr.pioneers.space.mega.PacketMegaDeliver::decode)
               .consumerMainThread(fr.pioneers.space.mega.PacketMegaDeliver::handle)
               .add();
+        //1.0.7 (« ciel grandiose ») : megastructures en fonctionnement (animations du ciel) ; ajoute EN FIN, VERSION 23 inchangee
+        CHANNEL.messageBuilder(fr.pioneers.space.mega.PacketMegaWorking.class, id++, NetworkDirection.PLAY_TO_CLIENT)
+              .encoder(fr.pioneers.space.mega.PacketMegaWorking::encode)
+              .decoder(fr.pioneers.space.mega.PacketMegaWorking::decode)
+              .consumerMainThread(fr.pioneers.space.mega.PacketMegaWorking::handle)
+              .add();
     }
 
     public static void sendToServer(Object packet) {

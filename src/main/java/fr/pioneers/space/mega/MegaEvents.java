@@ -24,6 +24,7 @@ import net.minecraftforge.network.PacketDistributor;
  *     <li>connexion : l'etat au joueur ;</li>
  *     <li>changement (livraison, ouverture) : l'etat a tous, au plus une fois par seconde (jamais a chaque tick, meme quand un cable
  *     livre a chaque tick) ; deblocage : tout de suite, avec un message a tous ;</li>
+ *     <li>megastructures en fonctionnement ({@link MegaActivity}) : a la connexion, puis a chaque changement (controle chaque seconde) ;</li>
  *     <li>{@code /pioneer mega list|unlock <id>|reset <id>} (operateurs : essais et serveurs).</li>
  * </ul>
  */
@@ -60,6 +61,9 @@ public final class MegaEvents {
     public static void onLogin(PlayerEvent.PlayerLoggedInEvent event) {
         if (event.getEntity() instanceof ServerPlayer player) {
             PiNetwork.CHANNEL.send(PacketDistributor.PLAYER.with(() -> player), MegaWorld.get(player.server).packet());
+            //1.0.7 (« ciel grandiose ») : megastructures en fonctionnement
+            PiNetwork.CHANNEL.send(PacketDistributor.PLAYER.with(() -> player),
+                  new PacketMegaWorking(MegaActivity.mask(player.server.overworld().getGameTime())));
         }
     }
 
@@ -68,6 +72,7 @@ public final class MegaEvents {
         dirty = false;
         now = false;
         clock = 0;
+        MegaActivity.reset();
     }
 
     @SubscribeEvent
@@ -76,11 +81,19 @@ public final class MegaEvents {
             return;
         }
         clock++;
-        if (dirty && (now || clock >= SYNC_PERIOD)) {
+        boolean second = clock >= SYNC_PERIOD;
+        if (dirty && (now || second)) {
             clock = 0;
             broadcast(event.getServer());
-        } else if (clock >= SYNC_PERIOD) {
+        } else if (second) {
             clock = 0;
+        }
+        if (second) {
+            //1.0.7 (« ciel grandiose ») : megastructures en fonctionnement, au changement seulement
+            long working = MegaActivity.changed(event.getServer().overworld().getGameTime());
+            if (working >= 0) {
+                PiNetwork.CHANNEL.send(PacketDistributor.ALL.noArg(), new PacketMegaWorking(working));
+            }
         }
     }
 

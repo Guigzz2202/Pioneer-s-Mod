@@ -149,8 +149,21 @@ final class MultiProcess extends MachineUnit {
                 start();
             }
         }
-        return batch != null && run();
+        boolean worked = batch != null && run();
+        if (worked) {
+            //1.0.7 (« ciel grandiose ») : un port de megastructure qui travaille anime sa megastructure dans le ciel
+            if (megaPort == -2) {
+                megaPort = fr.pioneers.space.mega.Megastructures.byPort(c.machine.key);
+            }
+            if (megaPort >= 0) {
+                fr.pioneers.space.mega.MegaActivity.mark(megaPort, level().getGameTime());
+            }
+        }
+        return worked;
     }
+
+    /** Megastructure dont ce multibloc est un port (-1 : aucune ; -2 : pas encore cherche). */
+    private int megaPort = -2;
 
     /** Lance un lot : la premiere recette dont on peut faire au moins une operation. */
     void start() {

@@ -1,0 +1,58 @@
+name: ciel
+
+# 1.0.7 (« ciel grandiose ») : captures du ciel des megastructures en 3D dans le vrai jeu (client sans écran, Xvfb + Mesa) :
+# un monde est créé par le serveur dédié, le client l'ouvre et SkyShots enchaîne les vues (midi, crépuscule, nuit ; au repos et en marche).
+on:
+  workflow_dispatch:
+    inputs:
+      plan:
+        description: "Megastructures (ids séparés par des virgules, ou all)"
+        required: false
+        default: all
+  push:
+    branches:
+      - 'maj/1.0.7-ciel-*'
+
+jobs:
+  ciel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Paquets d'affichage
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq xvfb imagemagick xdotool libgl1-mesa-dri >/dev/null
+
+      - name: Compilation
+        run: ./gradlew build -x test --console=plain
+
+      - name: Monde
+        run: |
+          mkdir -p essais && bash .github/scripts/smoke-server.sh . essais smoke | tee -a essais/verdict.txt
+          grep -q "SERVEUR : TOUT EST BON" essais/verdict.txt
+
+      - name: Captures du ciel
+        run: |
+          SKY_SHOTS="${{ github.event.inputs.plan || 'all' }}" CLIENT_HEAP=6G bash .github/scripts/smoke-client.sh . essais smoke | tee -a essais/verdict.txt
+          grep -q "CLIENT : TOUT EST BON" essais/verdict.txt
+
+      - name: Captures et journaux
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ciel-${{ github.sha }}
+          path: |
+            essais/ciel/*.png
+            essais/*.png
+            essais/*.log
+            essais/verdict.txt
+            run/crash-reports/*.txt
+          if-no-files-found: warn
+          retention-days: 14

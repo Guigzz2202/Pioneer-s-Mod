@@ -134,6 +134,7 @@ public final class CelestialSkyRenderer {
                 }
             }
             poseStack.popPose();
+            MegaSkyRenderer.render(scene, partialTick, poseStack, style, timeDeg);
             RenderSystem.setShaderColor(1, 1, 1, 1);
             RenderSystem.defaultBlendFunc();
             RenderSystem.disableBlend();
@@ -203,6 +204,10 @@ public final class CelestialSkyRenderer {
         }
 
         poseStack.popPose();
+        //1.0.7 (« ciel grandiose ») : megastructures en 3D, dans le repere de la camera, devant les astres
+        if (!style.pointsOnly) {
+            MegaSkyRenderer.render(scene, partialTick, poseStack, style, timeDeg);
+        }
         RenderSystem.setShaderColor(1, 1, 1, 1);
         RenderSystem.defaultBlendFunc();
         RenderSystem.disableBlend();
@@ -414,6 +419,10 @@ public final class CelestialSkyRenderer {
     private static final double[] WX = new double[TETHER_STEPS + 1], WY = new double[TETHER_STEPS + 1], WZ = new double[TETHER_STEPS + 1];
 
     private static void drawMega(Matrix4f matrix, SkyScene.Item item, Style style, float timeDeg) {
+        if (fr.pioneers.space.sky.client.mega.MegaModels.has(item.mega)) {
+            //1.0.7 (« ciel grandiose ») : dessinee en 3D apres les astres (MegaSkyRenderer)
+            return;
+        }
         if (item.megaKind == SkyScene.MEGA_TETHER) {
             drawTether(matrix, item, style);
         } else if (item.megaKind == SkyScene.MEGA_RING) {

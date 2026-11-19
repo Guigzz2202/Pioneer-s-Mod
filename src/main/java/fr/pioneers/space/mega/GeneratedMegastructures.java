@@ -25,6 +25,8 @@ public final class GeneratedMegastructures {
     public static final boolean[] STATION = {false, false, false, false, false, false, false, false, false, true};
     public static final double[][] SKY = {{170.0, 84.0, 0.22, 17000.0, 3390.0, 0.85}, {180.0, 52.0, 0.35, 4400.0, 2440.0, 0.9, 14.0, 0.45}, {200.0, 14.0, 38.0, 2.6, 0.9}, {28.0, -4.0, 9.0, 0.35, 0.6, 3.0}, {24.0, 0.9, 38.0, 3.0, 0.45, 0.004}, {12.0, 55.0, 5.0, 0.012, 0.45, 1.0}, {140.0, 72.0, 1.6, 0.08, 0.9}, {65.0, 26.0, 7.0, 16.0, 0.75}, {0.72, 1.0, 0.9, 0.78, 64.0, 3.2}, {7.0, 7.0, 1.1, 0.12, 0.5, 4.0}};
     public static final int[] COLOR = {0xFFD6AA, 0xFFECBE, 0xFF783C, 0xFFC878, 0xFFECC8, 0x6EFFC8, 0x8CBEFF, 0xAAE6FF, 0xFFE2AA, 0xBEA0FF};
+    /** Couleur d'accent (ciel en 3D : bandes, rouille, cuivre). */
+    public static final int[] ACCENT = {0xC8603A, 0xDEA848, 0xD67834, 0xE2AA60, 0xD6BC78, 0x5AC8DC, 0x466EDC, 0x8CC8E6, 0xF0C86E, 0x8264D2};
     /** Coeurs MKV des multiblocs de famille (T:au_dela/multiblocs.py CORES) : objet, puis cles des multiblocs qu'il fait passer au MKV. */
     public static final String[] CORE_ITEMS = {"pioneers:forming_mkv_core", "pioneers:thermal_mkv_core", "pioneers:energy_mkv_core", "pioneers:chemistry_mkv_core", "pioneers:centrifugation_mkv_core"};
     public static final String[][] CORE_MACHINES = {{"sawmill", "machining_center", "rolling_mill", "wiremill", "press", "power_hammer", "stoneworks"}, {"furnace", "electric_crucible"}, {"extractor"}, {"mixer"}, {"crusher", "ore_separator", "compressor"}};

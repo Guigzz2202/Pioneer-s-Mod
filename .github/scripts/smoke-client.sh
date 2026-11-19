@@ -4,6 +4,8 @@
 #   [monde] : nom d'une sauvegarde de <mod>/run/saves à ouvrir directement (propriété Gradle quickPlay).
 # Sortie : <sortie>/client.log, <sortie>/menu.png, <sortie>/monde.png (si monde), et une ligne finale
 #   « CLIENT : TOUT EST BON » ou « CLIENT : ECHEC (<raison>) ».
+# 1.0.7 (« ciel grandiose ») : SKY_SHOTS=<ids|all> (avec un monde) : captures du ciel des megastructures (SkyShots, -PskyShots),
+#   attendues jusqu'à « SKYSHOTS : FIN » puis copiées dans <sortie>/ciel/.
 MOD=${1:?dossier du mod}; OUT=${2:?dossier de sortie}; WORLD=$3
 mkdir -p "$OUT"; LOG="$OUT/client.log"; rm -f "$LOG" "$OUT"/*.png
 DISPLAY_NUM=:97
@@ -14,6 +16,7 @@ export DISPLAY=$DISPLAY_NUM LIBGL_ALWAYS_SOFTWARE=1
 cd "$MOD" || exit 2
 EXTRA=()
 [ -n "$WORLD" ] && EXTRA=(-PquickPlay="$WORLD")
+[ -n "$WORLD" ] && [ -n "$SKY_SHOTS" ] && EXTRA+=(-PskyShots="$SKY_SHOTS") && rm -rf run/screenshots
 # conteneur à 7 Go : démon Gradle léger, tas du client à 3 Go (CLIENT_HEAP pour changer)
 ./gradlew -Dorg.gradle.jvmargs=-Xmx512m runClient --console=plain -PclientHeap=${CLIENT_HEAP:-3G} "${EXTRA[@]}" > "$LOG" 2>&1 &
 GPID=$!
@@ -31,6 +34,17 @@ for i in $(seq 1 360); do   # 30 min au plus
     sleep 20; import -display $DISPLAY_NUM -window root "$OUT/avertissement.png" 2>/dev/null
     xdotool mousemove 478 437 click 1 2>/dev/null; sleep 2; xdotool key Tab Return 2>/dev/null
     PROCEED=1
+  fi
+  if [ -n "$WORLD" ] && [ -n "$SKY_SHOTS" ] && grep -qE "joined the game" "$LOG"; then
+    # captures du ciel : jusqu'à « SKYSHOTS : FIN » (le délai global de la boucle reste la borne)
+    if grep -q "SKYSHOTS : FIN" "$LOG"; then
+      sleep 5; mkdir -p "$OUT/ciel"; cp run/screenshots/sky_*.png "$OUT/ciel/" 2>/dev/null
+      import -display $DISPLAY_NUM -window root "$OUT/monde.png" 2>/dev/null
+      n=$(ls "$OUT/ciel" 2>/dev/null | wc -l)
+      [ "$n" -gt 0 ] && verdict="ok" || verdict="aucune capture du ciel"
+      break
+    fi
+    continue
   fi
   if [ -n "$WORLD" ] && grep -qE "joined the game" "$LOG"; then
     sleep 90; import -display $DISPLAY_NUM -window root "$OUT/monde.png" 2>/dev/null

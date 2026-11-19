@@ -324,6 +324,18 @@ public final class SkyScene {
         return item;
     }
 
+    /**
+     * 1.0.7 (ciel grandiose) : du repere du ciel (objets de la scene) au repere du sol (x est, y haut, z sud) a l'heure donnee : le rendu
+     * fait YP(-90) puis XP(t).
+     */
+    public static void toGround(double x, double y, double z, double timeDeg, double[] out) {
+        double t = Math.toRadians(timeDeg);
+        double y1 = y * Math.cos(t) - z * Math.sin(t), z1 = y * Math.sin(t) + z * Math.cos(t);
+        out[0] = -z1;
+        out[1] = y1;
+        out[2] = x;
+    }
+
     /** Direction (altitude, azimut depuis le nord vers l'est) du repere du sol vers le repere du ciel a l'heure donnee. */
     public static void ground(double alt, double az, double timeDeg, double[] out) {
         //sol : x = est, y = haut, z = sud
