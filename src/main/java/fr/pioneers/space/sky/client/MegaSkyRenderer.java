@@ -40,6 +40,8 @@ public final class MegaSkyRenderer {
     private static final MegaBuffer BUF = new MegaBuffer();
     private static final MegaView VIEW = new MegaView();
     private static final double[] SUN = new double[3];
+    /** Couleur de l'etoile principale d'un ciel d'exoplanete (fil du rendu). */
+    private static final float[] STAR = new float[3];
 
     private MegaSkyRenderer() {
     }
@@ -78,15 +80,29 @@ public final class MegaSkyRenderer {
      * Soleil a l'heure du monde, atmosphere, pluie ; {@code poseStack} : pose de la camera.
      */
     public static void renderGiant(net.minecraft.client.multiplayer.ClientLevel level, int i, float partialTick, PoseStack poseStack) {
-        double t = level.getTimeOfDay(partialTick) * 2 * Math.PI;
-        VIEW.sun(-Math.sin(t), Math.cos(t), 0, 1, 0.96, 0.9, true, level.getRainLevel(partialTick));
-        int sky = Megastructures.color(i);
-        VIEW.hazeR = (sky >> 16 & 255) / 255.0 * 0.6;
-        VIEW.hazeG = (sky >> 8 & 255) / 255.0 * 0.6;
-        VIEW.hazeB = (sky & 255) / 255.0 * 0.6;
+        renderGiant(level, i, partialTick, poseStack, null);
+    }
+
+    /**
+     * Megastructure d'un ciel propre (geantes, exoplanetes) : lumiere de l'etoile principale de ce ciel ({@code sky}, 1.0.7 lot 11 : soleil
+     * fixe des mondes en rotation synchrone), sinon un Soleil qui suit l'heure. Ni sol ni horizon de relief : aucune plongee.
+     */
+    public static void renderGiant(net.minecraft.client.multiplayer.ClientLevel level, int i, float partialTick, PoseStack poseStack,
+          @org.jetbrains.annotations.Nullable ExoSky sky) {
+        float timeDeg = level.getTimeOfDay(partialTick) * 360;
+        if (sky != null && sky.mainStar(timeDeg, SUN, STAR)) {
+            VIEW.sun(SUN[0], SUN[1], SUN[2], 0.4 + 0.6 * STAR[0], 0.4 + 0.6 * STAR[1], 0.4 + 0.6 * STAR[2], true, level.getRainLevel(partialTick));
+        } else {
+            double t = Math.toRadians(timeDeg);
+            VIEW.sun(-Math.sin(t), Math.cos(t), 0, 1, 0.96, 0.9, true, level.getRainLevel(partialTick));
+        }
+        int tint = Megastructures.color(i);
+        VIEW.hazeR = (tint >> 16 & 255) / 255.0 * 0.6;
+        VIEW.hazeG = (tint >> 8 & 255) / 255.0 * 0.6;
+        VIEW.hazeB = (tint & 255) / 255.0 * 0.6;
         VIEW.ticks = RenderClock.time(partialTick);
         BUF.clear();
-        BUF.drop = horizonDrop();
+        BUF.drop = 0;
         add(i);
         draw(poseStack.last().pose());
     }
@@ -121,7 +137,8 @@ public final class MegaSkyRenderer {
         VIEW.hazeB = style.skyB;
         VIEW.ticks = RenderClock.time(partialTick);
         BUF.clear();
-        BUF.drop = horizonDrop();
+        //ciel bouche de Venus : le relief se perd dans la brume, pas d'horizon a suivre (la base reste visible au-dessus des nuees)
+        BUF.drop = style.megaOnly ? 0 : horizonDrop();
         for (SkyScene.Item item : scene.items) {
             if (item.type == SkyScene.MEGA && MegaModels.has(item.mega) && !MegaModels.everywhere(item.mega)) {
                 add(item.mega);

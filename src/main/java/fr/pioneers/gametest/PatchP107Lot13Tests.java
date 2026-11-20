@@ -46,10 +46,10 @@ public final class PatchP107Lot13Tests {
     }
 
     /**
-     * 1.0.7 (« ciel grandiose », retour de Guillaume du 20/11/2026) : les gabarits SCULPTES des multiblocs en amont se forment, l'un apres
-     * l'autre, batis d'apres leur plan au tier MKV.
+     * 1.0.7 (« ciel grandiose », retour de Guillaume du 20/11/2026) : les gabarits SCULPTES des multiblocs en amont et des ports de toutes
+     * les megastructures se forment, l'un apres l'autre, batis d'apres leur plan au tier MKV.
      */
-    @GameTest(template = Gt.TALL, batch = "pioneers_p107_13_sculpt", timeoutTicks = 600)
+    @GameTest(template = Gt.TALL, batch = "pioneers_p107_13_sculpt", timeoutTicks = 1200)
     public static void p107_13_gabarits_sculptes_se_forment(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
         List<String> keys = new ArrayList<>();
@@ -58,7 +58,10 @@ public final class PatchP107Lot13Tests {
                 keys.add(key);
             }
         }
-        Gt.check(keys.size() >= 13, "multiblocs sculptes : " + keys.size());
+        for (int i = 0; i < fr.pioneers.space.mega.Megastructures.COUNT; i++) {
+            keys.add(fr.pioneers.space.mega.Megastructures.port(i));
+        }
+        Gt.check(keys.size() >= 27, "multiblocs sculptes : " + keys.size());
         step(h, s, keys, 0);
     }
 

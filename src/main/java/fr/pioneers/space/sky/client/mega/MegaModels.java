@@ -7,14 +7,17 @@ import fr.pioneers.space.sky.client.SkyScene;
  * 1.0.7 (« ciel grandiose ») : les dix megastructures dessinees en 3D, vues de leur astre (calcul pur : le jeu et le banc construisent le
  * meme tampon). Une megastructure = un modele, choisi par son identifiant : Ascenseur de Mars, Diademe, Grand Forage, Cite des nuages,
  * Anneau-Rotor, Boucle, Descente, Coeur froid, Essaim (autour du Soleil, dans les ciels du systeme), Observatoire du Halo (la nuit, au
- * point oppose au Soleil).
+ * point oppose au Soleil). 1.0.7 (lot 11) : Couronne de Proxima (autour de l'etoile, vue de Proxima b) et Collier des Marees (d'un horizon a
+ * l'autre, vu de TRAPPIST-1e), dessines dans le ciel des exoplanetes.
  */
 public final class MegaModels {
 
     /** Modeles, dans l'ordre de leurs identifiants. */
-    static final int ELEVATOR = 0, DIADEM = 1, DRILL = 2, CITY = 3, ROTOR = 4, LOOP = 5, DESCENT = 6, COLD = 7, SWARM = 8, HALO = 9;
+    static final int ELEVATOR = 0, DIADEM = 1, DRILL = 2, CITY = 3, ROTOR = 4, LOOP = 5, DESCENT = 6, COLD = 7, SWARM = 8, HALO = 9, CROWN = 10,
+          NECKLACE = 11;
     private static final String[] IDS = {"mars_elevator", "mercury_diadem", "venus_great_drill", "jupiter_cloud_city", "saturn_ring_rotor",
-                                         "uranus_loop", "neptune_descent", "pluto_cold_heart", "sun_swarm", "halo_observatory"};
+                                         "uranus_loop", "neptune_descent", "pluto_cold_heart", "sun_swarm", "halo_observatory", "proxima_crown",
+                                         "tidal_necklace"};
     private static int[] model;
 
     private MegaModels() {
@@ -51,6 +54,12 @@ public final class MegaModels {
     public static boolean giant(int i) {
         int m = model(i);
         return m == CITY || m == ROTOR || m == LOOP || m == DESCENT;
+    }
+
+    /** 1.0.7 (lot 11) : vraie pour les exoplanetes : dessinee dans leur ciel propre, a la lumiere de leur etoile. */
+    public static boolean exo(int i) {
+        int m = model(i);
+        return m == CROWN || m == NECKLACE;
     }
 
     /** Construit l'image de la megastructure dans le tampon (sans le vider), a l'echelle de son modele. */
@@ -96,6 +105,14 @@ public final class MegaModels {
                 b.scale = HaloModel.SCALE;
                 HaloModel.build(b, v);
             }
+            case CROWN -> {
+                b.scale = CrownModel.SCALE;
+                CrownModel.build(b, v);
+            }
+            case NECKLACE -> {
+                b.scale = NecklaceModel.SCALE;
+                NecklaceModel.build(b, v);
+            }
             default -> {
             }
         }
@@ -106,7 +123,8 @@ public final class MegaModels {
     /** Azimut (degres, 0 = nord) ou regarder pour la voir (apercus, captures) ; v : lumiere du moment (Essaim, Halo). */
     public static double viewYaw(int i, MegaView v) {
         return switch (model(i)) {
-            case SWARM -> Math.toDegrees(Math.atan2(v.lx, -v.lz));
+            case SWARM, CROWN -> Math.toDegrees(Math.atan2(v.lx, -v.lz));
+            case NECKLACE -> NecklaceModel.topYaw();
             case HALO -> Math.toDegrees(Math.atan2(-v.lx, v.lz + 0.25));
             default -> Megastructures.skyParams(i)[0];
         };
@@ -122,6 +140,8 @@ public final class MegaModels {
             case DESCENT -> 40;
             case SWARM -> Math.max(5, Math.min(70, Math.toDegrees(Math.asin(v.ly))));
             case HALO -> Math.max(10, Math.min(70, Math.toDegrees(Math.asin(Math.max(0, -v.ly)))));
+            case CROWN -> Math.max(8, Math.min(60, Math.toDegrees(Math.asin(v.ly)) + 4));
+            case NECKLACE -> 50;
             default -> 30;
         };
     }

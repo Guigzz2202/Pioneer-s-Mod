@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * GENERE par tools/gc/api/gen_api.py d'apres les fiches tools/gc/api/machines.py et tools/gc/api/catalog_adapter.py (catalogue
- * industriel) : NE PAS MODIFIER A LA MAIN. Une fiche par machine (API Machine, lot 1) : 296 fiches, 546 blocs.
+ * industriel) : NE PAS MODIFIER A LA MAIN. Une fiche par machine (API Machine, lot 1) : 300 fiches, 550 blocs.
  */
 public final class GeneratedMachines {
 
@@ -20,7 +20,7 @@ public final class GeneratedMachines {
     public static final List<MachineSpec> ALL;
 
     static {
-        List<MachineSpec> l = new ArrayList<>(296);
+        List<MachineSpec> l = new ArrayList<>(300);
         part0(l);
         part1(l);
         part2(l);
@@ -678,10 +678,21 @@ public final class GeneratedMachines {
               List.of("halo_observatory_port"),
               List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 4), port(SideType.ITEMS, Role.OUT, 1), port(SideType.FLUIDS, Role.IN, 2), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:halo_observatory_port", true, List.of("pioneers:industry_halo_observatory_port"),
               null, null, "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
+        l.add(new MachineSpec("proxima_crown_port", "industry", Kind.PROCESS, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
+              List.of("proxima_crown_port"),
+              List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 4), port(SideType.ITEMS, Role.OUT, 1), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.IN, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:proxima_crown_port", true, List.of("pioneers:industry_proxima_crown_port"),
+              null, null, "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
+        l.add(new MachineSpec("tidal_necklace_port", "industry", Kind.PROCESS, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
+              List.of("tidal_necklace_port"),
+              List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 4), port(SideType.ITEMS, Role.OUT, 1), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.IN, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:tidal_necklace_port", true, List.of("pioneers:industry_tidal_necklace_port"),
+              null, null, "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
         l.add(new MachineSpec("space_drill", "industry", Kind.EXTRACTOR, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
               List.of("space_drill"),
               List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.OUT, 2), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "drill", false, List.of(),
               null, null, "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
+    }
+
+    private static void part5(List<MachineSpec> l) {
         l.add(new MachineSpec("gas_collector", "industry", Kind.EXTRACTOR, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
               List.of("gas_collector"),
               List.of("industry_controller"), List.of(port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.OUT, 4), port(SideType.ENERGY, Role.IN, 1)), false, true, "drill", false, List.of(),
@@ -690,9 +701,6 @@ public final class GeneratedMachines {
               List.of("solar_concentrator"),
               List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 3), port(SideType.ITEMS, Role.OUT, 1), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:solar_concentrator", true, List.of("pioneers:industry_solar_concentrator"),
               null, null, "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
-    }
-
-    private static void part5(List<MachineSpec> l) {
         l.add(new MachineSpec("isostatic_press", "industry", Kind.PROCESS, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
               List.of("isostatic_press"),
               List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 2), port(SideType.ITEMS, Role.OUT, 1), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.IN, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:isostatic_press", true, List.of("pioneers:industry_isostatic_press"),
@@ -740,6 +748,14 @@ public final class GeneratedMachines {
         l.add(new MachineSpec("regolith_helium3_extractor", "industry", Kind.PROCESS, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
               List.of("regolith_helium3_extractor"),
               List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 2), port(SideType.ITEMS, Role.OUT, 1), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.IN, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:regolith_helium3_extractor", true, List.of("pioneers:industry_regolith_helium3_extractor"),
+              null, null, "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
+        l.add(new MachineSpec("flare_catcher", "industry", Kind.PROCESS, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
+              List.of("flare_catcher"),
+              List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 4), port(SideType.ITEMS, Role.OUT, 1), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.IN, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:flare_catcher", true, List.of("pioneers:industry_flare_catcher"),
+              null, null, "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
+        l.add(new MachineSpec("tidal_bioreactor", "industry", Kind.PROCESS, Form.MULTIBLOCK, TierMode.STRUCTURE, null, Power.FE_IN,
+              List.of("tidal_bioreactor"),
+              List.of("industry_controller"), List.of(port(SideType.ITEMS, Role.IN, 4), port(SideType.ITEMS, Role.OUT, 1), port(SideType.FLUIDS, Role.IN, 1), port(SideType.FLUIDS, Role.OUT, 1), port(SideType.GASES, Role.IN, 1), port(SideType.GASES, Role.OUT, 1), port(SideType.ENERGY, Role.IN, 1)), false, true, "industrial:tidal_bioreactor", true, List.of("pioneers:industry_tidal_bioreactor"),
               null, null, "controller", false, "controller", "industry.multi.MultiProcess", true, 5, -1));
         l.add(new MachineSpec("solar_panel", "energy", Kind.GENERATOR, Form.COMPACT, TierMode.MK, null, Power.FE_OUT,
               List.of("basic_solar_panel", "advanced_solar_panel", "elite_solar_panel", "ultimate_solar_panel"),
@@ -797,6 +813,9 @@ public final class GeneratedMachines {
               List.of("basic_force_field_generator", "advanced_force_field_generator", "elite_force_field_generator", "ultimate_force_field_generator"),
               List.of("force_field_generator"), List.of(port(SideType.ENERGY, Role.IN, 1)), true, true, null, false, List.of(),
               null, null, "space", false, "none", "tile.ForceFieldUnit", true, 8, -1));
+    }
+
+    private static void part6(List<MachineSpec> l) {
         l.add(new MachineSpec("oxygen_diffuser", "space", Kind.SERVICE, Form.COMPACT, TierMode.MK, null, Power.FE_IN,
               List.of("basic_oxygen_diffuser", "advanced_oxygen_diffuser", "elite_oxygen_diffuser", "ultimate_oxygen_diffuser"),
               List.of("oxygen_diffuser"), List.of(port(SideType.GASES, Role.IN, 1), port(SideType.ENERGY, Role.IN, 1)), true, true, null, false, List.of(),
@@ -813,9 +832,6 @@ public final class GeneratedMachines {
               List.of("geo_spectrometer"),
               List.of("geo_spectrometer"), List.of(port(SideType.ITEMS, Role.IN, 1), port(SideType.ENERGY, Role.IN, 1), port(SideType.DATA, Role.OUT, 1)), false, true, null, false, List.of("pioneers:geology_analysis"),
               null, null, "science", false, "none", "tile.AnalysisUnit", true, 8, -1));
-    }
-
-    private static void part6(List<MachineSpec> l) {
         l.add(new MachineSpec("bio_sequencer", "science", Kind.PROCESS, Form.COMPACT, TierMode.SINGLE, null, Power.FE_IN,
               List.of("bio_sequencer"),
               List.of("bio_sequencer"), List.of(port(SideType.ITEMS, Role.IN, 1), port(SideType.ENERGY, Role.IN, 1), port(SideType.DATA, Role.OUT, 1)), false, true, null, false, List.of("pioneers:biology_analysis"),
@@ -920,6 +936,9 @@ public final class GeneratedMachines {
               List.of("basic_data_loader", "advanced_data_loader", "elite_data_loader", "ultimate_data_loader"),
               List.of("rail_post"), List.of(), false, false, null, false, List.of(),
               null, null, "rail", true, "none", "rail.block.RailPostUnit", true, 8, -1));
+    }
+
+    private static void part7(List<MachineSpec> l) {
         l.add(new MachineSpec("energy_loader", "rail", Kind.SERVICE, Form.COMPACT, TierMode.MK, null, Power.NONE,
               List.of("basic_energy_loader", "advanced_energy_loader", "elite_energy_loader", "ultimate_energy_loader"),
               List.of("rail_post"), List.of(), false, false, null, false, List.of(),
@@ -936,9 +955,6 @@ public final class GeneratedMachines {
               List.of("fuel_pump"),
               List.of("rail_post"), List.of(), false, false, null, false, List.of(),
               null, null, "rail", true, "none", "rail.block.RailPostUnit", true, 8, -1));
-    }
-
-    private static void part7(List<MachineSpec> l) {
         l.add(new MachineSpec("passenger_platform", "rail", Kind.SERVICE, Form.COMPACT, TierMode.SINGLE, null, Power.NONE,
               List.of("passenger_platform"),
               List.of("rail_post"), List.of(), false, false, null, false, List.of(),
@@ -1043,6 +1059,9 @@ public final class GeneratedMachines {
               List.of("gearshift"),
               List.of("inline_box"), List.of(), false, false, null, false, List.of(),
               null, null, "transmission", false, "none", "kinetics.parts.TransmissionUnit", true, 8, -1));
+    }
+
+    private static void part8(List<MachineSpec> l) {
         l.add(new MachineSpec("clutch", "mechanical", Kind.SERVICE, Form.COMPACT, TierMode.AGE, "mechanical", Power.KINETIC_IN,
               List.of("clutch"),
               List.of("inline_box"), List.of(), false, false, null, false, List.of(),
@@ -1059,9 +1078,6 @@ public final class GeneratedMachines {
               List.of("steam_compressor"),
               List.of("steam_process"), List.of(port(SideType.GASES, Role.IN, 1), port(SideType.ITEMS, Role.IN, 2), port(SideType.ITEMS, Role.OUT, 2)), false, true, "family:compression", true, List.of("pioneers:industry_compressor"),
               null, null, "standard", false, "none", "bronze.machines.SteamProcess", true, 7, 1));
-    }
-
-    private static void part8(List<MachineSpec> l) {
         l.add(new MachineSpec("steam_extractor", "bronze", Kind.PROCESS, Form.COMPACT, TierMode.TIER, "bronze", Power.STEAM_IN,
               List.of("steam_extractor"),
               List.of("steam_process"), List.of(port(SideType.GASES, Role.IN, 1), port(SideType.ITEMS, Role.IN, 1), port(SideType.ITEMS, Role.OUT, 2)), false, true, "family:extraction", true, List.of("pioneers:industry_extractor"),
@@ -1166,6 +1182,9 @@ public final class GeneratedMachines {
               List.of("greenhouse_regulator"),
               List.of("greenhouse_regulator"), List.of(), false, false, null, false, List.of(),
               null, null, "house", true, "none", "farm.greenhouse.GreenhouseRegulatorTile", true, 8, -1));
+    }
+
+    private static void part9(List<MachineSpec> l) {
         l.add(new MachineSpec("cutting_board", "kitchen", Kind.PROCESS, Form.COMPACT, TierMode.AGE, "mechanical", Power.NONE,
               List.of("cutting_board"),
               List.of("kitchen_station"), List.of(port(SideType.ITEMS, Role.IN, 2), port(SideType.ITEMS, Role.OUT, 2)), false, true, "station:cutting", true, List.of(),
@@ -1182,9 +1201,6 @@ public final class GeneratedMachines {
               List.of("frying_pan"),
               List.of("kitchen_station"), List.of(port(SideType.ITEMS, Role.BOTH, 4)), false, true, "station:frying", false, List.of(),
               null, null, "farm", false, "none", "farm.kitchen.StationTiles", true, 8, -1));
-    }
-
-    private static void part9(List<MachineSpec> l) {
         l.add(new MachineSpec("bread_oven", "kitchen", Kind.PROCESS, Form.COMPACT, TierMode.AGE, "mechanical", Power.FUEL,
               List.of("bread_oven"),
               List.of("kitchen_station"), List.of(port(SideType.ITEMS, Role.IN, 1), port(SideType.ITEMS, Role.BOTH, 4)), false, true, "station:baking", false, List.of(),

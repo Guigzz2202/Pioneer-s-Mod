@@ -95,6 +95,33 @@ public final class ExoSky {
         return this;
     }
 
+    /**
+     * 1.0.7 (lot 11) : premier soleil du ciel, pour la lumiere des megastructures en 3D : direction (repere du sol) et couleur ; faux s'il
+     * n'y en a pas. Sans allocation (fil du rendu).
+     */
+    public boolean mainStar(float timeDeg, double[] dir, float[] rgb) {
+        for (Obj o : objects) {
+            if (o.star) {
+                if (o.fixed) {
+                    double az = Math.toRadians(o.a), el = Math.toRadians(o.c);
+                    dir[0] = Math.cos(el) * Math.sin(az);
+                    dir[1] = Math.sin(el);
+                    dir[2] = -Math.cos(el) * Math.cos(az);
+                } else {
+                    double t = Math.toRadians(timeDeg + o.a), dec = Math.toRadians(o.c);
+                    dir[0] = -Math.cos(dec) * Math.sin(t);
+                    dir[1] = Math.cos(dec) * Math.cos(t);
+                    dir[2] = -Math.sin(dec);
+                }
+                rgb[0] = o.r;
+                rgb[1] = o.g;
+                rgb[2] = o.b;
+                return true;
+            }
+        }
+        return false;
+    }
+
     /** Direction (repere monde : x est, y haut, z sud) d'un astre a l'heure {@code timeDeg}. */
     private static double[] direction(Obj o, float timeDeg) {
         if (o.fixed) {

@@ -389,6 +389,10 @@
   "pioneers:superconducting_wiremill",
   "pioneers:electrodeposition_vat",
   "pioneers:helium_liquefier",
-  "pioneers:regolith_helium3_extractor"
+  "pioneers:regolith_helium3_extractor",
+  "pioneers:proxima_crown_port",
+  "pioneers:tidal_necklace_port",
+  "pioneers:flare_catcher",
+  "pioneers:tidal_bioreactor"
  ]
 }

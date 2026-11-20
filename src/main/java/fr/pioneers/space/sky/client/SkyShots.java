@@ -124,7 +124,11 @@ public final class SkyShots {
                     ServerPlayer player = server.getPlayerList().getPlayers().isEmpty() ? null : server.getPlayerList().getPlayers().get(0);
                     if (level != null && player != null) {
                         int h = level.getMinBuildHeight() + 1;
-                        for (int x = -64; x <= 64; x += 4) {
+                        //geantes : pas de sol, le joueur arrive sur le pont d'un aerostat, au-dessus des nuees
+                        if (fr.pioneers.space.sky.client.mega.MegaModels.giant(shot.mega)) {
+                            h = fr.pioneers.space.giant.Aerostats.DECK_Y - 1;
+                        }
+                        for (int x = -64; x <= 64 && h < fr.pioneers.space.giant.Aerostats.DECK_Y - 1; x += 4) {
                             for (int z = -64; z <= 64; z += 4) {
                                 h = Math.max(h, level.getHeight(Heightmap.Types.MOTION_BLOCKING, x, z));
                             }

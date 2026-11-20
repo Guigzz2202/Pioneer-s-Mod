@@ -29,6 +29,11 @@ public final class SkyScene {
     public static final int SUN = 0, POINT = 1, DISC = 2, MEGA = 3;
     /** 1.0.7 (lot 4) : geometries des megastructures (index de T:au_dela/megastructures.py SKY_KINDS). */
     public static final int MEGA_TETHER = 0, MEGA_RING = 1, MEGA_PLUME = 2, MEGA_LIGHTS = 3, MEGA_ROTOR = 4, MEGA_AURORA = 5, MEGA_COLUMN = 6, MEGA_SWARM = 7, MEGA_LATTICE = 8;
+    /**
+     * 1.0.7 (lot 11) : couronne et collier des systemes lointains : dessines en 3D dans le ciel propre de leur exoplanete
+     * ({@code GiantMegaSky}), jamais par la scene (leur astre n'est pas dans {@link Celestial.Body}).
+     */
+    public static final int MEGA_CROWN = 9, MEGA_NECKLACE = 10;
     /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
     private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
 

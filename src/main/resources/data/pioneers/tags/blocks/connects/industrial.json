@@ -108,6 +108,8 @@
   "pioneers:pluto_cold_heart_port",
   "pioneers:sun_swarm_port",
   "pioneers:halo_observatory_port",
+  "pioneers:proxima_crown_port",
+  "pioneers:tidal_necklace_port",
   "pioneers:space_drill",
   "pioneers:gas_collector",
   "pioneers:solar_concentrator",
@@ -123,6 +125,8 @@
   "pioneers:electrodeposition_vat",
   "pioneers:helium_liquefier",
   "pioneers:regolith_helium3_extractor",
+  "pioneers:flare_catcher",
+  "pioneers:tidal_bioreactor",
   "pioneers:robotic_assembly_bay",
   "pioneers:rocket_integration_hall"
  ]

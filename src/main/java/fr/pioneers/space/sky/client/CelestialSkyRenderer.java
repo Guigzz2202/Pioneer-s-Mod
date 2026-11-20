@@ -204,10 +204,9 @@ public final class CelestialSkyRenderer {
         }
 
         poseStack.popPose();
-        //1.0.7 (« ciel grandiose ») : megastructures en 3D, dans le repere de la camera, devant les astres
-        if (!style.pointsOnly) {
-            MegaSkyRenderer.render(scene, partialTick, poseStack, style, timeDeg);
-        }
+        //1.0.7 (« ciel grandiose ») : megastructures en 3D, dans le repere de la camera, devant les astres ; aussi dans le ciel de la Terre
+        //(points seuls : le reste du ciel est vanilla), ou se voient l'Observatoire du Halo la nuit et l'Essaim autour du Soleil
+        MegaSkyRenderer.render(scene, partialTick, poseStack, style, timeDeg);
         RenderSystem.setShaderColor(1, 1, 1, 1);
         RenderSystem.defaultBlendFunc();
         RenderSystem.disableBlend();

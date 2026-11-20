@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "tidal_necklace_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_bioreactor_cell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:atomic_electrode"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:borealite_frost_insulator"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pyrrhite_hot_face_ceramic"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:deuterium",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:seven_worlds_relay_core",
+   "count": 1
+  }
+ ],
+ "energy": 92000,
+ "industrial": true
+}

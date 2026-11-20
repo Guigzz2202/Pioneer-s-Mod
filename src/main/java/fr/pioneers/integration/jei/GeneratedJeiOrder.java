@@ -200,9 +200,13 @@ final class GeneratedJeiOrder {
           Map.entry("industry_pluto_cold_heart_port", 186),
           Map.entry("black_hole", 187),
           Map.entry("industry_fragment_reactor", 188),
-          Map.entry("solar_simulation", 189),
-          Map.entry("universe_simulation", 190),
-          Map.entry("industry_gravitational_lens", 191),
-          Map.entry("industry_halo_detector", 192),
-          Map.entry("industry_halo_observatory_port", 193));
+          Map.entry("industry_flare_catcher", 189),
+          Map.entry("industry_proxima_crown_port", 190),
+          Map.entry("industry_tidal_bioreactor", 191),
+          Map.entry("industry_tidal_necklace_port", 192),
+          Map.entry("solar_simulation", 193),
+          Map.entry("universe_simulation", 194),
+          Map.entry("industry_gravitational_lens", 195),
+          Map.entry("industry_halo_detector", 196),
+          Map.entry("industry_halo_observatory_port", 197));
 }

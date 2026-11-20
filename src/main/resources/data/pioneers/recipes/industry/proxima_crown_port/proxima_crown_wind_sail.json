@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "proxima_crown_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:binary_sun_absorber"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flarium_flare_shield"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:heliothermal_absorber"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_wind_sail",
+   "count": 1
+  }
+ ],
+ "energy": 88000,
+ "industrial": true
+}

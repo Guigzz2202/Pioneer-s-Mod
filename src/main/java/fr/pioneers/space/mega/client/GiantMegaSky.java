@@ -11,6 +11,7 @@ import com.mojang.blaze3d.vertex.VertexFormat;
 import fr.pioneers.core.RenderClock;
 import fr.pioneers.space.SolarSystem;
 import fr.pioneers.space.mega.Megastructures;
+import fr.pioneers.space.sky.client.ExoSky;
 import fr.pioneers.space.sky.client.SkyScene;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.GameRenderer;
@@ -39,14 +40,15 @@ public final class GiantMegaSky {
     private GiantMegaSky() {
     }
 
-    public static void render(ClientLevel level, float partial, PoseStack poseStack) {
+    /** @param sky ciel propre de l'astre (lumiere de son etoile principale ; 1.0.7 lot 11 : exoplanetes), ou null */
+    public static void render(ClientLevel level, float partial, PoseStack poseStack, @org.jetbrains.annotations.Nullable ExoSky sky) {
         int i = Megastructures.byBody(SolarSystem.fromDimension(level.dimension()));
         if (i < 0 || (MegaClient.unlockedMask() & (1L << i)) == 0) {
             return;
         }
         if (fr.pioneers.space.sky.client.mega.MegaModels.has(i)) {
             //1.0.7 (« ciel grandiose ») : la megastructure en 3D
-            fr.pioneers.space.sky.client.MegaSkyRenderer.renderGiant(level, i, partial, poseStack);
+            fr.pioneers.space.sky.client.MegaSkyRenderer.renderGiant(level, i, partial, poseStack, sky);
             return;
         }
         int kind = Megastructures.skyKind(i);

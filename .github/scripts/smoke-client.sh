@@ -21,7 +21,9 @@ EXTRA=()
 ./gradlew -Dorg.gradle.jvmargs=-Xmx512m runClient --console=plain -PclientHeap=${CLIENT_HEAP:-3G} "${EXTRA[@]}" > "$LOG" 2>&1 &
 GPID=$!
 verdict=""
-for i in $(seq 1 360); do   # 30 min au plus
+# 30 min au plus ; 60 min pour les captures du ciel (onze vues par megastructure)
+LOOPS=360; [ -n "$SKY_SHOTS" ] && LOOPS=720
+for i in $(seq 1 $LOOPS); do
   sleep 5
   if grep -qE "Crash report saved|---- Minecraft Crash Report ----|Exception in thread \"Render thread\"" "$LOG"; then verdict="plantage"; break; fi
   if ! kill -0 $GPID 2>/dev/null; then verdict="arrêt inattendu"; break; fi
@@ -53,6 +55,8 @@ for i in $(seq 1 360); do   # 30 min au plus
   fi
 done
 [ -z "$verdict" ] && verdict="délai dépassé"
+# captures du ciel deja faites : gardees meme en cas d'echec (artefact)
+[ -n "$SKY_SHOTS" ] && [ ! -d "$OUT/ciel" ] && mkdir -p "$OUT/ciel" && cp run/screenshots/sky_*.png "$OUT/ciel/" 2>/dev/null
 pkill -f "net.minecraftforge.bootstrap|forgeclientuserdev|GradleWrapperMain runClient" 2>/dev/null
 kill $GPID 2>/dev/null; sleep 3; kill $XPID 2>/dev/null
 if [ "$verdict" = "ok" ]; then echo "CLIENT : TOUT EST BON"; else echo "CLIENT : ECHEC ($verdict)"; fi

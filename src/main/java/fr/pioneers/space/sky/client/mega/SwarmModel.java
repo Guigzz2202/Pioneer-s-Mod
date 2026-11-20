@@ -47,7 +47,7 @@ public final class SwarmModel {
             double r = RADII[o], tilt = TILTS[o], ct = Math.cos(tilt), st = Math.sin(tilt);
             //axes de l'orbite : e1 et (e2 incline vers le Soleil) : on la voit en ellipse
             double bx = e2x * ct + lx * st, by = e2y * ct + ly * st, bz = e2z * ct + lz * st;
-            ring(b, cx, cy, cz, e1x * r, 0, e1z * r, bx * r, by * r, bz * r, 0.12, 64, 1, 0.82, 0.5, (0.05 + 0.25 * act) * day);
+            ring(b, cx, cy, cz, e1x * r, 0, e1z * r, bx * r, by * r, bz * r, 0.14, 64, 1, 0.82, 0.5, (0.1 + 0.3 * act) * day);
             int n = COUNTS[o];
             double rot = t * (0.0006 + 0.0004 * o) * (o % 2 == 0 ? 1 : -1) * (1 + act);
             for (int k = 0; k < n; k++) {
@@ -60,11 +60,11 @@ public final class SwarmModel {
                 nx /= nl;
                 ny /= nl;
                 nz /= nl;
-                double s = 0.55 + 0.25 * hash(o, k);
+                double s = 0.95 + 0.45 * hash(o, k);
                 panel(b, v, 1e7, px, py, pz, e1x * s, 0, e1z * s, bx * s, by * s, bz * s, nx, ny, nz, 0.2, 0.18, 0.15, 0.5);
                 double glint = Math.pow(Math.max(0, Math.cos(t * 0.004 + k * 2.7 + o * 1.9)), 60);
                 if (glint > 0.02) {
-                    light(b, px, py, pz, 1.5 + 2 * glint, 1, 0.95, 0.8, glint * day);
+                    light(b, px, py, pz, 2.2 + 3 * glint, 1, 0.95, 0.8, glint * day);
                 }
                 if (act > 0.02 && k % 2 == 0) {
                     double a2 = rot + 2 * Math.PI * (k + 2) / n, c2 = Math.cos(a2), s2 = Math.sin(a2);

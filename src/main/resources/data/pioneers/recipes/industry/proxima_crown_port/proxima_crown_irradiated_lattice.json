@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "proxima_crown_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:terminator_thermoelectric_strip"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:twilight_ir_photodiode"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:confined_plasma_core"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:proxima_irradiated_lattice",
+   "count": 1
+  }
+ ],
+ "energy": 88000,
+ "industrial": true
+}

@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * GENERE par tools/gc/api/gen_api.py d'apres les fiches tools/gc/api/multiblocks.py (catalogue industriel par adaptateur, multiblocs
- * maison) : NE PAS MODIFIER A LA MAIN. Une fiche par multibloc (API Multibloc, lot 5) : 128 fiches, 128 sur le moteur commun.
+ * maison) : NE PAS MODIFIER A LA MAIN. Une fiche par multibloc (API Multibloc, lot 5) : 132 fiches, 132 sur le moteur commun.
  */
 public final class GeneratedMultiblocks {
 
@@ -15,7 +15,7 @@ public final class GeneratedMultiblocks {
     public static final List<MultiblockSpec> ALL;
 
     static {
-        List<MultiblockSpec> l = new ArrayList<>(128);
+        List<MultiblockSpec> l = new ArrayList<>(132);
         part0(l);
         part1(l);
         part2(l);
@@ -323,6 +323,12 @@ public final class GeneratedMultiblocks {
         l.add(new MultiblockSpec("halo_observatory_port", "halo_observatory_port", List.of("halo_observatory_port"), null, Shape.TEMPLATE, "hall",
               List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
               TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "batch", true, "ELECTRIC", null, "controller", "industry.multi.ControllerTile", true, 5));
+        l.add(new MultiblockSpec("proxima_crown_port", "proxima_crown_port", List.of("proxima_crown_port"), null, Shape.TEMPLATE, "hall",
+              List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
+              TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "batch", true, "ELECTRIC", null, "controller", "industry.multi.ControllerTile", true, 5));
+        l.add(new MultiblockSpec("tidal_necklace_port", "tidal_necklace_port", List.of("tidal_necklace_port"), null, Shape.TEMPLATE, "hall",
+              List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
+              TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "batch", true, "ELECTRIC", null, "controller", "industry.multi.ControllerTile", true, 5));
         l.add(new MultiblockSpec("space_drill", "space_drill", List.of("space_drill"), null, Shape.TEMPLATE, "tower",
               List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
               TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "drill", true, "MECHANICAL", null, "controller", "industry.multi.ControllerTile", true, 5));
@@ -368,6 +374,12 @@ public final class GeneratedMultiblocks {
         l.add(new MultiblockSpec("regolith_helium3_extractor", "regolith_helium3_extractor", List.of("regolith_helium3_extractor"), null, Shape.TEMPLATE, "hall",
               List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
               TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "batch", true, "THERMAL", null, "controller", "industry.multi.ControllerTile", true, 5));
+        l.add(new MultiblockSpec("flare_catcher", "flare_catcher", List.of("flare_catcher"), null, Shape.TEMPLATE, "hall",
+              List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
+              TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "batch", true, "ELECTRIC", null, "controller", "industry.multi.ControllerTile", true, 5));
+        l.add(new MultiblockSpec("tidal_bioreactor", "tidal_bioreactor", List.of("tidal_bioreactor"), null, Shape.TEMPLATE, "hall",
+              List.of(role("controller", "pioneers:multiblock/controller", 1), role("casing", "pioneers:multiblock/casing", 1), role("glass", "pioneers:multiblock/glass", 0), role("port", "pioneers:multiblock/port", 0), role("part", "pioneers:multiblock/part", 0), role("frame", "pioneers:multiblock/frame", 0), role("sheet", "pioneers:multiblock/sheet", 0)),
+              TierRule.WEAKEST, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "batch", true, "THERMAL", null, "controller", "industry.multi.ControllerTile", true, 5));
         l.add(new MultiblockSpec("space_stabilizer_controller", "space_stabilizer_controller", List.of("space_stabilizer_controller"), null, Shape.PARAMETRIC, "stabilizer_chambers",
               List.of(role("wall", null, 0), role("port", null, 0)),
               TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "cosmic", "content.stabilizer.StabilizerControllerTile", true, 8));
@@ -389,6 +401,9 @@ public final class GeneratedMultiblocks {
         l.add(new MultiblockSpec("launch_pad_core", "launch_pad_core", List.of("launch_pad_core"), null, Shape.PARAMETRIC, "launch_complex",
               List.of(role("pad", null, 0), role("tower", null, 0)),
               TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "base", "tile.TileEntityLaunchPad", true, 8));
+    }
+
+    private static void part4(List<MultiblockSpec> l) {
         l.add(new MultiblockSpec("rocket_integration_hall", "rocket_integration_hall", List.of("rocket_integration_hall"), null, Shape.FIXED, "AssemblyHallLayout",
               List.of(role("wall", null, 0), role("port", null, 0)),
               TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "works", "tile.TileEntityAssemblyHall", true, 8));
@@ -401,9 +416,6 @@ public final class GeneratedMultiblocks {
         l.add(new MultiblockSpec("firebox", "firebox", List.of("firebox"), null, Shape.FIXED, "HouseNbt",
               List.of(role("firebox", null, 0), role("body", null, 0), role("dome", null, 0), role("chimney", null, 0)),
               TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "steam", "bronze.steam.FireboxTile", true, 8));
-    }
-
-    private static void part4(List<MultiblockSpec> l) {
         l.add(new MultiblockSpec("blast_furnace", "blast_furnace", List.of("blast_furnace"), null, Shape.FIXED, "BlastLayout",
               List.of(role("brick", null, 0), role("firebox", null, 0), role("tuyere", null, 0), role("bellows", null, 0)),
               TierRule.FIXED, List.of("ITEM", "FLUID", "GAS", "ENERGY", "HEAT", "PRESSURE", "DATA"), "logic", false, null, null, "bronze", "bronze.blast.BlastFurnaceTile", true, 8));
