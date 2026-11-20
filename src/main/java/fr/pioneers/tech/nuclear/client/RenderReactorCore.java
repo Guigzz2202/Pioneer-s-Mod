@@ -89,6 +89,8 @@ public class RenderReactorCore implements BlockEntityRenderer<ControllerTile> {
         }
         //1.0.4-beta (lot 25) : structures de Guillaume : colonnes qui tournent, manivelles, particules en marche ; ecran du controleur en marche
         NbtAnimations.render(tile, partialTick, pose, buffers);
+        //1.0.7 (lot 12) : multibloc extraordinaire (★) : son effet anime au coeur de la structure
+        RenderStars.render(tile, partialTick, pose, buffers);
         ControllerScreens.render(tile, partialTick, pose, buffers);
         OffshoreRisers.View offshore = tile.offshoreView();
         if (offshore != null) {

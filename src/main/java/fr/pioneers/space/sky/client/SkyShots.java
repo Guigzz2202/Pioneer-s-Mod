@@ -93,6 +93,14 @@ public final class SkyShots {
         ResourceKey<Level> dim = dimension(shot.mega);
         switch (stage) {
             case 0 -> {
+                if (shot.mega <= -1000) {
+                    //1.0.7 (lot 12) : extraordinaire bati en l'air (structure MKV), le joueur devant lui ; rendu force en marche
+                    fr.pioneers.tech.industry.star.Stars.forceActive = shot.working;
+                    server.execute(() -> buildStar(server, shot));
+                    stage = 2;
+                    wait = 220;
+                    return;
+                }
                 //deblocage, creatif volant, en altitude au-dessus de l'origine de l'astre
                 server.execute(() -> {
                     if (shot.mega >= 0) {
@@ -181,6 +189,9 @@ public final class SkyShots {
 
     /** Monde ou la voir : celui de son astre ; l'Essaim depuis Mercure, l'Observatoire du Halo depuis la Terre. */
     private static ResourceKey<Level> dimension(int mega) {
+        if (mega <= -1000) {
+            return Level.OVERWORLD;
+        }
         if (mega < 0) {
             return far(mega).dimension();
         }
@@ -194,6 +205,18 @@ public final class SkyShots {
 
     /** Regard de la vue : azimut de la megastructure (repere du ciel : 0 = nord, sens horaire) plus decalage, hauteur (NaN : la sienne). */
     private static void view(Minecraft mc, Shot shot) {
+        if (shot.mega <= -1000) {
+            //extraordinaire : regard vers le centre de la structure (STAR : centre x, y, z), du point de vue de la capture
+            double dx = STAR[0] - mc.player.getX(), dy = STAR[1] - mc.player.getEyeY(), dz = STAR[2] - mc.player.getZ();
+            float yaw = (float) Math.toDegrees(Math.atan2(-dx, dz)), pitch = (float) -Math.toDegrees(Math.atan2(dy, Math.sqrt(dx * dx + dz * dz)));
+            mc.player.setYRot(yaw);
+            mc.player.setXRot(pitch);
+            mc.player.yRotO = yaw;
+            mc.player.xRotO = pitch;
+            mc.player.setYHeadRot(yaw);
+            mc.player.yHeadRotO = yaw;
+            return;
+        }
         fr.pioneers.space.sky.client.mega.MegaView v = MegaSkyRenderer.view();
         double az = shot.mega < 0 ? shot.yawOffset : MegaModels.viewYaw(shot.mega, v) + shot.yawOffset;
         double p = Double.isNaN(shot.pitch) ? MegaModels.viewPitch(shot.mega, v) : shot.pitch;
@@ -265,6 +288,13 @@ public final class SkyShots {
             list.add(new Shot(i, "nuit_en_marche", MIDNIGHT, true, 0, pitch));
             list.add(new Shot(i, "en_altitude", NOON, true, 0, 10, 90));
         }
+        //1.0.7 (lot 12) : multiblocs extraordinaires (★) batis en l'air au-dessus de la Terre, vus en marche : mega = -(1000 + index)
+        if (("," + PLAN + ",").contains(",extraordinaires,")) {
+            for (int i = 0; i < fr.pioneers.tech.industry.star.GeneratedStars.ALL.length; i++) {
+                list.add(new Shot(-1000 - i, "en_marche", 6000, true, 0, 0));
+                list.add(new Shot(-1000 - i, "de_biais", 6000, true, 40, 0));
+            }
+        }
         //1.0.7 (lot 11) : ciels des planetes des systemes lointains (pulsar, naine blanche, trou noir) : mega = -(1 + astre) ; sunAlt = heure
         //du monde ; regard (azimut, hauteur) vers l'etoile (memes reglages que J:client/PiClientRegistration)
         if ("all".equals(PLAN) || ("," + PLAN + ",").contains(",lointains,")) {
@@ -278,6 +308,68 @@ public final class SkyShots {
             }
         }
         return list;
+    }
+
+    /** Centre de l'extraordinaire de la capture en cours (monde) ; ecrit par le serveur integre, lu par le client (meme processus). */
+    private static final double[] STAR = new double[3];
+
+    /**
+     * 1.0.7 (lot 12) : bati l'extraordinaire de la capture a 150 blocs au-dessus de la Terre (plan du catalogue, toute la structure MKV, le
+     * controleur face au nord) et place le joueur au nord, en hauteur ; {@code yawOffset} tourne le point de vue autour de la structure.
+     */
+    private static void buildStar(net.minecraft.server.MinecraftServer server, Shot shot) {
+        int si = -1000 - shot.mega;
+        fr.pioneers.tech.industry.IndustryMachine m = fr.pioneers.tech.industry.IndustryMachine.byKey(
+              fr.pioneers.tech.industry.star.GeneratedStars.ALL[si].key());
+        net.minecraft.server.level.ServerLevel level = server.overworld();
+        net.minecraft.core.Direction front = net.minecraft.core.Direction.NORTH;
+        java.util.Map<net.minecraft.core.BlockPos, fr.pioneers.core.common.projector.ProjectedStructure.Ghost> plan =
+              fr.pioneers.tech.industry.multi.IndustrialBlueprint.of(m).layout(0, net.minecraft.core.BlockPos.ZERO, front.getOpposite());
+        net.minecraft.core.BlockPos c = new net.minecraft.core.BlockPos(4000 + 96 * si, 150, 4000);
+        int[] lo = {Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE}, hi = {Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE};
+        fr.pioneers.logistics.transport.CableTier mk5 = fr.pioneers.logistics.transport.CableTier.STELLAR;
+        for (var e : plan.entrySet()) {
+            net.minecraft.world.level.block.state.BlockState st = e.getValue().state();
+            if (st == null) {
+                continue;
+            }
+            net.minecraft.core.BlockPos p = c.offset(e.getKey());
+            lo[0] = Math.min(lo[0], p.getX());
+            lo[1] = Math.min(lo[1], p.getY());
+            lo[2] = Math.min(lo[2], p.getZ());
+            hi[0] = Math.max(hi[0], p.getX());
+            hi[1] = Math.max(hi[1], p.getY());
+            hi[2] = Math.max(hi[2], p.getZ());
+            if (p.equals(c) && st.hasProperty(fr.pioneers.core.machine.MachineBlock.FACING)) {
+                st = st.setValue(fr.pioneers.core.machine.MachineBlock.FACING, front);
+            }
+            if (st.getBlock() instanceof fr.pioneers.tech.industry.multi.CasingBlock) {
+                st = fr.pioneers.tech.industry.PiIndustry.CASINGS.get(mk5).getBlock().defaultBlockState();
+            } else if (st.getBlock() instanceof fr.pioneers.tech.industry.multi.IndustrialGlassBlock) {
+                st = fr.pioneers.tech.industry.PiIndustry.GLASSES.get(mk5).getBlock().defaultBlockState();
+            } else if (st.getBlock() instanceof fr.pioneers.tech.industry.multi.StructureFrameBlock) {
+                st = fr.pioneers.tech.industry.PiIndustry.FRAMES.get(mk5).getBlock().defaultBlockState();
+            } else if (st.getBlock() instanceof fr.pioneers.tech.industry.multi.SheetMetalBlock) {
+                st = fr.pioneers.tech.industry.PiIndustry.SHEETS.get(mk5).getBlock().defaultBlockState();
+            }
+            level.setBlock(p, st, 3);
+        }
+        STAR[0] = (lo[0] + hi[0] + 1) / 2.0;
+        STAR[1] = (lo[1] + hi[1] + 1) / 2.0;
+        STAR[2] = (lo[2] + hi[2] + 1) / 2.0;
+        double span = Math.max(hi[0] - lo[0], Math.max(hi[1] - lo[1], hi[2] - lo[2])) + 1;
+        double dist = span * 1.25 + 6, a = Math.toRadians(shot.yawOffset);
+        double ex = STAR[0] + Math.sin(a) * dist, ez = STAR[2] - Math.cos(a) * dist, ey = STAR[1] + span * 0.35;
+        net.minecraft.server.level.ServerPlayer player = server.getPlayerList().getPlayers().isEmpty() ? null : server.getPlayerList().getPlayers().get(0);
+        if (player != null) {
+            player.setGameMode(net.minecraft.world.level.GameType.CREATIVE);
+            player.getAbilities().flying = true;
+            player.onUpdateAbilities();
+            player.teleportTo(level, ex, ey, ez, 0, 0);
+        }
+        level.setDayTime(6000);
+        server.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DAYLIGHT).set(false, server);
+        LOG.info("SKYSHOTS : extraordinaire {} bati en {}", m.key, c);
     }
 
     /** Planetes lointaines : astre, azimut et hauteur du regard vers l'etoile a midi, etoile fixe (rotation synchrone). */
@@ -294,6 +386,9 @@ public final class SkyShots {
     }
 
     private static String shotId(int mega) {
+        if (mega <= -1000) {
+            return fr.pioneers.tech.industry.star.GeneratedStars.ALL[-1000 - mega].key();
+        }
         return mega < 0 ? far(mega).name().toLowerCase() : Megastructures.id(mega);
     }
 }

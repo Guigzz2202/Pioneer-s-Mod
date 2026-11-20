@@ -16,6 +16,8 @@ import fr.pioneers.core.Texts;
 import fr.pioneers.tech.industry.IndustryMachine;
 import fr.pioneers.tech.industry.Tiers;
 import fr.pioneers.tech.industry.multi.ControllerTile;
+import fr.pioneers.tech.industry.star.GeneratedStars;
+import fr.pioneers.tech.industry.star.Stars;
 import fr.pioneers.tech.industry.multi.IndustryStyle;
 import fr.pioneers.tech.industry.multi.PortBlock;
 import fr.pioneers.tech.industry.multi.SiloCore;
@@ -144,6 +146,10 @@ final class MultiblockViews {
             double progress = gui.value(MultiblockValues.PROGRESS) / 1000.0;
             //1.0.4-beta (lot 31) : salle blanche : accent gris argent (pas la couleur de la machine)
             arrow(g, l.arrow, status == ControllerTile.WORKING ? progress : 0, gui.skinAccent(m.accent));
+            GeneratedStars.Star star = Stars.of(m.key);
+            if (star != null && formed) {
+                starStages(gui, g, mouseX, mouseY, l.arrow, star, progress, status == ControllerTile.WORKING, gui.skinAccent(m.accent));
+            }
             if (l.tool) {
                 gui.toolSlot(g, mouseX, mouseY, l.toolX, l.toolY, m.key);   // 1.0.5-beta (lot 44) : case Outil des remanents
             }
@@ -269,6 +275,38 @@ final class MultiblockViews {
         }
     }
 
+    /**
+     * 1.0.7 (lot 12) : etapes d'un multibloc extraordinaire (★) sur la fleche d'avancement : un separateur entre deux etapes, l'etape en cours
+     * soulignee de la couleur de la machine ; infobulle : la liste des etapes et leur part de la duree.
+     */
+    static void starStages(GuiMachine gui, GuiGraphics g, int mouseX, int mouseY, Rect r, GeneratedStars.Star star, double progress, boolean working,
+          int accent) {
+        int x = r.x(), y = r.y() + r.h() / 2, len = r.w() - 5;
+        int cur = working ? Stars.stage(star, progress) : -1;
+        double acc = 0;
+        for (int i = 0; i < star.stages().length; i++) {
+            int a = x + (int) Math.round(len * acc);
+            acc += star.stages()[i];
+            int e = x + (int) Math.round(len * acc);
+            if (i > 0) {
+                g.fill(a, y - 3, a + 1, y + 4, 0xFFE8E8E8);
+            }
+            if (i == cur) {
+                g.fill(a + 1, y + 3, e, y + 4, 0xFF000000 | accent);
+            }
+        }
+        if (gui.over(mouseX, mouseY, r.x(), r.y() - 2, r.w(), r.h() + 4)) {
+            List<Component> tip = new ArrayList<>();
+            tip.add(Component.translatable("industry.pioneers.star.stages"));
+            for (int i = 0; i < star.stages().length; i++) {
+                Component line = Component.literal((i + 1) + ". ").append(Component.translatable("industry.pioneers.star." + star.key() + ".stage." + i))
+                      .append(" (" + Math.round(star.stages()[i] * 100) + " %)");
+                tip.add(line.copy().withStyle(i == cur ? ChatFormatting.YELLOW : ChatFormatting.GRAY));
+            }
+            gui.tooltip(tip);
+        }
+    }
+
     /** Ecran d'etat : forme (etat, avancement, parallele et consommation, structure) ou non forme (erreur commune : quoi, ou, attendu). */
     private static void screen(GuiMachine gui, GuiGraphics g, int mouseX, int mouseY, ControllerTile tile, Rect s, boolean formed, int status,
           double progress) {
@@ -329,6 +367,13 @@ final class MultiblockViews {
                       Texts.grouped(silo[0]), Texts.grouped(SiloCore.capacity((int) silo[1], (int) gui.value(MultiblockValues.TIER))))));
             } else if (m.itemDrill()) {
                 rows.add(GuiMachine.Row.of("industry.pioneers.gui.reserve", Component.literal(Texts.format(gui.value(MultiblockValues.RESERVE)))));
+            } else if (Stars.has(m.key)) {
+                //1.0.7 (lot 12) : multibloc extraordinaire (★) : l'etape en cours de la recette (au repos : la marque ★)
+                GeneratedStars.Star star = Stars.of(m.key);
+                int stage = Stars.stage(star, progress), n = star.stages().length;
+                rows.add(new GuiMachine.Row(Component.translatable("industry.pioneers.star.stage"), status == ControllerTile.WORKING
+                      ? Component.translatable("industry.pioneers.star.stage_value", Component.translatable("industry.pioneers.star." + m.key + ".stage."
+                            + stage), stage + 1, n) : Component.translatable("industry.pioneers.star.badge"), 0xFF000000 | gui.skinAccent(m.accent)));
             } else {
                 rows.add(new GuiMachine.Row(Component.translatable("gui.pioneers.multiblock.structure"), Component.translatable("gui.pioneers.multiblock.formed_value",
                       dims >> 16 & 0xFF, dims >> 8 & 0xFF, dims & 0xFF), OK));

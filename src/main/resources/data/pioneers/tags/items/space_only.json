@@ -978,6 +978,10 @@
    "required": false
   },
   {
+   "id": "pioneers:dark_matter_confiner",
+   "required": false
+  },
+  {
    "id": "pioneers:dark_matter_trap",
    "required": false
   },

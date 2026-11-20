@@ -59,7 +59,8 @@ public final class NbtAnims {
     @Nullable
     public static AABB renderBox(String key, BlockPos c, BlockState state) {
         GeneratedNbtShapes.Shape s = GeneratedNbtShapes.of(key);
-        if (s == null || of(key) == null || !state.hasProperty(ControllerBlock.FACING)) {
+        //1.0.7 (lot 12) : un multibloc extraordinaire (★) a son rendu anime meme sans animation de structure
+        if (s == null || of(key) == null && !fr.pioneers.tech.industry.star.Stars.has(key) || !state.hasProperty(ControllerBlock.FACING)) {
             return null;
         }
         BlockPos[] env = envelope(c, state.getValue(ControllerBlock.FACING), s);
