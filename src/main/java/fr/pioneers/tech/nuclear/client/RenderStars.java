@@ -44,6 +44,8 @@ final class RenderStars {
     /** Activite lissee par controleur (fil du rendu). */
     private static final Long2FloatOpenHashMap LEVEL = new Long2FloatOpenHashMap();
     private static final double[] P = new double[3];
+    /** Gauche de la camera inversee (fil du rendu, aucune allocation par image). */
+    private static final Vector3f FACING_LEFT = new Vector3f();
 
     private RenderStars() {
     }
@@ -67,7 +69,9 @@ final class RenderStars {
         double[] f = NbtAnims.point(c, front, s.cx(), s.cy(), s.cz(), star.fx(), star.fy(), star.fz());
         float x = (float) (f[0] - c.getX()), y = (float) (f[1] - c.getY()), z = (float) (f[2] - c.getZ());
         Camera cam = Minecraft.getInstance().gameRenderer.getMainCamera();
-        Vector3f left = cam.getLeftVector(), up = cam.getUpVector();
+        //CoreDraw.billboard tourne dans le sens des aiguilles d'une montre vu de la camera avec la vraie gauche : face arriere, coupee par
+        //le type eyes (faces arriere cachees) ; la gauche inversee le remet face a la camera (textures symetriques)
+        Vector3f left = FACING_LEFT.set(cam.getLeftVector()).negate(), up = cam.getUpVector();
         Matrix4f m = pose.last().pose();
         float r = (star.accent() >> 16 & 255) / 255F, g = (star.accent() >> 8 & 255) / 255F, b = (star.accent() & 255) / 255F;
         float k = 0.35F + 0.95F * act;
@@ -197,7 +201,8 @@ final class RenderStars {
         //etages du cryostat : halos froids qui descendent en marche
         VertexConsumer fr = c.buffers.getBuffer(RenderType.eyes(RenderReactorCore.FROST));
         for (int st = 0; st < 5; st++) {
-            float yy = c.y + 2 + st * 3;
+            //juste au-dessus de chaque plateau du lustre (cases 7, 10, 13, 16, 19 du gabarit) : jamais sur sa face (scintillement)
+            float yy = c.y + 3.05F + st * 3;
             float i = c.k * (0.25F + 0.35F * (float) Math.sin(c.t * 0.05F - st));
             CoreDraw.disc(fr, c.m, c.x, yy, c.z, 2.0F + st * 0.8F, 20, 4, c.t * 0.002F * (st + 1), 0.3F * i, 0.6F * i, 0.9F * i, 1, FULL);
         }

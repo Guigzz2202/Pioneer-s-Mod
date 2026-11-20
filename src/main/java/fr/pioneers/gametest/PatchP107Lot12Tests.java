@@ -45,6 +45,41 @@ public final class PatchP107Lot12Tests {
         s.done();
     }
 
+    /** Chaque extraordinaire bati (toute la structure MKV) se forme : sinon son controleur reste au tier 0 et son effet ne se dessine pas. */
+    @GameTest(template = Gt.TALL, batch = "pioneers_p107_12_formed", timeoutTicks = 400)
+    public static void p107_12_extraordinaires_se_forment(GameTestHelper h) {
+        Gt.Scope s = Gt.begin(h);
+        StringBuilder bad = new StringBuilder();
+        formNext(h, s, 0, bad);
+    }
+
+    private static void formNext(GameTestHelper h, Gt.Scope s, int i, StringBuilder bad) {
+        if (i >= GeneratedStars.ALL.length) {
+            Gt.check(bad.length() == 0, "extraordinaires qui ne se forment pas :" + bad);
+            s.done();
+            return;
+        }
+        String key = GeneratedStars.ALL[i].key();
+        ControllerTile tile = PatchP107Lot4Tests.build(h, IndustryMachine.byKey(key), true);
+        h.runAfterDelay(8, () -> {
+            var st = tile.getBlockState();
+            int style = st.hasProperty(fr.pioneers.tech.industry.multi.IndustryStyle.TIER)
+                        ? st.getValue(fr.pioneers.tech.industry.multi.IndustryStyle.TIER) : -1;
+            if (!tile.formed() || style <= 0) {
+                bad.append(' ').append(key).append(" (forme ").append(tile.formed()).append(", tier ").append(tile.tier()).append(", style ")
+                   .append(style).append(", ").append(tile.guiValue(5)).append(')');
+            }
+            for (int x = 0; x < 32; x++) {
+                for (int y = 1; y < 32; y++) {
+                    for (int z = 0; z < 32; z++) {
+                        h.setBlock(x, y, z, net.minecraft.world.level.block.Blocks.AIR);
+                    }
+                }
+            }
+            h.runAfterDelay(2, () -> formNext(h, s, i + 1, bad));
+        });
+    }
+
     @GameTest(template = Gt.TALL, batch = "pioneers_p107_12_accelerator", timeoutTicks = 1200)
     public static void p107_12_accelerateur_fait_six_cellules(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);

@@ -207,7 +207,13 @@ public final class SkyShots {
     /** Regard de la vue : azimut de la megastructure (repere du ciel : 0 = nord, sens horaire) plus decalage, hauteur (NaN : la sienne). */
     private static void view(Minecraft mc, Shot shot) {
         if (shot.mega <= -1000) {
-            //extraordinaire : regard vers le centre de la structure (STAR : centre x, y, z), du point de vue de la capture
+            //extraordinaire : le joueur tenu au point de vue (le premier transport, de loin, arrive parfois avant l'envol : chute), puis
+            //regard vers le centre de la structure (STAR : centre x, y, z)
+            if (!Double.isNaN(EYE[0]) && mc.player.distanceToSqr(EYE[0], EYE[1], EYE[2]) > 0.25) {
+                mc.player.getAbilities().flying = true;
+                mc.player.setDeltaMovement(net.minecraft.world.phys.Vec3.ZERO);
+                mc.player.setPos(EYE[0], EYE[1], EYE[2]);
+            }
             double dx = STAR[0] - mc.player.getX(), dy = STAR[1] - mc.player.getEyeY(), dz = STAR[2] - mc.player.getZ();
             float yaw = (float) Math.toDegrees(Math.atan2(-dx, dz)), pitch = (float) -Math.toDegrees(Math.atan2(dy, Math.sqrt(dx * dx + dz * dz)));
             mc.player.setYRot(yaw);
@@ -313,6 +319,8 @@ public final class SkyShots {
 
     /** Centre de l'extraordinaire de la capture en cours (monde) ; ecrit par le serveur integre, lu par le client (meme processus). */
     private static final double[] STAR = new double[3];
+    /** Point de vue de la capture en cours (pieds du joueur), meme ecriture que {@link #STAR} ; NaN avant le premier extraordinaire. */
+    private static final double[] EYE = {Double.NaN, Double.NaN, Double.NaN};
 
     /**
      * 1.0.7 (lot 12) : bati l'extraordinaire de la capture a 150 blocs au-dessus de la Terre (plan du catalogue, toute la structure MKV, le
@@ -361,6 +369,9 @@ public final class SkyShots {
         double span = Math.max(hi[0] - lo[0], Math.max(hi[1] - lo[1], hi[2] - lo[2])) + 1;
         double dist = span * 1.25 + 6, a = Math.toRadians(shot.yawOffset);
         double ex = STAR[0] + Math.sin(a) * dist, ez = STAR[2] - Math.cos(a) * dist, ey = STAR[1] + span * 0.35;
+        EYE[0] = ex;
+        EYE[1] = ey;
+        EYE[2] = ez;
         net.minecraft.server.level.ServerPlayer player = server.getPlayerList().getPlayers().isEmpty() ? null : server.getPlayerList().getPlayers().get(0);
         if (player != null) {
             player.setGameMode(net.minecraft.world.level.GameType.CREATIVE);
