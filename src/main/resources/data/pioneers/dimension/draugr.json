@@ -1,0 +1,108 @@
+{
+ "type": "pioneers:draugr",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:draugr",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:draugr_beam_scars",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       0.4,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:draugr_magnetic_plains",
+     "parameters": {
+      "temperature": [
+       0.35,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.4
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:draugr_beam_scars",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.35
+      ],
+      "humidity": [
+       0.2,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.4
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:draugr_magnetic_plains",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       0.35
+      ],
+      "humidity": [
+       -1.0,
+       0.2
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.4
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

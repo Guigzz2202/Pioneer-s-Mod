@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:gaia_bh1_d_rock",
+  "pioneers:gaia_bh1_d_sand",
+  "pioneers:gaia_bh1_d_shale"
+ ]
+}

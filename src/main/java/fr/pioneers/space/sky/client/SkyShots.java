@@ -95,7 +95,9 @@ public final class SkyShots {
             case 0 -> {
                 //deblocage, creatif volant, en altitude au-dessus de l'origine de l'astre
                 server.execute(() -> {
-                    MegaWorld.get(server).unlock(server, shot.mega);
+                    if (shot.mega >= 0) {
+                        MegaWorld.get(server).unlock(server, shot.mega);
+                    }
                     ServerLevel level = server.getLevel(dim);
                     ServerPlayer player = server.getPlayerList().getPlayers().isEmpty() ? null : server.getPlayerList().getPlayers().get(0);
                     if (level != null && player != null) {
@@ -108,7 +110,7 @@ public final class SkyShots {
                     server.getGameRules().getRule(GameRules.RULE_DAYLIGHT).set(false, server);
                     server.getGameRules().getRule(GameRules.RULE_WEATHER_CYCLE).set(false, server);
                 });
-                LOG.info("SKYSHOTS : {} ({})", Megastructures.id(shot.mega), dim.location());
+                LOG.info("SKYSHOTS : {} ({})", shotId(shot.mega), dim.location());
                 stage = 1;
                 wait = 400;
             }
@@ -155,12 +157,12 @@ public final class SkyShots {
                         player.teleportTo(level, player.getX(), player.getY() + shot.climb, player.getZ(), 0, 0);
                     }
                 });
-                MegaClient.force(shot.working ? 1L << shot.mega : 0);
+                MegaClient.force(shot.working && shot.mega >= 0 ? 1L << shot.mega : 0);
                 stage = 3;
                 wait = 90;
             }
             default -> {
-                String file = String.format("sky_%s_%d_%s.png", Megastructures.id(shot.mega), index, shot.name);
+                String file = String.format("sky_%s_%d_%s.png", shotId(shot.mega), index, shot.name);
                 Screenshot.grab(mc.gameDirectory, file, mc.getMainRenderTarget(), msg -> {
                 });
                 LOG.info("SKYSHOTS : capture {}", file);
@@ -173,6 +175,9 @@ public final class SkyShots {
 
     /** Monde ou la voir : celui de son astre ; l'Essaim depuis Mercure, l'Observatoire du Halo depuis la Terre. */
     private static ResourceKey<Level> dimension(int mega) {
+        if (mega < 0) {
+            return far(mega).dimension();
+        }
         String body = Megastructures.body(mega).name().toLowerCase();
         return switch (body) {
             case "sun" -> ResourceKey.create(Registries.DIMENSION, Pioneers.rl("mercury"));
@@ -184,7 +189,7 @@ public final class SkyShots {
     /** Regard de la vue : azimut de la megastructure (repere du ciel : 0 = nord, sens horaire) plus decalage, hauteur (NaN : la sienne). */
     private static void view(Minecraft mc, Shot shot) {
         fr.pioneers.space.sky.client.mega.MegaView v = MegaSkyRenderer.view();
-        double az = MegaModels.viewYaw(shot.mega, v) + shot.yawOffset;
+        double az = shot.mega < 0 ? shot.yawOffset : MegaModels.viewYaw(shot.mega, v) + shot.yawOffset;
         double p = Double.isNaN(shot.pitch) ? MegaModels.viewPitch(shot.mega, v) : shot.pitch;
         float yaw = (float) (az + 180), pitch = (float) -p;
         mc.player.setYRot(yaw);
@@ -197,6 +202,9 @@ public final class SkyShots {
 
     /** Heure du monde ou le Soleil de l'astre est a la hauteur voulue l'apres-midi (meme calcul que le ciel). */
     private static long dayTime(Minecraft mc, Shot shot) {
+        if (shot.mega < 0) {
+            return (long) shot.sunAlt;
+        }
         if (shot.sunAlt >= NOON) {
             return 6000;
         }
@@ -251,6 +259,34 @@ public final class SkyShots {
             list.add(new Shot(i, "nuit_en_marche", MIDNIGHT, true, 0, pitch));
             list.add(new Shot(i, "en_altitude", NOON, true, 0, 10, 90));
         }
+        //1.0.7 (lot 11) : ciels des planetes des systemes lointains (pulsar, naine blanche, trou noir) : mega = -(1 + astre) ; sunAlt = heure
+        //du monde ; regard (azimut, hauteur) vers l'etoile (memes reglages que J:client/PiClientRegistration)
+        if ("all".equals(PLAN) || ("," + PLAN + ",").contains(",lointains,")) {
+            for (Object[] f : FAR_VIEWS) {
+                int code = -(1 + ((fr.pioneers.space.SolarSystem.Body) f[0]).ordinal());
+                double yaw = ((Number) f[1]).doubleValue(), pitch = ((Number) f[2]).doubleValue();
+                boolean fixed = (Boolean) f[3];
+                list.add(new Shot(code, "ciel", 6000, false, yaw, pitch));
+                list.add(new Shot(code, fixed ? "de_biais" : "matin", fixed ? 6000 : 1000, false, fixed ? yaw + 35 : 90, fixed ? pitch * 0.6 : 12));
+                list.add(new Shot(code, "nuit", 18000, false, yaw + 180, 35));
+            }
+        }
         return list;
+    }
+
+    /** Planetes lointaines : astre, azimut et hauteur du regard vers l'etoile a midi, etoile fixe (rotation synchrone). */
+    private static final Object[][] FAR_VIEWS = {
+          {fr.pioneers.space.SolarSystem.Body.DRAUGR, 0, 72, false}, {fr.pioneers.space.SolarSystem.Body.POLTERGEIST, 0, 75, false},
+          {fr.pioneers.space.SolarSystem.Body.PHOBETOR, 0, 78, false}, {fr.pioneers.space.SolarSystem.Body.VAN_MAANEN_B, 240, 30, true},
+          {fr.pioneers.space.SolarSystem.Body.VAN_MAANEN_C, 0, 75, false}, {fr.pioneers.space.SolarSystem.Body.VAN_MAANEN_D, 0, 78, false},
+          {fr.pioneers.space.SolarSystem.Body.GAIA_BH1_B, 110, 24, true}, {fr.pioneers.space.SolarSystem.Body.GAIA_BH1_C, 0, 70, false},
+          {fr.pioneers.space.SolarSystem.Body.GAIA_BH1_D, 0, 76, false}};
+
+    private static fr.pioneers.space.SolarSystem.Body far(int code) {
+        return fr.pioneers.space.SolarSystem.Body.values()[-code - 1];
+    }
+
+    private static String shotId(int mega) {
+        return mega < 0 ? far(mega).name().toLowerCase() : Megastructures.id(mega);
     }
 }

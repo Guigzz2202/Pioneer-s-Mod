@@ -100,7 +100,26 @@ public enum SpacePlant {
     CINDER_CACTUS("cinder_cactus", "cinder_fig", Planet.TRAPPIST_1B, 4, 6, 5, MobEffects.FIRE_RESISTANCE, 1200, 0.6F),
     TIDE_KELP("tide_kelp", "tide_pearl", Planet.TRAPPIST_1D, 3, 5, 0, null, 0, 0F),
     EDEN_BERRY_BUSH("eden_berry_bush", "eden_berry", Planet.TRAPPIST_1E, 0, 4, 4, MobEffects.LUCK, 2400, 1.0F),
-    FROST_BELL("frost_bell", "frost_petal", Planet.TRAPPIST_1F, 5, 6, 0, null, 0, 0F);
+    FROST_BELL("frost_bell", "frost_petal", Planet.TRAPPIST_1F, 5, 6, 0, null, 0, 0F),
+    // --- 1.0.7 (lot 11) : les trois systemes lointains, deux par planete (T:au_dela/far_systems.py PLANTS) ---
+    BEAM_LICHEN("beam_lichen", "beam_scale", Planet.DRAUGR, 3, 4, 0, null, 0, 0F),
+    MAGNETIC_THORN("magnetic_thorn", "lodestone_spine", Planet.DRAUGR, 0, 6, 0, null, 0, 0F),
+    STORM_BELL("storm_bell", "storm_petal", Planet.POLTERGEIST, 7, 5, 0, null, 0, 0F),
+    ION_REED("ion_reed", "ion_pith", Planet.POLTERGEIST, 2, 4, 0, null, 0, 0F),
+    PULSE_FERN("pulse_fern", "pulse_frond", Planet.PHOBETOR, 4, 4, 0, null, 0, 0F),
+    GLIMMER_LANTERN("glimmer_lantern", "glimmer_fruit", Planet.PHOBETOR, 9, 7, 4, MobEffects.NIGHT_VISION, 600, 0.5F),
+    DIAMOND_SPIRE("diamond_spire", "carbon_needle", Planet.VAN_MAANEN_B, 6, 6, 0, null, 0, 0F),
+    GRAPHITE_CREEPER("graphite_creeper", "graphite_tendril", Planet.VAN_MAANEN_B, 0, 4, 0, null, 0, 0F),
+    FILING_SHRUB("filing_shrub", "iron_berry", Planet.VAN_MAANEN_C, 0, 5, 0, null, 0, 0F),
+    RUST_CAP_MUSHROOM("rust_cap_mushroom", "rust_cap", Planet.VAN_MAANEN_C, 2, 6, 0, null, 0, 0F),
+    SNOWGLASS_LILY("snowglass_lily", "snowglass_bulb", Planet.VAN_MAANEN_D, 5, 6, 0, null, 0, 0F),
+    NITROGEN_TUFT("nitrogen_tuft", "nitrogen_fluff", Planet.VAN_MAANEN_D, 0, 4, 0, null, 0, 0F),
+    DISK_BLOOM("disk_bloom", "disk_petal", Planet.GAIA_BH1_B, 10, 6, 0, null, 0, 0F),
+    HALO_BERRY_BUSH("halo_berry_bush", "halo_berry", Planet.GAIA_BH1_B, 0, 5, 5, MobEffects.LUCK, 1200, 0.8F),
+    TIDAL_CACTUS("tidal_cactus", "tidal_fig", Planet.GAIA_BH1_C, 4, 6, 5, MobEffects.FIRE_RESISTANCE, 900, 0.6F),
+    STRETCHED_VINE("stretched_vine", "stretched_fiber", Planet.GAIA_BH1_C, 0, 4, 0, null, 0, 0F),
+    LENS_KELP("lens_kelp", "lens_pearl", Planet.GAIA_BH1_D, 3, 5, 0, null, 0, 0F),
+    RIM_FERN("rim_fern", "rim_frond", Planet.GAIA_BH1_D, 0, 4, 0, null, 0, 0F);
 
     /**
      * Astre de culture (memes noms que {@link Body}). Le sol naturel de chaque astre est donne par l'etiquette de blocs
@@ -109,7 +128,9 @@ public enum SpacePlant {
     public enum Planet {
         MOON, MARS, VENUS, MERCURY, PHOBOS, DEIMOS, CERES, VESTA, PALLAS, HYGIEA, IO, EUROPA, GANYMEDE, CALLISTO, ENCELADUS, TITAN, MIRANDA, TITANIA, TRITON, PLUTO, CHARON,
         //0.10 : exoplanetes
-        TOLIMAN_B, PROXIMA_B, PROXIMA_D, TRAPPIST_1B, TRAPPIST_1D, TRAPPIST_1E, TRAPPIST_1F;
+        TOLIMAN_B, PROXIMA_B, PROXIMA_D, TRAPPIST_1B, TRAPPIST_1D, TRAPPIST_1E, TRAPPIST_1F,
+        //1.0.7 (lot 11) : les trois systemes lointains
+        DRAUGR, POLTERGEIST, PHOBETOR, VAN_MAANEN_B, VAN_MAANEN_C, VAN_MAANEN_D, GAIA_BH1_B, GAIA_BH1_C, GAIA_BH1_D;
 
         private TagKey<Block> soil;
 

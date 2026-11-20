@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 20,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:gaia_bh1_b_soil"
+    },
+    "state": {
+     "Name": "pioneers:gaia_bh1_b_glowmoss"
+    }
+   }
+  ]
+ }
+}

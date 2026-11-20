@@ -104,6 +104,7 @@ public class Pioneers {
         PiBuildingBlocks.init();
         PiStoneVariants.init();
         PiExoBlocks.init();
+        fr.pioneers.space.environment.GeneratedFarBlocks.init();
         PiWorldBlocks.init();
         PiMachines.init();
         PiGiantBlocks.init();

@@ -172,7 +172,7 @@ public final class CreativeSort {
     static final List<String> SPACE_METALS = List.of("lunarium", "mercurium", "venusium", "marsium", "tharsium", "phobite", "deimite",
           "meteoritite", "ahunite", "vestalite", "pallasite", "hygeite", "lokite", "conamarite", "sulcite", "valhallite", "tigrite", "krakenite",
           "veronite", "messinite", "ruachite", "sputnikite", "mordorite", "tolimanite", "terminite", "flarium", "pyrrhite", "thalassite", "edenite",
-          "borealite");
+          "borealite", "pulsarite", "maanenite", "horizite");
 
     /** Gemmes et mineraux a forme de gemme. */
     static final List<String> GEMS = List.of("quartz", "amethyst", "lapis", "zircon", "peridot", "topaz", "ruby", "sapphire",
@@ -194,7 +194,8 @@ public final class CreativeSort {
     static final List<String> BODIES = List.of("earth", "moon", "mercury", "venus", "mars", "phobos", "deimos", "asteroid_belt", "ceres", "vesta",
           "pallas", "hygiea", "jupiter", "io", "europa", "ganymede", "callisto", "saturn", "enceladus", "titan", "uranus", "miranda", "titania",
           "neptune", "triton", "pluto", "charon", "sun", "centauri_a", "centauri_b", "toliman_b", "proxima", "proxima_b", "proxima_d", "trappist_1",
-          "trappist_1b", "trappist_1c", "trappist_1d", "trappist_1e", "trappist_1f", "trappist_1g", "trappist_1h");
+          "trappist_1b", "trappist_1c", "trappist_1d", "trappist_1e", "trappist_1f", "trappist_1g", "trappist_1h", "lich", "draugr", "poltergeist",
+          "phobetor", "van_maanen", "van_maanen_b", "van_maanen_c", "van_maanen_d", "gaia_bh1", "gaia_bh1_b", "gaia_bh1_c", "gaia_bh1_d");
 
     /** Mots qui designent un astre sans le nommer (metaux des astres compris). */
     private static final Map<String, String> BODY_WORDS = new LinkedHashMap<>();
@@ -202,7 +203,8 @@ public final class CreativeSort {
     static {
         String[] metalBodies = {"moon", "mercury", "venus", "mars", "mars", "phobos", "deimos", "asteroid_belt", "ceres", "vesta", "pallas",
               "hygiea", "io", "europa", "ganymede", "callisto", "enceladus", "titan", "miranda", "titania", "triton", "pluto", "charon",
-              "toliman_b", "proxima_b", "proxima_d", "trappist_1b", "trappist_1d", "trappist_1e", "trappist_1f"};
+              "toliman_b", "proxima_b", "proxima_d", "trappist_1b", "trappist_1d", "trappist_1e", "trappist_1f", "poltergeist", "van_maanen_b",
+              "gaia_bh1_c"};
         for (int i = 0; i < SPACE_METALS.size(); i++) {
             BODY_WORDS.put(SPACE_METALS.get(i), metalBodies[i]);
         }

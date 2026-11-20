@@ -107,6 +107,25 @@ public final class MegaSkyRenderer {
         draw(poseStack.last().pose());
     }
 
+    /**
+     * 1.0.7 (lot 11) : astre singulier d'un systeme lointain (pulsar, naine blanche, trou noir), autour de l'etoile principale du ciel
+     * ({@link fr.pioneers.space.sky.client.mega.PhenomenonModels}).
+     */
+    public static void renderPhenomenon(net.minecraft.client.multiplayer.ClientLevel level, int kind, float partialTick, PoseStack poseStack,
+          ExoSky sky) {
+        float timeDeg = level.getTimeOfDay(partialTick) * 360;
+        if (!sky.mainStar(timeDeg, SUN, STAR)) {
+            return;
+        }
+        VIEW.sun(SUN[0], SUN[1], SUN[2], 0.4 + 0.6 * STAR[0], 0.4 + 0.6 * STAR[1], 0.4 + 0.6 * STAR[2], false, 0);
+        VIEW.ticks = RenderClock.time(partialTick);
+        VIEW.activity = 0;
+        BUF.clear();
+        BUF.drop = 0;
+        fr.pioneers.space.sky.client.mega.PhenomenonModels.build(kind, BUF, VIEW);
+        draw(poseStack.last().pose());
+    }
+
     private static void add(int i) {
         VIEW.params = Megastructures.skyParams(i);
         VIEW.color = Megastructures.color(i);

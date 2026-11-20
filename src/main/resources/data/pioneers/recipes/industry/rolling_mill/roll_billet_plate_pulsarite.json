@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "rolling_mill",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:pulsarite_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pulsarite_plate",
+   "count": 9
+  }
+ ]
+}

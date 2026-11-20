@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:draugr_rock",
+  "pioneers:draugr_glass_crust",
+  "pioneers:draugr_iron_dust"
+ ]
+}

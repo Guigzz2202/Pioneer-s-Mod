@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:ore",
+ "config": {
+  "size": 22,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:van_maanen_c_filings"
+    },
+    "state": {
+     "Name": "pioneers:van_maanen_c_iron_crust"
+    }
+   },
+   {
+    "target": {
+     "predicate_type": "minecraft:block_match",
+     "block": "pioneers:van_maanen_c_rock"
+    },
+    "state": {
+     "Name": "pioneers:van_maanen_c_iron_crust"
+    }
+   }
+  ]
+ }
+}

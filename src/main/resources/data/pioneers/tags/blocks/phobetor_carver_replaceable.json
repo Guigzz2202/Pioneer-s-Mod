@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:phobetor_pulse_ice",
+  "pioneers:phobetor_snow",
+  "pioneers:phobetor_rock",
+  "pioneers:phobetor_streak_ice"
+ ]
+}

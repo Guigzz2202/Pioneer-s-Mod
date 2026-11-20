@@ -129,6 +129,10 @@ public final class ResearchEffects {
             //Geantes : la descente dans les nuages s'apprend une fois pour toutes
             return has(ResearchNode.ATMOSPHERIC_ENTRY);
         }
+        if (body.sector().far()) {
+            //1.0.7 (lot 11) : on s'y pose des qu'on y arrive (propulsion a matiere noire, carte du halo)
+            return true;
+        }
         ResearchNode orbit = BodyResearch.node(body, ResearchNode.Kind.LAB);
         return orbit != null && has(orbit);
     }
@@ -165,6 +169,9 @@ public final class ResearchEffects {
             case PLUTO, CHARON -> ResearchNode.DEEP_TELESCOPE;
             case CENTAURI_A, CENTAURI_B, PROXIMA, TOLIMAN_B, PROXIMA_B, PROXIMA_D -> ResearchNode.CENTAURI_SURVEY;
             case TRAPPIST_1, TRAPPIST_1B, TRAPPIST_1C, TRAPPIST_1D, TRAPPIST_1E, TRAPPIST_1F, TRAPPIST_1G, TRAPPIST_1H -> ResearchNode.TRAPPIST_SURVEY;
+            //1.0.7 (lot 11) : systemes lointains : reveles par l'Observatoire du Halo (megastructure), pas par l'arbre de recherche
+            case LICH, DRAUGR, POLTERGEIST, PHOBETOR, VAN_MAANEN, VAN_MAANEN_B, VAN_MAANEN_C, VAN_MAANEN_D, GAIA_BH1, GAIA_BH1_B, GAIA_BH1_C,
+                 GAIA_BH1_D -> null;
         };
     }
 

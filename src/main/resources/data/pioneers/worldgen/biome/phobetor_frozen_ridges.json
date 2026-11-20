@@ -1,0 +1,55 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 2371660,
+  "fog_color": 1581626,
+  "water_color": 4159204,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.exoplanet",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:phobetor_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [
+   "pioneers:crater_rare"
+  ],
+  [],
+  [
+   "pioneers:phobetor_cryo_spires"
+  ],
+  [],
+  [
+   "pioneers:phobetor_blue_patches"
+  ],
+  [],
+  [],
+  [
+   "pioneers:boulder_field",
+   "pioneers:meteorite_ice_common",
+   "pioneers:pulse_fern",
+   "pioneers:glimmer_lantern",
+   "pioneers:meteorite_ice"
+  ],
+  []
+ ]
+}

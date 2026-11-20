@@ -22,6 +22,12 @@ import org.jetbrains.annotations.Nullable;
  */
 public final class SolarSystem {
 
+    /**
+     * 1.0.7 (lot 11) : portee d'une fusee de tier 13 qui porte un propulseur a matiere noire ; tier exige par les trois systemes lointains
+     * (pulsar, naine blanche, trou noir).
+     */
+    public static final int DARK_DRIVE_LEVEL = 14;
+
     private SolarSystem() {
     }
 
@@ -71,7 +77,20 @@ public final class SolarSystem {
         TRAPPIST_1E("trappist_1", 3.8F, 18, 1.5F, 3.8F, 0x4E9A6A, false),
         TRAPPIST_1F("trappist_1", 4.8F, 25, 5.6F, 4.2F, 0xC8DCEB, false),
         TRAPPIST_1G("trappist_1", 5.9F, 33, 3.2F, 4.4F, 0x9FB4C8, false),
-        TRAPPIST_1H("trappist_1", 7.1F, 43, 0.9F, 3.2F, 0x8C8FA0, false);
+        TRAPPIST_1H("trappist_1", 7.1F, 43, 0.9F, 3.2F, 0x8C8FA0, false),
+        //1.0.7 (lot 11) : les trois nouveaux systemes, chacun autour d'un astre singulier (T:au_dela/far_systems.py)
+        LICH(null, 0, 0, 0, 4, 0xCFE6FF, false),
+        DRAUGR("lich", 0.9F, 6, 0.4F, 2.4F, 0x8C90A0, false),
+        POLTERGEIST("lich", 1.8F, 14, 2.3F, 4.4F, 0x7A70B0, false),
+        PHOBETOR("lich", 2.7F, 22, 4.4F, 4.2F, 0xA8C4DC, false),
+        VAN_MAANEN(null, 0, 0, 0, 3.6F, 0xF4F8FF, false),
+        VAN_MAANEN_B("van_maanen", 1.1F, 8, 1.2F, 3.6F, 0xD6E4F0, false),
+        VAN_MAANEN_C("van_maanen", 2.0F, 15, 3.3F, 2.8F, 0x8E7E70, false),
+        VAN_MAANEN_D("van_maanen", 3.2F, 26, 5.0F, 4.0F, 0xBAD6E6, false),
+        GAIA_BH1(null, 0, 0, 0, 6, 0x2A1840, false),
+        GAIA_BH1_B("gaia_bh1", 1.3F, 10, 0.9F, 3.8F, 0x9A6AD0, false),
+        GAIA_BH1_C("gaia_bh1", 2.2F, 17, 2.8F, 3.4F, 0xC0603A, false),
+        GAIA_BH1_D("gaia_bh1", 3.4F, 30, 4.7F, 4.2F, 0x4A7AB8, false);
 
         /** Tous les astres, dans l'ordre (liste partagee : evite la copie de tableau de {@code values()} dans les boucles frequentes). */
         public static final List<Body> ALL = List.of(values());
@@ -116,7 +135,8 @@ public final class SolarSystem {
 
         /** Etoile (centre d'un systeme ou etoile compagne). */
         public boolean isStar() {
-            return this == SUN || this == CENTAURI_A || this == CENTAURI_B || this == PROXIMA || this == TRAPPIST_1;
+            return this == SUN || this == CENTAURI_A || this == CENTAURI_B || this == PROXIMA || this == TRAPPIST_1 || this == LICH
+                   || this == VAN_MAANEN || this == GAIA_BH1;
         }
 
         /** Etoile centrale de son systeme (racine de la carte). */
@@ -205,13 +225,31 @@ public final class SolarSystem {
                 case TRAPPIST_1F -> 0.95F;
                 case TRAPPIST_1G -> 1.03F;
                 case TRAPPIST_1H -> 0.57F;
+                case LICH -> 80F;
+                case VAN_MAANEN -> 70F;
+                case GAIA_BH1 -> 99F;
+                case DRAUGR -> 0.32F;
+                case POLTERGEIST -> 1.6F;
+                case PHOBETOR -> 1.4F;
+                case VAN_MAANEN_B -> 1.2F;
+                case VAN_MAANEN_C -> 0.7F;
+                case VAN_MAANEN_D -> 0.9F;
+                case GAIA_BH1_B -> 1.1F;
+                case GAIA_BH1_C -> 1.3F;
+                case GAIA_BH1_D -> 0.95F;
             };
         }
 
         /** Categorie affichee : etoile, naine rouge, geante gazeuse, planete, exoplanete, lune, planete naine, asteroide. */
         public String getKindKey() {
             if (isStar()) {
-                return this == PROXIMA || this == TRAPPIST_1 ? "solar.pioneers.kind.red_dwarf" : "solar.pioneers.kind.star";
+                return switch (this) {
+                    case PROXIMA, TRAPPIST_1 -> "solar.pioneers.kind.red_dwarf";
+                    case LICH -> "solar.pioneers.kind.neutron_star";
+                    case VAN_MAANEN -> "solar.pioneers.kind.white_dwarf";
+                    case GAIA_BH1 -> "solar.pioneers.kind.black_hole";
+                    default -> "solar.pioneers.kind.star";
+                };
             } else if (isGasGiant()) {
                 return "solar.pioneers.kind.gas_giant";
             } else if (this == ASTEROID_BELT) {
@@ -269,6 +307,15 @@ public final class SolarSystem {
                 case TRAPPIST_1D -> PiDimensions.TRAPPIST_1D;
                 case TRAPPIST_1E -> PiDimensions.TRAPPIST_1E;
                 case TRAPPIST_1F -> PiDimensions.TRAPPIST_1F;
+                case DRAUGR -> PiDimensions.DRAUGR;
+                case POLTERGEIST -> PiDimensions.POLTERGEIST;
+                case PHOBETOR -> PiDimensions.PHOBETOR;
+                case VAN_MAANEN_B -> PiDimensions.VAN_MAANEN_B;
+                case VAN_MAANEN_C -> PiDimensions.VAN_MAANEN_C;
+                case VAN_MAANEN_D -> PiDimensions.VAN_MAANEN_D;
+                case GAIA_BH1_B -> PiDimensions.GAIA_BH1_B;
+                case GAIA_BH1_C -> PiDimensions.GAIA_BH1_C;
+                case GAIA_BH1_D -> PiDimensions.GAIA_BH1_D;
                 //Les etoiles n'ont pas de surface ; TRAPPIST-1c, g et h ne s'etudient qu'en orbite
                 default -> null;
             };
@@ -293,6 +340,8 @@ public final class SolarSystem {
                     case SOL -> 1;
                     case ALPHA_CENTAURI -> 12;
                     case TRAPPIST -> 13;
+                    //1.0.7 (lot 11) : propulsion a matiere noire (fusee de tier 13 et son propulseur, J:space/module/RocketModule)
+                    case LICH, VAN_MAANEN, GAIA_BH1 -> DARK_DRIVE_LEVEL;
                 };
             };
         }
@@ -302,12 +351,14 @@ public final class SolarSystem {
          * il faut le tier de l'astre de depart et celui de l'arrivee.
          */
         public boolean isReachableFrom(ResourceKey<Level> from, double x, @Nullable RocketTier tier) {
-            if (tier == null) {
-                return false;
-            }
+            return tier != null && isReachableFrom(from, x, tier.level);
+        }
+
+        /** 1.0.7 (lot 11) : meme regle pour une portee donnee ({@code RocketEntity.reachLevel} : tier, plus un avec la matiere noire). */
+        public boolean isReachableFrom(ResourceKey<Level> from, double x, int reach) {
             ResourceKey<Level> dim = dimension();
             Body origin = origin(from, x);
-            return dim != null && dim != from && origin != null && Math.max(requiredTier(), origin.requiredTier()) <= tier.level;
+            return dim != null && dim != from && origin != null && Math.max(requiredTier(), origin.requiredTier()) <= reach;
         }
 
         public boolean isHere(ResourceKey<Level> from) {
@@ -322,7 +373,11 @@ public final class SolarSystem {
     public enum Sector {
         SOL(0, 0, 0xFFC040, 1),
         ALPHA_CENTAURI(-3.1F, 2.9F, 0xFFE6A8, 12),
-        TRAPPIST(16, -11, 0xFF6A4A, 13);
+        TRAPPIST(16, -11, 0xFF6A4A, 13),
+        //1.0.7 (lot 11) : pulsar, naine blanche, trou noir ; reveles par l'Observatoire du Halo, atteints a la matiere noire
+        LICH(-24, -17, 0xBFDCFF, DARK_DRIVE_LEVEL),
+        VAN_MAANEN(7.5F, 8, 0xF2F6FF, DARK_DRIVE_LEVEL),
+        GAIA_BH1(26, 18, 0x8A5CFF, DARK_DRIVE_LEVEL);
 
         public final float galacticX, galacticY;
         public final int color;
@@ -340,6 +395,9 @@ public final class SolarSystem {
                 case SOL -> Body.SUN;
                 case ALPHA_CENTAURI -> Body.CENTAURI_A;
                 case TRAPPIST -> Body.TRAPPIST_1;
+                case LICH -> Body.LICH;
+                case VAN_MAANEN -> Body.VAN_MAANEN;
+                case GAIA_BH1 -> Body.GAIA_BH1;
             };
         }
 
@@ -349,11 +407,19 @@ public final class SolarSystem {
                 case SOL -> 0;
                 case ALPHA_CENTAURI -> 4.37F;
                 case TRAPPIST -> 40.7F;
+                case LICH -> 2300F;
+                case VAN_MAANEN -> 14.1F;
+                case GAIA_BH1 -> 1560F;
             };
         }
 
         public String getTranslationKey() {
             return "solar.pioneers.sector." + name().toLowerCase();
+        }
+
+        /** 1.0.7 (lot 11) : systeme lointain (revele par l'Observatoire du Halo, atteint a la matiere noire). */
+        public boolean far() {
+            return requiredTier >= DARK_DRIVE_LEVEL;
         }
 
         public static Sector of(Body body) {
@@ -364,6 +430,9 @@ public final class SolarSystem {
             return switch (b) {
                 case CENTAURI_A -> ALPHA_CENTAURI;
                 case TRAPPIST_1 -> TRAPPIST;
+                case LICH -> Sector.LICH;
+                case VAN_MAANEN -> Sector.VAN_MAANEN;
+                case GAIA_BH1 -> Sector.GAIA_BH1;
                 default -> SOL;
             };
         }
@@ -397,9 +466,14 @@ public final class SolarSystem {
     }
 
     public static List<Body> reachableFrom(ResourceKey<Level> from, double x, RocketTier tier) {
+        return reachableFrom(from, x, tier.level);
+    }
+
+    /** 1.0.7 (lot 11) : astres atteignables avec une portee donnee ({@code RocketEntity.reachLevel}). */
+    public static List<Body> reachableFrom(ResourceKey<Level> from, double x, int reach) {
         List<Body> list = new ArrayList<>();
         for (Body body : Body.ALL) {
-            if (body.isReachableFrom(from, x, tier)) {
+            if (body.isReachableFrom(from, x, reach)) {
                 list.add(body);
             }
         }

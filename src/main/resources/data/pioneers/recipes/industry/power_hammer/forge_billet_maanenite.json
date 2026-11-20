@@ -1,0 +1,20 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "power_hammer",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/maanenite"
+   },
+   "count": 9
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:maanenite_billet",
+   "count": 1
+  }
+ ]
+}

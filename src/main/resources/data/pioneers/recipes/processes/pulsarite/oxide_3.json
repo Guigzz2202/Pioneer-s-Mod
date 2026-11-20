@@ -1,0 +1,43 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "arc_furnace",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crude_pulsarite"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:graphite_electrode"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:quicklime"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 100
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pulsarite_ingot",
+   "count": 4
+  },
+  {
+   "item": "pioneers:slag",
+   "count": 1
+  }
+ ],
+ "temperature": 1900
+}

@@ -27,7 +27,12 @@ public enum RocketModule {
     CARGO_DATA(CargoType.DATA.color, 7, CargoType.DATA),
     EFFICIENCY(0x7CE070, 3, null),
     SPEED(0x50D8F0, 3, null),
-    SHIELD(0xE07050, 3, null);
+    SHIELD(0xE07050, 3, null),
+    /**
+     * 1.0.7 (lot 11) : propulseur a matiere noire : sur une fusee de tier 13, ouvre les trois systemes lointains (coque interstellaire de
+     * l'Ascenseur de Mars, moteur et capsule de matiere noire de l'Observatoire du Halo).
+     */
+    DARK_MATTER_DRIVE(0x8A5CFF, 1, null);
 
     /** Emplacements de modules d'une fusee de tier 13 (le maximum). */
     public static final int MAX_SLOTS = 9;

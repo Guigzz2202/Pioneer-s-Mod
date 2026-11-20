@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:phobetor_streak_ice"
+  },
+  "tip": {
+   "Name": "pioneers:phobetor_snow"
+  },
+  "min_height": 10,
+  "max_height": 24,
+  "radius": 2,
+  "elongation": 3.0
+ }
+}

@@ -80,6 +80,8 @@ public class DestinationScreen extends Screen {
     private final ResourceKey<Level> here;
     @Nullable
     private final RocketTier tier;
+    /** 1.0.7 (lot 11) : portee de la fusee (tier, ou 14 avec le propulseur a matiere noire). */
+    private final int reach;
     private final long openedAt = System.nanoTime();
     private final float[] starX = new float[STARS], starY = new float[STARS], starPhase = new float[STARS], starSize = new float[STARS];
     private final int[] starColor = new int[STARS];
@@ -120,10 +122,16 @@ public class DestinationScreen extends Screen {
     private final List<Object[]> hitboxes = new ArrayList<>();
 
     public DestinationScreen(ResourceKey<Level> here, double hereX, @Nullable RocketTier tier) {
+        this(here, hereX, tier, tier == null ? 0 : tier.level);
+    }
+
+    /** @param reach portee de la fusee ({@link RocketEntity#reachLevel} : un de plus avec le propulseur a matiere noire) */
+    public DestinationScreen(ResourceKey<Level> here, double hereX, @Nullable RocketTier tier, int reach) {
         super(PiLang.MAP_TITLE.translate());
         this.here = here;
         this.hereX = hereX;
         this.tier = tier;
+        this.reach = reach;
         Body origin = SolarSystem.origin(here, hereX);
         this.sector = origin == null ? Sector.SOL : origin.sector();
         RandomSource random = RandomSource.create(42);
@@ -143,7 +151,7 @@ public class DestinationScreen extends Screen {
     }
 
     public static void open(RocketEntity rocket) {
-        Minecraft.getInstance().setScreen(new DestinationScreen(rocket.level().dimension(), rocket.getX(), rocket.getTier()));
+        Minecraft.getInstance().setScreen(new DestinationScreen(rocket.level().dimension(), rocket.getX(), rocket.getTier(), rocket.reachLevel()));
     }
 
     private static ResourceLocation texture(Body body) {
@@ -166,11 +174,14 @@ public class DestinationScreen extends Screen {
     }
 
     private boolean reachable(Body body) {
-        return known(body) && body.isReachableFrom(here, hereX, tier);
+        return tier != null && known(body) && body.isReachableFrom(here, hereX, reach);
     }
 
     /** Astre decouvert par la recherche (ou celui ou l'on se trouve deja). */
     private boolean known(Body body) {
+        if (body.sector().far() && !sectorKnown(body.sector())) {
+            return false;
+        }
         return ClientResearch.isDiscovered(body) || containsHere(body);
     }
 
@@ -727,7 +738,11 @@ public class DestinationScreen extends Screen {
         PROXIMA(Body.PROXIMA, Body.PROXIMA, Body.PROXIMA, Body.PROXIMA_B, Body.PROXIMA_D),
         //TRAPPIST-1
         TRAPPIST_INNER(Body.TRAPPIST_1B, null, Body.TRAPPIST_1, Body.TRAPPIST_1B, Body.TRAPPIST_1C, Body.TRAPPIST_1D),
-        TRAPPIST_OUTER(Body.TRAPPIST_1F, null, Body.TRAPPIST_1E, Body.TRAPPIST_1F, Body.TRAPPIST_1G, Body.TRAPPIST_1H);
+        TRAPPIST_OUTER(Body.TRAPPIST_1F, null, Body.TRAPPIST_1E, Body.TRAPPIST_1F, Body.TRAPPIST_1G, Body.TRAPPIST_1H),
+        //1.0.7 (lot 11) : les trois systemes lointains
+        LICH(Body.LICH, null, Body.LICH, Body.DRAUGR, Body.POLTERGEIST, Body.PHOBETOR),
+        VAN_MAANEN(Body.VAN_MAANEN, null, Body.VAN_MAANEN, Body.VAN_MAANEN_B, Body.VAN_MAANEN_C, Body.VAN_MAANEN_D),
+        GAIA_BH1(Body.GAIA_BH1, null, Body.GAIA_BH1, Body.GAIA_BH1_B, Body.GAIA_BH1_C, Body.GAIA_BH1_D);
 
         final Body icon;
         @Nullable
@@ -1161,7 +1176,7 @@ public class DestinationScreen extends Screen {
         //Station orbitale de l'astre (recherche « Stations orbitales ») : amarrage, ou deploiement avec un kit
         if (stationButton) {
             Body origin = SolarSystem.origin(here, hereX);
-            boolean ok = Math.max(body.requiredTier(), origin == null ? 1 : origin.requiredTier()) <= tier.level
+            boolean ok = Math.max(body.requiredTier(), origin == null ? 1 : origin.requiredTier()) <= reach
                          && (!body.isStar() || ClientResearch.isCompleted(ResearchNode.SOLAR_ABSORPTION));
             int bx1 = departButton ? x1 - 86 : x1 - 8, bx0 = bx1 - 78, by0 = y0 + 13, by1 = y0 + 35;
             boolean hover = ok && mouseX >= bx0 && mouseX < bx1 && mouseY >= by0 && mouseY < by1;
@@ -1178,9 +1193,9 @@ public class DestinationScreen extends Screen {
         }
         if (megaButton) {
             Body origin = SolarSystem.origin(here, hereX);
-            boolean reach = Math.max(body.requiredTier(), origin == null ? 1 : origin.requiredTier()) <= tier.level;
+            boolean inReach = Math.max(body.requiredTier(), origin == null ? 1 : origin.requiredTier()) <= reach;
             boolean opened = !fr.pioneers.space.mega.client.MegaClient.opener(mega).isEmpty();
-            boolean ok = opened || reach;
+            boolean ok = opened || inReach;
             int bx1 = x1 - 8 - (departButton ? 78 : 0) - (stationButton ? 80 : 0), bx0 = bx1 - 88, by0 = y0 + 13, by1 = y0 + 35;
             boolean hover = ok && mouseX >= bx0 && mouseX < bx1 && mouseY >= by0 && mouseY < by1;
             int accent = 0xFF000000 | fr.pioneers.space.mega.Megastructures.color(mega);
@@ -1654,7 +1669,15 @@ public class DestinationScreen extends Screen {
     /** Systeme reconnu par les sondes (le systeme solaire l'est toujours). */
     private boolean sectorKnown(Sector s) {
         Body origin = SolarSystem.origin(here, hereX);
-        return s == Sector.SOL || ClientResearch.isDiscovered(s.root()) || origin != null && origin.sector() == s;
+        if (origin != null && origin.sector() == s) {
+            return true;
+        }
+        if (s.far()) {
+            //1.0.7 (lot 11) : la carte de densite du halo revele les trois systemes lointains
+            int halo = fr.pioneers.space.mega.Megastructures.byId("halo_observatory");
+            return halo >= 0 && fr.pioneers.space.mega.client.MegaClient.unlocked(halo);
+        }
+        return s == Sector.SOL || ClientResearch.isDiscovered(s.root());
     }
 
     /**
@@ -1779,7 +1802,7 @@ public class DestinationScreen extends Screen {
     /** Arc d'une route (courbe de Bezier) ; des impulsions lumineuses le parcourent vers la destination. */
     private void drawRoute(GuiGraphics graphics, float[] a, float[] b, Sector s) {
         boolean known = sectorKnown(s);
-        boolean reachable = tier != null && tier.level >= s.requiredTier;
+        boolean reachable = tier != null && reach >= s.requiredTier;
         float mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2;
         float dx = b[0] - a[0], dy = b[1] - a[1], len = Mth.sqrt(dx * dx + dy * dy);
         float cx = mx - dy / len * len * 0.18F, cy = my + dx / len * len * 0.18F;
@@ -1906,7 +1929,8 @@ public class DestinationScreen extends Screen {
         Component sub = s == Sector.SOL ? Component.translatable("map.pioneers.galaxy.home")
                                         : Component.translatable("map.pioneers.galaxy.distance", String.format("%.1f", s.lightYears()), s.requiredTier);
         Component hint = known ? null : Component.translatable("map.pioneers.galaxy.unknown", Component.translatable(
-              s == Sector.ALPHA_CENTAURI ? ResearchNode.CENTAURI_SURVEY.getTranslationKey() : ResearchNode.TRAPPIST_SURVEY.getTranslationKey()));
+              s.far() ? "mega.pioneers.halo_observatory"
+                      : s == Sector.ALPHA_CENTAURI ? ResearchNode.CENTAURI_SURVEY.getTranslationKey() : ResearchNode.TRAPPIST_SURVEY.getTranslationKey()));
         float subScale = 0.7F, hintScale = 0.6F;
         int w = Math.max(font.width(name), (int) (font.width(sub) * subScale));
         if (hint != null) {
@@ -1923,7 +1947,7 @@ public class DestinationScreen extends Screen {
         graphics.fill(x0, y0, x0 + w, y0 + 1, 0xFF000000 | (known ? s.color : 0x404858));
         graphics.fill(x0, y0 + h - 1, x0 + w, y0 + h, 0x40FFFFFF);
         graphics.drawCenteredString(font, name, Math.round(p[0]), y0 + 4, known ? 0xF0F4FF : 0x707884);
-        int subColor = s == Sector.SOL ? 0x8FB8D8 : tier != null && tier.level >= s.requiredTier ? 0x77FF99 : 0xFFAA44;
+        int subColor = s == Sector.SOL ? 0x8FB8D8 : tier != null && reach >= s.requiredTier ? 0x77FF99 : 0xFFAA44;
         smallText(graphics, sub, p[0] - font.width(sub) * subScale / 2, y0 + 15, 0xFF000000 | subColor, subScale);
         if (hint != null) {
             smallText(graphics, hint, p[0] - font.width(hint) * hintScale / 2, y0 + 24, 0xFF6A7280, hintScale);

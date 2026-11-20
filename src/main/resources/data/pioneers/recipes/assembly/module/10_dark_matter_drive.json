@@ -1,0 +1,33 @@
+{
+ "type": "pioneers:assembly",
+ "station": "module",
+ "pattern": [
+  "..........",
+  "..HHEEHH..",
+  "..SCDDCS..",
+  "...HEEH...",
+  ".........."
+ ],
+ "key": {
+  "H": {
+   "item": "pioneers:interstellar_hull"
+  },
+  "E": {
+   "item": "pioneers:dark_matter_engine"
+  },
+  "C": {
+   "item": "pioneers:dark_matter_capsule"
+  },
+  "D": {
+   "item": "pioneers:halo_density_map"
+  },
+  "S": {
+   "item": "pioneers:stellar_alloy_frame"
+  }
+ },
+ "result": {
+  "item": "pioneers:rocket_module_dark_matter_drive"
+ },
+ "energy": 80000000,
+ "duration": 600
+}

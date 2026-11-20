@@ -1,0 +1,28 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "electric_crucible",
+ "family": "vacuum_furnace",
+ "tier": 3,
+ "time": 120,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:crude_horizite"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 25
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:horizite_ingot",
+   "count": 1
+  }
+ ],
+ "temperature": 1700
+}

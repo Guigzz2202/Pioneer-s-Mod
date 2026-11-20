@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:pulsarite_plate",
+  "pioneers:pulsarite_rod",
+  "pioneers:pulsarite_billet"
+ ]
+}

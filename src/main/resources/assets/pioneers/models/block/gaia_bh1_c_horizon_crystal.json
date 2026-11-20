@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/cube_all",
+ "textures": {
+  "all": "pioneers:block/gaia_bh1_c_horizon_crystal"
+ }
+}

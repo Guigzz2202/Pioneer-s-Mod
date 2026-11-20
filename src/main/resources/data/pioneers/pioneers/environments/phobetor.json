@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:phobetor",
+ "gravity": 1.4,
+ "breathable": false,
+ "suit_tier": 4,
+ "hazard": "cold",
+ "nitrogen": 1,
+ "temperature": -210
+}

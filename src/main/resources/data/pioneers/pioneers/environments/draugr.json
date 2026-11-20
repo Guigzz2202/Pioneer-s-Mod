@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:draugr",
+ "gravity": 0.32,
+ "breathable": false,
+ "suit_tier": 4,
+ "hazard": "radiation",
+ "nitrogen": 0,
+ "temperature": 180
+}

@@ -27,6 +27,8 @@ public class ExoSkyEffects extends DimensionSpecialEffects {
 
     private final ExoSky sky;
     private final boolean foggy;
+    /** 1.0.7 (lot 11) : astre singulier du systeme (PhenomenonModels), ou -1. */
+    private int phenomenon = -1;
 
     public ExoSkyEffects(ExoSky sky, boolean foggy) {
         super(Float.NaN, true, SkyType.NONE, false, false);
@@ -64,6 +66,23 @@ public class ExoSkyEffects extends DimensionSpecialEffects {
                   ((Number) neighbors[i + 2]).doubleValue(), ((Number) neighbors[i + 3]).doubleValue()));
         }
         return new ExoSkyEffects(sky, false);
+    }
+
+    /**
+     * 1.0.7 (lot 11) : une planete d'un systeme lointain : l'astre singulier (pulsar, naine blanche, trou noir : {@code kind} de
+     * {@link fr.pioneers.space.sky.client.mega.PhenomenonModels}), en 3D autour de l'etoile du ciel (mobile, ou fixe a l'azimut et a la
+     * hauteur donnes si {@code fixed}), et les planetes voisines (nom, rayon, decalage horaire, declinaison).
+     */
+    public static ExoSkyEffects far(int kind, String star, int color, boolean fixed, double a, double c, boolean atmosphere, Object... neighbors) {
+        Obj main = fixed ? Obj.fixed(star, 0.05, true, color, a, c) : Obj.moving(star, 0.05, true, color, a, c);
+        ExoSky sky = new ExoSky(atmosphere, main.halo(1)).dayStars(0.8F);
+        for (int i = 0; i < neighbors.length; i += 4) {
+            sky.objects.add(Obj.moving((String) neighbors[i], ((Number) neighbors[i + 1]).doubleValue(), false, 0xFFFFFF,
+                  ((Number) neighbors[i + 2]).doubleValue(), ((Number) neighbors[i + 3]).doubleValue()));
+        }
+        ExoSkyEffects effects = new ExoSkyEffects(sky, false);
+        effects.phenomenon = kind;
+        return effects;
     }
 
     public static ExoSkyEffects gasGiant() {
@@ -105,6 +124,9 @@ public class ExoSkyEffects extends DimensionSpecialEffects {
         FogType fluid = camera.getFluidInCamera();
         if (fluid != FogType.LAVA && fluid != FogType.POWDER_SNOW) {
             sky.render(level, partialTick, poseStack, projection, camera.getPosition());
+            if (phenomenon >= 0) {
+                fr.pioneers.space.sky.client.MegaSkyRenderer.renderPhenomenon(level, phenomenon, partialTick, poseStack, sky);
+            }
             //1.0.7 (lots 7 et 8) : megastructures des geantes dans leur ciel (feux, anneaux, aurore, colonne), une fois debloquees
             fr.pioneers.space.mega.client.GiantMegaSky.render(level, partialTick, poseStack, sky);
         }

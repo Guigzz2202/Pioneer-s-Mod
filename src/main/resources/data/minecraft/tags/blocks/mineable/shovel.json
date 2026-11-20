@@ -59,6 +59,18 @@
   "pioneers:black_sand",
   "pioneers:ash_layer",
   "pioneers:tar_sand",
-  "pioneers:mushroom_substrate"
+  "pioneers:mushroom_substrate",
+  "pioneers:draugr_iron_dust",
+  "pioneers:poltergeist_ion_soil",
+  "pioneers:poltergeist_ash",
+  "pioneers:poltergeist_frost",
+  "pioneers:phobetor_snow",
+  "pioneers:van_maanen_b_graphite_sand",
+  "pioneers:van_maanen_c_filings",
+  "pioneers:van_maanen_d_nitrogen_snow",
+  "pioneers:gaia_bh1_b_soil",
+  "pioneers:gaia_bh1_b_glowmoss",
+  "pioneers:gaia_bh1_c_tidal_slag",
+  "pioneers:gaia_bh1_d_sand"
  ]
 }

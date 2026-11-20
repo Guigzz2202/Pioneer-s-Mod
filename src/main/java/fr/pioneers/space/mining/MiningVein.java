@@ -101,6 +101,16 @@ public enum MiningVein {
     EDENITE(Planet.TRAPPIST_1E, 5, 0x9A5AE0, "pioneers:raw_edenite", 1, 2, "pioneers:lapis", 0.3F, 45, 1.0F, "trappist_1e_slate_hills", 80),
     TRAPPIST_1E_LAPIS(Planet.TRAPPIST_1E, 3, 0x5A3AA8, "pioneers:lapis", 3, 6, "minecraft:amethyst_shard", 0.2F, 30, 1.1F, "trappist_1e_violet_meadows", 55),
     BOREALITE(Planet.TRAPPIST_1F, 5, 0x9AF0E8, "pioneers:raw_borealite", 1, 2, "pioneers:trappist_1f_blue_ice", 0.25F, 45, 1.0F, "trappist_1f_cryovolcanic_ridges", 80),
+    //1.0.7 (lot 11) : systemes lointains (un filon par planete ; le metal de son systeme en sous-produit ailleurs)
+    DRAUGR_IRON(Planet.DRAUGR, 5, 0x8C90A0, "minecraft:raw_iron", 3, 6, "pioneers:raw_pulsarite", 0.15F, 50, 1.1F, "draugr_magnetic_plains", 80),
+    PULSARITE(Planet.POLTERGEIST, 5, 0x7FD8FF, "pioneers:raw_pulsarite", 1, 2, "minecraft:amethyst_shard", 0.2F, 45, 1.0F, "poltergeist_storm_plains", 80),
+    PHOBETOR_ICE(Planet.PHOBETOR, 4, 0xA8C4DC, "minecraft:blue_ice", 2, 4, "pioneers:raw_pulsarite", 0.1F, 40, 1.2F, "phobetor_frozen_ridges", 70),
+    MAANENITE(Planet.VAN_MAANEN_B, 5, 0xE6F0FF, "pioneers:raw_maanenite", 1, 2, "minecraft:diamond", 0.1F, 45, 1.0F, "van_maanen_b_diamond_fields", 80),
+    VAN_MAANEN_C_IRON(Planet.VAN_MAANEN_C, 5, 0x8E7E70, "minecraft:raw_iron", 4, 8, "pioneers:raw_maanenite", 0.15F, 55, 1.2F, "van_maanen_c_iron_cliffs", 80),
+    VAN_MAANEN_D_ICE(Planet.VAN_MAANEN_D, 4, 0xBAD6E6, "minecraft:packed_ice", 2, 4, "pioneers:raw_maanenite", 0.1F, 40, 1.2F, "van_maanen_d_nitrogen_sheets", 70),
+    GAIA_BH1_B_CRYSTAL(Planet.GAIA_BH1_B, 5, 0x9A6AD0, "minecraft:amethyst_shard", 2, 4, "pioneers:raw_horizite", 0.15F, 45, 1.0F, "gaia_bh1_b_lensed_hills", 70),
+    HORIZITE(Planet.GAIA_BH1_C, 5, 0x6A3AB0, "pioneers:raw_horizite", 1, 2, "minecraft:magma_block", 0.2F, 45, 1.0F, "gaia_bh1_c_torn_crust", 80),
+    GAIA_BH1_D_SHARD(Planet.GAIA_BH1_D, 4, 0x4A7AB8, "minecraft:prismarine_shard", 2, 4, "pioneers:raw_horizite", 0.1F, 40, 1.1F, "gaia_bh1_d_rim_archipelago", 70),
     TRAPPIST_1F_ICE(Planet.TRAPPIST_1F, 3, 0x7AB8E8, "pioneers:trappist_1f_blue_ice", 1, 2, "minecraft:blue_ice", 0.2F, 30, 0.9F, "trappist_1f_ice_sheet", 60);
 
     public final Planet body;

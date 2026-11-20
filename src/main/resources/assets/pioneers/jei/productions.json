@@ -368,6 +368,29 @@
     ]
    },
    {
+    "title": "block.pioneers.beam_lichen",
+    "in": [
+     [
+      "pioneers:beam_lichen"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:beam_lichen_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:beam_scale",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.borealite_ore",
     "in": [
      [
@@ -1329,6 +1352,29 @@
     ]
    },
    {
+    "title": "block.pioneers.diamond_spire",
+    "in": [
+     [
+      "pioneers:diamond_spire"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:diamond_spire_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:carbon_needle",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.diogenite",
     "in": [
      [
@@ -1338,6 +1384,63 @@
     "out": [
      {
       "id": "pioneers:cobbled_diogenite",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.disk_bloom",
+    "in": [
+     [
+      "pioneers:disk_bloom"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:disk_bloom_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:disk_petal",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.draugr_glass_crust",
+    "in": [
+     [
+      "pioneers:draugr_glass_crust"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_trappist_1b_obsidian_crust",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.draugr_rock",
+    "in": [
+     [
+      "pioneers:draugr_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_trappist_1b_rock",
       "max": 1
      }
     ],
@@ -1524,6 +1627,29 @@
     ]
    },
    {
+    "title": "block.pioneers.filing_shrub",
+    "in": [
+     [
+      "pioneers:filing_shrub"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:filing_shrub_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:iron_berry",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.flare_thorn",
     "in": [
      [
@@ -1610,6 +1736,57 @@
     ]
    },
    {
+    "title": "block.pioneers.gaia_bh1_b_rock",
+    "in": [
+     [
+      "pioneers:gaia_bh1_b_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_trappist_1e_rock",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.gaia_bh1_c_rock",
+    "in": [
+     [
+      "pioneers:gaia_bh1_c_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_proxima_d_rock",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.gaia_bh1_d_rock",
+    "in": [
+     [
+      "pioneers:gaia_bh1_d_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_trappist_1d_rock",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.galena_outcrop",
     "in": [
      [
@@ -1667,6 +1844,29 @@
     ]
    },
    {
+    "title": "block.pioneers.glimmer_lantern",
+    "in": [
+     [
+      "pioneers:glimmer_lantern"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:glimmer_lantern_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:glimmer_fruit",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.gold_outcrop",
     "in": [
      [
@@ -1678,6 +1878,52 @@
       "id": "pioneers:gold_flake",
       "max": 2,
       "min": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.graphite_creeper",
+    "in": [
+     [
+      "pioneers:graphite_creeper"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:graphite_creeper_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:graphite_tendril",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.halo_berry_bush",
+    "in": [
+     [
+      "pioneers:halo_berry_bush"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:halo_berry_bush_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:halo_berry",
+      "max": 1,
+      "chance": 0.35
      }
     ],
     "lines": [
@@ -1737,6 +1983,23 @@
       "id": "pioneers:hematite_fragment",
       "max": 3,
       "min": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.horizite_ore",
+    "in": [
+     [
+      "pioneers:horizite_ore"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:raw_horizite",
+      "max": 1
      }
     ],
     "lines": [
@@ -1818,6 +2081,29 @@
     ]
    },
    {
+    "title": "block.pioneers.ion_reed",
+    "in": [
+     [
+      "pioneers:ion_reed"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:ion_reed_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:ion_pith",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.krakenite_ore",
     "in": [
      [
@@ -1852,6 +2138,29 @@
       "tip": [
        "jei.pioneers.prod.silk"
       ]
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.lens_kelp",
+    "in": [
+     [
+      "pioneers:lens_kelp"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:lens_kelp_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:lens_pearl",
+      "max": 1,
+      "chance": 0.35
      }
     ],
     "lines": [
@@ -1910,6 +2219,23 @@
     ]
    },
    {
+    "title": "block.pioneers.maanenite_ore",
+    "in": [
+     [
+      "pioneers:maanenite_ore"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:raw_maanenite",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.magma_bramble",
     "in": [
      [
@@ -1924,6 +2250,29 @@
      },
      {
       "id": "pioneers:volcanic_thorn",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.magnetic_thorn",
+    "in": [
+     [
+      "pioneers:magnetic_thorn"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:magnetic_thorn_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:lodestone_spine",
       "max": 1,
       "chance": 0.35
      }
@@ -2272,6 +2621,29 @@
     ]
    },
    {
+    "title": "block.pioneers.nitrogen_tuft",
+    "in": [
+     [
+      "pioneers:nitrogen_tuft"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:nitrogen_tuft_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:nitrogen_fluff",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.occator_bell",
     "in": [
      [
@@ -2589,6 +2961,23 @@
     ]
    },
    {
+    "title": "block.pioneers.phobetor_rock",
+    "in": [
+     [
+      "pioneers:phobetor_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_trappist_1f_rock",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.phobite_ore",
     "in": [
      [
@@ -2681,6 +3070,23 @@
     ]
    },
    {
+    "title": "block.pioneers.poltergeist_rock",
+    "in": [
+     [
+      "pioneers:poltergeist_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_proxima_rock",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.pomegranate_leaves",
     "in": [
      [
@@ -2739,6 +3145,46 @@
     ]
    },
    {
+    "title": "block.pioneers.pulsarite_ore",
+    "in": [
+     [
+      "pioneers:pulsarite_ore"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:raw_pulsarite",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.pulse_fern",
+    "in": [
+     [
+      "pioneers:pulse_fern"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:pulse_fern_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:pulse_frond",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.pyrrhite_ore",
     "in": [
      [
@@ -2756,6 +3202,29 @@
     ]
    },
    {
+    "title": "block.pioneers.rim_fern",
+    "in": [
+     [
+      "pioneers:rim_fern"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:rim_fern_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:rim_frond",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
     "title": "block.pioneers.ruachite_ore",
     "in": [
      [
@@ -2766,6 +3235,29 @@
      {
       "id": "pioneers:raw_ruachite",
       "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.rust_cap_mushroom",
+    "in": [
+     [
+      "pioneers:rust_cap_mushroom"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:rust_cap_mushroom_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:rust_cap",
+      "max": 1,
+      "chance": 0.35
      }
     ],
     "lines": [
@@ -2856,6 +3348,29 @@
      },
      {
       "id": "pioneers:silver_bean",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.snowglass_lily",
+    "in": [
+     [
+      "pioneers:snowglass_lily"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:snowglass_lily_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:snowglass_bulb",
       "max": 1,
       "chance": 0.35
      }
@@ -2959,6 +3474,52 @@
      },
      {
       "id": "pioneers:stickney_spores",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.storm_bell",
+    "in": [
+     [
+      "pioneers:storm_bell"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:storm_bell_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:storm_petal",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.stretched_vine",
+    "in": [
+     [
+      "pioneers:stretched_vine"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:stretched_vine_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:stretched_fiber",
       "max": 1,
       "chance": 0.35
      }
@@ -3228,6 +3789,29 @@
      },
      {
       "id": "pioneers:tholin_fiber",
+      "max": 1,
+      "chance": 0.35
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.tidal_cactus",
+    "in": [
+     [
+      "pioneers:tidal_cactus"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:tidal_cactus_seeds",
+      "max": 2,
+      "min": 1
+     },
+     {
+      "id": "pioneers:tidal_fig",
       "max": 1,
       "chance": 0.35
      }
@@ -3514,6 +4098,74 @@
     "out": [
      {
       "id": "pioneers:raw_valhallite",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.van_maanen_b_rock",
+    "in": [
+     [
+      "pioneers:van_maanen_b_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_proxima_d_rock",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.van_maanen_c_iron_crust",
+    "in": [
+     [
+      "pioneers:van_maanen_c_iron_crust"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_trappist_1b_obsidian_crust",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.van_maanen_c_rock",
+    "in": [
+     [
+      "pioneers:van_maanen_c_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_trappist_1b_rock",
+      "max": 1
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.drops.hint"
+    ]
+   },
+   {
+    "title": "block.pioneers.van_maanen_d_rock",
+    "in": [
+     [
+      "pioneers:van_maanen_d_rock"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:cobbled_trappist_1f_rock",
       "max": 1
      }
     ],
@@ -3820,6 +4472,39 @@
    {
     "title": [
      "jei.pioneers.prod.world.title",
+     "@solar.pioneers.draugr"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:beam_lichen"
+     },
+     {
+      "id": "pioneers:draugr_glass_crust"
+     },
+     {
+      "id": "pioneers:draugr_iron_dust"
+     },
+     {
+      "id": "pioneers:draugr_rock"
+     },
+     {
+      "id": "pioneers:magnetic_thorn"
+     },
+     {
+      "id": "pioneers:rock_meteorite"
+     },
+     {
+      "id": "pioneers:volcanic_meteorite"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
      "@solar.pioneers.enceladus"
     ],
     "in": [],
@@ -3883,6 +4568,114 @@
      },
      {
       "id": "pioneers:ice_meteorite"
+     },
+     {
+      "id": "pioneers:rock_meteorite"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
+     "@solar.pioneers.gaia_bh1_b"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:disk_bloom"
+     },
+     {
+      "id": "pioneers:gaia_bh1_b_glowmoss"
+     },
+     {
+      "id": "pioneers:gaia_bh1_b_lens_cap"
+     },
+     {
+      "id": "pioneers:gaia_bh1_b_lens_stem"
+     },
+     {
+      "id": "pioneers:gaia_bh1_b_rock"
+     },
+     {
+      "id": "pioneers:gaia_bh1_b_soil"
+     },
+     {
+      "id": "pioneers:halo_berry_bush"
+     },
+     {
+      "id": "pioneers:ice_meteorite"
+     },
+     {
+      "id": "pioneers:rock_meteorite"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
+     "@solar.pioneers.gaia_bh1_c"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:gaia_bh1_c_horizon_crystal"
+     },
+     {
+      "id": "pioneers:gaia_bh1_c_rock"
+     },
+     {
+      "id": "pioneers:gaia_bh1_c_tidal_slag"
+     },
+     {
+      "id": "pioneers:horizite_ore"
+     },
+     {
+      "id": "pioneers:iron_meteorite"
+     },
+     {
+      "id": "pioneers:stretched_vine"
+     },
+     {
+      "id": "pioneers:tidal_cactus"
+     },
+     {
+      "id": "pioneers:volcanic_meteorite"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
+     "@solar.pioneers.gaia_bh1_d"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:gaia_bh1_d_rock"
+     },
+     {
+      "id": "pioneers:gaia_bh1_d_sand"
+     },
+     {
+      "id": "pioneers:gaia_bh1_d_shale"
+     },
+     {
+      "id": "pioneers:ice_meteorite"
+     },
+     {
+      "id": "pioneers:lens_kelp"
+     },
+     {
+      "id": "pioneers:rim_fern"
      },
      {
       "id": "pioneers:rock_meteorite"
@@ -4372,6 +5165,39 @@
    {
     "title": [
      "jei.pioneers.prod.world.title",
+     "@solar.pioneers.phobetor"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:glimmer_lantern"
+     },
+     {
+      "id": "pioneers:ice_meteorite"
+     },
+     {
+      "id": "pioneers:phobetor_pulse_ice"
+     },
+     {
+      "id": "pioneers:phobetor_rock"
+     },
+     {
+      "id": "pioneers:phobetor_snow"
+     },
+     {
+      "id": "pioneers:phobetor_streak_ice"
+     },
+     {
+      "id": "pioneers:pulse_fern"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
      "@solar.pioneers.phobos"
     ],
     "in": [],
@@ -4444,6 +5270,66 @@
      },
      {
       "id": "pioneers:tholin_sedge"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
+     "@solar.pioneers.poltergeist"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:ice_meteorite"
+     },
+     {
+      "id": "pioneers:ion_reed"
+     },
+     {
+      "id": "pioneers:iron_meteorite"
+     },
+     {
+      "id": "pioneers:poltergeist_ash"
+     },
+     {
+      "id": "pioneers:poltergeist_frost"
+     },
+     {
+      "id": "pioneers:poltergeist_ion_soil"
+     },
+     {
+      "id": "pioneers:poltergeist_rock"
+     },
+     {
+      "id": "pioneers:poltergeist_storm_ice"
+     },
+     {
+      "id": "pioneers:pulsarite_ore"
+     },
+     {
+      "id": "pioneers:rock_meteorite"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
+     "@solar.pioneers.poltergeist"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:storm_bell"
+     },
+     {
+      "id": "pioneers:volcanic_meteorite"
      }
     ],
     "lines": [
@@ -4873,6 +5759,108 @@
      },
      {
       "id": "pioneers:uranus_haze"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
+     "@solar.pioneers.van_maanen_b"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:diamond_spire"
+     },
+     {
+      "id": "pioneers:graphite_creeper"
+     },
+     {
+      "id": "pioneers:iron_meteorite"
+     },
+     {
+      "id": "pioneers:maanenite_ore"
+     },
+     {
+      "id": "pioneers:van_maanen_b_diamond_crystal"
+     },
+     {
+      "id": "pioneers:van_maanen_b_graphite_sand"
+     },
+     {
+      "id": "pioneers:van_maanen_b_rock"
+     },
+     {
+      "id": "pioneers:volcanic_meteorite"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
+     "@solar.pioneers.van_maanen_c"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:filing_shrub"
+     },
+     {
+      "id": "pioneers:rock_meteorite"
+     },
+     {
+      "id": "pioneers:rust_cap_mushroom"
+     },
+     {
+      "id": "pioneers:van_maanen_c_filings"
+     },
+     {
+      "id": "pioneers:van_maanen_c_iron_crust"
+     },
+     {
+      "id": "pioneers:van_maanen_c_rock"
+     },
+     {
+      "id": "pioneers:volcanic_meteorite"
+     }
+    ],
+    "lines": [
+     "jei.pioneers.prod.world.body"
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.prod.world.title",
+     "@solar.pioneers.van_maanen_d"
+    ],
+    "in": [],
+    "out": [
+     {
+      "id": "pioneers:ice_meteorite"
+     },
+     {
+      "id": "pioneers:nitrogen_tuft"
+     },
+     {
+      "id": "pioneers:snowglass_lily"
+     },
+     {
+      "id": "pioneers:van_maanen_d_fallen_ice"
+     },
+     {
+      "id": "pioneers:van_maanen_d_nitrogen_ice"
+     },
+     {
+      "id": "pioneers:van_maanen_d_nitrogen_snow"
+     },
+     {
+      "id": "pioneers:van_maanen_d_rock"
      }
     ],
     "lines": [
@@ -11423,6 +12411,1080 @@
      [
       "jei.pioneers.wild.greenhouse.genes",
       "-62"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.draugr"
+    ],
+    "in": [
+     [
+      "pioneers:beam_lichen"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:beam_lichen_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:beam_scale",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.draugr",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.draugr"
+    ],
+    "in": [
+     [
+      "pioneers:beam_lichen_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:beam_scale",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.draugr"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "180"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.draugr"
+    ],
+    "in": [
+     [
+      "pioneers:magnetic_thorn"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:magnetic_thorn_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:lodestone_spine",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.draugr",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.draugr"
+    ],
+    "in": [
+     [
+      "pioneers:magnetic_thorn_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:lodestone_spine",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.draugr"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "180"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.poltergeist"
+    ],
+    "in": [
+     [
+      "pioneers:storm_bell"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:storm_bell_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:storm_petal",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.poltergeist",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.poltergeist"
+    ],
+    "in": [
+     [
+      "pioneers:storm_bell_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:storm_petal",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.poltergeist"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-40"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.poltergeist"
+    ],
+    "in": [
+     [
+      "pioneers:ion_reed"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:ion_reed_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:ion_pith",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.poltergeist",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.poltergeist"
+    ],
+    "in": [
+     [
+      "pioneers:ion_reed_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:ion_pith",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.poltergeist"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-40"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.phobetor"
+    ],
+    "in": [
+     [
+      "pioneers:pulse_fern"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:pulse_fern_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:pulse_frond",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.phobetor",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.phobetor"
+    ],
+    "in": [
+     [
+      "pioneers:pulse_fern_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:pulse_frond",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.phobetor"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-210"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.phobetor"
+    ],
+    "in": [
+     [
+      "pioneers:glimmer_lantern"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:glimmer_lantern_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:glimmer_fruit",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.phobetor",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.phobetor"
+    ],
+    "in": [
+     [
+      "pioneers:glimmer_lantern_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:glimmer_fruit",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.phobetor"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-210"
+     ],
+     [
+      "jei.pioneers.wild.food",
+      "4"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.van_maanen_b"
+    ],
+    "in": [
+     [
+      "pioneers:diamond_spire"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:diamond_spire_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:carbon_needle",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.van_maanen_b",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.van_maanen_b"
+    ],
+    "in": [
+     [
+      "pioneers:diamond_spire_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:carbon_needle",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.van_maanen_b"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "90"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.van_maanen_b"
+    ],
+    "in": [
+     [
+      "pioneers:graphite_creeper"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:graphite_creeper_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:graphite_tendril",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.van_maanen_b",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.van_maanen_b"
+    ],
+    "in": [
+     [
+      "pioneers:graphite_creeper_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:graphite_tendril",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.van_maanen_b"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "90"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.van_maanen_c"
+    ],
+    "in": [
+     [
+      "pioneers:filing_shrub"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:filing_shrub_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:iron_berry",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.van_maanen_c",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.van_maanen_c"
+    ],
+    "in": [
+     [
+      "pioneers:filing_shrub_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:iron_berry",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.van_maanen_c"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-60"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.van_maanen_c"
+    ],
+    "in": [
+     [
+      "pioneers:rust_cap_mushroom"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:rust_cap_mushroom_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:rust_cap",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.van_maanen_c",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.van_maanen_c"
+    ],
+    "in": [
+     [
+      "pioneers:rust_cap_mushroom_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:rust_cap",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.van_maanen_c"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-60"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.van_maanen_d"
+    ],
+    "in": [
+     [
+      "pioneers:snowglass_lily"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:snowglass_lily_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:snowglass_bulb",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.van_maanen_d",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.van_maanen_d"
+    ],
+    "in": [
+     [
+      "pioneers:snowglass_lily_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:snowglass_bulb",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.van_maanen_d"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-225"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.van_maanen_d"
+    ],
+    "in": [
+     [
+      "pioneers:nitrogen_tuft"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:nitrogen_tuft_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:nitrogen_fluff",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.van_maanen_d",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.van_maanen_d"
+    ],
+    "in": [
+     [
+      "pioneers:nitrogen_tuft_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:nitrogen_fluff",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.van_maanen_d"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-225"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.gaia_bh1_b"
+    ],
+    "in": [
+     [
+      "pioneers:disk_bloom"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:disk_bloom_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:disk_petal",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.gaia_bh1_b",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.gaia_bh1_b"
+    ],
+    "in": [
+     [
+      "pioneers:disk_bloom_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:disk_petal",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.gaia_bh1_b"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "30"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.gaia_bh1_b"
+    ],
+    "in": [
+     [
+      "pioneers:halo_berry_bush"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:halo_berry_bush_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:halo_berry",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.gaia_bh1_b",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.gaia_bh1_b"
+    ],
+    "in": [
+     [
+      "pioneers:halo_berry_bush_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:halo_berry",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.gaia_bh1_b"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "30"
+     ],
+     [
+      "jei.pioneers.wild.food",
+      "5"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.gaia_bh1_c"
+    ],
+    "in": [
+     [
+      "pioneers:tidal_cactus"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:tidal_cactus_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:tidal_fig",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.gaia_bh1_c",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.gaia_bh1_c"
+    ],
+    "in": [
+     [
+      "pioneers:tidal_cactus_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:tidal_fig",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.gaia_bh1_c"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "420"
+     ],
+     [
+      "jei.pioneers.wild.food",
+      "5"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.gaia_bh1_c"
+    ],
+    "in": [
+     [
+      "pioneers:stretched_vine"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:stretched_vine_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:stretched_fiber",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.gaia_bh1_c",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.gaia_bh1_c"
+    ],
+    "in": [
+     [
+      "pioneers:stretched_vine_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:stretched_fiber",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.gaia_bh1_c"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "420"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.gaia_bh1_d"
+    ],
+    "in": [
+     [
+      "pioneers:lens_kelp"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:lens_kelp_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:lens_pearl",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.gaia_bh1_d",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.gaia_bh1_d"
+    ],
+    "in": [
+     [
+      "pioneers:lens_kelp_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:lens_pearl",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.gaia_bh1_d"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-5"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.plant.title",
+     "@solar.pioneers.gaia_bh1_d"
+    ],
+    "in": [
+     [
+      "pioneers:rim_fern"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:rim_fern_seeds",
+      "max": 2
+     },
+     {
+      "id": "pioneers:rim_frond",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.plant",
+      "@solar.pioneers.gaia_bh1_d",
+      "35"
+     ]
+    ]
+   },
+   {
+    "title": [
+     "jei.pioneers.wild.greenhouse.title",
+     "@solar.pioneers.gaia_bh1_d"
+    ],
+    "in": [
+     [
+      "pioneers:rim_fern_seeds"
+     ],
+     [
+      "pioneers:hydroponic_substrate"
+     ]
+    ],
+    "out": [
+     {
+      "id": "pioneers:rim_frond",
+      "max": 1
+     }
+    ],
+    "lines": [
+     [
+      "jei.pioneers.wild.greenhouse",
+      "@solar.pioneers.gaia_bh1_d"
+     ],
+     "jei.pioneers.wild.greenhouse.turtle",
+     [
+      "jei.pioneers.wild.greenhouse.genes",
+      "-5"
      ]
     ]
    }

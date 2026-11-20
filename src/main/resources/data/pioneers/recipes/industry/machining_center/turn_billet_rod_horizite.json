@@ -1,0 +1,29 @@
+{
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
+ "type": "pioneers:industrial",
+ "machine": "machining_center",
+ "tier": 3,
+ "time": 640,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:horizite_billet"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:horizite_rod",
+   "count": 16
+  },
+  {
+   "item": "pioneers:horizite_nugget",
+   "count": 9
+  }
+ ]
+}

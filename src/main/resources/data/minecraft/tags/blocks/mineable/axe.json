@@ -241,6 +241,8 @@
   "pioneers:archive_bin",
   "pioneers:warehouse_inlet",
   "pioneers:warehouse_outlet",
-  "pioneers:bag_interface"
+  "pioneers:bag_interface",
+  "pioneers:gaia_bh1_b_lens_stem",
+  "pioneers:gaia_bh1_b_lens_cap"
  ]
 }

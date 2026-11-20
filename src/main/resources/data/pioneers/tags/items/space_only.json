@@ -162,6 +162,18 @@
    "required": false
   },
   {
+   "id": "pioneers:beam_lichen",
+   "required": false
+  },
+  {
+   "id": "pioneers:beam_lichen_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:beam_scale",
+   "required": false
+  },
+  {
    "id": "pioneers:bell_fruit",
    "required": false
   },
@@ -295,6 +307,10 @@
   },
   {
    "id": "pioneers:carbon_fuselage_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:carbon_needle",
    "required": false
   },
   {
@@ -622,10 +638,6 @@
    "required": false
   },
   {
-   "id": "pioneers:cobbled_proxima_rock",
-   "required": false
-  },
-  {
    "id": "pioneers:cobbled_tessera_rock",
    "required": false
   },
@@ -782,6 +794,10 @@
    "required": false
   },
   {
+   "id": "pioneers:crude_horizite",
+   "required": false
+  },
+  {
    "id": "pioneers:crude_hygeite",
    "required": false
   },
@@ -795,6 +811,10 @@
   },
   {
    "id": "pioneers:crude_lunarium",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_maanenite",
    "required": false
   },
   {
@@ -819,6 +839,10 @@
   },
   {
    "id": "pioneers:crude_phobite",
+   "required": false
+  },
+  {
+   "id": "pioneers:crude_pulsarite",
    "required": false
   },
   {
@@ -1058,11 +1082,43 @@
    "required": false
   },
   {
+   "id": "pioneers:diamond_spire",
+   "required": false
+  },
+  {
+   "id": "pioneers:diamond_spire_seeds",
+   "required": false
+  },
+  {
    "id": "pioneers:diogenite",
    "required": false
   },
   {
    "id": "pioneers:direct_converter",
+   "required": false
+  },
+  {
+   "id": "pioneers:disk_bloom",
+   "required": false
+  },
+  {
+   "id": "pioneers:disk_bloom_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:disk_petal",
+   "required": false
+  },
+  {
+   "id": "pioneers:draugr_glass_crust",
+   "required": false
+  },
+  {
+   "id": "pioneers:draugr_iron_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:draugr_rock",
    "required": false
   },
   {
@@ -1362,7 +1418,19 @@
    "required": false
   },
   {
+   "id": "pioneers:filing_shrub",
+   "required": false
+  },
+  {
+   "id": "pioneers:filing_shrub_seeds",
+   "required": false
+  },
+  {
    "id": "pioneers:first_wall_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:flare_charged_cell",
    "required": false
   },
   {
@@ -1478,6 +1546,50 @@
    "required": false
   },
   {
+   "id": "pioneers:gaia_bh1_b_glowmoss",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_b_lens_cap",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_b_lens_stem",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_b_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_b_soil",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_c_horizon_crystal",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_c_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_c_tidal_slag",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_d_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_d_sand",
+   "required": false
+  },
+  {
+   "id": "pioneers:gaia_bh1_d_shale",
+   "required": false
+  },
+  {
    "id": "pioneers:ganymede_bright_ice",
    "required": false
   },
@@ -1530,11 +1642,35 @@
    "required": false
   },
   {
+   "id": "pioneers:glimmer_fruit",
+   "required": false
+  },
+  {
+   "id": "pioneers:glimmer_lantern",
+   "required": false
+  },
+  {
+   "id": "pioneers:glimmer_lantern_seeds",
+   "required": false
+  },
+  {
    "id": "pioneers:glowcap_cap",
    "required": false
   },
   {
    "id": "pioneers:glowcap_stem",
+   "required": false
+  },
+  {
+   "id": "pioneers:graphite_creeper",
+   "required": false
+  },
+  {
+   "id": "pioneers:graphite_creeper_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:graphite_tendril",
    "required": false
   },
   {
@@ -1547,6 +1683,18 @@
   },
   {
    "id": "pioneers:greenhouse_port",
+   "required": false
+  },
+  {
+   "id": "pioneers:halo_berry",
+   "required": false
+  },
+  {
+   "id": "pioneers:halo_berry_bush",
+   "required": false
+  },
+  {
+   "id": "pioneers:halo_berry_bush_seeds",
    "required": false
   },
   {
@@ -1587,6 +1735,34 @@
   },
   {
    "id": "pioneers:holographic_projector",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_salts",
    "required": false
   },
   {
@@ -1714,11 +1890,27 @@
    "required": false
   },
   {
+   "id": "pioneers:ion_pith",
+   "required": false
+  },
+  {
+   "id": "pioneers:ion_reed",
+   "required": false
+  },
+  {
+   "id": "pioneers:ion_reed_seeds",
+   "required": false
+  },
+  {
    "id": "pioneers:iridium_chloride_liquor_bucket",
    "required": false
   },
   {
    "id": "pioneers:iridium_crucible",
+   "required": false
+  },
+  {
+   "id": "pioneers:iron_berry",
    "required": false
   },
   {
@@ -1806,11 +1998,27 @@
    "required": false
   },
   {
+   "id": "pioneers:lens_kelp",
+   "required": false
+  },
+  {
+   "id": "pioneers:lens_kelp_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:lens_pearl",
+   "required": false
+  },
+  {
    "id": "pioneers:life_support_unit",
    "required": false
   },
   {
    "id": "pioneers:liquid_helium_dewar",
+   "required": false
+  },
+  {
+   "id": "pioneers:lodestone_spine",
    "required": false
   },
   {
@@ -1966,6 +2174,30 @@
    "required": false
   },
   {
+   "id": "pioneers:maanenite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:maanenite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:maanenite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:maanenite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:maanenite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:maanenite_ore",
+   "required": false
+  },
+  {
    "id": "pioneers:machine_frame_ultimate",
    "required": false
   },
@@ -1975,6 +2207,14 @@
   },
   {
    "id": "pioneers:magma_bramble_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:magnetic_thorn",
+   "required": false
+  },
+  {
+   "id": "pioneers:magnetic_thorn_seeds",
    "required": false
   },
   {
@@ -2698,11 +2938,23 @@
    "required": false
   },
   {
+   "id": "pioneers:nitrogen_fluff",
+   "required": false
+  },
+  {
    "id": "pioneers:nitrogen_spire",
    "required": false
   },
   {
    "id": "pioneers:nitrogen_spire_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitrogen_tuft",
+   "required": false
+  },
+  {
+   "id": "pioneers:nitrogen_tuft_seeds",
    "required": false
   },
   {
@@ -3027,6 +3279,22 @@
   },
   {
    "id": "pioneers:pgm_chloride_liquor_bucket",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobetor_pulse_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobetor_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobetor_snow",
+   "required": false
+  },
+  {
+   "id": "pioneers:phobetor_streak_ice",
    "required": false
   },
   {
@@ -3566,6 +3834,26 @@
    "required": false
   },
   {
+   "id": "pioneers:poltergeist_ash",
+   "required": false
+  },
+  {
+   "id": "pioneers:poltergeist_frost",
+   "required": false
+  },
+  {
+   "id": "pioneers:poltergeist_ion_soil",
+   "required": false
+  },
+  {
+   "id": "pioneers:poltergeist_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:poltergeist_storm_ice",
+   "required": false
+  },
+  {
    "id": "pioneers:proxima_d_rock",
    "required": false
   },
@@ -3607,6 +3895,42 @@
   },
   {
    "id": "pioneers:proxima_twilight_soil",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsarite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsarite_concentrate",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsarite_dust",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsarite_ingot",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsarite_nugget",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsarite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulse_fern",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulse_fern_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulse_frond",
    "required": false
   },
   {
@@ -3722,6 +4046,14 @@
    "required": false
   },
   {
+   "id": "pioneers:raw_horizite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_horizite_block",
+   "required": false
+  },
+  {
    "id": "pioneers:raw_hygeite",
    "required": false
   },
@@ -3751,6 +4083,14 @@
   },
   {
    "id": "pioneers:raw_lunarium_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_maanenite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_maanenite_block",
    "required": false
   },
   {
@@ -3807,6 +4147,14 @@
   },
   {
    "id": "pioneers:raw_phobite_block",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_pulsarite",
+   "required": false
+  },
+  {
+   "id": "pioneers:raw_pulsarite_block",
    "required": false
   },
   {
@@ -3918,6 +4266,18 @@
    "required": false
   },
   {
+   "id": "pioneers:rim_fern",
+   "required": false
+  },
+  {
+   "id": "pioneers:rim_fern_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:rim_frond",
+   "required": false
+  },
+  {
    "id": "pioneers:robotic_bay",
    "required": false
   },
@@ -3967,6 +4327,10 @@
   },
   {
    "id": "pioneers:rock_meteorite",
+   "required": false
+  },
+  {
+   "id": "pioneers:rocket_module_dark_matter_drive",
    "required": false
   },
   {
@@ -4131,6 +4495,18 @@
   },
   {
    "id": "pioneers:ruachite_salts",
+   "required": false
+  },
+  {
+   "id": "pioneers:rust_cap",
+   "required": false
+  },
+  {
+   "id": "pioneers:rust_cap_mushroom",
+   "required": false
+  },
+  {
+   "id": "pioneers:rust_cap_mushroom_seeds",
    "required": false
   },
   {
@@ -4355,6 +4731,18 @@
   },
   {
    "id": "pioneers:smooth_vesta_basalt_stairs",
+   "required": false
+  },
+  {
+   "id": "pioneers:snowglass_bulb",
+   "required": false
+  },
+  {
+   "id": "pioneers:snowglass_lily",
+   "required": false
+  },
+  {
+   "id": "pioneers:snowglass_lily_seeds",
    "required": false
   },
   {
@@ -4634,7 +5022,31 @@
    "required": false
   },
   {
+   "id": "pioneers:storm_bell",
+   "required": false
+  },
+  {
+   "id": "pioneers:storm_bell_seeds",
+   "required": false
+  },
+  {
    "id": "pioneers:storm_cloud",
+   "required": false
+  },
+  {
+   "id": "pioneers:storm_petal",
+   "required": false
+  },
+  {
+   "id": "pioneers:stretched_fiber",
+   "required": false
+  },
+  {
+   "id": "pioneers:stretched_vine",
+   "required": false
+  },
+  {
+   "id": "pioneers:stretched_vine_seeds",
    "required": false
   },
   {
@@ -4927,6 +5339,22 @@
   },
   {
    "id": "pioneers:tidal_bioreactor_cell",
+   "required": false
+  },
+  {
+   "id": "pioneers:tidal_cactus",
+   "required": false
+  },
+  {
+   "id": "pioneers:tidal_cactus_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:tidal_culture",
+   "required": false
+  },
+  {
+   "id": "pioneers:tidal_fig",
    "required": false
   },
   {
@@ -5670,6 +6098,46 @@
    "required": false
   },
   {
+   "id": "pioneers:van_maanen_b_diamond_crystal",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_b_graphite_sand",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_b_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_c_filings",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_c_iron_crust",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_c_rock",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_d_fallen_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_d_nitrogen_ice",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_d_nitrogen_snow",
+   "required": false
+  },
+  {
+   "id": "pioneers:van_maanen_d_rock",
+   "required": false
+  },
+  {
    "id": "pioneers:venus_ash",
    "required": false
   },
@@ -5920,6 +6388,15 @@
   {
    "id": "pioneers:zone_planner",
    "required": false
-  }
+  },
+  "pioneers:pulsarite_plate",
+  "pioneers:pulsarite_rod",
+  "pioneers:pulsarite_billet",
+  "pioneers:maanenite_plate",
+  "pioneers:maanenite_rod",
+  "pioneers:maanenite_billet",
+  "pioneers:horizite_plate",
+  "pioneers:horizite_rod",
+  "pioneers:horizite_billet"
  ]
 }

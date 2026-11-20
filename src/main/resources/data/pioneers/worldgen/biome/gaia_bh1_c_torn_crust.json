@@ -1,0 +1,56 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 3807764,
+  "fog_color": 2363404,
+  "water_color": 4159204,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.exoplanet",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:gaia_bh1_c_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [
+   "pioneers:crater_rare"
+  ],
+  [],
+  [
+   "pioneers:gaia_bh1_c_crystal_spires"
+  ],
+  [],
+  [
+   "pioneers:horizite_ore",
+   "pioneers:horizite_ore_rich"
+  ],
+  [],
+  [],
+  [
+   "pioneers:meteorite_volcanic_rare",
+   "pioneers:tidal_cactus",
+   "pioneers:stretched_vine"
+  ],
+  [
+   "pioneers:gaia_bh1_c_fluid_cleanup"
+  ]
+ ]
+}

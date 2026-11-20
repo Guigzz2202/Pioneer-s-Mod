@@ -1,0 +1,53 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 1583690,
+  "fog_color": 1055796,
+  "water_color": 3037864,
+  "water_fog_color": 662074,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.exoplanet",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:gaia_bh1_d_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "pioneers:gaia_bh1_d_shale_patches"
+  ],
+  [],
+  [],
+  [
+   "pioneers:boulder_rare",
+   "pioneers:lens_kelp",
+   "pioneers:rim_fern",
+   "pioneers:meteorite_rock_rare",
+   "pioneers:meteorite_ice_rare"
+  ],
+  [
+   "pioneers:gaia_bh1_d_fluid_cleanup"
+  ]
+ ]
+}

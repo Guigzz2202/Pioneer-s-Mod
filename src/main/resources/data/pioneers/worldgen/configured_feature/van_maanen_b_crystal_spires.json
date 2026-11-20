@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:van_maanen_b_diamond_crystal"
+  },
+  "tip": {
+   "Name": "pioneers:van_maanen_b_diamond_crystal"
+  },
+  "min_height": 4,
+  "max_height": 9,
+  "radius": 1,
+  "elongation": 1.5
+ }
+}

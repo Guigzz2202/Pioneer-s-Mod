@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pioneers:item/plants/rust_cap_mushroom_plant"
+  }
+}

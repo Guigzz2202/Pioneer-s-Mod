@@ -1,0 +1,58 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 2502730,
+  "fog_color": 1712176,
+  "water_color": 4159204,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.exoplanet",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:draugr_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [
+   "pioneers:crater"
+  ],
+  [],
+  [
+   "pioneers:draugr_spires"
+  ],
+  [],
+  [
+   "pioneers:draugr_glass_patches"
+  ],
+  [],
+  [],
+  [
+   "pioneers:boulder_field",
+   "pioneers:meteorite_volcanic_common",
+   "pioneers:boulder",
+   "pioneers:beam_lichen",
+   "pioneers:magnetic_thorn",
+   "pioneers:meteorite_rock"
+  ],
+  [
+   "pioneers:draugr_fluid_cleanup"
+  ]
+ ]
+}

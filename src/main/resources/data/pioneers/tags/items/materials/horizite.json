@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:horizite_plate",
+  "pioneers:horizite_rod",
+  "pioneers:horizite_billet"
+ ]
+}

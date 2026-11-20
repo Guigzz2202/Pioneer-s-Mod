@@ -60,6 +60,24 @@
   "pioneers:cinder_cactus_seeds",
   "pioneers:tide_kelp_seeds",
   "pioneers:eden_berry_bush_seeds",
-  "pioneers:frost_bell_seeds"
+  "pioneers:frost_bell_seeds",
+  "pioneers:beam_lichen_seeds",
+  "pioneers:magnetic_thorn_seeds",
+  "pioneers:storm_bell_seeds",
+  "pioneers:ion_reed_seeds",
+  "pioneers:pulse_fern_seeds",
+  "pioneers:glimmer_lantern_seeds",
+  "pioneers:diamond_spire_seeds",
+  "pioneers:graphite_creeper_seeds",
+  "pioneers:filing_shrub_seeds",
+  "pioneers:rust_cap_mushroom_seeds",
+  "pioneers:snowglass_lily_seeds",
+  "pioneers:nitrogen_tuft_seeds",
+  "pioneers:disk_bloom_seeds",
+  "pioneers:halo_berry_bush_seeds",
+  "pioneers:tidal_cactus_seeds",
+  "pioneers:stretched_vine_seeds",
+  "pioneers:lens_kelp_seeds",
+  "pioneers:rim_fern_seeds"
  ]
 }

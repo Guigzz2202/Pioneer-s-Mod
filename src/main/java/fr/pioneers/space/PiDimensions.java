@@ -49,6 +49,16 @@ public final class PiDimensions {
     public static final ResourceKey<Level> TRAPPIST_1D = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("trappist_1d"));
     public static final ResourceKey<Level> TRAPPIST_1E = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("trappist_1e"));
     public static final ResourceKey<Level> TRAPPIST_1F = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("trappist_1f"));
+    //1.0.7 (lot 11) : planetes des trois systemes lointains
+    public static final ResourceKey<Level> DRAUGR = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("draugr"));
+    public static final ResourceKey<Level> POLTERGEIST = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("poltergeist"));
+    public static final ResourceKey<Level> PHOBETOR = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("phobetor"));
+    public static final ResourceKey<Level> VAN_MAANEN_B = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("van_maanen_b"));
+    public static final ResourceKey<Level> VAN_MAANEN_C = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("van_maanen_c"));
+    public static final ResourceKey<Level> VAN_MAANEN_D = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("van_maanen_d"));
+    public static final ResourceKey<Level> GAIA_BH1_B = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("gaia_bh1_b"));
+    public static final ResourceKey<Level> GAIA_BH1_C = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("gaia_bh1_c"));
+    public static final ResourceKey<Level> GAIA_BH1_D = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("gaia_bh1_d"));
     /** Orbite : les stations orbitales de tous les astres (une region par astre). */
     public static final ResourceKey<Level> ORBIT = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("orbit"));
 

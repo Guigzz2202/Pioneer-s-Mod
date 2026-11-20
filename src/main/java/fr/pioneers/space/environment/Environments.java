@@ -93,6 +93,12 @@ public final class Environments extends SimpleJsonResourceReloadListener {
             case TRAPPIST_1D -> 1.1;
             case TRAPPIST_1E -> 0.9;
             case TRAPPIST_1F -> 0.35;
+            //1.0.7 (lot 11) : systemes lointains (T:au_dela/far_systems.py atmo)
+            case POLTERGEIST -> 0.7;
+            case PHOBETOR -> 0.2;
+            case VAN_MAANEN_D -> 0.1;
+            case GAIA_BH1_B -> 0.8;
+            case GAIA_BH1_D -> 1.0;
             default -> 0;
         };
     }

@@ -1,0 +1,35 @@
+{
+ "conditions": [
+  {
+   "type": "forge:false"
+  }
+ ],
+ "type": "pioneers:industrial",
+ "machine": "extruder",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:ingots/pulsarite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:extrusion_shape_rod"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pulsarite_rod",
+   "count": 2
+  },
+  {
+   "item": "pioneers:extrusion_shape_rod",
+   "count": 1
+  }
+ ]
+}

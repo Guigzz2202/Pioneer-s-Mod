@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:gaia_bh1_b_rock",
+  "pioneers:gaia_bh1_b_soil",
+  "pioneers:gaia_bh1_b_glowmoss"
+ ]
+}

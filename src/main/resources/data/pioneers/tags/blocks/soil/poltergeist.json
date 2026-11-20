@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "pioneers:poltergeist_rock",
+  "pioneers:poltergeist_ion_soil",
+  "pioneers:poltergeist_ash",
+  "pioneers:poltergeist_frost"
+ ]
+}

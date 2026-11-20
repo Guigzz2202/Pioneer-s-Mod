@@ -1,0 +1,17 @@
+{
+ "type": "pioneers:flat_pool",
+ "config": {
+  "fluid": {
+   "Name": "minecraft:lava",
+   "Properties": {
+    "level": "0"
+   }
+  },
+  "barrier": {
+   "Name": "pioneers:van_maanen_c_iron_crust"
+  },
+  "min_radius": 4,
+  "max_radius": 9,
+  "scorch": 0.8
+ }
+}

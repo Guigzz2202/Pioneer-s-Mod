@@ -295,6 +295,25 @@ public final class PiClientRegistration {
               "trappist_1g", 0.38, 30, 70, "trappist_1c", 0.3, 160, 22));
         event.register(Pioneers.rl("trappist_1f"), ExoSkyEffects.trappist(44, true, "trappist_1e", 0.9, 120, 42, "trappist_1g", 0.8, 300, 58,
               "trappist_1h", 0.35, 40, 66, "trappist_1d", 0.35, 170, 25));
+        //1.0.7 (lot 11) : systemes lointains (pulsar, naine blanche, trou noir en 3D ; T:au_dela/far_systems.py)
+        int pulsar = fr.pioneers.space.sky.client.mega.PhenomenonModels.PULSAR, dwarf = fr.pioneers.space.sky.client.mega.PhenomenonModels.WHITE_DWARF, hole = fr.pioneers.space.sky.client.mega.PhenomenonModels.BLACK_HOLE;
+        event.register(Pioneers.rl("draugr"), ExoSkyEffects.far(pulsar, "lich", 0xCFE6FF, false, 0, 15, false, "poltergeist", 0.5, 120, -10, "phobetor", 0.3, 230,
+              20));
+        event.register(Pioneers.rl("poltergeist"), ExoSkyEffects.far(pulsar, "lich", 0xCFE6FF, false, 0, 10, true, "draugr", 0.25, 60, 12, "phobetor", 0.45,
+              200, -18));
+        event.register(Pioneers.rl("phobetor"), ExoSkyEffects.far(pulsar, "lich", 0xCFE6FF, false, 0, 5, false, "poltergeist", 0.6, 150, 15));
+        event.register(Pioneers.rl("van_maanen_b"), ExoSkyEffects.far(dwarf, "van_maanen", 0xF4F8FF, true, 240, 30, false, "van_maanen_c", 0.4, 90, 20,
+              "van_maanen_d", 0.3, 300, -10));
+        event.register(Pioneers.rl("van_maanen_c"), ExoSkyEffects.far(dwarf, "van_maanen", 0xF4F8FF, false, 0, 12, false, "van_maanen_b", 0.5, 140, 15,
+              "van_maanen_d", 0.45, 220, -15));
+        event.register(Pioneers.rl("van_maanen_d"), ExoSkyEffects.far(dwarf, "van_maanen", 0xF4F8FF, false, 0, 8, false, "van_maanen_b", 0.3, 60, 10,
+              "van_maanen_c", 0.35, 110, -5));
+        event.register(Pioneers.rl("gaia_bh1_b"), ExoSkyEffects.far(hole, "gaia_bh1", 0xB088FF, true, 110, 24, true, "gaia_bh1_c", 0.5, 200, 18, "gaia_bh1_d",
+              0.3, 300, -10));
+        event.register(Pioneers.rl("gaia_bh1_c"), ExoSkyEffects.far(hole, "gaia_bh1", 0xB088FF, false, 0, 18, false, "gaia_bh1_b", 0.7, 120, 15, "gaia_bh1_d",
+              0.4, 240, -12));
+        event.register(Pioneers.rl("gaia_bh1_d"), ExoSkyEffects.far(hole, "gaia_bh1", 0xB088FF, false, 0, 10, true, "gaia_bh1_c", 0.45, 160, 12, "gaia_bh1_b",
+              0.35, 200, -8));
         event.register(Pioneers.rl("gas_giant"), ExoSkyEffects.gasGiant());
         for (Celestial.Body body : new Celestial.Body[]{
               Celestial.Body.MOON, Celestial.Body.MERCURY,

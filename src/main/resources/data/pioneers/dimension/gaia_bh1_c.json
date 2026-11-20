@@ -1,0 +1,108 @@
+{
+ "type": "pioneers:gaia_bh1_c",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:gaia_bh1_c",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:gaia_bh1_c_torn_crust",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       -0.3
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:gaia_bh1_c_lava_tides",
+     "parameters": {
+      "temperature": [
+       -0.3,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       0.45,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:gaia_bh1_c_torn_crust",
+     "parameters": {
+      "temperature": [
+       0.4,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.45
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:gaia_bh1_c_lava_tides",
+     "parameters": {
+      "temperature": [
+       -0.3,
+       0.4
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.45
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 4865162,
+  "fog_color": 3156058,
+  "water_color": 4159204,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.exoplanet",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:poltergeist_cave"
+  ]
+ },
+ "features": [
+  [],
+  [
+   "pioneers:poltergeist_lava_pool"
+  ],
+  [
+   "pioneers:crater",
+   "pioneers:crater_rare"
+  ],
+  [],
+  [],
+  [],
+  [
+   "pioneers:poltergeist_scoria_patches",
+   "pioneers:pulsarite_ore"
+  ],
+  [],
+  [],
+  [
+   "pioneers:boulder",
+   "pioneers:meteorite_volcanic",
+   "pioneers:boulder_field",
+   "pioneers:storm_bell",
+   "pioneers:ion_reed",
+   "pioneers:meteorite_iron"
+  ],
+  []
+ ]
+}

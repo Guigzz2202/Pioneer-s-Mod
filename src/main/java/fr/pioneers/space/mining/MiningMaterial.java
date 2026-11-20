@@ -72,7 +72,14 @@ public enum MiningMaterial {
     /** Edenite (TRAPPIST-1e) : cristal violet des collines d'ardoise. */
     EDENITE(Body.TRAPPIST_1E, 0x9A5AE0),
     /** Borealite (TRAPPIST-1f) : cristal de glace cyan des rides cryovolcaniques. */
-    BOREALITE(Body.TRAPPIST_1F, 0x9AF0E8);
+    BOREALITE(Body.TRAPPIST_1F, 0x9AF0E8),
+    // --- 1.0.7 (lot 11) : systemes lointains ---
+    /** Pulsarite (Poltergeist) : metal bleu glacier aimante par le champ du pulsar. */
+    PULSARITE(Body.POLTERGEIST, 0x7FD8FF),
+    /** Maanenite (Van Maanen b) : cristal blanc ne dans le carbone du monde de diamant. */
+    MAANENITE(Body.VAN_MAANEN_B, 0xE6F0FF),
+    /** Horizite (Gaia BH1 c) : metal violet sombre fondu par les marees du trou noir. */
+    HORIZITE(Body.GAIA_BH1_C, 0x6A3AB0);
 
     /** Astre d'origine. */
     public final Body body;
@@ -91,7 +98,7 @@ public enum MiningMaterial {
     /** Metal cristallin : son minerai luit faiblement et sonne comme l'amethyste. */
     public boolean isCrystal() {
         return switch (this) {
-            case THARSIUM, AHUNITE, LOKITE, TIGRITE, RUACHITE, FLARIUM, THALASSITE, EDENITE, BOREALITE -> true;
+            case THARSIUM, AHUNITE, LOKITE, TIGRITE, RUACHITE, FLARIUM, THALASSITE, EDENITE, BOREALITE, MAANENITE -> true;
             default -> false;
         };
     }

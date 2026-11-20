@@ -1,0 +1,108 @@
+{
+ "type": "pioneers:poltergeist",
+ "generator": {
+  "type": "minecraft:noise",
+  "settings": "pioneers:poltergeist",
+  "biome_source": {
+   "type": "minecraft:multi_noise",
+   "biomes": [
+    {
+     "biome": "pioneers:poltergeist_storm_plains",
+     "parameters": {
+      "temperature": [
+       0.35,
+       1.0
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:poltergeist_aurora_glaciers",
+     "parameters": {
+      "temperature": [
+       -1.0,
+       -0.35
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:poltergeist_storm_plains",
+     "parameters": {
+      "temperature": [
+       -0.35,
+       0.35
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       0.45,
+       1.0
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    },
+    {
+     "biome": "pioneers:poltergeist_aurora_glaciers",
+     "parameters": {
+      "temperature": [
+       -0.35,
+       0.35
+      ],
+      "humidity": [
+       -1.0,
+       1.0
+      ],
+      "continentalness": [
+       -1.0,
+       1.0
+      ],
+      "erosion": [
+       -1.0,
+       0.45
+      ],
+      "weirdness": 0.0,
+      "depth": 0.0,
+      "offset": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

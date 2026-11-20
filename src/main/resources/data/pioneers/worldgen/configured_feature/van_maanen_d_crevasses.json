@@ -1,0 +1,14 @@
+{
+ "type": "pioneers:lineament",
+ "config": {
+  "fill": {
+   "Name": "pioneers:van_maanen_d_fallen_ice"
+  },
+  "mode": "trench",
+  "min_length": 16,
+  "max_length": 30,
+  "width": 2,
+  "depth": 6,
+  "curl": 0.2
+ }
+}

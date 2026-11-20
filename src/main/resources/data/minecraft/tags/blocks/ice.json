@@ -1,18 +1,23 @@
 {
-  "replace": false,
-  "values": [
-    "pioneers:mars_polar_ice",
-    "pioneers:mercury_polar_ice",
-    "pioneers:ceres_ice",
-    "pioneers:europa_lineae_ice",
-    "pioneers:ganymede_bright_ice",
-    "pioneers:callisto_ice",
-    "pioneers:enceladus_blue_ice",
-    "pioneers:triton_nitrogen_ice",
-    "pioneers:pluto_nitrogen_ice",
-    "pioneers:pluto_methane_ice",
-    "pioneers:proxima_glacier_ice",
-    "pioneers:trappist_1f_ice",
-    "pioneers:trappist_1f_blue_ice"
-  ]
+ "replace": false,
+ "values": [
+  "pioneers:mars_polar_ice",
+  "pioneers:mercury_polar_ice",
+  "pioneers:ceres_ice",
+  "pioneers:europa_lineae_ice",
+  "pioneers:ganymede_bright_ice",
+  "pioneers:callisto_ice",
+  "pioneers:enceladus_blue_ice",
+  "pioneers:triton_nitrogen_ice",
+  "pioneers:pluto_nitrogen_ice",
+  "pioneers:pluto_methane_ice",
+  "pioneers:proxima_glacier_ice",
+  "pioneers:trappist_1f_ice",
+  "pioneers:trappist_1f_blue_ice",
+  "pioneers:poltergeist_storm_ice",
+  "pioneers:phobetor_pulse_ice",
+  "pioneers:phobetor_streak_ice",
+  "pioneers:van_maanen_d_nitrogen_ice",
+  "pioneers:van_maanen_d_fallen_ice"
+ ]
 }

@@ -90,6 +90,8 @@ public class RocketEntity extends Entity {
     private static final EntityDataAccessor<Integer> TRANSIT_TICKS = SynchedEntityData.defineId(RocketEntity.class, EntityDataSerializers.INT);
     private static final EntityDataAccessor<Boolean> TO_STATION = SynchedEntityData.defineId(RocketEntity.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Integer> ORIGIN = SynchedEntityData.defineId(RocketEntity.class, EntityDataSerializers.INT);
+    /** 1.0.7 (lot 11) : propulseur a matiere noire a bord (portee des systemes lointains), pour la carte du client. */
+    private static final EntityDataAccessor<Boolean> DARK_DRIVE = SynchedEntityData.defineId(RocketEntity.class, EntityDataSerializers.BOOLEAN);
 
     private double verticalSpeed;
     /** Vrai pendant le transfert entre dimensions : autorise le passager a descendre. */
@@ -175,6 +177,27 @@ public class RocketEntity extends Entity {
         entityData.define(TRANSIT_TICKS, 1);
         entityData.define(TO_STATION, false);
         entityData.define(ORIGIN, -1);
+        entityData.define(DARK_DRIVE, false);
+    }
+
+    /**
+     * 1.0.7 (lot 11) : portee de la fusee : son tier, ou {@link SolarSystem#DARK_DRIVE_LEVEL} pour une fusee de tier 13 qui porte un
+     * propulseur a matiere noire (les trois systemes lointains).
+     */
+    public int reachLevel() {
+        boolean drive = level().isClientSide ? entityData.get(DARK_DRIVE) : hasDarkDrive();
+        return drive && tier.level >= SolarSystem.DARK_DRIVE_LEVEL - 1 ? SolarSystem.DARK_DRIVE_LEVEL : tier.level;
+    }
+
+    /** Un propulseur a matiere noire parmi les modules utilisables (sans allocation). */
+    private boolean hasDarkDrive() {
+        int slots = Math.min(RocketModule.slots(tier), moduleSlots.size());
+        for (int i = 0; i < slots; i++) {
+            if (RocketModule.of(moduleSlots.get(i)) == RocketModule.DARK_MATTER_DRIVE) {
+                return true;
+            }
+        }
+        return false;
     }
 
     // ------------------------------------------------------------------
@@ -320,7 +343,7 @@ public class RocketEntity extends Entity {
         List<ItemStack> loadout = getModules();
         //1.9 (MAJ RP) : skill Spatial, un vol pilote a la main demande moins d'ergols
         int needed = (int) Math.ceil(TileEntityLaunchPad.mannedFuel(tier, loadout) * fr.pioneers.core.profile.PioneerApi.factor(player, "space.fuel"));
-        if (SolarSystem.reachableFrom(level().dimension(), getX(), tier).isEmpty()) {
+        if (SolarSystem.reachableFrom(level().dimension(), getX(), reachLevel()).isEmpty()) {
             player.displayClientMessage(PiLang.ROCKET_NO_DESTINATION.translateColored(ChatFormatting.RED), true);
         } else if (RocketModule.count(loadout, RocketModule.PASSENGER) == 0) {
             player.displayClientMessage(Component.translatable("rocket.pioneers.no_cabin").withStyle(ChatFormatting.RED), true);
@@ -333,7 +356,7 @@ public class RocketEntity extends Entity {
 
     /** Choix sur la carte du systeme solaire (en orbite). */
     public void selectDestination(ServerPlayer player, SolarSystem.Body body) {
-        if (getState() != State.ORBIT || player.getVehicle() != this || !body.isReachableFrom(level().dimension(), getX(), tier)
+        if (getState() != State.ORBIT || player.getVehicle() != this || !body.isReachableFrom(level().dimension(), getX(), reachLevel())
             || !ResearchEffects.canLand(body) && !body.isHere(level().dimension())) {
             return;
         }
@@ -431,7 +454,7 @@ public class RocketEntity extends Entity {
         }
         SolarSystem.Body origin = SolarSystem.origin(level().dimension(), getX());
         int originTier = origin == null ? 1 : origin.requiredTier();
-        if (Math.max(body.requiredTier(), originTier) > tier.level) {
+        if (Math.max(body.requiredTier(), originTier) > reachLevel()) {
             player.displayClientMessage(PiLang.ROCKET_NO_DESTINATION.translateColored(ChatFormatting.RED), true);
             return;
         }
@@ -473,7 +496,7 @@ public class RocketEntity extends Entity {
         SolarSystem.Body body = fr.pioneers.space.mega.Megastructures.body(mega);
         SolarSystem.Body origin = SolarSystem.origin(level().dimension(), getX());
         int originTier = origin == null ? 1 : origin.requiredTier();
-        if (Math.max(body.requiredTier(), originTier) > tier.level) {
+        if (Math.max(body.requiredTier(), originTier) > reachLevel()) {
             player.displayClientMessage(PiLang.ROCKET_NO_DESTINATION.translateColored(ChatFormatting.RED), true);
             return;
         }
@@ -554,6 +577,10 @@ public class RocketEntity extends Entity {
     @Override
     public void tick() {
         super.tick();
+        if (!level().isClientSide && tickCount % 20 == 0) {
+            //envoye seulement au changement (SynchedEntityData compare la valeur)
+            entityData.set(DARK_DRIVE, hasDarkDrive());
+        }
         if (getState() != State.LAUNCHING) {
             stepLerp();
         }

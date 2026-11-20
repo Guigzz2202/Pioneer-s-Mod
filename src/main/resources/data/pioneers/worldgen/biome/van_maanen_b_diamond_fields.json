@@ -1,0 +1,56 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0.0,
+ "effects": {
+  "sky_color": 1711656,
+  "fog_color": 1053724,
+  "water_color": 4159204,
+  "water_fog_color": 329011,
+  "mood_sound": {
+   "sound": "minecraft:ambient.cave",
+   "tick_delay": 6000,
+   "block_search_extent": 8,
+   "offset": 2.0
+  },
+  "music": {
+   "sound": "pioneers:music.space.exoplanet",
+   "min_delay": 2400,
+   "max_delay": 7200,
+   "replace_current_music": false
+  }
+ },
+ "spawners": {},
+ "spawn_costs": {},
+ "carvers": {
+  "air": [
+   "pioneers:van_maanen_b_cave"
+  ]
+ },
+ "features": [
+  [],
+  [],
+  [
+   "pioneers:crater_rare"
+  ],
+  [],
+  [
+   "pioneers:van_maanen_b_crystal_spires"
+  ],
+  [],
+  [
+   "pioneers:maanenite_ore",
+   "pioneers:maanenite_ore_rich"
+  ],
+  [],
+  [],
+  [
+   "pioneers:meteorite_volcanic_rare",
+   "pioneers:diamond_spire",
+   "pioneers:graphite_creeper"
+  ],
+  [
+   "pioneers:van_maanen_b_fluid_cleanup"
+  ]
+ ]
+}

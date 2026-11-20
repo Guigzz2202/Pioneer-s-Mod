@@ -393,6 +393,15 @@
   "pioneers:proxima_crown_port",
   "pioneers:tidal_necklace_port",
   "pioneers:flare_catcher",
-  "pioneers:tidal_bioreactor"
+  "pioneers:tidal_bioreactor",
+  "pioneers:pulsarite_block",
+  "pioneers:raw_pulsarite_block",
+  "pioneers:pulsarite_ore",
+  "pioneers:maanenite_block",
+  "pioneers:raw_maanenite_block",
+  "pioneers:maanenite_ore",
+  "pioneers:horizite_block",
+  "pioneers:raw_horizite_block",
+  "pioneers:horizite_ore"
  ]
 }

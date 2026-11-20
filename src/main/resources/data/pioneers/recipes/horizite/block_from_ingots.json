@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "key": {
+  "#": {
+   "tag": "forge:ingots/horizite"
+  }
+ },
+ "result": {
+  "item": "pioneers:horizite_block"
+ }
+}

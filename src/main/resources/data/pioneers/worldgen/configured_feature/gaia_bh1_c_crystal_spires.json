@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:gaia_bh1_c_horizon_crystal"
+  },
+  "tip": {
+   "Name": "pioneers:gaia_bh1_c_horizon_crystal"
+  },
+  "min_height": 4,
+  "max_height": 9,
+  "radius": 1,
+  "elongation": 1.5
+ }
+}

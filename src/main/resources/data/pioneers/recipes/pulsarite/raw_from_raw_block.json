@@ -1,0 +1,13 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "pioneers:raw_pulsarite_block"
+  }
+ ],
+ "result": {
+  "item": "pioneers:raw_pulsarite",
+  "count": 9
+ }
+}

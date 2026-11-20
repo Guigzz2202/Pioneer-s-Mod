@@ -1,0 +1,15 @@
+{
+ "type": "pioneers:spire",
+ "config": {
+  "block": {
+   "Name": "pioneers:van_maanen_c_iron_crust"
+  },
+  "tip": {
+   "Name": "pioneers:van_maanen_c_rock"
+  },
+  "min_height": 8,
+  "max_height": 20,
+  "radius": 2,
+  "elongation": 3.0
+ }
+}
