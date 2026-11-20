@@ -2,7 +2,7 @@
  "type": "pioneers:gaia_bh1_e",
  "generator": {
   "type": "minecraft:noise",
-  "settings": "minecraft:overworld",
+  "settings": "minecraft:large_biomes",
   "biome_source": {
    "type": "minecraft:multi_noise",
    "biomes": [
