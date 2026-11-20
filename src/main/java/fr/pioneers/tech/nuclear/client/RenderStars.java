@@ -70,8 +70,11 @@ final class RenderStars {
         Vector3f left = cam.getLeftVector(), up = cam.getUpVector();
         Matrix4f m = pose.last().pose();
         float r = (star.accent() >> 16 & 255) / 255F, g = (star.accent() >> 8 & 255) / 255F, b = (star.accent() & 255) / 255F;
-        float k = 0.25F + 0.75F * act;
+        float k = 0.35F + 0.95F * act;
         Ctx ctx = new Ctx(c, front, s, m, buffers, left, up, x, y, z, star.scale(), t, act, k, r, g, b);
+        //halo commun : la lueur de l'effet qui eclaire le verre de la structure (plus vive en marche)
+        float halo = 0.18F + 0.42F * act;
+        CoreDraw.billboard(glow(ctx), m, x, y, z, Math.max(2.5F, star.scale() * 1.6F), left, up, r * halo, g * halo, b * halo, FULL);
         switch (star.render()) {
             case 0 -> plasma(ctx);
             case 1 -> anvil(ctx);
@@ -155,7 +158,7 @@ final class RenderStars {
     private static void ring(Ctx c) {
         VertexConsumer rg = c.buffers.getBuffer(RenderType.eyes(RenderReactorCore.RING));
         float i = c.k;
-        CoreDraw.ring(rg, c.m, c.x, c.y, c.z, c.scale, 0.35F, 0, 0, -c.t * 0.05F, 64, 0.2F * i, 0.5F * i, 0.9F * i, FULL);
+        CoreDraw.ring(rg, c.m, c.x, c.y, c.z, c.scale, 0.6F, 0, 0, -c.t * 0.05F, 64, 0.3F * i, 0.6F * i, i, FULL);
         VertexConsumer b = glow(c);
         int bunches = c.act > 0.02F ? 6 : 2;
         for (int n = 0; n < bunches; n++) {
@@ -164,7 +167,7 @@ final class RenderStars {
                 double a = ang - tail * 0.06 * (n % 2 == 0 ? 1 : -1);
                 float px = c.x + (float) Math.cos(a) * c.scale, pz = c.z + (float) Math.sin(a) * c.scale;
                 float f = c.k * (1 - tail / 5F);
-                CoreDraw.billboard(b, c.m, px, c.y, pz, 0.35F - tail * 0.05F, c.left, c.up, 0.5F * f, 0.8F * f, f, FULL);
+                CoreDraw.billboard(b, c.m, px, c.y, pz, 0.7F - tail * 0.1F, c.left, c.up, 0.5F * f, 0.8F * f, f, FULL);
             }
         }
         if (c.act > 0.02F) {
@@ -187,7 +190,7 @@ final class RenderStars {
             for (int iz = -2; iz <= 2; iz++) {
                 float wave = 0.5F + 0.5F * (float) Math.sin(c.t * 0.15F - (ix + iz) * 0.9F);
                 float i = c.k * (0.3F + 0.7F * wave * c.act + 0.2F);
-                CoreDraw.billboard(b, c.m, c.x + ix * 0.32F, c.y + 0.6F, c.z + iz * 0.32F, 0.1F + 0.05F * wave, c.left, c.up, 0.5F * i, 0.85F * i, i,
+                CoreDraw.billboard(b, c.m, c.x + ix * 0.32F, c.y + 0.6F, c.z + iz * 0.32F, 0.16F + 0.08F * wave, c.left, c.up, 0.5F * i, 0.85F * i, i,
                       FULL);
             }
         }
@@ -205,7 +208,7 @@ final class RenderStars {
         VertexConsumer pl = c.buffers.getBuffer(RenderType.eyes(RenderReactorCore.PLASMA));
         float i = c.k;
         for (int band = 0; band < 3; band++) {
-            float w = 0.9F - band * 0.25F;
+            float w = 1.3F - band * 0.3F;
             CoreDraw.ring(pl, c.m, c.x, c.y, c.z, c.scale, w, 0, band * 0.7F, -c.t * (0.03F + band * 0.02F), 64, i, 0.75F * i, 0.35F * i, FULL);
         }
         VertexConsumer rg = c.buffers.getBuffer(RenderType.eyes(RenderReactorCore.RING));
@@ -214,7 +217,7 @@ final class RenderStars {
             float px = c.x + (float) Math.cos(a) * c.scale, pz = c.z + (float) Math.sin(a) * c.scale;
             float on = c.act * (0.5F + 0.5F * (float) Math.sin(c.t * 0.12F + n * 1.5F));
             //anneau de conversion dresse autour du tube du tore
-            CoreDraw.ring(rg, c.m, px, c.y, pz, 3.6F, 0.18F, (float) (Math.PI / 2), (float) (a + Math.PI / 2), c.t * 0.04F, 24, on, 0.9F * on,
+            CoreDraw.ring(rg, c.m, px, c.y, pz, 3.6F, 0.3F, (float) (Math.PI / 2), (float) (a + Math.PI / 2), c.t * 0.04F, 24, on, 0.9F * on,
                   0.5F * on, FULL);
         }
     }
@@ -231,7 +234,7 @@ final class RenderStars {
             double a = 2 * Math.PI * CoreDraw.hash(p, 2) + u * 9;
             float rr = c.scale * (1 - u) * 0.95F, yy = (float) (CoreDraw.hash(p, 3) - 0.5) * c.scale * (1 - u);
             float f = c.k * (float) Math.sin(Math.PI * u) * 0.8F;
-            CoreDraw.billboard(b, c.m, c.x + (float) Math.cos(a) * rr, c.y + yy, c.z + (float) Math.sin(a) * rr, 0.08F, c.left, c.up, 0.6F * f, 0.4F * f,
+            CoreDraw.billboard(b, c.m, c.x + (float) Math.cos(a) * rr, c.y + yy, c.z + (float) Math.sin(a) * rr, 0.16F, c.left, c.up, 0.6F * f, 0.4F * f,
                   f, FULL);
         }
         VertexConsumer rg = c.buffers.getBuffer(RenderType.eyes(RenderReactorCore.RING));
@@ -266,7 +269,7 @@ final class RenderStars {
         for (int band = 0; band < 4; band++) {
             float rad = c.scale * (0.55F + band * 0.18F);
             float heat = 1 - band / 4F;
-            CoreDraw.ring(pl, c.m, c.x, c.y, c.z, rad, 0.22F, tilt, 0, -c.t * (0.05F / (1 + band)), 48, i * heat, 0.55F * i * heat,
+            CoreDraw.ring(pl, c.m, c.x, c.y, c.z, rad, 0.4F, tilt, 0, -c.t * (0.05F / (1 + band)), 48, i * heat, 0.55F * i * heat,
                   (0.4F + 0.5F * heat) * i * 0.8F, FULL);
         }
         VertexConsumer b = glow(c);
@@ -281,7 +284,7 @@ final class RenderStars {
                 double[] p = c.at(11.5 + 5.2 * Math.cos(a), 13.5, 11.5 + 5.2 * Math.sin(a));
                 float px = (float) p[0], py = (float) p[1], pz = (float) p[2];
                 float u = frac(c.t * 0.02F + k / 3F);
-                CoreDraw.billboard(b, c.m, px + (c.x - px) * u, py + (c.y - py) * u, pz + (c.z - pz) * u, 0.25F, c.left, c.up, c.act, 0.6F * c.act,
+                CoreDraw.billboard(b, c.m, px + (c.x - px) * u, py + (c.y - py) * u, pz + (c.z - pz) * u, 0.45F, c.left, c.up, c.act, 0.6F * c.act,
                       0.9F * c.act, FULL);
             }
         }

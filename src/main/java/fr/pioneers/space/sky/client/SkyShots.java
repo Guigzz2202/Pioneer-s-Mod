@@ -98,7 +98,8 @@ public final class SkyShots {
                     fr.pioneers.tech.industry.star.Stars.forceActive = shot.working;
                     server.execute(() -> buildStar(server, shot));
                     stage = 2;
-                    wait = 220;
+                    //tronçons a charger et structure a former (le client de la CI est lent) : le temps de plusieurs secondes
+                    wait = 500;
                     return;
                 }
                 //deblocage, creatif volant, en altitude au-dessus de l'origine de l'astre
@@ -292,7 +293,7 @@ public final class SkyShots {
         if (("," + PLAN + ",").contains(",extraordinaires,")) {
             for (int i = 0; i < fr.pioneers.tech.industry.star.GeneratedStars.ALL.length; i++) {
                 list.add(new Shot(-1000 - i, "en_marche", 6000, true, 0, 0));
-                list.add(new Shot(-1000 - i, "de_biais", 6000, true, 40, 0));
+                list.add(new Shot(-1000 - i, "nuit_en_marche", 18000, true, 40, 0));
             }
         }
         //1.0.7 (lot 11) : ciels des planetes des systemes lointains (pulsar, naine blanche, trou noir) : mega = -(1 + astre) ; sunAlt = heure
@@ -367,7 +368,7 @@ public final class SkyShots {
             player.onUpdateAbilities();
             player.teleportTo(level, ex, ey, ez, 0, 0);
         }
-        level.setDayTime(6000);
+        level.setDayTime((long) shot.sunAlt);
         server.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DAYLIGHT).set(false, server);
         LOG.info("SKYSHOTS : extraordinaire {} bati en {}", m.key, c);
     }

@@ -177,6 +177,8 @@ public class PiJeiPlugin implements IModPlugin {
           FluidDepositType.class);
 
     public static final RecipeType<Body> SOLAR_ABSORBER = JeiOrder.create("solar_absorber", Body.class);
+    /** 1.0.7 (lot 12) : les megastructures (liste du chantier, port, composants gates). */
+    public static final RecipeType<Integer> MEGASTRUCTURE = JeiOrder.create("megastructure", Integer.class);
     /** Categories explicatives : combustibles, ressources sauvages, chaleur, air comprime. */
     public static final RecipeType<GuideCategory.Entry> FUELS = JeiOrder.create("fuels", GuideCategory.Entry.class);
     /** 1.4 : meule de charbonnier (schema). */
@@ -226,6 +228,7 @@ public class PiJeiPlugin implements IModPlugin {
               new AnalysisCategory(helper, BIOME_ANALYSIS, "block.pioneers.biome_analyzer", PiScienceMachines.BIOME_ANALYZER),
               new DroneHarvestCategory(helper, DRONE_HARVEST),
               new AbsorberCategory(helper, SOLAR_ABSORBER),
+              new MegastructureCategory(helper, MEGASTRUCTURE),
               new UniverseCategory(helper, UNIVERSE));
         //1.0.3-beta (lot 3) : concasseur, broyeur a vapeur et broyeur MKN = une seule categorie « Broyage » (GrindingCategory)
         MECHANICAL.forEach((type, recipeType) -> {
@@ -402,6 +405,7 @@ public class PiJeiPlugin implements IModPlugin {
         registration.addRecipes(BIOME_ANALYSIS, JeiEntries.biomes());
         registration.addRecipes(DRONE_HARVEST, DroneHarvestCategory.entries());
         registration.addRecipes(SOLAR_ABSORBER, AbsorberCategory.entries());
+        registration.addRecipes(MEGASTRUCTURE, MegastructureCategory.entries());
         registration.addRecipes(UNIVERSE, List.of(GalaxyType.values()));
         MECHANICAL.forEach((type, recipeType) -> {
             if (!merged(recipeType)) {
@@ -513,6 +517,9 @@ public class PiJeiPlugin implements IModPlugin {
         registration.addRecipeCatalysts(BLACK_HOLE, PiStabilizer.SINGULARITY_CORE, PiStabilizer.CASING, PiStabilizer.EMITTER);
         registration.addRecipeCatalysts(STELLAR_CHAMBER, PiStabilizer.STELLAR_CORE, PiStabilizer.CASING, PiStabilizer.EMITTER);
         registration.addRecipeCatalysts(DRONE_HARVEST, PiBaseMachines.DRONE_BAY, PiRobotics.UNITS.get(UnitKind.DRONE).get(UnitTier.T1).get(), PiItems.GAS_SCANNER.get());
+        for (int i = 0; i < fr.pioneers.space.mega.Megastructures.COUNT; i++) {
+            registration.addRecipeCatalysts(MEGASTRUCTURE, MegastructureCategory.item(fr.pioneers.space.mega.Megastructures.port(i)));
+        }
         registration.addRecipeCatalysts(SOLAR_ABSORBER, PiCosmicBlocks.ABSORBER_COLLECTOR, PiCosmicBlocks.ABSORBER_CASING, PiCosmicBlocks.ABSORBER_PORT);
         KitchenCategory.catalysts(registration);
         registration.addRecipeCatalysts(DryingLineCategory.TYPE, fr.pioneers.building.home.PiHome.ROPE_HOOK.getBlock(), fr.pioneers.tech.kinetics.PiKinetics.FIBER_ROPE.get(),
