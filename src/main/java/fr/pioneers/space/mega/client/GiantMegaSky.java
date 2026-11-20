@@ -44,6 +44,11 @@ public final class GiantMegaSky {
         if (i < 0 || (MegaClient.unlockedMask() & (1L << i)) == 0) {
             return;
         }
+        if (fr.pioneers.space.sky.client.mega.MegaModels.has(i)) {
+            //1.0.7 (« ciel grandiose ») : la megastructure en 3D
+            fr.pioneers.space.sky.client.MegaSkyRenderer.renderGiant(level, i, partial, poseStack);
+            return;
+        }
         int kind = Megastructures.skyKind(i);
         if (kind != SkyScene.MEGA_LIGHTS && kind != SkyScene.MEGA_ROTOR && kind != SkyScene.MEGA_AURORA && kind != SkyScene.MEGA_COLUMN) {
             return;

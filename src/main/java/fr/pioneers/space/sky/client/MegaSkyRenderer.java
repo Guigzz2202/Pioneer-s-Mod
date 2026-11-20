@@ -44,14 +44,59 @@ public final class MegaSkyRenderer {
     private MegaSkyRenderer() {
     }
 
-    /** Vrai si le ciel de cette scene montre au moins une megastructure en 3D. */
+    /** Vrai si le ciel de cette scene montre au moins une megastructure en 3D (l'Essaim : dans tous les ciels ou le Soleil est la). */
     public static boolean any(SkyScene scene) {
         for (SkyScene.Item item : scene.items) {
             if (item.type == SkyScene.MEGA && MegaModels.has(item.mega)) {
                 return true;
             }
         }
-        return false;
+        return swarm(scene) >= 0;
+    }
+
+    /** L'Essaim, s'il est debloque et que le Soleil est dans cette scene, sinon -1. */
+    private static int swarm(SkyScene scene) {
+        if (scene.sun == null) {
+            return -1;
+        }
+        long mask = MegaClient.unlockedMask();
+        for (int i = 0; i < Megastructures.COUNT && i < 64; i++) {
+            if (MegaModels.everywhere(i) && (mask & (1L << i)) != 0) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    /** Lumiere du dernier rendu (captures : ou regarder l'Essaim et le Halo). */
+    public static MegaView view() {
+        return VIEW;
+    }
+
+    /**
+     * 1.0.7 : megastructure d'une geante (Cite des nuages, Anneau-Rotor, Boucle, Descente) dans son ciel propre ({@code ExoSkyEffects}) :
+     * Soleil a l'heure du monde, atmosphere, pluie ; {@code poseStack} : pose de la camera.
+     */
+    public static void renderGiant(net.minecraft.client.multiplayer.ClientLevel level, int i, float partialTick, PoseStack poseStack) {
+        double t = level.getTimeOfDay(partialTick) * 2 * Math.PI;
+        VIEW.sun(-Math.sin(t), Math.cos(t), 0, 1, 0.96, 0.9, true, level.getRainLevel(partialTick));
+        int sky = Megastructures.color(i);
+        VIEW.hazeR = (sky >> 16 & 255) / 255.0 * 0.6;
+        VIEW.hazeG = (sky >> 8 & 255) / 255.0 * 0.6;
+        VIEW.hazeB = (sky & 255) / 255.0 * 0.6;
+        VIEW.ticks = RenderClock.time(partialTick);
+        BUF.clear();
+        BUF.drop = horizonDrop();
+        add(i);
+        draw(poseStack.last().pose());
+    }
+
+    private static void add(int i) {
+        VIEW.params = Megastructures.skyParams(i);
+        VIEW.color = Megastructures.color(i);
+        VIEW.accent = Megastructures.accent(i);
+        VIEW.activity = MegaClient.activity(i);
+        MegaModels.build(i, BUF, VIEW);
     }
 
     /**
@@ -78,15 +123,13 @@ public final class MegaSkyRenderer {
         BUF.clear();
         BUF.drop = horizonDrop();
         for (SkyScene.Item item : scene.items) {
-            if (item.type != SkyScene.MEGA || !MegaModels.has(item.mega)) {
-                continue;
+            if (item.type == SkyScene.MEGA && MegaModels.has(item.mega) && !MegaModels.everywhere(item.mega)) {
+                add(item.mega);
             }
-            int i = item.mega;
-            VIEW.params = Megastructures.skyParams(i);
-            VIEW.color = Megastructures.color(i);
-            VIEW.accent = Megastructures.accent(i);
-            VIEW.activity = MegaClient.activity(i);
-            MegaModels.build(i, BUF, VIEW);
+        }
+        int swarm = swarm(scene);
+        if (swarm >= 0) {
+            add(swarm);
         }
         draw(poseStack.last().pose());
     }

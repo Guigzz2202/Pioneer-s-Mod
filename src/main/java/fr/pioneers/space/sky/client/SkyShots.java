@@ -90,7 +90,7 @@ public final class SkyShots {
             wait--;
             return;
         }
-        ResourceKey<Level> dim = ResourceKey.create(Registries.DIMENSION, Pioneers.rl(Megastructures.body(shot.mega).name().toLowerCase()));
+        ResourceKey<Level> dim = dimension(shot.mega);
         switch (stage) {
             case 0 -> {
                 //deblocage, creatif volant, en altitude au-dessus de l'origine de l'astre
@@ -167,10 +167,22 @@ public final class SkyShots {
         }
     }
 
-    /** Regard de la vue : azimut de la megastructure (repere du ciel : 0 = nord, sens horaire) plus decalage, hauteur. */
+    /** Monde ou la voir : celui de son astre ; l'Essaim depuis Mercure, l'Observatoire du Halo depuis la Terre. */
+    private static ResourceKey<Level> dimension(int mega) {
+        String body = Megastructures.body(mega).name().toLowerCase();
+        return switch (body) {
+            case "sun" -> ResourceKey.create(Registries.DIMENSION, Pioneers.rl("mercury"));
+            case "earth" -> Level.OVERWORLD;
+            default -> ResourceKey.create(Registries.DIMENSION, Pioneers.rl(body));
+        };
+    }
+
+    /** Regard de la vue : azimut de la megastructure (repere du ciel : 0 = nord, sens horaire) plus decalage, hauteur (NaN : la sienne). */
     private static void view(Minecraft mc, Shot shot) {
-        double az = Megastructures.skyParams(shot.mega)[0] + shot.yawOffset;
-        float yaw = (float) (az + 180), pitch = (float) -shot.pitch;
+        fr.pioneers.space.sky.client.mega.MegaView v = MegaSkyRenderer.view();
+        double az = MegaModels.viewYaw(shot.mega, v) + shot.yawOffset;
+        double p = Double.isNaN(shot.pitch) ? MegaModels.viewPitch(shot.mega, v) : shot.pitch;
+        float yaw = (float) (az + 180), pitch = (float) -p;
         mc.player.setYRot(yaw);
         mc.player.setXRot(pitch);
         mc.player.yRotO = yaw;
@@ -210,7 +222,7 @@ public final class SkyShots {
             if (!MegaModels.has(i) || !("all".equals(PLAN) || ("," + PLAN + ",").contains("," + Megastructures.id(i) + ","))) {
                 continue;
             }
-            double pitch = MegaModels.viewPitch(i);
+            double pitch = Double.NaN;
             list.add(new Shot(i, "midi", NOON, false, 0, pitch));
             list.add(new Shot(i, "midi_horizon", NOON, false, 0, 8));
             list.add(new Shot(i, "midi_de_biais", NOON, false, 50, 22));

@@ -213,6 +213,45 @@ public final class MegaKit {
         return (ticks + phase) % period < on ? 1 : 0;
     }
 
+    /**
+     * Ellipsoide (sphere si rx = ry = rz) en {@code lat} x {@code lon} facettes : cuves, ballons, coeurs. Normales de la sphere
+     * deformee (approchees par la position), lumiere et ombre comme les autres faces.
+     */
+    public static void ellipsoid(MegaBuffer b, MegaView v, double km, double cx, double cy, double cz, double rx, double ry, double rz, int lat,
+          int lon, double r, double g, double bl, double spec) {
+        for (int i = 0; i < lat; i++) {
+            double t0 = Math.PI * i / lat - Math.PI / 2, t1 = Math.PI * (i + 1) / lat - Math.PI / 2;
+            double c0 = Math.cos(t0), s0 = Math.sin(t0), c1 = Math.cos(t1), s1 = Math.sin(t1);
+            for (int j = 0; j < lon; j++) {
+                double p0 = 2 * Math.PI * j / lon, p1 = 2 * Math.PI * (j + 1) / lon;
+                double a0 = Math.cos(p0), b0 = Math.sin(p0), a1 = Math.cos(p1), b1 = Math.sin(p1);
+                double tm = (t0 + t1) / 2, pm = (p0 + p1) / 2;
+                double nx = Math.cos(tm) * Math.cos(pm) / rx, ny = Math.sin(tm) / ry, nz = Math.cos(tm) * Math.sin(pm) / rz;
+                double nl = Math.sqrt(nx * nx + ny * ny + nz * nz);
+                face(b, v, km, cx + rx * c0 * a0, cy + ry * s0, cz + rz * c0 * b0, cx + rx * c0 * a1, cy + ry * s0, cz + rz * c0 * b1,
+                      cx + rx * c1 * a1, cy + ry * s1, cz + rz * c1 * b1, cx + rx * c1 * a0, cy + ry * s1, cz + rz * c1 * b0, nx / nl, ny / nl,
+                      nz / nl, r, g, bl, spec);
+            }
+        }
+    }
+
+    /**
+     * Anneau lumineux dans un plan quelconque : centre, axes (ax, ay, az) et (bx, by, bz) deja multiplies par le rayon ; {@code n}
+     * traits.
+     */
+    public static void ring(MegaBuffer b, double cx, double cy, double cz, double ax, double ay, double az, double bx, double by, double bz,
+          double hw, int n, double r, double g, double bl, double a) {
+        if (a <= 0.004) {
+            return;
+        }
+        for (int k = 0; k < n; k++) {
+            double t0 = 2 * Math.PI * k / n, t1 = 2 * Math.PI * (k + 1) / n;
+            double c0 = Math.cos(t0), s0 = Math.sin(t0), c1 = Math.cos(t1), s1 = Math.sin(t1);
+            ray(b, cx + ax * c0 + bx * s0, cy + ay * c0 + by * s0, cz + az * c0 + bz * s0, cx + ax * c1 + bx * s1, cy + ay * c1 + by * s1,
+                  cz + az * c1 + bz * s1, hw, r, g, bl, a);
+        }
+    }
+
     /** Bruit fixe 0..1 (fenetres allumees ou non, rythmes decales). */
     public static double hash(int a, int c) {
         int h = a * 73856093 ^ c * 19349663;
