@@ -40,7 +40,11 @@ public final class SkyShots {
     /** Hauteurs du Soleil : midi et minuit (codes), sinon degres (apres-midi). */
     private static final double NOON = 99, MIDNIGHT = -99;
 
-    private record Shot(int mega, String name, double sunAlt, boolean working, double yawOffset, double pitch) {
+    private record Shot(int mega, String name, double sunAlt, boolean working, double yawOffset, double pitch, int climb) {
+
+        Shot(int mega, String name, double sunAlt, boolean working, double yawOffset, double pitch) {
+            this(mega, name, sunAlt, working, yawOffset, pitch, 0);
+        }
     }
 
     private static List<Shot> shots;
@@ -135,7 +139,14 @@ public final class SkyShots {
             case 2 -> {
                 //heure, fonctionnement, regard
                 long dayTime = dayTime(mc, shot);
-                server.execute(() -> server.overworld().setDayTime(dayTime));
+                server.execute(() -> {
+                    server.overworld().setDayTime(dayTime);
+                    ServerPlayer player = server.getPlayerList().getPlayers().isEmpty() ? null : server.getPlayerList().getPlayers().get(0);
+                    if (shot.climb > 0 && player != null && player.level() instanceof ServerLevel level) {
+                        //vue en altitude : le joueur monte, la megastructure doit rester posee sur le relief
+                        player.teleportTo(level, player.getX(), player.getY() + shot.climb, player.getZ(), 0, 0);
+                    }
+                });
                 MegaClient.force(shot.working ? 1L << shot.mega : 0);
                 stage = 3;
                 wait = 90;
@@ -205,6 +216,7 @@ public final class SkyShots {
             list.add(new Shot(i, "crepuscule_en_marche_de_biais", -3, true, 50, 22));
             list.add(new Shot(i, "nuit", MIDNIGHT, false, 0, pitch));
             list.add(new Shot(i, "nuit_en_marche", MIDNIGHT, true, 0, pitch));
+            list.add(new Shot(i, "en_altitude", NOON, true, 0, 10, 90));
         }
         return list;
     }

@@ -15,7 +15,11 @@ import fr.pioneers.space.mega.client.MegaClient;
 import fr.pioneers.space.sky.client.mega.MegaBuffer;
 import fr.pioneers.space.sky.client.mega.MegaModels;
 import fr.pioneers.space.sky.client.mega.MegaView;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.util.Mth;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.resources.ResourceLocation;
 import org.joml.Matrix4f;
 
@@ -72,6 +76,7 @@ public final class MegaSkyRenderer {
         VIEW.hazeB = style.skyB;
         VIEW.ticks = RenderClock.time(partialTick);
         BUF.clear();
+        BUF.drop = horizonDrop();
         for (SkyScene.Item item : scene.items) {
             if (item.type != SkyScene.MEGA || !MegaModels.has(item.mega)) {
                 continue;
@@ -84,6 +89,31 @@ public final class MegaSkyRenderer {
             MegaModels.build(i, BUF, VIEW);
         }
         draw(poseStack.last().pose());
+    }
+
+    /** Sol moyen sous la camera (lisse : un precipice ne fait pas sauter le ciel), NaN avant la premiere image. */
+    private static double ground = Double.NaN;
+
+    /**
+     * Plongee de l'horizon (tangente) : le relief visible s'arrete a la distance de vue ; vu de {@code h} blocs au-dessus du sol moyen, son
+     * bord est {@code h / distance} sous l'horizontale. La megastructure descend d'autant (elle ne flotte plus au-dessus du relief).
+     */
+    private static double horizonDrop() {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.level == null) {
+            return 0;
+        }
+        Vec3 cam = mc.gameRenderer.getMainCamera().getPosition();
+        int h = mc.level.getHeight(Heightmap.Types.WORLD_SURFACE, Mth.floor(cam.x), Mth.floor(cam.z));
+        if (h > mc.level.getMinBuildHeight()) {
+            ground = Double.isNaN(ground) ? h : ground + (h - ground) * 0.01;
+        }
+        if (Double.isNaN(ground)) {
+            return 0;
+        }
+        double above = Math.max(0, cam.y - ground);
+        double reach = Math.max(32, mc.options.getEffectiveRenderDistance() * 16);
+        return Math.min(0.7, above / reach);
     }
 
     private static void draw(Matrix4f m) {

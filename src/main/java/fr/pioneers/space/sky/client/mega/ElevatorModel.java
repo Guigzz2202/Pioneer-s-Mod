@@ -65,8 +65,10 @@ public final class ElevatorModel {
         double cr = MegaKit.red(v.accent), cg = MegaKit.green(v.accent), cb = MegaKit.blue(v.accent);
         double win = 0.07 + 0.88 * night;
         //plateau de roche sous l'arcologie : elle domine le relief de l'horizon
-        box(b, v, 0.3, ax, (TIER_Y - 6) / 2, az0, fx * 26, 0, fz * 26, 0, (TIER_Y + 6) / 2, 0, sx * 26, 0, sz * 26, cr * 0.3, cg * 0.27,
+        //il descend loin sous l'horizon : vu d'en haut, l'arcologie sort de la brume au lieu de flotter
+        box(b, v, 0.3, ax, (TIER_Y - 40) / 2, az0, fx * 26, 0, fz * 26, 0, (TIER_Y + 40) / 2, 0, sx * 26, 0, sz * 26, cr * 0.3, cg * 0.27,
               cb * 0.25, 0.02);
+        box(b, v, 0.3, ax, -40, az0, fx * 34, 0, fz * 34, 0, 30, 0, sx * 34, 0, sz * 34, cr * 0.26, cg * 0.24, cb * 0.22, 0.02);
         for (int i = 0; i < TIERS.length; i++) {
             double hs = TIERS[i], y0 = TIER_Y + i * TIER_H;
             double shade = 0.4 + 0.07 * i;

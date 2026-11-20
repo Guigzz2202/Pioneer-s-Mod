@@ -28,9 +28,15 @@ public final class MegaBuffer {
     public int solidCount, dotCount, lineCount;
     /** Echelle appliquee a l'ajout (unites du modele vers unites du ciel : les angles ne changent pas, la voute reste a portee). */
     public double scale = 1;
+    /**
+     * Plongee de l'horizon (tangente) : chaque point descend de sa distance horizontale x {@code drop}. Le joueur en altitude voit le relief
+     * plus bas que l'horizon du ciel : la megastructure descend avec lui au lieu de flotter.
+     */
+    public double drop;
 
     public void clear() {
         scale = 1;
+        drop = 0;
         solidCount = 0;
         dotCount = 0;
         lineCount = 0;
@@ -68,18 +74,18 @@ public final class MegaBuffer {
 
     private void put(float[] t, int o, double x0, double y0, double z0, double x1, double y1, double z1, double x2, double y2, double z2,
           double x3, double y3, double z3, float r, float g, float b, float a) {
-        double s = scale;
+        double s = scale, d = drop;
         t[o] = (float) (x0 * s);
-        t[o + 1] = (float) (y0 * s);
+        t[o + 1] = (float) ((y0 - d * Math.sqrt(x0 * x0 + z0 * z0)) * s);
         t[o + 2] = (float) (z0 * s);
         t[o + 3] = (float) (x1 * s);
-        t[o + 4] = (float) (y1 * s);
+        t[o + 4] = (float) ((y1 - d * Math.sqrt(x1 * x1 + z1 * z1)) * s);
         t[o + 5] = (float) (z1 * s);
         t[o + 6] = (float) (x2 * s);
-        t[o + 7] = (float) (y2 * s);
+        t[o + 7] = (float) ((y2 - d * Math.sqrt(x2 * x2 + z2 * z2)) * s);
         t[o + 8] = (float) (z2 * s);
         t[o + 9] = (float) (x3 * s);
-        t[o + 10] = (float) (y3 * s);
+        t[o + 10] = (float) ((y3 - d * Math.sqrt(x3 * x3 + z3 * z3)) * s);
         t[o + 11] = (float) (z3 * s);
         t[o + 12] = r;
         t[o + 13] = g;
