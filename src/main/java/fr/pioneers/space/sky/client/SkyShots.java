@@ -203,6 +203,13 @@ public final class SkyShots {
         double[] g = new double[3];
         for (long t = 6000; t <= 18000; t += 5) {
             double timeDeg = mc.level.dimensionType().timeOfDay(t) * 360;
+            if (obs == null) {
+                //geantes, Soleil, station : ciel simple, soleil (-sin t, cos t, 0) comme MegaSkyRenderer.renderGiant
+                if (Math.toDegrees(Math.asin(Math.cos(Math.toRadians(timeDeg)))) < shot.sunAlt) {
+                    return t;
+                }
+                continue;
+            }
             SkyScene s = SkyScene.compute(obs, t / 24000.0, timeDeg, 0L);
             if (s.sun == null) {
                 break;
