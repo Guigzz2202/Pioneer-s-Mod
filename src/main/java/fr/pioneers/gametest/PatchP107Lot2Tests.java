@@ -21,7 +21,7 @@ import java.util.Set;
 /**
  * 1.0.7 « Plus loin et au-dela », lot 2 (composants MKV et metaux des astres) :
  * <ul>
- *     <li>la famille « au-dela » de la nomenclature est enregistree (onglet Composants) : 63 composants, chacun avec son objet ;</li>
+ *     <li>la famille « au-dela » de la nomenclature est enregistree (onglet Composants) : 63 composants au lot 2, 78 depuis le lot 11, chacun avec son objet ;</li>
  *     <li>chaque composant a sa recette de la nomenclature (rc_&lt;id&gt;), faite aux machines MKIV (tier 3) ;</li>
  *     <li>le chassis en alliage stellaire se fait a l'assembleur (composants), avec l'alliage du lot 1.</li>
  * </ul>
@@ -43,7 +43,8 @@ public final class PatchP107Lot2Tests {
             }
         }
         Gt.check(ids != null, "famille au-dela absente de l'onglet Composants");
-        Gt.equal(63, ids.size(), "composants MKV");
+        //63 au lot 2, 15 de plus au lot 11 (systemes lointains) : la famille ne fait que grandir
+        Gt.check(ids.size() >= 78, "composants MKV : " + ids.size());
         Set<String> made = new HashSet<>();
         for (Recipe<?> r : h.getLevel().getRecipeManager().getRecipes()) {
             String path = r.getId().getPath();
