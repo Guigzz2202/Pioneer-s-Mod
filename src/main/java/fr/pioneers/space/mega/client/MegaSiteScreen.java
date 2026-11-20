@@ -2,38 +2,39 @@ package fr.pioneers.space.mega.client;
 
 import fr.pioneers.client.gui.GuiDraw;
 import fr.pioneers.client.gui.TextFit;
-import fr.pioneers.core.network.PiNetwork;
 import fr.pioneers.space.mega.Megastructures;
-import fr.pioneers.space.mega.PacketMegaDeliver;
 import java.util.List;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
- * 1.0.7 (« Plus loin et au-dela », lot 4) : l'ecran du CHANTIER DE MEGASTRUCTURE. En tete : la megastructure, l'ouvreur du chantier et
- * l'avancement ; au milieu : la liste d'ingredients sur deux colonnes (icone, nom, livre / demande, barre) ; en bas : les composants dont
- * elle sera la seule source, ses ports et le bouton « Livrer depuis l'inventaire ». Tout vient de l'etat synchronise ({@link MegaClient},
- * relu a chaque image : l'ecran suit les livraisons des autres joueurs et des cables) ; l'ecran n'envoie qu'une intention.
+ * 1.0.7 (« Plus loin et au-dela », lot 4) : l'ecran du CHANTIER DE MEGASTRUCTURE, ouvert depuis la carte de la fusee. En tete : la
+ * megastructure, l'ouvreur du chantier et l'avancement ; au milieu : la liste d'ingredients sur deux colonnes (icone, nom, livre / demande,
+ * barre) ; en bas : les composants dont elle sera la seule source, ses ports, et comment la ravitailler (fusees cargo vers « Chantier : ... »).
+ * Tout vient de l'etat synchronise ({@link MegaClient}, relu a chaque image : l'ecran suit les livraisons des fusees) ; il n'envoie rien.
+ * Echap : retour a la carte.
  */
 public class MegaSiteScreen extends Screen {
 
     private static final int W = 316, H = 236, ROW = 18, COLS = 2, ROWS = 7;
-    private final BlockPos pos;
+    @Nullable
+    private final Screen parent;
     private final int mega;
     private final int accent;
     private final ItemStack[] icons, gatedIcons;
     private int left, top;
     private final TextFit.Hover hover = new TextFit.Hover();
 
-    public MegaSiteScreen(BlockPos pos, int mega) {
+    public MegaSiteScreen(int mega, @Nullable Screen parent) {
         super(Component.translatable("mega.pioneers.gui.title", Megastructures.name(mega)));
-        this.pos = pos;
+        this.parent = parent;
         this.mega = mega;
         this.accent = 0xFF000000 | Megastructures.color(mega);
         icons = new ItemStack[Megastructures.ingredientCount(mega)];
@@ -107,31 +108,22 @@ public class MegaSiteScreen extends Screen {
         }
         Component port = Component.translatable("industry.pioneers.machine." + Megastructures.port(mega));
         TextFit.fit(g, font, Component.translatable("mega.pioneers.gui.port", port), left + 10, gy + 20, W - 20, 0xFF9AA6B2, 0.75F, hover);
-        //bouton
-        boolean on = !done && over(mx, my);
-        int bx = left + W / 2 - 80, by = top + H - 24;
-        g.fill(bx, by, bx + 160, by + 16, done ? 0xFF1A2027 : on ? 0xFF3A4652 : 0xFF2A333C);
-        g.fill(bx, by + 15, bx + 160, by + 16, done ? 0xFF262E36 : accent);
-        TextFit.center(g, font, Component.translatable("mega.pioneers.gui.deliver"), bx + 2, by + 4, 156, done ? 0xFF5A6670 : 0xFFFFFFFF,
-              0.75F, hover);
+        //ravitaillement : fusees cargo
+        int by = top + H - 24;
+        g.fill(left + 8, by, left + W - 8, by + 16, 0xFF1A2027);
+        g.fill(left + 8, by + 15, left + W - 8, by + 16, done ? 0xFF3FB950 : accent);
+        Component how = done ? Component.translatable("mega.pioneers.gui.unlocked")
+              : Component.translatable("mega.pioneers.gui.cargo", Component.translatable("mega.pioneers.site_name", Megastructures.name(mega)));
+        TextFit.center(g, font, how, left + 10, by + 4, W - 20, done ? 0xFF7FD69A : 0xFFDDE6EE, 0.7F, hover);
         if (!done) {
-            hover.tip(bx, by, 160, 16, List.of(Component.translatable("mega.pioneers.gui.deliver.tooltip")));
+            hover.tip(left + 8, by, W - 16, 16, List.of(Component.translatable("mega.pioneers.gui.cargo.tooltip")));
         }
         super.render(g, mx, my, pt);
         hover.render(g, font);
     }
 
-    private boolean over(double mx, double my) {
-        int bx = left + W / 2 - 80, by = top + H - 24;
-        return mx >= bx && mx < bx + 160 && my >= by && my < by + 16;
-    }
-
     @Override
-    public boolean mouseClicked(double mx, double my, int button) {
-        if (!MegaClient.unlocked(mega) && over(mx, my)) {
-            PiNetwork.sendToServer(new PacketMegaDeliver(pos));
-            return true;
-        }
-        return super.mouseClicked(mx, my, button);
+    public void onClose() {
+        Minecraft.getInstance().setScreen(parent);
     }
 }

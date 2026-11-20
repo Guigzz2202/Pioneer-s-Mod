@@ -47,7 +47,16 @@ public final class MegaEvents {
     static void unlocked(MinecraftServer server, int i) {
         now = true;
         dirty = true;
+        //1.0.7 : le chantier termine quitte le reseau cargo (les fusees en route rentrent)
+        fr.pioneers.space.cargo.CargoNetwork.get(server).closeMegaSite(i);
         server.getPlayerList().broadcastSystemMessage(Component.translatable("mega.pioneers." + Megastructures.id(i) + ".unlocked"), false);
+    }
+
+    /** 1.0.7 : une fusee cargo a livre {@code n} objets au chantier de la megastructure {@code i} (message a tous). */
+    public static void delivered(MinecraftServer server, int i, int n) {
+        int total = Megastructures.total(i), have = Math.min(total, MegaWorld.get(server).deliveredTotal(i));
+        server.getPlayerList().broadcastSystemMessage(Component.translatable("mega.pioneers.site_delivered", String.valueOf(n),
+              Megastructures.name(i), String.valueOf(have), String.valueOf(total)).withStyle(net.minecraft.ChatFormatting.GRAY), false);
     }
 
     /** Envoie l'etat a tous les joueurs. */
@@ -142,6 +151,7 @@ public final class MegaEvents {
             w.unlock(server, i);
         } else {
             w.reset(i);
+            fr.pioneers.space.cargo.CargoNetwork.get(server).closeMegaSite(i);
             now = true;
         }
         int n = i;

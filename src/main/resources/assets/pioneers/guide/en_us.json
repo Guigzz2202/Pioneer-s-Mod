@@ -16599,11 +16599,10 @@
     {
      "title": "Megastructures",
      "items": [
-      "pioneers:megastructure_site",
       "pioneers:mars_elevator_port",
       "pioneers:continuous_orbital_beam"
      ],
-     "text": "A §6megastructure§r is not built block by block: you place a §6megastructure site§r on its body and deliver its ingredient list (by hand, by logistic cable or by cargo). As soon as the list is complete, it is unlocked at once, for the whole server, and shows in the sky.\n\nIts §6ports§r are multiblocks built on its body as an MKV structure (casings, glass and frames); their controller is the terminal. They run its §6unique recipes§r: each is the only source of three §6gated components§r, required further on (drill, collector, MKV cores, the next megastructures).\n\nThe Sun has no ground: the Swarm is built in the Sun's station; the Halo Observatory in Earth's station."
+     "text": "A §6megastructure§r is not built block by block: you start its §6site§r from the rocket's map (as the passenger of a rocket in orbit, §6Start the site§r button on the body's card), then send its ingredient list by §6cargo rockets§r: a launch complex in Logistics mode, destination \"Site: …\", item holds. Each rocket delivers what is missing and comes back with the rest; the body's card shows the progress. As soon as the list is complete, the megastructure is unlocked at once, for the whole server, and shows in the sky.\n\nIts §6ports§r are multiblocks built on its body as an MKV structure (casings, glass and frames); their controller is the terminal. They run its §6unique recipes§r: each is the only source of three §6gated components§r, required further on (drill, collector, MKV cores, the next megastructures).\n\nThe Sun has no ground: the Swarm's ports are built in the Sun's station; the Halo Observatory's in Earth's station."
     },
     {
      "title": "The ten megastructures",

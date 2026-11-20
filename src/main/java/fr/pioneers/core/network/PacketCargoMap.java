@@ -50,7 +50,7 @@ public final class PacketCargoMap {
             long now = player.server.overworld().getGameTime();
             List<StationInfo> stations = new ArrayList<>();
             for (CargoNetwork.Station station : network.getStations()) {
-                Body body = CargoRoutes.body(station.dimension);
+                Body body = CargoRoutes.bodyOf(station);
                 if (body != null) {
                     stations.add(new StationInfo(body.ordinal(), station.name, 0, station.receiver));
                 }
@@ -61,7 +61,7 @@ public final class PacketCargoMap {
                 if (from == null || to == null) {
                     continue;
                 }
-                Body a = CargoRoutes.body(from.dimension), b = CargoRoutes.body(to.dimension);
+                Body a = CargoRoutes.bodyOf(from), b = CargoRoutes.bodyOf(to);
                 if (a == null || b == null) {
                     continue;
                 }

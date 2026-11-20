@@ -457,6 +457,35 @@ public class RocketEntity extends Entity {
         beginTransit(body, true);
     }
 
+    /**
+     * 1.0.7 : « Demarrer le chantier de la megastructure » sur la carte : seulement le passager de la fusee en orbite, vers un astre que
+     * la fusee peut atteindre. Le chantier devient une destination des fusees cargo (complexes de lancement en mode logistique), qui y livrent
+     * sa liste d'ingredients ; la fusee du joueur ne bouge pas.
+     */
+    public void startMegaSite(ServerPlayer player, int mega) {
+        if (getState() != State.ORBIT || player.getVehicle() != this || tier == null || mega < 0 || mega >= fr.pioneers.space.mega.Megastructures.COUNT) {
+            return;
+        }
+        fr.pioneers.space.mega.MegaWorld world = fr.pioneers.space.mega.MegaWorld.get(player.server);
+        if (world.unlocked(mega)) {
+            return;
+        }
+        SolarSystem.Body body = fr.pioneers.space.mega.Megastructures.body(mega);
+        SolarSystem.Body origin = SolarSystem.origin(level().dimension(), getX());
+        int originTier = origin == null ? 1 : origin.requiredTier();
+        if (Math.max(body.requiredTier(), originTier) > tier.level) {
+            player.displayClientMessage(PiLang.ROCKET_NO_DESTINATION.translateColored(ChatFormatting.RED), true);
+            return;
+        }
+        boolean fresh = world.opener(mega) == null;
+        world.open(mega, player);
+        fr.pioneers.space.cargo.CargoNetwork.get(player.server).openMegaSite(mega);
+        if (fresh) {
+            player.server.getPlayerList().broadcastSystemMessage(Component.translatable("mega.pioneers.site_opened",
+                  player.getDisplayName(), fr.pioneers.space.mega.Megastructures.name(mega)).withStyle(ChatFormatting.AQUA), false);
+        }
+    }
+
     /** Un kit de station : d'abord dans l'inventaire du passager, sinon dans la soute de la fusee. */
     private boolean consumeStationKit(ServerPlayer player) {
         var inventory = player.getInventory();

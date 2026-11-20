@@ -840,11 +840,13 @@ public class TileEntityLaunchPad extends DataMachineTile implements MultiblockPo
             countdown = 0;
             return Status.MAINTENANCE;
         }
-        int fuel = routeFuel(level.dimension(), target.dimension, modules);
+        int fuel = routeFuel(level.dimension(), target, modules);
         Status ready;
         if (!canWork()) {
             ready = Status.DISABLED;
-        } else if (!ruleSatisfied(now, rocket)) {
+        } else if (!ruleSatisfied(now, rocket) || target.mega >= 0 && !usefulForSite(target.mega, rocket)) {
+            //1.0.7 : vers un chantier de megastructure, seulement une fusee qui porte au moins un objet qui lui manque (sinon le reste
+            //rapporte du chantier repartirait sans fin)
             ready = Status.WAITING_CARGO;
         } else if (rocket.getFuel() < Math.min(rocket.getFuelCapacity(), fuel)) {
             ready = wrongFuel ? Status.WRONG_FUEL : Status.FUELING;
@@ -872,10 +874,36 @@ public class TileEntityLaunchPad extends DataMachineTile implements MultiblockPo
         return (int) Math.ceil(CargoRoutes.fuel(from, to) * RocketModule.fuelMultiplier(modules));
     }
 
+    /** 1.0.7 : hydrogene d'un trajet vers une destination du reseau (spatioport ou chantier de megastructure). */
+    public static int routeFuel(ResourceKey<Level> from, Station to, List<ItemStack> modules) {
+        int base = to.mega >= 0 ? CargoRoutes.fuel(CargoRoutes.body(from), CargoRoutes.bodyOf(to)) : CargoRoutes.fuel(from, to.dimension);
+        return (int) Math.ceil(base * RocketModule.fuelMultiplier(modules));
+    }
+
+    /** 1.0.7 : duree d'un trajet vers une destination du reseau (spatioport ou chantier de megastructure). */
+    public static int routeTicks(ResourceKey<Level> from, Station to, List<ItemStack> modules) {
+        int transit = to.mega >= 0 ? CargoRoutes.transitTicks(CargoRoutes.body(from), CargoRoutes.bodyOf(to)) : CargoRoutes.transitTicks(from, to.dimension);
+        return LaunchVisualEntity.ASCENT_TICKS + (int) Math.round(transit * RocketModule.timeMultiplier(modules)) + LaunchVisualEntity.DESCENT_TICKS;
+    }
+
     /** Duree d'un trajet logistique (modules de vitesse compris). */
     public static int routeTicks(ResourceKey<Level> from, ResourceKey<Level> to, List<ItemStack> modules) {
         return LaunchVisualEntity.ASCENT_TICKS + (int) Math.round(CargoRoutes.transitTicks(from, to) * RocketModule.timeMultiplier(modules))
                + LaunchVisualEntity.DESCENT_TICKS;
+    }
+
+    /** 1.0.7 : la fusee porte-t-elle un objet qui manque encore au chantier de la megastructure ? */
+    private boolean usefulForSite(int mega, RocketEntity rocket) {
+        if (!(level instanceof ServerLevel serverLevel)) {
+            return false;
+        }
+        fr.pioneers.space.mega.MegaWorld world = fr.pioneers.space.mega.MegaWorld.get(serverLevel.getServer());
+        for (ItemStack stack : rocket.getCargo().getItems()) {
+            if (!stack.isEmpty() && world.accept(null, mega, stack, true) > 0) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private boolean ruleSatisfied(long now, RocketEntity rocket) {
@@ -893,7 +921,7 @@ public class TileEntityLaunchPad extends DataMachineTile implements MultiblockPo
         List<ItemStack> modules = rocket.getModules();
         CompoundTag cargo = rocket.getCargo().save();
         CargoFlight flight = new CargoFlight(UUID.randomUUID(), stationId, stationId, target.id, RocketModule.dominantCargo(modules), cargo, now,
-              now + routeTicks(level.dimension(), target.dimension, modules) - LaunchVisualEntity.DESCENT_TICKS, false);
+              now + routeTicks(level.dimension(), target, modules) - LaunchVisualEntity.DESCENT_TICKS, false);
         flight.tier = rocket.getTier().ordinal();
         flight.modules = saveStacks(rocket.takeModules());
         rocket.getCargo().clear();
@@ -1110,7 +1138,10 @@ public class TileEntityLaunchPad extends DataMachineTile implements MultiblockPo
         dockedAt = level.getGameTime();
         if (flight.returning) {
             //Retour a la maison : la fusee (avec ses modules, soutes vides) reprend sa case et sera redressee sur le pas de tir
-            ItemStack rocket = ItemRocket.withModules(RocketTier.byIndex(flight.tier), loadStacks(flight.modules));
+            //1.0.7 : au retour d'un chantier de megastructure, la fusee rapporte ce que le chantier n'a pas pris
+            RocketCargo rest = RocketCargo.read(flight.cargo);
+            ItemStack rocket = rest.isEmpty() ? ItemRocket.withModules(RocketTier.byIndex(flight.tier), loadStacks(flight.modules))
+                                              : ItemRocket.withContents(RocketTier.byIndex(flight.tier), loadStacks(flight.modules), rest);
             if (!rocketSlot.insert(rocket, Action.EXECUTE, Automation.INTERNAL).isEmpty()) {
                 drop(rocket);
             }
@@ -1171,9 +1202,9 @@ public class TileEntityLaunchPad extends DataMachineTile implements MultiblockPo
             Station target = network.getStation(targetId);
             if (target != null && target.receiver) {
                 List<ItemStack> modules = getActiveModules();
-                fuelNeeded = routeFuel(level.dimension(), target.dimension, modules);
-                etaSeconds = routeTicks(level.dimension(), target.dimension, modules) / 20;
-                var body = CargoRoutes.body(target.dimension);
+                fuelNeeded = routeFuel(level.dimension(), target, modules);
+                etaSeconds = routeTicks(level.dimension(), target, modules) / 20;
+                var body = CargoRoutes.bodyOf(target);
                 label = target.name + (body == null ? "" : "|" + body.getTranslationKey());
             } else {
                 etaSeconds = 0;

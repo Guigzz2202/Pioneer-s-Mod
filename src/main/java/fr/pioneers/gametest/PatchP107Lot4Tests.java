@@ -4,7 +4,11 @@ import fr.pioneers.api.PioneersAPI;
 import fr.pioneers.core.registries.PiBlocks;
 import fr.pioneers.logistics.transport.CableTier;
 import fr.pioneers.space.SolarSystem.Body;
-import fr.pioneers.space.mega.MegaSiteTile;
+import fr.pioneers.space.cargo.CargoFlight;
+import fr.pioneers.space.cargo.CargoNetwork;
+import fr.pioneers.space.cargo.CargoRoutes;
+import fr.pioneers.space.cargo.CargoType;
+import fr.pioneers.space.module.RocketCargo;
 import fr.pioneers.space.mega.MegaWorld;
 import fr.pioneers.space.mega.Megastructures;
 import fr.pioneers.space.mega.PacketMegaState;
@@ -110,48 +114,52 @@ public final class PatchP107Lot4Tests {
         s.done();
     }
 
+    /**
+     * 1.0.7 : le chantier s'ouvre depuis la carte et se ravitaille par fusees cargo : une fusee arrivee au chantier livre ce qui manque, garde
+     * le reste (terre, surplus), et le chantier termine quitte le reseau cargo.
+     */
     @GameTest(template = Gt.SMALL, batch = "pioneers_p107_4_site", timeoutTicks = 40)
     public static void p107_4_chantier_livre_puis_debloque(GameTestHelper h) {
         Gt.Scope s = Gt.begin(h);
-        Function<Level, Body> old = Megastructures.bodyOf;
-        s.onCleanup(() -> Megastructures.bodyOf = old);
-        MegaWorld w = MegaWorld.get(h.getLevel().getServer());
+        net.minecraft.server.MinecraftServer server = h.getLevel().getServer();
+        MegaWorld w = MegaWorld.get(server);
         CompoundTag saved = w.save(new CompoundTag());
+        CargoNetwork net = CargoNetwork.get(server);
+        boolean wasOpen = net.getStation(CargoNetwork.megaSiteId(MARS)) != null;
         s.onCleanup(() -> w.restore(saved));
         try {
             w.reset(MARS);
-            BlockPos at = new BlockPos(2, 2, 2);
-            h.setBlock(at, PiBlocks.MEGASTRUCTURE_SITE.getBlock().defaultBlockState());
-            MegaSiteTile tile = (MegaSiteTile) h.getBlockEntity(at);
-            Megastructures.bodyOf = l -> null;
-            Gt.equal(-1, tile.mega(), "pas de megastructure sur le monde d'essai");
-            Megastructures.bodyOf = l -> Body.MARS;
-            Gt.equal(MARS, tile.mega(), "chantier sur Mars : Ascenseur");
-            IItemHandler in = tile.getCapability(ForgeCapabilities.ITEM_HANDLER).orElseThrow(IllegalStateException::new);
-            Gt.check(!in.isItemValid(0, new ItemStack(Items.DIRT)), "le chantier prend de la terre");
-            Gt.equal(64, in.insertItem(0, new ItemStack(Items.DIRT, 64), false).getCount(), "terre refusee");
-            //premier ingredient : demande n, livraison de n + 10 : n pris, 10 rendus
+            net.openMegaSite(MARS);
+            CargoNetwork.Station site = net.getStation(CargoNetwork.megaSiteId(MARS));
+            Gt.check(site != null && site.receiver && site.mega == MARS, "chantier ouvert : destination cargo");
+            Gt.check(net.receiversFor(java.util.UUID.randomUUID()).contains(site), "chantier parmi les destinations des complexes");
+            Gt.equal(Body.MARS, CargoRoutes.bodyOf(site), "astre du chantier");
+            //premiere fusee : un ingredient (trop), de la terre
             int need = Megastructures.needed(MARS, 0);
-            ItemStack first = new ItemStack(Megastructures.ingredient(MARS, 0), Math.min(64, need));
-            int give = first.getCount();
-            ItemStack rest = in.insertItem(0, first.copy(), true);
-            Gt.equal(0, rest.getCount(), "simulation : tout est pris");
-            Gt.equal(0, w.delivered(MARS, 0), "simulation : rien livre");
-            in.insertItem(0, first, false);
-            Gt.equal(give, w.delivered(MARS, 0), "livraison comptee");
+            RocketCargo cargo = new RocketCargo();
+            cargo.getItems().set(0, new ItemStack(Megastructures.ingredient(MARS, 0), Math.min(64, need + 3)));
+            cargo.getItems().set(1, new ItemStack(Items.DIRT, 64));
+            CargoFlight flight = new CargoFlight(java.util.UUID.randomUUID(), java.util.UUID.randomUUID(), java.util.UUID.randomUUID(), site.id,
+                  CargoType.ITEMS, cargo.save(), 0, 0, false);
+            int taken = CargoNetwork.deliverToMegaSite(server, flight, site);
+            int first = Math.min(64, need + 3);
+            Gt.equal(Math.min(first, need), taken, "le chantier prend ce qui manque");
+            RocketCargo rest = RocketCargo.read(flight.cargo);
+            Gt.equal(64, rest.getItems().get(1).getCount(), "la terre reste a bord");
+            Gt.equal(first - Math.min(first, need), rest.getItems().get(0).getCount(), "le surplus reste a bord");
             Gt.check(!w.unlocked(MARS), "debloquee trop tot");
-            //le reste de la liste
+            //le reste de la liste, fusee apres fusee
             for (int k = 0; k < Megastructures.ingredientCount(MARS); k++) {
                 while (w.missing(MARS, k) > 0) {
-                    ItemStack st = new ItemStack(Megastructures.ingredient(MARS, k), Math.min(64, w.missing(MARS, k) + 3));
-                    int before = st.getCount();
-                    ItemStack back = in.insertItem(0, st, false);
-                    Gt.check(back.getCount() < before, "livraison refusee : " + k);
+                    RocketCargo c = new RocketCargo();
+                    c.getItems().set(0, new ItemStack(Megastructures.ingredient(MARS, k), Math.min(64, w.missing(MARS, k))));
+                    CargoFlight f = new CargoFlight(java.util.UUID.randomUUID(), java.util.UUID.randomUUID(), java.util.UUID.randomUUID(), site.id,
+                          CargoType.ITEMS, c.save(), 0, 0, false);
+                    Gt.check(CargoNetwork.deliverToMegaSite(server, f, site) > 0, "livraison refusee : " + k);
                 }
             }
             Gt.check(w.unlocked(MARS), "liste complete : Ascenseur debloque");
-            Gt.equal(64, in.insertItem(0, new ItemStack(Megastructures.ingredient(MARS, 0), 64), false).getCount(),
-                  "debloquee : le chantier ne prend plus rien");
+            Gt.check(net.getStation(CargoNetwork.megaSiteId(MARS)) == null, "chantier termine : plus une destination");
             Gt.check((w.unlockedMask() & (1L << MARS)) != 0, "masque des debloquees");
             //etat synchronise : aller-retour du paquet
             PacketMegaState p = w.packet();
@@ -163,8 +171,15 @@ public final class PatchP107Lot4Tests {
             //sauvegarde : aller-retour
             CompoundTag tag = w.save(new CompoundTag());
             Gt.check(tag.getList("megas", 10).getCompound(MARS).getBoolean("unlocked"), "sauvegarde : debloquee");
+            //le chantier se sauve avec le reseau cargo
+            net.openMegaSite(MARS);
+            CompoundTag nt = net.save(new CompoundTag());
+            Gt.check(nt.getList("stations", 10).stream().anyMatch(t -> ((CompoundTag) t).getString("mega").equals(Megastructures.id(MARS))),
+                  "sauvegarde du reseau : chantier");
         } finally {
-            Megastructures.bodyOf = old;
+            if (!wasOpen) {
+                net.closeMegaSite(MARS);
+            }
             restore(w, saved);
         }
         s.done();

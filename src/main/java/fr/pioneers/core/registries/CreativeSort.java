@@ -526,7 +526,7 @@ public final class CreativeSort {
         section(t, "geantes gazeuses").add("aerostat_kit", "aerostat_deck", "aerostat_landing_pad", "aerostat_hull", "aerostat_buoyancy_cell",
               "drone_bay", "drone_pad", "aerostat_*");
         //1.0.7 (lot 4) : megastructures : le chantier, les terminaux de port et les composants dont chacune est la seule source
-        section(t, "megastructures").add("megastructure_site").add(gatedIds()).machines = m -> megaPort(m.key());
+        section(t, "megastructures").add(gatedIds()).machines = m -> megaPort(m.key());
         //Fin de jeu : stabilisateur, compresseur gravitationnel, synthetiseur, planetes simulees, simulateur, absorbeur
         section(t, "singularite").add("space_stabilizer_controller", "space_stabilizer_casing", "space_stabilizer_glass", "space_stabilizer_port",
               "space_stabilizer_power_port", "space_stabilizer_emitter", "singularity_core", "stellar_core", "void_singularity_cell",

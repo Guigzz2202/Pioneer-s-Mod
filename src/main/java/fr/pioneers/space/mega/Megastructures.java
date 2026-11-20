@@ -16,8 +16,9 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * 1.0.7 (« Plus loin et au-dela », lot 4) : les MEGASTRUCTURES (table generee {@link GeneratedMegastructures}, source
- * T:au_dela/megastructures.py). Une megastructure par astre ; on la debloque d'un coup en livrant sa liste d'ingredients a un chantier
- * pose sur son astre ({@link MegaSiteBlock}, etat commun du serveur {@link MegaWorld}) ; elle apparait alors dans le ciel (objet MEGA de
+ * T:au_dela/megastructures.py). Une megastructure par astre ; on la debloque d'un coup en livrant sa liste d'ingredients a son chantier
+ * (ouvert depuis la carte de la fusee, ravitaille par les fusees cargo : {@code CargoNetwork} ; etat commun du serveur {@link MegaWorld}) ;
+ * elle apparait alors dans le ciel (objet MEGA de
  * {@code SkyScene}) et les multiblocs de port batis sur son astre (controleur = terminal) font ses recettes uniques.
  */
 public final class Megastructures {
@@ -53,6 +54,16 @@ public final class Megastructures {
 
     public static String id(int i) {
         return GeneratedMegastructures.IDS[i];
+    }
+
+    /** Index d'une megastructure par son identifiant, ou -1. */
+    public static int byId(String id) {
+        for (int i = 0; i < COUNT; i++) {
+            if (GeneratedMegastructures.IDS[i].equals(id)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     public static Body body(int i) {

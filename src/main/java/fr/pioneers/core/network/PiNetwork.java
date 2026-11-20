@@ -428,10 +428,11 @@ public final class PiNetwork {
               .decoder(fr.pioneers.space.mega.PacketMegaState::decode)
               .consumerMainThread(fr.pioneers.space.mega.PacketMegaState::handle)
               .add();
-        CHANNEL.messageBuilder(fr.pioneers.space.mega.PacketMegaDeliver.class, id++, NetworkDirection.PLAY_TO_SERVER)
-              .encoder(fr.pioneers.space.mega.PacketMegaDeliver::encode)
-              .decoder(fr.pioneers.space.mega.PacketMegaDeliver::decode)
-              .consumerMainThread(fr.pioneers.space.mega.PacketMegaDeliver::handle)
+        //1.0.7 : le chantier se demarre depuis la carte de la fusee (plus de bloc de chantier ni de livraison depuis l'inventaire)
+        CHANNEL.messageBuilder(fr.pioneers.space.mega.PacketMegaOpen.class, id++, NetworkDirection.PLAY_TO_SERVER)
+              .encoder(fr.pioneers.space.mega.PacketMegaOpen::encode)
+              .decoder(fr.pioneers.space.mega.PacketMegaOpen::decode)
+              .consumerMainThread(fr.pioneers.space.mega.PacketMegaOpen::handle)
               .add();
         //1.0.7 (« ciel grandiose ») : megastructures en fonctionnement (animations du ciel) ; ajoute EN FIN, VERSION 23 inchangee
         CHANNEL.messageBuilder(fr.pioneers.space.mega.PacketMegaWorking.class, id++, NetworkDirection.PLAY_TO_CLIENT)

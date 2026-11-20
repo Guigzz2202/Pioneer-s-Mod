@@ -16599,11 +16599,10 @@
     {
      "title": "Les mégastructures",
      "items": [
-      "pioneers:megastructure_site",
       "pioneers:mars_elevator_port",
       "pioneers:continuous_orbital_beam"
      ],
-     "text": "Une §6mégastructure§r ne se construit pas bloc par bloc : on pose un §6chantier de mégastructure§r sur son astre et on lui livre sa liste d'ingrédients (à la main, par câble logistique ou par cargo). Dès que la liste est complète, elle est débloquée d'un coup, pour tout le serveur, et apparaît dans le ciel.\n\nSes §6ports§r sont des multiblocs bâtis sur son astre en structure MKV (carcasses, verres et cadres) ; leur contrôleur est le terminal. Ils font ses §6recettes uniques§r : chacune est la seule source de trois §6composants gatés§r, exigés par la suite (foreuse, collecteur, cœurs MKV, mégastructures suivantes).\n\nLe Soleil n'a pas de sol : l'Essaim se bâtit dans la station du Soleil ; l'Observatoire du Halo dans la station de la Terre."
+     "text": "Une §6mégastructure§r ne se construit pas bloc par bloc : on démarre son §6chantier§r depuis la carte de la fusée (passager d'une fusée en orbite, bouton §6Démarrer le chantier§r sur la fiche de l'astre), puis on lui envoie sa liste d'ingrédients par §6fusées cargo§r : un complexe de lancement en mode Logistique, destination « Chantier : … », soutes à objets. Chaque fusée livre ce qui manque et rentre avec le reste ; la fiche de l'astre montre l'avancement. Dès que la liste est complète, la mégastructure est débloquée d'un coup, pour tout le serveur, et apparaît dans le ciel.\n\nSes §6ports§r sont des multiblocs bâtis sur son astre en structure MKV (carcasses, verres et cadres) ; leur contrôleur est le terminal. Ils font ses §6recettes uniques§r : chacune est la seule source de trois §6composants gatés§r, exigés par la suite (foreuse, collecteur, cœurs MKV, mégastructures suivantes).\n\nLe Soleil n'a pas de sol : les ports de l'Essaim se bâtissent dans la station du Soleil ; ceux de l'Observatoire du Halo dans la station de la Terre."
     },
     {
      "title": "Les dix mégastructures",

@@ -16,10 +16,11 @@ public class CargoFlight {
     public final UUID id;
     /** Spatioport d'attache (proprietaire de la fusee). */
     public final UUID home;
-    public final UUID from;
+    /** Point de depart du trajet en cours (1.0.7 : le retour d'un chantier de megastructure part du chantier). */
+    public UUID from;
     public UUID to;
     public final CargoType type;
-    /** Cargaison (vide au retour). */
+    /** Cargaison (vide au retour, sauf le reste d'une livraison a un chantier de megastructure). */
     public CompoundTag cargo;
     public long depart;
     public long arrive;

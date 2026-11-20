@@ -1105,7 +1105,10 @@ public class DestinationScreen extends Screen {
         //Les boutons occupent la droite : le texte s'arrete avant eux
         boolean stationButton = tier != null && OrbitalStations.canHost(body) && ClientResearch.isCompleted(ResearchNode.ORBITAL_STATIONS) && known(body);
         boolean departButton = tier != null && !body.isHere(here) && body.dimension() != null;
-        int buttonsLeft = x1 - 8 - (departButton ? 78 : 0) - (stationButton ? 80 : 0);
+        //1.0.7 : chantier de la megastructure de l'astre (demarrage depuis la fusee, puis avancement)
+        int mega = fr.pioneers.space.mega.Megastructures.byBody(body);
+        boolean megaButton = tier != null && known(body) && mega >= 0 && !fr.pioneers.space.mega.client.MegaClient.unlocked(mega);
+        int buttonsLeft = x1 - 8 - (departButton ? 78 : 0) - (stationButton ? 80 : 0) - (megaButton ? 90 : 0);
         int textW = Math.max(40, buttonsLeft - 6 - tx);
         fitText(graphics, info, tx, y0 + 17, 0xFF9AAABB, 0.65F, textW);
         //Etat detaille
@@ -1170,6 +1173,37 @@ public class DestinationScreen extends Screen {
                 addHitbox(bx0, by0, bx1, by1, () -> {
                     PiNetwork.sendToServer(new PacketSelectDestination(body, true));
                     depart();
+                });
+            }
+        }
+        if (megaButton) {
+            Body origin = SolarSystem.origin(here, hereX);
+            boolean reach = Math.max(body.requiredTier(), origin == null ? 1 : origin.requiredTier()) <= tier.level;
+            boolean opened = !fr.pioneers.space.mega.client.MegaClient.opener(mega).isEmpty();
+            boolean ok = opened || reach;
+            int bx1 = x1 - 8 - (departButton ? 78 : 0) - (stationButton ? 80 : 0), bx0 = bx1 - 88, by0 = y0 + 13, by1 = y0 + 35;
+            boolean hover = ok && mouseX >= bx0 && mouseX < bx1 && mouseY >= by0 && mouseY < by1;
+            int accent = 0xFF000000 | fr.pioneers.space.mega.Megastructures.color(mega);
+            graphics.fill(bx0, by0, bx1, by1, !ok ? 0xFF2A3038 : hover ? 0xFF4A3A6A : 0xFF2C2440);
+            graphics.fill(bx0, by0, bx1, by0 + 1, ok ? accent : 0xFF404850);
+            Component label;
+            if (opened) {
+                int total = fr.pioneers.space.mega.Megastructures.total(mega);
+                int have = fr.pioneers.space.mega.client.MegaClient.deliveredTotal(mega);
+                label = Component.translatable("map.pioneers.mega_site.progress");
+                graphics.fill(bx0, by1 - 2, bx0 + (int) ((bx1 - bx0) * Math.min(1F, have / (float) Math.max(1, total))), by1, accent);
+            } else {
+                label = Component.translatable("map.pioneers.mega_site.start");
+            }
+            fitText(graphics, label, bx0 + 4, by0 + 8, ok ? 0xFFFFFFFF : 0xFF707880, 0.7F, bx1 - bx0 - 8);
+            if (ok) {
+                int m = mega;
+                addHitbox(bx0, by0, bx1, by1, () -> {
+                    if (opened) {
+                        Minecraft.getInstance().setScreen(new fr.pioneers.space.mega.client.MegaSiteScreen(m, this));
+                    } else {
+                        PiNetwork.sendToServer(new fr.pioneers.space.mega.PacketMegaOpen(m));
+                    }
                 });
             }
         }
@@ -1351,7 +1385,7 @@ public class DestinationScreen extends Screen {
             int color = station.receiver() ? 0xFF7CC8FF : 0xFFFFC870;
             graphics.blit(texture(body), x0 + 8, y, 9, 9, 0, 0, 64, 64, 64, 64);
             graphics.fill(x0 + 20, y + 3, x0 + 23, y + 6, color);
-            fitText(graphics, Component.literal(station.name()), x0 + 26, y + 1, 0xFFE8F0FF, 0.65F, split - x0 - 60);
+            fitText(graphics, fr.pioneers.space.cargo.CargoNames.of(station.name()), x0 + 26, y + 1, 0xFFE8F0FF, 0.65F, split - x0 - 60);
             Component role = Component.translatable(station.receiver() ? "map.pioneers.logistics.receiver" : "map.pioneers.logistics.sender");
             smallText(graphics, role, split - 6 - font.width(role) * 0.58F, y + 2, station.receiver() ? 0xFF7CC8FF : 0xFFFFC870, 0.58F);
             y += 12;
@@ -1371,7 +1405,8 @@ public class DestinationScreen extends Screen {
             var type = CargoType.byIndex(flight.type());
             int color = 0xFF000000 | type.color;
             graphics.fill(fx, y + 1, fx + 3, y + 16, color);
-            Component route = Component.literal(flight.fromName() + "  →  " + flight.toName());
+            Component route = fr.pioneers.space.cargo.CargoNames.of(flight.fromName()).copy().append("  →  ")
+                  .append(fr.pioneers.space.cargo.CargoNames.of(flight.toName()));
             fitText(graphics, route, fx + 7, y + 1, flight.returning() ? 0xFF8090A0 : 0xFFE8F0FF, 0.65F, x1 - fx - 60);
             Component state = flight.landing() ? Component.translatable("map.pioneers.logistics.landing")
                                                : flight.waiting() ? Component.translatable("map.pioneers.logistics.waiting")

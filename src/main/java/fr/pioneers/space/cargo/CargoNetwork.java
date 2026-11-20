@@ -1,5 +1,12 @@
 package fr.pioneers.space.cargo;
 
+import fr.pioneers.space.mega.MegaEvents;
+import fr.pioneers.space.mega.MegaWorld;
+import fr.pioneers.space.mega.Megastructures;
+import fr.pioneers.space.module.RocketCargo;
+import java.nio.charset.StandardCharsets;
+import net.minecraft.world.item.ItemStack;
+
 import fr.pioneers.space.LaunchVisualEntity;
 import fr.pioneers.space.tile.TileEntityLaunchPad;
 import java.util.ArrayList;
@@ -29,6 +36,10 @@ import org.jetbrains.annotations.Nullable;
  * <p>
  * Une fusee qui arrive attend en orbite tant que son spatioport de destination n'est pas charge (pensez au chunkloader)
  * ou qu'il est occupe par une autre fusee.
+ * <p>
+ * 1.0.7 : les CHANTIERS DE MEGASTRUCTURE ouverts depuis la carte ({@link #openMegaSite}) sont des destinations du reseau, sans spatioport :
+ * une fusee qui y arrive livre ce qui manque au chantier ({@link #deliverToMegaSite}) et repart chez elle avec le reste. Le chantier
+ * termine (megastructure debloquee) quitte le reseau : les fusees en route font demi-tour.
  */
 public class CargoNetwork extends SavedData {
 
@@ -41,6 +52,8 @@ public class CargoNetwork extends SavedData {
         public BlockPos pos;
         public String name;
         public boolean receiver;
+        /** 1.0.7 : chantier de la megastructure de cet index (-1 : spatioport ordinaire). Nom : {@code @mega:<id>} (traduit a l'affichage). */
+        public int mega = -1;
 
         public Station(UUID id, ResourceKey<Level> dimension, BlockPos pos, String name, boolean receiver) {
             this.id = id;
@@ -74,6 +87,32 @@ public class CargoNetwork extends SavedData {
             station.receiver = receiver;
             setDirty();
         }
+    }
+
+    /** 1.0.7 : identifiant fixe du chantier d'une megastructure dans le reseau. */
+    public static UUID megaSiteId(int i) {
+        return UUID.nameUUIDFromBytes(("pioneers:mega_site:" + Megastructures.id(i)).getBytes(StandardCharsets.UTF_8));
+    }
+
+    /** 1.0.7 : nom d'un chantier de megastructure (traduit par l'affichage, {@code CargoNames}). */
+    public static String megaSiteName(int i) {
+        return "@mega:" + Megastructures.id(i);
+    }
+
+    /** 1.0.7 : ouvre le chantier de la megastructure comme destination des fusees cargo (rien si deja ouvert). */
+    public void openMegaSite(int i) {
+        UUID id = megaSiteId(i);
+        if (!stations.containsKey(id)) {
+            Station station = new Station(id, Level.OVERWORLD, BlockPos.ZERO, megaSiteName(i), true);
+            station.mega = i;
+            stations.put(id, station);
+            setDirty();
+        }
+    }
+
+    /** 1.0.7 : chantier termine (ou remis a zero) : il quitte le reseau, les fusees en route rentrent chez elles. */
+    public void closeMegaSite(int i) {
+        removeStation(megaSiteId(i));
     }
 
     public void removeStation(UUID id) {
@@ -156,6 +195,15 @@ public class CargoNetwork extends SavedData {
                     setDirty();
                     continue;
                 }
+                if (target.mega >= 0) {
+                    //1.0.7 : chantier de megastructure (en orbite) : livraison, puis retour avec le reste de la cargaison
+                    deliverToMegaSite(server, flight, target);
+                    if (!redirectHome(flight, now)) {
+                        iterator.remove();
+                    }
+                    setDirty();
+                    continue;
+                }
                 TileEntityLaunchPad pad = loadedPad(server, target);
                 if (pad != null && pad.canAcceptLanding(flight)) {
                     pad.beginLanding(flight);
@@ -183,14 +231,44 @@ public class CargoNetwork extends SavedData {
 
     private boolean redirectHome(CargoFlight flight, long now) {
         Station home = stations.get(flight.home);
-        Station from = stations.get(flight.from);
+        //le point de depart du retour : la ou la fusee devait arriver (chantier, spatioport detruit), sinon son depart
+        Station from = stations.get(flight.to);
+        if (from == null) {
+            from = stations.get(flight.from);
+        }
         if (flight.returning || home == null) {
             return false;
         }
+        flight.from = from == null ? home.id : from.id;
         flight.to = home.id;
         flight.returning = true;
-        flight.arrive = now + CargoRoutes.transitTicks(from == null ? home.dimension : from.dimension, home.dimension);
+        flight.depart = now;
+        flight.arrive = now + CargoRoutes.transitTicks(from == null ? CargoRoutes.bodyOf(home) : CargoRoutes.bodyOf(from), CargoRoutes.bodyOf(home));
         return true;
+    }
+
+    /**
+     * 1.0.7 : une fusee cargo arrive au chantier d'une megastructure : ses soutes a objets livrent ce qui manque (piles prises en tout ou en
+     * partie) ; le reste (objets en trop, fluides, gaz, donnees) repart avec elle.
+     */
+    public static int deliverToMegaSite(MinecraftServer server, CargoFlight flight, Station site) {
+        MegaWorld world = MegaWorld.get(server);
+        RocketCargo cargo = RocketCargo.read(flight.cargo);
+        int taken = 0;
+        for (ItemStack stack : cargo.getItems()) {
+            if (!stack.isEmpty()) {
+                int n = world.accept(server, site.mega, stack, false);
+                if (n > 0) {
+                    stack.shrink(n);
+                    taken += n;
+                }
+            }
+        }
+        flight.cargo = cargo.save();
+        if (taken > 0) {
+            MegaEvents.delivered(server, site.mega, taken);
+        }
+        return taken;
     }
 
     @Nullable
@@ -212,6 +290,13 @@ public class CargoNetwork extends SavedData {
             CompoundTag s = (CompoundTag) entry;
             ResourceKey<Level> dimension = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse(s.getString("dim")));
             Station station = new Station(s.getUUID("id"), dimension, BlockPos.of(s.getLong("pos")), s.getString("name"), s.getBoolean("receiver"));
+            if (s.contains("mega")) {
+                station.mega = Megastructures.byId(s.getString("mega"));
+                if (station.mega < 0) {
+                    //megastructure disparue : le chantier n'est plus une destination
+                    continue;
+                }
+            }
             network.stations.put(station.id, station);
         }
         for (Tag entry : tag.getList("flights", Tag.TAG_COMPOUND)) {
@@ -231,6 +316,9 @@ public class CargoNetwork extends SavedData {
             s.putLong("pos", station.pos.asLong());
             s.putString("name", station.name);
             s.putBoolean("receiver", station.receiver);
+            if (station.mega >= 0) {
+                s.putString("mega", Megastructures.id(station.mega));
+            }
             list.add(s);
         }
         tag.put("stations", list);

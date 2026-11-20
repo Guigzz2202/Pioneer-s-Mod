@@ -285,10 +285,6 @@ public final class PiBlocks {
     public static final BlockRegistryObject<ProspectingRadarBlock, BlockItem> PROSPECTING_RADAR = BLOCKS.register("prospecting_radar",
           () -> new ProspectingRadarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).requiresCorrectToolForDrops()
                 .strength(2.0F, 6.0F).sound(SoundType.METAL).noOcclusion()));
-    // --- 1.0.7 (« Plus loin et au-dela », lot 4) : chantier de megastructure ---
-    public static final BlockRegistryObject<fr.pioneers.space.mega.MegaSiteBlock, BlockItem> MEGASTRUCTURE_SITE = BLOCKS.register("megastructure_site",
-          () -> new fr.pioneers.space.mega.MegaSiteBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).requiresCorrectToolForDrops()
-                .strength(5.0F, 12.0F).sound(SoundType.NETHERITE_BLOCK).lightLevel(state -> 9)));
     /** Blocs de stockage des metaux exotiques. */
     public static final Map<MiningMaterial, BlockRegistryObject<Block, BlockItem>> MATERIAL_BLOCKS =
           new EnumMap<>(MiningMaterial.class);

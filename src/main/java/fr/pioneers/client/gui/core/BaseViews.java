@@ -495,7 +495,7 @@ final class BaseViews {
                     color = RED;
                 } else {
                     String[] parts = label.split("\\|", 2);
-                    target = Component.literal(parts[0]).append(parts.length > 1 ? Component.literal("  ").append(Component.translatable(parts[1])
+                    target = fr.pioneers.space.cargo.CargoNames.of(parts[0]).copy().append(parts.length > 1 ? Component.literal("  ").append(Component.translatable(parts[1])
                           .withStyle(ChatFormatting.GRAY)) : Component.empty());
                 }
             }

@@ -35,8 +35,4 @@ public final class PiTileEntityTypes {
     public static final RegistryObject<BlockEntityType<LaunchPortTile>> LAUNCH_PORT =
           VANILLA_TILES.register("launch_port", () -> BlockEntityType.Builder.of(
                 LaunchPortTile::new, PiBlocks.LAUNCH_PORT.getBlock()).build(null));
-    /** 1.0.7 (lot 4) : chantier de megastructure (livraison sans inventaire propre). */
-    public static final RegistryObject<BlockEntityType<fr.pioneers.space.mega.MegaSiteTile>> MEGASTRUCTURE_SITE =
-          VANILLA_TILES.register("megastructure_site", () -> BlockEntityType.Builder.of(
-                fr.pioneers.space.mega.MegaSiteTile::new, PiBlocks.MEGASTRUCTURE_SITE.getBlock()).build(null));
 }
