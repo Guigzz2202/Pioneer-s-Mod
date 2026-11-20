@@ -7,6 +7,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
@@ -14,7 +15,8 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 
 /**
- * Derniere passe de generation d'un chunk : aucune etendue de liquide ne doit rester en marche ou suspendue.
+ * Derniere passe de generation d'un chunk (et du bord de ses voisins, {@link #MARGIN}) : aucune etendue de liquide ne doit rester en
+ * marche ou suspendue.
  * <ul>
  *     <li>Une nappe posee sur la mer mais plus haute qu'elle (la marche d'un bloc vue sur Venus) est retiree en entier.</li>
  *     <li>Un bloc de liquide qui touche le vide (sur un cote ou dessous) est retire s'il depasse le niveau normal,
@@ -34,6 +36,14 @@ public class FluidCleanupFeature extends Feature<FluidCleanupFeature.Config> {
         ).apply(instance, Config::new));
     }
 
+    /**
+     * Bord des tronçons voisins repasse aussi (1.0.7, retour de Guillaume du 20/11 : cubes de liquide suspendus) : un element pose plus
+     * tard par un voisin (riviere de lave longue de 30 blocs, cuvette, cratere) peut ouvrir un liquide deja verifie, loin dans le tronçon :
+     * la passe du dernier tronçon decore reprend ses voisins presque en entier. 15 blocs : le voisin regarde par la passe (un bloc plus
+     * loin) reste dans les tronçons voisins, seuls ou un element peut lire et ecrire.
+     */
+    static final int MARGIN = 15;
+
     public FluidCleanupFeature() {
         super(Config.CODEC);
     }
@@ -43,15 +53,17 @@ public class FluidCleanupFeature extends Feature<FluidCleanupFeature.Config> {
         WorldGenLevel level = context.level();
         Config config = context.config();
         Fluid fluid = config.fluid().getFluidState().getType();
-        int x0 = context.origin().getX() & ~15, z0 = context.origin().getZ() & ~15;
-        int top = Math.min(level.getMaxBuildHeight() - 1, 255);
+        int x0 = (context.origin().getX() & ~15) - MARGIN, z0 = (context.origin().getZ() & ~15) - MARGIN;
+        int cap = Math.min(level.getMaxBuildHeight() - 1, 255);
         BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos(), side = new BlockPos.MutableBlockPos();
         boolean changed = false;
         //Plusieurs passes : retirer le bord d'une nappe surelevee expose le bloc suivant
         for (int pass = 0; pass < 6; pass++) {
             boolean any = false;
-            for (int dx = 0; dx < 16; dx++) {
-                for (int dz = 0; dz < 16; dz++) {
+            for (int dx = 0; dx < 16 + 2 * MARGIN; dx++) {
+                for (int dz = 0; dz < 16 + 2 * MARGIN; dz++) {
+                    //le liquide est sous la surface du bruit (elle compte les liquides) : rien a chercher plus haut
+                    int top = Math.min(cap, level.getHeight(Heightmap.Types.WORLD_SURFACE_WG, x0 + dx, z0 + dz) + 2);
                     for (int y = top; y >= config.minY(); y--) {
                         pos.set(x0 + dx, y, z0 + dz);
                         FluidState state = level.getFluidState(pos);

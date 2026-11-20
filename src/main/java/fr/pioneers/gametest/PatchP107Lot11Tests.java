@@ -75,6 +75,55 @@ public final class PatchP107Lot11Tests {
     }
 
     /**
+     * Retour de Guillaume (20/11, capture sur Gaia BH1 b) : des blocs de liquide « suspendus » (cubes d'eau dresses dans le vide) sur les
+     * planetes lointaines. Aucun bloc source de liquide de la surface (au-dessus de la couche 40) ne touche le vide, sur un cote ou dessous,
+     * dans 7 x 7 tronçons generes de chaque planete.
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p107_11_fluids", timeoutTicks = 1200)
+    public static void p107_11_aucun_liquide_suspendu(GameTestHelper h) {
+        Gt.Scope s = Gt.begin(h);
+        StringBuilder bad = new StringBuilder();
+        for (Body body : FAR) {
+            ServerLevel level = h.getLevel().getServer().getLevel(body.dimension());
+            int count = 0;
+            BlockPos first = null;
+            BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos(), side = new BlockPos.MutableBlockPos();
+            for (int cx = -3; cx <= 3; cx++) {
+                for (int cz = -3; cz <= 3; cz++) {
+                    ChunkAccess chunk = level.getChunk(cx, cz);
+                    for (int dx = 0; dx < 16; dx++) {
+                        for (int dz = 0; dz < 16; dz++) {
+                            int top = chunk.getHeight(Heightmap.Types.WORLD_SURFACE, dx, dz);
+                            for (int y = top; y >= 40; y--) {
+                                pos.set(cx * 16 + dx, y, cz * 16 + dz);
+                                net.minecraft.world.level.material.FluidState f = level.getFluidState(pos);
+                                if (f.isEmpty() || !f.isSource()) {
+                                    continue;
+                                }
+                                boolean open = false;
+                                for (net.minecraft.core.Direction d : new net.minecraft.core.Direction[]{net.minecraft.core.Direction.DOWN,
+                                      net.minecraft.core.Direction.NORTH, net.minecraft.core.Direction.SOUTH, net.minecraft.core.Direction.EAST,
+                                      net.minecraft.core.Direction.WEST}) {
+                                    open |= level.getBlockState(side.setWithOffset(pos, d)).isAir();
+                                }
+                                if (open) {
+                                    count++;
+                                    first = first == null ? pos.immutable() : first;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if (count > 0) {
+                bad.append(body).append(' ').append(count).append(" (").append(first.toShortString()).append(") ");
+            }
+        }
+        Gt.check(bad.length() == 0, "liquides suspendus : " + bad);
+        s.done();
+    }
+
+    /**
      * Lot 11 (suite) : les megastructures des systemes lointains (Cage du Pulsar sur Poltergeist, Puits de Cristal sur Van Maanen b,
      * Anneau de Penrose sur Gaia BH1 b) : leur astre, leur port, leurs trois composants gates, leur ciel en 3D et le multibloc en amont de
      * chacune. Sortes du ciel : index de T:au_dela/megastructures.py SKY_KINDS (11 cage, 12 well, 13 penrose ; le code commun ne cite pas
