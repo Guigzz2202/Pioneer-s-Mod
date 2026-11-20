@@ -141,7 +141,7 @@ public final class WellModel {
                 double x = cx + wx * h + (e1x * Math.cos(a) + fx * Math.sin(a)) * rr, y = cy + wy * h + fy * Math.sin(a) * rr;
                 double z = cz + wz * h + (e1z * Math.cos(a) + fz * Math.sin(a)) * rr;
                 double glint = 0.5 + 0.5 * Math.pow(Math.max(0, Math.cos(t * 0.08 + j * 1.9)), 8);
-                light(b, x, y, z, 0.45 + 0.35 * glint, 0.92, 0.97, 1, (0.4 + 0.5 * glint) * act);
+                light(b, x, y, z, 0.8 + 0.5 * glint, 0.92, 0.97, 1, (0.6 + 0.4 * glint) * act);
             }
             //reserve des cristaux a la bouche
             light(b, ox, oy, oz, 1.6 + 0.4 * Math.sin(t * 0.03), 0.9, 0.96, 1, 0.45 * act);

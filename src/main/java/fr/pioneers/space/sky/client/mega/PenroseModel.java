@@ -107,7 +107,7 @@ public final class PenroseModel {
                     //chute : lente au depart, rapide pres du trou noir
                     double w = Math.pow(u / 0.55, 2.2);
                     double x = sx + (ex - sx) * w, y = sy + (ey - sy) * w, z = sz + (ez - sz) * w;
-                    light(b, x, y, z, 0.35, 1, 0.55, 0.4, 0.35 * act);
+                    light(b, x, y, z, 0.8, 1, 0.55, 0.4, 0.6 * act);
                 } else if (u < 0.6) {
                     //scission dans l'ergosphere
                     double f = 1 - (u - 0.55) / 0.05;
@@ -118,8 +118,8 @@ public final class PenroseModel {
                     double x = ex + (sx - ex) * w, y = ey + (sy - ey) * w, z = ez + (sz - ez) * w;
                     if (w < 1) {
                         ray(b, ex + (sx - ex) * Math.max(0, w - 0.15), ey + (sy - ey) * Math.max(0, w - 0.15), ez + (sz - ez) * Math.max(0, w - 0.15),
-                              x, y, z, 0.12, 0.75, 0.85, 1, 0.5 * act * p[4]);
-                        light(b, x, y, z, 0.55, 0.85, 0.92, 1, 0.8 * act * p[4]);
+                              x, y, z, 0.2, 0.75, 0.85, 1, 0.7 * act * p[4]);
+                        light(b, x, y, z, 1.0, 0.85, 0.92, 1, 0.95 * act * p[4]);
                     } else {
                         //rattrape : eclair a la station, qui s'eteint
                         light(b, sx, sy, sz, 1.4, ar, ag, abl, (1 - (u - 0.85) / 0.15) * 0.45 * act * p[4]);
@@ -131,7 +131,7 @@ public final class PenroseModel {
             //feux qui courent dans le sens de la rotation du trou noir (entrainement du referentiel)
             for (int k = 0; k < RUNNERS; k++) {
                 double a = 2 * Math.PI * frac(t * 0.0035 + (double) k / RUNNERS), ca = Math.cos(a), sa = Math.sin(a);
-                light(b, cx + ax * ca + bx * sa, cy + ay * ca + by * sa, cz + az * ca + bz * sa, 0.7, ar, ag, abl, 0.45 * act);
+                light(b, cx + ax * ca + bx * sa, cy + ay * ca + by * sa, cz + az * ca + bz * sa, 1.2, ar, ag, abl, 0.7 * act);
             }
             //faisceau vers Gaia BH1 b, depuis le bas de l'anneau (e2, donc n, descend)
             double gx = cx + bx, gy = cy + by, gz = cz + bz;

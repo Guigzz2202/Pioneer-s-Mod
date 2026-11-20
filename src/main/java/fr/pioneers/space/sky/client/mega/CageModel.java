@@ -126,7 +126,7 @@ public final class CageModel {
                 }
                 double tw = 0.6 + 0.4 * Math.sin(t * 0.05 + k * 1.3 + s) * p[4];
                 double flash = hit * p[3];
-                light(b, vx, vy, vz, 0.6 + 2.6 * flash, 0.8, 0.9, 1, (0.22 + 0.25 * act) * tw * glowNight + flash * (0.5 + 0.5 * act));
+                light(b, vx, vy, vz, 0.8 + 3.4 * flash, 0.8, 0.9, 1, (0.22 + 0.25 * act) * tw * glowNight + flash * (0.5 + 0.5 * act));
                 if (act > 0.02 && flash > 0.05) {
                     //l'energie gardee : un arc vers la bobine la plus proche de l'equateur
                     double ex = cx + (qx * cp + rx * sp) * radius, ey = cy + (qy * cp + ry * sp) * radius, ez = cz + (qz * cp + rz * sp) * radius;
