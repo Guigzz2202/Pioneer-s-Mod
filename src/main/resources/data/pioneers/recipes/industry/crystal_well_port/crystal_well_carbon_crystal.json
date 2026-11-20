@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystal_well_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:compressed_diamond_seed"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_diamond_anvil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_scale_electronic_diamond"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:degenerate_carbon_crystal",
+   "count": 1
+  }
+ ],
+ "energy": 100000,
+ "industrial": true
+}

@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:industrial_casing_stellar"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ergosphere_frame"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gravitational_lensing_plate"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_stress_gauge"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:penrose_ring_port",
+  "count": 1
+ }
+}

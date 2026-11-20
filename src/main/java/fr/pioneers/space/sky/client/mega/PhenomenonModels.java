@@ -54,8 +54,8 @@ public final class PhenomenonModels {
         double t = v.ticks;
         double lx = v.lx, ly = v.ly, lz = v.lz;
         //nebuleuse du vent : halo diffus bleute, en deux couches
-        light(b, cx, cy, cz, 22, 0.35, 0.5, 1, 0.05);
-        light(b, cx, cy, cz, 10, 0.5, 0.7, 1, 0.08);
+        light(b, cx, cy, cz, 22, 0.35, 0.5, 1, 0.12);
+        light(b, cx, cy, cz, 10, 0.5, 0.7, 1, 0.22);
         //axe magnetique incline (dans le plan du ciel, un peu vers l'observateur), faisceaux qui tournent autour
         double tilt = 0.55, spin = t * 0.09;
         double axx = e2x * Math.cos(tilt) + e1x * Math.sin(tilt), axy = e2y * Math.cos(tilt), axz = e2z * Math.cos(tilt) + e1z * Math.sin(tilt);
@@ -74,8 +74,8 @@ public final class PhenomenonModels {
         double flash = Math.pow(Math.max(0, 1 - Math.abs(Math.sin(spin))), 18);
         for (int s = -1; s <= 1; s += 2) {
             double len = 46;
-            MegaKit.cone(b, cx, cy, cz, cx + s * bdx * len, cy + s * bdy * len, cz + s * bdz * len, 0.4, 7, 0.75, 0.88, 1, 0.42, 0, 10);
-            MegaKit.cone(b, cx, cy, cz, cx + s * bdx * len * 0.6, cy + s * bdy * len * 0.6, cz + s * bdz * len * 0.6, 0.2, 2.2, 1, 1, 1, 0.5, 0,
+            MegaKit.cone(b, cx, cy, cz, cx + s * bdx * len, cy + s * bdy * len, cz + s * bdz * len, 0.5, 7, 0.75, 0.88, 1, 0.7, 0, 10);
+            MegaKit.cone(b, cx, cy, cz, cx + s * bdx * len * 0.6, cy + s * bdy * len * 0.6, cz + s * bdz * len * 0.6, 0.25, 2.2, 1, 1, 1, 0.9, 0,
                   6);
         }
         //boucles du champ magnetique (dipole) autour de l'axe
@@ -87,16 +87,17 @@ public final class PhenomenonModels {
                 double th = Math.PI * j / 12, rr = 9 * Math.sin(th) * Math.sin(th);
                 double x = cx + (axx * Math.cos(th) + mx * Math.sin(th)) * rr, y = cy + (axy * Math.cos(th) + my * Math.sin(th)) * rr;
                 double z = cz + (axz * Math.cos(th) + mz * Math.sin(th)) * rr;
-                ray(b, ox, oy, oz, x, y, z, 0.08, 0.5, 0.7, 1, 0.12);
+                ray(b, ox, oy, oz, x, y, z, 0.1, 0.5, 0.7, 1, 0.26);
                 ox = x;
                 oy = y;
                 oz = z;
             }
         }
         //l'etoile : un point, et l'eclair du phare
-        light(b, cx, cy, cz, 1.6 + 6 * flash, 0.85, 0.92, 1, 0.9);
+        light(b, cx, cy, cz, 4.5, 0.6, 0.78, 1, 0.45);
+        light(b, cx, cy, cz, 2.2 + 6 * flash, 0.85, 0.92, 1, 1);
         if (flash > 0.05) {
-            light(b, cx, cy, cz, 30 * flash, 0.7, 0.85, 1, 0.35 * flash);
+            light(b, cx, cy, cz, 30 * flash, 0.7, 0.85, 1, 0.45 * flash);
         }
     }
 
@@ -110,7 +111,7 @@ public final class PhenomenonModels {
             double r = 9 + k * 4.5;
             double ax = e1x * r, az = e1z * r;
             double bx = (e2x * tilt - lx * 0.95) * r, by = (e2y * tilt - ly * 0.95) * r, bz = (e2z * tilt - lz * 0.95) * r;
-            ring(b, cx, cy, cz, ax, 0, az, bx, by, bz, 0.35 + 0.2 * k, 72, 0.92, 0.9, 1, 0.07 + 0.03 * (2 - k));
+            ring(b, cx, cy, cz, ax, 0, az, bx, by, bz, 0.45 + 0.25 * k, 72, 0.92, 0.9, 1, 0.2 + 0.06 * (2 - k));
             int n = 22 + k * 10;
             double rot = t * (0.0012 - 0.0003 * k);
             for (int j = 0; j < n; j++) {
@@ -118,7 +119,7 @@ public final class PhenomenonModels {
                 double ca = Math.cos(a), sa = Math.sin(a);
                 double x = cx + ax * ca + bx * sa, y = cy + by * sa, z = cz + az * ca + bz * sa;
                 double glint = Math.pow(Math.max(0, Math.cos(t * 0.01 + j * 2.3 + k)), 30);
-                light(b, x, y, z, 0.35 + 0.8 * glint, 1, 0.97, 0.92, 0.25 + 0.6 * glint);
+                light(b, x, y, z, 0.5 + 0.9 * glint, 1, 0.97, 0.92, 0.5 + 0.5 * glint);
             }
         }
         //debris qui tombent vers l'etoile (spirale)
@@ -127,11 +128,12 @@ public final class PhenomenonModels {
             double a = j * 1.7 + u * 5, r = 18 * (1 - u);
             double x = cx + (e1x * Math.cos(a) + e2x * Math.sin(a) * 0.3) * r, y = cy + e2y * Math.sin(a) * 0.3 * r;
             double z = cz + (e1z * Math.cos(a) + e2z * Math.sin(a) * 0.3) * r;
-            light(b, x, y, z, 0.6, 1, 0.85, 0.7, 0.5 * u);
+            light(b, x, y, z, 0.8, 1, 0.85, 0.7, 0.8 * u);
         }
         //l'etoile : minuscule, aveuglante
-        light(b, cx, cy, cz, 7, 0.9, 0.95, 1, 0.18);
-        light(b, cx, cy, cz, 1.3, 1, 1, 1, 1);
+        light(b, cx, cy, cz, 14, 0.85, 0.92, 1, 0.14);
+        light(b, cx, cy, cz, 7, 0.9, 0.95, 1, 0.4);
+        light(b, cx, cy, cz, 2.2, 1, 1, 1, 1);
     }
 
     private static void blackHole(MegaBuffer b, MegaView v, double cx, double cy, double cz, double e1x, double e1z, double e2x, double e2y,
@@ -155,7 +157,7 @@ public final class PhenomenonModels {
                 //cote qui approche : c > 0 (vers e1) ; tourbillons
                 double doppler = 0.45 + 0.55 * Math.max(0, c0);
                 double swirl = 0.7 + 0.3 * Math.sin(a0 * 5 + k * 1.3 - t * 0.05);
-                double a = (0.1 + 0.25 * heat) * doppler * swirl;
+                double a = (0.28 + 0.5 * heat) * doppler * swirl;
                 ray(b, cx + ax * c0 + bx * s0, cy + by * s0, cz + az * c0 + bz * s0, cx + ax * c1 + bx * s1, cy + by * s1, cz + az * c1 + bz * s1,
                       0.35 + 0.15 * heat, 1, 0.55 + 0.4 * heat, 0.35 + 0.5 * heat, a);
             }
@@ -169,7 +171,7 @@ public final class PhenomenonModels {
                 double x = cx + e1x * Math.cos(a) * r + e2x * Math.sin(a) * r * 0.62 * s, y = cy + e2y * Math.sin(a) * r * 0.62 * s;
                 double z = cz + e1z * Math.cos(a) * r + e2z * Math.sin(a) * r * 0.62 * s;
                 if (j > 0) {
-                    ray(b, ox, oy, oz, x, y, z, 0.5, 1, 0.75, 0.55, 0.22);
+                    ray(b, ox, oy, oz, x, y, z, 0.55, 1, 0.75, 0.55, 0.5);
                 }
                 ox = x;
                 oy = y;
@@ -177,8 +179,8 @@ public final class PhenomenonModels {
             }
         }
         //anneau de photons
-        ring(b, cx, cy, cz, e1x * rs * 1.08, 0, e1z * rs * 1.08, e2x * rs * 1.08, e2y * rs * 1.08, e2z * rs * 1.08, 0.18, 64, 1, 0.92, 0.8,
-              0.55 + 0.1 * Math.sin(t * 0.07));
+        ring(b, cx, cy, cz, e1x * rs * 1.08, 0, e1z * rs * 1.08, e2x * rs * 1.08, e2y * rs * 1.08, e2z * rs * 1.08, 0.24, 64, 1, 0.92, 0.8,
+              0.9 + 0.1 * Math.sin(t * 0.07));
         //l'ombre : disque noir tourne vers l'observateur (masque les etoiles et le fond du disque)
         int n = 40;
         for (int j = 0; j < n; j++) {
@@ -194,7 +196,7 @@ public final class PhenomenonModels {
         //jet aux poles : tenu, qui pulse
         double pulse = 0.6 + 0.4 * Math.sin(t * 0.03);
         for (int s = -1; s <= 1; s += 2) {
-            MegaKit.cone(b, cx, cy, cz, cx + e2x * 40 * s, cy + e2y * 40 * s, cz + e2z * 40 * s, 0.3, 2.5, 0.65, 0.5, 1, 0.22 * pulse, 0, 10);
+            MegaKit.cone(b, cx, cy, cz, cx + e2x * 40 * s, cy + e2y * 40 * s, cz + e2z * 40 * s, 0.35, 2.5, 0.65, 0.5, 1, 0.42 * pulse, 0, 10);
         }
     }
 

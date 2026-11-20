@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pulsar_cage_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:beam_hardened_plate"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pulsed_beam_cell"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_shielding_plate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:beam_harvester_vane",
+   "count": 1
+  }
+ ],
+ "energy": 96000,
+ "industrial": true
+}

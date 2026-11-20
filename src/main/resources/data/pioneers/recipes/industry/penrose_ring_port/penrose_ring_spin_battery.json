@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "penrose_ring_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:neutronium_flywheel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:magnetar_field_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_stress_gauge"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:magnetar_confinement_coil"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:penrose_spin_battery",
+   "count": 1
+  }
+ ],
+ "energy": 104000,
+ "industrial": true
+}

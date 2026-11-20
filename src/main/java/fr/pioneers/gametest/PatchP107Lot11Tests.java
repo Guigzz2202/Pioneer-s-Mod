@@ -7,7 +7,9 @@ import fr.pioneers.space.environment.GeneratedFarBlocks;
 import fr.pioneers.space.farm.SpacePlant;
 import fr.pioneers.space.mining.MiningMaterial;
 import fr.pioneers.space.mining.MiningVein;
+import fr.pioneers.space.mega.Megastructures;
 import fr.pioneers.space.module.RocketModule;
+import fr.pioneers.tech.industry.IndustryMachine;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
@@ -15,6 +17,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.gametest.GameTestHolder;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.gametest.PrefixGameTestTemplate;
 
 /**
@@ -49,7 +52,8 @@ public final class PatchP107Lot11Tests {
             ServerLevel level = h.getLevel().getServer().getLevel(body.dimension());
             Gt.check(level != null, body + " : dimension absente");
             ChunkAccess chunk = level.getChunk(0, 0);
-            int top = chunk.getHeight(Heightmap.Types.WORLD_SURFACE_WG, 8, 8);
+            //hauteur finale (les creusements passent apres la carte de hauteur du bruit, _WG)
+            int top = chunk.getHeight(Heightmap.Types.WORLD_SURFACE, 8, 8) + 1;
             Gt.check(top > level.getMinBuildHeight() + 1, body + " : premier tronçon sans sol (" + top + ")");
             Gt.check(SolarSystem.fromDimension(level.dimension()) == body, body + " : astre de la dimension");
             int plants = 0;
@@ -62,10 +66,36 @@ public final class PatchP107Lot11Tests {
                 vein |= v.body.name().equals(body.name());
             }
             Gt.check(vein, body + " : aucun filon");
-            Gt.check(!level.getBlockState(new BlockPos(8, top - 1, 8)).isAir(), body + " : sol d'air");
+            Gt.check(!level.getBlockState(new BlockPos(8, top - 1, 8)).isAir(), body + " : sol d'air a " + (top - 1));
         }
         for (MiningMaterial m : new MiningMaterial[]{MiningMaterial.PULSARITE, MiningMaterial.MAANENITE, MiningMaterial.HORIZITE}) {
             Gt.check(m.body.sector().far(), m + " : metal d'un systeme lointain");
+        }
+        s.done();
+    }
+
+    /**
+     * Lot 11 (suite) : les megastructures des systemes lointains (Cage du Pulsar sur Poltergeist, Puits de Cristal sur Van Maanen b,
+     * Anneau de Penrose sur Gaia BH1 b) : leur astre, leur port, leurs trois composants gates, leur ciel en 3D et le multibloc en amont de
+     * chacune. Sortes du ciel : index de T:au_dela/megastructures.py SKY_KINDS (11 cage, 12 well, 13 penrose ; le code commun ne cite pas
+     * les classes du client).
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p107_11_megas", timeoutTicks = 40)
+    public static void p107_11_megastructures_lointaines(GameTestHelper h) {
+        Gt.Scope s = Gt.begin(h);
+        Object[][] want = {{Body.POLTERGEIST, "pulsar_cage", 11, "pulsar_beam_collector"},
+                           {Body.VAN_MAANEN_B, "crystal_well", 12, "carbon_crystallizer"},
+                           {Body.GAIA_BH1_B, "penrose_ring", 13, "ergosphere_mass_driver"}};
+        for (Object[] w : want) {
+            int i = Megastructures.byBody((Body) w[0]);
+            Gt.check(i >= 0 && w[1].equals(Megastructures.id(i)), w[0] + " : megastructure " + (i < 0 ? "absente" : Megastructures.id(i)));
+            Gt.check(IndustryMachine.byKey(Megastructures.port(i)) != null, w[1] + " : port absent");
+            Gt.equal(3, Megastructures.gated(i).length, w[1] + " : composants gates");
+            for (String g : Megastructures.gated(i)) {
+                Gt.check(ForgeRegistries.ITEMS.containsKey(new net.minecraft.resources.ResourceLocation(g)), w[1] + " : composant gate absent " + g);
+            }
+            Gt.equal((int) (Integer) w[2], Megastructures.skyKind(i), w[1] + " : ciel");
+            Gt.check(IndustryMachine.byKey((String) w[3]) != null, w[1] + " : multibloc en amont absent " + w[3]);
         }
         s.done();
     }

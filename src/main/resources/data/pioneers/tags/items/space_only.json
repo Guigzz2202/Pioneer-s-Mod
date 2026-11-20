@@ -1738,6 +1738,10 @@
    "required": false
   },
   {
+   "id": "pioneers:horizite_billet",
+   "required": false
+  },
+  {
    "id": "pioneers:horizite_block",
    "required": false
   },
@@ -1759,6 +1763,14 @@
   },
   {
    "id": "pioneers:horizite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:horizite_rod",
    "required": false
   },
   {
@@ -2174,6 +2186,10 @@
    "required": false
   },
   {
+   "id": "pioneers:maanenite_billet",
+   "required": false
+  },
+  {
    "id": "pioneers:maanenite_block",
    "required": false
   },
@@ -2195,6 +2211,14 @@
   },
   {
    "id": "pioneers:maanenite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:maanenite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:maanenite_rod",
    "required": false
   },
   {
@@ -3898,6 +3922,10 @@
    "required": false
   },
   {
+   "id": "pioneers:pulsarite_billet",
+   "required": false
+  },
+  {
    "id": "pioneers:pulsarite_block",
    "required": false
   },
@@ -3919,6 +3947,14 @@
   },
   {
    "id": "pioneers:pulsarite_ore",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsarite_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsarite_rod",
    "required": false
   },
   {
@@ -6388,15 +6424,6 @@
   {
    "id": "pioneers:zone_planner",
    "required": false
-  },
-  "pioneers:pulsarite_plate",
-  "pioneers:pulsarite_rod",
-  "pioneers:pulsarite_billet",
-  "pioneers:maanenite_plate",
-  "pioneers:maanenite_rod",
-  "pioneers:maanenite_billet",
-  "pioneers:horizite_plate",
-  "pioneers:horizite_rod",
-  "pioneers:horizite_billet"
+  }
  ]
 }

@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/pulsarite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beam_scale"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ion_pith"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:beam_hardened_plate",
+   "count": 1
+  }
+ ]
+}

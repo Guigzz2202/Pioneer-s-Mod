@@ -110,6 +110,9 @@
   "pioneers:halo_observatory_port",
   "pioneers:proxima_crown_port",
   "pioneers:tidal_necklace_port",
+  "pioneers:pulsar_cage_port",
+  "pioneers:crystal_well_port",
+  "pioneers:penrose_ring_port",
   "pioneers:space_drill",
   "pioneers:gas_collector",
   "pioneers:solar_concentrator",
@@ -127,6 +130,9 @@
   "pioneers:regolith_helium3_extractor",
   "pioneers:flare_catcher",
   "pioneers:tidal_bioreactor",
+  "pioneers:pulsar_beam_collector",
+  "pioneers:carbon_crystallizer",
+  "pioneers:ergosphere_mass_driver",
   "pioneers:robotic_assembly_bay",
   "pioneers:rocket_integration_hall"
  ]

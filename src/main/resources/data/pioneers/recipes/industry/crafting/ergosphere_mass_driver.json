@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ergosphere_frame"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_stress_gauge"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gravitational_lensing_plate"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:ergosphere_mass_driver",
+  "count": 1
+ }
+}

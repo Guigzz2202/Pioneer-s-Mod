@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "carbon_crystallizer",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_diamond_anvil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_needle_lattice"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_graphite_electrode"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nitrided_ruachite_anode"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 500
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:compressed_diamond_seed",
+   "count": 1
+  }
+ ],
+ "energy": 12000,
+ "industrial": true
+}

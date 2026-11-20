@@ -34,6 +34,8 @@ public final class SkyScene {
      * ({@code GiantMegaSky}), jamais par la scene (leur astre n'est pas dans {@link Celestial.Body}).
      */
     public static final int MEGA_CROWN = 9, MEGA_NECKLACE = 10;
+    /** 1.0.7 (lot 11) : cage du pulsar, puits de cristal, anneau de Penrose (3D seulement, ciel propre de leur planete). */
+    public static final int MEGA_CAGE = 11, MEGA_WELL = 12, MEGA_PENROSE = 13;
     /** Astre du ciel de chaque megastructure (meme nom que l'astre du systeme solaire), ou null. */
     private static final Body[] MEGA_BODY = new Body[Megastructures.COUNT];
 

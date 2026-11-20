@@ -247,17 +247,6 @@
   "pioneers:zircaloy_ingot",
   "pioneers:zircaloy_nugget",
   "pioneers:zirconium_ingot",
-  "pioneers:zirconium_nugget",
-  "pioneers:draugr_rock",
-  "pioneers:draugr_glass_crust",
-  "pioneers:poltergeist_rock",
-  "pioneers:phobetor_rock",
-  "pioneers:van_maanen_b_rock",
-  "pioneers:van_maanen_c_rock",
-  "pioneers:van_maanen_c_iron_crust",
-  "pioneers:van_maanen_d_rock",
-  "pioneers:gaia_bh1_b_rock",
-  "pioneers:gaia_bh1_c_rock",
-  "pioneers:gaia_bh1_d_rock"
+  "pioneers:zirconium_nugget"
  ]
 }

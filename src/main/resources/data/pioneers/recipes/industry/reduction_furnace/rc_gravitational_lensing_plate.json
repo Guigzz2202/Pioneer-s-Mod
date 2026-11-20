@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/horizite"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lens_pearl"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:disk_petal"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:gravitational_lensing_plate",
+   "count": 1
+  }
+ ]
+}

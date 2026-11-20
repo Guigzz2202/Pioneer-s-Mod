@@ -1,0 +1,39 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:magnetar_field_coil"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beam_hardened_plate"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pulsar_timing_crystal"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:pulsar_beam_collector",
+  "count": 1
+ }
+}

@@ -215,6 +215,12 @@ public enum IndustryMachine {
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
     TIDAL_NECKLACE_PORT("tidal_necklace_port", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0x4696D2, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
+    PULSAR_CAGE_PORT("pulsar_cage_port", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0x5AAAFF, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
+    CRYSTAL_WELL_PORT("crystal_well_port", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0xAAD2FF, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
+    PENROSE_RING_PORT("penrose_ring_port", Atelier.NONE, true, null, 4, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 0, 0x965AF0, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
     SPACE_DRILL("space_drill", Atelier.NONE, true, null, 0, 2, 0, 0, 0, 0, Source.DRILL, Kind.DRILL, 120, 0x966ED2, new int[]{9, 21, 0, 9, 21, 0}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.TOWER, fr.pioneers.tech.industry.multi.IndustryStyle.MECHANICAL, new String[]{}),
     GAS_COLLECTOR("gas_collector", Atelier.NONE, true, null, 0, 0, 0, 0, 0, 3, Source.DRILL, Kind.DRILL, 120, 0x78BEE6, new int[]{9, 15, 0, 9, 15, 0}, false, false, new String[]{},
@@ -248,7 +254,13 @@ public enum IndustryMachine {
     FLARE_CATCHER("flare_catcher", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xFF7850, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
           fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
     TIDAL_BIOREACTOR("tidal_bioreactor", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0x5AC8AA, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
-          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{});
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    PULSAR_BEAM_COLLECTOR("pulsar_beam_collector", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0x6EBEFF, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{}),
+    CARBON_CRYSTALLIZER("carbon_crystallizer", Atelier.NONE, true, null, 4, 1, 0, 0, 1, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xDCECFF, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.THERMAL, new String[]{}),
+    ERGOSPHERE_MASS_DRIVER("ergosphere_mass_driver", Atelier.NONE, true, null, 3, 1, 0, 0, 0, 0, Source.INDUSTRIAL, Kind.PROCESS, 60, 0xAA6EFA, new int[]{15, 5, 15, 15, 5, 15}, false, false, new String[]{},
+          fr.pioneers.tech.industry.multi.IndustryShape.HALL, fr.pioneers.tech.industry.multi.IndustryStyle.ELECTRIC, new String[]{});
 
     /** Ou est la machine d'atelier : nouvelle (generee), kit existant, machine d'avant l'electricite, ou aucune (multibloc seulement). */
     public enum Atelier { NEW, KIT, BRONZE, NONE }

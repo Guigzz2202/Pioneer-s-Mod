@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "assembler",
+ "tier": 3,
+ "time": 200,
+ "family": "component_assembler",
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:billets/maanenite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_needle"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:iron_berry"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:snowglass_bulb"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tungsten_screw"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:degenerate_diamond_anvil",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pulsar_beam_collector",
+ "tier": 3,
+ "time": 300,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ion_storm_capacitor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:beam_hardened_plate"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:glimmer_cryo_lens"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_tape"
+   },
+   "count": 2
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 1000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:pulsed_beam_cell",
+   "count": 1
+  }
+ ],
+ "energy": 12000,
+ "industrial": true
+}

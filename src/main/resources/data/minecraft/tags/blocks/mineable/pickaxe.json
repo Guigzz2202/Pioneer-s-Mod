@@ -1895,6 +1895,12 @@
   "pioneers:maanenite_ore",
   "pioneers:horizite_block",
   "pioneers:raw_horizite_block",
-  "pioneers:horizite_ore"
+  "pioneers:horizite_ore",
+  "pioneers:pulsar_cage_port",
+  "pioneers:crystal_well_port",
+  "pioneers:penrose_ring_port",
+  "pioneers:pulsar_beam_collector",
+  "pioneers:carbon_crystallizer",
+  "pioneers:ergosphere_mass_driver"
  ]
 }

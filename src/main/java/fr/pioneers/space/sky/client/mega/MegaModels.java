@@ -14,10 +14,10 @@ public final class MegaModels {
 
     /** Modeles, dans l'ordre de leurs identifiants. */
     static final int ELEVATOR = 0, DIADEM = 1, DRILL = 2, CITY = 3, ROTOR = 4, LOOP = 5, DESCENT = 6, COLD = 7, SWARM = 8, HALO = 9, CROWN = 10,
-          NECKLACE = 11;
+          NECKLACE = 11, CAGE = 12, WELL = 13, PENROSE = 14;
     private static final String[] IDS = {"mars_elevator", "mercury_diadem", "venus_great_drill", "jupiter_cloud_city", "saturn_ring_rotor",
                                          "uranus_loop", "neptune_descent", "pluto_cold_heart", "sun_swarm", "halo_observatory", "proxima_crown",
-                                         "tidal_necklace"};
+                                         "tidal_necklace", "pulsar_cage", "crystal_well", "penrose_ring"};
     private static int[] model;
 
     private MegaModels() {
@@ -59,7 +59,7 @@ public final class MegaModels {
     /** 1.0.7 (lot 11) : vraie pour les exoplanetes : dessinee dans leur ciel propre, a la lumiere de leur etoile. */
     public static boolean exo(int i) {
         int m = model(i);
-        return m == CROWN || m == NECKLACE;
+        return m == CROWN || m == NECKLACE || m == CAGE || m == WELL || m == PENROSE;
     }
 
     /** Construit l'image de la megastructure dans le tampon (sans le vider), a l'echelle de son modele. */
@@ -113,6 +113,18 @@ public final class MegaModels {
                 b.scale = NecklaceModel.SCALE;
                 NecklaceModel.build(b, v);
             }
+            case CAGE -> {
+                b.scale = CageModel.SCALE;
+                CageModel.build(b, v);
+            }
+            case WELL -> {
+                b.scale = WellModel.SCALE;
+                WellModel.build(b, v);
+            }
+            case PENROSE -> {
+                b.scale = PenroseModel.SCALE;
+                PenroseModel.build(b, v);
+            }
             default -> {
             }
         }
@@ -123,7 +135,7 @@ public final class MegaModels {
     /** Azimut (degres, 0 = nord) ou regarder pour la voir (apercus, captures) ; v : lumiere du moment (Essaim, Halo). */
     public static double viewYaw(int i, MegaView v) {
         return switch (model(i)) {
-            case SWARM, CROWN -> Math.toDegrees(Math.atan2(v.lx, -v.lz));
+            case SWARM, CROWN, CAGE, WELL, PENROSE -> Math.toDegrees(Math.atan2(v.lx, -v.lz));
             case NECKLACE -> NecklaceModel.topYaw();
             case HALO -> Math.toDegrees(Math.atan2(-v.lx, v.lz + 0.25));
             default -> Megastructures.skyParams(i)[0];
@@ -141,6 +153,8 @@ public final class MegaModels {
             case SWARM -> Math.max(5, Math.min(70, Math.toDegrees(Math.asin(v.ly))));
             case HALO -> Math.max(10, Math.min(70, Math.toDegrees(Math.asin(Math.max(0, -v.ly)))));
             case CROWN -> Math.max(8, Math.min(60, Math.toDegrees(Math.asin(v.ly)) + 4));
+            case CAGE, PENROSE -> Math.max(8, Math.min(65, Math.toDegrees(Math.asin(v.ly)) + 3));
+            case WELL -> Math.max(10, Math.min(70, Math.toDegrees(Math.asin(v.ly)) + 8));
             case NECKLACE -> 50;
             default -> 30;
         };

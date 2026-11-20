@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "penrose_ring_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ergosphere_frame"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:calibrated_ballast"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flux_bank"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_frame"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:ergosphere_harvester",
+   "count": 1
+  }
+ ],
+ "energy": 104000,
+ "industrial": true
+}

@@ -1,0 +1,32 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "photolithograph",
+ "tier": 3,
+ "time": 160,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:plates/horizite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:disk_petal"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:lens_pearl"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:accretion_glass_mirror",
+   "count": 2
+  }
+ ]
+}

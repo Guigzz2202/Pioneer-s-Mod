@@ -162,6 +162,12 @@ public final class SkyShots {
                 wait = 90;
             }
             default -> {
+                //un ecran ouvert (carnet du premier passage...) cacherait le ciel : on le ferme et on attend
+                if (mc.screen != null) {
+                    mc.setScreen(null);
+                    wait = 20;
+                    return;
+                }
                 String file = String.format("sky_%s_%d_%s.png", shotId(shot.mega), index, shot.name);
                 Screenshot.grab(mc.gameDirectory, file, mc.getMainRenderTarget(), msg -> {
                 });

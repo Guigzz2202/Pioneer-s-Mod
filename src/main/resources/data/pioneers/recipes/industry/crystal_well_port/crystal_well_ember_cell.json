@@ -1,0 +1,40 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "crystal_well_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_graphite_electrode"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:filings_magnet_core"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryostat_vessel"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:photonic_glass"
+   },
+   "count": 2
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_ember_cell",
+   "count": 1
+  }
+ ],
+ "energy": 100000,
+ "industrial": true
+}

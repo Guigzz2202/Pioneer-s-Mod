@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "pulsar_cage_port",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:magnetar_field_coil"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pulsed_beam_cell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:magnetospheric_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_cable_bundle"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:magnetar_confinement_coil",
+   "count": 1
+  }
+ ],
+ "energy": 96000,
+ "industrial": true
+}

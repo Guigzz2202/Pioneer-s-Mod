@@ -1,0 +1,38 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "reduction_furnace",
+ "tier": 3,
+ "time": 180,
+ "items": [
+  {
+   "ingredient": {
+    "tag": "forge:rods/maanenite"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:graphite_tendril"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:rust_cap"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 200
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:stellar_graphite_electrode",
+   "count": 2
+  }
+ ]
+}
