@@ -286,7 +286,8 @@ public final class SkyShots {
           {fr.pioneers.space.SolarSystem.Body.PHOBETOR, 0, 78, false}, {fr.pioneers.space.SolarSystem.Body.VAN_MAANEN_B, 240, 30, true},
           {fr.pioneers.space.SolarSystem.Body.VAN_MAANEN_C, 0, 75, false}, {fr.pioneers.space.SolarSystem.Body.VAN_MAANEN_D, 0, 78, false},
           {fr.pioneers.space.SolarSystem.Body.GAIA_BH1_B, 110, 24, true}, {fr.pioneers.space.SolarSystem.Body.GAIA_BH1_C, 0, 70, false},
-          {fr.pioneers.space.SolarSystem.Body.GAIA_BH1_D, 0, 76, false}};
+          {fr.pioneers.space.SolarSystem.Body.GAIA_BH1_D, 0, 76, false}, {fr.pioneers.space.SolarSystem.Body.FYLGJA, 0, 70, false},
+          {fr.pioneers.space.SolarSystem.Body.VAN_MAANEN_E, 0, 70, false}, {fr.pioneers.space.SolarSystem.Body.GAIA_BH1_E, 0, 70, false}};
 
     private static fr.pioneers.space.SolarSystem.Body far(int code) {
         return fr.pioneers.space.SolarSystem.Body.values()[-code - 1];

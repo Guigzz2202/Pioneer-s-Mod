@@ -195,7 +195,8 @@ public final class CreativeSort {
           "pallas", "hygiea", "jupiter", "io", "europa", "ganymede", "callisto", "saturn", "enceladus", "titan", "uranus", "miranda", "titania",
           "neptune", "triton", "pluto", "charon", "sun", "centauri_a", "centauri_b", "toliman_b", "proxima", "proxima_b", "proxima_d", "trappist_1",
           "trappist_1b", "trappist_1c", "trappist_1d", "trappist_1e", "trappist_1f", "trappist_1g", "trappist_1h", "lich", "draugr", "poltergeist",
-          "phobetor", "van_maanen", "van_maanen_b", "van_maanen_c", "van_maanen_d", "gaia_bh1", "gaia_bh1_b", "gaia_bh1_c", "gaia_bh1_d");
+          "phobetor", "fylgja", "van_maanen", "van_maanen_b", "van_maanen_c", "van_maanen_d", "van_maanen_e", "gaia_bh1", "gaia_bh1_b", "gaia_bh1_c",
+          "gaia_bh1_d", "gaia_bh1_e");
 
     /** Mots qui designent un astre sans le nommer (metaux des astres compris). */
     private static final Map<String, String> BODY_WORDS = new LinkedHashMap<>();

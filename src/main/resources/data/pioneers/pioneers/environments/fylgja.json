@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:fylgja",
+ "gravity": 1.0,
+ "breathable": true,
+ "suit_tier": 0,
+ "hazard": "none",
+ "nitrogen": 4,
+ "temperature": 8
+}

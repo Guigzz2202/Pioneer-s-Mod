@@ -59,6 +59,10 @@ public final class PiDimensions {
     public static final ResourceKey<Level> GAIA_BH1_B = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("gaia_bh1_b"));
     public static final ResourceKey<Level> GAIA_BH1_C = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("gaia_bh1_c"));
     public static final ResourceKey<Level> GAIA_BH1_D = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("gaia_bh1_d"));
+    //1.0.7 : mondes habitables des systemes lointains (relief et biomes de la Terre)
+    public static final ResourceKey<Level> FYLGJA = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("fylgja"));
+    public static final ResourceKey<Level> VAN_MAANEN_E = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("van_maanen_e"));
+    public static final ResourceKey<Level> GAIA_BH1_E = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("gaia_bh1_e"));
     /** Orbite : les stations orbitales de tous les astres (une region par astre). */
     public static final ResourceKey<Level> ORBIT = ResourceKey.create(Registries.DIMENSION, Pioneers.rl("orbit"));
 

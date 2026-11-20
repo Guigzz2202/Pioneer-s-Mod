@@ -740,9 +740,9 @@ public class DestinationScreen extends Screen {
         TRAPPIST_INNER(Body.TRAPPIST_1B, null, Body.TRAPPIST_1, Body.TRAPPIST_1B, Body.TRAPPIST_1C, Body.TRAPPIST_1D),
         TRAPPIST_OUTER(Body.TRAPPIST_1F, null, Body.TRAPPIST_1E, Body.TRAPPIST_1F, Body.TRAPPIST_1G, Body.TRAPPIST_1H),
         //1.0.7 (lot 11) : les trois systemes lointains
-        LICH(Body.LICH, null, Body.LICH, Body.DRAUGR, Body.POLTERGEIST, Body.PHOBETOR),
-        VAN_MAANEN(Body.VAN_MAANEN, null, Body.VAN_MAANEN, Body.VAN_MAANEN_B, Body.VAN_MAANEN_C, Body.VAN_MAANEN_D),
-        GAIA_BH1(Body.GAIA_BH1, null, Body.GAIA_BH1, Body.GAIA_BH1_B, Body.GAIA_BH1_C, Body.GAIA_BH1_D);
+        LICH(Body.LICH, null, Body.LICH, Body.DRAUGR, Body.POLTERGEIST, Body.PHOBETOR, Body.FYLGJA),
+        VAN_MAANEN(Body.VAN_MAANEN, null, Body.VAN_MAANEN, Body.VAN_MAANEN_B, Body.VAN_MAANEN_C, Body.VAN_MAANEN_D, Body.VAN_MAANEN_E),
+        GAIA_BH1(Body.GAIA_BH1, null, Body.GAIA_BH1, Body.GAIA_BH1_B, Body.GAIA_BH1_C, Body.GAIA_BH1_D, Body.GAIA_BH1_E);
 
         final Body icon;
         @Nullable

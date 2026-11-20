@@ -99,6 +99,7 @@ public final class Environments extends SimpleJsonResourceReloadListener {
             case VAN_MAANEN_D -> 0.1;
             case GAIA_BH1_B -> 0.8;
             case GAIA_BH1_D -> 1.0;
+            case FYLGJA, VAN_MAANEN_E, GAIA_BH1_E -> 1.0;
             default -> 0;
         };
     }

@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:van_maanen_e",
+ "gravity": 0.95,
+ "breathable": true,
+ "suit_tier": 0,
+ "hazard": "none",
+ "nitrogen": 4,
+ "temperature": 16
+}

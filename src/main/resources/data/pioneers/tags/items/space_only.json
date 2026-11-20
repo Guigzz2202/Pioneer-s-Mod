@@ -2,6 +2,10 @@
  "replace": false,
  "values": [
   {
+   "id": "pioneers:accretion_glass_mirror",
+   "required": false
+  },
+  {
    "id": "pioneers:acid_suit_boots",
    "required": false
   },
@@ -162,6 +166,10 @@
    "required": false
   },
   {
+   "id": "pioneers:beam_hardened_plate",
+   "required": false
+  },
+  {
    "id": "pioneers:beam_lichen",
    "required": false
   },
@@ -254,6 +262,10 @@
    "required": false
   },
   {
+   "id": "pioneers:calibrated_ballast",
+   "required": false
+  },
+  {
    "id": "pioneers:callisto_filter_cartridge",
    "required": false
   },
@@ -311,6 +323,10 @@
   },
   {
    "id": "pioneers:carbon_needle",
+   "required": false
+  },
+  {
+   "id": "pioneers:carbon_needle_lattice",
    "required": false
   },
   {
@@ -974,6 +990,10 @@
    "required": false
   },
   {
+   "id": "pioneers:degenerate_diamond_anvil",
+   "required": false
+  },
+  {
    "id": "pioneers:degenerate_shielding_plate",
    "required": false
   },
@@ -1302,6 +1322,10 @@
    "required": false
   },
   {
+   "id": "pioneers:ergosphere_frame",
+   "required": false
+  },
+  {
    "id": "pioneers:eucrite_flakes",
    "required": false
   },
@@ -1423,6 +1447,10 @@
   },
   {
    "id": "pioneers:filing_shrub_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:filings_magnet_core",
    "required": false
   },
   {
@@ -1642,6 +1670,10 @@
    "required": false
   },
   {
+   "id": "pioneers:glimmer_cryo_lens",
+   "required": false
+  },
+  {
    "id": "pioneers:glimmer_fruit",
    "required": false
   },
@@ -1678,6 +1710,10 @@
    "required": false
   },
   {
+   "id": "pioneers:gravitational_lensing_plate",
+   "required": false
+  },
+  {
    "id": "pioneers:greenhouse_controller",
    "required": false
   },
@@ -1695,6 +1731,10 @@
   },
   {
    "id": "pioneers:halo_berry_bush_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:halo_berry_resin",
    "required": false
   },
   {
@@ -1911,6 +1951,10 @@
   },
   {
    "id": "pioneers:ion_reed_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:ion_storm_capacitor",
    "required": false
   },
   {
@@ -2231,6 +2275,10 @@
   },
   {
    "id": "pioneers:magma_bramble_seeds",
+   "required": false
+  },
+  {
+   "id": "pioneers:magnetar_field_coil",
    "required": false
   },
   {
@@ -3922,6 +3970,10 @@
    "required": false
   },
   {
+   "id": "pioneers:pulsar_timing_crystal",
+   "required": false
+  },
+  {
    "id": "pioneers:pulsarite_billet",
    "required": false
   },
@@ -3967,6 +4019,10 @@
   },
   {
    "id": "pioneers:pulse_frond",
+   "required": false
+  },
+  {
+   "id": "pioneers:pulsed_beam_cell",
    "required": false
   },
   {
@@ -4782,6 +4838,10 @@
    "required": false
   },
   {
+   "id": "pioneers:snowglass_optic",
+   "required": false
+  },
+  {
    "id": "pioneers:solar_heliotrope",
    "required": false
   },
@@ -4911,6 +4971,10 @@
   },
   {
    "id": "pioneers:stellar_fuselage_panel",
+   "required": false
+  },
+  {
+   "id": "pioneers:stellar_graphite_electrode",
    "required": false
   },
   {
@@ -5399,6 +5463,10 @@
   },
   {
    "id": "pioneers:tidal_nacre_plate",
+   "required": false
+  },
+  {
+   "id": "pioneers:tidal_stress_gauge",
    "required": false
   },
   {

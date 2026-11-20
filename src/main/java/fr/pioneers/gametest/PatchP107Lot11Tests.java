@@ -75,6 +75,38 @@ public final class PatchP107Lot11Tests {
     }
 
     /**
+     * Retour de Guillaume (20/11) : un monde « complètement vivable avec faune et flore comme sur terre » dans chaque systeme lointain
+     * (Fylgja, Van Maanen e, Gaia BH1 e) : air respirable, relief de la Terre (sol a la surface), biomes de la Terre ou vivent des animaux,
+     * aucun biome a village ; atteints comme les autres planetes du systeme (portee 14).
+     */
+    @GameTest(template = Gt.SMALL, batch = "pioneers_p107_11_habitable", timeoutTicks = 600)
+    public static void p107_11_mondes_habitables(GameTestHelper h) {
+        Gt.Scope s = Gt.begin(h);
+        net.minecraft.core.Registry<net.minecraft.world.level.biome.Biome> biomes = h.getLevel().registryAccess()
+              .registryOrThrow(net.minecraft.core.registries.Registries.BIOME);
+        for (Body body : new Body[]{Body.FYLGJA, Body.VAN_MAANEN_E, Body.GAIA_BH1_E}) {
+            Gt.check(body.sector().far() && body.requiredTier() == SolarSystem.DARK_DRIVE_LEVEL, body + " : portee 14");
+            ServerLevel level = h.getLevel().getServer().getLevel(body.dimension());
+            Gt.check(level != null, body + " : dimension absente");
+            Gt.check(fr.pioneers.space.environment.Environments.get(level).breathable(), body + " : air irrespirable");
+            Gt.check(SolarSystem.fromDimension(level.dimension()) == body, body + " : astre de la dimension");
+            boolean animals = false, village = false;
+            for (net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> b : level.getChunkSource().getGenerator().getBiomeSource()
+                  .possibleBiomes()) {
+                animals |= !b.value().getMobSettings().getMobs(net.minecraft.world.entity.MobCategory.CREATURE).isEmpty();
+                village |= b.is(net.minecraft.tags.BiomeTags.HAS_VILLAGE_PLAINS) || b.is(net.minecraft.tags.BiomeTags.HAS_PILLAGER_OUTPOST);
+                Gt.check(b.unwrapKey().map(k -> k.location().getNamespace().equals("minecraft")).orElse(false), body + " : biome hors Terre");
+            }
+            Gt.check(animals, body + " : aucun animal");
+            Gt.check(!village, body + " : biome a village ou avant-poste");
+            ChunkAccess chunk = level.getChunk(0, 0);
+            int top = chunk.getHeight(Heightmap.Types.WORLD_SURFACE, 8, 8);
+            Gt.check(top > 40, body + " : relief absent (" + top + ")");
+        }
+        s.done();
+    }
+
+    /**
      * Retour de Guillaume (20/11, capture sur Gaia BH1 b) : des blocs de liquide « suspendus » (cubes d'eau dresses dans le vide) sur les
      * planetes lointaines. Aucun bloc source de liquide de la surface (au-dessus de la couche 40) ne touche le vide, sur un cote ou dessous,
      * dans 7 x 7 tronçons generes de chaque planete.

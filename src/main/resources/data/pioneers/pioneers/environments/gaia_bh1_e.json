@@ -1,0 +1,9 @@
+{
+ "dimension": "pioneers:gaia_bh1_e",
+ "gravity": 1.05,
+ "breathable": true,
+ "suit_tier": 0,
+ "hazard": "none",
+ "nitrogen": 4,
+ "temperature": 24
+}

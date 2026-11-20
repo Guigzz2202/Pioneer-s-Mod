@@ -90,7 +90,11 @@ public final class SolarSystem {
         GAIA_BH1(null, 0, 0, 0, 6, 0x2A1840, false),
         GAIA_BH1_B("gaia_bh1", 1.3F, 10, 0.9F, 3.8F, 0x9A6AD0, false),
         GAIA_BH1_C("gaia_bh1", 2.2F, 17, 2.8F, 3.4F, 0xC0603A, false),
-        GAIA_BH1_D("gaia_bh1", 3.4F, 30, 4.7F, 4.2F, 0x4A7AB8, false);
+        GAIA_BH1_D("gaia_bh1", 3.4F, 30, 4.7F, 4.2F, 0x4A7AB8, false),
+        //1.0.7 : mondes habitables des systemes lointains (relief et biomes de la Terre ; T:au_dela/far_systems.py HABITABLE)
+        FYLGJA("lich", 3.6F, 30, 1.1F, 4.6F, 0x5E9A6A, false),
+        VAN_MAANEN_E("van_maanen", 4.3F, 36, 2.2F, 4.4F, 0x4E8EC0, false),
+        GAIA_BH1_E("gaia_bh1", 4.6F, 44, 0.3F, 4.8F, 0x6AA86A, false);
 
         /** Tous les astres, dans l'ordre (liste partagee : evite la copie de tableau de {@code values()} dans les boucles frequentes). */
         public static final List<Body> ALL = List.of(values());
@@ -237,6 +241,9 @@ public final class SolarSystem {
                 case GAIA_BH1_B -> 1.1F;
                 case GAIA_BH1_C -> 1.3F;
                 case GAIA_BH1_D -> 0.95F;
+                case FYLGJA -> 1.0F;
+                case VAN_MAANEN_E -> 0.95F;
+                case GAIA_BH1_E -> 1.05F;
             };
         }
 
@@ -316,6 +323,9 @@ public final class SolarSystem {
                 case GAIA_BH1_B -> PiDimensions.GAIA_BH1_B;
                 case GAIA_BH1_C -> PiDimensions.GAIA_BH1_C;
                 case GAIA_BH1_D -> PiDimensions.GAIA_BH1_D;
+                case FYLGJA -> PiDimensions.FYLGJA;
+                case VAN_MAANEN_E -> PiDimensions.VAN_MAANEN_E;
+                case GAIA_BH1_E -> PiDimensions.GAIA_BH1_E;
                 //Les etoiles n'ont pas de surface ; TRAPPIST-1c, g et h ne s'etudient qu'en orbite
                 default -> null;
             };

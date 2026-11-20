@@ -314,6 +314,13 @@ public final class PiClientRegistration {
               0.4, 240, -12));
         event.register(Pioneers.rl("gaia_bh1_d"), ExoSkyEffects.far(hole, "gaia_bh1", 0xB088FF, false, 0, 10, true, "gaia_bh1_c", 0.45, 160, 12, "gaia_bh1_b",
               0.35, 200, -8));
+        //1.0.7 : mondes habitables (ciel bleu de jour : atmosphere ; l'astre singulier y reste visible)
+        event.register(Pioneers.rl("fylgja"), ExoSkyEffects.far(pulsar, "lich", 0xCFE6FF, false, 0, 20, true, "poltergeist", 0.35, 100, 14,
+              "phobetor", 0.45, 250, -12));
+        event.register(Pioneers.rl("van_maanen_e"), ExoSkyEffects.far(dwarf, "van_maanen", 0xF4F8FF, false, 0, 15, true, "van_maanen_d", 0.5, 130, 18,
+              "van_maanen_b", 0.2, 300, -8));
+        event.register(Pioneers.rl("gaia_bh1_e"), ExoSkyEffects.far(hole, "gaia_bh1", 0xB088FF, false, 0, 22, true, "gaia_bh1_d", 0.55, 140, 16,
+              "gaia_bh1_c", 0.3, 230, -10));
         event.register(Pioneers.rl("gas_giant"), ExoSkyEffects.gasGiant());
         for (Celestial.Body body : new Celestial.Body[]{
               Celestial.Body.MOON, Celestial.Body.MERCURY,
