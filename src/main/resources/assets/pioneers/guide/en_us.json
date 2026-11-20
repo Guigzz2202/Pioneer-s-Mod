@@ -16605,7 +16605,7 @@
      "text": "A §6megastructure§r is not built block by block: you start its §6site§r from the rocket's map (as the passenger of a rocket in orbit, §6Start the site§r button on the body's card), then send its ingredient list by §6cargo rockets§r: a launch complex in Logistics mode, destination \"Site: …\", item holds. Each rocket delivers what is missing and comes back with the rest; the body's card shows the progress. As soon as the list is complete, the megastructure is unlocked at once, for the whole server, and shows in the sky.\n\nIts §6ports§r are multiblocks built on its body as an MKV structure (casings, glass and frames); their controller is the terminal. They run its §6unique recipes§r: each is the only source of three §6gated components§r, required further on (drill, collector, MKV cores, the next megastructures).\n\nThe Sun has no ground: the Swarm's ports are built in the Sun's station; the Halo Observatory's in Earth's station."
     },
     {
-     "title": "The ten megastructures",
+     "title": "The fifteen megastructures",
      "items": [
       "pioneers:mantle_drill_bit",
       "pioneers:capture_membrane",
@@ -16642,6 +16642,33 @@
       "pioneers:dark_matter_capsule"
      ],
      "text": "In Earth's station, at the Lagrange point: the §6halo detector§r assembles the sensor arrays, the §6gravitational lens§r traps dark matter, and the §6Halo Observatory§r maps it, bottles it and draws the dark matter engine from it. At night, its lattice of points shows in Earth's sky."
+    },
+    {
+     "title": "The distant systems",
+     "items": [
+      "pioneers:rocket_module_dark_matter_drive",
+      "pioneers:pulsarite_ingot",
+      "pioneers:maanenite_ingot",
+      "pioneers:horizite_ingot"
+     ],
+     "text": "Far beyond TRAPPIST-1, three systems built around a dead star. They only show on the map once the §6Halo Observatory§r is unlocked, and only a tier 13 rocket fitted with the §6dark matter drive§r (rocket module) can reach them.\n\n• §6Lich§r (Pulsar PSR B1257+12): Draugr, Poltergeist, Phobetor, Fylgja (habitable).\n• §6Van Maanen's Star§r (White dwarf): Van Maanen b, Van Maanen c, Van Maanen d, Van Maanen e (habitable).\n• §6Gaia BH1§r (Black hole): Gaia BH1 b, Gaia BH1 c, Gaia BH1 d, Gaia BH1 e (habitable).\n\nEach planet has its own terrain, blocks, plants and metal; each system has its megastructure (Pulsar Cage, Crystal Well, Penrose Ring)."
+    },
+    {
+     "title": "Habitable worlds",
+     "items": [
+      "pioneers:rocket_module_dark_matter_drive"
+     ],
+     "text": "One habitable world per distant system: you can breathe without a suit, day and night follow as on Earth, and you can sleep there. Wildlife and plants are Earth's, with Pioneer's game animals; no civilization, no village or outpost.\n\n• §6Fylgja§r: A temperate world sheltered from the pulsar wind by a giant magnetosphere: old conifer forests, birches, cold rivers; auroras every night.\n• §6Van Maanen e§r: A water world dotted with large wooded islands, gently warmed by the white dwarf: forests, sunflower meadows, herds.\n• §6Gaia BH1 e§r: A lush world at the edge of the system, safe from the black hole’s tides: flower forests, tall birches, mangroves and warm seas, under a dark lens that bends the stars."
+    },
+    {
+     "title": "Extraordinary multiblocks ★",
+     "items": [
+      "pioneers:heliothermal_plasma_forge",
+      "pioneers:diamond_anvil_press",
+      "pioneers:annular_accelerator",
+      "pioneers:qubit_foundry"
+     ],
+     "text": "The §6extraordinary§r multiblocks (★) are outsized multiblocks, built as MKV structures. Their controller needs two gated components from two different megastructures. Their large-scale recipes turn out their domain's flagship products six at a time, and also consume gated components.\n\nEach recipe goes through §6stages§r: they show on the interface arrow (current stage underlined, list in the tooltip) and on the status screen. While running, an animated effect lights up at the heart of the structure, visible through its glass.\n\n• §6Heliothermal Plasma Forge§r: Melts and refines above 4,000 °C in a plasma held aloft by Mercury's concentrated light.\n• §6Diamond Anvil Press§r: Crushes between two diamond anvils at the pressures of Jupiter's core.\n• §6Annular Accelerator§r: A ring collider.\n• §6Qubit Foundry§r: Etches and cools qubit lattices near absolute zero.\n• §6Aneutronic Fusion Core§r: Neutron-free helium-3 fusion, converted straight into current.\n• §6Dark Matter Confiner§r: Holds dark matter in a sphere nothing seems to fill.\n• §6Degenerate Matter Forge§r: Forges matter to the pulsar's beat under magnetar fields.\n• §6Singularity Injector§r: Injects ballast into a singularity held at the heart of its chamber and draws void singularity gas from it; it also grows tidal cultures and etches lensing sensors."
     }
    ]
   },

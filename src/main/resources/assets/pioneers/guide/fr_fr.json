@@ -16605,7 +16605,7 @@
      "text": "Une §6mégastructure§r ne se construit pas bloc par bloc : on démarre son §6chantier§r depuis la carte de la fusée (passager d'une fusée en orbite, bouton §6Démarrer le chantier§r sur la fiche de l'astre), puis on lui envoie sa liste d'ingrédients par §6fusées cargo§r : un complexe de lancement en mode Logistique, destination « Chantier : … », soutes à objets. Chaque fusée livre ce qui manque et rentre avec le reste ; la fiche de l'astre montre l'avancement. Dès que la liste est complète, la mégastructure est débloquée d'un coup, pour tout le serveur, et apparaît dans le ciel.\n\nSes §6ports§r sont des multiblocs bâtis sur son astre en structure MKV (carcasses, verres et cadres) ; leur contrôleur est le terminal. Ils font ses §6recettes uniques§r : chacune est la seule source de trois §6composants gatés§r, exigés par la suite (foreuse, collecteur, cœurs MKV, mégastructures suivantes).\n\nLe Soleil n'a pas de sol : les ports de l'Essaim se bâtissent dans la station du Soleil ; ceux de l'Observatoire du Halo dans la station de la Terre."
     },
     {
-     "title": "Les dix mégastructures",
+     "title": "Les quinze mégastructures",
      "items": [
       "pioneers:mantle_drill_bit",
       "pioneers:capture_membrane",
@@ -16642,6 +16642,33 @@
       "pioneers:dark_matter_capsule"
      ],
      "text": "Dans la station de la Terre, au point de Lagrange : le §6détecteur de halo§r monte les réseaux de capteurs, la §6lentille gravitationnelle§r piège la matière noire, et l'§6Observatoire du Halo§r la cartographie, la met en capsule et en tire le moteur à matière noire. Le soir, son réseau de points se voit dans le ciel de la Terre."
+    },
+    {
+     "title": "Les systèmes lointains",
+     "items": [
+      "pioneers:rocket_module_dark_matter_drive",
+      "pioneers:pulsarite_ingot",
+      "pioneers:maanenite_ingot",
+      "pioneers:horizite_ingot"
+     ],
+     "text": "Bien au-delà de TRAPPIST-1, trois systèmes bâtis autour d'un astre mort. Ils n'apparaissent sur la carte qu'une fois l'§6Observatoire du Halo§r débloqué, et l'on n'y va qu'en fusée de tier 13 équipée du §6propulseur à matière noire§r (module de fusée).\n\n• §6Lich§r (Pulsar PSR B1257+12) : Draugr, Poltergeist, Phobetor, Fylgja (habitable).\n• §6Étoile de Van Maanen§r (Naine blanche) : Van Maanen b, Van Maanen c, Van Maanen d, Van Maanen e (habitable).\n• §6Gaia BH1§r (Trou noir) : Gaia BH1 b, Gaia BH1 c, Gaia BH1 d, Gaia BH1 e (habitable).\n\nChaque planète a son relief, ses blocs, ses plantes et son métal ; chaque système a sa mégastructure (Cage du Pulsar, Puits de Cristal, Anneau de Penrose)."
+    },
+    {
+     "title": "Les mondes habitables",
+     "items": [
+      "pioneers:rocket_module_dark_matter_drive"
+     ],
+     "text": "Un monde habitable par système lointain : on y respire sans combinaison, le jour et la nuit s'y suivent comme sur Terre, on peut y dormir. Faune et flore y sont celles de la Terre, avec le gibier de Pioneer's ; aucune civilisation, ni village ni avant-poste.\n\n• §6Fylgja§r : monde tempéré à l’abri du vent du pulsar sous une magnétosphère géante : vieilles forêts de conifères, bouleaux, rivières froides ; des aurores chaque nuit.\n• §6Van Maanen e§r : monde d’eau semé de grandes îles boisées, que la naine blanche chauffe doucement : forêts, prairies de tournesols, troupeaux.\n• §6Gaia BH1 e§r : monde luxuriant aux confins du système, à l’abri des marées du trou noir : forêts fleuries, grands bouleaux, mangroves et mers chaudes, sous une lentille sombre qui tord les étoiles."
+    },
+    {
+     "title": "Les extraordinaires ★",
+     "items": [
+      "pioneers:heliothermal_plasma_forge",
+      "pioneers:diamond_anvil_press",
+      "pioneers:annular_accelerator",
+      "pioneers:qubit_foundry"
+     ],
+     "text": "Les §6extraordinaires§r (★) sont des multiblocs hors norme, bâtis en structure MKV. Leur contrôleur demande deux composants gatés de deux mégastructures différentes. Leurs recettes « en grand » sortent les produits phares de leur domaine six à la fois, et consomment aussi des composants gatés.\n\nChaque recette passe par des §6étapes§r : on les voit sur la flèche de l'interface (étape en cours soulignée, liste en infobulle) et dans l'écran d'état. En marche, un effet animé s'allume au cœur de la structure, visible à travers son verre.\n\n• §6Forge à plasma héliothermique§r : fond et affine au-delà de 4 000 °C dans un plasma que la lumière concentrée de Mercure tient en suspension.\n• §6Presse à enclume de diamant§r : écrase entre deux enclumes de diamant aux pressions du cœur de Jupiter.\n• §6Accélérateur annulaire§r : collisionneur en anneau.\n• §6Fonderie de qubits§r : grave et refroidit des réseaux de qubits au voisinage du zéro absolu.\n• §6Cœur de fusion aneutronique§r : fusion hélium-3 sans neutrons, convertie directement en courant.\n• §6Confineur de matière noire§r : retient la matière noire dans une sphère que rien ne semble remplir.\n• §6Forge de matière dégénérée§r : forge la matière au rythme du pulsar, sous des champs de magnétar.\n• §6Injecteur de singularité§r : injecte des lests dans une singularité tenue au cœur de sa chambre et en tire le gaz de singularité du vide ; cultive aussi les franges de marée et grave des capteurs à lentille."
     }
    ]
   },
