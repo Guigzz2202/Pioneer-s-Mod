@@ -203,7 +203,13 @@ public final class SkyShots {
         if (shot.sunAlt <= MIDNIGHT) {
             return 18000;
         }
-        SkyScene.Observer obs = SkyScene.observer(Celestial.Body.valueOf(Megastructures.body(shot.mega).name()));
+        SkyScene.Observer obs;
+        try {
+            obs = SkyScene.observer(Celestial.Body.valueOf(Megastructures.body(shot.mega).name()));
+        } catch (IllegalArgumentException e) {
+            //exoplanetes (1.0.7 lot 11) : pas d'astre de la scene, ciel propre
+            obs = null;
+        }
         double[] g = new double[3];
         for (long t = 6000; t <= 18000; t += 5) {
             double timeDeg = mc.level.dimensionType().timeOfDay(t) * 360;
