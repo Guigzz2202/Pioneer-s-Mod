@@ -1,0 +1,58 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "singularity_injector",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_bioreactor_cell"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:eden_nutrient_gel"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_nacre_plate"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:deposited_ruachite_film"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:terminator_biofilm"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_resonator"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:nitrogen",
+   "amount": 3000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:tidal_culture",
+   "count": 12
+  }
+ ],
+ "energy": 52000,
+ "industrial": true
+}

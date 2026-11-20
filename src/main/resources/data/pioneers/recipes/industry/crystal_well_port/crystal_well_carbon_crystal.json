@@ -21,6 +21,18 @@
     "item": "pioneers:machine_scale_electronic_diamond"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:colossal_drill_mast"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_resonator"
+   },
+   "count": 1
   }
  ],
  "gases": [

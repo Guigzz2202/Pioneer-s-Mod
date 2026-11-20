@@ -27,6 +27,18 @@
     "item": "pioneers:hts_cable_bundle"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tidal_resonator"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flare_capture_coil"
+   },
+   "count": 1
   }
  ],
  "gases": [

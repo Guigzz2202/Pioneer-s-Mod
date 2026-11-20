@@ -27,6 +27,18 @@
     "item": "pioneers:pyrrhite_hot_face_ceramic"
    },
    "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:interplanetary_cable"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flare_capture_coil"
+   },
+   "count": 1
   }
  ],
  "gases": [

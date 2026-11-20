@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:master_qubit"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_scale_electronic_diamond"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryostat_vessel"
+   },
+   "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tholin_multilayer_insulation"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:qubit_foundry",
+  "count": 1
+ }
+}

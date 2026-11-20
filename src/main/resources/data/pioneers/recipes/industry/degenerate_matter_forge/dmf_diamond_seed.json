@@ -1,0 +1,58 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "degenerate_matter_forge",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_diamond_anvil"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:carbon_needle_lattice"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_graphite_electrode"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nitrided_ruachite_anode"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_carbon_crystal"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_ember_cell"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 3000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:compressed_diamond_seed",
+   "count": 6
+  }
+ ],
+ "energy": 48000,
+ "industrial": true
+}

@@ -27,6 +27,12 @@
     "item": "pioneers:stellar_alloy_frame"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:proxima_irradiated_lattice"
+   },
+   "count": 1
   }
  ],
  "results": [

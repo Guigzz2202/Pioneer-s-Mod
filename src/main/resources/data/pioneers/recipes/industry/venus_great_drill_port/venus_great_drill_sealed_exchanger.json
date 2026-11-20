@@ -21,6 +21,12 @@
     "item": "pioneers:venusian_spiral_gasket"
    },
    "count": 8
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_scale_monocrystal_blade"
+   },
+   "count": 1
   }
  ],
  "results": [

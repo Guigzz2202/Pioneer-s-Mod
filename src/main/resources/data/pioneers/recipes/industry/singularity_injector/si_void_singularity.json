@@ -1,0 +1,52 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "singularity_injector",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:calibrated_ballast"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:ergosphere_harvester"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:penrose_spin_battery"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:event_horizon_lens"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_ember_cell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:magnetar_confinement_coil"
+   },
+   "count": 1
+  }
+ ],
+ "gas_results": [
+  {
+   "gas": "pioneers:void_singularity",
+   "amount": 16000
+  }
+ ],
+ "energy": 60000,
+ "industrial": true
+}

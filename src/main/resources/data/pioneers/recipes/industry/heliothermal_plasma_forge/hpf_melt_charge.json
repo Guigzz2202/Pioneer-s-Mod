@@ -1,0 +1,52 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "heliothermal_plasma_forge",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:superalloy_seed_crystal"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/mercurium"
+   },
+   "count": 18
+  },
+  {
+   "ingredient": {
+    "tag": "forge:ingots/tungsten"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_scale_monocrystal_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:active_heliothermal_mirror"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:argon",
+   "amount": 2000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:superalloy_melt_charge",
+   "count": 6
+  }
+ ],
+ "energy": 30000,
+ "industrial": true
+}

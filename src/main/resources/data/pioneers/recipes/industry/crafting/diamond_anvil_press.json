@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stabilized_metallic_hydrogen"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:perfect_crystal_lattice"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:jovian_pressure_vessel"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:europan_cryo_scrubber"
+   },
+   "count": 4
+  }
+ ],
+ "result": {
+  "item": "pioneers:diamond_anvil_press",
+  "count": 1
+ }
+}

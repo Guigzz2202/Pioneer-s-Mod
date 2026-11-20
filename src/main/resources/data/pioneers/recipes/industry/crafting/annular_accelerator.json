@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:annular_rotor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:magnetospheric_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:titan_magnetic_bearing"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_cable_bundle"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:annular_accelerator",
+  "count": 1
+ }
+}

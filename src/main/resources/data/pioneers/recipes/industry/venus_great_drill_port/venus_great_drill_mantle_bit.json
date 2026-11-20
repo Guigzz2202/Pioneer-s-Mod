@@ -27,6 +27,12 @@
     "item": "pioneers:acidproof_venusium_liner"
    },
    "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:colossal_drill_mast"
+   },
+   "count": 1
   }
  ],
  "gases": [

@@ -1,0 +1,52 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "singularity_injector",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:accretion_glass_mirror"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gravitational_lensing_plate"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:seven_worlds_relay_core"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:proxima_irradiated_lattice"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:diamond_lattice_processor"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:penrose_spin_battery"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:halo_sensor_array",
+   "count": 6
+  }
+ ],
+ "energy": 52000,
+ "industrial": true
+}

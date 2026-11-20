@@ -27,6 +27,18 @@
     "item": "pioneers:photonic_glass"
    },
    "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:swarm_lens"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:interstellar_hull"
+   },
+   "count": 1
   }
  ],
  "results": [

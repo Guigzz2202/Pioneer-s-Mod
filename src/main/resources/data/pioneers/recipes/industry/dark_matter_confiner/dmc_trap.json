@@ -1,0 +1,58 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "dark_matter_confiner",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_shielding_plate"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:gravitational_calibration_mass"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:halo_density_map"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:dark_matter_capsule"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:magnetar_confinement_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:event_horizon_lens"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 6000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:dark_matter_trap",
+   "count": 6
+  }
+ ],
+ "energy": 44000,
+ "industrial": true
+}

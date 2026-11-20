@@ -27,6 +27,12 @@
     "item": "pioneers:io_sulfide_catalyst"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mantle_drill_bit"
+   },
+   "count": 1
   }
  ],
  "gases": [

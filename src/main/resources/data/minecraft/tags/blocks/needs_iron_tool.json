@@ -408,6 +408,14 @@
   "pioneers:penrose_ring_port",
   "pioneers:pulsar_beam_collector",
   "pioneers:carbon_crystallizer",
-  "pioneers:ergosphere_mass_driver"
+  "pioneers:ergosphere_mass_driver",
+  "pioneers:heliothermal_plasma_forge",
+  "pioneers:diamond_anvil_press",
+  "pioneers:annular_accelerator",
+  "pioneers:qubit_foundry",
+  "pioneers:aneutronic_fusion_core",
+  "pioneers:dark_matter_confiner",
+  "pioneers:degenerate_matter_forge",
+  "pioneers:singularity_injector"
  ]
 }

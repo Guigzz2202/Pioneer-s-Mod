@@ -21,6 +21,12 @@
     "item": "pioneers:hts_tape"
    },
    "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superfluid_helium_cell"
+   },
+   "count": 1
   }
  ],
  "gases": [

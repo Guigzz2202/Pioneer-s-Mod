@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "diamond_anvil_press",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:ruachite_deposition_grid"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:nitrided_ruachite_anode"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:tritonian_ion_membrane"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:atomic_electrode"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_scale_electronic_diamond"
+   },
+   "count": 1
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:deposited_ruachite_film",
+   "count": 6
+  }
+ ],
+ "energy": 30000,
+ "industrial": true
+}

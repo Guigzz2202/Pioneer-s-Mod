@@ -27,6 +27,12 @@
     "item": "pioneers:europan_cryo_scrubber"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:mantle_heat_core"
+   },
+   "count": 1
   }
  ],
  "gases": [

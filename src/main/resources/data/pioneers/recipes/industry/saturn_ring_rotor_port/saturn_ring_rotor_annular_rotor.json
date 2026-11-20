@@ -27,6 +27,18 @@
     "item": "pioneers:stellar_alloy_frame"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:machine_scale_monocrystal_blade"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stabilized_metallic_hydrogen"
+   },
+   "count": 1
   }
  ],
  "results": [

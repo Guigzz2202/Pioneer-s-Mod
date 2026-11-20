@@ -21,6 +21,12 @@
     "item": "pioneers:deposited_ruachite_film"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:capture_membrane"
+   },
+   "count": 1
   }
  ],
  "gases": [

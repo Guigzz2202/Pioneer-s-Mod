@@ -1,0 +1,45 @@
+{
+ "type": "pioneers:bench",
+ "bench": "assembly",
+ "tools": [
+  {
+   "tag": "forge:tools/wrench"
+  }
+ ],
+ "ingredients": [
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_alloy_chassis"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:confined_plasma_core"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flux_bank"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:helium3_trap_cell"
+   },
+   "count": 4
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_cable_bundle"
+   },
+   "count": 2
+  }
+ ],
+ "result": {
+  "item": "pioneers:aneutronic_fusion_core",
+  "count": 1
+ }
+}

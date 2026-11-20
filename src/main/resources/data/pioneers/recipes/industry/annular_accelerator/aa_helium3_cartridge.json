@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "annular_accelerator",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:helium3_trap_cell"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sintered_alabaster_insulator"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:separation_chamber"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:interplanetary_cable"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium_3",
+   "amount": 12000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:helium3_cryocartridge",
+   "count": 6
+  }
+ ],
+ "energy": 36000,
+ "industrial": true
+}

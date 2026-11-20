@@ -1,0 +1,58 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "degenerate_matter_forge",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:flarium_flare_shield"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flarium_particle_detector"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:binary_sun_absorber"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:hts_tape"
+   },
+   "count": 12
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:flare_capture_coil"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:stellar_wind_sail"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 6000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:flare_charged_cell",
+   "count": 6
+  }
+ ],
+ "energy": 48000,
+ "industrial": true
+}

@@ -27,6 +27,18 @@
     "item": "pioneers:photonic_glass"
    },
    "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:degenerate_carbon_crystal"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:proxima_irradiated_lattice"
+   },
+   "count": 1
   }
  ],
  "results": [

@@ -27,6 +27,18 @@
     "item": "pioneers:stellar_alloy_frame"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:seven_worlds_relay_core"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:pulsar_clock"
+   },
+   "count": 1
   }
  ],
  "results": [

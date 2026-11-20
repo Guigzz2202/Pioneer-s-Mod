@@ -27,6 +27,12 @@
     "item": "pioneers:stellar_alloy_frame"
    },
    "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:aneutronic_injector"
+   },
+   "count": 1
   }
  ],
  "gases": [

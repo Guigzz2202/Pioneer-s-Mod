@@ -21,6 +21,12 @@
     "item": "pioneers:degenerate_shielding_plate"
    },
    "count": 2
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superfluid_helium_cell"
+   },
+   "count": 1
   }
  ],
  "fluids": [

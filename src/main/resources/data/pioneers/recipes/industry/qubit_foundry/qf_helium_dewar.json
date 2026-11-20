@@ -1,0 +1,46 @@
+{
+ "type": "pioneers:industrial",
+ "machine": "qubit_foundry",
+ "tier": 3,
+ "time": 400,
+ "items": [
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryostat_vessel"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:sputnikite_cryopump"
+   },
+   "count": 6
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:superfluid_helium_cell"
+   },
+   "count": 1
+  },
+  {
+   "ingredient": {
+    "item": "pioneers:cryogenic_screen"
+   },
+   "count": 1
+  }
+ ],
+ "gases": [
+  {
+   "gas": "pioneers:helium",
+   "amount": 24000
+  }
+ ],
+ "results": [
+  {
+   "item": "pioneers:liquid_helium_dewar",
+   "count": 6
+  }
+ ],
+ "energy": 36000,
+ "industrial": true
+}
