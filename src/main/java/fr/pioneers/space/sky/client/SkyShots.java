@@ -130,6 +130,8 @@ public final class SkyShots {
                             }
                         }
                         LOG.info("SKYSHOTS : vue a la hauteur {}", h + 4);
+                        player.getAbilities().flying = true;
+                        player.onUpdateAbilities();
                         player.teleportTo(level, 0.5, h + 4, 0.5, 0, 0);
                     }
                 });
@@ -144,6 +146,8 @@ public final class SkyShots {
                     ServerPlayer player = server.getPlayerList().getPlayers().isEmpty() ? null : server.getPlayerList().getPlayers().get(0);
                     if (shot.climb > 0 && player != null && player.level() instanceof ServerLevel level) {
                         //vue en altitude : le joueur monte, la megastructure doit rester posee sur le relief
+                        player.getAbilities().flying = true;
+                        player.onUpdateAbilities();
                         player.teleportTo(level, player.getX(), player.getY() + shot.climb, player.getZ(), 0, 0);
                     }
                 });
