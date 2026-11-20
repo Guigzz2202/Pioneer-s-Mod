@@ -56,48 +56,78 @@ public class FluidCleanupFeature extends Feature<FluidCleanupFeature.Config> {
         int x0 = (context.origin().getX() & ~15) - MARGIN, z0 = (context.origin().getZ() & ~15) - MARGIN;
         int cap = Math.min(level.getMaxBuildHeight() - 1, 255);
         BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos(), side = new BlockPos.MutableBlockPos();
+        int x1 = x0 + 16 + 2 * MARGIN, z1 = z0 + 16 + 2 * MARGIN;
+        //Retirer un bloc expose en expose d'autres (bord d'une nappe surelevee, coulee de lave longue) : les voisins d'un bloc retire sont
+        //revus aussitot (file), jusqu'a ce que plus rien ne bouge ; six passes completes n'y suffisaient pas (cubes suspendus, 20/11)
+        it.unimi.dsi.fastutil.longs.LongArrayFIFOQueue todo = new it.unimi.dsi.fastutil.longs.LongArrayFIFOQueue();
         boolean changed = false;
-        //Plusieurs passes : retirer le bord d'une nappe surelevee expose le bloc suivant
-        for (int pass = 0; pass < 6; pass++) {
-            boolean any = false;
-            for (int dx = 0; dx < 16 + 2 * MARGIN; dx++) {
-                for (int dz = 0; dz < 16 + 2 * MARGIN; dz++) {
-                    //le liquide est sous la surface du bruit (elle compte les liquides) : rien a chercher plus haut
-                    int top = Math.min(cap, level.getHeight(Heightmap.Types.WORLD_SURFACE_WG, x0 + dx, z0 + dz) + 2);
-                    for (int y = top; y >= config.minY(); y--) {
-                        pos.set(x0 + dx, y, z0 + dz);
-                        FluidState state = level.getFluidState(pos);
-                        if (state.isEmpty() || !state.getType().isSame(fluid)) {
-                            continue;
-                        }
-                        if (!state.isSource()) {
-                            if (y > config.maxLevel()) {
-                                level.setBlock(pos, Blocks.AIR.defaultBlockState(), 2);
-                                any = true;
-                            }
-                            continue;
-                        }
-                        boolean above = y > config.maxLevel();
-                        //Nappe posee sur la mer (au-dessus de son niveau) : toujours retiree
-                        if (above && restsOnSea(level, pos, side, fluid, config.maxLevel())) {
-                            level.setBlock(pos, Blocks.AIR.defaultBlockState(), 2);
-                            any = true;
-                            continue;
-                        }
-                        if (!exposed(level, pos, side)) {
-                            continue;
-                        }
-                        level.setBlock(pos, above ? Blocks.AIR.defaultBlockState() : config.barrier(), 2);
-                        any = true;
+        for (int dx = 0; dx < 16 + 2 * MARGIN; dx++) {
+            for (int dz = 0; dz < 16 + 2 * MARGIN; dz++) {
+                //le liquide est sous la surface (elle compte les liquides) : rien a chercher plus haut. Un voisin deja complet n'a plus
+                //la carte de hauteur du bruit (un tronçon fini ne garde que les cartes finales : celle du bruit, recreee vide, rendrait le
+                //bas du monde et sa bordure ne serait pas repassee) ; un voisin decore a sa carte du bruit figee avant ses elements : la
+                //plus haute des deux
+                int top = Math.min(cap, Math.max(level.getHeight(Heightmap.Types.WORLD_SURFACE_WG, x0 + dx, z0 + dz),
+                      level.getHeight(Heightmap.Types.WORLD_SURFACE, x0 + dx, z0 + dz)) + 2);
+                for (int y = top; y >= config.minY(); y--) {
+                    pos.set(x0 + dx, y, z0 + dz);
+                    int r = fix(level, config, fluid, pos, side);
+                    changed |= r != 0;
+                    if (r == AIR) {
+                        around(todo, pos);
                     }
                 }
             }
-            changed |= any;
-            if (!any) {
-                break;
+        }
+        //borne de surete (une file qui ne finirait pas) : bien au-dela de ce qu'une region de decoration peut contenir de liquide
+        for (int guard = 0; !todo.isEmpty() && guard < 400_000; guard++) {
+            pos.set(todo.dequeueLong());
+            if (pos.getX() < x0 || pos.getX() >= x1 || pos.getZ() < z0 || pos.getZ() >= z1 || pos.getY() < config.minY() || pos.getY() > cap) {
+                continue;
+            }
+            if (fix(level, config, fluid, pos, side) == AIR) {
+                around(todo, pos);
             }
         }
         return changed;
+    }
+
+    /** Resultats de {@link #fix} : rien, bloc de bordure pose, liquide retire (de l'air : ses voisins sont a revoir). */
+    private static final int NONE = 0, BARRIER = 1, AIR = 2;
+
+    /** Voisins qu'un bloc devenu air peut exposer : les quatre cotes et le dessus. */
+    private static void around(it.unimi.dsi.fastutil.longs.LongArrayFIFOQueue todo, BlockPos pos) {
+        todo.enqueue(BlockPos.asLong(pos.getX() + 1, pos.getY(), pos.getZ()));
+        todo.enqueue(BlockPos.asLong(pos.getX() - 1, pos.getY(), pos.getZ()));
+        todo.enqueue(BlockPos.asLong(pos.getX(), pos.getY(), pos.getZ() + 1));
+        todo.enqueue(BlockPos.asLong(pos.getX(), pos.getY(), pos.getZ() - 1));
+        todo.enqueue(BlockPos.asLong(pos.getX(), pos.getY() + 1, pos.getZ()));
+    }
+
+    /** Regles d'un bloc (en tete de classe) ; rend ce qui a ete fait. */
+    private static int fix(WorldGenLevel level, Config config, Fluid fluid, BlockPos pos, BlockPos.MutableBlockPos side) {
+        FluidState state = level.getFluidState(pos);
+        if (state.isEmpty() || !state.getType().isSame(fluid)) {
+            return NONE;
+        }
+        if (!state.isSource()) {
+            if (pos.getY() > config.maxLevel()) {
+                level.setBlock(pos, Blocks.AIR.defaultBlockState(), 2);
+                return AIR;
+            }
+            return NONE;
+        }
+        boolean above = pos.getY() > config.maxLevel();
+        //Nappe posee sur la mer (au-dessus de son niveau) : toujours retiree
+        if (above && restsOnSea(level, pos, side, fluid, config.maxLevel())) {
+            level.setBlock(pos, Blocks.AIR.defaultBlockState(), 2);
+            return AIR;
+        }
+        if (!exposed(level, pos, side)) {
+            return NONE;
+        }
+        level.setBlock(pos, above ? Blocks.AIR.defaultBlockState() : config.barrier(), 2);
+        return above ? AIR : BARRIER;
     }
 
     /** Sous ce bloc, le liquide continue sans interruption jusqu'au niveau de la mer. */
